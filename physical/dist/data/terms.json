@@ -1,0 +1,308 @@
+[
+  {
+    "slug": "physical-chemistry",
+    "zh": "物理化学",
+    "en": "Physical chemistry",
+    "category": "学科基础",
+    "definition": "用物理原理、实验方法和数学模型解释并预测化学体系的性质与行为。",
+    "expanded": "它贯通宏观状态量与微观粒子行为，为分析、无机、有机和生物化学提供定量基础。",
+    "properties": [
+      "强调可测量量与定量预测",
+      "核心包含热力学、动力学、量子与统计力学"
+    ],
+    "confusions": "不是“物理加化学”的简单拼接。",
+    "related": [
+      "thermodynamics",
+      "chemical-kinetics",
+      "statistical-mechanics",
+      "quantum-chemistry"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "thermodynamics",
+    "zh": "热力学",
+    "en": "Thermodynamics",
+    "category": "学科分支",
+    "definition": "研究系统宏观平衡性质、状态变化方向与能量关系的理论。",
+    "expanded": "它回答过程是否可能、平衡在哪里以及能量如何转化，但不单独回答达到该状态需要多久。",
+    "properties": [
+      "宏观理论",
+      "以状态函数和定律为基础"
+    ],
+    "confusions": "自发过程可以非常慢；热力学允许不代表动力学上迅速。",
+    "related": [
+      "chemical-kinetics",
+      "state-function"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "chemical-kinetics",
+    "zh": "化学动力学",
+    "en": "Chemical kinetics",
+    "category": "学科分支",
+    "definition": "研究化学及相关输运过程的速率、路径与机理。",
+    "expanded": "速率方程、速率常数、活化能和反应机理是核心内容；催化剂改变路径和速率但不改变平衡常数。",
+    "properties": [
+      "研究随时间的变化",
+      "连接实验速率与微观机理"
+    ],
+    "confusions": "平衡位置主要由热力学决定。",
+    "related": [
+      "thermodynamics"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "statistical-mechanics",
+    "zh": "统计力学",
+    "en": "Statistical mechanics",
+    "category": "学科分支",
+    "definition": "由大量微观粒子的统计规律推导宏观性质。",
+    "expanded": "它通过微观状态、能级占据与系综平均解释温度、熵、热容等宏观量。",
+    "properties": [
+      "连接微观与宏观"
+    ],
+    "confusions": "不等同于化学动力学。",
+    "related": [
+      "thermodynamics",
+      "quantum-chemistry"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "quantum-chemistry",
+    "zh": "量子化学",
+    "en": "Quantum chemistry",
+    "category": "学科分支",
+    "definition": "将量子力学用于原子、分子及其光谱和反应性的研究。",
+    "expanded": "它从波函数和算符出发描述电子结构、化学键与能级，为光谱和计算化学奠定基础。",
+    "properties": [
+      "微观理论",
+      "与光谱学密切相关"
+    ],
+    "confusions": "不是只做数值计算；解析模型同样属于量子化学。",
+    "related": [
+      "statistical-mechanics"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "state-function",
+    "zh": "状态函数",
+    "en": "State function",
+    "category": "热力学",
+    "definition": "只由系统当前状态决定而与到达路径无关的性质。",
+    "expanded": "内能、焓、熵和 Gibbs 能是典型状态函数；热和功是过程量。其全微分为恰当微分。",
+    "properties": [
+      "循环过程净变化为零"
+    ],
+    "confusions": "p、V、T 也是状态变量，但并非任意变量都相互独立。",
+    "related": [
+      "total-differential",
+      "thermodynamics"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "total-differential",
+    "zh": "全微分",
+    "en": "Total differential",
+    "category": "数学基础",
+    "definition": "多元函数各自变量微小变化共同造成的函数总变化。",
+    "expanded": "若 z=f(x,y)，则 dz=(∂z/∂x)y dx+(∂z/∂y)x dy。热力学中下标必须写清固定变量。",
+    "formula": "d<i>z</i>=(∂<i>z</i>/∂<i>x</i>)<sub><i>y</i></sub>d<i>x</i>+(∂<i>z</i>/∂<i>y</i>)<sub><i>x</i></sub>d<i>y</i>",
+    "derivation": "将 z=f(x,y) 作一阶 Taylor 展开并忽略二阶及更高阶小量。",
+    "notation": "x、y 为独立变量；z 为状态函数；下标表示保持不变的变量。",
+    "properties": [
+      "用于状态函数变化",
+      "恰当微分满足混合二阶偏导关系"
+    ],
+    "confusions": "不能遗漏偏导下标。",
+    "related": [
+      "state-function",
+      "euler-chain-relation"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "euler-chain-relation",
+    "zh": "欧拉循环关系",
+    "en": "Euler chain relation",
+    "category": "数学基础",
+    "definition": "三个相互依赖变量的循环偏导乘积等于 −1。",
+    "expanded": "(∂y/∂x)z(∂x/∂z)y(∂z/∂y)x=−1，可由隐函数和链式法则推出。",
+    "formula": "(∂<i>y</i>/∂<i>x</i>)<sub><i>z</i></sub>(∂<i>x</i>/∂<i>z</i>)<sub><i>y</i></sub>(∂<i>z</i>/∂<i>y</i>)<sub><i>x</i></sub>=−1",
+    "derivation": "由复合函数循环链式法则 (∂y/∂x)z(∂x/∂z)y(∂z/∂y)x=∂y/∂y=1，并结合变量逆函数的负号关系得到。",
+    "notation": "x、y、z 为相互依赖变量；每个下标标明求偏导时固定的变量。",
+    "properties": [
+      "热力学偏导变换常用"
+    ],
+    "confusions": "不是化学反应，也不应写成“欧拉链式反应”。",
+    "related": [
+      "total-differential"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "perfect-gas",
+    "zh": "理想气体",
+    "en": "Perfect gas / ideal gas",
+    "category": "气体",
+    "definition": "满足 pV=nRT 的模型气体。",
+    "expanded": "模型忽略分子自身体积和分子间作用。真实气体在低压极限通常趋于理想行为。Atkins 用 perfect gas 区分后续更广义的 ideal mixture 概念。",
+    "formula": "<i>pV</i>=<i>nRT</i>",
+    "derivation": "由 Boyle、Charles 与 Avogadro 经验定律合并得到；比例常数定义为气体常数 R。",
+    "notation": "p 为压力，V 为体积，n 为物质的量，T 为热力学温度，R 为气体常数。",
+    "properties": [
+      "低压高温时近似更好"
+    ],
+    "confusions": "理想气体不是“没有质量的气体”。",
+    "related": [
+      "boyle-law",
+      "charles-law",
+      "avogadro-principle"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "boyle-law",
+    "zh": "Boyle 定律",
+    "en": "Boyle's law",
+    "category": "气体定律",
+    "definition": "固定 n 和 T 时，气体压力与体积成反比，即 pV=constant。",
+    "expanded": "其 p–V 图为双曲等温线；微观上压缩使单位时间内分子撞壁更频繁。",
+    "properties": [
+      "适用于低压极限的真实气体"
+    ],
+    "confusions": "英文为 Boyle，不是 Boyer。",
+    "related": [
+      "perfect-gas",
+      "charles-law"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "charles-law",
+    "zh": "Charles 定律",
+    "en": "Charles's law",
+    "category": "气体定律",
+    "definition": "固定 n 和 p 时，气体体积与热力学温度成正比。",
+    "expanded": "V/T=constant。外推体积趋零给出绝对零度概念，但真实气体会先凝结，不能真正沿直线到 0 K。",
+    "properties": [
+      "必须使用 Kelvin 温标"
+    ],
+    "confusions": "固定 V 时 p∝T 通常称 Gay-Lussac 或 Amontons 定律。",
+    "related": [
+      "perfect-gas",
+      "thermodynamic-temperature"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "thermodynamic-temperature",
+    "zh": "热力学温度",
+    "en": "Thermodynamic temperature",
+    "category": "状态变量",
+    "definition": "以绝对零度为零点、单位为 kelvin 的温标。",
+    "expanded": "0 K 是热力学温标下的下限；摄氏温度与其关系为 T/K=θ/°C+273.15。",
+    "properties": [
+      "符号 T",
+      "单位 K 不写度数符号"
+    ],
+    "confusions": "绝对零度不能仅由 Charles 定律严格证明，气体温标提供历史性的实验外推。",
+    "related": [
+      "charles-law"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "avogadro-principle",
+    "zh": "Avogadro 原理",
+    "en": "Avogadro's principle",
+    "category": "气体定律",
+    "definition": "相同温度和压力下，等体积气体含有相同数目的分子。",
+    "expanded": "对理想气体等价于固定 p、T 时 V∝n，即 V/n=constant。",
+    "properties": [
+      "连接宏观体积与物质的量"
+    ],
+    "confusions": "英文为 Avogadro。",
+    "related": [
+      "perfect-gas"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "combined-gas-law",
+    "zh": "组合气体定律",
+    "en": "Combined gas law",
+    "category": "气体定律",
+    "definition": "同一理想气体样品在两个状态间满足 p₁V₁/(n₁T₁)=p₂V₂/(n₂T₂)。",
+    "expanded": "当物质的量不变时可约去 n。它是理想气体方程在两个状态的比值形式。",
+    "properties": [
+      "便于状态变化计算"
+    ],
+    "confusions": "不能在发生泄漏或反应改变 n 时擅自约去 n。",
+    "related": [
+      "perfect-gas"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "partial-pressure",
+    "zh": "分压",
+    "en": "Partial pressure",
+    "category": "混合气体",
+    "definition": "组分在相同温度和总体积下单独存在时所产生的压力。",
+    "expanded": "对理想混合气体 pJ=xJp；分压定义本身可推广至真实气体，但分压与摩尔分数的简单关系依赖理想性。",
+    "properties": [
+      "各组分贡献可相加时满足 Dalton 定律"
+    ],
+    "confusions": "摩尔分数的一般定义是 xJ=nJ/ntotal。",
+    "related": [
+      "dalton-law"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {
+    "slug": "dalton-law",
+    "zh": "Dalton 分压定律",
+    "en": "Dalton's law of partial pressures",
+    "category": "混合气体",
+    "definition": "理想气体混合物总压等于各组分分压之和。",
+    "expanded": "p=ΣpJ，结合 pJ=xJp 可得 xJ=pJ/p。真实混合气体偏离理想时需用逸度等更精确描述。",
+    "properties": [
+      "适用于理想气体混合物"
+    ],
+    "confusions": "不能把 xJ=pJ/p 当作摩尔分数的普遍定义。",
+    "related": [
+      "partial-pressure",
+      "perfect-gas"
+    ],
+    "source": "第一课：笔记 × 课件 × Atkins"
+  },
+  {"slug":"kinetic-model-gases","zh":"气体动理论","en":"Kinetic model of gases","category":"气体动理论","definition":"用分子的随机运动与弹性碰撞解释气体宏观性质的微观模型。","expanded":"在质点、经典力学和仅发生弹性碰撞等假设下，器壁压强可由分子撞壁的动量通量导出：pV=(1/3)nM⟨v²⟩。","properties":["连接压力与分子速率平方平均","低密度理想气体近似"],"confusions":"温度对应平均平动动能，并不表示所有分子速率相同。","related":["perfect-gas","maxwell-boltzmann-distribution","root-mean-square-speed"],"source":"第三课：PChem1 lec3 课件"},
+  {"slug":"maxwell-boltzmann-distribution","zh":"Maxwell-Boltzmann 速率分布","en":"Maxwell-Boltzmann speed distribution","category":"气体动理论","definition":"热平衡经典理想气体中分子速率的概率密度分布。","expanded":"f(v)=4π[M/(2πRT)]^(3/2)v²exp[-Mv²/(2RT)]，且从零到无穷的积分为1。升温使分布变宽并右移；增大摩尔质量使分布变窄并左移。","properties":["连续概率分布","右偏长尾","由 T 与 M 决定"],"confusions":"f(v) 是概率密度，f(v)dv 或区间积分才是概率。","related":["kinetic-model-gases","root-mean-square-speed","mean-relative-speed"],"source":"第三课：PChem1 lec3 课件"},
+  {"slug":"root-mean-square-speed","zh":"均方根速率","en":"Root-mean-square speed","category":"气体动理论","definition":"分子速率平方的平均值再开平方所得的特征速率。","expanded":"v_rms=√⟨v²⟩=√(3RT/M)，它直接联系平均平动动能。","properties":["大于平均速率与最概然速率","正比于 √T","反比于 √M"],"confusions":"均方根速率不是速率的算术平均。","related":["maxwell-boltzmann-distribution","kinetic-model-gases"],"source":"第三课：PChem1 lec3 课件"},
+  {"slug":"mean-relative-speed","zh":"平均相对速率","en":"Mean relative speed","category":"气体动理论","definition":"一对分子彼此接近或分离的相对速度大小的平均值。","expanded":"对相同分子，v_rel=√2 v_mean；碰撞频率必须使用相对速率，而不是单个分子相对实验室的平均速率。","properties":["决定硬球扫掠体积","同种分子为平均速率的 √2 倍"],"confusions":"不是把两个平均速率直接相加。","related":["maxwell-boltzmann-distribution","mean-free-path"],"source":"第三课：PChem1 lec3 课件"},
+  {"slug":"mean-free-path","zh":"平均自由程","en":"Mean free path","category":"气体动理论","definition":"气体分子相邻两次碰撞之间所走路程的平均值。","expanded":"硬球模型给出 λ=kT/(√2πd²p)。升温或减压会使平均自由程增大，增大碰撞直径会使其减小。","properties":["固定温度时反比于压力","反比于碰撞截面"],"confusions":"它是统计平均，不是每一次碰撞间距都相等。","related":["mean-relative-speed","kinetic-model-gases"],"source":"第三课：PChem1 lec3 课件"},
+  {"slug":"thermodynamic-system","zh":"热力学体系","en":"Thermodynamic system","category":"热力学基础","definition":"从世界中划定并作为研究对象的物质或空间区域。","expanded":"体系以边界同环境分开。敞开体系可交换物质和能量；封闭体系只能交换能量；孤立体系两者均不能交换。","properties":["由宏观状态变量描述","边界可真实或假想"],"confusions":"封闭体系仍可改变体积、相态和组成；封闭且绝热若仍能做功，并非孤立。","related":["state-function","first-law"],"source":"第四课：PChem1 lec34 课件"},
+  {"slug":"work-thermodynamics","zh":"热力学功","en":"Thermodynamic work","category":"第一定律","definition":"由广义力通过广义位移传递的能量。","expanded":"膨胀功满足 δw=-p_ex dV；化学符号约定中，环境对体系做功为正，体系对环境做功为负。","properties":["路径量","不是体系的状态性质"],"confusions":"一般过程应使用外压 p_ex；只有可逆过程才可逐步令 p_ex=p。","related":["heat","first-law","reversible-adiabatic-process"],"source":"第四课：PChem1 lec34 课件"},
+  {"slug":"heat","zh":"热","en":"Heat","category":"第一定律","definition":"由体系与环境之间的温度差引起的能量传递。","expanded":"化学符号约定中，热进入体系 q>0，离开体系 q<0；绝热边界不允许热传递。","properties":["路径量","以温差为驱动力"],"confusions":"体系不‘含有热’；热是传能方式。绝热也不等于等温。","related":["work-thermodynamics","first-law","heat-capacity"],"source":"第四课：PChem1 lec34 课件"},
+  {"slug":"internal-energy","zh":"内能","en":"Internal energy","category":"第一定律","definition":"组成体系的粒子所具有的全部微观能量之和。","expanded":"包括平动、转动、振动、电子能和分子间势能等。U 是广度状态函数，变化量满足 ΔU=q+w。","properties":["状态函数","广度性质","SI 单位 J"],"confusions":"内能通常不等同于温度；理想气体的 U 只依赖 T 是特定模型结论。","related":["first-law","enthalpy","heat-capacity"],"source":"第四课：PChem1 lec34 课件"},
+  {"slug":"first-law","zh":"热力学第一定律","en":"First law of thermodynamics","category":"第一定律","definition":"内能变化等于以热与功两种方式传入体系的能量之和。","expanded":"按化学符号约定 ΔU=q+w；微分形式 dU=δq+δw。孤立的体系与环境总内能守恒。","properties":["能量守恒的热力学表达","定义状态函数内能"],"confusions":"q 与 w 依赖路径，不能仅由始末态确定。","related":["internal-energy","work-thermodynamics","heat","enthalpy"],"source":"第四课：PChem1 lec34 课件"},
+  {"slug":"enthalpy","zh":"焓","en":"Enthalpy","category":"第一定律","definition":"定义为 H=U+pV 的热力学状态函数。","expanded":"封闭体系在恒压且只有 pV 功时 q_p=ΔH；一般变化仍应使用 ΔH=ΔU+Δ(pV)。","properties":["状态函数","广度性质","定压过程计量热效应方便"],"confusions":"q_p=ΔH 是有条件的结论，不是焓的定义。","related":["internal-energy","first-law","heat-capacity"],"source":"第四课：PChem1 lec34 课件"},
+  {"slug":"heat-capacity","zh":"热容","en":"Heat capacity","category":"第一定律","definition":"在指定条件下，体系能量随温度变化的响应系数。","expanded":"C_V=(∂U/∂T)_V，C_p=(∂H/∂T)_p。对理想气体 C_p-C_V=nR，摩尔形式为 C_p,m-C_V,m=R。","properties":["样品热容是广度性质","摩尔热容是强度性质"],"confusions":"跨越较大温区时热容通常随温度变化，应积分而非直接乘 ΔT。","related":["internal-energy","enthalpy","reversible-adiabatic-process"],"source":"第四课：PChem1 lec34 课件"},
+  {"slug":"reversible-adiabatic-process","zh":"可逆绝热过程","en":"Reversible adiabatic process","category":"热力学过程","definition":"既无热交换、又始终无限接近平衡的理想过程。","expanded":"理想气体且热容近似恒定时满足 pV^γ=constant、TV^(γ-1)=constant，其中 γ=C_p,m/C_V,m。","properties":["q=0","膨胀时温度下降","绝热线比等温线陡"],"confusions":"公式不适用于任意不可逆绝热过程。","related":["work-thermodynamics","heat-capacity","first-law"],"source":"第四课：PChem1 lec34 课件"},
+  {"slug":"equation-of-state","zh":"状态方程","en":"Equation of state","category":"气体状态","definition":"联系平衡体系状态变量的数学关系。","expanded":"对固定组成的纯气体可写为 p=f(T,V,n)；理想气体的特例是 pV=nRT。","properties":["减少独立状态变量的数目"],"confusions":"状态方程描述平衡状态，不给出过程速率。","related":["perfect-gas"],"source":"第二课：真实气体课件"},
+  {"slug":"mole-fraction","zh":"摩尔分数","en":"Mole fraction","category":"混合气体","definition":"某组分物质的量占混合物总物质的量的比例。","expanded":"x_J=n_J/n_total，所有组分摩尔分数之和为1。","properties":["无量纲","组成变量"],"confusions":"x_J=p_J/p 只对理想气体混合物直接成立。","related":["partial-pressure"],"source":"第二课：真实气体课件"},
+  {"slug":"compression-factor","zh":"压缩因子","en":"Compression factor","category":"真实气体","definition":"衡量真实气体偏离理想气体程度的无量纲量。","expanded":"Z=pV_m/(RT)。Z<1 常表示吸引占主导，Z>1 常表示排斥与有限体积占主导。","properties":["低压极限趋于1"],"confusions":"曲线斜率正负不能直接等同于吸引或排斥。","related":["virial-coefficient","van-der-waals-equation"],"source":"第二课：真实气体课件"},
+  {"slug":"virial-coefficient","zh":"维里系数","en":"Virial coefficient","category":"真实气体","definition":"真实气体低密度展开中逐阶表征分子关联的温度相关系数。","expanded":"Z=1+B(T)/V_m+C(T)/V_m²+…；B 主要反映二体相互作用，C 进一步包含三体关联。","properties":["依赖温度和物质","可由实验拟合或分子势计算"],"confusions":"维里展开不是任意高次多项式黑箱拟合。","related":["compression-factor","boyle-temperature"],"source":"第二课：真实气体课件与课堂问答"},
+  {"slug":"boyle-temperature","zh":"Boyle 温度","en":"Boyle temperature","category":"真实气体","definition":"第二维里系数等于零的温度。","expanded":"在 T_B 有 B(T_B)=0，故真实气体在低压区的一阶非理想偏差消失。","properties":["低压近似理想的温度标志"],"confusions":"Boyle 温度不是临界温度，也不保证所有压力下均理想。","related":["virial-coefficient"],"source":"第二课：真实气体课件"},
+  {"slug":"critical-point","zh":"临界点","en":"Critical point","category":"相行为","definition":"气液两相差别连续消失的终点。","expanded":"临界等温线上满足 (∂p/∂V_m)_T=0 和 (∂²p/∂V_m²)_T=0。","properties":["由 T_c、p_c、V_c 描述"],"confusions":"高于临界温度仅靠加压不能形成独立液相。","related":["van-der-waals-equation","corresponding-states"],"source":"第二课：真实气体课件"},
+  {"slug":"van-der-waals-equation","zh":"van der Waals 方程","en":"van der Waals equation","category":"真实气体","definition":"以排除体积与分子吸引两项修正理想气体的半经验状态方程。","expanded":"摩尔形式为 [p+a/V_m²](V_m-b)=RT；a 表征吸引，b 表征有效排除体积。","properties":["能定性描述临界行为","低密度高温时回到理想气体"],"confusions":"它不是从理想气体方程唯一严格推出的精确方程。","related":["compression-factor","critical-point","maxwell-construction"],"source":"第二课：真实气体课件"},
+  {"slug":"maxwell-construction","zh":"Maxwell 等面积构造","en":"Maxwell equal-area construction","category":"相行为","definition":"用一条等压线替换 van der Waals 不稳定回线并确定气液共存压力的方法。","expanded":"选择 p_eq 使从 V_l 到 V_g 的 [p(V,T)-p_eq] 积分为零，等价于同温同压下两相化学势相等。","properties":["水平线上下两面积相等","替换机械不稳定区"],"confusions":"回线中间段不是可观测的均匀平衡相。","related":["van-der-waals-equation","critical-point"],"source":"第二课：课堂问答"},
+  {"slug":"reduced-variable","zh":"约化变量","en":"Reduced variable","category":"对应状态","definition":"用物质自身临界常数归一化得到的无量纲状态变量。","expanded":"p_r=p/p_c、T_r=T/T_c、V_r=V_m/V_c，用来描述状态相对自身临界点的位置。","properties":["无量纲","便于跨物质比较"],"confusions":"约化不意味着所有分子结构差异完全消失。","related":["corresponding-states","critical-point"],"source":"第二课：课堂问答"},
+  {"slug":"corresponding-states","zh":"对应状态原理","en":"Principle of corresponding states","category":"对应状态","definition":"不同物质在相同约化状态下具有近似相同宏观行为的经验规律。","expanded":"van der Waals 方程用临界常数约化后不再含物质特异的 a、b 参数，给出其数学原型。","properties":["近似普适","用于压缩因子图"],"confusions":"强极性、氢键和非球形分子通常需要偏心因子等附加修正。","related":["reduced-variable","compression-factor"],"source":"第二课：真实气体课件与课堂问答"}
+]

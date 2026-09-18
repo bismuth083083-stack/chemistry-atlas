@@ -1,0 +1,5 @@
+.ppt-figure{max-width:900px;margin:24px 0;padding:14px;border:1px solid var(--line);background:var(--surface)}
+.ppt-figure img{display:block;width:100%;max-height:420px;object-fit:contain;background:#f7f7f4;border-radius:3px;filter:invert(.92) hue-rotate(180deg)}
+.light .ppt-figure img{filter:none}
+.ppt-figure.ppt-figure-light img{filter:none}
+.ppt-figure figcaption{padding:10px 3px 0;color:var(--muted);font-size:13px}.ppt-figure figcaption small{display:block;margin-top:4px;opacity:.78}

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="物理化学第三课：气体动理论、Maxwell-Boltzmann 速率分布、碰撞频率与平均自由程"
+    />
+    <title>第三课 · 气体动理论</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="pchem.css" />
+    <link rel="stylesheet" href="qa.css" />
+    <link rel="stylesheet" href="math.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#171b1d" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/"
+        ><span class="mark">物</span><span>物理化学知识库</span></a
+      ><label class="search"
+        ><span>⌕</span
+        ><input
+          id="global-search"
+          placeholder="搜索知识库…"
+          aria-label="搜索知识库"
+        /><kbd>⌘ K</kbd></label
+      ><button id="theme" class="icon-button">◐</button>
+    </header>
+    <aside class="sidebar">
+      <nav>
+        <p class="nav-label">知识库</p>
+        <a href="/"><span>◫</span>课程笔记</a
+        ><a href="/terms"><span>Aa</span>双语词条库</a>
+        <p class="nav-label">物理化学 I</p>
+        <a href="/lesson-01"><span>01</span>绪论、数学基础与理想气体</a
+        ><a href="/lesson-02"><span>02</span>真实气体与状态方程</a
+        ><a class="active" href="/lesson-03"
+          ><span>03</span>气体动理论与分子速率</a
+        ><a href="/lesson-04"><span>04</span>热力学第一定律</a>
+      </nav>
+      <div class="privacy">
+        <span>●</span>
+        <div><b>私人知识库</b><small>仅所有者可访问</small></div>
+      </div>
+    </aside>
+    <main class="workspace article">
+      <a class="back" href="/">← 返回课程笔记</a>
+      <header class="article-head">
+        <p class="eyebrow">LECTURE 03 · THE KINETIC MODEL OF GASES</p>
+        <h1>气体动理论与分子速率</h1>
+        <p>从分子撞壁到宏观压力，再到速率分布、碰撞与平均自由程。</p>
+        <div>
+          <span>课件重构</span><span>完整推导</span><span>公式分数化</span
+          ><span>参数首现释义</span>
+        </div>
+      </header>
+
+      <section>
+        <h2>0. 本课的逻辑主线</h2>
+        <p>
+          气体动理论用极少的微观假设解释宏观规律：先把器壁受到的压力还原为分子的动量通量，再用
+          Maxwell-Boltzmann
+          分布说明同一温度下分子并非具有同一速率，最后由相对运动得到碰撞频率和平均自由程。
+        </p>
+        <div class="concept-strip">
+          <span>模型假设</span><b>→</b><span>撞壁动量</span><b>→</b
+          ><span>速率分布</span><b>→</b><span>特征速率</span><b>→</b
+          ><span>碰撞与输运</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>1. 三条模型假设</h2>
+        <p>
+          <a class="term-link" href="/term?slug=kinetic-model-gases"
+            >气体动理论</a
+          >假定：分子以质量
+          <var>m</var>
+          作不停息的随机运动并服从经典力学；分子直径远小于相邻碰撞间的路程，可视为质点；分子除短暂的完全弹性碰撞外不相互作用。最后一条意味着平动动能在碰撞前后守恒。
+        </p>
+        <div class="note">
+          <b>模型的地位</b>
+          <p>
+            它不是逐个追踪真实分子的精确模拟，而是用统计平均把巨大数量的微观运动连接到可测的
+            <var>p</var>、<var>V</var>、<var>T</var>。
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 从碰撞推导压强</h2>
+        <p>
+          设立方容器边长为 <var>L</var>、体积为 <var>V=L³</var>，器壁面积为
+          <var>A=L²</var>。一个分子的 <var>x</var> 方向速度分量为
+          <var>v<sub>x</sub></var
+          >。
+        </p>
+        <div class="derivation-box">
+          <h3>动量变化 → 力 → 压强</h3>
+          <ol>
+            <li>
+              弹性撞壁后 <var>v<sub>x</sub></var> 反向，分子动量变化为
+              <span class="formula compact"
+                >Δp<sub>x,molecule</sub>=−2mv<sub>x</sub></span
+              >，器壁获得大小为 <var>2mv<sub>x</sub></var> 的动量。
+            </li>
+            <li>
+              同一分子连续撞击同一壁面的时间间隔为
+              <span class="frac"
+                ><span>2L</span><span>|v<sub>x</sub>|</span></span
+              >，因此它对壁面的平均力为
+              <span class="frac"
+                ><span>mv<sub>x</sub><sup>2</sup></span
+                ><span>L</span></span
+              >。
+            </li>
+            <li>
+              对 <var>N</var> 个分子求和并除以面积：
+              <div class="formula compact">
+                p=<span class="frac"
+                  ><span>Nm⟨v<sub>x</sub><sup>2</sup>⟩</span
+                  ><span>V</span></span
+                >
+              </div>
+            </li>
+            <li>
+              随机运动各向同性，<var>⟨v<sub>x</sub>²⟩=⟨v<sub>y</sub>²⟩=⟨v<sub>z</sub>²⟩</var>，且
+              <var>v²=v<sub>x</sub>²+v<sub>y</sub>²+v<sub>z</sub>²</var>，故
+              <var>⟨v<sub>x</sub>²⟩=⅓⟨v²⟩</var>。
+            </li>
+          </ol>
+          <div class="formula">
+            pV=<span class="frac"><span>1</span><span>3</span></span
+            >Nm⟨v²⟩=<span class="frac"><span>1</span><span>3</span></span
+            >nM⟨v²⟩
+          </div>
+        </div>
+        <div class="symbol-table" role="table">
+          <div class="symbol-head" role="row">
+            <b>量</b><b>意义</b><b>单位</b>
+          </div>
+          <div role="row">
+            <span>N</span><span>分子总数</span><span>1</span>
+          </div>
+          <div role="row">
+            <span>m</span><span>单个分子的质量</span><span>kg</span>
+          </div>
+          <div role="row">
+            <span>n</span><span>物质的量</span><span>mol</span>
+          </div>
+          <div role="row">
+            <span>M</span><span>摩尔质量，M=N<sub>A</sub>m</span
+            ><span>kg·mol⁻¹</span>
+          </div>
+          <div role="row">
+            <span>⟨v²⟩</span><span>分子速率平方的集合平均</span
+            ><span>m²·s⁻²</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 温度与均方根速率</h2>
+        <p>把动理论结果与 <var>pV=nRT=NkT</var> 比较：</p>
+        <div class="formula">
+          <span class="frac"><span>1</span><span>2</span></span
+          >m⟨v²⟩=<span class="frac"><span>3</span><span>2</span></span
+          >kT
+        </div>
+        <p>
+          所以温度对应分子的平均平动动能，而不是某个分子的瞬时速率。<a
+            class="term-link"
+            href="/term?slug=root-mean-square-speed"
+            >均方根速率</a
+          >定义为速率平方平均值的平方根：
+        </p>
+        <div class="formula">
+          v<sub>rms</sub>=√⟨v²⟩=<span class="sqrt"
+            >√<span class="radicand"
+              ><span class="frac"><span>3RT</span><span>M</span></span></span
+            ></span
+          >
+        </div>
+        <p>
+          <var>T</var> 为热力学温度，<var>R</var> 为摩尔气体常数，<var>M</var>
+          必须以 kg·mol⁻¹ 代入。温度升高使速率按
+          <var>√T</var> 增长；同温下轻分子比重分子快，速率按
+          <span class="frac"><span>1</span><span>√M</span></span> 变化。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 为什么需要速率分布？</h2>
+        <p>
+          碰撞不断交换能量，因此同一温度的分子不可能全都以
+          <var>v<sub>rms</sub></var> 运动。<a
+            class="term-link"
+            href="/term?slug=maxwell-boltzmann-distribution"
+            >Maxwell-Boltzmann 速率分布</a
+          >给出速率落在 <var>v</var> 到 <var>v+dv</var> 之间的分子比例：
+        </p>
+        <div class="formula">
+          f(v)=4π<span class="paren"
+            >(<span class="frac"><span>M</span><span>2πRT</span></span
+            >)</span
+          ><span class="sup-frac"><span>3</span><span>2</span></span>v² exp<span class="paren"
+            >(−<span class="frac"><span>Mv²</span><span>2RT</span></span
+            >)</span
+          >
+        </div>
+        <div class="formula">
+          dP=f(v)dv　　∫<sub>0</sub><sup>∞</sup>f(v)dv=1
+        </div>
+        <div class="symbol-table" role="table">
+          <div class="symbol-head" role="row">
+            <b>量</b><b>意义</b><b>单位</b>
+          </div>
+          <div role="row">
+            <span>v</span><span>速率，即速度矢量的大小</span><span>m·s⁻¹</span>
+          </div>
+          <div role="row">
+            <span>f(v)</span><span>速率的概率密度；曲线本身不是概率</span
+            ><span>s·m⁻¹</span>
+          </div>
+          <div role="row">
+            <span>f(v)dv</span><span>速率位于宽度 dv 的小区间内的概率</span
+            ><span>1</span>
+          </div>
+        </div>
+        <p>
+          曲线从零开始、先升后降且右侧有长尾。升温使曲线变宽、峰值降低并右移；摩尔质量增大使曲线变窄、峰值升高并左移。面积始终为
+          1。
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 三种特征速率不能混用</h2>
+        <div class="law-grid">
+          <article>
+            <b>最概然速率</b>
+            <div>
+              v<sub>mp</sub>=<span class="sqrt"
+                >√<span class="radicand"
+                  ><span class="frac"
+                    ><span>2RT</span><span>M</span></span
+                  ></span
+                ></span
+              >
+            </div>
+            <p>分布曲线峰顶对应的速率；由 df/dv=0 得到。</p>
+          </article>
+          <article>
+            <b>平均速率</b>
+            <div>
+              v<sub>mean</sub>=⟨v⟩=<span class="sqrt"
+                >√<span class="radicand"
+                  ><span class="frac"
+                    ><span>8RT</span><span>πM</span></span
+                  ></span
+                ></span
+              >
+            </div>
+            <p>所有分子速率的算术平均。</p>
+          </article>
+          <article>
+            <b>均方根速率</b>
+            <div>
+              v<sub>rms</sub>=<span class="sqrt"
+                >√<span class="radicand"
+                  ><span class="frac"
+                    ><span>3RT</span><span>M</span></span
+                  ></span
+                ></span
+              >
+            </div>
+            <p>直接连接平均平动动能。</p>
+          </article>
+          <article>
+            <b>大小关系</b>
+            <div>v<sub>mp</sub>&lt;v<sub>mean</sub>&lt;v<sub>rms</sub></div>
+            <p>分布右偏，较快分子对平方平均的权重更大。</p>
+          </article>
+        </div>
+        <div class="derivation-box">
+          <h3>平均值的一般算法</h3>
+          <p>任意只依赖速率的量 <var>g(v)</var> 的集合平均为：</p>
+          <div class="formula compact">
+            ⟨g(v)⟩=∫<sub>0</sub><sup>∞</sup>g(v)f(v)dv
+          </div>
+          <p>
+            分别令 <var>g(v)=v</var> 与
+            <var>g(v)=v²</var>，即可得到平均速率与均方根速率。
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. 平均相对速率</h2>
+        <p>
+          碰撞取决于两个分子彼此接近的速率，而不是各自相对实验室的速率。对相同分子，<a
+            class="term-link"
+            href="/term?slug=mean-relative-speed"
+            >平均相对速率</a
+          >为：
+        </p>
+        <div class="formula">
+          v<sub>rel</sub>=√2v<sub>mean</sub>=<span class="sqrt"
+            >√<span class="radicand"
+              ><span class="frac"><span>16RT</span><span>πM</span></span></span
+            ></span
+          >
+        </div>
+        <p>
+          这个
+          <var>√2</var>
+          不是把两个速率简单相加，而是来自两个独立、各向同性速度矢量之差的统计平均。
+        </p>
+      </section>
+
+      <section>
+        <h2>7. 碰撞频率与平均自由程</h2>
+        <p>
+          把分子近似为直径 <var>d</var> 的硬球，则碰撞截面
+          <var>σ=πd²</var>。单位体积的分子数密度为 <var>𝒩</var>：
+        </p>
+        <div class="formula compact">𝒩=<span class="frac"><span>N</span><span>V</span></span>=<span class="frac"><span>p</span><span>kT</span></span></div>
+        <div class="formula">
+          z<sub>1</sub>=σv<sub>rel</sub>𝒩=√2πd²v<sub>mean</sub
+          ><span class="frac"><span>p</span><span>kT</span></span>
+        </div>
+        <p>
+          <var>z<sub>1</sub></var>
+          是一个分子平均每秒发生的碰撞次数。单位体积、单位时间的总碰撞次数需避免每对分子被计数两次：
+        </p>
+        <div class="formula">
+          Z<sub>11</sub>=<span class="frac"><span>1</span><span>2</span></span
+          >𝒩z<sub>1</sub>
+        </div>
+        <p>
+          <a class="term-link" href="/term?slug=mean-free-path">平均自由程</a>
+          <var>λ</var> 是相邻两次碰撞之间的平均路程：
+        </p>
+        <div class="formula">
+          λ=<span class="frac"
+            ><span>v<sub>mean</sub></span
+            ><span>z<sub>1</sub></span></span
+          >=<span class="frac"><span>kT</span><span>√2πd²p</span></span>
+        </div>
+        <div class="symbol-table" role="table">
+          <div class="symbol-head" role="row">
+            <b>量</b><b>意义</b><b>单位</b>
+          </div>
+          <div role="row">
+            <span>d</span><span>硬球碰撞直径</span><span>m</span>
+          </div>
+          <div role="row">
+            <span>σ</span><span>碰撞截面 πd²</span><span>m²</span>
+          </div>
+          <div role="row">
+            <span>𝒩</span><span>分子数密度</span><span>m⁻³</span>
+          </div>
+          <div role="row">
+            <span>z<sub>1</sub></span
+            ><span>单个分子的碰撞频率</span><span>s⁻¹</span>
+          </div>
+          <div role="row">
+            <span>λ</span><span>两次碰撞间平均路程</span><span>m</span>
+          </div>
+        </div>
+        <p>
+          固定温度时，<var>λ∝1/p</var>：减压使分子更稀疏，碰撞变少，自由程变长。理想硬球模型下
+          <var>λ</var> 与摩尔质量无关，因为速率在
+          <var>z<sub>1</sub></var> 中约去。
+        </p>
+      </section>
+
+      <section>
+        <h2>8. 复习检查表</h2>
+        <ol class="check-list">
+          <li>区分速度矢量 <var>v⃗</var> 与速率 <var>v</var>。</li>
+          <li>
+            压强来自单位时间、单位面积的动量传递；各向同性给出关键因子
+            <span class="frac"><span>1</span><span>3</span></span
+            >。
+          </li>
+          <li><var>f(v)</var> 是概率密度，只有积分面积才是概率。</li>
+          <li>
+            三种特征速率的系数分别是 2、<span class="frac"
+              ><span>8</span><span>π</span></span
+            >、3，大小顺序不能反。
+          </li>
+          <li>碰撞问题使用相对速率；总碰撞对数要除以 2。</li>
+          <li>所有含 <var>M</var> 的 SI 公式都应代入 kg·mol⁻¹。</li>
+        </ol>
+      </section>
+      <footer class="source">
+        主要来源：《PChem1_lec3_Kinetic models of gases
+        20260915》课程课件；按课堂逻辑重构，并补全分布函数、平均值与碰撞量之间的推导联系。
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第二课：酸碱与分子轨道 · 有机化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="ppt-figures.css">
+<link rel="stylesheet" href="lecture-02.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#171b1d">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html"><span class="mark">C</span><span>有机化学知识库</span></a>
+<label class="search"><span>⌕</span><input id="global-search" placeholder="搜索笔记、中文名或英文名…" aria-label="搜索知识库"><kbd>⌘ K</kbd></label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html"><span>◫</span>课程笔记</a>
+<a href="terms.html"><span>Aa</span>双语词条库</a>
+<p class="nav-label">有机化学 I</p>
+<a href="lesson-01.html"><span>01</span>介绍与回顾</a>
+<a class="active" href="lesson-02.html"><span>02</span>酸碱与分子轨道</a>
+<a href="lesson-03.html"><span>03</span>酸碱理论</a>
+<a href="lesson-04.html"><span>04</span>烷烃与系统命名</a>
+<a href="lesson-05.html"><span>05</span>异构、构象与反应</a>
+<a href="resonance.html"><span>↔</span>共振专题</a>
+</nav>
+<div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+</aside>
+
+<main class="workspace article">
+<a class="back" href="index.html">← 返回课程笔记</a>
+<header class="article-head">
+<p class="eyebrow">LECTURE 02 · 2026/09/10</p>
+<h1>酸碱、分子轨道与分子结构</h1>
+<p>Lewis acid–base chemistry, molecular orbitals, hybridization, geometry and polarity</p>
+<div><span>课堂速记修订</span><span>原理补充</span><span>词条交叉链接</span><span>PPT 与教材图示</span></div>
+</header>
+
+<section class="topic-jump">
+<h2>共振内容已独立</h2>
+<p>本课涉及的质子化亚胺、乙酸根、硝基甲烷以及主要/次要贡献式已移回独立专题，避免与分子轨道主线重复。</p>
+<a class="ghost-button" href="resonance.html">进入 Resonance &amp; Electron Delocalization 专题 →</a>
+</section>
+
+<section>
+<h2>1. Lewis 酸碱与亲电/亲核性</h2>
+<p><a class="term-link" href="term.html?slug=lewis-acid">Lewis 酸（Lewis acid）</a>接受电子对，<a class="term-link" href="term.html?slug=lewis-base">Lewis 碱（Lewis base）</a>提供电子对。形成配位键时，弯箭头必须从电子对供体画向受体：例如 NH₃ 的氮孤对指向 BF₃ 的缺电子硼。</p>
+<div class="formula"><span>Lewis base:</span> B: + A ⟶ B→A</div>
+<p>这里 B: 表示具有可供给电子对的 Lewis 碱，A 表示具有空轨道、能够容纳电子对的 Lewis 酸；箭头 B→A 记录电子对的来源，不表示键只在一个方向上存在。</p>
+<p><a class="term-link" href="term.html?slug=nucleophile">亲核体（nucleophile）</a>与<a class="term-link" href="term.html?slug=electrophile">亲电体（electrophile）</a>描述的是具体反应中的电子源和电子汇。Lewis 酸碱性更接近“结合一对电子是否有利”的热力学性质；亲核性、亲电性则还受反应路径、位阻、溶剂化、反离子和温度影响，因此更偏动力学。</p>
+<div class="property-grid">
+<article><b>Lewis 碱但亲核性弱</b><p>叔丁醇盐碱性强，但位阻大；面对受阻底物时常更倾向夺取质子并发生消除，而不是直接进攻碳中心。</p></article>
+<article><b>Lewis 酸但不按“亲电试剂”讨论</b><p>金属离子可以接受配体孤对形成配位键；若问题不涉及有机底物上的成键步骤，通常直接用 Lewis 酸描述更清楚。</p></article>
+<article><b>同一粒子可有两种身份</b><p>OH⁻ 是 Lewis 碱；在与卤代烷形成 C–O 键的取代反应中，它同时是亲核体。名称取决于讨论的是性质还是反应角色。</p></article>
+<article><b>轨道语言</b><p>亲核体把已占据轨道中的电子密度提供给亲电体的低能空轨道。这个观点将在 HOMO–LUMO 部分统一解释。</p></article>
+</div>
+</section>
+
+<section>
+<h2>2. 分子轨道从哪里来：LCAO</h2>
+<p><a class="term-link" href="term.html?slug=molecular-orbital">分子轨道（molecular orbital, MO）</a>不是某一根键周围的固定“电子云外壳”，而是允许电子在整个分子中占据的波函数。最简单的近似是原子轨道线性组合（linear combination of atomic orbitals, LCAO）：</p>
+<div class="formula"><i>ψ</i><sub>+</sub> = <i>c</i><sub>A</sub><i>φ</i><sub>A</sub> + <i>c</i><sub>B</sub><i>φ</i><sub>B</sub></div>
+<div class="formula"><i>ψ</i><sub>−</sub> = <i>c</i><sub>A</sub><i>φ</i><sub>A</sub> − <i>c</i><sub>B</sub><i>φ</i><sub>B</sub></div>
+<p>第一次出现的符号：<i>ψ</i> 是形成后的分子轨道波函数；<i>φ</i><sub>A</sub>、<i>φ</i><sub>B</sub> 是原子 A、B 的原子轨道；<i>c</i><sub>A</sub>、<i>c</i><sub>B</sub> 是组合系数，其大小反映各原子轨道对该 MO 的贡献，正负号反映相位关系。波函数本身可正可负，但可观测的电子概率密度与 |<i>ψ</i>|² 有关。</p>
+<figure class="ppt-figure"><img src="assets/terms/orbital-phase-node.webp" alt="2p 轨道电子密度、节点与三个方向" loading="lazy" decoding="async"><figcaption>2p 轨道具有穿过原子核的节点平面；轨道的正、负相位决定叠加时是增强还是抵消。<small>图源：Wade《Organic Chemistry》第 8 版，第 5 页 · 教材局部截图</small></figcaption></figure>
+<div class="property-grid">
+<article><b><a class="term-link" href="term.html?slug=bonding-orbital">成键轨道</a> <span class="en">bonding MO</span></b><p>同相叠加使两核之间的电子密度增加，电子同时受到两个原子核吸引，轨道能量低于原来的原子轨道。</p></article>
+<article><b><a class="term-link" href="term.html?slug=antibonding-orbital">反键轨道</a> <span class="en">antibonding MO</span></b><p>异相叠加在两核之间产生节点，削弱核间电子密度，轨道能量升高；用星号标记为 σ* 或 π*。</p></article>
+</div>
+<div class="note"><b>相位不是电荷</b><p>轨道图中不同颜色或“+ / −”表示波函数相位。两个叶瓣都描述电子出现的区域，不能把它们读成带正电和带负电的两半。</p></div>
+</section>
+
+<section>
+<h2>3. σ、π 与轨道重叠</h2>
+<p>两个轨道若沿核间轴端对端重叠，得到 σ 与 σ* 轨道；若两个平行 p 轨道侧向重叠，得到 π 与 π* 轨道。σ 轨道绕核间轴旋转时性质不变，π 轨道包含核间轴所在的节点平面。</p>
+<p>重叠必须同时满足三个条件：轨道在空间上能够接触、对称性匹配、能量相近。仅仅“靠得近”并不保证形成强键；如果相位抵消或能量差过大，稳定化会很弱。</p>
+<div class="property-grid">
+<article><b>乙烷 C–C σ 键</b><p>两个近似 sp³ 杂化轨道端对端重叠。绕 C–C 轴旋转不要求破坏这根 σ 键，因此可形成不同构象。</p></article>
+<article><b>乙烯 C=C</b><p>一根 σ 键固定原子骨架，两个未杂化 p 轨道侧向重叠形成 π 键。旋转 90° 会使 p 轨道失去平行重叠，所以双键旋转受限。</p></article>
+</div>
+</section>
+
+<section>
+<h2>4. 电子如何填入 MO：键级与磁性</h2>
+<p>电子按能量从低到高占据分子轨道，并遵循构造原理、泡利不相容原理和洪特规则。把电子放入成键轨道会增强键；放入反键轨道会抵消一部分成键作用。</p>
+<div class="formula"><a class="term-link" href="term.html?slug=bond-order">BO</a> = ½(<i>N</i><sub>b</sub> − <i>N</i><sub>ab</sub>)</div>
+<p><i>N</i><sub>b</sub> 是成键轨道中的电子数，<i>N</i><sub>ab</sub> 是反键轨道中的电子数，BO（bond order）是 MO 模型给出的键级。H₂ 有两个成键电子、没有反键电子，BO = 1；假想的 He₂ 同时有两个成键和两个反键电子，BO = 0，因此没有净成键稳定化。</p>
+<p>MO 理论还能够把磁性直接连到电子占据：只要存在未成对电子，粒子就具有顺磁性。O₂ 基态的两个电子分别占据两个简并 π* 轨道，因此表现为顺磁性；这是简单 Lewis 结构无法自然显示、但 MO 图能解释的经典证据。</p>
+</section>
+
+<section>
+<h2>5. HOMO–LUMO：把轨道和有机反应连接起来</h2>
+<p><a class="term-link" href="term.html?slug=homo">HOMO</a> 是最高占据分子轨道（highest occupied molecular orbital），通常代表最容易提供电子的部分；<a class="term-link" href="term.html?slug=lumo">LUMO</a> 是最低未占据分子轨道（lowest unoccupied molecular orbital），通常是最容易接受电子的空轨道。</p>
+<div class="formula"><span>关键相互作用：</span> HOMO<sub>Nu</sub> ⟶ LUMO<sub>E</sub></div>
+<p>Nu 表示亲核体，E 表示亲电体。反应更容易发生在 HOMO 与 LUMO 空间重叠良好、对称性匹配且能级差较小时。Lewis 酸碱用“电子对供受”描述结果；前线轨道理论则进一步解释电子从哪个轨道来、进入哪个轨道以及为什么从某个方向进攻。</p>
+<div class="property-grid">
+<article><b>羰基加成</b><p>亲核体的孤对 HOMO 与羰基的 π* LUMO 相互作用。π* 在羰基碳一端具有可接受电子密度的轨道系数，因此进攻发生在碳而不是氧。</p></article>
+<article><b>SN2 反应</b><p>亲核体 HOMO 进入 C–X 键的 σ* LUMO。背面进攻能与 σ* 的大叶瓣有效重叠，同时推动 C–X 键断裂。</p></article>
+</div>
+</section>
+
+<section>
+<h2>6. 杂化：局域成键的实用模型</h2>
+<p><a class="term-link" href="term.html?slug=hybrid-orbital">杂化轨道（hybrid orbital）</a>是同一原子上的 s、p 轨道进行数学线性组合后得到的定向轨道。它适合描述局域 σ 键与孤对方向；MO 则更自然地描述跨越多个原子的离域、成键与反键轨道。两者是不同层级的模型，不互相否定。</p>
+<figure class="ppt-figure"><img src="assets/terms/hybrid-orbital-basis.webp" alt="三个相互垂直的 2p 轨道和节点平面" loading="lazy" decoding="async"><figcaption>三个互相垂直的 2p 轨道提供杂化前的方向基础；形成 π 键时必须保留未杂化 p 轨道。<small>图源：Wade《Organic Chemistry》第 8 版，第 5 页 · 教材局部截图</small></figcaption></figure>
+<div class="property-grid">
+<article><b>sp：两个杂化轨道</b><p>电子域近似线形，理想夹角 180°；留下两个互相垂直的未杂化 p 轨道，可形成两个 π 键，例如炔碳。</p></article>
+<article><b>sp²：三个杂化轨道</b><p>电子域近似平面三角形，理想夹角 120°；留下一个垂直于平面的 p 轨道，例如烯烃和羰基碳。</p></article>
+<article><b>sp³：四个杂化轨道</b><p>电子域近似四面体，理想夹角 109.5°；可用于描述 CH₄ 的四根 σ 键，以及 NH₃、H₂O 中的键与孤对。</p></article>
+<article><b>s 成分与键的性质</b><p>sp、sp²、sp³ 的 s 成分依次约为 50%、33%、25%。s 成分越高，电子平均越靠近原子核，相关键通常更短、更强。</p></article>
+</div>
+</section>
+
+<section>
+<h2>7. VSEPR、分子几何与极性</h2>
+<p><a class="term-link" href="term.html?slug=vsepr">VSEPR 模型</a>先数中心原子周围的电子域：单键、双键或三键各算一个成键域，每一对孤对电子算一个孤对域。先得到电子域几何，再忽略孤对的位置写出分子几何。</p>
+<figure class="ppt-figure"><img src="assets/terms/vsepr-lewis.webp" alt="甲烷、氨、水和甲醇的 Lewis 结构" loading="lazy" decoding="async"><figcaption>Lewis 结构是电子域计数的起点：CH₄、NH₃、H₂O 都有四个电子域，但分子几何分别为四面体、三角锥和折线形。<small>图源：第一章课堂 PPT，第 26 页 · 局部截图</small></figcaption></figure>
+<p>排斥强弱通常为：孤对–孤对 &gt; 孤对–成键对 &gt; 成键对–成键对。因此 NH₃ 的 H–N–H 键角约为 107°，H₂O 的 H–O–H 键角约为 104.5°，都小于理想四面体角 109.5°。</p>
+<p>分子偶极矩是所有键偶极与孤对贡献的矢量和。具有极性键并不保证整个分子有净偶极：CO₂ 的两个 C=O 键偶极在线形结构中抵消，而折线形 H₂O 中不能抵消。判断极性必须同时看键的极性与三维几何。</p>
+</section>
+
+<section>
+<h2>8. 三套模型如何分工</h2>
+<div class="property-grid">
+<article><b>Lewis 结构</b><p>最快速地记录价电子、形式电荷、孤对与连接方式；适合反应机理记账，但不能完整表示真实电子密度。</p></article>
+<article><b>杂化 + VSEPR</b><p>适合预测局域 σ 键方向、电子域和近似几何；对过渡态、离域体系和精确能量的解释能力有限。</p></article>
+<article><b>分子轨道理论</b><p>把电子放入遍布分子的轨道，可解释成键/反键、离域、磁性和前线轨道控制的反应选择性。</p></article>
+<article><b>使用原则</b><p>先用最简单的模型解决问题；当 Lewis 图或杂化无法解释实验现象时，再提升到 MO 语言，而不是把任何一个模型当成唯一“真实图像”。</p></article>
+</div>
+</section>
+
+<section class="course-qa">
+<p class="eyebrow">QUESTIONS RECORDED BEFORE NOTE SUBMISSION</p>
+<h2>9. 课程问答</h2>
+<p>以下问题来自本次课堂速记中的原始疑问，答案在整理笔记时补全；它们是固定的课程记录，不是聊天输入框。</p>
+<div class="qa-list">
+<article>
+<h3><span>Q1</span>亲电/亲核性和 Lewis 酸碱是同一组概念吗？</h3>
+<div><b>A</b><p>不是完全相同，但电子流方向一致：Lewis 碱与亲核体提供电子对，Lewis 酸与亲电体接受电子对。Lewis 酸碱性侧重形成加合物是否有利，偏热力学；亲核性和亲电性侧重某条反应路径进行得多快、从哪里发生，偏动力学并明显受溶剂、位阻、反离子和底物影响。因此多数亲核体是 Lewis 碱，但强碱不一定是强亲核体。</p></div>
+</article>
+<article>
+<h3><span>Q2</span>轨道相位是什么？怎样判断？它是怎么“形成”的？</h3>
+<div><b>A</b><p>相位是波函数的正负号，不是正、负电荷。单个轨道整体乘以 −1 不改变任何可观测量；真正有意义的是两个轨道重叠区域的相对相位。同号区域相长叠加，形成成键组合；异号区域相消叠加并产生节点，形成反键组合。轨道图中的两种颜色通常只是标记相位。相位不是后来附加的性质，而是波函数作为波动解本身的一部分。</p></div>
+</article>
+<article>
+<h3><span>Q3</span>节点到底是什么？</h3>
+<div><b>A</b><p>节点（node）是波函数 <i>ψ</i> = 0 的点、线或面，因此该处的电子概率密度 |<i>ψ</i>|² 也为 0。p 轨道穿过原子核的平面是角节点；反键 MO 在两核之间还会新增节点。节点数和位置决定轨道的形状、相位分区与能量，不能把节点理解成“电子运动时绕开的固定障碍”。</p></div>
+</article>
+<article>
+<h3><span>Q4</span>p–p 和 s–p 重叠都能形成 σ 键吗？</h3>
+<div><b>A</b><p>可以，只要重叠沿核间轴发生、对称性匹配并且轨道能量差不过大。s–s、s–p 和 p–p 的端对端重叠都能形成 σ 轨道；两个平行 p 轨道的侧向重叠才形成 π 轨道。若 p 轨道方向与核间轴不匹配，正负叶瓣的贡献可能抵消，净重叠接近零。</p></div>
+</article>
+<article>
+<h3><span>Q5</span>“有极性键”能否直接推出“分子有极性”？</h3>
+<div><b>A</b><p>不能。入门模型中，极性键通常是产生分子偶极的必要来源，但不是充分条件；还必须把各键偶极按三维方向作矢量相加。CO₂ 含极性 C=O 键，但线形对称结构使偶极抵消，所以分子无极性；H₂O 为折线形，两个 O–H 键偶极不能抵消，因此分子有极性。原速记中的“充分非必要”应改为“通常必要但不充分”。</p></div>
+</article>
+</div>
+</section>
+
+<footer class="source">来源：2026-09-10 课堂速记；Wade《Organic Chemistry》第 8 版第一章；Organic Chemistry I 第一章课堂 PPT。共振内容已独立至专题页。</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

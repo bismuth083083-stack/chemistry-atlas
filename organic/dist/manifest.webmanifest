@@ -1,0 +1,9 @@
+{
+  "name":"有机化学知识库",
+  "short_name":"有机化学",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#171b1d",
+  "theme_color":"#82b8d8",
+  "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}

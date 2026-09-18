@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="物理化学第四课：热力学基本概念与第一定律"
+    />
+    <title>第四课 · 热力学第一定律</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="pchem.css" />
+    <link rel="stylesheet" href="qa.css" />
+    <link rel="stylesheet" href="math.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#171b1d" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/"
+        ><span class="mark">物</span><span>物理化学知识库</span></a
+      ><label class="search"
+        ><span>⌕</span
+        ><input
+          id="global-search"
+          placeholder="搜索知识库…"
+          aria-label="搜索知识库"
+        /><kbd>⌘ K</kbd></label
+      ><button id="theme" class="icon-button">◐</button>
+    </header>
+    <aside class="sidebar">
+      <nav>
+        <p class="nav-label">知识库</p>
+        <a href="/"><span>◫</span>课程笔记</a
+        ><a href="/terms"><span>Aa</span>双语词条库</a>
+        <p class="nav-label">物理化学 I</p>
+        <a href="/lesson-01"><span>01</span>绪论、数学基础与理想气体</a
+        ><a href="/lesson-02"><span>02</span>真实气体与状态方程</a
+        ><a href="/lesson-03"><span>03</span>气体动理论与分子速率</a
+        ><a class="active" href="/lesson-04"><span>04</span>热力学第一定律</a>
+      </nav>
+      <div class="privacy">
+        <span>●</span>
+        <div><b>私人知识库</b><small>仅所有者可访问</small></div>
+      </div>
+    </aside>
+    <main class="workspace article">
+      <a class="back" href="/">← 返回课程笔记</a>
+      <header class="article-head">
+        <p class="eyebrow">LECTURE 04 · THE FIRST LAW</p>
+        <h1>热力学基本概念与第一定律</h1>
+        <p>体系、状态与过程；功、热、内能、焓、热容及可逆绝热变化。</p>
+        <div>
+          <span>课件重构</span><span>符号约定</span><span>完整推导</span
+          ><span>参数首现释义</span>
+        </div>
+      </header>
+
+      <section>
+        <h2>0. 热力学回答什么</h2>
+        <p>
+          <a class="term-link" href="/term?slug=thermodynamics">热力学</a
+          >研究大量粒子构成体系的宏观平衡性质，追踪物理过程、相变与化学反应中的能量转化，并判断变化的方向与限度。它只依赖始末状态，不提供微观反应机理或速率。
+        </p>
+        <div class="law-grid">
+          <article>
+            <b>第零定律</b>
+            <div>定义温度</div>
+            <p>热平衡具有传递性。</p>
+          </article>
+          <article>
+            <b>第一定律</b>
+            <div>定义内能</div>
+            <p>能量守恒，热与功是传能方式。</p>
+          </article>
+          <article>
+            <b>第二定律</b>
+            <div>定义熵</div>
+            <p>确定自发方向与平衡限度。</p>
+          </article>
+          <article>
+            <b>第三定律</b>
+            <div>熵的基准</div>
+            <p>给出绝对熵的数值起点。</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>1. 体系、环境与边界</h2>
+        <p>
+          <a class="term-link" href="/term?slug=thermodynamic-system">体系</a
+          >是研究时划定的对象；体系以外与它相关的部分称环境，两者之间是边界。
+        </p>
+        <div class="law-grid">
+          <article>
+            <b>敞开体系</b>
+            <div>物质 + 能量</div>
+            <p>两者均可跨越边界。</p>
+          </article>
+          <article>
+            <b>封闭体系</b>
+            <div>只交换能量</div>
+            <p>不能交换物质，但体积、相态和组成仍可能改变。</p>
+          </article>
+          <article>
+            <b>孤立体系</b>
+            <div>均不交换</div>
+            <p>既无物质交换，也无能量交换。</p>
+          </article>
+          <article>
+            <b>注意</b>
+            <div>封闭 + 绝热 ≠ 必然孤立</div>
+            <p>若仍能以功交换能量，就还不是孤立体系。</p>
+          </article>
+        </div>
+        <p>
+          用
+          <var>p</var
+          >、<var>T</var>、<var>V</var>、<var>n</var>、密度及相组成等宏观量描述体系。广度性质随体系大小成比例变化，如
+          <var>V</var>、<var>U</var>；强度性质与物质量无关，如
+          <var>p</var>、<var>T</var>、密度和摩尔体积 <var>V<sub>m</sub></var
+          >。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 状态、路径与过程</h2>
+        <p>
+          <a class="term-link" href="/term?slug=state-function">状态函数</a
+          >只由当前平衡状态决定，与体系如何到达该状态无关；<var>U</var>、<var>H</var>、<var>p</var>、<var>V</var>、<var
+            >T</var
+          >
+          都是状态函数。路径是中间状态的序列，过程则描述这条路径。
+        </p>
+        <div class="comparison-grid">
+          <article>
+            <h3>可逆过程</h3>
+            <p>始终无限接近平衡，只需无穷小改变即可反向；它是理想极限。</p>
+          </article>
+          <article>
+            <h3>不可逆过程</h3>
+            <p>由有限驱动力推动，具有明确时间方向；真实过程通常如此。</p>
+          </article>
+        </div>
+        <p>
+          常用限制：绝热 <var>q=0</var>；等压 <var>p=constant</var>；等温
+          <var>T=constant</var>；等容
+          <var>V=constant</var
+          >；循环过程最终回到初态，所有状态函数的总变化为零。
+        </p>
+      </section>
+
+      <section>
+        <h2>3. 功、热与符号约定</h2>
+        <p>
+          <a class="term-link" href="/term?slug=work-thermodynamics">功</a>和<a
+            class="term-link"
+            href="/term?slug=heat"
+            >热</a
+          >都不是体系“含有”的性质，而是跨越边界的能量传递方式。本站采用化学约定：能量进入体系为正，离开体系为负。
+        </p>
+        <div class="law-grid">
+          <article>
+            <b>q &gt; 0</b>
+            <div>体系吸热</div>
+            <p>能量以热的形式进入体系。</p>
+          </article>
+          <article>
+            <b>q &lt; 0</b>
+            <div>体系放热</div>
+            <p>能量以热的形式离开体系。</p>
+          </article>
+          <article>
+            <b>w &gt; 0</b>
+            <div>环境对体系做功</div>
+            <p>压缩通常属于这种情况。</p>
+          </article>
+          <article>
+            <b>w &lt; 0</b>
+            <div>体系对环境做功</div>
+            <p>膨胀通常属于这种情况。</p>
+          </article>
+        </div>
+        <div class="note">
+          <b>绝热与等温不要混淆</b>
+          <p>
+            绝热表示 <var>q=0</var>，不是温度不变；等温表示
+            <var>ΔT=0</var>，过程中仍可能有热交换。
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 内能与第一定律</h2>
+        <p>
+          <a class="term-link" href="/term?slug=internal-energy">内能</a>
+          <var>U</var>
+          是体系内所有微观能量之和，包括平动、转动、振动、电子能以及分子间势能等。它是广度状态函数，摩尔内能
+          <var>U<sub>m</sub></var> 是强度性质：
+        </p>
+        <div class="formula compact">
+          U<sub>m</sub>=<span class="frac"><span>U</span><span>n</span></span>
+        </div>
+        <div class="formula">ΔU=U<sub>f</sub>−U<sub>i</sub>=q+w</div>
+        <p>
+          这就是<a class="term-link" href="/term?slug=first-law"
+            >热力学第一定律</a
+          >。微小变化写作：
+        </p>
+        <div class="formula">dU=δq+δw</div>
+        <p>
+          <var>dU</var> 是恰当微分，因为
+          <var>U</var> 是状态函数；<var>δq</var>、<var>δw</var>
+          依赖路径，故用不恰当微分符号。孤立的“体系 + 环境”满足：
+        </p>
+        <div class="formula">
+          ΔU<sub>total</sub>=ΔU<sub>system</sub>+ΔU<sub>surroundings</sub>=0
+        </div>
+      </section>
+
+      <section>
+        <h2>5. 膨胀功</h2>
+        <p>
+          活塞面积为 <var>A</var>，外压为 <var>p<sub>ex</sub></var
+          >，活塞移动 <var>dz</var> 时 <var>dV=A dz</var>。体系膨胀对环境做功：
+        </p>
+        <div class="derivation-box">
+          <h3>一般表达式</h3>
+          <div class="formula compact">
+            δw=−Fdz=−p<sub>ex</sub>A dz=−p<sub>ex</sub>dV
+          </div>
+          <div class="formula compact">
+            w=−∫<sub>V<sub>i</sub></sub
+            ><sup>V<sub>f</sub></sup
+            >p<sub>ex</sub>dV
+          </div>
+          <p>
+            <var>p<sub>ex</sub></var>
+            是外界施加的压力；功由实际对抗的外压决定，不能无条件用体系压力代替。
+          </p>
+        </div>
+        <div class="law-grid">
+          <article>
+            <b>自由膨胀</b>
+            <div>p<sub>ex</sub>=0 ⇒ w=0</div>
+            <p>气体向真空膨胀，没有推动外界。</p>
+          </article>
+          <article>
+            <b>恒外压</b>
+            <div>w=−p<sub>ex</sub>ΔV</div>
+            <p>数值等于 p-V 图下的矩形面积。</p>
+          </article>
+        </div>
+        <p>
+          可逆膨胀的每一步都有 <var>p<sub>ex</sub>=p</var>。一摩尔或
+          <var>n</var> mol 理想气体等温可逆膨胀时：
+        </p>
+        <div class="formula">
+          w<sub>rev,T</sub>=−∫<sub>V<sub>i</sub></sub
+          ><sup>V<sub>f</sub></sup
+          >p dV=−nRT∫<sub>V<sub>i</sub></sub
+          ><sup>V<sub>f</sub></sup
+          ><span class="frac"><span>dV</span><span>V</span></span
+          >=−nRT ln<span class="frac"
+            ><span>V<sub>f</sub></span
+            ><span>V<sub>i</sub></span></span
+          >
+        </div>
+        <p>
+          同样始末态之间，可逆膨胀使体系对环境输出的功最大；可逆压缩则使环境所需输入功最小。
+        </p>
+      </section>
+
+      <section>
+        <h2>6. 定容热与热容</h2>
+        <p>
+          封闭体系若只有膨胀功，在定容条件下 <var>dV=0</var>，因而
+          <var>w=0</var>：
+        </p>
+        <div class="formula">ΔU=q<sub>V</sub></div>
+        <p>
+          <a class="term-link" href="/term?slug=heat-capacity">定容热容</a
+          >定义为：
+        </p>
+        <div class="formula">
+          C<sub>V</sub>=<span class="derivative"
+            >(<span class="frac"><span>∂U</span><span>∂T</span></span
+            >)<sub>V</sub></span
+          >　　dU=C<sub>V</sub>dT
+        </div>
+        <p>
+          若温区内 <var>C<sub>V</sub></var> 可视为常数，则：
+        </p>
+        <div class="formula">ΔU=q<sub>V</sub>=C<sub>V</sub>ΔT</div>
+        <p>
+          <var>C<sub>V</sub></var> 是整个样品的广度热容，单位 J·K⁻¹；摩尔热容
+          <var>C<sub>V,m</sub></var> 是强度性质，定义为
+          <span class="frac"
+            ><span>C<sub>V</sub></span
+            ><span>n</span></span
+          >，单位 J·mol⁻¹·K⁻¹。
+        </p>
+      </section>
+
+      <section>
+        <h2>7. 量热法</h2>
+        <p>
+          弹式量热计把反应限制在刚性定容容器中，并尽量与外界绝热。反应释放或吸收的能量引起量热计温度变化：
+        </p>
+        <div class="formula">
+          q<sub>cal</sub>=C<sub>cal</sub>ΔT　　q<sub>reaction</sub>=−q<sub
+            >cal</sub
+          >
+        </div>
+        <p>
+          <var>C<sub>cal</sub></var>
+          是经已知电功或标准物质校准得到的量热计常数。定容且无其他功时，反应热对应
+          <var>ΔU</var
+          >。符号必须区分“反应体系”和“量热计”：量热计升温意味着量热计吸热，而反应放热。
+        </p>
+      </section>
+
+      <section>
+        <h2>8. 焓与定压热</h2>
+        <p><a class="term-link" href="/term?slug=enthalpy">焓</a>定义为：</p>
+        <div class="formula">H≡U+pV</div>
+        <div class="derivation-box">
+          <h3>为什么定压热等于焓变</h3>
+          <p>封闭体系、恒压且只有 <var>pV</var> 功时：</p>
+          <div class="formula compact">ΔU=q<sub>p</sub>−pΔV</div>
+          <div class="formula compact">q<sub>p</sub>=ΔU+pΔV=Δ(U+pV)=ΔH</div>
+          <p>
+            因此
+            <var>q<sub>p</sub>=ΔH</var> 只在这些条件满足时成立；它不是焓的定义。
+          </p>
+        </div>
+        <div class="formula">ΔH=ΔU+Δ(pV)　　恒压时：ΔH=ΔU+pΔV</div>
+        <p>理想气体反应在同一温度下可写为：</p>
+        <div class="formula">ΔH=ΔU+Δn<sub>g</sub>RT</div>
+        <p>
+          <var>Δn<sub>g</sub></var>
+          是气态产物计量数总和减去气态反应物计量数总和，只计算气体。
+        </p>
+      </section>
+
+      <section>
+        <h2>9. 定压热容与温度积分</h2>
+        <div class="formula">
+          C<sub>p</sub>=<span class="derivative"
+            >(<span class="frac"><span>∂H</span><span>∂T</span></span
+            >)<sub>p</sub></span
+          >　　dH=C<sub>p</sub>dT
+        </div>
+        <p>
+          若
+          <var>C<sub>p</sub></var>
+          近似恒定，<var>ΔH=q<sub>p</sub>=C<sub>p</sub>ΔT</var>。若随温度变化，则必须积分：
+        </p>
+        <div class="formula">
+          ΔH=∫<sub>T<sub>1</sub></sub
+          ><sup>T<sub>2</sub></sup
+          >C<sub>p</sub>(T)dT
+        </div>
+        <p>例如：</p>
+        <div class="formula compact">
+          C<sub>p</sub>=a+bT+<span class="frac"
+            ><span>c</span><span>T²</span></span
+          >
+        </div>
+        <div class="formula">
+          ΔH=a(T<sub>2</sub>−T<sub>1</sub>)+<span class="frac"
+            ><span>b</span><span>2</span></span
+          >(T<sub>2</sub><sup>2</sup>−T<sub>1</sub><sup>2</sup>)−c<span
+            class="paren"
+            >(<span class="frac"
+              ><span>1</span><span>T<sub>2</sub></span></span
+            >−<span class="frac"
+              ><span>1</span><span>T<sub>1</sub></span></span
+            >)</span
+          >
+        </div>
+        <p>
+          <var>a</var>、<var>b</var>、<var>c</var>
+          是给定物质的经验参数，其单位应使每一项均具有热容单位。
+        </p>
+      </section>
+
+      <section>
+        <h2>10. 理想气体的 C<sub>p</sub> 与 C<sub>V</sub></h2>
+        <p>
+          理想气体的内能只依赖温度，即 <var>U=U(T)</var>；又有
+          <var>H=U+nRT</var>。对温度求导：
+        </p>
+        <div class="derivation-box">
+          <div class="formula compact">
+            C<sub>p</sub>=<span class="frac"
+              ><span>dH</span><span>dT</span></span
+            >=<span class="frac"><span>dU</span><span>dT</span></span
+            >+nR=C<sub>V</sub>+nR
+          </div>
+        </div>
+        <div class="formula">
+          C<sub>p</sub>−C<sub>V</sub>=nR　　C<sub>p,m</sub>−C<sub>V,m</sub>=R
+        </div>
+        <p>
+          定压升温时，供给的能量除了提高内能，还要支持体系膨胀，所以理想气体有
+          <var>C<sub>p</sub>&gt;C<sub>V</sub></var
+          >。
+        </p>
+      </section>
+
+      <section>
+        <h2>11. 可逆绝热膨胀</h2>
+        <p>
+          <a class="term-link" href="/term?slug=reversible-adiabatic-process"
+            >可逆绝热过程</a
+          >同时满足 <var>δq=0</var> 与 <var>δw=−p dV</var>。对理想气体：
+        </p>
+        <div class="derivation-box">
+          <h3>推导绝热方程</h3>
+          <div class="formula compact">
+            C<sub>V</sub>dT=−p dV=−<span class="frac"
+              ><span>nRT</span><span>V</span></span
+            >dV
+          </div>
+          <div class="formula compact">
+            <span class="frac"
+              ><span>C<sub>V</sub></span
+              ><span>T</span></span
+            >dT=−<span class="frac"><span>nR</span><span>V</span></span
+            >dV
+          </div>
+          <p>
+            若热容在温区内近似恒定，积分并利用
+            <var>C<sub>p</sub>−C<sub>V</sub>=nR</var>。定义热容比 定义热容比
+            <var>γ</var>：
+          </p>
+          <div class="formula compact">
+            γ=<span class="frac"
+              ><span>C<sub>p,m</sub></span
+              ><span>C<sub>V,m</sub></span></span
+            >
+          </div>
+          <p>于是得到：</p>
+          <div class="formula compact">
+            TV<sup>γ−1</sup>=constant　　pV<sup>γ</sup>=constant　　T<sup>γ</sup>p<sup>1−γ</sup>=constant
+          </div>
+        </div>
+        <div class="symbol-table" role="table">
+          <div class="symbol-head" role="row">
+            <b>量</b><b>意义</b><b>单位</b>
+          </div>
+          <div role="row">
+            <span>γ</span><span>定压摩尔热容与定容摩尔热容之比</span
+            ><span>1</span>
+          </div>
+          <div role="row">
+            <span>C<sub>p,m</sub></span
+            ><span>定压摩尔热容</span><span>J·mol⁻¹·K⁻¹</span>
+          </div>
+          <div role="row">
+            <span>C<sub>V,m</sub></span
+            ><span>定容摩尔热容</span><span>J·mol⁻¹·K⁻¹</span>
+          </div>
+        </div>
+        <p>
+          绝热膨胀时体系对外做功而无热补入，<var>U</var> 与
+          <var>T</var> 均下降。因为 <var>γ&gt;1</var>，绝热线在
+          <var>p-V</var> 图上比等温线下降得更陡。
+        </p>
+      </section>
+
+      <section>
+        <h2>12. 高频条件检查</h2>
+        <ol class="check-list">
+          <li><var>ΔU=q+w</var> 使用“进入体系为正”的化学符号约定。</li>
+          <li>
+            <var>q</var>、<var>w</var> 是路径量；<var>U</var>、<var>H</var>
+            是状态函数。
+          </li>
+          <li>
+            <var>w=−p<sub>ex</sub>ΔV</var> 仅适用于恒外压；可逆过程才可令每一步
+            <var>p<sub>ex</sub>=p</var>。
+          </li>
+          <li>
+            <var>q<sub>V</sub>=ΔU</var> 要求定容且无其他功；<var
+              >q<sub>p</sub>=ΔH</var
+            >
+            要求封闭、恒压且只有 <var>pV</var> 功。
+          </li>
+          <li><var>ΔH=ΔU+Δn<sub>g</sub>RT</var> 中只计算气态物质。</li>
+          <li>
+            <var>pV<sup>γ</sup>=constant</var>
+            只适用于理想气体的可逆绝热过程，并通常假设热容恒定。
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>13. 公式辨析：先判断条件，再选择公式</h2>
+        <p>
+          这一章的公式不是彼此竞争的“不同版本”，而是在第一定律上逐步添加条件得到的分支。做题时先圈出
+          <b
+            >体系是否封闭、体积或压力是否恒定、是否绝热、是否可逆、是否为理想气体、是否只有膨胀功</b
+          >，再选公式。
+        </p>
+        <div
+          class="formula-compare"
+          role="table"
+          aria-label="第一定律公式辨析表"
+        >
+          <div class="formula-compare-head" role="row">
+            <b>公式</b><b>成立条件</b><b>它告诉你什么</b><b>最容易误用之处</b>
+          </div>
+          <div role="row">
+            <span class="math-cell">ΔU=q+w</span
+            ><span>封闭体系；本站采用能量进入体系为正</span
+            ><span>任何过程都从这里开始做能量收支</span
+            ><span
+              >它不能单独给出 <var>q</var> 或 <var>w</var>，还需要路径条件</span
+            >
+          </div>
+          <div role="row">
+            <span class="math-cell">δw=−p<sub>ex</sub>dV</span
+            ><span>只有膨胀功</span><span>微小体积变化对应的功</span
+            ><span
+              >一般过程用外压 <var>p<sub>ex</sub></var
+              >，不能直接换成体系压力 <var>p</var></span
+            >
+          </div>
+          <div role="row">
+            <span class="math-cell">w=−p<sub>ex</sub>ΔV</span
+            ><span>恒定外压</span
+            ><span>膨胀功等于 <var>p-V</var> 图中的矩形面积</span
+            ><span>外压变化时必须积分</span>
+          </div>
+          <div role="row">
+            <span class="math-cell">w<sub>rev</sub>=−∫p dV</span
+            ><span>可逆过程；每一步 <var>p<sub>ex</sub>≈p</var></span
+            ><span>由体系状态方程计算可逆功</span
+            ><span>不可逆过程不能用体系压力积分</span>
+          </div>
+          <div role="row">
+            <span class="math-cell"
+              >w<sub>rev,T</sub>=−nRT ln<span class="frac"
+                ><span>V<sub>f</sub></span
+                ><span>V<sub>i</sub></span></span
+              ></span
+            ><span>理想气体、等温、可逆</span
+            ><span>把 <var>p=nRT/V</var> 代入可逆功积分</span
+            ><span>“等温”或“理想气体”任一条件缺失都不能直接使用</span>
+          </div>
+          <div role="row">
+            <span class="math-cell">q<sub>V</sub>=ΔU</span
+            ><span>定容且无其他功</span><span>定容量热直接测得内能变</span
+            ><span>仅写“定容”仍不够；若存在电功等，二者不相等</span>
+          </div>
+          <div role="row">
+            <span class="math-cell">q<sub>p</sub>=ΔH</span
+            ><span>封闭、恒压且只有膨胀功</span><span>定压热等于焓变</span
+            ><span>这是有条件的结论，不是焓的定义</span>
+          </div>
+          <div role="row">
+            <span class="math-cell">H=U+pV</span
+            ><span>定义，任意状态均成立</span
+            ><span>建立焓、内能与体积功项的联系</span
+            ><span>不要把定义误写成只在恒压时成立</span>
+          </div>
+          <div role="row">
+            <span class="math-cell">ΔH=ΔU+Δ(pV)</span><span>任意始末状态</span
+            ><span>焓变的一般关系</span
+            ><span>只有恒压时才能化为 <var>ΔU+pΔV</var></span>
+          </div>
+          <div role="row">
+            <span class="math-cell">ΔH=ΔU+Δn<sub>g</sub>RT</span
+            ><span>理想气体反应；始末温度相同</span
+            ><span>反应焓与反应内能的换算</span
+            ><span
+              ><var>Δn<sub>g</sub></var> 只统计气态物质</span
+            >
+          </div>
+          <div role="row">
+            <span class="math-cell">dU=C<sub>V</sub>dT</span
+            ><span>理想气体；或沿定容路径使用定义</span
+            ><span>温度变化与内能变化的联系</span
+            ><span
+              >对一般真实物质，非定容路径上 <var>U</var> 还可能随
+              <var>V</var> 改变</span
+            >
+          </div>
+          <div role="row">
+            <span class="math-cell">dH=C<sub>p</sub>dT</span
+            ><span>沿定压路径</span><span>温度变化与焓变的联系</span
+            ><span
+              >跨越大温区时
+              <var>C<sub>p</sub></var> 常随温度变化，需要积分</span
+            >
+          </div>
+          <div role="row">
+            <span class="math-cell">pV<sup>γ</sup>=constant</span
+            ><span>理想气体、可逆、绝热，且热容近似恒定</span
+            ><span>连接绝热路径上的压力和体积</span
+            ><span>普通绝热过程不一定可逆，不能自动使用</span>
+          </div>
+        </div>
+        <div class="note">
+          <b>一个最有用的辨析</b>
+          <p>
+            <var>q=0</var> 表示绝热，<var>ΔT=0</var>
+            表示等温。理想气体自由膨胀可同时有
+            <var>q=0</var
+            >、<var>w=0</var>、<var>ΔU=0</var>、<var>ΔT=0</var>；可逆绝热膨胀则有
+            <var>q=0</var
+            >、<var>w&lt;0</var>、<var>ΔU&lt;0</var>、<var>ΔT&lt;0</var>。所以“绝热”绝不等于“温度不变”。
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>14. 第一律公式思维导图</h2>
+        <p>
+          把所有题目都从中心的第一定律出发，然后沿题目给出的条件向下走；不要从记忆里随机抓一条公式。
+        </p>
+        <div class="formula-map" aria-label="热力学第一定律公式思维导图">
+          <div class="map-root">
+            <b>第一定律</b><span class="math-cell">ΔU=q+w</span
+            ><small>先确定正负号与能量流向</small>
+          </div>
+          <div class="map-branches">
+            <article>
+              <h3>先处理功 <var>w</var></h3>
+              <div class="map-step">
+                <b>只有膨胀功</b
+                ><span class="math-cell">δw=−p<sub>ex</sub>dV</span>
+              </div>
+              <div class="map-split">
+                <div>
+                  <b>恒外压</b
+                  ><span class="math-cell">w=−p<sub>ex</sub>ΔV</span>
+                </div>
+                <div><b>可逆</b><span class="math-cell">w=−∫p dV</span></div>
+              </div>
+              <div class="map-step accent">
+                <b>再加：理想气体 + 等温</b
+                ><span class="math-cell"
+                  >w=−nRT ln<span class="frac"
+                    ><span>V<sub>f</sub></span
+                    ><span>V<sub>i</sub></span></span
+                  ></span
+                >
+              </div>
+            </article>
+            <article>
+              <h3>定容路径</h3>
+              <div class="map-step">
+                <b><var>dV=0</var> 且无其他功</b
+                ><span class="math-cell">w=0</span>
+              </div>
+              <div class="map-step accent">
+                <b>代回第一律</b><span class="math-cell">q<sub>V</sub>=ΔU</span>
+              </div>
+              <div class="map-step">
+                <b>若热容恒定</b
+                ><span class="math-cell">ΔU=C<sub>V</sub>ΔT</span>
+              </div>
+            </article>
+            <article>
+              <h3>定压路径</h3>
+              <div class="map-step">
+                <b>定义焓</b><span class="math-cell">H=U+pV</span>
+              </div>
+              <div class="map-step accent">
+                <b>恒压且只有膨胀功</b
+                ><span class="math-cell">q<sub>p</sub>=ΔH</span>
+              </div>
+              <div class="map-step">
+                <b>若热容恒定</b
+                ><span class="math-cell">ΔH=C<sub>p</sub>ΔT</span>
+              </div>
+            </article>
+            <article>
+              <h3>绝热路径</h3>
+              <div class="map-step">
+                <b><var>q=0</var></b
+                ><span class="math-cell">ΔU=w</span>
+              </div>
+              <div class="map-step">
+                <b>再加：理想气体 + 可逆</b
+                ><span class="math-cell">C<sub>V</sub>dT=−p dV</span>
+              </div>
+              <div class="map-split">
+                <div>
+                  <span class="math-cell">pV<sup>γ</sup>=constant</span>
+                </div>
+                <div>
+                  <span class="math-cell">TV<sup>γ−1</sup>=constant</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="worked-example">
+          <p class="eyebrow">30 秒选公式顺序</p>
+          <h3>体系 → 功的类型 → 路径条件 → 物质模型</h3>
+          <p>
+            先问“是不是封闭体系”，再找“有没有非膨胀功”，接着识别定容、定压、等温或绝热，最后才判断能否使用理想气体关系。越靠后的条件越具体；不要反过来。
+          </p>
+        </div>
+      </section>
+      <footer class="source">
+        主要来源：《PChem1_lec34_1st Law
+        20260915》课程课件；按体系定义—第一定律—膨胀功—热容—焓—绝热过程的逻辑重构。
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

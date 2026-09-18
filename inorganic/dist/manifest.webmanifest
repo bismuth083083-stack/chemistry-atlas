@@ -1,0 +1,9 @@
+{
+  "name":"无机化学知识库",
+  "short_name":"无机化学",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#171b1d",
+  "theme_color":"#a8a0d6",
+  "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}

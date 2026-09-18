@@ -1,0 +1,78 @@
+const root=document.body;
+const theme=document.querySelector('#theme');
+const saved=localStorage.getItem('ochem-theme');
+if(saved==='light')root.classList.add('light');
+theme?.addEventListener('click',()=>{root.classList.toggle('light');localStorage.setItem('ochem-theme',root.classList.contains('light')?'light':'dark')});
+const globalSearch=document.querySelector('#global-search');
+document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();globalSearch?.focus()}});
+globalSearch?.addEventListener('keydown',e=>{if(e.key==='Enter'&&globalSearch.value.trim())location.href='terms.html?q='+encodeURIComponent(globalSearch.value.trim())});
+const termSearch=document.querySelector('#term-search');
+const query=new URLSearchParams(location.search).get('q');
+if(termSearch&&query)termSearch.value=query;
+async function getTerms(){const r=await fetch('data/terms.json');return r.json()}
+const TERM_IMAGES={
+  'organic-chemistry':['condensed-formula.webp','有机分子的缩写结构式示例','Wade《Organic Chemistry》第 8 版，PDF 第 57 页'],
+  'atomic-orbital':['orbital.webp','原子轨道与电子概率分布示意','Wade《Organic Chemistry》第 8 版，PDF 第 42 页'],
+  'electron-density':['orbital.webp','原子轨道与电子概率分布示意','Wade《Organic Chemistry》第 8 版，PDF 第 42 页'],
+  'aufbau-principle':['electron-configuration.webp','轨道占据与电子排布表','Wade《Organic Chemistry》第 8 版，PDF 第 44 页'],
+  'pauli-exclusion':['electron-configuration.webp','轨道占据与电子排布表','Wade《Organic Chemistry》第 8 版，PDF 第 44 页'],
+  'hund-rule':['electron-configuration.webp','轨道占据与电子排布表','Wade《Organic Chemistry》第 8 版，PDF 第 44 页'],
+  'ionic-bond':['ionic-bond.webp','离子化合物及离子键示例','Wade《Organic Chemistry》第 8 版，PDF 第 51 页'],
+  'covalent-bond':['bond-polarity.webp','共价键、成键电子与极性示意','Wade《Organic Chemistry》第 8 版，PDF 第 48 页'],
+  'electronegativity':['bond-polarity.webp','电负性与键极性示意','Wade《Organic Chemistry》第 8 版，PDF 第 48 页'],
+  'bond-polarity':['bond-polarity.webp','电负性差与键极性示意','Wade《Organic Chemistry》第 8 版，PDF 第 48 页'],
+  'london-dispersion':['intermolecular-forces.webp','色散力与偶极相互作用示意','Wade《Organic Chemistry》第 8 版，PDF 第 104 页'],
+  'dipole-dipole':['intermolecular-forces.webp','色散力与偶极相互作用示意','Wade《Organic Chemistry》第 8 版，PDF 第 104 页'],
+  'dipole-induced-dipole':['intermolecular-forces.webp','偶极与诱导偶极相关示意','Wade《Organic Chemistry》第 8 版，PDF 第 104 页'],
+  'hydrogen-bond':['hydrogen-bond.webp','氢键及其分子间排列示意','Wade《Organic Chemistry》第 8 版，PDF 第 106 页'],
+  'formal-charge':['formal-charge.webp','形式电荷计算与标注示例','Wade《Organic Chemistry》第 8 版，PDF 第 49 页'],
+  'lewis-structure':['lewis-structure.webp','路易斯结构式与多重键示例','Wade《Organic Chemistry》第 8 版，PDF 第 47 页'],
+  'condensed-formula':['condensed-formula.webp','缩写结构式对照示例','Wade《Organic Chemistry》第 8 版，PDF 第 57 页'],
+  'skeletal-formula':['skeletal-formula.webp','键线式与缩写结构式对照','Wade《Organic Chemistry》第 8 版，PDF 第 58 页'],
+  'resonance-contributor':['resonance.webp','共振贡献式与电子离域示例','Wade《Organic Chemistry》第 8 版，PDF 第 54 页'],
+  'resonance-hybrid':['resonance.webp','共振贡献式与共振杂化体示意','Wade《Organic Chemistry》第 8 版，PDF 第 54 页'],
+  'lewis-acid':['vsepr-lewis.webp','甲烷、氨、水和甲醇的 Lewis 结构','Organic Chemistry I 第一章课堂 PPT，第 26 页'],
+  'lewis-base':['vsepr-lewis.webp','含孤对电子分子的 Lewis 结构示例','Organic Chemistry I 第一章课堂 PPT，第 26 页'],
+  'electrophile':['bond-polarity.webp','键极化与缺电子中心示意','Wade《Organic Chemistry》第 8 版，PDF 第 48 页'],
+  'nucleophile':['vsepr-lewis.webp','孤对电子与 Lewis 结构示例','Organic Chemistry I 第一章课堂 PPT，第 26 页'],
+  'molecular-orbital':['orbital-phase-node.webp','2p 轨道的电子密度、节点与正交方向','Wade《Organic Chemistry》第 8 版，第 5 页'],
+  'bonding-orbital':['orbital-phase-node.webp','2p 轨道的相位、节点与空间方向','Wade《Organic Chemistry》第 8 版，第 5 页'],
+  'antibonding-orbital':['orbital-phase-node.webp','2p 轨道的节点平面与相位基础','Wade《Organic Chemistry》第 8 版，第 5 页'],
+  'bond-order':['orbital-phase-node.webp','原子轨道组合与键级的轨道基础','Wade《Organic Chemistry》第 8 版，第 5 页'],
+  'homo':['orbital-phase-node.webp','p 轨道的相位与空间分布','Wade《Organic Chemistry》第 8 版，第 5 页'],
+  'lumo':['orbital-phase-node.webp','p 轨道的相位、节点与空间分布','Wade《Organic Chemistry》第 8 版，第 5 页'],
+  'protonated-imine':['protonated-imine.webp','质子化亚胺的共振贡献式与共振杂化体','Organic Chemistry I 第一章课堂 PPT，第 39 页'],
+  'hybrid-orbital':['hybrid-orbital-basis.webp','三个相互垂直的 2p 轨道与节点平面','Wade《Organic Chemistry》第 8 版，第 5 页'],
+  'vsepr':['vsepr-lewis.webp','甲烷、氨、水和甲醇的 Lewis 结构，用于电子域计数','Organic Chemistry I 第一章课堂 PPT，第 26 页'],
+  'arrhenius-acid-base':['acid-base-definitions.png','酸碱理论的课堂定义与反应示例','Organic Chemistry I Lect. 2，第 3–7 页'],
+  'bronsted-lowry':['acid-base-definitions.png','质子酸碱理论的课堂示例','Organic Chemistry I Lect. 2，第 6–14 页'],
+  'conjugate-acid-base':['acidity-structure.png','共轭碱稳定性与酸性的课堂框架','Organic Chemistry I Lect. 2，第 16 页'],
+  'pka':['acidity-structure.png','酸性结构效应课堂图','Organic Chemistry I Lect. 2，第 9–16 页'],
+  'hydrocarbon':['iupac-map.png','烷烃命名与母体结构课堂图','Organic Chemistry I Lect. 3，第 3–8 页'],
+  'alkane':['iupac-map.png','烷烃系统命名课堂图','Organic Chemistry I Lect. 3，第 3–8 页'],
+  'saturated-hydrocarbon':['cycloalkane.png','环烷烃与取代环命名示例','Organic Chemistry I Lect. 3，第 21–23 页'],
+  'homologous-series':['iupac-map.png','直链烷烃和命名课堂图','Organic Chemistry I Lect. 3，第 4–6 页'],
+  'substituent':['iupac-map.png','取代基、母体和位次的系统命名框架','Organic Chemistry I Lect. 3，第 8 页'],
+  'iupac-nomenclature':['iupac-map.png','IUPAC 名称组成图','Organic Chemistry I Lect. 3，第 8 页'],
+  'cip-priority':['iupac-map.png','系统命名和取代基顺序课堂图','Organic Chemistry I Lect. 3，第 15 页'],
+  'bicyclic-alkane':['polycycles.png','稠环、桥环和螺环的课堂分类图','Organic Chemistry I Lect. 3，第 26–28 页'],
+  'spirocyclic':['polycycles.png','稠环、桥环和螺环的课堂分类图','Organic Chemistry I Lect. 3，第 26–29 页'],
+  'isomer':['isomerism.png','构造异构与立体异构的课堂分类图','Organic Chemistry I Lect. 4，第 5 页'],
+  'constitutional-isomer':['isomerism.png','构造异构与立体异构的课堂分类图','Organic Chemistry I Lect. 4，第 5 页'],
+  'stereoisomer':['isomerism.png','构造异构与立体异构的课堂分类图','Organic Chemistry I Lect. 4，第 5 页'],
+  'conformation':['newman.png','Newman 投影、二面角和构象示意','Organic Chemistry I Lect. 4，第 14–15 页'],
+  'newman-projection':['newman.png','Newman 投影、二面角和构象示意','Organic Chemistry I Lect. 4，第 14–15 页'],
+  'dihedral-angle':['newman.png','Newman 投影、二面角和构象示意','Organic Chemistry I Lect. 4，第 15 页'],
+  'torsional-strain':['butane-conformation.png','丁烷构象和空间张力示意','Organic Chemistry I Lect. 4，第 19–21 页'],
+  'steric-strain':['butane-conformation.png','丁烷构象和空间张力示意','Organic Chemistry I Lect. 4，第 21 页'],
+  'ring-strain':['ring-strain.png','以燃烧热比较环张力的课堂图','Organic Chemistry I Lect. 4，第 24 页'],
+  'cyclohexane-chair':['cyclohexane-chair.png','环己烷椅式构象和交叉键','Organic Chemistry I Lect. 4，第 31 页'],
+  'axial-equatorial':['axial-equatorial.png','单取代环己烷的直立/平伏构象平衡','Organic Chemistry I Lect. 4，第 36 页'],
+  'ring-flip':['axial-equatorial.png','椅式互变中的直立/平伏位置变化','Organic Chemistry I Lect. 4，第 36–37 页']
+};
+function termRow(t){return `<a class="term-table row" href="term.html?slug=${encodeURIComponent(t.slug)}"><strong>${t.zh}</strong><span>${t.en}</span><span>${t.category}</span><span>${t.related.length}</span></a>`}
+async function loadTerms(){const terms=await getTerms();const list=document.querySelector('#term-list');document.querySelector('#term-count').textContent=terms.length;const render=()=>{const q=(termSearch?.value||'').trim().toLowerCase();const shown=terms.filter(t=>[t.zh,t.en,t.category,...(t.properties||[])].join(' ').toLowerCase().includes(q));list.className=shown.length?'':'table-empty';list.innerHTML=shown.length?shown.map(termRow).join(''):'<b>没有匹配词条</b><p>尝试中文名、英文名或分类。</p>'};termSearch?.addEventListener('input',render);render()}
+async function loadTermDetail(){const slug=new URLSearchParams(location.search).get('slug');if(!slug)return;const terms=await getTerms();const t=terms.find(x=>x.slug===slug);if(!t)return;document.title=t.zh+' · 有机化学知识库';const related=t.related.map(s=>terms.find(x=>x.slug===s)).filter(Boolean);const image=TERM_IMAGES[slug];const figure=image?`<figure class="term-figure"><img src="assets/terms/${image[0]}" alt="${image[1]}" loading="eager" decoding="async"><figcaption>${image[1]}<small>图源：${image[2]} · 局部截图</small></figcaption></figure>`:'';document.querySelector('#term-detail').className='term-detail';document.querySelector('#term-detail').innerHTML=`<header><p class="eyebrow">${t.category}</p><h1>${t.zh}</h1><p class="english">${t.en}</p></header>${figure}<section><h2>定义</h2><p class="lead">${t.definition}</p></section><section><h2>详细说明</h2><p>${t.expanded}</p></section><section><h2>主要性质</h2><ul>${t.properties.map(x=>'<li>'+x+'</li>').join('')}</ul></section><section class="note"><h2>辨析与常见误区</h2><p>${t.confusions}</p></section><section><h2>相关词条</h2><div class="related">${related.map(x=>'<a href="term.html?slug='+x.slug+'">'+x.zh+'<small>'+x.en+'</small></a>').join('')}</div></section><footer class="source">笔记来源：${t.source}</footer>`}
+
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
+if(!document.querySelector('script[data-qa]')){const s=document.createElement('script');s.src='qa.js';s.dataset.qa='';document.body.appendChild(s)}

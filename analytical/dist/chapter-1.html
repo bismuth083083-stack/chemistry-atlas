@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="分析化学 I 第一章 绪论">
+<title>01 绪论 · 分析化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="course-extra.css">
+<link rel="stylesheet" href="qa.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a class="active" href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<p class="nav-label">本章目录</p>
+<a href="#scope">
+<span>1.1</span>任务与范围</a>
+<a href="#classify">
+<span>1.2</span>分类</a>
+<a href="#process">
+<span>1.3</span>分析流程</a>
+<a href="#range">
+<span>1.4</span>尺度与选法</a>
+<a href="#cases">
+<span>1.5</span>案例</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside>
+<main class="workspace">
+<article class="article lesson">
+<header class="article-head">
+<p class="eyebrow">01 · INTRODUCTION</p>
+<h1>绪论</h1>
+<p>分析化学研究如何从真实样品中获得可靠的组成、含量、空间位置、结构与形态信息。</p>
+<div>
+<span>笔记大纲</span>
+<span>课件 1–54</span>
+<span>教材 Chapter 1</span>
+<span>更新 2026/09/15</span>
+</div>
+</header>
+
+<nav class="chapter-jump" aria-label="本章快速导航">
+<a href="#course">课程地图</a>
+<a href="#scope">学科任务</a>
+<a href="#classify">方法分类</a>
+<a href="#process">分析流程</a>
+<a href="#range">范围与选法</a>
+<a href="#cases">应用案例</a>
+</nav>
+
+<section id="course">
+<p class="section-kicker">COURSE MAP</p>
+<h2>这门课学到哪里</h2>
+<div class="compare-pair">
+<article><h3>分析化学 I</h3><p>误差与数据处理、酸碱平衡与滴定、络合滴定、氧化还原滴定、沉淀滴定和重量分析；强调化学分析的定量基础。</p></article>
+<article><h3>分析化学 II</h3><p>光谱、电化学、色谱、质谱等仪器分析方法；重点理解信号产生、仪器构成、校准和方法选择。</p></article>
+</div>
+<h3>课程评价</h3>
+<div class="grade-split" aria-label="课程评价比例">
+<span style="--w:20"><b>20%</b> 作业与课堂表现</span>
+<span style="--w:20"><b>20%</b> 期中考试</span>
+<span style="--w:60"><b>60%</b> 期末考试</span>
+</div>
+<h3>课件列出的参考书</h3>
+<ul class="reference-list">
+<li>《分析化学》，武汉大学主编，高等教育出版社，第 6 版。</li>
+<li>《分析化学》，华东理工大学、四川大学编，高等教育出版社，第 7 版。</li>
+<li>Gary D. Christian 等，<i>Analytical Chemistry</i>, 7th ed.（本网站配套教材）。</li>
+</ul>
+<p class="source-note">来源：Introduction 课件 slides 2–8。</p>
+</section>
+
+<section id="scope">
+<p class="section-kicker">1.1 WHAT ANALYTICAL CHEMISTS DO</p>
+<h2>分析化学回答什么问题</h2>
+<div class="question-compass">
+<div>
+<b>WHAT?</b>
+<span>定性分析<br>样品中有什么</span>
+</div>
+<div>
+<b>WHERE?</b>
+<span>空间分析<br>目标组分在哪里</span>
+</div>
+<div>
+<b>HOW MUCH?</b>
+<span>定量分析<br>各组分含量多少</span>
+</div>
+<div>
+<b>WHAT FORM?</b>
+<span>结构与形态分析<br>价态、晶态、配位态与空间结构</span>
+</div>
+</div>
+<p>核心任务可概括为：采用化学、物理和生物测量手段获取分析数据，确定物质体系的化学组成及有关成分的含量，并鉴定物质的结构与存在形态。分析对象可以来自临床诊断、工业质量控制、环境监测、食品营养、法庭科学和空间探测。</p>
+<div class="compare-pair">
+<article>
+<h3>定性分析 Qualitative analysis</h3>
+<p>鉴定样品中的元素、离子、基团或化合物，回答“是什么”。常见线索包括沉淀反应、颜色反应、焰色试验以及光谱或色谱等仪器响应；简单定性试验通常更快、成本更低。</p>
+</article>
+<article>
+<h3>定量分析 Quantitative analysis</h3>
+<p>测定一个或多个组分的量，回答“有多少”。现代高选择性测量有时也能同时提供定性证据。</p>
+</article>
+</div>
+<h3>选择性与特异性</h3>
+<div class="definition-rail">
+<p>
+<b>选择性 Selectivity</b>
+<span>方法可以对目标物优先响应，但仍可能对其他物质响应。可通过样品前处理、选择性检测器、目标物衍生化和色谱分离提高。</span>
+</p>
+<p>
+<b>特异性 Specificity</b>
+<span>反应或试验只对目标物发生。真正特异的化学反应很少，因此实际分析更常讨论选择性。</span>
+</p>
+</div>
+<h3>发展脉络与趋势</h3>
+<div class="history-line">
+<article>
+<b>18 世纪</b>
+<span>Lavoisier 以定量实验和质量守恒奠定定量分析；Geoffroy 以 K₂CO₃ 评价醋酸，推动滴定分析。</span>
+</article>
+<article>
+<b>19 世纪</b>
+<span>重量分析和滴定体系成熟；Bunsen 与 Kirchhoff 的光谱研究开启仪器分析。</span>
+</article>
+<article>
+<b>20 世纪前期</b>
+<span>溶液平衡理论使化学分析形成系统的理论与方法。</span>
+</article>
+<article>
+<b>1940–1960s</b>
+<span>电子学推动光谱、极谱等现代仪器分析。</span>
+</article>
+<article>
+<b>1970s 至今</b>
+<span>化学计量学、联用技术、专家系统与计算机数据处理发展；分析尺度推进到单细胞、单颗粒、单分子乃至单原子。</span>
+</article>
+</div>
+<p class="source-note">来源：课堂笔记大纲；Introduction 课件 slides 9–18；教材 §1.1–1.2。</p>
+</section>
+
+<section id="classify">
+<p class="section-kicker">1.2 CLASSIFICATION</p>
+<h2>分析方法的三套分类坐标</h2>
+<div class="taxonomy">
+<article>
+<span>按分析原理</span>
+<h3>化学分析</h3>
+<p>依赖化学反应，典型方法包括无机定性分析、滴定分析和重量分析。</p>
+<h3>仪器分析</h3>
+<p>利用目标物的物理或物理化学性质，包括电化学、光谱、质谱、色谱和放射化学分析。</p>
+</article>
+<article>
+<span>按分析目标</span>
+<h3>定性 · 定量</h3>
+<p>分别鉴定组成与测量含量。</p>
+<h3>结构 · 形态</h3>
+<p>结构分析确定分子或晶体结构；形态分析研究价态、晶态和结合状态。</p>
+</article>
+<article>
+<span>按分析对象</span>
+<h3>无机与有机</h3>
+<p>也可按应用分为药物、临床、环境、食品和水分析等。</p>
+</article>
+</div>
+<h3>Analyze 与 Determine</h3>
+<p>
+<i>Analyze</i> 指分析一个样品的部分或全部组分；<i>determine</i> 指对某个分析物进行一次测定。例如，分析血液中的氯化物时，我们测定的是氯离子浓度。</p>
+<p class="source-note">来源：Introduction 课件 slides 19–28、49；教材 §1.2、§1.5。</p>
+</section>
+
+<section id="process">
+<p class="section-kicker">1.3 THE ANALYTICAL PROCESS</p>
+<h2>七步分析流程</h2>
+<div class="process-flow">
+<article>
+<b>01</b>
+<h3>定义问题</h3>
+<p>明确要定性还是定量、结果由谁使用、何时需要、所需准确度与精密度、预算及样品如何取得。</p>
+</article>
+<article>
+<b>02</b>
+<h3>选择方法</h3>
+<p>综合样品类型与量、浓度范围、所需选择性、准确度与速度、设备、经验、成本、自动化和标准方法。</p>
+</article>
+<article>
+<b>03</b>
+<h3>取得代表性样品</h3>
+<p>考虑固液气形态、均匀性和规模。由总体样品得到实验室样品，再得到实际测定用分析样品。</p>
+</article>
+<article>
+<b>04</b>
+<h3>制备样品</h3>
+<p>判断是否需要溶解、灰化、湿法消解、富集、衍生化、调节 pH，或通过掩蔽降低干扰。</p>
+</article>
+<article>
+<b>05</b>
+<h3>实施分离</h3>
+<p>可采用蒸馏、沉淀、溶剂萃取、透析、固相萃取、色谱或电泳。</p>
+</article>
+<article>
+<b>06</b>
+<h3>测量</h3>
+<p>完成校准，并设置验证样、控制样、空白和重复测定。</p>
+</article>
+<article>
+<b>07</b>
+<h3>计算与报告</h3>
+<p>进行统计评价，报告结果、准确度与方法限制。低于检出限时应报告“&lt; LOD”，不能写成零。</p>
+</article>
+</div>
+<div class="blank-card">
+<h3>空白 Blank</h3>
+<p>空白理论上含有未知样分析过程中使用的全部试剂和水，但不含目标分析物，并经历完整操作流程。它用于估计试剂、容器与过程本身产生的信号。</p>
+<div class="mini-flow">
+<span>同批试剂</span>
+<b>+</b>
+<span>同样步骤</span>
+<b>−</b>
+<span>目标物</span>
+<b>=</b>
+<span>过程本底</span>
+</div>
+</div>
+<h3>绝对法与相对法</h3>
+<div class="compare-pair">
+<article>
+<h3>绝对方法 Absolute method</h3>
+<p>依靠已知基本常数和确定关系计算分析物的量，例如库仑法的理想计量关系。</p>
+</article>
+<article>
+<h3>相对方法 Relative method</h3>
+<p>将未知样响应与已知浓度标准比较。多数滴定法与仪器分析都需要标准溶液或校准曲线。</p>
+</article>
+</div>
+<p class="source-note">来源：Introduction 课件 slides 36–49；教材 §1.3–1.4。</p>
+</section>
+
+<section id="range">
+<p class="section-kicker">1.4 RANGE & METHOD SELECTION</p>
+<h2>样品尺度、浓度级别与方法选择</h2>
+<h3>按样品用量分类</h3>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>方法尺度</th>
+<th>样品质量 / mg</th>
+<th>样品体积 / μL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>常量 Macro</td>
+<td>&gt;100</td>
+<td>&gt;100</td>
+</tr>
+<tr>
+<td>半微量 Meso / Semimicro</td>
+<td>10–100</td>
+<td>50–100</td>
+</tr>
+<tr>
+<td>微量 Micro</td>
+<td>1–10</td>
+<td>&lt;50</td>
+</tr>
+<tr>
+<td>超微量 Ultramicro</td>
+<td>&lt;1</td>
+<td>依方法而定</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>按样品中含量分类</h3>
+<div class="range-band">
+<span style="--w:100%">
+<b>常量 major</b>&gt;1%</span>
+<span style="--w:62%">
+<b>微量 minor</b>0.1%–1%</span>
+<span style="--w:32%">
+<b>痕量 trace</b>&lt;0.1%</span>
+<span style="--w:15%">
+<b>超痕量 ultratrace</b>ppb 级或更低</span>
+</div>
+<details class="data-details" open>
+<summary>分析方法能力对照表（课件 Table 1.1 重绘）</summary>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>约测量范围 / mol·L⁻¹</th>
+<th>约精密度 / %</th>
+<th>选择性</th>
+<th>速度</th>
+<th>成本</th>
+<th>主要对象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>重量分析</td>
+<td>10⁻¹–10⁻²</td>
+<td>0.1</td>
+<td>较差–中等</td>
+<td>慢</td>
+<td>低</td>
+<td>无机</td>
+</tr>
+<tr>
+<td>滴定分析</td>
+<td>10⁻¹–10⁻⁴</td>
+<td>0.1–1</td>
+<td>较差–中等</td>
+<td>中等</td>
+<td>低</td>
+<td>无机、有机</td>
+</tr>
+<tr>
+<td>电位法</td>
+<td>10⁻¹–10⁻⁶</td>
+<td>2</td>
+<td>好</td>
+<td>快</td>
+<td>低</td>
+<td>无机</td>
+</tr>
+<tr>
+<td>电重量/库仑法</td>
+<td>10⁻¹–10⁻⁴</td>
+<td>0.01–2</td>
+<td>中等</td>
+<td>慢–中等</td>
+<td>中等</td>
+<td>无机、有机</td>
+</tr>
+<tr>
+<td>伏安法</td>
+<td>10⁻³–10⁻¹⁰</td>
+<td>2–5</td>
+<td>好</td>
+<td>中等</td>
+<td>中等</td>
+<td>无机、有机</td>
+</tr>
+<tr>
+<td>分光光度法</td>
+<td>10⁻³–10⁻⁶</td>
+<td>2</td>
+<td>好–中等</td>
+<td>快–中等</td>
+<td>低–中等</td>
+<td>无机、有机</td>
+</tr>
+<tr>
+<td>荧光法</td>
+<td>10⁻⁶–10⁻⁹</td>
+<td>2–5</td>
+<td>中等</td>
+<td>中等</td>
+<td>中等</td>
+<td>有机</td>
+</tr>
+<tr>
+<td>原子光谱</td>
+<td>10⁻³–10⁻⁹</td>
+<td>2–10</td>
+<td>好</td>
+<td>快</td>
+<td>中–高</td>
+<td>无机、多元素</td>
+</tr>
+<tr>
+<td>色谱–质谱</td>
+<td>10⁻³–10⁻⁹</td>
+<td>2–5</td>
+<td>好</td>
+<td>快</td>
+<td>中–高</td>
+<td>有机、多组分</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">这些是课件给出的近似能力范围，用于初步选法；真实性能取决于具体仪器、样品基质和方法验证。</p>
+</details>
+<details class="data-details">
+<summary>从 mole 到 yoctomole 的量级表（课件重绘）</summary>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>量级</th>
+<th>符号</th>
+<th>相对 mole</th>
+<th>约含粒子数</th>
+<th>课件列出的 Medline hits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mole</td>
+<td>mol</td>
+<td>1</td>
+<td>6×10²³</td>
+<td>—</td>
+</tr>
+<tr>
+<td>millimole</td>
+<td>mmol</td>
+<td>10⁻³</td>
+<td>6×10²⁰</td>
+<td>64,420</td>
+</tr>
+<tr>
+<td>micromole</td>
+<td>μmol</td>
+<td>10⁻⁶</td>
+<td>6×10¹⁷</td>
+<td>63,976</td>
+</tr>
+<tr>
+<td>nanomole</td>
+<td>nmol</td>
+<td>10⁻⁹</td>
+<td>6×10¹⁴</td>
+<td>52,918</td>
+</tr>
+<tr>
+<td>picomole</td>
+<td>pmol</td>
+<td>10⁻¹²</td>
+<td>6×10¹¹</td>
+<td>33,130</td>
+</tr>
+<tr>
+<td>femtomole</td>
+<td>fmol</td>
+<td>10⁻¹⁵</td>
+<td>6×10⁸</td>
+<td>14,593</td>
+</tr>
+<tr>
+<td>attomole</td>
+<td>amol</td>
+<td>10⁻¹⁸</td>
+<td>6×10⁵</td>
+<td>1,464</td>
+</tr>
+<tr>
+<td>zeptomole</td>
+<td>zmol</td>
+<td>10⁻²¹</td>
+<td>约 6×10²</td>
+<td>167</td>
+</tr>
+<tr>
+<td>yoctomole</td>
+<td>ymol</td>
+<td>10⁻²⁴</td>
+<td>平均小于 1 个</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">Medline hits 是课件保留的历史检索计数，只用来呈现当时不同量级在生物医学文献中的出现情况，不应视为当前数据库统计。</p>
+</details>
+<p class="source-note">来源：Introduction 课件 slides 38–41；教材 §1.3、§1.5。</p>
+</section>
+
+<section id="cases">
+<p class="section-kicker">1.5 CASES</p>
+<h2>分析流程如何落地</h2>
+<h3>奥运禁药检测</h3>
+<div class="case-pipeline">
+<article>
+<b>FAST SCREENING</b>
+<h3>快速筛查</h3>
+<p>用免疫分析、GC 或 LC 快速识别异常类别，将样品与“正常”谱型区分。</p>
+</article>
+<article>
+<b>IDENTIFICATION</b>
+<h3>结构确认</h3>
+<p>可疑样品重新前处理，再用 GC/MS 或 LC/MS 获取分子结构证据。</p>
+</article>
+<article>
+<b>QUANTIFICATION</b>
+<h3>精确定量</h3>
+<p>当物质本来可能以低水平存在时，用分光光度法或色谱–质谱测定准确含量。</p>
+</article>
+</div>
+<h3>火星样品分析 SAM</h3>
+<p>火星车的 Sample Analysis at Mars 由气相色谱仪、四极杆质谱仪和可调谐激光光谱仪组成，用于寻找并测量有机化合物和与生命相关的轻元素。这个案例体现了真实分析问题往往需要把取样、分离、结构鉴定与定量测量组合起来。</p>
+<div class="exam-focus">
+<h3>本章最容易混淆的四组概念</h3>
+<ul>
+<li>
+<b>selective ≠ specific：</b>选择性是优先响应，特异性才是只响应目标物。</li>
+<li>
+<b>accuracy ≠ precision：</b>准确度接近真值，精密度描述重复结果的离散程度。</li>
+<li>
+<b>analyze ≠ determine：</b>分析样品，测定分析物。</li>
+<li>
+<b>zero ≠ below LOD：</b>未检出只说明低于方法检出能力。</li>
+</ul>
+</div>
+<p class="source-note">来源：Introduction 课件 slides 29–34、50–53；教材 §1.2–1.3。</p>
+</section>
+</article>
+</main>
+<script src="script.js">
+</script>
+<script src="qa.js" data-qa>
+</script>
+</body>
+</html>

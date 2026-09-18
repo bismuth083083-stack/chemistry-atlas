@@ -1,0 +1,73 @@
+.article{max-width:1120px}
+.article-head{padding-bottom:32px;border-bottom:1px solid var(--line)}
+.article-head h1{margin:8px 0;font:44px Georgia,"Noto Serif SC",serif}
+.article-head>p{color:var(--muted)}
+.article-head>div{display:flex;gap:8px;flex-wrap:wrap}
+.article-head>div span{padding:5px 9px;border:1px solid var(--line);color:var(--muted);font-size:11px}
+.article>section{max-width:860px;padding:34px 0;border-bottom:1px solid var(--line)}
+.article section h2,.term-detail h2{font:27px Georgia,"Noto Serif SC",serif}
+.term-link{color:var(--gold);border-bottom:1px dotted var(--gold)}
+.property-grid,.classification{display:grid;gap:10px;margin:18px 0}
+.property-grid{grid-template-columns:1fr 1fr}
+.classification{grid-template-columns:repeat(3,1fr)}
+.property-grid article,.classification article{padding:18px;border:1px solid var(--line);background:var(--surface)}
+.property-grid p,.classification p{margin-bottom:0;color:var(--muted)}
+.memory-check,.note{margin:22px 0;padding:18px 20px;border-left:2px solid var(--moss);background:var(--surface)}
+.memory-check b,.note b{color:var(--moss)}
+.memory-check p,.note p{margin-bottom:0}
+.formula{margin:22px 0;padding:22px;border:1px solid var(--line);background:var(--surface);color:var(--gold);font:23px Georgia;text-align:center}
+.figure-card{margin:22px 0;border:1px solid var(--line);background:var(--surface);padding:14px}
+.figure-card img{display:block;width:100%;max-height:540px;object-fit:contain;background:#fff}
+.figure-card p{margin:8px 0 0;color:var(--muted);font-size:12px}
+.next-step{margin-top:20px;padding:28px!important;border:1px solid var(--line)!important;background:var(--surface)}
+.term-detail{max-width:820px}
+.term-detail header{padding-bottom:28px;border-bottom:1px solid var(--line)}
+.term-detail h1{margin:6px 0 0;font:48px Georgia}
+.term-detail .english{margin:0;color:var(--muted);font-size:19px}
+.term-detail section{padding:26px 0;border-bottom:1px solid var(--line)}
+.term-detail .lead{font:20px/1.7 Georgia}
+.related{display:flex;gap:9px;flex-wrap:wrap}
+.related a{padding:10px 13px;border:1px solid var(--line);color:var(--gold)}
+.related small{display:block;color:var(--muted)}
+.source{display:block;margin-top:28px;color:var(--muted);font-size:12px}
+.memory-ladder{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:20px 0}
+.memory-ladder article{padding:16px;border:1px solid var(--line);background:var(--surface)}
+.memory-ladder b,.memory-ladder span,.memory-ladder small{display:block}
+.memory-ladder b{color:var(--gold);font:11px ui-monospace;letter-spacing:.08em}
+.memory-ladder span{margin:5px 0;font-weight:700}
+.memory-ladder small{color:var(--muted);font-size:13px}
+.amino-acids-reference{max-width:none!important}
+.amino-table-wrap{margin:22px 0;overflow:auto;border:1px solid var(--line);background:var(--surface);scrollbar-color:var(--gold) var(--surface2)}
+.amino-table{width:100%;min-width:1260px;border-collapse:collapse;font-size:14px;line-height:1.5}
+.amino-table th{position:sticky;top:0;z-index:2;padding:12px;text-align:left;color:var(--muted);font:11px ui-monospace;letter-spacing:.06em;background:var(--surface2);border-bottom:1px solid var(--line)}
+.amino-table td{padding:13px 12px;vertical-align:top;border-bottom:1px solid var(--line)}
+.amino-table td:first-child{width:110px;font-size:12px;font-weight:700}
+.amino-table td:nth-child(2){width:150px}
+.amino-table td:nth-child(3){width:92px}
+.amino-table td:nth-child(4){width:150px}
+.amino-table td:nth-child(5){width:125px}
+.amino-table td:nth-child(6){min-width:320px}
+.amino-table td:nth-child(7){min-width:235px;color:var(--muted)}
+.amino-table b,.amino-table small{display:block}
+.amino-table small{color:var(--muted)}
+.amino-table code{color:var(--text);font-family:ui-monospace,monospace;white-space:nowrap}
+.amino-table em{display:inline-block;margin-top:5px;padding:1px 6px;border:1px solid var(--gold);border-radius:10px;color:var(--gold);font:normal 10px ui-monospace}
+.amino-table tr:hover{background:var(--surface2)}
+.aa-small td:first-child,.aa-special td:first-child{box-shadow:inset 3px 0 #b9a4dc;color:#c8b8e6}
+.aa-nonpolar td:first-child{box-shadow:inset 3px 0 #d2ad68;color:#e0c48d}
+.aa-aromatic td:first-child{box-shadow:inset 3px 0 #d68858;color:#e4a67f}
+.aa-polar td:first-child,.aa-amide td:first-child{box-shadow:inset 3px 0 #68a9bd;color:#8dc6d7}
+.aa-sulfur td:first-child{box-shadow:inset 3px 0 #b7ad54;color:#cbc270}
+.aa-acidic td:first-child{box-shadow:inset 3px 0 #c87572;color:#dd9693}
+.aa-basic td:first-child{box-shadow:inset 3px 0 #7e9ed1;color:#9ab7e3}
+.rare-aa{margin:20px 0;border:1px solid var(--line);background:var(--surface)}
+.rare-aa summary{cursor:pointer;padding:16px;color:var(--gold);font-weight:700}
+.rare-aa>div{display:grid;grid-template-columns:1fr 1fr;gap:1px;border-top:1px solid var(--line);background:var(--line)}
+.rare-aa article{padding:18px;background:var(--surface)}
+.rare-aa p{margin-bottom:0;color:var(--muted)}
+.chapter-list{margin-top:26px}
+.chapter-list .chapter-card{margin-top:12px}
+@media(max-width:720px){.property-grid,.classification,.memory-ladder,.rare-aa>div{grid-template-columns:1fr}
+.article-head h1,.term-detail h1{font-size:36px}
+.amino-table-wrap{margin-left:-24px;margin-right:-24px;border-left:0;border-right:0}
+}

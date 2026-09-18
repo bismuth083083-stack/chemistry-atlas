@@ -1,0 +1,42 @@
+body {
+  font-family: "DejaVu Math TeX Gyre", "Times New Roman", "华文中宋", STZhongsong, "Songti SC", "Noto Serif SC", SimSun, serif;
+  line-height: 1.75;
+}
+
+.page-head h1,
+.empty-state h2,
+.table-empty b,
+.article-head h1,
+.article section h2,
+.term-detail h1,
+.term-detail section h2,
+.chapter-card h2,
+.concept-grid h3,
+.compare b {
+  font-family: "DejaVu Math TeX Gyre", "Times New Roman", "华文中宋", STZhongsong, "Songti SC", "Noto Serif SC", serif;
+}
+
+.equation,
+.article i,
+.frac {
+  font-family: "DejaVu Math TeX Gyre", "Times New Roman", "华文中宋", STZhongsong, "Songti SC", "Noto Serif SC", serif;
+}
+
+.article > section > p,
+.term-detail > section > p:not(.lead) {
+  text-indent: 2em;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.article > section > p + p,
+.term-detail > section > p + p {
+  margin-top: 1em;
+}
+
+@media (max-width: 560px) {
+  .article > section > p,
+  .term-detail > section > p:not(.lead) {
+    text-align: left;
+  }
+}

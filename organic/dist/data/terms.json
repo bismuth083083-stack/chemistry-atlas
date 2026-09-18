@@ -1,0 +1,604 @@
+[
+  {
+    "slug": "organic-chemistry",
+    "zh": "有机化学",
+    "en": "Organic chemistry",
+    "category": "基本概念",
+    "definition": "研究碳化合物的结构、性质、反应和合成的化学分支。",
+    "expanded": "其边界带有历史与惯例性质；CO、CO₂、碳酸盐及多数碳化物通常归入无机化学。现代有机化学关注碳骨架和官能团如何控制分子行为。",
+    "properties": [
+      "以结构—反应性关系为主线",
+      "广泛使用电子流描述机理"
+    ],
+    "confusions": "不等同于天然产物，也不包括所有含碳化合物。",
+    "related": [
+      "covalent-bond",
+      "skeletal-formula"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "atomic-orbital",
+    "zh": "原子轨道",
+    "en": "Atomic orbital",
+    "category": "电子结构",
+    "definition": "描述原子中单电子状态的波函数。",
+    "expanded": "轨道不是经典轨迹。波函数 ψ 含振幅与相位信息，|ψ|² 对应空间概率密度。轨道由量子数标记并具有特定能量、形状与节点。",
+    "properties": [
+      "每个轨道最多容纳两个自旋相反的电子",
+      "s、p、d、f 对应不同亚层"
+    ],
+    "confusions": "电子云不是有明确表面的物质云团。",
+    "related": [
+      "electron-density",
+      "pauli-exclusion",
+      "hund-rule"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "electron-density",
+    "zh": "电子概率密度",
+    "en": "Electron probability density",
+    "category": "电子结构",
+    "definition": "在给定空间位置附近发现电子的相对概率，由 |ψ|² 表示。",
+    "expanded": "这是量子力学的统计描述；化学图像常用等值面展示包含某一比例电子概率的空间区域。",
+    "properties": [
+      "非负",
+      "在全空间积分可归一化"
+    ],
+    "confusions": "轨道边界不是电子无法穿过的实体边界。",
+    "related": [
+      "atomic-orbital"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "aufbau-principle",
+    "zh": "构造原理",
+    "en": "Aufbau principle",
+    "category": "电子结构",
+    "definition": "基态原子的电子通常优先占据较低能量轨道。",
+    "expanded": "它给出常用填充次序，但能级接近时存在实验例外，应与泡利原理和洪特规则共同使用。",
+    "properties": [
+      "体现能量最低倾向"
+    ],
+    "confusions": "不是没有例外的绝对填充口诀。",
+    "related": [
+      "pauli-exclusion",
+      "hund-rule"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "pauli-exclusion",
+    "zh": "泡利不相容原理",
+    "en": "Pauli exclusion principle",
+    "category": "电子结构",
+    "definition": "一个原子中不能有两个电子具有完全相同的四个量子数。",
+    "expanded": "因此同一空间轨道最多容纳两个电子，并且两者自旋相反。",
+    "properties": [
+      "决定单轨道最大占据数为 2"
+    ],
+    "confusions": "限制的是完整量子态，不只是“电子不能待在一起”。",
+    "related": [
+      "atomic-orbital",
+      "hund-rule"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "hund-rule",
+    "zh": "洪特规则",
+    "en": "Hund's rule",
+    "category": "电子结构",
+    "definition": "简并轨道成对占据前，先由自旋平行的电子分别单占。",
+    "expanded": "这种排布通常降低电子排斥并带来交换稳定化，适用于同一亚层内能量相同或接近的轨道。",
+    "properties": [
+      "先单占、后成对"
+    ],
+    "confusions": "只在简并或近简并轨道间讨论。",
+    "related": [
+      "atomic-orbital",
+      "pauli-exclusion"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "ionic-bond",
+    "zh": "离子键",
+    "en": "Ionic bond",
+    "category": "化学键",
+    "definition": "相反电荷粒子之间以静电吸引为主的成键作用。",
+    "expanded": "典型离子晶体中并非孤立的一根键，而是晶格中的长程库仑相互作用。",
+    "properties": [
+      "非定向性较强",
+      "强度受电荷与距离影响"
+    ],
+    "confusions": "电子转移是常见形成图景，不是定义本身。",
+    "related": [
+      "covalent-bond",
+      "electronegativity"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "covalent-bond",
+    "zh": "共价键",
+    "en": "Covalent bond",
+    "category": "化学键",
+    "definition": "原子通过共享电子密度形成的定向成键作用。",
+    "expanded": "单键通常含一个 σ 键；双键为一个 σ 键加一个 π 键；三键为一个 σ 键加两个 π 键。",
+    "properties": [
+      "具有方向性",
+      "键级增大通常使键更短更强"
+    ],
+    "confusions": "极性共价键仍属于共价键。",
+    "related": [
+      "bond-polarity",
+      "electronegativity"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "electronegativity",
+    "zh": "电负性",
+    "en": "Electronegativity",
+    "category": "化学键",
+    "definition": "成键原子吸引共享电子的相对能力。",
+    "expanded": "它是依赖标度的相对量。主族元素通常沿周期从左到右增大、沿族从上到下减小。",
+    "properties": [
+      "F 通常最高",
+      "影响键极性与反应位点"
+    ],
+    "confusions": "不同于电子亲和能和电离能。",
+    "related": [
+      "bond-polarity",
+      "ionic-bond"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "bond-polarity",
+    "zh": "键极性",
+    "en": "Bond polarity",
+    "category": "化学键",
+    "definition": "成键电子分布不均导致键两端出现部分电荷的性质。",
+    "expanded": "键偶极取决于电荷分离和距离；分子偶极则是所有键偶极的矢量和。",
+    "properties": [
+      "常用 δ⁺ 与 δ⁻ 标记"
+    ],
+    "confusions": "含极性键的分子不一定具有净偶极矩。",
+    "related": [
+      "electronegativity",
+      "dipole-dipole"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "london-dispersion",
+    "zh": "伦敦色散力",
+    "en": "London dispersion force",
+    "category": "分子间作用力",
+    "definition": "瞬时偶极及其诱导偶极之间的吸引作用。",
+    "expanded": "所有粒子都存在色散作用；电子数、极化率或接触面积增大时通常更强。",
+    "properties": [
+      "普遍存在",
+      "随极化率增大而增强"
+    ],
+    "confusions": "并非只存在于非极性分子。",
+    "related": [
+      "dipole-induced-dipole"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "dipole-dipole",
+    "zh": "偶极–偶极作用",
+    "en": "Dipole–dipole interaction",
+    "category": "分子间作用力",
+    "definition": "永久偶极分子之间的取向相关静电作用。",
+    "expanded": "热运动使取向不断改变，平均强度受温度、距离及偶极矩影响。",
+    "properties": [
+      "存在于极性分子间"
+    ],
+    "confusions": "不等同于瞬时偶极造成的色散力。",
+    "related": [
+      "bond-polarity",
+      "hydrogen-bond"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "dipole-induced-dipole",
+    "zh": "偶极–诱导偶极作用",
+    "en": "Dipole-induced dipole interaction",
+    "category": "分子间作用力",
+    "definition": "永久偶极诱导邻近粒子电子云变形而产生的吸引。",
+    "expanded": "作用强弱受永久偶极矩和被诱导粒子极化率控制。",
+    "properties": [
+      "常见于极性与非极性物质混合体系"
+    ],
+    "confusions": "诱导偶极不同于自发瞬时偶极。",
+    "related": [
+      "london-dispersion",
+      "dipole-dipole"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "hydrogen-bond",
+    "zh": "氢键",
+    "en": "Hydrogen bond",
+    "category": "分子间作用力",
+    "definition": "X–H 供体与富电子受体间具有明显方向性的吸引。",
+    "expanded": "入门有机化学常讨论 O–H、N–H 供体及 O、N 受体；它影响沸点、溶解度、构象与分子识别。",
+    "properties": [
+      "方向性强",
+      "可为分子间或分子内"
+    ],
+    "confusions": "有 O–H 或 N–H 不代表必然形成氢键。",
+    "related": [
+      "dipole-dipole"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "formal-charge",
+    "zh": "形式电荷",
+    "en": "Formal charge",
+    "category": "结构表示",
+    "definition": "假设成键电子平均分配后得到的记账电荷。",
+    "expanded": "FC = 价电子数 − 非成键电子数 − ½(成键电子数)。它用于检查路易斯结构、比较共振贡献及追踪电子流。",
+    "properties": [
+      "各原子形式电荷总和等于物种总电荷"
+    ],
+    "confusions": "不等同于真实局部电荷或氧化数。",
+    "related": [
+      "lewis-structure",
+      "resonance-contributor"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "lewis-structure",
+    "zh": "路易斯结构式",
+    "en": "Lewis structure",
+    "category": "结构表示",
+    "definition": "用线或电子点表示价电子、键与孤对电子的二维结构。",
+    "expanded": "它适合电子记账与机理分析，但不直接给出真实三维构型或完整离域状态。",
+    "properties": [
+      "显式表示孤对和形式电荷"
+    ],
+    "confusions": "单个路易斯结构可能只是贡献式。",
+    "related": [
+      "formal-charge",
+      "resonance-contributor"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "condensed-formula",
+    "zh": "缩合结构式",
+    "en": "Condensed structural formula",
+    "category": "结构表示",
+    "definition": "按连接次序压缩书写原子或重复基团的结构表示法。",
+    "expanded": "例如乙醚可写为 CH₃CH₂OCH₂CH₃ 或 (CH₃CH₂)₂O，节省空间但不擅长表达复杂支化与立体化学。",
+    "properties": [
+      "适合简单链状化合物"
+    ],
+    "confusions": "括号必须准确反映重复或支化关系。",
+    "related": [
+      "skeletal-formula",
+      "lewis-structure"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "skeletal-formula",
+    "zh": "键线式",
+    "en": "Skeletal formula / line-angle formula",
+    "category": "结构表示",
+    "definition": "以线端和折点表示碳、通常省略与碳相连氢的结构式。",
+    "expanded": "杂原子及其氢一般显式标出。读图时先补足碳的四价，再判断隐含氢。",
+    "properties": [
+      "紧凑",
+      "突出官能团与碳骨架"
+    ],
+    "confusions": "楔虚线与双键位置都携带不可忽略的信息。",
+    "related": [
+      "condensed-formula",
+      "lewis-structure"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "resonance-contributor",
+    "zh": "共振贡献式",
+    "en": "Resonance contributor",
+    "category": "电子离域",
+    "definition": "原子排列相同而电子分布不同的假想路易斯结构之一。",
+    "expanded": "贡献式必须是同一原子骨架的合法路易斯结构；只有孤对电子、π 电子和形式电荷重新分配，原子核与 σ 键位置保持不变。比较贡献大小时依次检查八隅体、成键数、负电荷是否位于更电负的原子、正负电荷分离以及芳香性是否保留。课件中的甲醛、乙酸根和硝基甲烷分别展示了次要电荷分离式、等价贡献式和电荷离域；专题页进一步分析烯丙基阳离子、烯醇负离子、酰胺、苯氧负离子和苯。",
+    "properties": [
+      "原子核与 σ 骨架不变",
+      "等价贡献式共同决定真实结构，非等价贡献式按能量加权",
+      "弯箭头必须从孤对、负电荷或 π 键等电子源出发"
+    ],
+    "confusions": "不是异构体、构象或平衡物种；共振箭头用 ↔，不能写成化学平衡箭头 ⇌。质子迁移、σ 键断裂、原子重新连接或单键旋转都不是共振。",
+    "related": [
+      "resonance-hybrid",
+      "formal-charge",
+      "lewis-structure",
+      "skeletal-formula"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "electrophile",
+    "zh": "亲电体",
+    "en": "Electrophile",
+    "category": "反应性",
+    "definition": "在具体反应中接受亲核体电子对的缺电子原子、离子或分子。",
+    "expanded": "亲电体常是 Lewis 酸，但“亲电性”是动力学语境中的反应性概念。羰基碳、碳正离子和质子化羰基都可成为亲电中心；位阻、溶剂、反离子与取代基会改变其反应速率。",
+    "properties": ["弯箭头指向亲电中心", "常带正电或具有极化的 σ/π 键"],
+    "confusions": "亲电体不等于所有 Lewis 酸；Lewis 酸碱性偏向结合能力，亲电性还涉及具体反应速率与选择性。",
+    "related": ["nucleophile", "lewis-acid", "lewis-base"],
+    "source": "第一章：笔记 × 课件"
+  },
+  {
+    "slug": "nucleophile",
+    "zh": "亲核体",
+    "en": "Nucleophile",
+    "category": "反应性",
+    "definition": "在具体反应中向亲电中心提供电子对、形成新键的富电子粒子。",
+    "expanded": "阴离子、带孤对电子的中性分子以及 π 键都可能作为亲核体。亲核性是动力学和条件依赖的：溶剂化、极化性、位阻、温度与反离子都会影响速率。",
+    "properties": ["弯箭头从孤对、负电荷或 π 键出发", "常与取代、加成和酰基转移反应相关"],
+    "confusions": "强 Lewis 碱未必是强亲核体；例如叔丁醇盐碱性强但位阻大，常偏向消除。",
+    "related": ["electrophile", "lewis-base", "lewis-acid"],
+    "source": "第一章：笔记 × 课件"
+  },
+  {
+    "slug": "lewis-acid",
+    "zh": "Lewis 酸",
+    "en": "Lewis acid",
+    "category": "酸碱理论",
+    "definition": "能够接受一对电子形成配位键的物种。",
+    "expanded": "H⁺、BF₃、AlCl₃ 和许多金属离子都可作 Lewis 酸。酸性强弱取决于电子对结合的热力学以及溶剂、配体和结构环境；它不要求一定发生质子转移。",
+    "properties": ["电子对受体", "常能活化羰基或极化反应底物"],
+    "confusions": "Lewis 酸不等同于 Brønsted 酸；后者的定义限定为质子供体。",
+    "related": ["electrophile", "lewis-base", "nucleophile"],
+    "source": "第一章：笔记 × 课件"
+  },
+  {
+    "slug": "lewis-base",
+    "zh": "Lewis 碱",
+    "en": "Lewis base",
+    "category": "酸碱理论",
+    "definition": "能够提供一对电子形成配位键的物种。",
+    "expanded": "NH₃、OH⁻、I⁻、羰基氧和许多含孤对电子的分子都可作 Lewis 碱。碱性描述电子对结合的热力学倾向，而亲核性还要考虑反应速率、位阻和溶剂。",
+    "properties": ["电子对供体", "孤对电子或 π 电子是常见电子源"],
+    "confusions": "Lewis 碱不等同于 Brønsted 碱；Lewis 定义不要求接受质子。",
+    "related": ["nucleophile", "lewis-acid", "electrophile"],
+    "source": "第一章：笔记 × 课件"
+  },
+  {
+    "slug": "molecular-orbital",
+    "zh": "分子轨道",
+    "en": "Molecular orbital",
+    "category": "轨道与成键",
+    "definition": "由原子轨道线性组合形成、遍布整个分子并具有特定能量的轨道。",
+    "expanded": "在 LCAO 近似中，原子轨道按带有系数和相位的线性组合形成分子轨道。<span class=\"inline-formula\"><i>ψ</i> = <i>c</i><sub>A</sub><i>φ</i><sub>A</sub> ± <i>c</i><sub>B</sub><i>φ</i><sub>B</sub></span>其中 <i>ψ</i> 是分子轨道波函数，<i>φ</i><sub>A</sub>、<i>φ</i><sub>B</sub> 是两个原子轨道，<i>c</i><sub>A</sub>、<i>c</i><sub>B</sub> 是反映贡献大小和相位的组合系数。同相叠加形成低能成键轨道，异相叠加产生节点并形成高能反键轨道。电子概率密度与 |<i>ψ</i>|² 有关。",
+    "properties": ["分子轨道可遍布整个分子", "成键轨道降低能量", "反键轨道含节点并提高能量", "电子按能量、泡利原理和洪特规则占据"],
+    "confusions": "电子云不是电子的固定轨迹；轨道相位不是电荷也不是电子自旋。杂化轨道是描述局域定向成键的模型，MO 更适合描述成键/反键、离域和前线轨道。",
+    "related": ["bonding-orbital", "antibonding-orbital", "homo", "lumo", "bond-order", "hybrid-orbital", "resonance-hybrid"],
+    "source": "第二课：课堂速记"
+  },
+  {
+    "slug": "bonding-orbital",
+    "zh": "成键轨道",
+    "en": "Bonding molecular orbital",
+    "category": "轨道与成键",
+    "definition": "由原子轨道同相组合形成、占据后降低体系能量并增强核间成键的分子轨道。",
+    "expanded": "同相叠加使两核之间的波函数相长干涉，核间电子概率密度增加。电子同时受到两个原子核吸引，因此成键分子轨道通常比参与组合的原子轨道能量更低。沿核间轴端对端组合可形成 σ 成键轨道，平行 p 轨道侧向组合可形成 π 成键轨道。",
+    "properties": ["核间电子密度增加", "占据后提高键级", "能量低于相应反键轨道"],
+    "confusions": "“同相”指波函数符号相同，不表示两个轨道带有相同电荷。成键轨道仍可以在别处具有节点。",
+    "related": ["molecular-orbital", "antibonding-orbital", "bond-order"],
+    "source": "第二课：课堂速记 × 原理补充"
+  },
+  {
+    "slug": "antibonding-orbital",
+    "zh": "反键轨道",
+    "en": "Antibonding molecular orbital",
+    "category": "轨道与成键",
+    "definition": "由原子轨道异相组合形成、在两核之间具有节点且占据后削弱成键的高能分子轨道。",
+    "expanded": "异相叠加使两核之间发生相消干涉并出现节点，核间电子密度降低。反键轨道用星号标记，如 σ* 或 π*。电子进入反键轨道会降低键级；从反键轨道移走电子则可能增强键。",
+    "properties": ["两核之间具有节点", "占据后降低键级", "通常高于参与组合的原子轨道能量"],
+    "confusions": "反键轨道不是“没有电子的轨道”；它可以被占据。是否削弱键取决于其中实际有多少电子。",
+    "related": ["molecular-orbital", "bonding-orbital", "bond-order", "lumo"],
+    "source": "第二课：课堂速记 × 原理补充"
+  },
+  {
+    "slug": "bond-order",
+    "zh": "键级",
+    "en": "Bond order",
+    "category": "轨道与成键",
+    "definition": "MO 模型中净成键作用的量度，等于成键电子数与反键电子数之差的一半。",
+    "expanded": "<span class=\"inline-formula\">BO = ½(<i>N</i><sub>b</sub> − <i>N</i><sub>ab</sub>)</span>其中 <i>N</i><sub>b</sub> 是成键轨道电子数，<i>N</i><sub>ab</sub> 是反键轨道电子数。键级越高通常意味着键更短、更强，但不同分子之间比较时还会受到原子大小、轨道能量与极化等因素影响。",
+    "properties": ["成键电子使键级增加", "反键电子使键级降低", "可为整数或分数"],
+    "confusions": "MO 键级不是每条 Lewis 键线的机械计数；离域体系中它可以表现为分数，并应结合具体轨道占据解释。",
+    "related": ["bonding-orbital", "antibonding-orbital", "molecular-orbital"],
+    "source": "第二课：课堂速记 × 原理补充"
+  },
+  {
+    "slug": "homo",
+    "zh": "最高占据分子轨道",
+    "en": "Highest occupied molecular orbital (HOMO)",
+    "category": "前线分子轨道",
+    "definition": "基态中仍被电子占据、能量最高的分子轨道。",
+    "expanded": "HOMO 往往是分子最容易提供电子的轨道，因此常与 Lewis 碱性和亲核性相关。其能量、空间分布、相位与轨道系数共同决定它能否与亲电体的 LUMO 有效相互作用。",
+    "properties": ["常充当电子供体轨道", "空间分布影响反应位点", "能量越高通常越容易给出电子"],
+    "confusions": "HOMO 不一定局限在形式负电荷所在原子；共轭体系中它可以离域到多个位置。",
+    "related": ["lumo", "nucleophile", "molecular-orbital"],
+    "source": "第二课：课堂速记 × 原理补充"
+  },
+  {
+    "slug": "lumo",
+    "zh": "最低未占据分子轨道",
+    "en": "Lowest unoccupied molecular orbital (LUMO)",
+    "category": "前线分子轨道",
+    "definition": "基态中尚未被占据、能量最低且最容易接受电子的分子轨道。",
+    "expanded": "LUMO 常控制亲电体接受电子的方向和位置。羰基化合物的 π* 轨道、卤代烷 C–X 键的 σ* 轨道都是重要 LUMO；亲核体 HOMO 与这些空轨道的重叠可解释羰基加成与 SN2 背面进攻。",
+    "properties": ["常充当电子受体轨道", "空间系数影响进攻方向", "能量越低通常越容易接受电子"],
+    "confusions": "LUMO 是空轨道而不是正电荷本身；形式电荷只是一种 Lewis 电子记账。",
+    "related": ["homo", "electrophile", "antibonding-orbital", "molecular-orbital"],
+    "source": "第二课：课堂速记 × 原理补充"
+  },
+  {
+    "slug": "protonated-imine",
+    "zh": "质子化亚胺",
+    "en": "Protonated imine",
+    "category": "共振与酸碱",
+    "definition": "亚胺氮被质子化后形成的缺电子体系，可用多个共振贡献式描述。",
+    "expanded": "正电荷可在 C、N 及相邻 π 系统间离域。弯箭头只移动电子，不移动原子；共振贡献式的权重取决于八隅体、电荷位置和轨道重叠。",
+    "properties": ["常表现为亲电中心", "正电荷离域可降低局部电荷密度"],
+    "confusions": "共振不是质子在 C、N 间来回迁移；质子转移属于酸碱反应。",
+    "related": ["resonance-contributor", "electrophile", "lewis-acid"],
+    "source": "第二课：课堂速记"
+  },
+  {
+    "slug": "hybrid-orbital",
+    "zh": "杂化轨道",
+    "en": "Hybrid orbital",
+    "category": "轨道与成键",
+    "definition": "同一原子上若干原子轨道的数学线性组合，用于描述定向成键和近似几何。",
+    "expanded": "sp、sp²、sp³ 分别常对应线形、平面三角和四面体方向。杂化是模型，不表示轨道按时间顺序真实混合。",
+    "properties": ["提示 σ 键方向", "保留未杂化 p 轨道以形成 π 键"],
+    "confusions": "杂化类型不能单独决定完整分子构型，还需考虑孤对电子和 VSEPR。",
+    "related": ["molecular-orbital", "vsepr"],
+    "source": "第二课：课堂速记"
+  },
+  {
+    "slug": "vsepr",
+    "zh": "VSEPR 模型",
+    "en": "Valence-shell electron-pair repulsion model",
+    "category": "分子构型",
+    "definition": "以价层电子域相互排斥最小化为原则预测分子近似几何的模型。",
+    "expanded": "孤对–孤对排斥通常强于孤对–成键电子对，后者强于成键–成键排斥；NH₃ 为三角锥形，H₂O 为折线形。",
+    "properties": ["区分电子域几何与分子几何", "可解释键角偏离理想值"],
+    "confusions": "VSEPR 是定性模型，不能替代量子化学计算或实验结构测定。",
+    "related": ["hybrid-orbital", "bond-polarity"],
+    "source": "第二课：课堂速记"
+  },
+  {
+    "slug": "resonance-hybrid",
+    "zh": "共振杂化体",
+    "en": "Resonance hybrid",
+    "category": "电子离域",
+    "definition": "由所有合理贡献式共同描述的真实电子结构。",
+    "expanded": "共振杂化体是所有合理贡献式共同描述的真实分子，而不是贡献式之间的快速切换。电子密度连续离域，键级和电荷可能介于整数路易斯表示之间。乙酸根中两条 C–O 键约为 1.5 级，苯中六条 C–C 键等价，酰胺中 C–N 键具有部分双键性质。离域能否稳定体系取决于轨道重叠、贡献式能量、八隅体、电荷位置以及芳香性是否保持。",
+    "properties": [
+      "真实结构",
+      "可出现分数键级与部分电荷",
+      "等价贡献式导致对称的平均结构",
+      "非等价贡献式则由低能式主导而非平均对待"
+    ],
+    "confusions": "分子不会在贡献式之间来回跳动；杂化体也不是把几幅路易斯图机械叠加。圆圈芳香符号、部分电荷和分数键级表示测得或推断的平均电子结构。",
+    "related": [
+      "resonance-contributor"
+    ],
+    "source": "第一次课"
+  },
+  {
+    "slug": "arrhenius-acid-base", "zh": "阿伦尼乌斯酸碱理论", "en": "Arrhenius acid–base theory", "category": "酸碱理论",
+    "definition": "在水溶液中产生 H₃O⁺ 的物质为酸，产生 OH⁻ 的物质为碱。",
+    "expanded": "它是最早的水溶液酸碱定义，适合处理 pH、中和与电离问题。它的限制在于定义依赖水和 OH⁻，无法完整涵盖 NH₃ 等不含氢氧根却能接受质子的碱。",
+    "properties": ["限于水溶液", "酸与 H₃O⁺、碱与 OH⁻ 相关"], "confusions": "H⁺ 在水中实际以 H₃O⁺ 等溶剂化形式存在。", "related": ["bronsted-lowry", "conjugate-acid-base"], "source": "第三课：课堂速记 × 课件"
+  },
+  {
+    "slug": "bronsted-lowry", "zh": "布朗斯特–劳里酸碱理论", "en": "Brønsted–Lowry acid–base theory", "category": "酸碱理论",
+    "definition": "酸是质子供体，碱是质子受体。",
+    "expanded": "每一次质子转移都生成两对共轭酸碱。它不要求反应在水中进行，能够解释 NH₃ 接受 H⁺ 形成 NH₄⁺ 的碱性。", "properties": ["核心是 H⁺ 转移", "自然引出共轭酸碱对"], "confusions": "并非所有 Lewis 酸碱反应都有质子转移。", "related": ["arrhenius-acid-base", "conjugate-acid-base", "lewis-acid", "lewis-base"], "source": "第三课：课堂速记 × 课件"
+  },
+  {
+    "slug": "conjugate-acid-base", "zh": "共轭酸碱对", "en": "Conjugate acid–base pair", "category": "酸碱理论",
+    "definition": "只相差一个质子 H⁺ 的一对酸和碱。",
+    "expanded": "酸 HA 失去 H⁺ 后得到共轭碱 A⁻；碱 B 接受 H⁺ 后得到共轭酸 BH⁺。强酸对应弱共轭碱，因为稳定的阴离子不急于重新结合质子。", "properties": ["成员只相差一个 H⁺", "强弱呈反向关系"], "confusions": "共轭关系不等同于共振关系；前者涉及质子变化，后者原子位置不变。", "related": ["bronsted-lowry", "pka", "resonance-hybrid"], "source": "第三课：课堂速记 × 课件"
+  },
+  {
+    "slug": "pka", "zh": "酸度常数与 pKₐ", "en": "Acid-dissociation constant and pKₐ", "category": "酸碱理论",
+    "definition": "Kₐ 衡量酸在给定溶剂中的解离平衡；pKₐ = −log₁₀Kₐ。",
+    "expanded": "Kₐ 越大，酸解离越有利；pKₐ 因取负对数而越小表示酸越强。pKₐ 差 1 对应约十倍的 Kₐ 差，常用来估计质子转移平衡方向。", "properties": ["Kₐ 与 pKₐ 反向变化", "受溶剂与温度影响"], "confusions": "pKₐ 不是孤立分子的永久标签；它对应特定介质和条件。", "related": ["conjugate-acid-base", "bronsted-lowry"], "source": "第三课：课堂速记 × 课件"
+  },
+  {
+    "slug": "hydrocarbon", "zh": "烃", "en": "Hydrocarbon", "category": "烃类与命名",
+    "definition": "仅由碳和氢组成的化合物。", "expanded": "烃按碳骨架和不饱和度分为烷烃、烯烃、炔烃、芳香烃等。烃骨架决定基本命名与构象，官能团则常主导反应性。", "properties": ["仅含 C、H", "可为链状、环状或芳香体系"], "confusions": "含碳化合物不必然是烃；含 O、N、卤素时已是烃的衍生物。", "related": ["alkane", "saturated-hydrocarbon"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug": "alkane", "zh": "烷烃", "en": "Alkane", "category": "烃类与命名",
+    "definition": "只含 C–C 单键和 C–H 键的脂肪族烃。", "expanded": "开链烷烃的通式为 CₙH₂ₙ₊₂；环烷烃每形成一个环会比相应开链式少 H₂。碳通常近似 sp³ 杂化，C–C σ 键允许构象旋转。", "properties": ["属于饱和烃", "主要为 σ 键", "可有支链与环"], "confusions": "cycloalkane 也是饱和烃，但不满足开链 CₙH₂ₙ₊₂ 通式。", "related": ["hydrocarbon", "saturated-hydrocarbon", "homologous-series"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug": "saturated-hydrocarbon", "zh": "饱和烃", "en": "Saturated hydrocarbon", "category": "烃类与命名",
+    "definition": "碳骨架中不含 C=C 或 C≡C 多重键的烃。", "expanded": "典型例子是烷烃和环烷烃。这里的“饱和”指碳骨架对氢的最大结合程度；环本身使氢数减少，但不使环烷烃成为不饱和烃。", "properties": ["不含碳碳多重键", "包括开链烷烃与环烷烃"], "confusions": "环烷烃分子式中少 H₂ 是成环的结果，不代表含有双键。", "related": ["alkane", "hydrocarbon"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug": "homologous-series", "zh": "同系物", "en": "Homologous series", "category": "烃类与命名",
+    "definition": "结构和官能团类型相同、相邻成员相差一个 –CH₂– 单元的一组化合物。", "expanded": "正构烷烃是典型同系物系列。随着碳数增加，分子质量、色散力、沸点等通常有规律变化，但支化程度也会改变物理性质。", "properties": ["相邻成员相差 CH₂", "反应类型相近"], "confusions": "同系物不等同于同分异构体；后者分子式相同而连接方式不同。", "related": ["alkane", "hydrocarbon"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug": "substituent", "zh": "取代基", "en": "Substituent", "category": "系统命名",
+    "definition": "连在选定母体上的原子或原子团。", "expanded": "烷基可看作烷烃失去一个 H 后形成的取代基。命名时先写连接母体的位置，再写取代基名称；复杂取代基从连接母体的头碳开始单独编号，并以括号隔开。", "properties": ["需标明连接位次", "相同取代基可用倍数前缀合并"], "confusions": "取代基名称中的编号属于取代基内部，不能与母链编号混用。", "related": ["iupac-nomenclature", "cip-priority"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug": "iupac-nomenclature", "zh": "IUPAC 系统命名法", "en": "IUPAC nomenclature", "category": "系统命名",
+    "definition": "国际纯粹与应用化学联合会制定的、以结构为依据的规范命名体系。", "expanded": "对烷烃，核心步骤为选最长母链、给出最低位次、命名取代基、合并相同取代基并按语言规则排列。复杂分子还必须处理主官能团优先级与构型。", "properties": ["强调结构唯一性", "使用位次、前缀、母体和后缀"], "confusions": "俗名在交流中常见，但不一定给出唯一结构。", "related": ["substituent", "cip-priority", "bicyclic-alkane"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug": "cip-priority", "zh": "CIP 顺序规则", "en": "Cahn–Ingold–Prelog priority rules", "category": "系统命名",
+    "definition": "按原子序数及逐层比较原则为取代基建立优先级的规则。", "expanded": "先比较直接相连原子的原子序数；若相同，依次比较下一层原子。多重键按与多个等价复制原子相连处理。它用于取代基顺序，也用于 R/S、E/Z 构型指定。", "properties": ["原子序数高者优先", "可逐层比较", "多重键作复制原子处理"], "confusions": "英文名称的字母序与 CIP 优先级不是同一套规则。", "related": ["iupac-nomenclature", "substituent"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug": "bicyclic-alkane", "zh": "双环烷烃", "en": "Bicyclic alkane", "category": "环系命名",
+    "definition": "由两个环构成的饱和碳骨架，常以 bicyclo[a.b.c]alkane 表示。", "expanded": "桥环和稠合环均可按两个桥头碳之间的三条路径计数。方括号中三个数字从大到小列出，各数不含两个桥头碳；总碳数为三数之和再加二。", "properties": ["含两个桥头碳", "三条桥决定 bicyclo 数字"], "confusions": "bicyclo[a.b.c] 的数字不是三个环的大小，而是三条路径经过的原子数。", "related": ["spirocyclic", "iupac-nomenclature"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug": "spirocyclic", "zh": "螺环化合物", "en": "Spirocyclic compound", "category": "环系命名",
+    "definition": "两个环仅共享一个原子的环系。", "expanded": "spiro[a.b] 中 a、b 为两个环除共享螺原子外的碳数，小环数字写在前；后面的烷烃母体总碳数包括共享原子。编号从小环中相邻螺原子的碳开始。", "properties": ["只共享一个螺原子", "名称用 spiro[a.b]"], "confusions": "螺环不同于稠环和桥环，后二者共享两个或更多原子。", "related": ["bicyclic-alkane", "iupac-nomenclature"], "source": "第四课：课堂速记 × 课件"
+  },
+  {
+    "slug":"isomer","zh":"异构体","en":"Isomer","category":"异构与构象","definition":"分子式相同但为不同化合物的一组物质。","expanded":"异构的差别可以落在原子连接顺序，也可以落在相同连接关系下的三维排布。先分构造异构与立体异构，是后续命名、构象和反应选择性判断的起点。","properties":["分子式相同","结构或空间排列不同"],"confusions":"异构体不是同一种分子的不同画法；同一种分子的共振贡献式不属于异构体。","related":["constitutional-isomer","stereoisomer","conformation"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"constitutional-isomer","zh":"构造异构体","en":"Constitutional isomer","category":"异构与构象","definition":"原子之间连接顺序不同的异构体。","expanded":"碳骨架、位置和官能团异构均属于此类。正戊烷、异戊烷、新戊烷虽同为 C₅H₁₂，却有不同 C–C 连接关系和性质。它们彼此转化需要改变键连关系。","properties":["连接顺序不同","常有不同物理和化学性质"],"confusions":"构象异构体连接顺序相同，只因单键旋转而不同。","related":["isomer","stereoisomer","conformation"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"stereoisomer","zh":"立体异构体","en":"Stereoisomer","category":"异构与构象","definition":"原子连接顺序相同而三维空间排列不同的异构体。","expanded":"立体异构包括构型异构与构象异构。构型异构如环上的 cis/trans 通常需断键才能互变；构象异构则由单键旋转产生，常迅速互变。","properties":["连接顺序相同","三维排布不同"],"confusions":"cis/trans 表示上、下的相对朝向，axial/equatorial 表示特定椅式中的位置，两者不能混同。","related":["isomer","conformation","ring-flip"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"conformation","zh":"构象","en":"Conformation","category":"异构与构象","definition":"分子绕单键旋转或发生环翻转所得到的不同空间排列。","expanded":"乙烷的交叉式与重叠式、丁烷的 anti 与 gauche、环己烷的两把椅式都是构象。普通 C–C σ 键旋转壁垒较低，所以室温下通常快速互变。","properties":["由旋转或翻环产生","通常可逆且难分离"],"confusions":"构象变化不一定改变构型；翻环不会使 cis 变成 trans。","related":["newman-projection","dihedral-angle","ring-flip"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"newman-projection","zh":"Newman 投影式","en":"Newman projection","category":"异构与构象","definition":"沿一根 σ 键直视、同时显示前后两个原子取代基相对位置的投影式。","expanded":"前原子通常画为三条键线交于一点，后原子画为圆。它特别适合读取二面角、比较交叉与重叠构象，以及分析丁烷的 anti/gauche 能量差。","properties":["沿键轴观察","直接显示二面角"],"confusions":"Newman 投影不是平面结构；它编码的是特定观察方向下的三维关系。","related":["conformation","dihedral-angle","torsional-strain"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"dihedral-angle","zh":"二面角","en":"Dihedral angle","category":"异构与构象","definition":"由四个依次相连原子定义的两平面之间的夹角，常用 θ 表示。","expanded":"在 Newman 投影中可测前、后原子各一根键的相对转角。乙烷交叉式的代表二面角为 60°，重叠式为 0°；丁烷 anti 为 180°，gauche 为 60°。","properties":["描述绕键旋转","决定构象的相对排斥"],"confusions":"二面角不是键角；键角由三个原子定义，而二面角需四个原子。","related":["newman-projection","conformation","torsional-strain"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"torsional-strain","zh":"扭转张力","en":"Torsional strain","category":"构象能量","definition":"相邻键处于重叠或近重叠排列时，由键电子云排斥造成的能量升高。","expanded":"乙烷从交叉式转向重叠式会增加扭转张力。环丙烷平面结构使相邻 C–H 键近似重叠，因此除角张力外还有扭转张力。","properties":["重叠式最大","交叉式较小"],"confusions":"扭转张力不同于大取代基之间的空间张力，后者可在非重叠构象中存在。","related":["conformation","steric-strain","ring-strain"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"steric-strain","zh":"空间张力","en":"Steric strain","category":"构象能量","definition":"体积较大的、非键合原子或基团被迫过近时产生的排斥性不稳定化。","expanded":"丁烷全重叠式中两个甲基电子云强烈排斥；直立甲基环己烷中的 1,3-二轴相互作用也属这一范畴。它随取代基体积和接近程度增大而增强。","properties":["也称空间位阻","常由非键合接近引起"],"confusions":"空间位阻描述几何可及性和排斥，不等同于动力学中的亲核性或离去能力。","related":["torsional-strain","axial-equatorial","conformation"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"ring-strain","zh":"环张力","en":"Ring strain","category":"环烷烃构象","definition":"环状骨架因键角偏离、键重叠或跨环排斥而储存的额外能量。","expanded":"角张力与扭转张力是主成分。可比较每个 CH₂ 单元的燃烧热和近似无张力参照趋势估算环张力；环丙烷很大，椅式环己烷近乎为零。","properties":["可由燃烧热比较估算","影响稳定性与反应驱动力"],"confusions":"张力大不必然代表任意反应都快，速率还由反应路径和活化能控制。","related":["torsional-strain","cyclohexane-chair"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"cyclohexane-chair","zh":"环己烷椅式构象","en":"Cyclohexane chair conformation","category":"环烷烃构象","definition":"环己烷最稳定的非平面构象，近似无角张力和扭转张力。","expanded":"所有 C–C–C 键角接近 109.5°，相邻 C–H 与 C–C 键处于交叉关系。每个碳同时带一根直立键和一根平伏键；翻环使位置互换。","properties":["键角接近四面体","相邻键交叉","存在 axial/equatorial"],"confusions":"椅式不是静止的单一几何，室温下两把椅式不断互变。","related":["axial-equatorial","ring-flip","ring-strain"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"axial-equatorial","zh":"直立键与平伏键","en":"Axial and equatorial positions","category":"环烷烃构象","definition":"椅式环己烷中分别大致平行于环的竖直轴、或大致沿环外缘指向的两类取代位置。","expanded":"每个碳有一个 axial 与一个 equatorial 位置。翻环令 axial 与 equatorial 互换，但不改变上/下朝向。大取代基通常偏好 equatorial，以避开 1,3-二轴相互作用。","properties":["每碳各一个位置","翻环时彼此互换"],"confusions":"axial/equatorial 不是 cis/trans 的同义词。","related":["cyclohexane-chair","ring-flip","steric-strain"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"ring-flip","zh":"翻环","en":"Ring flip","category":"环烷烃构象","definition":"环己烷两把椅式之间的构象互变过程。","expanded":"翻环经过半椅、扭船等较高能构象。每个取代基由 axial 变 equatorial 或反之，但始终保持原先的上或下朝向，故不改变 cis/trans 构型。","properties":["改变 axial/equatorial","保留上/下朝向"],"confusions":"翻环不是断键反应，也不会使一个环的构型异构体自动转为另一个。","related":["cyclohexane-chair","axial-equatorial","stereoisomer"],"source":"第五课：课堂速记 × 课件"
+  }
+]

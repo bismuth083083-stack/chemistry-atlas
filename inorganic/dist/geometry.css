@@ -1,0 +1,7 @@
+.geometry-table{margin:24px 0;overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+.geometry-table table{width:100%;min-width:980px;border-collapse:collapse;font-size:14px;line-height:1.45}
+.geometry-table th,.geometry-table td{padding:12px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+.geometry-table th{position:sticky;top:0;background:var(--surface-2);color:var(--accent);font-weight:650}
+.geometry-table td:first-child,.geometry-table td:nth-child(2){text-align:center;font-family:"DejaVu Math TeX Gyre","Times New Roman",serif}
+.geometry-table a{color:var(--accent);border-bottom:1px dotted var(--accent)}
+.geometry-table tbody tr:hover{background:rgba(130,184,216,.055)}

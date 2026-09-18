@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="物理化学第二课：真实气体、维里方程、临界现象与 van der Waals 方程">
+  <title>第二课 · 真实气体与状态方程</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="pchem.css">
+  <link rel="stylesheet" href="qa.css">
+  <link rel="stylesheet" href="math.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#171b1d">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><span class="mark">物</span><span>物理化学知识库</span></a><label class="search"><span>⌕</span><input id="global-search" placeholder="搜索知识库…" aria-label="搜索知识库"><kbd>⌘ K</kbd></label><button id="theme" class="icon-button">◐</button></header>
+<aside class="sidebar"><nav><p class="nav-label">知识库</p><a href="/"><span>◫</span>课程笔记</a><a href="/terms"><span>Aa</span>双语词条库</a><p class="nav-label">物理化学 I</p><a href="/lesson-01"><span>01</span>绪论、数学基础与理想气体</a><a class="active" href="/lesson-02"><span>02</span>真实气体与状态方程</a><a href="/lesson-03"><span>03</span>气体动理论与分子速率</a><a href="/lesson-04"><span>04</span>热力学第一定律</a></nav><div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div></aside>
+<main class="workspace article">
+  <a class="back" href="/">← 返回课程笔记</a>
+  <header class="article-head"><p class="eyebrow">LECTURE 02 · GASES</p><h1>真实气体与状态方程</h1><p>Real gases, virial equations, critical phenomena, and the van der Waals equation</p><div><span>授课课件</span><span>原理重构</span><span>公式分数化</span><span>典型计算</span></div></header>
+
+  <section>
+    <h2>0. 本课的逻辑主线</h2>
+    <p>理想气体方程把气体看作“没有体积、彼此不作用”的质点集合。真实气体偏离理想行为，根源只有两项：<b>分子占有有限体积</b>，以及<b>分子间存在吸引和排斥</b>。本课所有新量和新方程，都是在描述这两种修正。</p>
+    <div class="concept-strip"><span>实验偏差</span><b>→</b><span>压缩因子 Z</span><b>→</b><span>维里展开</span><b>→</b><span>van der Waals 模型</span><b>→</b><span>对应状态</span></div>
+    <div class="note"><b>先记结论</b><p>低压时分子相距很远，真实气体都趋近理想气体；中等压力下吸引常占主导，高压下短程排斥和有限分子体积占主导。</p></div>
+  </section>
+
+  <section>
+    <h2>1. 状态方程与理想气体：作为参照系</h2>
+    <p>纯气体的平衡状态可由 p、V、T、n 描述，但四者并不独立。指定其中三个，第四个由<a class="term-link" href="/term?slug=equation-of-state">状态方程</a>确定：</p>
+    <div class="formula">p = f(T,V,n)</div>
+    <p>理想气体状态方程及摩尔形式为：</p>
+    <div class="formula">pV = nRT　　pV<sub>m</sub> = RT　　V<sub>m</sub> = <span class="frac"><span>V</span><span>n</span></span></div>
+    <p>“理想”不是指气体稀薄或不存在质量，而是指它在所有状态下严格服从 pV = nRT。真实气体只在 p → 0 的极限趋于这一关系。</p>
+    <div class="note"><b>单位检查</b><p>使用 R = 8.314 J·mol<sup>−1</sup>·K<sup>−1</sup> 时，pV 必须用 J；若压力用 atm、体积用 L，则应使用 R = 8.2057 × 10<sup>−2</sup> L·atm·mol<sup>−1</sup>·K<sup>−1</sup>。</p></div>
+  </section>
+
+  <section>
+    <h2>1A. 气体动理论：从分子碰撞得到压力与温度</h2>
+    <p><a class="term-link" href="/term?slug=kinetic-model-gases">气体动理论</a>把宏观压力和温度连接到分子运动。基本假设是：分子数量巨大、随机且各向同性运动；分子自身体积可忽略；除瞬时完全弹性碰撞外，不存在分子间作用；分子服从经典力学。</p>
+    <div class="derivation-box"><h3>压强方程的推导</h3><ol><li>取边长为 L 的立方容器。一个质量为 m、x 方向速度分量为 c<sub>x</sub> 的分子撞击垂直于 x 轴的器壁，每次传递动量 2mc<sub>x</sub>。</li><li>它连续撞击同一器壁的时间间隔为 <span class="frac"><span>2L</span><span>c<sub>x</sub></span></span>，因此该分子产生的平均力为 <span class="frac"><span>mc<sub>x</sub><sup>2</sup></span><span>L</span></span>。</li><li>对 N 个分子求和，并除以器壁面积 L²：<div class="formula compact">p=<span class="frac"><span>Nm⟨c<sub>x</sub><sup>2</sup>⟩</span><span>V</span></span></div></li><li>随机运动各向同性，所以 ⟨c<sub>x</sub><sup>2</sup>⟩=⟨c<sub>y</sub><sup>2</sup>⟩=⟨c<sub>z</sub><sup>2</sup>⟩=<span class="frac"><span>1</span><span>3</span></span>⟨c²⟩，得到：</li></ol><div class="formula">p=<span class="frac"><span>1</span><span>3</span></span><span class="frac"><span>Nm</span><span>V</span></span>⟨c²⟩=<span class="frac"><span>1</span><span>3</span></span>ρ⟨c²⟩</div><p class="derivation-note">压力不是分子“静止地压在壁上”，而是大量分子撞壁时单位时间、单位面积传递的动量。</p></div>
+    <p>把上式与 pV=NkT 比较，可得单个分子的平均平动动能：</p>
+    <div class="formula">⟨E<sub>tr</sub>⟩=<span class="frac"><span>1</span><span>2</span></span>m⟨c²⟩=<span class="frac"><span>3</span><span>2</span></span>kT</div>
+    <p>因此温度量度的是分子平均平动动能，而不是某一个分子的瞬时速度。均方根速率为：</p>
+    <div class="formula">c<sub>rms</sub>=√⟨c²⟩=<span class="sqrt">√<span class="radicand"><span class="frac"><span>3kT</span><span>m</span></span></span></span>=<span class="sqrt">√<span class="radicand"><span class="frac"><span>3RT</span><span>M</span></span></span></span></div>
+    <div class="symbol-table" role="table" aria-label="气体动理论物理量"><div class="symbol-head" role="row"><b>量</b><b>意义</b><b>常用单位</b></div><div role="row"><span>N</span><span>容器中的分子总数</span><span>无量纲计数</span></div><div role="row"><span>m</span><span>单个分子的质量</span><span>kg</span></div><div role="row"><span>c</span><span>单个分子的速率；c<sub>x</sub> 是速度的 x 分量</span><span>m·s⁻¹</span></div><div role="row"><span>⟨c²⟩</span><span>速率平方的分子集合平均</span><span>m²·s⁻²</span></div><div role="row"><span>ρ</span><span>气体质量密度，等于 <span class="frac"><span>Nm</span><span>V</span></span></span><span>kg·m⁻³</span></div><div role="row"><span>k</span><span>Boltzmann 常数</span><span>J·K⁻¹</span></div><div role="row"><span>M</span><span>摩尔质量</span><span>kg·mol⁻¹</span></div></div>
+    <div class="note"><b>模型边界</b><p>真实气体在高密度或低温下不能忽略分子体积和相互作用，因此动理论的这一简单形式主要描述稀薄理想气体。</p></div>
+  </section>
+
+  <section>
+    <h2>2. 混合气体：摩尔分数、分压与 Dalton 定律</h2>
+    <p>组分 J 的<a class="term-link" href="/term?slug=mole-fraction">摩尔分数</a>是该组分物质的量在总物质的量中所占比例：</p>
+    <div class="formula">x<sub>J</sub> = <span class="frac"><span>n<sub>J</sub></span><span>n</span></span>　　n = Σn<sub>J</sub>　　Σx<sub>J</sub> = 1</div>
+    <p>对于理想气体混合物，组分 J 的<a class="term-link" href="/term?slug=partial-pressure">分压</a>为：</p>
+    <div class="formula">p<sub>J</sub> = x<sub>J</sub>p = <span class="frac"><span>n<sub>J</sub>RT</span><span>V</span></span>　　p = Σp<sub>J</sub></div>
+    <p>分压可以理解为：若该组分在同一 T、V 下单独占据容器，它会产生的压力。由此，混合气体总压只取决于总物质的量；组成则决定各组分怎样分配总压。</p>
+    <div class="worked-example"><p class="eyebrow">课件例题</p><h3>1.00 mol N₂ 与 3.00 mol H₂，10.0 L，298 K</h3><div class="formula">p = <span class="frac"><span>(n<sub>N₂</sub>+n<sub>H₂</sub>)RT</span><span>V</span></span> = 9.87 atm</div><p>x<sub>N₂</sub> = 0.250，x<sub>H₂</sub> = 0.750，因此 p<sub>N₂</sub> = 2.47 atm，p<sub>H₂</sub> = 7.40 atm。</p></div>
+  </section>
+
+  <section>
+    <h2>3. 为什么真实气体会偏离？</h2>
+    <div class="comparison-grid"><article><p class="eyebrow">ATTRACTION</p><h3>吸引作用</h3><p>分子接近但尚未接触时显著。它把分子向气体内部拉回，使撞壁动量传递减小，实际压力低于理想预测。</p></article><article><p class="eyebrow">REPULSION</p><h3>排斥与有限体积</h3><p>分子几乎接触时急剧增强。分子不能相互穿透，可供分子质心运动的体积小于容器体积。</p></article></div>
+    <figure><img src="assets/molecular-interactions.png" alt="分子势能随分子间距变化以及吸引和排斥区域"><figcaption>课件 PDF 第 18 页上半页：中程距离由吸引主导，接触附近势能陡升，短程排斥占主导。</figcaption></figure>
+    <p>降低压力会增大平均分子间距，使两种作用都逐渐可以忽略。这解释了为什么所有真实气体都有：</p>
+    <div class="formula">lim<sub>p→0</sub> pV<sub>m</sub> = RT</div>
+  </section>
+
+  <section>
+    <h2>4. 压缩因子 Z：先量化偏差，再解释偏差</h2>
+    <p><a class="term-link" href="/term?slug=compression-factor">压缩因子</a>把真实气体的摩尔体积与同温同压下理想气体的摩尔体积作比较：</p>
+    <div class="formula">Z = <span class="frac"><span>pV<sub>m</sub></span><span>RT</span></span> = <span class="frac"><span>V<sub>m,real</sub></span><span>V<sub>m,ideal</sub></span></span></div>
+    <div class="law-grid"><article><b>Z = 1</b><div>理想行为</div><p>低压极限必有 Z → 1。</p></article><article><b>Z &lt; 1</b><div>吸引占主导</div><p>真实气体比理想预测更易被压缩。</p></article><article><b>Z &gt; 1</b><div>排斥占主导</div><p>常见于高压，有限体积效应显著。</p></article><article><b>Z 的判读</b><div>先看 1 的上下</div><p>不要把曲线斜率正负直接等同于吸引或排斥。</p></article></div>
+    <figure><img src="assets/compression-factor.png" alt="多种气体在零摄氏度时压缩因子随压力的变化"><figcaption>课件 PDF 第 19 页上半页：不同气体的 Z-p 曲线。中压区常出现 Z&lt;1，高压区最终因排斥作用转为 Z&gt;1。</figcaption></figure>
+  </section>
+
+  <section>
+    <h2>5. 维里方程：用实验系数逐级修正理想气体</h2>
+    <p>在低密度区，真实气体与理想气体偏差较小，可把 Z 展开为摩尔体积倒数的幂级数：</p>
+    <div class="formula">Z = 1 + <span class="frac"><span>B(T)</span><span>V<sub>m</sub></span></span> + <span class="frac"><span>C(T)</span><span>V<sub>m</sub><sup>2</sup></span></span> + ···</div>
+    <div class="formula">pV<sub>m</sub> = RT<span class="paren">(1 + <span class="frac"><span>B</span><span>V<sub>m</sub></span></span> + <span class="frac"><span>C</span><span>V<sub>m</sub><sup>2</sup></span></span> + ···)</span></div>
+    <div class="derivation-box"><h3>推导思路：在零密度附近展开</h3><ol><li>定义摩尔密度 ρ<sub>m</sub>=<span class="frac"><span>1</span><span>V<sub>m</sub></span></span>。当 ρ<sub>m</sub>→0 时，分子相距很远，Z→1。</li><li>固定温度，把 Z(T,ρ<sub>m</sub>) 在 ρ<sub>m</sub>=0 附近作 Taylor 展开：<div class="formula compact">Z = 1 + <span class="derivative">(<span class="frac"><span>∂Z</span><span>∂ρ<sub>m</sub></span></span>)<sub>T,0</sub></span>ρ<sub>m</sub> + <span class="frac"><span>1</span><span>2</span></span><span class="derivative">(<span class="frac"><span>∂<sup>2</sup>Z</span><span>∂ρ<sub>m</sub><sup>2</sup></span></span>)<sub>T,0</sub></span>ρ<sub>m</sub><sup>2</sup> + ···</div></li><li>把各阶系数分别定义为 B(T)、C(T)…，再代入 ρ<sub>m</sub>=<span class="frac"><span>1</span><span>V<sub>m</sub></span></span>，便得到维里方程。</li></ol><p class="derivation-note">这是低密度极限的系统展开；系数既可由实验曲线拟合，也可由分子相互作用势计算。B 主要体现二体作用，C 进一步包含三体关联。</p></div>
+    <div class="symbol-table" role="table" aria-label="维里方程物理量"><div class="symbol-head" role="row"><b>量</b><b>意义</b><b>常用单位</b></div><div role="row"><span>Z</span><span>压缩因子，衡量偏离理想气体的程度</span><span>无量纲</span></div><div role="row"><span>V<sub>m</sub></span><span>摩尔体积</span><span>m³·mol⁻¹</span></div><div role="row"><span>ρ<sub>m</sub></span><span>摩尔密度，等于 <span class="frac"><span>1</span><span>V<sub>m</sub></span></span></span><span>mol·m⁻³</span></div><div role="row"><span>B(T)</span><span>第二维里系数，低密度下主要反映二分子相互作用</span><span>m³·mol⁻¹</span></div><div role="row"><span>C(T)</span><span>第三维里系数，进一步包含三分子关联</span><span>m⁶·mol⁻²</span></div></div>
+    <p><a class="term-link" href="/term?slug=virial-coefficient">第二维里系数 B</a>主要反映成对分子相互作用；C 进一步包含三分子关联。它们依赖温度，也依赖气体种类。注意：B 的量纲是体积每摩尔，C 的量纲是体积平方每摩尔平方。</p>
+    <div class="comparison-grid"><article><h3>B &lt; 0</h3><p>低密度下吸引效应占主导，Z 从 1 的下方偏离。</p></article><article><h3>B &gt; 0</h3><p>低密度下排斥效应占主导，Z 从 1 的上方偏离。</p></article></div>
+    <aside class="qa-card" aria-label="课堂问答：维里系数是怎么想到的">
+      <div class="qa-question"><span>问</span><p>维里系数是怎么想到的？是不是用多项式拟合实验曲线？</p></div>
+      <div class="qa-answer"><span>答</span><div><p><b>可以先这样理解，但它不只是黑箱拟合。</b>固定温度测量 p、V<sub>m</sub> 后算出 Z，在低压极限附近把偏离理想气体的部分作幂级数展开；实验拟合可给出各项系数。</p><p>这些项同时有微观意义：B 主要对应二分子相互作用，C 进一步包含三分子关联。因此维里方程既是低密度实验曲线的系统展开，也是按分子关联层级逐步修正理想气体。</p></div></div>
+    </aside>
+    <h3>Boyle 温度</h3>
+    <p>在<a class="term-link" href="/term?slug=boyle-temperature">Boyle 温度 T<sub>B</sub></a>，第二维里系数为零：</p>
+    <div class="formula">B(T<sub>B</sub>) = 0　　Z = 1 + O<span class="paren">(<span class="frac"><span>1</span><span>V<sub>m</sub><sup>2</sup></span></span>)</span></div>
+    <p>于是低压下的一阶偏差消失，真实气体在比其他温度更宽的压力范围内近似理想。它并不意味着该气体在所有压力下都严格理想。</p>
+  </section>
+
+  <section>
+    <h2>6. 液化、蒸气压与临界点</h2>
+    <p>低于临界温度压缩气体时，等温线上会出现水平段。开始出现液滴后，继续压缩主要使气体转化为液体，而不是显著提高压力；此时气液两相共存，平台压力就是该温度下的蒸气压。</p>
+    <figure><img src="assets/condensation-isotherms.png" alt="二氧化碳不同温度下的实验等温线和气液共存平台"><figcaption>课件 PDF 第 23 页上半页：CO₂ 实验等温线。C-E 为气液共存平台；E 点后样品完全液化。</figcaption></figure>
+    <p>平台随温度升高而缩短，最终在<a class="term-link" href="/term?slug=critical-point">临界点</a>消失。临界等温线在临界点具有水平拐点：</p>
+    <div class="formula"><span class="derivative">(<span class="frac"><span>∂p</span><span>∂V<sub>m</sub></span></span>)<sub>T<sub>c</sub></sub></span> = 0　　<span class="derivative">(<span class="frac"><span>∂<sup>2</sup>p</span><span>∂V<sub>m</sub><sup>2</sup></span></span>)<sub>T<sub>c</sub></sub></span> = 0</div>
+    <p>T ≥ T<sub>c</sub> 时，仅靠加压不能形成独立液相；临界点对应的 T<sub>c</sub>、p<sub>c</sub>、V<sub>c</sub> 称为临界常数。</p>
+  </section>
+
+  <section>
+    <h2>7. van der Waals 方程：两项物理修正</h2>
+    <p><a class="term-link" href="/term?slug=van-der-waals-equation">van der Waals 方程</a>把有限体积和吸引作用写进同一个状态方程。摩尔形式为：</p>
+    <div class="formula"><span class="paren">(p + <span class="frac"><span>a</span><span>V<sub>m</sub><sup>2</sup></span></span>)</span>(V<sub>m</sub> − b) = RT</div>
+    <div class="formula">p = <span class="frac"><span>RT</span><span>V<sub>m</sub> − b</span></span> − <span class="frac"><span>a</span><span>V<sub>m</sub><sup>2</sup></span></span></div>
+    <div class="derivation-box"><h3>推导思路：对理想模型作两项物理修正</h3><ol><li>从一摩尔理想气体 pV<sub>m</sub>=RT 出发。</li><li><b>体积修正：</b>分子有有限尺寸，质心不能进入全部容器空间，因此把 V<sub>m</sub> 换成可用体积 V<sub>m</sub>−b。</li><li><b>压力修正：</b>靠近器壁的分子受到内部其他分子的净吸引，对器壁的撞击减弱。成对作用数随密度平方变化，因此理想化的“无吸引压力”等于实测 p 加上 <span class="frac"><span>a</span><span>V<sub>m</sub><sup>2</sup></span></span>。</li><li>把两项代回即可得到 <span class="paren">(p+<span class="frac"><span>a</span><span>V<sub>m</sub><sup>2</sup></span></span>)</span>(V<sub>m</sub>−b)=RT。</li></ol><p class="derivation-note">这是一种物理动机明确的半经验建模，不是由理想气体方程严格推导出的唯一真实气体方程。</p></div>
+    <div class="symbol-table" role="table" aria-label="van der Waals 方程物理量"><div class="symbol-head" role="row"><b>量</b><b>意义</b><b>常用单位</b></div><div role="row"><span>p</span><span>气体实测压力</span><span>Pa</span></div><div role="row"><span>V<sub>m</sub></span><span>摩尔体积</span><span>m³·mol⁻¹</span></div><div role="row"><span>T</span><span>热力学温度</span><span>K</span></div><div role="row"><span>R</span><span>摩尔气体常数</span><span>J·mol⁻¹·K⁻¹</span></div><div role="row"><span>a</span><span>吸引参数；越大通常表示分子间吸引越强</span><span>Pa·m⁶·mol⁻²</span></div><div role="row"><span>b</span><span>排除体积参数；反映分子的有效尺寸</span><span>m³·mol⁻¹</span></div></div>
+    <div class="comparison-grid"><article><h3>体积修正 b</h3><p>分子不可穿透，可用体积由 V<sub>m</sub> 改为 V<sub>m</sub>−b。b 越大，分子有效尺寸通常越大。</p></article><article><h3>压力修正 a</h3><p>吸引使实测压力偏低，因此在实测 p 上加内压力 <span class="frac"><span>a</span><span>V<sub>m</sub><sup>2</sup></span></span> 才对应“无吸引”的压力。a 越大，吸引通常越强。</p></article></div>
+    <p>对 n mol 气体，总量形式是：</p>
+    <div class="formula"><span class="paren">(p + <span class="frac"><span>n<sup>2</sup>a</span><span>V<sup>2</sup></span></span>)</span>(V − nb) = nRT</div>
+    <div class="note"><b>极限检查</b><p>当 T 高、V<sub>m</sub> ≫ b 且 <span class="frac"><span>a</span><span>V<sub>m</sub><sup>2</sup></span></span> 很小时，van der Waals 方程必须退化为 pV<sub>m</sub> = RT。任何推导若不能回到这一极限，通常存在代数或物理解释错误。</p></div>
+  </section>
+
+  <section>
+    <h2>8. van der Waals 回线与 Maxwell 构造</h2>
+    <p>T &lt; T<sub>c</sub> 时，van der Waals 等温线会产生振荡回线，其中一段甚至预测 ∂p/∂V &gt; 0，即加压反而膨胀，物理上不稳定。真实体系以恒定压力下的气液两相共存取代该回线。</p>
+    <figure><img src="assets/vdw-loops.png" alt="van der Waals 回线以及 Maxwell 等面积构造示意"><figcaption>课件 PDF 第 28 页下半页：van der Waals 回线。水平线按上下两块面积相等确定，这就是 Maxwell 等面积构造。</figcaption></figure>
+    <aside class="qa-card" aria-label="课堂问答：回环怎样形成，Maxwell 如何修正">
+      <div class="qa-question"><span>问</span><p>Loop area 是怎么形成的？Maxwell 如何修正？</p></div>
+      <div class="qa-answer"><span>答</span><div><p><b>回环来自把均匀单相方程延伸进本应气液分相的区域。</b>对 van der Waals 等温线求导：</p><div class="formula compact"><span class="derivative">(<span class="frac"><span>∂p</span><span>∂V<sub>m</sub></span></span>)<sub>T</sub></span>=−<span class="frac"><span>RT</span><span>(V<sub>m</sub>−b)<sup>2</sup></span></span>+<span class="frac"><span>2a</span><span>V<sub>m</sub><sup>3</sup></span></span></div><p>低于临界温度时，吸引修正足够强，使导数两次经过零点，曲线出现“下降—上升—下降”的 S 形。中间段满足 <span class="derivative">(<span class="frac"><span>∂p</span><span>∂V<sub>m</sub></span></span>)<sub>T</sub></span>&gt;0，因而等温压缩系数</p><div class="formula compact">κ<sub>T</sub>=−<span class="frac"><span>1</span><span>V<sub>m</sub></span></span><span class="derivative">(<span class="frac"><span>∂V<sub>m</sub></span><span>∂p</span></span>)<sub>T</sub></span>&lt;0</div><p>这是机械不稳定状态：微小密度涨落会被放大，真实体系会分成高密度液相和低密度气相。</p><p><a class="term-link" href="/term?slug=maxwell-construction">Maxwell 等面积构造</a>用共存压力 p<sub>eq</sub> 的水平线替换回环，并要求</p><div class="formula compact">∫<sub>V<sub>l</sub></sub><sup>V<sub>g</sub></sup>[p(V<sub>m</sub>,T)−p<sub>eq</sub>] dV<sub>m</sub>=0</div><p>即水平线上、下两块面积相等。这个条件保证同温同压下液相与气相的化学势相等；V<sub>l</sub> 到 V<sub>g</sub> 之间不是均匀的中间相，而是两相比例随总体积改变。</p></div></div>
+    </aside>
+    <div class="symbol-table" role="table" aria-label="Maxwell 构造物理量"><div class="symbol-head" role="row"><b>量</b><b>意义</b><b>常用单位</b></div><div role="row"><span>κ<sub>T</sub></span><span>等温压缩系数；稳定物质应为正</span><span>Pa⁻¹</span></div><div role="row"><span>p<sub>eq</sub></span><span>该温度下气液两相的共存压力</span><span>Pa</span></div><div role="row"><span>V<sub>l</sub></span><span>饱和液体摩尔体积</span><span>m³·mol⁻¹</span></div><div role="row"><span>V<sub>g</sub></span><span>饱和蒸气摩尔体积</span><span>m³·mol⁻¹</span></div></div>
+    <p>在临界点把前述两个导数条件代入 van der Waals 方程，可得：</p>
+    <div class="formula">V<sub>c</sub> = 3b　　p<sub>c</sub> = <span class="frac"><span>a</span><span>27b<sup>2</sup></span></span>　　T<sub>c</sub> = <span class="frac"><span>8a</span><span>27Rb</span></span></div>
+    <div class="formula">Z<sub>c</sub> = <span class="frac"><span>p<sub>c</sub>V<sub>c</sub></span><span>RT<sub>c</sub></span></span> = <span class="frac"><span>3</span><span>8</span></span> = 0.375</div>
+    <p>真实气体的 Z<sub>c</sub> 并不都等于 0.375，因此该方程能给出定性结构，却不是高精度的普适定量模型。</p>
+  </section>
+
+  <section>
+    <h2>9. 用 van der Waals 方程求摩尔体积</h2>
+    <p>已知 p、T、a、b 时，代入 p = <span class="frac"><span>RT</span><span>V<sub>m</sub>−b</span></span>−<span class="frac"><span>a</span><span>V<sub>m</sub><sup>2</sup></span></span> 并清除分母，得到三次方程：</p>
+    <div class="formula">V<sub>m</sub><sup>3</sup> − <span class="paren">(b + <span class="frac"><span>RT</span><span>p</span></span>)</span>V<sub>m</sub><sup>2</sup> + <span class="frac"><span>a</span><span>p</span></span>V<sub>m</sub> − <span class="frac"><span>ab</span><span>p</span></span> = 0</div>
+    <p>课件例题中 CO₂ 在 500 K、100 atm 下，a = 3.640 atm·L²·mol<sup>−2</sup>，b = 4.267 × 10<sup>−2</sup> L·mol<sup>−1</sup>，可接受根为 V<sub>m</sub> = 0.370 L·mol<sup>−1</sup>。</p>
+    <div class="note"><b>选根规则</b><p>三次方程可能给出多个实根。必须同时检查 V<sub>m</sub> &gt; b、数值量级、所处相区与原方程回代；不能机械地把第一个实根当作答案。</p></div>
+  </section>
+
+  <section>
+    <h2>10. 对应状态原理与约化变量</h2>
+    <p>不同气体的 p、V<sub>m</sub>、T 数值尺度差异很大。用各自临界常数归一化，定义<a class="term-link" href="/term?slug=reduced-variable">约化变量</a>：</p>
+    <div class="formula">p<sub>r</sub> = <span class="frac"><span>p</span><span>p<sub>c</sub></span></span>　　T<sub>r</sub> = <span class="frac"><span>T</span><span>T<sub>c</sub></span></span>　　V<sub>r</sub> = <span class="frac"><span>V<sub>m</sub></span><span>V<sub>c</sub></span></span></div>
+    <p><a class="term-link" href="/term?slug=corresponding-states">对应状态原理</a>认为，不同气体若具有相同的约化状态变量，其宏观行为近似相同。van der Waals 方程的约化形式不再含 a、b：</p>
+    <div class="formula">p<sub>r</sub> = <span class="frac"><span>8T<sub>r</sub></span><span>3V<sub>r</sub> − 1</span></span> − <span class="frac"><span>3</span><span>V<sub>r</sub><sup>2</sup></span></span></div>
+    <aside class="qa-card" aria-label="课堂问答：约化变量是怎么想的">
+      <div class="qa-question"><span>问</span><p>为什么要约化？为什么用临界常数相除？</p></div>
+      <div class="qa-answer"><span>答</span><div><p><b>约化就是用物质自己的临界尺度作尺子。</b>相同的绝对温度对不同气体可能代表完全不同的相区；T<sub>r</sub>=2 则统一表示“温度是自身临界温度的两倍”。因此约化变量描述的是状态相对于自身临界点的位置，而不只是绝对数值。</p><p>令 p=p<sub>r</sub>p<sub>c</sub>、V<sub>m</sub>=V<sub>r</sub>V<sub>c</sub>、T=T<sub>r</sub>T<sub>c</sub>，并代入 V<sub>c</sub>=3b、p<sub>c</sub>=<span class="frac"><span>a</span><span>27b²</span></span>、T<sub>c</sub>=<span class="frac"><span>8a</span><span>27Rb</span></span>，van der Waals 方程中的 a、b 会全部消去，留下上面的统一约化方程。这正是对应状态原理的数学来源。</p><p>但它是近似普适规律：强极性、氢键或明显非球形分子还需要偏心因子等额外信息。</p></div></div>
+    </aside>
+    <p>工程压缩因子图正是这一思想的应用：由 p<sub>r</sub>、T<sub>r</sub> 估计 Z，再由 V<sub>m</sub> = <span class="frac"><span>ZRT</span><span>p</span></span> 求摩尔体积。它是一种近似规律，不表示所有分子结构差异都消失。</p>
+  </section>
+
+  <section>
+    <h2>11. 复习与解题检查表</h2>
+    <ol class="check-list"><li><b>先判模型：</b>题目是在低压近似理想，给出 Z，要求维里修正，还是指定 van der Waals 方程？</li><li><b>再统一单位：</b>a、b、R、p、V 必须处在同一单位体系。</li><li><b>读 Z 的物理意义：</b>Z&lt;1 通常指吸引主导，Z&gt;1 通常指排斥与有限体积主导。</li><li><b>区分两个展开：</b>按 p 展开的 B′、C′ 与按 <span class="frac"><span>1</span><span>V<sub>m</sub></span></span> 展开的 B、C 不是同一组数。</li><li><b>临界条件是两个：</b>一阶和二阶体积偏导同时为零。</li><li><b>最后做极限检查：</b>p→0 或 V<sub>m</sub>→∞ 时应回到理想气体。</li></ol>
+    <div class="note"><b>高频误区</b><p>V<sub>m</sub> 是摩尔体积 <span class="frac"><span>V</span><span>n</span></span>，不是“某个分子的体积”；Boyle 温度不是临界温度；van der Waals 回线不是真实可观测的稳定路径；分压关系 p<sub>J</sub>=x<sub>J</sub>p 在这里建立在理想气体混合物模型上。</p></div>
+  </section>
+
+  <footer class="source">主要来源：《PChem1 - Gases》课程课件（文件标注 2026-09-08；PDF 元数据显示原始课件标题含 2025-09-09）。正文按课件顺序重构并补充推导连接；课件截图仅用于私人学习。</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

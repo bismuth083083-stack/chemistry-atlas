@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="分析化学 I 第二章 基本操作与样品制备">
+<title>02 基本操作与样品制备 · 分析化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="course-extra.css">
+<link rel="stylesheet" href="qa.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a class="active" href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<p class="nav-label">本章目录</p>
+<a href="#glp">
+<span>2.1</span>GLP 与验证</a>
+<a href="#materials">
+<span>2.2</span>材料与试剂</a>
+<a href="#balance">
+<span>2.3</span>分析天平</a>
+<a href="#glassware">
+<span>2.4</span>容量器皿</a>
+<a href="#standards">
+<span>2.5</span>标准溶液</a>
+<a href="#prep">
+<span>2.6</span>样品制备</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside>
+<main class="workspace">
+<article class="article lesson">
+<header class="article-head">
+<p class="eyebrow">02 · BASIC OPERATIONS & SAMPLE PREPARATION</p>
+<h1>基本操作与样品制备</h1>
+<p>可靠结果始于可追溯记录、合适材料、受控称量与定容，以及不会引入损失或污染的样品前处理。</p>
+<div>
+<span>笔记大纲</span>
+<span>课件 1–64</span>
+<span>教材 Chapter 2 + Chapter 4</span>
+<span>更新 2026/09/15</span>
+</div>
+</header>
+<nav class="chapter-jump" aria-label="本章快速导航">
+<a href="#glp">GLP</a>
+<a href="#materials">材料与试剂</a>
+<a href="#balance">天平</a>
+<a href="#glassware">容量器皿</a>
+<a href="#standards">标准溶液</a>
+<a href="#prep">样品制备</a>
+</nav>
+
+<section id="glp">
+<p class="section-kicker">2.1 GOOD LABORATORY PRACTICE</p>
+<h2>GLP、记录与方法验证</h2>
+<p>
+<b>良好实验室规范 Good Laboratory Practice, GLP</b> 是实验室为保证结果质量与正确性而建立的一组强制规则、操作程序和实践。其核心不是一句“认真操作”，而是用可执行、可审计的制度让结果可追溯。</p>
+<div class="compare-pair">
+<article>
+<h3>SOP 标准操作规范</h3>
+<p>详细规定样品监管链、样品处理与制备、分析方法、仪器维护、记录归档等活动如何执行。</p>
+</article>
+<article>
+<h3>QAU 质量保证部门</h3>
+<p>通常独立于实验室并向机构管理者负责，持续实施与评估质量程序，并定期审计实验室。</p>
+</article>
+</div>
+<h3>实验记录本：关键原始记录</h3>
+<div class="check-grid">
+<label>
+<input type="checkbox" disabled>使用硬皮装订本，不用活页</label>
+<label>
+<input type="checkbox" disabled>连续编号每一页</label>
+<label>
+<input type="checkbox" disabled>只用不易擦除的墨水记录</label>
+<label>
+<input type="checkbox" disabled>不撕页；空白页划线作废</label>
+<label>
+<input type="checkbox" disabled>每页注明日期并签名</label>
+<label>
+<input type="checkbox" disabled>记录项目名称、目的与文献</label>
+<label>
+<input type="checkbox" disabled>数据获得当天立即记录</label>
+<label>
+<input type="checkbox" disabled>保留计算过程与异常观察</label>
+</div>
+<h3>分析方法体系的层级</h3>
+<div class="method-chain">
+<span>Technique<br>
+<small>技术原理</small>
+</span>
+<b>→</b>
+<span>Method<br>
+<small>具体方法</small>
+</span>
+<b>→</b>
+<span>Procedure<br>
+<small>书面步骤</small>
+</span>
+<b>→</b>
+<span>Protocol<br>
+<small>强制方案</small>
+</span>
+</div>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>定义</th>
+<th>课件示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Technique 技术</td>
+<td>可提供组成信息的科学原理</td>
+<td>Spectrophotometry 分光光度法</td>
+</tr>
+<tr>
+<td>Method 方法</td>
+<td>为特定测量目的而形成的一种技术应用</td>
+<td>用 pararosaniline 法测定 SO₂</td>
+</tr>
+<tr>
+<td>Procedure 程序</td>
+<td>使用某方法所需的书面操作说明</td>
+<td>ASTM D2914 大气 SO₂ 标准试验程序</td>
+</tr>
+<tr>
+<td>Protocol 方案</td>
+<td>结果要被特定目的接受时必须无例外遵守的最终指令集</td>
+<td>EPA 大气 SO₂ 参比方法</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>方法验证的性能指标</h3>
+<div class="validation-map">
+<article>
+<b>SELECTIVITY</b>
+<h3>选择性</h3>
+<p>在样品基质中测量目标物而不受其他组分干扰的能力。基质是除目标分析物外的全部样品成分，基质效应可正可负。</p>
+</article>
+<article>
+<b>LINEARITY</b>
+<h3>线性度</h3>
+<p>响应在给定范围内与浓度成正比。课件建议 50%–150% 目标浓度、至少 5 个水平；常以 <i>R</i>² &gt; 0.998 且截距小于目标响应约 2% 判断。</p>
+</article>
+<article>
+<b>ACCURACY</b>
+<h3>准确度</h3>
+<p>测得值接近真值的程度。可用标准物质、与可靠方法比较、或加标回收评估；好的回收率不能排除正干扰。</p>
+</article>
+<article>
+<b>PRECISION</b>
+<h3>精密度</h3>
+<p>同质样品多次分析结果的一致程度。同一实验室内称 repeatability；不同实验室比较属于 reproducibility。</p>
+</article>
+<article>
+<b>SENSITIVITY</b>
+<h3>灵敏度</h3>
+<p>通常由校准曲线斜率表示，反映区分两个相近浓度的能力。灵敏度和精密度共同限制可报告的有效数字。</p>
+</article>
+<article>
+<b>RANGE</b>
+<h3>范围</h3>
+<p>可获得可接受准确度与精密度的浓度区间，通常也要求线性可接受。</p>
+</article>
+<article>
+<b>LOD</b>
+<h3>检出限</h3>
+<div class="equation">
+<i>y</i>
+<sub>LOD</sub> = <span class="roman">ȳ</span>
+<sub>blank</sub> + 3<i>s</i>
+<sub>blank</sub>
+</div>
+<p>通常分析多个基质空白，计算平均空白信号与标准偏差。</p>
+</article>
+<article>
+<b>LOQ</b>
+<h3>定量限</h3>
+<div class="equation">
+<i>y</i>
+<sub>LOQ</sub> ≈ <span class="roman">ȳ</span>
+<sub>blank</sub> + (10–12)<i>s</i>
+<sub>blank</sub>
+</div>
+<p>最低可在可接受准确度与精密度下定量的浓度；课件给出的典型可接受 RSD 为 10%–20%。</p>
+</article>
+<article>
+<b>RUGGEDNESS</b>
+<h3>耐用性</h3>
+<p>同一实验室跨日期、分析人员、仪器、试剂来源或色谱柱时的精密度。</p>
+</article>
+<article>
+<b>ROBUSTNESS</b>
+<h3>鲁棒性</h3>
+<p>样品量等参数发生有意或非受控的小变化时，方法结果受影响的程度。</p>
+</article>
+</div>
+<div class="notation-box">
+<b>大纲纠错</b>
+<p><b>Repeatability 不等于 ruggedness。</b> Repeatability 是同一实验室、短时间、相同条件下的重复精密度；ruggedness 则有意跨越日期、人员、仪器或试剂来源，考察方法在实验室内变化条件下是否仍稳定。Reproducibility 进一步比较不同实验室。</p>
+</div>
+<div class="notation-box">
+<b>公式符号</b>
+<p>
+<i>y</i> 为仪器响应；<span class="roman">ȳ</span>
+<sub>blank</sub> 为空白平均响应；<i>s</i>
+<sub>blank</sub> 为空白响应的标准偏差。这里给的是信号判据，换算成浓度还要用校准曲线。</p>
+</div>
+<p class="source-note">来源：笔记大纲；Basic operation 课件 slides 2–15；教材 Chapter 4 方法验证部分。</p>
+</section>
+
+<section id="materials">
+<p class="section-kicker">2.2 LABORATORY MATERIALS & REAGENTS</p>
+<h2>实验材料与试剂等级</h2>
+<p>硼硅玻璃是烧杯、烧瓶、移液管和滴定管最常用的材料，耐热溶液和快速温度变化；但热碱会逐渐侵蚀它。材料选择同时受最高工作温度、热冲击和化学相容性约束。</p>
+<details class="data-details" open>
+<summary>实验室材料性质（课件 Table 2.1 重绘）</summary>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>材料</th>
+<th>最高工作温度 / °C</th>
+<th>耐热冲击</th>
+<th>化学相容性与限制</th>
+<th>典型用途/备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>硼硅玻璃</td>
+<td>200</td>
+<td>约 150 °C 温差可承受</td>
+<td>加热时会受碱液侵蚀</td>
+<td>Pyrex、Kimax；常规玻璃器皿</td>
+</tr>
+<tr>
+<td>软玻璃</td>
+<td>—</td>
+<td>差</td>
+<td>受碱液侵蚀</td>
+<td>不含硼</td>
+</tr>
+<tr>
+<td>耐碱玻璃</td>
+<td>—</td>
+<td>比硼硅玻璃敏感</td>
+<td>强调耐碱性</td>
+<td>专门用途</td>
+</tr>
+<tr>
+<td>熔融石英</td>
+<td>1050</td>
+<td>极好</td>
+<td>耐大多数酸与卤素</td>
+<td>熔融用石英坩埚</td>
+</tr>
+<tr>
+<td>高硅玻璃</td>
+<td>1000</td>
+<td>极好</td>
+<td>耐碱性优于硼硅玻璃</td>
+<td>Vycor，性质接近石英</td>
+</tr>
+<tr>
+<td>瓷，釉面</td>
+<td>1100</td>
+<td>好</td>
+<td>优良</td>
+<td>坩埚等</td>
+</tr>
+<tr>
+<td>瓷，无釉</td>
+<td>1400</td>
+<td>—</td>
+<td>优良</td>
+<td>高温用途</td>
+</tr>
+<tr>
+<td>铂</td>
+<td>约 1500</td>
+<td>—</td>
+<td>耐多数酸和熔盐；受王水、熔融硝酸盐/氰化物及高温氯化物侵蚀；可与多种金属形成合金</td>
+<td>常与 Ir/Rh 合金化；熔融和 HF 处理</td>
+</tr>
+<tr>
+<td>镍与铁</td>
+<td>—</td>
+<td>—</td>
+<td>会向熔融样品引入 Ni/Fe 污染</td>
+<td>过氧化物熔融坩埚</td>
+</tr>
+<tr>
+<td>不锈钢</td>
+<td>400–500</td>
+<td>极好</td>
+<td>一般耐碱和酸；浓 HCl、稀 H₂SO₄、沸腾浓 HNO₃ 例外</td>
+<td>耐机械操作</td>
+</tr>
+<tr>
+<td>聚乙烯 PE</td>
+<td>115</td>
+<td>—</td>
+<td>耐碱和 HF；许多有机溶剂会侵蚀，丙酮/乙醇通常可用</td>
+<td>柔性塑料</td>
+</tr>
+<tr>
+<td>聚丙烯 PP</td>
+<td>120</td>
+<td>极好</td>
+<td>强氧化剂可能侵蚀</td>
+<td>半透明，广泛替代 PE</td>
+</tr>
+<tr>
+<td>聚苯乙烯 PS</td>
+<td>70</td>
+<td>—</td>
+<td>耐 HF；许多有机溶剂会侵蚀</td>
+<td>较脆</td>
+</tr>
+<tr>
+<td>PTFE / Teflon</td>
+<td>250</td>
+<td>—</td>
+<td>对多数化学品惰性，但可透过 O₂</td>
+<td>痕量金属分析溶液与试剂储存</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<h3>常见试剂纯度等级</h3>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>中文等级</th>
+<th>英文/缩写</th>
+<th>瓶签色</th>
+<th>适用范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>优级纯</td>
+<td>Guaranteed Reagent, G.R.</td>
+<td>
+<span class="label-color green">
+</span>深绿色</td>
+<td>精密分析和科学研究</td>
+</tr>
+<tr>
+<td>分析纯</td>
+<td>Analytical Reagent, A.R.</td>
+<td>
+<span class="label-color red">
+</span>红色</td>
+<td>一般科学研究和定量分析</td>
+</tr>
+<tr>
+<td>化学纯</td>
+<td>Chemically Pure, C.P.</td>
+<td>
+<span class="label-color blue">
+</span>蓝色</td>
+<td>要求较高的一般分析或合成</td>
+</tr>
+<tr>
+<td>实验试剂</td>
+<td>Laboratory Reagent, L.R.</td>
+<td>
+<span class="label-color yellow">
+</span>黄色</td>
+<td>一般化学实验和要求不高的非定量工作</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>应用型溶剂等级</h3>
+<div class="grade-ladder">
+<article>
+<b>TECHNICAL / SYNTHESIS</b>
+<p>技术级适合冲洗、粗略溶解等非关键任务；合成级服务于有机合成与制备。</p>
+</article>
+<article>
+<b>LAB / AR / ACS / GR</b>
+<p>实验室级覆盖普通用途；AR 用于高精度分析；ACS 符合美国化学会规格；GR 达到或超过 AR 规格。</p>
+</article>
+<article>
+<b>EXTRA PURE / ELECTRONIC</b>
+<p>特纯级可满足药典或认可要求；电子级严格限制金属杂质，常到 ppb 或 ppt 级。</p>
+</article>
+<article>
+<b>HPLC / SPECTROSCOPY</b>
+<p>HPLC 级控制紫外吸收并过滤亚微米颗粒；光谱级强调目标波段低吸收和低蒸发残留。</p>
+</article>
+</div>
+<p class="source-note">来源：Basic operation 课件 slides 16–17、30–31；教材 §2.2、Table 2.1。</p>
+</section>
+
+<section id="balance">
+<p class="section-kicker">2.3 ANALYTICAL BALANCE</p>
+<h2>分析天平：称量的误差模型</h2>
+<p>现代电子天平用已知质量校准，本质上仍是质量比较。常规分析天平通常读至 0.1 mg；更高灵敏度意味着更小量程和更严格的环境控制。</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>天平类型</th>
+<th>典型最大载荷</th>
+<th>读数分辨率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标准分析天平</td>
+<td>160–300 g</td>
+<td>0.1 mg</td>
+</tr>
+<tr>
+<td>半微量天平</td>
+<td>≤200 g</td>
+<td>0.01 mg</td>
+</tr>
+<tr>
+<td>微量天平</td>
+<td>≤30 g</td>
+<td>1 μg</td>
+</tr>
+<tr>
+<td>超微量天平</td>
+<td>约 2 g</td>
+<td>0.1 μg</td>
+</tr>
+<tr>
+<td>电化学石英晶体天平</td>
+<td>约 100 μg</td>
+<td>1 ng</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="error-orbit">
+<div class="orbit-core">称量值</div>
+<span>零点漂移</span>
+<span>温度与对流</span>
+<span>湿度/吸湿</span>
+<span>静电</span>
+<span>空气浮力</span>
+<span>污染与腐蚀</span>
+</div>
+<h3>空气浮力校正</h3>
+<div class="equation large">
+<i>W</i>
+<sub>vac</sub> = <i>W</i>
+<sub>air</sub> + <i>W</i>
+<sub>air</sub> (0.0012/<i>D</i>
+<sub>o</sub> − 0.0012/<i>D</i>
+<sub>w</sub>)</div>
+<div class="notation-box">
+<b>符号说明</b>
+<p>
+<i>W</i>
+<sub>vac</sub>：真空中质量；<i>W</i>
+<sub>air</sub>：空气中观测质量；<i>D</i>
+<sub>o</sub>：被称物密度；<i>D</i>
+<sub>w</sub>：标准砝码密度；0.0012 g·mL⁻¹：近似空气密度。1 mL 物体受到的浮力约等于 1.2 mg 空气的重量。</p>
+<p>
+<b>推导思路：</b>天平比较的是被称物和标准质量的表观重量。两者各自受到“排开空气的重量”所造成的浮力，密度不同导致单位质量排开体积不同，因此校正项是两种密度倒数之差。</p>
+</div>
+<h3>降低称量误差的操作</h3>
+<div class="rule-grid">
+<p>
+<b>手不接触</b>用洁净纸或镊子处理称量物，避免油污、汗液和加热。</p>
+<p>
+<b>温度平衡</b>热或冷的物体先达到室温，防止对流导致零点漂移。</p>
+<p>
+<b>使用容器</b>称量纸、称量皿或称量瓶承载样品，绝不直接放在秤盘。</p>
+<p>
+<b>关防风门</b>读数前关闭天平门，减少气流引起的不稳定。</p>
+<p>
+<b>检查零点</b>使用期间定时检查零位；教材建议约每半小时检查一次。</p>
+<p>
+<b>控制暴露</b>吸湿或挥发样品尽量缩短暴露时间，并保持称量条件一致。</p>
+</div>
+<p class="source-note">来源：Basic operation 课件 slides 18–21；教材 §2.3、Eq. 2.1。</p>
+</section>
+
+<section id="glassware">
+<p class="section-kicker">2.4 VOLUMETRIC GLASSWARE</p>
+<h2>容量器皿：量入、量出与误差</h2>
+<div class="tool-matrix">
+<article>
+<b>TC / IN</b>
+<h3>容量瓶</h3>
+<p>在规定温度下“容纳”准确体积，用于标准溶液配制和准确稀释。弯月面最低点恰与刻线相切。</p>
+<small>1.0–2000.0 mL</small>
+</article>
+<article>
+<b>TD / EX</b>
+<h3>单标移液管</h3>
+<p>准确“量出”一个固定体积。让液体自然流出，不吹出尖端残液，除非器皿明确标为 blow-out。</p>
+<small>0.50–100.0 mL</small>
+</article>
+<article>
+<b>VARIABLE</b>
+<h3>吸量管</h3>
+<p>有刻度，可量取不同体积；准确度通常低于单标移液管。</p>
+<small>0.1–25 mL</small>
+</article>
+<article>
+<b>MICRO</b>
+<h3>空气置换移液器</h3>
+<p>弹簧柱塞完成吸液与排液；第二停止点用于完全排出。操作速度、吸头密封和润洗会影响结果。</p>
+<small>1–1000 μL</small>
+</article>
+<article>
+<b>FORCED DELIVERY</b>
+<h3>注射器</h3>
+<p>柱塞强制排液，避免挂壁排液误差。先用待测液润洗并排尽气泡；强酸可能腐蚀钢针并引入污染。</p>
+<small>1–500 μL</small>
+</article>
+<article>
+<b>TITRATION</b>
+<h3>滴定管</h3>
+<p>准确量出可变体积。使用前必须排除活塞下方气泡，控制流速并等待液膜排尽。</p>
+<small>2–100 mL</small>
+</article>
+</div>
+<h3>清洗、读数与使用判断</h3>
+<div class="compare-pair">
+<article>
+<h3>准确体积</h3>
+<p>样品准确分取、标准溶液配制、准确稀释和滴定体积需要 A 级容量器皿。器壁必须洁净，水膜应连续而不形成水珠。</p>
+</article>
+<article>
+<h3>近似体积</h3>
+<p>只为提供反应条件的试剂或粗略预稀释，可用量筒、吸量管或烧杯；没必要把所有液体都量到四位有效数字。</p>
+</article>
+</div>
+<div class="meniscus">
+<b>视线高度</b>
+<span>弯月面最低点</span>
+<span>器皿刻线</span>
+<p>三者应处在同一水平面。无色透明溶液读最低点；视线过高会产生视差并把体积读小，过低则读大。</p>
+</div>
+<h3>容量器皿校准的共同原理</h3>
+<div class="equation large">
+<i>V</i>
+<sub>t</sub> = <i>W</i>
+<sub>vac,t</sub> / <i>ρ</i>
+<sub>water,t</sub>
+</div>
+<p>称量器皿量入或量出的水，根据测量温度下水的密度换算体积，再按玻璃热膨胀修正到标定温度。容量瓶称量“装满前后”的质量差；移液管称量一次量出水的质量；滴定管需在多个体积点建立校正曲线，因为内径并非完全均匀。</p>
+<div class="notation-box">
+<b>符号说明</b>
+<p>
+<i>V</i>
+<sub>t</sub>：温度 <i>t</i> 下的实际体积；<i>W</i>
+<sub>vac,t</sub>：经空气浮力校正的水质量；<i>ρ</i>
+<sub>water,t</sub>：该温度下水的密度。</p>
+</div>
+<details class="data-details">
+<summary>单通道可调移液器的准确度与精密度（课件 Table 2.3 重绘）</summary>
+<div class="table-scroll wide">
+<table class="dense-table">
+<thead>
+<tr>
+<th>量程</th>
+<th>步进</th>
+<th>测试体积 / μL</th>
+<th>准确度 / μL</th>
+<th>准确度 / %</th>
+<th>标准偏差 / μL</th>
+<th>CV / %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">0.2–2 μL</td>
+<td rowspan="3">0.002 μL</td>
+<td>2</td>
+<td>±0.050</td>
+<td>±2.50</td>
+<td>0.040</td>
+<td>2.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>±0.040</td>
+<td>±4.00</td>
+<td>0.035</td>
+<td>3.50</td>
+</tr>
+<tr>
+<td>0.2</td>
+<td>±0.024</td>
+<td>±12.00</td>
+<td>0.020</td>
+<td>10.00</td>
+</tr>
+<tr>
+<td rowspan="3">0.5–5 μL</td>
+<td rowspan="3">0.01 μL</td>
+<td>5</td>
+<td>±0.080</td>
+<td>±1.50</td>
+<td>0.050</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>±0.0625</td>
+<td>±2.50</td>
+<td>0.0375</td>
+<td>1.50</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td>±0.030</td>
+<td>±6.00</td>
+<td>0.025</td>
+<td>5.00</td>
+</tr>
+<tr>
+<td rowspan="3">1–10 μL</td>
+<td rowspan="3">0.02 μL</td>
+<td>10</td>
+<td>±0.100</td>
+<td>±1.00</td>
+<td>0.050</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>5</td>
+<td>±0.080</td>
+<td>±1.50</td>
+<td>0.040</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td>1</td>
+<td>±0.025</td>
+<td>±2.50</td>
+<td>0.020</td>
+<td>2.00</td>
+</tr>
+<tr>
+<td rowspan="3">1–10 μL（规格 B）</td>
+<td rowspan="3">0.02 μL</td>
+<td>10</td>
+<td>±0.100</td>
+<td>±1.00</td>
+<td>0.080</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td>5</td>
+<td>±0.080</td>
+<td>±1.50</td>
+<td>0.040</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td>1</td>
+<td>±0.035</td>
+<td>±3.50</td>
+<td>0.030</td>
+<td>3.00</td>
+</tr>
+<tr>
+<td rowspan="3">2–20 μL</td>
+<td rowspan="3">0.02 μL</td>
+<td>20</td>
+<td>±0.20</td>
+<td>±1.00</td>
+<td>0.08</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td>10</td>
+<td>±0.15</td>
+<td>±1.50</td>
+<td>0.06</td>
+<td>0.60</td>
+</tr>
+<tr>
+<td>2</td>
+<td>±0.06</td>
+<td>±3.00</td>
+<td>0.05</td>
+<td>2.50</td>
+</tr>
+<tr>
+<td rowspan="3">2–20 μL（规格 B）</td>
+<td rowspan="3">0.02 μL</td>
+<td>20</td>
+<td>±0.20</td>
+<td>±1.00</td>
+<td>0.08</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td>10</td>
+<td>±0.15</td>
+<td>±1.50</td>
+<td>0.06</td>
+<td>0.60</td>
+</tr>
+<tr>
+<td>2</td>
+<td>±0.06</td>
+<td>±3.00</td>
+<td>0.05</td>
+<td>2.50</td>
+</tr>
+<tr>
+<td rowspan="3">5–50 μL</td>
+<td rowspan="3">0.1 μL</td>
+<td>50</td>
+<td>±0.30</td>
+<td>±0.60</td>
+<td>0.15</td>
+<td>0.30</td>
+</tr>
+<tr>
+<td>25</td>
+<td>±0.25</td>
+<td>±1.00</td>
+<td>0.13</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>5</td>
+<td>±0.15</td>
+<td>±3.00</td>
+<td>0.125</td>
+<td>2.50</td>
+</tr>
+<tr>
+<td rowspan="3">5–50 μL（规格 B）</td>
+<td rowspan="3">0.1 μL</td>
+<td>50</td>
+<td>±0.30</td>
+<td>±0.60</td>
+<td>0.15</td>
+<td>0.30</td>
+</tr>
+<tr>
+<td>25</td>
+<td>±0.25</td>
+<td>±1.00</td>
+<td>0.13</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>5</td>
+<td>±0.15</td>
+<td>±3.00</td>
+<td>0.125</td>
+<td>2.50</td>
+</tr>
+<tr>
+<td rowspan="3">10–100 μL</td>
+<td rowspan="3">0.2 μL</td>
+<td>100</td>
+<td>±0.80</td>
+<td>±0.80</td>
+<td>0.20</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>50</td>
+<td>±0.60</td>
+<td>±1.20</td>
+<td>0.20</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td>10</td>
+<td>±0.30</td>
+<td>±3.00</td>
+<td>0.10</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td rowspan="3">20–200 μL</td>
+<td rowspan="3">0.2 μL</td>
+<td>200</td>
+<td>±1.2</td>
+<td>±0.60</td>
+<td>0.4</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>100</td>
+<td>±1.0</td>
+<td>±1.00</td>
+<td>0.4</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td>20</td>
+<td>±0.36</td>
+<td>±1.80</td>
+<td>0.14</td>
+<td>0.70</td>
+</tr>
+<tr>
+<td rowspan="3">30–300 μL</td>
+<td rowspan="3">1 μL</td>
+<td>300</td>
+<td>±1.8</td>
+<td>±0.60</td>
+<td>0.6</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>150</td>
+<td>±1.5</td>
+<td>±1.00</td>
+<td>0.6</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td>30</td>
+<td>±0.45</td>
+<td>±1.50</td>
+<td>0.18</td>
+<td>0.60</td>
+</tr>
+<tr>
+<td rowspan="3">100–1000 μL</td>
+<td rowspan="3">1 μL</td>
+<td>1000</td>
+<td>±6.0</td>
+<td>±0.60</td>
+<td>2.0</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>500</td>
+<td>±4.0</td>
+<td>±0.80</td>
+<td>1.5</td>
+<td>0.30</td>
+</tr>
+<tr>
+<td>100</td>
+<td>±1.0</td>
+<td>±1.00</td>
+<td>0.6</td>
+<td>0.60</td>
+</tr>
+<tr>
+<td rowspan="3">0.5–5 mL</td>
+<td rowspan="3">0.01 mL</td>
+<td>5000</td>
+<td>±25.0</td>
+<td>±0.50</td>
+<td>10.0</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>2500</td>
+<td>±17.5</td>
+<td>±0.70</td>
+<td>7.5</td>
+<td>0.30</td>
+</tr>
+<tr>
+<td>500</td>
+<td>±10.0</td>
+<td>±2.00</td>
+<td>4.0</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td rowspan="3">1–10 mL</td>
+<td rowspan="3">0.02 mL</td>
+<td>10000</td>
+<td>±50.0</td>
+<td>±0.50</td>
+<td>20.0</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>5000</td>
+<td>±40.0</td>
+<td>±0.80</td>
+<td>15.0</td>
+<td>0.30</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>±20.0</td>
+<td>±2.00</td>
+<td>8.0</td>
+<td>0.80</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">表中数据为课件所列 Finnpipettes Model F1 代表性规格。可见同一支可调移液器越接近量程下限，相对误差和 CV 往往越大，因此应优先选使目标体积靠近量程上部的型号。</p>
+</details>
+<p class="source-note">来源：Basic operation 课件 slides 22–29；教材 §2.4、Table 2.3。</p>
+</section>
+
+<section id="standards">
+<p class="section-kicker">2.5 STANDARD SOLUTIONS</p>
+<h2>标准溶液的配制逻辑</h2>
+<p>标准溶液可由准确称取的高纯一级标准物质溶解并在容量瓶中定容获得。只有进入浓度计算的体积才需要用移液管和容量瓶准确量取；近似浓度的试剂可用量筒、烧杯和试剂瓶。</p>
+<h3>一级标准物质的条件</h3>
+<ol class="requirements">
+<li>
+<b>纯度高且已知</b>
+<span>理想为 100.00%；课件允许约 0.01%–0.02% 已知杂质。</span>
+</li>
+<li>
+<b>组成稳定</b>
+<span>在干燥温度及室温下稳定，并可长期保持组成。</span>
+</li>
+<li>
+<b>易获得</b>
+<span>便于购买、提纯和干燥，成本合理。</span>
+</li>
+<li>
+<b>相对分子/式量较大</b>
+<span>同样的绝对称量误差会对应更小的相对误差。</span>
+</li>
+<li>
+<b>反应计量明确</b>
+<span>与被标定物反应快速、完全、选择性好，并能给出清晰终点。</span>
+</li>
+</ol>
+<h3>由固体配制储备液</h3>
+<div class="equation large">
+<i>m</i> = <i>c</i>
+<i>V</i>
+<i>M</i>
+</div>
+<div class="notation-box">
+<b>符号说明</b>
+<p>
+<i>m</i>：所需溶质质量；<i>c</i>：目标物质的量浓度；<i>V</i>：最终溶液体积；<i>M</i>：摩尔质量。由 <i>n</i>=<i>cV</i> 与 <i>m</i>=<i>nM</i> 联立即得。</p>
+</div>
+<div class="worked-example">
+<span>例</span>
+<h3>500.0 mL 0.2000 mol·L⁻¹ Na₂CO₃</h3>
+<p>
+<i>n</i> = 0.2000 × 0.5000 = 0.1000 mol</p>
+<p>
+<i>M</i>(Na₂CO₃) = 105.989 g·mol⁻¹</p>
+<p>
+<i>m</i> = 0.1000 × 105.989 = 10.5989 g，按有效数字称取 <b>10.60 g</b>。</p>
+</div>
+<div class="transfer-flow">
+<span>准确称量</span>
+<b>→</b>
+<span>烧杯中用约 300 mL 去离子水溶解</span>
+<b>→</b>
+<span>定量转移至 500.0 mL 容量瓶</span>
+<b>→</b>
+<span>少量水洗烧杯 3 次并合并</span>
+<b>→</b>
+<span>定容、混匀</span>
+</div>
+<h3>由储备液稀释</h3>
+<div class="equation large">
+<i>c</i>
+<sub>0</sub>
+<i>V</i>
+<sub>0</sub> = <i>c</i>
+<sub>d</sub>
+<i>V</i>
+<sub>d</sub>
+</div>
+<p>稀释前后溶质的物质的量不变。用 0.2000 M 储备液配制 250.0 mL 0.0080 M Na₂CO₃ 时，<i>V</i>
+<sub>0</sub>=10.00 mL；用单标移液管移取后在 250.0 mL 容量瓶中定容。</p>
+<h3>当量浓度 Normality</h3>
+<div class="equation">
+<i>N</i> = (g / equivalent weight) / L</div>
+<p>1 N 表示每升含 1 当量。反应单元依具体反应而定，可为 H⁺ 或电子；因此 normality 会随反应定义变化，不能脱离反应式使用。</p>
+<p class="source-note">来源：Basic operation 课件 slides 32–41；教材 §2.4–2.6 与 Chapter 5。</p>
+</section>
+
+<section id="prep">
+<p class="section-kicker">2.6 SAMPLE PREPARATION</p>
+<h2>从真实样品到可测溶液</h2>
+<div class="prep-track">
+<article>
+<b>01</b>
+<h3>研磨</h3>
+<p>减小粒径、增大表面积、提高萃取效率。</p>
+<small>风险：摩擦升温导致挥发损失；含水量变化；软硬组分研磨速度不同；细粉扬尘损失。</small>
+</article>
+<article>
+<b>02</b>
+<h3>干燥</h3>
+<p>除去水分或把含水量带到可重复水平，常在 105–110 °C 干燥至恒重。</p>
+<small>冷却时放入干燥器，避免重新吸湿。</small>
+</article>
+<article>
+<b>03</b>
+<h3>分解与溶解</h3>
+<p>用干灰化、湿法消解或微波消解破坏基质并转为溶液。</p>
+<small>选择依据：分析物挥发性、容器材料、污染风险、时间与安全条件。</small>
+</article>
+<article>
+<b>04</b>
+<h3>分离/掩蔽</h3>
+<p>去除会改变灵敏度或阻止目标物检测的基质组分。</p>
+<small>根据目标物和基质的性质选择一种或多种分离路线。</small>
+</article>
+</div>
+<h3>课件列出的七类分离方法</h3>
+<div class="separation-grid">
+<span><b>01</b> 沉淀分离</span><span><b>02</b> 溶剂萃取</span><span><b>03</b> 固体样品萃取</span><span><b>04</b> 固相萃取</span><span><b>05</b> 吸附与解吸</span><span><b>06</b> 蒸馏</span><span><b>07</b> 物理分离</span>
+</div>
+<h3>干燥器与常用干燥剂</h3>
+<p>干燥器用于样品或容器冷却与称量前的低湿储存。红热坩埚先在空气中冷却约 60 s 再放入，避免内部空气过热后形成较强负压；热称量瓶不要立即塞紧，防止塞子因冷却负压卡死。</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>干燥剂</th>
+<th>吸湿容量</th>
+<th>是否潮解</th>
+<th>再生温度/备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无水 CaCl₂</td>
+<td>高</td>
+<td>是</td>
+<td>约 275 °C</td>
+</tr>
+<tr>
+<td>CaSO₄</td>
+<td>中</td>
+<td>否</td>
+<td>Drierite</td>
+</tr>
+<tr>
+<td>CaO</td>
+<td>中</td>
+<td>否</td>
+<td>约 500 °C</td>
+</tr>
+<tr>
+<td>无水 Mg(ClO₄)₂</td>
+<td>高</td>
+<td>是</td>
+<td>约 240 °C；强氧化性，需谨慎</td>
+</tr>
+<tr>
+<td>硅胶</td>
+<td>低</td>
+<td>否</td>
+<td>约 150 °C；变色硅胶便于观察状态</td>
+</tr>
+<tr>
+<td>Al₂O₃</td>
+<td>低</td>
+<td>否</td>
+<td>约 150 °C</td>
+</tr>
+<tr>
+<td>P₂O₅</td>
+<td>低</td>
+<td>是</td>
+<td>遇水形成磷酸，注意生成液体</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>三种消解路线</h3>
+<div class="compare-triplet">
+<article>
+<h3>干灰化 Dry ashing</h3>
+<p>在开放坩埚中以空气/氧气高温氧化有机物，留下可用稀酸溶解的无机残渣。</p>
+<b>优势</b>
+<p>试剂少、空白污染低、操作相对简单。</p>
+<b>限制</b>
+<p>耗时较长；挥发性元素可能损失；分析物可能滞留或吸附在容器壁。</p>
+</article>
+<article>
+<h3>湿法消解 Wet digestion</h3>
+<p>在通风橱中用氧化性无机酸加热分解样品。</p>
+<b>优势</b>
+<p>温度较低、速度较快、壁面滞留损失较少。</p>
+<b>限制</b>
+<p>试剂可能引入杂质；需持续操作监控；高氯酸体系有严重爆炸风险。</p>
+</article>
+<article>
+<h3>微波消解 Microwave digestion</h3>
+<p>通常在密闭耐压容器中以硝酸等介质消解；极性分子转动和离子迁移把微波能转为热。</p>
+<b>优势</b>
+<p>从数小时缩短到约十几分钟；试剂量和空白较低；密闭体系减少挥发损失。</p>
+<b>限制</b>
+<p>必须使用专用实验室设备、合适容器和压力/温度控制。实验室微波炉腔体通常较小，以获得更高的功率密度；波导中的隔离器把反射功率导向负载，保护磁控管。</p>
+</article>
+</div>
+<details class="data-details" open>
+<summary>常用酸及其作用（课件内容重绘）</summary>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>试剂</th>
+<th>主要作用</th>
+<th>局限与风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>浓 HCl</td>
+<td>溶解许多无机样品和金属氧化物，常用于溶出干灰化残渣</td>
+<td>强腐蚀；不具强氧化性</td>
+</tr>
+<tr>
+<td>热浓 HNO₃</td>
+<td>溶解多数常见金属并氧化有机样品</td>
+<td>Al、Cr 等可能钝化；产生 NOₓ</td>
+</tr>
+<tr>
+<td>热浓 H₂SO₄</td>
+<td>强脱水并可氧化有机物，沸点高，可在后段提供高温</td>
+<td>黏稠、强腐蚀；某些元素可能形成难溶硫酸盐</td>
+</tr>
+<tr>
+<td>热浓 HClO₄</td>
+<td>极强氧化剂，可快速去除难氧化有机残留</td>
+<td>接触有机物、易氧化物或近干状态可爆炸；只在专用高氯酸通风橱和受训条件下使用</td>
+</tr>
+<tr>
+<td>HF</td>
+<td>分解硅酸盐岩石和矿物，使 Si 以挥发性 SiF₄ 形式除去：<span class="inline-equation">SiO₂(s) + 4HF(aq) → SiF₄(g) + 2H₂O(l)</span></td>
+<td>剧毒且深部腐蚀；会侵蚀玻璃，需使用兼容容器并遵守专门规范</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="data-details">
+<summary>酸混合体系（课件内容重绘）</summary>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>体系</th>
+<th>典型组成</th>
+<th>分工与关键注意事项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HNO₃ + H₂SO₄</td>
+<td>课件示例：5 mL H₂SO₄ + 20–30 mL HNO₃</td>
+<td>HNO₃ 先破坏大部分有机物并被煮除，后期浓 H₂SO₄/SO₃ 继续作用；残余有机物多时可能炭化。</td>
+</tr>
+<tr>
+<td>HNO₃ + HClO₄ + H₂SO₄</td>
+<td>课件示例体积比 3:1:1</td>
+<td>HNO₃ 负责前期氧化；H₂SO₄ 防止近干；HClO₄ 处理残余有机物。危险性高，仅作方法认识，禁止无专门设施自行操作。</td>
+</tr>
+<tr>
+<td>王水</td>
+<td>HCl:HNO₃ = 3:1</td>
+<td>强腐蚀、会发烟，可溶解 Au、Pt；Ti、Ir、Ru、Ta、Nb 等仍可能耐受。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<h3>教材补充：采样与辅助装置</h3>
+<div class="apparatus-grid">
+<article>
+<h3>总体样品 → 实验室样品 → 分析样品</h3>
+<p>固体重点控制异质性与粒径；液体要考虑分层和随时间变化；气体可用瞬时采样或在一段时间内累积采样。代表性误差不能靠后续高精度仪器补救。</p>
+</article>
+<article>
+<h3>马弗炉与烘箱</h3>
+<p>马弗炉可达约 1200 °C，用于灼烧和灰化；烘箱常在约 110 °C 干燥，具体温度取决于样品稳定性。</p>
+</article>
+<article>
+<h3>通风橱与洁净工作区</h3>
+<p>挥发和酸消解在合适通风橱中完成。普通通风橱会把实验室空气带过样品，不适合极低水平痕量污染控制；层流工作站可提供经过滤的洁净气流。</p>
+</article>
+<article>
+<h3>离心与过滤</h3>
+<p>离心用于按密度或粒径分离。定量过滤可用无灰滤纸、Gooch 坩埚、烧结玻璃或瓷滤坩埚；沉淀性质决定孔径和材料。</p>
+</article>
+</div>
+<div class="safety-banner">
+<b>LABORATORY SAFETY</b>
+<p>这里的酸体系和温度仅用于理解方法选择。实际操作必须服从课程 SOP、风险评估、兼容材料、通风设施与教师现场指导；高氯酸与 HF 需要专门设施和训练。</p>
+</div>
+<p class="source-note">来源：Basic operation 课件 slides 42–62；教材 §2.7–2.11、Tables 2.5–2.6。</p>
+</section>
+</article>
+</main>
+<script src="script.js">
+</script>
+<script src="qa.js" data-qa>
+</script>
+</body>
+</html>

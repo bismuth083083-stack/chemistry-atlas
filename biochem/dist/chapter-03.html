@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第3章 蛋白质的结构 · 生物化学</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">B</span>
+<span>生物化学 · Memory Atlas</span>
+</a>
+<label class="search">⌕ <input id="global-search" placeholder="搜索笔记、中文名或英文名…">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">自学空间</p>
+<a href="index.html">◫　学习总览</a>
+<a class="active" href="lesson-01.html">01　章节学习</a>
+<a href="recall.html">↻　主动回忆</a>
+<a href="practice.html">✓　练习中心</a>
+<a href="terms.html">Aa　双语词条库</a>
+<p class="nav-label">当前章节</p>
+<a href="chapter-02.html">02　氨基酸</a>
+<a class="active" href="chapter-03.html">03　蛋白质的结构</a>
+</nav>
+<div class="privacy">
+<b>●　私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</aside>
+<main class="workspace article">
+<a class="back" href="lesson-01.html">← 返回章节学习</a>
+<header class="article-head">
+<p class="eyebrow">CHAPTER 03 · PROTEIN STRUCTURE</p>
+<h1>蛋白质结构：从受限的肽链到可工作的三维分子</h1>
+<p>核心问题不是“四级结构背定义”，而是每一层增加了什么空间信息、靠什么稳定、如何影响功能。</p>
+<div>
+<span>肽平面</span>
+<span>二级结构</span>
+<span>折叠与动态性</span>
+</div>
+</header>
+<section>
+<h2>1. 肽键让主链既受限又可塑</h2>
+<p>肽是 α-羧基与 α-氨基缩合形成的聚合物，书写方向为 N 端到 C 端。肽键本质是酰胺键；N 的孤对电子与羰基 π 系共轭，使 C–N 键具有部分双键性质。于是肽单元近似共面，ω 二面角通常接近 180°（trans）。</p>
+<div class="note">
+<b>关于“肽平面完全没有柔性吗？”</b>
+<p>不是。共振使转动势垒很高，故肽键在常规构象采样中近似刚性平面；但键长、键角与 ω 都会热涨落，X–Pro 的 cis 构象比例明显更高。cis/trans 转换慢，肽酰脯氨酸异构酶可催化它。真正承担多数构象自由度的是相邻的 φ（N–Cα）和 ψ（Cα–C）单键。</p>
+</div>
+<div class="memory-check">
+<b>主动回忆</b>
+<p>为什么“肽键近似平面”与“蛋白质可以折叠成许多构象”并不矛盾？请用 ω、φ、ψ 三个符号回答。</p>
+</div>
+</section>
+<section>
+<h2>2. 拓展：ω 角为什么能影响催化活性？</h2>
+<p>绝大多数普通肽键的 ω 接近 180°，因此教科书常把它近似成固定值。但酶活性取决于原子能否以精确方向接触：ω 的微小偏离会连带移动羰基氧、酰胺氮和相邻侧链，改变底物取向、氢键长度和过渡态稳定。这里影响活性的通常不是“ω 自己参与反应”，而是它重排了活性中心的几何。</p>
+<div class="property-grid">
+<article><b>基态预组织</b><p>活性中心若预先接近催化所需几何，底物结合后就不必付出太多构象熵代价。肽键的平面性帮助维持这种精确排列。</p></article>
+<article><b>cis/trans 开关</b><p>X–Pro 肽键的 cis 比例远高于普通肽键。两种异构体会把后续主链导向不同空间，可能切换环区构象、结合能力或催化状态。</p></article>
+<article><b>动力学瓶颈</b><p>肽键异构化的能垒较高，因而 Pro 的 cis/trans 转换可能成为折叠或功能转换的慢步骤；PPIase 通过降低能垒加速到达相应状态。</p></article>
+<article><b>如何验证</b><p>可比较 Pro→Ala 突变、改变邻近残基，或结合 NMR 动力学、晶体/冷冻电镜结构与活性测定，判断构象比例是否与催化速率同步变化。</p></article>
+</div>
+<p>所以更准确的结论是：ω 通常被强烈限制，却并非毫无变化；少量偏转和稀少的 cis 状态，恰好可能成为酶进行精细调控的结构杠杆。</p>
+</section>
+<section>
+<h2>3. Ramachandran 图：空间排斥先划掉大部分可能性</h2>
+<div class="figure-card">
+<img src="assets/ramachandran-map.png" alt="Ramachandran 图，显示允许的 φ 和 ψ 二面角区域">
+<p>图源：第3章《蛋白质的结构》PPT，第20页。</p>
+</div>
+<p>如果 φ、ψ 可以任意取值，主链原子会彼此重叠。Ramachandran 图把空间允许区域画出来：右手 α 螺旋、β 折叠等稳定二级结构各自占据特定区域。它不是“死记角度图”，而是位阻对构象空间的第一道筛选。Gly 侧链小，允许区域更大；Pro 的环状侧链使 φ 受限。</p>
+</section>
+<section>
+<h2>4. 二级结构由主链氢键编排</h2>
+<div class="property-grid">
+<article>
+<b>α 螺旋</b>
+<p>第 n 个残基 C=O 与第 n+4 个残基 N–H 形成主链氢键。右手 α 螺旋每圈约 3.6 个残基，侧链朝外。Pro 常中断，连续同电荷或过大的侧链也会降低稳定性。</p>
+</article>
+<article>
+<b>β 折叠</b>
+<p>β 股接近伸展，相邻 β 股以主链氢键连接。平行与反平行的差异是链方向；反平行氢键几何通常更接近线性，但不能把“更稳定”当成唯一判断。</p>
+</article>
+<article>
+<b>β 转角与环</b>
+<p>β 转角用四个残基让链急转，常见 Gly / Pro；环和无规则卷曲不等于随便乱动，仍有偏好的构象集合。</p>
+</article>
+<article>
+<b>两亲性螺旋</b>
+<p>若疏水与亲水侧链分别集中在螺旋两侧，它可一面面向膜或疏水核心，一面接触水相。螺旋轮图正用来识别此排列。</p>
+</article>
+</div>
+<p>二级结构的“规则”指主链反复的局部几何，而不是蛋白质整体固定不动。R 基团虽不直接构成 α 螺旋的 n→n+4 主链氢键，却强烈影响能否形成与是否稳定。</p>
+</section>
+<section>
+<h2>5. 拓展：为什么 N–H 氢键很重要，却常显得“不明显”？</h2>
+<p>肽链中的 N–H 是氢键供体，C=O 是受体。它们在 α 螺旋和 β 折叠中大量成对出现，但“存在氢键”不等于“一条氢键就贡献巨大稳定能”。未折叠肽链在水中时，N–H 和 C=O 本来就能与水形成氢键；折叠时形成链内氢键，往往同时失去与水的相互作用。因此净稳定作用取决于新旧相互作用的差额，而不是只数结构图里的虚线。</p>
+<div class="note"><b>氢键的核心贡献：满足被埋藏的极性基团</b><p>疏水效应把主链推入蛋白质内部后，若某个 N–H 或 C=O 没有得到配对，它在低介电环境中会付出很高代价。规则二级结构能系统性地“结清”主链氢键，因此氢键更像决定可接受构象的几何约束，而不是孤立的万能胶。</p></div>
+<p>这也解释了几个现象：Pro 进入肽链后缺少主链 N–H，常使螺旋氢键网络中断；β 折叠边缘未满足的氢键可能促进链间聚集；埋藏水分子有时会充当桥梁，补上直接氢键无法满足的几何空位。判断一个氢键是否重要，要同时看距离、方向、溶剂暴露以及替代相互作用。</p>
+</section>
+<section>
+<h2>6. 三级与四级结构：从局部规则到功能表面</h2>
+<p>
+<a class="term-link" href="term.html?slug=tertiary-structure">三级结构</a>将一条肽链的二级结构元件组织成完整的三维构象。它靠疏水效应、氢键、盐桥、范德华作用，有时靠二硫键或金属配位稳定。<a class="term-link" href="term.html?slug=motif">模体</a>是常见的局部组合模式，如 β 发夹、β–α–β、Rossmann 折叠；<a class="term-link" href="term.html?slug=domain">结构域</a>是常可独立折叠且通常对应功能模块的更大单位。</p>
+<p>有两条以上肽链的蛋白质才有<a class="term-link" href="term.html?slug=quaternary-structure">四级结构</a>。它记录亚基种类、数目、空间排列和界面相互作用。四级结构可产生协同、变构调节、底物通道或新的结合界面，血红蛋白是经典异源四聚体。</p>
+<div class="note">
+<b>构型与构象</b>
+<p>构型改变通常需要断裂并重建共价键，例如 L/D 构型或 cis/trans 的真正异构化；构象主要来自键角和可旋转单键改变。蛋白质功能往往依赖多个构象状态之间的平衡，而不是一个雕塑般僵硬的结构。</p>
+</div>
+</section>
+<section>
+<h2>7. 折叠不是盲试，也不是“一步到位”</h2>
+<p>Anfinsen 的核糖核酸酶复性实验说明：在合适条件下，一级序列包含折叠所需的化学信息。但这不等于每个蛋白质在细胞里都能独自、瞬间折好。Levinthal 悖论指出，若随机枚举构象，时间尺度荒谬；实际折叠沿能量景观中的偏好路径发生，局部结构、疏水塌陷和结构域形成相互协同。</p>
+<div class="property-grid">
+<article>
+<b>分子伴侣</b>
+<p>Hsp70 暂时遮蔽暴露的疏水片段，伴侣蛋白如 GroEL/GroES 提供隔离腔室，降低错误聚集机会。</p>
+</article>
+<article>
+<b>催化折叠辅助</b>
+<p>PDI 重排二硫键；PPI 催化脯氨酸相关肽键的 cis/trans 异构化。它们加速到达合适构象，不替序列“决定”最终结构。</p>
+</article>
+<article>
+<b>IDR</b>
+<p>内在无序区缺乏稳定疏水核心，却可在结合后折叠、携带多修饰位点或参与凝聚与组装。</p>
+</article>
+<article>
+<b>错误折叠</b>
+<p>朊蛋白病、阿尔茨海默病、帕金森病等提示：同一序列可能落入不同构象集合，聚集体还可模板化扩增。</p>
+</article>
+</div>
+</section>
+<section>
+<h2>8. 结构是测得的，也是预测的</h2>
+<p>X 射线晶体学、NMR 和冷冻电镜给出不同条件下的结构信息；AlphaFold 等预测模型极大扩展了可用结构，但置信度、复合物状态、柔性区域和配体依赖构象仍需要实验与问题本身共同判断。对你的化学生物学兴趣而言，结构问题最终会落到：某个残基为何能反应、一个界面为何能选择性结合、突变为何改变活性。</p>
+<div class="property-grid">
+<article><b>序列先问“像谁”</b><p>BLAST 用于寻找同源序列；Clustal Omega、MAFFT 等做多序列比对，Jalview 可查看保守位点和插入缺失。保守残基是提出功能假说的起点。</p></article>
+<article><b>结构再问“在哪里”</b><p>把保守位点映射到实验结构或高置信度预测结构，观察它位于核心、界面、配体口袋还是柔性环区，才能把序列差异转换成空间解释。</p></article>
+<article><b>实验最后问“是否因果”</b><p>定点突变配合酶动力学、结合实验或稳定性测定，区分“结构被破坏”与“某个催化官能团被移除”。只有这一步能建立功能因果。</p></article>
+<article><b>预测要看置信度</b><p>低置信度不一定代表模型失败，可能提示内在无序或多构象区域；高置信度静态结构也不自动给出运动、配体效应和反应过渡态。</p></article>
+</div>
+</section>
+<section class="next-step">
+<p class="eyebrow">RECALL BEFORE REVIEW</p>
+<h2>把两章连起来</h2>
+<p>从 His、Cys、Pro、Gly 四个侧链出发，分别说明它们如何影响电荷 / 催化、二硫键、肽链构象和折叠路径。</p>
+<a class="primary" href="recall.html">进入主动回忆 →</a>
+</section>
+<footer class="source">来源：第3章《蛋白质的结构》PPT；杨荣武《生物化学原理》第四版（按需核对与补充）。</footer>
+</main>
+<script src="script.js">
+</script>
+</body>
+</html>

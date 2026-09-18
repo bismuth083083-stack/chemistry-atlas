@@ -1,0 +1,22 @@
+/* Site-wide mathematical typography: serif equations, italic quantities. */
+.formula, .term-formula, .frac, .derivative, var {
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
+}
+.formula, .term-formula, var,
+.symbol-table > div:not(.symbol-head) > span:first-child,
+.term-symbols > div:not(:first-child) > :first-child {
+  font-style: italic;
+}
+.formula .unit, .term-formula .unit,
+.symbol-table > div > :last-child,
+.term-symbols > div > :last-child {
+  font-family: Inter, "Noto Sans SC", system-ui, sans-serif;
+  font-style: normal;
+}
+sub, sup { line-height: 0; }
+.sup-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:1.05em;margin-left:.06em;font-size:.58em;line-height:1;text-align:center}.sup-frac>span:first-child{border-bottom:1px solid currentColor;padding:0 .08em .05em}.sup-frac>span:last-child{padding-top:.05em}
+.sqrt { display: inline-flex; align-items: flex-start; font-family: Georgia,"Times New Roman",serif; font-style: normal; }
+.sqrt::first-letter { font-size: 1.25em; }
+.radicand { display: inline-block; margin-left: .04em; padding: .08em .12em 0; border-top: 1px solid currentColor; font-style: italic; }
+/* `.compact` is also used by the empty-state panel; formulas must not inherit its tall minimum height. */
+.formula.compact { min-height: 0; height: auto; }

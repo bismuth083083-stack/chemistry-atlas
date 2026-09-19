@@ -1,0 +1,13 @@
+{
+  "quizzes": [
+    {
+      "id": "demo",
+      "title": "Molecular foundations",
+      "description": "A short retrieval session across structure, bonding, and biochemical building blocks.",
+      "subject": "General chemistry",
+      "chapter": "Foundations",
+      "path": "demo.json",
+      "mode": "fixed"
+    }
+  ]
+}

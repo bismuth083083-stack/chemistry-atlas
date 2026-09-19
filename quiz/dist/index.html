@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Chemistry Atlas Quiz Lab" />
+    <title>Quiz Lab · Chemistry Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="quiz-app">
+      <header class="quiz-header">
+        <a class="brand" href="https://chemistryatlas.xyz" aria-label="Chemistry Atlas home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Chemistry Atlas</span></a>
+        <div class="header-context"><span class="context-kicker">QUIZ LAB</span><span class="header-separator">/</span><span id="header-exam-label">Loading…</span></div>
+        <a class="header-exit" href="https://chemistryatlas.xyz"><span>Exit quiz</span><span aria-hidden="true">↗</span></a>
+      </header>
+      <div id="app" class="app-body" aria-live="polite"><div class="loading-state"><div class="loading-orbit"></div><p>Loading your quiz…</p></div></div>
+    </div>
+    <script type="module" src="quiz-engine.js"></script>
+  </body>
+</html>

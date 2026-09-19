@@ -8,6 +8,7 @@
 - `physical/`：物理化学
 - `analytical/`：分析化学
 - `biochem/`：生物化学
+- `quiz/`：数据驱动的在线测验系统
 
 每个目录都是一个可独立部署的静态网站，公开文件位于对应目录的 `dist/` 下，入口为 `dist/index.html`。
 

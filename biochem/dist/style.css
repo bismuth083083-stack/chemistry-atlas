@@ -25,3 +25,7 @@ body::after{right:-150px;bottom:8%;background:#8097ff;animation:atlas-glow-two 2
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 /* Keep headings in the Atlas display language without changing note text. */
 h1,h2,h3,.page-head h1,.hero h1,.chapter-card h2,.section-title h2,.article-head h1,.article section h2,.term-detail h1,.term-detail section h2,.recall-card h2,.quiz h3{font-family:'Space Grotesk','Noto Sans SC','Microsoft YaHei',sans-serif!important;letter-spacing:-.045em}
+/* Quiz-style theme swap for chapter cards. */
+.chapter-card:hover{background:var(--accent)!important;border-color:var(--accent-soft)!important;color:#0d1c2d;box-shadow:0 18px 34px rgba(0,0,0,.28)}
+.chapter-card:hover h2,.chapter-card:hover p,.chapter-card:hover small,.chapter-card:hover>b,.chapter-card:hover .chapter-no,.chapter-card:hover .tag-row span{color:#0d1c2d!important}
+.chapter-card:hover .chapter-no{border-color:#0d1c2d!important}

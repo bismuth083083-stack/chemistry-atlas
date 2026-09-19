@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="ambient-lights" aria-hidden="true">
+      <span class="ambient-spot"></span><span class="ambient-spot"></span><span class="ambient-spot"></span><span class="ambient-spot"></span>
+    </div>
     <div class="site-noise" aria-hidden="true"></div>
     <header class="site-header shell">
       <a class="brand" href="#top" aria-label="Chemistry Atlas home">
@@ -31,10 +34,6 @@
           <p class="eyebrow"><span class="eyebrow-dot"></span>A LIVING MAP OF CHEMISTRY</p>
           <h1>Make sense of<br><em>the invisible.</em></h1>
           <p class="hero-lede">Chemistry Atlas turns complex molecules, mechanisms, and ideas into a learning path you can actually follow.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://quiz.chemistryatlas.xyz">Try the demo quiz <span>→</span></a>
-            <a class="text-link" href="#approach">How it works <span>↓</span></a>
-          </div>
         </div>
         <div class="hero-visual" aria-label="Abstract molecular illustration" role="img">
           <div class="orb orb-large"></div><div class="orb orb-small orb-one"></div><div class="orb orb-small orb-two"></div>
@@ -79,6 +78,21 @@
         card.addEventListener('keyup', (event) => {
           if (event.key === 'Enter' || event.key === ' ') release();
         });
+      });
+
+      const spots = [...document.querySelectorAll('.ambient-spot')];
+      const random = (min, max) => Math.random() * (max - min) + min;
+      const updateSpot = (spot) => {
+        const hue = Math.round(random(185, 265));
+        spot.style.setProperty('--spot-x', `${random(-8, 108)}%`);
+        spot.style.setProperty('--spot-y', `${random(-12, 112)}%`);
+        spot.style.setProperty('--spot-size', `${Math.round(random(170, 430))}px`);
+        spot.style.setProperty('--spot-color', `hsla(${hue}, ${Math.round(random(55, 82))}%, ${Math.round(random(52, 70))}%, ${random(.045, .11).toFixed(3)})`);
+        spot.style.setProperty('--spot-blur', `${Math.round(random(70, 125))}px`);
+      };
+      spots.forEach((spot, index) => {
+        window.setTimeout(() => updateSpot(spot), index * 420);
+        window.setInterval(() => updateSpot(spot), Math.round(random(6200, 9800)));
       });
     </script>
   </body>

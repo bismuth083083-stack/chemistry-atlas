@@ -1,72 +1,92 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#171b20">
-  <meta name="description" content="Chemistry Atlas：个人化学知识库的五科统一入口">
-  <title>Chemistry Atlas · 五科导航</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="loader" aria-hidden="true">
-    <div class="loader-emblem"><span>χ</span></div>
-    <div class="loader-track"><i></i></div>
-    <p>ASSEMBLING ATLAS</p>
-  </div>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <meta name="description" content="Chemistry Atlas：化学知识库与数据驱动 Quiz Lab 的统一入口">
+    <title>Chemistry Atlas · Atlas home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="loader" aria-hidden="true">
+      <div class="loader-mark"><span></span><span></span><span></span></div>
+      <div class="loader-track"><i></i></div>
+      <p>ASSEMBLING ATLAS</p>
+    </div>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#" aria-label="Chemistry Atlas 首页">
-      <span class="brand-mark">χ</span>
-      <span><b>CHEMISTRY ATLAS</b><small>PERSONAL KNOWLEDGE SYSTEM</small></span>
-    </a>
-    <div class="privacy"><i></i><span>OWNER ONLY</span></div>
-  </header>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Chemistry Atlas 首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><b>CHEMISTRY ATLAS</b><small>PERSONAL KNOWLEDGE SYSTEM</small></span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#atlas">Atlas</a>
+        <a class="nav-quiz" href="https://quiz.chemistryatlas.xyz">Quiz lab <span>↗</span></a>
+        <span class="privacy"><i></i><span>OWNER ONLY</span></span>
+      </nav>
+    </header>
 
-  <main>
-    <section class="intro" aria-labelledby="page-title">
-      <div>
-        <p class="eyebrow">PRIVATE STUDY NETWORK · 2026</p>
-        <h1 id="page-title">选择你的<br><em>化学坐标。</em></h1>
-      </div>
-      <p class="intro-copy">结构、元素、能量、测量与生命。五个知识库保持独立，又在同一套学习系统中彼此连接。</p>
-    </section>
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>PRIVATE STUDY NETWORK · 2026</p>
+          <h1 id="page-title">选择你的<br><em>化学坐标。</em></h1>
+        </div>
+        <div class="intro-copy">
+          <span class="intro-index">CA / 01</span>
+          <p>结构、元素、能量、测量与生命。五个知识库保持独立，又在同一套学习系统中彼此连接。</p>
+          <a href="#atlas" class="text-link">进入 Atlas <span>↓</span></a>
+        </div>
+      </section>
 
-    <section class="atlas" aria-label="五科知识库入口">
-      <a class="subject organic" href="https://organic.chemistryatlas.xyz">
-        <span class="subject-number">01</span><span class="subject-icon" aria-hidden="true">C</span>
-        <span class="subject-copy"><small>STRUCTURE · MECHANISM</small><strong>有机化学</strong><span>结构、电子流、反应机理与合成逻辑</span></span>
-        <span class="enter">进入知识库 <b>↗</b></span>
-      </a>
-      <a class="subject inorganic" href="https://inorganic.chemistryatlas.xyz">
-        <span class="subject-number">02</span><span class="subject-icon" aria-hidden="true">M</span>
-        <span class="subject-copy"><small>ELEMENTS · COORDINATION</small><strong>无机化学</strong><span>元素周期性、配位结构与无机反应</span></span>
-        <span class="enter">进入知识库 <b>↗</b></span>
-      </a>
-      <a class="subject physical" href="https://physical.chemistryatlas.xyz">
-        <span class="subject-number">03</span><span class="subject-icon" aria-hidden="true">Ψ</span>
-        <span class="subject-copy"><small>ENERGY · MATTER</small><strong>物理化学</strong><span>热力学、动力学与微观模型</span></span>
-        <span class="enter">进入知识库 <b>↗</b></span>
-      </a>
-      <a class="subject analytical" href="https://analytical.chemistryatlas.xyz">
-        <span class="subject-number">04</span><span class="subject-icon" aria-hidden="true">λ</span>
-        <span class="subject-copy"><small>MEASURE · INFERENCE</small><strong>分析化学</strong><span>测量、平衡、信号与定量推断</span></span>
-        <span class="enter">进入知识库 <b>↗</b></span>
-      </a>
-      <a class="subject biochem" href="https://biochem.chemistryatlas.xyz">
-        <span class="subject-number">05</span><span class="subject-icon" aria-hidden="true">B</span>
-        <span class="subject-copy"><small>LIFE · MEMORY</small><strong>生物化学</strong><span>结构—功能—调控与主动回忆</span></span>
-        <span class="enter">进入知识库 <b>↗</b></span>
-      </a>
-    </section>
-  </main>
+      <section class="section-bar" aria-label="学习空间说明">
+        <span>06 LEARNING SPACES</span><span>SELECT A COORDINATE TO ENTER</span>
+      </section>
 
-  <footer>
-    <span class="system-state"><i></i>五科知识库已连接</span>
-    <time id="clock" aria-live="off"></time>
-  </footer>
-  <script src="script.js"></script>
-</body>
+      <section class="atlas" id="atlas" aria-label="化学知识库与 Quiz 入口">
+        <a class="subject organic" href="https://organic.chemistryatlas.xyz">
+          <span class="subject-number">01</span><span class="subject-icon icon-organic" aria-hidden="true"></span>
+          <span class="subject-copy"><small>STRUCTURE · MECHANISM</small><strong>有机化学</strong><span>结构、电子流、反应机理与合成逻辑</span></span>
+          <span class="enter">进入知识库 <b>↗</b></span>
+        </a>
+        <a class="subject inorganic" href="https://inorganic.chemistryatlas.xyz">
+          <span class="subject-number">02</span><span class="subject-icon icon-inorganic" aria-hidden="true"></span>
+          <span class="subject-copy"><small>ELEMENTS · COORDINATION</small><strong>无机化学</strong><span>元素周期性、配位结构与无机反应</span></span>
+          <span class="enter">进入知识库 <b>↗</b></span>
+        </a>
+        <a class="subject physical" href="https://physical.chemistryatlas.xyz">
+          <span class="subject-number">03</span><span class="subject-icon icon-physical" aria-hidden="true"></span>
+          <span class="subject-copy"><small>ENERGY · MATTER</small><strong>物理化学</strong><span>热力学、动力学与微观模型</span></span>
+          <span class="enter">进入知识库 <b>↗</b></span>
+        </a>
+        <a class="subject analytical" href="https://analytical.chemistryatlas.xyz">
+          <span class="subject-number">04</span><span class="subject-icon icon-analytical" aria-hidden="true"></span>
+          <span class="subject-copy"><small>MEASURE · INFERENCE</small><strong>分析化学</strong><span>测量、平衡、信号与定量推断</span></span>
+          <span class="enter">进入知识库 <b>↗</b></span>
+        </a>
+        <a class="subject biochem" href="https://biochem.chemistryatlas.xyz">
+          <span class="subject-number">05</span><span class="subject-icon icon-biochem" aria-hidden="true"></span>
+          <span class="subject-copy"><small>LIFE · MEMORY</small><strong>生物化学</strong><span>结构—功能—调控与主动回忆</span></span>
+          <span class="enter">进入知识库 <b>↗</b></span>
+        </a>
+        <a class="subject quiz" href="https://quiz.chemistryatlas.xyz">
+          <span class="subject-number">06</span><span class="subject-icon icon-quiz" aria-hidden="true"></span>
+          <span class="subject-copy"><small>RETRIEVE · REFLECT</small><strong>Quiz Lab</strong><span>数据驱动测验、即时批改与逐题解析</span></span>
+          <span class="enter">开始测试 <b>↗</b></span>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <span class="system-state"><i></i>六个学习空间已连接</span>
+      <time id="clock" aria-live="off"></time>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

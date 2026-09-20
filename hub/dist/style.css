@@ -17,3 +17,4 @@ body::before,body::after{display:none}
 .ambient-spot{position:absolute;left:var(--spot-x,50%);top:var(--spot-y,50%);width:var(--spot-size,280px);height:var(--spot-size,280px);border-radius:50%;background:var(--spot-color,rgba(90,120,255,.07));filter:blur(var(--spot-blur,95px));opacity:.92;transform:translate(-50%,-50%);transition:left 7.5s cubic-bezier(.22,1,.36,1),top 7.5s cubic-bezier(.22,1,.36,1),width 7.5s ease,height 7.5s ease,background 7.5s ease,filter 7.5s ease}
 @media(prefers-reduced-motion:reduce){.ambient-spot{transition:none}}
 .feature-card-biochem{background:#4fb9a7}
+.feature-card-analytical{background:#b26791}

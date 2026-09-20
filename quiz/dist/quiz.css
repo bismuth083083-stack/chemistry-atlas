@@ -137,3 +137,10 @@ html[data-quiz-subject="biochemistry"] .button-dark { background: var(--quiz-acc
 html[data-quiz-subject="biochemistry"] .button-dark:hover { background: var(--quiz-accent-hover); }
 html[data-quiz-subject="biochemistry"] .number-button.current, html[data-quiz-subject="biochemistry"] .number-button.answered.current, html[data-quiz-subject="biochemistry"] .filter-button.active { border-color: var(--quiz-accent); background: var(--quiz-accent); color: var(--quiz-accent-ink); }
 html[data-quiz-subject="biochemistry"] .explanation-label { color: var(--quiz-accent); }
+html[data-quiz-subject="analytical-chemistry"] { --quiz-accent: #d58caf; --quiz-accent-hover: #e4a9c4; --quiz-accent-ink: #07111f; }
+html[data-quiz-subject="analytical-chemistry"] .answer-option.selected { border-color: var(--quiz-accent); background: var(--quiz-accent); color: var(--quiz-accent-ink); }
+html[data-quiz-subject="analytical-chemistry"] .selected .option-id, html[data-quiz-subject="analytical-chemistry"] .selected .option-mark { color: var(--quiz-accent-ink); }
+html[data-quiz-subject="analytical-chemistry"] .button-dark { background: var(--quiz-accent); color: var(--quiz-accent-ink); }
+html[data-quiz-subject="analytical-chemistry"] .button-dark:hover { background: var(--quiz-accent-hover); }
+html[data-quiz-subject="analytical-chemistry"] .number-button.current, html[data-quiz-subject="analytical-chemistry"] .number-button.answered.current, html[data-quiz-subject="analytical-chemistry"] .filter-button.active { border-color: var(--quiz-accent); background: var(--quiz-accent); color: var(--quiz-accent-ink); }
+html[data-quiz-subject="analytical-chemistry"] .explanation-label { color: var(--quiz-accent); }

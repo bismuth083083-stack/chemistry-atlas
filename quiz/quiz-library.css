@@ -101,3 +101,4 @@ body::after { right: -180px; bottom: 4%; background: #ffc277; animation: library
   *,*::before,*::after { animation: none !important; transition-duration: .01ms !important; }
 }
 .library-card.theme-biochem { --card-accent: #62d2bd; }
+.library-card.theme-analytical { --card-accent: #d58caf; }

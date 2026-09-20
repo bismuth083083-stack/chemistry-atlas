@@ -1,0 +1,339 @@
+{
+  "formula": "C9H11NO2",
+  "relative_molecular_mass": 165.19199999999995,
+  "exact_mass": 165.078978592,
+  "net_charge": 0,
+  "atom_count": 12,
+  "heavy_atom_count": 12,
+  "atom_count_with_hydrogens": 23,
+  "canonical_isomeric_smiles": "NC(Cc1ccccc1)C(=O)O",
+  "cxsmiles": "NC(Cc1ccccc1)C(=O)O",
+  "inchikey": "COLNVLDHVKWLRT-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 6,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 7,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 8,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 9,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 10,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 11,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 3,
+      "end": 4,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 4,
+      "end": 5,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 6,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 6,
+      "end": 7,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 7,
+      "end": 8,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 9,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 9,
+      "end": 10,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 9,
+      "end": 11,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 8,
+      "end": 3,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 1,
+      "specified": "Unspecified",
+      "descriptor": "NoValue"
+    }
+  ],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "unspecified-approved",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      520,
+      280
+    ],
+    "png_scale": 4,
+    "id": "bioc-phenylalanine",
+    "chinese_name": "苯丙氨酸骨架（立体化学未指定）",
+    "english_name": "phenylalanine",
+    "structure": {
+      "format": "smiles",
+      "value": "NC(CC1=CC=CC=C1)C(=O)O"
+    },
+    "protonation": "Neutral educational form; charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Biochemistry chapter 02, aromatic amino-acid side chain",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "C9H11NO2",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "NC(CC1=CC=CC=C1)C(=O)O",
+  "topology": {
+    "ring_sizes": [
+      6
+    ],
+    "ring_count": 1,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 6,
+    "bridgehead_count": 1,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 1.0,
+    "double_bond_count": 1,
+    "stereocenter_count": 1,
+    "layout_mode": "template-coordgen",
+    "template_id": "single-ring",
+    "template_score": 2,
+    "core_bond_length_deviation": 0.0003685685043183,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 520,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      2080,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      712,
+      219,
+      1364,
+      897
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "bioc-phenylalanine-phenylalanine-neutral.svg",
+      "sha256": "5af9080e8113c4075fc989e5f11f3f93dc1f3899a2220e09155562f51624fde7"
+    },
+    "png": {
+      "path": "bioc-phenylalanine-phenylalanine-neutral.png",
+      "sha256": "665ad42980a40dc4bc2e0c2380f157d8d93de1ed40a82b88bccc7e4040830b38"
+    },
+    "mol": {
+      "path": "bioc-phenylalanine-phenylalanine-neutral.mol",
+      "sha256": "8cdaad25635a050aeba529826ee06a55b677cbda2c3f21d006ae05b204bdc7a7"
+    }
+  }
+}

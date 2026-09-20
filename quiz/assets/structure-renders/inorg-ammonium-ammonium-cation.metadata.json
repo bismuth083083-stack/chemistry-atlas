@@ -1,0 +1,124 @@
+{
+  "formula": "H4N+",
+  "relative_molecular_mass": 18.039,
+  "exact_mass": 18.03382554809,
+  "net_charge": 1,
+  "atom_count": 1,
+  "heavy_atom_count": 1,
+  "atom_count_with_hydrogens": 5,
+  "canonical_isomeric_smiles": "[NH4+]",
+  "cxsmiles": "[NH4+]",
+  "inchikey": "QGZKDVFQNNGYKY-UHFFFAOYSA-O",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 1,
+      "hydrogen_count": 4,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "cation",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "inorg-ammonium",
+    "chinese_name": "铵离子",
+    "english_name": "ammonium",
+    "structure": {
+      "format": "smiles",
+      "value": "[NH4+]"
+    },
+    "protonation": "Explicit cation; charge +1",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Inorganic Chemistry lesson 02, periodic trends and ions",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "H4N+",
+      "net_charge": 1
+    }
+  },
+  "original_structure": "[NH4+]",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 0,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 0,
+    "stereocenter_count": 0,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      777,
+      521,
+      902,
+      599
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "inorg-ammonium-ammonium-cation.svg",
+      "sha256": "ff39808e77583815d9237297f5431e7e2174165fcf27ad98b3c71ffb63211b29"
+    },
+    "png": {
+      "path": "inorg-ammonium-ammonium-cation.png",
+      "sha256": "6f976e02dce79004adbca5b67a63d6cc18132c62150c5d3cb8251e793a4bfff2"
+    },
+    "mol": {
+      "path": "inorg-ammonium-ammonium-cation.mol",
+      "sha256": "9e80f8137ff6c902320181bafde46104e586acf4eaca920ce2ce4abe9cbe4886"
+    }
+  }
+}

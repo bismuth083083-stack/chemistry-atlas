@@ -1,0 +1,461 @@
+{
+  "id": "PCHEM-L04",
+  "title": "热力学基本概念与第一定律",
+  "description": "练习体系与环境、状态函数、热和功、内能、膨胀功、焓、热容与绝热过程。",
+  "subject": "physical-chemistry",
+  "chapter": "Chapter 4 · First law",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "热力学中的体系（system）是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "研究时明确选定的物质或空间区域"
+        },
+        {
+          "id": "B",
+          "text": "宇宙中所有物质"
+        },
+        {
+          "id": "C",
+          "text": "只指容器外壁"
+        },
+        {
+          "id": "D",
+          "text": "只能是固体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "体系是研究对象；体系之外通过边界与之交换能量或物质的部分是环境。",
+      "difficulty": "easy",
+      "tags": [
+        "system",
+        "surroundings"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "状态函数的特点是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "只由初态和终态决定，与路径无关"
+        },
+        {
+          "id": "B",
+          "text": "只由反应时间决定"
+        },
+        {
+          "id": "C",
+          "text": "一定等于零"
+        },
+        {
+          "id": "D",
+          "text": "只能用于气体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "状态函数如 U、H、T、p、V 的变化只由状态决定。",
+      "difficulty": "easy",
+      "tags": [
+        "state function"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "multiple-choice",
+      "question": "下列哪些通常是路径函数？",
+      "options": [
+        {
+          "id": "A",
+          "text": "热 q"
+        },
+        {
+          "id": "B",
+          "text": "功 w"
+        },
+        {
+          "id": "C",
+          "text": "内能 U"
+        },
+        {
+          "id": "D",
+          "text": "焓 H"
+        }
+      ],
+      "answers": [
+        "A",
+        "B"
+      ],
+      "points": 1,
+      "explanation": "热和功描述能量跨边界传递的方式，依赖过程路径；U、H 是状态函数。",
+      "difficulty": "easy",
+      "tags": [
+        "path function",
+        "state function"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "采用化学热力学符号约定时，第一定律写作……",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔU=q+w"
+        },
+        {
+          "id": "B",
+          "text": "ΔU=q−w，无论 w 定义"
+        },
+        {
+          "id": "C",
+          "text": "ΔU=qw"
+        },
+        {
+          "id": "D",
+          "text": "ΔU=0 对所有过程成立"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "这里 w 表示环境对体系做功；因此吸热 q>0、环境对体系做功 w>0。",
+      "difficulty": "easy",
+      "tags": [
+        "first law",
+        "sign convention"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "体系膨胀对环境做功时，按上述约定 w 通常……",
+      "options": [
+        {
+          "id": "A",
+          "text": "小于 0"
+        },
+        {
+          "id": "B",
+          "text": "大于 0"
+        },
+        {
+          "id": "C",
+          "text": "一定等于 q"
+        },
+        {
+          "id": "D",
+          "text": "没有符号"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "膨胀时体系对环境做功，环境对体系做功为负，因此 w<0。",
+      "difficulty": "easy",
+      "tags": [
+        "expansion work"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "定容且只有 pV 功时，体系吸收的热量满足……",
+      "options": [
+        {
+          "id": "A",
+          "text": "qᵥ=ΔU"
+        },
+        {
+          "id": "B",
+          "text": "qᵥ=ΔH"
+        },
+        {
+          "id": "C",
+          "text": "qᵥ=0"
+        },
+        {
+          "id": "D",
+          "text": "qᵥ=w=−ΔU"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "定容时 ΔV=0，膨胀功为零，所以热量直接改变内能。",
+      "difficulty": "easy",
+      "tags": [
+        "constant volume",
+        "internal energy"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "量热法的核心是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "用可测的温度变化和热容联系体系交换的热量"
+        },
+        {
+          "id": "B",
+          "text": "只观察火焰颜色"
+        },
+        {
+          "id": "C",
+          "text": "不需要校准仪器"
+        },
+        {
+          "id": "D",
+          "text": "只适用于气体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "量热测量通过热容和温度变化建立热量收支，需要明确边界和校正。",
+      "difficulty": "easy",
+      "tags": [
+        "calorimetry"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "焓的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "H=U+pV"
+        },
+        {
+          "id": "B",
+          "text": "H=U−pV"
+        },
+        {
+          "id": "C",
+          "text": "H=q+w"
+        },
+        {
+          "id": "D",
+          "text": "H=p/V"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "焓 H=U+pV，便于处理定压过程中的热效应。",
+      "difficulty": "easy",
+      "tags": [
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "定压且只有 pV 功时，体系吸收的热量满足……",
+      "options": [
+        {
+          "id": "A",
+          "text": "qₚ=ΔH"
+        },
+        {
+          "id": "B",
+          "text": "qₚ=ΔU"
+        },
+        {
+          "id": "C",
+          "text": "qₚ=0"
+        },
+        {
+          "id": "D",
+          "text": "qₚ=−ΔH"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "在定压且仅有 pV 功的条件下，定压热等于焓变。",
+      "difficulty": "easy",
+      "tags": [
+        "enthalpy",
+        "constant pressure"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "理想气体中 Cp 与 Cv 的差异主要来自……",
+      "options": [
+        {
+          "id": "A",
+          "text": "定压加热还需要体系膨胀做功"
+        },
+        {
+          "id": "B",
+          "text": "理想气体没有内能"
+        },
+        {
+          "id": "C",
+          "text": "定容体积会无限增加"
+        },
+        {
+          "id": "D",
+          "text": "Cp 和 Cv 完全没有区别"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "定压过程伴随体积变化，需要额外能量做膨胀功，因此 Cp>Cv。",
+      "difficulty": "medium",
+      "tags": [
+        "heat capacity",
+        "ideal gas"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "可逆绝热膨胀的两个关键词是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "q=0 且过程可逆"
+        },
+        {
+          "id": "B",
+          "text": "p=0 且 T=0"
+        },
+        {
+          "id": "C",
+          "text": "V=0 且 q>0"
+        },
+        {
+          "id": "D",
+          "text": "只要不可逆就一定绝热"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "绝热表示 q=0；可逆是另一项过程条件，不能把绝热自动等同于可逆。",
+      "difficulty": "easy",
+      "tags": [
+        "adiabatic",
+        "reversible"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "压缩过程按化学热力学约定通常有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "w>0，因为环境对体系做功"
+        },
+        {
+          "id": "B",
+          "text": "w<0，因为体系对环境做功"
+        },
+        {
+          "id": "C",
+          "text": "w=0"
+        },
+        {
+          "id": "D",
+          "text": "w 只由温度决定"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "压缩时环境对体系做功，体系获得功，故 w 为正。",
+      "difficulty": "easy",
+      "tags": [
+        "work",
+        "compression"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "内能 U 是状态函数，而热 q 和功 w 不是状态函数。",
+      "answer": true,
+      "points": 1,
+      "explanation": "U 只由状态决定；热和功是达到状态变化的不同能量传递路径。",
+      "difficulty": "easy",
+      "tags": [
+        "state function",
+        "path function"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "判断一个热力学公式能否使用前，最重要的第一步是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "先确认体系、路径条件和功的类型"
+        },
+        {
+          "id": "B",
+          "text": "先把所有变量设为零"
+        },
+        {
+          "id": "C",
+          "text": "只看公式最长不最长"
+        },
+        {
+          "id": "D",
+          "text": "忽略温度和体积条件"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "定容、定压、绝热、可逆等条件决定可用的关系式。",
+      "difficulty": "medium",
+      "tags": [
+        "problem solving",
+        "thermodynamics"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "某过程体系吸收 q=+50 J，同时对环境做功 20 J。按 w 为环境对体系做功的约定，ΔU 为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "+30 J"
+        },
+        {
+          "id": "B",
+          "text": "+70 J"
+        },
+        {
+          "id": "C",
+          "text": "−30 J"
+        },
+        {
+          "id": "D",
+          "text": "−70 J"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "体系对环境做功意味着 w=−20 J，因此 ΔU=q+w=50−20=+30 J。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "first law",
+        "calculation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "id": "BIOC-L02",
+  "title": "氨基酸：侧链把骨架写成化学性格",
+  "description": "练习氨基酸共同骨架、侧链分类、pKa/pI、电荷状态和残基微环境。",
+  "subject": "biochemistry",
+  "chapter": "Chapter 2 · Amino acids",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "标准 α-氨基酸共同的主链包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "α-碳、α-氨基和 α-羧基"
+        },
+        {
+          "id": "B",
+          "text": "磷酸、核糖和碱基"
+        },
+        {
+          "id": "C",
+          "text": "脂肪酸和甘油"
+        },
+        {
+          "id": "D",
+          "text": "两个芳香环"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "标准 α-氨基酸的变化主要来自 R 基团，主链提供共同的连接框架。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid backbone"
+      ],
+      "image": {
+        "src": "assets/structures/bioc-glycine-glycine-neutral.svg",
+        "alt": "甘氨酸的 α-氨基酸骨架",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES NCC(=O)O 渲染"
+      }
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "R 基团最直接影响氨基酸的……",
+      "options": [
+        {
+          "id": "A",
+          "text": "疏水性、极性、电荷、体积和反应性"
+        },
+        {
+          "id": "B",
+          "text": "原子序数总和但不影响折叠"
+        },
+        {
+          "id": "C",
+          "text": "所有氨基酸都相同的主链键"
+        },
+        {
+          "id": "D",
+          "text": "水的沸点"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "侧链化学性格决定残基偏好的微环境、相互作用和反应性。",
+      "difficulty": "easy",
+      "tags": [
+        "side chain"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "Gly 不构成手性中心的原因是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "R=H，α-碳连接两个相同取代基"
+        },
+        {
+          "id": "B",
+          "text": "Gly 没有羧基"
+        },
+        {
+          "id": "C",
+          "text": "Gly 没有氮"
+        },
+        {
+          "id": "D",
+          "text": "Gly 一定带负电"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "两个氢取代基使 α-碳不满足手性中心的四个不同取代基条件。",
+      "difficulty": "easy",
+      "tags": [
+        "glycine",
+        "chirality"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "L/D 构型与旋光正负号的关系是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "L/D 是相对构型，不直接决定旋光正负"
+        },
+        {
+          "id": "B",
+          "text": "L 必然为正旋"
+        },
+        {
+          "id": "C",
+          "text": "D 必然为负旋"
+        },
+        {
+          "id": "D",
+          "text": "两者完全没有结构意义"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "L/D 不能替代旋光实验结果。",
+      "difficulty": "easy",
+      "tags": [
+        "stereochemistry"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "multiple-choice",
+      "question": "按侧链性质分类时，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "非极性侧链常偏好疏水核心"
+        },
+        {
+          "id": "B",
+          "text": "带电侧链会受 pH 影响"
+        },
+        {
+          "id": "C",
+          "text": "芳香侧链可参与疏水和 π 相互作用"
+        },
+        {
+          "id": "D",
+          "text": "分类只按单字母缩写决定"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "分类的价值在于预测残基在蛋白质中的化学环境和可能作用。",
+      "difficulty": "medium",
+      "tags": [
+        "classification",
+        "side chains"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "pH=pKa 时，某可电离基团的质子化态与去质子化态约为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:1"
+        },
+        {
+          "id": "B",
+          "text": "1:10"
+        },
+        {
+          "id": "C",
+          "text": "1:100"
+        },
+        {
+          "id": "D",
+          "text": "0:1"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Henderson–Hasselbalch 关系给出 pH=pKa 时两态比例为 1。",
+      "difficulty": "easy",
+      "tags": [
+        "pKa"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "pI 的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "平均净电荷为零的 pH"
+        },
+        {
+          "id": "B",
+          "text": "所有局部电荷都消失的 pH"
+        },
+        {
+          "id": "C",
+          "text": "一定等于 7 的 pH"
+        },
+        {
+          "id": "D",
+          "text": "所有 pKa 相等的 pH"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "等电点是平均净电荷为零，不代表分子内部没有正、负局部电荷。",
+      "difficulty": "easy",
+      "tags": [
+        "pI",
+        "net charge"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "当环境 pH 高于氨基酸 pI 时，平均净电荷通常更偏向……",
+      "options": [
+        {
+          "id": "A",
+          "text": "负"
+        },
+        {
+          "id": "B",
+          "text": "正"
+        },
+        {
+          "id": "C",
+          "text": "绝对为零"
+        },
+        {
+          "id": "D",
+          "text": "无法判断任何趋势"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "较高 pH 促进去质子化；相对于 pI，分子平均净电荷趋向负。",
+      "difficulty": "easy",
+      "tags": [
+        "pI",
+        "charge state"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "multiple-choice",
+      "question": "下列哪些属于成人常见必需氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Leu"
+        },
+        {
+          "id": "B",
+          "text": "Trp"
+        },
+        {
+          "id": "C",
+          "text": "His"
+        },
+        {
+          "id": "D",
+          "text": "Gly"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "Leu、Trp 和 His 属于常见成人必需氨基酸；Gly 通常不列为成人必需氨基酸。",
+      "difficulty": "medium",
+      "tags": [
+        "essential amino acids"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "茚三酮反应中 Pro 常见的颜色表现是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "黄色"
+        },
+        {
+          "id": "B",
+          "text": "蓝紫色且与所有氨基酸完全相同"
+        },
+        {
+          "id": "C",
+          "text": "无色且没有反应"
+        },
+        {
+          "id": "D",
+          "text": "金属银色"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Pro 是亚氨基酸，茚三酮产物常呈黄色而区别于多数 α-氨基酸。",
+      "difficulty": "easy",
+      "tags": [
+        "proline",
+        "ninhydrin"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "下图苯丙氨酸骨架中的芳香环最可能带来……",
+      "options": [
+        {
+          "id": "A",
+          "text": "疏水和 π 相互作用倾向"
+        },
+        {
+          "id": "B",
+          "text": "必然的负电荷"
+        },
+        {
+          "id": "C",
+          "text": "肽键断裂"
+        },
+        {
+          "id": "D",
+          "text": "硫醇反应性"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "苯丙氨酸侧链的苯环具有疏水性和芳香相互作用潜力；此图明确不指定 L/D 构型。",
+      "difficulty": "medium",
+      "tags": [
+        "phenylalanine",
+        "aromatic"
+      ],
+      "image": {
+        "src": "assets/structures/bioc-phenylalanine-phenylalanine-neutral.svg",
+        "alt": "苯丙氨酸骨架，立体化学未指定",
+        "caption": "由 Chemical Structure Renderer 根据未指定手性的明确连接关系渲染"
+      }
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "含硫侧链的模型结构中，—SH 的重要化学特征是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "硫可参与氧化还原和亲核反应"
+        },
+        {
+          "id": "B",
+          "text": "硫不能发生任何反应"
+        },
+        {
+          "id": "C",
+          "text": "—SH 必然带正电"
+        },
+        {
+          "id": "D",
+          "text": "它与羧基完全等价"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "半胱氨酸类硫醇可参与亲核反应、氧化成二硫键等过程。",
+      "difficulty": "medium",
+      "tags": [
+        "sulfur",
+        "cysteine"
+      ],
+      "image": {
+        "src": "assets/structures/bioc-cysteamine-cysteamine-model-neutral.svg",
+        "alt": "含硫侧链模型结构",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES NCCS 渲染"
+      }
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "蛋白质内部微环境改变侧链 pKa 的原因可包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "邻近电荷、氢键、介电环境和溶剂暴露度"
+        },
+        {
+          "id": "B",
+          "text": "氨基酸名称字母顺序"
+        },
+        {
+          "id": "C",
+          "text": "所有残基都处于纯水中"
+        },
+        {
+          "id": "D",
+          "text": "只由分子量决定"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "蛋白质内部不是均一水溶液，局部环境可显著调节酸碱平衡。",
+      "difficulty": "medium",
+      "tags": [
+        "pKa",
+        "microenvironment"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "true-false",
+      "question": "硒代半胱氨酸可视为把半胱氨酸的硫换成硒的相关氨基酸。",
+      "answer": true,
+      "points": 1,
+      "explanation": "Sec 的硒醇化学性与 Cys 不同，并可在特殊机制下由 UGA 编码。",
+      "difficulty": "medium",
+      "tags": [
+        "selenocysteine"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "若埋藏在疏水口袋中的 Asp 比游离状态更倾向质子化，最合理解释是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "疏水环境不利于带负电的去质子化形式，局部 pKa 可能升高"
+        },
+        {
+          "id": "B",
+          "text": "Asp 在蛋白质里不再含羧基"
+        },
+        {
+          "id": "C",
+          "text": "所有埋藏残基 pKa 必然为 7"
+        },
+        {
+          "id": "D",
+          "text": "蛋白质内部不受 pH 影响"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "低介电疏水环境可能不利于负电荷，使 Asp 的质子化状态被稳定。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "Asp",
+        "microenvironment"
+      ]
+    }
+  ]
+}

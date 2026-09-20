@@ -1,0 +1,143 @@
+{
+  "formula": "C2H4",
+  "relative_molecular_mass": 28.053999999999995,
+  "exact_mass": 28.031300127999998,
+  "net_charge": 0,
+  "atom_count": 2,
+  "heavy_atom_count": 2,
+  "atom_count_with_hydrogens": 6,
+  "canonical_isomeric_smiles": "C=C",
+  "cxsmiles": "C=C",
+  "inchikey": "VGGSQFUCUMXWEO-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "org-ethene",
+    "chinese_name": "乙烯",
+    "english_name": "ethene",
+    "structure": {
+      "format": "smiles",
+      "value": "C=C"
+    },
+    "protonation": "Explicit neutral structure; charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Organic Chemistry lesson 02, sigma and pi bonding",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "C2H4",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "C=C",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 1,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 1,
+    "stereocenter_count": 0,
+    "layout_mode": "template-coordgen",
+    "template_id": "bridged-or-cage",
+    "template_score": 2,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      791,
+      549,
+      888,
+      571
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "org-ethene-ethene-neutral.svg",
+      "sha256": "40971cce0e4de95e65857b8169973438d839ead44198a424e32344705df2de45"
+    },
+    "png": {
+      "path": "org-ethene-ethene-neutral.png",
+      "sha256": "3ca05eea2e3b99e99dbc4aa01962ed736ddf6b5c4c4bae87bd271dccc6ee6b9a"
+    },
+    "mol": {
+      "path": "org-ethene-ethene-neutral.mol",
+      "sha256": "9cd443d9d9f6f3e2419655e345f0e70a55bfcef65f8c2c6b4ebbeb6589ae806f"
+    }
+  }
+}

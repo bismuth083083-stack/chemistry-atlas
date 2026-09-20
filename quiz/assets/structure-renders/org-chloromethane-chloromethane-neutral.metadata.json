@@ -1,0 +1,143 @@
+{
+  "formula": "CH3Cl",
+  "relative_molecular_mass": 50.488,
+  "exact_mass": 49.992327775999996,
+  "net_charge": 0,
+  "atom_count": 2,
+  "heavy_atom_count": 2,
+  "atom_count_with_hydrogens": 5,
+  "canonical_isomeric_smiles": "CCl",
+  "cxsmiles": "CCl",
+  "inchikey": "NEHMKBQYUWJMIP-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "Cl",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "org-chloromethane",
+    "chinese_name": "氯甲烷",
+    "english_name": "chloromethane",
+    "structure": {
+      "format": "smiles",
+      "value": "CCl"
+    },
+    "protonation": "Explicit neutral structure; charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Organic Chemistry lesson 02, Lewis acid-base and substitution example",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "CH3Cl",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "CCl",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 1,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 0,
+    "stereocenter_count": 0,
+    "layout_mode": "template-coordgen",
+    "template_id": "bridged-or-cage",
+    "template_score": 2,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      775,
+      532,
+      904,
+      588
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "org-chloromethane-chloromethane-neutral.svg",
+      "sha256": "7a6f8812bae085c6744d85a0d5c65a63085d141a391ba82a9857ea5e4ad59e13"
+    },
+    "png": {
+      "path": "org-chloromethane-chloromethane-neutral.png",
+      "sha256": "42cbf864c79788878154423095c8cbc41b559679718b720f6a3612e195d7867a"
+    },
+    "mol": {
+      "path": "org-chloromethane-chloromethane-neutral.mol",
+      "sha256": "ea2d31e3829965071d60cc4d3175235b534c4e215260c141b53a3f9a8fcbe514"
+    }
+  }
+}

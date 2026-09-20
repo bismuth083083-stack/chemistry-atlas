@@ -1,0 +1,460 @@
+{
+  "id": "BIOC-L04",
+  "title": "蛋白质的功能：结构、配体与构象平衡",
+  "description": "练习纤维蛋白、肌红蛋白、血红蛋白、协同效应、BPG、HbS 与无序蛋白。",
+  "subject": "biochemistry",
+  "chapter": "Chapter 4 · Protein function",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "蛋白质功能最合理的概括是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "由结构、配体相互作用和构象变化共同产生"
+        },
+        {
+          "id": "B",
+          "text": "只由氨基酸数量决定"
+        },
+        {
+          "id": "C",
+          "text": "只要有酶字样就能催化"
+        },
+        {
+          "id": "D",
+          "text": "与环境无关"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "功能不仅来自静态结构，还来自结合、运动和状态之间的平衡。",
+      "difficulty": "easy",
+      "tags": [
+        "structure-function"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "纤维状蛋白通常更突出……",
+      "options": [
+        {
+          "id": "A",
+          "text": "重复结构带来的力学或材料性质"
+        },
+        {
+          "id": "B",
+          "text": "可逆结合氧的单一口袋"
+        },
+        {
+          "id": "C",
+          "text": "四个亚基协同"
+        },
+        {
+          "id": "D",
+          "text": "完全无序且无重复"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "纤维状蛋白通过重复序列和规则组装形成拉伸、支撑等材料功能。",
+      "difficulty": "easy",
+      "tags": [
+        "fibrous proteins"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "肌红蛋白（Mb）最适合被描述为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "单亚基、具有一个主要氧结合位点的氧储存蛋白"
+        },
+        {
+          "id": "B",
+          "text": "四亚基协同运输蛋白"
+        },
+        {
+          "id": "C",
+          "text": "无配体结合位点的结构蛋白"
+        },
+        {
+          "id": "D",
+          "text": "只存在于细菌细胞壁"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Mb 通常为单体，适合储存或缓冲氧，不表现 Hb 那样的亚基协同。",
+      "difficulty": "easy",
+      "tags": [
+        "myoglobin"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "血红蛋白（Hb）的四级结构重要性在于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "多个亚基之间的相互作用可产生协同和别构调节"
+        },
+        {
+          "id": "B",
+          "text": "它只有一条多肽链"
+        },
+        {
+          "id": "C",
+          "text": "亚基之间不能通信"
+        },
+        {
+          "id": "D",
+          "text": "四级结构只决定分子量"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Hb 的亚基装配使一个亚基的构象变化能够影响其他亚基的配体亲和力。",
+      "difficulty": "easy",
+      "tags": [
+        "hemoglobin",
+        "quaternary structure"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "Hb 的氧结合曲线呈 S 形通常反映……",
+      "options": [
+        {
+          "id": "A",
+          "text": "协同结合"
+        },
+        {
+          "id": "B",
+          "text": "完全没有亚基相互作用"
+        },
+        {
+          "id": "C",
+          "text": "只存在一个固定构象"
+        },
+        {
+          "id": "D",
+          "text": "氧气被不可逆消耗"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "S 形曲线是多亚基协同效应的典型表现。",
+      "difficulty": "easy",
+      "tags": [
+        "cooperativity"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "BPG 增加通常使 Hb 氧解离曲线……",
+      "options": [
+        {
+          "id": "A",
+          "text": "右移，P₅₀ 增大，释放氧更容易"
+        },
+        {
+          "id": "B",
+          "text": "左移，P₅₀ 减小，完全不释放氧"
+        },
+        {
+          "id": "C",
+          "text": "变成水平直线"
+        },
+        {
+          "id": "D",
+          "text": "与 Hb 没有关系"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "BPG 稳定低亲和力状态，降低 Hb 对氧的亲和力，使曲线右移、P₅₀ 增大。",
+      "difficulty": "medium",
+      "tags": [
+        "BPG",
+        "P50",
+        "allostery"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "HbS 中导致镰状细胞病经典分子变化是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "β 链一个 Glu 被 Val 替换，改变表面疏水性"
+        },
+        {
+          "id": "B",
+          "text": "所有 Gly 被删除"
+        },
+        {
+          "id": "C",
+          "text": "血红素被完全移除"
+        },
+        {
+          "id": "D",
+          "text": "所有亚基变成脂质"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Glu→Val 的单残基替换可产生异常疏水表面并促进聚集。",
+      "difficulty": "easy",
+      "tags": [
+        "HbS",
+        "mutation"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "内在无序蛋白（IDP）的特点是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "缺少单一稳定折叠，但可通过动态构象参与调控或结合"
+        },
+        {
+          "id": "B",
+          "text": "完全没有氨基酸序列"
+        },
+        {
+          "id": "C",
+          "text": "一定不能与任何配体结合"
+        },
+        {
+          "id": "D",
+          "text": "只有在晶体中才存在"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "无序并不等于无功能；动态和可调的构象集合可能正是其功能基础。",
+      "difficulty": "easy",
+      "tags": [
+        "intrinsically disordered protein"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "别构调节的核心是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "一个位点的结合或状态变化影响另一个位点的性质"
+        },
+        {
+          "id": "B",
+          "text": "所有位点永远互不影响"
+        },
+        {
+          "id": "C",
+          "text": "只改变分子式"
+        },
+        {
+          "id": "D",
+          "text": "只能发生在小分子中"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "别构效应通过构象平衡和亚基/结构域耦合改变远端功能位点。",
+      "difficulty": "easy",
+      "tags": [
+        "allostery"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "P₅₀ 的含义通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "达到半数饱和时的氧分压，反映相对亲和力"
+        },
+        {
+          "id": "B",
+          "text": "蛋白质质量为 50 Da"
+        },
+        {
+          "id": "C",
+          "text": "温度达到 50 K"
+        },
+        {
+          "id": "D",
+          "text": "五个亚基的数量"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "P₅₀ 越大通常表示在相同条件下氧亲和力越低。",
+      "difficulty": "easy",
+      "tags": [
+        "P50",
+        "oxygen binding"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "multiple-choice",
+      "question": "结构—功能分析中值得同时检查的因素包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "配体结合位点的化学环境"
+        },
+        {
+          "id": "B",
+          "text": "亚基界面和构象平衡"
+        },
+        {
+          "id": "C",
+          "text": "序列突变造成的表面性质变化"
+        },
+        {
+          "id": "D",
+          "text": "只看一张静态结构图"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "功能解释需要把局部化学、整体装配、动态平衡和突变效应联系起来。",
+      "difficulty": "medium",
+      "tags": [
+        "structure-function",
+        "allostery"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "true-false",
+      "question": "肌红蛋白和血红蛋白的氧结合曲线必须完全相同，因为它们都含血红素。",
+      "answer": false,
+      "points": 1,
+      "explanation": "共同含血红素不意味着结构和装配相同；Mb 单体、Hb 多亚基，协同效应不同。",
+      "difficulty": "easy",
+      "tags": [
+        "myoglobin",
+        "hemoglobin"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "如果一个配体稳定蛋白质的低亲和力构象，结果通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "结合曲线向较低亲和力方向移动"
+        },
+        {
+          "id": "B",
+          "text": "所有配体都变成共价键"
+        },
+        {
+          "id": "C",
+          "text": "P₅₀ 必然减小"
+        },
+        {
+          "id": "D",
+          "text": "构象平衡不变"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "稳定低亲和力状态会让达到相同占据率需要更高配体浓度或分压。",
+      "difficulty": "medium",
+      "tags": [
+        "allostery",
+        "conformation"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "“结构决定功能”在学习蛋白质时更好的改写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "结构约束功能，但功能也来自动态状态、环境和相互作用"
+        },
+        {
+          "id": "B",
+          "text": "只有静态晶体结构有意义"
+        },
+        {
+          "id": "C",
+          "text": "序列和环境都不重要"
+        },
+        {
+          "id": "D",
+          "text": "任何结构都能执行同一功能"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "结构—功能关系是可检验的因果链，不应被简化为静态形状决定一切。",
+      "difficulty": "medium",
+      "tags": [
+        "structure-function"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "若组织代谢状态升高使 BPG 浓度增加，最可能的生理效果是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hb 在组织处降低氧亲和力，更有利于释放氧"
+        },
+        {
+          "id": "B",
+          "text": "Hb 在组织完全锁住氧"
+        },
+        {
+          "id": "C",
+          "text": "Mb 变成四聚体"
+        },
+        {
+          "id": "D",
+          "text": "P₅₀ 降为零"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "BPG 增加稳定 Hb 的低亲和力状态，曲线右移、P₅₀ 增大，从而促进组织释氧。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "BPG",
+        "physiology"
+      ]
+    }
+  ]
+}

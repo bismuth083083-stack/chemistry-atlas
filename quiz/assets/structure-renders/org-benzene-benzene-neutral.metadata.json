@@ -1,0 +1,224 @@
+{
+  "formula": "C6H6",
+  "relative_molecular_mass": 78.11399999999999,
+  "exact_mass": 78.046950192,
+  "net_charge": 0,
+  "atom_count": 6,
+  "heavy_atom_count": 6,
+  "atom_count_with_hydrogens": 12,
+  "canonical_isomeric_smiles": "c1ccccc1",
+  "cxsmiles": "c1ccccc1",
+  "inchikey": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 3,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 3,
+      "end": 4,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 4,
+      "end": 5,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 0,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "org-benzene",
+    "chinese_name": "苯",
+    "english_name": "benzene",
+    "structure": {
+      "format": "smiles",
+      "value": "c1ccccc1"
+    },
+    "protonation": "Explicit neutral structure; charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Inorganic Chemistry lesson 04, symmetry examples",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "C6H6",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "c1ccccc1",
+  "topology": {
+    "ring_sizes": [
+      6
+    ],
+    "ring_count": 1,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 0,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 1.0,
+    "double_bond_count": 0,
+    "stereocenter_count": 0,
+    "layout_mode": "template-coordgen",
+    "template_id": "single-ring",
+    "template_score": 2,
+    "core_bond_length_deviation": 9.285759005716778e-05,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      711,
+      412,
+      968,
+      708
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "org-benzene-benzene-neutral.svg",
+      "sha256": "d299031430283c3af51db3a8f15c6c24a557d3cdf8512eea969acc6a196b8275"
+    },
+    "png": {
+      "path": "org-benzene-benzene-neutral.png",
+      "sha256": "d5870c5008a06ed56e0bb65fc26365f83c03c5636396be41bfdec1bdee24bd86"
+    },
+    "mol": {
+      "path": "org-benzene-benzene-neutral.mol",
+      "sha256": "a8f04f84e5d8322f6094661c8d45d76b5d06149fae97038aae6c91fc9b7de6a2"
+    }
+  }
+}

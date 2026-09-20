@@ -1,0 +1,466 @@
+{
+  "id": "INORG-L03",
+  "title": "简单成键理论：Lewis 结构、共振与 VSEPR",
+  "description": "练习 Lewis 结构、形式电荷、共振、BF₃、VSEPR、多中心键与配体紧密堆积。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Chapter 3 · Lewis and VSEPR",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Lewis 结构最直接记录的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "价电子如何分配到键和孤对电子"
+        },
+        {
+          "id": "B",
+          "text": "电子的精确时间轨迹"
+        },
+        {
+          "id": "C",
+          "text": "晶体的所有长程缺陷"
+        },
+        {
+          "id": "D",
+          "text": "溶液中的反应速率"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Lewis 结构是价层电子计数和局域成键的简化表示，不能单独给出完整量子态。",
+      "difficulty": "easy",
+      "tags": [
+        "Lewis structures"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "画 Lewis 结构的第一步通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "统计所有原子的价电子并考虑整体电荷"
+        },
+        {
+          "id": "B",
+          "text": "先随意添加双键"
+        },
+        {
+          "id": "C",
+          "text": "先决定颜色"
+        },
+        {
+          "id": "D",
+          "text": "先忽略氢和卤素"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "价电子总数和整体电荷是后续连接骨架、补八隅体和计算形式电荷的基础。",
+      "difficulty": "easy",
+      "tags": [
+        "electron counting"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "形式电荷的总和应当等于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子或离子的整体电荷"
+        },
+        {
+          "id": "B",
+          "text": "中子总数"
+        },
+        {
+          "id": "C",
+          "text": "原子序数总和"
+        },
+        {
+          "id": "D",
+          "text": "孤对电子数"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "一幅 Lewis 结构中各原子形式电荷之和必须等于体系净电荷。",
+      "difficulty": "easy",
+      "tags": [
+        "formal charge"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "共振式之间必须保持不变的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子核骨架和 σ 键连接关系"
+        },
+        {
+          "id": "B",
+          "text": "所有 π 电子位置"
+        },
+        {
+          "id": "C",
+          "text": "每个原子的形式电荷"
+        },
+        {
+          "id": "D",
+          "text": "所有构象角"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "共振只重新分配 π 电子、孤对电子和形式电荷，不改变原子连接。",
+      "difficulty": "easy",
+      "tags": [
+        "resonance"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "比较 SCN⁻ 的共振贡献式时，最可靠的第一步是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "逐式计算形式电荷并检查八隅体、负电荷位置和电荷分离"
+        },
+        {
+          "id": "B",
+          "text": "只选画得最对称的一式"
+        },
+        {
+          "id": "C",
+          "text": "只看硫的原子量"
+        },
+        {
+          "id": "D",
+          "text": "忽略总电荷"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "共振贡献式需要结合形式电荷、八隅体、负电荷落在何种元素上以及电荷分离程度判断。",
+      "difficulty": "medium",
+      "tags": [
+        "SCN-",
+        "resonance"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "下图 BF₃ 的 Lewis 模型最值得强调的特征是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "中心 B 周围只有六个共享电子，属于电子缺乏中心"
+        },
+        {
+          "id": "B",
+          "text": "B 周围一定有完整八隅体"
+        },
+        {
+          "id": "C",
+          "text": "BF₃ 是线形分子"
+        },
+        {
+          "id": "D",
+          "text": "B 带四个孤对电子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "BF₃ 的中心硼常以六电子价层表示，是典型 Lewis 酸和电子缺乏体系。",
+      "difficulty": "medium",
+      "tags": [
+        "BF3",
+        "Lewis acid"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-bf3-boron-trifluoride-neutral.svg",
+        "alt": "三氟化硼结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES F[B](F)F 渲染"
+      }
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "VSEPR 中双键通常计作几个电子域？",
+      "options": [
+        {
+          "id": "A",
+          "text": "一个电子域"
+        },
+        {
+          "id": "B",
+          "text": "两个电子域"
+        },
+        {
+          "id": "C",
+          "text": "三个电子域"
+        },
+        {
+          "id": "D",
+          "text": "不计入电子域"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "VSEPR 关注中心原子周围电子密度区域，多重键作为一个方向上的电子域，但排斥可能更强。",
+      "difficulty": "easy",
+      "tags": [
+        "VSEPR",
+        "electron domains"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "AX₃ 型且中心原子无孤对电子的分子几何通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "三角平面"
+        },
+        {
+          "id": "B",
+          "text": "三角锥"
+        },
+        {
+          "id": "C",
+          "text": "折线形"
+        },
+        {
+          "id": "D",
+          "text": "四面体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "三个成键电子域且无孤对电子时，几何为三角平面。",
+      "difficulty": "easy",
+      "tags": [
+        "VSEPR",
+        "geometry"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "孤对电子对键角的影响通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "孤对–孤对和孤对–键对排斥更强，会压缩键角"
+        },
+        {
+          "id": "B",
+          "text": "孤对电子没有空间效应"
+        },
+        {
+          "id": "C",
+          "text": "孤对电子总会使键角变成 180°"
+        },
+        {
+          "id": "D",
+          "text": "只影响分子量"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "孤对电子密度更集中在中心原子附近，排斥通常强于键对–键对排斥。",
+      "difficulty": "easy",
+      "tags": [
+        "VSEPR",
+        "lone pairs"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "为什么多重键可能比单键更明显地压缩相邻键角？",
+      "options": [
+        {
+          "id": "A",
+          "text": "多重键电子密度更集中，电子域排斥通常更强"
+        },
+        {
+          "id": "B",
+          "text": "多重键没有电子"
+        },
+        {
+          "id": "C",
+          "text": "多重键一定是离子键"
+        },
+        {
+          "id": "D",
+          "text": "键角只由原子质量决定"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "VSEPR 中多重键虽算一个域，但其电子密度和排斥往往更强。",
+      "difficulty": "medium",
+      "tags": [
+        "multiple bonds",
+        "bond angles"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "multiple-choice",
+      "question": "三角双锥中轴向与赤道位不等价，原因包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "轴向位有三个 90° 相互作用"
+        },
+        {
+          "id": "B",
+          "text": "赤道位只有两个 90° 相互作用"
+        },
+        {
+          "id": "C",
+          "text": "不同配体会偏好不同位置"
+        },
+        {
+          "id": "D",
+          "text": "所有位置在任何体系中都完全等价"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "三角双锥的几何位置具有不同的 90° 相互作用数，因此取代基大小和孤对电子会影响位置偏好。",
+      "difficulty": "medium",
+      "tags": [
+        "trigonal bipyramidal",
+        "VSEPR"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "现代超价键描述通常不主张简单地说中心原子“调用高能 d 轨道扩展八隅体”，而更强调……",
+      "options": [
+        {
+          "id": "A",
+          "text": "离域分子轨道、离子性和配体电负性等因素"
+        },
+        {
+          "id": "B",
+          "text": "所有键都是纯粹两中心两电子键"
+        },
+        {
+          "id": "C",
+          "text": "原子核没有作用"
+        },
+        {
+          "id": "D",
+          "text": "电子计数不重要"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "现代描述将超价键看作离域和离子性贡献的组合，不把旧式杂化图像当成唯一解释。",
+      "difficulty": "medium",
+      "tags": [
+        "hypervalency",
+        "molecular orbitals"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "三中心四电子键的定性图景通常包含……",
+      "options": [
+        {
+          "id": "A",
+          "text": "三个原子共享成键、非键和反键组合中的四个电子"
+        },
+        {
+          "id": "B",
+          "text": "三个原子只共享一个电子"
+        },
+        {
+          "id": "C",
+          "text": "两个原子核没有轨道相互作用"
+        },
+        {
+          "id": "D",
+          "text": "只有金属原子能形成"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "三中心四电子模型用离域轨道解释某些桥联或超价体系的稳定性。",
+      "difficulty": "medium",
+      "tags": [
+        "three-center bonding"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "true-false",
+      "question": "任何一个 Lewis 结构都能独立、完整地代表分子的真实电子结构。",
+      "answer": false,
+      "points": 1,
+      "explanation": "Lewis 结构是有用模型；共振、分子轨道和实验数据可能显示电子离域或其他超出局域图像的内容。",
+      "difficulty": "medium",
+      "tags": [
+        "models",
+        "Lewis structures"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "比较一个离子多幅共振式的主要贡献时，最稳妥的综合判断是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "优先满足合理八隅体，减少电荷分离，并让负电荷更偏向电负性较大的原子"
+        },
+        {
+          "id": "B",
+          "text": "只选择双键最多的一幅"
+        },
+        {
+          "id": "C",
+          "text": "只选择形式电荷绝对值最大的"
+        },
+        {
+          "id": "D",
+          "text": "忽略原子种类和总电荷"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "共振贡献式需要综合电子计数、形式电荷、电负性和离域程度；单一规则不能代替完整比较。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "resonance",
+        "formal charge"
+      ]
+    }
+  ]
+}

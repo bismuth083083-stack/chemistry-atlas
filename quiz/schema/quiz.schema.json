@@ -33,7 +33,17 @@
         "explanation": { "type": "string", "minLength": 1 },
         "difficulty": { "enum": ["easy", "medium", "hard"] },
         "tags": { "type": "array", "items": { "type": "string" } },
-        "knowledgePoints": { "type": "array", "items": { "type": "string" } }
+        "knowledgePoints": { "type": "array", "items": { "type": "string" } },
+        "image": {
+          "type": "object",
+          "required": ["src", "alt"],
+          "additionalProperties": false,
+          "properties": {
+            "src": { "type": "string", "minLength": 1 },
+            "alt": { "type": "string", "minLength": 1 },
+            "caption": { "type": "string" }
+          }
+        }
       }
     },
     "singleChoice": {

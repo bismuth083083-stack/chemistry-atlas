@@ -14,11 +14,23 @@
       "lesson": "Structure and bonding",
       "questionCount": 15,
       "difficulty": "intermediate",
-      "tags": ["orbitals", "bond polarity", "Lewis acid-base", "resonance"],
-      "knowledgePoints": ["scope of organic chemistry", "electron configuration", "intermolecular forces", "formal charge"],
+      "tags": [
+        "orbitals",
+        "bond polarity",
+        "Lewis acid-base",
+        "resonance"
+      ],
+      "knowledgePoints": [
+        "scope of organic chemistry",
+        "electron configuration",
+        "intermolecular forces",
+        "formal charge"
+      ],
       "createdAt": "2026-09-20",
       "updatedAt": "2026-09-20",
-      "relatedNotes": ["/organic/dist/lesson-01.html"],
+      "relatedNotes": [
+        "/organic/dist/lesson-01.html"
+      ],
       "path": "organic-l01.json",
       "mode": "fixed"
     },
@@ -35,11 +47,23 @@
       "lesson": "Introduction and bonding language",
       "questionCount": 15,
       "difficulty": "intermediate",
-      "tags": ["coordination", "metal-metal bonding", "bridging ligands", "pi complexes"],
-      "knowledgePoints": ["scope of inorganic chemistry", "coordination number", "sigma-pi-delta bonding", "three-center bonding"],
+      "tags": [
+        "coordination",
+        "metal-metal bonding",
+        "bridging ligands",
+        "pi complexes"
+      ],
+      "knowledgePoints": [
+        "scope of inorganic chemistry",
+        "coordination number",
+        "sigma-pi-delta bonding",
+        "three-center bonding"
+      ],
       "createdAt": "2026-09-20",
       "updatedAt": "2026-09-20",
-      "relatedNotes": ["/inorganic/dist/lesson-01.html"],
+      "relatedNotes": [
+        "/inorganic/dist/lesson-01.html"
+      ],
       "path": "inorganic-l01.json",
       "mode": "fixed"
     },
@@ -56,11 +80,23 @@
       "lesson": "Introduction, mathematical preparation, and perfect gases",
       "questionCount": 15,
       "difficulty": "intermediate",
-      "tags": ["ideal gas", "gas laws", "partial pressure", "calculus"],
-      "knowledgePoints": ["scope of physical chemistry", "total differential", "state variables", "Dalton law"],
+      "tags": [
+        "ideal gas",
+        "gas laws",
+        "partial pressure",
+        "calculus"
+      ],
+      "knowledgePoints": [
+        "scope of physical chemistry",
+        "total differential",
+        "state variables",
+        "Dalton law"
+      ],
       "createdAt": "2026-09-20",
       "updatedAt": "2026-09-20",
-      "relatedNotes": ["/physical/dist/lesson-01.html"],
+      "relatedNotes": [
+        "/physical/dist/lesson-01.html"
+      ],
       "path": "physical-l01.json",
       "mode": "fixed"
     },
@@ -77,11 +113,23 @@
       "lesson": "From question to reliable data",
       "questionCount": 15,
       "difficulty": "intermediate",
-      "tags": ["sampling", "method selection", "quality control", "evidence"],
-      "knowledgePoints": ["qualitative and quantitative analysis", "blank", "LOD", "accuracy and precision"],
+      "tags": [
+        "sampling",
+        "method selection",
+        "quality control",
+        "evidence"
+      ],
+      "knowledgePoints": [
+        "qualitative and quantitative analysis",
+        "blank",
+        "LOD",
+        "accuracy and precision"
+      ],
       "createdAt": "2026-09-20",
       "updatedAt": "2026-09-20",
-      "relatedNotes": ["/analytical/dist/chapter-1.html"],
+      "relatedNotes": [
+        "/analytical/dist/chapter-1.html"
+      ],
       "path": "analytical-l01.json",
       "mode": "fixed"
     },
@@ -98,12 +146,486 @@
       "lesson": "Amino acids and side chains",
       "questionCount": 15,
       "difficulty": "intermediate",
-      "tags": ["amino acids", "pKa", "pI", "protein folding"],
-      "knowledgePoints": ["alpha amino acid structure", "side-chain classification", "ionization", "microenvironment"],
+      "tags": [
+        "amino acids",
+        "pKa",
+        "pI",
+        "protein folding"
+      ],
+      "knowledgePoints": [
+        "alpha amino acid structure",
+        "side-chain classification",
+        "ionization",
+        "microenvironment"
+      ],
       "createdAt": "2026-09-20",
       "updatedAt": "2026-09-20",
-      "relatedNotes": ["/biochem/dist/chapter-02.html"],
+      "relatedNotes": [
+        "/biochem/dist/chapter-02.html"
+      ],
       "path": "biochemistry-l01.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L02",
+      "title": "酸碱、分子轨道与分子结构",
+      "description": "练习 LCAO、σ/π 轨道、HOMO–LUMO、杂化、VSEPR 与分子极性。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 2,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 2 · Molecular orbitals",
+      "lesson": "Acid-base, molecular orbitals, and structure",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "LCAO",
+        "molecular orbitals",
+        "HOMO-LUMO",
+        "hybridization"
+      ],
+      "knowledgePoints": [
+        "orbital overlap",
+        "bond order",
+        "molecular geometry",
+        "polarity"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/organic/dist/lesson-02.html"
+      ],
+      "path": "org-l02.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L03",
+      "title": "酸碱理论：强度与结构效应",
+      "description": "练习 Arrhenius、Brønsted–Lowry、Lewis 定义，Ka/pKa 与共轭碱稳定性。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 3,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 3 · Acidity and basicity",
+      "lesson": "Acid-base theory and structural effects",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "pKa",
+        "conjugate base",
+        "inductive effect",
+        "resonance"
+      ],
+      "knowledgePoints": [
+        "acid-base definitions",
+        "acid strength",
+        "resonance stabilization",
+        "curved arrows"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/organic/dist/lesson-03.html"
+      ],
+      "path": "org-l03.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L04",
+      "title": "烷烃、环烷烃与系统命名",
+      "description": "练习烃与烷烃、母体链、取代基、CIP 规则以及环、稠环、桥环和螺环。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 4,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 4 · Alkanes and nomenclature",
+      "lesson": "Alkanes, cycloalkanes, and IUPAC naming",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "IUPAC",
+        "alkanes",
+        "cycloalkanes",
+        "CIP"
+      ],
+      "knowledgePoints": [
+        "parent chain",
+        "locants",
+        "carbon degree",
+        "ring nomenclature"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/organic/dist/lesson-04.html"
+      ],
+      "path": "org-l04.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L05",
+      "title": "异构、构象、环张力与烷烃反应",
+      "description": "练习构造异构、E/Z、Newman 投影、扭转/空间张力、环己烷翻环和烷烃反应。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 5,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 5 · Isomerism and conformation",
+      "lesson": "Isomerism, conformation, ring strain, and alkane reactions",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "isomerism",
+        "conformation",
+        "ring strain",
+        "alkane reactions"
+      ],
+      "knowledgePoints": [
+        "constitutional isomers",
+        "E/Z",
+        "Newman projection",
+        "chair conformations"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/organic/dist/lesson-05.html"
+      ],
+      "path": "org-l05.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "INORG-L02",
+      "title": "原子结构与周期趋势",
+      "description": "练习量子数、轨道节点、多电子原子、电子排布、屏蔽、半径、电离能与电子亲和能。",
+      "subject": "inorganic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 2,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 2 · Atomic structure",
+      "lesson": "Atomic structure and periodic trends",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "quantum numbers",
+        "electron configuration",
+        "periodic trends",
+        "shielding"
+      ],
+      "knowledgePoints": [
+        "wavefunction",
+        "nodes",
+        "Aufbau",
+        "ionization energy"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-02.html"
+      ],
+      "path": "inorg-l02.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "INORG-L03",
+      "title": "简单成键理论：Lewis 结构、共振与 VSEPR",
+      "description": "练习 Lewis 结构、形式电荷、共振、BF₃、VSEPR、多中心键与配体紧密堆积。",
+      "subject": "inorganic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 3,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 3 · Lewis and VSEPR",
+      "lesson": "Lewis structures, resonance, and VSEPR",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "Lewis structures",
+        "resonance",
+        "VSEPR",
+        "formal charge"
+      ],
+      "knowledgePoints": [
+        "electron counting",
+        "SCN-",
+        "electron domains",
+        "hypervalency"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-03.html"
+      ],
+      "path": "inorg-l03.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "INORG-L04",
+      "title": "分子对称性与点群",
+      "description": "练习对称元素、Cₙ、镜面、反演、Sₙ、点群判定及 IR/Raman 选择定则。",
+      "subject": "inorganic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 4,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 4 · Symmetry and point groups",
+      "lesson": "Molecular symmetry and point groups",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "symmetry",
+        "point groups",
+        "IR",
+        "Raman"
+      ],
+      "knowledgePoints": [
+        "symmetry operations",
+        "point-group tree",
+        "character tables",
+        "mutual exclusion"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-04.html"
+      ],
+      "path": "inorg-l04.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L02",
+      "title": "真实气体与状态方程",
+      "description": "练习气体动理论参照、分子间作用、压缩因子、维里方程、临界现象和 van der Waals 方程。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 2,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 2 · Real gases",
+      "lesson": "Real gases and equations of state",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "real gases",
+        "compressibility",
+        "virial equation",
+        "van der Waals"
+      ],
+      "knowledgePoints": [
+        "molecular attraction",
+        "Z factor",
+        "critical point",
+        "Maxwell construction"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/physical/dist/lesson-02.html"
+      ],
+      "path": "pchem-l02.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L03",
+      "title": "气体动理论与分子速率",
+      "description": "练习动理论假设、碰撞压强、温度与速率、Maxwell 分布、碰撞频率和平均自由程。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 3,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 3 · Kinetic theory",
+      "lesson": "Kinetic theory and molecular speeds",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "kinetic theory",
+        "Maxwell distribution",
+        "molecular speed",
+        "mean free path"
+      ],
+      "knowledgePoints": [
+        "model assumptions",
+        "rms speed",
+        "relative speed",
+        "collision frequency"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/physical/dist/lesson-03.html"
+      ],
+      "path": "pchem-l03.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L04",
+      "title": "热力学基本概念与第一定律",
+      "description": "练习体系与环境、状态函数、热和功、内能、膨胀功、焓、热容与绝热过程。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 4,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 4 · First law",
+      "lesson": "Thermodynamic concepts and the first law",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "thermodynamics",
+        "first law",
+        "enthalpy",
+        "heat capacity"
+      ],
+      "knowledgePoints": [
+        "system and surroundings",
+        "state functions",
+        "work sign",
+        "adiabatic process"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/physical/dist/lesson-04.html"
+      ],
+      "path": "pchem-l04.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ANA-L02",
+      "title": "基本操作与样品制备",
+      "description": "练习 GLP、方法验证、称量与容量器皿、标准溶液、稀释、消解和分离。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 2,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 2 · Operations and sample preparation",
+      "lesson": "Laboratory operations and sample preparation",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "GLP",
+        "sample preparation",
+        "volumetric glassware",
+        "method validation"
+      ],
+      "knowledgePoints": [
+        "SOP",
+        "accuracy and precision",
+        "primary standard",
+        "dilution"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/analytical/dist/chapter-2.html"
+      ],
+      "path": "ana-l02.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L02",
+      "title": "氨基酸：侧链把骨架写成化学性格",
+      "description": "练习氨基酸共同骨架、侧链分类、pKa/pI、电荷状态和残基微环境。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 2,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 2 · Amino acids",
+      "lesson": "Amino acids and side chains",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "amino acids",
+        "side chains",
+        "pKa",
+        "pI"
+      ],
+      "knowledgePoints": [
+        "alpha-amino-acid backbone",
+        "classification",
+        "ionization",
+        "microenvironment"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/biochem/dist/chapter-02.html"
+      ],
+      "path": "bioc-l02.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L03",
+      "title": "蛋白质结构：从肽平面到折叠",
+      "description": "练习肽键部分双键、ω 角、Ramachandran 图、二级结构、三级/四级结构和结构测定。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 3,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 3 · Protein structure",
+      "lesson": "Protein structure and folding",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "peptide bond",
+        "Ramachandran",
+        "secondary structure",
+        "folding"
+      ],
+      "knowledgePoints": [
+        "planarity",
+        "backbone torsion",
+        "hydrogen bonds",
+        "structure determination"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/biochem/dist/chapter-03.html"
+      ],
+      "path": "bioc-l03.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L04",
+      "title": "蛋白质的功能：结构、配体与构象平衡",
+      "description": "练习纤维蛋白、肌红蛋白、血红蛋白、协同效应、BPG、HbS 与无序蛋白。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 4,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 4 · Protein function",
+      "lesson": "Protein function, ligands, and conformational equilibria",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "myoglobin",
+        "hemoglobin",
+        "allostery",
+        "protein function"
+      ],
+      "knowledgePoints": [
+        "structure-function",
+        "cooperativity",
+        "P50",
+        "intrinsically disordered proteins"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/biochem/dist/chapter-04.html"
+      ],
+      "path": "bioc-l04.json",
       "mode": "fixed"
     }
   ]

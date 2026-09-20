@@ -1,0 +1,179 @@
+{
+  "formula": "BF3",
+  "relative_molecular_mass": 67.80600000000001,
+  "exact_mass": 68.00451506,
+  "net_charge": 0,
+  "atom_count": 4,
+  "heavy_atom_count": 4,
+  "atom_count_with_hydrogens": 4,
+  "canonical_isomeric_smiles": "FB(F)F",
+  "cxsmiles": "FB(F)F",
+  "inchikey": "WTEOIRVLGSZEPR-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "F",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "B",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "F",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "F",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "inorg-bf3",
+    "chinese_name": "三氟化硼",
+    "english_name": "boron-trifluoride",
+    "structure": {
+      "format": "smiles",
+      "value": "F[B](F)F"
+    },
+    "protonation": "Explicit neutral structure; charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Inorganic Chemistry lesson 03, Lewis model and VSEPR",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "BF3",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "F[B](F)F",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 3,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 0,
+    "stereocenter_count": 0,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      699,
+      426,
+      980,
+      694
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "inorg-bf3-boron-trifluoride-neutral.svg",
+      "sha256": "0e72093beba31fbe006c83bc6e04113307d6a2ed0b8f5c6518f0437ec04afb6d"
+    },
+    "png": {
+      "path": "inorg-bf3-boron-trifluoride-neutral.png",
+      "sha256": "29ab6df4904ee00261f8057f6f5d40cb79749f0b5de980972a3a46acc3c8ea8d"
+    },
+    "mol": {
+      "path": "inorg-bf3-boron-trifluoride-neutral.mol",
+      "sha256": "fa33c2e4d3b06cede79236d7dba11bff7ef8918fd0eaf3c928c4da11cfe129e0"
+    }
+  }
+}

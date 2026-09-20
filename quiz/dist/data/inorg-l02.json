@@ -1,0 +1,467 @@
+{
+  "id": "INORG-L02",
+  "title": "原子结构与周期趋势",
+  "description": "练习量子数、轨道节点、多电子原子、电子排布、屏蔽、半径、电离能与电子亲和能。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Chapter 2 · Atomic structure",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "为什么原子模型需要进入量子力学？",
+      "options": [
+        {
+          "id": "A",
+          "text": "经典轨道不能正确描述微观粒子的波动性和离散能级"
+        },
+        {
+          "id": "B",
+          "text": "因为所有电子都静止"
+        },
+        {
+          "id": "C",
+          "text": "因为原子没有核"
+        },
+        {
+          "id": "D",
+          "text": "因为周期表只包含分子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "量子力学用波函数和能级描述电子的微观状态，替代了经典确定轨道图像。",
+      "difficulty": "easy",
+      "tags": [
+        "quantum mechanics"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "波函数 ψ 本身最直接代表……",
+      "options": [
+        {
+          "id": "A",
+          "text": "描述电子状态的数学函数"
+        },
+        {
+          "id": "B",
+          "text": "电子的经典运行轨迹"
+        },
+        {
+          "id": "C",
+          "text": "原子质量"
+        },
+        {
+          "id": "D",
+          "text": "分子的沸点"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "ψ 是状态的数学描述；|ψ|² 与概率密度相关。",
+      "difficulty": "easy",
+      "tags": [
+        "wavefunction"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "四个量子数中，主量子数 n 主要决定……",
+      "options": [
+        {
+          "id": "A",
+          "text": "主能级和轨道尺度的层次"
+        },
+        {
+          "id": "B",
+          "text": "轨道的自旋方向"
+        },
+        {
+          "id": "C",
+          "text": "p 轨道的具体取向"
+        },
+        {
+          "id": "D",
+          "text": "电子是否带电"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "n 标记主能级并影响轨道的大小和能量层次；其他量子数描述形状、取向和自旋。",
+      "difficulty": "easy",
+      "tags": [
+        "quantum numbers"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "p 轨道对应的角量子数 l 是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "s、p、d、f 分别对应 l=0、1、2、3。",
+      "difficulty": "easy",
+      "tags": [
+        "quantum numbers",
+        "orbitals"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "multiple-choice",
+      "question": "关于轨道节点，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "节点处波函数为零"
+        },
+        {
+          "id": "B",
+          "text": "节点不等于电子一定不能出现在整个轨道区域"
+        },
+        {
+          "id": "C",
+          "text": "节点数随量子数变化"
+        },
+        {
+          "id": "D",
+          "text": "所有轨道节点都只是一条直线"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "节点是概率密度为零的区域，可能是径向节点或角节点，形状并不都相同。",
+      "difficulty": "medium",
+      "tags": [
+        "nodes",
+        "orbitals"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "径向概率与径向概率密度的区别在于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "径向概率还考虑了距离球壳体积因素"
+        },
+        {
+          "id": "B",
+          "text": "两者永远完全相同"
+        },
+        {
+          "id": "C",
+          "text": "径向概率只适用于分子"
+        },
+        {
+          "id": "D",
+          "text": "径向概率不含距离变量"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "径向概率随球壳体积增长因素变化，不能简单把概率密度峰值当作最可能距离。",
+      "difficulty": "medium",
+      "tags": [
+        "radial probability"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "多电子原子中，屏蔽效应会使外层电子……",
+      "options": [
+        {
+          "id": "A",
+          "text": "感受到的有效核电荷减小"
+        },
+        {
+          "id": "B",
+          "text": "感受到的核电荷无限增大"
+        },
+        {
+          "id": "C",
+          "text": "一定进入原子核"
+        },
+        {
+          "id": "D",
+          "text": "与其他电子完全无关"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "内层电子部分抵消核电荷，外层电子感受到的有效核电荷小于裸核电荷。",
+      "difficulty": "easy",
+      "tags": [
+        "shielding",
+        "effective nuclear charge"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "multiple-choice",
+      "question": "构造原理、Pauli 原理和 Hund 规则分别涉及……",
+      "options": [
+        {
+          "id": "A",
+          "text": "低能轨道先填充"
+        },
+        {
+          "id": "B",
+          "text": "同一轨道最多容纳两个反平行自旋电子"
+        },
+        {
+          "id": "C",
+          "text": "简并轨道先单占且自旋平行"
+        },
+        {
+          "id": "D",
+          "text": "所有电子必须自旋相同"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "三条规则共同构成基态电子排布的基本框架。",
+      "difficulty": "easy",
+      "tags": [
+        "electron configuration"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "Cr 和 Cu 的基态排布常被作为例外，是因为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "亚层接近简并时，半充满或全充满 d 亚层可带来额外稳定"
+        },
+        {
+          "id": "B",
+          "text": "它们没有 d 电子"
+        },
+        {
+          "id": "C",
+          "text": "Pauli 原理对过渡元素失效"
+        },
+        {
+          "id": "D",
+          "text": "原子核没有电荷"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "实际能量差很小，s 与 d 电子重新分配可能使半充满或全充满 d 亚层更稳定。",
+      "difficulty": "medium",
+      "tags": [
+        "electron configuration",
+        "transition metals"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "等电子系列中，核电荷更高的粒子通常半径更小，因为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "相同电子数受到更强的核吸引"
+        },
+        {
+          "id": "B",
+          "text": "电子数随核电荷增加而减少为零"
+        },
+        {
+          "id": "C",
+          "text": "核电荷不影响半径"
+        },
+        {
+          "id": "D",
+          "text": "阴离子一定更小"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "等电子时电子排布相近，核电荷增加会增强有效吸引，半径通常缩小。",
+      "difficulty": "easy",
+      "tags": [
+        "ionic radius",
+        "isoelectronic"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "同一周期从左到右，第一电离能总体趋势通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "增大，但存在由亚层和成对电子造成的局部断点"
+        },
+        {
+          "id": "B",
+          "text": "严格恒定"
+        },
+        {
+          "id": "C",
+          "text": "一直减小"
+        },
+        {
+          "id": "D",
+          "text": "只由原子质量决定"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "有效核电荷增加使电子更难移除，但 s/p 亚层差异和电子成对会造成例外。",
+      "difficulty": "medium",
+      "tags": [
+        "ionization energy"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "下图的铵离子带正电，最直接的结构原因是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "形式电荷总和为 +1，氮与四个氢形成四个键"
+        },
+        {
+          "id": "B",
+          "text": "氮原子消失了一个质子"
+        },
+        {
+          "id": "C",
+          "text": "所有氢都带负电"
+        },
+        {
+          "id": "D",
+          "text": "分子中没有电子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "NH₄⁺ 的形式电荷总和为 +1；它可由 NH₃ 接受一个质子形成。",
+      "difficulty": "easy",
+      "tags": [
+        "ions",
+        "formal charge"
+      ],
+      "image": {
+        "src": "assets/structures/inorg-ammonium-ammonium-cation.svg",
+        "alt": "铵离子结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES [NH4+] 渲染"
+      }
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "电子亲和能的符号讨论中，首先应明确……",
+      "options": [
+        {
+          "id": "A",
+          "text": "采用的能量变化约定和电子加入的反应方向"
+        },
+        {
+          "id": "B",
+          "text": "只看元素名称"
+        },
+        {
+          "id": "C",
+          "text": "电子亲和能与电子无关"
+        },
+        {
+          "id": "D",
+          "text": "所有元素数值完全相同"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "电子亲和能的正负在不同教材约定中可能不同，必须先确认反应和符号定义。",
+      "difficulty": "medium",
+      "tags": [
+        "electron affinity"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "true-false",
+      "question": "“阳离子一定比任何阴离子都小”是普遍成立的规律。",
+      "answer": false,
+      "points": 1,
+      "explanation": "半径比较必须考虑电子层数、等电子关系和有效核电荷；不能脱离具体系列作绝对判断。",
+      "difficulty": "medium",
+      "tags": [
+        "ionic radius"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "为什么 Mg 的第一电离能通常高于 Al，尽管 Al 位于 Mg 的右侧？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Al 移除的是较高能量的 3p 电子，而 Mg 移除 3s 电子"
+        },
+        {
+          "id": "B",
+          "text": "Al 没有价电子"
+        },
+        {
+          "id": "C",
+          "text": "Mg 的核电荷更低所以电子更难移除"
+        },
+        {
+          "id": "D",
+          "text": "Pauli 原理只适用于 Mg"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "Al 的首个被移除电子来自能量较高、穿透性较弱的 3p 亚层，因而出现局部趋势反常。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "ionization energy",
+        "periodic trends"
+      ]
+    }
+  ]
+}

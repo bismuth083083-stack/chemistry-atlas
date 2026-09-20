@@ -1,0 +1,482 @@
+{
+  "id": "ANA-L02",
+  "title": "基本操作与样品制备",
+  "description": "练习 GLP、方法验证、称量与容量器皿、标准溶液、稀释、消解和分离。",
+  "subject": "analytical-chemistry",
+  "chapter": "Chapter 2 · Operations and sample preparation",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "GLP 的核心目标是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "让实验过程、记录和结果可追溯、可复核"
+        },
+        {
+          "id": "B",
+          "text": "让所有结果都自动正确"
+        },
+        {
+          "id": "C",
+          "text": "取消原始记录"
+        },
+        {
+          "id": "D",
+          "text": "只提高仪器颜色饱和度"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "良好实验规范强调人员、仪器、操作、记录和数据完整性，使结果可追溯。",
+      "difficulty": "easy",
+      "tags": [
+        "GLP",
+        "data integrity"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "SOP 指的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "标准操作规范"
+        },
+        {
+          "id": "B",
+          "text": "样品氧化压力"
+        },
+        {
+          "id": "C",
+          "text": "溶剂沸点"
+        },
+        {
+          "id": "D",
+          "text": "统计离群点"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "SOP 将关键操作步骤、条件和注意事项标准化，降低人员和批次差异。",
+      "difficulty": "easy",
+      "tags": [
+        "SOP"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "实验记录本中最重要的原始数据原则是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "及时、完整、可追溯地记录实际观察和操作"
+        },
+        {
+          "id": "B",
+          "text": "只保留最后计算结果"
+        },
+        {
+          "id": "C",
+          "text": "事后凭记忆重写"
+        },
+        {
+          "id": "D",
+          "text": "删除所有异常现象"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "原始记录应保留实际操作、仪器状态、观察和修改痕迹，而不是只保存漂亮的最终数字。",
+      "difficulty": "easy",
+      "tags": [
+        "lab notebook",
+        "GLP"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "方法验证中的选择性主要考察……",
+      "options": [
+        {
+          "id": "A",
+          "text": "目标物信号能否与基质和干扰物区分"
+        },
+        {
+          "id": "B",
+          "text": "实验室墙面颜色"
+        },
+        {
+          "id": "C",
+          "text": "样品是否透明"
+        },
+        {
+          "id": "D",
+          "text": "称量纸品牌"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "选择性是方法在复杂基质中识别和测量目标物的能力。",
+      "difficulty": "easy",
+      "tags": [
+        "selectivity",
+        "validation"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "线性度描述的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "响应与浓度在指定范围内的关系是否符合模型"
+        },
+        {
+          "id": "B",
+          "text": "天平是否水平"
+        },
+        {
+          "id": "C",
+          "text": "样品是否有气味"
+        },
+        {
+          "id": "D",
+          "text": "所有数据是否完全相同"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "线性度需在规定浓度范围和统计模型下评估，不能只看一条视觉上直的线。",
+      "difficulty": "easy",
+      "tags": [
+        "linearity",
+        "validation"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "准确度与精密度的判断分别关注……",
+      "options": [
+        {
+          "id": "A",
+          "text": "准确度接近真值的程度"
+        },
+        {
+          "id": "B",
+          "text": "精密度重复结果的一致性"
+        },
+        {
+          "id": "C",
+          "text": "精密但有偏差是可能的"
+        },
+        {
+          "id": "D",
+          "text": "精密度高必然无系统误差"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "准确度和精密度是不同性能指标；重复性好不能自动消除系统偏差。",
+      "difficulty": "medium",
+      "tags": [
+        "accuracy",
+        "precision"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "灵敏度通常描述……",
+      "options": [
+        {
+          "id": "A",
+          "text": "校准曲线响应对浓度变化的斜率或响应变化能力"
+        },
+        {
+          "id": "B",
+          "text": "样品质量必然越大越好"
+        },
+        {
+          "id": "C",
+          "text": "只看空白颜色"
+        },
+        {
+          "id": "D",
+          "text": "仪器是否联网"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "灵敏度与单位浓度变化带来的响应变化有关，但不等同于选择性或检出限。",
+      "difficulty": "medium",
+      "tags": [
+        "sensitivity",
+        "validation"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "LOD 与 LOQ 的区别通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "LOD 关注可靠检出，LOQ 还要求达到规定定量性能"
+        },
+        {
+          "id": "B",
+          "text": "两者永远相同"
+        },
+        {
+          "id": "C",
+          "text": "LOD 只用于称量"
+        },
+        {
+          "id": "D",
+          "text": "LOQ 不需要精密度"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "检出限和定量限回答不同问题，LOQ 通常要求更可靠的定量准确度和精密度。",
+      "difficulty": "easy",
+      "tags": [
+        "LOD",
+        "LOQ"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "方法的耐用性或鲁棒性考察……",
+      "options": [
+        {
+          "id": "A",
+          "text": "小幅改变条件时方法性能是否仍可接受"
+        },
+        {
+          "id": "B",
+          "text": "方法是否只在一个理想点有效"
+        },
+        {
+          "id": "C",
+          "text": "样品是否必须无水"
+        },
+        {
+          "id": "D",
+          "text": "结果是否可以不报告"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "鲁棒方法对温度、流速、时间等小变化不应过度敏感。",
+      "difficulty": "easy",
+      "tags": [
+        "robustness",
+        "validation"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "分析天平称量时考虑空气浮力，是因为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "空气对样品和砝码的浮力会造成表观质量偏差"
+        },
+        {
+          "id": "B",
+          "text": "空气会改变元素种类"
+        },
+        {
+          "id": "C",
+          "text": "真空中质量为零"
+        },
+        {
+          "id": "D",
+          "text": "浮力只存在于液体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "精密称量中空气密度、物体体积和砝码密度会影响浮力修正。",
+      "difficulty": "medium",
+      "tags": [
+        "analytical balance",
+        "buoyancy"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "容量瓶主要用于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "配制一定体积的标准溶液或稀释液"
+        },
+        {
+          "id": "B",
+          "text": "直接称量固体质量"
+        },
+        {
+          "id": "C",
+          "text": "过滤沉淀"
+        },
+        {
+          "id": "D",
+          "text": "加热至沸腾"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "容量瓶在校准刻度处提供准确体积，适合定容配液。",
+      "difficulty": "easy",
+      "tags": [
+        "volumetric flask"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "移液管和滴定管通常更接近哪种容量标记？",
+      "options": [
+        {
+          "id": "A",
+          "text": "TD（量出）器具，需要考虑排出方式"
+        },
+        {
+          "id": "B",
+          "text": "只用于量入的烧杯"
+        },
+        {
+          "id": "C",
+          "text": "无刻度器具"
+        },
+        {
+          "id": "D",
+          "text": "一定是容量瓶"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "移液管和滴定管按量出设计，残留液膜和排液操作属于使用校准的一部分。",
+      "difficulty": "medium",
+      "tags": [
+        "pipette",
+        "burette"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "一级标准物质通常应具备……",
+      "options": [
+        {
+          "id": "A",
+          "text": "高纯度、组成稳定、易干燥称量且反应计量明确"
+        },
+        {
+          "id": "B",
+          "text": "极易吸水且组成不稳定"
+        },
+        {
+          "id": "C",
+          "text": "颜色越深越好"
+        },
+        {
+          "id": "D",
+          "text": "分子量越小越好而不考虑纯度"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "一级标准物质要能准确称量并以明确计量关系制备标准溶液。",
+      "difficulty": "easy",
+      "tags": [
+        "primary standard",
+        "standard solution"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "稀释计算的基本关系是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₁V₁=C₂V₂"
+        },
+        {
+          "id": "B",
+          "text": "C₁+C₂=V₁+V₂"
+        },
+        {
+          "id": "C",
+          "text": "C₁/V₁=C₂/V₂ 对所有操作成立"
+        },
+        {
+          "id": "D",
+          "text": "只看溶剂质量"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "理想稀释中溶质物质的量守恒，故 C₁V₁=C₂V₂。",
+      "difficulty": "easy",
+      "tags": [
+        "dilution",
+        "standard solution"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "配制 500.0 mL、0.2000 mol·L⁻¹ Na₂CO₃ 溶液，若无水 Na₂CO₃ 的摩尔质量取 106.0 g·mol⁻¹，应称取约多少质量？",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.060 g"
+        },
+        {
+          "id": "B",
+          "text": "5.300 g"
+        },
+        {
+          "id": "C",
+          "text": "10.60 g"
+        },
+        {
+          "id": "D",
+          "text": "106.0 g"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "n=CV=0.2000×0.5000=0.1000 mol，m=nM=0.1000×106.0=10.60 g。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "calculation",
+        "standard solution"
+      ]
+    }
+  ]
+}

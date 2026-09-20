@@ -1,0 +1,143 @@
+{
+  "formula": "CH4O",
+  "relative_molecular_mass": 32.042,
+  "exact_mass": 32.026214748,
+  "net_charge": 0,
+  "atom_count": 2,
+  "heavy_atom_count": 2,
+  "atom_count_with_hydrogens": 6,
+  "canonical_isomeric_smiles": "CO",
+  "cxsmiles": "CO",
+  "inchikey": "OKKJLVBELUTLKV-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "ana-methanol",
+    "chinese_name": "甲醇",
+    "english_name": "methanol",
+    "structure": {
+      "format": "smiles",
+      "value": "CO"
+    },
+    "protonation": "Explicit neutral structure; charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Analytical Chemistry chapter 02, solvent and sample preparation example",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "CH4O",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "CO",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 1,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 0,
+    "stereocenter_count": 0,
+    "layout_mode": "template-coordgen",
+    "template_id": "bridged-or-cage",
+    "template_score": 2,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      756,
+      533,
+      924,
+      586
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "ana-methanol-methanol-neutral.svg",
+      "sha256": "c73d4904072ab6df047fd790b58fe910bac96a3957a3898ec36ead654e747ca9"
+    },
+    "png": {
+      "path": "ana-methanol-methanol-neutral.png",
+      "sha256": "ebb7706b86ff953c10c619eba4df9c1185219a44c581d239a2fae4f60bce2233"
+    },
+    "mol": {
+      "path": "ana-methanol-methanol-neutral.mol",
+      "sha256": "ba32a2560b82d40f0cb6cd31590c517dbc4bc2376e0a23150612b377664dcbb1"
+    }
+  }
+}

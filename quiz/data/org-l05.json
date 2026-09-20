@@ -1,0 +1,476 @@
+{
+  "id": "ORG-L05",
+  "title": "异构、构象、环张力与烷烃反应",
+  "description": "练习构造异构、E/Z、Newman 投影、扭转/空间张力、环己烷翻环和烷烃反应。",
+  "subject": "organic-chemistry",
+  "chapter": "Chapter 5 · Isomerism and conformation",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "构造异构体的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子式相同但原子连接关系不同的化合物"
+        },
+        {
+          "id": "B",
+          "text": "连接关系相同但颜色不同"
+        },
+        {
+          "id": "C",
+          "text": "只有同位素不同的原子"
+        },
+        {
+          "id": "D",
+          "text": "任何构象变化"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "构造异构体的原子连接方式不同；仅绕单键旋转产生的是构象异构。",
+      "difficulty": "easy",
+      "tags": [
+        "constitutional isomerism"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "图中结构对应哪种 2-丁烯立体异构体？",
+      "options": [
+        {
+          "id": "A",
+          "text": "E"
+        },
+        {
+          "id": "B",
+          "text": "Z"
+        },
+        {
+          "id": "C",
+          "text": "没有几何异构"
+        },
+        {
+          "id": "D",
+          "text": "芳香异构体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "双键两端高优先级取代基位于相对两侧时为 E。",
+      "difficulty": "easy",
+      "tags": [
+        "E-Z",
+        "stereochemistry"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-e-butene-e-butene-E.svg",
+        "alt": "(E)-2-丁烯结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确立体 SMILES C/C=C/C 渲染"
+      }
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "图中结构对应哪种 2-丁烯立体异构体？",
+      "options": [
+        {
+          "id": "A",
+          "text": "E"
+        },
+        {
+          "id": "B",
+          "text": "Z"
+        },
+        {
+          "id": "C",
+          "text": "只有顺反键旋转"
+        },
+        {
+          "id": "D",
+          "text": "无立体信息"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "双键两端高优先级取代基位于同侧时为 Z。",
+      "difficulty": "easy",
+      "tags": [
+        "E-Z",
+        "stereochemistry"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-z-butene-z-butene-Z.svg",
+        "alt": "(Z)-2-丁烯结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确立体 SMILES C/C=C\\C 渲染"
+      }
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "绕乙烷 C–C 单键旋转改变的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "构象"
+        },
+        {
+          "id": "B",
+          "text": "原子连接关系"
+        },
+        {
+          "id": "C",
+          "text": "分子式"
+        },
+        {
+          "id": "D",
+          "text": "元素种类"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "单键旋转通常只改变构象，不改变原子连接关系或分子式。",
+      "difficulty": "easy",
+      "tags": [
+        "conformation",
+        "ethane"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "乙烷交错构象比重叠构象稳定，主要因为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "扭转张力较小"
+        },
+        {
+          "id": "B",
+          "text": "碳原子变成芳香原子"
+        },
+        {
+          "id": "C",
+          "text": "C–C 键断裂"
+        },
+        {
+          "id": "D",
+          "text": "氢原子被移除"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "交错构象使相邻键电子对尽量错开，降低扭转张力。",
+      "difficulty": "easy",
+      "tags": [
+        "Newman projection",
+        "torsional strain"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "正丁烷的 anti 构象相对 gauche 构象通常更稳定，因为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "两个甲基相距更远，空间张力更小"
+        },
+        {
+          "id": "B",
+          "text": "anti 构象没有任何 C–H 键"
+        },
+        {
+          "id": "C",
+          "text": "gauche 构象为芳香结构"
+        },
+        {
+          "id": "D",
+          "text": "anti 构象包含离子键"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "anti 构象使两个较大的甲基相隔最远，通常具有更低的空间排斥。",
+      "difficulty": "easy",
+      "tags": [
+        "butane",
+        "steric strain"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-butane-butane-neutral.svg",
+        "alt": "正丁烷结构连接关系",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCCC 渲染"
+      }
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "环张力通常包含哪些来源？",
+      "options": [
+        {
+          "id": "A",
+          "text": "角张力、扭转张力和非键相互作用"
+        },
+        {
+          "id": "B",
+          "text": "只有分子量"
+        },
+        {
+          "id": "C",
+          "text": "只来自芳香性"
+        },
+        {
+          "id": "D",
+          "text": "只来自氢键"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "环张力是多种几何和电子因素的总和，包括键角偏离、重叠遮挡和非键排斥。",
+      "difficulty": "medium",
+      "tags": [
+        "ring strain"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "环己烷椅式构象的优势是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "键角接近理想四面体且相邻键多为交错"
+        },
+        {
+          "id": "B",
+          "text": "六个碳全部共面"
+        },
+        {
+          "id": "C",
+          "text": "所有氢重叠在同一方向"
+        },
+        {
+          "id": "D",
+          "text": "必然形成双键"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "椅式同时减小角张力和扭转张力，因此通常比船式稳定。",
+      "difficulty": "easy",
+      "tags": [
+        "cyclohexane",
+        "chair"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "环己烷翻环会……",
+      "options": [
+        {
+          "id": "A",
+          "text": "互换同一取代基的轴向与赤道向位置"
+        },
+        {
+          "id": "B",
+          "text": "改变碳骨架连接关系"
+        },
+        {
+          "id": "C",
+          "text": "把单键变成双键"
+        },
+        {
+          "id": "D",
+          "text": "改变分子式"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "翻环保持连接关系不变，但会使每个位置的 axial/equatorial 属性互换。",
+      "difficulty": "easy",
+      "tags": [
+        "ring flip"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "对于单取代环己烷，体积较大的取代基通常更偏好……",
+      "options": [
+        {
+          "id": "A",
+          "text": "赤道位"
+        },
+        {
+          "id": "B",
+          "text": "轴向位"
+        },
+        {
+          "id": "C",
+          "text": "环外任意位置"
+        },
+        {
+          "id": "D",
+          "text": "不受空间效应影响"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "赤道位能减少与轴向氢的 1,3-二轴相互作用，因此通常更稳定。",
+      "difficulty": "medium",
+      "tags": [
+        "cyclohexane",
+        "equatorial"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "若一个双环体系的两个环只共享一个原子，它属于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "螺环体系"
+        },
+        {
+          "id": "B",
+          "text": "稠合环体系"
+        },
+        {
+          "id": "C",
+          "text": "桥环体系"
+        },
+        {
+          "id": "D",
+          "text": "开链体系"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "螺环的定义是两个环仅共享一个原子。",
+      "difficulty": "easy",
+      "tags": [
+        "polycycles"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "true-false",
+      "question": "构象异构体之间通常不需要断开 σ 键就可以相互转化。",
+      "answer": true,
+      "points": 1,
+      "explanation": "构象变化通常通过绕单键旋转实现；构造异构体则需要改变连接关系。",
+      "difficulty": "easy",
+      "tags": [
+        "conformation"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "烷烃完全燃烧的主要产物是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "CO₂ 和 H₂O"
+        },
+        {
+          "id": "B",
+          "text": "NH₃ 和 O₂"
+        },
+        {
+          "id": "C",
+          "text": "只生成 H₂"
+        },
+        {
+          "id": "D",
+          "text": "金属盐和水"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "含碳、氢的烷烃在充分氧气中燃烧，碳和氢分别主要转化为 CO₂ 与 H₂O。",
+      "difficulty": "easy",
+      "tags": [
+        "alkane reactions",
+        "combustion"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "比较烷烃构象稳定性时，通常要考虑……",
+      "options": [
+        {
+          "id": "A",
+          "text": "扭转张力"
+        },
+        {
+          "id": "B",
+          "text": "取代基间的空间张力"
+        },
+        {
+          "id": "C",
+          "text": "环的角张力"
+        },
+        {
+          "id": "D",
+          "text": "只看分子量"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "构象能量来自多个几何因素，不能只凭分子量或画面高度判断。",
+      "difficulty": "medium",
+      "tags": [
+        "conformation",
+        "strain"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "甲基环己烷的主要构象通常让甲基处于赤道位，最好的解释是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "赤道位减少 1,3-二轴相互作用，降低大取代基的空间张力"
+        },
+        {
+          "id": "B",
+          "text": "赤道位会形成额外双键"
+        },
+        {
+          "id": "C",
+          "text": "轴向位没有任何氢原子"
+        },
+        {
+          "id": "D",
+          "text": "甲基在赤道位时环变成平面"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "大取代基的赤道位构象通常更稳定；翻环仍会产生轴向异构构象，但比例较低。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "chair",
+        "steric strain"
+      ]
+    }
+  ]
+}

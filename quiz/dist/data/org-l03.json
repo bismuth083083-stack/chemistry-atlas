@@ -1,0 +1,469 @@
+{
+  "id": "ORG-L03",
+  "title": "酸碱理论：强度与结构效应",
+  "description": "练习 Arrhenius、Brønsted–Lowry、Lewis 定义，Ka/pKa 与共轭碱稳定性。",
+  "subject": "organic-chemistry",
+  "chapter": "Chapter 3 · Acidity and basicity",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Arrhenius 酸在水溶液中的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "使 H₃O⁺ 浓度增加的物质"
+        },
+        {
+          "id": "B",
+          "text": "使电子对增加的物质"
+        },
+        {
+          "id": "C",
+          "text": "接受电子对的物质"
+        },
+        {
+          "id": "D",
+          "text": "一定含有碳的物质"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Arrhenius 定义针对水溶液，酸使 H₃O⁺ 浓度增加，碱使 OH⁻ 浓度增加。",
+      "difficulty": "easy",
+      "tags": [
+        "Arrhenius"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "Brønsted–Lowry 酸碱理论的核心是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "质子转移"
+        },
+        {
+          "id": "B",
+          "text": "电子从金属流向非金属"
+        },
+        {
+          "id": "C",
+          "text": "光子吸收"
+        },
+        {
+          "id": "D",
+          "text": "只讨论盐的溶解"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Brønsted–Lowry 酸是质子供体，碱是质子受体，并自然引出共轭酸碱对。",
+      "difficulty": "easy",
+      "tags": [
+        "Bronsted-Lowry"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "Lewis 碱的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "电子对供体"
+        },
+        {
+          "id": "B",
+          "text": "电子对受体"
+        },
+        {
+          "id": "C",
+          "text": "质子供体且只能在水中存在"
+        },
+        {
+          "id": "D",
+          "text": "中子供体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Lewis 碱提供电子对，Lewis 酸接受电子对。",
+      "difficulty": "easy",
+      "tags": [
+        "Lewis acid-base"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "Ka 越大通常意味着……",
+      "options": [
+        {
+          "id": "A",
+          "text": "酸解离平衡更偏向产物，酸性更强"
+        },
+        {
+          "id": "B",
+          "text": "酸一定越弱"
+        },
+        {
+          "id": "C",
+          "text": "pKa 越大"
+        },
+        {
+          "id": "D",
+          "text": "共轭碱一定带正电"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Ka 越大表示 HA 更容易失去质子；因为 pKa=−log Ka，所以 Ka 大对应 pKa 小。",
+      "difficulty": "easy",
+      "tags": [
+        "Ka",
+        "pKa"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "下列关于 pKa 的说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "pKa 越小，酸通常越强"
+        },
+        {
+          "id": "B",
+          "text": "pKa 越大，酸一定越强"
+        },
+        {
+          "id": "C",
+          "text": "pKa 与 Ka 没有关系"
+        },
+        {
+          "id": "D",
+          "text": "pKa 只由分子量决定"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "pKa 是 Ka 的负常用对数，数值越小代表酸解离常数越大。",
+      "difficulty": "easy",
+      "tags": [
+        "pKa"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "“共轭碱越稳定，原酸越强”的原因是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "失去 H⁺ 后的产物能量较低，更容易形成"
+        },
+        {
+          "id": "B",
+          "text": "稳定共轭碱一定更强地夺回 H⁺"
+        },
+        {
+          "id": "C",
+          "text": "共轭碱稳定会让 Ka 变小"
+        },
+        {
+          "id": "D",
+          "text": "酸强度与共轭碱无关"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "共轭碱稳定会降低解离产物的能量，使酸失去质子的过程更有利。",
+      "difficulty": "easy",
+      "tags": [
+        "conjugate base"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "multiple-choice",
+      "question": "判断共轭碱稳定性时，常要比较哪些因素？",
+      "options": [
+        {
+          "id": "A",
+          "text": "负电荷所在原子的大小和电负性"
+        },
+        {
+          "id": "B",
+          "text": "负电荷能否共振离域"
+        },
+        {
+          "id": "C",
+          "text": "吸电子诱导效应"
+        },
+        {
+          "id": "D",
+          "text": "样品标签的颜色"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "原子效应、共振离域和诱导效应都会改变负电荷的稳定程度。",
+      "difficulty": "medium",
+      "tags": [
+        "acid strength",
+        "stability"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "下图中的乙酸根共振式说明……",
+      "options": [
+        {
+          "id": "A",
+          "text": "负电荷可在两个氧之间离域，两个 C–O 键在真实结构中趋于等价"
+        },
+        {
+          "id": "B",
+          "text": "乙酸根在两种结构间来回振荡"
+        },
+        {
+          "id": "C",
+          "text": "其中一个氧原子会消失"
+        },
+        {
+          "id": "D",
+          "text": "这是酸碱平衡箭头"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "两幅图是同一离域电子结构的共振表示，不是时间上的结构振荡。",
+      "difficulty": "medium",
+      "tags": [
+        "resonance",
+        "acetate"
+      ],
+      "image": {
+        "src": "assets/structures/group-acetate-resonance.svg",
+        "alt": "乙酸根的两种共振贡献式",
+        "caption": "由 Chemical Structure Renderer 使用同一原子映射生成"
+      }
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "卤素取代通常能增强邻近羧酸的酸性，主要体现……",
+      "options": [
+        {
+          "id": "A",
+          "text": "吸电子诱导效应"
+        },
+        {
+          "id": "B",
+          "text": "供电子共振效应必然增强"
+        },
+        {
+          "id": "C",
+          "text": "分子质量守恒被破坏"
+        },
+        {
+          "id": "D",
+          "text": "氢键完全消失"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "卤素通过 σ 键拉低邻近负电荷能量，诱导效应随距离增加而减弱。",
+      "difficulty": "medium",
+      "tags": [
+        "inductive effect"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "当负电荷位于 O 与 C 之间时，通常更有利于稳定负电荷的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "电负性更大的 O"
+        },
+        {
+          "id": "B",
+          "text": "电负性更小的 C"
+        },
+        {
+          "id": "C",
+          "text": "两者完全相同"
+        },
+        {
+          "id": "D",
+          "text": "不需要考虑原子性质"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "同周期比较时，电负性更高的原子通常更能稳定负电荷。",
+      "difficulty": "easy",
+      "tags": [
+        "electronegativity"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "质子转移平衡通常偏向哪一侧？",
+      "options": [
+        {
+          "id": "A",
+          "text": "较弱的酸和较弱的碱一侧"
+        },
+        {
+          "id": "B",
+          "text": "较强的酸和较强的碱一侧"
+        },
+        {
+          "id": "C",
+          "text": "永远偏向反应物"
+        },
+        {
+          "id": "D",
+          "text": "只由分子颜色决定"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "体系倾向形成更稳定、较弱的共轭酸碱；比较 pKa 时可用较高 pKa 的酸一侧作为近似判断。",
+      "difficulty": "medium",
+      "tags": [
+        "equilibrium",
+        "pKa"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "机理弯箭头与共振箭头的主要区别是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "机理弯箭头表示电子实际重新分配，共振箭头连接同一结构的表示式"
+        },
+        {
+          "id": "B",
+          "text": "两者完全相同"
+        },
+        {
+          "id": "C",
+          "text": "共振箭头表示分子发生氧化还原"
+        },
+        {
+          "id": "D",
+          "text": "机理弯箭头只能表示单电子移动"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "机理箭头追踪成键和断键；共振箭头只表示同一量子态的不同 Lewis 画法。",
+      "difficulty": "medium",
+      "tags": [
+        "curved arrows",
+        "resonance"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "甲烷几乎不显酸性，是因为去质子化会形成缺乏稳定化的碳负离子。",
+      "answer": true,
+      "points": 1,
+      "explanation": "负电荷落在相对不电负的碳上，且缺少共振或强诱导稳定，因此甲烷的共轭碱非常不稳定。",
+      "difficulty": "medium",
+      "tags": [
+        "acidity",
+        "carbon"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "若 HA 的 pKa=3，HB 的 pKa=5，则更强的酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "HA"
+        },
+        {
+          "id": "B",
+          "text": "HB"
+        },
+        {
+          "id": "C",
+          "text": "两者一样强"
+        },
+        {
+          "id": "D",
+          "text": "无法由 pKa 判断"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "pKa 较小表示 Ka 较大，因此 HA 更容易解离，是更强的酸。",
+      "difficulty": "easy",
+      "tags": [
+        "pKa",
+        "comparison"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "为什么乙酸比乙醇更容易失去质子？",
+      "options": [
+        {
+          "id": "A",
+          "text": "乙酸根的负电荷可在两个氧之间共振离域，而乙醇根缺少同等稳定化"
+        },
+        {
+          "id": "B",
+          "text": "乙醇含有更多氢原子，所以一定更强酸"
+        },
+        {
+          "id": "C",
+          "text": "乙酸根没有负电荷"
+        },
+        {
+          "id": "D",
+          "text": "乙酸的共轭碱比乙醇根更不稳定"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "乙酸的共轭碱有两个近似等价的氧共同承载负电荷，显著降低能量；这比单纯比较分子大小更关键。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "resonance",
+        "acid strength"
+      ],
+      "image": {
+        "src": "assets/structures/group-acetate-resonance.svg",
+        "alt": "乙酸根的共振离域",
+        "caption": "由 Chemical Structure Renderer 使用同一原子映射生成"
+      }
+    }
+  ]
+}

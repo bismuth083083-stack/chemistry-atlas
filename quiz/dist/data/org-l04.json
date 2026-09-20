@@ -1,0 +1,472 @@
+{
+  "id": "ORG-L04",
+  "title": "烷烃、环烷烃与系统命名",
+  "description": "练习烃与烷烃、母体链、取代基、CIP 规则以及环、稠环、桥环和螺环。",
+  "subject": "organic-chemistry",
+  "chapter": "Chapter 4 · Alkanes and nomenclature",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "烃的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "只含碳和氢的化合物"
+        },
+        {
+          "id": "B",
+          "text": "只含氧和氢的化合物"
+        },
+        {
+          "id": "C",
+          "text": "所有含碳化合物"
+        },
+        {
+          "id": "D",
+          "text": "只含金属的化合物"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "烃只由碳和氢组成；含有其他元素的化合物属于取代烃或其他类别。",
+      "difficulty": "easy",
+      "tags": [
+        "hydrocarbons"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "下图所示正丁烷属于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "开链饱和烷烃"
+        },
+        {
+          "id": "B",
+          "text": "芳香烃"
+        },
+        {
+          "id": "C",
+          "text": "烯烃"
+        },
+        {
+          "id": "D",
+          "text": "炔烃"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "正丁烷只有 C–C 单键和 C–H 键，是开链饱和烷烃。",
+      "difficulty": "easy",
+      "tags": [
+        "alkanes"
+      ],
+      "image": {
+        "src": "assets/structures/org-butane-butane-neutral.svg",
+        "alt": "正丁烷的骨架结构",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCCC 渲染"
+      }
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "选择 IUPAC 母体链时，通常优先考虑……",
+      "options": [
+        {
+          "id": "A",
+          "text": "包含主要官能团或多重键且满足规则的最长连续碳链"
+        },
+        {
+          "id": "B",
+          "text": "任意最短碳链"
+        },
+        {
+          "id": "C",
+          "text": "只含一个碳的链"
+        },
+        {
+          "id": "D",
+          "text": "字母顺序最靠前的链"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "母体选择受最长链、主要官能团和多重键等规则共同约束，不能只凭视觉挑最直的线。",
+      "difficulty": "medium",
+      "tags": [
+        "IUPAC",
+        "parent chain"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "编号时“最低位次组”原则的目的在于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "让取代基和多重键获得按规则比较的最低编号集合"
+        },
+        {
+          "id": "B",
+          "text": "让分子量最小"
+        },
+        {
+          "id": "C",
+          "text": "让所有取代基都编号为 1"
+        },
+        {
+          "id": "D",
+          "text": "忽略官能团优先级"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "从两端编号时要比较位次集合，并遵循官能团、多重键和取代基的优先级规则。",
+      "difficulty": "easy",
+      "tags": [
+        "locants",
+        "IUPAC"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "—CH₃ 作为取代基的名称是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲基"
+        },
+        {
+          "id": "B",
+          "text": "乙基"
+        },
+        {
+          "id": "C",
+          "text": "亚甲基"
+        },
+        {
+          "id": "D",
+          "text": "甲烯基"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "—CH₃ 是甲基（methyl）。",
+      "difficulty": "easy",
+      "tags": [
+        "substituents"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "一个碳原子的“级数”由它直接连接的什么数量决定？",
+      "options": [
+        {
+          "id": "A",
+          "text": "其他碳原子数"
+        },
+        {
+          "id": "B",
+          "text": "氢原子总数"
+        },
+        {
+          "id": "C",
+          "text": "氧原子数"
+        },
+        {
+          "id": "D",
+          "text": "分子中的总原子数"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "一级、二级、三级和四级碳分别直接连接 1、2、3、4 个其他碳原子。",
+      "difficulty": "easy",
+      "tags": [
+        "carbon degree"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "multiple-choice",
+      "question": "系统命名自检时应核对哪些内容？",
+      "options": [
+        {
+          "id": "A",
+          "text": "母体链是否选对"
+        },
+        {
+          "id": "B",
+          "text": "编号方向是否符合最低位次规则"
+        },
+        {
+          "id": "C",
+          "text": "取代基名称和字母顺序是否正确"
+        },
+        {
+          "id": "D",
+          "text": "是否把所有隐含氢都写进名称"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "母体、编号和取代基书写是命名自检的核心；隐含氢不需要逐个写进系统名称。",
+      "difficulty": "medium",
+      "tags": [
+        "IUPAC",
+        "checking"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "CIP 顺序规则首先比较取代基直接相连原子的……",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子序数"
+        },
+        {
+          "id": "B",
+          "text": "颜色"
+        },
+        {
+          "id": "C",
+          "text": "沸点"
+        },
+        {
+          "id": "D",
+          "text": "分子总质量而不看原子序数"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "CIP 首先比较直接相连原子的原子序数，若相同再逐层比较下一层原子。",
+      "difficulty": "easy",
+      "tags": [
+        "CIP",
+        "stereochemistry"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "当环的碳数不小于连接到环上的最长链时，通常应把……作为母体？",
+      "options": [
+        {
+          "id": "A",
+          "text": "环"
+        },
+        {
+          "id": "B",
+          "text": "最短支链"
+        },
+        {
+          "id": "C",
+          "text": "任意含氧片段"
+        },
+        {
+          "id": "D",
+          "text": "只含一个碳的片段"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "简单环烷烃命名中，环通常作为母体；具体还要结合多重键和主要官能团规则。",
+      "difficulty": "medium",
+      "tags": [
+        "cycloalkanes",
+        "parent structure"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "螺环结构的特征是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "两个环共享一个原子"
+        },
+        {
+          "id": "B",
+          "text": "两个环共享一条完整边"
+        },
+        {
+          "id": "C",
+          "text": "两个环完全不相连"
+        },
+        {
+          "id": "D",
+          "text": "三个环共享所有原子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "螺环的两个环仅共享一个原子；共享边的多环体系属于稠合环等其他拓扑。",
+      "difficulty": "easy",
+      "tags": [
+        "spiro",
+        "polycycles"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "环己烷的常见低能构象主要是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "椅式"
+        },
+        {
+          "id": "B",
+          "text": "完全平面六边形"
+        },
+        {
+          "id": "C",
+          "text": "线形"
+        },
+        {
+          "id": "D",
+          "text": "正方形"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "椅式构象能较好地减少扭转张力和空间张力，是环己烷的重要稳定构象。",
+      "difficulty": "easy",
+      "tags": [
+        "cyclohexane",
+        "conformation"
+      ],
+      "image": {
+        "src": "assets/structures/org-cyclohexane-cyclohexane-neutral.svg",
+        "alt": "环己烷连接关系示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES C1CCCCC1 渲染；构象题仍需结合椅式图"
+      }
+    },
+    {
+      "id": "q012",
+      "type": "true-false",
+      "question": "烷烃的分子式可用 CₙH₂ₙ₊₂ 表示，前提是它是开链饱和烃。",
+      "answer": true,
+      "points": 1,
+      "explanation": "环烷烃因成环少两个氢；含双键或三键也会改变通式。",
+      "difficulty": "easy",
+      "tags": [
+        "alkanes",
+        "formula"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "英文系统命名中多个相同取代基通常使用……",
+      "options": [
+        {
+          "id": "A",
+          "text": "di-、tri-、tetra- 等倍数前缀"
+        },
+        {
+          "id": "B",
+          "text": "只使用一个 mono-"
+        },
+        {
+          "id": "C",
+          "text": "用希腊字母表示电荷"
+        },
+        {
+          "id": "D",
+          "text": "用原子序数代替名称"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "相同取代基可用 di、tri、tetra 等前缀表示数量。",
+      "difficulty": "easy",
+      "tags": [
+        "IUPAC",
+        "prefixes"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "稠合环、桥环和螺环的区别主要属于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "环系之间共享原子或键的拓扑方式不同"
+        },
+        {
+          "id": "B",
+          "text": "分子中氧原子数量不同"
+        },
+        {
+          "id": "C",
+          "text": "都只由芳香环组成"
+        },
+        {
+          "id": "D",
+          "text": "命名时可以完全互换"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "这些术语描述环系连接拓扑，不能仅凭环数或分子量互换。",
+      "difficulty": "medium",
+      "tags": [
+        "polycycles",
+        "topology"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "对一个含多个取代基的开链烷烃，最可靠的命名步骤是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "先确定母体和主要结构特征，再编号、识别取代基、按规则组合名称并复核"
+        },
+        {
+          "id": "B",
+          "text": "先按字母顺序写取代基，再随意选母体"
+        },
+        {
+          "id": "C",
+          "text": "只看最长的视觉水平线"
+        },
+        {
+          "id": "D",
+          "text": "忽略环和多重键的优先级"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "系统命名应按结构层级推进：母体、主官能团或多重键、编号、取代基和字母顺序，最后复核。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "IUPAC",
+        "workflow"
+      ]
+    }
+  ]
+}

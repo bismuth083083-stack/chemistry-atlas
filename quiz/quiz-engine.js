@@ -54,6 +54,9 @@ function validateQuiz(quiz) {
     need(typeof question.explanation === 'string' && question.explanation.trim(), `${path}.explanation`, 'must be a non-empty string');
     need(['easy', 'medium', 'hard'].includes(question.difficulty), `${path}.difficulty`, 'must be easy, medium, or hard');
     need(Array.isArray(question.tags), `${path}.tags`, 'must be an array');
+    if (question.image !== undefined) {
+      need(question.image && typeof question.image === 'object' && typeof question.image.src === 'string' && question.image.src.trim() && typeof question.image.alt === 'string' && question.image.alt.trim(), `${path}.image`, 'must contain src and alt text');
+    }
     if (['single-choice', 'multiple-choice'].includes(question.type)) {
       need(Array.isArray(question.options) && question.options.length >= 2, `${path}.options`, 'must contain at least two options');
       const optionIds = new Set();
@@ -167,7 +170,14 @@ class QuizUI {
   questionCard(question) {
     const section = document.createElement('section'); section.className = 'question-card';
     const header = document.createElement('div'); header.className = 'question-header'; const number = text('span', String(this.session.state.currentIndex + 1).padStart(2, '0'), 'question-number'); const chips = document.createElement('div'); chips.className = 'question-chips'; chips.append(text('span', TYPE_LABELS[question.type], 'chip'), text('span', `${question.points} ${question.points === 1 ? 'point' : 'points'}`, 'chip'), text('span', question.difficulty, `chip difficulty-${question.difficulty}`)); header.append(number, chips);
-    const prompt = text('h2', question.question); prompt.className = 'question-prompt'; section.append(header, prompt);
+    const prompt = text('h2', question.question); prompt.className = 'question-prompt'; section.append(header);
+    if (question.image?.src) {
+      const figure = document.createElement('figure'); figure.className = 'question-figure';
+      const image = document.createElement('img'); image.src = question.image.src; image.alt = question.image.alt; image.loading = 'lazy'; figure.append(image);
+      if (question.image.caption) figure.append(text('figcaption', question.image.caption));
+      section.append(figure);
+    }
+    section.append(prompt);
     const answerArea = document.createElement('div'); answerArea.className = 'answer-area'; const saved = this.session.answerFor(question.id);
     if (['single-choice', 'multiple-choice'].includes(question.type)) answerArea.append(this.optionList(question, saved));
     else if (question.type === 'true-false') answerArea.append(this.booleanList(question, saved));

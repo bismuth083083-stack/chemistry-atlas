@@ -1,0 +1,480 @@
+{
+  "id": "ORG-L02",
+  "title": "酸碱、分子轨道与分子结构",
+  "description": "练习 LCAO、σ/π 轨道、HOMO–LUMO、杂化、VSEPR 与分子极性。",
+  "subject": "organic-chemistry",
+  "chapter": "Chapter 2 · Molecular orbitals",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Lewis 酸与亲电体都具有的共同特征是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "电子贫乏并能接受电子对"
+        },
+        {
+          "id": "B",
+          "text": "一定带负电"
+        },
+        {
+          "id": "C",
+          "text": "一定能提供质子"
+        },
+        {
+          "id": "D",
+          "text": "只能存在于水溶液"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Lewis 酸是电子对受体；亲电体也是电子贫乏、倾向接受电子密度的中心。",
+      "difficulty": "easy",
+      "tags": [
+        "Lewis acid",
+        "electrophile"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "LCAO 的含义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子轨道线性组合成分子轨道"
+        },
+        {
+          "id": "B",
+          "text": "所有电子都局限在一个原子上"
+        },
+        {
+          "id": "C",
+          "text": "只把核轨道相加"
+        },
+        {
+          "id": "D",
+          "text": "用实验峰代替轨道"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "分子轨道可由原子轨道的线性组合构造，组合的相位与能量决定成键或反键性质。",
+      "difficulty": "easy",
+      "tags": [
+        "LCAO",
+        "molecular orbitals"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "下列哪种重叠最典型地形成 π 键？",
+      "options": [
+        {
+          "id": "A",
+          "text": "沿核间轴正面重叠"
+        },
+        {
+          "id": "B",
+          "text": "平行 p 轨道侧向重叠"
+        },
+        {
+          "id": "C",
+          "text": "两个球形 s 轨道背向重叠"
+        },
+        {
+          "id": "D",
+          "text": "两个原子核直接接触"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "π 键来自轨道相对于核间轴的侧向重叠；正面重叠对应 σ 键。",
+      "difficulty": "easy",
+      "tags": [
+        "sigma",
+        "pi"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-ethene-ethene-neutral.svg",
+        "alt": "乙烯的 C=C 结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES C=C 渲染"
+      }
+    },
+    {
+      "id": "q004",
+      "type": "multiple-choice",
+      "question": "关于成键与反键分子轨道，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "成键轨道通常比对应原子轨道能量低"
+        },
+        {
+          "id": "B",
+          "text": "反键轨道的节点使核间电子密度降低"
+        },
+        {
+          "id": "C",
+          "text": "电子填入反键轨道会削弱净成键"
+        },
+        {
+          "id": "D",
+          "text": "反键轨道永远不能被占据"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "成键组合增加核间电子密度并降低能量；反键组合具有节点，若被占据会抵消成键贡献。",
+      "difficulty": "medium",
+      "tags": [
+        "bonding orbital",
+        "antibonding orbital"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "分子轨道模型中，键级通常按什么计算？",
+      "options": [
+        {
+          "id": "A",
+          "text": "（成键电子数−反键电子数）/2"
+        },
+        {
+          "id": "B",
+          "text": "成键电子数+反键电子数"
+        },
+        {
+          "id": "C",
+          "text": "总电子数/原子数"
+        },
+        {
+          "id": "D",
+          "text": "核电荷数之差"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "键级的常用模型定义是成键与反键电子数差的一半。",
+      "difficulty": "easy",
+      "tags": [
+        "bond order"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "HOMO 在有机反应中的常见角色是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "电子供体轨道"
+        },
+        {
+          "id": "B",
+          "text": "电子受体轨道"
+        },
+        {
+          "id": "C",
+          "text": "原子核轨道"
+        },
+        {
+          "id": "D",
+          "text": "只决定分子质量"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "较高能量的已占据分子轨道常作为亲核体的电子供体；LUMO 则常作为受体。",
+      "difficulty": "easy",
+      "tags": [
+        "HOMO-LUMO"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "LUMO 更适合被描述为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "最低能量的未占据分子轨道"
+        },
+        {
+          "id": "B",
+          "text": "最高能量的已占据轨道"
+        },
+        {
+          "id": "C",
+          "text": "最低能量的原子核"
+        },
+        {
+          "id": "D",
+          "text": "所有孤对电子的总和"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "LUMO 是最低未占据分子轨道，亲电体的受体轨道常与亲核体 HOMO 相互作用。",
+      "difficulty": "easy",
+      "tags": [
+        "HOMO-LUMO"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "下列哪一项最符合 sp³ 杂化的局域几何？",
+      "options": [
+        {
+          "id": "A",
+          "text": "四面体方向"
+        },
+        {
+          "id": "B",
+          "text": "线形"
+        },
+        {
+          "id": "C",
+          "text": "三角平面"
+        },
+        {
+          "id": "D",
+          "text": "八面体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "四个等价 sp³ 杂化轨道指向近似四面体方向。",
+      "difficulty": "easy",
+      "tags": [
+        "hybridization",
+        "geometry"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "关于杂化模型与分子轨道模型，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "杂化模型便于描述局域 σ 键方向"
+        },
+        {
+          "id": "B",
+          "text": "分子轨道模型更适合讨论离域、磁性和能级"
+        },
+        {
+          "id": "C",
+          "text": "两者必须互相排斥"
+        },
+        {
+          "id": "D",
+          "text": "模型都是对电子结构的近似描述"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "A、B、D 都正确；模型服务于不同问题，不应把一种模型当作唯一真实图像。",
+      "difficulty": "medium",
+      "tags": [
+        "models",
+        "hybridization"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "multiple-choice",
+      "question": "VSEPR 预测分子几何时需要先统计……",
+      "options": [
+        {
+          "id": "A",
+          "text": "中心原子周围的电子域"
+        },
+        {
+          "id": "B",
+          "text": "孤对电子域"
+        },
+        {
+          "id": "C",
+          "text": "多重键作为一个电子域"
+        },
+        {
+          "id": "D",
+          "text": "远离中心的所有氢原子"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "VSEPR 先数中心原子周围电子域，再考虑孤对电子和键域的排斥。多重键通常作为一个电子域处理。",
+      "difficulty": "medium",
+      "tags": [
+        "VSEPR",
+        "molecular geometry"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "“有极性键”不能直接推出“分子有净偶极矩”，关键还要看……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子几何中各键偶极是否抵消"
+        },
+        {
+          "id": "B",
+          "text": "样品颜色"
+        },
+        {
+          "id": "C",
+          "text": "核素半衰期"
+        },
+        {
+          "id": "D",
+          "text": "是否含有金属"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "键偶极是矢量，分子几何可能使它们相互抵消，例如线形 CO₂。",
+      "difficulty": "medium",
+      "tags": [
+        "polarity",
+        "geometry"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "σ 键与 π 键相比，通常具有哪项特征？",
+      "options": [
+        {
+          "id": "A",
+          "text": "σ 键沿核间轴正面重叠，圆柱对称性更高"
+        },
+        {
+          "id": "B",
+          "text": "σ 键一定比 π 键更弱"
+        },
+        {
+          "id": "C",
+          "text": "π 键可以独立存在而没有 σ 骨架"
+        },
+        {
+          "id": "D",
+          "text": "两者完全相同"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "σ 键沿核间轴正面重叠，通常是两个原子之间首先形成的骨架键；π 键依赖平行轨道侧向重叠。",
+      "difficulty": "medium",
+      "tags": [
+        "sigma",
+        "pi"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "分子轨道相位的正负表示电子带正电或负电。",
+      "answer": false,
+      "points": 1,
+      "explanation": "轨道相位是波函数的符号，不是电子电荷符号；相位决定组合时的干涉方式。",
+      "difficulty": "medium",
+      "tags": [
+        "orbital phase"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "氯甲烷中 C–Cl 键的极性主要来自……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cl 的电负性比 C 大，键电子密度偏向 Cl"
+        },
+        {
+          "id": "B",
+          "text": "C 的电负性比 Cl 大"
+        },
+        {
+          "id": "C",
+          "text": "C–Cl 键没有共享电子"
+        },
+        {
+          "id": "D",
+          "text": "氯原子一定带正电"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "电负性差使共享电子密度偏向氯，但这不等于分子中存在游离氯离子。",
+      "difficulty": "easy",
+      "tags": [
+        "bond polarity"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-chloromethane-chloromethane-neutral.svg",
+        "alt": "氯甲烷结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCl 渲染"
+      }
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "对 CH₃Cl 与 OH⁻ 的反应，若从 HOMO–LUMO 和弯箭头角度描述，最合理的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "OH⁻ 的孤对电子进攻 C–Cl 键的受体区域，同时 C–Cl 键电子离去到 Cl"
+        },
+        {
+          "id": "B",
+          "text": "Cl⁻ 的孤对电子进攻 OH⁻"
+        },
+        {
+          "id": "C",
+          "text": "两个分子只发生电子自旋翻转"
+        },
+        {
+          "id": "D",
+          "text": "C–Cl 键断裂但没有电子去向"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "OH⁻ 是电子供体，CH₃Cl 的碳中心是亲电受体；形成 C–O 键的同时，C–Cl 键电子归于 Cl。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "HOMO-LUMO",
+        "SN2"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-chloromethane-chloromethane-neutral.svg",
+        "alt": "氯甲烷结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCl 渲染"
+      }
+    }
+  ]
+}

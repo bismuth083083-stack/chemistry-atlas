@@ -1,0 +1,456 @@
+{
+  "id": "PCHEM-L03",
+  "title": "气体动理论与分子速率",
+  "description": "练习动理论假设、碰撞压强、温度与速率、Maxwell 分布、碰撞频率和平均自由程。",
+  "subject": "physical-chemistry",
+  "chapter": "Chapter 3 · Kinetic theory",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "理想气体动理论的基本假设之一是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子体积相对容器体积可忽略"
+        },
+        {
+          "id": "B",
+          "text": "分子永远静止"
+        },
+        {
+          "id": "C",
+          "text": "分子间有强定向键"
+        },
+        {
+          "id": "D",
+          "text": "所有分子速度相同"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "理想模型把分子视为小粒子，并在适用条件下忽略自身总体积和相互作用。",
+      "difficulty": "easy",
+      "tags": [
+        "kinetic theory",
+        "assumptions"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "气体撞壁产生压力的关键微观量是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "动量变化率"
+        },
+        {
+          "id": "B",
+          "text": "分子颜色"
+        },
+        {
+          "id": "C",
+          "text": "原子序数之和"
+        },
+        {
+          "id": "D",
+          "text": "电子自旋总和"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "分子每次撞壁改变动量，单位时间和面积上的平均动量传递就是压力。",
+      "difficulty": "easy",
+      "tags": [
+        "pressure",
+        "momentum"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "理想气体动理论常写出的压力关系是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "p=⅓ρ⟨c²⟩"
+        },
+        {
+          "id": "B",
+          "text": "p=3ρ⟨c²⟩"
+        },
+        {
+          "id": "C",
+          "text": "p=ρ/⟨c²⟩"
+        },
+        {
+          "id": "D",
+          "text": "p=0"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "各向同性运动给出 ⟨cₓ²⟩=⅓⟨c²⟩，从而得到压力与密度及均方速率的关系。",
+      "difficulty": "medium",
+      "tags": [
+        "kinetic theory",
+        "pressure"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "温度在动理论中的微观含义与什么量相关？",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子的平均平动动能"
+        },
+        {
+          "id": "B",
+          "text": "分子的颜色"
+        },
+        {
+          "id": "C",
+          "text": "分子总数本身"
+        },
+        {
+          "id": "D",
+          "text": "容器壁厚度"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "理想气体温度与粒子平均平动动能成正比。",
+      "difficulty": "easy",
+      "tags": [
+        "temperature",
+        "kinetic energy"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "理想气体分子的均方根速率为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "√(3RT/M)"
+        },
+        {
+          "id": "B",
+          "text": "√(M/3RT)"
+        },
+        {
+          "id": "C",
+          "text": "3RT/M"
+        },
+        {
+          "id": "D",
+          "text": "RTM"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "由平均平动动能与温度关系得到 cᵣₘₛ=√(3RT/M)。",
+      "difficulty": "easy",
+      "tags": [
+        "rms speed"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "同一温度下，对同一气体通常有怎样的速率大小规律？",
+      "options": [
+        {
+          "id": "A",
+          "text": "最概然速率 < 平均速率 < 均方根速率"
+        },
+        {
+          "id": "B",
+          "text": "三者永远相等"
+        },
+        {
+          "id": "C",
+          "text": "均方根速率 < 最概然速率"
+        },
+        {
+          "id": "D",
+          "text": "速率没有分布"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Maxwell 分布不对称，三种特征速率通常按该顺序大小规律。",
+      "difficulty": "medium",
+      "tags": [
+        "Maxwell distribution"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "为什么需要 Maxwell 速率分布而不能只用一个速率？",
+      "options": [
+        {
+          "id": "A",
+          "text": "气体分子速率具有统计分布，不是所有分子都一样快"
+        },
+        {
+          "id": "B",
+          "text": "分子没有速度"
+        },
+        {
+          "id": "C",
+          "text": "温度只影响颜色"
+        },
+        {
+          "id": "D",
+          "text": "分布只用于液体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "宏观温度对应统计平均，单个分子的速率会分布在一系列范围内。",
+      "difficulty": "easy",
+      "tags": [
+        "Maxwell distribution"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "同一温度下，较重分子的典型速率通常……",
+      "options": [
+        {
+          "id": "A",
+          "text": "较低"
+        },
+        {
+          "id": "B",
+          "text": "较高"
+        },
+        {
+          "id": "C",
+          "text": "与质量无关且为零"
+        },
+        {
+          "id": "D",
+          "text": "一定等于光速"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "平均动能由温度决定，M 越大时 √(1/M) 使典型速率降低。",
+      "difficulty": "easy",
+      "tags": [
+        "molecular speed",
+        "molar mass"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "分子间平均相对速率用于描述……",
+      "options": [
+        {
+          "id": "A",
+          "text": "两个分子相互接近时的相对运动快慢"
+        },
+        {
+          "id": "B",
+          "text": "单个分子的电荷"
+        },
+        {
+          "id": "C",
+          "text": "容器总体积"
+        },
+        {
+          "id": "D",
+          "text": "液体黏度的唯一来源"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "碰撞过程取决于分子间的相对速度，而不只是某个分子的实验室系速度。",
+      "difficulty": "medium",
+      "tags": [
+        "relative speed",
+        "collisions"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "碰撞频率通常会随数密度增加而……",
+      "options": [
+        {
+          "id": "A",
+          "text": "增加，因为单位体积内可碰撞粒子更多"
+        },
+        {
+          "id": "B",
+          "text": "降低到零"
+        },
+        {
+          "id": "C",
+          "text": "完全不变"
+        },
+        {
+          "id": "D",
+          "text": "只由颜色决定"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "在其他条件相近时，粒子越密集，单位时间发生的碰撞越多。",
+      "difficulty": "easy",
+      "tags": [
+        "collision frequency"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "平均自由程表示……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子两次连续碰撞之间平均走过的距离"
+        },
+        {
+          "id": "B",
+          "text": "分子从容器到真空的距离"
+        },
+        {
+          "id": "C",
+          "text": "分子轨道半径"
+        },
+        {
+          "id": "D",
+          "text": "分子总路程"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "平均自由程是粒子连续两次碰撞之间自由飞行距离的平均值。",
+      "difficulty": "easy",
+      "tags": [
+        "mean free path"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "true-false",
+      "question": "在温度不变时，提高气体压力通常会使平均自由程变长。",
+      "answer": false,
+      "points": 1,
+      "explanation": "压力升高通常意味着数密度增加，碰撞更频繁，平均自由程缩短。",
+      "difficulty": "medium",
+      "tags": [
+        "mean free path",
+        "pressure"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "气体动理论中的“分子体积可忽略”是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "模型近似，适用于分子间距远大于分子尺度的条件"
+        },
+        {
+          "id": "B",
+          "text": "说分子没有原子"
+        },
+        {
+          "id": "C",
+          "text": "所有压力下都绝对成立"
+        },
+        {
+          "id": "D",
+          "text": "说分子质量为零"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "理想化假设有适用范围；高压下有限体积效应不能忽略。",
+      "difficulty": "easy",
+      "tags": [
+        "model assumptions"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "计算速率时摩尔质量 M 必须使用什么单位才能与 SI 中的 R 匹配？",
+      "options": [
+        {
+          "id": "A",
+          "text": "kg·mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "只写化学式不换算"
+        },
+        {
+          "id": "C",
+          "text": "g 但不换算"
+        },
+        {
+          "id": "D",
+          "text": "L·mol⁻¹"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "若 R 使用 J·mol⁻¹·K⁻¹，M 应使用 kg·mol⁻¹ 以保证量纲一致。",
+      "difficulty": "medium",
+      "tags": [
+        "units",
+        "rms speed"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "同温度下 N₂ 与 O₂ 的均方根速率比 cᵣₘₛ(N₂)/cᵣₘₛ(O₂) 最接近……",
+      "options": [
+        {
+          "id": "A",
+          "text": "√(32/28)"
+        },
+        {
+          "id": "B",
+          "text": "√(28/32)"
+        },
+        {
+          "id": "C",
+          "text": "32/28"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "cᵣₘₛ∝1/√M，因此比值为 √(M(O₂)/M(N₂))=√(32/28)。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "rms speed",
+        "calculation"
+      ]
+    }
+  ]
+}

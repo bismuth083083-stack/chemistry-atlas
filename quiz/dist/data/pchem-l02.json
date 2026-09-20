@@ -1,0 +1,451 @@
+{
+  "id": "PCHEM-L02",
+  "title": "真实气体与状态方程",
+  "description": "练习气体动理论参照、分子间作用、压缩因子、维里方程、临界现象和 van der Waals 方程。",
+  "subject": "physical-chemistry",
+  "chapter": "Chapter 2 · Real gases",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "理想气体模型在真实气体课程中的作用是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "作为比较真实偏差的参照模型"
+        },
+        {
+          "id": "B",
+          "text": "宣称所有气体在所有条件下都理想"
+        },
+        {
+          "id": "C",
+          "text": "只用于固体"
+        },
+        {
+          "id": "D",
+          "text": "替代所有实验数据"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "真实气体的吸引、排斥和有限体积效应都可通过与理想模型比较来量化。",
+      "difficulty": "easy",
+      "tags": [
+        "ideal gas",
+        "real gas"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "气体压力的微观来源是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "大量分子撞击器壁时传递动量"
+        },
+        {
+          "id": "B",
+          "text": "分子静止地压在器壁上"
+        },
+        {
+          "id": "C",
+          "text": "只有分子间吸引"
+        },
+        {
+          "id": "D",
+          "text": "容器颜色"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "压力是单位面积、单位时间内分子撞壁产生的平均动量传递。",
+      "difficulty": "easy",
+      "tags": [
+        "kinetic theory",
+        "pressure"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "分子间吸引作用会使实际压力相对理想预测……",
+      "options": [
+        {
+          "id": "A",
+          "text": "偏低，因为分子被拉回气体内部"
+        },
+        {
+          "id": "B",
+          "text": "一定偏高"
+        },
+        {
+          "id": "C",
+          "text": "完全不变"
+        },
+        {
+          "id": "D",
+          "text": "变成零"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "靠近器壁的分子受到内部吸引，撞壁动量传递减小，实际压力可能低于理想值。",
+      "difficulty": "easy",
+      "tags": [
+        "intermolecular attraction"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "高压下真实气体常出现 Z>1，主要反映……",
+      "options": [
+        {
+          "id": "A",
+          "text": "短程排斥和有限体积效应占主导"
+        },
+        {
+          "id": "B",
+          "text": "分子间吸引无限增强"
+        },
+        {
+          "id": "C",
+          "text": "分子全部消失"
+        },
+        {
+          "id": "D",
+          "text": "温度必然为零"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "高压使分子靠近，排斥和不可穿透体积效应会使气体比理想模型更难压缩。",
+      "difficulty": "easy",
+      "tags": [
+        "repulsion",
+        "compressibility"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "压缩因子 Z 的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "pVₘ/(RT)"
+        },
+        {
+          "id": "B",
+          "text": "RT/(pVₘ)"
+        },
+        {
+          "id": "C",
+          "text": "pT/Vₘ"
+        },
+        {
+          "id": "D",
+          "text": "Vₘ/(pT)"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Z=pVₘ/RT；理想气体在相同条件下 Z=1。",
+      "difficulty": "easy",
+      "tags": [
+        "compressibility factor"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "低密度极限下，真实气体的压缩因子趋向……",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "无穷大"
+        },
+        {
+          "id": "D",
+          "text": "−1"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "密度趋近零时分子间作用影响减弱，Z→1。",
+      "difficulty": "easy",
+      "tags": [
+        "virial equation"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "维里方程的低密度展开中，第二维里系数 B 主要反映……",
+      "options": [
+        {
+          "id": "A",
+          "text": "二体相互作用的首阶修正"
+        },
+        {
+          "id": "B",
+          "text": "容器的颜色"
+        },
+        {
+          "id": "C",
+          "text": "只有三体碰撞"
+        },
+        {
+          "id": "D",
+          "text": "样品质量的单位"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "B(T) 是低密度展开的首个偏离项，主要承载二体相互作用信息。",
+      "difficulty": "medium",
+      "tags": [
+        "virial equation"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "若 B(T)<0，低密度下通常意味着……",
+      "options": [
+        {
+          "id": "A",
+          "text": "吸引作用在首阶偏差中占优势"
+        },
+        {
+          "id": "B",
+          "text": "排斥作用绝对占优势"
+        },
+        {
+          "id": "C",
+          "text": "Z 必然大于 1"
+        },
+        {
+          "id": "D",
+          "text": "体系没有分子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "负的第二维里系数通常对应吸引作用使 Z 从 1 的下方偏离。",
+      "difficulty": "medium",
+      "tags": [
+        "virial coefficient"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "临界点的特征是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "气液两相界面消失，超过该点不能靠加压单独液化"
+        },
+        {
+          "id": "B",
+          "text": "所有分子停止运动"
+        },
+        {
+          "id": "C",
+          "text": "压力为零"
+        },
+        {
+          "id": "D",
+          "text": "温度必然为 0 K"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "临界点是气液相区分消失的边界；超过临界温度，单纯加压不能得到通常意义上的液气相变。",
+      "difficulty": "easy",
+      "tags": [
+        "critical point"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "van der Waals 方程中的 Vₘ−b 修正用于表示……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子自身有限体积使可用空间减少"
+        },
+        {
+          "id": "B",
+          "text": "吸引作用使压力降低"
+        },
+        {
+          "id": "C",
+          "text": "分子质量变为零"
+        },
+        {
+          "id": "D",
+          "text": "所有分子变成离子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "b 是排除体积参数，反映分子不能相互穿透导致的可用体积减少。",
+      "difficulty": "easy",
+      "tags": [
+        "van der Waals"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "van der Waals 方程中的 a/Vₘ² 压力修正来自……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子间吸引导致实测压力降低"
+        },
+        {
+          "id": "B",
+          "text": "分子完全没有体积"
+        },
+        {
+          "id": "C",
+          "text": "电子亲和能"
+        },
+        {
+          "id": "D",
+          "text": "容器的重力"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "加上内压力项可补偿吸引使撞壁动量减小的效果。",
+      "difficulty": "easy",
+      "tags": [
+        "van der Waals"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "Maxwell 等面积构造的水平线用于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "替代不稳定回线并满足气液两相化学势相等的条件"
+        },
+        {
+          "id": "B",
+          "text": "把所有温度变成相同"
+        },
+        {
+          "id": "C",
+          "text": "计算原子半径"
+        },
+        {
+          "id": "D",
+          "text": "删除液相"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "等面积构造给出气液共存平台的压力，是相平衡条件在 p–V 图上的表达。",
+      "difficulty": "medium",
+      "tags": [
+        "Maxwell construction"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "对应状态原理的基本思想是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "用约化变量比较不同物质在相似约化条件下的行为"
+        },
+        {
+          "id": "B",
+          "text": "所有物质的临界常数完全相同"
+        },
+        {
+          "id": "C",
+          "text": "只适用于固体"
+        },
+        {
+          "id": "D",
+          "text": "不需要温度和压力"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "约化温度、压力和体积把不同物质的状态变量按临界常数归一化，便于比较。",
+      "difficulty": "medium",
+      "tags": [
+        "corresponding states"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "true-false",
+      "question": "真实气体偏离理想行为的方向在所有压力下都相同。",
+      "answer": false,
+      "points": 1,
+      "explanation": "中压吸引可能令 Z<1，高压排斥又可能令 Z>1，偏差方向取决于条件和相互作用。",
+      "difficulty": "medium",
+      "tags": [
+        "compressibility factor"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "某气体的 Z–p 曲线先低于 1、再高于 1，最合理的解释是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "中压时吸引占优势，高压时短程排斥和有限体积最终占优势"
+        },
+        {
+          "id": "B",
+          "text": "气体先变成固体再变回元素"
+        },
+        {
+          "id": "C",
+          "text": "Z 的定义随压力改变"
+        },
+        {
+          "id": "D",
+          "text": "所有分子间作用都被忽略"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "同一气体在不同密度下可能由不同相互作用主导，因而出现先负偏差后正偏差。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "Z factor",
+        "molecular interactions"
+      ]
+    }
+  ]
+}

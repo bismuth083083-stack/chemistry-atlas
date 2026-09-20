@@ -1,0 +1,28 @@
+{
+  "type": "resonance",
+  "skeleton_hydrogens_charge": "passed",
+  "electronic_forms": "passed",
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      3680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      701,
+      425,
+      2989,
+      694
+    ]
+  },
+  "members": [
+    "org-acetate-01",
+    "org-acetate-02"
+  ],
+  "files": {
+    "group-acetate-resonance.png": "3bad64f445cc172b3337f928186c4ad5b36621beef1d50cafae87860b53cfd43",
+    "group-acetate-resonance.sdf": "3846b220dbc9c18d0d49b92bc07d575b017a4cdd3121b42b6b86432f6b036565",
+    "group-acetate-resonance.svg": "8ef40d97c9f2d8e43e0bfdbe5e0eb0da99c128ef6e441de5232c48db5f2be8fa"
+  }
+}

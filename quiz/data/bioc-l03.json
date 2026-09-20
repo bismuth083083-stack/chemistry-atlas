@@ -1,0 +1,467 @@
+{
+  "id": "BIOC-L03",
+  "title": "蛋白质结构：从肽平面到折叠",
+  "description": "练习肽键部分双键、ω 角、Ramachandran 图、二级结构、三级/四级结构和结构测定。",
+  "subject": "biochemistry",
+  "chapter": "Chapter 3 · Protein structure",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "肽键的部分双键性质使相邻原子呈现……",
+      "options": [
+        {
+          "id": "A",
+          "text": "近似平面、旋转受限的肽基单元"
+        },
+        {
+          "id": "B",
+          "text": "完全自由旋转的单键"
+        },
+        {
+          "id": "C",
+          "text": "离子晶体结构"
+        },
+        {
+          "id": "D",
+          "text": "无任何几何约束"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "酰胺共振使 C–N 键具有部分双键性质，肽基通常近似平面。",
+      "difficulty": "easy",
+      "tags": [
+        "peptide bond",
+        "planarity"
+      ],
+      "image": {
+        "src": "assets/structure-renders/bioc-gly-gly-gly-gly-peptide-neutral.svg",
+        "alt": "甘氨酰甘氨酸的肽键结构",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES NCC(=O)NCC(=O)O 渲染"
+      }
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "肽键平面中的 ω 角主要描述……",
+      "options": [
+        {
+          "id": "A",
+          "text": "肽键 C–N 周围的扭转构型"
+        },
+        {
+          "id": "B",
+          "text": "侧链电荷总和"
+        },
+        {
+          "id": "C",
+          "text": "蛋白质分子量"
+        },
+        {
+          "id": "D",
+          "text": "氧气结合常数"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "ω 角反映肽键平面两侧主链原子的相对扭转，通常接近 trans 或较少见 cis。",
+      "difficulty": "medium",
+      "tags": [
+        "omega angle",
+        "backbone"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "肽键 C–N 不能像普通 C–C 单键那样自由旋转，主要因为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "N 的孤对电子与羰基 π 系统共振离域"
+        },
+        {
+          "id": "B",
+          "text": "N 没有电子"
+        },
+        {
+          "id": "C",
+          "text": "羰基没有氧"
+        },
+        {
+          "id": "D",
+          "text": "蛋白质没有主链"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "酰胺共振降低旋转自由度，使肽基具有刚性。",
+      "difficulty": "easy",
+      "tags": [
+        "peptide bond",
+        "resonance"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "Ramachandran 图主要表示……",
+      "options": [
+        {
+          "id": "A",
+          "text": "主链 φ/ψ 二面角的允许和受限区域"
+        },
+        {
+          "id": "B",
+          "text": "蛋白质的原子序数表"
+        },
+        {
+          "id": "C",
+          "text": "所有配体浓度"
+        },
+        {
+          "id": "D",
+          "text": "氨基酸的 pKa 表"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Ramachandran 图用空间位阻筛选主链 φ、ψ 角的可行组合。",
+      "difficulty": "easy",
+      "tags": [
+        "Ramachandran plot"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "Ramachandran 图中大片空白区域主要来自……",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子间空间排斥使某些主链构象不允许"
+        },
+        {
+          "id": "B",
+          "text": "蛋白质没有氢原子"
+        },
+        {
+          "id": "C",
+          "text": "所有角度能量完全相同"
+        },
+        {
+          "id": "D",
+          "text": "测量仪器没有颜色"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "主链原子和侧链的空间冲突会使某些 φ/ψ 组合能量很高。",
+      "difficulty": "easy",
+      "tags": [
+        "Ramachandran plot",
+        "sterics"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "α 螺旋中典型主链氢键模式是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "一个残基的 C=O 与约 i+4 残基的 N–H 相互作用"
+        },
+        {
+          "id": "B",
+          "text": "只由侧链 C–C 键形成"
+        },
+        {
+          "id": "C",
+          "text": "所有氢键都在同一原子内"
+        },
+        {
+          "id": "D",
+          "text": "必须由二硫键维持"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "α 螺旋的主链氢键沿螺旋轴重复，常用 i→i+4 描述。",
+      "difficulty": "easy",
+      "tags": [
+        "alpha helix",
+        "hydrogen bonding"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "β 折叠的稳定主要来自……",
+      "options": [
+        {
+          "id": "A",
+          "text": "相邻或不同链段主链之间的氢键排列"
+        },
+        {
+          "id": "B",
+          "text": "只有芳香侧链"
+        },
+        {
+          "id": "C",
+          "text": "所有肽键都断裂"
+        },
+        {
+          "id": "D",
+          "text": "分子变成环烷烃"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "β 链通过主链间氢键形成折叠片层，可为平行或反平行排列。",
+      "difficulty": "easy",
+      "tags": [
+        "beta sheet",
+        "hydrogen bonding"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "二级结构与三级结构的区别是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "二级结构是局部主链规则，三级结构是整条链的三维组织"
+        },
+        {
+          "id": "B",
+          "text": "二级结构只存在于 DNA"
+        },
+        {
+          "id": "C",
+          "text": "三级结构只由肽键决定"
+        },
+        {
+          "id": "D",
+          "text": "两者完全同义"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "局部 α 螺旋/β 折叠是二级结构，更大尺度的疏水、静电、氢键和二硫键组织构成三级结构。",
+      "difficulty": "easy",
+      "tags": [
+        "secondary structure",
+        "tertiary structure"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "multiple-choice",
+      "question": "蛋白质折叠稳定性可能涉及哪些相互作用？",
+      "options": [
+        {
+          "id": "A",
+          "text": "疏水效应"
+        },
+        {
+          "id": "B",
+          "text": "氢键和静电作用"
+        },
+        {
+          "id": "C",
+          "text": "二硫键（在适当环境中）"
+        },
+        {
+          "id": "D",
+          "text": "只由肽键长度决定"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "蛋白质折叠是多种相互作用与构象熵共同作用的结果。",
+      "difficulty": "medium",
+      "tags": [
+        "protein folding"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "四级结构指的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "多个多肽亚基的空间装配"
+        },
+        {
+          "id": "B",
+          "text": "单个肽键的几何"
+        },
+        {
+          "id": "C",
+          "text": "单个氨基酸的 pKa"
+        },
+        {
+          "id": "D",
+          "text": "一条链的一级序列"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "四级结构描述多个独立或半独立亚基的组装和相互作用。",
+      "difficulty": "easy",
+      "tags": [
+        "quaternary structure"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "疏水残基常在可溶性球状蛋白中偏好……",
+      "options": [
+        {
+          "id": "A",
+          "text": "埋在内部形成疏水核心"
+        },
+        {
+          "id": "B",
+          "text": "全部暴露在水中"
+        },
+        {
+          "id": "C",
+          "text": "只出现在 N 端"
+        },
+        {
+          "id": "D",
+          "text": "永远形成二硫键"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "疏水效应促使非极性侧链减少与水接触，常形成内部核心。",
+      "difficulty": "easy",
+      "tags": [
+        "hydrophobic core"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "“折叠不是盲试”最准确的含义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "能量地形、序列和局部相互作用限制了可行路径"
+        },
+        {
+          "id": "B",
+          "text": "所有蛋白质都只有一个瞬间构象"
+        },
+        {
+          "id": "C",
+          "text": "折叠与序列无关"
+        },
+        {
+          "id": "D",
+          "text": "预测模型不需要实验验证"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "折叠受能量景观约束，但真实体系仍可能有中间态、动力学陷阱和多个状态。",
+      "difficulty": "medium",
+      "tags": [
+        "folding",
+        "energy landscape"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "单晶 X 射线与溶液 NMR 的结构信息侧重点分别是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "晶态空间结构；溶液中局部环境、动态和约束信息"
+        },
+        {
+          "id": "B",
+          "text": "两者都只测分子量"
+        },
+        {
+          "id": "C",
+          "text": "X 射线只测 pH，NMR 只测颜色"
+        },
+        {
+          "id": "D",
+          "text": "两者都不提供结构信息"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "不同方法观察不同状态和时间尺度，互相补充而非简单互相替代。",
+      "difficulty": "medium",
+      "tags": [
+        "structure determination",
+        "NMR",
+        "X-ray"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "true-false",
+      "question": "一级序列改变一定只会影响蛋白质外观，不会影响折叠和功能。",
+      "answer": false,
+      "points": 1,
+      "explanation": "序列改变可能改变局部相互作用、折叠稳定性、结合位点和构象平衡，进而影响功能。",
+      "difficulty": "medium",
+      "tags": [
+        "sequence-function"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "Proline 常使 α 螺旋出现弯折或中断，主要因为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "其环状侧链限制主链 φ 角，并缺少可供出的普通主链 N–H"
+        },
+        {
+          "id": "B",
+          "text": "Pro 没有任何碳原子"
+        },
+        {
+          "id": "C",
+          "text": "Pro 总是带负电"
+        },
+        {
+          "id": "D",
+          "text": "Pro 会自动形成二硫键"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "Pro 的吡咯烷环限制主链构象，且其肽键氮通常没有可供出的 N–H，常破坏规则氢键网络。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "proline",
+        "alpha helix"
+      ]
+    }
+  ]
+}

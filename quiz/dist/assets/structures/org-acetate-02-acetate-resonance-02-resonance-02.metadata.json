@@ -1,0 +1,163 @@
+{
+  "formula": "C2H3O2-",
+  "relative_molecular_mass": 59.044,
+  "exact_mass": 59.01385291591,
+  "net_charge": -1,
+  "atom_count": 4,
+  "heavy_atom_count": 4,
+  "atom_count_with_hydrogens": 7,
+  "canonical_isomeric_smiles": "CC(=O)[O-]",
+  "cxsmiles": "[O:1]=[C:2]([O-:3])[CH3:4]",
+  "inchikey": "QTBSBXVTEAMEQO-UHFFFAOYSA-M",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 1,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 2,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 2,
+      "atom_map": 3,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": -1,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 4,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "resonance-02",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": "acetate-resonance",
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "org-acetate-02",
+    "chinese_name": "乙酸根共振式二",
+    "english_name": "acetate-resonance-02",
+    "structure": {
+      "format": "smiles",
+      "value": "[O:1]=[C:2]([O-:3])[CH3:4]"
+    },
+    "protonation": "Explicit acetate anion; charge -1",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Organic Chemistry lesson 03, conjugate-base resonance",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "C2H3O2-",
+      "net_charge": -1
+    }
+  },
+  "original_structure": "[O:1]=[C:2]([O-:3])[CH3:4]",
+  "topology": null,
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      689,
+      425,
+      989,
+      694
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "org-acetate-02-acetate-resonance-02-resonance-02.svg",
+      "sha256": "8d8fe17240f9a41da345a38a02c217239ec90b2ec5b92d373337be034b34341e"
+    },
+    "png": {
+      "path": "org-acetate-02-acetate-resonance-02-resonance-02.png",
+      "sha256": "cad71ef175096cec54702a061451d054c5816dae16231bbcff600b009e66a52f"
+    },
+    "mol": {
+      "path": "org-acetate-02-acetate-resonance-02-resonance-02.mol",
+      "sha256": "1fbfe671433b82c86559c2eb8338a1e3baa0146d793a8eb78f7d59aa4b440ba7"
+    }
+  }
+}

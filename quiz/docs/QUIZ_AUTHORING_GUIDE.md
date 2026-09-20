@@ -116,7 +116,17 @@ Do not use fuzzy matching. For example, `SN2` and `S_N2` are different unless bo
 
 Unicode is safe and encouraged for chemistry: `H₃O⁺`, `PO₄³⁻`, `α-helix`, and `25 °C`. Keep explanations concise but complete: state why the answer is correct, not only the answer itself.
 
-The schema reserves `image` on an option and supports `knowledgePoints` for future filtering. Use relative static paths for local assets; do not embed large images as Base64 in JSON. The first version renders text safely and does not interpret arbitrary HTML from quiz data.
+Questions may include an optional image object for a structure diagram or other verified course visual:
+
+```json
+"image": {
+  "src": "assets/structures/org-acetate-resonance.svg",
+  "alt": "乙酸根的两种共振贡献式",
+  "caption": "由 Chemical Structure Renderer 根据明确结构输入渲染"
+}
+```
+
+Use relative static paths for local assets; do not embed large images as Base64 in JSON. Chemical structures must be rendered from an explicit SMILES/CXSMILES/InChI/MOL/SDF input with the Chemical Structure Renderer workflow. Do not use general image generation for atoms, bonds, charges, stereochemistry, or reaction arrows. If a name has unresolved stereochemical, protonation, salt, or tautomer ambiguity, do not guess the structure. The first version renders text safely and does not interpret arbitrary HTML from quiz data.
 
 ## 5. Fixed exams and question banks
 

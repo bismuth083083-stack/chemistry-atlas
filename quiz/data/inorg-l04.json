@@ -1,0 +1,474 @@
+{
+  "id": "INORG-L04",
+  "title": "分子对称性与点群",
+  "description": "练习对称元素、Cₙ、镜面、反演、Sₙ、点群判定及 IR/Raman 选择定则。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Chapter 4 · Symmetry and point groups",
+  "version": "1.0.0",
+  "totalPoints": 16,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "对称元素与对称操作的区别是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "元素是几何对象，操作是使体系不可区分的变换"
+        },
+        {
+          "id": "B",
+          "text": "两者完全同义"
+        },
+        {
+          "id": "C",
+          "text": "元素只指电子，操作只指原子"
+        },
+        {
+          "id": "D",
+          "text": "操作不需要保持体系不可区分"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "例如 C₂ 轴是对称元素，绕该轴旋转 180° 是对称操作。",
+      "difficulty": "easy",
+      "tags": [
+        "symmetry elements",
+        "operations"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "E 操作表示……",
+      "options": [
+        {
+          "id": "A",
+          "text": "恒等操作，体系不发生变化"
+        },
+        {
+          "id": "B",
+          "text": "一次旋转"
+        },
+        {
+          "id": "C",
+          "text": "反演"
+        },
+        {
+          "id": "D",
+          "text": "镜面反射"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "E 是每个点群都包含的恒等操作。",
+      "difficulty": "easy",
+      "tags": [
+        "identity",
+        "symmetry"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "判定主轴时首先寻找……",
+      "options": [
+        {
+          "id": "A",
+          "text": "阶数最高的 Cₙ 轴"
+        },
+        {
+          "id": "B",
+          "text": "最低阶的镜面"
+        },
+        {
+          "id": "C",
+          "text": "任意一条键"
+        },
+        {
+          "id": "D",
+          "text": "最短的分子长度"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "主轴是体系中阶数最高的真旋转轴，后续点群判定围绕它展开。",
+      "difficulty": "easy",
+      "tags": [
+        "C_n",
+        "point groups"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "multiple-choice",
+      "question": "镜面 σ 的命名需要相对于什么来判断？",
+      "options": [
+        {
+          "id": "A",
+          "text": "主轴"
+        },
+        {
+          "id": "B",
+          "text": "σh 与主轴垂直"
+        },
+        {
+          "id": "C",
+          "text": "σv 包含主轴"
+        },
+        {
+          "id": "D",
+          "text": "σd 还平分垂直 C₂ 轴间的夹角"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "points": 1,
+      "explanation": "σh、σv、σd 都是相对主轴定义的几何关系。",
+      "difficulty": "medium",
+      "tags": [
+        "mirror planes"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "反演操作 i 对坐标的作用是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "(x,y,z) 变为 (−x,−y,−z)"
+        },
+        {
+          "id": "B",
+          "text": "只改变 z 坐标"
+        },
+        {
+          "id": "C",
+          "text": "只绕 z 轴旋转"
+        },
+        {
+          "id": "D",
+          "text": "只交换两个氢原子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "反演把每个点映射到穿过反演中心、距离相等的相反位置。",
+      "difficulty": "easy",
+      "tags": [
+        "inversion"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "Sₙ 操作的顺序是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "先绕轴旋转 360°/n，再关于垂直于该轴的平面反射"
+        },
+        {
+          "id": "B",
+          "text": "先反演再平移"
+        },
+        {
+          "id": "C",
+          "text": "只做一次镜面反射"
+        },
+        {
+          "id": "D",
+          "text": "先改变键级再旋转"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Sₙ 是非真旋转，包含一次 Cₙ 旋转和一次垂直镜面反射。",
+      "difficulty": "easy",
+      "tags": [
+        "improper rotation"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "若存在主轴 Cₙ 以及 n 条与其垂直的 C₂ 轴，点群判定应优先考虑……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D 类点群"
+        },
+        {
+          "id": "B",
+          "text": "C 类点群"
+        },
+        {
+          "id": "C",
+          "text": "S 类点群"
+        },
+        {
+          "id": "D",
+          "text": "只能是 C₁"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "垂直 C₂ 轴是 D 类点群与普通 C 类点群分流的重要依据。",
+      "difficulty": "medium",
+      "tags": [
+        "point-group tree"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "C₁ 点群表示……",
+      "options": [
+        {
+          "id": "A",
+          "text": "除 E 外没有非平凡对称操作"
+        },
+        {
+          "id": "B",
+          "text": "有一个 C₁ 旋转轴之外还有 i"
+        },
+        {
+          "id": "C",
+          "text": "一定具有反演中心"
+        },
+        {
+          "id": "D",
+          "text": "一定是线形分子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "C₁ 只有恒等操作 E；名称中的 C₁ 不应误解为存在额外非平凡旋转。",
+      "difficulty": "easy",
+      "tags": [
+        "C1",
+        "point groups"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "线形异核分子通常属于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C∞v"
+        },
+        {
+          "id": "B",
+          "text": "D∞h"
+        },
+        {
+          "id": "C",
+          "text": "Td"
+        },
+        {
+          "id": "D",
+          "text": "Oh"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "异核线形分子通常没有反演中心，因此为 C∞v；同核对称线形分子常为 D∞h。",
+      "difficulty": "medium",
+      "tags": [
+        "linear molecules",
+        "point groups"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "苯的高对称性来自……",
+      "options": [
+        {
+          "id": "A",
+          "text": "平面六元环和规则取代关系共同提供多条旋转轴、镜面和反演对称"
+        },
+        {
+          "id": "B",
+          "text": "苯是开链分子"
+        },
+        {
+          "id": "C",
+          "text": "苯没有任何 C–C 键"
+        },
+        {
+          "id": "D",
+          "text": "苯只含一个原子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "苯的平面规则六元环具有丰富对称操作，属于高对称点群。",
+      "difficulty": "medium",
+      "tags": [
+        "benzene",
+        "symmetry"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-benzene-benzene-neutral.svg",
+        "alt": "苯的六元环结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES c1ccccc1 渲染"
+      }
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "CO₂ 的线形、同核两端结构使其具有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "反演中心，属于 D∞h 类型"
+        },
+        {
+          "id": "B",
+          "text": "手性 C₁ 点群"
+        },
+        {
+          "id": "C",
+          "text": "四面体几何"
+        },
+        {
+          "id": "D",
+          "text": "没有任何旋转轴"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "对称线形分子具有主轴、无穷多垂直 C₂ 轴和反演中心等特征。",
+      "difficulty": "medium",
+      "tags": [
+        "CO2",
+        "D-infinity-h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-carbon-dioxide-carbon-dioxide-neutral.svg",
+        "alt": "二氧化碳线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES O=C=O 渲染"
+      }
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "读取 C₂v 特征标表时，x、y、z 的标签主要帮助判断……",
+      "options": [
+        {
+          "id": "A",
+          "text": "平移或振动是否具有红外活性"
+        },
+        {
+          "id": "B",
+          "text": "样品的沸点"
+        },
+        {
+          "id": "C",
+          "text": "分子量"
+        },
+        {
+          "id": "D",
+          "text": "是否存在同位素"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "IR 活性要求振动与 x、y 或 z 等偶极矩分量同对称。",
+      "difficulty": "easy",
+      "tags": [
+        "character table",
+        "IR"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "Raman 活性通常与哪些二次函数相关？",
+      "options": [
+        {
+          "id": "A",
+          "text": "x²、y²、z²、xy、xz、yz"
+        },
+        {
+          "id": "B",
+          "text": "只有 x"
+        },
+        {
+          "id": "C",
+          "text": "只有 z"
+        },
+        {
+          "id": "D",
+          "text": "原子质量平方"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Raman 活性与极化率张量变化有关，对应二次函数的对称性标签。",
+      "difficulty": "easy",
+      "tags": [
+        "Raman",
+        "selection rules"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "true-false",
+      "question": "含反演中心的分子中，同一个正常振动模式可以同时具有 IR 和 Raman 活性。",
+      "answer": false,
+      "points": 1,
+      "explanation": "中心对称分子遵循互斥规则：同一模式不能同时属于 IR 活性的 u 类和 Raman 活性的 g 类。",
+      "difficulty": "medium",
+      "tags": [
+        "mutual exclusion",
+        "IR",
+        "Raman"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "利用 IR 与 Raman 区分具有或不具有反演中心的构型时，最关键的推理是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "先判定点群和反演中心，再根据极矢量与二次函数的对称性判断选择定则"
+        },
+        {
+          "id": "B",
+          "text": "只比较分子量"
+        },
+        {
+          "id": "C",
+          "text": "只看峰的颜色"
+        },
+        {
+          "id": "D",
+          "text": "假定所有理论振动都一定能看见"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "结构、点群、反演中心和选择定则必须连成证据链；理论模式数也不等于实验中一定可分辨的峰数。",
+      "difficulty": "hard",
+      "tags": [
+        "extension",
+        "spectroscopy",
+        "point groups"
+      ]
+    }
+  ]
+}

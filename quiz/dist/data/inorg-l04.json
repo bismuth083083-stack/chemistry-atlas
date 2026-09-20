@@ -321,7 +321,7 @@
         "symmetry"
       ],
       "image": {
-        "src": "assets/structures/org-benzene-benzene-neutral.svg",
+        "src": "assets/structures/org-benzene-benzene-neutral.png",
         "alt": "苯的六元环结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES c1ccccc1 渲染"
       }
@@ -357,7 +357,7 @@
         "D-infinity-h"
       ],
       "image": {
-        "src": "assets/structures/inorg-carbon-dioxide-carbon-dioxide-neutral.svg",
+        "src": "assets/structures/inorg-carbon-dioxide-carbon-dioxide-neutral.png",
         "alt": "二氧化碳线形结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES O=C=O 渲染"
       }

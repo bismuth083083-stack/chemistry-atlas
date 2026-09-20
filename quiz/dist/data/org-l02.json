@@ -103,7 +103,7 @@
         "pi"
       ],
       "image": {
-        "src": "assets/structures/org-ethene-ethene-neutral.svg",
+        "src": "assets/structures/org-ethene-ethene-neutral.png",
         "alt": "乙烯的 C=C 结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES C=C 渲染"
       }
@@ -434,7 +434,7 @@
         "bond polarity"
       ],
       "image": {
-        "src": "assets/structures/org-chloromethane-chloromethane-neutral.svg",
+        "src": "assets/structures/org-chloromethane-chloromethane-neutral.png",
         "alt": "氯甲烷结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCl 渲染"
       }
@@ -471,7 +471,7 @@
         "SN2"
       ],
       "image": {
-        "src": "assets/structures/org-chloromethane-chloromethane-neutral.svg",
+        "src": "assets/structures/org-chloromethane-chloromethane-neutral.png",
         "alt": "氯甲烷结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCl 渲染"
       }

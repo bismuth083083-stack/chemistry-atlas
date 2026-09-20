@@ -192,7 +192,7 @@
         "Lewis acid"
       ],
       "image": {
-        "src": "assets/structures/inorg-bf3-boron-trifluoride-neutral.svg",
+        "src": "assets/structures/inorg-bf3-boron-trifluoride-neutral.png",
         "alt": "三氟化硼结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES F[B](F)F 渲染"
       }

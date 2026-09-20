@@ -71,7 +71,7 @@
         "stereochemistry"
       ],
       "image": {
-        "src": "assets/structures/org-e-butene-e-butene-E.svg",
+        "src": "assets/structures/org-e-butene-e-butene-E.png",
         "alt": "(E)-2-丁烯结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确立体 SMILES C/C=C/C 渲染"
       }
@@ -107,7 +107,7 @@
         "stereochemistry"
       ],
       "image": {
-        "src": "assets/structures/org-z-butene-z-butene-Z.svg",
+        "src": "assets/structures/org-z-butene-z-butene-Z.png",
         "alt": "(Z)-2-丁烯结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确立体 SMILES C/C=C\\C 渲染"
       }
@@ -205,7 +205,7 @@
         "steric strain"
       ],
       "image": {
-        "src": "assets/structures/org-butane-butane-neutral.svg",
+        "src": "assets/structures/org-butane-butane-neutral.png",
         "alt": "正丁烷结构连接关系",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCCC 渲染"
       }

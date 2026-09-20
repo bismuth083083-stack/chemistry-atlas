@@ -257,7 +257,7 @@
         "acetate"
       ],
       "image": {
-        "src": "assets/structure-renders/group-acetate-resonance.svg",
+        "src": "assets/structure-renders/group-acetate-resonance.png",
         "alt": "乙酸根的两种共振贡献式",
         "caption": "由 Chemical Structure Renderer 使用同一原子映射生成"
       }
@@ -460,7 +460,7 @@
         "acid strength"
       ],
       "image": {
-        "src": "assets/structure-renders/group-acetate-resonance.svg",
+        "src": "assets/structure-renders/group-acetate-resonance.png",
         "alt": "乙酸根的共振离域",
         "caption": "由 Chemical Structure Renderer 使用同一原子映射生成"
       }

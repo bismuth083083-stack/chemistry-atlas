@@ -40,7 +40,7 @@
         "amino acid backbone"
       ],
       "image": {
-        "src": "assets/structure-renders/bioc-glycine-glycine-neutral.svg",
+        "src": "assets/structure-renders/bioc-glycine-glycine-neutral.png",
         "alt": "甘氨酸的 α-氨基酸骨架",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES NCC(=O)O 渲染"
       }
@@ -359,7 +359,7 @@
         "aromatic"
       ],
       "image": {
-        "src": "assets/structure-renders/bioc-phenylalanine-phenylalanine-neutral.svg",
+        "src": "assets/structure-renders/bioc-phenylalanine-phenylalanine-neutral.png",
         "alt": "苯丙氨酸骨架，立体化学未指定",
         "caption": "由 Chemical Structure Renderer 根据未指定手性的明确连接关系渲染"
       }
@@ -395,7 +395,7 @@
         "cysteine"
       ],
       "image": {
-        "src": "assets/structure-renders/bioc-cysteamine-cysteamine-model-neutral.svg",
+        "src": "assets/structure-renders/bioc-cysteamine-cysteamine-model-neutral.png",
         "alt": "含硫侧链模型结构",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES NCCS 渲染"
       }

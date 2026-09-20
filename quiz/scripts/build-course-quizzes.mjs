@@ -9,7 +9,16 @@ const distData = path.join(quizRoot, 'dist', 'data');
 // The source quiz runs from /quiz/, while the publishable build runs from /quiz/dist/.
 // Keep the two resource roots explicit so a build never accidentally points one
 // deployment at the other deployment's asset directory.
-const img = (file, alt, caption) => ({ image: { src: `assets/structure-renders/${file}`, alt, ...(caption ? { caption } : {}) } });
+const img = (file, alt, caption) => ({
+  image: {
+    // Use the PNG emitted by Chemical Structure Renderer for the browser-facing
+    // question stem. SVG/MOL/SDF outputs remain alongside it for provenance and
+    // future editing, but PNG avoids host-specific SVG MIME/XML handling.
+    src: `assets/structure-renders/${file.replace(/\.svg$/i, '.png')}`,
+    alt,
+    ...(caption ? { caption } : {})
+  }
+});
 const options = (items) => items.map(([id, text]) => ({ id, text }));
 const one = (id, question, choices, answer, explanation, difficulty = 'easy', tags = [], extra = {}) => ({ id, type: 'single-choice', question, options: options(choices), answer, points: difficulty === 'hard' ? 2 : 1, explanation, difficulty, tags, ...extra });
 const many = (id, question, choices, answers, explanation, difficulty = 'medium', tags = [], extra = {}) => ({ id, type: 'multiple-choice', question, options: options(choices), answers, points: difficulty === 'hard' ? 2 : 1, explanation, difficulty, tags, ...extra });

@@ -70,7 +70,7 @@
         "alkanes"
       ],
       "image": {
-        "src": "assets/structures/org-butane-butane-neutral.svg",
+        "src": "assets/structures/org-butane-butane-neutral.png",
         "alt": "正丁烷的骨架结构",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCCC 渲染"
       }
@@ -356,7 +356,7 @@
         "conformation"
       ],
       "image": {
-        "src": "assets/structures/org-cyclohexane-cyclohexane-neutral.svg",
+        "src": "assets/structures/org-cyclohexane-cyclohexane-neutral.png",
         "alt": "环己烷连接关系示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES C1CCCCC1 渲染；构象题仍需结合椅式图"
       }

@@ -384,7 +384,7 @@
         "formal charge"
       ],
       "image": {
-        "src": "assets/structure-renders/inorg-ammonium-ammonium-cation.svg",
+        "src": "assets/structure-renders/inorg-ammonium-ammonium-cation.png",
         "alt": "铵离子结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES [NH4+] 渲染"
       }

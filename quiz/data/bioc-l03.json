@@ -41,7 +41,7 @@
         "planarity"
       ],
       "image": {
-        "src": "assets/structure-renders/bioc-gly-gly-gly-gly-peptide-neutral.svg",
+        "src": "assets/structure-renders/bioc-gly-gly-gly-gly-peptide-neutral.png",
         "alt": "甘氨酰甘氨酸的肽键结构",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES NCC(=O)NCC(=O)O 渲染"
       }

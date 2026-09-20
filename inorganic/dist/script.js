@@ -2,6 +2,9 @@ const typography=document.createElement('link');
 typography.rel='stylesheet';
 typography.href='typography.css';
 document.head.appendChild(typography);
+if(location.pathname.endsWith('lesson-04-matrices.html'))document.body.classList.add('matrix-page');
+if(document.body.classList.contains('matrix-page')){document.body.innerHTML=document.body.innerHTML.replace('旋转 360°？不，反射面','旋转 180°；反射面')}
+if(!document.querySelector('a[href="lesson-04-matrices.html"]')){const matrixNav=document.createElement('a');matrixNav.href='lesson-04-matrices.html';matrixNav.innerHTML='<span>04+</span>操作矩阵专题';document.querySelector('.sidebar nav')?.appendChild(matrixNav)}
 const root=document.body;
 const theme=document.querySelector('#theme');
 const saved=localStorage.getItem('inorganic-theme')||localStorage.getItem('ochem-theme');

@@ -49,7 +49,7 @@
         <div class="library-filter-bar"><span id="active-filter-label" class="library-result-label">All practice sets</span><span id="result-count" hidden></span><button id="reset-filters" class="library-reset" type="button">Reset filters</button></div>
         <section id="quiz-grid" class="quiz-grid" aria-label="Available quizzes"></section>
         <section id="library-empty" class="library-empty" hidden><p class="library-kicker">NO MATCHES</p><h2>No quizzes found.</h2><p>Try another search or reset the current filters.</p><button id="empty-reset" class="button button-dark" type="button">Reset filters</button></section>
-        <div class="library-load-more"><button id="load-more" type="button" hidden>Load more quizzes</button></div>
+        <div id="load-sentinel" class="library-load-sentinel" role="status" aria-live="polite" hidden><span class="loading-orbit" aria-hidden="true"></span><span id="load-sentinel-label">Scroll for more quizzes</span></div>
       </main>
       <div id="app" class="app-body" aria-live="polite" hidden></div>
     </div>

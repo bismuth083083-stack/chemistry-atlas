@@ -97,13 +97,13 @@ function compareEntries(left, right, sort) {
     || entryCode(left).localeCompare(entryCode(right));
 }
 
-function cardMarkup(entry) {
+function cardMarkup(entry, index = 0) {
   const meta = subjectMeta(entry.subject);
   const tags = (entry.tags || []).slice(0, 4).map((tag) => `<span>#${escapeHtml(tag)}</span>`).join('');
   const count = entry.questionCount ?? entry.questions?.length ?? '—';
   const difficulty = DIFFICULTY_LABELS[difficultyValue(entry)] || 'Basic';
   return `
-    <a class="library-card theme-${meta.className}" href="?quiz=${encodeURIComponent(entry.id)}">
+    <a class="library-card theme-${meta.className}" style="--card-delay: ${Math.min(index, 8) * 55}ms" href="?quiz=${encodeURIComponent(entry.id)}">
       <span class="library-card-accent" aria-hidden="true"></span>
       <span class="library-card-top"><span class="quiz-code">${escapeHtml(entryCode(entry))}</span><span class="subject-badge">${escapeHtml(meta.label)}</span></span>
       <span class="library-card-kicker">${escapeHtml(TYPE_LABELS[entry.type] || 'Quiz')}</span>
@@ -119,9 +119,13 @@ function cardMarkup(entry) {
 class QuizLibrary {
   constructor(entries) {
     this.entries = entries;
-    this.visibleLimit = 9;
+    this.pageSize = 9;
+    this.visibleLimit = this.pageSize;
+    this.loadingMore = false;
+    this.loadTimer = null;
     this.state = this.restoreState();
     this.bindControls();
+    this.bindInfiniteScroll();
     this.render();
   }
 
@@ -142,24 +146,67 @@ class QuizLibrary {
     } catch {}
   }
 
+  resetPaging() {
+    if (this.loadTimer) window.clearTimeout(this.loadTimer);
+    this.loadTimer = null;
+    this.loadingMore = false;
+    this.visibleLimit = this.pageSize;
+  }
+
   bindControls() {
     const search = $('#library-search');
-    search.addEventListener('input', (event) => { this.state.query = event.target.value; this.visibleLimit = 9; this.render(); });
+    search.addEventListener('input', (event) => { this.state.query = event.target.value; this.resetPaging(); this.render(); });
     ['subject', 'type', 'difficulty', 'sort'].forEach((key) => {
       const control = $(`#filter-${key}`);
       control.value = this.state[key];
-      control.addEventListener('change', (event) => { this.state[key] = event.target.value; this.visibleLimit = 9; this.saveState(); this.render(); });
+      control.addEventListener('change', (event) => { this.state[key] = event.target.value; this.resetPaging(); this.saveState(); this.render(); });
     });
     $('#reset-filters').addEventListener('click', () => {
       this.state = { ...this.state, subject: 'all', type: 'all', difficulty: 'all', sort: 'updated', query: '' };
-      this.visibleLimit = 9;
+      this.resetPaging();
       $('#library-search').value = '';
       ['subject', 'type', 'difficulty', 'sort'].forEach((key) => { $(`#filter-${key}`).value = this.state[key]; });
       this.saveState();
       this.render();
     });
     $('#empty-reset').addEventListener('click', () => $('#reset-filters').click());
-    $('#load-more').addEventListener('click', () => { this.visibleLimit += 9; this.render(); });
+  }
+
+  bindInfiniteScroll() {
+    const sentinel = $('#load-sentinel');
+    const maybeLoad = () => {
+      if (!sentinel.hidden && sentinel.getBoundingClientRect().top < window.innerHeight + 480) this.loadNextPage();
+    };
+    if ('IntersectionObserver' in window) {
+      this.sentinelObserver = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) this.loadNextPage();
+      }, { rootMargin: '0px 0px 480px 0px' });
+      this.sentinelObserver.observe(sentinel);
+    } else {
+      window.addEventListener('scroll', maybeLoad, { passive: true });
+      window.addEventListener('resize', maybeLoad, { passive: true });
+    }
+  }
+
+  updateLoadSentinel(results = this.filteredEntries()) {
+    const sentinel = $('#load-sentinel');
+    const hasMore = results.length > this.visibleLimit;
+    sentinel.hidden = !hasMore;
+    sentinel.classList.toggle('is-loading', this.loadingMore);
+    $('#load-sentinel-label').textContent = this.loadingMore ? 'Loading more quizzes…' : 'Scroll for more quizzes';
+  }
+
+  loadNextPage() {
+    const results = this.filteredEntries();
+    if (this.loadingMore || this.visibleLimit >= results.length) return;
+    this.loadingMore = true;
+    this.updateLoadSentinel(results);
+    this.loadTimer = window.setTimeout(() => {
+      this.visibleLimit = Math.min(this.visibleLimit + this.pageSize, results.length);
+      this.loadingMore = false;
+      this.loadTimer = null;
+      this.render();
+    }, 160);
   }
 
   filteredEntries() {
@@ -181,10 +228,10 @@ class QuizLibrary {
     $('#subject-count').textContent = String(new Set(this.entries.map((entry) => subjectKey(entry.subject))).size);
     $('#latest-date').textContent = displayDate(this.entries.slice().sort((a, b) => compareEntries(a, b, 'updated'))[0]?.updatedAt);
     $('#active-filter-label').textContent = this.state.query || this.state.subject !== 'all' || this.state.type !== 'all' || this.state.difficulty !== 'all' ? `${results.length} matching quizzes` : 'All practice sets';
-    grid.innerHTML = visible.map(cardMarkup).join('');
+    grid.innerHTML = visible.map((entry, index) => cardMarkup(entry, index)).join('');
     grid.hidden = visible.length === 0;
     empty.hidden = visible.length !== 0;
-    $('#load-more').hidden = results.length <= this.visibleLimit;
+    this.updateLoadSentinel(results);
   }
 }
 

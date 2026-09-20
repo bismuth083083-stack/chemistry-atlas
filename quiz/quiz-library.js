@@ -51,8 +51,7 @@ function sortNumber(entry) {
 function entryCode(entry) {
   const meta = subjectMeta(entry.subject);
   if (entry.displayId) return entry.displayId;
-  if (entry.id !== 'demo') return entry.id.toUpperCase();
-  return `${meta.short}-L01`;
+  return entry.id.toUpperCase();
 }
 
 function entrySearchText(entry) {

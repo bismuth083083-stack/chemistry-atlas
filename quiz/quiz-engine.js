@@ -85,7 +85,7 @@ function formatValidationErrors(errors) {
 }
 
 async function loadQuiz() {
-  const requestedId = new URLSearchParams(window.location.search).get('quiz') || 'GEN-L01';
+  const requestedId = new URLSearchParams(window.location.search).get('quiz') || '';
   const manifestResponse = await fetch(`${DATA_ROOT}index.json`);
   if (!manifestResponse.ok) throw new Error('Could not load quiz manifest.');
   const manifest = await manifestResponse.json();

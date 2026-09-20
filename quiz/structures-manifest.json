@@ -1116,6 +1116,66 @@
         "formula": "O3",
         "net_charge": 0
       }
+    },
+    {
+      "id": "symmetry-allene",
+      "chinese_name": "丙二烯",
+      "english_name": "allene",
+      "structure": {
+        "format": "smiles",
+        "value": "C=C=C"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C3H4",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-cubane",
+      "chinese_name": "立方烷",
+      "english_name": "cubane",
+      "structure": {
+        "format": "smiles",
+        "value": "C12C3C4C1C5C2C3C45"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C8H8",
+        "net_charge": 0
+      }
     }
   ],
   "groups": [

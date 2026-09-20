@@ -631,7 +631,7 @@
     {
       "id": "INORG-T01",
       "title": "无机专题：VSEPR、结构与点群挑战",
-      "description": "从主族中心原子和典型分子/离子目录中随机抽题，练习电子域、分子构型、对称元素、点群与 IR/Raman 选择定则。每次尝试随机抽取 22 题。",
+      "description": "以点群判定为主线，覆盖主族分子、配合物、金属有机物、有机分子构象、对称元素与 IR/Raman 选择定则。题库共 120 题，每次随机抽取 22 题。",
       "subject": "inorganic-chemistry",
       "type": "topic",
       "lessonNumber": null,
@@ -640,7 +640,7 @@
       "chapter": "Topic · VSEPR, molecular structure, and point groups",
       "lesson": "VSEPR, molecular structure, and point groups",
       "topic": "Randomized symmetry challenge bank",
-      "questionCount": 40,
+      "questionCount": 120,
       "difficulty": "advanced",
       "tags": [
         "VSEPR",

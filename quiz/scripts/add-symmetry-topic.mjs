@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { extraQuestions } from './symmetry-question-extension.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dataRoot = path.join(root, 'data');
@@ -36,7 +37,9 @@ const newStructures = [
   ['symmetry-if5', '五氟化碘', 'iodine-pentafluoride', 'FI(F)(F)(F)F', 'F5I', 0, 'unspecified-approved'],
   ['symmetry-bf4', '四氟合硼酸根', 'tetrafluoroborate-anion', 'F[B-](F)(F)F', 'BF4-', -1],
   ['symmetry-acetylene', '乙炔', 'acetylene', 'C#C', 'C2H2', 0],
-  ['symmetry-ozone', '臭氧', 'ozone', '[O-][O+]=O', 'O3', 0]
+  ['symmetry-ozone', '臭氧', 'ozone', '[O-][O+]=O', 'O3', 0],
+  ['symmetry-allene', '丙二烯', 'allene', 'C=C=C', 'C3H4', 0],
+  ['symmetry-cubane', '立方烷', 'cubane', 'C12C3C4C1C5C2C3C45', 'C8H8', 0, 'unspecified-approved']
 ].map(([id, chinese_name, english_name, smiles, formula, charge, stereochemistry]) => ({
   id, chinese_name, english_name, structure: { format: 'smiles', value: smiles },
   ...structureDefaults({ protonation: charge === 0 ? 'Explicit neutral educational structure; charge 0' : `Explicit ion; charge ${charge}`, stereochemistry }),
@@ -60,6 +63,8 @@ const p = {
   bf4: image('symmetry-bf4-tetrafluoroborate-anion-neutral.png', '四氟合硼酸根的四面体结构示意图'),
   acetylene: image('symmetry-acetylene-acetylene-neutral.png', '乙炔的线形结构示意图'),
   ozone: image('symmetry-ozone-ozone-neutral.png', '臭氧的折线形结构示意图', 'Renderer 显示一种明确 Lewis 共振表示；构型题按等价端氧的理想化模型讨论。'),
+  allene: image('symmetry-allene-allene-neutral.png', '丙二烯的结构示意图'),
+  cubane: image('symmetry-cubane-cubane-neutral.png', '立方烷的笼状结构示意图'),
   bf3: image('inorg-bf3-boron-trifluoride-neutral.png', '三氟化硼的平面三角形结构示意图'),
   co2: image('inorg-carbon-dioxide-carbon-dioxide-neutral.png', '二氧化碳的线形结构示意图'),
   so2: image('inorg-sulfur-dioxide-sulfur-dioxide-neutral.png', '二氧化硫的折线形结构示意图'),
@@ -68,7 +73,7 @@ const p = {
   benzene: image('org-benzene-benzene-neutral.png', '苯的平面六元环结构示意图')
 };
 
-const questions = [
+const baseQuestions = [
   one('q001', 'VSEPR 模型首先统计中心原子周围的……', [['A', '电子域'], ['B', '中子数'], ['C', '溶剂体积'], ['D', '晶胞边长']], 'A', 'VSEPR 把成键电子对和孤电子对都作为排斥电子域，用来预测局部几何。', 'easy', ['VSEPR', 'electron domains']),
   one('q002', '在 AX₃E 中，中心原子的电子域几何是……', [['A', '四面体'], ['B', '平面三角形'], ['C', '三角双锥'], ['D', '八面体']], 'A', 'AX₃E 含 4 个电子域，因此电子域几何为四面体；分子构型则为三角锥形。', 'easy', ['VSEPR', 'AX3E']),
   one('q003', '理想化的 BeCl₂ 构型是……', [['A', '线形'], ['B', '折线形'], ['C', '平面三角形'], ['D', '四面体']], 'A', 'Be 周围有两个成键电子域、没有孤对电子，AX₂ 对应线形。', 'easy', ['BeCl2', 'linear'], p.becl2),
@@ -111,10 +116,12 @@ const questions = [
   fill('q040', 'XeF₄ 的两个孤对电子在理想八面体电子域中彼此呈____位置。', '相对', ['相对', 'trans', '180°', '180度'], '为了最大化间距，两个孤对电子占据相对的八面体顶点，四个 F 留在同一平面。', 'challenging', ['XeF4', 'lone pairs', 'D4h'], p.xef4)
 ];
 
+const questions = [...baseQuestions, ...extraQuestions];
+
 const quiz = {
   id: 'INORG-T01',
   title: '无机专题：VSEPR、结构与点群挑战',
-  description: '从主族中心原子和典型分子/离子目录中随机抽题，练习电子域、分子构型、对称元素、点群与 IR/Raman 选择定则。每次尝试随机抽取 22 题。',
+  description: '以点群判定为主线，覆盖主族分子、配合物、金属有机物、有机分子构象、对称元素与 IR/Raman 选择定则。题库共 120 题，每次随机抽取 22 题。',
   subject: 'inorganic-chemistry',
   chapter: 'Topic · VSEPR, molecular structure, and point groups',
   version: '1.0.0',
@@ -125,7 +132,7 @@ const quiz = {
     { title: 'Otterbein Symmetry resources', url: 'http://symmetry.otterbein.edu/index.html', role: 'conceptual reference supplied by the learner' },
     { title: 'Otterbein Symmetry Challenge', url: 'http://symmetry.otterbein.edu/challenge/index.html', role: 'challenge-style reference supplied by the learner' }
   ],
-  scopeNote: 'This is an independently authored educational bank of canonical main-group examples. It is not a mirror of any third-party database; formulas, structures, explanations, and question wording were selected or written for Chemistry Atlas.',
+  scopeNote: 'This is an independently authored educational bank of canonical main-group, coordination, organometallic, and organic-conformation examples. It is not a mirror of any third-party database; structures, point-group assignments, explanations, and question wording were selected or written for Chemistry Atlas.',
   speciesCatalog: [
     { center: 'Be', examples: ['BeCl2'], geometry: 'linear', pointGroups: ['D∞h'] },
     { center: 'B', examples: ['BF3', 'BF4−'], geometry: 'trigonal planar / tetrahedral', pointGroups: ['D3h', 'Td'] },
@@ -136,7 +143,13 @@ const quiz = {
     { center: 'S', examples: ['SF4', 'SF6'], geometry: 'seesaw / octahedral', pointGroups: ['C2v', 'Oh'] },
     { center: 'Cl', examples: ['ClF3'], geometry: 'T-shaped', pointGroups: ['C2v'] },
     { center: 'I', examples: ['IF5'], geometry: 'square pyramidal', pointGroups: ['C4v'] },
-    { center: 'Xe', examples: ['XeF2', 'XeF4'], geometry: 'linear / square planar', pointGroups: ['D∞h', 'D4h'] }
+    { center: 'Xe', examples: ['XeF2', 'XeF4'], geometry: 'linear / square planar', pointGroups: ['D∞h', 'D4h'] },
+    { center: 'Pt', examples: ['[PtCl4]2−', 'cis-[PtCl2(NH3)2]', 'trans-[PtCl2(NH3)2]'], geometry: 'square planar', pointGroups: ['D4h', 'C2v', 'D2h'] },
+    { center: 'Co', examples: ['[Co(NH3)6]3+', '[Co(en)3]3+'], geometry: 'octahedral / tris-chelate', pointGroups: ['Oh', 'D3'] },
+    { center: 'Fe', examples: ['[Fe(CN)6]4−'], geometry: 'octahedral', pointGroups: ['Oh'] },
+    { center: 'Ni', examples: ['[Ni(CN)4]2−'], geometry: 'square planar', pointGroups: ['D4h'] },
+    { center: 'organometallic', examples: ['eclipsed ferrocene', 'staggered ferrocene'], geometry: 'sandwich', pointGroups: ['D5h', 'D5d'] },
+    { center: 'organic symmetry', examples: ['ethane', 'allene', 'benzene', 'cubane', 'C60'], geometry: 'conformer-dependent / cage', pointGroups: ['D3d', 'D2d', 'D6h', 'Oh', 'Ih'] }
   ],
   questions
 };

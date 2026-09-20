@@ -5,23 +5,641 @@
   "subject": "Biochemistry",
   "chapter": "Chapter 1 · Amino acids",
   "version": "1.0.0",
-  "totalPoints": 16,
-  "selection": { "mode": "fixed" },
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
   "questions": [
-    { "id": "q001", "type": "single-choice", "question": "标准 α-氨基酸共同的主链骨架通常包括……", "options": [{ "id": "A", "text": "α-碳、α-氨基和 α-羧基" }, { "id": "B", "text": "两个磷酸基和一个糖环" }, { "id": "C", "text": "只有一个芳香环" }, { "id": "D", "text": "脂肪酸和甘油" }], "answer": "A", "points": 1, "explanation": "标准 α-氨基酸以 α-碳为中心，连接 α-氨基、α-羧基、氢和可变的 R 基团。", "difficulty": "easy", "tags": ["amino acid structure", "alpha carbon"] },
-    { "id": "q002", "type": "single-choice", "question": "在标准 α-氨基酸中，真正决定不同氨基酸化学性格的主要部分是……", "options": [{ "id": "A", "text": "R 基团（侧链）" }, { "id": "B", "text": "所有氨基酸都相同的羧基" }, { "id": "C", "text": "水分子" }, { "id": "D", "text": "肽键的氧原子" }], "answer": "A", "points": 1, "explanation": "R 基团决定疏水性、极性、电荷、体积和反应性，从而影响蛋白质折叠与功能。", "difficulty": "easy", "tags": ["side chain", "amino acid classification"] },
-    { "id": "q003", "type": "single-choice", "question": "为什么 Gly 的 α-碳不构成手性中心？", "options": [{ "id": "A", "text": "它没有羧基" }, { "id": "B", "text": "它的 R 基团是 H，α-碳连接了两个相同取代基" }, { "id": "C", "text": "它总是带负电" }, { "id": "D", "text": "它没有 α-碳" }], "answer": "B", "points": 1, "explanation": "Gly 的侧链为 H，因此 α-碳上有两个相同的氢取代基，不满足四个不同取代基的手性条件。", "difficulty": "easy", "tags": ["glycine", "chirality"] },
-    { "id": "q004", "type": "true-false", "question": "L/D 构型名称本身可以直接判断一个氨基酸的旋光方向是正还是负。", "answer": false, "points": 1, "explanation": "L/D 描述相对构型，不直接等同于旋光方向的正负；旋光方向需要实验测定。", "difficulty": "medium", "tags": ["stereochemistry", "L-D notation"] },
-    { "id": "q005", "type": "multiple-choice", "question": "按侧链性质分类时，下列哪些类别是常用的氨基酸分类方式？", "options": [{ "id": "A", "text": "非极性或疏水侧链" }, { "id": "B", "text": "极性但不带电侧链" }, { "id": "C", "text": "酸性或碱性、可带电侧链" }, { "id": "D", "text": "所有氨基酸都必须有芳香环" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "按疏水性、极性、芳香性和侧链电离性分类，有助于预测氨基酸在蛋白质中的位置和作用。", "difficulty": "easy", "tags": ["classification", "side chain"] },
-    { "id": "q006", "type": "single-choice", "question": "在较低 pH 下，氨基酸的总体趋势是……", "options": [{ "id": "A", "text": "更容易质子化" }, { "id": "B", "text": "所有基团都立即完全去质子化" }, { "id": "C", "text": "R 基团一定变成自由基" }, { "id": "D", "text": "与 pH 无关" }], "answer": "A", "points": 1, "explanation": "酸性环境中 H⁺ 活度较高，羧基和氨基等可电离基团总体更偏向质子化状态。", "difficulty": "easy", "tags": ["ionization", "pH"] },
-    { "id": "q007", "type": "single-choice", "question": "当 pH=pKa 时，某一可逆酸碱对的两种形态比例约为……", "options": [{ "id": "A", "text": "1:1" }, { "id": "B", "text": "1:10" }, { "id": "C", "text": "1:100" }, { "id": "D", "text": "0:1" }], "answer": "A", "points": 1, "explanation": "由 Henderson–Hasselbalch 关系，pH=pKa 时去质子化态与质子化态的比值为 1。", "difficulty": "easy", "tags": ["pKa", "Henderson-Hasselbalch"] },
-    { "id": "q008", "type": "single-choice", "question": "等电点 pI 最准确的含义是……", "options": [{ "id": "A", "text": "分子完全没有任何局部电荷的 pH" }, { "id": "B", "text": "分子平均净电荷为零的 pH" }, { "id": "C", "text": "所有基团都达到 pKa 的 pH" }, { "id": "D", "text": "溶液必定为 pH 7 的 pH" }], "answer": "B", "points": 1, "explanation": "pI 是平均净电荷为零的 pH；两性离子内部仍可能同时存在正、负电荷。", "difficulty": "easy", "tags": ["isoelectric point", "net charge"] },
-    { "id": "q009", "type": "single-choice", "question": "一个 pI 约为 3 的酸性氨基酸置于 pH 7 缓冲液中，最可能的净电荷是……", "options": [{ "id": "A", "text": "正" }, { "id": "B", "text": "负" }, { "id": "C", "text": "严格为零" }, { "id": "D", "text": "无法由 pH 与 pI 判断" }], "answer": "B", "points": 1, "explanation": "当环境 pH 高于 pI 时，氨基酸平均更偏去质子化，净电荷通常为负。", "difficulty": "medium", "tags": ["pI", "charge state"] },
-    { "id": "q010", "type": "multiple-choice", "question": "下列哪些属于成人常见的必需氨基酸？", "options": [{ "id": "A", "text": "His" }, { "id": "B", "text": "Leu" }, { "id": "C", "text": "Trp" }, { "id": "D", "text": "Gly" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "His、Leu 和 Trp 属于常见成人必需氨基酸；Gly 通常不列为成人必需氨基酸。", "difficulty": "medium", "tags": ["essential amino acids", "nutrition"] },
-    { "id": "q011", "type": "single-choice", "question": "用茚三酮检测游离 α-氨基时，Pro 常见的颜色表现与多数氨基酸不同，偏向……", "options": [{ "id": "A", "text": "黄色" }, { "id": "B", "text": "黑色金属光泽" }, { "id": "C", "text": "无色且永远无反应" }, { "id": "D", "text": "绿色荧光" }], "answer": "A", "points": 1, "explanation": "多数氨基酸的茚三酮产物偏蓝紫色，而 Pro 和羟脯氨酸是亚氨基酸，常呈黄色。", "difficulty": "easy", "tags": ["ninhydrin", "proline"] },
-    { "id": "q012", "type": "single-choice", "question": "一个 Leu 残基埋在蛋白质疏水核心时，最可能的主要作用是……", "options": [{ "id": "A", "text": "通过疏水堆积帮助稳定折叠" }, { "id": "B", "text": "总是催化肽键水解" }, { "id": "C", "text": "必然形成二硫键" }, { "id": "D", "text": "把蛋白质变成核酸" }], "answer": "A", "points": 1, "explanation": "Leu 的非极性侧链常埋在疏水核心，通过疏水效应和紧密堆积帮助稳定蛋白质结构。", "difficulty": "easy", "tags": ["leucine", "protein folding"] },
-    { "id": "q013", "type": "true-false", "question": "蛋白质内部微环境可以改变侧链的有效 pKa，因此表格中的游离氨基酸 pKa 不是任何位置都严格不变的常数。", "answer": true, "points": 1, "explanation": "邻近电荷、氢键、介电环境和溶剂暴露度都会影响蛋白质内部残基的电离平衡。", "difficulty": "medium", "tags": ["pKa", "protein microenvironment"] },
-    { "id": "q014", "type": "single-choice", "question": "硒代半胱氨酸（Sec）在遗传编码和化学性质上常被强调的特点是……", "options": [{ "id": "A", "text": "由 UGA 特殊插入编码，Se 使其在生理条件下可成为更强的亲核中心" }, { "id": "B", "text": "由所有终止密码子正常编码，且没有可反应原子" }, { "id": "C", "text": "它就是没有侧链的 Gly" }, { "id": "D", "text": "它只能存在于脂肪酸中" }], "answer": "A", "points": 1, "explanation": "Sec 是 Cys 的硫被硒替换的类似物，常由 UGA 在特殊插入机制下编码，硒醇的酸碱和亲核性质具有生物学意义。", "difficulty": "medium", "tags": ["selenocysteine", "genetic code"] },
-    { "id": "q015", "type": "single-choice", "question": "若一个埋在疏水蛋白口袋中的 Asp 比游离 Asp 更倾向保持质子化，最合理的解释是……", "options": [{ "id": "A", "text": "疏水环境不利于带负电的去质子化形式，改变了局部酸碱平衡" }, { "id": "B", "text": "Asp 在蛋白质中不再含羧基" }, { "id": "C", "text": "所有埋藏残基的 pKa 都必定变成 7" }, { "id": "D", "text": "pH 对蛋白质内部残基不起作用" }], "answer": "A", "points": 2, "explanation": "带电的去质子化 Asp 在低介电的疏水环境中可能受到不利溶剂化，因此其 pKa 可升高、质子化比例增加；这正是蛋白质微环境调节反应性的例子。", "difficulty": "hard", "tags": ["extension", "Aspartate", "microenvironment", "pKa"] }
-  ]
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "标准 α-氨基酸共同的主链骨架通常包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "α-碳、α-氨基和 α-羧基"
+        },
+        {
+          "id": "B",
+          "text": "两个磷酸基和一个糖环"
+        },
+        {
+          "id": "C",
+          "text": "只有一个芳香环"
+        },
+        {
+          "id": "D",
+          "text": "脂肪酸和甘油"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "标准 α-氨基酸以 α-碳为中心，连接 α-氨基、α-羧基、氢和可变的 R 基团。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid structure",
+        "alpha carbon"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "在标准 α-氨基酸中，真正决定不同氨基酸化学性格的主要部分是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "R 基团（侧链）"
+        },
+        {
+          "id": "B",
+          "text": "所有氨基酸都相同的羧基"
+        },
+        {
+          "id": "C",
+          "text": "水分子"
+        },
+        {
+          "id": "D",
+          "text": "肽键的氧原子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "R 基团决定疏水性、极性、电荷、体积和反应性，从而影响蛋白质折叠与功能。",
+      "difficulty": "easy",
+      "tags": [
+        "side chain",
+        "amino acid classification"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "为什么 Gly 的 α-碳不构成手性中心？",
+      "options": [
+        {
+          "id": "A",
+          "text": "它没有羧基"
+        },
+        {
+          "id": "B",
+          "text": "它的 R 基团是 H，α-碳连接了两个相同取代基"
+        },
+        {
+          "id": "C",
+          "text": "它总是带负电"
+        },
+        {
+          "id": "D",
+          "text": "它没有 α-碳"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "Gly 的侧链为 H，因此 α-碳上有两个相同的氢取代基，不满足四个不同取代基的手性条件。",
+      "difficulty": "easy",
+      "tags": [
+        "glycine",
+        "chirality"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "true-false",
+      "question": "L/D 构型名称本身可以直接判断一个氨基酸的旋光方向是正还是负。",
+      "answer": false,
+      "points": 1,
+      "explanation": "L/D 描述相对构型，不直接等同于旋光方向的正负；旋光方向需要实验测定。",
+      "difficulty": "easy",
+      "tags": [
+        "stereochemistry",
+        "L-D notation"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "multiple-choice",
+      "question": "按侧链性质分类时，下列哪些类别是常用的氨基酸分类方式？",
+      "options": [
+        {
+          "id": "A",
+          "text": "非极性或疏水侧链"
+        },
+        {
+          "id": "B",
+          "text": "极性但不带电侧链"
+        },
+        {
+          "id": "C",
+          "text": "酸性或碱性、可带电侧链"
+        },
+        {
+          "id": "D",
+          "text": "所有氨基酸都必须有芳香环"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "按疏水性、极性、芳香性和侧链电离性分类，有助于预测氨基酸在蛋白质中的位置和作用。",
+      "difficulty": "easy",
+      "tags": [
+        "classification",
+        "side chain"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "在较低 pH 下，氨基酸的总体趋势是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "更容易质子化"
+        },
+        {
+          "id": "B",
+          "text": "所有基团都立即完全去质子化"
+        },
+        {
+          "id": "C",
+          "text": "R 基团一定变成自由基"
+        },
+        {
+          "id": "D",
+          "text": "与 pH 无关"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "酸性环境中 H⁺ 活度较高，羧基和氨基等可电离基团总体更偏向质子化状态。",
+      "difficulty": "medium",
+      "tags": [
+        "ionization",
+        "pH"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "当 pH=pKa 时，某一可逆酸碱对的两种形态比例约为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:1"
+        },
+        {
+          "id": "B",
+          "text": "1:10"
+        },
+        {
+          "id": "C",
+          "text": "1:100"
+        },
+        {
+          "id": "D",
+          "text": "0:1"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "由 Henderson–Hasselbalch 关系，pH=pKa 时去质子化态与质子化态的比值为 1。",
+      "difficulty": "medium",
+      "tags": [
+        "pKa",
+        "Henderson-Hasselbalch"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "等电点 pI 最准确的含义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子完全没有任何局部电荷的 pH"
+        },
+        {
+          "id": "B",
+          "text": "分子平均净电荷为零的 pH"
+        },
+        {
+          "id": "C",
+          "text": "所有基团都达到 pKa 的 pH"
+        },
+        {
+          "id": "D",
+          "text": "溶液必定为 pH 7 的 pH"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "pI 是平均净电荷为零的 pH；两性离子内部仍可能同时存在正、负电荷。",
+      "difficulty": "medium",
+      "tags": [
+        "isoelectric point",
+        "net charge"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "一个 pI 约为 3 的酸性氨基酸置于 pH 7 缓冲液中，最可能的净电荷是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "正"
+        },
+        {
+          "id": "B",
+          "text": "负"
+        },
+        {
+          "id": "C",
+          "text": "严格为零"
+        },
+        {
+          "id": "D",
+          "text": "无法由 pH 与 pI 判断"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "当环境 pH 高于 pI 时，氨基酸平均更偏去质子化，净电荷通常为负。",
+      "difficulty": "medium",
+      "tags": [
+        "pI",
+        "charge state"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "multiple-choice",
+      "question": "下列哪些属于成人常见的必需氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "His"
+        },
+        {
+          "id": "B",
+          "text": "Leu"
+        },
+        {
+          "id": "C",
+          "text": "Trp"
+        },
+        {
+          "id": "D",
+          "text": "Gly"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "His、Leu 和 Trp 属于常见成人必需氨基酸；Gly 通常不列为成人必需氨基酸。",
+      "difficulty": "medium",
+      "tags": [
+        "essential amino acids",
+        "nutrition"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "用茚三酮检测游离 α-氨基时，Pro 常见的颜色表现与多数氨基酸不同，偏向……",
+      "options": [
+        {
+          "id": "A",
+          "text": "黄色"
+        },
+        {
+          "id": "B",
+          "text": "黑色金属光泽"
+        },
+        {
+          "id": "C",
+          "text": "无色且永远无反应"
+        },
+        {
+          "id": "D",
+          "text": "绿色荧光"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "多数氨基酸的茚三酮产物偏蓝紫色，而 Pro 和羟脯氨酸是亚氨基酸，常呈黄色。",
+      "difficulty": "medium",
+      "tags": [
+        "ninhydrin",
+        "proline"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "一个 Leu 残基埋在蛋白质疏水核心时，最可能的主要作用是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "通过疏水堆积帮助稳定折叠"
+        },
+        {
+          "id": "B",
+          "text": "总是催化肽键水解"
+        },
+        {
+          "id": "C",
+          "text": "必然形成二硫键"
+        },
+        {
+          "id": "D",
+          "text": "把蛋白质变成核酸"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Leu 的非极性侧链常埋在疏水核心，通过疏水效应和紧密堆积帮助稳定蛋白质结构。",
+      "difficulty": "medium",
+      "tags": [
+        "leucine",
+        "protein folding"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "蛋白质内部微环境可以改变侧链的有效 pKa，因此表格中的游离氨基酸 pKa 不是任何位置都严格不变的常数。",
+      "answer": true,
+      "points": 1,
+      "explanation": "邻近电荷、氢键、介电环境和溶剂暴露度都会影响蛋白质内部残基的电离平衡。",
+      "difficulty": "medium",
+      "tags": [
+        "pKa",
+        "protein microenvironment"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "硒代半胱氨酸（Sec）在遗传编码和化学性质上常被强调的特点是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "由 UGA 特殊插入编码，Se 使其在生理条件下可成为更强的亲核中心"
+        },
+        {
+          "id": "B",
+          "text": "由所有终止密码子正常编码，且没有可反应原子"
+        },
+        {
+          "id": "C",
+          "text": "它就是没有侧链的 Gly"
+        },
+        {
+          "id": "D",
+          "text": "它只能存在于脂肪酸中"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Sec 是 Cys 的硫被硒替换的类似物，常由 UGA 在特殊插入机制下编码，硒醇的酸碱和亲核性质具有生物学意义。",
+      "difficulty": "medium",
+      "tags": [
+        "selenocysteine",
+        "genetic code"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "若一个埋在疏水蛋白口袋中的 Asp 比游离 Asp 更倾向保持质子化，最合理的解释是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "疏水环境不利于带负电的去质子化形式，改变了局部酸碱平衡"
+        },
+        {
+          "id": "B",
+          "text": "Asp 在蛋白质中不再含羧基"
+        },
+        {
+          "id": "C",
+          "text": "所有埋藏残基的 pKa 都必定变成 7"
+        },
+        {
+          "id": "D",
+          "text": "pH 对蛋白质内部残基不起作用"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "带电的去质子化 Asp 在低介电的疏水环境中可能受到不利溶剂化，因此其 pKa 可升高、质子化比例增加；这正是蛋白质微环境调节反应性的例子。",
+      "difficulty": "medium",
+      "tags": [
+        "extension",
+        "Aspartate",
+        "microenvironment",
+        "pKa"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "甘氨酸与丙氨酸在中性水溶液中都常以两性离子形式存在，关键结构特征是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "同时含有 NH₃⁺ 与 COO⁻"
+        },
+        {
+          "id": "B",
+          "text": "只含有中性胺"
+        },
+        {
+          "id": "C",
+          "text": "只含有羧酸阴离子而无铵基"
+        },
+        {
+          "id": "D",
+          "text": "没有可电离基团"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "氨基酸骨架中的氨基和羧基可在水中发生质子转移，形成两性离子。",
+      "difficulty": "hard",
+      "tags": [
+        "zwitterion",
+        "amino acid"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "下列哪些侧链分类与常见生化语境相符？",
+      "options": [
+        {
+          "id": "A",
+          "text": "亮氨酸为疏水侧链"
+        },
+        {
+          "id": "B",
+          "text": "天冬氨酸在中性附近通常带负电倾向"
+        },
+        {
+          "id": "C",
+          "text": "赖氨酸侧链含可质子化胺"
+        },
+        {
+          "id": "D",
+          "text": "所有氨基酸侧链都芳香"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "侧链的疏水性、酸碱性和芳香性不同，决定其在蛋白质中的角色。",
+      "difficulty": "hard",
+      "tags": [
+        "side-chain classification"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "等电点通常记作 p____。",
+      "answer": "I",
+      "acceptableAnswers": [
+        "I",
+        "i"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "等电点常写作 pI，表示净电荷平均为零的 pH 条件。",
+      "difficulty": "hard",
+      "tags": [
+        "pI"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "甘氨酸的侧链是氢原子，因此它没有手性中心。",
+      "answer": true,
+      "points": 2,
+      "explanation": "甘氨酸的 α 碳连接两个氢，不构成四个不同取代基。",
+      "difficulty": "hard",
+      "tags": [
+        "glycine",
+        "chirality"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "图示结构最适合用来说明哪类侧链化学性格？",
+      "options": [
+        {
+          "id": "A",
+          "text": "芳香、疏水且可参与 π 相互作用"
+        },
+        {
+          "id": "B",
+          "text": "带永久正电的季铵盐"
+        },
+        {
+          "id": "C",
+          "text": "含硫的可氧化侧链"
+        },
+        {
+          "id": "D",
+          "text": "只有一个羟基而无芳环"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "苯丙氨酸侧链含苯环，通常归入芳香疏水侧链；具体电离状态仍取决于环境。",
+      "difficulty": "challenging",
+      "tags": [
+        "phenylalanine",
+        "aromatic side chain"
+      ],
+      "image": {
+        "src": "assets/structure-renders/bioc-phenylalanine-phenylalanine-neutral.png",
+        "alt": "苯丙氨酸骨架示意图",
+        "caption": "立体化学未指定；由 Chemical Structure Renderer 根据明确 SMILES 渲染"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "当 pH 高于某酸性侧链的 pKa 时，该侧链去质子化比例通常____。",
+      "answer": "增加",
+      "acceptableAnswers": [
+        "增加",
+        "上升"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Henderson–Hasselbalch 关系说明 pH 升高会推动酸性基团去质子化。",
+      "difficulty": "challenging",
+      "tags": [
+        "pKa",
+        "charge"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "蛋白质序列中的侧链微环境可能改变局部 pKa，原因包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "邻近电荷的静电作用"
+        },
+        {
+          "id": "B",
+          "text": "氢键和溶剂暴露程度"
+        },
+        {
+          "id": "C",
+          "text": "局部介电环境"
+        },
+        {
+          "id": "D",
+          "text": "只由该氨基酸的分子量决定"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "蛋白质内部环境会改变质子化平衡，不能只用游离氨基酸的 pKa 机械套用。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "microenvironment"
+      ]
+    }
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

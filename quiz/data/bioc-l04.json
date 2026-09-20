@@ -5,7 +5,7 @@
   "subject": "biochemistry",
   "chapter": "Chapter 4 · Protein function",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -218,7 +218,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "Glu→Val 的单残基替换可产生异常疏水表面并促进聚集。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "HbS",
         "mutation"
@@ -249,7 +249,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "无序并不等于无功能；动态和可调的构象集合可能正是其功能基础。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "intrinsically disordered protein"
       ]
@@ -279,7 +279,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "别构效应通过构象平衡和亚基/结构域耦合改变远端功能位点。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "allostery"
       ]
@@ -309,7 +309,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "P₅₀ 越大通常表示在相同条件下氧亲和力越低。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "P50",
         "oxygen binding"
@@ -357,7 +357,7 @@
       "answer": false,
       "points": 1,
       "explanation": "共同含血红素不意味着结构和装配相同；Mb 单体、Hb 多亚基，协同效应不同。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "myoglobin",
         "hemoglobin"
@@ -447,14 +447,201 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "BPG 增加稳定 Hb 的低亲和力状态，曲线右移、P₅₀ 增大，从而促进组织释氧。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "BPG",
         "physiology"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "肌红蛋白与血红蛋白在氧结合功能上的经典差异是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "肌红蛋白更接近单亚基、非协同结合"
+        },
+        {
+          "id": "B",
+          "text": "肌红蛋白由四个相同亚基组成"
+        },
+        {
+          "id": "C",
+          "text": "血红蛋白不能结合氧"
+        },
+        {
+          "id": "D",
+          "text": "二者都没有血红素"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "肌红蛋白通常作为单体储氧；血红蛋白的多亚基组装产生协同效应。",
+      "difficulty": "hard",
+      "tags": [
+        "myoglobin",
+        "hemoglobin"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "血红蛋白氧结合曲线发生协同变化时，哪些因素可能参与？",
+      "options": [
+        {
+          "id": "A",
+          "text": "亚基间构象耦合"
+        },
+        {
+          "id": "B",
+          "text": "pH 和 Bohr 效应"
+        },
+        {
+          "id": "C",
+          "text": "2,3-BPG 对构象平衡的影响"
+        },
+        {
+          "id": "D",
+          "text": "只由蛋白质分子量决定"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "配体、质子和 BPG 都能改变 T/R 构象平衡。",
+      "difficulty": "hard",
+      "tags": [
+        "cooperativity",
+        "BPG"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "血红蛋白氧结合的低亲和构象常记作____态。",
+      "answer": "T",
+      "acceptableAnswers": [
+        "T",
+        "紧张"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "T（tense）态相对低亲和，R（relaxed）态相对高亲和。",
+      "difficulty": "hard",
+      "tags": [
+        "T/R state"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "无序蛋白没有固定折叠结构，因此不可能具有生物学功能。",
+      "answer": false,
+      "points": 2,
+      "explanation": "无序区域可通过结合伙伴、翻译后修饰和构象转换发挥调控功能。",
+      "difficulty": "hard",
+      "tags": [
+        "intrinsically disordered protein"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "HbS 的经典结构—功能联系最能说明……",
+      "options": [
+        {
+          "id": "A",
+          "text": "单个残基替换可通过疏水表面改变多聚与细胞性质"
+        },
+        {
+          "id": "B",
+          "text": "蛋白质序列变化永远不影响功能"
+        },
+        {
+          "id": "C",
+          "text": "血红蛋白没有亚基界面"
+        },
+        {
+          "id": "D",
+          "text": "所有突变只改变颜色"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "HbS 中的点突变改变表面化学，促进异常聚集并影响红细胞性质。",
+      "difficulty": "challenging",
+      "tags": [
+        "HbS",
+        "structure-function",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "配体结合使蛋白质在两种或多种构象之间重新分配，这类描述常称为构象____。",
+      "answer": "平衡",
+      "acceptableAnswers": [
+        "平衡",
+        "conformational equilibrium"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "配体通过稳定某些构象，改变构象平衡和宏观亲和力。",
+      "difficulty": "challenging",
+      "tags": [
+        "conformational equilibrium"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "解释蛋白质功能时，哪些层次应该联系起来？",
+      "options": [
+        {
+          "id": "A",
+          "text": "序列与局部化学基团"
+        },
+        {
+          "id": "B",
+          "text": "三维折叠与亚基界面"
+        },
+        {
+          "id": "C",
+          "text": "配体、环境和构象动力学"
+        },
+        {
+          "id": "D",
+          "text": "只看蛋白质的总原子数"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "蛋白质功能是序列、结构、环境和动态共同作用的结果。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "structure-function"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

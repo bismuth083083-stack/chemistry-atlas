@@ -5,7 +5,7 @@
   "subject": "inorganic-chemistry",
   "chapter": "Chapter 2 · Atomic structure",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -160,7 +160,7 @@
       ],
       "points": 1,
       "explanation": "节点是概率密度为零的区域，可能是径向节点或角节点，形状并不都相同。",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "nodes",
         "orbitals"
@@ -221,7 +221,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "内层电子部分抵消核电荷，外层电子感受到的有效核电荷小于裸核电荷。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "shielding",
         "effective nuclear charge"
@@ -256,7 +256,7 @@
       ],
       "points": 1,
       "explanation": "三条规则共同构成基态电子排布的基本框架。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "electron configuration"
       ]
@@ -317,7 +317,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "等电子时电子排布相近，核电荷增加会增强有效吸引，半径通常缩小。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "ionic radius",
         "isoelectronic"
@@ -378,7 +378,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "NH₄⁺ 的形式电荷总和为 +1；它可由 NH₃ 接受一个质子形成。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "ions",
         "formal charge"
@@ -454,14 +454,199 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "Al 的首个被移除电子来自能量较高、穿透性较弱的 3p 亚层，因而出现局部趋势反常。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "ionization energy",
         "periodic trends"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "fill-in-the-blank",
+      "question": "主量子数 n 主要决定电子所在能级层的大小和____。",
+      "answer": "能量",
+      "acceptableAnswers": [
+        "能量",
+        "energy"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "n 反映壳层尺度和能量层级；在多电子原子中还要结合其他量子数。",
+      "difficulty": "hard",
+      "tags": [
+        "quantum numbers"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于多电子原子的轨道能级，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "屏蔽效应会改变有效核电荷"
+        },
+        {
+          "id": "B",
+          "text": "穿透效应会影响轨道能量"
+        },
+        {
+          "id": "C",
+          "text": "同一主量子数下的轨道不一定简并"
+        },
+        {
+          "id": "D",
+          "text": "所有电子都感受到完整核电荷"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "多电子相互作用使轨道能级受屏蔽和穿透影响，不再只由 n 决定。",
+      "difficulty": "hard",
+      "tags": [
+        "shielding",
+        "penetration"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "true-false",
+      "question": "磁量子数 mₗ 的允许取值范围由轨道角量子数 l 决定。",
+      "answer": true,
+      "points": 2,
+      "explanation": "mₗ 可取 −l 到 +l 的整数值，代表同一亚层中不同空间取向。",
+      "difficulty": "hard",
+      "tags": [
+        "quantum numbers"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "沿周期从左到右，原子半径总体减小的主要原因是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "有效核电荷增大而屏蔽变化相对有限"
+        },
+        {
+          "id": "B",
+          "text": "电子层数立即减少"
+        },
+        {
+          "id": "C",
+          "text": "核电荷逐渐减小"
+        },
+        {
+          "id": "D",
+          "text": "所有价电子消失"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "同一主量子层中核吸引增强，使电子云平均收缩。",
+      "difficulty": "hard",
+      "tags": [
+        "periodic trends"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "对一个多电子原子，若外层电子受到更强的有效核电荷吸引，最可能出现……",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子半径变小、第一电离能增大"
+        },
+        {
+          "id": "B",
+          "text": "原子半径变大、第一电离能减小"
+        },
+        {
+          "id": "C",
+          "text": "半径和电离能都不变"
+        },
+        {
+          "id": "D",
+          "text": "电子层数自动增加"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "更强的有效核吸引通常使电子更难移除且平均距离变小。",
+      "difficulty": "challenging",
+      "tags": [
+        "effective nuclear charge",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "泡利不相容原理要求同一原子中不能有两个电子具有完全相同的四个____数。",
+      "answer": "量子",
+      "acceptableAnswers": [
+        "量子",
+        "quantum"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "每个电子的四个量子数集合必须不同。",
+      "difficulty": "challenging",
+      "tags": [
+        "Pauli principle"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "判断周期趋势时，哪些因素应同时考虑？",
+      "options": [
+        {
+          "id": "A",
+          "text": "核电荷变化"
+        },
+        {
+          "id": "B",
+          "text": "电子层数变化"
+        },
+        {
+          "id": "C",
+          "text": "屏蔽和穿透效应"
+        },
+        {
+          "id": "D",
+          "text": "只看元素在页面上的位置"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "周期趋势是多个电子结构因素的合成结果，不是简单的二维位置记忆。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "periodic trends"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

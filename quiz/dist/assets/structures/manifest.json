@@ -516,6 +516,126 @@
         "formula": "C2H7NS",
         "net_charge": 0
       }
+    },
+    {
+      "id": "org-2-4-dimethylpentane",
+      "chinese_name": "2,4-二甲基戊烷",
+      "english_name": "2-4-dimethylpentane",
+      "structure": {
+        "format": "smiles",
+        "value": "CC(C)CC(C)C"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, branched-chain naming",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C7H16",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "org-3-ethyl-2-methylpentane",
+      "chinese_name": "3-乙基-2-甲基戊烷",
+      "english_name": "3-ethyl-2-methylpentane",
+      "structure": {
+        "format": "smiles",
+        "value": "CC(C)C(CC)CC"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, parent-chain and substituent naming",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C8H18",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "inorg-sulfur-dioxide",
+      "chinese_name": "二氧化硫",
+      "english_name": "sulfur-dioxide",
+      "structure": {
+        "format": "smiles",
+        "value": "O=S=O"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry chapter 03, Lewis structure and resonance",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "O2S",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "inorg-nitrogen-dioxide",
+      "chinese_name": "二氧化氮",
+      "english_name": "nitrogen-dioxide",
+      "structure": {
+        "format": "smiles",
+        "value": "[O-][N+](=O)"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry chapter 03, odd-electron molecule model",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "NO2",
+        "net_charge": 0
+      }
     }
   ],
   "groups": [

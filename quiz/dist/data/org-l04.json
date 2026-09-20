@@ -5,7 +5,7 @@
   "subject": "organic-chemistry",
   "chapter": "Chapter 4 · Alkanes and nomenclature",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -100,7 +100,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "母体选择受最长链、主要官能团和多重键等规则共同约束，不能只凭视觉挑最直的线。",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "IUPAC",
         "parent chain"
@@ -192,7 +192,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "一级、二级、三级和四级碳分别直接连接 1、2、3、4 个其他碳原子。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "carbon degree"
       ]
@@ -257,7 +257,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "CIP 首先比较直接相连原子的原子序数，若相同再逐层比较下一层原子。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "CIP",
         "stereochemistry"
@@ -319,7 +319,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "螺环的两个环仅共享一个原子；共享边的多环体系属于稠合环等其他拓扑。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "spiro",
         "polycycles"
@@ -350,7 +350,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "椅式构象能较好地减少扭转张力和空间张力，是环己烷的重要稳定构象。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "cyclohexane",
         "conformation"
@@ -368,7 +368,7 @@
       "answer": true,
       "points": 1,
       "explanation": "环烷烃因成环少两个氢；含双键或三键也会改变通式。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "alkanes",
         "formula"
@@ -399,7 +399,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "相同取代基可用 di、tri、tetra 等前缀表示数量。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "IUPAC",
         "prefixes"
@@ -459,14 +459,209 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "系统命名应按结构层级推进：母体、主官能团或多重键、编号、取代基和字母顺序，最后复核。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "IUPAC",
         "workflow"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "下图支链烷烃的系统命名首先应选择哪条母体链？",
+      "options": [
+        {
+          "id": "A",
+          "text": "包含最多连续碳原子的链"
+        },
+        {
+          "id": "B",
+          "text": "视觉上最水平的链"
+        },
+        {
+          "id": "C",
+          "text": "只含取代基最多的链"
+        },
+        {
+          "id": "D",
+          "text": "任意五碳链"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "IUPAC 命名先确定最长连续碳链，再对取代基定位和排序。",
+      "difficulty": "hard",
+      "tags": [
+        "nomenclature",
+        "parent chain"
+      ],
+      "image": {
+        "src": "assets/structures/org-3-ethyl-2-methylpentane-3-ethyl-2-methylpentane-neutral.png",
+        "alt": "复杂支链烷烃结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CC(C)C(CC)CC 渲染"
+      }
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "选择最长母体链时，下列规则意识正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "要比较所有可能的连续路径"
+        },
+        {
+          "id": "B",
+          "text": "母体链长度优先于“看起来最直”"
+        },
+        {
+          "id": "C",
+          "text": "取代基不能重复占用母体碳"
+        },
+        {
+          "id": "D",
+          "text": "先按字母顺序选母体链"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "母体选择由结构拓扑决定，不由页面上的画法或字母顺序决定。",
+      "difficulty": "hard",
+      "tags": [
+        "parent chain"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "在普通烷烃命名中，定位号集合应遵循最低____组规则。",
+      "answer": "定位号",
+      "acceptableAnswers": [
+        "定位号",
+        "locant"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "从两端编号时比较第一处差异，选择较低的定位号组。",
+      "difficulty": "hard",
+      "tags": [
+        "locants"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "取代基名称的字母顺序会改变母体链的选择。",
+      "answer": false,
+      "points": 2,
+      "explanation": "母体链和编号应先依据结构规则确定；字母顺序主要用于排列取代基名称。",
+      "difficulty": "hard",
+      "tags": [
+        "alphabetical order"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "图中 2,4-二甲基戊烷的名称中，“2,4”表达的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "两个甲基取代基在母体链上的定位号"
+        },
+        {
+          "id": "B",
+          "text": "两个双键的定位号"
+        },
+        {
+          "id": "C",
+          "text": "分子有 2 个碳和 4 个氢"
+        },
+        {
+          "id": "D",
+          "text": "两种构象的比例"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "定位号指出取代基连接在五碳母体链的第 2 和第 4 个碳上。",
+      "difficulty": "challenging",
+      "tags": [
+        "nomenclature",
+        "extension"
+      ],
+      "image": {
+        "src": "assets/structures/org-2-4-dimethylpentane-2-4-dimethylpentane-neutral.png",
+        "alt": "2,4-二甲基戊烷结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CC(C)CC(C)C 渲染"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "当一个环烷烃作为母体且只有一个取代基时，通常可以省略该取代基的环上定位号____。",
+      "answer": "1",
+      "acceptableAnswers": [
+        "一",
+        "1"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "单取代环烷烃中，取代位置默认是 1 位；多取代时必须编号比较定位号组。",
+      "difficulty": "challenging",
+      "tags": [
+        "cycloalkane nomenclature"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "面对复杂支链或环状结构进行命名时，哪些步骤顺序更可靠？",
+      "options": [
+        {
+          "id": "A",
+          "text": "选定母体结构"
+        },
+        {
+          "id": "B",
+          "text": "从正确方向编号并比较定位号"
+        },
+        {
+          "id": "C",
+          "text": "识别并按规则排列取代基"
+        },
+        {
+          "id": "D",
+          "text": "先猜一个名字再调整结构去匹配"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "命名应从结构到名称，而不是把结构强行改成先入为主的名称。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "IUPAC"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

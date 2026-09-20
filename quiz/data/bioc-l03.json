@@ -5,7 +5,7 @@
   "subject": "biochemistry",
   "chapter": "Chapter 3 · Protein structure",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -71,7 +71,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "ω 角反映肽键平面两侧主链原子的相对扭转，通常接近 trans 或较少见 cis。",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "omega angle",
         "backbone"
@@ -194,7 +194,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "α 螺旋的主链氢键沿螺旋轴重复，常用 i→i+4 描述。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "alpha helix",
         "hydrogen bonding"
@@ -225,7 +225,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "β 链通过主链间氢键形成折叠片层，可为平行或反平行排列。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "beta sheet",
         "hydrogen bonding"
@@ -256,7 +256,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "局部 α 螺旋/β 折叠是二级结构，更大尺度的疏水、静电、氢键和二硫键组织构成三级结构。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "secondary structure",
         "tertiary structure"
@@ -321,7 +321,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "四级结构描述多个独立或半独立亚基的组装和相互作用。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "quaternary structure"
       ]
@@ -351,7 +351,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "疏水效应促使非极性侧链减少与水接触，常形成内部核心。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "hydrophobic core"
       ]
@@ -454,14 +454,204 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "Pro 的吡咯烷环限制主链构象，且其肽键氮通常没有可供出的 N–H，常破坏规则氢键网络。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "proline",
         "alpha helix"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "肽键具有部分双键性质的主要后果是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "肽平面内旋转受限"
+        },
+        {
+          "id": "B",
+          "text": "所有单键都完全不能旋转"
+        },
+        {
+          "id": "C",
+          "text": "肽键没有极性"
+        },
+        {
+          "id": "D",
+          "text": "蛋白质只能形成直线"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "共振使肽键接近平面结构，ω 角旋转受到限制。",
+      "difficulty": "hard",
+      "tags": [
+        "peptide bond",
+        "planarity"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "Ramachandran 图主要用于分析……",
+      "options": [
+        {
+          "id": "A",
+          "text": "主链 φ/ψ 二面角组合"
+        },
+        {
+          "id": "B",
+          "text": "构象允许区域"
+        },
+        {
+          "id": "C",
+          "text": "局部立体冲突"
+        },
+        {
+          "id": "D",
+          "text": "直接测定氨基酸序列"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "Ramachandran 图反映主链构象空间，不直接给出序列。",
+      "difficulty": "hard",
+      "tags": [
+        "Ramachandran plot"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "蛋白质二级结构中，α-螺旋和 β-折叠的主要稳定力之一是主链之间的____键。",
+      "answer": "氢",
+      "acceptableAnswers": [
+        "氢键",
+        "氢"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "主链 C=O 与 N–H 之间的氢键是二级结构的重要稳定因素。",
+      "difficulty": "hard",
+      "tags": [
+        "secondary structure"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "四级结构只适用于含有多个多肽链的蛋白质复合体。",
+      "answer": true,
+      "points": 2,
+      "explanation": "四级结构描述多个独立折叠亚基的空间组装；单链蛋白没有通常意义上的四级结构。",
+      "difficulty": "hard",
+      "tags": [
+        "quaternary structure"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "甘氨酸残基在 Ramachandran 图中允许区域更宽，主要因为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "侧链只有氢，空间位阻较小"
+        },
+        {
+          "id": "B",
+          "text": "它含有芳香环"
+        },
+        {
+          "id": "C",
+          "text": "它总是带正电"
+        },
+        {
+          "id": "D",
+          "text": "它没有肽键"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "甘氨酸侧链最小，因此主链二面角受到的立体阻碍较少。",
+      "difficulty": "challenging",
+      "tags": [
+        "glycine",
+        "extension"
+      ],
+      "image": {
+        "src": "assets/structure-renders/bioc-gly-gly-gly-gly-peptide-neutral.png",
+        "alt": "甘氨酸二肽结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确结构输入渲染"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "蛋白质结构从一级到四级的组织层级中，一级结构指氨基酸的____序列。",
+      "answer": "线性",
+      "acceptableAnswers": [
+        "线性",
+        "linear"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "一级结构是共价连接的氨基酸线性序列。",
+      "difficulty": "challenging",
+      "tags": [
+        "protein structure"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "判断一个蛋白质结构模型是否可信时，可以检查……",
+      "options": [
+        {
+          "id": "A",
+          "text": "键长、键角和立体冲突"
+        },
+        {
+          "id": "B",
+          "text": "Ramachandran 图分布"
+        },
+        {
+          "id": "C",
+          "text": "实验数据与模型的独立一致性"
+        },
+        {
+          "id": "D",
+          "text": "只看模型渲染得是否好看"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "结构模型要同时满足化学几何、构象合理性和实验约束。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "structure validation"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

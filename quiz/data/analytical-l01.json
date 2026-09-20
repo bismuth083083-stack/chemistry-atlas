@@ -5,23 +5,661 @@
   "subject": "Analytical Chemistry",
   "chapter": "Chapter 1 · Analytical thinking",
   "version": "1.0.0",
-  "totalPoints": 16,
-  "selection": { "mode": "fixed" },
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
   "questions": [
-    { "id": "q001", "type": "single-choice", "question": "分析化学最核心的任务是……", "options": [{ "id": "A", "text": "只合成新的化合物" }, { "id": "B", "text": "获得样品组成、含量、位置或结构等可靠信息" }, { "id": "C", "text": "只观察颜色变化" }, { "id": "D", "text": "只测量温度" }], "answer": "B", "points": 1, "explanation": "分析化学通过定性、定量、结构和形态等信息回答样品中有什么、多少、在哪里以及以何种形式存在。", "difficulty": "easy", "tags": ["scope", "analytical problem"] },
-    { "id": "q002", "type": "multiple-choice", "question": "下列哪些属于分析化学常见的信息类型？", "options": [{ "id": "A", "text": "定性信息" }, { "id": "B", "text": "定量信息" }, { "id": "C", "text": "结构或形态信息" }, { "id": "D", "text": "只凭样品名称推测结论" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "分析工作可以回答身份、含量、结构、形态和空间位置等问题；样品名称本身不是测量结果。", "difficulty": "easy", "tags": ["qualitative", "quantitative", "structure"] },
-    { "id": "q003", "type": "single-choice", "question": "选择性（selectivity）与特异性（specificity）的区别是……", "options": [{ "id": "A", "text": "选择性强调能在干扰物存在下偏向测定目标，特异性是更强的几乎排他性" }, { "id": "B", "text": "两者完全没有区别" }, { "id": "C", "text": "选择性只用于颜色，特异性只用于质量" }, { "id": "D", "text": "特异性意味着不需要校准" }], "answer": "A", "points": 1, "explanation": "选择性描述方法区分目标物与干扰物的能力；特异性是理想化的更强情形，表示几乎只对目标物响应。", "difficulty": "medium", "tags": ["selectivity", "specificity"] },
-    { "id": "q004", "type": "single-choice", "question": "教材归纳的分析流程中，最先应做的是……", "options": [{ "id": "A", "text": "立即上机测量" }, { "id": "B", "text": "明确分析问题和需要的信息" }, { "id": "C", "text": "先删除异常数据" }, { "id": "D", "text": "先选择最昂贵的仪器" }], "answer": "B", "points": 1, "explanation": "分析流程通常从定义问题开始，再选择方法、获得代表性样品、制样、分离、测量并计算报告。", "difficulty": "easy", "tags": ["analytical workflow", "method selection"] },
-    { "id": "q005", "type": "single-choice", "question": "为什么必须获得代表性样品？", "options": [{ "id": "A", "text": "因为仪器只能测量透明液体" }, { "id": "B", "text": "因为少量取样需要反映总体样品的真实组成" }, { "id": "C", "text": "因为代表性样品不需要保存记录" }, { "id": "D", "text": "因为所有样品都是均匀的" }], "answer": "B", "points": 1, "explanation": "如果取样不能代表总体，即使后续测量精密准确，结果也可能只描述了错误的那一小部分。", "difficulty": "medium", "tags": ["sampling", "representative sample"] },
-    { "id": "q006", "type": "single-choice", "question": "分析空白（blank）通常包含……", "options": [{ "id": "A", "text": "目标分析物的高浓度标准" }, { "id": "B", "text": "全部试剂和水，并经过完整流程，但不含目标分析物" }, { "id": "C", "text": "只有仪器电源" }, { "id": "D", "text": "只含样品而不含试剂" }], "answer": "B", "points": 1, "explanation": "空白用于估计试剂、容器、环境和流程本身带来的背景响应，因此应尽量复制完整流程但不加入分析物。", "difficulty": "easy", "tags": ["blank", "quality control"] },
-    { "id": "q007", "type": "single-choice", "question": "下列哪一项属于绝对分析方法的特点？", "options": [{ "id": "A", "text": "结果原则上可由基本物理量和化学计量直接得到，不必依赖同类标准校准曲线" }, { "id": "B", "text": "完全不需要准确称量" }, { "id": "C", "text": "只能进行定性分析" }, { "id": "D", "text": "一定比相对方法更快" }], "answer": "A", "points": 1, "explanation": "绝对方法如理想化的重量分析或滴定，结果可直接联系基本测量量和化学计量；相对方法通常与标准或校准比较。", "difficulty": "medium", "tags": ["absolute method", "relative method"] },
-    { "id": "q008", "type": "single-choice", "question": "按样品质量尺度，10–100 mg 通常属于……", "options": [{ "id": "A", "text": "宏量分析" }, { "id": "B", "text": "半微量（meso）分析" }, { "id": "C", "text": "微量分析" }, { "id": "D", "text": "超微量分析" }], "answer": "B", "points": 1, "explanation": "课程的尺度划分中，宏量大于 100 mg，半微量约 10–100 mg，微量约 1–10 mg，超微量小于 1 mg。", "difficulty": "easy", "tags": ["sample scale", "meso analysis"] },
-    { "id": "q009", "type": "single-choice", "question": "按浓度分类，低于 0.1% 的组分通常可称为……", "options": [{ "id": "A", "text": "主要组分" }, { "id": "B", "text": "次要组分" }, { "id": "C", "text": "痕量组分" }, { "id": "D", "text": "溶剂" }], "answer": "C", "points": 1, "explanation": "课程约定主要组分大于 1%，次要组分约 0.1–1%，低于 0.1% 为痕量；ppb 或更低还可称超痕量。", "difficulty": "easy", "tags": ["concentration", "trace analysis"] },
-    { "id": "q010", "type": "single-choice", "question": "重力分析（gravimetry）的核心测量量是……", "options": [{ "id": "A", "text": "沉淀或其他可称量形式的质量" }, { "id": "B", "text": "光的波长" }, { "id": "C", "text": "电极电势" }, { "id": "D", "text": "样品的气味" }], "answer": "A", "points": 1, "explanation": "重力分析通过把分析物转化为组成明确、可分离称量的形式，再依据化学计量计算含量。", "difficulty": "easy", "tags": ["gravimetry", "quantitative analysis"] },
-    { "id": "q011", "type": "single-choice", "question": "色谱–质谱联用在复杂样品中尤其有利于……", "options": [{ "id": "A", "text": "分离组分并依据质谱信息支持身份判断与定量" }, { "id": "B", "text": "完全跳过采样和制样" }, { "id": "C", "text": "只测量样品的体积" }, { "id": "D", "text": "保证所有信号都来自目标物" }], "answer": "A", "points": 1, "explanation": "色谱提供时间或空间分离，质谱提供质荷比和碎片等信息；两者结合能增强复杂基质中的鉴别能力，但仍需校准和验证。", "difficulty": "medium", "tags": ["chromatography", "mass spectrometry"] },
-    { "id": "q012", "type": "multiple-choice", "question": "兴奋剂检测的分析链条通常包括哪些阶段？", "options": [{ "id": "A", "text": "筛查" }, { "id": "B", "text": "确认" }, { "id": "C", "text": "必要时定量或报告浓度" }, { "id": "D", "text": "只凭一次颜色反应直接定罪" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "筛查用于快速发现可疑目标，确认需要更有选择性或特异性的证据；规则要求时还需定量和规范报告。", "difficulty": "medium", "tags": ["case study", "screening", "confirmation"] },
-    { "id": "q013", "type": "true-false", "question": "低于检出限（LOD）的结果应直接写成样品中目标物浓度为零。", "answer": false, "points": 1, "explanation": "低于 LOD 只表示在当前方法和条件下无法可靠检出，不等于目标物绝对不存在。", "difficulty": "medium", "tags": ["LOD", "reporting"] },
-    { "id": "q014", "type": "multiple-choice", "question": "下列哪些说法有助于区分准确度和精密度？", "options": [{ "id": "A", "text": "准确度关注结果接近真值的程度" }, { "id": "B", "text": "精密度关注重复测量之间的一致性" }, { "id": "C", "text": "数据可以精密但有系统偏差" }, { "id": "D", "text": "精密度高必然准确度高" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "准确度和精密度是不同维度；重复结果很集中并不能排除系统误差。", "difficulty": "medium", "tags": ["accuracy", "precision", "uncertainty"] },
-    { "id": "q015", "type": "single-choice", "question": "若要在复杂火星土壤样品中确认一种低含量有机物，最合理的分析策略是……", "options": [{ "id": "A", "text": "跳过采样代表性和空白，直接把单个峰当作结论" }, { "id": "B", "text": "先设计代表性采样和空白，再用具有分离能力的仪器方法，并用标准或独立证据确认身份与含量" }, { "id": "C", "text": "只凭样品颜色判断" }, { "id": "D", "text": "只报告仪器读数，不说明单位和不确定度" }], "answer": "B", "points": 2, "explanation": "复杂样品需要完整证据链：问题定义、代表性采样、制样与空白、选择性分离、测量、校准和报告。单个峰或未经验证的读数不足以建立可靠结论。", "difficulty": "hard", "tags": ["extension", "Mars SAM", "evidence chain"] }
-  ]
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "分析化学最核心的任务是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "只合成新的化合物"
+        },
+        {
+          "id": "B",
+          "text": "获得样品组成、含量、位置或结构等可靠信息"
+        },
+        {
+          "id": "C",
+          "text": "只观察颜色变化"
+        },
+        {
+          "id": "D",
+          "text": "只测量温度"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "分析化学通过定性、定量、结构和形态等信息回答样品中有什么、多少、在哪里以及以何种形式存在。",
+      "difficulty": "easy",
+      "tags": [
+        "scope",
+        "analytical problem"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "multiple-choice",
+      "question": "下列哪些属于分析化学常见的信息类型？",
+      "options": [
+        {
+          "id": "A",
+          "text": "定性信息"
+        },
+        {
+          "id": "B",
+          "text": "定量信息"
+        },
+        {
+          "id": "C",
+          "text": "结构或形态信息"
+        },
+        {
+          "id": "D",
+          "text": "只凭样品名称推测结论"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "分析工作可以回答身份、含量、结构、形态和空间位置等问题；样品名称本身不是测量结果。",
+      "difficulty": "easy",
+      "tags": [
+        "qualitative",
+        "quantitative",
+        "structure"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "选择性（selectivity）与特异性（specificity）的区别是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "选择性强调能在干扰物存在下偏向测定目标，特异性是更强的几乎排他性"
+        },
+        {
+          "id": "B",
+          "text": "两者完全没有区别"
+        },
+        {
+          "id": "C",
+          "text": "选择性只用于颜色，特异性只用于质量"
+        },
+        {
+          "id": "D",
+          "text": "特异性意味着不需要校准"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "选择性描述方法区分目标物与干扰物的能力；特异性是理想化的更强情形，表示几乎只对目标物响应。",
+      "difficulty": "easy",
+      "tags": [
+        "selectivity",
+        "specificity"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "教材归纳的分析流程中，最先应做的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即上机测量"
+        },
+        {
+          "id": "B",
+          "text": "明确分析问题和需要的信息"
+        },
+        {
+          "id": "C",
+          "text": "先删除异常数据"
+        },
+        {
+          "id": "D",
+          "text": "先选择最昂贵的仪器"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "分析流程通常从定义问题开始，再选择方法、获得代表性样品、制样、分离、测量并计算报告。",
+      "difficulty": "easy",
+      "tags": [
+        "analytical workflow",
+        "method selection"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "为什么必须获得代表性样品？",
+      "options": [
+        {
+          "id": "A",
+          "text": "因为仪器只能测量透明液体"
+        },
+        {
+          "id": "B",
+          "text": "因为少量取样需要反映总体样品的真实组成"
+        },
+        {
+          "id": "C",
+          "text": "因为代表性样品不需要保存记录"
+        },
+        {
+          "id": "D",
+          "text": "因为所有样品都是均匀的"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "如果取样不能代表总体，即使后续测量精密准确，结果也可能只描述了错误的那一小部分。",
+      "difficulty": "easy",
+      "tags": [
+        "sampling",
+        "representative sample"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "分析空白（blank）通常包含……",
+      "options": [
+        {
+          "id": "A",
+          "text": "目标分析物的高浓度标准"
+        },
+        {
+          "id": "B",
+          "text": "全部试剂和水，并经过完整流程，但不含目标分析物"
+        },
+        {
+          "id": "C",
+          "text": "只有仪器电源"
+        },
+        {
+          "id": "D",
+          "text": "只含样品而不含试剂"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "空白用于估计试剂、容器、环境和流程本身带来的背景响应，因此应尽量复制完整流程但不加入分析物。",
+      "difficulty": "medium",
+      "tags": [
+        "blank",
+        "quality control"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "下列哪一项属于绝对分析方法的特点？",
+      "options": [
+        {
+          "id": "A",
+          "text": "结果原则上可由基本物理量和化学计量直接得到，不必依赖同类标准校准曲线"
+        },
+        {
+          "id": "B",
+          "text": "完全不需要准确称量"
+        },
+        {
+          "id": "C",
+          "text": "只能进行定性分析"
+        },
+        {
+          "id": "D",
+          "text": "一定比相对方法更快"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "绝对方法如理想化的重量分析或滴定，结果可直接联系基本测量量和化学计量；相对方法通常与标准或校准比较。",
+      "difficulty": "medium",
+      "tags": [
+        "absolute method",
+        "relative method"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "按样品质量尺度，10–100 mg 通常属于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "宏量分析"
+        },
+        {
+          "id": "B",
+          "text": "半微量（meso）分析"
+        },
+        {
+          "id": "C",
+          "text": "微量分析"
+        },
+        {
+          "id": "D",
+          "text": "超微量分析"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "课程的尺度划分中，宏量大于 100 mg，半微量约 10–100 mg，微量约 1–10 mg，超微量小于 1 mg。",
+      "difficulty": "medium",
+      "tags": [
+        "sample scale",
+        "meso analysis"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "按浓度分类，低于 0.1% 的组分通常可称为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "主要组分"
+        },
+        {
+          "id": "B",
+          "text": "次要组分"
+        },
+        {
+          "id": "C",
+          "text": "痕量组分"
+        },
+        {
+          "id": "D",
+          "text": "溶剂"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "课程约定主要组分大于 1%，次要组分约 0.1–1%，低于 0.1% 为痕量；ppb 或更低还可称超痕量。",
+      "difficulty": "medium",
+      "tags": [
+        "concentration",
+        "trace analysis"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "重力分析（gravimetry）的核心测量量是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "沉淀或其他可称量形式的质量"
+        },
+        {
+          "id": "B",
+          "text": "光的波长"
+        },
+        {
+          "id": "C",
+          "text": "电极电势"
+        },
+        {
+          "id": "D",
+          "text": "样品的气味"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "重力分析通过把分析物转化为组成明确、可分离称量的形式，再依据化学计量计算含量。",
+      "difficulty": "medium",
+      "tags": [
+        "gravimetry",
+        "quantitative analysis"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "色谱–质谱联用在复杂样品中尤其有利于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分离组分并依据质谱信息支持身份判断与定量"
+        },
+        {
+          "id": "B",
+          "text": "完全跳过采样和制样"
+        },
+        {
+          "id": "C",
+          "text": "只测量样品的体积"
+        },
+        {
+          "id": "D",
+          "text": "保证所有信号都来自目标物"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "色谱提供时间或空间分离，质谱提供质荷比和碎片等信息；两者结合能增强复杂基质中的鉴别能力，但仍需校准和验证。",
+      "difficulty": "medium",
+      "tags": [
+        "chromatography",
+        "mass spectrometry"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "multiple-choice",
+      "question": "兴奋剂检测的分析链条通常包括哪些阶段？",
+      "options": [
+        {
+          "id": "A",
+          "text": "筛查"
+        },
+        {
+          "id": "B",
+          "text": "确认"
+        },
+        {
+          "id": "C",
+          "text": "必要时定量或报告浓度"
+        },
+        {
+          "id": "D",
+          "text": "只凭一次颜色反应直接定罪"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "筛查用于快速发现可疑目标，确认需要更有选择性或特异性的证据；规则要求时还需定量和规范报告。",
+      "difficulty": "medium",
+      "tags": [
+        "case study",
+        "screening",
+        "confirmation"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "低于检出限（LOD）的结果应直接写成样品中目标物浓度为零。",
+      "answer": false,
+      "points": 1,
+      "explanation": "低于 LOD 只表示在当前方法和条件下无法可靠检出，不等于目标物绝对不存在。",
+      "difficulty": "medium",
+      "tags": [
+        "LOD",
+        "reporting"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "下列哪些说法有助于区分准确度和精密度？",
+      "options": [
+        {
+          "id": "A",
+          "text": "准确度关注结果接近真值的程度"
+        },
+        {
+          "id": "B",
+          "text": "精密度关注重复测量之间的一致性"
+        },
+        {
+          "id": "C",
+          "text": "数据可以精密但有系统偏差"
+        },
+        {
+          "id": "D",
+          "text": "精密度高必然准确度高"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "准确度和精密度是不同维度；重复结果很集中并不能排除系统误差。",
+      "difficulty": "medium",
+      "tags": [
+        "accuracy",
+        "precision",
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "若要在复杂火星土壤样品中确认一种低含量有机物，最合理的分析策略是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "跳过采样代表性和空白，直接把单个峰当作结论"
+        },
+        {
+          "id": "B",
+          "text": "先设计代表性采样和空白，再用具有分离能力的仪器方法，并用标准或独立证据确认身份与含量"
+        },
+        {
+          "id": "C",
+          "text": "只凭样品颜色判断"
+        },
+        {
+          "id": "D",
+          "text": "只报告仪器读数，不说明单位和不确定度"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "复杂样品需要完整证据链：问题定义、代表性采样、制样与空白、选择性分离、测量、校准和报告。单个峰或未经验证的读数不足以建立可靠结论。",
+      "difficulty": "medium",
+      "tags": [
+        "extension",
+        "Mars SAM",
+        "evidence chain"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "multiple-choice",
+      "question": "一个可靠的分析结果通常需要哪些配套信息？",
+      "options": [
+        {
+          "id": "A",
+          "text": "样品采集与处理记录"
+        },
+        {
+          "id": "B",
+          "text": "校准和质量控制证据"
+        },
+        {
+          "id": "C",
+          "text": "单位、不确定度或报告限制"
+        },
+        {
+          "id": "D",
+          "text": "只给出一个没有单位的数值"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "分析结果必须能追溯到样品、方法、校准和报告条件。",
+      "difficulty": "hard",
+      "tags": [
+        "quality assurance",
+        "reporting"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "fill-in-the-blank",
+      "question": "空白测定用于估计分析流程本身带来的____响应。",
+      "answer": "背景",
+      "acceptableAnswers": [
+        "背景",
+        "background"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "空白复制主要流程但不含目标分析物，用于评估试剂、容器和仪器背景。",
+      "difficulty": "hard",
+      "tags": [
+        "blank"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "当方法对目标物响应稳定但对共存物也有响应时，最需要关注的方法学性质是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "选择性"
+        },
+        {
+          "id": "B",
+          "text": "沸点"
+        },
+        {
+          "id": "C",
+          "text": "颜色"
+        },
+        {
+          "id": "D",
+          "text": "样品名称"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "选择性衡量方法在干扰物存在下区分目标物的能力。",
+      "difficulty": "hard",
+      "tags": [
+        "selectivity"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "精密度高就能证明测量结果没有系统误差。",
+      "answer": false,
+      "points": 2,
+      "explanation": "重复结果可以很集中但整体偏离真值；精密度不能替代准确度和偏差评估。",
+      "difficulty": "hard",
+      "tags": [
+        "precision",
+        "accuracy"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "某痕量分析方法在复杂基质中出现一个与目标物相同保留时间的峰，最合理的下一步是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "用标准、空白和独立检测证据确认身份"
+        },
+        {
+          "id": "B",
+          "text": "立即把峰面积当成目标物含量"
+        },
+        {
+          "id": "C",
+          "text": "删除所有不符合预期的重复"
+        },
+        {
+          "id": "D",
+          "text": "只依据样品颜色确认"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "保留时间相同不足以排除共洗脱；需要空白、加标、标准或正交方法支持。",
+      "difficulty": "challenging",
+      "tags": [
+        "confirmation",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "当信号低于方法检出限时，更严谨的报告是“低于____”，而不是“浓度为零”。",
+      "answer": "检出限",
+      "acceptableAnswers": [
+        "LOD",
+        "检测限",
+        "检出限"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "LOD 以下表示当前方法不能可靠检出，不表示样品中绝对不存在目标物。",
+      "difficulty": "challenging",
+      "tags": [
+        "LOD",
+        "reporting"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "若要比较两个分析方法，哪些维度值得同时考察？",
+      "options": [
+        {
+          "id": "A",
+          "text": "准确度和精密度"
+        },
+        {
+          "id": "B",
+          "text": "选择性与检出能力"
+        },
+        {
+          "id": "C",
+          "text": "样品前处理、通量和成本"
+        },
+        {
+          "id": "D",
+          "text": "只比较仪器屏幕上的峰高"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "方法选择应综合性能、样品链条和实际资源，而不是只比较单一信号。",
+      "difficulty": "challenging",
+      "tags": [
+        "method comparison",
+        "extension"
+      ]
+    }
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

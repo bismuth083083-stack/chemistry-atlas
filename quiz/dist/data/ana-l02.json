@@ -5,7 +5,7 @@
   "subject": "analytical-chemistry",
   "chapter": "Chapter 2 · Operations and sample preparation",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -255,7 +255,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "检出限和定量限回答不同问题，LOQ 通常要求更可靠的定量准确度和精密度。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "LOD",
         "LOQ"
@@ -286,7 +286,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "鲁棒方法对温度、流速、时间等小变化不应过度敏感。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "robustness",
         "validation"
@@ -348,7 +348,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "容量瓶在校准刻度处提供准确体积，适合定容配液。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "volumetric flask"
       ]
@@ -409,7 +409,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "一级标准物质要能准确称量并以明确计量关系制备标准溶液。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "primary standard",
         "standard solution"
@@ -440,7 +440,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "理想稀释中溶质物质的量守恒，故 C₁V₁=C₂V₂。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "dilution",
         "standard solution"
@@ -469,14 +469,201 @@
         }
       ],
       "answer": "C",
-      "points": 2,
+      "points": 1,
       "explanation": "n=CV=0.2000×0.5000=0.1000 mol，m=nM=0.1000×106.0=10.60 g。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "calculation",
         "standard solution"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "容量瓶最适合用于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "配制已知体积和浓度的标准溶液"
+        },
+        {
+          "id": "B",
+          "text": "直接称量固体质量"
+        },
+        {
+          "id": "C",
+          "text": "强力研磨样品"
+        },
+        {
+          "id": "D",
+          "text": "加热至恒重"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "容量瓶的刻度和校准体积适合定容配液，不是称量或加热器皿。",
+      "difficulty": "hard",
+      "tags": [
+        "volumetric flask"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "良好实验操作（GLP）通常包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "记录样品和试剂批次"
+        },
+        {
+          "id": "B",
+          "text": "记录仪器状态和关键操作"
+        },
+        {
+          "id": "C",
+          "text": "保留原始数据与更改痕迹"
+        },
+        {
+          "id": "D",
+          "text": "只记录最终数字"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "GLP 强调可追溯性、完整记录和数据完整性。",
+      "difficulty": "hard",
+      "tags": [
+        "GLP",
+        "traceability"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "由浓标准溶液配制低浓度溶液时，常用关系式为 C₁V₁=C₂____。",
+      "answer": "V₂",
+      "acceptableAnswers": [
+        "V2",
+        "V₂"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "稀释前后溶质的量相等，故 C₁V₁=C₂V₂。",
+      "difficulty": "hard",
+      "tags": [
+        "dilution"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "移液管吹掉尖端残留液体可以提高所有容量器皿的准确度。",
+      "answer": false,
+      "points": 2,
+      "explanation": "是否吹液取决于器皿校准类型和制造规范；不能一概而论。",
+      "difficulty": "hard",
+      "tags": [
+        "pipette",
+        "volumetric glassware"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "若样品基质会堵塞仪器或造成严重基线干扰，最合理的制样策略是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "先进行适当过滤、消解或分离，并验证回收率"
+        },
+        {
+          "id": "B",
+          "text": "直接稀释到不可检出"
+        },
+        {
+          "id": "C",
+          "text": "删去异常结果而不调查原因"
+        },
+        {
+          "id": "D",
+          "text": "只更换显示器颜色"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "制样要降低基质影响，同时用回收率、空白或加标实验确认处理没有损失目标物。",
+      "difficulty": "challenging",
+      "tags": [
+        "sample preparation",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "分析天平称量时，记录的有效数字应与仪器的____分辨率相匹配。",
+      "answer": "显示",
+      "acceptableAnswers": [
+        "显示",
+        "display"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "记录位数不能超过仪器分辨率，也不应少到丢失有用信息。",
+      "difficulty": "challenging",
+      "tags": [
+        "balance",
+        "significant figures"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "验证一种样品前处理流程时，哪些实验最有信息量？",
+      "options": [
+        {
+          "id": "A",
+          "text": "空白实验"
+        },
+        {
+          "id": "B",
+          "text": "加标回收实验"
+        },
+        {
+          "id": "C",
+          "text": "重复制样或平行样"
+        },
+        {
+          "id": "D",
+          "text": "只做一次未经记录的试验"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "空白查背景、回收查损失与基质效应、平行样查重复性，三者共同构成证据链。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "method validation"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

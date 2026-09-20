@@ -5,7 +5,7 @@
   "subject": "biochemistry",
   "chapter": "Chapter 2 · Amino acids",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -165,7 +165,7 @@
       ],
       "points": 1,
       "explanation": "分类的价值在于预测残基在蛋白质中的化学环境和可能作用。",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "classification",
         "side chains"
@@ -196,7 +196,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "Henderson–Hasselbalch 关系给出 pH=pKa 时两态比例为 1。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "pKa"
       ]
@@ -226,7 +226,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "等电点是平均净电荷为零，不代表分子内部没有正、负局部电荷。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "pI",
         "net charge"
@@ -257,7 +257,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "较高 pH 促进去质子化；相对于 pI，分子平均净电荷趋向负。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "pI",
         "charge state"
@@ -322,7 +322,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "Pro 是亚氨基酸，茚三酮产物常呈黄色而区别于多数 α-氨基酸。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "proline",
         "ninhydrin"
@@ -466,14 +466,208 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "低介电疏水环境可能不利于负电荷，使 Asp 的质子化状态被稳定。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "Asp",
         "microenvironment"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "氨基酸侧链的 pKa 发生变化时，最直接受影响的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "该残基在特定 pH 下的电荷比例"
+        },
+        {
+          "id": "B",
+          "text": "碳原子数自动改变"
+        },
+        {
+          "id": "C",
+          "text": "肽键必然断裂"
+        },
+        {
+          "id": "D",
+          "text": "所有蛋白质都变性"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "pKa 改变会改变质子化平衡，从而改变侧链的平均电荷。",
+      "difficulty": "hard",
+      "tags": [
+        "pKa",
+        "charge"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "判断一个侧链是否适合埋藏在蛋白质内部时，可考虑……",
+      "options": [
+        {
+          "id": "A",
+          "text": "疏水性"
+        },
+        {
+          "id": "B",
+          "text": "氢键和离子相互作用潜力"
+        },
+        {
+          "id": "C",
+          "text": "侧链体积与堆积"
+        },
+        {
+          "id": "D",
+          "text": "只看单字母代码"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "蛋白质折叠把疏水、极性、电荷和体积共同纳入空间组织。",
+      "difficulty": "hard",
+      "tags": [
+        "side chain",
+        "protein folding"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "半胱氨酸的硫醇侧链可形成二硫键，氧化后的连接形式常写作____键。",
+      "answer": "二硫",
+      "acceptableAnswers": [
+        "二硫",
+        "disulfide"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "两个半胱氨酸残基的硫原子氧化偶联形成二硫键。",
+      "difficulty": "hard",
+      "tags": [
+        "cysteine",
+        "disulfide"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "同一个氨基酸残基在蛋白质内部和水溶液中的 pKa 必然完全相同。",
+      "answer": false,
+      "points": 2,
+      "explanation": "局部介电环境、氢键、邻近电荷和溶剂暴露都会改变有效 pKa。",
+      "difficulty": "hard",
+      "tags": [
+        "microenvironment",
+        "pKa"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "苯丙氨酸骨架中的苯环最可能贡献哪类相互作用？",
+      "options": [
+        {
+          "id": "A",
+          "text": "疏水堆积与芳香 π 相互作用"
+        },
+        {
+          "id": "B",
+          "text": "永久负电的磷酸基团"
+        },
+        {
+          "id": "C",
+          "text": "二硫键"
+        },
+        {
+          "id": "D",
+          "text": "肽键平面本身"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "苯环通常提供疏水表面，也可能参与芳香环之间的 π 相互作用。",
+      "difficulty": "challenging",
+      "tags": [
+        "phenylalanine",
+        "aromatic"
+      ],
+      "image": {
+        "src": "assets/structure-renders/bioc-phenylalanine-phenylalanine-neutral.png",
+        "alt": "苯丙氨酸骨架示意图",
+        "caption": "立体化学未指定；由 Chemical Structure Renderer 渲染"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "若 pH 低于羧基 pKa，羧基以未解离的____形式比例更高。",
+      "answer": "COOH",
+      "acceptableAnswers": [
+        "COOH",
+        "羧酸"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "低于酸性基团 pKa 时，质子化的 COOH 形式比例更高。",
+      "difficulty": "challenging",
+      "tags": [
+        "acid-base",
+        "carboxyl"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "解释蛋白质中残基电荷时，哪些陈述更谨慎？",
+      "options": [
+        {
+          "id": "A",
+          "text": "应说明 pH 条件"
+        },
+        {
+          "id": "B",
+          "text": "要考虑局部微环境"
+        },
+        {
+          "id": "C",
+          "text": "净电荷是多个残基状态的合计"
+        },
+        {
+          "id": "D",
+          "text": "只根据游离氨基酸的颜色判断"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "残基电荷具有条件依赖性，不能脱离 pH 和结构环境讨论。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "residue charge"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

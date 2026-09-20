@@ -12,7 +12,7 @@
       "examNumber": null,
       "chapter": "Chapter 1 · Molecular foundations",
       "lesson": "Structure and bonding",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "orbitals",
@@ -45,7 +45,7 @@
       "examNumber": null,
       "chapter": "Chapter 1 · Introduction",
       "lesson": "Introduction and bonding language",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "coordination",
@@ -78,7 +78,7 @@
       "examNumber": null,
       "chapter": "Chapter 1 · Introduction and perfect gases",
       "lesson": "Introduction, mathematical preparation, and perfect gases",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "ideal gas",
@@ -111,7 +111,7 @@
       "examNumber": null,
       "chapter": "Chapter 1 · Analytical thinking",
       "lesson": "From question to reliable data",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "sampling",
@@ -144,7 +144,7 @@
       "examNumber": null,
       "chapter": "Chapter 1 · Amino acids",
       "lesson": "Amino acids and side chains",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "amino acids",
@@ -177,7 +177,7 @@
       "examNumber": null,
       "chapter": "Chapter 2 · Molecular orbitals",
       "lesson": "Acid-base, molecular orbitals, and structure",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "LCAO",
@@ -210,7 +210,7 @@
       "examNumber": null,
       "chapter": "Chapter 3 · Acidity and basicity",
       "lesson": "Acid-base theory and structural effects",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "pKa",
@@ -243,7 +243,7 @@
       "examNumber": null,
       "chapter": "Chapter 4 · Alkanes and nomenclature",
       "lesson": "Alkanes, cycloalkanes, and IUPAC naming",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "IUPAC",
@@ -276,7 +276,7 @@
       "examNumber": null,
       "chapter": "Chapter 5 · Isomerism and conformation",
       "lesson": "Isomerism, conformation, ring strain, and alkane reactions",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "isomerism",
@@ -309,7 +309,7 @@
       "examNumber": null,
       "chapter": "Chapter 2 · Atomic structure",
       "lesson": "Atomic structure and periodic trends",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "quantum numbers",
@@ -342,7 +342,7 @@
       "examNumber": null,
       "chapter": "Chapter 3 · Lewis and VSEPR",
       "lesson": "Lewis structures, resonance, and VSEPR",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "Lewis structures",
@@ -375,7 +375,7 @@
       "examNumber": null,
       "chapter": "Chapter 4 · Symmetry and point groups",
       "lesson": "Molecular symmetry and point groups",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "symmetry",
@@ -408,7 +408,7 @@
       "examNumber": null,
       "chapter": "Chapter 2 · Real gases",
       "lesson": "Real gases and equations of state",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "real gases",
@@ -441,7 +441,7 @@
       "examNumber": null,
       "chapter": "Chapter 3 · Kinetic theory",
       "lesson": "Kinetic theory and molecular speeds",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "kinetic theory",
@@ -474,7 +474,7 @@
       "examNumber": null,
       "chapter": "Chapter 4 · First law",
       "lesson": "Thermodynamic concepts and the first law",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "thermodynamics",
@@ -507,7 +507,7 @@
       "examNumber": null,
       "chapter": "Chapter 2 · Operations and sample preparation",
       "lesson": "Laboratory operations and sample preparation",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "GLP",
@@ -540,7 +540,7 @@
       "examNumber": null,
       "chapter": "Chapter 2 · Amino acids",
       "lesson": "Amino acids and side chains",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "amino acids",
@@ -573,7 +573,7 @@
       "examNumber": null,
       "chapter": "Chapter 3 · Protein structure",
       "lesson": "Protein structure and folding",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "peptide bond",
@@ -606,7 +606,7 @@
       "examNumber": null,
       "chapter": "Chapter 4 · Protein function",
       "lesson": "Protein function, ligands, and conformational equilibria",
-      "questionCount": 15,
+      "questionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "myoglobin",

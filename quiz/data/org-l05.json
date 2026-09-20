@@ -5,7 +5,7 @@
   "subject": "organic-chemistry",
   "chapter": "Chapter 5 · Isomerism and conformation",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -199,7 +199,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "anti 构象使两个较大的甲基相隔最远，通常具有更低的空间排斥。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "butane",
         "steric strain"
@@ -265,7 +265,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "椅式同时减小角张力和扭转张力，因此通常比船式稳定。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "cyclohexane",
         "chair"
@@ -296,7 +296,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "翻环保持连接关系不变，但会使每个位置的 axial/equatorial 属性互换。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "ring flip"
       ]
@@ -357,7 +357,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "螺环的定义是两个环仅共享一个原子。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "polycycles"
       ]
@@ -369,7 +369,7 @@
       "answer": true,
       "points": 1,
       "explanation": "构象变化通常通过绕单键旋转实现；构造异构体则需要改变连接关系。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "conformation"
       ]
@@ -399,7 +399,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "含碳、氢的烷烃在充分氧气中燃烧，碳和氢分别主要转化为 CO₂ 与 H₂O。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "alkane reactions",
         "combustion"
@@ -463,14 +463,201 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "大取代基的赤道位构象通常更稳定；翻环仍会产生轴向异构构象，但比例较低。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "chair",
         "steric strain"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "E/Z 命名中，双键两端优先级较高的基团位于相反侧时应标记为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "E"
+        },
+        {
+          "id": "B",
+          "text": "Z"
+        },
+        {
+          "id": "C",
+          "text": "R"
+        },
+        {
+          "id": "D",
+          "text": "S"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "E 来自 entgegen，表示高优先级基团位于相反侧；Z 表示同侧。",
+      "difficulty": "hard",
+      "tags": [
+        "E/Z",
+        "CIP"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于构象与构造异构，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "单键旋转可产生构象异构"
+        },
+        {
+          "id": "B",
+          "text": "改变原子连接关系会产生构造异构"
+        },
+        {
+          "id": "C",
+          "text": "构象异构通常不需要断键"
+        },
+        {
+          "id": "D",
+          "text": "E/Z 异构总是单键自由旋转造成的"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "构象来自同一连接关系下的空间取向变化；构造异构改变连接关系。",
+      "difficulty": "hard",
+      "tags": [
+        "conformation",
+        "constitutional isomer"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "正丁烷中两个甲基二面角为 180° 的构象称为____构象。",
+      "answer": "anti",
+      "acceptableAnswers": [
+        "anti"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "anti 构象中两个较大基团相隔 180°，通常比 gauche 构象更稳定。",
+      "difficulty": "hard",
+      "tags": [
+        "Newman projection"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "环己烷翻环会改变轴向与赤道向位置，但不会改变顺反关系。",
+      "answer": true,
+      "points": 2,
+      "explanation": "翻环互换 axial/equatorial，取代基相对同侧或异侧关系保持不变。",
+      "difficulty": "hard",
+      "tags": [
+        "ring flip",
+        "cyclohexane"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "下列哪项最能解释多取代环烷烃中优先选择赤道向取代基？",
+      "options": [
+        {
+          "id": "A",
+          "text": "可减少 1,3-二轴相互作用"
+        },
+        {
+          "id": "B",
+          "text": "赤道向一定使所有键变成 π 键"
+        },
+        {
+          "id": "C",
+          "text": "轴向取代基没有电子"
+        },
+        {
+          "id": "D",
+          "text": "赤道向会改变原子连接关系"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "较大的取代基置于赤道向通常可减少轴向拥挤和 1,3-二轴相互作用。",
+      "difficulty": "challenging",
+      "tags": [
+        "ring strain",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "烷烃自由基卤化的选择性通常与生成的自由基____性有关。",
+      "answer": "稳定",
+      "acceptableAnswers": [
+        "稳定性",
+        "稳定"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "更稳定的自由基中间体通常对应更有利的抽氢路径。",
+      "difficulty": "challenging",
+      "tags": [
+        "alkane reaction",
+        "radical"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "分析一个环状分子的立体异构时，哪些信息需要同时记录？",
+      "options": [
+        {
+          "id": "A",
+          "text": "取代基的相对同侧/异侧关系"
+        },
+        {
+          "id": "B",
+          "text": "环翻转前后的轴向/赤道向状态"
+        },
+        {
+          "id": "C",
+          "text": "取代基大小与构象能量"
+        },
+        {
+          "id": "D",
+          "text": "只记录平面结构式而忽略空间关系"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "环构象和立体关系共同决定稳定性与命名，单一平面图可能丢失关键信息。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "stereochemistry"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

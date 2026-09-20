@@ -5,7 +5,7 @@
   "subject": "inorganic-chemistry",
   "chapter": "Chapter 3 · Lewis and VSEPR",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -155,7 +155,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "共振贡献式需要结合形式电荷、八隅体、负电荷落在何种元素上以及电荷分离程度判断。",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "SCN-",
         "resonance"
@@ -222,7 +222,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "VSEPR 关注中心原子周围电子密度区域，多重键作为一个方向上的电子域，但排斥可能更强。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "VSEPR",
         "electron domains"
@@ -253,7 +253,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "三个成键电子域且无孤对电子时，几何为三角平面。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "VSEPR",
         "geometry"
@@ -284,7 +284,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "孤对电子密度更集中在中心原子附近，排斥通常强于键对–键对排斥。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "VSEPR",
         "lone pairs"
@@ -453,14 +453,212 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "共振贡献式需要综合电子计数、形式电荷、电负性和离域程度；单一规则不能代替完整比较。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "resonance",
         "formal charge"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "BF₃ 的形式电荷分析中，中心硼通常表现为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "形式电荷为 0，但电子不足八隅体"
+        },
+        {
+          "id": "B",
+          "text": "形式电荷为 −3 且满足八隅体"
+        },
+        {
+          "id": "C",
+          "text": "形式电荷为 +3 且有四个键"
+        },
+        {
+          "id": "D",
+          "text": "没有中心原子"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "三条 B–F 单键的 Lewis 结构中各原子的常见形式电荷为 0，但硼只有六个共享电子。",
+      "difficulty": "hard",
+      "tags": [
+        "formal charge",
+        "BF3"
+      ],
+      "image": {
+        "src": "assets/structures/inorg-bf3-boron-trifluoride-neutral.png",
+        "alt": "三氟化硼结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确结构输入渲染"
+      }
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "Lewis 结构中的形式电荷有助于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "比较不同电子分配的合理性"
+        },
+        {
+          "id": "B",
+          "text": "检查总电荷守恒"
+        },
+        {
+          "id": "C",
+          "text": "识别可能的共振贡献式"
+        },
+        {
+          "id": "D",
+          "text": "直接等同于原子上的真实电荷密度"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "形式电荷是记账工具，不等同于量子化学意义上的真实电荷分布。",
+      "difficulty": "hard",
+      "tags": [
+        "formal charge",
+        "resonance"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "VSEPR 的基本思想是电子域之间相互____。",
+      "answer": "排斥",
+      "acceptableAnswers": [
+        "排斥",
+        "repel"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "中心原子周围的成键电子域和孤对电子域相互排斥并趋向最大分离。",
+      "difficulty": "hard",
+      "tags": [
+        "VSEPR"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "共振贡献式代表同一分子在不同时间点之间来回切换。",
+      "answer": false,
+      "points": 2,
+      "explanation": "真实结构是共振杂化体；贡献式不是时间平均的分子快照。",
+      "difficulty": "hard",
+      "tags": [
+        "resonance"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "SO₂ 的 Lewis/共振模型最适合强调哪一点？",
+      "options": [
+        {
+          "id": "A",
+          "text": "S–O 电子密度可用多个贡献式描述，分子整体为弯曲几何"
+        },
+        {
+          "id": "B",
+          "text": "分子必为线形且没有孤对电子"
+        },
+        {
+          "id": "C",
+          "text": "只存在单一完全局域结构"
+        },
+        {
+          "id": "D",
+          "text": "硫与三个氧相连"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "SO₂ 的中心硫有孤对电子，电子域几何与分子几何不同；S–O 键可用共振语言描述。",
+      "difficulty": "challenging",
+      "tags": [
+        "SO2",
+        "VSEPR",
+        "resonance"
+      ],
+      "image": {
+        "src": "assets/structures/inorg-sulfur-dioxide-sulfur-dioxide-neutral.png",
+        "alt": "二氧化硫结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES O=S=O 渲染"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "NO₂ 含有奇数价电子总数，因此 Lewis 模型中需要考虑一个未成对____。",
+      "answer": "电子",
+      "acceptableAnswers": [
+        "电子",
+        "electron"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "NO₂ 是典型奇电子分子，简单八隅体表示不能让所有原子同时满足闭壳层。",
+      "difficulty": "challenging",
+      "tags": [
+        "NO2",
+        "radical"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "评估一个无机 Lewis 结构时，哪些检查最重要？",
+      "options": [
+        {
+          "id": "A",
+          "text": "总价电子数是否守恒"
+        },
+        {
+          "id": "B",
+          "text": "形式电荷是否合理"
+        },
+        {
+          "id": "C",
+          "text": "几何与孤对电子是否一致"
+        },
+        {
+          "id": "D",
+          "text": "只看是否画得对称"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "价电子账、形式电荷与 VSEPR 几何应相互校验；对称性不是唯一标准。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "Lewis structure"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

@@ -5,23 +5,655 @@
   "subject": "Inorganic Chemistry",
   "chapter": "Chapter 1 · Introduction",
   "version": "1.0.0",
-  "totalPoints": 16,
-  "selection": { "mode": "fixed" },
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
   "questions": [
-    { "id": "q001", "type": "single-choice", "question": "课程导论中对无机化学更准确的概括是……", "options": [{ "id": "A", "text": "只研究不含碳的物质" }, { "id": "B", "text": "研究整个周期表中元素及其化合物的结构、成键与反应性" }, { "id": "C", "text": "只研究离子晶体" }, { "id": "D", "text": "只研究金属冶炼" }], "answer": "B", "points": 1, "explanation": "无机化学覆盖整个周期表；含碳并不自动等于有机化学，碳酸盐、碳化物和金属羰基等是典型交叉或无机体系。", "difficulty": "easy", "tags": ["scope", "periodic table"] },
-    { "id": "q002", "type": "multiple-choice", "question": "下列哪些含碳体系通常可归入无机或有机金属化学语境？", "options": [{ "id": "A", "text": "碳酸盐" }, { "id": "B", "text": "碳化物" }, { "id": "C", "text": "金属羰基" }, { "id": "D", "text": "乙烷" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "这些体系分别体现含碳无机物和有机金属化学的边界；乙烷是典型有机化合物。", "difficulty": "easy", "tags": ["scope", "organometallic"] },
-    { "id": "q003", "type": "single-choice", "question": "第一讲课程地图中，较合理的知识推进顺序是……", "options": [{ "id": "A", "text": "原子结构 → 简单成键 → 对称性 → 分子轨道 → 主族/配位化学" }, { "id": "B", "text": "配位化学 → 论文写作 → 原子结构 → 对称性" }, { "id": "C", "text": "只按元素周期表逐个背诵" }, { "id": "D", "text": "实验现象 → 结论，不需要结构模型" }], "answer": "A", "points": 1, "explanation": "课程以原子结构为基础，逐步建立成键、对称性和分子轨道工具，再用于更复杂的主族与配位体系。", "difficulty": "easy", "tags": ["course map", "structure"] },
-    { "id": "q004", "type": "single-choice", "question": "配位数的定义是……", "options": [{ "id": "A", "text": "中心原子的氧化态数值" }, { "id": "B", "text": "直接与中心原子相连的供体原子数" }, { "id": "C", "text": "中心原子的价电子数" }, { "id": "D", "text": "结构中普通共价键的总数" }], "answer": "B", "points": 1, "explanation": "配位数统计直接与中心相连的供体原子，不能与氧化态、价电子数或形式键数混为一谈。", "difficulty": "easy", "tags": ["coordination number", "oxidation state"] },
-    { "id": "q005", "type": "multiple-choice", "question": "关于四配位 d⁸ 金属中心，下列哪些说法符合第一讲内容？", "options": [{ "id": "A", "text": "可能呈四面体构型" }, { "id": "B", "text": "可能呈平面正方形构型" }, { "id": "C", "text": "看到四个配体就必然是四面体" }, { "id": "D", "text": "几何差异会影响磁性和反应性" }], "answers": ["A", "B", "D"], "points": 1, "explanation": "四配位 d⁸ 体系可能在四面体与平面正方形之间变化，构型会改变轨道分裂、磁性、颜色和取代反应性。", "difficulty": "medium", "tags": ["coordination geometry", "d-block"] },
-    { "id": "q006", "type": "multiple-choice", "question": "常见的五配位几何包括……", "options": [{ "id": "A", "text": "三角双锥" }, { "id": "B", "text": "四方锥" }, { "id": "C", "text": "线形" }, { "id": "D", "text": "严格只能是八面体" }], "answers": ["A", "B"], "points": 1, "explanation": "五配位常见三角双锥和四方锥，两者还可能在反应中互相转化或发生畸变。", "difficulty": "easy", "tags": ["coordination geometry", "five-coordinate"] },
-    { "id": "q007", "type": "true-false", "question": "六配位配合物最常见八面体，但也可能出现三棱柱等其他几何。", "answer": true, "points": 1, "explanation": "八面体是六配位最常见构型，但配体性质和电子结构也可以稳定三棱柱等几何。", "difficulty": "easy", "tags": ["coordination geometry", "six-coordinate"] },
-    { "id": "q008", "type": "single-choice", "question": "两个原子沿核间轴正面重叠形成的成键相互作用称为……", "options": [{ "id": "A", "text": "σ 键" }, { "id": "B", "text": "π 键" }, { "id": "C", "text": "δ 键" }, { "id": "D", "text": "氢键" }], "answer": "A", "points": 1, "explanation": "沿核间轴的正面重叠产生 σ 键；侧向重叠可产生 π 键，特定 d 轨道重叠还能产生 δ 键。", "difficulty": "easy", "tags": ["metal-metal bonding", "sigma bond"] },
-    { "id": "q009", "type": "single-choice", "question": "金属—金属 δ 键的形成主要依赖于……", "options": [{ "id": "A", "text": "s 轨道的球形重叠" }, { "id": "B", "text": "适当取向的 d 轨道在核间轴周围的重叠" }, { "id": "C", "text": "氢键供体与受体" }, { "id": "D", "text": "两个孤立原子核的静电排斥" }], "answer": "B", "points": 1, "explanation": "δ 键由适当取向的 d 轨道重叠形成，绕核间轴具有两个节面，通常比 σ、π 重叠更弱。", "difficulty": "medium", "tags": ["delta bond", "d orbitals"] },
-    { "id": "q010", "type": "multiple-choice", "question": "经典金属—金属四重键的成键分量可描述为……", "options": [{ "id": "A", "text": "1 个 σ" }, { "id": "B", "text": "2 个 π" }, { "id": "C", "text": "1 个 δ" }, { "id": "D", "text": "4 个完全等价的 σ" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "经典四重键模型包含一个 σ、两个 π 和一个 δ；“四重”是净成键贡献的概括，不代表四根完全等价的线。", "difficulty": "medium", "tags": ["multiple bonds", "sigma", "pi", "delta"] },
-    { "id": "q011", "type": "single-choice", "question": "B₂H₆ 中桥联氢最常用哪种键模型描述？", "options": [{ "id": "A", "text": "两个彼此独立的离子键" }, { "id": "B", "text": "三中心两电子键" }, { "id": "C", "text": "四中心四电子键" }, { "id": "D", "text": "金属—金属四重键" }], "answer": "B", "points": 1, "explanation": "桥氢的电子对离域在 B—H—B 三个原子上，形成三中心两电子键，解释了乙硼烷的缺电子成键。", "difficulty": "easy", "tags": ["three-center bonding", "boranes"] },
-    { "id": "q012", "type": "single-choice", "question": "配合物符号 μ₂-H 中的 μ₂ 表示……", "options": [{ "id": "A", "text": "氢具有 −2 氧化态" }, { "id": "B", "text": "氢桥联两个金属中心" }, { "id": "C", "text": "有两个氢原子" }, { "id": "D", "text": "氢提供两个孤对电子" }], "answer": "B", "points": 1, "explanation": "μ₂ 描述桥联维度，表示同一个配体跨越两个中心；它与氧化态和配体电子数是不同信息。", "difficulty": "easy", "tags": ["bridging ligands", "notation"] },
-    { "id": "q013", "type": "true-false", "question": "缺电子意味着体系不可能形成稳定的化学键。", "answer": false, "points": 1, "explanation": "缺电子是指难以用经典两中心两电子键满足电子计数，体系仍可通过多中心离域等方式稳定成键。", "difficulty": "medium", "tags": ["electron-deficient bonding", "delocalization"] },
-    { "id": "q014", "type": "single-choice", "question": "金属与烯烃的 π 配合常同时包含哪两种协同作用？", "options": [{ "id": "A", "text": "配体 π 给电子与金属向配体 π* 的反馈给电子" }, { "id": "B", "text": "两个原子核的强相互作用" }, { "id": "C", "text": "只有离子静电吸引" }, { "id": "D", "text": "氢键与范德华力" }], "answer": "A", "points": 1, "explanation": "烯烃 π 轨道向金属给电子，同时金属 d 轨道可向配体 π* 反馈给电子，这会削弱原有 C=C 键。", "difficulty": "medium", "tags": ["pi complexes", "backbonding"] },
-    { "id": "q015", "type": "single-choice", "question": "讨论一个可能的金属—金属多重键（例如 C₂ 的键级争议）时，最稳妥的做法是……", "options": [{ "id": "A", "text": "只看结构式画了几条线" }, { "id": "B", "text": "明确采用的电子结构模型，并用键长、振动、计算或反应性等证据交叉检验" }, { "id": "C", "text": "默认所有四重键的四个分量完全等价" }, { "id": "D", "text": "把形式氧化态直接当成真实电荷分布" }], "answer": "B", "points": 2, "explanation": "键级是模型化的电子结构描述。不同模型可能对弱成键分量给出不同命名，因此需要说明定义，并结合结构、光谱、计算和反应性证据。", "difficulty": "hard", "tags": ["extension", "bond order", "evidence"] }
-  ]
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "课程导论中对无机化学更准确的概括是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "只研究不含碳的物质"
+        },
+        {
+          "id": "B",
+          "text": "研究整个周期表中元素及其化合物的结构、成键与反应性"
+        },
+        {
+          "id": "C",
+          "text": "只研究离子晶体"
+        },
+        {
+          "id": "D",
+          "text": "只研究金属冶炼"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "无机化学覆盖整个周期表；含碳并不自动等于有机化学，碳酸盐、碳化物和金属羰基等是典型交叉或无机体系。",
+      "difficulty": "easy",
+      "tags": [
+        "scope",
+        "periodic table"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "multiple-choice",
+      "question": "下列哪些含碳体系通常可归入无机或有机金属化学语境？",
+      "options": [
+        {
+          "id": "A",
+          "text": "碳酸盐"
+        },
+        {
+          "id": "B",
+          "text": "碳化物"
+        },
+        {
+          "id": "C",
+          "text": "金属羰基"
+        },
+        {
+          "id": "D",
+          "text": "乙烷"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "这些体系分别体现含碳无机物和有机金属化学的边界；乙烷是典型有机化合物。",
+      "difficulty": "easy",
+      "tags": [
+        "scope",
+        "organometallic"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "第一讲课程地图中，较合理的知识推进顺序是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子结构 → 简单成键 → 对称性 → 分子轨道 → 主族/配位化学"
+        },
+        {
+          "id": "B",
+          "text": "配位化学 → 论文写作 → 原子结构 → 对称性"
+        },
+        {
+          "id": "C",
+          "text": "只按元素周期表逐个背诵"
+        },
+        {
+          "id": "D",
+          "text": "实验现象 → 结论，不需要结构模型"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "课程以原子结构为基础，逐步建立成键、对称性和分子轨道工具，再用于更复杂的主族与配位体系。",
+      "difficulty": "easy",
+      "tags": [
+        "course map",
+        "structure"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "配位数的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "中心原子的氧化态数值"
+        },
+        {
+          "id": "B",
+          "text": "直接与中心原子相连的供体原子数"
+        },
+        {
+          "id": "C",
+          "text": "中心原子的价电子数"
+        },
+        {
+          "id": "D",
+          "text": "结构中普通共价键的总数"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "配位数统计直接与中心相连的供体原子，不能与氧化态、价电子数或形式键数混为一谈。",
+      "difficulty": "easy",
+      "tags": [
+        "coordination number",
+        "oxidation state"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "multiple-choice",
+      "question": "关于四配位 d⁸ 金属中心，下列哪些说法符合第一讲内容？",
+      "options": [
+        {
+          "id": "A",
+          "text": "可能呈四面体构型"
+        },
+        {
+          "id": "B",
+          "text": "可能呈平面正方形构型"
+        },
+        {
+          "id": "C",
+          "text": "看到四个配体就必然是四面体"
+        },
+        {
+          "id": "D",
+          "text": "几何差异会影响磁性和反应性"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 1,
+      "explanation": "四配位 d⁸ 体系可能在四面体与平面正方形之间变化，构型会改变轨道分裂、磁性、颜色和取代反应性。",
+      "difficulty": "easy",
+      "tags": [
+        "coordination geometry",
+        "d-block"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "常见的五配位几何包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "三角双锥"
+        },
+        {
+          "id": "B",
+          "text": "四方锥"
+        },
+        {
+          "id": "C",
+          "text": "线形"
+        },
+        {
+          "id": "D",
+          "text": "严格只能是八面体"
+        }
+      ],
+      "answers": [
+        "A",
+        "B"
+      ],
+      "points": 1,
+      "explanation": "五配位常见三角双锥和四方锥，两者还可能在反应中互相转化或发生畸变。",
+      "difficulty": "medium",
+      "tags": [
+        "coordination geometry",
+        "five-coordinate"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "true-false",
+      "question": "六配位配合物最常见八面体，但也可能出现三棱柱等其他几何。",
+      "answer": true,
+      "points": 1,
+      "explanation": "八面体是六配位最常见构型，但配体性质和电子结构也可以稳定三棱柱等几何。",
+      "difficulty": "medium",
+      "tags": [
+        "coordination geometry",
+        "six-coordinate"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "两个原子沿核间轴正面重叠形成的成键相互作用称为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "σ 键"
+        },
+        {
+          "id": "B",
+          "text": "π 键"
+        },
+        {
+          "id": "C",
+          "text": "δ 键"
+        },
+        {
+          "id": "D",
+          "text": "氢键"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "沿核间轴的正面重叠产生 σ 键；侧向重叠可产生 π 键，特定 d 轨道重叠还能产生 δ 键。",
+      "difficulty": "medium",
+      "tags": [
+        "metal-metal bonding",
+        "sigma bond"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "金属—金属 δ 键的形成主要依赖于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "s 轨道的球形重叠"
+        },
+        {
+          "id": "B",
+          "text": "适当取向的 d 轨道在核间轴周围的重叠"
+        },
+        {
+          "id": "C",
+          "text": "氢键供体与受体"
+        },
+        {
+          "id": "D",
+          "text": "两个孤立原子核的静电排斥"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "δ 键由适当取向的 d 轨道重叠形成，绕核间轴具有两个节面，通常比 σ、π 重叠更弱。",
+      "difficulty": "medium",
+      "tags": [
+        "delta bond",
+        "d orbitals"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "multiple-choice",
+      "question": "经典金属—金属四重键的成键分量可描述为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 个 σ"
+        },
+        {
+          "id": "B",
+          "text": "2 个 π"
+        },
+        {
+          "id": "C",
+          "text": "1 个 δ"
+        },
+        {
+          "id": "D",
+          "text": "4 个完全等价的 σ"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "经典四重键模型包含一个 σ、两个 π 和一个 δ；“四重”是净成键贡献的概括，不代表四根完全等价的线。",
+      "difficulty": "medium",
+      "tags": [
+        "multiple bonds",
+        "sigma",
+        "pi",
+        "delta"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "B₂H₆ 中桥联氢最常用哪种键模型描述？",
+      "options": [
+        {
+          "id": "A",
+          "text": "两个彼此独立的离子键"
+        },
+        {
+          "id": "B",
+          "text": "三中心两电子键"
+        },
+        {
+          "id": "C",
+          "text": "四中心四电子键"
+        },
+        {
+          "id": "D",
+          "text": "金属—金属四重键"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "桥氢的电子对离域在 B—H—B 三个原子上，形成三中心两电子键，解释了乙硼烷的缺电子成键。",
+      "difficulty": "medium",
+      "tags": [
+        "three-center bonding",
+        "boranes"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "配合物符号 μ₂-H 中的 μ₂ 表示……",
+      "options": [
+        {
+          "id": "A",
+          "text": "氢具有 −2 氧化态"
+        },
+        {
+          "id": "B",
+          "text": "氢桥联两个金属中心"
+        },
+        {
+          "id": "C",
+          "text": "有两个氢原子"
+        },
+        {
+          "id": "D",
+          "text": "氢提供两个孤对电子"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "μ₂ 描述桥联维度，表示同一个配体跨越两个中心；它与氧化态和配体电子数是不同信息。",
+      "difficulty": "medium",
+      "tags": [
+        "bridging ligands",
+        "notation"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "缺电子意味着体系不可能形成稳定的化学键。",
+      "answer": false,
+      "points": 1,
+      "explanation": "缺电子是指难以用经典两中心两电子键满足电子计数，体系仍可通过多中心离域等方式稳定成键。",
+      "difficulty": "medium",
+      "tags": [
+        "electron-deficient bonding",
+        "delocalization"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "金属与烯烃的 π 配合常同时包含哪两种协同作用？",
+      "options": [
+        {
+          "id": "A",
+          "text": "配体 π 给电子与金属向配体 π* 的反馈给电子"
+        },
+        {
+          "id": "B",
+          "text": "两个原子核的强相互作用"
+        },
+        {
+          "id": "C",
+          "text": "只有离子静电吸引"
+        },
+        {
+          "id": "D",
+          "text": "氢键与范德华力"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "烯烃 π 轨道向金属给电子，同时金属 d 轨道可向配体 π* 反馈给电子，这会削弱原有 C=C 键。",
+      "difficulty": "medium",
+      "tags": [
+        "pi complexes",
+        "backbonding"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "讨论一个可能的金属—金属多重键（例如 C₂ 的键级争议）时，最稳妥的做法是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "只看结构式画了几条线"
+        },
+        {
+          "id": "B",
+          "text": "明确采用的电子结构模型，并用键长、振动、计算或反应性等证据交叉检验"
+        },
+        {
+          "id": "C",
+          "text": "默认所有四重键的四个分量完全等价"
+        },
+        {
+          "id": "D",
+          "text": "把形式氧化态直接当成真实电荷分布"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "键级是模型化的电子结构描述。不同模型可能对弱成键分量给出不同命名，因此需要说明定义，并结合结构、光谱、计算和反应性证据。",
+      "difficulty": "medium",
+      "tags": [
+        "extension",
+        "bond order",
+        "evidence"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "BF₃ 中心硼原子的配位数和局部几何分别最接近……",
+      "options": [
+        {
+          "id": "A",
+          "text": "3，三角平面"
+        },
+        {
+          "id": "B",
+          "text": "4，四面体"
+        },
+        {
+          "id": "C",
+          "text": "2，线形"
+        },
+        {
+          "id": "D",
+          "text": "6，八面体"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "BF₃ 的硼与三个氟相连，基础 Lewis/VSEPR 模型给出三角平面几何。",
+      "difficulty": "hard",
+      "tags": [
+        "coordination number",
+        "geometry"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-bf3-boron-trifluoride-neutral.png",
+        "alt": "三氟化硼结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确结构输入渲染"
+      }
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于无机化学中的桥联配体，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "一个配体原子或基团可同时连接两个中心"
+        },
+        {
+          "id": "B",
+          "text": "桥联一定意味着两个中心完全等价"
+        },
+        {
+          "id": "C",
+          "text": "桥联可改变中心间电子耦合"
+        },
+        {
+          "id": "D",
+          "text": "桥联与配位数没有任何关系"
+        }
+      ],
+      "answers": [
+        "A",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "桥联描述连接拓扑，不保证中心等价；它会影响配位环境与金属—金属相互作用。",
+      "difficulty": "hard",
+      "tags": [
+        "bridging ligand",
+        "coordination"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "π 配合物中，金属与配体之间常用____作用来描述电子回馈。",
+      "answer": "π回馈",
+      "acceptableAnswers": [
+        "π回馈",
+        "π 回馈",
+        "pi回馈",
+        "back-donation"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "金属 d 轨道向配体反键 π* 轨道供电子，常称 π 回馈或 back-donation。",
+      "difficulty": "hard",
+      "tags": [
+        "pi complex",
+        "back bonding"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "配位数只由配体的个数决定，与配体如何连接中心原子无关。",
+      "answer": false,
+      "points": 2,
+      "explanation": "配位数按与中心直接相连的供体原子数统计；多齿配体和桥联方式都会影响统计。",
+      "difficulty": "hard",
+      "tags": [
+        "coordination number"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "下图所示 CO₂ 结构在基础分子模型中最符合哪种描述？",
+      "options": [
+        {
+          "id": "A",
+          "text": "线形，中心碳附近有两个电子域"
+        },
+        {
+          "id": "B",
+          "text": "弯曲，中心碳有两个孤对电子"
+        },
+        {
+          "id": "C",
+          "text": "三角平面，中心碳有三个孤对电子"
+        },
+        {
+          "id": "D",
+          "text": "四面体，中心碳与四个氧相连"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "CO₂ 的两个成键电子域位于近似相反方向；多重键在 VSEPR 计数中各作为一个电子域。",
+      "difficulty": "challenging",
+      "tags": [
+        "VSEPR",
+        "molecular formula"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-carbon-dioxide-carbon-dioxide-neutral.png",
+        "alt": "二氧化碳结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES O=C=O 渲染"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "multiple-choice",
+      "question": "判断金属—金属多重键时，哪些证据或模型信息有帮助？",
+      "options": [
+        {
+          "id": "A",
+          "text": "金属—金属距离"
+        },
+        {
+          "id": "B",
+          "text": "成键轨道与反键轨道占据"
+        },
+        {
+          "id": "C",
+          "text": "配体对金属电子计数的影响"
+        },
+        {
+          "id": "D",
+          "text": "只看化合物颜色"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "键级判断要结合结构距离、轨道占据与电子计数，颜色通常不能独立证明键级。",
+      "difficulty": "challenging",
+      "tags": [
+        "metal-metal bond",
+        "electron counting"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "如果一个配体通过多个相邻原子连续与金属结合，常用____值表示其连续配位的原子数。",
+      "answer": "齿数",
+      "acceptableAnswers": [
+        "denticity"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "齿数（denticity）描述一个配体向同一中心提供的直接配位供体原子数。",
+      "difficulty": "challenging",
+      "tags": [
+        "denticity",
+        "extension"
+      ]
+    }
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

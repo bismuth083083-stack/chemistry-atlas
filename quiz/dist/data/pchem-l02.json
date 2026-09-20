@@ -5,7 +5,7 @@
   "subject": "physical-chemistry",
   "chapter": "Chapter 2 · Real gases",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -188,7 +188,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "密度趋近零时分子间作用影响减弱，Z→1。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "virial equation"
       ]
@@ -278,7 +278,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "临界点是气液相区分消失的边界；超过临界温度，单纯加压不能得到通常意义上的液气相变。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "critical point"
       ]
@@ -308,7 +308,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "b 是排除体积参数，反映分子不能相互穿透导致的可用体积减少。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "van der Waals"
       ]
@@ -338,7 +338,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "加上内压力项可补偿吸引使撞壁动量减小的效果。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "van der Waals"
       ]
@@ -438,14 +438,198 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "同一气体在不同密度下可能由不同相互作用主导，因而出现先负偏差后正偏差。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "Z factor",
         "molecular interactions"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "压缩因子 Z=PV/(nRT) 对理想气体等于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "RT"
+        },
+        {
+          "id": "D",
+          "text": "P/V"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "理想气体满足 PV=nRT，所以 Z=1。",
+      "difficulty": "hard",
+      "tags": [
+        "compressibility factor"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "真实气体偏离理想行为的原因包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子间吸引"
+        },
+        {
+          "id": "B",
+          "text": "分子自身占据体积"
+        },
+        {
+          "id": "C",
+          "text": "高压或接近临界区"
+        },
+        {
+          "id": "D",
+          "text": "气体一定没有质量"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "理想模型忽略分子体积和相互作用，在高密度条件下偏差更明显。",
+      "difficulty": "hard",
+      "tags": [
+        "real gas"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "van der Waals 方程中的 b 参数主要修正分子占据的____体积。",
+      "answer": "有效",
+      "acceptableAnswers": [
+        "有效",
+        "excluded"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "b 代表排除体积的近似修正，反映分子有限大小。",
+      "difficulty": "hard",
+      "tags": [
+        "van der Waals"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "在临界点以上，气体可以通过单纯加压转变为清晰分开的液相。",
+      "answer": false,
+      "points": 2,
+      "explanation": "临界温度以上不存在气液两相边界，单纯加压不会产生普通意义上的相分离液体。",
+      "difficulty": "hard",
+      "tags": [
+        "critical point"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "当气体处于中等压力且吸引作用暂时占主导时，Z 通常可能……",
+      "options": [
+        {
+          "id": "A",
+          "text": "小于 1"
+        },
+        {
+          "id": "B",
+          "text": "大于 1"
+        },
+        {
+          "id": "C",
+          "text": "必为 0"
+        },
+        {
+          "id": "D",
+          "text": "无量纲但只能为 1"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "吸引使实际压力或 PV 相对理想值偏低，Z 可能小于 1；排斥主导时则可能大于 1。",
+      "difficulty": "challenging",
+      "tags": [
+        "compressibility factor",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "临界温度是气体能够被单纯加压液化的最高____。",
+      "answer": "温度",
+      "acceptableAnswers": [
+        "温度",
+        "temperature"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "高于临界温度时不存在普通气液相变边界。",
+      "difficulty": "challenging",
+      "tags": [
+        "critical phenomena"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "比较真实气体模型时，哪些判断更可靠？",
+      "options": [
+        {
+          "id": "A",
+          "text": "检查适用压力和温度范围"
+        },
+        {
+          "id": "B",
+          "text": "比较模型预测与实验状态数据"
+        },
+        {
+          "id": "C",
+          "text": "注意参数的物理意义和单位"
+        },
+        {
+          "id": "D",
+          "text": "只在一个点拟合后外推所有条件"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "模型必须在适用范围内检验，单点拟合不能保证全域可靠。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "model validity"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

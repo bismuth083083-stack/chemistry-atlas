@@ -5,7 +5,7 @@
   "subject": "inorganic-chemistry",
   "chapter": "Chapter 4 · Symmetry and point groups",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -133,7 +133,7 @@
       ],
       "points": 1,
       "explanation": "σh、σv、σd 都是相对主轴定义的几何关系。",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "mirror planes"
       ]
@@ -193,7 +193,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "Sₙ 是非真旋转，包含一次 Cₙ 旋转和一次垂直镜面反射。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "improper rotation"
       ]
@@ -253,7 +253,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "C₁ 只有恒等操作 E；名称中的 C₁ 不应误解为存在额外非平凡旋转。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "C1",
         "point groups"
@@ -387,7 +387,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "IR 活性要求振动与 x、y 或 z 等偶极矩分量同对称。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "character table",
         "IR"
@@ -418,7 +418,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "Raman 活性与极化率张量变化有关，对应二次函数的对称性标签。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "Raman",
         "selection rules"
@@ -461,14 +461,205 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "结构、点群、反演中心和选择定则必须连成证据链；理论模式数也不等于实验中一定可分辨的峰数。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "spectroscopy",
         "point groups"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "判断一个分子是否具有反演中心，需要检查……",
+      "options": [
+        {
+          "id": "A",
+          "text": "任一点经中心反演后是否映射到等价点"
+        },
+        {
+          "id": "B",
+          "text": "是否存在任意一条键"
+        },
+        {
+          "id": "C",
+          "text": "是否含有氢原子"
+        },
+        {
+          "id": "D",
+          "text": "只看分子量"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "反演操作把每个点映射到中心另一侧等距离的对应点。",
+      "difficulty": "hard",
+      "tags": [
+        "inversion center",
+        "symmetry"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "下列哪些属于分子对称操作或对称元素相关概念？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cₙ 旋转轴"
+        },
+        {
+          "id": "B",
+          "text": "镜面"
+        },
+        {
+          "id": "C",
+          "text": "反演中心"
+        },
+        {
+          "id": "D",
+          "text": "样品颜色"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "旋转轴、镜面和反演中心是点群分析的基本语言。",
+      "difficulty": "hard",
+      "tags": [
+        "point groups"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "绕轴旋转 360°/n 后分子重合时，该轴记作____轴。",
+      "answer": "Cₙ",
+      "acceptableAnswers": [
+        "Cn",
+        "Cₙ"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "n 重旋转轴 Cₙ 表示最小重复旋转角为 360°/n。",
+      "difficulty": "hard",
+      "tags": [
+        "C_n axis"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "存在一条对称轴就足以唯一确定分子的点群。",
+      "answer": false,
+      "points": 2,
+      "explanation": "点群判定还要结合镜面、反演、垂直轴和其他操作的组合。",
+      "difficulty": "hard",
+      "tags": [
+        "point group"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "对线形 CO₂，最重要的对称特征之一是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "沿分子轴存在高阶旋转与多个镜面操作"
+        },
+        {
+          "id": "B",
+          "text": "只有一个 C₂ 轴且无镜面"
+        },
+        {
+          "id": "C",
+          "text": "分子一定属于手性点群"
+        },
+        {
+          "id": "D",
+          "text": "不能进行振动光谱分析"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "线形分子通常具有丰富对称操作；其振动模式还可据此讨论 IR/Raman 活性。",
+      "difficulty": "challenging",
+      "tags": [
+        "CO2",
+        "symmetry",
+        "extension"
+      ],
+      "image": {
+        "src": "assets/structures/inorg-carbon-dioxide-carbon-dioxide-neutral.png",
+        "alt": "二氧化碳结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES O=C=O 渲染"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "在振动光谱中，某振动模式若引起偶极矩变化，通常具有____活性。",
+      "answer": "红外",
+      "acceptableAnswers": [
+        "红外",
+        "IR"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "IR 活性的关键是振动过程中偶极矩发生变化。",
+      "difficulty": "challenging",
+      "tags": [
+        "IR selection rule"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "点群判定对分子性质分析可能提供哪些信息？",
+      "options": [
+        {
+          "id": "A",
+          "text": "振动模式的简并性"
+        },
+        {
+          "id": "B",
+          "text": "IR/Raman 选择定则"
+        },
+        {
+          "id": "C",
+          "text": "轨道或振动的对称适配组合"
+        },
+        {
+          "id": "D",
+          "text": "直接给出所有反应速率常数"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "对称性约束表示与光谱，但不能单独决定完整动力学。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "spectroscopy"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

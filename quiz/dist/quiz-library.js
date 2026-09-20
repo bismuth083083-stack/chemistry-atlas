@@ -11,9 +11,9 @@ const SUBJECT_META = {
 };
 
 const TYPE_LABELS = { lesson: 'Lesson Quiz', topic: 'Topic Quiz', comprehensive: 'Comprehensive' };
-const DIFFICULTY_LABELS = { basic: 'Basic', easy: 'Basic', intermediate: 'Intermediate', medium: 'Intermediate', advanced: 'Advanced', hard: 'Advanced' };
+const DIFFICULTY_LABELS = { basic: 'Basic', easy: 'Basic', intermediate: 'Intermediate', medium: 'Intermediate', advanced: 'Advanced', hard: 'Advanced', challenging: 'Challenging' };
 const SUBJECT_ORDER = ['organic-chemistry', 'physical-chemistry', 'inorganic-chemistry', 'analytical-chemistry', 'biochemistry', 'general-chemistry'];
-const DIFFICULTY_ORDER = { basic: 1, easy: 1, intermediate: 2, medium: 2, advanced: 3, hard: 3 };
+const DIFFICULTY_ORDER = { basic: 1, easy: 1, intermediate: 2, medium: 2, advanced: 3, hard: 3, challenging: 4 };
 
 const $ = (selector, parent = document) => parent.querySelector(selector);
 const normalize = (value) => String(value ?? '').trim().toLowerCase();
@@ -166,7 +166,7 @@ class QuizLibrary {
     return this.entries
       .filter((entry) => this.state.subject === 'all' || subjectKey(entry.subject) === this.state.subject)
       .filter((entry) => this.state.type === 'all' || normalize(entry.type) === this.state.type)
-      .filter((entry) => this.state.difficulty === 'all' || difficultyValue(entry) === this.state.difficulty || (this.state.difficulty === 'basic' && difficultyValue(entry) === 'easy') || (this.state.difficulty === 'intermediate' && difficultyValue(entry) === 'medium') || (this.state.difficulty === 'advanced' && difficultyValue(entry) === 'hard'))
+      .filter((entry) => this.state.difficulty === 'all' || difficultyValue(entry) === this.state.difficulty || (this.state.difficulty === 'basic' && difficultyValue(entry) === 'easy') || (this.state.difficulty === 'intermediate' && difficultyValue(entry) === 'medium') || (this.state.difficulty === 'advanced' && ['hard', 'challenging'].includes(difficultyValue(entry))))
       .filter((entry) => matchesSearch(entry, this.state.query))
       .sort((left, right) => compareEntries(left, right, this.state.sort));
   }

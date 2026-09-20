@@ -5,23 +5,630 @@
   "subject": "Organic Chemistry",
   "chapter": "Chapter 1 · Molecular foundations",
   "version": "1.0.0",
-  "totalPoints": 16,
-  "selection": { "mode": "fixed" },
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
   "questions": [
-    { "id": "q001", "type": "single-choice", "question": "有机化学通常主要研究哪一类物质？", "options": [{ "id": "A", "text": "所有不含碳的化合物" }, { "id": "B", "text": "碳化合物的结构、性质与反应" }, { "id": "C", "text": "只研究生物体内的蛋白质" }, { "id": "D", "text": "只研究金属配合物" }], "answer": "B", "points": 1, "explanation": "有机化学以碳化合物为核心，研究其结构、性质、合成和反应；碳酸盐、碳化物等少数体系通常作为无机化合物处理。", "difficulty": "easy", "tags": ["scope", "carbon chemistry"] },
-    { "id": "q002", "type": "multiple-choice", "question": "下列哪些含碳物质通常作为有机化学的例外而归入无机化学？", "options": [{ "id": "A", "text": "CO₂" }, { "id": "B", "text": "碳酸盐" }, { "id": "C", "text": "碳化物" }, { "id": "D", "text": "乙醇" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "CO₂、碳酸盐和碳化物是常见的含碳无机例外；乙醇是典型有机化合物。", "difficulty": "easy", "tags": ["scope", "exceptions"] },
-    { "id": "q003", "type": "single-choice", "question": "波函数 ψ 的平方 |ψ|² 在原子轨道模型中表示什么？", "options": [{ "id": "A", "text": "电子的确定轨迹" }, { "id": "B", "text": "电子在空间某处出现的概率密度" }, { "id": "C", "text": "原子核的质量分布" }, { "id": "D", "text": "轨道的键级" }], "answer": "B", "points": 1, "explanation": "|ψ|² 是概率密度，不是经典意义上的电子运行轨迹。", "difficulty": "easy", "tags": ["orbitals", "quantum chemistry"] },
-    { "id": "q004", "type": "single-choice", "question": "一个 p 亚层包含多少个相互正交的原子轨道？", "options": [{ "id": "A", "text": "1" }, { "id": "B", "text": "2" }, { "id": "C", "text": "3" }, { "id": "D", "text": "5" }], "answer": "C", "points": 1, "explanation": "p 亚层有三个方向相互正交的轨道，通常记作 pₓ、pᵧ 和 p_z。", "difficulty": "easy", "tags": ["orbitals", "electron configuration"] },
-    { "id": "q005", "type": "multiple-choice", "question": "关于基态电子排布，下列哪些说法正确？", "options": [{ "id": "A", "text": "电子先占据能量较低的轨道" }, { "id": "B", "text": "同一轨道最多容纳两个自旋相反的电子" }, { "id": "C", "text": "简并轨道中电子先单占且自旋平行" }, { "id": "D", "text": "同一轨道可容纳任意多个电子" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "A、B、C 分别对应 Aufbau 原理、Pauli 不相容原理和 Hund 规则。", "difficulty": "medium", "tags": ["orbitals", "electron configuration"] },
-    { "id": "q006", "type": "true-false", "question": "由于碳和氢的电负性差异较小，典型 C–H 键通常只表现出弱极性。", "answer": true, "points": 1, "explanation": "C–H 键并非绝对非极性，但电负性差较小，因此通常只具有弱极性。", "difficulty": "easy", "tags": ["bond polarity", "electronegativity"] },
-    { "id": "q007", "type": "single-choice", "question": "按 Lewis 酸碱定义，Lewis 酸是……", "options": [{ "id": "A", "text": "质子供体" }, { "id": "B", "text": "质子受体" }, { "id": "C", "text": "电子对受体" }, { "id": "D", "text": "自由基供体" }], "answer": "C", "points": 1, "explanation": "Lewis 酸接受电子对，Lewis 碱提供电子对。", "difficulty": "easy", "tags": ["Lewis acid-base", "reactivity"] },
-    { "id": "q008", "type": "single-choice", "question": "有机反应机理中，弯曲箭头的箭尾通常应从哪里出发？", "options": [{ "id": "A", "text": "电子对或负电荷所在处" }, { "id": "B", "text": "任意原子的原子核" }, { "id": "C", "text": "电子贫乏的电正性中心" }, { "id": "D", "text": "溶剂分子中心" }], "answer": "A", "points": 1, "explanation": "弯曲箭头表示电子对移动，箭尾从孤对电子、负电荷或 π 键等电子源出发，箭头指向电子汇。", "difficulty": "medium", "tags": ["curved arrows", "nucleophile", "electrophile"] },
-    { "id": "q009", "type": "multiple-choice", "question": "下列哪些属于分子间作用力或其常见类型？", "options": [{ "id": "A", "text": "London 色散力" }, { "id": "B", "text": "偶极–偶极作用" }, { "id": "C", "text": "氢键" }, { "id": "D", "text": "原子核内的强相互作用" }], "answers": ["A", "B", "C"], "points": 1, "explanation": "色散力、偶极–偶极作用和氢键都会影响沸点、溶解性等宏观性质；原子核内强相互作用不属于有机分子间作用力。", "difficulty": "easy", "tags": ["intermolecular forces", "hydrogen bonding"] },
-    { "id": "q010", "type": "single-choice", "question": "形式电荷最常用的计算式是……", "options": [{ "id": "A", "text": "价电子数 − 非键合电子数 − 成键电子数/2" }, { "id": "B", "text": "价电子数 + 非键合电子数 + 成键电子数" }, { "id": "C", "text": "中子数 − 质子数" }, { "id": "D", "text": "成键电子数 − 价电子数" }], "answer": "A", "points": 1, "explanation": "形式电荷 = 价电子数 − 孤对电子数 − 成键电子数的一半。", "difficulty": "medium", "tags": ["formal charge", "Lewis structures"] },
-    { "id": "q011", "type": "single-choice", "question": "骨架式（skeletal formula）的一个基本约定是……", "options": [{ "id": "A", "text": "所有碳和氢都必须写出" }, { "id": "B", "text": "碳原子通常由线端和顶点隐含表示，连在碳上的氢通常省略" }, { "id": "C", "text": "所有原子都只用元素符号表示" }, { "id": "D", "text": "双键和三键必须省略" }], "answer": "B", "points": 1, "explanation": "骨架式用线端和顶点表示碳骨架，碳上的氢通常省略，但杂原子及其氢一般需要明确标出。", "difficulty": "easy", "tags": ["representations", "skeletal formula"] },
-    { "id": "q012", "type": "single-choice", "question": "一组合法的共振式必须保持什么不变？", "options": [{ "id": "A", "text": "原子核的位置和 σ 键连接关系" }, { "id": "B", "text": "所有 π 电子的位置" }, { "id": "C", "text": "每个原子的形式电荷都不变" }, { "id": "D", "text": "分子的构象角完全不变" }], "answer": "A", "points": 1, "explanation": "共振只移动孤对电子、π 电子和电荷，原子核骨架及 σ 键连接关系保持不变。真实结构是共振杂化体。", "difficulty": "medium", "tags": ["resonance", "Lewis structures"] },
-    { "id": "q013", "type": "true-false", "question": "共振式表示分子在不同结构之间随时间来回振荡。", "answer": false, "points": 1, "explanation": "共振式是同一电子离域结构的不同画法，不表示分子在它们之间进行物理振荡；应使用共振双向箭头而非平衡箭头。", "difficulty": "medium", "tags": ["resonance", "notation"] },
-    { "id": "q014", "type": "true-false", "question": "亲核体通常是富电子物种，可以向亲电中心提供电子对。", "answer": true, "points": 1, "explanation": "亲核体是电子对供体，常带负电或含有可用孤对电子；亲电体则是电子贫乏的电子对受体。", "difficulty": "easy", "tags": ["nucleophile", "electrophile"] },
-    { "id": "q015", "type": "single-choice", "question": "叔丁醇盐（t-BuO⁻）既可作为强 Lewis 碱又常表现为较差的亲核体，最合理的解释是……", "options": [{ "id": "A", "text": "它没有可提供的电子对" }, { "id": "B", "text": "其体积大，接近拥挤的亲电中心受阻，但夺取质子仍然有利" }, { "id": "C", "text": "它是 Lewis 酸而不是 Lewis 碱" }, { "id": "D", "text": "亲核性与空间位阻完全无关" }], "answer": "B", "points": 2, "explanation": "叔丁醇盐电子丰富且碱性强，但庞大的叔丁基会阻碍它靠近碳中心，因此在某些反应中更偏向夺取质子而不是进攻拥挤的亲电中心。", "difficulty": "hard", "tags": ["extension", "steric effects", "Lewis base"] }
-  ]
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "有机化学通常主要研究哪一类物质？",
+      "options": [
+        {
+          "id": "A",
+          "text": "所有不含碳的化合物"
+        },
+        {
+          "id": "B",
+          "text": "碳化合物的结构、性质与反应"
+        },
+        {
+          "id": "C",
+          "text": "只研究生物体内的蛋白质"
+        },
+        {
+          "id": "D",
+          "text": "只研究金属配合物"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "有机化学以碳化合物为核心，研究其结构、性质、合成和反应；碳酸盐、碳化物等少数体系通常作为无机化合物处理。",
+      "difficulty": "easy",
+      "tags": [
+        "scope",
+        "carbon chemistry"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "multiple-choice",
+      "question": "下列哪些含碳物质通常作为有机化学的例外而归入无机化学？",
+      "options": [
+        {
+          "id": "A",
+          "text": "CO₂"
+        },
+        {
+          "id": "B",
+          "text": "碳酸盐"
+        },
+        {
+          "id": "C",
+          "text": "碳化物"
+        },
+        {
+          "id": "D",
+          "text": "乙醇"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "CO₂、碳酸盐和碳化物是常见的含碳无机例外；乙醇是典型有机化合物。",
+      "difficulty": "easy",
+      "tags": [
+        "scope",
+        "exceptions"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "波函数 ψ 的平方 |ψ|² 在原子轨道模型中表示什么？",
+      "options": [
+        {
+          "id": "A",
+          "text": "电子的确定轨迹"
+        },
+        {
+          "id": "B",
+          "text": "电子在空间某处出现的概率密度"
+        },
+        {
+          "id": "C",
+          "text": "原子核的质量分布"
+        },
+        {
+          "id": "D",
+          "text": "轨道的键级"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "|ψ|² 是概率密度，不是经典意义上的电子运行轨迹。",
+      "difficulty": "easy",
+      "tags": [
+        "orbitals",
+        "quantum chemistry"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "一个 p 亚层包含多少个相互正交的原子轨道？",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "p 亚层有三个方向相互正交的轨道，通常记作 pₓ、pᵧ 和 p_z。",
+      "difficulty": "easy",
+      "tags": [
+        "orbitals",
+        "electron configuration"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "multiple-choice",
+      "question": "关于基态电子排布，下列哪些说法正确？",
+      "options": [
+        {
+          "id": "A",
+          "text": "电子先占据能量较低的轨道"
+        },
+        {
+          "id": "B",
+          "text": "同一轨道最多容纳两个自旋相反的电子"
+        },
+        {
+          "id": "C",
+          "text": "简并轨道中电子先单占且自旋平行"
+        },
+        {
+          "id": "D",
+          "text": "同一轨道可容纳任意多个电子"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "A、B、C 分别对应 Aufbau 原理、Pauli 不相容原理和 Hund 规则。",
+      "difficulty": "easy",
+      "tags": [
+        "orbitals",
+        "electron configuration"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "true-false",
+      "question": "由于碳和氢的电负性差异较小，典型 C–H 键通常只表现出弱极性。",
+      "answer": true,
+      "points": 1,
+      "explanation": "C–H 键并非绝对非极性，但电负性差较小，因此通常只具有弱极性。",
+      "difficulty": "medium",
+      "tags": [
+        "bond polarity",
+        "electronegativity"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "按 Lewis 酸碱定义，Lewis 酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "质子供体"
+        },
+        {
+          "id": "B",
+          "text": "质子受体"
+        },
+        {
+          "id": "C",
+          "text": "电子对受体"
+        },
+        {
+          "id": "D",
+          "text": "自由基供体"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "Lewis 酸接受电子对，Lewis 碱提供电子对。",
+      "difficulty": "medium",
+      "tags": [
+        "Lewis acid-base",
+        "reactivity"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "有机反应机理中，弯曲箭头的箭尾通常应从哪里出发？",
+      "options": [
+        {
+          "id": "A",
+          "text": "电子对或负电荷所在处"
+        },
+        {
+          "id": "B",
+          "text": "任意原子的原子核"
+        },
+        {
+          "id": "C",
+          "text": "电子贫乏的电正性中心"
+        },
+        {
+          "id": "D",
+          "text": "溶剂分子中心"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "弯曲箭头表示电子对移动，箭尾从孤对电子、负电荷或 π 键等电子源出发，箭头指向电子汇。",
+      "difficulty": "medium",
+      "tags": [
+        "curved arrows",
+        "nucleophile",
+        "electrophile"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "multiple-choice",
+      "question": "下列哪些属于分子间作用力或其常见类型？",
+      "options": [
+        {
+          "id": "A",
+          "text": "London 色散力"
+        },
+        {
+          "id": "B",
+          "text": "偶极–偶极作用"
+        },
+        {
+          "id": "C",
+          "text": "氢键"
+        },
+        {
+          "id": "D",
+          "text": "原子核内的强相互作用"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "色散力、偶极–偶极作用和氢键都会影响沸点、溶解性等宏观性质；原子核内强相互作用不属于有机分子间作用力。",
+      "difficulty": "medium",
+      "tags": [
+        "intermolecular forces",
+        "hydrogen bonding"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "形式电荷最常用的计算式是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "价电子数 − 非键合电子数 − 成键电子数/2"
+        },
+        {
+          "id": "B",
+          "text": "价电子数 + 非键合电子数 + 成键电子数"
+        },
+        {
+          "id": "C",
+          "text": "中子数 − 质子数"
+        },
+        {
+          "id": "D",
+          "text": "成键电子数 − 价电子数"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "形式电荷 = 价电子数 − 孤对电子数 − 成键电子数的一半。",
+      "difficulty": "medium",
+      "tags": [
+        "formal charge",
+        "Lewis structures"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "骨架式（skeletal formula）的一个基本约定是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "所有碳和氢都必须写出"
+        },
+        {
+          "id": "B",
+          "text": "碳原子通常由线端和顶点隐含表示，连在碳上的氢通常省略"
+        },
+        {
+          "id": "C",
+          "text": "所有原子都只用元素符号表示"
+        },
+        {
+          "id": "D",
+          "text": "双键和三键必须省略"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "骨架式用线端和顶点表示碳骨架，碳上的氢通常省略，但杂原子及其氢一般需要明确标出。",
+      "difficulty": "medium",
+      "tags": [
+        "representations",
+        "skeletal formula"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "一组合法的共振式必须保持什么不变？",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子核的位置和 σ 键连接关系"
+        },
+        {
+          "id": "B",
+          "text": "所有 π 电子的位置"
+        },
+        {
+          "id": "C",
+          "text": "每个原子的形式电荷都不变"
+        },
+        {
+          "id": "D",
+          "text": "分子的构象角完全不变"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "共振只移动孤对电子、π 电子和电荷，原子核骨架及 σ 键连接关系保持不变。真实结构是共振杂化体。",
+      "difficulty": "medium",
+      "tags": [
+        "resonance",
+        "Lewis structures"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "共振式表示分子在不同结构之间随时间来回振荡。",
+      "answer": false,
+      "points": 1,
+      "explanation": "共振式是同一电子离域结构的不同画法，不表示分子在它们之间进行物理振荡；应使用共振双向箭头而非平衡箭头。",
+      "difficulty": "medium",
+      "tags": [
+        "resonance",
+        "notation"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "true-false",
+      "question": "亲核体通常是富电子物种，可以向亲电中心提供电子对。",
+      "answer": true,
+      "points": 1,
+      "explanation": "亲核体是电子对供体，常带负电或含有可用孤对电子；亲电体则是电子贫乏的电子对受体。",
+      "difficulty": "medium",
+      "tags": [
+        "nucleophile",
+        "electrophile"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "叔丁醇盐（t-BuO⁻）既可作为强 Lewis 碱又常表现为较差的亲核体，最合理的解释是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "它没有可提供的电子对"
+        },
+        {
+          "id": "B",
+          "text": "其体积大，接近拥挤的亲电中心受阻，但夺取质子仍然有利"
+        },
+        {
+          "id": "C",
+          "text": "它是 Lewis 酸而不是 Lewis 碱"
+        },
+        {
+          "id": "D",
+          "text": "亲核性与空间位阻完全无关"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "叔丁醇盐电子丰富且碱性强，但庞大的叔丁基会阻碍它靠近碳中心，因此在某些反应中更偏向夺取质子而不是进攻拥挤的亲电中心。",
+      "difficulty": "medium",
+      "tags": [
+        "extension",
+        "steric effects",
+        "Lewis base"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "氯甲烷中 C–Cl 键的极性方向最合理的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cδ+–Clδ−"
+        },
+        {
+          "id": "B",
+          "text": "Cδ−–Clδ+"
+        },
+        {
+          "id": "C",
+          "text": "没有极性"
+        },
+        {
+          "id": "D",
+          "text": "只能写成离子键"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "氯的电负性高于碳，共享电子密度偏向氯；这表示键极性，不等于完全电离。",
+      "difficulty": "hard",
+      "tags": [
+        "bond polarity"
+      ],
+      "image": {
+        "src": "assets/structures/org-chloromethane-chloromethane-neutral.png",
+        "alt": "氯甲烷结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCl 渲染"
+      }
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于共振表示，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子连接关系保持不变"
+        },
+        {
+          "id": "B",
+          "text": "只移动电子，不移动原子核"
+        },
+        {
+          "id": "C",
+          "text": "真实结构可用共振杂化体描述"
+        },
+        {
+          "id": "D",
+          "text": "分子会在贡献式之间来回振荡"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "共振式是同一电子结构的不同书写方式，不是不同分子之间的快速互变。",
+      "difficulty": "hard",
+      "tags": [
+        "resonance",
+        "Lewis structures"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "碳原子通常通过形成多少个共价键来满足常见的八隅体？",
+      "answer": "4",
+      "acceptableAnswers": [
+        "四个",
+        "4个"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "中性四价碳在常见有机结构中通常形成四个共价键。",
+      "difficulty": "hard",
+      "tags": [
+        "carbon valence"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "London 色散力只存在于极性分子之间。",
+      "answer": false,
+      "points": 2,
+      "explanation": "色散力来自瞬时偶极，所有原子和分子都存在；分子越大、越易极化时通常越显著。",
+      "difficulty": "hard",
+      "tags": [
+        "intermolecular forces"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "根据图示骨架，选择符合最长连续碳链与最低定位号规则的名称。",
+      "options": [
+        {
+          "id": "A",
+          "text": "2,4-二甲基戊烷"
+        },
+        {
+          "id": "B",
+          "text": "3-乙基-2-甲基丁烷"
+        },
+        {
+          "id": "C",
+          "text": "2-异丙基丁烷"
+        },
+        {
+          "id": "D",
+          "text": "1,3-二甲基己烷"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "最长碳链为五个碳，两个甲基定位号为 2 和 4；不能把较短链误当作母体。",
+      "difficulty": "challenging",
+      "tags": [
+        "nomenclature",
+        "parent chain"
+      ],
+      "image": {
+        "src": "assets/structures/org-2-4-dimethylpentane-2-4-dimethylpentane-neutral.png",
+        "alt": "支链烷烃结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CC(C)CC(C)C 渲染"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "当一个分子同时含有极性键但整体偶极矩因几何抵消时，这种分子整体可称为____分子。",
+      "answer": "非极性",
+      "acceptableAnswers": [
+        "无极性",
+        "nonpolar"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "键偶极与分子偶极不是同一层级；几何对称可能使键偶极矢量和为零。",
+      "difficulty": "challenging",
+      "tags": [
+        "polarity"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "对于一个需要判断反应位点的有机分子，哪些信息应优先综合考虑？",
+      "options": [
+        {
+          "id": "A",
+          "text": "官能团和键极性"
+        },
+        {
+          "id": "B",
+          "text": "孤对电子或 π 电子的可供给性"
+        },
+        {
+          "id": "C",
+          "text": "空间位阻与分子几何"
+        },
+        {
+          "id": "D",
+          "text": "只看分子式中的碳原子数"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "有机反应位点往往由电子效应与立体效应共同决定，单看分子式不足以判断。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "reactivity"
+      ]
+    }
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

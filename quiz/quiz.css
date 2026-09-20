@@ -53,6 +53,7 @@ body { margin: 0; min-height: 100vh; background: var(--paper); color: var(--ink)
 .chip.difficulty-easy { border-color: #275749; background: #102d2b; color: var(--green); }
 .chip.difficulty-medium { border-color: #66502f; background: #302719; color: var(--orange); }
 .chip.difficulty-hard { border-color: #663c44; background: #321e29; color: var(--red); }
+.chip.difficulty-challenging { border-color: #805d37; background: #3b2919; color: #ffd08a; }
 .question-prompt { max-width: 680px; margin: 0 0 32px; font: 500 clamp(23px, 3vw, 32px)/1.18 'Space Grotesk', sans-serif; letter-spacing: -.05em; }
 .answer-area { min-height: 120px; }
 .option-list { display: grid; gap: 11px; }

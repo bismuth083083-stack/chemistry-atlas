@@ -5,7 +5,7 @@
   "subject": "physical-chemistry",
   "chapter": "Chapter 4 · First law",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -191,7 +191,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "定容时 ΔV=0，膨胀功为零，所以热量直接改变内能。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "constant volume",
         "internal energy"
@@ -222,7 +222,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "量热测量通过热容和温度变化建立热量收支，需要明确边界和校正。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "calorimetry"
       ]
@@ -252,7 +252,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "焓 H=U+pV，便于处理定压过程中的热效应。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "enthalpy"
       ]
@@ -282,7 +282,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "在定压且仅有 pV 功的条件下，定压热等于焓变。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "enthalpy",
         "constant pressure"
@@ -344,7 +344,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "绝热表示 q=0；可逆是另一项过程条件，不能把绝热自动等同于可逆。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "adiabatic",
         "reversible"
@@ -375,7 +375,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "压缩时环境对体系做功，体系获得功，故 w 为正。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "work",
         "compression"
@@ -388,7 +388,7 @@
       "answer": true,
       "points": 1,
       "explanation": "U 只由状态决定；热和功是达到状态变化的不同能量传递路径。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "state function",
         "path function"
@@ -448,14 +448,201 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "体系对环境做功意味着 w=−20 J，因此 ΔU=q+w=50−20=+30 J。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "first law",
         "calculation"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "下列哪一项是状态函数？",
+      "options": [
+        {
+          "id": "A",
+          "text": "内能"
+        },
+        {
+          "id": "B",
+          "text": "热"
+        },
+        {
+          "id": "C",
+          "text": "功"
+        },
+        {
+          "id": "D",
+          "text": "摩擦路径长度"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "内能由状态决定；热和功是过程量。",
+      "difficulty": "hard",
+      "tags": [
+        "first law",
+        "state function"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于第一定律符号约定，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "必须先声明功的正负号约定"
+        },
+        {
+          "id": "B",
+          "text": "同一约定下 ΔU=q+w 可保持一致"
+        },
+        {
+          "id": "C",
+          "text": "不同教材可能采用不同功号约定"
+        },
+        {
+          "id": "D",
+          "text": "符号约定可以随每一步随意改变"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "关键是全程保持同一符号约定并清晰定义系统边界。",
+      "difficulty": "hard",
+      "tags": [
+        "sign convention"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "定容且只做体积功时，体系吸收的热量等于内能变化____。",
+      "answer": "量",
+      "acceptableAnswers": [
+        "量",
+        "ΔU"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "定容时 w=0，因此 qᵥ=ΔU；题目中的“变化量”完整写作内能变化量。",
+      "difficulty": "hard",
+      "tags": [
+        "heat",
+        "internal energy"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "焓是状态函数，但在所有过程中都等于体系吸收的热量。",
+      "answer": false,
+      "points": 2,
+      "explanation": "只有特定条件（如定压且仅体积功）下 qₚ=ΔH；一般过程不能直接等同。",
+      "difficulty": "hard",
+      "tags": [
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "理想气体自由膨胀进入真空且与环境无热交换时，最合理的结论是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "q=0、w=0，因此 ΔU=0"
+        },
+        {
+          "id": "B",
+          "text": "q>0 且 w>0"
+        },
+        {
+          "id": "C",
+          "text": "ΔU 只由体积增加决定"
+        },
+        {
+          "id": "D",
+          "text": "一定发生相变"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "真空无外压，膨胀功为零；绝热又使 q=0，所以第一定律给出 ΔU=0。",
+      "difficulty": "challenging",
+      "tags": [
+        "free expansion",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "对理想气体，内能主要是温度的函数；若温度不变，ΔU 通常为____。",
+      "answer": "0",
+      "acceptableAnswers": [
+        "零",
+        "0"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "理想气体内能只依赖温度，等温过程中内能变化为零。",
+      "difficulty": "challenging",
+      "tags": [
+        "ideal gas",
+        "internal energy"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "分析一个热力学过程时，哪些步骤可以减少符号错误？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先画出系统边界"
+        },
+        {
+          "id": "B",
+          "text": "定义 q 和 w 的正负号"
+        },
+        {
+          "id": "C",
+          "text": "写出状态初末和约束条件"
+        },
+        {
+          "id": "D",
+          "text": "只凭“膨胀一定吸热”判断"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "热力学判断必须以边界、约定和约束为基础，不能用单一过程直觉替代方程。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "thermodynamic bookkeeping"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

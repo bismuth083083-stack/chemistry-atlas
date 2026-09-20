@@ -5,7 +5,7 @@
   "subject": "physical-chemistry",
   "chapter": "Chapter 3 · Kinetic theory",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -97,7 +97,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "各向同性运动给出 ⟨cₓ²⟩=⅓⟨c²⟩，从而得到压力与密度及均方速率的关系。",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "kinetic theory",
         "pressure"
@@ -219,7 +219,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "宏观温度对应统计平均，单个分子的速率会分布在一系列范围内。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "Maxwell distribution"
       ]
@@ -249,7 +249,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "平均动能由温度决定，M 越大时 √(1/M) 使典型速率降低。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "molecular speed",
         "molar mass"
@@ -311,7 +311,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "在其他条件相近时，粒子越密集，单位时间发生的碰撞越多。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "collision frequency"
       ]
@@ -341,7 +341,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "平均自由程是粒子连续两次碰撞之间自由飞行距离的平均值。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "mean free path"
       ]
@@ -384,7 +384,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "理想化假设有适用范围；高压下有限体积效应不能忽略。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "model assumptions"
       ]
@@ -443,14 +443,199 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "cᵣₘₛ∝1/√M，因此比值为 √(M(O₂)/M(N₂))=√(32/28)。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "rms speed",
         "calculation"
       ]
+    },
+    {
+      "id": "q016",
+      "type": "fill-in-the-blank",
+      "question": "理想气体分子的平均平动动能与绝对温度____正比。",
+      "answer": "成",
+      "acceptableAnswers": [
+        "成",
+        "成正比"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "平均平动动能与 T 成正比，温度反映分子热运动的能量尺度。",
+      "difficulty": "hard",
+      "tags": [
+        "kinetic theory"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "Maxwell 速率分布的温度升高通常会导致……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分布峰向更高速率移动"
+        },
+        {
+          "id": "B",
+          "text": "分布变宽"
+        },
+        {
+          "id": "C",
+          "text": "平均速率增大"
+        },
+        {
+          "id": "D",
+          "text": "所有分子速率相同"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "温度升高使速率分布更宽且中心向高速度方向移动，并非所有分子同速。",
+      "difficulty": "hard",
+      "tags": [
+        "Maxwell distribution"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "true-false",
+      "question": "气体分子碰撞本身是产生宏观压强的重要微观来源。",
+      "answer": true,
+      "points": 2,
+      "explanation": "分子与容器壁碰撞并传递动量，宏观上表现为压力。",
+      "difficulty": "hard",
+      "tags": [
+        "pressure",
+        "collisions"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "平均自由程主要受哪些因素控制？",
+      "options": [
+        {
+          "id": "A",
+          "text": "数密度和碰撞截面"
+        },
+        {
+          "id": "B",
+          "text": "样品颜色"
+        },
+        {
+          "id": "C",
+          "text": "容器标签"
+        },
+        {
+          "id": "D",
+          "text": "只由摩尔质量决定"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "平均自由程与分子间平均距离和有效碰撞截面有关。",
+      "difficulty": "hard",
+      "tags": [
+        "mean free path"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "若同一气体温度升高而数密度保持不变，碰撞频率的典型趋势是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "通常增大，因为平均速度升高"
+        },
+        {
+          "id": "B",
+          "text": "一定降为零"
+        },
+        {
+          "id": "C",
+          "text": "与速度无关"
+        },
+        {
+          "id": "D",
+          "text": "只由气体颜色决定"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "更高温度增加平均速度，使单位时间内的碰撞机会通常增加。",
+      "difficulty": "challenging",
+      "tags": [
+        "collision frequency",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "分子速率分布的横轴通常表示分子的____。",
+      "answer": "速率",
+      "acceptableAnswers": [
+        "速率",
+        "speed"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Maxwell 速率分布统计的是分子速率，而不是单一方向的速度分量。",
+      "difficulty": "challenging",
+      "tags": [
+        "Maxwell distribution"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "在从微观动理论推导宏观性质时，哪些假设需要明确？",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子是否视为点粒子"
+        },
+        {
+          "id": "B",
+          "text": "碰撞是否近似弹性"
+        },
+        {
+          "id": "C",
+          "text": "是否忽略长程相互作用"
+        },
+        {
+          "id": "D",
+          "text": "直接把平均值当成每个分子相同的值"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "宏观公式的适用性取决于微观假设；平均量不能误读为每个分子的确定值。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "kinetic theory"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

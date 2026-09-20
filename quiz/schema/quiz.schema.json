@@ -31,7 +31,7 @@
         "question": { "type": "string", "minLength": 1 },
         "points": { "type": "number", "exclusiveMinimum": 0 },
         "explanation": { "type": "string", "minLength": 1 },
-        "difficulty": { "enum": ["easy", "medium", "hard"] },
+        "difficulty": { "enum": ["easy", "medium", "hard", "challenging"] },
         "tags": { "type": "array", "items": { "type": "string" } },
         "knowledgePoints": { "type": "array", "items": { "type": "string" } },
         "image": {
@@ -67,7 +67,7 @@
     "selection": {
       "type": "object",
       "additionalProperties": false,
-      "properties": { "mode": { "enum": ["fixed", "question-bank"] }, "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } }, "chapter": { "type": "string" }, "difficulty": { "enum": ["easy", "medium", "hard"] }, "tags": { "type": "array", "items": { "type": "string" } } }
+      "properties": { "mode": { "enum": ["fixed", "question-bank"] }, "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } }, "chapter": { "type": "string" }, "difficulty": { "enum": ["easy", "medium", "hard", "challenging"] }, "tags": { "type": "array", "items": { "type": "string" } } }
     }
   }
 }

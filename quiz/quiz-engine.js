@@ -52,7 +52,7 @@ function validateQuiz(quiz) {
     need(typeof question.question === 'string' && question.question.trim(), `${path}.question`, 'must be a non-empty string');
     need(Number.isFinite(question.points) && question.points > 0, `${path}.points`, 'must be a positive number');
     need(typeof question.explanation === 'string' && question.explanation.trim(), `${path}.explanation`, 'must be a non-empty string');
-    need(['easy', 'medium', 'hard'].includes(question.difficulty), `${path}.difficulty`, 'must be easy, medium, or hard');
+    need(['easy', 'medium', 'hard', 'challenging'].includes(question.difficulty), `${path}.difficulty`, 'must be easy, medium, hard, or challenging');
     need(Array.isArray(question.tags), `${path}.tags`, 'must be an array');
     if (question.image !== undefined) {
       need(question.image && typeof question.image === 'object' && typeof question.image.src === 'string' && question.image.src.trim() && typeof question.image.alt === 'string' && question.image.alt.trim(), `${path}.image`, 'must contain src and alt text');

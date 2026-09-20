@@ -5,7 +5,7 @@
   "subject": "organic-chemistry",
   "chapter": "Chapter 3 · Acidity and basicity",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -186,7 +186,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "共轭碱稳定会降低解离产物的能量，使酸失去质子的过程更有利。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "conjugate base"
       ]
@@ -317,7 +317,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "同周期比较时，电负性更高的原子通常更能稳定负电荷。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "electronegativity"
       ]
@@ -422,7 +422,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "pKa 较小表示 Ka 较大，因此 HA 更容易解离，是更强的酸。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "pKa",
         "comparison"
@@ -451,9 +451,9 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "乙酸的共轭碱有两个近似等价的氧共同承载负电荷，显著降低能量；这比单纯比较分子大小更关键。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "resonance",
@@ -464,6 +464,197 @@
         "alt": "乙酸根的共振离域",
         "caption": "由 Chemical Structure Renderer 使用同一原子映射生成"
       }
+    },
+    {
+      "id": "q016",
+      "type": "fill-in-the-blank",
+      "question": "pKa = −log Ka，因此酸性增强通常对应 pKa____。",
+      "answer": "减小",
+      "acceptableAnswers": [
+        "减小",
+        "降低"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "Ka 增大时 pKa 减小，代表更有利于失去质子。",
+      "difficulty": "hard",
+      "tags": [
+        "pKa"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "稳定共轭碱的常见因素包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "负电荷共振离域"
+        },
+        {
+          "id": "B",
+          "text": "吸电子诱导效应"
+        },
+        {
+          "id": "C",
+          "text": "负电荷位于更适合承载它的原子上"
+        },
+        {
+          "id": "D",
+          "text": "只要分子量大就一定稳定"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "共轭、诱导和原子效应都能降低共轭碱能量。",
+      "difficulty": "hard",
+      "tags": [
+        "conjugate base",
+        "stability"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "true-false",
+      "question": "酸碱反应的平衡方向通常偏向形成较弱的酸和较弱的碱。",
+      "answer": true,
+      "points": 2,
+      "explanation": "比较两侧共轭酸碱的相对稳定性，是判断质子转移方向的常用方法。",
+      "difficulty": "hard",
+      "tags": [
+        "equilibrium",
+        "acid-base"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "在弯箭头表示中，箭头起点通常应放在……",
+      "options": [
+        {
+          "id": "A",
+          "text": "孤对电子或成键电子对"
+        },
+        {
+          "id": "B",
+          "text": "质子符号的中心"
+        },
+        {
+          "id": "C",
+          "text": "没有电子的原子核"
+        },
+        {
+          "id": "D",
+          "text": "溶剂名称上"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "弯箭头追踪电子对的移动，起点必须来自已有电子。",
+      "difficulty": "hard",
+      "tags": [
+        "curved arrows"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "图示乙酸根的两个贡献式之间，最合理的关系是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "共振贡献式，真实结构是离域杂化体"
+        },
+        {
+          "id": "B",
+          "text": "两个不同化合物的酸碱平衡"
+        },
+        {
+          "id": "C",
+          "text": "先后发生的两步反应"
+        },
+        {
+          "id": "D",
+          "text": "两个互不相关的同分异构体"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "原子骨架不变、负电荷在两个氧之间离域，因此是共振表示。",
+      "difficulty": "challenging",
+      "tags": [
+        "resonance",
+        "extension"
+      ],
+      "image": {
+        "src": "assets/structures/group-acetate-resonance.png",
+        "alt": "乙酸根的两种共振贡献式",
+        "caption": "由 Chemical Structure Renderer 使用同一原子映射生成"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "在 Brønsted–Lowry 质子转移中，失去质子的物种称为质子____体。",
+      "answer": "供",
+      "acceptableAnswers": [
+        "供体",
+        "供"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Brønsted–Lowry 酸是质子供体，碱是质子受体。",
+      "difficulty": "challenging",
+      "tags": [
+        "Bronsted-Lowry"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "若要比较两个有机酸的相对强弱，哪些证据组合最有用？",
+      "options": [
+        {
+          "id": "A",
+          "text": "共轭碱的共振稳定性"
+        },
+        {
+          "id": "B",
+          "text": "吸电子/给电子取代基效应"
+        },
+        {
+          "id": "C",
+          "text": "原子大小与电负性"
+        },
+        {
+          "id": "D",
+          "text": "只比较未电离酸的颜色"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "酸强度来自解离热力学；共轭碱稳定性和结构效应比颜色等表面信息更关键。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "acid strength"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

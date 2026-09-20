@@ -5,7 +5,7 @@
   "subject": "organic-chemistry",
   "chapter": "Chapter 2 · Molecular orbitals",
   "version": "1.0.0",
-  "totalPoints": 16,
+  "totalPoints": 32,
   "selection": {
     "mode": "fixed"
   },
@@ -137,7 +137,7 @@
       ],
       "points": 1,
       "explanation": "成键组合增加核间电子密度并降低能量；反键组合具有节点，若被占据会抵消成键贡献。",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "bonding orbital",
         "antibonding orbital"
@@ -198,7 +198,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "较高能量的已占据分子轨道常作为亲核体的电子供体；LUMO 则常作为受体。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "HOMO-LUMO"
       ]
@@ -228,7 +228,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "LUMO 是最低未占据分子轨道，亲电体的受体轨道常与亲核体 HOMO 相互作用。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "HOMO-LUMO"
       ]
@@ -258,7 +258,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "四个等价 sp³ 杂化轨道指向近似四面体方向。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "hybridization",
         "geometry"
@@ -429,7 +429,7 @@
       "answer": "A",
       "points": 1,
       "explanation": "电负性差使共享电子密度偏向氯，但这不等于分子中存在游离氯离子。",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "bond polarity"
       ],
@@ -462,9 +462,9 @@
         }
       ],
       "answer": "A",
-      "points": 2,
+      "points": 1,
       "explanation": "OH⁻ 是电子供体，CH₃Cl 的碳中心是亲电受体；形成 C–O 键的同时，C–Cl 键电子归于 Cl。",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "extension",
         "HOMO-LUMO",
@@ -475,6 +475,192 @@
         "alt": "氯甲烷结构示意图",
         "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCl 渲染"
       }
+    },
+    {
+      "id": "q016",
+      "type": "fill-in-the-blank",
+      "question": "乙烯的两个碳原子通常采用____杂化来描述其局域 σ 键方向。",
+      "answer": "sp2",
+      "acceptableAnswers": [
+        "sp2",
+        "sp²"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "双键碳周围近似三角平面，常用 sp² 杂化描述三个 σ 键方向。",
+      "difficulty": "hard",
+      "tags": [
+        "hybridization"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于 HOMO–LUMO 相互作用，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "HOMO 可作为电子供体轨道"
+        },
+        {
+          "id": "B",
+          "text": "LUMO 可作为电子受体轨道"
+        },
+        {
+          "id": "C",
+          "text": "轨道能级差较小通常有利于相互作用"
+        },
+        {
+          "id": "D",
+          "text": "相位对组合完全没有影响"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "轨道能级、空间重叠和相位共同决定有效相互作用。",
+      "difficulty": "hard",
+      "tags": [
+        "HOMO-LUMO",
+        "orbital interaction"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "true-false",
+      "question": "π 键的侧向重叠要求相关 p 轨道大致平行。",
+      "answer": true,
+      "points": 2,
+      "explanation": "平行 p 轨道的侧向重叠形成 π 成键或反键组合。",
+      "difficulty": "hard",
+      "tags": [
+        "pi bond"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "CO₂ 整体没有净偶极矩的主要原因是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "线形结构使两个相反方向的键偶极抵消"
+        },
+        {
+          "id": "B",
+          "text": "C=O 键完全没有极性"
+        },
+        {
+          "id": "C",
+          "text": "氧原子没有电负性"
+        },
+        {
+          "id": "D",
+          "text": "分子中没有电子"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "每个 C=O 键有极性，但线形对称几何使偶极矢量相互抵消。",
+      "difficulty": "hard",
+      "tags": [
+        "polarity"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "对一个 sp³ 碳中心，最合理的局域几何描述是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "四面体"
+        },
+        {
+          "id": "B",
+          "text": "三角平面"
+        },
+        {
+          "id": "C",
+          "text": "线形"
+        },
+        {
+          "id": "D",
+          "text": "正方平面"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "四个 sp³ 方向在空间中近似四面体排列。",
+      "difficulty": "challenging",
+      "tags": [
+        "geometry",
+        "extension"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "成键电子数为 6、反键电子数为 2 时，简单分子轨道模型给出的键级为____。",
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "二"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "键级=(成键电子数−反键电子数)/2=(6−2)/2=2。",
+      "difficulty": "challenging",
+      "tags": [
+        "bond order",
+        "calculation"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "选择一个反应轨道模型时，哪些因素必须同时检查？",
+      "options": [
+        {
+          "id": "A",
+          "text": "供体与受体能级"
+        },
+        {
+          "id": "B",
+          "text": "轨道空间重叠与方向"
+        },
+        {
+          "id": "C",
+          "text": "电子相位"
+        },
+        {
+          "id": "D",
+          "text": "只看两个分子的分子量"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "HOMO–LUMO 分析不是单纯能级排序，还需要空间与相位匹配。",
+      "difficulty": "challenging",
+      "tags": [
+        "extension",
+        "orbital symmetry"
+      ]
     }
-  ]
+  ],
+  "questionCount": 22,
+  "updatedAt": "2026-09-20"
 }

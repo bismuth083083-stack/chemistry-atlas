@@ -5,7 +5,10 @@
       "id": "org-chloromethane",
       "chinese_name": "氯甲烷",
       "english_name": "chloromethane",
-      "structure": { "format": "smiles", "value": "CCl" },
+      "structure": {
+        "format": "smiles",
+        "value": "CCl"
+      },
       "protonation": "Explicit neutral structure; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -13,16 +16,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Organic Chemistry lesson 02, Lewis acid-base and substitution example", "accessed": "2026-09-20" },
-      "expected": { "formula": "CH3Cl", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry lesson 02, Lewis acid-base and substitution example",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "CH3Cl",
+        "net_charge": 0
+      }
     },
     {
       "id": "org-ethene",
       "chinese_name": "乙烯",
       "english_name": "ethene",
-      "structure": { "format": "smiles", "value": "C=C" },
+      "structure": {
+        "format": "smiles",
+        "value": "C=C"
+      },
       "protonation": "Explicit neutral structure; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -30,16 +46,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Organic Chemistry lesson 02, sigma and pi bonding", "accessed": "2026-09-20" },
-      "expected": { "formula": "C2H4", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry lesson 02, sigma and pi bonding",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C2H4",
+        "net_charge": 0
+      }
     },
     {
       "id": "org-benzene",
       "chinese_name": "苯",
       "english_name": "benzene",
-      "structure": { "format": "smiles", "value": "c1ccccc1" },
+      "structure": {
+        "format": "smiles",
+        "value": "c1ccccc1"
+      },
       "protonation": "Explicit neutral structure; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -47,16 +76,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Inorganic Chemistry lesson 04, symmetry examples", "accessed": "2026-09-20" },
-      "expected": { "formula": "C6H6", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry lesson 04, symmetry examples",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C6H6",
+        "net_charge": 0
+      }
     },
     {
       "id": "org-acetate-01",
       "chinese_name": "乙酸根共振式一",
       "english_name": "acetate-resonance-01",
-      "structure": { "format": "smiles", "value": "[O-:1][C:2](=[O:3])[CH3:4]" },
+      "structure": {
+        "format": "smiles",
+        "value": "[O-:1][C:2](=[O:3])[CH3:4]"
+      },
       "protonation": "Explicit acetate anion; charge -1",
       "stereochemistry": "explicit",
       "image_type": "resonance-01",
@@ -64,16 +106,29 @@
       "show_lone_pairs": false,
       "group": "acetate-resonance",
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Organic Chemistry lesson 03, conjugate-base resonance", "accessed": "2026-09-20" },
-      "expected": { "formula": "C2H3O2-", "net_charge": -1 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry lesson 03, conjugate-base resonance",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C2H3O2-",
+        "net_charge": -1
+      }
     },
     {
       "id": "org-acetate-02",
       "chinese_name": "乙酸根共振式二",
       "english_name": "acetate-resonance-02",
-      "structure": { "format": "smiles", "value": "[O:1]=[C:2]([O-:3])[CH3:4]" },
+      "structure": {
+        "format": "smiles",
+        "value": "[O:1]=[C:2]([O-:3])[CH3:4]"
+      },
       "protonation": "Explicit acetate anion; charge -1",
       "stereochemistry": "explicit",
       "image_type": "resonance-02",
@@ -81,16 +136,29 @@
       "show_lone_pairs": false,
       "group": "acetate-resonance",
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Organic Chemistry lesson 03, conjugate-base resonance", "accessed": "2026-09-20" },
-      "expected": { "formula": "C2H3O2-", "net_charge": -1 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry lesson 03, conjugate-base resonance",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C2H3O2-",
+        "net_charge": -1
+      }
     },
     {
       "id": "org-butane",
       "chinese_name": "正丁烷",
       "english_name": "butane",
-      "structure": { "format": "smiles", "value": "CCCC" },
+      "structure": {
+        "format": "smiles",
+        "value": "CCCC"
+      },
       "protonation": "Explicit neutral structure; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -98,16 +166,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Organic Chemistry lesson 05, conformational analysis", "accessed": "2026-09-20" },
-      "expected": { "formula": "C4H10", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry lesson 05, conformational analysis",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C4H10",
+        "net_charge": 0
+      }
     },
     {
       "id": "org-e-butene",
       "chinese_name": "(E)-2-丁烯",
       "english_name": "e-butene",
-      "structure": { "format": "smiles", "value": "C/C=C/C" },
+      "structure": {
+        "format": "smiles",
+        "value": "C/C=C/C"
+      },
       "protonation": "Explicit E alkene; charge 0",
       "stereochemistry": "explicit",
       "image_type": "E",
@@ -115,16 +196,32 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Organic Chemistry lesson 05, E/Z stereochemistry", "accessed": "2026-09-20" },
-      "expected": { "formula": "C4H8", "net_charge": 0, "ez": ["E"] }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry lesson 05, E/Z stereochemistry",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C4H8",
+        "net_charge": 0,
+        "ez": [
+          "E"
+        ]
+      }
     },
     {
       "id": "org-z-butene",
       "chinese_name": "(Z)-2-丁烯",
       "english_name": "z-butene",
-      "structure": { "format": "smiles", "value": "C/C=C\\C" },
+      "structure": {
+        "format": "smiles",
+        "value": "C/C=C\\C"
+      },
       "protonation": "Explicit Z alkene; charge 0",
       "stereochemistry": "explicit",
       "image_type": "Z",
@@ -132,16 +229,32 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Organic Chemistry lesson 05, E/Z stereochemistry", "accessed": "2026-09-20" },
-      "expected": { "formula": "C4H8", "net_charge": 0, "ez": ["Z"] }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry lesson 05, E/Z stereochemistry",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C4H8",
+        "net_charge": 0,
+        "ez": [
+          "Z"
+        ]
+      }
     },
     {
       "id": "org-cyclohexane",
       "chinese_name": "环己烷",
       "english_name": "cyclohexane",
-      "structure": { "format": "smiles", "value": "C1CCCCC1" },
+      "structure": {
+        "format": "smiles",
+        "value": "C1CCCCC1"
+      },
       "protonation": "Explicit neutral structure; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -149,16 +262,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Organic Chemistry lesson 05, cyclohexane conformations", "accessed": "2026-09-20" },
-      "expected": { "formula": "C6H12", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry lesson 05, cyclohexane conformations",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C6H12",
+        "net_charge": 0
+      }
     },
     {
       "id": "inorg-bf3",
       "chinese_name": "三氟化硼",
       "english_name": "boron-trifluoride",
-      "structure": { "format": "smiles", "value": "F[B](F)F" },
+      "structure": {
+        "format": "smiles",
+        "value": "F[B](F)F"
+      },
       "protonation": "Explicit neutral structure; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -166,16 +292,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Inorganic Chemistry lesson 03, Lewis model and VSEPR", "accessed": "2026-09-20" },
-      "expected": { "formula": "BF3", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry lesson 03, Lewis model and VSEPR",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "BF3",
+        "net_charge": 0
+      }
     },
     {
       "id": "inorg-carbon-dioxide",
       "chinese_name": "二氧化碳",
       "english_name": "carbon-dioxide",
-      "structure": { "format": "smiles", "value": "O=C=O" },
+      "structure": {
+        "format": "smiles",
+        "value": "O=C=O"
+      },
       "protonation": "Explicit neutral structure; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -183,16 +322,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Inorganic Chemistry lesson 04, linear-molecule symmetry", "accessed": "2026-09-20" },
-      "expected": { "formula": "CO2", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry lesson 04, linear-molecule symmetry",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "CO2",
+        "net_charge": 0
+      }
     },
     {
       "id": "inorg-ammonium",
       "chinese_name": "铵离子",
       "english_name": "ammonium",
-      "structure": { "format": "smiles", "value": "[NH4+]" },
+      "structure": {
+        "format": "smiles",
+        "value": "[NH4+]"
+      },
       "protonation": "Explicit cation; charge +1",
       "stereochemistry": "explicit",
       "image_type": "cation",
@@ -200,16 +352,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Inorganic Chemistry lesson 02, periodic trends and ions", "accessed": "2026-09-20" },
-      "expected": { "formula": "H4N+", "net_charge": 1 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry lesson 02, periodic trends and ions",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "H4N+",
+        "net_charge": 1
+      }
     },
     {
       "id": "ana-methanol",
       "chinese_name": "甲醇",
       "english_name": "methanol",
-      "structure": { "format": "smiles", "value": "CO" },
+      "structure": {
+        "format": "smiles",
+        "value": "CO"
+      },
       "protonation": "Explicit neutral structure; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -217,16 +382,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Analytical Chemistry chapter 02, solvent and sample preparation example", "accessed": "2026-09-20" },
-      "expected": { "formula": "CH4O", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Analytical Chemistry chapter 02, solvent and sample preparation example",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "CH4O",
+        "net_charge": 0
+      }
     },
     {
       "id": "bioc-glycine",
       "chinese_name": "甘氨酸",
       "english_name": "glycine",
-      "structure": { "format": "smiles", "value": "NCC(=O)O" },
+      "structure": {
+        "format": "smiles",
+        "value": "NCC(=O)O"
+      },
       "protonation": "Neutral educational form; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -234,16 +412,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Biochemistry chapter 02, alpha-amino-acid backbone", "accessed": "2026-09-20" },
-      "expected": { "formula": "C2H5NO2", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Biochemistry chapter 02, alpha-amino-acid backbone",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C2H5NO2",
+        "net_charge": 0
+      }
     },
     {
       "id": "bioc-gly-gly",
       "chinese_name": "甘氨酰甘氨酸",
       "english_name": "gly-gly-peptide",
-      "structure": { "format": "smiles", "value": "NCC(=O)NCC(=O)O" },
+      "structure": {
+        "format": "smiles",
+        "value": "NCC(=O)NCC(=O)O"
+      },
       "protonation": "Neutral educational form; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -251,16 +442,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [520, 280],
+      "size": [
+        520,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Biochemistry chapter 03, peptide-bond geometry", "accessed": "2026-09-20" },
-      "expected": { "formula": "C4H8N2O3", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Biochemistry chapter 03, peptide-bond geometry",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C4H8N2O3",
+        "net_charge": 0
+      }
     },
     {
       "id": "bioc-phenylalanine",
       "chinese_name": "苯丙氨酸骨架（立体化学未指定）",
       "english_name": "phenylalanine",
-      "structure": { "format": "smiles", "value": "NC(CC1=CC=CC=C1)C(=O)O" },
+      "structure": {
+        "format": "smiles",
+        "value": "NC(CC1=CC=CC=C1)C(=O)O"
+      },
       "protonation": "Neutral educational form; charge 0",
       "stereochemistry": "unspecified-approved",
       "image_type": "neutral",
@@ -268,16 +472,29 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [520, 280],
+      "size": [
+        520,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Biochemistry chapter 02, aromatic amino-acid side chain", "accessed": "2026-09-20" },
-      "expected": { "formula": "C9H11NO2", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Biochemistry chapter 02, aromatic amino-acid side chain",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C9H11NO2",
+        "net_charge": 0
+      }
     },
     {
       "id": "bioc-cysteamine",
       "chinese_name": "半胱胺模型",
       "english_name": "cysteamine-model",
-      "structure": { "format": "smiles", "value": "NCCS" },
+      "structure": {
+        "format": "smiles",
+        "value": "NCCS"
+      },
       "protonation": "Neutral educational model; charge 0",
       "stereochemistry": "explicit",
       "image_type": "neutral",
@@ -285,13 +502,150 @@
       "show_lone_pairs": false,
       "group": null,
       "background": "transparent",
-      "size": [420, 280],
+      "size": [
+        420,
+        280
+      ],
       "png_scale": 4,
-      "source": { "type": "authored-educational-structure", "reference": "Chemistry Atlas Biochemistry chapter 02, sulfur-containing side-chain model", "accessed": "2026-09-20" },
-      "expected": { "formula": "C2H7NS", "net_charge": 0 }
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Biochemistry chapter 02, sulfur-containing side-chain model",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C2H7NS",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "org-2-4-dimethylpentane",
+      "chinese_name": "2,4-二甲基戊烷",
+      "english_name": "2-4-dimethylpentane",
+      "structure": {
+        "format": "smiles",
+        "value": "CC(C)CC(C)C"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, branched-chain naming",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C7H16",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "org-3-ethyl-2-methylpentane",
+      "chinese_name": "3-乙基-2-甲基戊烷",
+      "english_name": "3-ethyl-2-methylpentane",
+      "structure": {
+        "format": "smiles",
+        "value": "CC(C)C(CC)CC"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, parent-chain and substituent naming",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C8H18",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "inorg-sulfur-dioxide",
+      "chinese_name": "二氧化硫",
+      "english_name": "sulfur-dioxide",
+      "structure": {
+        "format": "smiles",
+        "value": "O=S=O"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry chapter 03, Lewis structure and resonance",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "O2S",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "inorg-nitrogen-dioxide",
+      "chinese_name": "二氧化氮",
+      "english_name": "nitrogen-dioxide",
+      "structure": {
+        "format": "smiles",
+        "value": "[O-][N+](=O)"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry chapter 03, odd-electron molecule model",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "NO2",
+        "net_charge": 0
+      }
     }
   ],
   "groups": [
-    { "id": "acetate-resonance", "type": "resonance", "members": ["org-acetate-01", "org-acetate-02"] }
+    {
+      "id": "acetate-resonance",
+      "type": "resonance",
+      "members": [
+        "org-acetate-01",
+        "org-acetate-02"
+      ]
+    }
   ]
 }

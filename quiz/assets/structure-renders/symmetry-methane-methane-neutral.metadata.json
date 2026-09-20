@@ -1,0 +1,124 @@
+{
+  "formula": "CH4",
+  "relative_molecular_mass": 16.043,
+  "exact_mass": 16.031300127999998,
+  "net_charge": 0,
+  "atom_count": 1,
+  "heavy_atom_count": 1,
+  "atom_count_with_hydrogens": 5,
+  "canonical_isomeric_smiles": "C",
+  "cxsmiles": "C",
+  "inchikey": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 4,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      520,
+      280
+    ],
+    "png_scale": 4,
+    "id": "symmetry-methane",
+    "chinese_name": "甲烷",
+    "english_name": "methane",
+    "structure": {
+      "format": "smiles",
+      "value": "C"
+    },
+    "protonation": "Explicit neutral educational structure; charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "CH4",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "C",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 0,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 0,
+    "stereocenter_count": 0,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 520,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      2080,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      978,
+      521,
+      1101,
+      599
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "symmetry-methane-methane-neutral.svg",
+      "sha256": "b533cd94f98b8ceb52bc53f7cec572f0c23727ad4f3d1ca97ac1c8a70a75adac"
+    },
+    "png": {
+      "path": "symmetry-methane-methane-neutral.png",
+      "sha256": "8d0426512102d29f14b916eb955797c0c2f5631f3d581f770ecc6894c663346f"
+    },
+    "mol": {
+      "path": "symmetry-methane-methane-neutral.mol",
+      "sha256": "6467d744b5a0a890828bd654c6f71ab72e3a9016acf651f6ce1717f93edab3cd"
+    }
+  }
+}

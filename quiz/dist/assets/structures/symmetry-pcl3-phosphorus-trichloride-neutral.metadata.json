@@ -1,0 +1,179 @@
+{
+  "formula": "Cl3P",
+  "relative_molecular_mass": 137.33300000000003,
+  "exact_mass": 135.88031967,
+  "net_charge": 0,
+  "atom_count": 4,
+  "heavy_atom_count": 4,
+  "atom_count_with_hydrogens": 4,
+  "canonical_isomeric_smiles": "ClP(Cl)Cl",
+  "cxsmiles": "ClP(Cl)Cl",
+  "inchikey": "FAIAAWCVCHQXDN-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "Cl",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "P",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "Cl",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "Cl",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      520,
+      280
+    ],
+    "png_scale": 4,
+    "id": "symmetry-pcl3",
+    "chinese_name": "三氯化磷",
+    "english_name": "phosphorus-trichloride",
+    "structure": {
+      "format": "smiles",
+      "value": "ClP(Cl)Cl"
+    },
+    "protonation": "Explicit neutral educational structure; charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "Cl3P",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "ClP(Cl)Cl",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 3,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 0,
+    "stereocenter_count": 0,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 520,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      2080,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      875,
+      424,
+      1205,
+      696
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "symmetry-pcl3-phosphorus-trichloride-neutral.svg",
+      "sha256": "fe98faf5cc086602aad43608e07c1eb63077254517ab51ff555793857b1ffc77"
+    },
+    "png": {
+      "path": "symmetry-pcl3-phosphorus-trichloride-neutral.png",
+      "sha256": "a7d1712bc61002f0851f1acf6fb853fb5c5b59ab4df57e000c07710ab302c4dd"
+    },
+    "mol": {
+      "path": "symmetry-pcl3-phosphorus-trichloride-neutral.mol",
+      "sha256": "b935e8883dd1699eaf2add43982017fd9bc82b9d8a6d2d5064c5b8de49a44b82"
+    }
+  }
+}

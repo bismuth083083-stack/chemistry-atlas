@@ -156,6 +156,8 @@ The engine also supports the first version of a question bank:
 
 The engine filters first, samples without replacement, and never selects the same question twice in one attempt. If a bank is under-populated, it falls back to the full question list; for production content, make sure each requested type has enough candidates.
 
+Topic banks may also carry optional `sources`, `scopeNote`, and `speciesCatalog` metadata. These fields make a derived scientific bank auditable without embedding a third-party database or reproducing its page content. Keep the source URL and the role of the source explicit, and write the question wording and explanations independently.
+
 ## 6. Validation and common mistakes
 
 The browser performs runtime validation when it loads a quiz. Typical errors are:

@@ -636,6 +636,486 @@
         "formula": "NO2",
         "net_charge": 0
       }
+    },
+    {
+      "id": "symmetry-becl2",
+      "chinese_name": "二氯化铍",
+      "english_name": "beryllium-dichloride",
+      "structure": {
+        "format": "smiles",
+        "value": "[Be](Cl)Cl"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "BeCl2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-water",
+      "chinese_name": "水",
+      "english_name": "water",
+      "structure": {
+        "format": "smiles",
+        "value": "O"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "H2O",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-ammonia",
+      "chinese_name": "氨",
+      "english_name": "ammonia",
+      "structure": {
+        "format": "smiles",
+        "value": "N"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "H3N",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-methane",
+      "chinese_name": "甲烷",
+      "english_name": "methane",
+      "structure": {
+        "format": "smiles",
+        "value": "C"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "CH4",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-pcl5",
+      "chinese_name": "五氯化磷",
+      "english_name": "phosphorus-pentachloride",
+      "structure": {
+        "format": "smiles",
+        "value": "ClP(Cl)(Cl)(Cl)Cl"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "Cl5P",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-sf6",
+      "chinese_name": "六氟化硫",
+      "english_name": "sulfur-hexafluoride",
+      "structure": {
+        "format": "smiles",
+        "value": "FS(F)(F)(F)(F)F"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "F6S",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-xef2",
+      "chinese_name": "二氟化氙",
+      "english_name": "xenon-difluoride",
+      "structure": {
+        "format": "smiles",
+        "value": "F[Xe]F"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "F2Xe",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-xef4",
+      "chinese_name": "四氟化氙",
+      "english_name": "xenon-tetrafluoride",
+      "structure": {
+        "format": "smiles",
+        "value": "F[Xe](F)(F)F"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "F4Xe",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-hcn",
+      "chinese_name": "氰化氢",
+      "english_name": "hydrogen-cyanide",
+      "structure": {
+        "format": "smiles",
+        "value": "C#N"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "CHN",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-nitrate",
+      "chinese_name": "硝酸根",
+      "english_name": "nitrate-anion",
+      "structure": {
+        "format": "smiles",
+        "value": "[O-][N+](=O)[O-]"
+      },
+      "protonation": "Explicit ion; charge -1",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "NO3-",
+        "net_charge": -1
+      }
+    },
+    {
+      "id": "symmetry-pcl3",
+      "chinese_name": "三氯化磷",
+      "english_name": "phosphorus-trichloride",
+      "structure": {
+        "format": "smiles",
+        "value": "ClP(Cl)Cl"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "Cl3P",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-sf4",
+      "chinese_name": "四氟化硫",
+      "english_name": "sulfur-tetrafluoride",
+      "structure": {
+        "format": "smiles",
+        "value": "FS(F)(F)F"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "F4S",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-if5",
+      "chinese_name": "五氟化碘",
+      "english_name": "iodine-pentafluoride",
+      "structure": {
+        "format": "smiles",
+        "value": "FI(F)(F)(F)F"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "F5I",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-bf4",
+      "chinese_name": "四氟合硼酸根",
+      "english_name": "tetrafluoroborate-anion",
+      "structure": {
+        "format": "smiles",
+        "value": "F[B-](F)(F)F"
+      },
+      "protonation": "Explicit ion; charge -1",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "BF4-",
+        "net_charge": -1
+      }
+    },
+    {
+      "id": "symmetry-acetylene",
+      "chinese_name": "乙炔",
+      "english_name": "acetylene",
+      "structure": {
+        "format": "smiles",
+        "value": "C#C"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C2H2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "symmetry-ozone",
+      "chinese_name": "臭氧",
+      "english_name": "ozone",
+      "structure": {
+        "format": "smiles",
+        "value": "[O-][O+]=O"
+      },
+      "protonation": "Explicit neutral educational structure; charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Inorganic Chemistry · VSEPR and point-group topic bank",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "O3",
+        "net_charge": 0
+      }
     }
   ],
   "groups": [

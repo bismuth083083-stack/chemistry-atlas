@@ -85,11 +85,11 @@ function formatValidationErrors(errors) {
 }
 
 async function loadQuiz() {
-  const requestedId = new URLSearchParams(window.location.search).get('quiz') || 'demo';
+  const requestedId = new URLSearchParams(window.location.search).get('quiz') || 'GEN-L01';
   const manifestResponse = await fetch(`${DATA_ROOT}index.json`);
   if (!manifestResponse.ok) throw new Error('Could not load quiz manifest.');
   const manifest = await manifestResponse.json();
-  const entry = manifest.quizzes?.find((quiz) => quiz.id === requestedId) || manifest.quizzes?.[0];
+  const entry = manifest.quizzes?.find((quiz) => quiz.id === requestedId || quiz.legacyIds?.includes(requestedId)) || manifest.quizzes?.[0];
   if (!entry) throw new Error('No quizzes are available in the manifest.');
   const response = await fetch(`${DATA_ROOT}${entry.path}`);
   if (!response.ok) throw new Error(`Could not load quiz data: ${entry.path}`);

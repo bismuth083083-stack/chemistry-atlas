@@ -1,11 +1,25 @@
 {
+  "version": "1.0.0",
   "quizzes": [
     {
-      "id": "demo",
+      "id": "GEN-L01",
+      "legacyIds": ["demo"],
       "title": "Molecular foundations",
       "description": "A short retrieval session across structure, bonding, and biochemical building blocks.",
-      "subject": "General chemistry",
+      "subject": "general-chemistry",
+      "type": "lesson",
+      "lessonNumber": 1,
+      "topicNumber": null,
+      "examNumber": null,
       "chapter": "Foundations",
+      "lesson": "Molecular foundations",
+      "questionCount": 7,
+      "difficulty": "basic",
+      "tags": ["atomic structure", "chemical bonding", "molecular polarity", "acids and bases"],
+      "knowledgePoints": ["elements", "bond polarity", "equilibrium", "functional groups"],
+      "createdAt": "2026-09-18",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [],
       "path": "demo.json",
       "mode": "fixed"
     }

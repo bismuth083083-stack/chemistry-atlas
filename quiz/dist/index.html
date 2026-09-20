@@ -4,21 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Chemistry Atlas Quiz Lab" />
-    <title>Quiz Lab · Chemistry Atlas</title>
+    <title>Quiz Library · Chemistry Atlas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="quiz.css" />
+    <link rel="stylesheet" href="quiz-library.css" />
   </head>
   <body>
     <div class="quiz-app">
       <header class="quiz-header">
         <a class="brand" href="https://chemistryatlas.xyz" aria-label="Chemistry Atlas home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Chemistry Atlas</span></a>
-        <div class="header-context"><span class="context-kicker">QUIZ LAB</span><span class="header-separator">/</span><span id="header-exam-label">Loading…</span></div>
-        <a class="header-exit" href="https://chemistryatlas.xyz"><span>Exit quiz</span><span aria-hidden="true">↗</span></a>
+        <div class="header-context"><span class="context-kicker">QUIZ LIBRARY</span><span class="header-separator">/</span><span id="header-exam-label">Practice center</span></div>
+        <a class="header-exit" data-home href="https://chemistryatlas.xyz"><span>Back to Atlas</span><span aria-hidden="true">↗</span></a>
       </header>
-      <div id="app" class="app-body" aria-live="polite"><div class="loading-state"><div class="loading-orbit"></div><p>Loading your quiz…</p></div></div>
+      <main id="library-app" class="library-main" aria-live="polite">
+        <section class="library-hero">
+          <div>
+            <p class="library-kicker">CHEMISTRY ATLAS / PRACTICE CENTER</p>
+            <h1>Practice the<br><em>invisible.</em></h1>
+            <p class="library-hero-copy">按课程、专题与综合试卷进行练习。用几分钟确认核心知识，把每一次回忆变成下一步学习的坐标。</p>
+          </div>
+          <div class="library-stats" aria-label="Quiz library statistics">
+            <div class="library-stat"><strong id="total-count">—</strong><span>Quiz sets</span></div>
+            <div class="library-stat"><strong id="subject-count">—</strong><span>Subjects</span></div>
+            <div class="library-stat"><strong id="latest-date">—</strong><span>Last updated</span></div>
+          </div>
+        </section>
+        <section class="library-controls" aria-label="Quiz library controls">
+          <label class="library-search-wrap"><span aria-hidden="true">⌕</span><input id="library-search" class="library-search" type="search" placeholder="Search quiz ID, title, lesson, topic…" autocomplete="off"></label>
+          <select id="filter-subject" class="library-select" aria-label="Filter by subject">
+            <option value="all">All subjects</option><option value="organic-chemistry">Organic Chemistry</option><option value="physical-chemistry">Physical Chemistry</option><option value="inorganic-chemistry">Inorganic Chemistry</option><option value="analytical-chemistry">Analytical Chemistry</option><option value="biochemistry">Biochemistry</option>
+          </select>
+          <select id="filter-type" class="library-select" aria-label="Filter by quiz type">
+            <option value="all">All types</option><option value="lesson">Lesson</option><option value="topic">Topic</option><option value="comprehensive">Comprehensive</option>
+          </select>
+          <select id="filter-difficulty" class="library-select" aria-label="Filter by difficulty">
+            <option value="all">All levels</option><option value="basic">Basic</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option>
+          </select>
+          <select id="filter-sort" class="library-select" aria-label="Sort quizzes">
+            <option value="updated">Recently updated</option><option value="oldest">Earliest published</option><option value="course">Course order</option><option value="id">Quiz ID</option><option value="count">Question count</option><option value="difficulty">Difficulty</option>
+          </select>
+        </section>
+        <div class="library-filter-bar"><span id="active-filter-label" class="library-result-label">All practice sets</span><span id="result-count" hidden></span><button id="reset-filters" class="library-reset" type="button">Reset filters</button></div>
+        <section id="quiz-grid" class="quiz-grid" aria-label="Available quizzes"></section>
+        <section id="library-empty" class="library-empty" hidden><p class="library-kicker">NO MATCHES</p><h2>No quizzes found.</h2><p>Try another search or reset the current filters.</p><button id="empty-reset" class="button button-dark" type="button">Reset filters</button></section>
+        <div class="library-load-more"><button id="load-more" type="button" hidden>Load more quizzes</button></div>
+      </main>
+      <div id="app" class="app-body" aria-live="polite" hidden></div>
     </div>
-    <script type="module" src="quiz-engine.js"></script>
+    <script type="module" src="quiz-library.js"></script>
   </body>
 </html>

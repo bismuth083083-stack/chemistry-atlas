@@ -627,6 +627,44 @@
       ],
       "path": "bioc-l04.json",
       "mode": "fixed"
+    },
+    {
+      "id": "INORG-T01",
+      "title": "无机专题：VSEPR、结构与点群挑战",
+      "description": "以点群判定为主线，覆盖主族分子、配合物、金属有机物、有机分子构象、对称元素与 IR/Raman 选择定则。题库共 120 题，每次随机抽取 22 题。",
+      "subject": "inorganic-chemistry",
+      "type": "topic",
+      "lessonNumber": null,
+      "topicNumber": 1,
+      "examNumber": null,
+      "chapter": "Topic · VSEPR, molecular structure, and point groups",
+      "lesson": "VSEPR, molecular structure, and point groups",
+      "topic": "Randomized symmetry challenge bank",
+      "questionCount": 120,
+      "difficulty": "advanced",
+      "tags": [
+        "VSEPR",
+        "molecular geometry",
+        "point groups",
+        "symmetry",
+        "IR",
+        "Raman"
+      ],
+      "knowledgePoints": [
+        "electron-domain geometry",
+        "molecular shape",
+        "symmetry elements",
+        "point-group classification",
+        "selection rules"
+      ],
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-03.html",
+        "/inorganic/dist/lesson-04.html"
+      ],
+      "path": "inorg-t01.json",
+      "mode": "question-bank"
     }
   ]
 }

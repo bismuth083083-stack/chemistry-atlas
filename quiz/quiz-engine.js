@@ -109,12 +109,19 @@ function selectQuestions(quiz) {
   ['chapter', 'difficulty'].forEach((filter) => { if (selection[filter]) candidates = candidates.filter((question) => question[filter] === selection[filter]); });
   if (Array.isArray(selection.tags) && selection.tags.length) candidates = candidates.filter((question) => selection.tags.every((tag) => question.tags.includes(tag)));
   const chosen = [];
+  const shuffle = (items) => {
+    for (let index = items.length - 1; index > 0; index -= 1) {
+      const target = Math.floor(Math.random() * (index + 1));
+      [items[index], items[target]] = [items[target], items[index]];
+    }
+    return items;
+  };
   const counts = selection.counts || {};
   Object.entries(counts).forEach(([type, count]) => {
-    const pool = candidates.filter((question) => question.type === type).sort(() => Math.random() - 0.5);
+    const pool = shuffle(candidates.filter((question) => question.type === type));
     chosen.push(...pool.slice(0, Number(count)));
   });
-  return chosen.length ? chosen : [...quiz.questions];
+  return chosen.length ? shuffle(chosen) : [...quiz.questions];
 }
 
 class QuizSession {

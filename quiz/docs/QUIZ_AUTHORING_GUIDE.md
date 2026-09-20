@@ -156,6 +156,10 @@ The engine also supports the first version of a question bank:
 
 The engine filters first, samples without replacement, and never selects the same question twice in one attempt. If a bank is under-populated, it falls back to the full question list; for production content, make sure each requested type has enough candidates.
 
+Topic banks may also carry optional `sources`, `scopeNote`, and `speciesCatalog` metadata. These fields make a derived scientific bank auditable without embedding a third-party database or reproducing its page content. Keep the source URL and the role of the source explicit, and write the question wording and explanations independently.
+
+The inorganic symmetry topic bank (`INORG-T01`) is intentionally larger than one attempt: its 120 authored questions cover point-group identification for main-group molecules, coordination complexes, organometallic conformers, and organic conformations. The learner-facing attempt still samples 22 questions by type, so adding new canonical examples does not make a single session unwieldy.
+
 ## 6. Validation and common mistakes
 
 The browser performs runtime validation when it loads a quiz. Typical errors are:

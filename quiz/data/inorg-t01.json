@@ -1,0 +1,3575 @@
+{
+  "id": "INORG-T01",
+  "title": "无机专题：VSEPR、结构与点群挑战",
+  "description": "以点群判定为主线，覆盖主族分子、配合物、金属有机物、有机分子构象、对称元素与 IR/Raman 选择定则。题库共 120 题，每次随机抽取 22 题。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Topic · VSEPR, molecular structure, and point groups",
+  "version": "1.0.0",
+  "totalPoints": 245,
+  "selection": {
+    "mode": "question-bank",
+    "counts": {
+      "single-choice": 10,
+      "multiple-choice": 4,
+      "true-false": 4,
+      "fill-in-the-blank": 4
+    }
+  },
+  "sources": [
+    {
+      "title": "NIST CCCBDB · species sorted by point group",
+      "url": "https://cccbdb.nist.gov/pglist.asp",
+      "role": "point-group cross-check and attribution; no bulk copy"
+    },
+    {
+      "title": "Otterbein Symmetry resources",
+      "url": "http://symmetry.otterbein.edu/index.html",
+      "role": "conceptual reference supplied by the learner"
+    },
+    {
+      "title": "Otterbein Symmetry Challenge",
+      "url": "http://symmetry.otterbein.edu/challenge/index.html",
+      "role": "challenge-style reference supplied by the learner"
+    }
+  ],
+  "scopeNote": "This is an independently authored educational bank of canonical main-group, coordination, organometallic, and organic-conformation examples. It is not a mirror of any third-party database; structures, point-group assignments, explanations, and question wording were selected or written for Chemistry Atlas.",
+  "speciesCatalog": [
+    {
+      "center": "Be",
+      "examples": [
+        "BeCl2"
+      ],
+      "geometry": "linear",
+      "pointGroups": [
+        "D∞h"
+      ]
+    },
+    {
+      "center": "B",
+      "examples": [
+        "BF3",
+        "BF4−"
+      ],
+      "geometry": "trigonal planar / tetrahedral",
+      "pointGroups": [
+        "D3h",
+        "Td"
+      ]
+    },
+    {
+      "center": "C",
+      "examples": [
+        "CO2",
+        "CH4",
+        "HCN"
+      ],
+      "geometry": "linear / tetrahedral",
+      "pointGroups": [
+        "D∞h",
+        "Td",
+        "C∞v"
+      ]
+    },
+    {
+      "center": "N",
+      "examples": [
+        "NH3",
+        "NO3−"
+      ],
+      "geometry": "trigonal pyramidal / trigonal planar",
+      "pointGroups": [
+        "C3v",
+        "D3h"
+      ]
+    },
+    {
+      "center": "O",
+      "examples": [
+        "H2O",
+        "SO2",
+        "O3"
+      ],
+      "geometry": "bent",
+      "pointGroups": [
+        "C2v"
+      ]
+    },
+    {
+      "center": "P",
+      "examples": [
+        "PCl3",
+        "PCl5"
+      ],
+      "geometry": "trigonal pyramidal / trigonal bipyramidal",
+      "pointGroups": [
+        "C3v",
+        "D3h"
+      ]
+    },
+    {
+      "center": "S",
+      "examples": [
+        "SF4",
+        "SF6"
+      ],
+      "geometry": "seesaw / octahedral",
+      "pointGroups": [
+        "C2v",
+        "Oh"
+      ]
+    },
+    {
+      "center": "Cl",
+      "examples": [
+        "ClF3"
+      ],
+      "geometry": "T-shaped",
+      "pointGroups": [
+        "C2v"
+      ]
+    },
+    {
+      "center": "I",
+      "examples": [
+        "IF5"
+      ],
+      "geometry": "square pyramidal",
+      "pointGroups": [
+        "C4v"
+      ]
+    },
+    {
+      "center": "Xe",
+      "examples": [
+        "XeF2",
+        "XeF4"
+      ],
+      "geometry": "linear / square planar",
+      "pointGroups": [
+        "D∞h",
+        "D4h"
+      ]
+    },
+    {
+      "center": "Pt",
+      "examples": [
+        "[PtCl4]2−",
+        "cis-[PtCl2(NH3)2]",
+        "trans-[PtCl2(NH3)2]"
+      ],
+      "geometry": "square planar",
+      "pointGroups": [
+        "D4h",
+        "C2v",
+        "D2h"
+      ]
+    },
+    {
+      "center": "Co",
+      "examples": [
+        "[Co(NH3)6]3+",
+        "[Co(en)3]3+"
+      ],
+      "geometry": "octahedral / tris-chelate",
+      "pointGroups": [
+        "Oh",
+        "D3"
+      ]
+    },
+    {
+      "center": "Fe",
+      "examples": [
+        "[Fe(CN)6]4−"
+      ],
+      "geometry": "octahedral",
+      "pointGroups": [
+        "Oh"
+      ]
+    },
+    {
+      "center": "Ni",
+      "examples": [
+        "[Ni(CN)4]2−"
+      ],
+      "geometry": "square planar",
+      "pointGroups": [
+        "D4h"
+      ]
+    },
+    {
+      "center": "organometallic",
+      "examples": [
+        "eclipsed ferrocene",
+        "staggered ferrocene"
+      ],
+      "geometry": "sandwich",
+      "pointGroups": [
+        "D5h",
+        "D5d"
+      ]
+    },
+    {
+      "center": "organic symmetry",
+      "examples": [
+        "ethane",
+        "allene",
+        "benzene",
+        "cubane",
+        "C60"
+      ],
+      "geometry": "conformer-dependent / cage",
+      "pointGroups": [
+        "D3d",
+        "D2d",
+        "D6h",
+        "Oh",
+        "Ih"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "VSEPR 模型首先统计中心原子周围的……",
+      "options": [
+        {
+          "id": "A",
+          "text": "电子域"
+        },
+        {
+          "id": "B",
+          "text": "中子数"
+        },
+        {
+          "id": "C",
+          "text": "溶剂体积"
+        },
+        {
+          "id": "D",
+          "text": "晶胞边长"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "VSEPR 把成键电子对和孤电子对都作为排斥电子域，用来预测局部几何。",
+      "difficulty": "easy",
+      "tags": [
+        "VSEPR",
+        "electron domains"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "在 AX₃E 中，中心原子的电子域几何是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "四面体"
+        },
+        {
+          "id": "B",
+          "text": "平面三角形"
+        },
+        {
+          "id": "C",
+          "text": "三角双锥"
+        },
+        {
+          "id": "D",
+          "text": "八面体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "AX₃E 含 4 个电子域，因此电子域几何为四面体；分子构型则为三角锥形。",
+      "difficulty": "easy",
+      "tags": [
+        "VSEPR",
+        "AX3E"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "理想化的 BeCl₂ 构型是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "线形"
+        },
+        {
+          "id": "B",
+          "text": "折线形"
+        },
+        {
+          "id": "C",
+          "text": "平面三角形"
+        },
+        {
+          "id": "D",
+          "text": "四面体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Be 周围有两个成键电子域、没有孤对电子，AX₂ 对应线形。",
+      "difficulty": "easy",
+      "tags": [
+        "BeCl2",
+        "linear"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-becl2-beryllium-dichloride-neutral.png",
+        "alt": "二氯化铍的线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "BF₃ 的分子构型是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "平面三角形"
+        },
+        {
+          "id": "B",
+          "text": "三角锥形"
+        },
+        {
+          "id": "C",
+          "text": "四面体"
+        },
+        {
+          "id": "D",
+          "text": "T 形"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "B 周围有 3 个成键电子域且没有孤对电子，构型为平面三角形。",
+      "difficulty": "easy",
+      "tags": [
+        "BF3",
+        "trigonal planar"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-bf3-boron-trifluoride-neutral.png",
+        "alt": "三氟化硼的平面三角形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "CH₄ 的中心碳采取哪种理想构型？",
+      "options": [
+        {
+          "id": "A",
+          "text": "四面体"
+        },
+        {
+          "id": "B",
+          "text": "平面正方形"
+        },
+        {
+          "id": "C",
+          "text": "线形"
+        },
+        {
+          "id": "D",
+          "text": "平方锥形"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "CH₄ 是 AX₄，四个成键电子域尽量远离，形成四面体。",
+      "difficulty": "easy",
+      "tags": [
+        "CH4",
+        "tetrahedral"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-methane-methane-neutral.png",
+        "alt": "甲烷的四面体结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "NH₃ 的分子构型是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "三角锥形"
+        },
+        {
+          "id": "B",
+          "text": "平面三角形"
+        },
+        {
+          "id": "C",
+          "text": "T 形"
+        },
+        {
+          "id": "D",
+          "text": "直线形"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "NH₃ 是 AX₃E，孤对电子占据一个电子域，原子构型为三角锥形。",
+      "difficulty": "easy",
+      "tags": [
+        "NH3",
+        "trigonal pyramidal"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-ammonia-ammonia-neutral.png",
+        "alt": "氨的三角锥形中心原子模型示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "H₂O 的分子构型是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "折线形"
+        },
+        {
+          "id": "B",
+          "text": "线形"
+        },
+        {
+          "id": "C",
+          "text": "四面体"
+        },
+        {
+          "id": "D",
+          "text": "平面三角形"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "H₂O 是 AX₂E₂；电子域几何为四面体，但只看原子位置时为折线形。",
+      "difficulty": "easy",
+      "tags": [
+        "H2O",
+        "bent"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-water-water-neutral.png",
+        "alt": "水的折线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "PCl₅ 的电子域几何是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "三角双锥"
+        },
+        {
+          "id": "B",
+          "text": "四面体"
+        },
+        {
+          "id": "C",
+          "text": "八面体"
+        },
+        {
+          "id": "D",
+          "text": "平面正方形"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "PCl₅ 是 AX₅，五个电子域对应三角双锥。",
+      "difficulty": "easy",
+      "tags": [
+        "PCl5",
+        "trigonal bipyramidal"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-pcl5-phosphorus-pentachloride-neutral.png",
+        "alt": "五氯化磷的三角双锥结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "SF₆ 的分子构型是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "八面体"
+        },
+        {
+          "id": "B",
+          "text": "三角双锥"
+        },
+        {
+          "id": "C",
+          "text": "平方平面"
+        },
+        {
+          "id": "D",
+          "text": "三角锥形"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "SF₆ 是 AX₆，六个配体指向八面体的六个顶点。",
+      "difficulty": "easy",
+      "tags": [
+        "SF6",
+        "octahedral"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-sf6-sulfur-hexafluoride-neutral.png",
+        "alt": "六氟化硫的八面体结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "XeF₄ 的原子构型是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "平方平面"
+        },
+        {
+          "id": "B",
+          "text": "四面体"
+        },
+        {
+          "id": "C",
+          "text": "跷跷板"
+        },
+        {
+          "id": "D",
+          "text": "平面三角形"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "XeF₄ 是 AX₄E₂，孤对电子位于八面体电子域的相对位置，剩余四个 F 构成平方平面。",
+      "difficulty": "easy",
+      "tags": [
+        "XeF4",
+        "square planar"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-xef4-xenon-tetrafluoride-neutral.png",
+        "alt": "四氟化氙的平方平面结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "若假定理想几何，SO₂ 通常归入哪个点群？",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₂v"
+        },
+        {
+          "id": "B",
+          "text": "D∞h"
+        },
+        {
+          "id": "C",
+          "text": "Td"
+        },
+        {
+          "id": "D",
+          "text": "Oh"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "SO₂ 为对称的折线形分子，含 C₂ 轴和两个包含主轴的镜面，属于 C₂v。",
+      "difficulty": "medium",
+      "tags": [
+        "SO2",
+        "C2v"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-sulfur-dioxide-sulfur-dioxide-neutral.png",
+        "alt": "二氧化硫的折线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "NH₃ 的点群最合理的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₃v"
+        },
+        {
+          "id": "B",
+          "text": "D₃h"
+        },
+        {
+          "id": "C",
+          "text": "C₂v"
+        },
+        {
+          "id": "D",
+          "text": "Td"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "三角锥形 NH₃ 有一条 C₃ 轴和三面包含主轴的镜面，属于 C₃v。",
+      "difficulty": "medium",
+      "tags": [
+        "NH3",
+        "C3v"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-ammonia-ammonia-neutral.png",
+        "alt": "氨的三角锥形中心原子模型示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "平面三角形 BF₃ 的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₃h"
+        },
+        {
+          "id": "B",
+          "text": "C₃v"
+        },
+        {
+          "id": "C",
+          "text": "C₂v"
+        },
+        {
+          "id": "D",
+          "text": "Td"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "BF₃ 具有 C₃ 轴、分子平面 σh 和三条垂直 C₂ 轴，属于 D₃h。",
+      "difficulty": "medium",
+      "tags": [
+        "BF3",
+        "D3h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-bf3-boron-trifluoride-neutral.png",
+        "alt": "三氟化硼的平面三角形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "理想平面三角形 NO₃⁻ 的点群最合理的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₃h"
+        },
+        {
+          "id": "B",
+          "text": "C₃v"
+        },
+        {
+          "id": "C",
+          "text": "C₁"
+        },
+        {
+          "id": "D",
+          "text": "Oh"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "在等价共振平均和理想平面几何下，三个 O 等价，NO₃⁻ 具有 D₃h 对称性。",
+      "difficulty": "medium",
+      "tags": [
+        "nitrate",
+        "D3h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-nitrate-nitrate-anion-neutral.png",
+        "alt": "硝酸根的平面结构示意图",
+        "caption": "Renderer 显示一种明确 Lewis 共振表示；点群题按三个端氧等价的理想共振平均讨论。"
+      }
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "CO₂ 的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D∞h"
+        },
+        {
+          "id": "B",
+          "text": "C∞v"
+        },
+        {
+          "id": "C",
+          "text": "C₂v"
+        },
+        {
+          "id": "D",
+          "text": "D₃h"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "CO₂ 为对称线形分子，存在反演中心和无穷多条垂直 C₂ 轴，因此为 D∞h。",
+      "difficulty": "medium",
+      "tags": [
+        "CO2",
+        "D-infinity-h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-carbon-dioxide-carbon-dioxide-neutral.png",
+        "alt": "二氧化碳的线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "异核线形 HCN 更接近哪个点群？",
+      "options": [
+        {
+          "id": "A",
+          "text": "C∞v"
+        },
+        {
+          "id": "B",
+          "text": "D∞h"
+        },
+        {
+          "id": "C",
+          "text": "D₃h"
+        },
+        {
+          "id": "D",
+          "text": "C₃v"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "HCN 虽为线形，但两端不同，不具有反演中心或垂直 C₂ 轴，属于 C∞v。",
+      "difficulty": "medium",
+      "tags": [
+        "HCN",
+        "C-infinity-v"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-hcn-hydrogen-cyanide-neutral.png",
+        "alt": "氰化氢的线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q017",
+      "type": "single-choice",
+      "question": "PCl₃ 的点群通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₃v"
+        },
+        {
+          "id": "B",
+          "text": "D₃h"
+        },
+        {
+          "id": "C",
+          "text": "C₂v"
+        },
+        {
+          "id": "D",
+          "text": "Td"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "PCl₃ 为三角锥形，具有 C₃ 轴和三个 σv 镜面，属于 C₃v。",
+      "difficulty": "medium",
+      "tags": [
+        "PCl3",
+        "C3v"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-pcl3-phosphorus-trichloride-neutral.png",
+        "alt": "三氯化磷的三角锥形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "理想化 SF₄ 的跷跷板构型可归入……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₂v"
+        },
+        {
+          "id": "B",
+          "text": "D₃h"
+        },
+        {
+          "id": "C",
+          "text": "Td"
+        },
+        {
+          "id": "D",
+          "text": "D₄h"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "SF₄ 是 AX₄E，三角双锥中的孤对电子占据赤道位，保留 C₂v 对称性。",
+      "difficulty": "medium",
+      "tags": [
+        "SF4",
+        "seesaw",
+        "C2v"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-sf4-sulfur-tetrafluoride-neutral.png",
+        "alt": "四氟化硫的跷跷板构型示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "ClF₃ 的 T 形构型常见点群为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₂v"
+        },
+        {
+          "id": "B",
+          "text": "D∞h"
+        },
+        {
+          "id": "C",
+          "text": "C₃v"
+        },
+        {
+          "id": "D",
+          "text": "Oh"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "ClF₃ 是 AX₃E₂，三个 F 呈 T 形，保留一条 C₂ 轴和两个 σv 镜面。",
+      "difficulty": "medium",
+      "tags": [
+        "ClF3",
+        "T-shaped",
+        "C2v"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "IF₅ 的平方锥形构型最合理的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₄v"
+        },
+        {
+          "id": "B",
+          "text": "D₄h"
+        },
+        {
+          "id": "C",
+          "text": "C₃v"
+        },
+        {
+          "id": "D",
+          "text": "Td"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "IF₅ 是 AX₅E，孤对电子占据八面体一个顶点，分子保留 C₄ 轴和 σv 镜面，属于 C₄v。",
+      "difficulty": "medium",
+      "tags": [
+        "IF5",
+        "square pyramidal",
+        "C4v"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-if5-iodine-pentafluoride-neutral.png",
+        "alt": "五氟化碘的平方锥形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "multiple-choice",
+      "question": "关于 BF₄⁻ 的理想四面体对称性，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "构型为四面体"
+        },
+        {
+          "id": "B",
+          "text": "点群为 Td"
+        },
+        {
+          "id": "C",
+          "text": "有四条等价的三重轴"
+        },
+        {
+          "id": "D",
+          "text": "点群为 C₂v"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "BF₄⁻ 是 AX₄ 四面体；在四个 F 等价时属于 Td，而不是只有低阶轴的 C₂v。",
+      "difficulty": "hard",
+      "tags": [
+        "BF4-",
+        "Td",
+        "tetrahedral"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-bf4-tetrafluoroborate-anion-neutral.png",
+        "alt": "四氟合硼酸根的四面体结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "关于 XeF₂ 的理想线形结构，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "中心 Xe 的五个电子域呈三角双锥排列"
+        },
+        {
+          "id": "B",
+          "text": "两个孤对电子位于赤道位"
+        },
+        {
+          "id": "C",
+          "text": "分子构型为线形"
+        },
+        {
+          "id": "D",
+          "text": "点群一定是 C₂v"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "XeF₂ 是 AX₂E₃；三个赤道电子域中有两个孤对电子，两个 F 占轴向位置，形成线形且对称的分子。",
+      "difficulty": "hard",
+      "tags": [
+        "XeF2",
+        "linear",
+        "AX2E3"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-xef2-xenon-difluoride-neutral.png",
+        "alt": "二氟化氙的线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q023",
+      "type": "multiple-choice",
+      "question": "理想 XeF₄ 的对称性分析可得到哪些结论？",
+      "options": [
+        {
+          "id": "A",
+          "text": "电子域几何为八面体"
+        },
+        {
+          "id": "B",
+          "text": "原子构型为平方平面"
+        },
+        {
+          "id": "C",
+          "text": "点群为 D₄h"
+        },
+        {
+          "id": "D",
+          "text": "一定属于 C₄v"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "XeF₄ 是 AX₄E₂，两个孤对电子相对放置，具有反演中心和 σh，因此为 D₄h。",
+      "difficulty": "hard",
+      "tags": [
+        "XeF4",
+        "D4h",
+        "square planar"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-xef4-xenon-tetrafluoride-neutral.png",
+        "alt": "四氟化氙的平方平面结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q024",
+      "type": "multiple-choice",
+      "question": "对称的线形三原子或多原子物种在判定 D∞h 时，需要关注……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子轴上的高阶旋转"
+        },
+        {
+          "id": "B",
+          "text": "反演中心"
+        },
+        {
+          "id": "C",
+          "text": "与主轴垂直的 C₂ 轴族"
+        },
+        {
+          "id": "D",
+          "text": "是否含有碳元素"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "D∞h 的关键不是元素种类，而是对称线形几何、反演中心和无穷多垂直 C₂ 轴等特征。",
+      "difficulty": "hard",
+      "tags": [
+        "D-infinity-h",
+        "symmetry test"
+      ]
+    },
+    {
+      "id": "q025",
+      "type": "multiple-choice",
+      "question": "对乙炔 H–C≡C–H 的理想结构，下列判断正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子线形"
+        },
+        {
+          "id": "B",
+          "text": "具有反演中心"
+        },
+        {
+          "id": "C",
+          "text": "可归入 D∞h"
+        },
+        {
+          "id": "D",
+          "text": "因为含三键所以一定是 C₃v"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "乙炔为对称线形分子，端点和中点的映射保留反演中心，属于 D∞h。",
+      "difficulty": "hard",
+      "tags": [
+        "acetylene",
+        "D-infinity-h",
+        "linear"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-acetylene-acetylene-neutral.png",
+        "alt": "乙炔的线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q026",
+      "type": "multiple-choice",
+      "question": "苯的 D₆h 对称性意味着……",
+      "options": [
+        {
+          "id": "A",
+          "text": "有六重主轴"
+        },
+        {
+          "id": "B",
+          "text": "具有分子平面"
+        },
+        {
+          "id": "C",
+          "text": "存在反演中心"
+        },
+        {
+          "id": "D",
+          "text": "所有振动都既 IR 又 Raman 活性"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "苯为平面六元环，D₆h 包含 C₆ 主轴、σh 与反演中心；中心对称还带来 IR/Raman 互斥规则。",
+      "difficulty": "hard",
+      "tags": [
+        "benzene",
+        "D6h",
+        "inversion"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-benzene-benzene-neutral.png",
+        "alt": "苯的平面六元环结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q027",
+      "type": "multiple-choice",
+      "question": "关于臭氧 O₃ 的理想化结构，下列判断正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "原子构型为折线形"
+        },
+        {
+          "id": "B",
+          "text": "两个端氧在共振平均模型中等价"
+        },
+        {
+          "id": "C",
+          "text": "可用 C₂v 描述其理想对称性"
+        },
+        {
+          "id": "D",
+          "text": "它是线形 D∞h 分子"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "O₃ 是弯曲的三原子分子；在等价端氧的理想模型下有 C₂ 轴和两个镜面，属于 C₂v。",
+      "difficulty": "hard",
+      "tags": [
+        "ozone",
+        "C2v",
+        "resonance"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-ozone-ozone-neutral.png",
+        "alt": "臭氧的折线形结构示意图",
+        "caption": "Renderer 显示一种明确 Lewis 共振表示；构型题按等价端氧的理想化模型讨论。"
+      }
+    },
+    {
+      "id": "q028",
+      "type": "multiple-choice",
+      "question": "比较 CO₂ 与 SO₂ 时，哪些推理是合理的？",
+      "options": [
+        {
+          "id": "A",
+          "text": "CO₂ 的对称线形带来反演中心"
+        },
+        {
+          "id": "B",
+          "text": "SO₂ 的折线形通常没有反演中心"
+        },
+        {
+          "id": "C",
+          "text": "二者都可直接判作 D∞h"
+        },
+        {
+          "id": "D",
+          "text": "弯曲会降低可用对称操作数量"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 2,
+      "explanation": "CO₂ 为 D∞h，而 SO₂ 弯曲后通常为 C₂v；几何弯曲会移除线形分子的部分高阶对称操作。",
+      "difficulty": "hard",
+      "tags": [
+        "CO2",
+        "SO2",
+        "symmetry comparison"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-sulfur-dioxide-sulfur-dioxide-neutral.png",
+        "alt": "二氧化硫的折线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q029",
+      "type": "true-false",
+      "question": "VSEPR 中多重键通常作为一个电子域参与中心原子周围的几何排斥。",
+      "answer": true,
+      "points": 2,
+      "explanation": "在基础 VSEPR 计数中，单键、双键和三键各按一个电子域计数，但多重键电子密度可能使排斥强度略有差别。",
+      "difficulty": "hard",
+      "tags": [
+        "VSEPR",
+        "multiple bond"
+      ]
+    },
+    {
+      "id": "q030",
+      "type": "true-false",
+      "question": "具有反演中心的分子中，同一个正常振动模式可以同时具有 IR 和 Raman 活性。",
+      "answer": false,
+      "points": 2,
+      "explanation": "中心对称分子遵循互斥规则；同一模式不能同时属于 IR 活性的 u 类和 Raman 活性的 g 类。",
+      "difficulty": "hard",
+      "tags": [
+        "inversion",
+        "IR",
+        "Raman"
+      ]
+    },
+    {
+      "id": "q031",
+      "type": "true-false",
+      "question": "如果把 BF₃ 中一个 F 替换成不同的配体，原来的 D₃h 对称性必然完整保留。",
+      "answer": false,
+      "points": 2,
+      "explanation": "取代会使配体不再全部等价，通常会降低主轴阶数和镜面数量；不能直接保留 D₃h。",
+      "difficulty": "hard",
+      "tags": [
+        "symmetry breaking",
+        "BF3"
+      ]
+    },
+    {
+      "id": "q032",
+      "type": "true-false",
+      "question": "C∞v 与 D∞h 的主要分流之一，是线形分子是否具有反演中心和垂直 C₂ 轴族。",
+      "answer": true,
+      "points": 2,
+      "explanation": "异核线形物种常为 C∞v；端点对称的线形物种可具有反演中心和垂直 C₂ 轴族，属于 D∞h。",
+      "difficulty": "hard",
+      "tags": [
+        "C-infinity-v",
+        "D-infinity-h"
+      ]
+    },
+    {
+      "id": "q033",
+      "type": "true-false",
+      "question": "孤对电子只影响电子域几何，不会改变原子构成的分子构型。",
+      "answer": false,
+      "points": 3,
+      "explanation": "孤对电子占据空间并改变键角，因此 AX₃E、AX₂E₂ 等分子构型分别不同于对应的电子域几何。",
+      "difficulty": "challenging",
+      "tags": [
+        "lone pairs",
+        "molecular geometry"
+      ]
+    },
+    {
+      "id": "q034",
+      "type": "true-false",
+      "question": "点群名称本身不能替代几何检查；必须先确认原子是否等价、构型是否理想化。",
+      "answer": true,
+      "points": 3,
+      "explanation": "同一电子域计数在不同配体等价性或构象下可能属于不同点群，点群判断必须建立在明确结构假设上。",
+      "difficulty": "challenging",
+      "tags": [
+        "point groups",
+        "assumptions"
+      ]
+    },
+    {
+      "id": "q035",
+      "type": "fill-in-the-blank",
+      "question": "AX₂E₂ 的电子域几何是____。",
+      "answer": "四面体",
+      "acceptableAnswers": [
+        "四面体",
+        "tetrahedral"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "四个电子域尽量分开，构成四面体电子域几何；H₂O 的原子构型则是折线形。",
+      "difficulty": "challenging",
+      "tags": [
+        "AX2E2",
+        "electron-domain geometry"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-water-water-neutral.png",
+        "alt": "水的折线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q036",
+      "type": "fill-in-the-blank",
+      "question": "对称线形 CO₂ 的点群通常写作____。",
+      "answer": "D∞h",
+      "acceptableAnswers": [
+        "D∞h",
+        "Dinfh",
+        "D-infinity-h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "CO₂ 两端等价并具有反演中心和垂直 C₂ 轴族，因此归入 D∞h。",
+      "difficulty": "challenging",
+      "tags": [
+        "CO2",
+        "D-infinity-h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/inorg-carbon-dioxide-carbon-dioxide-neutral.png",
+        "alt": "二氧化碳的线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q037",
+      "type": "fill-in-the-blank",
+      "question": "NH₃ 的主旋转轴是____轴。",
+      "answer": "C3",
+      "acceptableAnswers": [
+        "C3",
+        "C₃",
+        "C₃轴",
+        "C3轴"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "三角锥形 NH₃ 绕穿过 N 和三角形中心的轴旋转 120° 后重合，因此有 C₃ 主轴。",
+      "difficulty": "challenging",
+      "tags": [
+        "NH3",
+        "C3 axis"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-ammonia-ammonia-neutral.png",
+        "alt": "氨的三角锥形中心原子模型示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q038",
+      "type": "fill-in-the-blank",
+      "question": "中心对称分子中，IR 与 Raman 选择定则常称为____规则。",
+      "answer": "互斥",
+      "acceptableAnswers": [
+        "互斥",
+        "mutual exclusion"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "具有反演中心时，g/u 对称性使同一振动模式不能同时 IR 和 Raman 活性。",
+      "difficulty": "challenging",
+      "tags": [
+        "mutual exclusion",
+        "spectroscopy"
+      ]
+    },
+    {
+      "id": "q039",
+      "type": "fill-in-the-blank",
+      "question": "PCl₅ 的五个配体构成____双锥构型。",
+      "answer": "三角",
+      "acceptableAnswers": [
+        "三角",
+        "trigonal"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "AX₅ 的五个电子域排成三角双锥，含两个轴向位置和三个赤道位置。",
+      "difficulty": "challenging",
+      "tags": [
+        "PCl5",
+        "trigonal bipyramidal"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-pcl5-phosphorus-pentachloride-neutral.png",
+        "alt": "五氯化磷的三角双锥结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q040",
+      "type": "fill-in-the-blank",
+      "question": "XeF₄ 的两个孤对电子在理想八面体电子域中彼此呈____位置。",
+      "answer": "相对",
+      "acceptableAnswers": [
+        "相对",
+        "trans",
+        "180°",
+        "180度"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "为了最大化间距，两个孤对电子占据相对的八面体顶点，四个 F 留在同一平面。",
+      "difficulty": "challenging",
+      "tags": [
+        "XeF4",
+        "lone pairs",
+        "D4h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-xef4-xenon-tetrafluoride-neutral.png",
+        "alt": "四氟化氙的平方平面结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q041",
+      "type": "single-choice",
+      "question": "理想化 [Co(NH₃)₆]³⁺ 的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Oₕ"
+        },
+        {
+          "id": "B",
+          "text": "Tᵈ"
+        },
+        {
+          "id": "C",
+          "text": "D₃"
+        },
+        {
+          "id": "D",
+          "text": "C₄ᵥ"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "六个等价配体沿八面体顶点排列，具有反演中心、C₄、C₃ 和 C₂ 轴族，属于 Oₕ。",
+      "difficulty": "medium",
+      "tags": [
+        "coordination",
+        "octahedral",
+        "Oh"
+      ]
+    },
+    {
+      "id": "q042",
+      "type": "single-choice",
+      "question": "[PtCl₄]²⁻ 的理想平方平面构型属于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₄h"
+        },
+        {
+          "id": "B",
+          "text": "C₄v"
+        },
+        {
+          "id": "C",
+          "text": "Tᵈ"
+        },
+        {
+          "id": "D",
+          "text": "D₂d"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "四个等价配体在同一平面围绕金属排列，保留 C₄、σh 和反演中心，属于 D₄h。",
+      "difficulty": "medium",
+      "tags": [
+        "coordination",
+        "square planar",
+        "D4h"
+      ]
+    },
+    {
+      "id": "q043",
+      "type": "single-choice",
+      "question": "理想平方平面 [Ni(CN)₄]²⁻ 的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₄h"
+        },
+        {
+          "id": "B",
+          "text": "C₂v"
+        },
+        {
+          "id": "C",
+          "text": "D₂h"
+        },
+        {
+          "id": "D",
+          "text": "C₄v"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "只要四个 CN 配体等价且严格平方平面，点群判定与 [PtCl₄]²⁻ 相同，为 D₄h。",
+      "difficulty": "medium",
+      "tags": [
+        "coordination",
+        "D4h"
+      ]
+    },
+    {
+      "id": "q044",
+      "type": "single-choice",
+      "question": "[Fe(CN)₆]⁴⁻ 在理想八面体假设下属于……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Oₕ"
+        },
+        {
+          "id": "B",
+          "text": "D₄h"
+        },
+        {
+          "id": "C",
+          "text": "Tᵈ"
+        },
+        {
+          "id": "D",
+          "text": "C₃ᵥ"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "六个等价单齿配体构成理想八面体，金属种类和电荷不改变几何点群。",
+      "difficulty": "medium",
+      "tags": [
+        "coordination",
+        "Oh"
+      ]
+    },
+    {
+      "id": "q045",
+      "type": "single-choice",
+      "question": "理想 [Co(en)₃]³⁺（单一 Δ 或 Λ 构型）的点群最合理的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₃"
+        },
+        {
+          "id": "B",
+          "text": "D₃d"
+        },
+        {
+          "id": "C",
+          "text": "Oₕ"
+        },
+        {
+          "id": "D",
+          "text": "C₃ᵥ"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "三个双齿配体绕 C₃ 轴螺旋排列，保留三条垂直 C₂ 轴，但没有镜面或反演中心，属于 D₃。",
+      "difficulty": "hard",
+      "tags": [
+        "coordination",
+        "chelates",
+        "D3"
+      ]
+    },
+    {
+      "id": "q046",
+      "type": "single-choice",
+      "question": "理想 cis-[PtCl₂(NH₃)₂] 的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₂v"
+        },
+        {
+          "id": "B",
+          "text": "D₂h"
+        },
+        {
+          "id": "C",
+          "text": "D₄h"
+        },
+        {
+          "id": "D",
+          "text": "C₁"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "顺式取代破坏了 C₄ 和反演中心，但保留一条 C₂ 轴和两面 σv，属于 C₂v。",
+      "difficulty": "hard",
+      "tags": [
+        "coordination",
+        "cis-trans",
+        "C2v"
+      ]
+    },
+    {
+      "id": "q047",
+      "type": "single-choice",
+      "question": "理想 trans-[PtCl₂(NH₃)₂] 的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₂h"
+        },
+        {
+          "id": "B",
+          "text": "C₂v"
+        },
+        {
+          "id": "C",
+          "text": "D₄h"
+        },
+        {
+          "id": "D",
+          "text": "C₂"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "反式异配体成对相对，具有三条互相垂直的 C₂ 轴、反演中心和镜面，属于 D₂h。",
+      "difficulty": "hard",
+      "tags": [
+        "coordination",
+        "cis-trans",
+        "D2h"
+      ]
+    },
+    {
+      "id": "q048",
+      "type": "single-choice",
+      "question": "重叠式（eclipsed）二茂铁的理想点群通常写作……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₅h"
+        },
+        {
+          "id": "B",
+          "text": "D₅d"
+        },
+        {
+          "id": "C",
+          "text": "C₅v"
+        },
+        {
+          "id": "D",
+          "text": "Ih"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "两环重叠时存在 σh 和五条包含主轴的镜面，理想构型归入 D₅h。",
+      "difficulty": "hard",
+      "tags": [
+        "organometallic",
+        "ferrocene",
+        "D5h"
+      ]
+    },
+    {
+      "id": "q049",
+      "type": "single-choice",
+      "question": "交错式（staggered）二茂铁的理想点群通常写作……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₅d"
+        },
+        {
+          "id": "B",
+          "text": "D₅h"
+        },
+        {
+          "id": "C",
+          "text": "C₅v"
+        },
+        {
+          "id": "D",
+          "text": "Tᵈ"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "两环相对旋转后保留 S₁₀、C₅ 和五条 σd，具有反演中心但没有 σh，属于 D₅d。",
+      "difficulty": "hard",
+      "tags": [
+        "organometallic",
+        "ferrocene",
+        "D5d"
+      ]
+    },
+    {
+      "id": "q050",
+      "type": "single-choice",
+      "question": "交错式乙烷的理想点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₃d"
+        },
+        {
+          "id": "B",
+          "text": "D₃h"
+        },
+        {
+          "id": "C",
+          "text": "C₃v"
+        },
+        {
+          "id": "D",
+          "text": "S₆"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "交错式乙烷有 C₃ 轴、三条垂直 C₂ 轴和反演中心，属于 D₃d。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "ethane",
+        "D3d"
+      ]
+    },
+    {
+      "id": "q051",
+      "type": "single-choice",
+      "question": "重叠式乙烷的理想点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₃h"
+        },
+        {
+          "id": "B",
+          "text": "D₃d"
+        },
+        {
+          "id": "C",
+          "text": "C₃v"
+        },
+        {
+          "id": "D",
+          "text": "C₂v"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "重叠式乙烷具有穿过 C–C 键的 C₃ 轴和分子构型相关的 σh，理想点群为 D₃h。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "ethane",
+        "D3h"
+      ]
+    },
+    {
+      "id": "q052",
+      "type": "single-choice",
+      "question": "理想化 allene（H₂C=C=CH₂）的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₂d"
+        },
+        {
+          "id": "B",
+          "text": "D₂h"
+        },
+        {
+          "id": "C",
+          "text": "C₂v"
+        },
+        {
+          "id": "D",
+          "text": "D₃h"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "allene 两端 CH₂ 平面互相垂直，保留 S₄ 和两条 C₂ 轴，属于 D₂d。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "allene",
+        "D2d"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-allene-allene-neutral.png",
+        "alt": "丙二烯的结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q053",
+      "type": "single-choice",
+      "question": "平面反式 HOOH 构象的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₂h"
+        },
+        {
+          "id": "B",
+          "text": "C₂v"
+        },
+        {
+          "id": "C",
+          "text": "C₂"
+        },
+        {
+          "id": "D",
+          "text": "D₂h"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "反式平面过氧化氢同时具有 C₂、分子平面和反演中心，属于 C₂h。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "conformation",
+        "C2h"
+      ]
+    },
+    {
+      "id": "q054",
+      "type": "single-choice",
+      "question": "平面顺式 HOOH 构象的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₂v"
+        },
+        {
+          "id": "B",
+          "text": "C₂h"
+        },
+        {
+          "id": "C",
+          "text": "D₂h"
+        },
+        {
+          "id": "D",
+          "text": "C₁"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "顺式平面构象保留 C₂ 轴和两面 σv，但没有反演中心，属于 C₂v。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "conformation",
+        "C2v"
+      ]
+    },
+    {
+      "id": "q055",
+      "type": "single-choice",
+      "question": "理想化折叠（puckered）环丁烷的点群通常是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₂d"
+        },
+        {
+          "id": "B",
+          "text": "D₄h"
+        },
+        {
+          "id": "C",
+          "text": "C₂v"
+        },
+        {
+          "id": "D",
+          "text": "S₄"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "折叠使环不再是平面正方形，但保留 D₂d 的旋转轴和 σd。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "cyclobutane",
+        "D2d"
+      ]
+    },
+    {
+      "id": "q056",
+      "type": "single-choice",
+      "question": "如果把环丁烷强行理想化为平面正方形，点群会变成……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₄h"
+        },
+        {
+          "id": "B",
+          "text": "D₂d"
+        },
+        {
+          "id": "C",
+          "text": "C₄v"
+        },
+        {
+          "id": "D",
+          "text": "C₂h"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "平面正方形具有 C₄、σh、反演中心等完整对称元素，属于 D₄h；真实构象可因折叠而降对称。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "cyclobutane",
+        "D4h"
+      ]
+    },
+    {
+      "id": "q057",
+      "type": "single-choice",
+      "question": "氯仿 CHCl₃ 的理想点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₃v"
+        },
+        {
+          "id": "B",
+          "text": "Tᵈ"
+        },
+        {
+          "id": "C",
+          "text": "C₃h"
+        },
+        {
+          "id": "D",
+          "text": "C₁"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "三个 Cl 等价、H 位于三角锥顶端，保留 C₃ 和三面 σv，属于 C₃v。",
+      "difficulty": "medium",
+      "tags": [
+        "organic",
+        "substitution",
+        "C3v"
+      ]
+    },
+    {
+      "id": "q058",
+      "type": "single-choice",
+      "question": "四氯化碳 CCl₄ 的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tᵈ"
+        },
+        {
+          "id": "B",
+          "text": "Oₕ"
+        },
+        {
+          "id": "C",
+          "text": "C₃v"
+        },
+        {
+          "id": "D",
+          "text": "D₂d"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "四个等价 Cl 构成四面体，点群为 Tᵈ。",
+      "difficulty": "medium",
+      "tags": [
+        "organic",
+        "tetrahedral",
+        "Td"
+      ]
+    },
+    {
+      "id": "q059",
+      "type": "single-choice",
+      "question": "理想立方烷 C₈H₈ 的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Oₕ"
+        },
+        {
+          "id": "B",
+          "text": "Tᵈ"
+        },
+        {
+          "id": "C",
+          "text": "D₆h"
+        },
+        {
+          "id": "D",
+          "text": "Ih"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "立方烷的碳骨架和氢取代共同保留立方体的 Oₕ 对称性。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "cubane",
+        "Oh"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-cubane-cubane-neutral.png",
+        "alt": "立方烷的笼状结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q060",
+      "type": "single-choice",
+      "question": "理想平面 1,3,5-三氟苯的点群是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "D₃h"
+        },
+        {
+          "id": "B",
+          "text": "C₃v"
+        },
+        {
+          "id": "C",
+          "text": "D₆h"
+        },
+        {
+          "id": "D",
+          "text": "C₂v"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "交替的三个 F 和三个 H 保留 C₃、σh 及三条垂直 C₂ 轴，点群为 D₃h。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "substituted benzene",
+        "D3h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-benzene-benzene-neutral.png",
+        "alt": "苯的平面六元环结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q061",
+      "type": "multiple-choice",
+      "question": "[PtCl₄]²⁻ 的 D₄h 点群包含哪些元素？",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₄ 主轴"
+        },
+        {
+          "id": "B",
+          "text": "σh"
+        },
+        {
+          "id": "C",
+          "text": "反演中心 i"
+        },
+        {
+          "id": "D",
+          "text": "四面体的四条 C₃ 轴"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "D₄h 的平方平面骨架含 C₄、σh 和 i；四面体 C₃ 轴不是该结构的对称元素。",
+      "difficulty": "hard",
+      "tags": [
+        "D4h",
+        "symmetry elements"
+      ]
+    },
+    {
+      "id": "q062",
+      "type": "multiple-choice",
+      "question": "理想 [ML₆] 八面体的 Oₕ 点群包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "三条 C₄ 轴"
+        },
+        {
+          "id": "B",
+          "text": "四条 C₃ 轴"
+        },
+        {
+          "id": "C",
+          "text": "反演中心"
+        },
+        {
+          "id": "D",
+          "text": "只有一面 σv"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "Oₕ 同时具有 C₄、C₃、C₂、i 以及多组镜面和不正旋转轴。",
+      "difficulty": "hard",
+      "tags": [
+        "Oh",
+        "coordination"
+      ]
+    },
+    {
+      "id": "q063",
+      "type": "multiple-choice",
+      "question": "平面三角形 BF₃ 的 D₃h 对称性可由哪些特征支持？",
+      "options": [
+        {
+          "id": "A",
+          "text": "一条 C₃ 轴"
+        },
+        {
+          "id": "B",
+          "text": "分子平面 σh"
+        },
+        {
+          "id": "C",
+          "text": "三条垂直 C₂ 轴"
+        },
+        {
+          "id": "D",
+          "text": "反演中心"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "D₃h 有 C₃、三条垂直 C₂ 和 σh，但没有反演中心。",
+      "difficulty": "hard",
+      "tags": [
+        "D3h",
+        "BF3"
+      ]
+    },
+    {
+      "id": "q064",
+      "type": "multiple-choice",
+      "question": "C₃v 点群的典型特征包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "一条 C₃ 轴"
+        },
+        {
+          "id": "B",
+          "text": "三面 σv"
+        },
+        {
+          "id": "C",
+          "text": "必有反演中心"
+        },
+        {
+          "id": "D",
+          "text": "没有 σh 这一要求"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 2,
+      "explanation": "C₃v 由 C₃ 和包含主轴的三个 σv 构成，不要求也不包含反演中心。",
+      "difficulty": "hard",
+      "tags": [
+        "C3v",
+        "mirror planes"
+      ]
+    },
+    {
+      "id": "q065",
+      "type": "multiple-choice",
+      "question": "交错式乙烷 D₃d 的判断依据包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₃ 轴"
+        },
+        {
+          "id": "B",
+          "text": "三条垂直 C₂ 轴"
+        },
+        {
+          "id": "C",
+          "text": "反演中心"
+        },
+        {
+          "id": "D",
+          "text": "分子平面 σh"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "D₃d 含 C₃、3C₂、i 和 S₆/σd，但交错式乙烷没有把整个分子作为 σh 的分子平面。",
+      "difficulty": "hard",
+      "tags": [
+        "D3d",
+        "ethane"
+      ]
+    },
+    {
+      "id": "q066",
+      "type": "multiple-choice",
+      "question": "交错式二茂铁 D₅d 的对称元素包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₅ 轴"
+        },
+        {
+          "id": "B",
+          "text": "反演中心"
+        },
+        {
+          "id": "C",
+          "text": "S₁₀ 轴"
+        },
+        {
+          "id": "D",
+          "text": "σh"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "D₅d 的关键是 C₅、i、S₁₀ 和 σd；σh 属于 D₅h 的重叠式构型。",
+      "difficulty": "hard",
+      "tags": [
+        "D5d",
+        "ferrocene"
+      ]
+    },
+    {
+      "id": "q067",
+      "type": "multiple-choice",
+      "question": "重叠式二茂铁 D₅h 的特征包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₅ 轴"
+        },
+        {
+          "id": "B",
+          "text": "σh"
+        },
+        {
+          "id": "C",
+          "text": "五面 σv"
+        },
+        {
+          "id": "D",
+          "text": "必有反演中心"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "D₅h 保留水平镜面和五面垂直镜面，但没有反演中心。",
+      "difficulty": "hard",
+      "tags": [
+        "D5h",
+        "ferrocene"
+      ]
+    },
+    {
+      "id": "q068",
+      "type": "multiple-choice",
+      "question": "理想 cis-[PtCl₂(NH₃)₂] 的 C₂v 对称性包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "一条 C₂ 轴"
+        },
+        {
+          "id": "B",
+          "text": "两面 σv"
+        },
+        {
+          "id": "C",
+          "text": "反演中心"
+        },
+        {
+          "id": "D",
+          "text": "σh"
+        }
+      ],
+      "answers": [
+        "A",
+        "B"
+      ],
+      "points": 2,
+      "explanation": "顺式异配体平方平面结构没有 i 或 σh，只保留 C₂ 与两面 σv。",
+      "difficulty": "hard",
+      "tags": [
+        "C2v",
+        "cis complex"
+      ]
+    },
+    {
+      "id": "q069",
+      "type": "multiple-choice",
+      "question": "理想 trans-[PtCl₂(NH₃)₂] 的 D₂h 对称性包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "三条互相垂直的 C₂ 轴"
+        },
+        {
+          "id": "B",
+          "text": "反演中心"
+        },
+        {
+          "id": "C",
+          "text": "三个互相垂直的镜面"
+        },
+        {
+          "id": "D",
+          "text": "C₄ 轴"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "D₂h 的基元是三个 C₂、i 和与其组合得到的镜面，不含四重轴。",
+      "difficulty": "hard",
+      "tags": [
+        "D2h",
+        "trans complex"
+      ]
+    },
+    {
+      "id": "q070",
+      "type": "multiple-choice",
+      "question": "理想单一 Δ/[Co(en)₃]³⁺ 的 D₃ 点群具有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₃ 轴"
+        },
+        {
+          "id": "B",
+          "text": "三条垂直 C₂ 轴"
+        },
+        {
+          "id": "C",
+          "text": "镜面"
+        },
+        {
+          "id": "D",
+          "text": "反演中心"
+        }
+      ],
+      "answers": [
+        "A",
+        "B"
+      ],
+      "points": 3,
+      "explanation": "D₃ 是纯旋转点群，含 C₃ 和三条 C₂，但不含镜面或反演中心，因此配合物具有手性。",
+      "difficulty": "challenging",
+      "tags": [
+        "D3",
+        "chiral coordination"
+      ]
+    },
+    {
+      "id": "q071",
+      "type": "multiple-choice",
+      "question": "关于 HOOH 的三个常见理想构象，下列对应关系正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "反式平面：C₂h"
+        },
+        {
+          "id": "B",
+          "text": "顺式平面：C₂v"
+        },
+        {
+          "id": "C",
+          "text": "gauche：C₂"
+        },
+        {
+          "id": "D",
+          "text": "所有构象都是 C₁"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "扭转构象改变对称元素：反式、顺式和 gauche 分别可用 C₂h、C₂v 和 C₂ 描述。",
+      "difficulty": "challenging",
+      "tags": [
+        "H2O2",
+        "conformation"
+      ]
+    },
+    {
+      "id": "q072",
+      "type": "multiple-choice",
+      "question": "allene 的 D₂d 点群可识别出的元素包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "S₄ 轴"
+        },
+        {
+          "id": "B",
+          "text": "两条垂直 C₂ 轴"
+        },
+        {
+          "id": "C",
+          "text": "两面 σd"
+        },
+        {
+          "id": "D",
+          "text": "反演中心"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "allene 的两端平面正交，D₂d 含 S₄、C₂ 和 σd，但不含 i。",
+      "difficulty": "challenging",
+      "tags": [
+        "allene",
+        "D2d"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-allene-allene-neutral.png",
+        "alt": "丙二烯的结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q073",
+      "type": "multiple-choice",
+      "question": "苯的 D₆h 点群包括……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₆ 主轴"
+        },
+        {
+          "id": "B",
+          "text": "σh"
+        },
+        {
+          "id": "C",
+          "text": "反演中心"
+        },
+        {
+          "id": "D",
+          "text": "只有一条 σv"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "苯具有完整的六重轴、分子平面、反演中心和多组垂直/对角镜面。",
+      "difficulty": "hard",
+      "tags": [
+        "benzene",
+        "D6h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-benzene-benzene-neutral.png",
+        "alt": "苯的平面六元环结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q074",
+      "type": "multiple-choice",
+      "question": "立方烷 Oₕ 对称性与哪些几何事实相容？",
+      "options": [
+        {
+          "id": "A",
+          "text": "立方体骨架的三条 C₄ 轴"
+        },
+        {
+          "id": "B",
+          "text": "四条体对角 C₃ 轴"
+        },
+        {
+          "id": "C",
+          "text": "反演中心"
+        },
+        {
+          "id": "D",
+          "text": "只有一个 C₂ 轴"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "Oₕ 的三条 C₄、四条 C₃ 和反演中心对应立方体的面轴、体对角轴和中心反演。",
+      "difficulty": "challenging",
+      "tags": [
+        "cubane",
+        "Oh"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-cubane-cubane-neutral.png",
+        "alt": "立方烷的笼状结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q075",
+      "type": "multiple-choice",
+      "question": "理想 1,3,5-三氟苯的 D₃h 判定可依据……",
+      "options": [
+        {
+          "id": "A",
+          "text": "三个 F 等价"
+        },
+        {
+          "id": "B",
+          "text": "环平面为 σh"
+        },
+        {
+          "id": "C",
+          "text": "有三重主轴"
+        },
+        {
+          "id": "D",
+          "text": "存在反演中心"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "三个相同取代基按 120° 周期排列并保持平面，形成 D₃h；该分子不具有 i。",
+      "difficulty": "hard",
+      "tags": [
+        "substituted benzene",
+        "D3h"
+      ]
+    },
+    {
+      "id": "q076",
+      "type": "multiple-choice",
+      "question": "反式 1,2-二氟乙烯的理想点群 D₂h 说明它具有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "反演中心"
+        },
+        {
+          "id": "B",
+          "text": "三条 C₂ 轴"
+        },
+        {
+          "id": "C",
+          "text": "分子平面"
+        },
+        {
+          "id": "D",
+          "text": "C₃ 轴"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "反式双键两端取代基相对排列，结构具有 D₂h；C₃ 轴不是其对称元素。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "alkene",
+        "D2h"
+      ]
+    },
+    {
+      "id": "q077",
+      "type": "multiple-choice",
+      "question": "顺式 1,2-二氟乙烯的理想点群 C₂v 说明它具有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C₂ 轴"
+        },
+        {
+          "id": "B",
+          "text": "两面 σv"
+        },
+        {
+          "id": "C",
+          "text": "反演中心"
+        },
+        {
+          "id": "D",
+          "text": "不要求 σh"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 2,
+      "explanation": "顺式取代保留 C₂ 和两面垂直镜面，但不保留反演中心。",
+      "difficulty": "hard",
+      "tags": [
+        "organic",
+        "alkene",
+        "C2v"
+      ]
+    },
+    {
+      "id": "q078",
+      "type": "multiple-choice",
+      "question": "理想 C₆₀ 的 Ih 点群可包含……",
+      "options": [
+        {
+          "id": "A",
+          "text": "五重轴"
+        },
+        {
+          "id": "B",
+          "text": "三重轴"
+        },
+        {
+          "id": "C",
+          "text": "二重轴"
+        },
+        {
+          "id": "D",
+          "text": "一条唯一的主轴"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "Ih 是二十面体/二十面体对称群，具有 5、3、2 阶旋转轴族，不存在唯一主轴。",
+      "difficulty": "challenging",
+      "tags": [
+        "organic",
+        "C60",
+        "Ih"
+      ]
+    },
+    {
+      "id": "q079",
+      "type": "multiple-choice",
+      "question": "单一构型 [M(en)₃]ⁿ⁺ 与理想 [M(ox)₃]ⁿ⁻ 的点群分析中，哪些结论可能成立？",
+      "options": [
+        {
+          "id": "A",
+          "text": "都可有 D₃ 纯旋转对称"
+        },
+        {
+          "id": "B",
+          "text": "都可能具有手性"
+        },
+        {
+          "id": "C",
+          "text": "都必然有 σh"
+        },
+        {
+          "id": "D",
+          "text": "配体螯合方式会影响轴和镜面的保留"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 3,
+      "explanation": "三螯合配体的螺旋排列常给 D₃；D₃ 无镜面和反演中心，因此可手性，但具体取代和构象仍需检查。",
+      "difficulty": "challenging",
+      "tags": [
+        "coordination",
+        "chelates",
+        "D3"
+      ]
+    },
+    {
+      "id": "q080",
+      "type": "multiple-choice",
+      "question": "比较理想平方平面和平方锥形配合物时，合理的说法有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "平方平面 ML₄ 可为 D₄h"
+        },
+        {
+          "id": "B",
+          "text": "平方锥形 ML₅ 常为 C₄v"
+        },
+        {
+          "id": "C",
+          "text": "平方锥形一定有反演中心"
+        },
+        {
+          "id": "D",
+          "text": "增加轴向配体会降低部分对称性"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 2,
+      "explanation": "第五个轴向配体破坏平方平面的反演中心和 σh，通常把 D₄h 降为 C₄v。",
+      "difficulty": "hard",
+      "tags": [
+        "coordination",
+        "D4h",
+        "C4v"
+      ]
+    },
+    {
+      "id": "q081",
+      "type": "true-false",
+      "question": "同一分子式的不同构造异构体可以属于不同点群。",
+      "answer": true,
+      "points": 1,
+      "explanation": "点群由空间连接、构象和原子等价性决定，分子式本身不能唯一确定点群。",
+      "difficulty": "medium",
+      "tags": [
+        "isomers",
+        "point group"
+      ]
+    },
+    {
+      "id": "q082",
+      "type": "true-false",
+      "question": "cis/trans 异构通常只改变命名，不会改变配合物点群。",
+      "answer": false,
+      "points": 1,
+      "explanation": "cis 与 trans 取代保留的旋转轴、镜面和反演中心不同，点群往往显著变化。",
+      "difficulty": "medium",
+      "tags": [
+        "cis-trans",
+        "coordination"
+      ]
+    },
+    {
+      "id": "q083",
+      "type": "true-false",
+      "question": "[M(en)₃] 与 [ML₆] 都有六个供体原子，因此二者一定都属于 Oₕ。",
+      "answer": false,
+      "points": 1,
+      "explanation": "配位数相同不等于空间排列相同；三螯合配体的螺旋结构常属于 D₃。",
+      "difficulty": "medium",
+      "tags": [
+        "coordination",
+        "D3",
+        "Oh"
+      ]
+    },
+    {
+      "id": "q084",
+      "type": "true-false",
+      "question": "配位数单独不足以唯一确定配合物的点群。",
+      "answer": true,
+      "points": 1,
+      "explanation": "还要知道配体是否等价、连接方式、构型以及是否存在扭曲或螯合环。",
+      "difficulty": "medium",
+      "tags": [
+        "coordination",
+        "assumptions"
+      ]
+    },
+    {
+      "id": "q085",
+      "type": "true-false",
+      "question": "理想正八面体结构一定具有反演中心。",
+      "answer": true,
+      "points": 2,
+      "explanation": "中心原子和相对的等价配体在反演后互换，理想 Oₕ 包含 i。",
+      "difficulty": "hard",
+      "tags": [
+        "Oh",
+        "inversion"
+      ]
+    },
+    {
+      "id": "q086",
+      "type": "true-false",
+      "question": "理想平方锥形 ML₅ 结构 C₄v 具有反演中心。",
+      "answer": false,
+      "points": 2,
+      "explanation": "轴向单个配体破坏了平方平面结构的反演映射，C₄v 不含 i。",
+      "difficulty": "hard",
+      "tags": [
+        "C4v",
+        "square pyramidal"
+      ]
+    },
+    {
+      "id": "q087",
+      "type": "true-false",
+      "question": "所有 D₃h 分子都必须只有平面三角形构型。",
+      "answer": false,
+      "points": 2,
+      "explanation": "D₃h 也可描述理想三角双锥等非平面原子集合；点群不等于唯一一种 VSEPR 构型。",
+      "difficulty": "hard",
+      "tags": [
+        "D3h",
+        "point group"
+      ]
+    },
+    {
+      "id": "q088",
+      "type": "true-false",
+      "question": "C₃v 点群包含反演中心。",
+      "answer": false,
+      "points": 2,
+      "explanation": "C₃v 由 C₃ 与 σv 组成，不包含反演中心。",
+      "difficulty": "hard",
+      "tags": [
+        "C3v",
+        "inversion"
+      ]
+    },
+    {
+      "id": "q089",
+      "type": "true-false",
+      "question": "所有 Dₙ 点群都必须包含镜面。",
+      "answer": false,
+      "points": 2,
+      "explanation": "D₃ 等纯旋转点群没有镜面；带镜面的变体是 Dₙh 或 Dₙd。",
+      "difficulty": "hard",
+      "tags": [
+        "Dn",
+        "mirror planes"
+      ]
+    },
+    {
+      "id": "q090",
+      "type": "true-false",
+      "question": "Dₙh 点群按定义包含垂直于主轴的 σh。",
+      "answer": true,
+      "points": 2,
+      "explanation": "h 指水平镜面，定义为垂直于主旋转轴的镜面。",
+      "difficulty": "hard",
+      "tags": [
+        "Dnh",
+        "mirror planes"
+      ]
+    },
+    {
+      "id": "q091",
+      "type": "true-false",
+      "question": "Dₙd 点群的 d 镜面包含主轴，并平分相邻垂直 C₂ 轴的夹角。",
+      "answer": true,
+      "points": 2,
+      "explanation": "d 镜面的命名就是相对于主轴和垂直 C₂ 轴族的二面角关系。",
+      "difficulty": "hard",
+      "tags": [
+        "Dnd",
+        "sigma-d"
+      ]
+    },
+    {
+      "id": "q092",
+      "type": "true-false",
+      "question": "交错式乙烷与重叠式乙烷分别常用 D₃d 和 D₃h 描述。",
+      "answer": true,
+      "points": 1,
+      "explanation": "绕 C–C 键的扭转改变了反演中心与镜面的保留方式。",
+      "difficulty": "medium",
+      "tags": [
+        "ethane",
+        "conformation"
+      ]
+    },
+    {
+      "id": "q093",
+      "type": "true-false",
+      "question": "D₂d 点群一定是手性点群。",
+      "answer": false,
+      "points": 3,
+      "explanation": "D₂d 含 σd 镜面，因此不是手性点群；D₂ 才是常见的纯旋转手性点群。",
+      "difficulty": "challenging",
+      "tags": [
+        "D2d",
+        "chirality"
+      ]
+    },
+    {
+      "id": "q094",
+      "type": "true-false",
+      "question": "反式平面 HOOH 的 C₂h 点群包含反演中心。",
+      "answer": true,
+      "points": 2,
+      "explanation": "C₂h 的 h 镜面和反演中心共同反映反式平面构象的额外对称性。",
+      "difficulty": "hard",
+      "tags": [
+        "H2O2",
+        "C2h"
+      ]
+    },
+    {
+      "id": "q095",
+      "type": "true-false",
+      "question": "gauche-HOOH 的 C₂ 点群包含 σv。",
+      "answer": false,
+      "points": 2,
+      "explanation": "C₂ 是纯旋转点群，只有恒等操作和一个 C₂ 轴，不含镜面。",
+      "difficulty": "hard",
+      "tags": [
+        "H2O2",
+        "C2"
+      ]
+    },
+    {
+      "id": "q096",
+      "type": "true-false",
+      "question": "苯的 D₆h 与理想 C₆₀ 的 Ih 都属于高对称分子，但它们的轴阶数集合不同。",
+      "answer": true,
+      "points": 3,
+      "explanation": "D₆h 以六重轴为主，Ih 具有五、三、二重轴族；不能只按“高对称”混为一谈。",
+      "difficulty": "challenging",
+      "tags": [
+        "benzene",
+        "C60",
+        "high symmetry"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-benzene-benzene-neutral.png",
+        "alt": "苯的平面六元环结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q097",
+      "type": "true-false",
+      "question": "同位素替换可能降低原来分子的点群。",
+      "answer": true,
+      "points": 2,
+      "explanation": "点群要求原子种类也在操作后不可区分；同位素标签不同会破坏部分等价性。",
+      "difficulty": "hard",
+      "tags": [
+        "isotopes",
+        "symmetry breaking"
+      ]
+    },
+    {
+      "id": "q098",
+      "type": "true-false",
+      "question": "硝酸根的一张含一个 N=O 的 Lewis 图，就足以直接证明完整 D₃h 点群。",
+      "answer": false,
+      "points": 3,
+      "explanation": "单张局域 Lewis 共振式会显式区分端氧；D₃h 需要建立在等价共振平均或等价结构模型上。",
+      "difficulty": "challenging",
+      "tags": [
+        "resonance",
+        "D3h"
+      ]
+    },
+    {
+      "id": "q099",
+      "type": "true-false",
+      "question": "理想配合物的点群判断通常需要声明“配体等价、键长相等、忽略动态扭曲”等假设。",
+      "answer": true,
+      "points": 2,
+      "explanation": "点群是几何理想化的分类；若金属—配体距离或配体构象不同，实际点群可能降低。",
+      "difficulty": "hard",
+      "tags": [
+        "coordination",
+        "assumptions"
+      ]
+    },
+    {
+      "id": "q100",
+      "type": "true-false",
+      "question": "判断点群时可以忽略分子的构象，因为连接关系已经完全决定对称性。",
+      "answer": false,
+      "points": 2,
+      "explanation": "乙烷、二茂铁和 HOOH 都说明构象会改变反演、镜面和不正旋转轴。",
+      "difficulty": "hard",
+      "tags": [
+        "conformation",
+        "point group"
+      ]
+    },
+    {
+      "id": "q101",
+      "type": "fill-in-the-blank",
+      "question": "[PtCl₄]²⁻ 理想平方平面的点群为____。",
+      "answer": "D4h",
+      "acceptableAnswers": [
+        "D4h",
+        "D₄h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "四个等价配体共面排列并保留反演中心，属于 D₄h。",
+      "difficulty": "challenging",
+      "tags": [
+        "coordination",
+        "D4h"
+      ]
+    },
+    {
+      "id": "q102",
+      "type": "fill-in-the-blank",
+      "question": "单一 Δ/[Co(en)₃]³⁺ 构型常归入____点群。",
+      "answer": "D3",
+      "acceptableAnswers": [
+        "D3",
+        "D₃"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "三螯合配体形成螺旋排列，保留 C₃ 和三条 C₂，不含镜面或反演中心。",
+      "difficulty": "challenging",
+      "tags": [
+        "coordination",
+        "D3"
+      ]
+    },
+    {
+      "id": "q103",
+      "type": "fill-in-the-blank",
+      "question": "重叠式二茂铁的理想点群为____。",
+      "answer": "D5h",
+      "acceptableAnswers": [
+        "D5h",
+        "D₅h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "重叠式构象具有 C₅、σh 和五面 σv，归入 D₅h。",
+      "difficulty": "challenging",
+      "tags": [
+        "ferrocene",
+        "D5h"
+      ]
+    },
+    {
+      "id": "q104",
+      "type": "fill-in-the-blank",
+      "question": "交错式二茂铁的理想点群为____。",
+      "answer": "D5d",
+      "acceptableAnswers": [
+        "D5d",
+        "D₅d"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "交错式构象具有 C₅、S₁₀、反演中心和 σd，归入 D₅d。",
+      "difficulty": "challenging",
+      "tags": [
+        "ferrocene",
+        "D5d"
+      ]
+    },
+    {
+      "id": "q105",
+      "type": "fill-in-the-blank",
+      "question": "交错式乙烷的点群为____。",
+      "answer": "D3d",
+      "acceptableAnswers": [
+        "D3d",
+        "D₃d"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "交错式乙烷有 C₃、三条垂直 C₂ 和反演中心，属于 D₃d。",
+      "difficulty": "challenging",
+      "tags": [
+        "ethane",
+        "D3d"
+      ]
+    },
+    {
+      "id": "q106",
+      "type": "fill-in-the-blank",
+      "question": "理想 allene H₂C=C=CH₂ 的点群为____。",
+      "answer": "D2d",
+      "acceptableAnswers": [
+        "D2d",
+        "D₂d"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "两端 CH₂ 平面正交，保留 S₄、C₂ 和 σd，属于 D₂d。",
+      "difficulty": "challenging",
+      "tags": [
+        "allene",
+        "D2d"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-allene-allene-neutral.png",
+        "alt": "丙二烯的结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q107",
+      "type": "fill-in-the-blank",
+      "question": "理想 C₆₀ 的点群为____。",
+      "answer": "Ih",
+      "acceptableAnswers": [
+        "Ih",
+        "Iₕ"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "完美截角二十面体碳笼具有 Ih 对称性。",
+      "difficulty": "challenging",
+      "tags": [
+        "C60",
+        "Ih"
+      ]
+    },
+    {
+      "id": "q108",
+      "type": "fill-in-the-blank",
+      "question": "理想立方烷 C₈H₈ 的点群为____。",
+      "answer": "Oh",
+      "acceptableAnswers": [
+        "Oh",
+        "Oₕ"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "立方体骨架对应 Oₕ 点群。",
+      "difficulty": "challenging",
+      "tags": [
+        "cubane",
+        "Oh"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-cubane-cubane-neutral.png",
+        "alt": "立方烷的笼状结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q109",
+      "type": "fill-in-the-blank",
+      "question": "理想 cis-[PtCl₂(NH₃)₂] 的点群为____。",
+      "answer": "C2v",
+      "acceptableAnswers": [
+        "C2v",
+        "C₂v"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "顺式平方平面异配体结构保留 C₂ 和两面 σv。",
+      "difficulty": "challenging",
+      "tags": [
+        "cis complex",
+        "C2v"
+      ]
+    },
+    {
+      "id": "q110",
+      "type": "fill-in-the-blank",
+      "question": "理想 trans-[PtCl₂(NH₃)₂] 的点群为____。",
+      "answer": "D2h",
+      "acceptableAnswers": [
+        "D2h",
+        "D₂h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "反式结构有三条 C₂、反演中心和镜面，属于 D₂h。",
+      "difficulty": "challenging",
+      "tags": [
+        "trans complex",
+        "D2h"
+      ]
+    },
+    {
+      "id": "q111",
+      "type": "fill-in-the-blank",
+      "question": "理想八面体 Oₕ 中，穿过中心的对映点对应____中心。",
+      "answer": "反演",
+      "acceptableAnswers": [
+        "反演",
+        "inversion",
+        "i"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "将 (x,y,z) 映射为 (−x,−y,−z) 的中心操作是反演。",
+      "difficulty": "challenging",
+      "tags": [
+        "Oh",
+        "inversion"
+      ]
+    },
+    {
+      "id": "q112",
+      "type": "fill-in-the-blank",
+      "question": "理想平方平面 D₄h 结构的最高阶真旋转轴是____轴。",
+      "answer": "C4",
+      "acceptableAnswers": [
+        "C4",
+        "C₄",
+        "C₄轴",
+        "C4轴"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "平方平面正方形绕垂直平面的轴旋转 90° 后重合，因此主轴是 C₄。",
+      "difficulty": "challenging",
+      "tags": [
+        "D4h",
+        "C4"
+      ]
+    },
+    {
+      "id": "q113",
+      "type": "fill-in-the-blank",
+      "question": "D₃d 点群中常见的不正旋转轴是____。",
+      "answer": "S6",
+      "acceptableAnswers": [
+        "S6",
+        "S₆"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "D₃d 可由 C₃、垂直 C₂、反演以及 S₆ 等操作描述。",
+      "difficulty": "challenging",
+      "tags": [
+        "D3d",
+        "improper rotation"
+      ]
+    },
+    {
+      "id": "q114",
+      "type": "fill-in-the-blank",
+      "question": "C₃v 点群的镜面写作____镜面。",
+      "answer": "σv",
+      "acceptableAnswers": [
+        "σv",
+        "sigma-v",
+        "σv镜面"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "C₃v 的镜面包含主轴，故命名为 σv。",
+      "difficulty": "challenging",
+      "tags": [
+        "C3v",
+        "mirror planes"
+      ]
+    },
+    {
+      "id": "q115",
+      "type": "fill-in-the-blank",
+      "question": "没有镜面、反演中心或不正旋转轴的纯旋转点群例子是____。",
+      "answer": "D3",
+      "acceptableAnswers": [
+        "D3",
+        "D₃"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "D₃ 只有恒等操作、一个 C₃ 和三条 C₂，是常见的手性纯旋转点群。",
+      "difficulty": "challenging",
+      "tags": [
+        "D3",
+        "chiral point group"
+      ]
+    },
+    {
+      "id": "q116",
+      "type": "fill-in-the-blank",
+      "question": "反式平面 HOOH 的点群为____。",
+      "answer": "C2h",
+      "acceptableAnswers": [
+        "C2h",
+        "C₂h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "反式平面构象同时具有 C₂、σh 和 i，属于 C₂h。",
+      "difficulty": "challenging",
+      "tags": [
+        "H2O2",
+        "C2h"
+      ]
+    },
+    {
+      "id": "q117",
+      "type": "fill-in-the-blank",
+      "question": "gauche-HOOH 的理想点群为____。",
+      "answer": "C2",
+      "acceptableAnswers": [
+        "C2",
+        "C₂"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "gauche 构象只保留一条 C₂ 轴，是典型的手性 C₂ 构象。",
+      "difficulty": "challenging",
+      "tags": [
+        "H2O2",
+        "C2"
+      ]
+    },
+    {
+      "id": "q118",
+      "type": "fill-in-the-blank",
+      "question": "苯的点群为____。",
+      "answer": "D6h",
+      "acceptableAnswers": [
+        "D6h",
+        "D₆h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "平面六元环同时具有 C₆、σh、i 和多组垂直镜面，属于 D₆h。",
+      "difficulty": "hard",
+      "tags": [
+        "benzene",
+        "D6h"
+      ],
+      "image": {
+        "src": "assets/structure-renders/org-benzene-benzene-neutral.png",
+        "alt": "苯的平面六元环结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    },
+    {
+      "id": "q119",
+      "type": "fill-in-the-blank",
+      "question": "理想反式 1,2-二氟乙烯的点群为____。",
+      "answer": "D2h",
+      "acceptableAnswers": [
+        "D2h",
+        "D₂h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "反式双键两侧取代基相对排列，保留反演中心和三条 C₂，属于 D₂h。",
+      "difficulty": "challenging",
+      "tags": [
+        "alkene",
+        "D2h"
+      ]
+    },
+    {
+      "id": "q120",
+      "type": "fill-in-the-blank",
+      "question": "理想顺式 1,2-二氟乙烯的点群为____。",
+      "answer": "C2v",
+      "acceptableAnswers": [
+        "C2v",
+        "C₂v"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "顺式取代保留 C₂ 和两面 σv，但没有反演中心，属于 C₂v。",
+      "difficulty": "challenging",
+      "tags": [
+        "alkene",
+        "C2v"
+      ]
+    }
+  ]
+}

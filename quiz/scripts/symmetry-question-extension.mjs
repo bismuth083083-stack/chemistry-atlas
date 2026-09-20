@@ -1,0 +1,97 @@
+const image = (file, alt, caption = '由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。') => ({ src: `assets/structure-renders/${file}`, alt, caption });
+const points = (difficulty) => difficulty === 'challenging' ? 3 : difficulty === 'hard' ? 2 : 1;
+const one = (id, question, options, answer, explanation, difficulty = 'hard', tags = [], picture) => ({ id, type: 'single-choice', question, options: options.map(([optionId, text]) => ({ id: optionId, text })), answer, points: points(difficulty), explanation, difficulty, tags, ...(picture ? { image: picture } : {}) });
+const many = (id, question, options, answers, explanation, difficulty = 'hard', tags = [], picture) => ({ id, type: 'multiple-choice', question, options: options.map(([optionId, text]) => ({ id: optionId, text })), answers, points: points(difficulty), explanation, difficulty, tags, ...(picture ? { image: picture } : {}) });
+const tf = (id, question, answer, explanation, difficulty = 'hard', tags = [], picture) => ({ id, type: 'true-false', question, answer, points: points(difficulty), explanation, difficulty, tags, ...(picture ? { image: picture } : {}) });
+const fill = (id, question, answer, acceptableAnswers, explanation, difficulty = 'challenging', tags = [], picture) => ({ id, type: 'fill-in-the-blank', question, answer, acceptableAnswers, grading: { caseSensitive: false, collapseWhitespace: true }, points: points(difficulty), explanation, difficulty, tags, ...(picture ? { image: picture } : {}) });
+
+const benzene = image('org-benzene-benzene-neutral.png', '苯的平面六元环结构示意图');
+const acetylene = image('symmetry-acetylene-acetylene-neutral.png', '乙炔的线形结构示意图');
+const ammonia = image('symmetry-ammonia-ammonia-neutral.png', '氨的结构示意图');
+const pcl5 = image('symmetry-pcl5-phosphorus-pentachloride-neutral.png', '五氯化磷的结构示意图');
+const xef4 = image('symmetry-xef4-xenon-tetrafluoride-neutral.png', '四氟化氙的结构示意图');
+const allene = image('symmetry-allene-allene-neutral.png', '丙二烯的结构示意图');
+const cubane = image('symmetry-cubane-cubane-neutral.png', '立方烷的笼状结构示意图');
+
+export const extraQuestions = [
+  one('q041', '理想化 [Co(NH₃)₆]³⁺ 的点群是……', [['A', 'Oₕ'], ['B', 'Tᵈ'], ['C', 'D₃'], ['D', 'C₄ᵥ']], 'A', '六个等价配体沿八面体顶点排列，具有反演中心、C₄、C₃ 和 C₂ 轴族，属于 Oₕ。', 'medium', ['coordination', 'octahedral', 'Oh']),
+  one('q042', '[PtCl₄]²⁻ 的理想平方平面构型属于……', [['A', 'D₄h'], ['B', 'C₄v'], ['C', 'Tᵈ'], ['D', 'D₂d']], 'A', '四个等价配体在同一平面围绕金属排列，保留 C₄、σh 和反演中心，属于 D₄h。', 'medium', ['coordination', 'square planar', 'D4h']),
+  one('q043', '理想平方平面 [Ni(CN)₄]²⁻ 的点群是……', [['A', 'D₄h'], ['B', 'C₂v'], ['C', 'D₂h'], ['D', 'C₄v']], 'A', '只要四个 CN 配体等价且严格平方平面，点群判定与 [PtCl₄]²⁻ 相同，为 D₄h。', 'medium', ['coordination', 'D4h']),
+  one('q044', '[Fe(CN)₆]⁴⁻ 在理想八面体假设下属于……', [['A', 'Oₕ'], ['B', 'D₄h'], ['C', 'Tᵈ'], ['D', 'C₃ᵥ']], 'A', '六个等价单齿配体构成理想八面体，金属种类和电荷不改变几何点群。', 'medium', ['coordination', 'Oh']),
+  one('q045', '理想 [Co(en)₃]³⁺（单一 Δ 或 Λ 构型）的点群最合理的是……', [['A', 'D₃'], ['B', 'D₃d'], ['C', 'Oₕ'], ['D', 'C₃ᵥ']], 'A', '三个双齿配体绕 C₃ 轴螺旋排列，保留三条垂直 C₂ 轴，但没有镜面或反演中心，属于 D₃。', 'hard', ['coordination', 'chelates', 'D3']),
+  one('q046', '理想 cis-[PtCl₂(NH₃)₂] 的点群是……', [['A', 'C₂v'], ['B', 'D₂h'], ['C', 'D₄h'], ['D', 'C₁']], 'A', '顺式取代破坏了 C₄ 和反演中心，但保留一条 C₂ 轴和两面 σv，属于 C₂v。', 'hard', ['coordination', 'cis-trans', 'C2v']),
+  one('q047', '理想 trans-[PtCl₂(NH₃)₂] 的点群是……', [['A', 'D₂h'], ['B', 'C₂v'], ['C', 'D₄h'], ['D', 'C₂']], 'A', '反式异配体成对相对，具有三条互相垂直的 C₂ 轴、反演中心和镜面，属于 D₂h。', 'hard', ['coordination', 'cis-trans', 'D2h']),
+  one('q048', '重叠式（eclipsed）二茂铁的理想点群通常写作……', [['A', 'D₅h'], ['B', 'D₅d'], ['C', 'C₅v'], ['D', 'Ih']], 'A', '两环重叠时存在 σh 和五条包含主轴的镜面，理想构型归入 D₅h。', 'hard', ['organometallic', 'ferrocene', 'D5h']),
+  one('q049', '交错式（staggered）二茂铁的理想点群通常写作……', [['A', 'D₅d'], ['B', 'D₅h'], ['C', 'C₅v'], ['D', 'Tᵈ']], 'A', '两环相对旋转后保留 S₁₀、C₅ 和五条 σd，具有反演中心但没有 σh，属于 D₅d。', 'hard', ['organometallic', 'ferrocene', 'D5d']),
+  one('q050', '交错式乙烷的理想点群是……', [['A', 'D₃d'], ['B', 'D₃h'], ['C', 'C₃v'], ['D', 'S₆']], 'A', '交错式乙烷有 C₃ 轴、三条垂直 C₂ 轴和反演中心，属于 D₃d。', 'hard', ['organic', 'ethane', 'D3d']),
+  one('q051', '重叠式乙烷的理想点群是……', [['A', 'D₃h'], ['B', 'D₃d'], ['C', 'C₃v'], ['D', 'C₂v']], 'A', '重叠式乙烷具有穿过 C–C 键的 C₃ 轴和分子构型相关的 σh，理想点群为 D₃h。', 'hard', ['organic', 'ethane', 'D3h']),
+  one('q052', '理想化 allene（H₂C=C=CH₂）的点群是……', [['A', 'D₂d'], ['B', 'D₂h'], ['C', 'C₂v'], ['D', 'D₃h']], 'A', 'allene 两端 CH₂ 平面互相垂直，保留 S₄ 和两条 C₂ 轴，属于 D₂d。', 'hard', ['organic', 'allene', 'D2d'], allene),
+  one('q053', '平面反式 HOOH 构象的点群是……', [['A', 'C₂h'], ['B', 'C₂v'], ['C', 'C₂'], ['D', 'D₂h']], 'A', '反式平面过氧化氢同时具有 C₂、分子平面和反演中心，属于 C₂h。', 'hard', ['organic', 'conformation', 'C2h']),
+  one('q054', '平面顺式 HOOH 构象的点群是……', [['A', 'C₂v'], ['B', 'C₂h'], ['C', 'D₂h'], ['D', 'C₁']], 'A', '顺式平面构象保留 C₂ 轴和两面 σv，但没有反演中心，属于 C₂v。', 'hard', ['organic', 'conformation', 'C2v']),
+  one('q055', '理想化折叠（puckered）环丁烷的点群通常是……', [['A', 'D₂d'], ['B', 'D₄h'], ['C', 'C₂v'], ['D', 'S₄']], 'A', '折叠使环不再是平面正方形，但保留 D₂d 的旋转轴和 σd。', 'hard', ['organic', 'cyclobutane', 'D2d']),
+  one('q056', '如果把环丁烷强行理想化为平面正方形，点群会变成……', [['A', 'D₄h'], ['B', 'D₂d'], ['C', 'C₄v'], ['D', 'C₂h']], 'A', '平面正方形具有 C₄、σh、反演中心等完整对称元素，属于 D₄h；真实构象可因折叠而降对称。', 'hard', ['organic', 'cyclobutane', 'D4h']),
+  one('q057', '氯仿 CHCl₃ 的理想点群是……', [['A', 'C₃v'], ['B', 'Tᵈ'], ['C', 'C₃h'], ['D', 'C₁']], 'A', '三个 Cl 等价、H 位于三角锥顶端，保留 C₃ 和三面 σv，属于 C₃v。', 'medium', ['organic', 'substitution', 'C3v']),
+  one('q058', '四氯化碳 CCl₄ 的点群是……', [['A', 'Tᵈ'], ['B', 'Oₕ'], ['C', 'C₃v'], ['D', 'D₂d']], 'A', '四个等价 Cl 构成四面体，点群为 Tᵈ。', 'medium', ['organic', 'tetrahedral', 'Td']),
+  one('q059', '理想立方烷 C₈H₈ 的点群是……', [['A', 'Oₕ'], ['B', 'Tᵈ'], ['C', 'D₆h'], ['D', 'Ih']], 'A', '立方烷的碳骨架和氢取代共同保留立方体的 Oₕ 对称性。', 'hard', ['organic', 'cubane', 'Oh'], cubane),
+  one('q060', '理想平面 1,3,5-三氟苯的点群是……', [['A', 'D₃h'], ['B', 'C₃v'], ['C', 'D₆h'], ['D', 'C₂v']], 'A', '交替的三个 F 和三个 H 保留 C₃、σh 及三条垂直 C₂ 轴，点群为 D₃h。', 'hard', ['organic', 'substituted benzene', 'D3h'], benzene),
+  many('q061', '[PtCl₄]²⁻ 的 D₄h 点群包含哪些元素？', [['A', 'C₄ 主轴'], ['B', 'σh'], ['C', '反演中心 i'], ['D', '四面体的四条 C₃ 轴']], ['A', 'B', 'C'], 'D₄h 的平方平面骨架含 C₄、σh 和 i；四面体 C₃ 轴不是该结构的对称元素。', 'hard', ['D4h', 'symmetry elements']),
+  many('q062', '理想 [ML₆] 八面体的 Oₕ 点群包括……', [['A', '三条 C₄ 轴'], ['B', '四条 C₃ 轴'], ['C', '反演中心'], ['D', '只有一面 σv']], ['A', 'B', 'C'], 'Oₕ 同时具有 C₄、C₃、C₂、i 以及多组镜面和不正旋转轴。', 'hard', ['Oh', 'coordination']),
+  many('q063', '平面三角形 BF₃ 的 D₃h 对称性可由哪些特征支持？', [['A', '一条 C₃ 轴'], ['B', '分子平面 σh'], ['C', '三条垂直 C₂ 轴'], ['D', '反演中心']], ['A', 'B', 'C'], 'D₃h 有 C₃、三条垂直 C₂ 和 σh，但没有反演中心。', 'hard', ['D3h', 'BF3']),
+  many('q064', 'C₃v 点群的典型特征包括……', [['A', '一条 C₃ 轴'], ['B', '三面 σv'], ['C', '必有反演中心'], ['D', '没有 σh 这一要求']], ['A', 'B', 'D'], 'C₃v 由 C₃ 和包含主轴的三个 σv 构成，不要求也不包含反演中心。', 'hard', ['C3v', 'mirror planes']),
+  many('q065', '交错式乙烷 D₃d 的判断依据包括……', [['A', 'C₃ 轴'], ['B', '三条垂直 C₂ 轴'], ['C', '反演中心'], ['D', '分子平面 σh']], ['A', 'B', 'C'], 'D₃d 含 C₃、3C₂、i 和 S₆/σd，但交错式乙烷没有把整个分子作为 σh 的分子平面。', 'hard', ['D3d', 'ethane']),
+  many('q066', '交错式二茂铁 D₅d 的对称元素包括……', [['A', 'C₅ 轴'], ['B', '反演中心'], ['C', 'S₁₀ 轴'], ['D', 'σh']], ['A', 'B', 'C'], 'D₅d 的关键是 C₅、i、S₁₀ 和 σd；σh 属于 D₅h 的重叠式构型。', 'hard', ['D5d', 'ferrocene']),
+  many('q067', '重叠式二茂铁 D₅h 的特征包括……', [['A', 'C₅ 轴'], ['B', 'σh'], ['C', '五面 σv'], ['D', '必有反演中心']], ['A', 'B', 'C'], 'D₅h 保留水平镜面和五面垂直镜面，但没有反演中心。', 'hard', ['D5h', 'ferrocene']),
+  many('q068', '理想 cis-[PtCl₂(NH₃)₂] 的 C₂v 对称性包括……', [['A', '一条 C₂ 轴'], ['B', '两面 σv'], ['C', '反演中心'], ['D', 'σh']], ['A', 'B'], '顺式异配体平方平面结构没有 i 或 σh，只保留 C₂ 与两面 σv。', 'hard', ['C2v', 'cis complex']),
+  many('q069', '理想 trans-[PtCl₂(NH₃)₂] 的 D₂h 对称性包括……', [['A', '三条互相垂直的 C₂ 轴'], ['B', '反演中心'], ['C', '三个互相垂直的镜面'], ['D', 'C₄ 轴']], ['A', 'B', 'C'], 'D₂h 的基元是三个 C₂、i 和与其组合得到的镜面，不含四重轴。', 'hard', ['D2h', 'trans complex']),
+  many('q070', '理想单一 Δ/[Co(en)₃]³⁺ 的 D₃ 点群具有……', [['A', 'C₃ 轴'], ['B', '三条垂直 C₂ 轴'], ['C', '镜面'], ['D', '反演中心']], ['A', 'B'], 'D₃ 是纯旋转点群，含 C₃ 和三条 C₂，但不含镜面或反演中心，因此配合物具有手性。', 'challenging', ['D3', 'chiral coordination']),
+  many('q071', '关于 HOOH 的三个常见理想构象，下列对应关系正确的是……', [['A', '反式平面：C₂h'], ['B', '顺式平面：C₂v'], ['C', 'gauche：C₂'], ['D', '所有构象都是 C₁']], ['A', 'B', 'C'], '扭转构象改变对称元素：反式、顺式和 gauche 分别可用 C₂h、C₂v 和 C₂ 描述。', 'challenging', ['H2O2', 'conformation']),
+  many('q072', 'allene 的 D₂d 点群可识别出的元素包括……', [['A', 'S₄ 轴'], ['B', '两条垂直 C₂ 轴'], ['C', '两面 σd'], ['D', '反演中心']], ['A', 'B', 'C'], 'allene 的两端平面正交，D₂d 含 S₄、C₂ 和 σd，但不含 i。', 'challenging', ['allene', 'D2d'], allene),
+  many('q073', '苯的 D₆h 点群包括……', [['A', 'C₆ 主轴'], ['B', 'σh'], ['C', '反演中心'], ['D', '只有一条 σv']], ['A', 'B', 'C'], '苯具有完整的六重轴、分子平面、反演中心和多组垂直/对角镜面。', 'hard', ['benzene', 'D6h'], benzene),
+  many('q074', '立方烷 Oₕ 对称性与哪些几何事实相容？', [['A', '立方体骨架的三条 C₄ 轴'], ['B', '四条体对角 C₃ 轴'], ['C', '反演中心'], ['D', '只有一个 C₂ 轴']], ['A', 'B', 'C'], 'Oₕ 的三条 C₄、四条 C₃ 和反演中心对应立方体的面轴、体对角轴和中心反演。', 'challenging', ['cubane', 'Oh'], cubane),
+  many('q075', '理想 1,3,5-三氟苯的 D₃h 判定可依据……', [['A', '三个 F 等价'], ['B', '环平面为 σh'], ['C', '有三重主轴'], ['D', '存在反演中心']], ['A', 'B', 'C'], '三个相同取代基按 120° 周期排列并保持平面，形成 D₃h；该分子不具有 i。', 'hard', ['substituted benzene', 'D3h']),
+  many('q076', '反式 1,2-二氟乙烯的理想点群 D₂h 说明它具有……', [['A', '反演中心'], ['B', '三条 C₂ 轴'], ['C', '分子平面'], ['D', 'C₃ 轴']], ['A', 'B', 'C'], '反式双键两端取代基相对排列，结构具有 D₂h；C₃ 轴不是其对称元素。', 'hard', ['organic', 'alkene', 'D2h']),
+  many('q077', '顺式 1,2-二氟乙烯的理想点群 C₂v 说明它具有……', [['A', 'C₂ 轴'], ['B', '两面 σv'], ['C', '反演中心'], ['D', '不要求 σh']], ['A', 'B', 'D'], '顺式取代保留 C₂ 和两面垂直镜面，但不保留反演中心。', 'hard', ['organic', 'alkene', 'C2v']),
+  many('q078', '理想 C₆₀ 的 Ih 点群可包含……', [['A', '五重轴'], ['B', '三重轴'], ['C', '二重轴'], ['D', '一条唯一的主轴']], ['A', 'B', 'C'], 'Ih 是二十面体/二十面体对称群，具有 5、3、2 阶旋转轴族，不存在唯一主轴。', 'challenging', ['organic', 'C60', 'Ih']),
+  many('q079', '单一构型 [M(en)₃]ⁿ⁺ 与理想 [M(ox)₃]ⁿ⁻ 的点群分析中，哪些结论可能成立？', [['A', '都可有 D₃ 纯旋转对称'], ['B', '都可能具有手性'], ['C', '都必然有 σh'], ['D', '配体螯合方式会影响轴和镜面的保留']], ['A', 'B', 'D'], '三螯合配体的螺旋排列常给 D₃；D₃ 无镜面和反演中心，因此可手性，但具体取代和构象仍需检查。', 'challenging', ['coordination', 'chelates', 'D3']),
+  many('q080', '比较理想平方平面和平方锥形配合物时，合理的说法有……', [['A', '平方平面 ML₄ 可为 D₄h'], ['B', '平方锥形 ML₅ 常为 C₄v'], ['C', '平方锥形一定有反演中心'], ['D', '增加轴向配体会降低部分对称性']], ['A', 'B', 'D'], '第五个轴向配体破坏平方平面的反演中心和 σh，通常把 D₄h 降为 C₄v。', 'hard', ['coordination', 'D4h', 'C4v']),
+  tf('q081', '同一分子式的不同构造异构体可以属于不同点群。', true, '点群由空间连接、构象和原子等价性决定，分子式本身不能唯一确定点群。', 'medium', ['isomers', 'point group']),
+  tf('q082', 'cis/trans 异构通常只改变命名，不会改变配合物点群。', false, 'cis 与 trans 取代保留的旋转轴、镜面和反演中心不同，点群往往显著变化。', 'medium', ['cis-trans', 'coordination']),
+  tf('q083', '[M(en)₃] 与 [ML₆] 都有六个供体原子，因此二者一定都属于 Oₕ。', false, '配位数相同不等于空间排列相同；三螯合配体的螺旋结构常属于 D₃。', 'medium', ['coordination', 'D3', 'Oh']),
+  tf('q084', '配位数单独不足以唯一确定配合物的点群。', true, '还要知道配体是否等价、连接方式、构型以及是否存在扭曲或螯合环。', 'medium', ['coordination', 'assumptions']),
+  tf('q085', '理想正八面体结构一定具有反演中心。', true, '中心原子和相对的等价配体在反演后互换，理想 Oₕ 包含 i。', 'hard', ['Oh', 'inversion']),
+  tf('q086', '理想平方锥形 ML₅ 结构 C₄v 具有反演中心。', false, '轴向单个配体破坏了平方平面结构的反演映射，C₄v 不含 i。', 'hard', ['C4v', 'square pyramidal']),
+  tf('q087', '所有 D₃h 分子都必须只有平面三角形构型。', false, 'D₃h 也可描述理想三角双锥等非平面原子集合；点群不等于唯一一种 VSEPR 构型。', 'hard', ['D3h', 'point group']),
+  tf('q088', 'C₃v 点群包含反演中心。', false, 'C₃v 由 C₃ 与 σv 组成，不包含反演中心。', 'hard', ['C3v', 'inversion']),
+  tf('q089', '所有 Dₙ 点群都必须包含镜面。', false, 'D₃ 等纯旋转点群没有镜面；带镜面的变体是 Dₙh 或 Dₙd。', 'hard', ['Dn', 'mirror planes']),
+  tf('q090', 'Dₙh 点群按定义包含垂直于主轴的 σh。', true, 'h 指水平镜面，定义为垂直于主旋转轴的镜面。', 'hard', ['Dnh', 'mirror planes']),
+  tf('q091', 'Dₙd 点群的 d 镜面包含主轴，并平分相邻垂直 C₂ 轴的夹角。', true, 'd 镜面的命名就是相对于主轴和垂直 C₂ 轴族的二面角关系。', 'hard', ['Dnd', 'sigma-d']),
+  tf('q092', '交错式乙烷与重叠式乙烷分别常用 D₃d 和 D₃h 描述。', true, '绕 C–C 键的扭转改变了反演中心与镜面的保留方式。', 'medium', ['ethane', 'conformation']),
+  tf('q093', 'D₂d 点群一定是手性点群。', false, 'D₂d 含 σd 镜面，因此不是手性点群；D₂ 才是常见的纯旋转手性点群。', 'challenging', ['D2d', 'chirality']),
+  tf('q094', '反式平面 HOOH 的 C₂h 点群包含反演中心。', true, 'C₂h 的 h 镜面和反演中心共同反映反式平面构象的额外对称性。', 'hard', ['H2O2', 'C2h']),
+  tf('q095', 'gauche-HOOH 的 C₂ 点群包含 σv。', false, 'C₂ 是纯旋转点群，只有恒等操作和一个 C₂ 轴，不含镜面。', 'hard', ['H2O2', 'C2']),
+  tf('q096', '苯的 D₆h 与理想 C₆₀ 的 Ih 都属于高对称分子，但它们的轴阶数集合不同。', true, 'D₆h 以六重轴为主，Ih 具有五、三、二重轴族；不能只按“高对称”混为一谈。', 'challenging', ['benzene', 'C60', 'high symmetry'], benzene),
+  tf('q097', '同位素替换可能降低原来分子的点群。', true, '点群要求原子种类也在操作后不可区分；同位素标签不同会破坏部分等价性。', 'hard', ['isotopes', 'symmetry breaking']),
+  tf('q098', '硝酸根的一张含一个 N=O 的 Lewis 图，就足以直接证明完整 D₃h 点群。', false, '单张局域 Lewis 共振式会显式区分端氧；D₃h 需要建立在等价共振平均或等价结构模型上。', 'challenging', ['resonance', 'D3h']),
+  tf('q099', '理想配合物的点群判断通常需要声明“配体等价、键长相等、忽略动态扭曲”等假设。', true, '点群是几何理想化的分类；若金属—配体距离或配体构象不同，实际点群可能降低。', 'hard', ['coordination', 'assumptions']),
+  tf('q100', '判断点群时可以忽略分子的构象，因为连接关系已经完全决定对称性。', false, '乙烷、二茂铁和 HOOH 都说明构象会改变反演、镜面和不正旋转轴。', 'hard', ['conformation', 'point group']),
+  fill('q101', '[PtCl₄]²⁻ 理想平方平面的点群为____。', 'D4h', ['D4h', 'D₄h'], '四个等价配体共面排列并保留反演中心，属于 D₄h。', 'challenging', ['coordination', 'D4h']),
+  fill('q102', '单一 Δ/[Co(en)₃]³⁺ 构型常归入____点群。', 'D3', ['D3', 'D₃'], '三螯合配体形成螺旋排列，保留 C₃ 和三条 C₂，不含镜面或反演中心。', 'challenging', ['coordination', 'D3']),
+  fill('q103', '重叠式二茂铁的理想点群为____。', 'D5h', ['D5h', 'D₅h'], '重叠式构象具有 C₅、σh 和五面 σv，归入 D₅h。', 'challenging', ['ferrocene', 'D5h']),
+  fill('q104', '交错式二茂铁的理想点群为____。', 'D5d', ['D5d', 'D₅d'], '交错式构象具有 C₅、S₁₀、反演中心和 σd，归入 D₅d。', 'challenging', ['ferrocene', 'D5d']),
+  fill('q105', '交错式乙烷的点群为____。', 'D3d', ['D3d', 'D₃d'], '交错式乙烷有 C₃、三条垂直 C₂ 和反演中心，属于 D₃d。', 'challenging', ['ethane', 'D3d']),
+  fill('q106', '理想 allene H₂C=C=CH₂ 的点群为____。', 'D2d', ['D2d', 'D₂d'], '两端 CH₂ 平面正交，保留 S₄、C₂ 和 σd，属于 D₂d。', 'challenging', ['allene', 'D2d'], allene),
+  fill('q107', '理想 C₆₀ 的点群为____。', 'Ih', ['Ih', 'Iₕ'], '完美截角二十面体碳笼具有 Ih 对称性。', 'challenging', ['C60', 'Ih']),
+  fill('q108', '理想立方烷 C₈H₈ 的点群为____。', 'Oh', ['Oh', 'Oₕ'], '立方体骨架对应 Oₕ 点群。', 'challenging', ['cubane', 'Oh'], cubane),
+  fill('q109', '理想 cis-[PtCl₂(NH₃)₂] 的点群为____。', 'C2v', ['C2v', 'C₂v'], '顺式平方平面异配体结构保留 C₂ 和两面 σv。', 'challenging', ['cis complex', 'C2v']),
+  fill('q110', '理想 trans-[PtCl₂(NH₃)₂] 的点群为____。', 'D2h', ['D2h', 'D₂h'], '反式结构有三条 C₂、反演中心和镜面，属于 D₂h。', 'challenging', ['trans complex', 'D2h']),
+  fill('q111', '理想八面体 Oₕ 中，穿过中心的对映点对应____中心。', '反演', ['反演', 'inversion', 'i'], '将 (x,y,z) 映射为 (−x,−y,−z) 的中心操作是反演。', 'challenging', ['Oh', 'inversion']),
+  fill('q112', '理想平方平面 D₄h 结构的最高阶真旋转轴是____轴。', 'C4', ['C4', 'C₄', 'C₄轴', 'C4轴'], '平方平面正方形绕垂直平面的轴旋转 90° 后重合，因此主轴是 C₄。', 'challenging', ['D4h', 'C4']),
+  fill('q113', 'D₃d 点群中常见的不正旋转轴是____。', 'S6', ['S6', 'S₆'], 'D₃d 可由 C₃、垂直 C₂、反演以及 S₆ 等操作描述。', 'challenging', ['D3d', 'improper rotation']),
+  fill('q114', 'C₃v 点群的镜面写作____镜面。', 'σv', ['σv', 'sigma-v', 'σv镜面'], 'C₃v 的镜面包含主轴，故命名为 σv。', 'challenging', ['C3v', 'mirror planes']),
+  fill('q115', '没有镜面、反演中心或不正旋转轴的纯旋转点群例子是____。', 'D3', ['D3', 'D₃'], 'D₃ 只有恒等操作、一个 C₃ 和三条 C₂，是常见的手性纯旋转点群。', 'challenging', ['D3', 'chiral point group']),
+  fill('q116', '反式平面 HOOH 的点群为____。', 'C2h', ['C2h', 'C₂h'], '反式平面构象同时具有 C₂、σh 和 i，属于 C₂h。', 'challenging', ['H2O2', 'C2h']),
+  fill('q117', 'gauche-HOOH 的理想点群为____。', 'C2', ['C2', 'C₂'], 'gauche 构象只保留一条 C₂ 轴，是典型的手性 C₂ 构象。', 'challenging', ['H2O2', 'C2']),
+  fill('q118', '苯的点群为____。', 'D6h', ['D6h', 'D₆h'], '平面六元环同时具有 C₆、σh、i 和多组垂直镜面，属于 D₆h。', 'hard', ['benzene', 'D6h'], benzene),
+  fill('q119', '理想反式 1,2-二氟乙烯的点群为____。', 'D2h', ['D2h', 'D₂h'], '反式双键两侧取代基相对排列，保留反演中心和三条 C₂，属于 D₂h。', 'challenging', ['alkene', 'D2h']),
+  fill('q120', '理想顺式 1,2-二氟乙烯的点群为____。', 'C2v', ['C2v', 'C₂v'], '顺式取代保留 C₂ 和两面 σv，但没有反演中心，属于 C₂v。', 'challenging', ['alkene', 'C2v'])
+];

@@ -196,4 +196,10 @@ class QuizUI {
 
 function renderFatalError(error) { const app = $('#app'); app.replaceChildren(); const panel = document.createElement('section'); panel.className = 'error-panel'; panel.append(text('span', 'QUIZ DATA ERROR', 'error-kicker'), text('h1', 'This quiz needs attention.'), text('p', error.message || 'Something went wrong while loading the quiz.')); if (error.validationErrors) panel.append(formatValidationErrors(error.validationErrors)); const link = text('a', 'Back to Chemistry Atlas ↗', 'button button-dark'); link.href = 'https://chemistryatlas.xyz'; panel.append(link); app.append(panel); }
 
-loadQuiz().then((quiz) => new QuizUI(new QuizSession(quiz))).catch(renderFatalError);
+function applyQuizTheme(quiz) {
+  const subject = String(quiz.subject || '').toLowerCase();
+  const theme = subject.includes('bio') ? 'biochemistry' : subject.includes('organic') ? 'organic-chemistry' : subject.includes('inorganic') ? 'inorganic-chemistry' : subject.includes('physical') ? 'physical-chemistry' : subject.includes('analytical') ? 'analytical-chemistry' : 'general-chemistry';
+  document.documentElement.dataset.quizSubject = theme;
+}
+
+loadQuiz().then((quiz) => { applyQuizTheme(quiz); return new QuizUI(new QuizSession(quiz)); }).catch(renderFatalError);

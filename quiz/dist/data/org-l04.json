@@ -471,59 +471,134 @@
     {
       "id": "q016",
       "type": "single-choice",
-      "question": "下图支链烷烃的系统命名首先应选择哪条母体链？",
+      "question": "下图长链支链烷烃的系统命名是……",
       "options": [
         {
           "id": "A",
-          "text": "包含最多连续碳原子的链"
+          "text": "2,5,7,9-四甲基癸烷"
         },
         {
           "id": "B",
-          "text": "视觉上最水平的链"
+          "text": "2,4,6,8-四甲基壬烷"
         },
         {
           "id": "C",
-          "text": "只含取代基最多的链"
+          "text": "3,6,8,10-四甲基癸烷"
         },
         {
           "id": "D",
-          "text": "任意五碳链"
+          "text": "4-乙基-2,5,7-三甲基壬烷"
         }
       ],
       "answer": "A",
       "points": 2,
-      "explanation": "IUPAC 命名先确定最长连续碳链，再对取代基定位和排序。",
+      "explanation": "最长连续碳链含 10 个碳，为癸烷；从任一端编号都得到 2,5,7,9 的四个甲基定位号。",
       "difficulty": "hard",
       "tags": [
         "nomenclature",
-        "parent chain"
+        "longest chain",
+        "branched alkane"
       ],
       "image": {
-        "src": "assets/structures/org-3-ethyl-2-methylpentane-3-ethyl-2-methylpentane-neutral.png",
-        "alt": "复杂支链烷烃结构示意图",
-        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CC(C)C(CC)CC 渲染"
+        "src": "assets/structures/org-2-5-7-9-tetramethyldecane-2-5-7-9-tetramethyldecane-neutral.png",
+        "alt": "长链四甲基癸烷结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CC(C)CCC(C)CC(C)CC(C)C 渲染"
       }
     },
     {
       "id": "q017",
-      "type": "multiple-choice",
-      "question": "选择最长母体链时，下列规则意识正确的是……",
+      "type": "single-choice",
+      "question": "下图结构的系统命名是……",
       "options": [
         {
           "id": "A",
-          "text": "要比较所有可能的连续路径"
+          "text": "4-环己基庚烷"
         },
         {
           "id": "B",
-          "text": "母体链长度优先于“看起来最直”"
+          "text": "1-庚基环己烷"
         },
         {
           "id": "C",
-          "text": "取代基不能重复占用母体碳"
+          "text": "4-乙基环己烷"
         },
         {
           "id": "D",
-          "text": "先按字母顺序选母体链"
+          "text": "4-环己基己烷"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "最长的开链部分含 7 个碳，多于环中的 6 个碳，因此以庚烷为母体，在 4 位连接环己基。",
+      "difficulty": "hard",
+      "tags": [
+        "nomenclature",
+        "cycloalkyl substituent",
+        "parent structure"
+      ],
+      "image": {
+        "src": "assets/structures/org-4-cyclohexylheptane-4-cyclohexylheptane-neutral.png",
+        "alt": "环己基取代庚烷结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CCCC(C1CCCCC1)CCC 渲染"
+      }
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "下图稠合双环烷烃的系统命名是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "bicyclo[4.4.0]decane"
+        },
+        {
+          "id": "B",
+          "text": "spiro[4.4]nonane"
+        },
+        {
+          "id": "C",
+          "text": "bicyclo[3.3.1]nonane"
+        },
+        {
+          "id": "D",
+          "text": "cyclodecane"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "两个桥头原子之间有三条路径，其中两条各含 4 个中间原子，第三条不含中间原子，因此为 bicyclo[4.4.0]decane。",
+      "difficulty": "hard",
+      "tags": [
+        "nomenclature",
+        "fused bicyclic",
+        "bicyclo"
+      ],
+      "image": {
+        "src": "assets/structures/org-bicyclo-4-4-0-decane-bicyclo-4-4-0-decane-neutral.png",
+        "alt": "稠合双环癸烷结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES C1CCC2CCCCC2C1 渲染"
+      }
+    },
+    {
+      "id": "q019",
+      "type": "multiple-choice",
+      "question": "处理长链支链烷烃和环烷基取代结构时，哪些判断可靠？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先比较所有连续路径，确定最长母体链"
+        },
+        {
+          "id": "B",
+          "text": "母体链长度不能由图上“最水平”的画法决定"
+        },
+        {
+          "id": "C",
+          "text": "确定母体后再从正确方向比较最低定位号组"
+        },
+        {
+          "id": "D",
+          "text": "看到环就无条件把环作为母体"
         }
       ],
       "answers": [
@@ -532,120 +607,100 @@
         "C"
       ],
       "points": 2,
-      "explanation": "母体选择由结构拓扑决定，不由页面上的画法或字母顺序决定。",
+      "explanation": "母体选择由碳骨架拓扑和命名规则决定；环并不总是自动优先，必须比较环与开链部分的碳数及其他结构特征。",
       "difficulty": "hard",
       "tags": [
-        "parent chain"
-      ]
-    },
-    {
-      "id": "q018",
-      "type": "fill-in-the-blank",
-      "question": "在普通烷烃命名中，定位号集合应遵循最低____组规则。",
-      "answer": "定位号",
-      "acceptableAnswers": [
-        "定位号",
-        "locant"
-      ],
-      "grading": {
-        "caseSensitive": false,
-        "collapseWhitespace": true
-      },
-      "points": 2,
-      "explanation": "从两端编号时比较第一处差异，选择较低的定位号组。",
-      "difficulty": "hard",
-      "tags": [
-        "locants"
-      ]
-    },
-    {
-      "id": "q019",
-      "type": "true-false",
-      "question": "取代基名称的字母顺序会改变母体链的选择。",
-      "answer": false,
-      "points": 2,
-      "explanation": "母体链和编号应先依据结构规则确定；字母顺序主要用于排列取代基名称。",
-      "difficulty": "hard",
-      "tags": [
-        "alphabetical order"
+        "nomenclature",
+        "parent chain",
+        "cycloalkyl substituent"
       ]
     },
     {
       "id": "q020",
       "type": "single-choice",
-      "question": "图中 2,4-二甲基戊烷的名称中，“2,4”表达的是……",
+      "question": "下图螺环烷烃的系统命名是……",
       "options": [
         {
           "id": "A",
-          "text": "两个甲基取代基在母体链上的定位号"
+          "text": "spiro[4.5]decane"
         },
         {
           "id": "B",
-          "text": "两个双键的定位号"
+          "text": "bicyclo[4.5.0]decane"
         },
         {
           "id": "C",
-          "text": "分子有 2 个碳和 4 个氢"
+          "text": "bicyclo[3.3.1]nonane"
         },
         {
           "id": "D",
-          "text": "两种构象的比例"
+          "text": "cyclodecane"
         }
       ],
       "answer": "A",
       "points": 3,
-      "explanation": "定位号指出取代基连接在五碳母体链的第 2 和第 4 个碳上。",
+      "explanation": "两个环只共享一个螺原子；从螺原子到各环的另一端分别有 4 和 5 个原子，因此为 spiro[4.5]decane。",
       "difficulty": "challenging",
       "tags": [
         "nomenclature",
-        "extension"
+        "spiro",
+        "polycycles"
       ],
       "image": {
-        "src": "assets/structures/org-2-4-dimethylpentane-2-4-dimethylpentane-neutral.png",
-        "alt": "2,4-二甲基戊烷结构示意图",
-        "caption": "由 Chemical Structure Renderer 根据明确 SMILES CC(C)CC(C)C 渲染"
+        "src": "assets/structures/org-spiro-4-5-decane-spiro-4-5-decane-neutral.png",
+        "alt": "螺环癸烷结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES C1CC2(CC1)CCCCC2 渲染"
       }
     },
     {
       "id": "q021",
       "type": "fill-in-the-blank",
-      "question": "当一个环烷烃作为母体且只有一个取代基时，通常可以省略该取代基的环上定位号____。",
-      "answer": "1",
+      "question": "下图金刚烷的系统命名为____。",
+      "answer": "tricyclo[3.3.1.1^3,7]decane",
       "acceptableAnswers": [
-        "一",
-        "1"
+        "tricyclo[3.3.1.1³,⁷]decane",
+        "tricyclo[3.3.1.1(3,7)]decane",
+        "金刚烷",
+        "三环[3.3.1.1^3,7]癸烷"
       ],
       "grading": {
         "caseSensitive": false,
         "collapseWhitespace": true
       },
       "points": 3,
-      "explanation": "单取代环烷烃中，取代位置默认是 1 位；多取代时必须编号比较定位号组。",
+      "explanation": "金刚烷的系统桥环名称为 tricyclo[3.3.1.1^3,7]decane；adamantane 是保留名称。",
       "difficulty": "challenging",
       "tags": [
-        "cycloalkane nomenclature"
-      ]
+        "nomenclature",
+        "adamantane",
+        "bridged polycycle"
+      ],
+      "image": {
+        "src": "assets/structures/org-adamantane-adamantane-neutral.png",
+        "alt": "金刚烷笼状结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据明确 SMILES C1C2CC3CC1CC(C2)C3 渲染"
+      }
     },
     {
       "id": "q022",
       "type": "multiple-choice",
-      "question": "面对复杂支链或环状结构进行命名时，哪些步骤顺序更可靠？",
+      "question": "关于多环烷烃系统命名，下列说法正确的是……",
       "options": [
         {
           "id": "A",
-          "text": "选定母体结构"
+          "text": "spiro 括号中的数字统计各环中除螺原子外的原子数"
         },
         {
           "id": "B",
-          "text": "从正确方向编号并比较定位号"
+          "text": "bicyclo 括号中的桥长按从大到小排列"
         },
         {
           "id": "C",
-          "text": "识别并按规则排列取代基"
+          "text": "桥环名称需要先识别桥头原子和它们之间的独立路径"
         },
         {
           "id": "D",
-          "text": "先猜一个名字再调整结构去匹配"
+          "text": "只要分子含有两个环，就可以直接用 cycloalkane 加倍数前缀命名"
         }
       ],
       "answers": [
@@ -654,11 +709,13 @@
         "C"
       ],
       "points": 3,
-      "explanation": "命名应从结构到名称，而不是把结构强行改成先入为主的名称。",
+      "explanation": "螺环和桥环的括号数字来自不同的拓扑计数规则；不能把所有多环体系简化为环烷烃倍数前缀。",
       "difficulty": "challenging",
       "tags": [
         "extension",
-        "IUPAC"
+        "polycycles",
+        "spiro",
+        "bicyclo"
       ]
     }
   ],

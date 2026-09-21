@@ -1176,6 +1176,156 @@
         "formula": "C8H8",
         "net_charge": 0
       }
+    },
+    {
+      "id": "org-2-5-7-9-tetramethyldecane",
+      "chinese_name": "2,5,7,9-四甲基癸烷",
+      "english_name": "2-5-7-9-tetramethyldecane",
+      "structure": {
+        "format": "smiles",
+        "value": "CC(C)CCC(C)CC(C)CC(C)C"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, long-chain branched-alkane naming",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C14H30",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "org-4-cyclohexylheptane",
+      "chinese_name": "4-环己基庚烷",
+      "english_name": "4-cyclohexylheptane",
+      "structure": {
+        "format": "smiles",
+        "value": "CCCC(C1CCCCC1)CCC"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, cycloalkyl substituent naming",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C13H26",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "org-bicyclo-4-4-0-decane",
+      "chinese_name": "双环[4.4.0]癸烷",
+      "english_name": "bicyclo-4-4-0-decane",
+      "structure": {
+        "format": "smiles",
+        "value": "C1CCC2CCCCC2C1"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, fused bicyclic nomenclature",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C10H18",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "org-spiro-4-5-decane",
+      "chinese_name": "螺[4.5]癸烷",
+      "english_name": "spiro-4-5-decane",
+      "structure": {
+        "format": "smiles",
+        "value": "C1CC2(CC1)CCCCC2"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, spiro nomenclature",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C10H18",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "org-adamantane",
+      "chinese_name": "金刚烷",
+      "english_name": "adamantane",
+      "structure": {
+        "format": "smiles",
+        "value": "C1C2CC3CC1CC(C2)C3"
+      },
+      "protonation": "Neutral educational form; charge 0",
+      "stereochemistry": "unspecified-approved",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas Organic Chemistry chapter 04, bridged polycyclic nomenclature",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C10H16",
+        "net_charge": 0
+      }
     }
   ],
   "groups": [

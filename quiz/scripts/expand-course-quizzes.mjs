@@ -78,13 +78,13 @@ const extraQuestions = {
     many('q022', '若要比较两个有机酸的相对强弱，哪些证据组合最有用？', [['A', '共轭碱的共振稳定性'], ['B', '吸电子/给电子取代基效应'], ['C', '原子大小与电负性'], ['D', '只比较未电离酸的颜色']], ['A', 'B', 'C'], '酸强度来自解离热力学；共轭碱稳定性和结构效应比颜色等表面信息更关键。', ['extension', 'acid strength'])
   ],
   'ORG-L04': [
-    one('q016', '下图支链烷烃的系统命名首先应选择哪条母体链？', [['A', '包含最多连续碳原子的链'], ['B', '视觉上最水平的链'], ['C', '只含取代基最多的链'], ['D', '任意五碳链']], 'A', 'IUPAC 命名先确定最长连续碳链，再对取代基定位和排序。', ['nomenclature', 'parent chain'], image('org-3-ethyl-2-methylpentane-3-ethyl-2-methylpentane-neutral.png', '复杂支链烷烃结构示意图', '由 Chemical Structure Renderer 根据明确 SMILES CC(C)C(CC)CC 渲染')),
-    many('q017', '选择最长母体链时，下列规则意识正确的是……', [['A', '要比较所有可能的连续路径'], ['B', '母体链长度优先于“看起来最直”'], ['C', '取代基不能重复占用母体碳'], ['D', '先按字母顺序选母体链']], ['A', 'B', 'C'], '母体选择由结构拓扑决定，不由页面上的画法或字母顺序决定。', ['parent chain']),
-    fill('q018', '在普通烷烃命名中，定位号集合应遵循最低____组规则。', '定位号', '从两端编号时比较第一处差异，选择较低的定位号组。', ['locants'], ['定位号', 'locant']),
-    tf('q019', '取代基名称的字母顺序会改变母体链的选择。', false, '母体链和编号应先依据结构规则确定；字母顺序主要用于排列取代基名称。', ['alphabetical order']),
-    one('q020', '图中 2,4-二甲基戊烷的名称中，“2,4”表达的是……', [['A', '两个甲基取代基在母体链上的定位号'], ['B', '两个双键的定位号'], ['C', '分子有 2 个碳和 4 个氢'], ['D', '两种构象的比例']], 'A', '定位号指出取代基连接在五碳母体链的第 2 和第 4 个碳上。', ['nomenclature', 'extension'], image('org-2-4-dimethylpentane-2-4-dimethylpentane-neutral.png', '2,4-二甲基戊烷结构示意图', '由 Chemical Structure Renderer 根据明确 SMILES CC(C)CC(C)C 渲染')),
-    fill('q021', '当一个环烷烃作为母体且只有一个取代基时，通常可以省略该取代基的环上定位号____。', '1', '单取代环烷烃中，取代位置默认是 1 位；多取代时必须编号比较定位号组。', ['cycloalkane nomenclature'], ['一', '1']),
-    many('q022', '面对复杂支链或环状结构进行命名时，哪些步骤顺序更可靠？', [['A', '选定母体结构'], ['B', '从正确方向编号并比较定位号'], ['C', '识别并按规则排列取代基'], ['D', '先猜一个名字再调整结构去匹配']], ['A', 'B', 'C'], '命名应从结构到名称，而不是把结构强行改成先入为主的名称。', ['extension', 'IUPAC'])
+    one('q016', '下图长链支链烷烃的系统命名是……', [['A', '2,5,7,9-四甲基癸烷'], ['B', '2,4,6,8-四甲基壬烷'], ['C', '3,6,8,10-四甲基癸烷'], ['D', '4-乙基-2,5,7-三甲基壬烷']], 'A', '最长连续碳链含 10 个碳，为癸烷；从任一端编号都得到 2,5,7,9 的四个甲基定位号。', ['nomenclature', 'longest chain', 'branched alkane'], image('org-2-5-7-9-tetramethyldecane-2-5-7-9-tetramethyldecane-neutral.png', '长链四甲基癸烷结构示意图', '由 Chemical Structure Renderer 根据明确 SMILES CC(C)CCC(C)CC(C)CC(C)C 渲染')),
+    one('q017', '下图结构的系统命名是……', [['A', '4-环己基庚烷'], ['B', '1-庚基环己烷'], ['C', '4-乙基环己烷'], ['D', '4-环己基己烷']], 'A', '最长的开链部分含 7 个碳，多于环中的 6 个碳，因此以庚烷为母体，在 4 位连接环己基。', ['nomenclature', 'cycloalkyl substituent', 'parent structure'], image('org-4-cyclohexylheptane-4-cyclohexylheptane-neutral.png', '环己基取代庚烷结构示意图', '由 Chemical Structure Renderer 根据明确 SMILES CCCC(C1CCCCC1)CCC 渲染')),
+    one('q018', '下图稠合双环烷烃的系统命名是……', [['A', 'bicyclo[4.4.0]decane'], ['B', 'spiro[4.4]nonane'], ['C', 'bicyclo[3.3.1]nonane'], ['D', 'cyclodecane']], 'A', '两个桥头原子之间有三条路径，其中两条各含 4 个中间原子，第三条不含中间原子，因此为 bicyclo[4.4.0]decane。', ['nomenclature', 'fused bicyclic', 'bicyclo'], image('org-bicyclo-4-4-0-decane-bicyclo-4-4-0-decane-neutral.png', '稠合双环癸烷结构示意图', '由 Chemical Structure Renderer 根据明确 SMILES C1CCC2CCCCC2C1 渲染')),
+    many('q019', '处理长链支链烷烃和环烷基取代结构时，哪些判断可靠？', [['A', '先比较所有连续路径，确定最长母体链'], ['B', '母体链长度不能由图上“最水平”的画法决定'], ['C', '确定母体后再从正确方向比较最低定位号组'], ['D', '看到环就无条件把环作为母体']], ['A', 'B', 'C'], '母体选择由碳骨架拓扑和命名规则决定；环并不总是自动优先，必须比较环与开链部分的碳数及其他结构特征。', ['nomenclature', 'parent chain', 'cycloalkyl substituent']),
+    one('q020', '下图螺环烷烃的系统命名是……', [['A', 'spiro[4.5]decane'], ['B', 'bicyclo[4.5.0]decane'], ['C', 'bicyclo[3.3.1]nonane'], ['D', 'cyclodecane']], 'A', '两个环只共享一个螺原子；从螺原子到各环的另一端分别有 4 和 5 个原子，因此为 spiro[4.5]decane。', ['nomenclature', 'spiro', 'polycycles'], image('org-spiro-4-5-decane-spiro-4-5-decane-neutral.png', '螺环癸烷结构示意图', '由 Chemical Structure Renderer 根据明确 SMILES C1CC2(CC1)CCCCC2 渲染')),
+    fill('q021', '下图金刚烷的系统命名为____。', 'tricyclo[3.3.1.1^3,7]decane', '金刚烷的系统桥环名称为 tricyclo[3.3.1.1^3,7]decane；adamantane 是保留名称。', ['nomenclature', 'adamantane', 'bridged polycycle'], ['tricyclo[3.3.1.1³,⁷]decane', 'tricyclo[3.3.1.1(3,7)]decane', '金刚烷', '三环[3.3.1.1^3,7]癸烷'], image('org-adamantane-adamantane-neutral.png', '金刚烷笼状结构示意图', '由 Chemical Structure Renderer 根据明确 SMILES C1C2CC3CC1CC(C2)C3 渲染')),
+    many('q022', '关于多环烷烃系统命名，下列说法正确的是……', [['A', 'spiro 括号中的数字统计各环中除螺原子外的原子数'], ['B', 'bicyclo 括号中的桥长按从大到小排列'], ['C', '桥环名称需要先识别桥头原子和它们之间的独立路径'], ['D', '只要分子含有两个环，就可以直接用 cycloalkane 加倍数前缀命名']], ['A', 'B', 'C'], '螺环和桥环的括号数字来自不同的拓扑计数规则；不能把所有多环体系简化为环烷烃倍数前缀。', ['extension', 'polycycles', 'spiro', 'bicyclo'])
   ],
   'ORG-L05': [
     one('q016', 'E/Z 命名中，双键两端优先级较高的基团位于相反侧时应标记为……', [['A', 'E'], ['B', 'Z'], ['C', 'R'], ['D', 'S']], 'A', 'E 来自 entgegen，表示高优先级基团位于相反侧；Z 表示同侧。', ['E/Z', 'CIP']),
@@ -204,7 +204,7 @@ const rootIndexPath = path.join(rootData, 'index.json');
 const rootIndex = JSON.parse(fs.readFileSync(rootIndexPath, 'utf8'));
 for (const entry of rootIndex.quizzes) {
   const extras = extraQuestions[entry.id];
-  if (!extras) throw new Error(`Missing expansion questions for ${entry.id}`);
+  if (!extras) continue;
   const sourcePath = path.join(rootData, entry.path);
   const quiz = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
   const expanded = prepare(quiz, extras);

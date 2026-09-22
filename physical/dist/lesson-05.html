@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="content.css" />
     <link rel="stylesheet" href="pchem.css" />
+    <link rel="stylesheet" href="math.css" />
     <link rel="manifest" href="manifest.webmanifest" />
     <meta name="theme-color" content="#171b1d" />
   </head>
@@ -66,7 +67,7 @@
           <div class="formula">Δ<i>U</i> = 0</div>
           <p><b>路径 A：自由膨胀。</b>外压为零，<i>p</i><sub>ex</sub> = 0，因此 <i>w</i> = 0。由第一定律得 <i>q</i> = 0。</p>
           <p><b>路径 B：可逆等温膨胀。</b>气体需要持续吸热来补偿对外做功：</p>
-          <div class="formula"><i>w</i> = −∫<sub>V<sub>i</sub></sub><sup>V<sub>f</sub></sup> <i>p</i> d<i>V</i> = −<i>nRT</i> ln(<i>V</i><sub>f</sub>/<i>V</i><sub>i</sub>)<br /><i>q</i> = −<i>w</i> = <i>nRT</i> ln(<i>V</i><sub>f</sub>/<i>V</i><sub>i</sub>)</div>
+          <div class="formula"><i>w</i> = −∫<sub>V<sub>i</sub></sub><sup>V<sub>f</sub></sup> <i>p</i> d<i>V</i> = −<i>nRT</i> ln(<span class="frac"><span><i>V</i><sub>f</sub></span><span><i>V</i><sub>i</sub></span></span>)<br /><i>q</i> = −<i>w</i> = <i>nRT</i> ln(<span class="frac"><span><i>V</i><sub>f</sub></span><span><i>V</i><sub>i</sub></span></span>)</div>
           <p>两条路径的 Δ<i>U</i> 相同，但 <i>q</i> 和 <i>w</i> 不同。这正是“状态函数”和“路径函数”的区别。</p>
         </div>
       </section>
@@ -74,11 +75,11 @@
       <section>
         <h2>3. 内压：恒温改变体积时，内能会不会变？</h2>
         <p>对于组成不变的封闭体系，可以把内能写成 <i>U</i>(<i>T</i>, <i>V</i>)。全微分为：</p>
-        <div class="formula">d<i>U</i> = (∂<i>U</i>/∂<i>V</i>)<sub>T</sub>d<i>V</i> + (∂<i>U</i>/∂<i>T</i>)<sub>V</sub>d<i>T</i></div>
+        <div class="formula">d<i>U</i> = <span class="derivative">(<span class="frac"><span>∂<i>U</i></span><span>∂<i>V</i></span></span>)<sub>T</sub></span>d<i>V</i> + <span class="derivative">(<span class="frac"><span>∂<i>U</i></span><span>∂<i>T</i></span></span>)<sub>V</sub></span>d<i>T</i></div>
         <p>定义定容热容：</p>
-        <div class="formula">C<sub>V</sub> = (∂<i>U</i>/∂<i>T</i>)<sub>V</sub></div>
+        <div class="formula">C<sub>V</sub> = <span class="derivative">(<span class="frac"><span>∂<i>U</i></span><span>∂<i>T</i></span></span>)<sub>V</sub></span></div>
         <p>并把恒温体积变化对内能的影响定义为内压（internal pressure）：</p>
-        <div class="formula">π<sub>T</sub> = (∂<i>U</i>/∂<i>V</i>)<sub>T</sub>　　⇒　　d<i>U</i> = π<sub>T</sub>d<i>V</i> + C<sub>V</sub>d<i>T</i></div>
+        <div class="formula">π<sub>T</sub> = <span class="derivative">(<span class="frac"><span>∂<i>U</i></span><span>∂<i>V</i></span></span>)<sub>T</sub></span>　　⇒　　d<i>U</i> = π<sub>T</sub>d<i>V</i> + C<sub>V</sub>d<i>T</i></div>
         <div class="comparison-grid">
           <article><h3>理想气体</h3><p>理想气体忽略分子间作用，分子间距改变不改变分子势能；<i>U</i> 只依赖 <i>T</i>，因此 π<sub>T</sub> = 0。</p></article>
           <article><h3>真实气体</h3><p>若吸引作用占优势，恒温膨胀需要分开分子，内能增加，π<sub>T</sub> &gt; 0；若排斥作用占优势，膨胀可能使内能降低，π<sub>T</sub> &lt; 0。</p></article>
@@ -98,22 +99,22 @@
       <section>
         <h2>5. 膨胀系数 α：定压升温时体积变得多快？</h2>
         <p>定义体膨胀系数（coefficient of expansion）：</p>
-        <div class="formula">α = (1/<i>V</i>)(∂<i>V</i>/∂<i>T</i>)<sub>p</sub></div>
+        <div class="formula">α = (<span class="frac"><span>1</span><span><i>V</i></span></span>)<span class="derivative">(<span class="frac"><span>∂<i>V</i></span><span>∂<i>T</i></span></span>)<sub>p</sub></span></div>
         <p>α 的单位是 K<sup>−1</sup>。它描述在压力保持不变时，温度升高 1 K，体积相对于原体积改变的比例。把定压条件代入内能微分：</p>
-        <div class="formula">(∂<i>U</i>/∂<i>T</i>)<sub>p</sub> = π<sub>T</sub>(∂<i>V</i>/∂<i>T</i>)<sub>p</sub> + C<sub>V</sub> = απ<sub>T</sub><i>V</i> + C<sub>V</sub></div>
+        <div class="formula"><span class="derivative">(<span class="frac"><span>∂<i>U</i></span><span>∂<i>T</i></span></span>)<sub>p</sub></span> = π<sub>T</sub><span class="derivative">(<span class="frac"><span>∂<i>V</i></span><span>∂<i>T</i></span></span>)<sub>p</sub></span> + C<sub>V</sub> = απ<sub>T</sub><i>V</i> + C<sub>V</sub></div>
         <p>对于理想气体，π<sub>T</sub> = 0，所以：</p>
-        <div class="formula">(∂<i>U</i>/∂<i>T</i>)<sub>p</sub> = C<sub>V</sub></div>
+        <div class="formula"><span class="derivative">(<span class="frac"><span>∂<i>U</i></span><span>∂<i>T</i></span></span>)<sub>p</sub></span> = C<sub>V</sub></div>
         <p>进一步由 <i>pV</i> = <i>nRT</i>，在压力不变时 <i>V</i> ∝ <i>T</i>，因此理想气体：</p>
-        <div class="formula">α = 1/<i>T</i></div>
+        <div class="formula">α = <span class="frac"><span>1</span><span><i>T</i></span></span></div>
         <p>这说明温度越高，同样升高 1 K 所造成的相对体积变化越小。</p>
       </section>
 
       <section>
         <h2>6. 等温压缩系数 κ<sub>T</sub></h2>
         <p>定义等温压缩系数：</p>
-        <div class="formula">κ<sub>T</sub> = −(1/<i>V</i>)(∂<i>V</i>/∂<i>p</i>)<sub>T</sub></div>
+        <div class="formula">κ<sub>T</sub> = −(<span class="frac"><span>1</span><span><i>V</i></span></span>)<span class="derivative">(<span class="frac"><span>∂<i>V</i></span><span>∂<i>p</i></span></span>)<sub>T</sub></span></div>
         <p>压力升高通常使体积减小，因此导数为负；定义式前的负号使稳定物质的 κ<sub>T</sub> 为正。对于理想气体：</p>
-        <div class="formula">κ<sub>T</sub> = 1/<i>p</i></div>
+        <div class="formula">κ<sub>T</sub> = <span class="frac"><span>1</span><span><i>p</i></span></span></div>
         <div class="worked-example"><h3>小例子：水在高压下会缩小多少？</h3><p>20 ℃、1 atm 时水的 κ<sub>T</sub> ≈ 4.94 × 10<sup>−6</sup> atm<sup>−1</sup>。若体积为 50 cm<sup>3</sup> 的水额外承受 1000 atm，且把 κ<sub>T</sub> 和 <i>V</i> 视为近似常数：</p><div class="formula">Δ<i>V</i> ≈ −κ<sub>T</sub><i>V</i>Δ<i>p</i> = −(4.94 × 10<sup>−6</sup>)(50)(1000) cm<sup>3</sup> ≈ −0.247 cm<sup>3</sup></div><p>负号表示体积减小。这个例子也说明：液体的压缩性很小，但不是绝对不可压缩。</p></div>
       </section>
 
@@ -127,7 +128,7 @@
         <div class="formula">Δ<i>U</i> = <i>w</i> = <i>p</i><sub>i</sub><i>V</i><sub>i</sub> − <i>p</i><sub>f</sub><i>V</i><sub>f</sub><br /><i>U</i><sub>f</sub> + <i>p</i><sub>f</sub><i>V</i><sub>f</sub> = <i>U</i><sub>i</sub> + <i>p</i><sub>i</sub><i>V</i><sub>i</sub><br /><b><i>H</i><sub>f</sub> = <i>H</i><sub>i</sub></b></div>
         <p>所以节流膨胀是<strong>等焓过程（isenthalpic process）</strong>，而不是等熵过程或等温过程。</p>
         <p>定义 Joule–Thomson 系数：</p>
-        <div class="formula">μ = (∂<i>T</i>/∂<i>p</i>)<sub>H</sub></div>
+        <div class="formula">μ = <span class="derivative">(<span class="frac"><span>∂<i>T</i></span><span>∂<i>p</i></span></span>)<sub>H</sub></span></div>
         <div class="comparison-grid"><article><h3>μ &gt; 0：膨胀降温</h3><p>膨胀时 d<i>p</i> &lt; 0，因此 d<i>T</i> = μd<i>p</i> &lt; 0。气体在低压侧变冷，这是常见情况。</p></article><article><h3>μ &lt; 0：膨胀升温</h3><p>此时 d<i>p</i> &lt; 0 会导致 d<i>T</i> &gt; 0。气体的状态、温度和分子间作用共同决定 μ 的符号。</p></article></div>
         <p>理想气体的焓只依赖温度，且 <i>H</i> 保持不变意味着温度不变，所以：</p>
         <div class="formula">μ<sub>ideal</sub> = 0</div>
@@ -137,22 +138,22 @@
       <section>
         <h2>8. 焓对温度和压力的依赖</h2>
         <p>焓是状态函数。对组成不变的封闭体系，选 <i>p</i>、<i>T</i> 作为变量：</p>
-        <div class="formula">d<i>H</i> = (∂<i>H</i>/∂<i>p</i>)<sub>T</sub>d<i>p</i> + C<sub>p</sub>d<i>T</i></div>
+        <div class="formula">d<i>H</i> = <span class="derivative">(<span class="frac"><span>∂<i>H</i></span><span>∂<i>p</i></span></span>)<sub>T</sub></span>d<i>p</i> + C<sub>p</sub>d<i>T</i></div>
         <p>在定容条件下，<i>p</i> 会随着 <i>T</i> 改变。利用链式法则：</p>
-        <div class="formula">(∂<i>H</i>/∂<i>T</i>)<sub>V</sub> = (∂<i>H</i>/∂<i>p</i>)<sub>T</sub>(∂<i>p</i>/∂<i>T</i>)<sub>V</sub> + C<sub>p</sub></div>
+        <div class="formula"><span class="derivative">(<span class="frac"><span>∂<i>H</i></span><span>∂<i>T</i></span></span>)<sub>V</sub></span> = <span class="derivative">(<span class="frac"><span>∂<i>H</i></span><span>∂<i>p</i></span></span>)<sub>T</sub></span><span class="derivative">(<span class="frac"><span>∂<i>p</i></span><span>∂<i>T</i></span></span>)<sub>V</sub></span> + C<sub>p</sub></div>
         <p>又因为：</p>
-        <div class="formula">(∂<i>H</i>/∂<i>p</i>)<sub>T</sub> = −C<sub>p</sub>μ　　以及　　(∂<i>p</i>/∂<i>T</i>)<sub>V</sub> = α/κ<sub>T</sub></div>
+        <div class="formula"><span class="derivative">(<span class="frac"><span>∂<i>H</i></span><span>∂<i>p</i></span></span>)<sub>T</sub></span> = −C<sub>p</sub>μ　　以及　　<span class="derivative">(<span class="frac"><span>∂<i>p</i></span><span>∂<i>T</i></span></span>)<sub>V</sub></span> = <span class="frac"><span>α</span><span>κ<sub>T</sub></span></span></div>
         <p>所以：</p>
-        <div class="formula">(∂<i>H</i>/∂<i>T</i>)<sub>V</sub> = C<sub>p</sub>(1 − αμ/κ<sub>T</sub>)</div>
+        <div class="formula"><span class="derivative">(<span class="frac"><span>∂<i>H</i></span><span>∂<i>T</i></span></span>)<sub>V</sub></span> = C<sub>p</sub>(1 − <span class="frac"><span>αμ</span><span>κ<sub>T</sub></span></span>)</div>
         <div class="note"><b>这一节的学习重点</b><p>不是立即熟练使用最后一个复杂公式，而是看清推导结构：先写状态函数的全微分，再用定容条件、倒数关系和链式法则替换偏导数。</p></div>
       </section>
 
       <section>
         <h2>9. C<sub>p</sub> 与 C<sub>V</sub> 的一般关系</h2>
         <p>由焓的定义 <i>H</i> = <i>U</i> + <i>pV</i>，结合前面关于内压、膨胀系数和状态方程的关系，可以得到一般物质的：</p>
-        <div class="formula">C<sub>p</sub> − C<sub>V</sub> = α<i>TV</i>(∂<i>p</i>/∂<i>T</i>)<sub>V</sub> = α<sup>2</sup><i>TV</i>/κ<sub>T</sub></div>
+        <div class="formula">C<sub>p</sub> − C<sub>V</sub> = α<i>TV</i><span class="derivative">(<span class="frac"><span>∂<i>p</i></span><span>∂<i>T</i></span></span>)<sub>V</sub></span> = <span class="frac"><span>α<sup>2</sup><i>TV</i></span><span>κ<sub>T</sub></span></span></div>
         <p>对理想气体：</p>
-        <div class="formula">α = 1/<i>T</i>，　κ<sub>T</sub> = 1/<i>p</i>，　<i>pV</i> = <i>nRT</i><br /><i>C</i><sub>p</sub> − <i>C</i><sub>V</sub> = <i>nR</i></div>
+        <div class="formula">α = <span class="frac"><span>1</span><span><i>T</i></span></span>，　κ<sub>T</sub> = <span class="frac"><span>1</span><span><i>p</i></span></span>，　<i>pV</i> = <i>nRT</i><br /><i>C</i><sub>p</sub> − <i>C</i><sub>V</sub> = <i>nR</i></div>
         <p>如果使用摩尔热容：</p>
         <div class="formula"><i>C</i><sub>p,m</sub> − <i>C</i><sub>V,m</sub> = <i>R</i></div>
         <div class="note"><b>不要把这个结论乱用</b><p><i>C</i><sub>p</sub> − <i>C</i><sub>V</sub> = <i>nR</i> 是理想气体关系。真实气体一般要使用 α、κ<sub>T</sub> 和状态方程，不能直接套用。</p></div>
@@ -164,24 +165,24 @@
         <div class="formula"><i>U</i><sub>m</sub> = <i>U</i><sub>tr,m</sub> + <i>U</i><sub>rot,m</sub> + <i>U</i><sub>vib,m</sub> + <i>U</i><sub>el,m</sub> + <i>U</i><sub>intermol,m</sub> + <i>U</i><sub>rest,m</sub></div>
         <div class="property-grid"><article><b>平动与转动</b><p>主要由温度决定；升温提高分子的平均平动、转动能量。</p></article><article><b>振动</b><p>也可能随温度增加，但在温度不够高时，部分振动模式不容易被激发。</p></article><article><b>电子能与静止能</b><p>在普通化学温度范围内通常近似为常数，不主导热容变化。</p></article><article><b>分子间作用</b><p>理想气体模型忽略这一项；真实气体的体积变化可能改变这部分势能。</p></article></div>
         <p>在振动模式尚未明显激发的近似下，理想气体的摩尔定容热容可按自由度理解：</p>
-        <div class="law-grid"><article><b>单原子理想气体</b><div><i>C</i><sub>V,m</sub> = 3<i>R</i>/2</div><p>只有三个平动自由度。</p></article><article><b>线性多原子分子</b><div><i>C</i><sub>V,m</sub> ≈ 5<i>R</i>/2</div><p>增加两个转动自由度；振动活跃后数值会继续上升。</p></article><article><b>非线性多原子分子</b><div><i>C</i><sub>V,m</sub> ≈ 3<i>R</i></div><p>有三个转动自由度；同样需要注意振动贡献。</p></article><article><b>真实气体</b><div><i>C</i><sub>V</sub> = (∂<i>U</i>/∂<i>T</i>)<sub>V</sub></div><p>还可能受分子间作用和压力影响。</p></article></div>
+        <div class="law-grid"><article><b>单原子理想气体</b><div><i>C</i><sub>V,m</sub> = <span class="frac"><span>3<i>R</i></span><span>2</span></span></div><p>只有三个平动自由度。</p></article><article><b>线性多原子分子</b><div><i>C</i><sub>V,m</sub> ≈ <span class="frac"><span>5<i>R</i></span><span>2</span></span></div><p>增加两个转动自由度；振动活跃后数值会继续上升。</p></article><article><b>非线性多原子分子</b><div><i>C</i><sub>V,m</sub> ≈ 3<i>R</i></div><p>有三个转动自由度；同样需要注意振动贡献。</p></article><article><b>真实气体</b><div><i>C</i><sub>V</sub> = <span class="derivative">(<span class="frac"><span>∂<i>U</i></span><span>∂<i>T</i></span></span>)<sub>V</sub></span></div><p>还可能受分子间作用和压力影响。</p></article></div>
       </section>
 
       <section>
         <h2>11. 本课公式总表与辨析</h2>
         <div class="formula-compare">
           <div class="formula-compare-head"><b>量 / 关系</b><b>定义或公式</b><b>理想气体结果</b><b>使用时先问什么？</b></div>
-          <div><span>内压 π<sub>T</sub></span><span class="math-cell">(∂U/∂V)<sub>T</sub></span><span class="math-cell">0</span><span>恒温改变体积时，内能是否因分子间作用而变？</span></div>
-          <div><span>膨胀系数 α</span><span class="math-cell">V<sup>−1</sup>(∂V/∂T)<sub>p</sub></span><span class="math-cell">1/T</span><span>定压升温时，体积相对改变多快？</span></div>
-          <div><span>等温压缩系数 κ<sub>T</sub></span><span class="math-cell">−V<sup>−1</sup>(∂V/∂p)<sub>T</sub></span><span class="math-cell">1/p</span><span>定温加压时，体积相对缩小多快？</span></div>
-          <div><span>J–T 系数 μ</span><span class="math-cell">(∂T/∂p)<sub>H</sub></span><span class="math-cell">0</span><span>节流膨胀且焓不变时，压力变化会不会伴随温度变化？</span></div>
-          <div><span>热容差</span><span class="math-cell">C<sub>p</sub>−C<sub>V</sub> = α<sup>2</sup>TV/κ<sub>T</sub></span><span class="math-cell">nR</span><span>是否已明确物质模型和 α、κ<sub>T</sub> 的条件？</span></div>
+          <div><span>内压 π<sub>T</sub></span><span class="math-cell"><span class="derivative">(<span class="frac"><span>∂U</span><span>∂V</span></span>)<sub>T</sub></span></span><span class="math-cell">0</span><span>恒温改变体积时，内能是否因分子间作用而变？</span></div>
+          <div><span>膨胀系数 α</span><span class="math-cell"><span class="frac"><span>1</span><span>V</span></span><span class="derivative">(<span class="frac"><span>∂V</span><span>∂T</span></span>)<sub>p</sub></span></span><span class="math-cell"><span class="frac"><span>1</span><span><i>T</i></span></span></span><span>定压升温时，体积相对改变多快？</span></div>
+          <div><span>等温压缩系数 κ<sub>T</sub></span><span class="math-cell">−<span class="frac"><span>1</span><span>V</span></span><span class="derivative">(<span class="frac"><span>∂V</span><span>∂p</span></span>)<sub>T</sub></span></span><span class="math-cell"><span class="frac"><span>1</span><span><i>p</i></span></span></span><span>定温加压时，体积相对缩小多快？</span></div>
+          <div><span>J–T 系数 μ</span><span class="math-cell"><span class="derivative">(<span class="frac"><span>∂T</span><span>∂p</span></span>)<sub>H</sub></span></span><span class="math-cell">0</span><span>节流膨胀且焓不变时，压力变化会不会伴随温度变化？</span></div>
+          <div><span>热容差</span><span class="math-cell">C<sub>p</sub>−C<sub>V</sub> = α<sup>2</sup><span class="frac"><span><i>TV</i></span><span>κ<sub>T</sub></span></span></span><span class="math-cell">nR</span><span>是否已明确物质模型和 α、κ<sub>T</sub> 的条件？</span></div>
         </div>
         <div class="formula-map">
           <div class="map-root"><b>第一定律</b><span class="math-cell">ΔU = q + w</span><small>先区分状态函数与路径函数</small></div>
           <div class="map-branches">
             <article><h3>研究 U</h3><div class="map-step"><span>写 U(T,V)</span><b class="math-cell">dU = π<sub>T</sub>dV + C<sub>V</sub>dT</b></div><div class="map-step"><span>恒温体积变化</span><b>看 π<sub>T</sub></b></div><div class="map-step accent"><span>理想气体</span><b>π<sub>T</sub> = 0</b></div></article>
-            <article><h3>研究 H</h3><div class="map-step"><span>写 H(p,T)</span><b class="math-cell">dH = (∂H/∂p)<sub>T</sub>dp + C<sub>p</sub>dT</b></div><div class="map-step"><span>节流膨胀</span><b>H = constant</b></div><div class="map-step accent"><span>理想气体</span><b>μ = 0</b></div></article>
+            <article><h3>研究 H</h3><div class="map-step"><span>写 H(p,T)</span><b class="math-cell">dH = <span class="derivative">(<span class="frac"><span>∂H</span><span>∂p</span></span>)<sub>T</sub></span>dp + C<sub>p</sub>dT</b></div><div class="map-step"><span>节流膨胀</span><b>H = constant</b></div><div class="map-step accent"><span>理想气体</span><b>μ = 0</b></div></article>
           </div>
         </div>
         <div class="note"><b>三组最重要的区分</b><p>自由膨胀：<i>q</i> = 0、<i>w</i> = 0；节流膨胀：<i>q</i> = 0、<i>H</i> 不变；可逆等温膨胀：<i>T</i> 不变但通常 <i>q</i> ≠ 0、<i>w</i> ≠ 0。它们不是同一个过程。</p></div>
@@ -192,9 +193,9 @@
         <ol class="check-list">
           <li>先用一句话区分状态函数和路径函数，并解释为什么 <i>q</i>、<i>w</i> 不能写成终态减初态。</li>
           <li>从 <i>U</i>(<i>T</i>, <i>V</i>) 的全微分推出内压 π<sub>T</sub>，说明理想气体为什么有 π<sub>T</sub> = 0。</li>
-          <li>记住 α 与 κ<sub>T</sub> 的定义，并用理想气体状态方程推出 α = 1/<i>T</i>、κ<sub>T</sub> = 1/<i>p</i>。</li>
+          <li>记住 α 与 κ<sub>T</sub> 的定义，并用理想气体状态方程推出 α = <span class="frac"><span>1</span><span><i>T</i></span></span>、κ<sub>T</sub> = <span class="frac"><span>1</span><span><i>p</i></span></span>。</li>
           <li>能从入口功和出口功推出节流过程的 <i>H</i><sub>f</sub> = <i>H</i><sub>i</sub>，再判断 μ 的正负对应升温还是降温。</li>
-          <li>最后再复习 <i>C</i><sub>p</sub> − <i>C</i><sub>V</sub> = α<sup>2</sup><i>TV</i>/κ<sub>T</sub>，并说明何时可以化为 <i>nR</i>。</li>
+          <li>最后再复习 <i>C</i><sub>p</sub> − <i>C</i><sub>V</sub> = <span class="frac"><span>α<sup>2</sup><i>TV</i></span><span>κ<sub>T</sub></span></span>，并说明何时可以化为 <i>nR</i>。</li>
         </ol>
       </section>
 

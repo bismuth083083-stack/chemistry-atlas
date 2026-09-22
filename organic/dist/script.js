@@ -68,7 +68,24 @@ const TERM_IMAGES={
   'ring-strain':['ring-strain.png','以燃烧热比较环张力的课堂图','Organic Chemistry I Lect. 4，第 24 页'],
   'cyclohexane-chair':['cyclohexane-chair.png','环己烷椅式构象和交叉键','Organic Chemistry I Lect. 4，第 31 页'],
   'axial-equatorial':['axial-equatorial.png','单取代环己烷的直立/平伏构象平衡','Organic Chemistry I Lect. 4，第 36 页'],
-  'ring-flip':['axial-equatorial.png','椅式互变中的直立/平伏位置变化','Organic Chemistry I Lect. 4，第 36–37 页']
+  'ring-flip':['axial-equatorial.png','椅式互变中的直立/平伏位置变化','Organic Chemistry I Lect. 4，第 36–37 页'],
+  'reaction-mechanism':['radical-chain.webp','甲烷氯化的链引发、链增长与总反应','Organic Chemistry I Lect. 5，第 13 页'],
+  'radical':['radical-chain.webp','自由基链反应中的氯自由基与甲基自由基','Organic Chemistry I Lect. 5，第 13 页'],
+  'homolysis':['radical-chain.webp','Cl–Cl 键均裂和鱼钩形半箭头','Organic Chemistry I Lect. 5，第 13 页'],
+  'heterolysis':['bond-enthalpy.webp','均裂与异裂的电子分配方式','Organic Chemistry I Lect. 5，第 29–30 页'],
+  'chain-initiation':['radical-chain.webp','光引发 Cl₂ 均裂产生氯自由基','Organic Chemistry I Lect. 5，第 13 页'],
+  'chain-propagation':['radical-chain.webp','甲烷氯化的两步链增长循环','Organic Chemistry I Lect. 5，第 13 页'],
+  'chain-termination':['radical-chain.webp','自由基链反应的步骤框架','Organic Chemistry I Lect. 5，第 13–14 页'],
+  'equilibrium-constant':['free-energy-equilibrium.webp','标准自由能与平衡常数、转化率的关系','Organic Chemistry I Lect. 5，第 23 页'],
+  'gibbs-free-energy':['free-energy-equilibrium.webp','标准吉布斯自由能与平衡组成','Organic Chemistry I Lect. 5，第 23 页'],
+  'bond-dissociation-enthalpy':['bond-enthalpy.webp','由断键和成键的 BDE 估算反应焓','Organic Chemistry I Lect. 5，第 30 页'],
+  'rate-law':['arrhenius-distribution.webp','反应速率与活化能的温度依赖','Organic Chemistry I Lect. 5，第 33–39 页'],
+  'reaction-order':['arrhenius-distribution.webp','反应速率与能量分布的关系','Organic Chemistry I Lect. 5，第 34–39 页'],
+  'arrhenius-equation':['arrhenius-distribution.webp','不同温度下越过活化能的粒子比例','Organic Chemistry I Lect. 5，第 39 页'],
+  'activation-energy':['reaction-energy.webp','反应能量图中的活化能与反应焓','Organic Chemistry I Lect. 5，第 43 页'],
+  'transition-state':['transition-state.webp','Cl· 夺氢过程中的部分断键与部分成键','Organic Chemistry I Lect. 5，第 41 页'],
+  'reaction-intermediate':['transition-state.webp','过渡态与可具有有限寿命的中间体之区别','Organic Chemistry I Lect. 5，第 40–41 页'],
+  'reaction-coordinate-diagram':['reaction-energy.webp','反应能量图中的过渡态、活化能与反应焓','Organic Chemistry I Lect. 5，第 43 页']
 };
 function termRow(t){return `<a class="term-table row" href="term.html?slug=${encodeURIComponent(t.slug)}"><strong>${t.zh}</strong><span>${t.en}</span><span>${t.category}</span><span>${t.related.length}</span></a>`}
 async function loadTerms(){const terms=await getTerms();const list=document.querySelector('#term-list');document.querySelector('#term-count').textContent=terms.length;const render=()=>{const q=(termSearch?.value||'').trim().toLowerCase();const shown=terms.filter(t=>[t.zh,t.en,t.category,...(t.properties||[])].join(' ').toLowerCase().includes(q));list.className=shown.length?'':'table-empty';list.innerHTML=shown.length?shown.map(termRow).join(''):'<b>没有匹配词条</b><p>尝试中文名、英文名或分类。</p>'};termSearch?.addEventListener('input',render);render()}

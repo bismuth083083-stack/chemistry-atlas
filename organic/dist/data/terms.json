@@ -600,5 +600,56 @@
   },
   {
     "slug":"ring-flip","zh":"翻环","en":"Ring flip","category":"环烷烃构象","definition":"环己烷两把椅式之间的构象互变过程。","expanded":"翻环经过半椅、扭船等较高能构象。每个取代基由 axial 变 equatorial 或反之，但始终保持原先的上或下朝向，故不改变 cis/trans 构型。","properties":["改变 axial/equatorial","保留上/下朝向"],"confusions":"翻环不是断键反应，也不会使一个环的构型异构体自动转为另一个。","related":["cyclohexane-chair","axial-equatorial","stereoisomer"],"source":"第五课：课堂速记 × 课件"
+  },
+  {
+    "slug":"reaction-mechanism","zh":"反应机理","en":"Reaction mechanism","category":"反应概论","definition":"从反应物到产物的一系列基元步骤，说明每一步的断键、成键与电子移动。","expanded":"机理是解释实验事实的模型，需要与速率方程、产物分布、中间体捕获和同位素效应等证据一致。总反应式可由各步骤相加得到，但总反应式本身不能反推出唯一机理。","properties":["由基元步骤组成","包含中间体与过渡态","必须接受实验检验"],"confusions":"配平的总反应式不是反应机理；形式上可相加得到同一总式的路径可能有不同能垒。","related":["radical","rate-law","transition-state"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"radical","zh":"自由基","en":"Radical / Free radical","category":"自由基反应","definition":"含有一个或多个未成对电子的原子、分子或离子物种。","expanded":"有机化学中常以圆点标出未成对电子，例如 CH₃·。自由基可由共价键均裂形成，通常反应活泼，但稳定性仍受共振、超共轭和取代程度影响。","properties":["含未成对电子","可为中性或带电","常参与链反应"],"confusions":"自由基不是简单的电子缺失离子；CH₃· 电中性，而 CH₃⁺ 才是碳正离子。","related":["homolysis","chain-initiation","chain-propagation"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"homolysis","zh":"均裂","en":"Homolytic bond cleavage / Homolysis","category":"断键方式","definition":"共价键断裂时，两个成键电子分别归属于两个碎片的过程。","expanded":"均裂通常生成两个自由基，电子移动用两根鱼钩形半箭头表示。光照、加热或自由基引发剂可促进某些较弱键的均裂。","properties":["生成自由基","每个碎片得到一个成键电子","以半箭头表示"],"confusions":"均裂不同于异裂；异裂时一方获得两个成键电子并形成离子。","related":["radical","heterolysis","bond-dissociation-enthalpy"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"heterolysis","zh":"异裂","en":"Heterolytic bond cleavage / Heterolysis","category":"断键方式","definition":"共价键断裂时，两个成键电子都归属于同一碎片的过程。","expanded":"异裂通常生成一对离子，方向受键极性、溶剂稳定作用和离去基能力影响。电子对的移动用普通双电子弯箭头表示。","properties":["生成离子对","一个碎片得到两个电子","受极性溶剂影响显著"],"confusions":"键解离焓 BDE 专指气相均裂所需焓，不能直接作为异裂能。","related":["homolysis","lewis-acid","lewis-base"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"chain-initiation","zh":"链引发","en":"Chain initiation","category":"自由基反应","definition":"产生能够启动链循环的自由基或其他链载体的步骤。","expanded":"甲烷氯化中，Cl₂ 吸收蓝光后均裂为两个 Cl·。引发常需要光、热或引发剂，而且发生频率远低于链增长。","properties":["生成自由基","需要输入能量或引发剂","启动链过程"],"confusions":"链引发不等于总反应；大量产物来自随后反复发生的链增长。","related":["radical","homolysis","chain-propagation"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"chain-propagation","zh":"链增长","en":"Chain propagation","category":"自由基反应","definition":"消耗一个链载体并生成另一个链载体，使链反应持续的步骤。","expanded":"甲烷氯化的两步链增长是 Cl· 夺氢生成 CH₃·，随后 CH₃· 与 Cl₂ 反应生成 CH₃Cl 并再生 Cl·。链增长步骤相加可消去中间自由基并得到总反应。","properties":["自由基一进一出","决定主要产物生成","可重复多轮"],"confusions":"链增长不要求自由基数量增加，只要求链载体得到再生。","related":["chain-initiation","chain-termination","radical"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"chain-termination","zh":"链终止","en":"Chain termination","category":"自由基反应","definition":"消耗自由基而不产生新自由基，使链反应减慢或停止的步骤。","expanded":"任意两个自由基偶联都可能构成终止步骤；自由基与容器壁或杂质反应也可终止链。自由基浓度低时，双自由基相遇概率通常小于自由基与反应物碰撞概率。","properties":["净消耗自由基","降低链载体浓度","反应后期更显著"],"confusions":"终止步骤形成稳定产物，但该产物未必是总反应的主要目标产物。","related":["chain-propagation","chain-initiation","radical"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"equilibrium-constant","zh":"平衡常数","en":"Equilibrium constant","category":"热力学与平衡","definition":"在给定温度下，用平衡活度按化学计量数组合得到的无量纲常数。","expanded":"K 值反映平衡位置。K 大于 1 表示标准条件下平衡偏向产物，K 小于 1 表示偏向反应物；其与标准吉布斯自由能满足 ΔG° = −RT ln K。","properties":["仅由温度和反应定义决定","与初始组成无关","严格表达使用活度"],"confusions":"K 很大不表示反应速率快；达到平衡所需时间属于动力学问题。","related":["gibbs-free-energy","reaction-coordinate-diagram"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"gibbs-free-energy","zh":"吉布斯自由能","en":"Gibbs free energy","category":"热力学与平衡","definition":"恒温恒压条件下判断过程方向和可获得非体积功的热力学状态函数。","expanded":"反应自由能满足 ΔG = ΔG° + RT ln Q；平衡时 ΔG = 0。标准自由能变与平衡常数相关，而活化自由能 ΔG‡ 描述跨越过渡态所需的能垒。","properties":["状态函数","综合焓与熵贡献","可判断恒温恒压自发方向"],"confusions":"ΔG° 与 ΔG‡ 含义不同：前者关联平衡，后者关联速率。","related":["equilibrium-constant","transition-state","reaction-coordinate-diagram"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"bond-dissociation-enthalpy","zh":"键解离焓","en":"Bond-dissociation enthalpy (BDE)","category":"热化学","definition":"气相中均裂某一特定共价键所需的焓变。","expanded":"BDE 恒为断键吸热量。用断键 BDE 总和减去成键 BDE 总和可近似估算反应焓；由于键环境、溶剂化和非键相互作用，平均键能估算并非精确热化学数据。","properties":["对应均裂","单位常用 kJ·mol⁻¹","随分子环境变化"],"confusions":"BDE 不是键异裂能，也不等同于反应活化能。","related":["homolysis","activation-energy","radical"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"rate-law","zh":"速率方程","en":"Rate law / Rate equation","category":"反应动力学","definition":"把实验反应速率与反应物浓度及速率常数联系起来的数学关系。","expanded":"常见形式为 v = k[A]^α[B]^β。指数 α、β 由实验确定，可为零、整数或分数；速率式能约束可能机理，但通常不能单独证明唯一机理。","properties":["由实验确定","含速率常数和反应级数","随机理变化"],"confusions":"总反应式的计量系数通常不能直接当作速率方程指数。","related":["reaction-order","arrhenius-equation","reaction-mechanism"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"reaction-order","zh":"反应级数","en":"Reaction order","category":"反应动力学","definition":"速率方程中某一浓度项的指数；各指数之和为总反应级数。","expanded":"若某反应物浓度加倍使速率加倍，则在其他条件不变时对该物种通常为一级；若浓度变化不影响速率，则为零级。级数反映动力学依赖，不是分子数标签。","properties":["可通过初速法测定","可为零、分数或负数","决定速率常数单位"],"confusions":"反应级数不同于基元步骤的分子数，也不必等于计量系数。","related":["rate-law","reaction-mechanism"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"arrhenius-equation","zh":"Arrhenius 方程","en":"Arrhenius equation","category":"反应动力学","definition":"描述速率常数随绝对温度和活化能变化的经验关系 k = Ae^(−Ea/RT)。","expanded":"A 综合有效碰撞频率与取向因素，Ea 为活化能。线性形式 ln k = ln A − (Ea/R)(1/T) 可由不同温度下的速率常数求 Ea。","properties":["升温通常增大 k","斜率可给出活化能","适用于机理不变的温区"],"confusions":"升温十度速率翻倍只是常见经验，不是 Arrhenius 方程的普适固定倍率。","related":["activation-energy","rate-law","transition-state"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"activation-energy","zh":"活化能","en":"Activation energy","category":"反应动力学","definition":"Arrhenius 模型中表征反应跨越能垒难易的能量参数。","expanded":"Ea 越大，给定温度下具有足够能量的分子比例越小，反应通常越慢。对简单一步反应，Ea 与反应物到过渡态的能量差相关，但严格的活化自由能还包含熵贡献。","properties":["通常为正","控制温度敏感性","催化可降低有效能垒"],"confusions":"活化能不是反应焓；强放热反应仍可能有很高活化能。","related":["arrhenius-equation","transition-state","bond-dissociation-enthalpy"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"transition-state","zh":"过渡态","en":"Transition state","category":"反应动力学","definition":"反应坐标上位于能垒顶端的瞬时高能构型，用 ‡ 表示。","expanded":"过渡态中旧键和新键往往分别处于部分断裂与部分形成状态。它不是可分离物种，而是反应路径上的鞍点；反应物到过渡态的活化自由能决定速率常数。","properties":["极短寿命","不可分离","位于能量极大处"],"confusions":"过渡态不同于中间体；中间体对应局部能量最低点并具有有限寿命。","related":["reaction-intermediate","activation-energy","reaction-coordinate-diagram"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"reaction-intermediate","zh":"反应中间体","en":"Reaction intermediate","category":"反应机理","definition":"在多步反应中形成并在后续步骤消耗、具有有限寿命的真实物种。","expanded":"自由基、碳正离子、碳负离子和卡宾都可作为中间体。它们对应势能面上的局部最低点，某些情况下能够通过低温光谱、捕获实验或产物分析得到证据。","properties":["由一步生成并被另一步消耗","具有有限稳定性","不出现在净反应式中"],"confusions":"中间体不是过渡态；前者可视为物种，后者只是跨越能垒时的瞬时构型。","related":["transition-state","radical","reaction-mechanism"],"source":"第六课：课堂速记 × Lect. 5"
+  },
+  {
+    "slug":"reaction-coordinate-diagram","zh":"反应能量图","en":"Reaction-coordinate diagram","category":"反应动力学","definition":"以反应坐标为横轴、体系能量或自由能为纵轴表示反应路径的图。","expanded":"峰对应过渡态，谷对应反应物、产物或中间体。反应物到峰的高度关联正向速率，产物与反应物的能量差关联热力学；多步反应具有多个峰和中间谷。","properties":["显示能垒和反应能变化","可比较不同路径","横轴不是时间"],"confusions":"曲线形状是路径的能量示意，不是分子真实运动轨迹或浓度随时间曲线。","related":["transition-state","gibbs-free-energy","activation-energy"],"source":"第六课：课堂速记 × Lect. 5"
   }
 ]

@@ -76,9 +76,3 @@ async function loadTermDetail(){
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 }
-if(!document.querySelector('script[data-qa]')){
-  const script=document.createElement('script');
-  script.src='qa.js';
-  script.dataset.qa='';
-  document.body.appendChild(script);
-}

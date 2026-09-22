@@ -1,5 +1,5 @@
-const CACHE='analytical-atlas-v5';
-const SHELL=['./','index.html','chapter-1.html','chapter-2.html','terms.html','term.html','style.css','content.css','lesson.css','course-extra.css','script.js','qa.js','qa.css','icon.svg','manifest.webmanifest','data/terms.json','data/notes.json'];
+const CACHE='analytical-atlas-v6';
+const SHELL=['./','index.html','chapter-1.html','chapter-2.html','terms.html','term.html','style.css','content.css','lesson.css','course-extra.css','script.js','icon.svg','manifest.webmanifest','data/terms.json','data/notes.json'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{

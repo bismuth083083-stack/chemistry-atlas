@@ -1,8 +1,8 @@
-const CACHE='chemistry-atlas-v14';
+const CACHE='chemistry-atlas-v15';
 const SHELL=[
   './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','resonance.html','terms.html','term.html',
   'style.css','content.css','lecture-02.css','term-figures.css','ppt-figures.css','resonance.css',
-  'script.js','qa.js','qa.css','data/terms.json','data/notes.json',
+  'script.js','data/terms.json','data/notes.json',
   'assets/resonance/ppt/formaldehyde.webp','assets/resonance/ppt/acetate.webp',
   'assets/resonance/ppt/nitromethane.webp','assets/resonance/ppt/cation-hybrid.webp',
   'assets/resonance/ppt/major-minor.webp','assets/resonance/ppt/rules.webp',

@@ -669,7 +669,7 @@
     {
       "id": "PCHEM-T01",
       "title": "物理化学专题：热力学第一定律思考题",
-      "description": "根据用户提供的《热力学第一定律思考题》整理，覆盖状态函数、热力学第一定律、热与功、等压/等容过程、可逆性、焓变与循环。",
+      "description": "按用户提供的《热力学第一定律思考题》PDF 原有 8 个大题导入，不按题型或难度人为拆分和配比。",
       "subject": "physical-chemistry",
       "type": "topic",
       "lessonNumber": null,
@@ -678,8 +678,8 @@
       "chapter": "Topic · First law of thermodynamics",
       "lesson": "State functions, heat, work, and reversible paths",
       "topic": "Thermodynamics first-law thinking problems",
-      "questionCount": 22,
-      "difficulty": "advanced",
+      "questionCount": 8,
+      "difficulty": "intermediate",
       "tags": [
         "thermodynamics",
         "first law",

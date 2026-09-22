@@ -6,147 +6,81 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dataRoot = path.join(root, 'data');
 const distDataRoot = path.join(root, 'dist', 'data');
 
-const points = (difficulty) => difficulty === 'challenging' ? 3 : difficulty === 'hard' ? 2 : 1;
-const one = (id, question, options, answer, explanation, difficulty, tags) => ({
-  id, type: 'single-choice', question,
-  options: options.map(([optionId, text]) => ({ id: optionId, text })),
-  answer, points: points(difficulty), explanation, difficulty, tags
+// The source PDF contains eight numbered problems. Keep that structure intact;
+// the fixed schema metadata is only used for rendering, not for rebalancing.
+const base = (id, type, question, explanation, tags, extra = {}) => ({
+  id, type, question, points: 1, explanation, difficulty: 'medium', tags, ...extra
 });
-const many = (id, question, options, answers, explanation, difficulty, tags) => ({
-  id, type: 'multiple-choice', question,
-  options: options.map(([optionId, text]) => ({ id: optionId, text })),
-  answers, points: points(difficulty), explanation, difficulty, tags
+const single = (id, question, options, answer, explanation, tags) => base(id, 'single-choice', question, explanation, tags, {
+  options: options.map(([optionId, text]) => ({ id: optionId, text })), answer
 });
-const tf = (id, question, answer, explanation, difficulty, tags) => ({
-  id, type: 'true-false', question, answer,
-  points: points(difficulty), explanation, difficulty, tags
+const many = (id, question, options, answers, explanation, tags) => base(id, 'multiple-choice', question, explanation, tags, {
+  options: options.map(([optionId, text]) => ({ id: optionId, text })), answers
 });
-const fill = (id, question, answer, acceptableAnswers, explanation, difficulty, tags) => ({
-  id, type: 'fill-in-the-blank', question, answer, acceptableAnswers,
-  grading: { caseSensitive: false, collapseWhitespace: true },
-  points: points(difficulty), explanation, difficulty, tags
+const fill = (id, question, answer, acceptableAnswers, explanation, tags) => base(id, 'fill-in-the-blank', question, explanation, tags, {
+  answer, acceptableAnswers, grading: { caseSensitive: false, collapseWhitespace: true }
 });
 
 const questions = [
-  one('q001', '关于热力学状态与状态函数，下列说法正确的是……', [
-    ['A', '给定体系状态后，每一个状态函数都有唯一数值'],
-    ['B', '只要知道热量 Q，就能唯一确定体系状态'],
-    ['C', '状态函数的数值只由过程路径决定'],
-    ['D', '所有状态函数都必须在恒温过程中才有定义']
-  ], 'A', '状态函数只依赖体系当前状态。状态确定后，U、H、P、V 等状态函数都有确定值；热量和功则是过程量。', 'easy', ['state functions', 'system state']),
-  tf('q002', '体系发生状态变化时，所有状态函数都一定发生变化。', false, '状态改变并不意味着每一个状态函数都必须改变。例如某些过程可以保持温度不变；判断必须结合具体初末状态。', 'easy', ['state functions']),
-  tf('q003', 'U 和 H 是状态函数，而 Qv、Qp 通常不是状态函数。', true, '内能和焓只由初末状态决定；Qv、Qp 只是特定条件下的热量记号，热量本身取决于过程路径。', 'easy', ['heat', 'enthalpy']),
-  one('q004', '若体系在绝热条件下膨胀并对外做功，下列判断最合理的是……', [
-    ['A', '体系必须先吸收等量热量'],
-    ['B', '体系可以不吸热，但内能因做功而降低'],
-    ['C', '绝热过程不可能发生体积变化'],
-    ['D', '只要做功，Q 就一定大于 0']
-  ], 'B', '绝热意味着 Q=0，并不意味着不能做功。按 ΔU=Q+W，体系对外做功时 W<0，内能可以降低。', 'easy', ['first law', 'adiabatic process']),
-  one('q005', '恒压绝热容器中用机械方式搅拌液体，温度升高。此时不能直接写成 ΔH=Qp=0，关键原因是……', [
-    ['A', '恒压过程一定没有热量交换'],
-    ['B', '机械搅拌属于非膨胀功，ΔH=Qp 还需要无非膨胀功'],
-    ['C', '绝热体系没有内能'],
-    ['D', '焓只对气体定义']
-  ], 'B', 'ΔH=Qp 的常用条件包括恒压和只有膨胀功。机械搅拌输入了非膨胀功，所以不能把焓变直接等同于 Qp。', 'easy', ['enthalpy', 'non-expansion work']),
-  tf('q006', '同一体系从相同初态到相同终态时，ΔH 相同，但不同路径上的 Q 可以不同。', true, '焓是状态函数，因此 ΔH 与路径无关；热量是过程量，可能随路径改变。', 'medium', ['enthalpy', 'path dependence']),
-  one('q007', '为什么可逆热机的最高效率不能简单理解为“可以直接用来在有限时间内拉动列车”？', [
-    ['A', '可逆热机只能使用理想气体'],
-    ['B', '可逆过程要求无限接近平衡，达到理论极限时进行得无限慢'],
-    ['C', '可逆热机不发生能量转换'],
-    ['D', '可逆热机的效率恒为零']
-  ], 'B', '可逆效率是理论上限。真正可逆要求每一步都无限接近平衡，过程时间趋于无限长，因此不能直接等同于有限时间的大功率输出。', 'medium', ['reversibility', 'heat engine']),
-  one('q008', '相同物质的量的 Zn 与盐酸反应，在敞口恒压装置和近似封闭刚性装置中比较，通常哪种装置记录的放热量绝对值更大？', [
-    ['A', '封闭刚性装置，因为没有把能量分给大气膨胀功'],
-    ['B', '敞口装置，因为氢气逸出会额外产生热量'],
-    ['C', '两者一定相同，因为反应焓是状态函数'],
-    ['D', '无法比较，因为 Q 永远是状态函数']
-  ], 'A', '敞口条件下生成气体还要对外界做膨胀功；封闭刚性装置不发生这部分体积功，因此释放热量的绝对值通常更大。', 'medium', ['reaction heat', 'expansion work']),
-  one('q009', '导热气缸中的压缩空气与环境平衡后突然打开，待压力刚好降到与外界相等时封住开口。随后与环境充分换热，气体压力最可能……', [
-    ['A', '继续降到真空'],
-    ['B', '保持不变'],
-    ['C', '因温度回升而高于封口瞬间的压力'],
-    ['D', '必然变成原来的两倍']
-  ], 'C', '封口瞬间气体因快速膨胀而冷却。封口后导热回到环境温度，而体积基本固定，所以压力回升。', 'medium', ['adiabatic expansion', 'ideal gas']),
-  many('q010', '氨合成反应 N₂+3H₂→2NH₃ 中，实验测得的 Qp 与按 Kirchhoff 关系计算的反应热不一致，哪些解释合理？', [
-    ['A', '计算值通常对应反应进度为 1 mol 的摩尔反应焓'],
-    ['B', '实验体系可能只达到平衡转化，实际反应进度小于理论完全反应值'],
-    ['C', '因此实验热量绝对值可能小于按完全反应计算的数值'],
-    ['D', '差异说明焓不是状态函数']
-  ], ['A', 'B', 'C'], '计算通常给出单位反应进度的热效应，而实验可能只发生约 25% 的转化；热量按实际反应进度缩放，所以绝对值更小。', 'medium', ['Kirchhoff law', 'reaction extent', 'equilibrium']),
-  tf('q011', '理想气体分别进行绝热可逆和绝热不可逆过程，若两种推导都出现 W=CvΔT，就说明两种过程的功一定相同。', false, '两条路径的初态相同但终态通常不同，ΔT 也不同。公式形式相同不代表代入后的功相同；同一初态下，可逆绝热膨胀的功的绝对值通常更大。', 'medium', ['adiabatic process', 'work']),
-  one('q012', '在相同初态和相同外界终压下，理想气体绝热膨胀时，可逆过程与不可逆过程比较，通常有……', [
-    ['A', '可逆过程的膨胀功绝对值更大'],
-    ['B', '不可逆过程的膨胀功绝对值必然更大'],
-    ['C', '两者功都必为零'],
-    ['D', '可逆性只影响热量，不影响功']
-  ], 'A', '可逆膨胀始终以尽可能小的压差推动边界，能够获得更大的对外功；不可逆膨胀的耗散使可得功减少。', 'medium', ['reversible work', 'adiabatic expansion']),
-  many('q013', '在采用 ΔU=Q+W 的符号约定时，要使用 ΔH=Qp，通常需要哪些条件？', [
-    ['A', '恒压'],
-    ['B', '除膨胀功外没有非膨胀功'],
-    ['C', '必须恒温'],
-    ['D', '路径必须是绝热的']
-  ], ['A', 'B'], '恒压且只有体积功时，ΔH=Qp。恒温或绝热都不是这条等式的必要条件；绝热时 Qp 反而为零。', 'medium', ['enthalpy', 'constant pressure']),
-  many('q014', '在采用 ΔU=Q+W 的符号约定时，要使用 ΔU=Qv，通常需要哪些条件？', [
-    ['A', '恒容'],
-    ['B', '除膨胀功外没有非膨胀功'],
-    ['C', '必须恒压'],
-    ['D', '必须是可逆过程']
-  ], ['A', 'B'], '恒容使膨胀功为零，再排除非膨胀功后，第一定律给出 ΔU=Qv。可逆性不是必要条件。', 'medium', ['internal energy', 'constant volume']),
-  fill('q015', '在理想气体、等温、可逆且只有膨胀功的条件下，按题面符号约定，功可写为 W=____。', 'nRT ln(V1/V2)', ['nRT ln(V1/V2)', 'nRTln(V1/V2)', 'nRT ln (V1/V2)'], '从 W=−∫Pext dV 且 P=nRT/V 得 W=nRT ln(V1/V2)。膨胀时 V2>V1，因此 W 为负。', 'medium', ['reversible work', 'ideal gas']),
-  one('q016', '理想气体自由膨胀（真空膨胀）时，W、Q、ΔU、ΔH 的符号组合是……', [
-    ['A', 'W=0，Q=0，ΔU=0，ΔH=0'],
-    ['B', 'W<0，Q=0，ΔU<0，ΔH<0'],
-    ['C', 'W=0，Q>0，ΔU>0，ΔH>0'],
-    ['D', 'W>0，Q<0，ΔU=0，ΔH=0']
-  ], 'A', '真空膨胀没有外压，所以 W=0；绝热条件下 Q=0。理想气体内能和焓只依赖温度，温度不变则 ΔU=ΔH=0。', 'hard', ['free expansion', 'ideal gas']),
-  one('q017', '范德瓦耳斯气体在恒容条件下受热，且没有非膨胀功。最合理的符号组合是……', [
-    ['A', 'W=0，Q>0，ΔU>0，ΔH>0'],
-    ['B', 'W<0，Q>0，ΔU>0，ΔH=0'],
-    ['C', 'W=0，Q<0，ΔU<0，ΔH>0'],
-    ['D', 'W>0，Q=0，ΔU>0，ΔH<0']
-  ], 'A', '恒容使膨胀功 W=0；受热使 Q>0，因而 ΔU>0。对通常的稳定单相加热过程，温度和焓也上升，ΔH>0。', 'hard', ['van der Waals gas', 'constant volume']),
-  many('q018', 'Zn(s)+2HCl(aq)→ZnCl₂(aq)+H₂(g) 在恒压、非绝热条件下进行。按 ΔU=Q+W，哪些判断正确？', [
-    ['A', '生成气体推动外界，W<0'],
-    ['B', '该放热反应有 Q<0'],
-    ['C', '反应的 ΔU<0'],
-    ['D', '反应的 ΔH<0']
-  ], ['A', 'B', 'C', 'D'], '恒压放热反应的焓变为负；生成 H₂ 还要对外做膨胀功，所以 W<0，并使内能变化也为负。', 'hard', ['reaction signs', 'enthalpy']),
-  many('q019', 'H₂(g)+Cl₂(g)→2HCl(g) 在绝热刚性钢瓶中进行。哪些判断正确？', [
-    ['A', 'W=0'],
-    ['B', 'Q=0'],
-    ['C', 'ΔU=0'],
-    ['D', 'ΔH>0']
-  ], ['A', 'B', 'C', 'D'], '刚性容器没有体积功，绝热又使 Q=0，因此 ΔU=0。反应放出的能量使温度升高；在气体物质的量相同的情况下，焓随温度升高而增大，故 ΔH>0。', 'hard', ['adiabatic bomb', 'enthalpy']),
-  many('q020', '水在 273.15 K、101.325 kPa 下冻结为冰，哪些符号判断正确？', [
-    ['A', 'W<0'],
-    ['B', 'Q<0'],
-    ['C', 'ΔU<0'],
-    ['D', 'ΔH<0']
-  ], ['A', 'B', 'C', 'D'], '液态水结冰时体积增大，体系对外做功，所以 W<0；凝固放热，Q 和 ΔH<0，第一定律也给出 ΔU<0。', 'challenging', ['freezing', 'phase change']),
-  many('q021', '关于“氢氧生成水”的不同反应路径以及水的完整循环，下列说法正确的是……', [
-    ['A', '不同路径若初末态相同，则 ΔU 和 ΔH 相同'],
-    ['B', '不同路径的 Q 和 W 可以不同'],
-    ['C', '完整循环回到初态，因此 ΔU=ΔH=0'],
-    ['D', 'Q 也是状态函数，所以所有路径的 Q 必须相同']
-  ], ['A', 'B', 'C'], '内能和焓是状态函数；热量和功是路径函数。水从海洋到云、雪、冰、融化再回到海洋的完整循环初末态相同，所以状态函数变化为零。', 'challenging', ['state functions', 'cycle', 'path functions']),
-  many('q022', '要把 298 K、101.3 kPa 的液态水可逆地变成同温同压的水蒸气，哪些路径设计合理？', [
-    ['A', '先在 101.3 kPa 下可逆加热到沸点，在沸点可逆汽化，再把蒸气可逆冷却到 298 K'],
-    ['B', '先在 298 K 下可逆降压到该温度的饱和蒸气压，在该压力下可逆汽化，最后等温可逆压缩到 101.3 kPa'],
-    ['C', '直接突然蒸发，且整个过程仍称为可逆'],
-    ['D', '用刚性绝热容器完成全部过程，且不需要热交换']
-  ], ['A', 'B'], '可逆路径必须由一系列无限接近平衡的步骤组成。原题给出的两条路线分别利用沸点和 298 K 下的饱和蒸气压来构造可逆过程；突然蒸发和刚性绝热路线都不满足要求。', 'challenging', ['reversible path', 'phase equilibrium'])
+  many('q001', '判断下列关于热力学第一定律、状态函数、热和功的说法。选择所有正确项。', [
+    ['A', '给定体系状态后，所有状态函数都有唯一数值；反过来若状态函数组的数值确定，体系状态也随之确定。'],
+    ['B', '体系发生状态变化时，所有状态函数都一定发生变化。'],
+    ['C', '因为 ΔU=Qv、ΔH=Qp，所以 Qv 和 Qp 本身是状态函数。'],
+    ['D', '体系对外做功时，必须先吸收热量。'],
+    ['E', '恒压绝热容器中机械搅拌液体使温度升高时，可以直接写 ΔH=Qp=0。'],
+    ['F', '同一初态和终态之间，无论采用可逆电化学电池还是其他路径，ΔH 相同，但 Q 可以不同。']
+  ], ['A', 'F'], '状态函数只由状态决定；热量和功是过程量。绝热膨胀可以在 Q=0 时对外做功，机械搅拌属于非膨胀功，不能直接套用 ΔH=Qp。', ['state functions', 'heat', 'work']),
+  many('q002', '综合回答下列四个热力学思考情境。选择所有正确的结论。', [
+    ['A', '可逆热机效率是理论极限，但可逆过程要求无限接近平衡，因此不能在有限时间内直接作为高功率牵引机。'],
+    ['B', '相同 Zn 与盐酸反应中，敞口装置通常比封闭刚性装置释放更多热量，因为生成氢气还会做膨胀功。'],
+    ['C', '压缩空气突然放空、在压力等于外界时封住开口后，导热回到环境温度，压力会重新升高。'],
+    ['D', '氨合成的实验 Qp 可能小于 Kirchhoff 计算值，因为计算按单位反应进度，而实验可能只达到平衡转化。'],
+    ['E', '只要测量温度不同，Kirchhoff 关系就不能用于比较反应热。']
+  ], ['A', 'C', 'D'], '可逆性、膨胀功、快速绝热膨胀后的回温，以及实际反应进度都会影响过程热量的解释；Kirchhoff 关系本身并不因温度变化而失效。', ['reversibility', 'reaction heat', 'equilibrium']),
+  single('q003', '理想气体从同一初态分别进行绝热可逆和绝热不可逆过程。虽然两种推导都可写出 W=CvΔT，但关于两种功的说法正确的是……', [
+    ['A', '两种过程的功必然相同'],
+    ['B', '两种过程的终态通常不同，因此功不必相同；可逆膨胀的功的绝对值通常更大'],
+    ['C', '绝热过程的功都为零'],
+    ['D', '不可逆过程一定得到更大的膨胀功']
+  ], 'B', '公式形式相同不代表 ΔT 相同。相同初态和外界条件下，可逆过程始终无限接近平衡，通常能够获得更大的对外功。', ['adiabatic process', 'reversible work']),
+  many('q004', '分别判断下列等式成立所需的通常条件。选择所有正确项。', [
+    ['A', 'ΔH=Qp：恒压，且没有除膨胀功以外的非膨胀功。'],
+    ['B', 'ΔU=Qv：恒容，且没有除膨胀功以外的非膨胀功。'],
+    ['C', 'W=nRT ln(V1/V2)：理想气体、等温、可逆，且只有膨胀功。'],
+    ['D', '三条等式对任意体系、任意路径都成立。']
+  ], ['A', 'B', 'C'], '这些等式都需要明确的边界条件。采用 ΔU=Q+W 约定时，W=nRT ln(V1/V2) 在膨胀时为负。', ['enthalpy', 'internal energy', 'reversible work']),
+  many('q005', '按 ΔU=Q+W 的符号约定，判断下列过程中的 W、Q、ΔU、ΔH 符号。选择所有正确项。', [
+    ['A', '理想气体自由膨胀：W=0，Q=0，ΔU=0，ΔH=0。'],
+    ['B', '范德瓦耳斯气体恒容受热：W=0，Q>0，ΔU>0，ΔH>0。'],
+    ['C', 'Zn(s)+2HCl(aq)→ZnCl₂(aq)+H₂(g)，恒压非绝热放热：W<0，Q<0，ΔU<0，ΔH<0。'],
+    ['D', 'H₂(g)+Cl₂(g)→2HCl(g)，绝热刚性钢瓶：W=0，Q=0，ΔU=0，ΔH>0。'],
+    ['E', '水在 273.15 K、101.325 kPa 下冻结：W<0，Q<0，ΔU<0，ΔH<0。']
+  ], ['A', 'B', 'C', 'D', 'E'], '自由膨胀没有外界压力功；恒容受热使内能上升；放热且生成气体的反应具有负的 Q、W 和焓变；绝热刚性反应中温度升高使焓上升；水冻结时体积增大并放热。', ['sign conventions', 'reaction signs', 'phase change']),
+  single('q006', '氢气和氧气生成水可通过燃烧、爆炸、热爆炸或燃料电池等不同路径完成。若初态和终态相同，下列说法正确的是……', [
+    ['A', '所有路径的 Q、W、ΔU、ΔH 都相同'],
+    ['B', '所有路径的 ΔU 和 ΔH 相同，但 Q、W 可以不同'],
+    ['C', '只有燃料电池路径的 ΔH 是状态函数'],
+    ['D', '不同路径的 ΔU 必然不同']
+  ], 'B', '内能和焓是状态函数，热量和功是路径函数；路径改变不会改变相同初末态之间的 ΔU 和 ΔH。', ['state functions', 'path functions']),
+  fill('q007', '海水→云→雨/雪→冰→融化→河流→海水构成完整循环，因此该循环的 ΔU=____，ΔH=____。', '0，0', ['0，0', '0, 0', '0 0', '零，零'], '完整循环回到初态，所有状态函数的总变化为零，因此 ΔU=0、ΔH=0。', ['thermodynamic cycle', 'state functions']),
+  many('q008', '298 K、101.3 kPa 的液态水要可逆地变成同温同压的水蒸气。选择可行的可逆路径。', [
+    ['A', '在 101.3 kPa 下可逆加热至沸点，在沸点可逆汽化，再将蒸气可逆冷却至 298 K。'],
+    ['B', '298 K 下可逆降压至饱和蒸气压，在该压力下可逆汽化，再等温可逆压缩至 101.3 kPa。'],
+    ['C', '直接突然蒸发，并把该过程称为可逆过程。'],
+    ['D', '在刚性绝热容器中完成全部过程，不需要热交换。']
+  ], ['A', 'B'], '可逆路径必须由一系列无限接近平衡的步骤组成。前两条分别利用常压沸点和 298 K 下的饱和蒸气压构造可逆路径；突然蒸发和刚性绝热路线不满足条件。', ['reversible path', 'phase equilibrium'])
 ];
 
 const quiz = {
   id: 'PCHEM-T01',
   title: '物理化学专题：热力学第一定律思考题',
-  description: '根据用户提供的《热力学第一定律思考题》整理，覆盖状态函数、热力学第一定律、热与功、等压/等容过程、可逆性、焓变与循环。',
+  description: '按用户提供的《热力学第一定律思考题》PDF 原有 8 个大题导入，不按题型或难度人为拆分和配比。',
   subject: 'physical-chemistry',
   chapter: 'Topic · First law of thermodynamics',
-  version: '1.0.0',
+  version: '1.1.0',
   totalPoints: questions.reduce((sum, question) => sum + question.points, 0),
   selection: { mode: 'fixed' },
-  scopeNote: '根据用户提供的《热力学第一定律思考题》PDF 整理并改写为交互式题目；保留原题的符号约定 ΔU=Q+W 与核心解析。',
+  scopeNote: '题目数量和组织方式遵循来源 PDF 的八道编号大题；题型只在系统需要交互判分时采用最接近的呈现方式，不代表额外的题型或难度分布。',
   questions
 };
 
@@ -163,7 +97,7 @@ const manifestEntry = {
   lesson: 'State functions, heat, work, and reversible paths',
   topic: 'Thermodynamics first-law thinking problems',
   questionCount: questions.length,
-  difficulty: 'advanced',
+  difficulty: 'intermediate',
   tags: ['thermodynamics', 'first law', 'state functions', 'enthalpy', 'reversibility'],
   knowledgePoints: ['state functions', 'heat and work', 'constant-pressure and constant-volume processes', 'reversible processes', 'enthalpy'],
   createdAt: '2026-09-22',
@@ -183,4 +117,4 @@ for (const target of [path.join(dataRoot, 'index.json'), path.join(distDataRoot,
   fs.writeFileSync(target, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
 }
 
-console.log(`Added ${manifestEntry.id} with ${questions.length} questions.`);
+console.log(`Updated ${manifestEntry.id} with ${questions.length} source-aligned questions.`);

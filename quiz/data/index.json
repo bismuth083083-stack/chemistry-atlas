@@ -665,6 +665,42 @@
       ],
       "path": "inorg-t01.json",
       "mode": "question-bank"
+    },
+    {
+      "id": "PCHEM-T01",
+      "title": "物理化学专题：热力学第一定律思考题",
+      "description": "根据用户提供的《热力学第一定律思考题》整理，覆盖状态函数、热力学第一定律、热与功、等压/等容过程、可逆性、焓变与循环。",
+      "subject": "physical-chemistry",
+      "type": "topic",
+      "lessonNumber": null,
+      "topicNumber": 1,
+      "examNumber": null,
+      "chapter": "Topic · First law of thermodynamics",
+      "lesson": "State functions, heat, work, and reversible paths",
+      "topic": "Thermodynamics first-law thinking problems",
+      "questionCount": 22,
+      "difficulty": "advanced",
+      "tags": [
+        "thermodynamics",
+        "first law",
+        "state functions",
+        "enthalpy",
+        "reversibility"
+      ],
+      "knowledgePoints": [
+        "state functions",
+        "heat and work",
+        "constant-pressure and constant-volume processes",
+        "reversible processes",
+        "enthalpy"
+      ],
+      "createdAt": "2026-09-22",
+      "updatedAt": "2026-09-22",
+      "relatedNotes": [
+        "/physical/dist/lesson-04.html"
+      ],
+      "path": "pchem-t01.json",
+      "mode": "fixed"
     }
   ]
 }

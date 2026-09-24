@@ -701,6 +701,78 @@
       ],
       "path": "pchem-t01.json",
       "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L05",
+      "title": "第一定律的“机械”：状态函数、内压与节流膨胀",
+      "description": "练习状态函数与路径函数、内压、体膨胀系数、等温压缩系数、Joule–Thomson 系数及热容关系。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 5,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 5 · The first law: the machinery",
+      "lesson": "The First Law: the machinery",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "thermodynamics",
+        "state functions",
+        "internal pressure",
+        "Joule-Thomson",
+        "heat capacity"
+      ],
+      "knowledgePoints": [
+        "state functions and path functions",
+        "internal pressure",
+        "thermal expansion coefficient",
+        "isothermal compressibility",
+        "Joule-Thomson throttling",
+        "heat-capacity relation"
+      ],
+      "createdAt": "2026-09-24",
+      "updatedAt": "2026-09-24",
+      "relatedNotes": [
+        "/physical/dist/lesson-05.html"
+      ],
+      "path": "pchem-l05.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L06",
+      "title": "热化学：反应焓、Hess 定律与量热法",
+      "description": "练习标准态与生成焓、反应焓、Hess 定律、燃烧焓、Kirchhoff 定律、相变和量热法。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 6,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 6 · Thermochemistry",
+      "lesson": "Thermochemistry",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "thermochemistry",
+        "reaction enthalpy",
+        "Hess law",
+        "Kirchhoff law",
+        "calorimetry"
+      ],
+      "knowledgePoints": [
+        "standard states and formation enthalpy",
+        "reaction enthalpy",
+        "Hess law",
+        "combustion enthalpy",
+        "Kirchhoff law",
+        "bomb calorimetry and DSC"
+      ],
+      "createdAt": "2026-09-24",
+      "updatedAt": "2026-09-24",
+      "relatedNotes": [
+        "/physical/dist/lesson-06.html"
+      ],
+      "path": "pchem-l06.json",
+      "mode": "fixed"
     }
   ]
 }

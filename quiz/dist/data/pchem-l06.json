@@ -1,0 +1,653 @@
+{
+  "id": "PCHEM-L06",
+  "title": "热化学：反应焓、Hess 定律与量热法",
+  "description": "练习标准态与生成焓、反应焓、Hess 定律、燃烧焓、Kirchhoff 定律、相变和量热法。",
+  "subject": "physical-chemistry",
+  "chapter": "Chapter 6 · Thermochemistry",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "在恒压、只有体积功的条件下，吸热过程的焓变符号为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔH>0"
+        },
+        {
+          "id": "B",
+          "text": "ΔH<0"
+        },
+        {
+          "id": "C",
+          "text": "ΔH必为零"
+        },
+        {
+          "id": "D",
+          "text": "符号只由反应速率决定"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "按体系符号约定，吸热时体系焓增加；在恒压且只有体积功时 qp=ΔH。",
+      "difficulty": "easy",
+      "tags": [
+        "enthalpy",
+        "endothermic"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "热化学中采用的标准压力是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 bar"
+        },
+        {
+          "id": "B",
+          "text": "1 atm"
+        },
+        {
+          "id": "C",
+          "text": "1 mol·L⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "100 bar"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "标准压力约定为 1 bar；标准态还要说明温度和物质所处的状态。",
+      "difficulty": "easy",
+      "tags": [
+        "standard state"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "multiple-choice",
+      "question": "关于标准生成焓和元素参考态，下列哪些说法正确？",
+      "options": [
+        {
+          "id": "A",
+          "text": "标准生成焓对应由元素参考态生成恰好 1 mol 化合物"
+        },
+        {
+          "id": "B",
+          "text": "元素处于其参考态时，标准摩尔生成焓按约定为零"
+        },
+        {
+          "id": "C",
+          "text": "标准态一律等于溶液浓度 1 mol·L⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "反向书写同一反应时，反应焓保持不变"
+        }
+      ],
+      "answers": [
+        "A",
+        "B"
+      ],
+      "points": 1,
+      "explanation": "标准生成焓按生成 1 mol 化合物定义；元素在参考态的生成焓取零。标准态不等于所有物质都处于 1 mol·L⁻¹。",
+      "difficulty": "easy",
+      "tags": [
+        "formation enthalpy",
+        "standard state"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "把一个反应按原化学计量式反向书写，反应焓应如何变化？",
+      "options": [
+        {
+          "id": "A",
+          "text": "变号"
+        },
+        {
+          "id": "B",
+          "text": "保持不变"
+        },
+        {
+          "id": "C",
+          "text": "变为原来的两倍"
+        },
+        {
+          "id": "D",
+          "text": "必定变成零"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "反应方向反转，初态和终态互换，因此焓变变号。",
+      "difficulty": "easy",
+      "tags": [
+        "reaction enthalpy",
+        "Hess law"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "恒压时可把反应热直接写为 qp=ΔH，所需的关键功条件是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "体系只做体积功"
+        },
+        {
+          "id": "B",
+          "text": "体系必须同时做电功"
+        },
+        {
+          "id": "C",
+          "text": "反应必须可逆"
+        },
+        {
+          "id": "D",
+          "text": "反应必须发生在理想气体中"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "恒压且只有体积功时 qp=ΔH；有其他功时不能不加条件地套用该等式。",
+      "difficulty": "easy",
+      "tags": [
+        "constant pressure",
+        "heat"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "由标准生成焓计算标准反应焓时，正确的求和原则是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "产物按化学计量数求和后减去反应物对应总和"
+        },
+        {
+          "id": "B",
+          "text": "反应物总和减去产物总和"
+        },
+        {
+          "id": "C",
+          "text": "只加气态物质的生成焓"
+        },
+        {
+          "id": "D",
+          "text": "只使用反应物的生成焓"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "标准反应焓等于产物标准生成焓的化学计量加权和减去反应物对应加权和。",
+      "difficulty": "medium",
+      "tags": [
+        "formation enthalpy",
+        "reaction enthalpy"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "Hess 定律成立的根本原因是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "焓是状态函数"
+        },
+        {
+          "id": "B",
+          "text": "所有反应都经过同一机理"
+        },
+        {
+          "id": "C",
+          "text": "热量是状态函数"
+        },
+        {
+          "id": "D",
+          "text": "反应必须达到相同速率"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "焓变只由初态和终态决定，因此总反应焓等于任意可行分步路径的焓变之和。",
+      "difficulty": "medium",
+      "tags": [
+        "Hess law",
+        "state function"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "标准摩尔燃烧焓通常描述……",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 mol 燃烧物完全氧化到规定稳定氧化产物时的焓变"
+        },
+        {
+          "id": "B",
+          "text": "任意物质量燃烧到 CO 时的焓变"
+        },
+        {
+          "id": "C",
+          "text": "物质汽化时的焓变"
+        },
+        {
+          "id": "D",
+          "text": "1 mol 元素生成化合物时的焓变"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "燃烧焓按 1 mol 燃烧物完全氧化定义；必须明确终态氧化物和物态。",
+      "difficulty": "medium",
+      "tags": [
+        "combustion enthalpy"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "恒容弹式量热计在仅考虑体积功时，反应热对应的状态函数变化是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔU"
+        },
+        {
+          "id": "B",
+          "text": "ΔH"
+        },
+        {
+          "id": "C",
+          "text": "ΔG"
+        },
+        {
+          "id": "D",
+          "text": "ΔS"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "刚性燃烧弹中体积不变，qV=ΔU；由此换算焓变还需要处理气体物质的量变化等修正。",
+      "difficulty": "medium",
+      "tags": [
+        "bomb calorimeter",
+        "internal energy"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "理想气体近似下，恒温反应的 ΔH 与 ΔU 关系为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔH = ΔU + RTΔngas"
+        },
+        {
+          "id": "B",
+          "text": "ΔH = ΔU − RTΔngas"
+        },
+        {
+          "id": "C",
+          "text": "ΔH = RTΔngas"
+        },
+        {
+          "id": "D",
+          "text": "ΔU = 0"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "对理想气体反应，Δ(pV)=RTΔngas，因此 ΔH=ΔU+RTΔngas。",
+      "difficulty": "medium",
+      "tags": [
+        "enthalpy",
+        "ideal gas"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "反应热容差 ΔrCp 的定义是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "产物热容按化学计量数加权求和，再减去反应物相应总和"
+        },
+        {
+          "id": "B",
+          "text": "反应物热容总和减去产物热容总和"
+        },
+        {
+          "id": "C",
+          "text": "只计算液态物质的热容"
+        },
+        {
+          "id": "D",
+          "text": "体系热容与量热器热容之和"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Kirchhoff 定律中的反应热容差按产物减反应物定义，并使用反应化学计量数加权。",
+      "difficulty": "medium",
+      "tags": [
+        "Kirchhoff law",
+        "heat capacity"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "在温区内没有相变时，Kirchhoff 定律给出……",
+      "options": [
+        {
+          "id": "A",
+          "text": "反应焓随温度的改变量等于反应热容差对温度的积分"
+        },
+        {
+          "id": "B",
+          "text": "反应焓与温度无关"
+        },
+        {
+          "id": "C",
+          "text": "只要温度变化，反应焓就变号"
+        },
+        {
+          "id": "D",
+          "text": "反应热容差等于零"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "ΔrH(T₂)−ΔrH(T₁)=∫ΔrCp dT；若热容差可近似为常数，反应焓随温度近似线性变化。",
+      "difficulty": "medium",
+      "tags": [
+        "Kirchhoff law",
+        "temperature dependence"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "只要元素含有相同原子种类，无论同素异形体或物态如何，其标准生成焓都按约定为零。",
+      "answer": false,
+      "points": 1,
+      "explanation": "只有元素处于规定的参考态时，标准摩尔生成焓才按约定为零；其他形态之间可能有相变焓。",
+      "difficulty": "medium",
+      "tags": [
+        "formation enthalpy",
+        "reference state"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "差示扫描量热法 DSC 中，扣除基线并按仪器信号标定后，转变峰面积主要对应……",
+      "options": [
+        {
+          "id": "A",
+          "text": "转变焓"
+        },
+        {
+          "id": "B",
+          "text": "峰顶温度本身"
+        },
+        {
+          "id": "C",
+          "text": "样品质量的单位换算"
+        },
+        {
+          "id": "D",
+          "text": "反应速率常数"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "经过基线处理和信号标定，热流峰的积分面积对应样品在该转变中的焓变。",
+      "difficulty": "medium",
+      "tags": [
+        "DSC",
+        "calorimetry"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "甲烷完全燃烧生成 CO₂(g) 和 H₂O(l)。取 ΔfH°：CH₄(g)=−74.8、CO₂(g)=−393.5、H₂O(l)=−285.8 kJ·mol⁻¹，O₂(g)=0。反应焓约为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "−890.3 kJ·mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "−604.5 kJ·mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "+890.3 kJ·mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "−964.3 kJ·mol⁻¹"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "配平式为 CH₄+2O₂→CO₂+2H₂O；产物生成焓总和减去反应物总和，得到约 −890.3 kJ·mol⁻¹。",
+      "difficulty": "medium",
+      "tags": [
+        "formation enthalpy",
+        "combustion enthalpy",
+        "calculation"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "若把反应焓从低于沸点的液态反应物换算到高于沸点的气态产物，正确处理方式是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分段积分各相热容，并单独加入汽化焓"
+        },
+        {
+          "id": "B",
+          "text": "把热容积分直接跨过沸点且不加其他项"
+        },
+        {
+          "id": "C",
+          "text": "只使用气相热容"
+        },
+        {
+          "id": "D",
+          "text": "忽略物态变化，因为焓是状态函数"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "状态函数允许选择替代路径，但路径经过相变时必须加上相变焓，并分别积分相变前后的热容。",
+      "difficulty": "hard",
+      "tags": [
+        "phase transition",
+        "temperature correction"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于 Hess 定律和反应式操作，下列哪些说法正确？",
+      "options": [
+        {
+          "id": "A",
+          "text": "反向书写反应，焓变变号"
+        },
+        {
+          "id": "B",
+          "text": "反应式整体乘以 2，焓变也乘以 2"
+        },
+        {
+          "id": "C",
+          "text": "总反应焓等于所选分步反应焓的代数和"
+        },
+        {
+          "id": "D",
+          "text": "所有反应的燃烧终态必定都是液态水和二氧化碳"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "焓是状态函数；反向反应变号、整体倍乘时焓变同比例变化，分步焓可相加。燃烧终态取决于物质和规定条件。",
+      "difficulty": "hard",
+      "tags": [
+        "Hess law",
+        "reaction enthalpy"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "配平甲烷完全燃烧式 CH₄(g)+2O₂(g)→CO₂(g)+____H₂O(l) 时，空格中的系数是____。",
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "二"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "守恒氢原子需要 2 个水分子；此时氧原子也与反应物侧配平。",
+      "difficulty": "hard",
+      "tags": [
+        "combustion enthalpy",
+        "balancing"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "标准态对所有溶质都规定为浓度恰好 1 mol·L⁻¹。",
+      "answer": false,
+      "points": 2,
+      "explanation": "标准态是按物质类别和标准态约定定义的参考状态；不能把所有标准态都等同为 1 mol·L⁻¹。",
+      "difficulty": "hard",
+      "tags": [
+        "standard state"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "Hess 循环给出：C₃H₆(g)+H₂(g)→C₃H₈(g)，ΔH=−124 kJ·mol⁻¹；C₃H₈(g)+5O₂(g)→3CO₂(g)+4H₂O(l)，ΔH=−2220 kJ·mol⁻¹；H₂O(l)→H₂(g)+½O₂(g)，ΔH=+286 kJ·mol⁻¹。由此得到丙烯燃烧焓约为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "−2058 kJ·mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "−2344 kJ·mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "−1930 kJ·mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "+2058 kJ·mol⁻¹"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "将三步反应及其焓变相加并消去中间物种：−124−2220+286=−2058 kJ·mol⁻¹。净反应按 1 mol C₃H₆ 计。",
+      "difficulty": "challenging",
+      "tags": [
+        "Hess law",
+        "combustion enthalpy",
+        "calculation"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "反应 4HCl(g)+O₂(g)→2H₂O(l)+2Cl₂(g) 中，气相物质的量变化 Δngas 等于____。",
+      "answer": "−3",
+      "acceptableAnswers": [
+        "−3",
+        "-3",
+        "负3"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "产物气体为 2 mol，反应物气体为 5 mol，因此 Δngas=2−5=−3。",
+      "difficulty": "challenging",
+      "tags": [
+        "ideal gas correction",
+        "reaction enthalpy",
+        "calculation"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "关于量热法和绝热火焰温度估算，下列哪些说法正确？",
+      "options": [
+        {
+          "id": "A",
+          "text": "恒容弹式量热计在相应条件下测得 qV=ΔU"
+        },
+        {
+          "id": "B",
+          "text": "DSC 转变焓应从扣除基线并标定后的峰面积求得"
+        },
+        {
+          "id": "C",
+          "text": "简化绝热火焰温度估算可能假设热容恒定并忽略解离"
+        },
+        {
+          "id": "D",
+          "text": "DSC 峰越高就必定代表转变焓越大，与峰宽无关"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "弹式量热对应恒容内能变；DSC 焓变来自热流积分面积；简化火焰温度模型常忽略热容变化和高温解离。峰高不能替代峰面积。",
+      "difficulty": "challenging",
+      "tags": [
+        "calorimetry",
+        "DSC",
+        "adiabatic flame"
+      ]
+    }
+  ]
+}

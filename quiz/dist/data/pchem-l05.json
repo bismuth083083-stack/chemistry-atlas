@@ -1,0 +1,659 @@
+{
+  "id": "PCHEM-L05",
+  "title": "第一定律的“机械”：状态函数、内压与节流膨胀",
+  "description": "练习状态函数与路径函数、内压、体膨胀系数、等温压缩系数、Joule–Thomson 系数及热容关系。",
+  "subject": "physical-chemistry",
+  "chapter": "Chapter 5 · The first law: the machinery",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "状态函数的变化具有哪一特点？",
+      "options": [
+        {
+          "id": "A",
+          "text": "只由初态和终态决定，与路径无关"
+        },
+        {
+          "id": "B",
+          "text": "只由经历时间决定"
+        },
+        {
+          "id": "C",
+          "text": "路径越短，变化越小"
+        },
+        {
+          "id": "D",
+          "text": "只有理想气体才有状态函数"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "状态函数的变化只由始末状态决定；具体路径不改变其变化量。",
+      "difficulty": "easy",
+      "tags": [
+        "state function"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "热量 q 和功 w 在热力学中通常属于哪类量？",
+      "options": [
+        {
+          "id": "A",
+          "text": "路径函数"
+        },
+        {
+          "id": "B",
+          "text": "状态函数"
+        },
+        {
+          "id": "C",
+          "text": "只在恒温过程中定义的状态量"
+        },
+        {
+          "id": "D",
+          "text": "只对理想气体有意义的量"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "热和功描述能量传递方式，取决于过程路径；它们不是体系的状态函数。",
+      "difficulty": "easy",
+      "tags": [
+        "heat",
+        "work"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "multiple-choice",
+      "question": "下列哪些通常是状态函数？",
+      "options": [
+        {
+          "id": "A",
+          "text": "内能 U"
+        },
+        {
+          "id": "B",
+          "text": "焓 H"
+        },
+        {
+          "id": "C",
+          "text": "热量 q"
+        },
+        {
+          "id": "D",
+          "text": "功 w"
+        },
+        {
+          "id": "E",
+          "text": "温度 T"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "E"
+      ],
+      "points": 1,
+      "explanation": "U、H 和 T 是状态函数；q 和 w 是路径函数。",
+      "difficulty": "easy",
+      "tags": [
+        "state function",
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "内压 πT 的定义对应哪种响应？",
+      "options": [
+        {
+          "id": "A",
+          "text": "恒温时内能随体积改变的响应"
+        },
+        {
+          "id": "B",
+          "text": "恒压时体积随温度改变的响应"
+        },
+        {
+          "id": "C",
+          "text": "恒容时压力随温度改变的响应"
+        },
+        {
+          "id": "D",
+          "text": "定焓时温度随压力改变的响应"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "πT 描述恒温条件下内能对体积变化的响应。",
+      "difficulty": "easy",
+      "tags": [
+        "internal pressure"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "理想气体的内压 πT 等于多少？",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "p"
+        },
+        {
+          "id": "C",
+          "text": "RT"
+        },
+        {
+          "id": "D",
+          "text": "随体积增大而必定增大"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "理想气体的内能只依赖温度，因此恒温改变体积不会改变内能，πT=0。",
+      "difficulty": "easy",
+      "tags": [
+        "internal pressure",
+        "ideal gas"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "把单相简单可压缩体系的内能写作 U(T,V)，其微分关系应为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "dU = πT dV + CV dT"
+        },
+        {
+          "id": "B",
+          "text": "dU = πT dT + CV dV"
+        },
+        {
+          "id": "C",
+          "text": "dU = Cp dV + α dT"
+        },
+        {
+          "id": "D",
+          "text": "dU = q + w 对任何微小过程都成立"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "U 的自然变量可取 T、V；恒温体积响应由 πT 表示，定容温度响应由 CV 表示。",
+      "difficulty": "medium",
+      "tags": [
+        "internal energy",
+        "heat capacity"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "体膨胀系数 α 描述的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "恒压时体积对温度的相对响应"
+        },
+        {
+          "id": "B",
+          "text": "恒温时压力对体积的相对响应"
+        },
+        {
+          "id": "C",
+          "text": "定容时内能对体积的响应"
+        },
+        {
+          "id": "D",
+          "text": "定焓时温度对压力的响应"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "α 衡量定压升温时体积的相对变化率。",
+      "difficulty": "medium",
+      "tags": [
+        "expansion coefficient"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "等温压缩系数 κT 描述的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "恒温时压力增加所引起的相对体积缩小"
+        },
+        {
+          "id": "B",
+          "text": "恒压时温度升高所引起的体积增加"
+        },
+        {
+          "id": "C",
+          "text": "定焓时压力变化所引起的温度变化"
+        },
+        {
+          "id": "D",
+          "text": "定容时温度变化所引起的内能变化"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "κT 定义中带负号，用来表示稳定物质在等温加压时体积的相对缩小程度。",
+      "difficulty": "medium",
+      "tags": [
+        "isothermal compressibility"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "理想气体的体膨胀系数与温度满足哪一关系？",
+      "options": [
+        {
+          "id": "A",
+          "text": "αT = 1"
+        },
+        {
+          "id": "B",
+          "text": "αT = 0"
+        },
+        {
+          "id": "C",
+          "text": "α + T = 1"
+        },
+        {
+          "id": "D",
+          "text": "α = T"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "理想气体满足 α 与 T 成反比，且 αT=1。",
+      "difficulty": "medium",
+      "tags": [
+        "ideal gas",
+        "expansion coefficient"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "理想气体的等温压缩系数与压力满足哪一关系？",
+      "options": [
+        {
+          "id": "A",
+          "text": "pκT = 1"
+        },
+        {
+          "id": "B",
+          "text": "pκT = 0"
+        },
+        {
+          "id": "C",
+          "text": "p + κT = 1"
+        },
+        {
+          "id": "D",
+          "text": "κT = p"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "理想气体满足 κT 与 p 成反比，因此 pκT=1。",
+      "difficulty": "medium",
+      "tags": [
+        "ideal gas",
+        "compressibility"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "Joule–Thomson 系数 μJT 描述的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "定焓时温度对压力变化的响应"
+        },
+        {
+          "id": "B",
+          "text": "定压时体积对温度变化的响应"
+        },
+        {
+          "id": "C",
+          "text": "恒温时内能对体积变化的响应"
+        },
+        {
+          "id": "D",
+          "text": "定容时压力对温度变化的响应"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "μJT 是节流条件下常用的响应系数，定义为定焓时温度随压力的变化率。",
+      "difficulty": "medium",
+      "tags": [
+        "Joule-Thomson"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "理想化节流过程最重要的状态条件是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "过程前后焓相同"
+        },
+        {
+          "id": "B",
+          "text": "过程前后内能必相同"
+        },
+        {
+          "id": "C",
+          "text": "过程前后温度必相同"
+        },
+        {
+          "id": "D",
+          "text": "过程必定可逆"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "绝热节流且忽略动能、势能变化和轴功时，入口焓与出口焓相同；温度是否改变还取决于物质性质。",
+      "difficulty": "medium",
+      "tags": [
+        "throttling",
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "true-false",
+      "question": "理想气体的 Joule–Thomson 系数为零。",
+      "answer": true,
+      "points": 1,
+      "explanation": "理想气体的焓只依赖温度；定焓节流不会改变温度，所以 μJT=0。",
+      "difficulty": "medium",
+      "tags": [
+        "ideal gas",
+        "Joule-Thomson"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "对 n mol 理想气体，总热容满足哪一关系？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cp − CV = nR"
+        },
+        {
+          "id": "B",
+          "text": "Cp − CV = 0"
+        },
+        {
+          "id": "C",
+          "text": "Cp + CV = nR"
+        },
+        {
+          "id": "D",
+          "text": "Cp − CV = RT"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "理想气体状态方程代入一般热容关系后得到 Cp−CV=nR。",
+      "difficulty": "medium",
+      "tags": [
+        "heat capacity",
+        "ideal gas"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "一般简单可压缩体系的热容差关系，改写成无除号的形式为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "κT(Cp − CV) = α²TV"
+        },
+        {
+          "id": "B",
+          "text": "α(Cp − CV) = κTTV"
+        },
+        {
+          "id": "C",
+          "text": "κT(Cp + CV) = αTV"
+        },
+        {
+          "id": "D",
+          "text": "Cp − CV = α + κT"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "热容差乘以 κT 等于 α²TV；这与常见的热容差关系等价。",
+      "difficulty": "medium",
+      "tags": [
+        "heat capacity",
+        "thermodynamic identity"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "若某状态下真实气体的内压 πT>0，按定义它直接表示……",
+      "options": [
+        {
+          "id": "A",
+          "text": "恒温增大体积时，内能局部增大"
+        },
+        {
+          "id": "B",
+          "text": "恒温增大体积时，内能局部减小"
+        },
+        {
+          "id": "C",
+          "text": "恒温增大体积时，焓必定不变"
+        },
+        {
+          "id": "D",
+          "text": "增大体积会使温度必定升高"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "πT 是恒温时内能随体积变化的响应；πT>0 表示该状态附近增大体积会使内能增加。",
+      "difficulty": "hard",
+      "tags": [
+        "internal pressure"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于自由膨胀、节流和可逆等温膨胀，下列哪些说法正确？",
+      "options": [
+        {
+          "id": "A",
+          "text": "理想气体可逆等温膨胀时 ΔU=0，但 q 和 w 通常不为零"
+        },
+        {
+          "id": "B",
+          "text": "绝热自由膨胀进入真空时 q=0 且 w=0"
+        },
+        {
+          "id": "C",
+          "text": "任何绝热过程都必有 ΔH=0"
+        },
+        {
+          "id": "D",
+          "text": "理想化节流过程前后焓相同"
+        },
+        {
+          "id": "E",
+          "text": "只要初末态相同，热量 q 就与路径无关"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 2,
+      "explanation": "理想气体等温过程 ΔU=0，但可逆膨胀中热和功通常非零；自由膨胀和节流是不同过程。绝热本身不等于等焓，q 也不是状态函数。",
+      "difficulty": "hard",
+      "tags": [
+        "free expansion",
+        "throttling",
+        "reversibility"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "在 dU = πT dV + CV dT 中，内压 πT 所乘的微分项是____。",
+      "answer": "dV",
+      "acceptableAnswers": [
+        "dV",
+        "体积微分"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "内压是内能对体积的恒温响应，因此它乘以体积微分 dV。",
+      "difficulty": "hard",
+      "tags": [
+        "internal pressure",
+        "total differential"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "可逆等温膨胀中的理想气体内能不变，因此该过程的热量也必为零。",
+      "answer": false,
+      "points": 2,
+      "explanation": "ΔU=0 只表示 q+w=0；可逆等温膨胀中气体做功，必须吸热补偿，因此 q 通常不为零。",
+      "difficulty": "hard",
+      "tags": [
+        "ideal gas",
+        "isothermal process"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "理想气体通过绝热节流阀，压力下降后温度如何变化？",
+      "options": [
+        {
+          "id": "A",
+          "text": "温度不变，因为焓只依赖温度且节流前后焓相同"
+        },
+        {
+          "id": "B",
+          "text": "温度必然下降，因为节流过程总是制冷"
+        },
+        {
+          "id": "C",
+          "text": "温度必然升高，因为气体做功"
+        },
+        {
+          "id": "D",
+          "text": "无法判断，因为节流过程不守恒任何状态函数"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "理想气体的焓仅为温度的函数；在理想节流的等焓条件下，温度不变。真实气体则可能升温或降温。",
+      "difficulty": "challenging",
+      "tags": [
+        "ideal gas",
+        "throttling",
+        "Joule-Thomson"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "2.00 mol 理想气体的 Cp−CV 为多少？取 R=8.314 J·mol⁻¹·K⁻¹，填三位有效数字的数值。",
+      "answer": "16.6",
+      "acceptableAnswers": [
+        "16.6",
+        "16.63",
+        "16.628",
+        "16.6 J·K⁻¹",
+        "16.63 J·K⁻¹"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "理想气体总热容差为 nR，因此 2.00×8.314=16.628 J·K⁻¹，取三位有效数字为 16.6 J·K⁻¹。",
+      "difficulty": "challenging",
+      "tags": [
+        "heat capacity",
+        "calculation"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "下列哪些是理想气体关系？",
+      "options": [
+        {
+          "id": "A",
+          "text": "αT = 1"
+        },
+        {
+          "id": "B",
+          "text": "pκT = 1"
+        },
+        {
+          "id": "C",
+          "text": "πT = 0"
+        },
+        {
+          "id": "D",
+          "text": "所有真实气体的 μJT 都为零"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "理想气体有 αT=1、pκT=1、πT=0；真实气体的 Joule–Thomson 系数通常不为零。",
+      "difficulty": "challenging",
+      "tags": [
+        "ideal gas",
+        "thermodynamic identity"
+      ]
+    }
+  ]
+}

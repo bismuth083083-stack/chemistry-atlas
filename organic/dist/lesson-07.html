@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第七课：反应选择性与活性中间体 · 有机化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="ppt-figures.css">
+<link rel="stylesheet" href="lecture-02.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#171b1d">
+<style>
+.formula .fraction{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;line-height:1.15;margin:0 .12em}.formula .fraction>span{color:inherit;font-size:1em;padding:0 .12em}.formula .fraction>span:first-child{border-bottom:1px solid currentColor}.correction-list{padding-left:1.25rem;max-width:78ch}.correction-list li{margin:.65rem 0;line-height:1.75}
+</style>
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html"><span class="mark">C</span><span>有机化学知识库</span></a>
+<label class="search"><span>⌕</span><input id="global-search" placeholder="搜索笔记、中文名或英文名…" aria-label="搜索知识库"><kbd>⌘ K</kbd></label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html"><span>◫</span>课程笔记</a>
+<a href="terms.html"><span>Aa</span>双语词条库</a>
+<p class="nav-label">有机化学 I</p>
+<a href="lesson-01.html"><span>01</span>介绍与回顾</a>
+<a href="lesson-02.html"><span>02</span>酸碱与分子轨道</a>
+<a href="lesson-03.html"><span>03</span>酸碱理论</a>
+<a href="lesson-04.html"><span>04</span>烷烃与系统命名</a>
+<a href="lesson-05.html"><span>05</span>异构、构象与反应</a>
+<a href="lesson-06.html"><span>06</span>自由基、热力学与动力学</a><a class="active" href="lesson-07.html"><span>07</span>反应选择性与活性中间体</a>
+<a href="resonance.html"><span>↔</span>共振专题</a>
+</nav>
+<div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+</aside>
+<main class="workspace article">
+<a class="back" href="index.html">← 返回课程笔记</a>
+<header class="article-head">
+<p class="eyebrow">LECTURE 06 · CHAPTER 4-2</p>
+<h1>自由基卤代反应的选择性与活性中间体</h1>
+<p>Radical halogenation selectivity, the Hammond postulate, and reactive intermediates</p>
+<div><span>课件拼写校订</span><span>课件原图</span><span>双语词条</span><span>教材交叉核对</span></div>
+</header>
+
+
+<section>
+<h2>1. 多步反应中的限速步骤</h2>
+<p>在多步反应中，每一步都有自己的活化能与速率；实验观察到的总速率由机理中最难通过的动力学瓶颈控制。<a class="term-link" href="term.html?slug=rate-limiting-step">限速步骤（rate-limiting step，也称 rate-determining step）</a>通常是跨越较大有效活化自由能的步骤。自由基卤代中，夺氢生成烷基自由基的第一步链增长常是限速步骤；随后的卤原子转移若足够快，就会迅速消耗刚形成的中间体。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/rate-limiting-step.webp" alt="甲烷氯化的多步反应能量图，第一步能垒较高" loading="eager" decoding="async">
+<figcaption>最高的有效能垒对应的步骤构成动力学瓶颈。<small>图源：Organic Chemistry I Lect. 6，第 4 页</small></figcaption>
+</figure>
+<p>读能量图时，要比较每个过渡态与它前一个中间体之间的能量差。不能只看相对最初反应物的绝对高度：若前置步骤先形成了较高能中间体，后续峰即使在图上更高，其局部能垒也未必更大。严格的速率控制还可能受到快速预平衡、反应物浓度及可逆性的影响，因此“最高点就是限速步骤”只是在简单连续反应图上的快捷判断。</p>
+</section>
+
+<section>
+<h2>2. 产物比例同时取决于位点数与单个位点反应性</h2>
+<p><a class="term-link" href="term.html?slug=selectivity">反应选择性（selectivity）</a>描述多条反应路径或多个反应位点之间，产物形成的偏好。对于自由基卤代，某类氢越容易被夺取，确实越有利于相应产物；但某类氢的数量也会改变最终产物比例。设位点类别 <i>i</i> 上有 <i>n</i><sub>i</sub> 个等价氢，单个氢的夺取速率常数为 <i>k</i><sub>i</sub>，那么该类产物的初始生成速率与以下乘积成正比：</p>
+<div class="formula"><i>v</i><sub>i</sub> = <i>n</i><sub>i</sub><i>k</i><sub>i</sub>[R–H][X·]</div>
+<p><i>v</i><sub>i</sub> 是位点类别 <i>i</i> 的产物生成速率；<i>n</i><sub>i</sub> 是这类等价氢的个数；<i>k</i><sub>i</sub> 是每个氢位点的速率常数；[R–H] 与 [X·] 分别是烷烃和卤素自由基浓度。比较同一反应中的两个位点时，共同的反应物浓度会抵消，因此低转化率下：</p>
+<div class="formula"><span class="fraction"><span><i>P</i><sub>sec</sub></span><span><i>P</i><sub>prim</sub></span></span> ≈ <span class="fraction"><span><i>n</i><sub>sec</sub><i>k</i><sub>sec</sub></span><span><i>n</i><sub>prim</sub><i>k</i><sub>prim</sub></span></span></div>
+<p><i>P</i><sub>sec</sub> 和 <i>P</i><sub>prim</sub> 分别表示仲位与伯位产物的生成量。丙烷有 2 个仲氢、6 个伯氢。氯代时约形成 60% 的 2-氯丙烷和 40% 的 1-氯丙烷，于是单个仲氢与单个伯氢的相对反应性为：</p>
+<div class="formula"><span class="fraction"><span><i>k</i><sub>sec</sub></span><span><i>k</i><sub>prim</sub></span></span> = <span class="fraction"><span><i>P</i><sub>sec</sub><i>n</i><sub>prim</sub></span><span><i>P</i><sub>prim</sub><i>n</i><sub>sec</sub></span></span> = <span class="fraction"><span>60 × 6</span><span>40 × 2</span></span> = 4.5</div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/propane-halogenation-selectivity.webp" alt="丙烷自由基溴代产物比例与伯氢、仲氢的相对反应性" loading="lazy" decoding="async">
+<figcaption>每氢反应性要先除以该类氢的数目；溴代丙烷给出更高的位点选择性。<small>图源：Organic Chemistry I Lect. 6，第 18 页；氯代与异丁烷的比例计算参考第 11 页</small></figcaption>
+</figure>
+<p>异丁烷则说明“较活泼的氢”不一定给出主要产物。它有 9 个伯氢、1 个叔氢；课件给出的单个叔氢相对单个伯氢反应性约为 5.5。因此叔位产物约占 <span class="fraction"><span>1 × 5.5</span><span>9 × 1 + 1 × 5.5</span></span> = 38%，伯位产物仍约占 62%。判断主产物时，先数等价氢，再乘每个氢的相对反应性。</p>
+</section>
+
+<section>
+<h2>3. 溴代比氯代更有选择性</h2>
+<p>丙烷的自由基溴代在光照并加热至约 125 °C 时，主要生成 2-溴丙烷，产物比例约为 97:3。由于仲氢有 2 个、伯氢有 6 个，每个仲氢的相对反应性是：</p>
+<div class="formula"><span class="fraction"><span>97 × 6</span><span>3 × 2</span></span> = 97</div>
+<p>也就是说，单个仲氢在该条件下被夺取的速率约为单个伯氢的 97 倍，远高于氯代时约 4.5 倍的差异。这里的 97:3 是反应生成的产物比例；97:1 才是校正氢原子数后的单个位点相对反应性，二者不能混为一谈。</p>
+<p>过渡态理论把速率常数与活化自由能联系起来：</p>
+<div class="formula"><i>k</i> = <span class="fraction"><span><i>k</i><sub>B</sub><i>T</i></span><span><i>h</i></span></span> exp[−<span class="fraction"><span>Δ<i>G</i><sup>‡</sup></span><span><i>R</i><i>T</i></span></span>]</div>
+<p><i>k</i> 是速率常数，<i>k</i><sub>B</sub> 是 Boltzmann 常数，<i>h</i> 是 Planck 常数，<i>T</i> 是绝对温度，<i>R</i> 是气体常数，Δ<i>G</i><sup>‡</sup> 是活化自由能。两条竞争路径处于相同温度时，前面的 <i>k</i><sub>B</sub><i>T</i>/<i>h</i> 因子约去，得到：</p>
+<div class="formula"><span class="fraction"><span><i>k</i><sub>sec</sub></span><span><i>k</i><sub>prim</sub></span></span> ≈ exp[−<span class="fraction"><span>Δ<i>G</i><sub>sec</sub><sup>‡</sup> − Δ<i>G</i><sub>prim</sub><sup>‡</sup></span><span><i>R</i><i>T</i></span></span>]</div>
+<p>在其他因素相近时，仲位路径活化自由能较低就会更快；两条路径的能垒差只要达到数个 <i>RT</i>，速率比就可能显著变化。对比单氢反应性时，这个关系把“过渡态能量差”直接连到了观测到的选择性。</p>
+<p>选择性差异与夺氢步骤的热化学有关。用键解离焓估算单步反应焓：</p>
+<div class="formula">Δ<i>H</i><sub>rxn</sub> ≈ <i>D</i>(C–H) − <i>D</i>(H–X)</div>
+<p><i>D</i> 表示相应键的键解离焓。丙烷伯位 C–H 的解离焓约为 410 kJ·mol⁻¹，仲位约为 397 kJ·mol⁻¹；H–Cl 约为 431 kJ·mol⁻¹，H–Br 约为 368 kJ·mol⁻¹。因此，Cl· 夺氢通常放热（伯位约 −21、仲位约 −34 kJ·mol⁻¹），而 Br· 夺氢吸热（伯位约 +42、仲位约 +29 kJ·mol⁻¹）。这些数值是气相键解离焓的近似估算，用来解释趋势，不应视作所有溶剂和实验条件下的精确实测焓。</p>
+<p>更吸热的溴代夺氢通常较慢，但更能区分不同自由基的稳定性；氟代则非常快、通常选择性很低，氯代居中，溴代较高。这个趋势也提醒我们：反应“快不快”和“挑不挑位点”是两个不同的问题。</p>
+</section>
+
+<section>
+<h2>4. Hammond 假说：过渡态为何影响选择性</h2>
+<p><a class="term-link" href="term.html?slug=hammond-postulate">Hammond 假说（Hammond postulate）</a>指出：在结构相近的一组物种中，能量上彼此接近的物种，结构通常也更相似。因而过渡态的结构更接近能量上与它相邻的稳定物种。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/hammond-postulate.webp" alt="丙烷溴代与氯代中吸热和放热夺氢步骤的能量图比较" loading="lazy" decoding="async">
+<figcaption>吸热溴代的过渡态更接近自由基产物；放热氯代的过渡态更接近反应物。<small>图源：Organic Chemistry I Lect. 6，第 23–24 页；Wade，第 157–158 页</small></figcaption>
+</figure>
+<div class="property-grid">
+<article><b>吸热步骤：晚期、产物样</b><p>Br· 夺取烷烃氢是吸热过程。过渡态中 C–H 键已明显伸长、自由基特征较强，结构接近生成的伯/仲自由基。因此两种自由基稳定性相差多少，较大比例会反映到相应活化能差异上。</p></article>
+<article><b>放热步骤：早期、反应物样</b><p>Cl· 夺氢通常放热。过渡态中 C–H 键刚开始断裂，碳自由基特征较少，结构更像反应物；产物自由基的稳定性差异只部分反映到活化能中，所以选择性较低。</p></article>
+</div>
+<p>课件与教材图示中，伯/仲自由基的产物能量差约为 13 kJ·mol⁻¹；溴代两条路径的活化能差约 9 kJ·mol⁻¹，而氯代约 4 kJ·mol⁻¹。数值来自示意图，重点是“吸热的产物样过渡态更敏感于产物稳定性”。<a class="term-link" href="term.html?slug=early-late-transition-state">早期与晚期过渡态（early/late transition state）</a>是结构比较的描述，不表示过渡态是真正的反应物或产物，也不是直接的时间刻度。</p>
+</section>
+
+<section>
+<h2>5. 自由基的结构与稳定性</h2>
+<p><a class="term-link" href="term.html?slug=radical">自由基（radical）</a>含有未成对电子。简单烷基自由基的碳通常近似 <i>sp</i><sup>2</sup> 杂化、呈平面或近似平面结构；垂直于三个 σ 键平面的未杂化 <i>p</i> 轨道容纳一个单占电子。轨道示意有助于理解：这个电子既不是一对孤电子，也不意味着自由基必然带电。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/radical-orbital.webp" alt="甲基自由基的平面结构与含单占电子的垂直 p 轨道" loading="lazy" decoding="async">
+<figcaption>自由基的单占 <i>p</i> 轨道与平面三键骨架。<small>图源：Organic Chemistry I Lect. 6，第 26 页</small></figcaption>
+</figure>
+<p>仅比较普通烷基自由基时，稳定性通常为 3° &gt; 2° &gt; 1° &gt; 甲基。烷基经诱导效应和相邻 σ 键的<a class="term-link" href="term.html?slug=hyperconjugation">超共轭（hyperconjugation）</a>分散未成对电子的高能特征，使更取代的自由基较稳定；相应 C–H 键也较容易均裂。若自由基与 π 键共轭，例如烯丙基或苄基自由基，<a class="term-link" href="term.html?slug=resonance-hybrid">共振离域</a>往往能提供额外稳定化，不能只按“伯、仲、叔”排序。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/radical-stability.webp" alt="甲基、伯、仲和叔烷基自由基的相对稳定性" loading="lazy" decoding="async">
+<figcaption>普通烷基自由基随碳取代度升高而稳定化。<small>图源：Organic Chemistry I Lect. 6，第 17、26–27 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>6. 自由基抑制剂与抗氧化剂</h2>
+<p><a class="term-link" href="term.html?slug=radical-inhibitor">自由基抑制剂（radical inhibitor）</a>会快速捕获链反应中的自由基，并生成较稳定、难以继续传播链反应的物种。以酚类抗氧化剂为例，可用简化步骤表示氢原子转移：</p>
+<div class="formula">ArOH + R· → ArO· + RH</div>
+<p>ArOH 是带羟基的芳香族抑制剂，R· 是链自由基，ArO· 是较稳定的酚氧自由基。抑制剂把一个氢原子连同一个电子交给 R·，停止原来的链增长；ArO· 的未成对电子可在芳香体系中离域，反应性低得多。随后若与另一自由基偶联或转化成稳定产物，就进一步降低了链载体浓度。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/radical-inhibitor.webp" alt="BHA、维生素C和自由基抑制链反应的课件机制图" loading="lazy" decoding="async">
+<figcaption>BHA、维生素 C 与链反应抑制示意。<small>图源：Organic Chemistry I Lect. 6，第 29–30 页</small></figcaption>
+</figure>
+<p>课件举出叔丁基羟基茴香醚（BHA）、维生素 C 与维生素 E。它们都能参与<a class="term-link" href="term.html?slug=antioxidant">抗氧化（antioxidant）</a>过程，但溶解性、反应路径和生物环境不同；“抗氧化剂”不是指所有分子都用完全相同的自由基捕获机制。</p>
+</section>
+
+<section>
+<h2>7. 活性中间体的结构分类</h2>
+<p><a class="term-link" href="term.html?slug=reaction-intermediate">反应中间体（reaction intermediate）</a>位于机理中的局部能量最低点，能短暂存在；过渡态则是相邻能谷之间的能量最高构型，不能分离。三键碳中间体按电荷与非键电子数分类；二键碳常见类型是卡宾。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/intermediate-classes.webp" alt="碳正离子、自由基、碳负离子和卡宾的结构分类" loading="lazy" decoding="async">
+<figcaption>碳中心非键电子数不同，决定电荷、电子结构与反应倾向。<small>图源：Organic Chemistry I Lect. 6，第 31–32 页</small></figcaption>
+</figure>
+<div class="property-grid">
+<article><b>碳正离子 / Carbocation</b><p>三键碳、零个非键电子，带正电；价层六电子，缺电子，通常表现为亲电体与 Lewis 酸。</p></article>
+<article><b>自由基 / Radical</b><p>三键碳、一个未成对电子，整体通常电中性；反应性取决于结构与反应伙伴，不能简单等同于阳离子。</p></article>
+<article><b>碳负离子 / Carbanion</b><p>三键碳、一对孤电子，带负电；价层八电子，通常表现为亲核体与 Lewis 碱。</p></article>
+<article><b>卡宾 / Carbene</b><p>二键碳，整体电中性并有两个非键电子；单线态和三线态的自旋排布不同，可呈两性反应性。</p></article>
+</div>
+</section>
+
+<section>
+<h2>8. 碳正离子：空 <i>p</i> 轨道、诱导效应与超共轭</h2>
+<p><a class="term-link" href="term.html?slug=carbocation">碳正离子（carbocation）</a>的带正电碳通常与三个原子成键，近似 <i>sp</i><sup>2</sup> 杂化、平面三角形，键角约 120°；垂直于平面的未杂化 <i>p</i> 轨道为空。以甲基碳正离子 CH<sub>3</sub><sup>+</sup> 为例，碳周围只有六个价电子，因此强烈缺电子，可接受亲核体的电子对。</p>
+<p>普通烷基碳正离子的稳定性通常为 3° &gt; 2° &gt; 1° &gt; 甲基。烷基有给电子的 +<i>I</i> <a class="term-link" href="term.html?slug=inductive-effect">诱导效应（inductive effect）</a>，可经 σ 键向缺电子中心推送电子密度；邻近 C–H 或 C–C σ 键也可与空 <i>p</i> 轨道相互作用，通过超共轭稳定正电荷。若正电荷与 π 系统共轭，离域作用还能显著稳定碳正离子。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/carbocation-hyperconjugation.webp" alt="烷基 sigma 键与碳正离子空 p 轨道重叠形成超共轭" loading="lazy" decoding="async">
+<figcaption>相邻烷基 σ 键与碳正离子空 <i>p</i> 轨道重叠。<small>图源：Organic Chemistry I Lect. 6，第 34–35 页</small></figcaption>
+</figure>
+<p>取代度排序只适用于可比的简单烷基碳正离子。苄基、烯丙基等共振稳定物种，以及邻近强吸电子基团的情况，需要把共振、诱导效应和溶剂化一起考虑。碳正离子常在极性介质中被溶剂或亲核试剂捕获，不宜理解成能在普通水溶液中长期自由存在的“离子颗粒”。</p>
+</section>
+
+<section>
+<h2>9. 碳负离子：孤对电子与反向稳定性趋势</h2>
+<p><a class="term-link" href="term.html?slug=carbanion">碳负离子（carbanion）</a>的三键碳带负电并拥有一对孤电子，价层满足八电子。简单烷基碳负离子通常近似 <i>sp</i><sup>3</sup> 杂化、呈三角锥形，孤对电子占据一个轨道方向；若孤对电子与 π 键共轭，碳中心可趋向平面，使负电荷离域。</p>
+<p>在简单烷基系列中，稳定性常呈相反顺序：甲基 &gt; 1° &gt; 2° &gt; 3°。烷基的给电子效应会加剧碳负离子的电子富集，略微降低稳定性；卤素等吸电子基团可通过 −<i>I</i> 诱导效应稳定负电荷，羰基也可与邻位孤对电子共轭，把负电荷离域到氧上。碳负离子往往同时具有碱性和亲核性，但具体亲核性排序还受溶剂、离子配对和结构影响，不能对“所有碳负离子都强于所有胺”作无条件概括。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/carbanion-stability.webp" alt="碳负离子的取代度稳定性顺序及羰基共振稳定" loading="lazy" decoding="async">
+<figcaption>烷基给电子效应与羰基共振对碳负离子稳定性的影响。<small>图源：Organic Chemistry I Lect. 6，第 37–38 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>10. 卡宾：二价碳的两种自旋状态</h2>
+<p><a class="term-link" href="term.html?slug=carbene">卡宾（carbene）</a>是带有二价碳的中性活性中间体。对于常见的单线态卡宾，碳原子的一对非键电子占据 <i>sp</i><sup>2</sup> 轨道，垂直方向保留一个空 <i>p</i> 轨道；它既能给出电子对，也能接受电子，因此可表现出亲核与亲电两面性。三线态卡宾的两个非键电子分占不同轨道并具有平行自旋，呈双自由基特征。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-07/carbene-structure-reaction.webp" alt="二溴卡宾的轨道结构与对烯烃加成生成环丙烷" loading="lazy" decoding="async">
+<figcaption>单线态卡宾的空 <i>p</i> 轨道，以及卡宾对碳碳双键的加成。<small>图源：Organic Chemistry I Lect. 6，第 39–40 页</small></figcaption>
+</figure>
+<p>卡宾的一种制备方式是强碱使三溴甲烷失去质子，形成三溴甲基负离子，随后脱去 Br⁻ 得到二溴卡宾 :CBr<sub>2</sub>。最简单的卡宾亚甲基 :CH<sub>2</sub> 可由重氮甲烷 CH<sub>2</sub>N<sub>2</sub> 受热或光照、放出 N<sub>2</sub> 后形成。卡宾对 C=C 双键加成能构建三元环。许多简单小分子卡宾寿命短、浓度低；这不能泛化为“任何卡宾都不可分离”，稳定卡宾家族是后续有机化学中的重要例外。</p>
+<div class="note"><b>名称辨析</b><p>“亚甲基”可指分子中的 –CH<sub>2</sub>– 基团；“亚甲基卡宾” :CH<sub>2</sub> 则是一个活性中间体，二者不是同一概念。</p></div>
+</section>
+
+<section class="note-section">
+<h2>11. 本轮课件校订</h2>
+<ul class="correction-list">
+<li>将 <i>defferent</i>、<i>chorination</i>、<i>followingmechanism</i> 分别校为 <i>different</i>、<i>chlorination</i>、<i>following mechanism</i>。</li>
+<li>课件中 CH<sub>2</sub>N<sub>2</sub> 应称 <b>diazomethane（重氮甲烷）</b>，不是 azidomethane（叠氮甲烷）；两者不是同一种含氮官能团。</li>
+<li>碳正离子稳定化部分改写为“烷基经 σ 键供电子并参与超共轭”。原文对电子流方向的描述容易让人误读成烷基吸电子，复习时应记住普通烷基总体上稳定简单碳正离子。</li>
+<li>叔氢反应性是单个位点速率，不等于叔位产物一定占多数；异丁烷中 9 个伯氢对 1 个叔氢的统计效应使伯位产物仍约为 62%。</li>
+<li>“简单卡宾难以高浓度存在”限定的是高活性的小分子卡宾；稳定卡宾不能据此一概排除。</li>
+<li>能量图上的过渡态是机理中的瞬时高能构型；真正的反应中间体则位于局部能量最低点，两者不可混称。</li>
+</ul>
+</section>
+
+<footer class="source">来源：Organic Chemistry I Lect. 6 (Chapter 4-2)，第 4–40 页；Wade, <i>Organic Chemistry</i>, 8th ed., §§4-14–4-16, pp. 157–167。课件中的拼写、翻译与化学表述已校订；正文术语可进入双语词条库查看。</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

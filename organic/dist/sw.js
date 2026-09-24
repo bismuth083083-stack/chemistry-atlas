@@ -1,6 +1,6 @@
-const CACHE='chemistry-atlas-v15';
+const CACHE='chemistry-atlas-v16';
 const SHELL=[
-  './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','resonance.html','terms.html','term.html',
+  './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','lesson-07.html','resonance.html','terms.html','term.html',
   'style.css','content.css','lecture-02.css','term-figures.css','ppt-figures.css','resonance.css',
   'script.js','data/terms.json','data/notes.json',
   'assets/resonance/ppt/formaldehyde.webp','assets/resonance/ppt/acetate.webp',
@@ -24,6 +24,9 @@ const SHELL=[
   'assets/lecture-05/decalin-39.png','assets/lecture-05/properties-42.png','assets/lecture-05/halogenation-48.png',
   'assets/terms/isomerism.png','assets/terms/newman.png','assets/terms/butane-conformation.png','assets/terms/ring-strain.png',
   'assets/terms/cyclohexane-chair.png','assets/terms/axial-equatorial.png','assets/terms/decalin.png',
+  'assets/lecture-07/rate-limiting-step.webp','assets/lecture-07/propane-halogenation-selectivity.webp','assets/lecture-07/hammond-postulate.webp',
+  'assets/lecture-07/radical-orbital.webp','assets/lecture-07/radical-stability.webp','assets/lecture-07/radical-inhibitor.webp',
+  'assets/lecture-07/intermediate-classes.webp','assets/lecture-07/carbocation-hyperconjugation.webp','assets/lecture-07/carbanion-stability.webp','assets/lecture-07/carbene-structure-reaction.webp',
   'assets/lecture-06/free-radical-chain.webp','assets/lecture-06/further-chlorination.webp',
   'assets/lecture-06/free-energy-equilibrium.webp','assets/lecture-06/bond-enthalpy.webp',
   'assets/lecture-06/arrhenius-distribution.webp','assets/lecture-06/transition-state.webp','assets/lecture-06/reaction-energy.webp',

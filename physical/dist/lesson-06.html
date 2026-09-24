@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="物理化学第六课：热化学、标准反应焓、Hess 定律、Kirchhoff 定律与量热法" />
+    <title>第六课 · 热化学 · 物理化学知识库</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="pchem.css" />
+    <link rel="stylesheet" href="math.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#171b1d" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="mark">物</span><span>物理化学知识库</span></a>
+      <label class="search"><span>⌕</span><input id="global-search" placeholder="搜索知识库…" aria-label="搜索知识库" /><kbd>⌘ K</kbd></label>
+      <button id="theme" class="icon-button">◐</button>
+    </header>
+    <aside class="sidebar">
+      <nav>
+        <p class="nav-label">知识库</p>
+        <a href="index.html"><span>◫</span>课程笔记</a>
+        <a href="terms.html"><span>Aa</span>双语词条库</a>
+        <p class="nav-label">物理化学 I</p>
+        <a href="lesson-01.html"><span>01</span>绪论、数学基础与理想气体</a>
+        <a href="lesson-02.html"><span>02</span>真实气体与状态方程</a>
+        <a href="lesson-03.html"><span>03</span>气体动理论与分子速率</a>
+        <a href="lesson-04.html"><span>04</span>热力学第一定律</a>
+        <a href="lesson-05.html"><span>05</span>第一定律的机械</a>
+        <a class="active" href="lesson-06.html"><span>06</span>热化学</a>
+      </nav>
+      <div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+    </aside>
+
+    <main class="workspace article">
+      <a class="back" href="index.html">← 返回课程笔记</a>
+      <header class="article-head">
+        <p class="eyebrow">LECTURE 06 · 2026/09/24</p>
+        <h1>热化学：反应焓、Hess 定律与量热法</h1>
+        <p>Thermochemistry: reaction enthalpy, Hess’s law, and calorimetry</p>
+        <div><span>课堂笔记</span><span>反应热计算</span><span>量热法</span><span>课件勘误提示</span></div>
+      </header>
+
+      <section>
+        <h2>1. 热化学研究什么？</h2>
+        <p>热化学关注化学反应和物理变化伴随的热效应。若体系只做体积功，在恒压条件下，反应吸收或放出的热量与焓变相等；吸热时 Δ<i>H</i> &gt; 0，放热时 Δ<i>H</i> &lt; 0。焓是状态函数，所以只要初态、终态和条件相同，焓变与实际经过的路径无关。</p>
+        <div class="formula"><i>H</i> = <i>U</i> + <i>pV</i>　　恒压且只有体积功：<i>q</i><sub>p</sub> = Δ<i>H</i>　　恒容：<i>q</i><sub>V</sub> = Δ<i>U</i></div>
+        <div class="concept-strip"><span>明确反应与状态</span><b>→</b><span>确定 Δ<i>H</i> 的参考温度</span><b>→</b><span>用状态函数求和</span><b>→</b><span>联系实验量热</span></div>
+        <div class="note"><b>符号与条件</b><p>Δ<i>H</i> 是体系的焓变，不是“热量储存在体系里”。恒压下 <i>q</i><sub>p</sub> = Δ<i>H</i> 的结论以仅有体积功为前提；若存在电功、表面功等其他功，还需单独处理。</p></div>
+      </section>
+
+      <section>
+        <h2>2. 标准态、生成焓与反应焓</h2>
+        <p>标准态是给定温度下物质的标准参考状态，标准压力为 1 bar；标准态不等于“浓度一律为 1 mol·L⁻¹”。标准摩尔反应焓 Δ<sub>r</sub><i>H</i><sup>°</sup> 描述反应物和产物都处于各自标准态时，按所写反应式进行一次反应进度所对应的焓变。温度必须同时注明；常用参考温度是 298.15 K。</p>
+        <p>标准摩尔生成焓 Δ<sub>f</sub><i>H</i><sub>m</sub><sup>°</sup> 是在指定标准态下，由元素的参考态生成恰好 1 mol 该化合物的标准反应焓。元素处于其参考态时，按约定 Δ<sub>f</sub><i>H</i><sub>m</sub><sup>°</sup> = 0。</p>
+        <div class="formula">Δ<sub>r</sub><i>H</i><sup>°</sup> = Σ<sub>J</sub> ν<sub>J</sub> Δ<sub>f</sub><i>H</i><sub>m</sub><sup>°</sup>(J)</div>
+        <p>约定产物的化学计量数 ν<sub>J</sub> 为正、反应物为负，上式就可以统一写成代数和。若把反应倒过来，Δ<sub>r</sub><i>H</i><sup>°</sup> 变号；若将反应式整体乘以常数，焓变也乘以同一常数。</p>
+        <div class="worked-example">
+          <h3>由生成焓计算甲烷燃烧焓</h3>
+          <p>完全燃烧并生成液态水的配平反应为：</p>
+          <div class="formula">CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)</div>
+          <p>采用课件中的近似生成焓（单位 kJ·mol⁻¹）：CO₂(g) 为 −393.5，H₂O(l) 为 −285.8，CH₄(g) 为 −74.8；O₂(g) 处于元素参考态，生成焓为零。</p>
+          <div class="formula">Δ<sub>r</sub><i>H</i><sup>°</sup> = [−393.5 + 2(−285.8)] − [−74.8] ≈ −890.3 kJ·mol⁻¹</div>
+          <p>负号表示反应放热；这里每“摩尔反应”按方程式中 1 mol CH₄ 消耗来计。</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Hess 定律：把反应拆成可用的路径</h2>
+        <p>因为焓是状态函数，一个总反应的焓变等于任何一组可行分步反应的焓变之和。实际反应不必真的沿这些步骤进行；只要代数相加后得到目标反应，焓变的和就等于目标反应焓变。</p>
+        <div class="worked-example">
+          <h3>丙烯加氢与燃烧循环</h3>
+          <p>C₃H₆(g) + H₂(g) → C₃H₈(g)　　　　 Δ<i>H</i> = −124 kJ·mol⁻¹</p>
+          <p>C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l)　　　　 Δ<i>H</i> = −2220 kJ·mol⁻¹</p>
+          <p>H₂O(l) → H₂(g) + <span class="frac"><span>1</span><span>2</span></span>O₂(g)　　　　 Δ<i>H</i> = +286 kJ·mol⁻¹</p>
+          <p>将三式相加，消去两侧相同的 C₃H₈、H₂ 和部分 H₂O 后：</p>
+          <div class="formula">C₃H₆(g) + <span class="frac"><span>9</span><span>2</span></span>O₂(g) → 3CO₂(g) + 3H₂O(l)<br />Δ<sub>c</sub><i>H</i><sub>m</sub><sup>°</sup>(C₃H₆) = −124 − 2220 + 286 = −2058 kJ·mol⁻¹</div>
+        </div>
+        <div class="note"><b>做 Hess 题的机械步骤</b><p>先配平目标式；再决定哪些已知反应要反向、放大或缩小；逐项相加并消去中间物种；最后对焓变做完全相同的代数操作，并核对单位和“每摩尔反应”的基准。</p></div>
+      </section>
+
+      <section>
+        <h2>4. 相变焓与温度修正</h2>
+        <p>物理变化也有焓变。汽化焓、熔化焓和升华焓分别记作 Δ<sub>vap</sub><i>H</i><sub>m</sub><sup>°</sup>、Δ<sub>fus</sub><i>H</i><sub>m</sub><sup>°</sup> 和 Δ<sub>sub</sub><i>H</i><sub>m</sub><sup>°</sup>。例如课件给出水在沸点附近的汽化焓约为 +40.66 kJ·mol⁻¹，水在熔点附近的熔化焓约为 +6.01 kJ·mol⁻¹。反向相变的焓变大小相同、符号相反。</p>
+        <p>若要把液态水在低于沸点的温度升至气态水在高于沸点的温度，可沿一条方便的路径：先加热液体到相变温度，再汽化，最后加热蒸气。相变前后的显热由热容积分给出：</p>
+        <div class="formula">Δ<i>H</i>(T₂) = ∫<sub>T₁</sub><sup>T<sub>tr</sub></sup> C<sub>p,m</sub>(l) dT + Δ<sub>vap</sub><i>H</i><sub>m</sub><sup>°</sup>(T<sub>tr</sub>) + ∫<sub>T<sub>tr</sub></sub><sup>T₂</sup> C<sub>p,m</sub>(g) dT</div>
+        <p>这里 T₁ &lt; T<sub>tr</sub> &lt; T₂；积分区间内分别保持液相和气相。若温度区间内没有相变，反应焓随温度的改变量则由反应热容差的积分计算。</p>
+      </section>
+
+      <section>
+        <h2>5. 燃烧焓：把反应统一到氧化产物</h2>
+        <p>标准摩尔燃烧焓 Δ<sub>c</sub><i>H</i><sub>m</sub><sup>°</sup> 是 1 mol 燃烧物完全氧化到指定稳定氧化产物时的标准反应焓。比较燃烧焓时，产物必须一致，例如碳通常完全氧化为 CO₂，而不是 CO；水的物态也必须一致。</p>
+        <p>对于相同的最终氧化产物，目标反应焓可由 Hess 定律求得：</p>
+        <div class="formula">Δ<sub>r</sub><i>H</i><sup>°</sup> = Σ<sub>反应物</sub> a<sub>J</sub> Δ<sub>c</sub><i>H</i><sub>m</sub><sup>°</sup>(J) − Σ<sub>产物</sub> b<sub>J</sub> Δ<sub>c</sub><i>H</i><sub>m</sub><sup>°</sup>(J)</div>
+        <p>a<sub>J</sub> 和 b<sub>J</sub> 是目标反应式中反应物与产物的正系数。思路是让目标反应物和目标产物分别燃烧到同一组终态，公共氧化产物抵消。</p>
+      </section>
+
+      <section>
+        <h2>6. Kirchhoff 定律：反应焓如何随温度改变</h2>
+        <p>反应热容差等于产物热容总和减去反应物热容总和，均按化学计量数加权。在反应物、产物都不发生相变且组成不变的温区：</p>
+        <div class="formula">Δ<sub>r</sub>C<sub>p</sub><sup>°</sup> = Σ<sub>产物</sub> ν<sub>J</sub>C<sub>p,m</sub><sup>°</sup>(J) − Σ<sub>反应物</sub> a<sub>J</sub>C<sub>p,m</sub><sup>°</sup>(J)<br /><span class="derivative">(<span class="frac"><span>∂Δ<sub>r</sub><i>H</i><sup>°</sup></span><span>∂T</span></span>)<sub>p</sub></span> = Δ<sub>r</sub>C<sub>p</sub><sup>°</sup></div>
+        <p>因此，从参考温度 T₁ 换算到 T₂：</p>
+        <div class="formula">Δ<sub>r</sub><i>H</i><sup>°</sup>(T₂) = Δ<sub>r</sub><i>H</i><sup>°</sup>(T₁) + ∫<sub>T₁</sub><sup>T₂</sup> Δ<sub>r</sub>C<sub>p</sub><sup>°</sup> dT</div>
+        <p>若该温区内 Δ<sub>r</sub>C<sub>p</sub><sup>°</sup> 可近似为常数，积分化为 Δ<sub>r</sub><i>H</i><sup>°</sup>(T₂) = Δ<sub>r</sub><i>H</i><sup>°</sup>(T₁) + Δ<sub>r</sub>C<sub>p</sub><sup>°</sup>(T₂ − T₁)。若中途发生相变，需把路径分段，并加入相变焓；不能把热容积分跨过相变点而漏掉潜热。</p>
+      </section>
+
+      <section>
+        <h2>7. 绝热火焰温度：反应热转成产物显热</h2>
+        <p>课件以乙炔和空气的理想化完全燃烧为例。按每 1 mol C₂H₂ 计，反应式写为：</p>
+        <div class="formula">C₂H₂(g) + <span class="frac"><span>5</span><span>2</span></span>O₂(g) + 10N₂(g) → 2CO₂(g) + H₂O(g) + 10N₂(g)</div>
+        <p>在恒压、绝热且无其他功时，外界没有热量交换，产物升温所需的显热来自反应焓。用 298 K 的生成焓，反应焓约为 −1255.5 kJ·mol⁻¹；把产物总热容近似为 0.399 kJ·K⁻¹（按每摩尔乙炔反应计），并假设热容在温区内不变：</p>
+        <div class="formula">0 = −1255.5 kJ + 0.399 kJ·K⁻¹ × (T − 298 K)<br />T ≈ 3445 K</div>
+        <div class="note"><b>这是模型估算，不是精确火焰温度</b><p>计算假设完全燃烧、无散热、无解离且热容恒定。数千 K 下产物会发生解离，热容也随温度变化，因此真实绝热火焰温度通常低于这个简化估算。</p></div>
+      </section>
+
+      <section>
+        <h2>8. 量热法：把温升转成能量</h2>
+        <div class="comparison-grid">
+          <article><h3>恒容弹式量热计</h3><p>样品在密闭、刚性的燃烧弹中反应，周围水浴和量热器的温升 ΔT 由温度探头记录。量热器经标定后有总热容 C<sub>cal</sub>：</p><div class="formula">q<sub>cal</sub> = C<sub>cal</sub>ΔT　　q<sub>rxn</sub> = −q<sub>cal</sub>　　q<sub>V,rxn</sub> = ΔU<sub>rxn</sub></div></article>
+          <article><h3>标定与符号</h3><p>可用已知电功输入标定：电流 I、 电压 V 持续时间 t，对应电能 q = IVt；也可燃烧已知质量的标准物质。若量热器升温，q<sub>cal</sub> 为正，放热反应的 q<sub>rxn</sub> 为负。</p></article>
+        </div>
+        <p>由弹式量热计得到 ΔU 后，可在理想气体近似下换算为 ΔH。温度相同且气相只计理想气体时：</p>
+        <div class="formula">Δ<sub>r</sub><i>H</i> = Δ<sub>r</sub><i>U</i> + Δ(<i>pV</i>) ≈ Δ<sub>r</sub><i>U</i> + Δn<sub>gas</sub><i>R</i>T</div>
+        <p>例如 4HCl(g) + O₂(g) → 2H₂O(l) + 2Cl₂(g)，气体物质的量变化 Δn<sub>gas</sub> = 2 − 5 = −3。若 298.15 K 时 Δ<sub>r</sub><i>U</i> = −195 kJ·mol⁻¹，则理想气体修正后 Δ<sub>r</sub><i>H</i> ≈ −202.4 kJ·mol⁻¹。</p>
+      </section>
+
+      <section>
+        <h2>9. 差示扫描量热法（DSC）</h2>
+        <p>DSC 在程序控温下同时比较样品与参比物的热流差。升温速率 β 恒定时，温度随时间按 T = T₀ + βt 改变；基线附近的热流反映样品热容，熔融、结晶等热转变会出现峰。扣除基线后，对峰面积积分可得到相变焓。</p>
+        <div class="formula">β = <span class="frac"><span>dT</span><span>dt</span></span>　　Δ<i>H</i> = ∫ q̇ dt = ∫ <span class="frac"><span>q̇</span><span>β</span></span> dT</div>
+        <p>因此看热分析曲线时，要先辨认基线和峰，再按仪器的纵轴定义积分；单看峰高不能代替焓变。DSC 适合小样品和宽温区的热转变分析，但结果仍依赖校准、升温程序和基线处理。</p>
+      </section>
+
+      <section>
+        <h2>10. 本课复习清单</h2>
+        <ol class="check-list">
+          <li>说明恒压时何种条件下 <i>q</i><sub>p</sub> = Δ<i>H</i>，以及恒容弹式量热测得的是 Δ<i>U</i> 还是 Δ<i>H</i>。</li>
+          <li>从标准生成焓写出标准反应焓的化学计量求和式，并能处理反应倒写或倍乘。</li>
+          <li>用 Hess 定律组合反应；用燃烧焓比较反应时，先核对最终氧化产物与物态。</li>
+          <li>用热容积分把反应焓从一个温度换算到另一个温度；经过相变时另加相变焓。</li>
+          <li>解释弹式量热计如何由 ΔT 得到 ΔU，以及理想气体下的 ΔH−ΔU 修正。</li>
+          <li>区分 DSC 热流基线、转变峰和峰面积所代表的物理量。</li>
+        </ol>
+        <div class="note"><b>课件勘误核对</b><p>课件甲烷燃烧示例的文字式写成 CH₄ + 2O₂ → CO₂ + H₂O，少写了一个 H₂O 系数；按其约 −890 kJ·mol⁻¹ 的结果，应为 CO₂ + 2H₂O(l)。另一个 HN₃(l) 与 NO(g) 的例题，若直接代入课件列出的 −187.78、264.0 和 90.25 kJ·mol⁻¹，所得为 −896.28 kJ·mol⁻¹，而非课件所写 −892.3 kJ·mol⁻¹；请以原始数据表复核后再引用。</p></div>
+      </section>
+
+      <footer class="source">整理依据：PChem1_lec6 thermochem 20260924.pdf 课堂课件；Atkins’ Physical Chemistry 热化学相关章节。标准态、物态、温度、反应配平与符号均按笔记正文说明；原课件中的示例差异列于“课件勘误核对”。</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

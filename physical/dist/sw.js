@@ -1,5 +1,5 @@
 const CACHE='chemistry-atlas-v6';
-const SHELL=['./','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','terms.html','term.html','style.css','content.css','pchem.css','math.css','script.js','data/terms.json','data/notes.json','assets/pchem-scope.png','assets/math-relations.png','assets/pvt-surface.png','assets/molecular-interactions.png','assets/compression-factor.png','assets/condensation-isotherms.png','assets/vdw-loops.png'];
+const SHELL=['./','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','terms.html','term.html','style.css','content.css','pchem.css','math.css','script.js','data/terms.json','data/notes.json','assets/pchem-scope.png','assets/math-relations.png','assets/pvt-surface.png','assets/molecular-interactions.png','assets/compression-factor.png','assets/condensation-isotherms.png','assets/vdw-loops.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{

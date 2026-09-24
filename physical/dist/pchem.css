@@ -18,6 +18,12 @@
 .article figure.tall {
   max-width: 650px;
 }
+.article figure.lesson-map {
+  max-width: 1080px;
+}
+.article figure.lesson-map figcaption {
+  font-size: 13px;
+}
 .formula {
   max-width: 850px;
   margin: 18px 0;

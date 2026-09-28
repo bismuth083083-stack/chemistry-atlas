@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="物理化学第七课：热力学第二定律、热机与 Carnot 循环、熵与 Clausius 不等式、熵变计算以及第三定律" />
+    <title>第七课 · 热力学第二定律 · 物理化学知识库</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="pchem.css" />
+    <link rel="stylesheet" href="math.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#171b1d" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="mark">物</span><span>物理化学知识库</span></a>
+      <label class="search"><span>⌕</span><input id="global-search" placeholder="搜索知识库…" aria-label="搜索知识库" /><kbd>⌘ K</kbd></label>
+      <button id="theme" class="icon-button">◐</button>
+    </header>
+    <aside class="sidebar">
+      <nav>
+        <p class="nav-label">知识库</p>
+        <a href="index.html"><span>◫</span>课程笔记</a>
+        <a href="terms.html"><span>Aa</span>双语词条库</a>
+        <p class="nav-label">物理化学 I</p>
+        <a href="lesson-01.html"><span>01</span>绪论、数学基础与理想气体</a>
+        <a href="lesson-02.html"><span>02</span>真实气体与状态方程</a>
+        <a href="lesson-03.html"><span>03</span>气体动理论与分子速率</a>
+        <a href="lesson-04.html"><span>04</span>热力学第一定律</a>
+        <a href="lesson-05.html"><span>05</span>第一定律的机械</a>
+        <a href="lesson-06.html"><span>06</span>热化学</a>
+        <a class="active" href="lesson-07.html"><span>07</span>热力学第二定律</a>
+      </nav>
+      <div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+    </aside>
+
+    <main class="workspace article">
+      <a class="back" href="index.html">← 返回课程笔记</a>
+      <header class="article-head">
+        <p class="eyebrow">LECTURE 07 · 2026/09/29</p>
+        <h1>热力学第二定律：从热机到熵与第三定律</h1>
+        <p>The Second Law: heat engines, entropy, and the Third Law</p>
+        <div><span>课堂笔记</span><span>课件原图</span><span>熵变计算</span><span>课件勘误提示</span></div>
+      </header>
+
+      <section>
+        <h2>1. 为什么第一定律不够？</h2>
+        <p><a class="term-link" href="term.html?slug=first-law">热力学第一定律</a>是能量守恒的表述：它说明功与热是等价的能量传递方式，并允许热机在循环中把热转变为功。但它只给出“能量不能凭空产生或消失”，并不能说明为什么气体总是自发膨胀、热总是自发从高温流向低温、反应总是朝一个方向进行。第一定律回答“哪些变化是允许的”，第二定律才回答“在这些允许的变化中，哪一个会自发发生，以及平衡状态在哪里”。用课件的说法：第一定律是“不能凭空得到什么”，<a class="term-link" href="term.html?slug=second-law">第二定律</a>是“不能白拿”——收益总要付出折扣。</p>
+        <div class="comparison-grid">
+          <article><h3>第一定律：允许哪些变化</h3><p>以<a class="term-link" href="term.html?slug=internal-energy">内能</a> U 为核心，判断变化是否满足能量守恒：孤立体系的内能保持不变。它识别的是“可允许的变化集合”。</p></article>
+          <article><h3>第二定律：哪一个会自发发生</h3><p>以<a class="term-link" href="term.html?slug=entropy">熵</a> S 为核心，在可允许的变化中挑出真正自发的那些：孤立体系的熵在自发变化中增加。</p></article>
+        </div>
+        <div class="note"><b>方向性与“总量”无关</b><p>自发变化的方向与体系的总能量无关，而取决于能量<b>分布</b>的方式。绝热容器中理想气体向真空膨胀时 Δ<i>U</i> = 0，能量总量没变，但能量分布变得更无序，变化仍然自发——这正是第二定律要刻画的内容。</p></div>
+      </section>
+
+      <section>
+        <h2>2. 热机、热库与效率</h2>
+        <p><a class="term-link" href="term.html?slug=heat-engine">热机</a>是第二定律的历史起点。18—19 世纪蒸汽机（James Watt，1796）把燃料的热经工作物质（蒸汽）膨胀转化为机械功：工作物质冷却后被排出，活塞回到原位，然后再次膨胀，如此循环。热机从高温热源吸热，把其中一部分转化为功，其余排入低温热源。</p>
+        <figure class="tall">
+          <img src="assets/lecture-07/heat-engine.webp" alt="热机从高温热源吸热，一部分转化为功，其余排入低温热源的能量流向示意图" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 2 页：热机从 Hot source 吸热，向外输出 Work，并把余热交给 Cold sink。</figcaption>
+        </figure>
+        <p><a class="term-link" href="term.html?slug=reservoir">热库</a>（reservoir，热源或热壑）是一个温度均匀的巨大体系，无论从中取出或向它加入多少热，它的温度都不改变；真实体系只能近似它。热机每完成一个循环，工作物质回到初态，故 Δ<i>U</i> = 0，于是</p>
+        <div class="formula">Δ<i>U</i> = 0　⟹　−<i>w</i> = <i>q</i><sub>h</sub> + <i>q</i><sub>c</sub></div>
+        <p>约定热机吸热为正，则 <i>q</i><sub>h</sub> &gt; 0、<i>q</i><sub>c</sub> &lt; 0。<a class="term-link" href="term.html?slug=heat-engine-efficiency">热机效率</a>定义为输出的功与从高温热源吸收的热之比：</p>
+        <div class="formula">ε = <span class="frac"><span>|<i>w</i>|</span><span><i>q</i><sub>h</sub></span></span> = <span class="frac"><span><i>q</i><sub>h</sub> + <i>q</i><sub>c</sub></span><span><i>q</i><sub>h</sub></span></span> = 1 + <span class="frac"><span><i>q</i><sub>c</sub></span><span><i>q</i><sub>h</sub></span></span></div>
+        <p>由于 <i>q</i><sub>c</sub> &lt; 0，只要热机是循环工作的，就必有 ε &lt; 1。历史上人们曾希望通过改进机械设计（减少摩擦等损失）使 ε 趋近 1，但这一目标被更根本的原因所否决——这就是第二定律。</p>
+        <figure class="tall">
+          <img src="assets/lecture-07/heat-engine-accounting.webp" alt="热机循环的能量记账：从高温热源吸热二十个单位，输出五个单位功，向低温热源排热十五个单位" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 10 页：一个循环内的能量记账。吸热 +20、做功 5、排热 −15，三者满足 <i>q</i><sub>h</sub> + <i>q</i><sub>c</sub> = −<i>w</i>。</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>3. 第二定律的经典表述</h2>
+        <p>第二定律有多种彼此等价的表述，它们都指向同一个事实：热与功的相互转化是不对称的。</p>
+        <div class="law-grid">
+          <article><h3>Kelvin 表述</h3><div>不可能存在这样的过程：其唯一结果是从一个热库吸热并把它<b>完全</b>转化为功。</div><p>等价说法：不可能设计一台循环工作的机器，其唯一效果是从热库取热并对外做等量的功。热机必须同时向低温热源排热。</p></article>
+          <article><h3>Clausius 表述</h3><div>不可能存在这样的循环过程：其唯一结果是把热从低温热源传到高温热源而不伴随功转变为热。</div><p>这正是制冷的代价：把热从低温搬到高温必须消耗功，<a class="term-link" href="term.html?slug=refrigerator">制冷机</a>不是第二类永动机。</p></article>
+        </div>
+        <figure class="lesson-map">
+          <img src="assets/lecture-07/clausius-refrigerator.webp" alt="左图表示热量从低温热源自发流向高温热源并对外做功，标注为不可能；右图表示外界做功的循环过程，标注为可行" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 3 页：左图中热量由 <i>T</i><sub>c</sub> 流向 <i>T</i><sub>h</sub> 且无功耗，违反第二定律（Impossible）；右图有外部功输入（<i>w</i>），可行（OK）。</figcaption>
+        </figure>
+        <p>课件还把 Clausius 表述写作另一种形式：<b>一切自发过程都是不可逆的</b>，例如热自发地由高温流向低温且不可逆。此外 Boltzmann 的表述是：对绝热封闭体系，熵永不减少，因此高度有序的状态非常不可能；Planck 的表述是：第二类永动机不可能。这些说法彼此等价，只是选用了不同的观察角度。</p>
+        <div class="note"><b>“热完全变功”的那个反问</b><p>课件提出一个反问：理想气体等温膨胀时热不是几乎全部变成功了吗？答案是：此时体积增大、<b>状态改变了</b>，这不是循环过程，因此不满足“唯一结果”这一前提。功可以 100% 转变成热；热转变成功即使达到 100% 也违反第二定律，除非同时有其他效应发生。</p></div>
+      </section>
+
+      <section>
+        <h2>4. Carnot 循环</h2>
+        <p><a class="term-link" href="term.html?slug=carnot-cycle">Carnot 循环</a>是理想化的可逆循环，以理想气体为工作物质，由两条等温线和两条绝热线组成：A→B 在 <i>T</i><sub>h</sub> 下等温可逆膨胀；B→C 绝热可逆膨胀降温到 <i>T</i><sub>c</sub>；C→D 在 <i>T</i><sub>c</sub> 下等温可逆压缩；D→A 绝热可逆压缩回到初态。</p>
+        <figure>
+          <img src="assets/lecture-07/carnot-cycle-pv.webp" alt="Carnot 循环的 p-V 图，四个顶点 A、B、C、D 由两条等温线和两条绝热线连接" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 12 页：Carnot 循环的 p–V 图。绿色为绝热线，红色为等温线，A→B→C→D→A 依次为四步。</figcaption>
+        </figure>
+        <p>理想气体绝热可逆过程满足 <i>TV</i><sup>γ−1</sup> = 常数，对两条绝热线分别有 <i>T</i><sub>h</sub><i>V</i><sub>B</sub><sup>γ−1</sup> = <i>T</i><sub>c</sub><i>V</i><sub>C</sub><sup>γ−1</sup> 与 <i>T</i><sub>h</sub><i>V</i><sub>A</sub><sup>γ−1</sup> = <i>T</i><sub>c</sub><i>V</i><sub>D</sub><sup>γ−1</sup>。两式相除得到关键关系：</p>
+        <div class="formula"><span class="frac"><span><i>V</i><sub>B</sub></span><span><i>V</i><sub>A</sub></span></span> = <span class="frac"><span><i>V</i><sub>C</sub></span><span><i>V</i><sub>D</sub></span></span></div>
+        <p>逐步计算四步的 <i>w</i>、<i>q</i> 与 Δ<i>U</i> 并求和，可发现一个漂亮的结果：总功正比于两个温度之差，而整圈的内能变化为零。</p>
+        <figure>
+          <img src="assets/lecture-07/carnot-steps-table.webp" alt="Carnot 循环四步的功、热和内能变化表，以及总行给出的总功与总热" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 8 页：Carnot 循环逐步的 <i>w</i>、<i>q</i>、Δ<i>U</i>。总功为 <i>nR</i>(<i>T</i><sub>H</sub> − <i>T</i><sub>L</sub>) ln(<i>V</i><sub>A</sub>/<i>V</i><sub>B</sub>)，循环内能变化为 0。</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/lecture-07/carnot-apparatus.webp" alt="Carnot 循环四步的气缸活塞示意，标注高温热源、低温热源、吸热放热与循环方向" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 8 页下半：Carnot 循环的活塞模型。对理想气体可逆循环，<i>Q</i><sub>R1</sub> 与 <i>Q</i><sub>R2</sub> 分别在两个温度下可逆交换。</figcaption>
+        </figure>
+        <p>把总功与吸热相除，得到 Carnot 循环的效率只依赖两个温度：</p>
+        <div class="formula">ε<sub>rev</sub> = 1 − <span class="frac"><span><i>T</i><sub>c</sub></span><span><i>T</i><sub>h</sub></span></span></div>
+        <p>温度必须用热力学温标。要提高效率只有两条路：加大两个热源的温度差，或降低低温热源的温度。当 <i>T</i><sub>c</sub> = 0 时 ε = 100%，但第三定律将指出这一极限无法达到。</p>
+      </section>
+
+      <section>
+        <h2>5. Carnot 原理：效率的上限</h2>
+        <p>课件用反证法给出一个重要推论。设两台可逆热机 A 与 B 工作在同一对热源之间，假设 ε<sub>A</sub> &gt; ε<sub>B</sub>，把 B 反向运行作为制冷机，并把 A 输出的功驱动 B。由于 A 产出的功多于 B 反向运行所需的功，多出的部分可对外做功 <i>w</i>′。</p>
+        <figure>
+          <img src="assets/lecture-07/carnot-two-engines.webp" alt="两台热机 A 与 B 耦合在同一对高温热源和低温热源之间，A 输出的功驱动 B 反向运行" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 10 页：两台可逆热机 A（正转）与 B（反转）耦合于同一对热源，用于比较效率。</figcaption>
+        </figure>
+        <p>于是净结果是：低温热源热量的收支恰好抵消，高温热源净失能，而系统对外净输出了功——这相当于把热直接变成了功而不需要低温热源，违反第二定律。因此最初的假设不成立，只能是 ε<sub>A</sub> ≤ ε<sub>B</sub>。把 A 反向运行又得到 ε<sub>B</sub> ≤ ε<sub>A</sub>，两者合起来给出 ε<sub>A</sub> = ε<sub>B</sub>。</p>
+        <div class="note"><b><a class="term-link" href="term.html?slug=carnot-principle">Carnot 原理</a></b><p>在两台热机工作于同一对温度之间时，没有任何热机比可逆热机更高效。因此 ε ≤ ε<sub>r</sub>：可逆循环取等号，不可逆循环取小于号。也就是说，从给定的一份热量中获得的最大功，必须由可逆热机给出；而且所有可逆热机的效率都相同，与工作物质和循环构造无关，只由两个温度决定。</p></div>
+        <p>这个结论还有一个推论：任何循环的 ε<sub>ir</sub> &lt; ε<sub>r</sub>，也就是“实际热机永远达不到 Carnot 效率”。可逆热机是真实热机的理想化上界，而不是可实现的机器。</p>
+      </section>
+
+      <section>
+        <h2>6. 熵：从热温商到状态函数</h2>
+        <p>把 Carnot 循环的效率表达式改写，就得到一个不依赖工作物质的关系式（热温商）：</p>
+        <div class="formula"><span class="frac"><span><i>q</i><sub>h</sub></span><span><i>T</i><sub>h</sub></span></span> + <span class="frac"><span><i>q</i><sub>c</sub></span><span><i>T</i><sub>c</sub></span></span> = 0　（可逆）　　&gt; 0 不可能　　&lt; 0（不可逆）</div>
+        <p>进一步地，任意可逆循环都可以用一连串小 Carnot 循环任意逼近：作一系列只由绝热线与等温线组成的窄循环，使每个小循环与原来循环的相应片段做功相同。相邻小循环之间有一段等温线与下一循环的等温线重合，正反两次的功相互抵消，<b>只有最外缘的片段保留下来</b>。因此对任意可逆循环都有</p>
+        <div class="formula">∮ <span class="frac"><span>d<i>q</i><sub>r</sub></span><span><i>T</i></span></span> = 0</div>
+        <figure>
+          <img src="assets/lecture-07/carnot-collection.webp" alt="用许多首尾相接的小 Carnot 循环逼近任意可逆循环，内部虚线部分相互抵消" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 13 页：用一连串小 Carnot 循环逼近任意可逆循环。内部线段两两抵消，只剩外缘。</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/lecture-07/carnot-chain.webp" alt="任意可逆循环的曲线上密排的卡诺循环示意图" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 12 页：任意可逆循环可由密排的 Carnot 循环（图 2.4 一连串卡诺循环）逼近。</figcaption>
+        </figure>
+        <p>对任意两个状态 A、B，沿不同可逆路径积分必然给出同一个值：若沿 R1 与 R2 分别从 A 到 B，则 ∮ d<i>q</i><sub>r</sub>/<i>T</i> = 0 展开后给出两条路径的积分相等。这说明 d<i>q</i><sub>r</sub>/<i>T</i> 只依赖始末态、与路径无关，即它是某个状态函数的全微分。这个状态函数就是<b>熵</b>：</p>
+        <div class="formula">d<i>S</i> = <span class="frac"><span>d<i>q</i><sub>r</sub></span><span><i>T</i></span></span>　　Δ<i>S</i> = <i>S</i><sub>B</sub> − <i>S</i><sub>A</sub> = ∫<sub>A</sub><sup>B</sup> <span class="frac"><span>d<i>q</i><sub>r</sub></span><span><i>T</i></span></span></div>
+        <p>这就是熵的热力学定义。熵的单位是 J·K<sup>−1</sup>，摩尔熵的单位是 J·K<sup>−1</sup>·mol<sup>−1</sup>（与 <i>R</i> 相同）。另一方面，从微观角度看无序程度由微观状态数 <i>W</i> 描述，<a class="term-link" href="term.html?slug=boltzmann-formula">Boltzmann 公式</a>给出</p>
+        <div class="formula"><i>S</i> = <i>k</i> ln <i>W</i></div>
+        <p>其中 <i>k</i> 是 Boltzmann 常数，<i>W</i> 是体系的微观状态数。自发变化总是朝着微观状态数更多、能量分布更无序的方向进行，这与“熵增加”是同一件事的两种说法。</p>
+      </section>
+
+      <section>
+        <h2>7. Clausius 不等式</h2>
+        <p>对不可逆循环，同样的推理给出 ∮ d<i>q</i>/<i>T</i> &lt; 0。考虑从状态 A 到状态 B 的一个<b>不可逆</b>变化，再沿一条可逆路径从 B 返回 A，构成一个不可逆循环：</p>
+        <div class="formula">∮ <span class="frac"><span>d<i>q</i></span><span><i>T</i></span></span> = ∫<sub>A</sub><sup>B</sup> <span class="frac"><span>d<i>q</i><sub>ir</sub></span><span><i>T</i></span></span> + ∫<sub>B</sub><sup>A</sup> <span class="frac"><span>d<i>q</i><sub>r</sub></span><span><i>T</i></span></span> &lt; 0　⟹　∫<sub>A</sub><sup>B</sup> <span class="frac"><span>d<i>q</i><sub>ir</sub></span><span><i>T</i></span></span> &lt; Δ<i>S</i></div>
+        <p>把两种情形合并，就得到 <a class="term-link" href="term.html?slug=clausius-inequality">Clausius 不等式</a>：</p>
+        <div class="formula">d<i>S</i> ≥ <span class="frac"><span>d<i>q</i></span><span><i>T</i></span></span>　　&gt; 不可逆　　= 可逆</div>
+        <figure>
+          <img src="assets/lecture-07/reversible-irreversible.webp" alt="由状态 A 到 B 的可逆路径 R 与不可逆路径 IR 组成一个不可逆循环" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 15 页：不可逆循环。实线 R 为可逆返回路径，虚线 IR 为不可逆路径，二者合围成不可逆循环。</figcaption>
+        </figure>
+        <p>这个不等式是第二定律的紧凑数学形式，后面的自发判据与熵变计算都由它推出。</p>
+      </section>
+
+      <section>
+        <h2>8. 第二定律的熵表述与自发方向</h2>
+        <p>对<a class="term-link" href="term.html?slug=thermodynamic-system">孤立体系</a>，<i>q</i> = 0，于是 d<i>S</i> ≥ 0。把体系与环境合起来记作“总”，即</p>
+        <div class="formula">Δ<i>S</i><sub>iso</sub> = Δ<i>S</i><sub>sys</sub> + Δ<i>S</i><sub>sur</sub>　　&gt; 0（不可逆 / 自发）　　= 0（可逆 / 平衡）　　&lt; 0（不可能）</div>
+        <p>这就是第二定律的熵表述：<b>孤立体系的熵在<a class="term-link" href="term.html?slug=spontaneous-change">自发变化</a>过程中增加</b>。热力学上不可逆的过程必然是自发的，并一定伴随 Δ<i>S</i><sub>iso</sub> &gt; 0。反过来说，只要某个变化使孤立体系的总熵减小，它就绝不会发生。孤立体系达到热力学平衡时，熵取最大值。</p>
+        <figure class="lesson-map">
+          <img src="assets/lecture-07/entropy-maximum.webp" alt="孤立体系的熵随时间增长并在达到平衡时趋于最大值" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 17 页：孤立体系的熵随时间单调增加，在平衡到达时达到最大值并保持不变。</figcaption>
+        </figure>
+        <div class="note"><b>判据的适用范围</b><p>Δ<i>S</i><sub>iso</sub> 是自发性的判据，注意它必须包含环境的熵。只看体系的熵变不足以判断方向：例如水结冰时 Δ<i>S</i><sub>sys</sub> &lt; 0，但在凝固点以下这个过程仍然自发，因为放出的热使 Δ<i>S</i><sub>sur</sub> 足够大，总熵仍然增加。</p></div>
+      </section>
+
+      <section>
+        <h2>9. 熵变的计算框架</h2>
+        <p>因为熵是<a class="term-link" href="term.html?slug=state-function">状态函数</a>，Δ<i>S</i> 只依赖始末态，所以计算遵循固定三步：先确定初态与终态；再设计一条方便的可逆路径（实际过程可逆与否无关紧要）；最后沿该路径积分 d<i>S</i> = d<i>q</i><sub>r</sub>/<i>T</i>。</p>
+        <div class="concept-strip"><span>确定始末态</span><b>→</b><span>设计可逆路径</span><b>→</b><span>积分 dq<sub>r</sub>/T</span><b>→</b><span>必要时叠加相变项</span></div>
+        <p>环境的熵变另有捷径。环境通常被当作巨大的热源或热壑，其温度可视为恒定且不因体系内部的变化而改变状态，因此它与体系之间的热交换可以按可逆处理：</p>
+        <div class="formula">d<i>S</i><sub>sur</sub> = <span class="frac"><span>d<i>q</i><sub>sur,rev</sub></span><span><i>T</i><sub>sur</sub></span></span> = <span class="frac"><span>d<i>q</i><sub>sur</sub></span><span><i>T</i><sub>sur</sub></span></span> = −<span class="frac"><span>d<i>q</i><sub>sys</sub></span><span><i>T</i><sub>sur</sub></span></span></div>
+        <p>注意这里用体系的真实热效应（可逆或不可逆皆可）除以环境温度，不需要为环境另设路径。实际需要分类处理的过程有：理想气体的膨胀与压缩（等温、等压、等容、一般 pVT 变化与混合）、相变，以及固体和液体的变温。</p>
+      </section>
+
+      <section>
+        <h2>10. 理想气体的熵变</h2>
+        <p>理想气体等温膨胀时 Δ<i>U</i> = 0，故 <i>q</i><sub>rev</sub> = −<i>w</i><sub>rev</sub> = <i>nRT</i> ln(<i>V</i><sub>f</sub>/<i>V</i><sub>i</sub>)，于是</p>
+        <div class="formula">Δ<i>S</i> = <i>nR</i> ln <span class="frac"><span><i>V</i><sub>f</sub></span><span><i>V</i><sub>i</sub></span></span> = <i>nR</i> ln <span class="frac"><span><i>p</i><sub>i</sub></span><span><i>p</i><sub>f</sub></span></span></div>
+        <p>由于 <i>S</i> 是状态函数，这个表达式对可逆与不可逆变化同样成立。两种极端情形值得对比：若膨胀是可逆的，则环境的熵变恰好与体系相反，Δ<i>S</i><sub>tot</sub> = 0；若气体向真空自由膨胀（<i>w</i> = 0）且温度不变，则 <i>q</i> = 0、Δ<i>S</i><sub>sur</sub> = 0，因此 Δ<i>S</i> &gt; 0 且过程自发。</p>
+        <figure>
+          <img src="assets/lecture-07/free-expansion.webp" alt="带活塞的气体与真空容器由关闭的旋塞隔开" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 6 页：自由膨胀装置（Stopcock closed）。旋塞打开后气体向真空膨胀，<i>w</i> = 0 且 <i>q</i> = 0，但 Δ<i>S</i> &gt; 0。</figcaption>
+        </figure>
+        <p>变温过程的熵变由热容的积分给出。等压与等容分别在 <i>C</i><sub>p,m</sub>、<i>C</i><sub>V,m</sub> 于温区内为常数的条件下得到简洁形式：</p>
+        <div class="formula">Δ<i>S</i> = <i>nC</i><sub>p,m</sub> ln <span class="frac"><span><i>T</i><sub>f</sub></span><span><i>T</i><sub>i</sub></span></span>　（等压，<i>p</i> 恒定）　　Δ<i>S</i> = <i>nC</i><sub>V,m</sub> ln <span class="frac"><span><i>T</i><sub>f</sub></span><span><i>T</i><sub>i</sub></span></span>　（等容，<i>V</i> 恒定）</div>
+        <p>若温度、压力、体积同时改变，可任选两步组合，用状态函数性质把两段相加：</p>
+        <div class="formula">Δ<i>S</i> = <i>nC</i><sub>V,m</sub> ln <span class="frac"><span><i>T</i><sub>2</sub></span><span><i>T</i><sub>1</sub></span></span> + <i>nR</i> ln <span class="frac"><span><i>V</i><sub>2</sub></span><span><i>V</i><sub>1</sub></span></span> = <i>nC</i><sub>p,m</sub> ln <span class="frac"><span><i>T</i><sub>2</sub></span><span><i>T</i><sub>1</sub></span></span> − <i>nR</i> ln <span class="frac"><span><i>p</i><sub>2</sub></span><span><i>p</i><sub>1</sub></span></span></div>
+        <div class="worked-example">
+          <h3>氩气同时膨胀并升温的熵变</h3>
+          <p>25 °C、1.00 atm 下 500 cm<sup>3</sup> 的氩气膨胀到 1000 cm<sup>3</sup>，同时升温到 100 °C。求 Δ<i>S</i>。</p>
+          <p>先由理想气体方程求物质的量：<i>n</i> = <i>pV</i>/<i>RT</i> = 0.0204 mol。因熵是状态函数，可设计两步路径。</p>
+          <div class="formula">Δ<i>S</i><sub>1</sub> = <i>nR</i> ln <span class="frac"><span>1000</span><span>500</span></span> = 0.0204 mol × 8.314 J·K<sup>−1</sup>·mol<sup>−1</sup> × ln 2 = +0.118 J·K<sup>−1</sup></div>
+          <p>第二步为等容可逆升温。单原子理想气体 <i>C</i><sub>V,m</sub> = <i>C</i><sub>p,m</sub> − <i>R</i> = 12.48 J·K<sup>−1</sup>·mol<sup>−1</sup>，温度由 298 K 升到 373 K：</p>
+          <div class="formula">Δ<i>S</i><sub>2</sub> = <i>nC</i><sub>V,m</sub> ln <span class="frac"><span>373 K</span><span>298 K</span></span> = 0.0204 mol × 12.48 J·K<sup>−1</sup>·mol<sup>−1</sup> × ln 1.2517 = +0.057 J·K<sup>−1</sup></div>
+          <div class="formula">Δ<i>S</i> = Δ<i>S</i><sub>1</sub> + Δ<i>S</i><sub>2</sub> = 0.118 + 0.057 = +0.175 J·K<sup>−1</sup></div>
+          <p>结果为正值，符合体积增大且温度升高都使无序程度增加这一预期。</p>
+        </div>
+        <p>恒温恒压下两种理想气体混合，可视为各自向对方腾出的体积做可逆膨胀。设摩尔分数 <i>X</i><sub>B</sub> = <i>n</i><sub>B</sub>/<i>n</i>，则</p>
+        <div class="formula">Δ<i>S</i><sub>mix</sub> = −<i>nR</i> ∑<sub>B</sub> <i>X</i><sub>B</sub> ln <i>X</i><sub>B</sub> &gt; 0</div>
+        <p>因为 0 &lt; <i>X</i><sub>B</sub> &lt; 1 时 ln <i>X</i><sub>B</sub> &lt; 0，所以<a class="term-link" href="term.html?slug=entropy-of-mixing">混合熵</a>恒为正值——理想气体混合总是自发的，这是熵驱动的典型例子。</p>
+      </section>
+
+      <section>
+        <h2>11. 相变过程的熵变</h2>
+        <p>物质熔化或汽化时分子有序程度改变，因此相变必然伴随熵变。<b>在正常的相变温度 <i>T</i><sub>trs</sub> 下</b>，两相处于平衡，热交换可逆；恒压时 <i>q</i> = Δ<sub>trs</sub><i>H</i>，故摩尔相变熵为</p>
+        <div class="formula">Δ<sub>trs</sub><i>S</i> = <span class="frac"><span>Δ<sub>trs</sub><i>H</i></span><span><i>T</i><sub>trs</sub></span></span></div>
+        <figure class="lesson-map">
+          <img src="assets/lecture-07/phase-transition-entropy.webp" alt="相变熵等于相变焓除以相变温度，熔化与沸腾吸热使熵增加，凝固与冷凝放热使熵减小" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 31 页：Δ<sub>trs</sub><i>S</i> = Δ<sub>trs</sub><i>H</i>/<i>T</i><sub>trs</sub>。熔化、沸腾为吸热且无序化，Δ<i>S</i> &gt; 0；凝固、冷凝相反。</figcaption>
+        </figure>
+        <p>符号规律与有序程度一致：熔化、汽化吸热且 Δ<i>S</i> &gt; 0（更无序）；凝固、冷凝放热且 Δ<i>S</i> &lt; 0（更有序）。就物质形态而言，无序程度大致是气体 &gt; 液体 &gt; 固体。例如凝聚相汽化成高度分散的气体，可预期分子无序程度明显增加。</p>
+        <p><b>若过程发生在偏离 <i>T</i><sub>trs</sub> 的温度</b>（例如 -10 °C 的过冷水结冰），它不是可逆过程，上式不能直接套用。此时必须设计一条经由正常相变温度的可逆路径，把过程拆成“升温到 <i>T</i><sub>trs</sub> → 在 <i>T</i><sub>trs</sub> 相变 → 降温到目标温度”三段，即 Δ<i>S</i> = Δ<i>S</i><sub>1</sub> + Δ<i>S</i><sub>2</sub> + Δ<i>S</i><sub>3</sub>。</p>
+        <figure class="lesson-map">
+          <img src="assets/lecture-07/phase-transition-path.webp" alt="过冷水在零下十摄氏度结冰的不可逆过程，通过零摄氏度相变的可逆三步路径替代计算" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 29 页：不可逆相变（263 K 下液态水→冰）需借道 273 K 的可逆相变，用三段可逆步骤之和求 Δ<i>S</i>。</figcaption>
+        </figure>
+        <div class="worked-example">
+          <h3>-10 °C 过冷水结冰的熵变</h3>
+          <p>求 10.0 g 过冷水在 −10 °C、1.00 atm 下转变为同温同压冰的 Δ<i>S</i>。冰与过冷水的平均 <i>C</i><sub>p</sub> 分别为 2.09 与 4.23 J·g<sup>−1</sup>·K<sup>−1</sup>，冰的熔化焓为 333.6 J·g<sup>−1</sup>。</p>
+          <div class="formula">Δ<i>S</i><sub>1</sub> = 10 g × 4.23 J·g<sup>−1</sup>·K<sup>−1</sup> × ln <span class="frac"><span>273.1 K</span><span>263.1 K</span></span> = +1.59 J·K<sup>−1</sup></div>
+          <div class="formula">Δ<i>S</i><sub>2</sub> = <span class="frac"><span>10 g × (−333.6 J·g<sup>−1</sup>)</span><span>273.1 K</span></span> = −12.22 J·K<sup>−1</sup></div>
+          <div class="formula">Δ<i>S</i><sub>3</sub> = 10 g × 2.09 J·g<sup>−1</sup>·K<sup>−1</sup> × ln <span class="frac"><span>263.1 K</span><span>273.1 K</span></span> = −0.80 J·K<sup>−1</sup></div>
+          <div class="formula">Δ<i>S</i> = +1.59 − 12.22 − 0.80 = −11.43 J·K<sup>−1</sup></div>
+          <p>总熵变为负，说明体系变得更有序；该过程能自发是因为放出的凝固热使环境熵增加更多，Δ<i>S</i><sub>iso</sub> 仍为正。</p>
+        </div>
+        <p>对汽化焓与汽化熵，课件给出 <a class="term-link" href="term.html?slug=trouton-rule">Trouton 规则</a>这一经验规律：大多数液体的标准汽化熵近似相同，约为 85 J·K<sup>−1</sup>·mol<sup>−1</sup>，于是可由沸点估算汽化焓 Δ<sub>vap</sub><i>H</i><sup>°</sup> ≈ <i>T</i><sub>b</sub> × 85 J·K<sup>−1</sup>·mol<sup>−1</sup>。</p>
+        <figure class="lesson-map">
+          <img src="assets/lecture-07/trouton-rule.webp" alt="Trouton 规则说明与多种液体的标准汽化焓、沸点和标准汽化熵数据表" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 31 页：Trouton 规则及标准汽化熵数据。苯 +87.2、CCl<sub>4</sub> +85.8、环己烷 +85.1、H<sub>2</sub>S +87.9 接近规则值；水 +109.1 与甲烷 +73.2 是例外。</figcaption>
+        </figure>
+        <p>例外有明确的微观原因：水在液相中因氢键而排列较有序，汽化时无序程度的增加更大，故 Δ<sub>vap</sub><i>S</i><sup>°</sup> 偏高；甲烷等轻分子的气相转动状态在室温下可及数目很少，气相熵偏低，于是该值偏小。可见 Trouton 规则是<b>经验近似</b>，遇到强氢键或小分子时需要具体分析。</p>
+      </section>
+
+      <section>
+        <h2>12. 由热容测量熵</h2>
+        <p>要在很宽的温度范围内确定熵，必须同时计入相变处的熵变和相变之间的变温熵变。由于熵可以逐段相加，对具有固、液、气三态的物质：</p>
+        <div class="formula"><i>S</i>(<i>T</i>) = <i>S</i>(0) + ∫<sub>0</sub><sup><i>T</i><sub>f</sub></sup> <span class="frac"><span><i>C</i><sub>p</sub>(s)</span><span><i>T</i></span></span> d<i>T</i> + <span class="frac"><span>Δ<sub>fus</sub><i>H</i></span><span><i>T</i><sub>f</sub></span></span> + ∫<sub><i>T</i><sub>f</sub></sub><sup><i>T</i><sub>b</sub></sup> <span class="frac"><span><i>C</i><sub>p</sub>(l)</span><span><i>T</i></span></span> d<i>T</i> + <span class="frac"><span>Δ<sub>vap</sub><i>H</i></span><span><i>T</i><sub>b</sub></span></span> + ∫<sub><i>T</i><sub>b</sub></sub><sup><i>T</i></sup> <span class="frac"><span><i>C</i><sub>p</sub>(g)</span><span><i>T</i></span></span> d<i>T</i></div>
+        <figure class="tall">
+          <img src="assets/lecture-07/entropy-temperature-curve.webp" alt="上图是 Cp 除以温度随温度的变化曲线，下图是对应的熵随温度单调增加的曲线，并在熔点与沸点处出现跃升" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 32 页：(a) <i>C</i><sub>p</sub>/<i>T</i> 随温度变化；(b) 熵随温度单调增加，并在 <i>T</i><sub>f</sub>、<i>T</i><sub>b</sub> 处出现 Δ<sub>fus</sub><i>S</i> 与 Δ<sub>vap</sub><i>S</i> 的跃升。</figcaption>
+        </figure>
+        <p>换言之，熵等于 <i>C</i><sub>p</sub>/<i>T</i> 曲线下直到相应温度的面积，再加上途中每一个相变的熵。式中各项多数可由量热实验测得，也可由计算得到。</p>
+        <p>极低温下 <i>C</i><sub>p</sub> 的测量很困难，课件给出 Debye 外推法：尽可能测到低温，在其下假定热容正比于 <i>T</i><sup>3</sup>，即 <i>C</i><sub>p</sub> = <i>aT</i><sup>3</sup>，从而</p>
+        <div class="formula">∫<sub>0</sub><sup><i>T</i></sup> <span class="frac"><span><i>C</i><sub>p</sub> d<i>T</i></span><span><i>T</i></span></span> = <span class="frac"><span>1</span><span>3</span></span> <i>C</i><sub>p</sub>(<i>T</i>)</div>
+        <figure>
+          <img src="assets/lecture-07/debye-extrapolation.webp" alt="低温下热容正比于温度立方的 Debye 近似公式及积分结果" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 33 页：Debye 外推。低温下 <i>C</i><sub>p</sub> ∝ <i>T</i><sup>3</sup>，故该段的熵积分等于 (1/3)<i>C</i><sub>p</sub>(<i>T</i>)。</figcaption>
+        </figure>
+        <div class="worked-example">
+          <h3>由 10 K 的热容估算熵</h3>
+          <p>某固体在 10 K 时的摩尔 <i>C</i><sub>p</sub> 为 0.43 J·K<sup>−1</sup>·mol<sup>−1</sup>。按 <i>C</i><sub>p</sub> = <i>aT</i><sup>3</sup> 求系数，再由上一式估算该温度下的熵。</p>
+          <div class="formula"><i>a</i> = <span class="frac"><span>0.43 J·K<sup>−1</sup>·mol<sup>−1</sup></span><span>(10 K)<sup>3</sup></span></span> = 4.3 × 10<sup>−4</sup> J·K<sup>−4</sup>·mol<sup>−1</sup></div>
+          <div class="formula"><i>S</i>(10 K) = <i>S</i>(0) + <span class="frac"><span>1</span><span>3</span></span> × 4.3 × 10<sup>−4</sup> J·K<sup>−4</sup>·mol<sup>−1</sup> × (10 K)<sup>3</sup> = <i>S</i>(0) + 0.14 J·K<sup>−1</sup>·mol<sup>−1</sup></div>
+          <p>剩下的问题正是 <i>S</i>(0) 等于多少——这由第三定律回答。</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>13. 热力学第三定律</h2>
+        <p>从分子层面观察：在 <i>T</i> = 0 K 时热运动能量已被完全冻结；在完美晶体中所有原子（离子）都处于规则均匀的排列，只有<b>一种</b>排布方式，即 <i>W</i> = 1。由 <i>S</i> = <i>k</i> ln <i>W</i> 可知此时熵为零。若晶体中存在取向无序（例如 CO 分子可正反两种朝向、OC 与 CO 混排），则 <i>W</i> &gt; 1、剩余熵不为零，所以第三定律的成立前提是“完美晶体”。</p>
+        <figure class="lesson-map">
+          <img src="assets/lecture-07/third-law-crystal.webp" alt="第三定律的分子层面观察：零开尔文下完美晶体只有一种排布方式，熵为零，并给出 S 等于 k 乘以 lnW" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 34 页：第三定律的分子论据。0 K 时热运动被冻结、完美晶体只有一种排布，故 <i>S</i> = <i>k</i> ln <i>W</i> 给出熵为零。</figcaption>
+        </figure>
+        <p>Nernst 热定理（1906）指出：任何物理或化学变化所伴随的熵变，在温度趋于零时趋于零，即 Δ<i>S</i> → 0（<i>T</i> → 0），前提是所涉及的物质都是完美晶体。若所有完美晶体元素在 <i>T</i> = 0 时 <i>S</i> = 0，则化合物的生成（一种化学变化）也要求所有完美晶体化合物在该温度下熵为零——这个推论就是第三定律。</p>
+        <div class="note"><b><a class="term-link" href="term.html?slug=third-law">第三定律</a>的两种说法</b><p>Planck（1911）的表述：所有完美晶体物质在 <i>T</i> = 0 K 时的熵为零，即 <i>S</i>(0) = 0。它只意味着所有完美物质在该温度下具有相同的熵，把这个共同值取作零是一种方便的选择，并且与分子层面的观察一致。等价说法：无论采用何种过程，也无论怎样理想化，都不可能经过有限步骤把任何体系的温度降到绝对零度。</p></div>
+        <p>课件用绝热去磁说明为什么达不到绝对零度：顺磁物质中未成对电子的取向随外磁场排列，因此①在等温环境下加磁场，电子取向有序化，<i>S</i> 下降；②在绝热环境下撤去磁场，取向被保留而 <i>S</i> 不变，温度随之下降。重复这两步可以逐次降温，但温度越低，每一步能降低的幅度越小；在步骤数趋于无穷的极限下 <i>T</i> → 0 K，而<b>这个极限永远无法真正到达</b>。</p>
+      </section>
+
+      <section>
+        <h2>14. 标准摩尔熵与标准反应熵</h2>
+        <p>以 <i>S</i>(0 K) = 0 为基准，物质在温度 <i>T</i> 的标准状态下所具有的熵称为<a class="term-link" href="term.html?slug=standard-molar-entropy">第三定律熵</a>或标准熵 <i>S</i><sup>°</sup>(<i>T</i>)，其完整表达式正是上一节热容积分的分形式：</p>
+        <div class="formula"><i>S</i><sub>m</sub><sup>°</sup>(<i>T</i>) = ∫<sub>0</sub><sup><i>T</i><sub>f</sub></sup> <span class="frac"><span><i>C</i><sub>p,m</sub>(s)</span><span><i>T</i></span></span> d<i>T</i> + <span class="frac"><span>Δ<sub>fus</sub><i>H</i><sub>m</sub><sup>°</sup></span><span><i>T</i><sub>f</sub></span></span> + ∫<sub><i>T</i><sub>f</sub></sub><sup><i>T</i><sub>b</sub></sup> <span class="frac"><span><i>C</i><sub>p,m</sub>(l)</span><span><i>T</i></span></span> d<i>T</i> + <span class="frac"><span>Δ<sub>vap</sub><i>H</i><sub>m</sub><sup>°</sup></span><span><i>T</i><sub>b</sub></span></span> + ∫<sub><i>T</i><sub>b</sub></sub><sup><i>T</i></sup> <span class="frac"><span><i>C</i><sub>p,m</sub>(g)</span><span><i>T</i></span></span> d<i>T</i></div>
+        <p>这是一个重要的区别：<a class="term-link" href="term.html?slug=enthalpy">焓</a>和内能没有绝对值，只有变化量；而熵可以借助第三定律定出<b>绝对值</b>，所有计算中都直接使用它。课件给出的 298 K 标准摩尔熵数据（J·K<sup>−1</sup>·mol<sup>−1</sup>）：石墨 5.7、金刚石 2.4、碘 I<sub>2</sub>(s) 116.1；液态苯 173.3、水 69.9、汞 76.0。可以看到同一种元素的不同晶型熵不同（石墨 &gt; 金刚石），液体的熵大于同温下的固体，分子越复杂、越柔软，熵越大。</p>
+        <p><b>标准反应熵</b>定义为产物与反应物各自处于标准状态时摩尔熵之差，按化学计量数加权：</p>
+        <div class="formula">Δ<sub>r</sub><i>S</i><sup>°</sup> = ∑<sub>产物</sub> ν<sub>J</sub> <i>S</i><sub>m</sub><sup>°</sup>(J) − ∑<sub>反应物</sub> ν<sub>J</sub> <i>S</i><sub>m</sub><sup>°</sup>(J)</div>
+        <div class="worked-example">
+          <h3>25 °C 下水的生成反应熵</h3>
+          <p>反应 H<sub>2</sub>(g) + <span class="frac"><span>1</span><span>2</span></span>O<sub>2</sub>(g) → H<sub>2</sub>O(l)，各标准摩尔熵为 <i>S</i><sub>m</sub><sup>°</sup>(H<sub>2</sub>O, l) = 69.9、<i>S</i><sub>m</sub><sup>°</sup>(H<sub>2</sub>, g) = 130.7、<i>S</i><sub>m</sub><sup>°</sup>(O<sub>2</sub>, g) = 205.0 J·K<sup>−1</sup>·mol<sup>−1</sup>。</p>
+          <div class="formula">Δ<sub>r</sub><i>S</i><sup>°</sup> = 69.9 − 130.7 − <span class="frac"><span>1</span><span>2</span></span> × 205.0 = −163.3 J·K<sup>−1</sup>·mol<sup>−1</sup></div>
+          <p>结果为负，原因很直观：反应由气相变为液相，分子无序程度下降。</p>
+        </div>
+        <p>反应熵同样随温度变化。在反应物和产物均不发生相变的温区内，把生成物与反应物的热容差按化学计量数加权，得到与 Kirchhoff 定律形式相同的关系：</p>
+        <div class="formula">Δ<sub>r</sub><i>C</i><sub>p</sub><sup>°</sup> = ∑<sub>产物</sub> ν<sub>J</sub> <i>C</i><sub>p,m</sub><sup>°</sup>(J) − ∑<sub>反应物</sub> ν<sub>J</sub> <i>C</i><sub>p,m</sub><sup>°</sup>(J)　　Δ<sub>r</sub><i>S</i><sup>°</sup>(<i>T</i>) = Δ<sub>r</sub><i>S</i><sup>°</sup>(298 K) + ∫<sub>298 K</sub><sup><i>T</i></sup> <span class="frac"><span>Δ<sub>r</sub><i>C</i><sub>p</sub><sup>°</sup></span><span><i>T</i></span></span> d<i>T</i></div>
+        <p>课件以 CO(g) + 2H<sub>2</sub>(g) → CH<sub>3</sub>OH(g) 为例，给出三种气体的 <i>C</i><sub>p,m</sub> 为 29.04、29.29 与 51.25 J·K<sup>−1</sup>·mol<sup>−1</sup>，要求把 298 K 的反应熵换算到 423 K。先求反应热容差：</p>
+        <div class="formula">Δ<sub>r</sub><i>C</i><sub>p</sub><sup>°</sup> = 51.25 − 29.04 − 2 × 29.29 = −36.37 J·K<sup>−1</sup>·mol<sup>−1</sup></div>
+        <p>Δ<sub>r</sub><i>C</i><sub>p</sub><sup>°</sup> 为负且视为常数，则升温使反应熵变得更负：Δ<sub>r</sub><i>S</i><sup>°</sup>(<i>T</i>) = Δ<sub>r</sub><i>S</i><sup>°</sup>(298 K) + Δ<sub>r</sub><i>C</i><sub>p</sub><sup>°</sup> ln(<i>T</i>/298 K)。若取 298 K 的标准摩尔熵 CO(g) 197.7、H<sub>2</sub>(g) 130.7、CH<sub>3</sub>OH(g) 239.8 J·K<sup>−1</sup>·mol<sup>−1</sup>，则 Δ<sub>r</sub><i>S</i><sup>°</sup>(298 K) = 239.8 − 197.7 − 2 × 130.7 = −219.3 J·K<sup>−1</sup>·mol<sup>−1</sup>，代入 423 K 得 −219.3 − 36.37 × ln 1.419 ≈ −232.0 J·K<sup>−1</sup>·mol<sup>−1</sup>。该反应把 3 mol 气体变成 1 mol 气体，熵大幅减小，与计算结果一致。</p>
+        <div class="note"><b>课件未展开的两节</b><p>课件的章节提纲列出了 4.6 Helmholtz 能与 Gibbs 能、4.7 标准摩尔 Gibbs 能，并在第 22、34 页重复出现，但本讲稿实际只推进到第三定律与标准摩尔熵，未对这最后两节展开。它们应属后续课程内容。</p></div>
+      </section>
+
+      <section>
+        <h2>15. 计算总览与两个综合例题</h2>
+        <p>课件用一张图把全部熵变计算串了起来：总判据是 Δ<i>S</i><sub>iso</sub> ≥ 0，它由 Δ<i>S</i><sub>sys</sub> 与 Δ<i>S</i><sub>sur</sub> 两部分组成；体系的熵变按 pVT 变化、相变、化学反应三条分支处理，环境部分则统一用 −<i>q</i><sub>sys</sub>/<i>T</i><sub>sur</sub> 求得。</p>
+        <figure class="lesson-map">
+          <img src="assets/lecture-07/entropy-summary-map.webp" alt="熵变计算总图：由孤立体系总熵判据展开为体系熵变与环境熵变，体系部分再分为 pVT 变化、相变与化学反应三条分支" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 40 页：熵变计算总图。左侧为判据 Δ<i>S</i><sub>iso</sub> = Δ<i>S</i><sub>sys</sub> + Δ<i>S</i><sub>sur</sub> ≥ 0，中部与右侧为各分支公式，底部为标准摩尔熵的分段求和式。</figcaption>
+        </figure>
+        <div class="worked-example">
+          <h3>可逆绝热压缩：q、w、ΔU、ΔH 与 ΔS</h3>
+          <p>2.00 mol 双原子理想气体在 250 K 下被可逆绝热压缩到 300 K。已知 <i>C</i><sub>V,m</sub> = 27.5 J·K<sup>−1</sup>·mol<sup>−1</sup>，求 <i>q</i>、<i>w</i>、Δ<i>U</i>、Δ<i>H</i> 与 Δ<i>S</i>。</p>
+          <p>过程可逆且绝热，故 <i>q</i> = 0。由于 Δ<i>S</i> = ∫d<i>q</i><sub>rev</sub>/<i>T</i> 而 d<i>q</i><sub>rev</sub> = 0，所以</p>
+          <div class="formula"><i>q</i> = 0　　Δ<i>S</i> = 0</div>
+          <div class="formula">Δ<i>U</i> = <i>nC</i><sub>V,m</sub>Δ<i>T</i> = 2.00 mol × 27.5 J·K<sup>−1</sup>·mol<sup>−1</sup> × (300 − 250) K = +2.75 kJ</div>
+          <div class="formula"><i>w</i> = Δ<i>U</i> − <i>q</i> = +2.75 kJ</div>
+          <p>对理想气体 <i>C</i><sub>p,m</sub> = <i>C</i><sub>V,m</sub> + <i>R</i> = 27.5 + 8.314 = 35.814 J·K<sup>−1</sup>·mol<sup>−1</sup>，于是</p>
+          <div class="formula">Δ<i>H</i> = <i>nC</i><sub>p,m</sub>Δ<i>T</i> = 2.00 mol × 35.814 J·K<sup>−1</sup>·mol<sup>−1</sup> × 50 K = +3.58 kJ</div>
+          <p>注意这里的 Δ<i>S</i> = 0 是“可逆绝热”的直接结果，而不是“温度不变”所致——温度确实升高了，但熵变仍为零，这正是可逆绝热过程的特征。</p>
+        </div>
+        <div class="worked-example">
+          <h3>铜块恒压冷却的放热与熵变</h3>
+          <p>2.75 kg 铜在恒压下由 330 K 冷却到 275 K。已知铜的摩尔质量 63.54 g·mol<sup>−1</sup>、<i>C</i><sub>p,m</sub> = 24.44 J·K<sup>−1</sup>·mol<sup>−1</sup>，求放出多少热以及样品的熵变。</p>
+          <div class="formula"><i>n</i> = <span class="frac"><span>2.75 × 10<sup>3</sup> g</span><span>63.54 g·mol<sup>−1</sup></span></span> = 43.28 mol</div>
+          <div class="formula"><i>q</i> = <i>nC</i><sub>p,m</sub>Δ<i>T</i> = 43.28 mol × 24.44 J·K<sup>−1</sup>·mol<sup>−1</sup> × (275 − 330) K = −5.82 × 10<sup>4</sup> J ≈ −58.2 kJ</div>
+          <div class="formula">Δ<i>S</i> = <i>nC</i><sub>p,m</sub> ln <span class="frac"><span>275 K</span><span>330 K</span></span> = 43.28 mol × 24.44 J·K<sup>−1</sup>·mol<sup>−1</sup> × ln 0.8333 = −193 J·K<sup>−1</sup></div>
+          <p>负号表示样品变得更有序。环境吸收了 −<i>q</i> 的热量，其熵增加更多，因此总熵仍然增加。</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>16. 本课复习清单</h2>
+        <ol class="check-list">
+          <li>说明第一定律与第二定律各自回答什么问题，以及为什么“能量守恒”不足以判断自发方向。</li>
+          <li>叙述 Kelvin 与 Clausius 两种表述，并解释它们为何等价；说明“理想气体等温膨胀把热几乎全部变成功”为什么不构成反例。</li>
+          <li>写出循环过程的能量关系 −<i>w</i> = <i>q</i><sub>h</sub> + <i>q</i><sub>c</sub> 与效率定义，并判断 <i>q</i><sub>c</sub> 的符号。</li>
+          <li>画出 Carnot 循环的四步，说明 <i>V</i><sub>B</sub>/<i>V</i><sub>A</sub> = <i>V</i><sub>C</sub>/<i>V</i><sub>D</sub> 的来历，并写出 ε<sub>rev</sub> = 1 − <i>T</i><sub>c</sub>/<i>T</i><sub>h</sub>。</li>
+          <li>复述用两台热机反证 Carnot 原理的逻辑，并写出 ε ≤ ε<sub>r</sub> 的适用条件。</li>
+          <li>由 ∮d<i>q</i><sub>r</sub>/<i>T</i> = 0 论证熵是状态函数，并写出 Clausius 不等式 d<i>S</i> ≥ d<i>q</i>/<i>T</i>。</li>
+          <li>写出孤立体系的自发判据 Δ<i>S</i><sub>iso</sub> ≥ 0，并区分“自发”“平衡”“不可能”三种情形。</li>
+          <li>按“定始末态—设可逆路径—积分 d<i>q</i><sub>r</sub>/<i>T</i>”的框架计算熵变，并写出环境熵变的捷径 −<i>q</i><sub>sys</sub>/<i>T</i><sub>sur</sub>。</li>
+          <li>分别给出理想气体等温、等压、等容与一般 pVT 变化的 Δ<i>S</i>，以及混合熵的表达式。</li>
+          <li>区分可逆相变与不可逆相变的熵变算法，并说明 Trouton 规则的含义与两个例外。</li>
+          <li>说明如何由 <i>C</i><sub>p</sub>/<i>T</i> 曲线与相变熵求 <i>S</i>(<i>T</i>)，以及 Debye 外推为何需要 <i>C</i><sub>p</sub> ∝ <i>T</i><sup>3</sup>。</li>
+          <li>叙述第三定律的两种说法，并从 <i>S</i> = <i>k</i> ln <i>W</i> 解释为什么“完美晶体”是前提。</li>
+          <li>写出标准反应熵的求和式与其随温度变化的 Kirchhoff 形式，并判断气体物质的量变化对 Δ<sub>r</sub><i>S</i> 符号的影响。</li>
+        </ol>
+        <div class="note"><b>课件勘误与提示</b><p>① 第 4 页把 Clausius 表述与 Kelvin–Planck 表述写成一句合并句，用括号并列了两种备选措辞，容易读错归属，正确含义见本课第 3 节。② 课件多处把 Planck 拼作 “Plank”。③ 第 13 页与第 19、21 页为中文教材插图与重复的总结页，其中第 13 页插图带有教材水印，本课配图已改用同一逻辑的课件原图。④ 第 36 页 “280 pK” 指 280 皮开尔文（pK = 10<sup>−12</sup> K），是 2001 年诺贝尔物理学奖相关的玻色–爱因斯坦凝聚实验温度量级。⑤ 第 39 页例题只给出三种气体的 <i>C</i><sub>p,m</sub> 与 298 K→423 K 的换算式，298 K 的反应熵需另查标准摩尔熵表；本课正文所用的 197.7、130.7、239.8 J·K<sup>−1</sup>·mol<sup>−1</sup> 取自 Atkins 数据表，请与课程指定教材核对。</p></div>
+      </section>
+
+      <footer class="source">整理依据：PChem1_lec78 2nd Law1 20260929.pdf 课堂课件（43 页，第 1—43 页）；Atkins’ Physical Chemistry 第二定律与第三定律相关章节。全部配图取自该课件原图与矢量页裁剪，公式符号、判据方向与单位均按课件正文；原课件的表述差异与未展开章节列于“课件勘误与提示”。</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

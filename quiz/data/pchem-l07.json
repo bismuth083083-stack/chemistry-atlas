@@ -1,0 +1,669 @@
+{
+  "id": "PCHEM-L07",
+  "title": "热力学第二定律：热机、熵与第三定律",
+  "description": "练习热机与热库、Carnot 循环与 Carnot 原理、熵与 Clausius 不等式、各类过程的熵变计算，以及第三定律与标准摩尔熵。",
+  "subject": "physical-chemistry",
+  "chapter": "Chapter 7 · The Second Law",
+  "version": "1.0.0",
+  "totalPoints": 42,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "下列哪一项是热力学第二定律的 Kelvin 表述？",
+      "options": [
+        {
+          "id": "A",
+          "text": "不可能存在唯一结果是从热库吸热并把它完全转化为功的过程"
+        },
+        {
+          "id": "B",
+          "text": "能量既不能产生也不能消灭"
+        },
+        {
+          "id": "C",
+          "text": "孤立体系的内能保持不变"
+        },
+        {
+          "id": "D",
+          "text": "任何循环过程的内能变化都为零"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Kelvin 表述指出热不可能在伴随其他效应的情况下全部变功，热机必须同时向低温热源排热。B 是能量守恒的通俗说法，C、D 都不是第二定律的表述。",
+      "difficulty": "easy",
+      "tags": [
+        "Kelvin statement",
+        "second law"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "true-false",
+      "question": "热机每完成一个循环后工作物质回到初态，因此整圈循环中 ΔU = 0，且 −w = q_h + q_c。",
+      "answer": true,
+      "points": 1,
+      "explanation": "循环过程始末态相同，内能是状态函数，故 ΔU = 0。由 ΔU = q + w 得 −w = q_h + q_c。",
+      "difficulty": "easy",
+      "tags": [
+        "heat engine",
+        "cyclic process",
+        "internal energy"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "Carnot 循环由哪两类步骤组成？",
+      "options": [
+        {
+          "id": "A",
+          "text": "两条等温线与两条绝热线"
+        },
+        {
+          "id": "B",
+          "text": "四条等温线"
+        },
+        {
+          "id": "C",
+          "text": "四条绝热线"
+        },
+        {
+          "id": "D",
+          "text": "两条等压线与两条等容线"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Carnot 循环是可逆循环，由两个不同温度下的等温可逆步骤与两个绝热可逆步骤组成，工作物质为理想气体。",
+      "difficulty": "easy",
+      "tags": [
+        "Carnot cycle",
+        "reversible process"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "fill-in-the-blank",
+      "question": "在 Carnot 循环的两个绝热可逆步骤中，体系与外界交换的热量 q 等于____。",
+      "answer": "0",
+      "points": 1,
+      "explanation": "绝热过程无热交换，故 q = 0；这也是该段 ΔS = ∫dq_rev/T = 0 的原因。",
+      "difficulty": "easy",
+      "tags": [
+        "adiabatic",
+        "Carnot cycle"
+      ],
+      "acceptableAnswers": [
+        "0",
+        "零",
+        "zero"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "熵的 SI 单位是下列哪一个？",
+      "options": [
+        {
+          "id": "A",
+          "text": "J·K⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "J·K⁻¹·mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "J·mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "K·J⁻¹"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "熵的单位是 J·K⁻¹；摩尔熵的单位是 J·K⁻¹·mol⁻¹，与气体常数 R 的单位相同。本题问熵本身，故选 A。",
+      "difficulty": "easy",
+      "tags": [
+        "entropy",
+        "units"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "某可逆热机工作在 T_h = 600 K 与 T_c = 300 K 之间，其效率为多少？",
+      "options": [
+        {
+          "id": "A",
+          "text": "50%"
+        },
+        {
+          "id": "B",
+          "text": "100%"
+        },
+        {
+          "id": "C",
+          "text": "75%"
+        },
+        {
+          "id": "D",
+          "text": "无法确定，需知道工作物质"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "可逆热机效率 ε_rev = 1 − T_c/T_h = 1 − 300/600 = 0.50，即 50%。该式只依赖两个温度，与工作物质和循环构造无关。",
+      "difficulty": "medium",
+      "tags": [
+        "Carnot efficiency",
+        "heat engine"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "multiple-choice",
+      "question": "关于 Carnot 原理，下列说法正确的是哪些？",
+      "options": [
+        {
+          "id": "A",
+          "text": "工作于同一对温度之间时，任何热机的效率都不超过可逆热机"
+        },
+        {
+          "id": "B",
+          "text": "所有可逆热机的效率都相同，与工作物质无关"
+        },
+        {
+          "id": "C",
+          "text": "不可逆循环的效率小于可逆循环的效率"
+        },
+        {
+          "id": "D",
+          "text": "只要改进设计，真实热机可以达到甚至超过 Carnot 效率"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "ε ≤ ε_r：可逆取等号、不可逆取小于号，因此 A、C 正确；所有可逆热机效率只由两个温度决定，与工作物质和构造无关，故 B 正确。D 违反第二定律，真实热机永远达不到 Carnot 效率。",
+      "difficulty": "medium",
+      "tags": [
+        "Carnot principle",
+        "reversible",
+        "irreversible"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "热机循环满足 −w = q_h + q_c，其中 q_c 是向低温热源排出的热。q_c 的符号以及由此得到的效率上限是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "q_c < 0，故 ε < 1"
+        },
+        {
+          "id": "B",
+          "text": "q_c > 0，故 ε > 1"
+        },
+        {
+          "id": "C",
+          "text": "q_c = 0，故 ε = 1"
+        },
+        {
+          "id": "D",
+          "text": "q_c 可正可负，ε 无上限"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "热机向低温热源排热，按吸热为正的约定 q_c < 0。于是 ε = 1 + q_c/q_h < 1。热机在循环中不可能把热全部变功。",
+      "difficulty": "medium",
+      "tags": [
+        "heat engine",
+        "efficiency",
+        "sign convention"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "理想气体在温度 T 下由 V_i 等温可逆膨胀到 V_f，其熵变为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "nR ln(V_f/V_i)"
+        },
+        {
+          "id": "B",
+          "text": "nRT ln(V_f/V_i)"
+        },
+        {
+          "id": "C",
+          "text": "nC_V,m ln(V_f/V_i)"
+        },
+        {
+          "id": "D",
+          "text": "0，因为温度不变"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "等温时 ΔU = 0，故 q_rev = −w_rev = nRT ln(V_f/V_i)，除以 T 得 ΔS = nR ln(V_f/V_i)。因 S 是状态函数，该式对可逆与不可逆等温膨胀同样成立，故 D 错误。",
+      "difficulty": "medium",
+      "tags": [
+        "entropy of expansion",
+        "isothermal",
+        "perfect gas"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "fill-in-the-blank",
+      "question": "若相变发生在偏离正常相变温度 T_trs 的温度下，该过程不可逆，必须设计一条等价的____路径，分步计算熵变后再相加。",
+      "answer": "可逆",
+      "points": 2,
+      "explanation": "不可逆相变不能直接用 Δ_trs S = Δ_trs H/T_trs，需借道正常相变温度：升温到 T_trs、在 T_trs 可逆相变、再降温到目标温度，即 ΔS = ΔS₁ + ΔS₂ + ΔS₃。",
+      "difficulty": "medium",
+      "tags": [
+        "phase transition",
+        "irreversible",
+        "reversible path"
+      ],
+      "acceptableAnswers": [
+        "可逆",
+        "reversible",
+        "可逆路径",
+        "可逆过程"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "理想气体向真空自由膨胀（w = 0）且温度不变，则环境的熵变 ΔS_sur 与总熵变分别为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔS_sur = 0，ΔS_tot > 0"
+        },
+        {
+          "id": "B",
+          "text": "ΔS_sur < 0，ΔS_tot = 0"
+        },
+        {
+          "id": "C",
+          "text": "ΔS_sur = 0，ΔS_tot = 0"
+        },
+        {
+          "id": "D",
+          "text": "ΔS_sur > 0，ΔS_tot > 0"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "自由膨胀 w = 0，且温度不变故 q = 0；环境既不吸热也不放热，ΔS_sur = 0。而体系熵变为 nR ln(V_f/V_i) > 0，故 ΔS_tot > 0，过程自发。若为可逆等温膨胀则 ΔS_sur = −ΔS_sys，总熵变为零。",
+      "difficulty": "medium",
+      "tags": [
+        "free expansion",
+        "entropy of surroundings",
+        "spontaneous"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "true-false",
+      "question": "只要体系的熵减小，该过程就一定违反热力学第二定律。",
+      "answer": false,
+      "points": 2,
+      "explanation": "自发性判据是总熵 ΔS_iso = ΔS_sys + ΔS_sur ≥ 0，而非体系熵单独增加。水结冰时体系熵减小仍可自发，因为放出的热使环境熵增加更多。",
+      "difficulty": "medium",
+      "tags": [
+        "entropy",
+        "spontaneous change",
+        "second law"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "恒温恒压下理想气体混合的熵变 ΔS_mix = −nR Σ X_B ln X_B。关于它的符号，正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "恒为正，因为 0 < X_B < 1 时 ln X_B < 0"
+        },
+        {
+          "id": "B",
+          "text": "恒为负，因为混合使体系更有序"
+        },
+        {
+          "id": "C",
+          "text": "可能为正也可能为负，取决于各组分摩尔分数"
+        },
+        {
+          "id": "D",
+          "text": "恒为零，因为理想气体之间无相互作用"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "当 0 < X_B < 1 时 ln X_B < 0，代入 −nR Σ X_B ln X_B 得正值，故理想气体混合总是自发的，这是熵驱动的典型例子。",
+      "difficulty": "medium",
+      "tags": [
+        "entropy of mixing",
+        "mole fraction",
+        "ideal gas"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于 Clausius 不等式 dS ≥ dq/T，下列哪些说法正确？",
+      "options": [
+        {
+          "id": "A",
+          "text": "不可逆过程取大于号，可逆过程取等号"
+        },
+        {
+          "id": "B",
+          "text": "对孤立体系化为 ΔS ≥ 0"
+        },
+        {
+          "id": "C",
+          "text": "它是第二定律的紧凑数学形式"
+        },
+        {
+          "id": "D",
+          "text": "不等式中的 dq 必须沿可逆路径取值"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "由不可逆循环 ∮dq/T < 0 推出 ∫dq_ir/T < ΔS，合并两种情形即 dS ≥ dq/T（不可逆取大于、可逆取等号），故 A、C 正确；孤立体系 q = 0，不等式化为 ΔS ≥ 0，故 B 正确。D 错误：dq 是实际过程交换的热，而 dS 才由可逆路径定义。",
+      "difficulty": "medium",
+      "tags": [
+        "Clausius inequality",
+        "second law",
+        "isolated system"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "标准摩尔熵 S°_m(T) 的数值以什么为基准？",
+      "options": [
+        {
+          "id": "A",
+          "text": "S(0 K) = 0，由第三定律给出"
+        },
+        {
+          "id": "B",
+          "text": "S(298 K) = 0，以室温为基准"
+        },
+        {
+          "id": "C",
+          "text": "以元素的生成焓为零为基准"
+        },
+        {
+          "id": "D",
+          "text": "以标准氢电极为基准"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "第三定律指出所有完美晶体物质在 T = 0 K 时的熵为零，据此由热容与相变焓分段积分可得各温度下的标准摩尔熵，因此熵有绝对值。",
+      "difficulty": "medium",
+      "tags": [
+        "third law",
+        "standard molar entropy",
+        "absolute entropy"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "25 °C、1.00 atm 下 500 cm³ 氩气（单原子理想气体）等温可逆膨胀到 1000 cm³，其熵变为多少？（已知 n = 0.0204 mol，R = 8.314 J·K⁻¹·mol⁻¹）",
+      "options": [
+        {
+          "id": "A",
+          "text": "+0.118 J·K⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "+0.057 J·K⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "+0.175 J·K⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "−0.118 J·K⁻¹"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "等温膨胀 ΔS = nR ln(V_f/V_i) = 0.0204 × 8.314 × ln 2 = +0.118 J·K⁻¹。若题中第二步再等容升温到 100 °C，则另有 ΔS₂ = nC_V,m ln(T_f/T_i) = +0.057 J·K⁻¹，总熵变为 +0.175 J·K⁻¹，对应 C。本题只做等温膨胀，故选 A。",
+      "difficulty": "hard",
+      "tags": [
+        "entropy calculation",
+        "isothermal expansion",
+        "argon"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "single-choice",
+      "question": "按 Trouton 规则估算某液体在正常沸点 353 K 时的标准汽化焓，最接近下列哪个值？",
+      "options": [
+        {
+          "id": "A",
+          "text": "+30 kJ·mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "+85 kJ·mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "+8.5 kJ·mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "+353 kJ·mol⁻¹"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "Trouton 规则给出 Δ_vap S° ≈ 85 J·K⁻¹·mol⁻¹，故 Δ_vap H° ≈ T_b × 85 J·K⁻¹·mol⁻¹ = 353 × 85 ≈ 3.0 × 10⁴ J·mol⁻¹ ≈ +30 kJ·mol⁻¹。注意单位换算，不要与 Δ_vap S° 的数值混淆。",
+      "difficulty": "hard",
+      "tags": [
+        "Trouton rule",
+        "enthalpy of vaporization",
+        "estimation"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "multiple-choice",
+      "question": "关于热力学第三定律，下列说法正确的是哪些？",
+      "options": [
+        {
+          "id": "A",
+          "text": "所有完美晶体物质在 T = 0 K 时的熵为零"
+        },
+        {
+          "id": "B",
+          "text": "若晶体存在取向无序（如 CO 的 OC/CO 混排），则有剩余熵，不满足第三定律的前提"
+        },
+        {
+          "id": "C",
+          "text": "不可能经过有限步骤把任何体系的温度降到绝对零度"
+        },
+        {
+          "id": "D",
+          "text": "任何物质在 T = 0 K 时的熵都严格为零，包括玻璃态固体"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "第三定律（Planck）表述为所有完美晶体在 0 K 时熵为零，A 正确；取向无序的晶体 W > 1，由 S = k ln W 可知剩余熵不为零，故 B 正确；等价表述指出绝对零度不能经有限步骤达到，C 正确。D 错误：非完美晶体（如玻璃态）不满足前提。",
+      "difficulty": "hard",
+      "tags": [
+        "third law",
+        "residual entropy",
+        "Nernst theorem"
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "对气相反应 CO(g) + 2H₂(g) → CH₃OH(g)，已知各物质 C_p,m 为 51.25、29.04、29.29 J·K⁻¹·mol⁻¹，则 Δ_r C_p° 及升温对 Δ_r S° 的影响是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Δ_r C_p° = −36.37 J·K⁻¹·mol⁻¹，升温使 Δ_r S° 变得更负"
+        },
+        {
+          "id": "B",
+          "text": "Δ_r C_p° = +36.37 J·K⁻¹·mol⁻¹，升温使 Δ_r S° 变得更正"
+        },
+        {
+          "id": "C",
+          "text": "Δ_r C_p° = 0，Δ_r S° 不随温度变化"
+        },
+        {
+          "id": "D",
+          "text": "Δ_r C_p° = −36.37 J·K⁻¹·mol⁻¹，升温使 Δ_r S° 变得更正"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "Δ_r C_p° = Σν C_p,m(产物) − Σν C_p,m(反应物) = 51.25 − 29.04 − 2 × 29.29 = −36.37 J·K⁻¹·mol⁻¹。由 Δ_r S°(T) = Δ_r S°(298 K) + Δ_r C_p° ln(T/298 K) 可知，Δ_r C_p° < 0 且 T > 298 K 时 ln(T/298 K) > 0，故升温使反应熵变得更负。",
+      "difficulty": "hard",
+      "tags": [
+        "Kirchhoff law",
+        "reaction entropy",
+        "temperature dependence"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "课件中用两台可逆热机 A、B 工作于同一对热源之间来论证 Carnot 原理。若假设 ε_A > ε_B 并把 B 反向运行，会得到什么矛盾结论？",
+      "options": [
+        {
+          "id": "A",
+          "text": "相当于把热直接变成了功而无需低温热源，违反第二定律"
+        },
+        {
+          "id": "B",
+          "text": "违反能量守恒，即违反第一定律"
+        },
+        {
+          "id": "C",
+          "text": "低温热源的温度会自发升高"
+        },
+        {
+          "id": "D",
+          "text": "没有任何矛盾，说明 ε_A 确实可以大于 ε_B"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "A 输出的功多于 B 反向运行所需，多余的功可对外输出 w′。净结果是低温热源热量收支恰好抵消、高温热源净失能、系统对外净输出功——这等于不需要低温热源就把热变成了功，违反第二定律。故假设不成立，只能有 ε_A ≤ ε_B；把 A 反向运行又得 ε_B ≤ ε_A，两者合起来给出 ε_A = ε_B。",
+      "difficulty": "challenging",
+      "tags": [
+        "Carnot principle",
+        "proof by contradiction",
+        "second law"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "multiple-choice",
+      "question": "下列关于熵变计算的策略，正确的是哪些？",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔS 只依赖始末态，因此可以为不可逆过程另设一条方便的可逆路径"
+        },
+        {
+          "id": "B",
+          "text": "环境的熵变可直接用 −q_sys/T_sur 计算，其中 q_sys 取实际过程的热效应"
+        },
+        {
+          "id": "C",
+          "text": "等压变温用 nC_p,m ln(T_f/T_i)，等容变温用 nC_V,m ln(T_f/T_i)"
+        },
+        {
+          "id": "D",
+          "text": "计算 ΔS_sys 时必须使用实际路径上的热效应 dq_ir"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "熵是状态函数，故 A 正确；环境温度恒定且不因体系变化而改变状态，其热交换可按可逆处理，故 B 正确；C 中两式分别由 dq_rev = C_p dT 与 C_V dT 积分而来（设热容在温区内为常数），正确。D 错误：体系的 ΔS 必须沿可逆路径积分，不能用 dq_ir。",
+      "difficulty": "challenging",
+      "tags": [
+        "entropy calculation",
+        "state function",
+        "surroundings"
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "single-choice",
+      "question": "2.00 mol 双原子理想气体在 250 K 下被可逆绝热压缩到 300 K，已知 C_V,m = 27.5 J·K⁻¹·mol⁻¹。下列哪组结果正确？",
+      "options": [
+        {
+          "id": "A",
+          "text": "q = 0，ΔS = 0，ΔU = +2.75 kJ，ΔH = +3.58 kJ"
+        },
+        {
+          "id": "B",
+          "text": "q = 0，ΔS > 0，ΔU = +2.75 kJ，ΔH = +3.58 kJ"
+        },
+        {
+          "id": "C",
+          "text": "q > 0，ΔS = 0，ΔU = 0，ΔH = 0"
+        },
+        {
+          "id": "D",
+          "text": "q = 0，ΔS = 0，ΔU = +3.58 kJ，ΔH = +2.75 kJ"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "过程可逆且绝热，故 q = 0，且 ΔS = ∫dq_rev/T = 0——温度升高并不使熵变非零，这是可逆绝热过程的特征。ΔU = nC_V,mΔT = 2.00 × 27.5 × 50 = +2.75 kJ，w = ΔU − q = +2.75 kJ。又 C_p,m = C_V,m + R = 35.814 J·K⁻¹·mol⁻¹，故 ΔH = nC_p,mΔT = 2.00 × 35.814 × 50 = +3.58 kJ。",
+      "difficulty": "challenging",
+      "tags": [
+        "reversible adiabatic",
+        "entropy change",
+        "internal energy",
+        "enthalpy"
+      ]
+    }
+  ]
+}

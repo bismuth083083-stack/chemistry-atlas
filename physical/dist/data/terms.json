@@ -304,5 +304,313 @@
   {"slug":"van-der-waals-equation","zh":"van der Waals 方程","en":"van der Waals equation","category":"真实气体","definition":"以排除体积与分子吸引两项修正理想气体的半经验状态方程。","expanded":"摩尔形式为 [p+a/V_m²](V_m-b)=RT；a 表征吸引，b 表征有效排除体积。","properties":["能定性描述临界行为","低密度高温时回到理想气体"],"confusions":"它不是从理想气体方程唯一严格推出的精确方程。","related":["compression-factor","critical-point","maxwell-construction"],"source":"第二课：真实气体课件"},
   {"slug":"maxwell-construction","zh":"Maxwell 等面积构造","en":"Maxwell equal-area construction","category":"相行为","definition":"用一条等压线替换 van der Waals 不稳定回线并确定气液共存压力的方法。","expanded":"选择 p_eq 使从 V_l 到 V_g 的 [p(V,T)-p_eq] 积分为零，等价于同温同压下两相化学势相等。","properties":["水平线上下两面积相等","替换机械不稳定区"],"confusions":"回线中间段不是可观测的均匀平衡相。","related":["van-der-waals-equation","critical-point"],"source":"第二课：课堂问答"},
   {"slug":"reduced-variable","zh":"约化变量","en":"Reduced variable","category":"对应状态","definition":"用物质自身临界常数归一化得到的无量纲状态变量。","expanded":"p_r=p/p_c、T_r=T/T_c、V_r=V_m/V_c，用来描述状态相对自身临界点的位置。","properties":["无量纲","便于跨物质比较"],"confusions":"约化不意味着所有分子结构差异完全消失。","related":["corresponding-states","critical-point"],"source":"第二课：课堂问答"},
-  {"slug":"corresponding-states","zh":"对应状态原理","en":"Principle of corresponding states","category":"对应状态","definition":"不同物质在相同约化状态下具有近似相同宏观行为的经验规律。","expanded":"van der Waals 方程用临界常数约化后不再含物质特异的 a、b 参数，给出其数学原型。","properties":["近似普适","用于压缩因子图"],"confusions":"强极性、氢键和非球形分子通常需要偏心因子等附加修正。","related":["reduced-variable","compression-factor"],"source":"第二课：真实气体课件与课堂问答"}
+  {"slug":"corresponding-states","zh":"对应状态原理","en":"Principle of corresponding states","category":"对应状态","definition":"不同物质在相同约化状态下具有近似相同宏观行为的经验规律。","expanded":"van der Waals 方程用临界常数约化后不再含物质特异的 a、b 参数，给出其数学原型。","properties":["近似普适","用于压缩因子图"],"confusions":"强极性、氢键和非球形分子通常需要偏心因子等附加修正。","related":["reduced-variable","compression-factor"],"source":"第二课：真实气体课件与课堂问答"},
+{
+  "slug": "second-law",
+  "zh": "热力学第二定律",
+  "en": "Second law of thermodynamics",
+  "category": "第二定律",
+  "definition": "关于自发变化方向与能量转化限度的热力学定律。",
+  "expanded": "它指出热不可能在不留其他影响时全部变功，热也不可能自发由低温流向高温，并给出孤立体系熵增加的自发判据。常见等价表述有 Kelvin、Clausius、Boltzmann 与 Planck 四种。",
+  "properties": [
+    "给出变化方向的判据",
+    "所有可逆热机效率相同",
+    "以熵为核心状态函数"
+  ],
+  "confusions": "第二定律不回答变化有多快；也不是说热不能变功，而是热不能在不伴随其他效应的前提下全部变功。",
+  "related": [
+    "entropy",
+    "heat-engine",
+    "first-law",
+    "clausius-inequality"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "heat-engine",
+  "zh": "热机",
+  "en": "Heat engine",
+  "category": "第二定律",
+  "definition": "从高温热源吸热、把其中一部分转化为功、其余排入低温热源并循环工作的装置。",
+  "expanded": "一个循环内工作物质回到初态，故 ΔU=0、−w=q_h+q_c。效率定义为 |w|/q_h，因排热 q_c<0 而恒小于 1。蒸汽机是其历史原型。",
+  "properties": [
+    "循环工作",
+    "需要两个不同温度的热源",
+    "效率恒小于 1"
+  ],
+  "confusions": "理想气体等温膨胀可把热几乎全部变功，但体积改变、不是循环过程，因此不构成热机的反例。",
+  "related": [
+    "heat-engine-efficiency",
+    "reservoir",
+    "carnot-cycle",
+    "second-law"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "heat-engine-efficiency",
+  "zh": "热机效率",
+  "en": "Efficiency of a heat engine",
+  "category": "第二定律",
+  "definition": "热机输出的功与从高温热源吸收的热之比，ε=|w|/q_h。",
+  "expanded": "循环工作中 q_c<0，故 ε=1+q_c/q_h 恒小于 1。可逆热机的效率为 1−T_c/T_h，只取决于两个温度；真实热机总低于同温区间的可逆值。",
+  "properties": [
+    "无量纲",
+    "恒小于 1",
+    "随温差增大而升高",
+    "可逆时等于 1−T_c/T_h"
+  ],
+  "confusions": "与制冷机的性能系数 COP 定义不同，两者不可互换比较。",
+  "related": [
+    "heat-engine",
+    "carnot-cycle",
+    "carnot-principle"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "reservoir",
+  "zh": "热库",
+  "en": "Reservoir (heat source or sink)",
+  "category": "第二定律",
+  "definition": "温度均匀且极巨大、无论吸放多少热温度都不改变的理想化热源或热壑。",
+  "expanded": "真实体系只能近似热库。由于它温度恒定、也不因体系内部的变化而改变状态，体系与热库之间的热交换可按可逆处理，于是 dS_sur=−dq_sys/T_sur 可直接使用。",
+  "properties": [
+    "温度恒定",
+    "热容量极大",
+    "其熵变按可逆热交换计算"
+  ],
+  "confusions": "热库的特征是温度不可改变，而不是“储存热量的容器”。",
+  "related": [
+    "heat-engine",
+    "entropy",
+    "second-law"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "refrigerator",
+  "zh": "制冷机",
+  "en": "Refrigerator",
+  "category": "第二定律",
+  "definition": "消耗外界功把热由低温热源搬到高温热源的装置，相当于热机的逆运行。",
+  "expanded": "Clausius 表述指出：不可能存在唯一结果是把热由低温传到高温而不伴随功转变为热的循环过程。制冷机必须输入功，因此它不是第二类永动机。",
+  "properties": [
+    "需要外界做功",
+    "与热机反向运行",
+    "受 Clausius 表述限制"
+  ],
+  "confusions": "把热“搬”到高温并不违反第二定律，因为同时有功转变为热。",
+  "related": [
+    "heat-engine",
+    "second-law",
+    "carnot-principle"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "spontaneous-change",
+  "zh": "自发变化",
+  "en": "Spontaneous change",
+  "category": "第二定律",
+  "definition": "不需外界帮助即能发生、且热力学上不可逆的变化。",
+  "expanded": "自发变化伴随能量向更无序的形式分散，其方向不取决于能量总量而取决于能量的分布。孤立体系中只有使 ΔS_iso>0 的变化才自发；体系自身的熵可以减少，只要环境熵增加得更多。",
+  "properties": [
+    "不可逆",
+    "方向由总熵判断",
+    "热力学上必然发生"
+  ],
+  "confusions": "自发不等于迅速；金刚石转变为石墨是自发的，但动力学上极慢。",
+  "related": [
+    "entropy",
+    "second-law",
+    "first-law"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "entropy",
+  "zh": "熵",
+  "en": "Entropy",
+  "category": "第二定律",
+  "definition": "由 dS=dq_rev/T 定义的状态函数，度量体系能量的分散程度或无序程度。",
+  "expanded": "单位为 J·K⁻¹，摩尔熵为 J·K⁻¹·mol⁻¹。因 dS 是全微分，ΔS 只依赖始末态，可设计任意方便的可逆路径计算。孤立体系中熵在自发变化时增加、在平衡时取最大值。微观解释由 Boltzmann 公式 S=k ln W 给出。",
+  "properties": [
+    "状态函数",
+    "广度性质",
+    "有绝对值（借第三定律定出）",
+    "单位为 J·K⁻¹"
+  ],
+  "confusions": "不能直接用实际过程的热效应按 dq/T 计算熵变，必须沿可逆路径；体系熵减小本身并不违反第二定律。",
+  "related": [
+    "second-law",
+    "boltzmann-formula",
+    "clausius-inequality",
+    "standard-molar-entropy"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "boltzmann-formula",
+  "zh": "Boltzmann 熵公式",
+  "en": "Boltzmann formula",
+  "category": "第二定律",
+  "definition": "S=k ln W，把宏观熵与微观状态数 W 联系起来。",
+  "expanded": "k 为 Boltzmann 常数。W 越大的状态越无序、越可能出现，因此自发变化朝 W 增大的方向进行。完美晶体在 0 K 时只有一种排布，W=1 故 S=0，这正是第三定律的分子论据。",
+  "properties": [
+    "连接微观与宏观",
+    "给出熵的统计解释",
+    "是第三定律的基础"
+  ],
+  "confusions": "公式中的 W 是无量纲的微观状态数，不是功。",
+  "related": [
+    "entropy",
+    "third-law"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "carnot-cycle",
+  "zh": "Carnot 循环",
+  "en": "Carnot cycle",
+  "category": "第二定律",
+  "definition": "由两条等温线与两条绝热线组成的可逆循环，以理想气体为工作物质。",
+  "expanded": "四步依次为：在 T_h 下等温可逆膨胀、绝热可逆膨胀降温至 T_c、在 T_c 下等温可逆压缩、绝热可逆压缩回到初态。由 TV^(γ−1)=常数 可得 V_B/V_A=V_C/V_D，据此推出 ε_rev=1−T_c/T_h。",
+  "properties": [
+    "全部步骤可逆",
+    "效率只依赖两个温度",
+    "是真实热机的理想上界"
+  ],
+  "confusions": "它并非某一台特殊高效的热机，而是理想化极限；任何可逆循环的效率都与它相同。",
+  "related": [
+    "heat-engine",
+    "carnot-principle",
+    "heat-engine-efficiency",
+    "entropy"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "carnot-principle",
+  "zh": "Carnot 原理",
+  "en": "Carnot principle",
+  "category": "第二定律",
+  "definition": "工作于同一对温度之间的任何热机，效率都不可能超过可逆热机。",
+  "expanded": "即 ε≤ε_r，可逆取等号、不可逆取小于号；且所有可逆热机效率相同，与工作物质和构造无关。课件用反证法证明：若 ε_A>ε_B，把 B 反向运行并耦合 A，会得到热直接变功而无需低温热源的结论，违反第二定律。",
+  "properties": [
+    "给出效率上限",
+    "与工作物质无关",
+    "由第二定律推出"
+  ],
+  "confusions": "它说的是相同吸热下的最大功，不是“可逆热机做功最多”这一无限定说法。",
+  "related": [
+    "carnot-cycle",
+    "heat-engine-efficiency",
+    "second-law",
+    "entropy"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "clausius-inequality",
+  "zh": "Clausius 不等式",
+  "en": "Clausius inequality",
+  "category": "第二定律",
+  "definition": "dS≥dq/T，不可逆取大于号、可逆取等号。",
+  "expanded": "由不可逆循环 ∮dq/T<0 推出：把不可逆路径与一条可逆返回路径组成循环，即得 ∫dq_ir/T<ΔS。它是第二定律的紧凑数学形式，也是孤立体系判据 ΔS_iso≥0 的来源。",
+  "properties": [
+    "第二定律的数学形式",
+    "直接给出自发判据",
+    "对孤立体系化为 ΔS≥0"
+  ],
+  "confusions": "不等式中的 dq 是实际过程的热，而 dS 必须由可逆路径定义，两者含义不同。",
+  "related": [
+    "entropy",
+    "second-law",
+    "spontaneous-change"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "entropy-of-mixing",
+  "zh": "混合熵",
+  "en": "Entropy of mixing",
+  "category": "第二定律",
+  "definition": "恒温恒压下混合引起的熵变 ΔS_mix=−nR Σ X_B ln X_B。",
+  "expanded": "可把每种气体看作向其余气体腾出的体积做可逆膨胀，故每种贡献为 −n_B R ln X_B。因 0<X_B<1 时 ln X_B<0，理想气体的混合熵恒为正，混合总是自发。",
+  "properties": [
+    "恒为正值",
+    "适用于恒温恒压",
+    "只依赖组成"
+  ],
+  "confusions": "理想气体混合熵为正来自熵驱动而非分子间吸引；真实混合物还须考虑混合焓。",
+  "related": [
+    "entropy",
+    "mole-fraction",
+    "perfect-gas"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "trouton-rule",
+  "zh": "Trouton 规则",
+  "en": "Trouton's rule",
+  "category": "第二定律",
+  "definition": "大多数液体的标准汽化熵近似相同，约为 85 J·K⁻¹·mol⁻¹ 的经验规律。",
+  "expanded": "由此可由沸点估算汽化焓 Δ_vap H°≈T_b×85 J·K⁻¹·mol⁻¹。课件所列苯 +87.2、CCl₄ +85.8、环己烷 +85.1、H₂S +87.9 都接近规则值；水 +109.1 与甲烷 +73.2 属例外。",
+  "properties": [
+    "经验近似",
+    "用于由沸点估算汽化焓",
+    "对非缔合液体较准"
+  ],
+  "confusions": "水因氢键使液相更有序而偏高，甲烷因轻分子可及转动状态少而偏低；强氢键体系不可直接套用。",
+  "related": [
+    "entropy",
+    "standard-molar-entropy",
+    "enthalpy"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "third-law",
+  "zh": "热力学第三定律",
+  "en": "Third law of thermodynamics",
+  "category": "第三定律",
+  "definition": "所有完美晶体物质在 T=0 K 时的熵为零，即 S(0)=0。",
+  "expanded": "由 Nernst 热定理（T→0 时 ΔS→0，且各物质均为完美晶体）推出：若完美晶体元素在 0 K 熵为零，则完美晶体化合物亦然。等价说法是：无论怎样理想化，都不可能经有限步骤把任何体系降到绝对零度。晶体若存在取向无序（如 CO 的 OC/CO 混排）则有剩余熵。",
+  "properties": [
+    "给出熵的绝对基准",
+    "前提是完美晶体",
+    "绝对零度不可达"
+  ],
+  "confusions": "S(0)=0 是把所有完美物质的共同值取作零的约定，并非说熵真的“消失”；有剩余熵的晶体不满足该前提。",
+  "related": [
+    "boltzmann-formula",
+    "standard-molar-entropy",
+    "entropy"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+},
+{
+  "slug": "standard-molar-entropy",
+  "zh": "标准摩尔熵",
+  "en": "Standard molar entropy",
+  "category": "第三定律",
+  "definition": "以 S(0 K)=0 为基准，物质在标准状态下温度 T 时的摩尔熵 S°_m(T)。",
+  "expanded": "由热容与相变焓分段求和得到：S°_m(T)=∫₀^{T_f} C_p,m(s)/T dT + Δ_fus H°_m/T_f + ∫_{T_f}^{T_b} C_p,m(l)/T dT + Δ_vap H°_m/T_b + ∫_{T_b}^{T} C_p,m(g)/T dT。课件给出 298 K 数据（J·K⁻¹·mol⁻¹）：石墨 5.7、金刚石 2.4、I₂(s) 116.1、苯 173.3、水 69.9、汞 76.0。与焓、内能不同，熵有绝对值并在计算中直接使用。",
+  "properties": [
+    "有绝对值",
+    "单位 J·K⁻¹·mol⁻¹",
+    "随温度单调增加",
+    "同元素不同晶型数值不同"
+  ],
+  "confusions": "它不是“标准生成熵”；元素也只在 0 K 时为零，298 K 时并不为零。",
+  "related": [
+    "third-law",
+    "entropy",
+    "heat-capacity",
+    "enthalpy"
+  ],
+  "source": "第七课：PChem1 lec78 2nd Law1 课件"
+}
 ]

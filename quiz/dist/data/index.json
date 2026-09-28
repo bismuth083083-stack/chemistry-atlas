@@ -773,6 +773,45 @@
       ],
       "path": "pchem-l06.json",
       "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L07",
+      "title": "热力学第二定律：热机、熵与第三定律",
+      "description": "练习热机与热库、Carnot 循环与 Carnot 原理、熵与 Clausius 不等式、各类过程的熵变计算，以及第三定律与标准摩尔熵。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 7,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 7 · The Second Law",
+      "lesson": "The Second Law: heat engines, entropy, and the Third Law",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "second law",
+        "heat engine",
+        "Carnot cycle",
+        "Carnot principle",
+        "entropy",
+        "Third Law",
+        "standard molar entropy"
+      ],
+      "knowledgePoints": [
+        "heat engines, reservoirs, and efficiency",
+        "Carnot cycle and Carnot principle",
+        "entropy as a state function and the Boltzmann formula",
+        "Clausius inequality and the direction of spontaneous change",
+        "entropy changes of pVT changes, mixing, and phase transitions",
+        "entropy from heat capacity and the Debye extrapolation",
+        "Third Law and standard molar (reaction) entropy"
+      ],
+      "createdAt": "2026-09-29",
+      "updatedAt": "2026-09-29",
+      "relatedNotes": [
+        "/physical/dist/lesson-07.html"
+      ],
+      "path": "pchem-l07.json",
+      "mode": "fixed"
     }
   ]
 }

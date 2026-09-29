@@ -812,6 +812,43 @@
       ],
       "path": "pchem-l07.json",
       "mode": "fixed"
+    },
+    {
+      "id": "ORG-L08",
+      "title": "手性、对映体与 R/S 构型",
+      "description": "练习手性与对映体的判定、手性碳与立体中心的辨析、对称面/对称中心/反轴判据、构象可动体系与构象对映异构、CIP 顺序规则以及 R/S 构型标定。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 8,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 8 · Stereochemistry",
+      "lesson": "Chirality, enantiomers, and the R/S configuration",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "chirality",
+        "enantiomer",
+        "symmetry",
+        "CIP",
+        "R/S configuration"
+      ],
+      "knowledgePoints": [
+        "chirality and the superimposability test",
+        "asymmetric carbon, chirality center, and stereocenter",
+        "mirror plane, inversion center, and improper axis",
+        "chirality of conformationally mobile systems",
+        "atropisomers, allene, and planar chirality",
+        "CIP sequence rules",
+        "R/S assignment and cyclic nomenclature"
+      ],
+      "createdAt": "2026-09-29",
+      "updatedAt": "2026-09-29",
+      "relatedNotes": [
+        "/organic/dist/lesson-08.html"
+      ],
+      "path": "org-l08.json",
+      "mode": "fixed"
     }
   ]
 }

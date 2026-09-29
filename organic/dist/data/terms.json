@@ -1673,5 +1673,354 @@
       "lewis-base"
     ],
     "source": "Organic Chemistry I Lect. 6 (Chapter 4-2); Wade, Organic Chemistry, 8th ed., §§4-14–4-16"
+  },
+  {
+    "slug": "chirality",
+    "zh": "手性",
+    "en": "Chirality",
+    "category": "立体化学",
+    "definition": "物体与其镜像不能通过平移和旋转完全重合的性质。",
+    "expanded": "手性的判据是“完全重叠”这一假想操作：若一个分子与它的镜像无法重叠，它就是手性的。手性来自分子整体的对称性而非某原子的取代数目，因此没有手性碳的联苯、丙二烯同样可以是手性的。手性分子与其镜像互为对映体。",
+    "properties": [
+      "属于分子整体的对称性质",
+      "有左手与右手两种形式",
+      "是立体化学的核心概念"
+    ],
+    "confusions": "手性不等于“含有手性碳”。反式环辛烯、联苯型阻转异构体都没有手性碳却具有手性。",
+    "related": [
+      "enantiomer",
+      "asymmetric-carbon",
+      "internal-mirror-plane",
+      "improper-axis"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "enantiomer",
+    "zh": "对映体",
+    "en": "Enantiomer",
+    "category": "立体化学",
+    "definition": "互为镜像但不能完全重叠的一对立体异构体。",
+    "expanded": "对映体在非手性环境中所有物理性质相同，仅在旋光方向以及手性环境下的相互作用上不同。分离它们需要手性手段，如手性色谱，或先与非手性试剂成盐再结晶。一对对映体等量混合即得外消旋体，不表现净旋光性。",
+    "properties": [
+      "互为镜像且不可重叠",
+      "非手性环境中性质相同",
+      "等量混合得到外消旋体"
+    ],
+    "confusions": "对映体与非对映体不同：非对映体之间不是镜像关系，物理性质有差异，可用常规方法分离。",
+    "related": [
+      "chirality",
+      "stereoisomer",
+      "optical-isomer",
+      "chiral-resolution"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "asymmetric-carbon",
+    "zh": "不对称碳原子",
+    "en": "Asymmetric carbon atom",
+    "category": "立体化学",
+    "definition": "连有四个不同取代基的碳原子，也称手性碳原子，常用星号标出。",
+    "expanded": "不对称碳是寻找手性最直观的起点。三条经验规则是：没有手性碳的化合物通常非手性；只有一个手性碳的化合物一定是手性的；有一个以上手性碳的化合物不一定手性，因为分子内可能同时存在对称面等对称因素把它抵消。",
+    "properties": [
+      "连有四个互不相同的基团",
+      "通常用 * 标注",
+      "是起点而非最终判据"
+    ],
+    "confusions": "有手性碳不等于分子有手性——内消旋型分子就含有手性碳但整体非手性。",
+    "related": [
+      "chirality",
+      "chirality-center",
+      "stereocenter",
+      "internal-mirror-plane"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "chirality-center",
+    "zh": "手性中心",
+    "en": "Chirality center",
+    "category": "立体化学",
+    "definition": "IUPAC 术语，指所连配体在空间中的排布不能与自身镜像重叠的任何原子。",
+    "expanded": "手性中心的适用范围比手性碳宽，不限于碳原子，氮、磷、硫等原子在满足条件时也可以是手性中心。它描述的是该原子周围配体的空间排布，而不是取代基的种类与数目。",
+    "properties": [
+      "不限于碳原子",
+      "由配体的空间排布决定",
+      "属于 IUPAC 正式术语"
+    ],
+    "confusions": "手性中心与立体中心不同：立体中心范围更宽，包含交换两个基团后给出立体异构体但不产生手性的原子。",
+    "related": [
+      "asymmetric-carbon",
+      "stereocenter",
+      "chirality"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "stereocenter",
+    "zh": "立体中心",
+    "en": "Stereocenter",
+    "category": "立体化学",
+    "definition": "交换该原子上任意两个基团即可得到立体异构体的原子，亦称 stereogenic atom。",
+    "expanded": "立体中心是三个术语中范围最宽的一个，包含手性中心，也包含不产生手性的立体中心，例如某些顺反异构中的双键碳。判断时应先确认交换基团后得到的是立体异构体，再进一步判断该中心是否产生手性。",
+    "properties": [
+      "范围宽于手性中心",
+      "包含不产生手性的情形",
+      "双键碳也可构成立体中心"
+    ],
+    "confusions": "立体中心不一定产生手性。把所有立体中心都当作手性中心会高估分子的手性来源。",
+    "related": [
+      "chirality-center",
+      "asymmetric-carbon",
+      "geometric-isomer"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "internal-mirror-plane",
+    "zh": "分子内对称面",
+    "en": "Internal mirror plane",
+    "category": "对称性与手性",
+    "definition": "能把分子切成互为实物与镜像两半的平面，用 σ 表示。",
+    "expanded": "如果分子的一侧恰好是另一侧的镜像，那么分子与它自己的镜像就是同一个分子。因此任何有对称面的分子都是非手性的，即使它含有手性碳原子。环状分子中对称面常常存在，判断时应先找对称面，再去看手性碳。",
+    "properties": [
+      "用 σ 表示",
+      "等价于一级反轴 S1",
+      "存在时分子必然非手性"
+    ],
+    "confusions": "含手性碳的分子若有对称面，整体仍是非手性的，不能只数手性碳。",
+    "related": [
+      "chirality",
+      "improper-axis",
+      "center-of-symmetry",
+      "asymmetric-carbon"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "center-of-symmetry",
+    "zh": "对称中心",
+    "en": "Center of symmetry",
+    "category": "对称性与手性",
+    "definition": "分子中存在的一点，所有通过该点的直线都以等距离到达相同的基团，用 i 表示。",
+    "expanded": "与对称中心对应的对称操作是倒反。一个分子最多只有一个对称中心。具有对称中心的分子一定是非手性的。它等价于二级反轴 S2。",
+    "properties": [
+      "用 i 表示",
+      "每个分子最多一个",
+      "等价于二级反轴 S2"
+    ],
+    "confusions": "“一个分子最多一个对称中心”不等于“最多一个对称元素”；对称面与反轴可以有多个。",
+    "related": [
+      "internal-mirror-plane",
+      "improper-axis",
+      "chirality"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "improper-axis",
+    "zh": "反轴",
+    "en": "Improper axis",
+    "category": "对称性与手性",
+    "definition": "分子绕轴旋转 2π/n 后再用垂直于该轴的平面反映，若与原来重合则该轴称为 n 重反轴，记作 Sn。",
+    "expanded": "反轴同时关联旋转与反映两种操作。具备反轴的分子不是手性分子。其中 S1 等于镜面对称，S2 等于中心对称；排除对称面与对称中心之后，独立剩下的只有 S4。若一个分子既无对称面、又无对称中心、又无 S4，基本上就是手性分子。",
+    "properties": [
+      "S1 = 镜面对称",
+      "S2 = 中心对称",
+      "S4 是唯一独立的反轴类型"
+    ],
+    "confusions": "S3 与 S6 并不独立：S3 隐含对称面，S6 隐含对称中心，无需单独检验。",
+    "related": [
+      "internal-mirror-plane",
+      "center-of-symmetry",
+      "chirality"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "r-s-configuration",
+    "zh": "R/S 构型",
+    "en": "R/S configuration",
+    "category": "系统命名",
+    "definition": "按 CIP 顺序规则标定的手性中心绝对构型，顺时针为 R（rectus），逆时针为 S（sinister）。",
+    "expanded": "判定步骤是：排定四个基团的优先次序；把优先级最低的第 4 号基团背向观察者；沿手性碳与第 4 号基团成键的方向观察，从 1 经 2 指向 3 画箭头；顺时针为 R，逆时针为 S。完整名称由构型标记、取代基与母体三段拼成，多个手性中心需逐个标定并写出位置编号。",
+    "properties": [
+      "与 CIP 顺序规则配套使用",
+      "描述绝对构型",
+      "多个手性中心分别标注"
+    ],
+    "confusions": "R/S 与 D/L 不是同一体系，二者按不同基准定义，没有简单的换算关系。",
+    "related": [
+      "cip-priority",
+      "asymmetric-carbon",
+      "chirality",
+      "optical-isomer"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "optical-isomer",
+    "zh": "旋光异构体",
+    "en": "Optical isomer",
+    "category": "异构与构象",
+    "definition": "因空间排布不同而使分子具有旋光性差异的立体异构体。",
+    "expanded": "旋光异构体属于构型异构体，其互变必须断裂化学键。一对对映体就是一对旋光异构体，它们使平面偏振光旋转的方向相反。分子是否表现旋光性还取决于它有没有可达的非手性构象：若手性构象与其镜像快速平衡，则不表现光学活性。",
+    "properties": [
+      "属于构型异构体",
+      "对映体互为旋光异构体",
+      "要求不存在可达的非手性构象"
+    ],
+    "confusions": "有手性构象不等于有旋光性；顺-1,2-二溴环己烷的两种构象快速互变，因此不表现光学活性。",
+    "related": [
+      "enantiomer",
+      "chirality",
+      "conformational-stereoisomer",
+      "chiral-resolution"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "geometric-isomer",
+    "zh": "几何异构体",
+    "en": "Geometric isomer",
+    "category": "异构与构象",
+    "definition": "因双键或环系限制旋转而产生的顺反异构体，也称 cis-trans isomer。",
+    "expanded": "几何异构体属于构型异构体。双键不能自由旋转，环系也限制取代基的相对位置，因此同侧与异侧成为不同的化合物。富马酸（反式）与马来酸（顺式）就是典型例子：前者是动植物必需的代谢中间体，后者对组织有刺激毒害作用。",
+    "properties": [
+      "由旋转受限产生",
+      "属于构型异构体",
+      "用 cis/trans 或 Z/E 标记"
+    ],
+    "confusions": "顺反标记描述取代基的相对位置，与描述绝对构型的 R/S 属于不同层次，不能互相推导。",
+    "related": [
+      "stereoisomer",
+      "conformational-stereoisomer",
+      "stereocenter"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "conformational-stereoisomer",
+    "zh": "构象异构体",
+    "en": "Conformational stereoisomer",
+    "category": "异构与构象",
+    "definition": "仅通过绕单键旋转即可互相转化的立体异构体，包括交叉式、重叠式与旋转异构体。",
+    "expanded": "构象异构体之间能量差小，室温下往往快速互变，通常无法分别装瓶保存；这与必须断键才能互变的构型异构体形成对照。判断构象可动分子是否有手性时，要考察其对称程度最大的构象：手性化合物没有可达到的非手性构象。",
+    "properties": [
+      "仅靠单键旋转即可互变",
+      "室温下通常快速平衡",
+      "与构型异构体相对"
+    ],
+    "confusions": "旋转异构体（rotamer）是构象异构体的一种，不是构型异构体，不能用拆分方法分离。",
+    "related": [
+      "conformation",
+      "optical-isomer",
+      "geometric-isomer",
+      "newman-projection"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "atropisomer",
+    "zh": "阻转异构体",
+    "en": "Atropisomer",
+    "category": "构象手性",
+    "definition": "因单键旋转受阻而在室温下可分离的构象对映异构体，典型代表是邻位取代的联苯。",
+    "expanded": "当联苯的四个邻位被足够大的基团占据时，两个苯环之间的旋转被锁住，分子停留在一种扭曲构象中，产生可拆分的光活性异构体。课件给出的阻转能力顺序为 I > Br > CH3 > Cl > NO2 > NH2 ≈ CO2H > OH > F > H；经验判据是当碳与两侧邻位基团的中心距离之和大于 290 pm 时，室温以下可能实现拆分。",
+    "properties": [
+      "手性来自手性轴而非手性碳",
+      "需要足够高的旋转能垒",
+      "两侧 C–X 中心距离之和 > 290 pm 时可考虑拆分"
+    ],
+    "confusions": "临界距离是经验估计值，实际能否拆分还受键角与取代基影响，需实验确认。",
+    "related": [
+      "axial-chirality",
+      "chirality",
+      "enantiomer",
+      "chiral-resolution"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "axial-chirality",
+    "zh": "手性轴",
+    "en": "Axial chirality",
+    "category": "构象手性",
+    "definition": "分子没有手性中心，手性来自一条轴的构象对映异构现象。",
+    "expanded": "手性轴有两种常见来源：一是联苯型分子中受阻的单键旋转，二是丙二烯型分子中互相垂直且不能扭转的两个双键。丙二烯型分子两端各连两个不同基团时，既无对称面也无对称中心，整体呈手性。反式环辛烯则因环张力过大、无法达到对称程度最大的构象而具有手性。",
+    "properties": [
+      "手性来自轴而非中心",
+      "丙二烯两端 π 轨道互相垂直",
+      "反式环辛烯可归入此类"
+    ],
+    "confusions": "丙二烯型手性要求两端各自连有两个不同基团；两端基团相同的丙二烯是非手性的。",
+    "related": [
+      "atropisomer",
+      "planar-chirality",
+      "chirality",
+      "enantiomer"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "planar-chirality",
+    "zh": "手性面",
+    "en": "Planar chirality",
+    "category": "构象手性",
+    "definition": "分子内存在扭曲的面使整体呈现螺旋状结构而产生的手性。",
+    "expanded": "当分子被迫采取螺旋形排布时，会形成左旋与右旋两种形式。课件举的例子是六螺苯（helicene）。这类手性同样不依赖手性碳原子，而是来自分子整体的空间形状。",
+    "properties": [
+      "手性来自扭曲的面",
+      "整体呈螺旋状",
+      "不依赖手性碳原子"
+    ],
+    "confusions": "手性面与手性轴是两类不同的手性来源；命名时都仍用 R/S 描述，但来源不同。",
+    "related": [
+      "axial-chirality",
+      "chirality",
+      "atropisomer"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "chiral-resolution",
+    "zh": "手性拆分",
+    "en": "Chiral resolution",
+    "category": "手性技术",
+    "definition": "把外消旋体分离成两个光学纯对映体的过程。",
+    "expanded": "由于对映体在非手性环境中物理性质相同，不能靠常规蒸馏或结晶直接分开，必须借助手性手段，例如与手性试剂形成非对映体盐后再结晶、手性色谱，或酶催化的选择性转化。课件把手性拆分与不对称合成、生物催化过程并列为获得单一对映体的三条路径。",
+    "properties": [
+      "需要手性环境或手性试剂",
+      "先转化为非对映体再分离是经典思路",
+      "单次拆分收率上限为外消旋体的一半"
+    ],
+    "confusions": "拆分只是把已经生成的两种对映体分开，不改变产物的来源比例；不对称合成则是在生成阶段就偏向某一种。",
+    "related": [
+      "enantiomer",
+      "optical-isomer",
+      "asymmetric-synthesis"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "asymmetric-synthesis",
+    "zh": "不对称合成",
+    "en": "Asymmetric synthesis",
+    "category": "手性技术",
+    "definition": "在反应中直接优先生成某一种对映体的合成策略。",
+    "expanded": "不对称合成通过手性催化剂、手性辅基或手性底物控制新生成手性中心的构型，从源头避免产生外消旋体，因而不需要后续拆分。课件把它与生物催化过程、手性拆分并列为三条获得单一对映体的路径。",
+    "properties": [
+      "从生成阶段控制构型",
+      "避免产生外消旋体",
+      "常依赖手性催化剂"
+    ],
+    "confusions": "不对称合成与拆分不同：前者控制生成哪一个对映体，后者是把已经生成的两种分开。",
+    "related": [
+      "chiral-resolution",
+      "enantiomer",
+      "chirality"
+    ],
+    "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
   }
 ]

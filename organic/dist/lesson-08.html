@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第七课：手性、对映体与 R/S 构型 · 有机化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="ppt-figures.css">
+<link rel="stylesheet" href="lecture-02.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#07111f">
+<style>
+.isomer-map{display:grid;gap:12px;margin:22px 0;max-width:960px}
+.isomer-map>div{border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,rgba(13,28,45,.96),rgba(9,23,38,.9));padding:18px 20px}
+.isomer-map h3{margin:0 0 10px;font-size:16px}
+.isomer-map ul{margin:0;padding-left:1.15rem;color:var(--muted);font-size:14px;line-height:1.9}
+.isomer-map ul b{color:var(--text);font-weight:600}
+.isomer-map .branch{color:var(--accent);font:11px ui-monospace,monospace;letter-spacing:.08em;margin-bottom:6px;display:block}
+.step-list{counter-reset:st;margin:20px 0;padding:0;list-style:none;max-width:900px}
+.step-list li{counter-increment:st;position:relative;padding:14px 18px 14px 56px;border:1px solid var(--line);border-radius:12px;background:rgba(7,17,31,.45);margin-bottom:10px}
+.step-list li::before{content:counter(st);position:absolute;left:16px;top:14px;width:24px;height:24px;display:grid;place-items:center;border:1px solid var(--accent);border-radius:50%;color:var(--accent);font:12px ui-monospace,monospace}
+.correction-list{padding-left:1.25rem;max-width:78ch}
+.correction-list li{margin:.65rem 0;line-height:1.75}
+</style>
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html"><span class="mark">C</span><span>有机化学知识库</span></a>
+<label class="search"><span>⌕</span><input id="global-search" placeholder="搜索笔记、中文名或英文名…" aria-label="搜索知识库"><kbd>⌘ K</kbd></label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html"><span>◫</span>课程笔记</a>
+<a href="terms.html"><span>Aa</span>双语词条库</a>
+<p class="nav-label">有机化学 I</p>
+<a href="lesson-01.html"><span>01</span>介绍与回顾</a>
+<a href="lesson-02.html"><span>02</span>酸碱与分子轨道</a>
+<a href="lesson-03.html"><span>03</span>酸碱理论</a>
+<a href="lesson-04.html"><span>04</span>烷烃与系统命名</a>
+<a href="lesson-05.html"><span>05</span>异构、构象与反应</a>
+<a href="lesson-06.html"><span>06</span>自由基、热力学与动力学</a>
+<a href="lesson-07.html"><span>07</span>反应选择性与活性中间体</a>
+<a class="active" href="lesson-08.html"><span>08</span>手性、对映体与 R/S 构型</a>
+<a href="resonance.html"><span>↔</span>共振专题</a>
+</nav>
+<div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+</aside>
+<main class="workspace article">
+<a class="back" href="index.html">← 返回课程笔记</a>
+<header class="article-head">
+<p class="eyebrow">LECTURE 07 · CHAPTER 5-1</p>
+<h1>立体化学：手性、对映体与 R/S 构型</h1>
+<p>Stereochemistry: chirality, enantiomers, and the R/S configuration</p>
+<div><span>课件原图</span><span>手性判定流程</span><span>CIP 顺序规则</span><span>课件勘误提示</span></div>
+</header>
+
+<section>
+<h2>1. 从平面结构式到三维结构</h2>
+<p>前几课讨论的结构式都是平面写法，但碳的四个键在空间里指向四面体的四个顶点。两个分子可以有完全相同的连接顺序、完全相同的官能团，却因为原子在空间中的排布不同而成为不同的化合物——它们甚至可能有截然相反的生物活性。<b>立体化学</b>（stereochemistry）就是研究分子三维结构的学科。</p>
+<p>课件用两个对比鲜明的例子说明“空间排布不是细节”。丁烯二酸 HOOC–CH=CH–COOH 有两种几何形式：反式的<b>富马酸</b>（fumaric acid，反丁烯二酸）是动植物体内必需的代谢中间体；顺式的<b>马来酸</b>（maleic acid，顺丁烯二酸）却对组织有刺激毒害作用。两者的分子式与连接顺序完全一致，差别只在两个羧基位于双键的同侧还是异侧。</p>
+<p>更沉重的是<b>沙利度胺</b>（thalidomide，反应停）。它作为手性化合物，<i>R</i>-构型具有抑制妊娠反应的活性，<i>S</i>-构型却有致畸性。二十世纪五十年代末起，该药陆续进入欧洲、日本、澳大利亚、非洲和拉丁美洲市场，到六十年代初已使 46 个国家超过一万名新生儿出现畸形，例如海豹肢症（phocomelia）。澳大利亚产科医生 William McBride 与德国儿科医生 Widukind Lenz 怀疑婴儿致畸与该药有关，1961 年由 Lenz 证实；美国 FDA 的 Frances Oldham Kelsey 则因要求补充药理研究而拒绝了上市申请。这是药物史上最著名的案例之一，成名的原因不是疗效，而是毒性。</p>
+<div class="note"><b>为什么“只卖有效的那一种”也救不了</b><p>课件给出了这个案例最关键的一层：<i>R</i>-构型与<i>S</i>-构型在体内会互相转化（消旋化）。无论服用哪一种光学纯化合物，在血清中都发现是消旋的。因此即使只给患者有效的<i>R</i>-构型，也无法保证没有毒性。手性药物的安全不能只靠“分离出单一对映体”来解决，还要处理体内消旋、代谢与转运带来的问题。</p></div>
+<p>针对这一问题，课件列出了三条现代解决路径：<a class="term-link" href="term.html?slug=asymmetric-synthesis">不对称合成</a>（asymmetric synthesis）、<b>生物催化过程</b>（biocatalytic process）与<a class="term-link" href="term.html?slug=chiral-resolution">手性拆分</a>（chiral resolution）。它们分别从“直接造出想要的那一种”“借用酶的选择性”和“造完再分开”三个角度入手。</p>
+</section>
+
+<section>
+<h2>2. 异构体的分类地图</h2>
+<p>立体化学的讨论对象是异构体中的一支。课件先给出一张完整的分类地图，把“连接方式不同”和“连接方式相同而空间取向不同”彻底分开。</p>
+<div class="isomer-map">
+<div>
+<span class="branch">DIFFER IN BONDING SEQUENCE</span>
+<h3>构造异构体 · constitutional isomer（亦称 structural isomer）</h3>
+<ul>
+<li><b>碳架异构体</b> carbon skeleton isomer：碳骨架的分支方式不同</li>
+<li><b>位置异构体</b> position isomer：官能团或取代基位置不同</li>
+<li><b>官能团异构体</b> functional group isomer：官能团种类不同</li>
+<li><b>互变异构体</b> tautomeric isomer：伴随质子转移的快速互变</li>
+<li><b>价键异构体</b> valence bond isomer：成键方式本身不同</li>
+</ul>
+</div>
+<div>
+<span class="branch">SAME BONDING SEQUENCE, DIFFER IN ORIENTATION OF ATOMS</span>
+<h3>立体异构体 · stereoisomer</h3>
+<ul>
+<li><b>构型异构体</b> configurational stereoisomer：必须断键才能互变，包含<b>顺反异构体</b>（cis-trans / geometric isomer，即<a class="term-link" href="term.html?slug=geometric-isomer">几何异构体</a>）与<a class="term-link" href="term.html?slug=optical-isomer">旋光异构体</a>（optical isomer）</li>
+<li><a class="term-link" href="term.html?slug=conformational-stereoisomer">构象异构体</a> conformational stereoisomer：仅绕单键旋转即可互变，交叉式与重叠式构象、<b>旋转异构体</b>（rotamer）都属于此类</li>
+</ul>
+</div>
+</div>
+<p>这张图里最需要记住的分界是<b>能否通过旋转互相转化</b>。构象异构体之间只靠单键旋转就能互换，能量差小、室温下往往快速互相转化；构型异构体之间的转化必须断裂并重新形成化学键，因此可以把它们分别装进不同的瓶子里。上一课讨论的 Newman 投影与丁烷能量曲线属于<b>构象</b>问题，本课要处理的则是<b>构型</b>问题。</p>
+</section>
+
+<section>
+<h2>3. 手性与对映体</h2>
+<p>课件把手性称为“自然界的基本性质”。它的理论基础来自 1874 年 LeBel 与 van’t Hoff 提出的<b>碳原子四面体结构</b>——正因为碳的四个键指向四面体的四个顶点，四个不同的基团才可能有两种不同的空间排布。</p>
+<p>判断两个物体是否“相同”，标准是能否<b>完全重叠</b>（superimposable）。<a class="term-link" href="term.html?slug=chirality">手性</a>（chirality）的定义就建立在这个操作上：一个物体如果有左手形式和右手形式，它就是手性的；<b>手性物体具有与自身不同的镜像</b>。反过来，如果镜像可以通过平移与旋转和原物完全重合，该物体就是<b>非手性的</b>（achiral）。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/chirality-hands.webp" alt="左手与右手在镜面两侧互为镜像，无法通过旋转重叠" loading="eager" decoding="async">
+<figcaption>左右手是手性最直观的模型：镜中的左手无法通过平移和旋转与真实的左手重合。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 8 页</small></figcaption>
+</figure>
+<p>把这一判据用在分子上，就得到<a class="term-link" href="term.html?slug=enantiomer">对映体</a>（enantiomers）的定义：互为镜像但<b>不能</b>完全重叠的一对立体异构体。课件用两个动作概括了区分：把两个分子“平行移动—重叠”，能重合的就不是对映体；需要“旋转 180°—重叠”的，才是同一分子的不同取向。对映体之间的唯一差别是三维取向，因此它们所有非手性环境下的物理性质都相同——这正是分离它们如此困难的原因。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/enantiomer-mirror.webp" alt="中心碳连有四个不同基团，其镜像与自身不能重叠，构成一对对映体" loading="eager" decoding="async">
+<figcaption>中心碳连有四个不同基团时，分子与其镜像不能重叠，二者构成一对对映体。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 9 页</small></figcaption>
+</figure>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/superimposable-test.webp" alt="两组分子与镜像的重叠检验：左组旋转后仍不能重叠，右组旋转后可以重叠" loading="lazy" decoding="async">
+<figcaption>重叠检验。(a) 旋转后仍无法与镜像重合，分子是手性的；(b) 旋转后可以与镜像重合，分子是非手性的。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 11 页</small></figcaption>
+</figure>
+<div class="note"><b>“重叠”是一个假想的操作</b><p>课件特别注明，完全重叠是一种想象中的检验，不涉及真实的物理过程。它是判定分子是否具有手性的<b>定义性操作</b>，而不是实验手段。实际实验判断依靠旋光性、手性色谱、NMR 手性位移试剂等方法。</p></div>
+</section>
+
+<section>
+<h2>4. 手性碳、手性中心与立体中心</h2>
+<p>在实际分子中寻找手性来源时，最常用的是<a class="term-link" href="term.html?slug=asymmetric-carbon">不对称碳原子</a>（asymmetric carbon atom），也称<b>手性碳原子</b>（chiral carbon atom）：连有四个不同取代基的碳原子，通常用星号（*）标出。2-溴丁烷就是最简单的例子之一，它的 C2 连有 Br、H、CH<sub>3</sub> 与 CH<sub>2</sub>CH<sub>3</sub> 四个不同基团。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/tetrahedral-four-groups.webp" alt="四面体碳原子连有 A、B、X、Y 四个不同基团" loading="lazy" decoding="async">
+<figcaption>四面体碳连有四个不同基团时，该碳即为不对称碳原子。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 14 页</small></figcaption>
+</figure>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/bromobutane-enantiomers.webp" alt="2-溴丁烷的一对对映体，球棍模型与立体结构式并排对照" loading="lazy" decoding="async">
+<figcaption>2-溴丁烷的两个对映体。C2 连有四个不同基团，用星号标出。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 12 页</small></figcaption>
+</figure>
+<p>课件接着区分了三个容易混用的术语，它们的严格程度依次放宽：</p>
+<div class="property-grid">
+<article><b>手性碳 / 不对称碳原子<small>asymmetric / chiral carbon atom</small></b><p>连有<b>四个不同取代基</b>的碳原子。这是最直观、最容易上手的判据，但只是一个充分条件式的起点。</p></article>
+<article><b><a class="term-link" href="term.html?slug=chirality-center">手性中心 · chirality center</a></b><p>IUPAC 术语，指任何<b>所连配体在空间中的排布不能与自身镜像重叠</b>的原子。它不限于碳，也可以是 N、P、S 等。</p></article>
+<article><b><a class="term-link" href="term.html?slug=stereocenter">立体中心 · stereocenter</a>（stereogenic atom）</b><p>只要<b>交换该原子上的两个基团就能得到立体异构体</b>，该原子即为立体中心。范围最宽，包含不产生手性的立体中心（如某些顺反异构中心）。</p></article>
+</div>
+<p>这三个概念是层层包含的关系：<b>不对称碳 → 手性中心 → 立体中心</b>，范围依次扩大。课件给出的三条经验规则把“有手性碳”和“分子有手性”之间的关系讲清楚了：</p>
+<div class="isomer-map">
+<div>
+<span class="branch">THREE RULES</span>
+<ul>
+<li><b>没有</b>手性碳原子的化合物，<b>通常</b>是非手性的。</li>
+<li>只有<b>一个</b>手性碳原子的化合物，<b>一定</b>是手性的。</li>
+<li>有<b>一个以上</b>手性碳原子的化合物，<b>不一定</b>是手性的——分子内可能同时存在对称因素把它抵消掉。</li>
+</ul>
+</div>
+</div>
+<p>第一条规则里的“通常”很关键：本课后面会看到联苯、丙二烯、反式环辛烯等分子，它们完全没有手性碳原子，却仍然是手性的。也就是说，寻找手性碳是一个好用的<b>起点</b>，而不是唯一的判据；真正的判据始终是对称性。</p>
+</section>
+
+<section>
+<h2>5. 对称元素与手性</h2>
+<p>既然有手性碳的分子未必有手性，就需要一个更根本的判据。课件的做法是反过来找<b>对称元素</b>：分子只要具备某几种对称元素，就一定不是手性的。</p>
+<h3>分子内对称面 σ</h3>
+<p>能把分子切成互为实物与镜像两半的平面，称为分子的<a class="term-link" href="term.html?slug=internal-mirror-plane">对称面</a>（internal mirror plane），用希腊字母 σ 表示。如果分子右侧恰好是左侧的镜像，那么分子与它自己的镜像就是同一个分子。<b>任何有对称面的分子都是非手性分子，即使它含有手性碳原子。</b></p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/methylcyclohexane-plane.webp" alt="甲基环己烷的对称面把分子分为互为镜像的两半" loading="lazy" decoding="async">
+<figcaption>甲基环己烷存在一个对称面，把分子分成互为镜像的两半，因此是非手性的。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 16 页</small></figcaption>
+</figure>
+<p>课件提醒“注意环状分子”。环系上的取代基很容易让人以为有手性，但对称面常常就在眼前：甲基环己烷看似有一个取代碳，却因为分子整体有对称面而非手性。作为对照，2-甲基环己酮的羰基打破了对称性，分子不再有对称面，因而是手性的。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/methylcyclohexanone-chiral.webp" alt="2-甲基环己酮的羰基打破对称性，分子呈手性" loading="lazy" decoding="async">
+<figcaption>2-甲基环己酮：羰基取代了环上的一个 CH<sub>2</sub>，对称面随之消失，分子是手性的。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 16 页</small></figcaption>
+</figure>
+<h3>对称中心 <i>i</i></h3>
+<p>如果分子中存在一个点，所有通过这个点画出的直线都能以等距离到达相同的基团，该点称为<a class="term-link" href="term.html?slug=center-of-symmetry">对称中心</a>（symmetric center），用 <i>i</i> 表示。一个分子最多只能有一个对称中心，与它对应的对称操作是“倒反”。<b>具有对称中心的分子一定是非手性的。</b></p>
+<h3>反轴 <i>S</i><sub>n</sub></h3>
+<p>分子绕某个轴旋转 2π/<i>n</i> 之后，再用垂直于该轴的平面进行一次反映，若所得结果与原来的分子重合，则该轴称为<a class="term-link" href="term.html?slug=improper-axis">反轴</a>（improper axis），记作 <i>S</i><sub>n</sub>，<i>n</i> 为它的级。反轴同时关联旋转与反映两种操作，<b>具有反轴的分子不是手性分子</b>。</p>
+<p>反轴与前面的对称元素并不是彼此独立的。课件给出了两条对应关系：</p>
+<div class="formula"><i>S</i><sub>1</sub> = σ（镜面对称）　　<i>S</i><sub>2</sub> = <i>i</i>（中心对称）</div>
+<p>也就是说，有对称面的分子必然有一级反轴，有对称中心的分子必然有二级反轴。把这两种情形排除后，独立剩下的只有 <i>S</i><sub>4</sub>。于是得到一条实用的经验判据：</p>
+<div class="note"><b>手性的经验判据</b><p>如果一个分子<b>既没有对称面、也没有对称中心、又没有 <i>S</i><sub>4</sub> 反轴</b>，那么它基本上就是手性分子。这条判据在考试和实际判断中比“数手性碳”可靠得多，因为它直接从对称性出发。</p></div>
+</section>
+
+<section>
+<h2>6. 构象可动体系的手性</h2>
+<p>单键可以自由旋转，分子因此不断在多个构象之间变化。这给手性判断带来一个特殊问题：分子在某个构象下看起来是手性的，在另一个构象下却可能是非手性的，那么它到底算不算手性？</p>
+<p>课件用<i>顺</i>-1,2-二溴环己烷说明这一点。它的两种椅式构象互为镜像，并且能量完全相同，因此彼此之间快速互变。任何一份样品中都必然含有等量的两种镜像构象，分子整体不表现光学活性。<b>分子的手性构象与其镜像处于平衡时，该分子不可能有光学活性，我们把它视为非手性分子。</b></p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/butane-conformational-chirality.webp" alt="丁烷三种构象的 Newman 投影，标出对称面与手性的gauche构象" loading="lazy" decoding="async">
+<figcaption>构象层面的对称性判据：对位交叉与全重叠构象存在对称面，而邻位交叉（gauche）构象看起来是手性的。但构象之间可以互变，因此要考察对称程度最大的那个构象。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 21 页</small></figcaption>
+</figure>
+<p>由此得到判断构象可动分子是否具有光学活性的操作原则：</p>
+<div class="isomer-map">
+<div>
+<span class="branch">RULE OF THUMB</span>
+<ul>
+<li><b>考察对称程度最大的那个构象</b>。如果分子与某个非手性结构或构象处于平衡，它不可能有光学活性。</li>
+<li><b>手性化合物没有可达到的非手性构象。</b>换句话说，只有当分子在所有可达构象下都保持手性时，它才是真正的手性分子。</li>
+</ul>
+</div>
+</div>
+<p>这条原则也解释了为什么不能对着一张构象图下结论。看到 gauche 丁烷的 Newman 投影时，它确实有手性轴般的外观，但丁烷整体是非手性的——因为它可以旋转到有对称面的对位交叉构象。判断时要问的是“它能不能转过去”，而不是“它现在长什么样”。</p>
+</section>
+
+<section>
+<h2>7. 构象对映异构：手性轴与手性面</h2>
+<p>有一类分子因为体积太大或张力太高，<b>无法</b>从一种手性构象转到它的镜像构象。这时两种构象就成了一对可以分离的对映体，称为<b>构象对映异构现象</b>。课件按手性来源把它们分成三类。</p>
+<h3>含<a class="term-link" href="term.html?slug=axial-chirality">手性轴</a>：联苯型阻转异构体</h3>
+<p>联苯两个苯环之间的单键本应自由旋转，但当四个邻位都被足够大的基团占据时，旋转受阻，分子被“锁”在一种扭曲构象中，产生可拆分的<a class="term-link" href="term.html?slug=atropisomer">阻转异构体</a>。课件给出了基团阻转能力的顺序：</p>
+<div class="formula">I &gt; Br &gt; CH<sub>3</sub> &gt; Cl &gt; NO<sub>2</sub> &gt; NH<sub>2</sub> ≈ CO<sub>2</sub>H &gt; OH &gt; F &gt; H</div>
+<p>课件还给出了一个基于键长的经验判据：当碳原子与 X1（或 X3）的中心距离、加上碳原子与 X2（或 X4）的中心距离<b>之和大于 290 pm</b> 时，室温以下有可能把该化合物拆分为旋光异构体。配套的 C–X 中心距离数据为：</p>
+<div class="formula">C–H 104　C–F 139　C–OH 145　C–CH<sub>3</sub> 150　C–CO<sub>2</sub>H 156　C–NH<sub>2</sub> 156　C–Cl 163　C–Br 183　C–NO<sub>2</sub> 192　C–I 200 pm</div>
+<h3>含手性轴：丙二烯型</h3>
+<p>丙二烯（allene）型分子 CH<sub>3</sub>–CH=C=CH–CH<sub>3</sub> 中，相邻的两个双键平面互相垂直，并且<b>不能绕中心碳扭转</b>。当两端碳各连有两个不同基团时，分子就没有对称面也没有对称中心，两端各成为一个手性来源，整体呈手性。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/allene-chirality.webp" alt="丙二烯的两个垂直π轨道以及取代丙二烯的立体结构" loading="lazy" decoding="async">
+<figcaption>丙二烯两端双键的 π 轨道互相垂直，无法扭转；两端各带两个不同基团时分子呈手性。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 24–25 页</small></figcaption>
+</figure>
+<h3>环张力锁定的构象</h3>
+<p><i>反</i>-环辛烯（trans-cyclooctene）因为环张力太大，无法达到对称程度最大的构象，两种手性构象之间的转化被禁止，因此可以拆分。这与<i>顺</i>-1,2-二溴环己烷恰好相反：后者能转，所以是非手性的；前者转不动，所以是手性的。</p>
+<h3>含手性面</h3>
+<p>分子内存在一个扭曲的面，使整个分子呈现螺旋状结构时，就产生<a class="term-link" href="term.html?slug=planar-chirality">手性面</a>。课件举的例子是六螺苯（helicene），它有明确的左旋与右旋两种形式。</p>
+<div class="note"><b>这三类的共同点</b><p>无论手性来自轴还是面，克服它的代价都是<b>能量</b>：要么是旋转所需跨越的位阻能垒（联苯），要么是扭转双键所需的能量（丙二烯），要么是环张力（反式环辛烯）。只要这个能垒足够高，两种构象就能分别存在，从而被拆分。</p></div>
+</section>
+
+<section>
+<h2>8. CIP 顺序规则</h2>
+<p>对映体的物理性质几乎完全相同，名字却必须能区分它们。课件用丙氨酸（alanine）说明问题：天然丙氨酸可以被代谢利用，非天然的则是“无用的氨基酸”，但两者在 IUPAC 命名下都叫丙氨酸或 2-氨基丙酸。必须有一套规则给它们各自一个确切的名字。</p>
+<p>这套规则就是 <a class="term-link" href="term.html?slug=cip-priority">Cahn–Ingold–Prelog 顺序规则</a>（CIP sequence），它的任务是给连在手性碳上的四个基团排出先后。具体规则有四条：</p>
+<div class="isomer-map">
+<div>
+<span class="branch">SEQUENCE RULES</span>
+<ul>
+<li><b>单原子取代基</b>：按原子序数大小排列，原子序数大的优先级高。次序为 I &gt; Br &gt; Cl &gt; S &gt; P &gt; Si &gt; F &gt; O &gt; N &gt; <sup>13</sup>C &gt; <sup>12</sup>C &gt; B &gt; Li &gt; <sup>3</sup>H &gt; <sup>2</sup>H &gt; <sup>1</sup>H。同位素之间按质量数排序，因此 <sup>13</sup>C 优先于 <sup>12</sup>C。</li>
+<li><b>多原子取代基</b>：第一个原子不同时按单原子规则比较；第一个原子相同时，比较与它相连的其他原子；仍然相同则沿取代链逐次向外比较。例如 –CHF<sub>2</sub> 优先于 –CHCl<sub>2</sub>（F &gt; Cl），–CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> 优先于 –CH<sub>2</sub>CH<sub>3</sub>。</li>
+<li><b>含双键或三键的基团</b>：可认为该原子连有两个或三个相同的原子。例如 C=C 按 (C–C–C) 处理，即把双键拆成两条单键来数。</li>
+<li><b>不足四个键的原子</b>：用原子序数为零的<b>假想原子</b>补足，假想原子的优先级最低。例如在 CH<sub>3</sub>CH<sub>2</sub>NHCH<sub>3</sub> 中比较时，顺序为 –CH<sub>2</sub>CH<sub>3</sub> &gt; –CH<sub>3</sub> &gt; –H &gt; 假想原子。</li>
+</ul>
+</div>
+</div>
+<p>课件给出的四组排序练习全部指向 <i>S</i> 构型，可以用来自查是否掌握了规则：</p>
+<div class="property-grid">
+<article><b>F &gt; NH<sub>2</sub> &gt; CH<sub>3</sub> &gt; H</b><p>比较第一个原子：F &gt; N &gt; C &gt; H。</p></article>
+<article><b>NH<sub>2</sub> &gt; CO<sub>2</sub>H &gt; CH<sub>3</sub> &gt; H</b><p>比较第一个原子：N &gt; C &gt; C &gt; H；两个碳之间再比较所连原子，羧基碳为 (O,O,H)，甲基碳为 (H,H,H)。</p></article>
+<article><b>CH(CH<sub>3</sub>)<sub>2</sub> &gt; CH<sub>2</sub>CH<sub>2</sub>Br &gt; CH<sub>2</sub>CH<sub>3</sub> &gt; H</b><p>三个碳首层都是 (C,H,H)，需要向外一层比较：异丙基有<b>两个</b>碳分支，另外两个只有一个；再比较 –CH<sub>2</sub>CH<sub>2</sub>Br 与 –CH<sub>2</sub>CH<sub>3</sub>，前者次层含 Br。</p></article>
+<article><b>CHO &gt; CH<sub>2</sub>OH &gt; CH=CH<sub>2</sub> &gt; CH(CH<sub>3</sub>)<sub>2</sub></b><p>醛基碳按 (O,O,H) 处理，优先级最高；–CH=CH<sub>2</sub> 的双键碳按 (C,C,H) 处理，胜过异丙基的 (C,C,H) 后再比较次层。</p></article>
+</div>
+<div class="note"><b>规则三为什么重要</b><p>“双键按两个单键数”这一条最容易被忽略。醛基 –CHO 之所以排在 –CH<sub>2</sub>OH 前面，正是因为它的碳连有两个氧（O,O,H），而不是一个氧（O,H,H）。如果忘记这条，整组排序都会算错。</p></div>
+</section>
+
+<section>
+<h2>9. R/S 构型判定的操作流程</h2>
+<p>基团顺序排好之后，就可以给手性碳标定构型。课件的操作步骤是：</p>
+<ol class="step-list">
+<li>确定四个取代基团的优先次序，依次记为 1、2、3、4，其中 1 为最高、4 为最低。</li>
+<li>把次序最小的第 4 号基团<b>置于离眼睛最远处</b>。可以借助三维图或分子模型。</li>
+<li>沿手性碳与第 4 号基团成键的方向观察分子，从 1 号基团经过 2 号指向 3 号画一个箭头。</li>
+<li>如果箭头指向<b>顺时针</b>方向，该手性碳为 <b><i>R</i></b> 构型（拉丁文 <i>rectus</i>，“右”）。</li>
+<li>如果箭头指向<b>逆时针</b>方向，该手性碳为 <b><i>S</i></b> 构型（拉丁文 <i>sinister</i>，“左”）。</li>
+</ol>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-08/rs-rotation-rule.webp" alt="把4号基团背向观察者，按1到2到3的方向判断顺逆时针以确定R或S" loading="lazy" decoding="async">
+<figcaption>R/S 判定的核心操作：把 4 号基团背向观察者，看 1→2→3 的旋转方向。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 28 页</small></figcaption>
+</figure>
+<p>完整的构型名称由三段拼成：<b>构型标记（<i>R</i>/<i>S</i>，或 <i>D</i>/<i>L</i>，顺反用 <i>Z</i>/<i>E</i>）+ 取代基（位置 + 个数 + 名称）+ 母体（官能团位置 + 名称）</b>。以丙氨酸为例，两个对映体分别命名为 (<i>S</i>)-丙氨酸与 (<i>R</i>)-丙氨酸，也就是 (<i>S</i>)-2-氨基丙酸与 (<i>R</i>)-2-氨基丙酸——这里的<a class="term-link" href="term.html?slug=r-s-configuration">R/S 构型</a>标记由 CIP 顺序规则直接推出。</p>
+<div class="note"><b>一个容易踩的坑：<i>R</i>/<i>S</i> 与 <i>D</i>/<i>L</i> 不是一回事</b><p>课件在命名格式里把 <i>R</i>/<i>S</i> 与 <i>D</i>/<i>L</i> 并列，但它们属于两套不同的体系。<i>R</i>/<i>S</i> 由 CIP 顺序规则直接推出，与基团的相对空间排布严格对应；<i>D</i>/<i>L</i> 是以甘油醛为参照的相对构型标记，主要用于糖和氨基酸。两者没有简单的换算关系，不能互相推导。</p></div>
+<p>课件用 1,3-二溴丁烷演示了完整流程。先找手性碳：C1 是 CH<sub>2</sub>Br、C4 是 CH<sub>3</sub>，都不符合条件，<b>只有 C3 是不对称碳</b>。再排基团顺序：Br &gt; CH<sub>2</sub>CH<sub>2</sub>Br &gt; CH<sub>3</sub> &gt; H。把 H 背向观察者后，1→2→3 呈逆时针，因此是 (<i>S</i>)-构型；其镜像即为 (<i>R</i>)-构型。课件还用香芹酮（carvone）给出了一个练习，要求找出手性碳并判断它属于 (<i>R</i>) 还是 (<i>S</i>)。</p>
+</section>
+
+<section>
+<h2>10. 环状与螺环化合物的构型命名</h2>
+<p>环状分子有多个手性中心时，每个中心都要单独标定构型，再按位置编号写在母体名称前面。课件以 1,3-二甲基环戊烷为例：</p>
+<div class="property-grid">
+<article><b>(1<i>R</i>,3<i>S</i>)-1,3-二甲基环戊烷</b><p>两个中心的构型相反，对应 <b>cis</b>-1,3-二甲基环戊烷（两个甲基在环同侧）。</p></article>
+<article><b>(1<i>S</i>,3<i>S</i>)- 与 (1<i>R</i>,3<i>R</i>)-1,3-二甲基环戊烷</b><p>两个中心的构型相同，对应 <b>trans</b>-1,3-二甲基环戊烷（两个甲基在环异侧）。</p></article>
+</div>
+<p>这里有一个值得注意的对应关系：<b>顺反标记与 <i>R</i>/<i>S</i> 标记之间并非一一独立</b>。对 1,3-二甲基环戊烷而言，“同侧/异侧”恰好等价于“两个构型标记相同/相反”。但这个等价关系依赖于取代基的编号方式与优先级排布，不能当作通用公式套用到所有环系上。课件另外给出了螺环的例子 (<i>S</i>)-1-甲基螺[2.5]辛烷，说明螺环化合物的手性同样用 <i>R</i>/<i>S</i> 描述。</p>
+<div class="note"><b>环状分子判手性的顺序</b><p>面对环系，先找<b>对称面</b>判断分子整体是否手性（第 5 节的经验判据），再对确实存在的手性中心逐个标定 <i>R</i>/<i>S</i>。反过来做容易出错：把每个带取代基的环碳都当成手性碳，会得出比实际更多的手性中心。</p></div>
+</section>
+
+<section>
+<h2>11. 本课复习清单</h2>
+<ol class="check-list" style="max-width:82ch;line-height:1.9">
+<li>说出立体化学研究什么，并用富马酸/马来酸与沙利度胺说明空间排布为什么重要。</li>
+<li>解释沙利度胺案例中“体内消旋化”为什么使单一对映体给药也无效，并说出三条现代解决路径。</li>
+<li>画出异构体分类地图，区分构造异构体与立体异构体，并在立体异构体下分出构型与构象两支。</li>
+<li>用“完全重叠”这个操作定义手性和对映体，说明为什么“旋转 180°”与“平移”是两种不同的检验。</li>
+<li>辨析手性碳、手性中心与立体中心三个术语的严格程度，并复述关于手性碳数目的三条经验规则。</li>
+<li>写出对称面 σ、对称中心 <i>i</i>、反轴 <i>S</i><sub>n</sub> 各自如何导致分子非手性，并说明 <i>S</i><sub>1</sub>、<i>S</i><sub>2</sub> 分别等于什么。</li>
+<li>复述手性的经验判据：没有 σ、没有 <i>i</i>、没有 <i>S</i><sub>4</sub> 时分子基本上是手性的。</li>
+<li>说明判断构象可动分子手性时为什么要“考察对称程度最大的构象”，并用<i>顺</i>-1,2-二溴环己烷与丁烷各举一例。</li>
+<li>列举三类构象对映异构现象（联苯型、丙二烯型、环张力锁定型）与含手性面的例子，说明共同点是什么。</li>
+<li>叙述 CIP 顺序规则的四条内容，并独立排出课件给出的四组基团顺序。</li>
+<li>写出手性碳 <i>R</i>/<i>S</i> 判定的五个步骤，并说明为什么必须把第 4 号基团背向观察者。</li>
+<li>说明 <i>R</i>/<i>S</i> 与 <i>D</i>/<i>L</i> 的区别，以及它们为什么不能互相换算。</li>
+<li>给出 1,3-二溴丁烷的手性碳位置、基团顺序与最终构型，并写出它的对映体。</li>
+<li>写出 1,3-二甲基环戊烷三种立体异构体的 <i>R</i>/<i>S</i> 名称与对应顺反关系。</li>
+</ol>
+</section>
+
+<section class="note-section">
+<h2>12. 课件勘误与提示</h2>
+<ul class="correction-list">
+<li>本讲的章节提纲列出七个主题（Introduction、Chirality and enantiomers、Nomenclature of asymmetric carbon atoms、Fischer projections、Diastereomers、Optical activity、Resolution and asymmetric synthesis），但课件实际只推进到前三项与环状/螺环化合物的命名，共 36 页。Fischer 投影、非对映体、旋光性与拆分将在下一讲（Chapter 5-2）展开，本页不提前展开。</li>
+<li>课件第 11 页的重叠检验图标注为 (a)(b) 两组，正文未说明哪一组对应手性。按图意，(a) 旋转后仍不能与镜像重合，为手性；(b) 可以重合，为非手性。</li>
+<li>课件英文存在若干拼写问题：<i>Mirror igmage</i> 应为 <i>mirror image</i>，<i>configeration</i> 应为 <i>configuration</i>，<i>archiral</i> 应为 <i>achiral</i>，<i>Nonsuperimposable chiral ?</i> 应为 <i>Nonsuperimposable — chiral?</i>。本页正文已按正确拼写表述。</li>
+<li>课件第 14 页把“没有手性碳原子的化合物通常是非手性的”写成一般陈述，容易与后面联苯、丙二烯、反式环辛烯的例子冲突。这三类分子都没有手性碳原子却具有手性，判断时应以对称性为准，而非以手性碳数目为准。</li>
+<li>课件中对称中心一节写作“只可能有一个对称中心”，这是就单个分子而言的正确表述；不要把“一个分子最多一个对称中心”推广成“最多一个对称元素”。</li>
+<li>联苯拆分判据（两侧 C–X 中心距离之和大于 290 pm）是经验规则，用于估计阻转能垒是否足以在室温下分离。课件给出的 C–X 距离为平均值，实际分子中受键角与取代基影响会有偏差，具体能否拆分仍需实验确认。</li>
+<li>课件把顺反标记（<i>Z</i>/<i>E</i>、cis/trans）与构型标记（<i>R</i>/<i>S</i>、<i>D</i>/<i>L</i>）并列在同一个命名格式中。它们属于不同的描述层次：顺反描述取代基相对位置，<i>R</i>/<i>S</i> 描述手性中心的绝对构型，<i>D</i>/<i>L</i> 是以甘油醛为基准的相对构型。复习时不要把它们当成可互相推导的等价标记。</li>
+<li>课件第 30 页 CIP 规则的表述为“原子序数大的为大取代基”，与同页给出的顺序表（I 在最左、H 在最右）方向一致，阅读时以顺序表为准。</li>
+<li>作业为教材 Page 184 与 Page 181 的习题，本页未收录答案。</li>
+</ul>
+</section>
+
+<footer class="source">来源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 1–36 页；Wade, <i>Organic Chemistry</i>, 8th ed., Chapter 5（手性与对映体、CIP 顺序规则、构象手性相关章节）。全部配图取自该课件原版的嵌入图片，未作化学内容改动，仅统一为 WebP 并裁去多余留白。课件中的拼写与表述差异列于“课件勘误与提示”；正文术语可进入双语词条库查看。</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,637 @@
+{
+  "id": "ORG-L08",
+  "title": "手性、对映体与 R/S 构型",
+  "description": "练习手性与对映体的判定、手性碳与立体中心的辨析、对称面/对称中心/反轴判据、构象可动体系与构象对映异构、CIP 顺序规则以及 R/S 构型标定。",
+  "subject": "organic-chemistry",
+  "chapter": "Chapter 8 · Stereochemistry",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "手性（chirality）的核心判据是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "分子中含有手性碳原子"
+        },
+        {
+          "id": "B",
+          "text": "分子与其镜像不能完全重叠"
+        },
+        {
+          "id": "C",
+          "text": "分子中含有不对称的官能团"
+        },
+        {
+          "id": "D",
+          "text": "分子在室温下不能自由旋转"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "手性的定义建立在“完全重叠”这一假想操作上：与镜像无法重合即为手性。含有手性碳只是常见情形，不是判据。",
+      "difficulty": "easy",
+      "tags": [
+        "chirality",
+        "definition"
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "不对称碳原子（asymmetric carbon atom）是指……",
+      "options": [
+        {
+          "id": "A",
+          "text": "连有四个不同取代基的碳原子"
+        },
+        {
+          "id": "B",
+          "text": "带有正电荷的碳原子"
+        },
+        {
+          "id": "C",
+          "text": "参与双键的碳原子"
+        },
+        {
+          "id": "D",
+          "text": "至少连有一个氢原子的碳原子"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "不对称碳原子亦称手性碳原子，判据是所连四个基团互不相同，通常用星号标出。",
+      "difficulty": "easy",
+      "tags": [
+        "asymmetric carbon",
+        "definition"
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "关于分子内对称面 σ，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "有对称面的分子一定是手性的"
+        },
+        {
+          "id": "B",
+          "text": "有对称面的分子一定是非手性的，即使它含有手性碳原子"
+        },
+        {
+          "id": "C",
+          "text": "对称面与分子是否手性无关"
+        },
+        {
+          "id": "D",
+          "text": "只有环状分子才可能有对称面"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "分子的一侧若是另一侧的镜像，分子与自身镜像即为同一分子，因此必然非手性。含手性碳但有对称面的分子仍然是非手性的。",
+      "difficulty": "easy",
+      "tags": [
+        "symmetry",
+        "mirror plane"
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "true-false",
+      "question": "只有一个不对称碳原子的化合物一定是手性的。",
+      "answer": true,
+      "points": 1,
+      "explanation": "这是三条经验规则中的第二条。含两个及以上手性碳时则不一定，因为分子内可能同时存在对称面等对称因素把它抵消。",
+      "difficulty": "easy",
+      "tags": [
+        "chirality",
+        "rules"
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "R/S 标记中的 R 来自拉丁文 rectus，表示……",
+      "options": [
+        {
+          "id": "A",
+          "text": "逆时针"
+        },
+        {
+          "id": "B",
+          "text": "顺时针"
+        },
+        {
+          "id": "C",
+          "text": "左旋"
+        },
+        {
+          "id": "D",
+          "text": "消旋"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "R（rectus，“右”）对应 1→2→3 顺时针；S（sinister，“左”）对应逆时针。R/S 描述的是构型，不是旋光方向。",
+      "difficulty": "easy",
+      "tags": [
+        "R/S",
+        "nomenclature"
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "按 CIP 顺序规则，下列单原子取代基中优先级最高的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cl"
+        },
+        {
+          "id": "B",
+          "text": "Br"
+        },
+        {
+          "id": "C",
+          "text": "I"
+        },
+        {
+          "id": "D",
+          "text": "F"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "单原子取代基按原子序数排序：I(53) > Br(35) > Cl(17) > F(9)。",
+      "difficulty": "medium",
+      "tags": [
+        "CIP",
+        "priority"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "醛基 –CHO 优先于 –CH2OH，主要原因是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "醛基的体积更大"
+        },
+        {
+          "id": "B",
+          "text": "双键氧按两个氧原子计数，醛基碳为 (O,O,H)，而 –CH2OH 的碳为 (O,H,H)"
+        },
+        {
+          "id": "C",
+          "text": "醛基带正电荷"
+        },
+        {
+          "id": "D",
+          "text": "醛基含有一个氢原子"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "CIP 规则规定双键可认为连有两个相同的原子。醛基碳连有两个氧，因此优先于只连一个氧的羟甲基。",
+      "difficulty": "medium",
+      "tags": [
+        "CIP",
+        "multiple bonds"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "在 CIP 规则中，基团里的 C=C 双键应当如何处理？",
+      "options": [
+        {
+          "id": "A",
+          "text": "忽略双键，按单键比较"
+        },
+        {
+          "id": "B",
+          "text": "认为该碳连有两个相同的碳原子，即按 C–C–C 处理"
+        },
+        {
+          "id": "C",
+          "text": "把原子序数直接加倍"
+        },
+        {
+          "id": "D",
+          "text": "含双键的基团优先级自动最高"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "含双键或三键的基团可认为该原子连有两个或三个相同的原子，沿这条规则逐层比较。",
+      "difficulty": "medium",
+      "tags": [
+        "CIP",
+        "multiple bonds"
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "当参与比较的原子成键数不足四个时，CIP 规则要求……",
+      "options": [
+        {
+          "id": "A",
+          "text": "停止比较，视为相同"
+        },
+        {
+          "id": "B",
+          "text": "用原子序数为零的假想原子补足，其优先级最低"
+        },
+        {
+          "id": "C",
+          "text": "一律用氢原子补足"
+        },
+        {
+          "id": "D",
+          "text": "按质量数大小补足"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "假想原子排序最小。例如在 CH3CH2NHCH3 中比较时，顺序为 –CH2CH3 > –CH3 > –H > 假想原子。",
+      "difficulty": "medium",
+      "tags": [
+        "CIP",
+        "phantom atom"
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "关于反轴 Sn 与手性的关系，正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "具有反轴的分子一定是手性的"
+        },
+        {
+          "id": "B",
+          "text": "具有反轴的分子不是手性分子"
+        },
+        {
+          "id": "C",
+          "text": "反轴与手性无关"
+        },
+        {
+          "id": "D",
+          "text": "只有 S1 会影响手性"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "反轴同时关联旋转与反映。其中 S1 = σ、S2 = i，两者已被单独排除；排除对称面与对称中心后，独立剩下的只有 S4。",
+      "difficulty": "medium",
+      "tags": [
+        "symmetry",
+        "improper axis"
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "关于对称中心 i，下列说法错误的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "具有对称中心的分子是非手性的"
+        },
+        {
+          "id": "B",
+          "text": "一个分子最多只有一个对称中心"
+        },
+        {
+          "id": "C",
+          "text": "对称中心等价于二级反轴 S2"
+        },
+        {
+          "id": "D",
+          "text": "一个分子最多只有一个对称元素"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "“一个分子最多一个对称中心”指的是 i 本身，不能推广成“最多一个对称元素”；对称面与反轴都可以有多个。",
+      "difficulty": "medium",
+      "tags": [
+        "symmetry",
+        "inversion center"
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "true-false",
+      "question": "顺-1,2-二溴环己烷可以表现出光学活性。",
+      "answer": false,
+      "points": 1,
+      "explanation": "它的两种椅式构象互为镜像且能量完全相同，室温下快速互变，任何样品中都等量存在两种镜像构象，因此分子整体不表现光学活性。",
+      "difficulty": "medium",
+      "tags": [
+        "conformational chirality",
+        "cyclohexane"
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "判断一个构象可动分子是否可能具有光学活性，正确做法是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "考察能量最低的那个构象"
+        },
+        {
+          "id": "B",
+          "text": "考察对称程度最大的那个构象"
+        },
+        {
+          "id": "C",
+          "text": "任选一个构象即可"
+        },
+        {
+          "id": "D",
+          "text": "只需数分子中有几个手性碳"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "若分子与某个非手性结构或构象处于平衡，它就不可能具有光学活性。手性化合物没有可达到的非手性构象。",
+      "difficulty": "medium",
+      "tags": [
+        "conformational chirality",
+        "optical activity"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "下列哪些分子没有手性碳原子，却具有手性？",
+      "options": [
+        {
+          "id": "A",
+          "text": "邻位被足够大基团取代的联苯"
+        },
+        {
+          "id": "B",
+          "text": "两端各连两个不同基团的丙二烯"
+        },
+        {
+          "id": "C",
+          "text": "反式环辛烯"
+        },
+        {
+          "id": "D",
+          "text": "甲基环己烷"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "前三者分别通过手性轴与环张力锁定获得手性，都不含手性碳。甲基环己烷存在对称面，是非手性的。",
+      "difficulty": "medium",
+      "tags": [
+        "axial chirality",
+        "no chiral carbon"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "判定手性碳 R/S 构型时，第一个关键操作是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "把第 1 号基团背向观察者"
+        },
+        {
+          "id": "B",
+          "text": "把第 4 号基团背向观察者，沿 C—4 键方向观察分子"
+        },
+        {
+          "id": "C",
+          "text": "把分子投影到纸面上再数取代基"
+        },
+        {
+          "id": "D",
+          "text": "先测量该物质的旋光度"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "必须把优先级最低的第 4 号基团置于离眼睛最远处，再观察 1→2→3 的旋转方向，否则顺逆时针判断会反转。",
+      "difficulty": "medium",
+      "tags": [
+        "R/S",
+        "procedure"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "1,3-二溴丁烷中，手性碳位于哪个位置？按 Br > CH2CH2Br > CH3 > H 排序判定其构型为……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C2，R 构型"
+        },
+        {
+          "id": "B",
+          "text": "C3，S 构型"
+        },
+        {
+          "id": "C",
+          "text": "C3，R 构型"
+        },
+        {
+          "id": "D",
+          "text": "C1，S 构型"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "C1 为 CH2Br、C4 为 CH3，都不符合条件，只有 C3 连有 Br、H、CH3、CH2CH2Br 四个不同基团。把 H 背向观察者后 1→2→3 呈逆时针，故为 (S) 构型。",
+      "difficulty": "hard",
+      "tags": [
+        "R/S",
+        "worked example"
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "丙二烯型分子呈现手性，需要满足哪些条件？",
+      "options": [
+        {
+          "id": "A",
+          "text": "两个双键平面互相垂直且不能扭转"
+        },
+        {
+          "id": "B",
+          "text": "两端碳各连有两个不同基团"
+        },
+        {
+          "id": "C",
+          "text": "分子中必须存在手性碳原子"
+        },
+        {
+          "id": "D",
+          "text": "分子既无对称面，也无对称中心"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 2,
+      "explanation": "丙二烯两端 π 轨道互相垂直，无法绕中心碳扭转；两端各带两个不同基团时既无对称面也无对称中心，整体呈手性。这类手性恰恰不需要手性碳。",
+      "difficulty": "hard",
+      "tags": [
+        "allene",
+        "axial chirality"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "fill-in-the-blank",
+      "question": "反轴与常见对称元素存在对应关系：S1 等于镜面对称，S2 等于______。",
+      "answer": "中心对称",
+      "acceptableAnswers": [
+        "中心对称",
+        "对称中心",
+        "中心对称（倒反）"
+      ],
+      "points": 2,
+      "explanation": "S1 = 镜面对称（σ），S2 = 中心对称（i）。因此排除对称面与对称中心后，独立剩下的只有 S4 反轴。",
+      "difficulty": "hard",
+      "tags": [
+        "symmetry",
+        "improper axis"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      }
+    },
+    {
+      "id": "q019",
+      "type": "true-false",
+      "question": "联苯型化合物能否在室温下拆分为旋光异构体，可以用碳与两侧邻位基团的中心距离之和是否大于 290 pm 作经验估计。",
+      "answer": true,
+      "points": 2,
+      "explanation": "这是课件给出的经验判据，用于估计阻转能垒是否足够高。课件列出的 C–X 中心距离为平均值，实际能否拆分还受键角与取代基影响，需实验确认。",
+      "difficulty": "hard",
+      "tags": [
+        "atropisomer",
+        "biphenyl"
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "1,3-二甲基环戊烷的三种立体异构体中，(1R,3S)-1,3-二甲基环戊烷对应的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "trans-1,3-二甲基环戊烷"
+        },
+        {
+          "id": "B",
+          "text": "cis-1,3-二甲基环戊烷"
+        },
+        {
+          "id": "C",
+          "text": "它与顺反标记没有对应关系"
+        },
+        {
+          "id": "D",
+          "text": "外消旋体"
+        }
+      ],
+      "answer": "B",
+      "points": 3,
+      "explanation": "两个手性中心构型相反时两个甲基位于环同侧，对应 cis；(1S,3S) 与 (1R,3R) 构型相同，对应 trans。这一对应关系依赖于编号方式与取代基优先级，不能直接套用到所有环系。",
+      "difficulty": "challenging",
+      "tags": [
+        "cyclic",
+        "nomenclature"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "fill-in-the-blank",
+      "question": "判断分子是否手性的经验判据是：若一个分子既没有对称面、又没有对称中心、又没有______反轴，则它基本上是手性分子。",
+      "answer": "S4",
+      "acceptableAnswers": [
+        "S4",
+        "S₄",
+        "S4 反轴",
+        "四重反轴"
+      ],
+      "points": 3,
+      "explanation": "S1 等于镜面对称、S2 等于中心对称，已被前两项排除，独立剩下的只有 S4。这条判据比数手性碳可靠，因为它直接从对称性出发。",
+      "difficulty": "challenging",
+      "tags": [
+        "symmetry",
+        "chirality criterion"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      }
+    },
+    {
+      "id": "q022",
+      "type": "multiple-choice",
+      "question": "关于 R/S 与 D/L 两种构型标记，下列说法正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "两者是同一套规则的不同写法，可以互相换算"
+        },
+        {
+          "id": "B",
+          "text": "R/S 由 CIP 顺序规则直接推出，描述绝对构型"
+        },
+        {
+          "id": "C",
+          "text": "D/L 以甘油醛为参照，属于相对构型标记"
+        },
+        {
+          "id": "D",
+          "text": "两者都可以用来标记手性中心的构型"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ],
+      "points": 3,
+      "explanation": "R/S 与 D/L 属于两套不同的体系：前者由 CIP 顺序规则直接推出并描述绝对构型，后者以甘油醛为基准描述相对构型。两者都可用于标记手性中心，但没有简单的换算关系。",
+      "difficulty": "challenging",
+      "tags": [
+        "nomenclature",
+        "R/S vs D/L"
+      ]
+    }
+  ]
+}

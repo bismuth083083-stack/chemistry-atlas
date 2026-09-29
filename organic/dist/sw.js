@@ -1,6 +1,6 @@
-const CACHE='chemistry-atlas-v16';
+const CACHE='chemistry-atlas-v17';
 const SHELL=[
-  './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','lesson-07.html','resonance.html','terms.html','term.html',
+  './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','lesson-07.html','lesson-08.html','resonance.html','terms.html','term.html',
   'style.css','content.css','lecture-02.css','term-figures.css','ppt-figures.css','resonance.css',
   'script.js','data/terms.json','data/notes.json',
   'assets/resonance/ppt/formaldehyde.webp','assets/resonance/ppt/acetate.webp',
@@ -31,7 +31,12 @@ const SHELL=[
   'assets/lecture-06/free-energy-equilibrium.webp','assets/lecture-06/bond-enthalpy.webp',
   'assets/lecture-06/arrhenius-distribution.webp','assets/lecture-06/transition-state.webp','assets/lecture-06/reaction-energy.webp',
   'assets/terms/radical-chain.webp','assets/terms/free-energy-equilibrium.webp','assets/terms/bond-enthalpy.webp',
-  'assets/terms/arrhenius-distribution.webp','assets/terms/transition-state.webp','assets/terms/reaction-energy.webp'
+  'assets/terms/arrhenius-distribution.webp','assets/terms/transition-state.webp','assets/terms/reaction-energy.webp',
+  'assets/lecture-08/chirality-hands.webp','assets/lecture-08/enantiomer-mirror.webp','assets/lecture-08/superimposable-test.webp',
+  'assets/lecture-08/tetrahedral-four-groups.webp','assets/lecture-08/bromobutane-enantiomers.webp',
+  'assets/lecture-08/methylcyclohexane-plane.webp','assets/lecture-08/methylcyclohexanone-chiral.webp',
+  'assets/lecture-08/butane-conformational-chirality.webp','assets/lecture-08/allene-chirality.webp',
+  'assets/lecture-08/rs-rotation-rule.webp'
 ];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

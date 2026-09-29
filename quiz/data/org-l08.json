@@ -45,6 +45,11 @@
       "id": "q002",
       "type": "single-choice",
       "question": "不对称碳原子（asymmetric carbon atom）是指……",
+      "image": {
+        "src": "assets/structure-renders/og08-004-R-2-bromobutane-neutral.png",
+        "alt": "2-溴丁烷的结构式，手性碳上连有 Br、H、CH₃、CH₂CH₃ 四个不同基团",
+        "caption": "由 Chemical Structure Renderer 从显式 SMILES 渲染，RDKit 复核 CIP 标记。"
+      },
       "options": [
         {
           "id": "A",
@@ -120,6 +125,11 @@
       "id": "q005",
       "type": "single-choice",
       "question": "R/S 标记中的 R 来自拉丁文 rectus，表示……",
+      "image": {
+        "src": "assets/structure-renders/og08-001-S-alanine-neutral.png",
+        "alt": "(S)-丙氨酸的结构式，氨基画成虚线",
+        "caption": "由 Chemical Structure Renderer 从显式 SMILES 渲染，RDKit 复核 CIP 标记。"
+      },
       "options": [
         {
           "id": "A",
@@ -602,6 +612,11 @@
       "id": "q022",
       "type": "multiple-choice",
       "question": "关于 R/S 与 D/L 两种构型标记，下列说法正确的是……",
+      "image": {
+        "src": "assets/structure-renders/og08-002-R-alanine-neutral.png",
+        "alt": "(R)-丙氨酸的结构式，氨基画成实楔线，与前一题的 (S) 互为镜像",
+        "caption": "由 Chemical Structure Renderer 从显式 SMILES 渲染，RDKit 复核 CIP 标记。"
+      },
       "options": [
         {
           "id": "A",

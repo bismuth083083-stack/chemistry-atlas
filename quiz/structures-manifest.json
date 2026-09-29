@@ -1326,6 +1326,422 @@
         "formula": "C10H16",
         "net_charge": 0
       }
+    },
+    {
+      "id": "og08-001",
+      "chinese_name": "(S)-丙氨酸",
+      "english_name": "S-alanine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](C)C(=O)O"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "alpha carbon S"
+      },
+      "expected": {
+        "formula": "C3H7NO2",
+        "net_charge": 0,
+        "relative_molecular_mass": 89.09
+      }
+    },
+    {
+      "id": "og08-002",
+      "chinese_name": "(R)-丙氨酸",
+      "english_name": "R-alanine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@H](C)C(=O)O"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "alpha carbon R"
+      },
+      "expected": {
+        "formula": "C3H7NO2",
+        "net_charge": 0,
+        "relative_molecular_mass": 89.09
+      }
+    },
+    {
+      "id": "og08-003",
+      "chinese_name": "(S)-2-溴丁烷",
+      "english_name": "S-2-bromobutane",
+      "structure": {
+        "format": "smiles",
+        "value": "CC[C@H](C)Br"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "C2 S"
+      },
+      "expected": {
+        "formula": "C4H9Br",
+        "net_charge": 0,
+        "relative_molecular_mass": 137.02
+      }
+    },
+    {
+      "id": "og08-004",
+      "chinese_name": "(R)-2-溴丁烷",
+      "english_name": "R-2-bromobutane",
+      "structure": {
+        "format": "smiles",
+        "value": "CC[C@@H](C)Br"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "C2 R"
+      },
+      "expected": {
+        "formula": "C4H9Br",
+        "net_charge": 0,
+        "relative_molecular_mass": 137.02
+      }
+    },
+    {
+      "id": "og08-005",
+      "chinese_name": "(S)-1,3-二溴丁烷",
+      "english_name": "S-13-dibromobutane",
+      "structure": {
+        "format": "smiles",
+        "value": "C[C@H](Br)CCBr"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        192,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "C3 S"
+      },
+      "expected": {
+        "formula": "C4H8Br2",
+        "net_charge": 0,
+        "relative_molecular_mass": 215.92
+      }
+    },
+    {
+      "id": "og08-006",
+      "chinese_name": "(R)-1,3-二溴丁烷",
+      "english_name": "R-13-dibromobutane",
+      "structure": {
+        "format": "smiles",
+        "value": "C[C@@H](Br)CCBr"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        191,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "C3 R"
+      },
+      "expected": {
+        "formula": "C4H8Br2",
+        "net_charge": 0,
+        "relative_molecular_mass": 215.92
+      }
+    },
+    {
+      "id": "og08-007",
+      "chinese_name": "(R)-香芹酮",
+      "english_name": "R-carvone",
+      "structure": {
+        "format": "smiles",
+        "value": "C=C(C)[C@@H]1CC=C(C)C(=O)C1"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        220,
+        209
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "C5 R"
+      },
+      "expected": {
+        "formula": "C10H14O",
+        "net_charge": 0,
+        "relative_molecular_mass": 150.22
+      }
+    },
+    {
+      "id": "og08-008",
+      "chinese_name": "(S)-香芹酮",
+      "english_name": "S-carvone",
+      "structure": {
+        "format": "smiles",
+        "value": "C=C(C)[C@H]1CC=C(C)C(=O)C1"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        220,
+        209
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "C5 S"
+      },
+      "expected": {
+        "formula": "C10H14O",
+        "net_charge": 0,
+        "relative_molecular_mass": 150.22
+      }
+    },
+    {
+      "id": "og08-009",
+      "chinese_name": "顺-1,3-二甲基环戊烷",
+      "english_name": "cis-13-dimethylcyclopentane",
+      "structure": {
+        "format": "smiles",
+        "value": "C[C@H]1CC[C@@H](C)C1"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "two centres, opposite descriptors"
+      },
+      "expected": {
+        "formula": "C7H14",
+        "net_charge": 0,
+        "relative_molecular_mass": 98.19
+      }
+    },
+    {
+      "id": "og08-010",
+      "chinese_name": "反-1,3-二甲基环戊烷",
+      "english_name": "trans-13-dimethylcyclopentane-1S3S",
+      "structure": {
+        "format": "smiles",
+        "value": "C[C@H]1CC[C@H](C)C1"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "two centres, same descriptors (S,S)"
+      },
+      "expected": {
+        "formula": "C7H14",
+        "net_charge": 0,
+        "relative_molecular_mass": 98.19
+      }
+    },
+    {
+      "id": "og08-011",
+      "chinese_name": "反-1,3-二甲基环戊烷",
+      "english_name": "trans-13-dimethylcyclopentane-1R3R",
+      "structure": {
+        "format": "smiles",
+        "value": "C[C@@H]1CC[C@@H](C)C1"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "two centres, same descriptors (R,R)"
+      },
+      "expected": {
+        "formula": "C7H14",
+        "net_charge": 0,
+        "relative_molecular_mass": 98.19
+      }
+    },
+    {
+      "id": "og08-013",
+      "chinese_name": "甲基环己烷",
+      "english_name": "methylcyclohexane",
+      "structure": {
+        "format": "smiles",
+        "value": "CC1CCCCC1"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "achiral: internal mirror plane"
+      },
+      "expected": {
+        "formula": "C7H14",
+        "net_charge": 0,
+        "relative_molecular_mass": 98.19
+      }
+    },
+    {
+      "id": "og08-014",
+      "chinese_name": "(R)-2-甲基环己酮",
+      "english_name": "R-2-methylcyclohexanone",
+      "structure": {
+        "format": "smiles",
+        "value": "C[C@@H]1CCCCC1=O"
+      },
+      "protonation": "Explicit structure as drawn; net charge 0",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        160,
+        160
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+        "accessed": "2026-09-29",
+        "note": "C2 R"
+      },
+      "expected": {
+        "formula": "C7H12O",
+        "net_charge": 0,
+        "relative_molecular_mass": 112.17
+      }
     }
   ],
   "groups": [

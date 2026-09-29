@@ -1,0 +1,244 @@
+{
+  "formula": "C7H14",
+  "relative_molecular_mass": 98.18900000000001,
+  "exact_mass": 98.109550448,
+  "net_charge": 0,
+  "atom_count": 7,
+  "heavy_atom_count": 7,
+  "atom_count_with_hydrogens": 21,
+  "canonical_isomeric_smiles": "CC1CCCCC1",
+  "cxsmiles": "CC1CCCCC1",
+  "inchikey": "UAEPNZWRGJTJPN-UHFFFAOYSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 6,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 3,
+      "end": 4,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 4,
+      "end": 5,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 6,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 6,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      160,
+      160
+    ],
+    "png_scale": 4,
+    "id": "og08-013",
+    "chinese_name": "甲基环己烷",
+    "english_name": "methylcyclohexane",
+    "structure": {
+      "format": "smiles",
+      "value": "CC1CCCCC1"
+    },
+    "protonation": "Explicit structure as drawn; net charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+      "accessed": "2026-09-29",
+      "note": "achiral: internal mirror plane"
+    },
+    "expected": {
+      "formula": "C7H14",
+      "net_charge": 0,
+      "relative_molecular_mass": 98.19
+    }
+  },
+  "original_structure": "CC1CCCCC1",
+  "topology": {
+    "ring_sizes": [
+      6
+    ],
+    "ring_count": 1,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 1,
+    "bridgehead_count": 1,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0.0,
+    "double_bond_count": 0,
+    "stereocenter_count": 0,
+    "layout_mode": "template-coordgen",
+    "template_id": "single-ring",
+    "template_score": 2,
+    "core_bond_length_deviation": 0.00010724435331809999,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 160,
+    "height": 160,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      640,
+      640
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      130,
+      171,
+      510,
+      468
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "og08-013-methylcyclohexane-neutral.svg",
+      "sha256": "a3435efa60c947de90ac7556da893154e8cbc9bd76ff422e276e3680f25d9303"
+    },
+    "png": {
+      "path": "og08-013-methylcyclohexane-neutral.png",
+      "sha256": "945901054fb88b25d992474c177ac41290f5509c9f6dbd1249a3eaef5d8c6ebc"
+    },
+    "mol": {
+      "path": "og08-013-methylcyclohexane-neutral.mol",
+      "sha256": "b66bd4ad563a395481e388b527b8c79fc9d9ec8235999feeb7ddd2122c5cc618"
+    }
+  }
+}

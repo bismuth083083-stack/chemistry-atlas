@@ -1,0 +1,224 @@
+{
+  "formula": "C3H7NO2",
+  "relative_molecular_mass": 89.09399999999998,
+  "exact_mass": 89.047678464,
+  "net_charge": 0,
+  "atom_count": 6,
+  "heavy_atom_count": 6,
+  "atom_count_with_hydrogens": 13,
+  "canonical_isomeric_smiles": "C[C@@H](N)C(=O)O",
+  "cxsmiles": "C[C@@H](N)C(=O)O",
+  "inchikey": "QNAYBMKLOCPYGJ-UWTATZPHSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "R"
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 3,
+      "end": 4,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 3,
+      "end": 5,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 1,
+      "specified": "Specified",
+      "descriptor": "Tet_CCW"
+    }
+  ],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      160,
+      160
+    ],
+    "png_scale": 4,
+    "id": "og08-002",
+    "chinese_name": "(R)-丙氨酸",
+    "english_name": "R-alanine",
+    "structure": {
+      "format": "smiles",
+      "value": "N[C@H](C)C(=O)O"
+    },
+    "protonation": "Explicit structure as drawn; net charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+      "accessed": "2026-09-29",
+      "note": "alpha carbon R"
+    },
+    "expected": {
+      "formula": "C3H7NO2",
+      "net_charge": 0,
+      "relative_molecular_mass": 89.09
+    }
+  },
+  "original_structure": "N[C@H](C)C(=O)O",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 5,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 1,
+    "stereocenter_count": 1,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 160,
+    "height": 160,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      640,
+      640
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      93,
+      113,
+      545,
+      526
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "og08-002-R-alanine-neutral.svg",
+      "sha256": "7710c75b682afb5389cf6afd59b5d0ff9d3040438d395d37d9df382524a300a1"
+    },
+    "png": {
+      "path": "og08-002-R-alanine-neutral.png",
+      "sha256": "fa1ffa270ebb93de2b23ac135bb5f25813c9bd5ff43009931ff931286b0ee026"
+    },
+    "mol": {
+      "path": "og08-002-R-alanine-neutral.mol",
+      "sha256": "a562138ac4294993fb98ba8652ad948bde62f7ce038db95955c9295f5c541f8d"
+    }
+  }
+}

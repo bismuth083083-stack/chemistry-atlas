@@ -22,6 +22,14 @@
 .step-list li::before{content:counter(st);position:absolute;left:16px;top:14px;width:24px;height:24px;display:grid;place-items:center;border:1px solid var(--accent);border-radius:50%;color:var(--accent);font:12px ui-monospace,monospace}
 .correction-list{padding-left:1.25rem;max-width:78ch}
 .correction-list li{margin:.65rem 0;line-height:1.75}
+.struct-row{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0;max-width:960px}
+.struct-row figure{flex:1 1 190px;margin:0;padding:14px 14px 12px;border:1px solid var(--line);border-radius:14px;background:rgba(7,17,31,.45);text-align:center}
+.struct-row img{display:block;width:100%;max-width:212px;height:auto;margin:0 auto;filter:invert(1) brightness(1.12)}
+.light .struct-row figure{background:#fff}
+.light .struct-row img{filter:none}
+.struct-row figcaption{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.5}
+.struct-row figcaption b{display:block;margin-bottom:2px;color:var(--text);font-size:14px}
+.struct-note{margin:-8px 0 24px;color:var(--muted);font-size:12.5px;line-height:1.6;max-width:78ch}
 </style>
 </head>
 <body>
@@ -54,7 +62,7 @@
 <p class="eyebrow">LECTURE 07 · CHAPTER 5-1</p>
 <h1>立体化学：手性、对映体与 R/S 构型</h1>
 <p>Stereochemistry: chirality, enantiomers, and the R/S configuration</p>
-<div><span>课件原图</span><span>手性判定流程</span><span>CIP 顺序规则</span><span>课件勘误提示</span></div>
+<div><span>课件原图</span><span>13 张结构式</span><span>手性判定流程</span><span>CIP 顺序规则</span><span>教材对照</span><span>课件勘误提示</span></div>
 </header>
 
 <section>
@@ -124,6 +132,17 @@
 <img src="assets/lecture-08/bromobutane-enantiomers.webp" alt="2-溴丁烷的一对对映体，球棍模型与立体结构式并排对照" loading="lazy" decoding="async">
 <figcaption>2-溴丁烷的两个对映体。C2 连有四个不同基团，用星号标出。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 12 页</small></figcaption>
 </figure>
+<div class="struct-row">
+<figure>
+<img src="assets/lecture-08/structures/og08-003-S-2-bromobutane-neutral.png" alt="(S)-2-溴丁烷的键线式，手性碳上的溴为虚线" loading="lazy" decoding="async">
+<figcaption><b>(S)-2-溴丁烷</b>氢在纸面后方，Br → C₂H₅ → CH₃ 呈逆时针</figcaption>
+</figure>
+<figure>
+<img src="assets/lecture-08/structures/og08-004-R-2-bromobutane-neutral.png" alt="(R)-2-溴丁烷的键线式，手性碳上的溴为实楔线" loading="lazy" decoding="async">
+<figcaption><b>(R)-2-溴丁烷</b>同一取代基换成实楔线，旋转方向随之反转</figcaption>
+</figure>
+</div>
+<p class="struct-note">两张图是同一分子的两个对映体：把虚线换成实楔线，就得到镜像。优先次序 Br &gt; CH<sub>2</sub>CH<sub>3</sub> &gt; CH<sub>3</sub> &gt; H。</p>
 <p>课件接着区分了三个容易混用的术语，它们的严格程度依次放宽：</p>
 <div class="property-grid">
 <article><b>手性碳 / 不对称碳原子<small>asymmetric / chiral carbon atom</small></b><p>连有<b>四个不同取代基</b>的碳原子。这是最直观、最容易上手的判据，但只是一个充分条件式的起点。</p></article>
@@ -158,6 +177,17 @@
 <img src="assets/lecture-08/methylcyclohexanone-chiral.webp" alt="2-甲基环己酮的羰基打破对称性，分子呈手性" loading="lazy" decoding="async">
 <figcaption>2-甲基环己酮：羰基取代了环上的一个 CH<sub>2</sub>，对称面随之消失，分子是手性的。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 16 页</small></figcaption>
 </figure>
+<div class="struct-row">
+<figure>
+<img src="assets/lecture-08/structures/og08-013-methylcyclohexane-neutral.png" alt="甲基环己烷的键线式，取代碳上没有立体楔线" loading="lazy" decoding="async">
+<figcaption><b>甲基环己烷</b>非手性：取代碳并非手性碳</figcaption>
+</figure>
+<figure>
+<img src="assets/lecture-08/structures/og08-014-R-2-methylcyclohexanone-neutral.png" alt="(R)-2-甲基环己酮的键线式，取代碳上带实楔线" loading="lazy" decoding="async">
+<figcaption><b>(R)-2-甲基环己酮</b>手性：取代碳成为手性中心</figcaption>
+</figure>
+</div>
+<p class="struct-note">关键不是数取代基，而是找对称面：甲基环己烷的取代碳连有两条相同的环路径，2-甲基环己酮的取代碳则连有 –H、–CH<sub>3</sub>、–CO– 与 –CH<sub>2</sub>– 四条不同路径。</p>
 <h3>对称中心 <i>i</i></h3>
 <p>如果分子中存在一个点，所有通过这个点画出的直线都能以等距离到达相同的基团，该点称为<a class="term-link" href="term.html?slug=center-of-symmetry">对称中心</a>（symmetric center），用 <i>i</i> 表示。一个分子最多只能有一个对称中心，与它对应的对称操作是“倒反”。<b>具有对称中心的分子一定是非手性的。</b></p>
 <h3>反轴 <i>S</i><sub>n</sub></h3>
@@ -250,8 +280,41 @@
 <figcaption>R/S 判定的核心操作：把 4 号基团背向观察者，看 1→2→3 的旋转方向。<small>图源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 28 页</small></figcaption>
 </figure>
 <p>完整的构型名称由三段拼成：<b>构型标记（<i>R</i>/<i>S</i>，或 <i>D</i>/<i>L</i>，顺反用 <i>Z</i>/<i>E</i>）+ 取代基（位置 + 个数 + 名称）+ 母体（官能团位置 + 名称）</b>。以丙氨酸为例，两个对映体分别命名为 (<i>S</i>)-丙氨酸与 (<i>R</i>)-丙氨酸，也就是 (<i>S</i>)-2-氨基丙酸与 (<i>R</i>)-2-氨基丙酸——这里的<a class="term-link" href="term.html?slug=r-s-configuration">R/S 构型</a>标记由 CIP 顺序规则直接推出。</p>
+<div class="struct-row">
+<figure>
+<img src="assets/lecture-08/structures/og08-001-S-alanine-neutral.png" alt="(S)-丙氨酸的键线式，氨基为虚线" loading="lazy" decoding="async">
+<figcaption><b>(S)-丙氨酸</b>天然丙氨酸，可被代谢利用</figcaption>
+</figure>
+<figure>
+<img src="assets/lecture-08/structures/og08-002-R-alanine-neutral.png" alt="(R)-丙氨酸的键线式，氨基为实楔线" loading="lazy" decoding="async">
+<figcaption><b>(R)-丙氨酸</b>非天然，课件称其为“无用的氨基酸”</figcaption>
+</figure>
+</div>
+<p class="struct-note">优先次序 NH<sub>2</sub> &gt; CO<sub>2</sub>H &gt; CH<sub>3</sub> &gt; H，把氢背向观察者后判断旋转方向。</p>
 <div class="note"><b>一个容易踩的坑：<i>R</i>/<i>S</i> 与 <i>D</i>/<i>L</i> 不是一回事</b><p>课件在命名格式里把 <i>R</i>/<i>S</i> 与 <i>D</i>/<i>L</i> 并列，但它们属于两套不同的体系。<i>R</i>/<i>S</i> 由 CIP 顺序规则直接推出，与基团的相对空间排布严格对应；<i>D</i>/<i>L</i> 是以甘油醛为参照的相对构型标记，主要用于糖和氨基酸。两者没有简单的换算关系，不能互相推导。</p></div>
 <p>课件用 1,3-二溴丁烷演示了完整流程。先找手性碳：C1 是 CH<sub>2</sub>Br、C4 是 CH<sub>3</sub>，都不符合条件，<b>只有 C3 是不对称碳</b>。再排基团顺序：Br &gt; CH<sub>2</sub>CH<sub>2</sub>Br &gt; CH<sub>3</sub> &gt; H。把 H 背向观察者后，1→2→3 呈逆时针，因此是 (<i>S</i>)-构型；其镜像即为 (<i>R</i>)-构型。课件还用香芹酮（carvone）给出了一个练习，要求找出手性碳并判断它属于 (<i>R</i>) 还是 (<i>S</i>)。</p>
+<div class="struct-row">
+<figure>
+<img src="assets/lecture-08/structures/og08-005-S-13-dibromobutane-neutral.png" alt="(S)-1,3-二溴丁烷的键线式，C3 上的溴为虚线" loading="lazy" decoding="async">
+<figcaption><b>(S)-1,3-二溴丁烷</b>1→2→3 逆时针</figcaption>
+</figure>
+<figure>
+<img src="assets/lecture-08/structures/og08-006-R-13-dibromobutane-neutral.png" alt="(R)-1,3-二溴丁烷的键线式，C3 上的溴为实楔线" loading="lazy" decoding="async">
+<figcaption><b>(R)-1,3-二溴丁烷</b>镜像，构型反转</figcaption>
+</figure>
+</div>
+<p class="struct-note">只有 C3 是不对称碳（C1 与 C4 各连两个氢）。基团顺序 Br &gt; CH<sub>2</sub>CH<sub>2</sub>Br &gt; CH<sub>3</sub> &gt; H。</p>
+<div class="struct-row">
+<figure>
+<img src="assets/lecture-08/structures/og08-007-R-carvone-neutral.png" alt="(R)-香芹酮的键线式" loading="lazy" decoding="async">
+<figcaption><b>(R)-香芹酮</b>留兰香来源的对映体</figcaption>
+</figure>
+<figure>
+<img src="assets/lecture-08/structures/og08-008-S-carvone-neutral.png" alt="(S)-香芹酮的键线式" loading="lazy" decoding="async">
+<figcaption><b>(S)-香芹酮</b>葛缕子来源的对映体，气味不同</figcaption>
+</figure>
+</div>
+<p class="struct-note">手性碳是环上带异丙烯基的那个碳（C5）。两个对映体气味不同——(<i>R</i>) 像留兰香、(<i>S</i>) 像葛缕子——是“对映体只在与手性环境作用时才显出差别”的经典例子。</p>
 </section>
 
 <section>
@@ -261,12 +324,46 @@
 <article><b>(1<i>R</i>,3<i>S</i>)-1,3-二甲基环戊烷</b><p>两个中心的构型相反，对应 <b>cis</b>-1,3-二甲基环戊烷（两个甲基在环同侧）。</p></article>
 <article><b>(1<i>S</i>,3<i>S</i>)- 与 (1<i>R</i>,3<i>R</i>)-1,3-二甲基环戊烷</b><p>两个中心的构型相同，对应 <b>trans</b>-1,3-二甲基环戊烷（两个甲基在环异侧）。</p></article>
 </div>
+<div class="struct-row">
+<figure>
+<img src="assets/lecture-08/structures/og08-009-cis-13-dimethylcyclopentane-neutral.png" alt="顺-1,3-二甲基环戊烷，两个甲基都是虚线，位于环同侧" loading="lazy" decoding="async">
+<figcaption><b>顺（1<i>R</i>,3<i>S</i>）</b>两个甲基均为虚线，同侧</figcaption>
+</figure>
+<figure>
+<img src="assets/lecture-08/structures/og08-010-trans-13-dimethylcyclopentane-1S3S-neutral.png" alt="反-1,3-二甲基环戊烷(1S,3S)，一个甲基为实楔线一个为虚线" loading="lazy" decoding="async">
+<figcaption><b>反（1<i>S</i>,3<i>S</i>）</b>一实一虚，异侧</figcaption>
+</figure>
+<figure>
+<img src="assets/lecture-08/structures/og08-011-trans-13-dimethylcyclopentane-1R3R-neutral.png" alt="反-1,3-二甲基环戊烷(1R,3R)，一个甲基为虚线一个为实楔线" loading="lazy" decoding="async">
+<figcaption><b>反（1<i>R</i>,3<i>R</i>）</b>与上图互为对映体</figcaption>
+</figure>
+</div>
+<p class="struct-note">判断顺反只需看两个甲基的楔线是否同向：同为虚线（或同为实楔线）即同侧，一实一虚即异侧。三张图由 Chemical Structure Renderer 从显式 SMILES 渲染；本文另用 RDKit 做 3D 嵌入，按环平面法向量计算两个甲基的有符号距离，确认第一张同号（cis）、后两张异号（trans）。</p>
 <p>这里有一个值得注意的对应关系：<b>顺反标记与 <i>R</i>/<i>S</i> 标记之间并非一一独立</b>。对 1,3-二甲基环戊烷而言，“同侧/异侧”恰好等价于“两个构型标记相同/相反”。但这个等价关系依赖于取代基的编号方式与优先级排布，不能当作通用公式套用到所有环系上。课件另外给出了螺环的例子 (<i>S</i>)-1-甲基螺[2.5]辛烷，说明螺环化合物的手性同样用 <i>R</i>/<i>S</i> 描述。</p>
 <div class="note"><b>环状分子判手性的顺序</b><p>面对环系，先找<b>对称面</b>判断分子整体是否手性（第 5 节的经验判据），再对确实存在的手性中心逐个标定 <i>R</i>/<i>S</i>。反过来做容易出错：把每个带取代基的环碳都当成手性碳，会得出比实际更多的手性中心。</p></div>
 </section>
 
 <section>
-<h2>11. 本课复习清单</h2>
+<h2>11. 教材对照：本讲在 Wade 第 5 章中的位置</h2>
+<p>本讲的术语体系、例题与作业题都直接来自 Wade《Organic Chemistry》第 8 版第 5 章 §5-3。课件把教材的展开压缩成了幻灯片，对照教材可以补回被省略的限定条件与记忆法。</p>
+<div class="nomenclature-table">
+<div class="nomenclature-row head"><b>课件主题</b><b>Wade 位置</b><b>教材补充与提醒</b></div>
+<div class="nomenclature-row"><span>异构体分类</span><span>§5-1，书页 174–175</span><span>教材同样以富马酸与马来酸开篇，并给出熔点作为实证：富马酸 287 °C、马来酸 138 °C。差别不只在“有没有毒”，还直接体现在可测的物理性质上。</span></div>
+<div class="nomenclature-row"><span>手性与对映体</span><span>§5-2、§5-2A，书页 175–177</span><span>教材把“可重叠”写成可操作的检验：把两个分子叠放，若原子能一一对应即为同一化合物。左右手剪刀的类比出自此处，课件用的是左右手本身。</span></div>
+<div class="nomenclature-row"><span>手性碳、手性中心、立体中心</span><span>§5-2B，书页 177–179</span><span>教材用一张递进图比较三个定义的宽窄，并让学生亲手“交换两个基团”来验证某原子是否为立体中心（PROBLEM 5-4）。这比背定义更能建立区分。</span></div>
+<div class="nomenclature-row"><span>分子内对称面</span><span>§5-2C，书页 179–180</span><span>教材要求在三维结构上把对称面<b>实际画出来</b>，而不是只在脑中想象。课件第 11 页的重叠检验图取自这一节的开头。</span></div>
+<div class="nomenclature-row"><span>CIP 顺序规则</span><span>§5-3，书页 181–182</span><span>教材拆成三条并各配图：(a) 按直接相连原子的原子序数；(b) 首位相同时顺链比较；(c) 双键三键按“断开并复制原子”处理。课件把三点压在同一段，建议按教材分开记。</span></div>
+<div class="nomenclature-row"><span>R/S 判定</span><span>§5-3，书页 182–183</span><span>教材给了一个课件没有的助记法：把 1→2→3 的箭头想成方向盘，车向左转为 (<i>S</i>)，向右转为 (<i>R</i>)。教材同时强调直接用模型比死记方向可靠。</span></div>
+<div class="nomenclature-row"><span>丙氨酸的 R/S</span><span>§5-3，书页 183</span><span>教材明确指出天然丙氨酸是 (<i>S</i>)-构型，并指出它与非天然对映体的差别“反映在生物化学上”——只有左边的能被常用酶代谢。课件的中文表述与之一致。</span></div>
+<div class="nomenclature-row"><span>1,3-二溴丁烷例题</span><span>SOLVED PROBLEM 5-2，书页 183</span><span>课件的例题就是这道题，连基团顺序 Br &gt; CH<sub>2</sub>CH<sub>2</sub>Br &gt; CH<sub>3</sub> &gt; H 都一致。教材的解答额外提醒：这类题“用模型特别有帮助”。</span></div>
+<div class="nomenclature-row"><span>香芹酮练习</span><span>PROBLEM 5-3，书页 184</span><span>课件页脚写的“作业 Page 184”即此题：找出香芹酮的手性碳并判断它属于 (<i>R</i>) 还是 (<i>S</i>)。答案的一个对映体是 (<i>R</i>)。</span></div>
+<div class="nomenclature-row"><span>课件页脚的“Page 181”</span><span>PROBLEM 5-5，书页 181</span><span>要求对甲烷、顺/反-1,2-二溴环丁烷、1,2-二氯丙烷、甘油醛与丙氨酸逐个判断有无分子内对称面、是否手性。练习“先找对称面”最好的题组。</span></div>
+</div>
+<div class="note"><b>未讲到的主题在教材哪里</b><p>课件大纲列出但本讲未展开的内容对应 Wade §5-4 旋光性（书页 185）、§5-6 外消旋体、§5-7 对映体过量（书页 191–192）、§5-9B 丙二烯（书页 196）、§5-10 Fischer 投影（书页 197）、§5-11 非对映体（书页 201）、§5-13 内消旋化合物（书页 205）、§5-16 拆分（书页 209），属 Chapter 5-2 范围，本页不提前展开。</p></div>
+</section>
+
+<section>
+<h2>12. 本课复习清单</h2>
 <ol class="check-list" style="max-width:82ch;line-height:1.9">
 <li>说出立体化学研究什么，并用富马酸/马来酸与沙利度胺说明空间排布为什么重要。</li>
 <li>解释沙利度胺案例中“体内消旋化”为什么使单一对映体给药也无效，并说出三条现代解决路径。</li>
@@ -286,7 +383,7 @@
 </section>
 
 <section class="note-section">
-<h2>12. 课件勘误与提示</h2>
+<h2>13. 课件勘误与提示</h2>
 <ul class="correction-list">
 <li>本讲的章节提纲列出七个主题（Introduction、Chirality and enantiomers、Nomenclature of asymmetric carbon atoms、Fischer projections、Diastereomers、Optical activity、Resolution and asymmetric synthesis），但课件实际只推进到前三项与环状/螺环化合物的命名，共 36 页。Fischer 投影、非对映体、旋光性与拆分将在下一讲（Chapter 5-2）展开，本页不提前展开。</li>
 <li>课件第 11 页的重叠检验图标注为 (a)(b) 两组，正文未说明哪一组对应手性。按图意，(a) 旋转后仍不能与镜像重合，为手性；(b) 可以重合，为非手性。</li>
@@ -300,7 +397,7 @@
 </ul>
 </section>
 
-<footer class="source">来源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 1–36 页；Wade, <i>Organic Chemistry</i>, 8th ed., Chapter 5（手性与对映体、CIP 顺序规则、构象手性相关章节）。全部配图取自该课件原版的嵌入图片，未作化学内容改动，仅统一为 WebP 并裁去多余留白。课件中的拼写与表述差异列于“课件勘误与提示”；正文术语可进入双语词条库查看。</footer>
+<footer class="source">来源：Organic Chemistry I Lect. 7 (Chapter 5-1)，第 1–36 页；Wade, <i>Organic Chemistry</i>, 8th ed., §5-1–§5-3（书页 174–184），术语、例题与作业题均与课件逐条对应，对照表见第 11 节。课件原图取自该 PDF/PPT 的嵌入图片，仅统一为 WebP 并裁去多余留白；13 张结构式由 Chemical Structure Renderer 从显式 SMILES 渲染（PNG 用于页面，SVG/MOL/metadata 存于 <code>assets/lecture-08/structures/</code> 供溯源），全部经 RDKit 复核 CIP 标记，环戊烷的顺反关系另用 3D 嵌入按环平面法向量复核。课件中的拼写与表述差异列于第 13 节；正文术语可进入双语词条库查看。</footer>
 </main>
 <script src="script.js"></script>
 </body>

@@ -1,0 +1,323 @@
+{
+  "formula": "C10H14O",
+  "relative_molecular_mass": 150.22099999999998,
+  "exact_mass": 150.104465068,
+  "net_charge": 0,
+  "atom_count": 11,
+  "heavy_atom_count": 11,
+  "atom_count_with_hydrogens": 25,
+  "canonical_isomeric_smiles": "C=C(C)[C@@H]1CC=C(C)C(=O)C1",
+  "cxsmiles": "C=C(C)[C@@H]1CC=C(C)C(=O)C1",
+  "inchikey": "ULDHMXUKGWMISQ-SECBINFHSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "R"
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 6,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 7,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 8,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 9,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 10,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 3,
+      "end": 4,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 4,
+      "end": 5,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 6,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 6,
+      "end": 7,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 6,
+      "end": 8,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 8,
+      "end": 9,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 8,
+      "end": 10,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 10,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 3,
+      "specified": "Specified",
+      "descriptor": "Tet_CCW"
+    }
+  ],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      220,
+      209
+    ],
+    "png_scale": 4,
+    "id": "og08-007",
+    "chinese_name": "(R)-香芹酮",
+    "english_name": "R-carvone",
+    "structure": {
+      "format": "smiles",
+      "value": "C=C(C)[C@@H]1CC=C(C)C(=O)C1"
+    },
+    "protonation": "Explicit structure as drawn; net charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+      "accessed": "2026-09-29",
+      "note": "C5 R"
+    },
+    "expected": {
+      "formula": "C10H14O",
+      "net_charge": 0,
+      "relative_molecular_mass": 150.22
+    }
+  },
+  "original_structure": "C=C(C)[C@@H]1CC=C(C)C(=O)C1",
+  "topology": {
+    "ring_sizes": [
+      6
+    ],
+    "ring_count": 1,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 5,
+    "bridgehead_count": 3,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0.0,
+    "double_bond_count": 3,
+    "stereocenter_count": 1,
+    "layout_mode": "template-coordgen",
+    "template_id": "single-ring",
+    "template_score": 2,
+    "core_bond_length_deviation": 0.00010722502954704251,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 220,
+    "height": 209,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      880,
+      836
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      123,
+      116,
+      756,
+      719
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "og08-007-R-carvone-neutral.svg",
+      "sha256": "0f4d6796948ac5302509c0e5ad218bb6fa07f542c5e57ca85ec6cbffe390ab1e"
+    },
+    "png": {
+      "path": "og08-007-R-carvone-neutral.png",
+      "sha256": "0b650a6f305bfe593e3f0820ffbdeb9679fc5b86df5ef9dd6a4bf72485c49604"
+    },
+    "mol": {
+      "path": "og08-007-R-carvone-neutral.mol",
+      "sha256": "266f728798ad7579e13c07977478a534e24054ef071de3cb85e0ded103509251"
+    }
+  }
+}

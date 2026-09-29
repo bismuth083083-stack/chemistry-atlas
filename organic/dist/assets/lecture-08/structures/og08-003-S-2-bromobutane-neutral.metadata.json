@@ -1,0 +1,206 @@
+{
+  "formula": "C4H9Br",
+  "relative_molecular_mass": 137.01999999999998,
+  "exact_mass": 135.988762388,
+  "net_charge": 0,
+  "atom_count": 5,
+  "heavy_atom_count": 5,
+  "atom_count_with_hydrogens": 14,
+  "canonical_isomeric_smiles": "CC[C@H](C)Br",
+  "cxsmiles": "CC[C@H](C)Br",
+  "inchikey": "UPSXAPQYNGXVBF-BYPYZUCNSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "S"
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "Br",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 4,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 2,
+      "specified": "Specified",
+      "descriptor": "Tet_CCW"
+    }
+  ],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      160,
+      160
+    ],
+    "png_scale": 4,
+    "id": "og08-003",
+    "chinese_name": "(S)-2-溴丁烷",
+    "english_name": "S-2-bromobutane",
+    "structure": {
+      "format": "smiles",
+      "value": "CC[C@H](C)Br"
+    },
+    "protonation": "Explicit structure as drawn; net charge 0",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "Chemistry Atlas organic chemistry lesson 08 (Chapter 5-1 stereochemistry); SMILES authored explicitly, cross-checked against Wade, Organic Chemistry, 8th ed., ch. 5",
+      "accessed": "2026-09-29",
+      "note": "C2 S"
+    },
+    "expected": {
+      "formula": "C4H9Br",
+      "net_charge": 0,
+      "relative_molecular_mass": 137.02
+    }
+  },
+  "original_structure": "CC[C@H](C)Br",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 4,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 0,
+    "stereocenter_count": 1,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 160,
+    "height": 160,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      640,
+      640
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      128,
+      193,
+      511,
+      445
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "og08-003-S-2-bromobutane-neutral.svg",
+      "sha256": "a86eeed7414125ad0017651ba46c7abe372c96ec745b3a62a9f9723d6507ebf4"
+    },
+    "png": {
+      "path": "og08-003-S-2-bromobutane-neutral.png",
+      "sha256": "3ca14cc48d3a55b7fe3b762c8eba5a5ab881ce560644dcd4c0daa31a405706a5"
+    },
+    "mol": {
+      "path": "og08-003-S-2-bromobutane-neutral.mol",
+      "sha256": "37dfeffe9451cbfca0847c37b475705540bb8680109a144c00d98788f63e93a2"
+    }
+  }
+}

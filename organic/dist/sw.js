@@ -1,4 +1,4 @@
-const CACHE='chemistry-atlas-v17';
+const CACHE='chemistry-atlas-v18';
 const SHELL=[
   './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','lesson-07.html','lesson-08.html','resonance.html','terms.html','term.html',
   'style.css','content.css','lecture-02.css','term-figures.css','ppt-figures.css','resonance.css',
@@ -36,7 +36,15 @@ const SHELL=[
   'assets/lecture-08/tetrahedral-four-groups.webp','assets/lecture-08/bromobutane-enantiomers.webp',
   'assets/lecture-08/methylcyclohexane-plane.webp','assets/lecture-08/methylcyclohexanone-chiral.webp',
   'assets/lecture-08/butane-conformational-chirality.webp','assets/lecture-08/allene-chirality.webp',
-  'assets/lecture-08/rs-rotation-rule.webp'
+  'assets/lecture-08/rs-rotation-rule.webp',
+  'assets/lecture-08/structures/og08-001-S-alanine-neutral.png','assets/lecture-08/structures/og08-002-R-alanine-neutral.png',
+  'assets/lecture-08/structures/og08-003-S-2-bromobutane-neutral.png','assets/lecture-08/structures/og08-004-R-2-bromobutane-neutral.png',
+  'assets/lecture-08/structures/og08-005-S-13-dibromobutane-neutral.png','assets/lecture-08/structures/og08-006-R-13-dibromobutane-neutral.png',
+  'assets/lecture-08/structures/og08-007-R-carvone-neutral.png','assets/lecture-08/structures/og08-008-S-carvone-neutral.png',
+  'assets/lecture-08/structures/og08-009-cis-13-dimethylcyclopentane-neutral.png',
+  'assets/lecture-08/structures/og08-010-trans-13-dimethylcyclopentane-1S3S-neutral.png',
+  'assets/lecture-08/structures/og08-011-trans-13-dimethylcyclopentane-1R3R-neutral.png',
+  'assets/lecture-08/structures/og08-013-methylcyclohexane-neutral.png','assets/lecture-08/structures/og08-014-R-2-methylcyclohexanone-neutral.png'
 ];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

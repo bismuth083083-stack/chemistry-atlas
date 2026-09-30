@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="分析化学 I 第四章 酸碱滴定">
+<title>04 酸碱滴定 · 分析化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="course-extra.css">
+<link rel="stylesheet" href="ppt-figures.css">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<a href="chapter-3.html">
+<span>03</span>酸碱平衡</a>
+<a class="active" href="chapter-4.html">
+<span>04</span>酸碱滴定</a>
+<p class="nav-label">本章目录</p>
+<a href="#basics">
+<span>4.1</span>计量点与终点</a>
+<a href="#methods">
+<span>4.2</span>四种滴定方式</a>
+<a href="#curve">
+<span>4.3</span>滴定曲线与误差</a>
+<a href="#strongstrong">
+<span>4.4</span>强酸滴定强碱</a>
+<a href="#weakstrong">
+<span>4.5</span>弱酸滴定强碱</a>
+<a href="#indicators">
+<span>4.6</span>指示剂</a>
+<a href="#polyprotic">
+<span>4.7</span>多元酸与碱</a>
+<a href="#amino">
+<span>4.8</span>氨基酸滴定</a>
+<a href="#kjeldahl">
+<span>4.9</span>凯氏定氮</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside>
+<main class="workspace">
+<article class="article lesson">
+<header class="article-head">
+<p class="eyebrow">04 · ACID-BASE TITRATION</p>
+<h1>酸碱滴定</h1>
+<p>把第 3 章的平衡常数变成一条可读的滴定曲线：四个区域的计算、指示剂的选择依据，以及多元酸、氨基酸和凯氏定氮的完整处理。</p>
+<div>
+<span>课堂笔记修订版</span>
+<span>课件 1–54</span>
+<span>教材 Chapter 9–11</span>
+<span>重绘表格 5 张</span>
+<span>课件原图 6 张</span>
+</div>
+</header>
+<nav class="chapter-jump" aria-label="本章快速导航">
+<a href="#basics">基本概念</a>
+<a href="#methods">滴定方式</a>
+<a href="#curve">滴定曲线</a>
+<a href="#strongstrong">强酸强碱</a>
+<a href="#weakstrong">弱酸弱碱</a>
+<a href="#indicators">指示剂</a>
+<a href="#polyprotic">多元酸碱</a>
+<a href="#amino">氨基酸</a>
+<a href="#kjeldahl">凯氏定氮</a>
+</nav>
+
+<section id="basics">
+<p class="section-kicker">4.1 EQUIVALENCE POINT &amp; END POINT</p>
+<h2>计量点、终点与滴定误差</h2>
+<p>
+<b>滴定 Titration</b> 是测量与未知样品反应所需已知试剂（滴定剂）量的过程。酸碱滴定中，<b>滴定剂几乎总是强酸或强碱</b>；<b>被滴定物</b>可以是强酸（强碱），也可以是弱酸（弱碱）。两者之间的反应称为<b><a class="term-link" href="term.html?slug=neutralization-reaction">中和反应 Neutralization reaction</a></b>，产物是盐和水：HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)。</p>
+<div class="definition-rail">
+<p>
+<b><a class="term-link" href="term.html?slug=equivalence-point">计量点 Equivalence point</a></b>
+<span>理论上滴定完成的那一点：加入的滴定剂与被滴定物的物质的量恰好按化学计量比相等。此时反应的“完成”是化学意义上的，不是观察意义上的。严格意义上是滴定剂物质的量 = 被滴定物物质的量（按计量系数折算后）。</span>
+</p>
+<p>
+<b><a class="term-link" href="term.html?slug=end-point">终点 End point</a></b>
+<span>我们实际观察到的停止滴定的那一点，通常由指示剂变色判定。实际操作中，到达终点时加入的滴定剂量往往已经略微超过计量点。</span>
+</p>
+<p>
+<b><a class="term-link" href="term.html?slug=titration-error">滴定误差 Titration error</a></b>
+<span>终点体积与计量点体积之差所导致的相对误差。选择合适终点的目的就是把这一项压到可接受范围内。</span>
+</p>
+</div>
+<p>准确的滴定要求我们知道计量点处滴定剂的精确体积 <i>V</i><sub>eq</sub>。滴定剂在计量点的体积与其摩尔浓度之积等于与滴定剂反应的物质的量：</p>
+<div class="equation large">
+<i>n</i><sub>titrant</sub> = <i>M</i><sub>T</sub> × <i>V</i><sub>eq</sub>
+</div>
+<p>若已知滴定反应的计量关系，就能由滴定剂的物质的量反推被滴定物的物质的量，再除以被滴定物取样量即得浓度。这就是全部容量分析的统一逻辑。</p>
+<div class="notation-box">
+<b>为什么终点不等于计量点也能接受</b>
+<p>
+因为计量点附近 pH 变化极快，曲线上有一段近乎垂直的“突跃”。只要指示剂的变色区间落在这段陡峭区域内，终点体积与计量点体积的差就小到可以忽略。用一个极端的反例：HCl 用 NaOH 滴定，计量点 pH 为 7.00，若选 pH 11.6 变色的终点，体积会从 24.99995 mL 偏到约 27.07 mL，相对误差 +8.28% 甚至更高；而选 pH 6.8 的终点，误差仅约 2 × 10<sup>−4</sup>%。
+</p>
+</div>
+<h3>准确滴定必须满足的条件</h3>
+<ol class="requirements">
+<li>
+<b>计量关系已知</b>
+<span>否则无法把消耗的滴定剂物质的量换算成被滴定物的量。</span>
+</li>
+<li>
+<b>反应实际进行完全</b>
+<span>平衡常数要足够大，使计量点附近残余的被滴定物可以忽略。</span>
+</li>
+<li>
+<b>反应足够迅速</b>
+<span>加得太快可能冲过终点；动力学太慢的反应必须改用返滴定等方式。</span>
+</li>
+<li>
+<b>有合适的终点判定手段</b>
+<span>通常是一个合适的指示剂，也可以是电位、电导等仪器信号。</span>
+</li>
+</ol>
+<p class="source-note">来源：Acid-Base Titration slides 4–6、11–15；教材 §9.1–9.2。</p>
+</section>
+
+<section id="methods">
+<p class="section-kicker">4.2 TITRATION MODES</p>
+<h2>当直接滴定走不通：四种替代方式</h2>
+<p>课件用四个真实例子说明：如果反应太慢、没有合适指示剂、或根本没有合适的直接反应，还可以通过改变“滴什么”来解决问题。这一节的思维方式——把不可直接测定的量转换成可测定的量——在后续的络合、氧化还原和沉淀滴定中会反复出现。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>核心思路</th>
+<th>课件示例</th>
+<th>关键条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="term-link" href="term.html?slug=direct-titration">直接滴定 Direct titration</a></td>
+<td>滴定剂直接与分析物反应，直到终点</td>
+<td>以 SCN⁻ 滴定 Ag⁺：Ag⁺ + SCN⁻ ⇌ AgSCN(s)，预先加入少量 Fe³⁺，终点时生成红色的 Fe(SCN)²⁺</td>
+<td>反应快、计量明确、有合适指示剂</td>
+</tr>
+<tr>
+<td><a class="term-link" href="term.html?slug=back-titration">返滴定 Back titration</a></td>
+<td>加入已知过量的试剂，待反应完全后用另一种标准溶液滴定剩余量</td>
+<td>甲醛的测定：H₂CO 与 I₃⁻ 的反应太慢；先加过量 I₃⁻，再用 S₂O₃²⁻ 滴定剩余的 I₃⁻（淀粉为指示剂）</td>
+<td>需保证第一步反应完全，且过量试剂可准确滴定</td>
+</tr>
+<tr>
+<td><a class="term-link" href="term.html?slug=displacement-titration">置换滴定 Displacement titration</a></td>
+<td>让分析物置换出等物质的量的另一种可滴定物质</td>
+<td>Ca²⁺ 的络合滴定：Ca²⁺ 与 EDTA 的直接滴定无合适指示剂；先让 Ca²⁺ + MgY²⁻ ⇌ CaY²⁻ + Mg²⁺ 释放出与 Ca²⁺ 等量的 Mg²⁺，再用 EBT 为指示剂滴定 Mg²⁺</td>
+<td>被置换出的物质必须可准确滴定；CaY²⁻ 比 MgY²⁻ 更稳定是反应方向的依据</td>
+</tr>
+<tr>
+<td>生成可滴定物质</td>
+<td>先把分析物转化为一种能直接滴定的物质</td>
+<td>煤中硫的测定：S + O₂ → SO₂；SO₂ + H₂O₂ → H₂SO₄；再用 NaOH 滴定 H₂SO₄</td>
+<td>转化反应必须定量，且不引入干扰</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="notation-box">
+<b>返滴定的计算结构</b>
+<p>
+<i>n</i><sub>分析物</sub> = <i>n</i><sub>加入的过量试剂</sub> − <i>n</i><sub>滴定剩余量所耗</sub>。教材用“初始的 I₃⁻ 量与过量 I₃⁻ 量之差”来表述同一件事。写这类题时先列“加了多少”，再列“剩了多少”，相减即得反应掉的部分。</p>
+</div>
+<p class="source-note">来源：Acid-Base Titration slides 7–10；教材 §9.1 滴定方式部分。</p>
+</section>
+
+<section id="curve">
+<p class="section-kicker">4.3 TITRATION CURVES</p>
+<h2>滴定曲线与终点误差</h2>
+<p>
+<b><a class="term-link" href="term.html?slug=titration-curve">滴定曲线 Titration curve</a></b> 是把滴定过程中某个性质随滴定剂加入量的变化画成图。酸碱滴定最常画 pH–<i>V</i> 曲线，但在其他类型滴定中也可以画 pAg、pCa 或电位。</p>
+<p>关键认识是：<b>滴定曲线不是酸碱滴定独有的</b>。任何“把某个物种的浓度取对数后对滴定剂体积作图”的曲线都有相同的 S 形（sigmoidal）形状。课件把它概括为“终点恰在突跃的陡峭部分”——这条经验对后面四类滴定同样适用。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-04/strong-acid-curve-20.webp" alt="0.1000 mol/L HCl 用 0.1000 mol/L NaOH 滴定的 pH 曲线与计算表" loading="lazy" decoding="async">
+<figcaption>左表逐点计算，右图连成曲线：计量点（<i>V</i> = 100.00 mL）处斜率最大。酚酞变色区间正好落在突跃上，因此此题选酚酞而非甲基红。<small>图源：Acid-Base Titration, slide 20</small>
+</figcaption>
+</figure>
+<div class="compare-pair">
+<article>
+<h3>终点误差为什么重要</h3>
+<p>课件举了两组对照：终点选 pH 6.8 时，到达该 pH 的体积为 24.99995 mL，误差约 −2 × 10<sup>−4</sup>%；终点选 pH 11.6 时，体积为 27.07 mL，误差 +8.28%。同一支滴定管、同一瓶溶液，终点选错就报废。</p>
+</article>
+<article>
+<h3>突跃大小取决于浓度</h3>
+<p>酸的浓度与碱的浓度同时决定突跃幅度。三条曲线（0.1/0.1、0.01/0.01、0.001 mol·L⁻¹ 对 0.0001 mol·L⁻¹）的计量点 pH 都是 7.00，但浓度越低突跃越短。溶液越稀，指示剂选择越关键——这是第 4.6 节反复强调的一点。</p>
+</article>
+</div>
+<h3>滴定管与体积准确度</h3>
+<p>酸碱滴定唯一的必需器材是把滴定剂送到被滴定液中的装置，最常用的是滴定管。A 级与 B 级滴定管的允差相差约一倍：</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>容积 / mL</th>
+<th>级别</th>
+<th>分度 / mL</th>
+<th>允差 / mL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">5</td>
+<td>A</td>
+<td>0.01</td>
+<td>±0.01</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0.01</td>
+<td>±0.01</td>
+</tr>
+<tr>
+<td rowspan="2">10</td>
+<td>A</td>
+<td>0.02</td>
+<td>±0.02</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0.02</td>
+<td>±0.04</td>
+</tr>
+<tr>
+<td rowspan="2">25</td>
+<td>A</td>
+<td>0.1</td>
+<td>±0.03</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0.1</td>
+<td>±0.06</td>
+</tr>
+<tr>
+<td rowspan="2">50</td>
+<td>A</td>
+<td>0.1</td>
+<td>±0.05</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0.1</td>
+<td>±0.10</td>
+</tr>
+<tr>
+<td rowspan="2">100</td>
+<td>A</td>
+<td>0.2</td>
+<td>±0.10</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0.2</td>
+<td>±0.20</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">这是课件给出的滴定管规格表。选管时应让预计用量落在滴定管中上段（一般 20–45 mL），既减少读数次数，也让相对允差更小。</p>
+<p class="source-note">来源：Acid-Base Titration slides 11–13；教材 §9.2、Table 9.1。</p>
+</section>
+
+<section id="strongstrong">
+<p class="section-kicker">4.4 STRONG ACID VERSUS STRONG BASE</p>
+<h2><a class="term-link" href="term.html?slug=strong-acid-strong-base-titration">强酸强碱滴定</a>：三段式计算</h2>
+<p>强酸与强碱在水溶液中都完全电离，因此计算不需要平衡常数，只需要物质的量守恒和总积体。以 100.00 mL 0.1000 mol·L⁻¹ HCl 用 0.1000 mol·L⁻¹ NaOH 滴定为标准例题。定义被滴定物分数 <i>f</i> = 已加滴定剂量/计量点所需量，计量点时 <i>f</i> = 1。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>条件</th>
+<th>主导物种</th>
+<th>计算式</th>
+<th>本例题数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计量点前</td>
+<td>0 &lt; <i>f</i> &lt; 1</td>
+<td>剩余强酸</td>
+<td>[H⁺] = (<i>M</i><sub>酸</sub><i>V</i><sub>酸</sub> − <i>M</i><sub>碱</sub><i>V</i><sub>碱</sub>)/<i>V</i><sub>总</sub></td>
+<td>加入 50.00 mL：5.000 mmol/150.00 mL = 0.03333 M，pH = <b>1.48</b></td>
+</tr>
+<tr>
+<td>计量点</td>
+<td><i>f</i> = 1</td>
+<td>只有水</td>
+<td>[H⁺] = √<i>K</i><sub>w</sub> = 1.0 × 10<sup>−7</sup></td>
+<td>加入 100.00 mL：pH = <b>7.00</b></td>
+</tr>
+<tr>
+<td>计量点后</td>
+<td><i>f</i> &gt; 1</td>
+<td>过量强碱</td>
+<td>[OH⁻] = (<i>M</i><sub>碱</sub><i>V</i><sub>碱</sub> − <i>M</i><sub>酸</sub><i>V</i><sub>酸</sub>)/<i>V</i><sub>总</sub></td>
+<td>加入 110.00 mL：1.000 mmol/210.00 mL = 0.004762 M，pOH = 2.32，pH = <b>11.68</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="notation-box">
+<b>符号说明</b>
+<p>
+<i>V</i><sub>总</sub> = <i>V</i><sub>酸</sub> + <i>V</i><sub>碱</sub>，即被滴定液原始体积与已加入滴定剂体积之和。计量点前用剩余的 H⁺ 算 pH；计量点后用过量的 OH⁻ 先算 pOH，再换算 pH = pKw − pOH。整个过程中 <b>pH 在计量点附近变化极快</b>，这正是可用指示剂判断终点的物理原因。</p>
+</div>
+<div class="compare-pair">
+<article>
+<h3>强酸强碱的计量点 pH 恒为 7.00</h3>
+<p>25 °C 下，强酸与强碱滴定的计量点 pH 总是 7.00，与浓度无关。因为到这一点时 H⁺ 与 OH⁻ 恰好等量中和，剩下的酸碱性只由水的自递决定。</p>
+</article>
+<article>
+<h3>弱酸（弱碱）就没有这个待遇</h3>
+<p>弱酸与强碱滴定（或弱碱与强酸滴定）的计量点 pH 不等于 7.00，而是由共轭碱（共轭酸）的水解决定，因此总是偏碱（或偏酸）。下一节会给出完整算法。</p>
+</article>
+</div>
+<p class="source-note">来源：Acid-Base Titration slides 14–21；教材 §9.3。</p>
+</section>
+
+<section id="weakstrong">
+<p class="section-kicker">4.5 WEAK ACID VERSUS STRONG BASE</p>
+<h2><a class="term-link" href="term.html?slug=weak-acid-strong-base-titration">弱酸强碱滴定</a>：四个区域与一个捷径</h2>
+<p>以 50.00 mL 0.1000 mol·L⁻¹ HOAc 用 0.1000 mol·L⁻¹ NaOH 滴定为例。被滴定物分数 <i>f</i> 仍定义为已加碱量除以计量点所需碱量，计量点需 50.00 mL。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>体系状态</th>
+<th>计算式</th>
+<th>本例题结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 未加碱</td>
+<td>纯弱酸 HA</td>
+<td>[H⁺] = √(<i>K</i><sub>a</sub><i>C</i><sub>HA</sub>)</td>
+<td>√(1.75 × 10<sup>−5</sup> × 0.1000) = 1.32 × 10<sup>−3</sup>，pH = <b>2.88</b></td>
+</tr>
+<tr>
+<td>② 计量点前</td>
+<td>HA/A⁻ 缓冲对</td>
+<td>pH = p<i>K</i><sub>a</sub> + log([A⁻]/[HA])</td>
+<td>加 10.00 mL：4.76 + log(1.000/4.000) = <b>4.16</b></td>
+</tr>
+<tr>
+<td>②中点</td>
+<td>[HA] = [A⁻]</td>
+<td>pH = p<i>K</i><sub>a</sub></td>
+<td>加 25.00 mL：pH = <b>4.76</b></td>
+</tr>
+<tr>
+<td>③ 计量点</td>
+<td>只有共轭碱 A⁻</td>
+<td>[OH⁻] = √(<i>K</i><sub>b</sub><i>C</i><sub>A⁻</sub>)，<i>K</i><sub>b</sub> = <i>K</i><sub>w</sub>/<i>K</i><sub>a</sub></td>
+<td><i>C</i><sub>OAc⁻</sub> = 5.000/100.00 = 0.05000 M；[OH⁻] = 5.35 × 10<sup>−6</sup>，pOH = 5.27，pH = <b>8.73</b></td>
+</tr>
+<tr>
+<td>④ 计量点后</td>
+<td>过量强碱</td>
+<td>[OH⁻] = 过量碱的浓度</td>
+<td>加 60.00 mL：1.000 mmol/110.00 mL = 0.009091 M，pOH = 2.04，pH = <b>11.96</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>中点即 pKa：一条能用于实验的捷径</h3>
+<p>区域②的中点（加入一半计量点体积的滴定剂）处 [HA] = [A⁻]，Henderson–Hasselbalch 方程退化为 pH = pKa。这条关系有三个直接用途：</p>
+<div class="definition-rail">
+<p>
+<b>读 pKa</b>
+<span>由实验滴定曲线上 <i>V</i><sub>NaOH</sub> = ½<i>V</i><sub>eq</sub> 处的 pH 直接读出分析物的 pKa。这是测定未知弱酸 pKa 的标准方法之一。</span>
+</p>
+<p>
+<b>找缓冲最强点</b>
+<span>该处缓冲强度最大（曲线斜率最小），因此曲线在这里最平。与之相对，计量点处斜率最大，曲线最陡。</span>
+</p>
+<p>
+<b>估算全局形状</b>
+<span>酸的 Ka 越小，共轭碱的 Kb 越大，计量点的 pH 越高（更偏碱），突跃整体向碱性方向平移。强酸强碱的曲线是这个系列的极限。</span>
+</p>
+</div>
+<div class="notation-box">
+<b>区域④为什么可以忽略水解</b>
+<p>
+计量点之后溶液中存在大量过量 OH⁻，它会抑制 OAc⁻ 的水解（同离子效应），因此在误差允许范围内可以直接用“过量碱的浓度”作为 [OH⁻]，不必再叠加水解项。</p>
+</div>
+<figure class="ppt-figure">
+<img src="assets/lecture-04/weak-acid-curve-34.webp" alt="弱酸强碱滴定曲线与四个区域的统一计算式对照表" loading="lazy" decoding="async">
+<figcaption>曲线的两个特征点：<i>V</i> = ½<i>V</i><sub>eq</sub> 处斜率最小（pH = pKa），计量点处斜率最大。下方表格是四区域的统一计算式，弱碱滴定只需把每一行做 H⁺/OH⁻ 的镜像替换。<small>图源：Acid-Base Titration, slide 34</small>
+</figcaption>
+</figure>
+<h3><a class="term-link" href="term.html?slug=weak-base-strong-acid-titration">弱碱强酸滴定</a>：镜像处理</h3>
+<p>弱碱 B 用强酸滴定，结构与上表完全对称，只需把 pH 换成 pOH：</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>计算式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i>f</i> = 0</td>
+<td>[OH⁻] = √(<i>K</i><sub>b</sub>·<i>C</i><sub>B</sub>)</td>
+</tr>
+<tr>
+<td>0 &lt; <i>f</i> &lt; 1</td>
+<td>pH = (p<i>K</i><sub>w</sub> − p<i>K</i><sub>b</sub>) + log(<i>C</i><sub>B</sub>/<i>C</i><sub>BH⁺</sub>)，中点处 pOH = p<i>K</i><sub>b</sub></td>
+</tr>
+<tr>
+<td><i>f</i> = 1</td>
+<td>[H⁺] = √((<i>K</i><sub>w</sub>/<i>K</i><sub>b</sub>)·<i>C</i><sub>BH⁺</sub>)</td>
+</tr>
+<tr>
+<td><i>f</i> &gt; 1</td>
+<td>[H⁺] = 过量滴定剂的浓度</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>课件给出的例子是 100.00 mL 0.1000 mol·L⁻¹ NH₃ 用 0.1000 mol·L⁻¹ HCl 滴定（HCl + NH₃ → NH₄⁺ + Cl⁻）。曲线是弱酸强碱曲线的倒影：起点在碱性区，中点处 pOH = pKb（pH 曲线最平缓），计量点偏酸。指示剂要从在酸性区变色的那一类里选。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-04/ka-kb-curves-37.webp" alt="不同 Ka 与 Kb 值的弱酸和弱碱滴定曲线对比" loading="lazy" decoding="async">
+<figcaption>左图是不同 Ka 的弱酸用 NaOH 滴定，右图是不同 Kb 的弱碱用 HCl 滴定；虚线分别为 HCl 和 NaOH 的强酸强碱曲线。Ka（或 Kb）越小，突跃越短、位置越靠边，可用指示剂的选择余地也越小。<small>图源：Acid-Base Titration, slide 37</small>
+</figcaption>
+</figure>
+<p class="source-note">来源：Acid-Base Titration slides 26–37；教材 §9.4–9.5。</p>
+</section>
+
+<section id="indicators">
+<p class="section-kicker">4.6 pH INDICATORS</p>
+<h2>指示剂：为什么只变 2 个 pH 单位</h2>
+<p>
+<b><a class="term-link" href="term.html?slug=indicator">指示剂 Indicator</a></b> 是一类本身有颜色的弱酸或弱碱，它的电离态与非电离态颜色差别明显，因此可用于目视判断终点。以百里酚蓝 Thymol blue（H₂In）为例：非电离态 H₂In 在 pH &lt; 1.7 时为红色，第一级去质子态 HIn⁻ 在 pH 1.7–8.9 时为黄色，第二级去质子态 In²⁻ 在 pH &gt; 8.9 时为蓝色。</p>
+<p>设指示剂为弱酸 HIn，非电离态为红色、电离态为蓝色，则有 HIn ⇌ H⁺ + In⁻，写成 Henderson–Hasselbalch 形式：</p>
+<div class="equation large">
+pH = p<i>K</i><sub>In</sub> + log([In<sup>−</sup>]/[HIn])
+</div>
+<div class="compare-pair">
+<article>
+<h3>看到“酸色”的边界</h3>
+<p>当 [In⁻]/[HIn] = 1/10 时，人眼基本只能看出非电离态的颜色。代入方程得 pH = pKIn + log(1/10) = <b>pKIn − 1</b>。</p>
+</article>
+<article>
+<h3>看到“碱色”的边界</h3>
+<p>当 [In⁻]/[HIn] = 10/1 时，人眼基本只能看出电离态的颜色。代入得 pH = pKIn + log(10) = <b>pKIn + 1</b>。</p>
+</article>
+</div>
+<p>两个边界之间就是变色范围，因此<b>大多数指示剂的变色范围约为 2 个 pH 单位</b>；范围中点处 [In⁻] = [HIn]，pH = pKIn。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-04/indicators-25.webp" alt="常见酸碱指示剂的变色区间与颜色对照图" loading="lazy" decoding="async">
+<figcaption>横轴为 pH，色块标出每种指示剂从酸色过渡到碱色的区间。挑选指示剂的唯一原则是让这段色块压住滴定曲线的突跃段。<small>图源：Acid-Base Titration, slide 25</small>
+</figcaption>
+</figure>
+<h3>选指示剂的三条规则</h3>
+<div class="rule-grid">
+<p>
+<b>pKIn 靠近计量点 pH</b>
+指示剂的 pKIn 应接近滴定反应计量点的 pH，使变色区间覆盖突跃。强酸强碱滴定可选酚酞（8.2–10.0）或甲基红（4.4–6.2）；弱酸强碱滴定通常选酚酞；弱碱强酸滴定选甲基红等酸性区变色的指示剂。</p>
+<p>
+<b>用量尽量少</b>
+指示剂本身也是酸碱，会消耗滴定剂。用量少既让颜色变化更敏锐（转变量少），也使它自身对 pH 的贡献可以忽略。</p>
+<p>
+<b>溶液越稀越要谨慎</b>
+浓度降低使突跃变短，可用指示剂的范围随之收窄。课件把这一点单独列为结论句，也是实验中最常见的失误来源。</p>
+<p>
+<b>对照具体曲线</b>
+同一支指示剂在不同滴定中的表现可能相反：酚酞在弱酸强碱滴定中合适，甲基红却会在到达计量点前就变碱色，造成负误差。</p>
+</div>
+<p class="source-note">来源：Acid-Base Titration slides 22–25、35–36；教材 §9.6。</p>
+</section>
+
+<section id="polyprotic">
+<p class="section-kicker">4.7 POLYPROTIC ACIDS &amp; BASES</p>
+<h2>多元酸（碱）的分步滴定</h2>
+<p>多元酸或多元碱可以逐级被滴定，但能否在曲线上看到分开的突跃，取决于相邻两级常数的差距。</p>
+<div class="compare-pair">
+<article>
+<h3>看得到第一个质子</h3>
+<p>要得到滴定第一个质子的良好终点突跃，需要 <b>Ka₁ ≥ 10⁴ × Ka₂</b>。差距不够时第一个突跃会被第二个质子的缓冲区“抹平”，两个质子只能一起滴。</p>
+</article>
+<article>
+<h3>看得到第二个质子</h3>
+<p>若 Ka₂ 落在 10<sup>−7</sup>–10<sup>−8</sup> 这一合适区间，第二个质子的终点突跃也能观察到。常数再小（如磷酸的 Ka₃ = 4.8 × 10<sup>−13</sup>），第三个质子就无法单独滴定。</p>
+</article>
+</div>
+<div class="notation-box">
+<b>常数差距的统一判据</b>
+<p>
+课件在不同位置给出 10³、10⁴ 两个阈值：讨论“能否分辨”时用 <b>10³</b>；讨论“能否得到良好终点突跃”时用 <b>10⁴</b>。对碳酸钠这样的二元碱，课件明确要求两级 Kb 相差至少 10⁴。</p>
+</div>
+<h3>碳酸钠：一个二元碱的完整滴定</h3>
+<p>碳酸钠是可用于标定强酸的<b>一级标准物质</b>，它作为 Brønsted 碱分两步水解：</p>
+<div class="equation">
+CO<sub>3</sub><sup>2−</sup> + H<sub>2</sub>O ⇌ HCO<sub>3</sub><sup>−</sup> + OH<sup>−</sup> &nbsp;&nbsp;&nbsp; HCO<sub>3</sub><sup>−</sup> + H<sub>2</sub>O ⇌ H<sub>2</sub>CO<sub>3</sub> + OH<sup>−</sup>
+</div>
+<p>用 HCl 滴定时出现两个计量点。第一计量点（酚酞终点，pH ≈ 8.3）产物是 HCO₃⁻——一个两性物质，其 pH 与浓度无关，约为 ½(pKa₁ + pKa₂) = ½(6.35 + 10.33) = 8.3。第二计量点（甲基橙终点，pH ≈ 3.9）产物是 H₂CO₃（即溶解的 CO₂），此时溶液被 CO₂ 饱和。</p>
+<div class="worked-example">
+<span>例</span>
+<h3>碳酸钠两级滴定需要的酸量</h3>
+<p>50.00 mL 待测 Na₂CO₃ 溶液。第一计量点消耗 HCl 15.00 mL，第二计量点又消耗 15.00 mL（共 30.00 mL）。</p>
+<p>第一计量点：CO₃²⁻ + H⁺ → HCO₃⁻，所以 <i>n</i>(Na₂CO₃) = 0.1000 × 15.00 = 1.500 mmol。</p>
+<p>两个计量点消耗体积相等，这本身就是“样品是纯碳酸钠而不是碳酸钠与碳酸氢钠混合物”的诊断依据。</p>
+</div>
+<div class="notation-box">
+<b>煮沸除 CO₂ 的技巧</b>
+<p>
+第一计量点之后，溶液中存在 HCO₃⁻/CO₂ 缓冲对，会把第二个突跃拉平。如果每加一次 HCl 就把溶液煮沸以赶走 CO₂，这个缓冲对被移除，溶液中只剩 HCO₃⁻，其 pH（≈ 8.3）与浓度无关，因此 pH 会基本保持恒定直到第二计量点——曲线沿课件图中的虚线走，第二个突跃变得清晰。</p>
+</div>
+<figure class="ppt-figure">
+<img src="assets/lecture-04/triprotic-curve-42.webp" alt="三元酸（磷酸）滴定曲线的理想形状与各特征点的 pH 关系" loading="lazy" decoding="async">
+<figcaption>磷酸的理想滴定曲线：两个中点分别落在 pH = pKa₁ 与 pH = pKa₂，两个计量点附近的 pH 依次为 ½(pKa₁+pKa₂) 与 ½(pKa₂+pKa₃)。Ka₃ 太小，第三个突跃实际不可用。<small>图源：Acid-Base Titration, slide 42</small>
+</figcaption>
+</figure>
+<h3>混合酸的分步滴定</h3>
+<p>两种酸（或碱）的平衡常数相差 10⁴ 以上时，可以分步滴定。最典型的考法是 HCl 与 H₃PO₄ 的混合物用 NaOH 滴定：</p>
+<div class="worked-example">
+<span>例</span>
+<h3>HCl + H₃PO₄ 混合物</h3>
+<p>混合物用 0.1000 mol·L⁻¹ NaOH 滴定。第一终点（甲基红）在 35.00 mL 出现，第二终点（溴百里酚蓝）在总共 50.00 mL 出现。</p>
+<p><b>第一终点</b>对应 HCl 被完全中和，磷酸被中和到 H₂PO₄⁻（H₃PO₄ + OH⁻ → H₂PO₄⁻ + H₂O）。因此第一步消耗的碱量 = <i>n</i><sub>HCl</sub> + <i>n</i><sub>H₃PO₄</sub> = 0.1000 × 35.00 = 3.500 mmol。</p>
+<p><b>第二终点</b>对应 H₂PO₄⁻ 继续被中和为 HPO₄²⁻，这一段消耗的碱量等于磷酸总量：<i>n</i><sub>H₃PO₄</sub> = 0.1000 × (50.00 − 35.00) = 1.500 mmol。</p>
+<p>相减得 <i>n</i><sub>HCl</sub> = 3.500 − 1.500 = 2.000 mmol。即混合物中含 <b>2.000 mmol HCl 和 1.500 mmol H₃PO₄</b>。</p>
+</div>
+<p class="source-note">来源：Acid-Base Titration slides 38–45；教材 §10.1–10.3。</p>
+</section>
+
+<section id="amino">
+<p class="section-kicker">4.8 AMINO ACID TITRATION</p>
+<h2><a class="term-link" href="term.html?slug=amino-acid-titration">氨基酸滴定</a>：天然的两性物质</h2>
+<p>
+<b>氨基酸 Amino acid</b> 同时含有酸性基团（羧基 –COOH）和碱性基团（氨基 –NH₂），是典型的两性物质。它在水中会发生<b>内质子转移</b>，形成<b>两性离子 Zwitterion</b>——同一分子上不同位置分别带正电荷与负电荷，整体电中性。</p>
+<p>两性离子的共轭酸是二元酸（分步电离），因此氨基酸的滴定曲线与二元酸类似，有两个可以利用的中点：</p>
+<div class="equation large">
+pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>) &nbsp;（两性离子形态）
+</div>
+<div class="compare-pair">
+<article>
+<h3>侧链不带可电离基团</h3>
+<p>如甘氨酸，只有羧基和氨基两个位点，因此是二元酸行为，曲线上可分辨两个质子（前提是 Ka₁ 与 Ka₂ 的差距足够）。</p>
+</article>
+<article>
+<h3>侧链带可电离基团</h3>
+<p>如半胱氨酸（含巯基侧链）有三个可电离质子，Ka₁ = 2.0 × 10<sup>−2</sup>、Ka₂ = 4.4 × 10<sup>−9</sup>、Ka₃ = 1.8 × 10<sup>−11</sup>。Ka₁/Ka₂ ≈ 4.5 × 10⁶，差距足够；但 Ka₂/Ka₃ ≈ 244，远小于 10⁴，因此第二步与第三步电离无法分开。</p>
+</article>
+</div>
+<p>判断某个氨基酸能出现几个分步终点，只需算相邻 Ka 的比值：≥ 10⁴ 才可以分开。</p>
+<p class="source-note">来源：Acid-Base Titration slides 46–48；教材 §10.4 氨基酸部分。</p>
+</section>
+
+<section id="kjeldahl">
+<p class="section-kicker">4.9 KJELDAHL NITROGEN ANALYSIS</p>
+<h2>凯氏定氮：返滴定的经典应用</h2>
+<p>
+<b><a class="term-link" href="term.html?slug=kjeldahl-method">凯氏定氮法 Kjeldahl nitrogen analysis</a></b> 通过测定氮含量来推算蛋白质含量。蛋白质是由氨基酸通过肽键（peptide bonds）连接而成的聚合物，具有多元酸和多元碱的性质；其中的氮含量非常接近，典型值为 <b>16.2 wt%</b>，这就是由氮换算蛋白质的系数来源。</p>
+<div class="notation-box">
+<b>对课件表述的修正</b>
+<p>
+课件正文把蛋白质写成“由 sulphide bonds 连接的氨基酸聚合物”。严格地说，连接氨基酸主链的是<b>肽键（酰胺键）</b>；含硫氨基酸之间可以形成<b>二硫键（disulfide bond，—S—S—）</b>作为额外的交联，但它不是主链连接方式。这个区别会影响对蛋白质水解行为的理解，考试时不要沿用课件的写法。</p>
+</div>
+<div class="prep-track">
+<article>
+<b>01</b>
+<h3>消解</h3>
+<p>用浓硫酸消解，把样品中的氮全部转化为硫酸氢铵。</p>
+</article>
+<article>
+<b>02</b>
+<h3>碱化</h3>
+<p>冷却后用浓碱中和，把 NH₄⁺ 释放为 NH₃。</p>
+</article>
+<article>
+<b>03</b>
+<h3>蒸馏</h3>
+<p>把挥发性的 NH₃ 蒸馏并收集到已知量的标准酸中。</p>
+</article>
+<article>
+<b>04</b>
+<h3>返滴定</h3>
+<p>用标准碱滴定未被 NH₃ 中和的过量酸。</p>
+</article>
+</div>
+<div class="notation-box">
+<b>为什么第二步要用返滴定</b>
+<p>
+蒸馏出来的 NH₃ 是气体，直接滴定的对象不稳定、也难以准确控制化学计量。改成“先加已知过量的标准酸吸收 NH₃，再用标准碱回滴剩余酸”，就把一个气体定量问题转换成两个可靠的体积测量：</p>
+<p><i>n</i><sub>N</sub> = <i>n</i><sub>加入的 HCl</sub> − <i>n</i><sub>回滴所耗的 NaOH</sub></p>
+</div>
+<div class="worked-example">
+<span>例</span>
+<h3>由凯氏定氮求蛋白质浓度</h3>
+<p>取 0.50 mL 蛋白质溶液消解，释放出的 NH₃ 蒸馏进入 10.00 mL 0.0214 mol·L⁻¹ HCl；未反应的 HCl 需 3.26 mL 0.0198 mol·L⁻¹ NaOH 滴定至完全。求原样品中蛋白质浓度（mg protein/mL）。</p>
+<p><b>①</b> 加入的 HCl：0.0214 × 10.00 = 0.214 mmol。</p>
+<p><b>②</b> 回滴消耗的 NaOH：0.0198 × 3.26 = 0.0645 mmol，即未反应的 HCl 为 0.0645 mmol。</p>
+<p><b>③</b> 与 NH₃ 反应的 HCl：0.214 − 0.0645 = 0.1495 mmol，所以氮的物质的量为 0.1495 mmol。</p>
+<p><b>④</b> 换算质量：0.1495 mmol × 14.007 mg·mmol⁻¹ = 2.094 mg N。</p>
+<p><b>⑤</b> 除以 16.2% 得蛋白质质量：2.094/0.162 = 12.9 mg。再除以取样体积 0.50 mL，得浓度 <b>≈ 18.6 mg protein/mL</b>（12.9 mg ÷ 0.50 mL）。</p>
+</div>
+<div class="exam-focus">
+<h3>本章计算题的六条检查清单</h3>
+<ul>
+<li><b>先判类型：</b>强酸强碱、弱酸强碱、弱碱强酸、两性物质，还是混合物？计算式完全不同。</li>
+<li><b>体积别忘相加：</b>所有浓度都要除以 <i>V</i><sub>总</sub> = <i>V</i><sub>被滴定液</sub> + <i>V</i><sub>已加滴定剂</sub>，或干脆全程用物质的量之比。</li>
+<li><b>计量点 pH 要判断：</b>强酸强碱为 7.00；弱酸强碱偏碱（用 Kb 算）；弱碱强酸偏酸（用 Ka 算）。</li>
+<li><b>中点给的是 pKa：</b><i>V</i> = ½<i>V</i><sub>eq</sub> 处 pH = pKa（弱碱则为 pOH = pKb），这是最快的读图依据。</li>
+<li><b>指示剂配突跃：</b>pKIn 靠近计量点 pH，且两边差距控制在 2 个 pH 单位内；溶液越稀越要谨慎。</li>
+<li><b>多元体系先看常数差：</b>相邻常数相差 ≥ 10⁴ 才有分开的终点突跃。</li>
+</ul>
+</div>
+<p class="source-note">来源：Acid-Base Titration slides 49–53；教材 §10.5 凯氏定氮与返滴定部分。</p>
+</section>
+</article>
+</main>
+<script src="script.js">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,5949 @@
+{
+  "id": "BIOC-T01",
+  "title": "生物化学专题：21+ 种氨基酸的五个身份",
+  "description": "以氨基酸的五种身份（中文名、英文名、三字母缩写、单字母缩写、结构图）互相转换为主线：给出其中一种，答出另一种并判定正误。题库共 218 题，每次随机抽取 22 题；结构图由 Chemical Structure Renderer 依据显式 L-构型 SMILES 渲染。",
+  "subject": "biochemistry",
+  "chapter": "Topic · Amino acid identifiers and structures",
+  "version": "1.0.0",
+  "totalPoints": 343,
+  "selection": {
+    "mode": "question-bank",
+    "counts": {
+      "single-choice": 10,
+      "multiple-choice": 4,
+      "true-false": 4,
+      "fill-in-the-blank": 4
+    }
+  },
+  "sources": [
+    {
+      "title": "IUPAC-IUBMB Joint Commission on Biochemical Nomenclature — amino acid abbreviations",
+      "url": "https://iupac.qmul.ac.uk/AminoAcid/",
+      "role": "三字母/单字母缩写与命名依据；仅作对照，未批量复制"
+    },
+    {
+      "title": "Chemical Structure Renderer (RDKit) — local skill",
+      "url": "https://www.rdkit.org/",
+      "role": "结构图由显式 SMILES 经本地 RDKit 渲染，保留 SVG/PNG/MOL 与 metadata 溯源"
+    }
+  ],
+  "scopeNote": "This is an independently authored educational bank. All 22 structures were rendered from explicit L-configuration SMILES by the local chemical-structure-renderer skill; every item declares formula, net charge, and stereochemistry so the identifier drills can be cross-checked against machine-verified structures rather than hand-drawn art. The bank covers the 20 canonical amino acids plus selenocysteine (Sec/U) and pyrrolysine (Pyl/O).",
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甘氨酸"
+        },
+        {
+          "id": "B",
+          "text": "缬氨酸"
+        },
+        {
+          "id": "C",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "D",
+          "text": "丙氨酸"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "该结构是 丙氨酸（alanine，Ala，A）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "structure",
+        "alanine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/alanine-alanine-neutral.png",
+        "alt": "丙氨酸（alanine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甘氨酸"
+        },
+        {
+          "id": "B",
+          "text": "丙氨酸"
+        },
+        {
+          "id": "C",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "D",
+          "text": "半胱氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "该结构是 甘氨酸（glycine，Gly，G）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "structure",
+        "glycine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/glycine-glycine-neutral.png",
+        "alt": "甘氨酸（glycine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "异亮氨酸"
+        },
+        {
+          "id": "B",
+          "text": "苏氨酸"
+        },
+        {
+          "id": "C",
+          "text": "缬氨酸"
+        },
+        {
+          "id": "D",
+          "text": "亮氨酸"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "该结构是 缬氨酸（valine，Val，V）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "valine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/valine-valine-neutral.png",
+        "alt": "缬氨酸（valine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "异亮氨酸"
+        },
+        {
+          "id": "B",
+          "text": "缬氨酸"
+        },
+        {
+          "id": "C",
+          "text": "甲硫氨酸"
+        },
+        {
+          "id": "D",
+          "text": "亮氨酸"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "该结构是 亮氨酸（leucine，Leu，L）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "leucine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/leucine-leucine-neutral.png",
+        "alt": "亮氨酸（leucine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "丙氨酸"
+        },
+        {
+          "id": "B",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "C",
+          "text": "苏氨酸"
+        },
+        {
+          "id": "D",
+          "text": "半胱氨酸"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "该结构是 丝氨酸（serine，Ser，S）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "serine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/serine-serine-neutral.png",
+        "alt": "丝氨酸（serine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "半胱氨酸"
+        },
+        {
+          "id": "B",
+          "text": "苏氨酸"
+        },
+        {
+          "id": "C",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "D",
+          "text": "缬氨酸"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "该结构是 苏氨酸（threonine，Thr，T）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "threonine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/threonine-threonine-neutral.png",
+        "alt": "苏氨酸（threonine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "半胱氨酸"
+        },
+        {
+          "id": "B",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "C",
+          "text": "甲硫氨酸"
+        },
+        {
+          "id": "D",
+          "text": "硒代半胱氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "该结构是 半胱氨酸（cysteine，Cys，C）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "cysteine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/cysteine-cysteine-neutral.png",
+        "alt": "半胱氨酸（cysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "半胱氨酸"
+        },
+        {
+          "id": "B",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "C",
+          "text": "亮氨酸"
+        },
+        {
+          "id": "D",
+          "text": "甲硫氨酸"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "该结构是 甲硫氨酸（methionine，Met，M）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "methionine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/methionine-methionine-neutral.png",
+        "alt": "甲硫氨酸（methionine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "色氨酸"
+        },
+        {
+          "id": "B",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "C",
+          "text": "脯氨酸"
+        },
+        {
+          "id": "D",
+          "text": "组氨酸"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "该结构是 脯氨酸（proline，Pro，P）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "proline"
+      ],
+      "image": {
+        "src": "assets/structure-renders/proline-proline-neutral.png",
+        "alt": "脯氨酸（proline）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "苯丙氨酸"
+        },
+        {
+          "id": "B",
+          "text": "酪氨酸"
+        },
+        {
+          "id": "C",
+          "text": "色氨酸"
+        },
+        {
+          "id": "D",
+          "text": "组氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "该结构是 苯丙氨酸（phenylalanine，Phe，F）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "phenylalanine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/phenylalanine-phenylalanine-neutral.png",
+        "alt": "苯丙氨酸（phenylalanine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "色氨酸"
+        },
+        {
+          "id": "B",
+          "text": "酪氨酸"
+        },
+        {
+          "id": "C",
+          "text": "苯丙氨酸"
+        },
+        {
+          "id": "D",
+          "text": "组氨酸"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "该结构是 酪氨酸（tyrosine，Tyr，Y）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "tyrosine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/tyrosine-tyrosine-neutral.png",
+        "alt": "酪氨酸（tyrosine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "酪氨酸"
+        },
+        {
+          "id": "B",
+          "text": "苯丙氨酸"
+        },
+        {
+          "id": "C",
+          "text": "组氨酸"
+        },
+        {
+          "id": "D",
+          "text": "色氨酸"
+        }
+      ],
+      "answer": "D",
+      "points": 2,
+      "explanation": "该结构是 色氨酸（tryptophan，Trp，W）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "tryptophan"
+      ],
+      "image": {
+        "src": "assets/structure-renders/tryptophan-tryptophan-neutral.png",
+        "alt": "色氨酸（tryptophan）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "天冬氨酸"
+        },
+        {
+          "id": "B",
+          "text": "谷氨酸"
+        },
+        {
+          "id": "C",
+          "text": "天冬酰胺"
+        },
+        {
+          "id": "D",
+          "text": "谷氨酰胺"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "该结构是 天冬酰胺（asparagine，Asn，N）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "asparagine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/asparagine-asparagine-neutral.png",
+        "alt": "天冬酰胺（asparagine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "谷氨酸"
+        },
+        {
+          "id": "B",
+          "text": "天冬氨酸"
+        },
+        {
+          "id": "C",
+          "text": "谷氨酰胺"
+        },
+        {
+          "id": "D",
+          "text": "天冬酰胺"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "该结构是 谷氨酰胺（glutamine，Gln，Q）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "glutamine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/glutamine-glutamine-neutral.png",
+        "alt": "谷氨酰胺（glutamine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "丙氨酸"
+        },
+        {
+          "id": "B",
+          "text": "天冬氨酸"
+        },
+        {
+          "id": "C",
+          "text": "谷氨酸"
+        },
+        {
+          "id": "D",
+          "text": "天冬酰胺"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "该结构是 天冬氨酸（aspartic-acid，Asp，D）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "aspartic-acid"
+      ],
+      "image": {
+        "src": "assets/structure-renders/aspartic-acid-aspartic-acid-neutral.png",
+        "alt": "天冬氨酸（aspartic-acid）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "天冬氨酸"
+        },
+        {
+          "id": "B",
+          "text": "谷氨酰胺"
+        },
+        {
+          "id": "C",
+          "text": "甘氨酸"
+        },
+        {
+          "id": "D",
+          "text": "谷氨酸"
+        }
+      ],
+      "answer": "D",
+      "points": 2,
+      "explanation": "该结构是 谷氨酸（glutamic-acid，Glu，E）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "glutamic-acid"
+      ],
+      "image": {
+        "src": "assets/structure-renders/glutamic-acid-glutamic-acid-neutral.png",
+        "alt": "谷氨酸（glutamic-acid）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q017",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "B",
+          "text": "精氨酸"
+        },
+        {
+          "id": "C",
+          "text": "组氨酸"
+        },
+        {
+          "id": "D",
+          "text": "天冬酰胺"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "该结构是 赖氨酸（lysine，Lys，K）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "lysine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/lysine-lysine-neutral.png",
+        "alt": "赖氨酸（lysine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "脯氨酸"
+        },
+        {
+          "id": "B",
+          "text": "精氨酸"
+        },
+        {
+          "id": "C",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "D",
+          "text": "组氨酸"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "该结构是 精氨酸（arginine，Arg，R）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "arginine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/arginine-arginine-neutral.png",
+        "alt": "精氨酸（arginine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "B",
+          "text": "精氨酸"
+        },
+        {
+          "id": "C",
+          "text": "组氨酸"
+        },
+        {
+          "id": "D",
+          "text": "色氨酸"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "该结构是 组氨酸（histidine，His，H）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "histidine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/histidine-histidine-neutral.png",
+        "alt": "组氨酸（histidine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲硫氨酸"
+        },
+        {
+          "id": "B",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "C",
+          "text": "硒代半胱氨酸"
+        },
+        {
+          "id": "D",
+          "text": "半胱氨酸"
+        }
+      ],
+      "answer": "C",
+      "points": 3,
+      "explanation": "该结构是 硒代半胱氨酸（selenocysteine，Sec，U）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "structure",
+        "selenocysteine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/selenocysteine-selenocysteine-neutral.png",
+        "alt": "硒代半胱氨酸（selenocysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q021",
+      "type": "single-choice",
+      "question": "下图给出的是哪种氨基酸的骨架结构？",
+      "options": [
+        {
+          "id": "A",
+          "text": "吡咯赖氨酸"
+        },
+        {
+          "id": "B",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "C",
+          "text": "精氨酸"
+        },
+        {
+          "id": "D",
+          "text": "组氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "该结构是 吡咯赖氨酸（pyrrolysine，Pyl，O）。区分要点：先看侧链官能团，再核对侧链碳数。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "structure",
+        "pyrrolysine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/pyrrolysine-pyrrolysine-neutral.png",
+        "alt": "吡咯赖氨酸（pyrrolysine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q022",
+      "type": "single-choice",
+      "question": "Which amino acid is shown in the structure below?",
+      "options": [
+        {
+          "id": "A",
+          "text": "alanine"
+        },
+        {
+          "id": "B",
+          "text": "Glycine"
+        },
+        {
+          "id": "C",
+          "text": "Valine"
+        },
+        {
+          "id": "D",
+          "text": "Serine"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "结构对应 alanine（丙氨酸，Ala，A）。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "structure",
+        "English name",
+        "alanine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/alanine-alanine-neutral.png",
+        "alt": "丙氨酸（alanine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q023",
+      "type": "single-choice",
+      "question": "Which amino acid is shown in the structure below?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Selenocysteine"
+        },
+        {
+          "id": "B",
+          "text": "cysteine"
+        },
+        {
+          "id": "C",
+          "text": "Serine"
+        },
+        {
+          "id": "D",
+          "text": "Methionine"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "结构对应 cysteine（半胱氨酸，Cys，C）。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "English name",
+        "cysteine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/cysteine-cysteine-neutral.png",
+        "alt": "半胱氨酸（cysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q024",
+      "type": "single-choice",
+      "question": "Which amino acid is shown in the structure below?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Histidine"
+        },
+        {
+          "id": "B",
+          "text": "Tryptophan"
+        },
+        {
+          "id": "C",
+          "text": "Lysine"
+        },
+        {
+          "id": "D",
+          "text": "proline"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "结构对应 proline（脯氨酸，Pro，P）。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "English name",
+        "proline"
+      ],
+      "image": {
+        "src": "assets/structure-renders/proline-proline-neutral.png",
+        "alt": "脯氨酸（proline）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q025",
+      "type": "single-choice",
+      "question": "Which amino acid is shown in the structure below?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tyrosine"
+        },
+        {
+          "id": "B",
+          "text": "Phenylalanine"
+        },
+        {
+          "id": "C",
+          "text": "Histidine"
+        },
+        {
+          "id": "D",
+          "text": "tryptophan"
+        }
+      ],
+      "answer": "D",
+      "points": 2,
+      "explanation": "结构对应 tryptophan（色氨酸，Trp，W）。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "English name",
+        "tryptophan"
+      ],
+      "image": {
+        "src": "assets/structure-renders/tryptophan-tryptophan-neutral.png",
+        "alt": "色氨酸（tryptophan）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q026",
+      "type": "single-choice",
+      "question": "Which amino acid is shown in the structure below?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Asparagine"
+        },
+        {
+          "id": "B",
+          "text": "Alanine"
+        },
+        {
+          "id": "C",
+          "text": "aspartic-acid"
+        },
+        {
+          "id": "D",
+          "text": "Glutamic acid"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "结构对应 aspartic-acid（天冬氨酸，Asp，D）。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "English name",
+        "aspartic-acid"
+      ],
+      "image": {
+        "src": "assets/structure-renders/aspartic-acid-aspartic-acid-neutral.png",
+        "alt": "天冬氨酸（aspartic-acid）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q027",
+      "type": "single-choice",
+      "question": "Which amino acid is shown in the structure below?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Histidine"
+        },
+        {
+          "id": "B",
+          "text": "Proline"
+        },
+        {
+          "id": "C",
+          "text": "arginine"
+        },
+        {
+          "id": "D",
+          "text": "Lysine"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "结构对应 arginine（精氨酸，Arg，R）。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "English name",
+        "arginine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/arginine-arginine-neutral.png",
+        "alt": "精氨酸（arginine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q028",
+      "type": "single-choice",
+      "question": "Which amino acid is shown in the structure below?",
+      "options": [
+        {
+          "id": "A",
+          "text": "selenocysteine"
+        },
+        {
+          "id": "B",
+          "text": "Cysteine"
+        },
+        {
+          "id": "C",
+          "text": "Methionine"
+        },
+        {
+          "id": "D",
+          "text": "Serine"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "结构对应 selenocysteine（硒代半胱氨酸，Sec，U）。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "structure",
+        "English name",
+        "selenocysteine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/selenocysteine-selenocysteine-neutral.png",
+        "alt": "硒代半胱氨酸（selenocysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q029",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "A"
+        },
+        {
+          "id": "B",
+          "text": "S"
+        },
+        {
+          "id": "C",
+          "text": "C"
+        },
+        {
+          "id": "D",
+          "text": "G"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "甘氨酸的单字母缩写为 G，三字母缩写为 Gly。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "glycine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/glycine-glycine-neutral.png",
+        "alt": "甘氨酸（glycine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q030",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Y"
+        },
+        {
+          "id": "B",
+          "text": "F"
+        },
+        {
+          "id": "C",
+          "text": "H"
+        },
+        {
+          "id": "D",
+          "text": "W"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "色氨酸的单字母缩写为 W，三字母缩写为 Trp。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "tryptophan"
+      ],
+      "image": {
+        "src": "assets/structure-renders/tryptophan-tryptophan-neutral.png",
+        "alt": "色氨酸（tryptophan）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q031",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "H"
+        },
+        {
+          "id": "B",
+          "text": "Q"
+        },
+        {
+          "id": "C",
+          "text": "K"
+        },
+        {
+          "id": "D",
+          "text": "R"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "赖氨酸的单字母缩写为 K，三字母缩写为 Lys。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "lysine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/lysine-lysine-neutral.png",
+        "alt": "赖氨酸（lysine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q032",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "C"
+        },
+        {
+          "id": "B",
+          "text": "S"
+        },
+        {
+          "id": "C",
+          "text": "M"
+        },
+        {
+          "id": "D",
+          "text": "T"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "半胱氨酸的单字母缩写为 C，三字母缩写为 Cys。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "cysteine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/cysteine-cysteine-neutral.png",
+        "alt": "半胱氨酸（cysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q033",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "P"
+        },
+        {
+          "id": "B",
+          "text": "H"
+        },
+        {
+          "id": "C",
+          "text": "W"
+        },
+        {
+          "id": "D",
+          "text": "F"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "脯氨酸的单字母缩写为 P，三字母缩写为 Pro。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "proline"
+      ],
+      "image": {
+        "src": "assets/structure-renders/proline-proline-neutral.png",
+        "alt": "脯氨酸（proline）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q034",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "H"
+        },
+        {
+          "id": "B",
+          "text": "F"
+        },
+        {
+          "id": "C",
+          "text": "Y"
+        },
+        {
+          "id": "D",
+          "text": "W"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "苯丙氨酸的单字母缩写为 F，三字母缩写为 Phe。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "phenylalanine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/phenylalanine-phenylalanine-neutral.png",
+        "alt": "苯丙氨酸（phenylalanine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q035",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "E"
+        },
+        {
+          "id": "B",
+          "text": "D"
+        },
+        {
+          "id": "C",
+          "text": "Q"
+        },
+        {
+          "id": "D",
+          "text": "N"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "谷氨酰胺的单字母缩写为 Q，三字母缩写为 Gln。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "glutamine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/glutamine-glutamine-neutral.png",
+        "alt": "谷氨酰胺（glutamine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q036",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "W"
+        },
+        {
+          "id": "B",
+          "text": "H"
+        },
+        {
+          "id": "C",
+          "text": "K"
+        },
+        {
+          "id": "D",
+          "text": "R"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "组氨酸的单字母缩写为 H，三字母缩写为 His。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "histidine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/histidine-histidine-neutral.png",
+        "alt": "组氨酸（histidine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q037",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "S"
+        },
+        {
+          "id": "B",
+          "text": "O"
+        },
+        {
+          "id": "C",
+          "text": "U"
+        },
+        {
+          "id": "D",
+          "text": "C"
+        }
+      ],
+      "answer": "C",
+      "points": 3,
+      "explanation": "硒代半胱氨酸的单字母缩写为 U，三字母缩写为 Sec。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "selenocysteine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/selenocysteine-selenocysteine-neutral.png",
+        "alt": "硒代半胱氨酸（selenocysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q038",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的单字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "K"
+        },
+        {
+          "id": "B",
+          "text": "U"
+        },
+        {
+          "id": "C",
+          "text": "R"
+        },
+        {
+          "id": "D",
+          "text": "O"
+        }
+      ],
+      "answer": "D",
+      "points": 3,
+      "explanation": "吡咯赖氨酸的单字母缩写为 O，三字母缩写为 Pyl。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "structure",
+        "one-letter code",
+        "pyrrolysine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/pyrrolysine-pyrrolysine-neutral.png",
+        "alt": "吡咯赖氨酸（pyrrolysine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q039",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「甘氨酸」的三字母缩写是____。",
+      "answer": "Gly",
+      "acceptableAnswers": [
+        "Gly",
+        "GLY",
+        "gly"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "甘氨酸的英文名是 glycine，三字母缩写 Gly，单字母缩写 G。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "甘氨酸"
+      ]
+    },
+    {
+      "id": "q040",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「丙氨酸」的三字母缩写是____。",
+      "answer": "Ala",
+      "acceptableAnswers": [
+        "Ala",
+        "ALA",
+        "ala"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "丙氨酸的英文名是 alanine，三字母缩写 Ala，单字母缩写 A。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "丙氨酸"
+      ]
+    },
+    {
+      "id": "q041",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「丝氨酸」的三字母缩写是____。",
+      "answer": "Ser",
+      "acceptableAnswers": [
+        "Ser",
+        "SER",
+        "ser"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "丝氨酸的英文名是 serine，三字母缩写 Ser，单字母缩写 S。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "丝氨酸"
+      ]
+    },
+    {
+      "id": "q042",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「苏氨酸」的三字母缩写是____。",
+      "answer": "Thr",
+      "acceptableAnswers": [
+        "Thr",
+        "THR",
+        "thr"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "苏氨酸的英文名是 threonine，三字母缩写 Thr，单字母缩写 T。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "苏氨酸"
+      ]
+    },
+    {
+      "id": "q043",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「半胱氨酸」的三字母缩写是____。",
+      "answer": "Cys",
+      "acceptableAnswers": [
+        "Cys",
+        "CYS",
+        "cys"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "半胱氨酸的英文名是 cysteine，三字母缩写 Cys，单字母缩写 C。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "半胱氨酸"
+      ]
+    },
+    {
+      "id": "q044",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「赖氨酸」的三字母缩写是____。",
+      "answer": "Lys",
+      "acceptableAnswers": [
+        "Lys",
+        "LYS",
+        "lys"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "赖氨酸的英文名是 lysine，三字母缩写 Lys，单字母缩写 K。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "赖氨酸"
+      ]
+    },
+    {
+      "id": "q045",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「脯氨酸」的三字母缩写是____。",
+      "answer": "Pro",
+      "acceptableAnswers": [
+        "Pro",
+        "PRO",
+        "pro"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "脯氨酸的英文名是 proline，三字母缩写 Pro，单字母缩写 P。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "脯氨酸"
+      ]
+    },
+    {
+      "id": "q046",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「天冬酰胺」的三字母缩写是____。",
+      "answer": "Asn",
+      "acceptableAnswers": [
+        "Asn",
+        "ASN",
+        "asn"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "天冬酰胺的英文名是 asparagine，三字母缩写 Asn，单字母缩写 N。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "天冬酰胺"
+      ]
+    },
+    {
+      "id": "q047",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「谷氨酰胺」的三字母缩写是____。",
+      "answer": "Gln",
+      "acceptableAnswers": [
+        "Gln",
+        "GLN",
+        "gln"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "谷氨酰胺的英文名是 glutamine，三字母缩写 Gln，单字母缩写 Q。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "谷氨酰胺"
+      ]
+    },
+    {
+      "id": "q048",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「苯丙氨酸」的三字母缩写是____。",
+      "answer": "Phe",
+      "acceptableAnswers": [
+        "Phe",
+        "PHE",
+        "phe"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "苯丙氨酸的英文名是 phenylalanine，三字母缩写 Phe，单字母缩写 F。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "苯丙氨酸"
+      ]
+    },
+    {
+      "id": "q049",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「色氨酸」的三字母缩写是____。",
+      "answer": "Trp",
+      "acceptableAnswers": [
+        "Trp",
+        "TRP",
+        "trp"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "色氨酸的英文名是 tryptophan，三字母缩写 Trp，单字母缩写 W。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "色氨酸"
+      ]
+    },
+    {
+      "id": "q050",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「精氨酸」的三字母缩写是____。",
+      "answer": "Arg",
+      "acceptableAnswers": [
+        "Arg",
+        "ARG",
+        "arg"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "精氨酸的英文名是 arginine，三字母缩写 Arg，单字母缩写 R。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "精氨酸"
+      ]
+    },
+    {
+      "id": "q051",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「组氨酸」的三字母缩写是____。",
+      "answer": "His",
+      "acceptableAnswers": [
+        "His",
+        "HIS",
+        "his"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "组氨酸的英文名是 histidine，三字母缩写 His，单字母缩写 H。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "组氨酸"
+      ]
+    },
+    {
+      "id": "q052",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「硒代半胱氨酸」的三字母缩写是____。",
+      "answer": "Sec",
+      "acceptableAnswers": [
+        "Sec",
+        "SEC",
+        "sec"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "硒代半胱氨酸的英文名是 selenocysteine，三字母缩写 Sec，单字母缩写 U。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "硒代半胱氨酸"
+      ]
+    },
+    {
+      "id": "q053",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「吡咯赖氨酸」的三字母缩写是____。",
+      "answer": "Pyl",
+      "acceptableAnswers": [
+        "Pyl",
+        "PYL",
+        "pyl"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "吡咯赖氨酸的英文名是 pyrrolysine，三字母缩写 Pyl，单字母缩写 O。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "吡咯赖氨酸"
+      ]
+    },
+    {
+      "id": "q054",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「甘氨酸」的单字母缩写是____。",
+      "answer": "G",
+      "acceptableAnswers": [
+        "G",
+        "g"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "甘氨酸（glycine，Gly）的单字母缩写是 G。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "甘氨酸"
+      ]
+    },
+    {
+      "id": "q055",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「缬氨酸」的单字母缩写是____。",
+      "answer": "V",
+      "acceptableAnswers": [
+        "V",
+        "v"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "缬氨酸（valine，Val）的单字母缩写是 V。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "缬氨酸"
+      ]
+    },
+    {
+      "id": "q056",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「亮氨酸」的单字母缩写是____。",
+      "answer": "L",
+      "acceptableAnswers": [
+        "L",
+        "l"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "亮氨酸（leucine，Leu）的单字母缩写是 L。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "亮氨酸"
+      ]
+    },
+    {
+      "id": "q057",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「异亮氨酸」的单字母缩写是____。",
+      "answer": "I",
+      "acceptableAnswers": [
+        "I",
+        "i"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "异亮氨酸（isoleucine，Ile）的单字母缩写是 I。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "异亮氨酸"
+      ]
+    },
+    {
+      "id": "q058",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「甲硫氨酸」的单字母缩写是____。",
+      "answer": "M",
+      "acceptableAnswers": [
+        "M",
+        "m"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "甲硫氨酸（methionine，Met）的单字母缩写是 M。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "甲硫氨酸"
+      ]
+    },
+    {
+      "id": "q059",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「酪氨酸」的单字母缩写是____。",
+      "answer": "Y",
+      "acceptableAnswers": [
+        "Y",
+        "y"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "酪氨酸（tyrosine，Tyr）的单字母缩写是 Y。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "酪氨酸"
+      ]
+    },
+    {
+      "id": "q060",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「天冬氨酸」的单字母缩写是____。",
+      "answer": "D",
+      "acceptableAnswers": [
+        "D",
+        "d"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "天冬氨酸（aspartic-acid，Asp）的单字母缩写是 D。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "天冬氨酸"
+      ]
+    },
+    {
+      "id": "q061",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「谷氨酸」的单字母缩写是____。",
+      "answer": "E",
+      "acceptableAnswers": [
+        "E",
+        "e"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "谷氨酸（glutamic-acid，Glu）的单字母缩写是 E。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "谷氨酸"
+      ]
+    },
+    {
+      "id": "q062",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「赖氨酸」的单字母缩写是____。",
+      "answer": "K",
+      "acceptableAnswers": [
+        "K",
+        "k"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "赖氨酸（lysine，Lys）的单字母缩写是 K。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "赖氨酸"
+      ]
+    },
+    {
+      "id": "q063",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「精氨酸」的单字母缩写是____。",
+      "answer": "R",
+      "acceptableAnswers": [
+        "R",
+        "r"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "精氨酸（arginine，Arg）的单字母缩写是 R。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "精氨酸"
+      ]
+    },
+    {
+      "id": "q064",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「组氨酸」的单字母缩写是____。",
+      "answer": "H",
+      "acceptableAnswers": [
+        "H",
+        "h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "组氨酸（histidine，His）的单字母缩写是 H。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "组氨酸"
+      ]
+    },
+    {
+      "id": "q065",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「硒代半胱氨酸」的单字母缩写是____。",
+      "answer": "U",
+      "acceptableAnswers": [
+        "U",
+        "u"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "硒代半胱氨酸（selenocysteine，Sec）的单字母缩写是 U。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "硒代半胱氨酸"
+      ]
+    },
+    {
+      "id": "q066",
+      "type": "fill-in-the-blank",
+      "question": "氨基酸「吡咯赖氨酸」的单字母缩写是____。",
+      "answer": "O",
+      "acceptableAnswers": [
+        "O",
+        "o"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "吡咯赖氨酸（pyrrolysine，Pyl）的单字母缩写是 O。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "吡咯赖氨酸"
+      ]
+    },
+    {
+      "id": "q067",
+      "type": "single-choice",
+      "question": "三字母缩写 Ala 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "甘氨酸"
+        },
+        {
+          "id": "B",
+          "text": "缬氨酸"
+        },
+        {
+          "id": "C",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "D",
+          "text": "丙氨酸"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "Ala 是 丙氨酸，单字母缩写 A。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Ala"
+      ]
+    },
+    {
+      "id": "q068",
+      "type": "single-choice",
+      "question": "三字母缩写 Gly 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "谷氨酸"
+        },
+        {
+          "id": "B",
+          "text": "谷氨酰胺"
+        },
+        {
+          "id": "C",
+          "text": "甘氨酸"
+        },
+        {
+          "id": "D",
+          "text": "丙氨酸"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "Gly 是 甘氨酸，单字母缩写 G。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Gly"
+      ]
+    },
+    {
+      "id": "q069",
+      "type": "single-choice",
+      "question": "三字母缩写 Ser 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "缬氨酸"
+        },
+        {
+          "id": "B",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "C",
+          "text": "苏氨酸"
+        },
+        {
+          "id": "D",
+          "text": "半胱氨酸"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "Ser 是 丝氨酸，单字母缩写 S。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Ser"
+      ]
+    },
+    {
+      "id": "q070",
+      "type": "single-choice",
+      "question": "三字母缩写 Cys 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "半胱氨酸"
+        },
+        {
+          "id": "B",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "C",
+          "text": "甲硫氨酸"
+        },
+        {
+          "id": "D",
+          "text": "酪氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Cys 是 半胱氨酸，单字母缩写 C。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Cys"
+      ]
+    },
+    {
+      "id": "q071",
+      "type": "single-choice",
+      "question": "三字母缩写 Pro 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "脯氨酸"
+        },
+        {
+          "id": "B",
+          "text": "苯丙氨酸"
+        },
+        {
+          "id": "C",
+          "text": "组氨酸"
+        },
+        {
+          "id": "D",
+          "text": "色氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Pro 是 脯氨酸，单字母缩写 P。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Pro"
+      ]
+    },
+    {
+      "id": "q072",
+      "type": "single-choice",
+      "question": "三字母缩写 Lys 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "精氨酸"
+        },
+        {
+          "id": "B",
+          "text": "组氨酸"
+        },
+        {
+          "id": "C",
+          "text": "天冬酰胺"
+        },
+        {
+          "id": "D",
+          "text": "赖氨酸"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "Lys 是 赖氨酸，单字母缩写 K。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Lys"
+      ]
+    },
+    {
+      "id": "q073",
+      "type": "single-choice",
+      "question": "三字母缩写 Phe 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "色氨酸"
+        },
+        {
+          "id": "B",
+          "text": "组氨酸"
+        },
+        {
+          "id": "C",
+          "text": "苯丙氨酸"
+        },
+        {
+          "id": "D",
+          "text": "酪氨酸"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "Phe 是 苯丙氨酸，单字母缩写 F。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Phe"
+      ]
+    },
+    {
+      "id": "q074",
+      "type": "single-choice",
+      "question": "三字母缩写 Trp 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "组氨酸"
+        },
+        {
+          "id": "B",
+          "text": "色氨酸"
+        },
+        {
+          "id": "C",
+          "text": "酪氨酸"
+        },
+        {
+          "id": "D",
+          "text": "苯丙氨酸"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "Trp 是 色氨酸，单字母缩写 W。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Trp"
+      ]
+    },
+    {
+      "id": "q075",
+      "type": "single-choice",
+      "question": "三字母缩写 Asn 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "天冬酰胺"
+        },
+        {
+          "id": "B",
+          "text": "天冬氨酸"
+        },
+        {
+          "id": "C",
+          "text": "谷氨酰胺"
+        },
+        {
+          "id": "D",
+          "text": "谷氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "Asn 是 天冬酰胺，单字母缩写 N。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Asn"
+      ]
+    },
+    {
+      "id": "q076",
+      "type": "single-choice",
+      "question": "三字母缩写 Gln 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "谷氨酸"
+        },
+        {
+          "id": "B",
+          "text": "天冬酰胺"
+        },
+        {
+          "id": "C",
+          "text": "天冬氨酸"
+        },
+        {
+          "id": "D",
+          "text": "谷氨酰胺"
+        }
+      ],
+      "answer": "D",
+      "points": 2,
+      "explanation": "Gln 是 谷氨酰胺，单字母缩写 Q。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Gln"
+      ]
+    },
+    {
+      "id": "q077",
+      "type": "single-choice",
+      "question": "三字母缩写 Asp 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "天冬酰胺"
+        },
+        {
+          "id": "B",
+          "text": "丙氨酸"
+        },
+        {
+          "id": "C",
+          "text": "天冬氨酸"
+        },
+        {
+          "id": "D",
+          "text": "谷氨酸"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "Asp 是 天冬氨酸，单字母缩写 D。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Asp"
+      ]
+    },
+    {
+      "id": "q078",
+      "type": "single-choice",
+      "question": "三字母缩写 Glu 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "甘氨酸"
+        },
+        {
+          "id": "B",
+          "text": "谷氨酸"
+        },
+        {
+          "id": "C",
+          "text": "天冬氨酸"
+        },
+        {
+          "id": "D",
+          "text": "谷氨酰胺"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "Glu 是 谷氨酸，单字母缩写 E。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Glu"
+      ]
+    },
+    {
+      "id": "q079",
+      "type": "single-choice",
+      "question": "三字母缩写 Arg 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "精氨酸"
+        },
+        {
+          "id": "B",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "C",
+          "text": "组氨酸"
+        },
+        {
+          "id": "D",
+          "text": "脯氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "Arg 是 精氨酸，单字母缩写 R。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Arg"
+      ]
+    },
+    {
+      "id": "q080",
+      "type": "single-choice",
+      "question": "三字母缩写 His 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "B",
+          "text": "精氨酸"
+        },
+        {
+          "id": "C",
+          "text": "色氨酸"
+        },
+        {
+          "id": "D",
+          "text": "组氨酸"
+        }
+      ],
+      "answer": "D",
+      "points": 2,
+      "explanation": "His 是 组氨酸，单字母缩写 H。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "His"
+      ]
+    },
+    {
+      "id": "q081",
+      "type": "single-choice",
+      "question": "三字母缩写 Met 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "丝氨酸"
+        },
+        {
+          "id": "B",
+          "text": "亮氨酸"
+        },
+        {
+          "id": "C",
+          "text": "甲硫氨酸"
+        },
+        {
+          "id": "D",
+          "text": "半胱氨酸"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "Met 是 甲硫氨酸，单字母缩写 M。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Met"
+      ]
+    },
+    {
+      "id": "q082",
+      "type": "single-choice",
+      "question": "三字母缩写 Sec 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲硫氨酸"
+        },
+        {
+          "id": "B",
+          "text": "硒代半胱氨酸"
+        },
+        {
+          "id": "C",
+          "text": "半胱氨酸"
+        },
+        {
+          "id": "D",
+          "text": "丝氨酸"
+        }
+      ],
+      "answer": "B",
+      "points": 3,
+      "explanation": "Sec 是 硒代半胱氨酸，单字母缩写 U。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Sec"
+      ]
+    },
+    {
+      "id": "q083",
+      "type": "single-choice",
+      "question": "三字母缩写 Pyl 对应的氨基酸是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "吡咯赖氨酸"
+        },
+        {
+          "id": "B",
+          "text": "赖氨酸"
+        },
+        {
+          "id": "C",
+          "text": "精氨酸"
+        },
+        {
+          "id": "D",
+          "text": "组氨酸"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "Pyl 是 吡咯赖氨酸，单字母缩写 O。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "Pyl"
+      ]
+    },
+    {
+      "id": "q084",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Gly 对应的单字母缩写是____。",
+      "answer": "G",
+      "acceptableAnswers": [
+        "G",
+        "g"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Gly 是 甘氨酸（glycine），单字母缩写 G。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Gly"
+      ]
+    },
+    {
+      "id": "q085",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Ala 对应的单字母缩写是____。",
+      "answer": "A",
+      "acceptableAnswers": [
+        "A",
+        "a"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Ala 是 丙氨酸（alanine），单字母缩写 A。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Ala"
+      ]
+    },
+    {
+      "id": "q086",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Val 对应的单字母缩写是____。",
+      "answer": "V",
+      "acceptableAnswers": [
+        "V",
+        "v"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Val 是 缬氨酸（valine），单字母缩写 V。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Val"
+      ]
+    },
+    {
+      "id": "q087",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Leu 对应的单字母缩写是____。",
+      "answer": "L",
+      "acceptableAnswers": [
+        "L",
+        "l"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Leu 是 亮氨酸（leucine），单字母缩写 L。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Leu"
+      ]
+    },
+    {
+      "id": "q088",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Ile 对应的单字母缩写是____。",
+      "answer": "I",
+      "acceptableAnswers": [
+        "I",
+        "i"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Ile 是 异亮氨酸（isoleucine），单字母缩写 I。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Ile"
+      ]
+    },
+    {
+      "id": "q089",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Pro 对应的单字母缩写是____。",
+      "answer": "P",
+      "acceptableAnswers": [
+        "P",
+        "p"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Pro 是 脯氨酸（proline），单字母缩写 P。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Pro"
+      ]
+    },
+    {
+      "id": "q090",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Phe 对应的单字母缩写是____。",
+      "answer": "F",
+      "acceptableAnswers": [
+        "F",
+        "f"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Phe 是 苯丙氨酸（phenylalanine），单字母缩写 F。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Phe"
+      ]
+    },
+    {
+      "id": "q091",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Trp 对应的单字母缩写是____。",
+      "answer": "W",
+      "acceptableAnswers": [
+        "W",
+        "w"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Trp 是 色氨酸（tryptophan），单字母缩写 W。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Trp"
+      ]
+    },
+    {
+      "id": "q092",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Tyr 对应的单字母缩写是____。",
+      "answer": "Y",
+      "acceptableAnswers": [
+        "Y",
+        "y"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Tyr 是 酪氨酸（tyrosine），单字母缩写 Y。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Tyr"
+      ]
+    },
+    {
+      "id": "q093",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Ser 对应的单字母缩写是____。",
+      "answer": "S",
+      "acceptableAnswers": [
+        "S",
+        "s"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Ser 是 丝氨酸（serine），单字母缩写 S。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Ser"
+      ]
+    },
+    {
+      "id": "q094",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Thr 对应的单字母缩写是____。",
+      "answer": "T",
+      "acceptableAnswers": [
+        "T",
+        "t"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Thr 是 苏氨酸（threonine），单字母缩写 T。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Thr"
+      ]
+    },
+    {
+      "id": "q095",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Cys 对应的单字母缩写是____。",
+      "answer": "C",
+      "acceptableAnswers": [
+        "C",
+        "c"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Cys 是 半胱氨酸（cysteine），单字母缩写 C。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Cys"
+      ]
+    },
+    {
+      "id": "q096",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Met 对应的单字母缩写是____。",
+      "answer": "M",
+      "acceptableAnswers": [
+        "M",
+        "m"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Met 是 甲硫氨酸（methionine），单字母缩写 M。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Met"
+      ]
+    },
+    {
+      "id": "q097",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Asn 对应的单字母缩写是____。",
+      "answer": "N",
+      "acceptableAnswers": [
+        "N",
+        "n"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Asn 是 天冬酰胺（asparagine），单字母缩写 N。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Asn"
+      ]
+    },
+    {
+      "id": "q098",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Gln 对应的单字母缩写是____。",
+      "answer": "Q",
+      "acceptableAnswers": [
+        "Q",
+        "q"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Gln 是 谷氨酰胺（glutamine），单字母缩写 Q。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Gln"
+      ]
+    },
+    {
+      "id": "q099",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Asp 对应的单字母缩写是____。",
+      "answer": "D",
+      "acceptableAnswers": [
+        "D",
+        "d"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Asp 是 天冬氨酸（aspartic-acid），单字母缩写 D。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Asp"
+      ]
+    },
+    {
+      "id": "q100",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Glu 对应的单字母缩写是____。",
+      "answer": "E",
+      "acceptableAnswers": [
+        "E",
+        "e"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Glu 是 谷氨酸（glutamic-acid），单字母缩写 E。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Glu"
+      ]
+    },
+    {
+      "id": "q101",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Lys 对应的单字母缩写是____。",
+      "answer": "K",
+      "acceptableAnswers": [
+        "K",
+        "k"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Lys 是 赖氨酸（lysine），单字母缩写 K。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Lys"
+      ]
+    },
+    {
+      "id": "q102",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Arg 对应的单字母缩写是____。",
+      "answer": "R",
+      "acceptableAnswers": [
+        "R",
+        "r"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Arg 是 精氨酸（arginine），单字母缩写 R。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Arg"
+      ]
+    },
+    {
+      "id": "q103",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 His 对应的单字母缩写是____。",
+      "answer": "H",
+      "acceptableAnswers": [
+        "H",
+        "h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "His 是 组氨酸（histidine），单字母缩写 H。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "His"
+      ]
+    },
+    {
+      "id": "q104",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Sec 对应的单字母缩写是____。",
+      "answer": "U",
+      "acceptableAnswers": [
+        "U",
+        "u"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Sec 是 硒代半胱氨酸（selenocysteine），单字母缩写 U。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Sec"
+      ]
+    },
+    {
+      "id": "q105",
+      "type": "fill-in-the-blank",
+      "question": "三字母缩写 Pyl 对应的单字母缩写是____。",
+      "answer": "O",
+      "acceptableAnswers": [
+        "O",
+        "o"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Pyl 是 吡咯赖氨酸（pyrrolysine），单字母缩写 O。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "three-letter code",
+        "one-letter code",
+        "Pyl"
+      ]
+    },
+    {
+      "id": "q106",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 G 对应的三字母缩写是____。",
+      "answer": "Gly",
+      "acceptableAnswers": [
+        "Gly",
+        "GLY",
+        "gly"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "G 是 甘氨酸（glycine），三字母缩写 Gly。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Gly"
+      ]
+    },
+    {
+      "id": "q107",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 A 对应的三字母缩写是____。",
+      "answer": "Ala",
+      "acceptableAnswers": [
+        "Ala",
+        "ALA",
+        "ala"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "A 是 丙氨酸（alanine），三字母缩写 Ala。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Ala"
+      ]
+    },
+    {
+      "id": "q108",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 V 对应的三字母缩写是____。",
+      "answer": "Val",
+      "acceptableAnswers": [
+        "Val",
+        "VAL",
+        "val"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "V 是 缬氨酸（valine），三字母缩写 Val。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Val"
+      ]
+    },
+    {
+      "id": "q109",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 L 对应的三字母缩写是____。",
+      "answer": "Leu",
+      "acceptableAnswers": [
+        "Leu",
+        "LEU",
+        "leu"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "L 是 亮氨酸（leucine），三字母缩写 Leu。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Leu"
+      ]
+    },
+    {
+      "id": "q110",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 I 对应的三字母缩写是____。",
+      "answer": "Ile",
+      "acceptableAnswers": [
+        "Ile",
+        "ILE",
+        "ile"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "I 是 异亮氨酸（isoleucine），三字母缩写 Ile。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Ile"
+      ]
+    },
+    {
+      "id": "q111",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 P 对应的三字母缩写是____。",
+      "answer": "Pro",
+      "acceptableAnswers": [
+        "Pro",
+        "PRO",
+        "pro"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "P 是 脯氨酸（proline），三字母缩写 Pro。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Pro"
+      ]
+    },
+    {
+      "id": "q112",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 F 对应的三字母缩写是____。",
+      "answer": "Phe",
+      "acceptableAnswers": [
+        "Phe",
+        "PHE",
+        "phe"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "F 是 苯丙氨酸（phenylalanine），三字母缩写 Phe。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Phe"
+      ]
+    },
+    {
+      "id": "q113",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 W 对应的三字母缩写是____。",
+      "answer": "Trp",
+      "acceptableAnswers": [
+        "Trp",
+        "TRP",
+        "trp"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "W 是 色氨酸（tryptophan），三字母缩写 Trp。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Trp"
+      ]
+    },
+    {
+      "id": "q114",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 Y 对应的三字母缩写是____。",
+      "answer": "Tyr",
+      "acceptableAnswers": [
+        "Tyr",
+        "TYR",
+        "tyr"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Y 是 酪氨酸（tyrosine），三字母缩写 Tyr。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Tyr"
+      ]
+    },
+    {
+      "id": "q115",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 S 对应的三字母缩写是____。",
+      "answer": "Ser",
+      "acceptableAnswers": [
+        "Ser",
+        "SER",
+        "ser"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "S 是 丝氨酸（serine），三字母缩写 Ser。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Ser"
+      ]
+    },
+    {
+      "id": "q116",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 T 对应的三字母缩写是____。",
+      "answer": "Thr",
+      "acceptableAnswers": [
+        "Thr",
+        "THR",
+        "thr"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "T 是 苏氨酸（threonine），三字母缩写 Thr。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Thr"
+      ]
+    },
+    {
+      "id": "q117",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 C 对应的三字母缩写是____。",
+      "answer": "Cys",
+      "acceptableAnswers": [
+        "Cys",
+        "CYS",
+        "cys"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "C 是 半胱氨酸（cysteine），三字母缩写 Cys。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Cys"
+      ]
+    },
+    {
+      "id": "q118",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 M 对应的三字母缩写是____。",
+      "answer": "Met",
+      "acceptableAnswers": [
+        "Met",
+        "MET",
+        "met"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "M 是 甲硫氨酸（methionine），三字母缩写 Met。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Met"
+      ]
+    },
+    {
+      "id": "q119",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 N 对应的三字母缩写是____。",
+      "answer": "Asn",
+      "acceptableAnswers": [
+        "Asn",
+        "ASN",
+        "asn"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "N 是 天冬酰胺（asparagine），三字母缩写 Asn。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Asn"
+      ]
+    },
+    {
+      "id": "q120",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 Q 对应的三字母缩写是____。",
+      "answer": "Gln",
+      "acceptableAnswers": [
+        "Gln",
+        "GLN",
+        "gln"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Q 是 谷氨酰胺（glutamine），三字母缩写 Gln。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Gln"
+      ]
+    },
+    {
+      "id": "q121",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 D 对应的三字母缩写是____。",
+      "answer": "Asp",
+      "acceptableAnswers": [
+        "Asp",
+        "ASP",
+        "asp"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "D 是 天冬氨酸（aspartic-acid），三字母缩写 Asp。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Asp"
+      ]
+    },
+    {
+      "id": "q122",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 E 对应的三字母缩写是____。",
+      "answer": "Glu",
+      "acceptableAnswers": [
+        "Glu",
+        "GLU",
+        "glu"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "E 是 谷氨酸（glutamic-acid），三字母缩写 Glu。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Glu"
+      ]
+    },
+    {
+      "id": "q123",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 K 对应的三字母缩写是____。",
+      "answer": "Lys",
+      "acceptableAnswers": [
+        "Lys",
+        "LYS",
+        "lys"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "K 是 赖氨酸（lysine），三字母缩写 Lys。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Lys"
+      ]
+    },
+    {
+      "id": "q124",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 R 对应的三字母缩写是____。",
+      "answer": "Arg",
+      "acceptableAnswers": [
+        "Arg",
+        "ARG",
+        "arg"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "R 是 精氨酸（arginine），三字母缩写 Arg。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Arg"
+      ]
+    },
+    {
+      "id": "q125",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 H 对应的三字母缩写是____。",
+      "answer": "His",
+      "acceptableAnswers": [
+        "His",
+        "HIS",
+        "his"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "H 是 组氨酸（histidine），三字母缩写 His。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "His"
+      ]
+    },
+    {
+      "id": "q126",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 U 对应的三字母缩写是____。",
+      "answer": "Sec",
+      "acceptableAnswers": [
+        "Sec",
+        "SEC",
+        "sec"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "U 是 硒代半胱氨酸（selenocysteine），三字母缩写 Sec。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Sec"
+      ]
+    },
+    {
+      "id": "q127",
+      "type": "fill-in-the-blank",
+      "question": "单字母缩写 O 对应的三字母缩写是____。",
+      "answer": "Pyl",
+      "acceptableAnswers": [
+        "Pyl",
+        "PYL",
+        "pyl"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "O 是 吡咯赖氨酸（pyrrolysine），三字母缩写 Pyl。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "three-letter code",
+        "Pyl"
+      ]
+    },
+    {
+      "id": "q128",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 A 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gly（甘氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Val（缬氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Ser（丝氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "Ala（丙氨酸）"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "A 对应 丙氨酸（alanine，Ala）。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/alanine-alanine-neutral.png",
+        "alt": "丙氨酸（alanine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q129",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 G 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ser（丝氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Cys（半胱氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Gly（甘氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "Ala（丙氨酸）"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "G 对应 甘氨酸（glycine，Gly）。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/glycine-glycine-neutral.png",
+        "alt": "甘氨酸（glycine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q130",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 W 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tyr（酪氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Phe（苯丙氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "His（组氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "Trp（色氨酸）"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "W 对应 色氨酸（tryptophan，Trp）。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/tryptophan-tryptophan-neutral.png",
+        "alt": "色氨酸（tryptophan）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q131",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 K 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gln（谷氨酰胺）"
+        },
+        {
+          "id": "B",
+          "text": "Lys（赖氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Arg（精氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "His（组氨酸）"
+        }
+      ],
+      "answer": "B",
+      "points": 1,
+      "explanation": "K 对应 赖氨酸（lysine，Lys）。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/lysine-lysine-neutral.png",
+        "alt": "赖氨酸（lysine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q132",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 C 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Met（甲硫氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Thr（苏氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Cys（半胱氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "Ser（丝氨酸）"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "C 对应 半胱氨酸（cysteine，Cys）。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/cysteine-cysteine-neutral.png",
+        "alt": "半胱氨酸（cysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q133",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 P 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pro（脯氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "His（组氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Trp（色氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "Phe（苯丙氨酸）"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "P 对应 脯氨酸（proline，Pro）。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/proline-proline-neutral.png",
+        "alt": "脯氨酸（proline）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q134",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 F 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phe（苯丙氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Tyr（酪氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Trp（色氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "His（组氨酸）"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "F 对应 苯丙氨酸（phenylalanine，Phe）。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/phenylalanine-phenylalanine-neutral.png",
+        "alt": "苯丙氨酸（phenylalanine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q135",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 H 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lys（赖氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Arg（精氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Trp（色氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "His（组氨酸）"
+        }
+      ],
+      "answer": "D",
+      "points": 2,
+      "explanation": "H 对应 组氨酸（histidine，His）。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/histidine-histidine-neutral.png",
+        "alt": "组氨酸（histidine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q136",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 N 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Asp（天冬氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Glu（谷氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Asn（天冬酰胺）"
+        },
+        {
+          "id": "D",
+          "text": "Gln（谷氨酰胺）"
+        }
+      ],
+      "answer": "C",
+      "points": 2,
+      "explanation": "N 对应 天冬酰胺（asparagine，Asn）。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/asparagine-asparagine-neutral.png",
+        "alt": "天冬酰胺（asparagine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q137",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 U 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ser（丝氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Pyl（吡咯赖氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Sec（硒代半胱氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "Cys（半胱氨酸）"
+        }
+      ],
+      "answer": "C",
+      "points": 3,
+      "explanation": "U 对应 硒代半胱氨酸（selenocysteine，Sec）。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/selenocysteine-selenocysteine-neutral.png",
+        "alt": "硒代半胱氨酸（selenocysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q138",
+      "type": "single-choice",
+      "question": "下列结构中，哪一个是单字母缩写为 O 的氨基酸？",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pyl（吡咯赖氨酸）"
+        },
+        {
+          "id": "B",
+          "text": "Lys（赖氨酸）"
+        },
+        {
+          "id": "C",
+          "text": "Arg（精氨酸）"
+        },
+        {
+          "id": "D",
+          "text": "Sec（硒代半胱氨酸）"
+        }
+      ],
+      "answer": "A",
+      "points": 3,
+      "explanation": "O 对应 吡咯赖氨酸（pyrrolysine，Pyl）。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "one-letter code",
+        "structure",
+        null
+      ],
+      "image": {
+        "src": "assets/structure-renders/pyrrolysine-pyrrolysine-neutral.png",
+        "alt": "吡咯赖氨酸（pyrrolysine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q139",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是异亮氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是亮氨酸。两者侧链都是 C4 烷基，但亮氨酸是 –CH₂CH(CH₃)₂，异亮氨酸是 –CH(CH₃)CH₂CH₃，后者有两个手性中心。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "leucine",
+        "isoleucine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/leucine-leucine-neutral.png",
+        "alt": "亮氨酸与异亮氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q140",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是苏氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是缬氨酸。缬氨酸侧链是 –CH(CH₃)₂（C5H11NO2），苏氨酸侧链是 –CH(OH)CH₃（C4H9NO3），苏氨酸多一个羟基。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "valine",
+        "threonine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/valine-valine-neutral.png",
+        "alt": "缬氨酸与苏氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q141",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是天冬氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是天冬酰胺。天冬酰胺侧链末端是酰胺 –CH₂CONH₂，天冬氨酸是羧基 –CH₂COOH。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "asparagine",
+        "aspartic-acid"
+      ],
+      "image": {
+        "src": "assets/structure-renders/asparagine-asparagine-neutral.png",
+        "alt": "天冬酰胺与天冬氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q142",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是谷氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是谷氨酰胺。谷氨酰胺侧链末端为酰胺，谷氨酸为羧基；两者侧链都比对应的天冬氨酸系列多一个 CH₂。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "glutamine",
+        "glutamic-acid"
+      ],
+      "image": {
+        "src": "assets/structure-renders/glutamine-glutamine-neutral.png",
+        "alt": "谷氨酰胺与谷氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q143",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是丝氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是半胱氨酸。半胱氨酸侧链含巯基 –SH，丝氨酸含羟基 –OH；硫的原子序数更大、极化率更高。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "cysteine",
+        "serine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/cysteine-cysteine-neutral.png",
+        "alt": "半胱氨酸与丝氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q144",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是硒代半胱氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是半胱氨酸。硒代半胱氨酸把巯基换成硒醇 –SeH，是第 21 种蛋白质氨基酸，三字母 Sec、单字母 U。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "cysteine",
+        "selenocysteine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/cysteine-cysteine-neutral.png",
+        "alt": "半胱氨酸与硒代半胱氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q145",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是酪氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是苯丙氨酸。酪氨酸在苯环对位多一个酚羟基；两者都是芳香族氨基酸。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "phenylalanine",
+        "tyrosine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/phenylalanine-phenylalanine-neutral.png",
+        "alt": "苯丙氨酸与酪氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q146",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是色氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是组氨酸。组氨酸侧链是咪唑环，色氨酸是稠合的吲哚环；两者都是芳香杂环侧链。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "histidine",
+        "tryptophan"
+      ],
+      "image": {
+        "src": "assets/structure-renders/histidine-histidine-neutral.png",
+        "alt": "组氨酸与色氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q147",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是精氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是赖氨酸。赖氨酸侧链末端为氨基 –NH₂，精氨酸为胍基 –NH–C(=NH)–NH₂，碱性更强。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "lysine",
+        "arginine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/lysine-lysine-neutral.png",
+        "alt": "赖氨酸与精氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q148",
+      "type": "true-false",
+      "question": "下面这幅结构式画的是丙氨酸。",
+      "answer": false,
+      "points": 2,
+      "explanation": "图中实际是甘氨酸。甘氨酸侧链只有一个氢、没有手性中心；丙氨酸侧链为甲基，α 碳为手性中心。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "discrimination",
+        "glycine",
+        "alanine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/glycine-glycine-neutral.png",
+        "alt": "甘氨酸与丙氨酸辨析用的结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q149",
+      "type": "true-false",
+      "question": "甘氨酸的侧链只有一个氢原子，因此它的 α 碳不是手性中心。",
+      "answer": true,
+      "points": 1,
+      "explanation": "甘氨酸 α 碳连有两个氢，不是手性中心；它是 20 种标准氨基酸中唯一无手性的成员。",
+      "difficulty": "easy",
+      "tags": [
+        "glycine",
+        "chirality"
+      ]
+    },
+    {
+      "id": "q150",
+      "type": "true-false",
+      "question": "所有标准蛋白质氨基酸都是 L-构型。",
+      "answer": true,
+      "points": 1,
+      "explanation": "除甘氨酸外，标准氨基酸的 α 碳均为 L-构型（S 构型，半胱氨酸因硫的优先次序为 R）。",
+      "difficulty": "medium",
+      "tags": [
+        "L-configuration",
+        "stereochemistry"
+      ]
+    },
+    {
+      "id": "q151",
+      "type": "true-false",
+      "question": "半胱氨酸的 α 碳在 CIP 规则下也标记为 S 构型。",
+      "answer": false,
+      "points": 3,
+      "explanation": "半胱氨酸侧链含硫，硫的优先次序高于羧基碳，因此其 α 碳为 R 构型，但仍是 L-氨基酸。",
+      "difficulty": "challenging",
+      "tags": [
+        "cysteine",
+        "CIP",
+        "R/S"
+      ]
+    },
+    {
+      "id": "q152",
+      "type": "true-false",
+      "question": "脯氨酸是唯一侧链与 α 氨基成环的标准氨基酸。",
+      "answer": true,
+      "points": 1,
+      "explanation": "脯氨酸的侧链与 α 氮形成五元吡咯烷环，属于亚氨基酸，其 α 氮是仲胺。",
+      "difficulty": "medium",
+      "tags": [
+        "proline",
+        "secondary amine"
+      ]
+    },
+    {
+      "id": "q153",
+      "type": "true-false",
+      "question": "一字母缩写 G 对应谷氨酸（glutamate）。",
+      "answer": false,
+      "points": 1,
+      "explanation": "G 是甘氨酸（glycine）；谷氨酸的三字母缩写是 Glu、单字母是 E。",
+      "difficulty": "easy",
+      "tags": [
+        "one-letter code",
+        "glycine",
+        "glutamate"
+      ]
+    },
+    {
+      "id": "q154",
+      "type": "true-false",
+      "question": "三字母缩写 Asn 与 Asp 的区别在于侧链末端是酰胺还是羧基。",
+      "answer": true,
+      "points": 1,
+      "explanation": "Asn 是天冬酰胺（酰胺侧链），Asp 是天冬氨酸（羧基侧链）。",
+      "difficulty": "medium",
+      "tags": [
+        "Asn",
+        "Asp"
+      ]
+    },
+    {
+      "id": "q155",
+      "type": "true-false",
+      "question": "单字母缩写 K 与三字母缩写 Lys 指同一个氨基酸。",
+      "answer": true,
+      "points": 1,
+      "explanation": "K 是赖氨酸 lysine 的单字母缩写，不能与 His 的 H 混淆。",
+      "difficulty": "medium",
+      "tags": [
+        "Lys",
+        "K"
+      ]
+    },
+    {
+      "id": "q156",
+      "type": "true-false",
+      "question": "单字母缩写 W 对应酪氨酸。",
+      "answer": false,
+      "points": 1,
+      "explanation": "W 是色氨酸（tryptophan）；酪氨酸是 Y。",
+      "difficulty": "medium",
+      "tags": [
+        "Trp",
+        "W",
+        "Tyr"
+      ]
+    },
+    {
+      "id": "q157",
+      "type": "true-false",
+      "question": "硒代半胱氨酸与吡咯赖氨酸都是通过终止密码子重编码插入到蛋白质中的。",
+      "answer": true,
+      "points": 3,
+      "explanation": "硒代半胱氨酸由 UGA 密码子重编码插入，吡咯赖氨酸由 UAG 重编码插入，二者都不属于 20 种标准氨基酸。",
+      "difficulty": "challenging",
+      "tags": [
+        "selenocysteine",
+        "pyrrolysine",
+        "recoding"
+      ]
+    },
+    {
+      "id": "q158",
+      "type": "true-false",
+      "question": "甲硫氨酸与半胱氨酸都含硫，但甲硫氨酸的硫在硫醚中而半胱氨酸的硫在巯基中。",
+      "answer": true,
+      "points": 2,
+      "explanation": "甲硫氨酸侧链是 –CH₂CH₂SCH₃（硫醚），半胱氨酸是 –CH₂SH（巯基）；只有巯基容易氧化成二硫键。",
+      "difficulty": "hard",
+      "tags": [
+        "methionine",
+        "cysteine",
+        "sulfur"
+      ]
+    },
+    {
+      "id": "q159",
+      "type": "true-false",
+      "question": "20 种标准氨基酸都具有相同的三字母与单字母缩写体系，且没有例外。",
+      "answer": true,
+      "points": 1,
+      "explanation": "IUPAC-IUBMB 为 20 种标准氨基酸各规定了唯一的三字母和单字母缩写；Sec（U）与 Pyl（O）是后来为第 21、22 种氨基酸补充的。",
+      "difficulty": "medium",
+      "tags": [
+        "nomenclature",
+        "IUPAC"
+      ]
+    },
+    {
+      "id": "q160",
+      "type": "true-false",
+      "question": "组氨酸的单字母缩写 H 与元素氢的符号含义相同，因此可以混用。",
+      "answer": false,
+      "points": 2,
+      "explanation": "H 在氨基酸序列语境中代表组氨酸，与化学元素符号 H（氢）语义不同；书写氨基酸序列时不应混淆。",
+      "difficulty": "hard",
+      "tags": [
+        "histidine",
+        "H"
+      ]
+    },
+    {
+      "id": "q161",
+      "type": "true-false",
+      "question": "天冬氨酸与谷氨酸的侧链都带羧基，在生理 pH 下通常带负电。",
+      "answer": true,
+      "points": 1,
+      "explanation": "Asp 与 Glu 侧链羧基的 pKa 约为 3.9 和 4.1，在 pH 7 时基本去质子化，带负电。",
+      "difficulty": "medium",
+      "tags": [
+        "Asp",
+        "Glu",
+        "charge"
+      ]
+    },
+    {
+      "id": "q162",
+      "type": "true-false",
+      "question": "赖氨酸与精氨酸的侧链都是含氮碱基，在生理 pH 下通常带正电。",
+      "answer": true,
+      "points": 1,
+      "explanation": "Lys 侧链氨基 pKa 约 10.5，Arg 胍基 pKa 约 12.5，在 pH 7 时都质子化带正电。",
+      "difficulty": "medium",
+      "tags": [
+        "Lys",
+        "Arg",
+        "charge"
+      ]
+    },
+    {
+      "id": "q163",
+      "type": "true-false",
+      "question": "图中给出的是 L-丙氨酸，因为楔线表示甲基指向纸面外。",
+      "answer": false,
+      "points": 3,
+      "explanation": "判断 L/D 要看 α 碳四个取代基的空间排布（如 Fischer 投影中氨基在左），不能只看某一条楔线的方向。",
+      "difficulty": "challenging",
+      "tags": [
+        "alanine",
+        "wedge",
+        "L/D"
+      ]
+    },
+    {
+      "id": "q164",
+      "type": "multiple-choice",
+      "question": "关于甘氨酸（Gly，G），下列叙述正确的是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "它是 20 种标准氨基酸中唯一没有手性中心的"
+        },
+        {
+          "id": "B",
+          "text": "它的侧链是一个甲基"
+        },
+        {
+          "id": "C",
+          "text": "它的单字母缩写是 G"
+        },
+        {
+          "id": "D",
+          "text": "它的三字母缩写是 Glu"
+        }
+      ],
+      "answers": [
+        "A",
+        "C"
+      ],
+      "points": 1,
+      "explanation": "甘氨酸侧链只有一个氢，没有手性中心；缩写为 Gly / G。侧链是甲基的是丙氨酸，Glu 是谷氨酸。",
+      "difficulty": "medium",
+      "tags": [
+        "glycine",
+        "chirality",
+        "code"
+      ]
+    },
+    {
+      "id": "q165",
+      "type": "multiple-choice",
+      "question": "下列哪些氨基酸的侧链含硫或硒？",
+      "options": [
+        {
+          "id": "A",
+          "text": "半胱氨酸 Cys"
+        },
+        {
+          "id": "B",
+          "text": "甲硫氨酸 Met"
+        },
+        {
+          "id": "C",
+          "text": "硒代半胱氨酸 Sec"
+        },
+        {
+          "id": "D",
+          "text": "丝氨酸 Ser"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "Cys 含巯基 –SH，Met 含硫醚 –SCH₃，Sec 含硒醇 –SeH。丝氨酸侧链是羟基 –OH，不含硫或硒。",
+      "difficulty": "hard",
+      "tags": [
+        "cysteine",
+        "methionine",
+        "selenocysteine",
+        "sulfur"
+      ]
+    },
+    {
+      "id": "q166",
+      "type": "multiple-choice",
+      "question": "下列配对中，缩写与中文名对应正确的有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Asn — 天冬酰胺"
+        },
+        {
+          "id": "B",
+          "text": "Gln — 谷氨酰胺"
+        },
+        {
+          "id": "C",
+          "text": "Tyr — 色氨酸"
+        },
+        {
+          "id": "D",
+          "text": "Pro — 脯氨酸"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "points": 2,
+      "explanation": "Tyr 是酪氨酸，色氨酸的三字母缩写是 Trp；其余三项都正确。",
+      "difficulty": "hard",
+      "tags": [
+        "three-letter code",
+        "Asn",
+        "Gln",
+        "Pro"
+      ]
+    },
+    {
+      "id": "q167",
+      "type": "multiple-choice",
+      "question": "下列配对中，单字母缩写与三字母缩写对应正确的有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "K — Lys"
+        },
+        {
+          "id": "B",
+          "text": "W — Trp"
+        },
+        {
+          "id": "C",
+          "text": "D — Asp"
+        },
+        {
+          "id": "D",
+          "text": "N — Asn"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "points": 2,
+      "explanation": "四项都正确：K/Lys、W/Trp、D/Asp、N/Asn。注意 N 是天冬酰胺而不是天冬氨酸（Asp 为 D）。",
+      "difficulty": "hard",
+      "tags": [
+        "one-letter code",
+        "three-letter code"
+      ]
+    },
+    {
+      "id": "q168",
+      "type": "multiple-choice",
+      "question": "下列关于脯氨酸（Pro，P）的叙述，正确的有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "它的侧链与 α 氨基成环"
+        },
+        {
+          "id": "B",
+          "text": "它的 α 氮是仲胺"
+        },
+        {
+          "id": "C",
+          "text": "它的单字母缩写是 P"
+        },
+        {
+          "id": "D",
+          "text": "它的侧链是芳香性的"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "脯氨酸侧链与 α 氨基构成五元吡咯烷环，α 氮为仲胺，缩写 Pro / P；侧链饱和、无芳香性。",
+      "difficulty": "hard",
+      "tags": [
+        "proline",
+        "ring",
+        "code"
+      ]
+    },
+    {
+      "id": "q169",
+      "type": "multiple-choice",
+      "question": "关于芳香族氨基酸，下列叙述正确的有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "苯丙氨酸 Phe 的侧链是苄基"
+        },
+        {
+          "id": "B",
+          "text": "酪氨酸 Tyr 的侧链含酚羟基"
+        },
+        {
+          "id": "C",
+          "text": "色氨酸 Trp 的侧链是吲哚环"
+        },
+        {
+          "id": "D",
+          "text": "组氨酸 His 的侧链是苯环"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "Phe 为 –CH₂C₆H₅，Tyr 在此基础上对位带 –OH，Trp 为 –CH₂-吲哚。组氨酸侧链是咪唑环，不是苯环。",
+      "difficulty": "hard",
+      "tags": [
+        "Phe",
+        "Tyr",
+        "Trp",
+        "His",
+        "aromatic"
+      ]
+    },
+    {
+      "id": "q170",
+      "type": "multiple-choice",
+      "question": "下列哪些氨基酸在生理 pH 下侧链带正电？",
+      "options": [
+        {
+          "id": "A",
+          "text": "赖氨酸 Lys"
+        },
+        {
+          "id": "B",
+          "text": "精氨酸 Arg"
+        },
+        {
+          "id": "C",
+          "text": "组氨酸 His"
+        },
+        {
+          "id": "D",
+          "text": "谷氨酸 Glu"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 3,
+      "explanation": "Lys、Arg 侧链在 pH 7 时几乎完全质子化；His 咪唑 pKa 约 6.0，部分质子化、常计入碱性氨基酸。Glu 侧链带负电。",
+      "difficulty": "challenging",
+      "tags": [
+        "Lys",
+        "Arg",
+        "His",
+        "charge"
+      ]
+    },
+    {
+      "id": "q171",
+      "type": "multiple-choice",
+      "question": "关于一字母缩写容易混淆的组合，下列判断正确的有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "G 是甘氨酸，不是谷氨酸"
+        },
+        {
+          "id": "B",
+          "text": "E 是谷氨酸"
+        },
+        {
+          "id": "C",
+          "text": "Q 是谷氨酰胺"
+        },
+        {
+          "id": "D",
+          "text": "Y 是色氨酸"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "G/Gly 甘氨酸、E/Glu 谷氨酸、Q/Gln 谷氨酰胺。Y 是酪氨酸，色氨酸是 W。",
+      "difficulty": "hard",
+      "tags": [
+        "one-letter code",
+        "confusable pairs"
+      ]
+    },
+    {
+      "id": "q172",
+      "type": "multiple-choice",
+      "question": "下列结构中侧链含有羟基（–OH）的氨基酸有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "丝氨酸 Ser"
+        },
+        {
+          "id": "B",
+          "text": "苏氨酸 Thr"
+        },
+        {
+          "id": "C",
+          "text": "酪氨酸 Tyr"
+        },
+        {
+          "id": "D",
+          "text": "丙氨酸 Ala"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "points": 2,
+      "explanation": "Ser、Thr 的脂肪族侧链带羟基，Tyr 的酚羟基也属于羟基；丙氨酸侧链是甲基。",
+      "difficulty": "hard",
+      "tags": [
+        "Ser",
+        "Thr",
+        "Tyr",
+        "hydroxyl"
+      ]
+    },
+    {
+      "id": "q173",
+      "type": "multiple-choice",
+      "question": "关于硒代半胱氨酸（Sec，U）与吡咯赖氨酸（Pyl，O），下列叙述正确的有……",
+      "options": [
+        {
+          "id": "A",
+          "text": "它们不属于 20 种标准氨基酸"
+        },
+        {
+          "id": "B",
+          "text": "Sec 常被称为第 21 种蛋白质氨基酸"
+        },
+        {
+          "id": "C",
+          "text": "Pyl 常被称为第 22 种蛋白质氨基酸"
+        },
+        {
+          "id": "D",
+          "text": "它们的单字母缩写分别是 U 和 O"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "points": 3,
+      "explanation": "二者都是通过终止密码子重编码插入的额外蛋白质氨基酸，缩写分别为 Sec/U 与 Pyl/O。",
+      "difficulty": "challenging",
+      "tags": [
+        "selenocysteine",
+        "pyrrolysine",
+        "recoding"
+      ]
+    },
+    {
+      "id": "q174",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的三字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Thr"
+        },
+        {
+          "id": "B",
+          "text": "Cys"
+        },
+        {
+          "id": "C",
+          "text": "Ala"
+        },
+        {
+          "id": "D",
+          "text": "Ser"
+        }
+      ],
+      "answer": "D",
+      "points": 1,
+      "explanation": "丝氨酸的三字母缩写是 Ser，单字母缩写是 S。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "three-letter code",
+        "serine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/serine-serine-neutral.png",
+        "alt": "丝氨酸（serine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q175",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的三字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "His"
+        },
+        {
+          "id": "B",
+          "text": "Asn"
+        },
+        {
+          "id": "C",
+          "text": "Lys"
+        },
+        {
+          "id": "D",
+          "text": "Arg"
+        }
+      ],
+      "answer": "C",
+      "points": 1,
+      "explanation": "赖氨酸的三字母缩写是 Lys，单字母缩写是 K。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "structure",
+        "three-letter code",
+        "lysine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/lysine-lysine-neutral.png",
+        "alt": "赖氨酸（lysine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q176",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的三字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Glu"
+        },
+        {
+          "id": "B",
+          "text": "Asn"
+        },
+        {
+          "id": "C",
+          "text": "Asp"
+        },
+        {
+          "id": "D",
+          "text": "Gln"
+        }
+      ],
+      "answer": "B",
+      "points": 2,
+      "explanation": "天冬酰胺的三字母缩写是 Asn，单字母缩写是 N。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "three-letter code",
+        "asparagine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/asparagine-asparagine-neutral.png",
+        "alt": "天冬酰胺（asparagine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q177",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的三字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trp"
+        },
+        {
+          "id": "B",
+          "text": "Tyr"
+        },
+        {
+          "id": "C",
+          "text": "Phe"
+        },
+        {
+          "id": "D",
+          "text": "His"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "色氨酸的三字母缩写是 Trp，单字母缩写是 W。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "three-letter code",
+        "tryptophan"
+      ],
+      "image": {
+        "src": "assets/structure-renders/tryptophan-tryptophan-neutral.png",
+        "alt": "色氨酸（tryptophan）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q178",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的三字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "His"
+        },
+        {
+          "id": "B",
+          "text": "Lys"
+        },
+        {
+          "id": "C",
+          "text": "Trp"
+        },
+        {
+          "id": "D",
+          "text": "Arg"
+        }
+      ],
+      "answer": "A",
+      "points": 2,
+      "explanation": "组氨酸的三字母缩写是 His，单字母缩写是 H。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "structure",
+        "three-letter code",
+        "histidine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/histidine-histidine-neutral.png",
+        "alt": "组氨酸（histidine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q179",
+      "type": "single-choice",
+      "question": "下图所示氨基酸的三字母缩写是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cys"
+        },
+        {
+          "id": "B",
+          "text": "Ser"
+        },
+        {
+          "id": "C",
+          "text": "Met"
+        },
+        {
+          "id": "D",
+          "text": "Sec"
+        }
+      ],
+      "answer": "D",
+      "points": 3,
+      "explanation": "硒代半胱氨酸的三字母缩写是 Sec，单字母缩写是 U。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "structure",
+        "three-letter code",
+        "selenocysteine"
+      ],
+      "image": {
+        "src": "assets/structure-renders/selenocysteine-selenocysteine-neutral.png",
+        "alt": "硒代半胱氨酸（selenocysteine）的骨架结构式",
+        "caption": "L-构型游离氨基酸骨架式；由 Chemical Structure Renderer 依据显式 SMILES 渲染。"
+      }
+    },
+    {
+      "id": "q180",
+      "type": "fill-in-the-blank",
+      "question": "写出「丙氨酸」（alanine）的单字母缩写：____。",
+      "answer": "A",
+      "acceptableAnswers": [
+        "A",
+        "a"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "丙氨酸（alanine）的三字母缩写为 Ala，单字母缩写为 A。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "alanine"
+      ]
+    },
+    {
+      "id": "q181",
+      "type": "fill-in-the-blank",
+      "question": "写出「缬氨酸」（valine）的单字母缩写：____。",
+      "answer": "V",
+      "acceptableAnswers": [
+        "V",
+        "v"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "缬氨酸（valine）的三字母缩写为 Val，单字母缩写为 V。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "valine"
+      ]
+    },
+    {
+      "id": "q182",
+      "type": "fill-in-the-blank",
+      "question": "写出「亮氨酸」（leucine）的单字母缩写：____。",
+      "answer": "L",
+      "acceptableAnswers": [
+        "L",
+        "l"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "亮氨酸（leucine）的三字母缩写为 Leu，单字母缩写为 L。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "leucine"
+      ]
+    },
+    {
+      "id": "q183",
+      "type": "fill-in-the-blank",
+      "question": "写出「异亮氨酸」（isoleucine）的单字母缩写：____。",
+      "answer": "I",
+      "acceptableAnswers": [
+        "I",
+        "i"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "异亮氨酸（isoleucine）的三字母缩写为 Ile，单字母缩写为 I。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "isoleucine"
+      ]
+    },
+    {
+      "id": "q184",
+      "type": "fill-in-the-blank",
+      "question": "写出「脯氨酸」（proline）的单字母缩写：____。",
+      "answer": "P",
+      "acceptableAnswers": [
+        "P",
+        "p"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "脯氨酸（proline）的三字母缩写为 Pro，单字母缩写为 P。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "proline"
+      ]
+    },
+    {
+      "id": "q185",
+      "type": "fill-in-the-blank",
+      "question": "写出「苯丙氨酸」（phenylalanine）的单字母缩写：____。",
+      "answer": "F",
+      "acceptableAnswers": [
+        "F",
+        "f"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "苯丙氨酸（phenylalanine）的三字母缩写为 Phe，单字母缩写为 F。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "phenylalanine"
+      ]
+    },
+    {
+      "id": "q186",
+      "type": "fill-in-the-blank",
+      "question": "写出「色氨酸」（tryptophan）的单字母缩写：____。",
+      "answer": "W",
+      "acceptableAnswers": [
+        "W",
+        "w"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "色氨酸（tryptophan）的三字母缩写为 Trp，单字母缩写为 W。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "tryptophan"
+      ]
+    },
+    {
+      "id": "q187",
+      "type": "fill-in-the-blank",
+      "question": "写出「酪氨酸」（tyrosine）的单字母缩写：____。",
+      "answer": "Y",
+      "acceptableAnswers": [
+        "Y",
+        "y"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "酪氨酸（tyrosine）的三字母缩写为 Tyr，单字母缩写为 Y。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "tyrosine"
+      ]
+    },
+    {
+      "id": "q188",
+      "type": "fill-in-the-blank",
+      "question": "写出「丝氨酸」（serine）的单字母缩写：____。",
+      "answer": "S",
+      "acceptableAnswers": [
+        "S",
+        "s"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "丝氨酸（serine）的三字母缩写为 Ser，单字母缩写为 S。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "serine"
+      ]
+    },
+    {
+      "id": "q189",
+      "type": "fill-in-the-blank",
+      "question": "写出「苏氨酸」（threonine）的单字母缩写：____。",
+      "answer": "T",
+      "acceptableAnswers": [
+        "T",
+        "t"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "苏氨酸（threonine）的三字母缩写为 Thr，单字母缩写为 T。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "threonine"
+      ]
+    },
+    {
+      "id": "q190",
+      "type": "fill-in-the-blank",
+      "question": "写出「半胱氨酸」（cysteine）的单字母缩写：____。",
+      "answer": "C",
+      "acceptableAnswers": [
+        "C",
+        "c"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "半胱氨酸（cysteine）的三字母缩写为 Cys，单字母缩写为 C。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "cysteine"
+      ]
+    },
+    {
+      "id": "q191",
+      "type": "fill-in-the-blank",
+      "question": "写出「甲硫氨酸」（methionine）的单字母缩写：____。",
+      "answer": "M",
+      "acceptableAnswers": [
+        "M",
+        "m"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "甲硫氨酸（methionine）的三字母缩写为 Met，单字母缩写为 M。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "methionine"
+      ]
+    },
+    {
+      "id": "q192",
+      "type": "fill-in-the-blank",
+      "question": "写出「天冬酰胺」（asparagine）的单字母缩写：____。",
+      "answer": "N",
+      "acceptableAnswers": [
+        "N",
+        "n"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "天冬酰胺（asparagine）的三字母缩写为 Asn，单字母缩写为 N。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "asparagine"
+      ]
+    },
+    {
+      "id": "q193",
+      "type": "fill-in-the-blank",
+      "question": "写出「谷氨酰胺」（glutamine）的单字母缩写：____。",
+      "answer": "Q",
+      "acceptableAnswers": [
+        "Q",
+        "q"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "谷氨酰胺（glutamine）的三字母缩写为 Gln，单字母缩写为 Q。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "glutamine"
+      ]
+    },
+    {
+      "id": "q194",
+      "type": "fill-in-the-blank",
+      "question": "写出「天冬氨酸」（aspartic-acid）的单字母缩写：____。",
+      "answer": "D",
+      "acceptableAnswers": [
+        "D",
+        "d"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "天冬氨酸（aspartic-acid）的三字母缩写为 Asp，单字母缩写为 D。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "aspartic-acid"
+      ]
+    },
+    {
+      "id": "q195",
+      "type": "fill-in-the-blank",
+      "question": "写出「谷氨酸」（glutamic-acid）的单字母缩写：____。",
+      "answer": "E",
+      "acceptableAnswers": [
+        "E",
+        "e"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "谷氨酸（glutamic-acid）的三字母缩写为 Glu，单字母缩写为 E。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "glutamic-acid"
+      ]
+    },
+    {
+      "id": "q196",
+      "type": "fill-in-the-blank",
+      "question": "写出「赖氨酸」（lysine）的单字母缩写：____。",
+      "answer": "K",
+      "acceptableAnswers": [
+        "K",
+        "k"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "赖氨酸（lysine）的三字母缩写为 Lys，单字母缩写为 K。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "lysine"
+      ]
+    },
+    {
+      "id": "q197",
+      "type": "fill-in-the-blank",
+      "question": "写出「精氨酸」（arginine）的单字母缩写：____。",
+      "answer": "R",
+      "acceptableAnswers": [
+        "R",
+        "r"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "精氨酸（arginine）的三字母缩写为 Arg，单字母缩写为 R。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "arginine"
+      ]
+    },
+    {
+      "id": "q198",
+      "type": "fill-in-the-blank",
+      "question": "写出「组氨酸」（histidine）的单字母缩写：____。",
+      "answer": "H",
+      "acceptableAnswers": [
+        "H",
+        "h"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "组氨酸（histidine）的三字母缩写为 His，单字母缩写为 H。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "identifier recall",
+        "histidine"
+      ]
+    },
+    {
+      "id": "q199",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Ala 对应的英文全名（不含空格）：____。",
+      "answer": "alanine",
+      "acceptableAnswers": [
+        "alanine",
+        "Alanine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Ala 的英文名是 alanine。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Ala"
+      ]
+    },
+    {
+      "id": "q200",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Val 对应的英文全名（不含空格）：____。",
+      "answer": "valine",
+      "acceptableAnswers": [
+        "valine",
+        "Valine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Val 的英文名是 valine。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Val"
+      ]
+    },
+    {
+      "id": "q201",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Leu 对应的英文全名（不含空格）：____。",
+      "answer": "leucine",
+      "acceptableAnswers": [
+        "leucine",
+        "Leucine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "Leu 的英文名是 leucine。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Leu"
+      ]
+    },
+    {
+      "id": "q202",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Ile 对应的英文全名（不含空格）：____。",
+      "answer": "isoleucine",
+      "acceptableAnswers": [
+        "isoleucine",
+        "Isoleucine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "Ile 的英文名是 isoleucine。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Ile"
+      ]
+    },
+    {
+      "id": "q203",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Pro 对应的英文全名（不含空格）：____。",
+      "answer": "proline",
+      "acceptableAnswers": [
+        "proline",
+        "Proline"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Pro 的英文名是 proline。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Pro"
+      ]
+    },
+    {
+      "id": "q204",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Phe 对应的英文全名（不含空格）：____。",
+      "answer": "phenylalanine",
+      "acceptableAnswers": [
+        "phenylalanine",
+        "Phenylalanine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "Phe 的英文名是 phenylalanine。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Phe"
+      ]
+    },
+    {
+      "id": "q205",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Trp 对应的英文全名（不含空格）：____。",
+      "answer": "tryptophan",
+      "acceptableAnswers": [
+        "tryptophan",
+        "Tryptophan"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "Trp 的英文名是 tryptophan。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Trp"
+      ]
+    },
+    {
+      "id": "q206",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Tyr 对应的英文全名（不含空格）：____。",
+      "answer": "tyrosine",
+      "acceptableAnswers": [
+        "tyrosine",
+        "Tyrosine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "Tyr 的英文名是 tyrosine。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Tyr"
+      ]
+    },
+    {
+      "id": "q207",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Ser 对应的英文全名（不含空格）：____。",
+      "answer": "serine",
+      "acceptableAnswers": [
+        "serine",
+        "Serine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Ser 的英文名是 serine。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Ser"
+      ]
+    },
+    {
+      "id": "q208",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Thr 对应的英文全名（不含空格）：____。",
+      "answer": "threonine",
+      "acceptableAnswers": [
+        "threonine",
+        "Threonine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "Thr 的英文名是 threonine。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Thr"
+      ]
+    },
+    {
+      "id": "q209",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Cys 对应的英文全名（不含空格）：____。",
+      "answer": "cysteine",
+      "acceptableAnswers": [
+        "cysteine",
+        "Cysteine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Cys 的英文名是 cysteine。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Cys"
+      ]
+    },
+    {
+      "id": "q210",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Met 对应的英文全名（不含空格）：____。",
+      "answer": "methionine",
+      "acceptableAnswers": [
+        "methionine",
+        "Methionine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Met 的英文名是 methionine。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Met"
+      ]
+    },
+    {
+      "id": "q211",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Asn 对应的英文全名（不含空格）：____。",
+      "answer": "asparagine",
+      "acceptableAnswers": [
+        "asparagine",
+        "Asparagine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Asn 的英文名是 asparagine。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Asn"
+      ]
+    },
+    {
+      "id": "q212",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Gln 对应的英文全名（不含空格）：____。",
+      "answer": "glutamine",
+      "acceptableAnswers": [
+        "glutamine",
+        "Glutamine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Gln 的英文名是 glutamine。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Gln"
+      ]
+    },
+    {
+      "id": "q213",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Asp 对应的英文全名（不含空格）：____。",
+      "answer": "asparticacid",
+      "acceptableAnswers": [
+        "asparticacid",
+        "aspartic acid",
+        "Aspartic acid"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Asp 的英文名是 aspartic acid。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Asp"
+      ]
+    },
+    {
+      "id": "q214",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Glu 对应的英文全名（不含空格）：____。",
+      "answer": "glutamicacid",
+      "acceptableAnswers": [
+        "glutamicacid",
+        "glutamic acid",
+        "Glutamic acid"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "Glu 的英文名是 glutamic acid。",
+      "difficulty": "challenging",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Glu"
+      ]
+    },
+    {
+      "id": "q215",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Lys 对应的英文全名（不含空格）：____。",
+      "answer": "lysine",
+      "acceptableAnswers": [
+        "lysine",
+        "Lysine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Lys 的英文名是 lysine。",
+      "difficulty": "medium",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Lys"
+      ]
+    },
+    {
+      "id": "q216",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Arg 对应的英文全名（不含空格）：____。",
+      "answer": "arginine",
+      "acceptableAnswers": [
+        "arginine",
+        "Arginine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "Arg 的英文名是 arginine。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Arg"
+      ]
+    },
+    {
+      "id": "q217",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 His 对应的英文全名（不含空格）：____。",
+      "answer": "histidine",
+      "acceptableAnswers": [
+        "histidine",
+        "Histidine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 2,
+      "explanation": "His 的英文名是 histidine。",
+      "difficulty": "hard",
+      "tags": [
+        "amino acid",
+        "English name",
+        "His"
+      ]
+    },
+    {
+      "id": "q218",
+      "type": "fill-in-the-blank",
+      "question": "写出三字母缩写 Gly 对应的英文全名（不含空格）：____。",
+      "answer": "glycine",
+      "acceptableAnswers": [
+        "glycine",
+        "Glycine"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 1,
+      "explanation": "Gly 的英文名是 glycine。",
+      "difficulty": "easy",
+      "tags": [
+        "amino acid",
+        "English name",
+        "Gly"
+      ]
+    }
+  ]
+}

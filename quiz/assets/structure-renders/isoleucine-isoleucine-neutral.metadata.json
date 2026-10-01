@@ -1,0 +1,282 @@
+{
+  "formula": "C6H13NO2",
+  "relative_molecular_mass": 131.175,
+  "exact_mass": 131.094628656,
+  "net_charge": 0,
+  "atom_count": 9,
+  "heavy_atom_count": 9,
+  "atom_count_with_hydrogens": 22,
+  "canonical_isomeric_smiles": "CC[C@H](C)[C@H](N)C(=O)O",
+  "cxsmiles": "CC[C@H](C)[C@H](N)C(=O)O",
+  "inchikey": "AGPKZVBTJJNPAG-WHFBIAKZSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "S"
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "S"
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 6,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 7,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 8,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 4,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 4,
+      "end": 5,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 6,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 6,
+      "end": 7,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 6,
+      "end": 8,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 1,
+      "specified": "Specified",
+      "descriptor": "Tet_CW"
+    },
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 2,
+      "specified": "Specified",
+      "descriptor": "Tet_CW"
+    }
+  ],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "aa-isoleucine",
+    "chinese_name": "异亮氨酸",
+    "english_name": "isoleucine",
+    "structure": {
+      "format": "smiles",
+      "value": "N[C@@H]([C@@H](C)CC)C(=O)O"
+    },
+    "protonation": "Neutral free amino acid; alpha-amino and alpha-carboxyl groups uncharged (charge 0)",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "C6H13NO2",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "N[C@@H]([C@@H](C)CC)C(=O)O",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 8,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 1,
+    "stereocenter_count": 2,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      591,
+      326,
+      1088,
+      795
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "aa-isoleucine-isoleucine-neutral.svg",
+      "sha256": "ac03772df7f2b2c9a08ada5a7fc521e0ee28b5bddbb07b0801dfb5493d0c2803"
+    },
+    "png": {
+      "path": "aa-isoleucine-isoleucine-neutral.png",
+      "sha256": "a25eb4a1617d90b2fb4e3793819a57ca50e13594e4b7d9309783ee2c7b67b053"
+    },
+    "mol": {
+      "path": "aa-isoleucine-isoleucine-neutral.mol",
+      "sha256": "d33d9f24e60332648173ade89694e866fcbb7073ea477064541f6fb2a582caef"
+    }
+  }
+}

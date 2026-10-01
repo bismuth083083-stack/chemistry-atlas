@@ -1742,6 +1742,666 @@
         "net_charge": 0,
         "relative_molecular_mass": 112.17
       }
+    },
+    {
+      "id": "aa-glycine",
+      "chinese_name": "甘氨酸",
+      "english_name": "glycine",
+      "structure": {
+        "format": "smiles",
+        "value": "NCC(=O)O"
+      },
+      "protonation": "Neutral free amino acid; alpha-amino and alpha-carboxyl groups uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C2H5NO2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-alanine",
+      "chinese_name": "丙氨酸",
+      "english_name": "alanine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](C)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; alpha-amino and alpha-carboxyl groups uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C3H7NO2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-serine",
+      "chinese_name": "丝氨酸",
+      "english_name": "serine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CO)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; side-chain hydroxyl uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C3H7NO3",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-cysteine",
+      "chinese_name": "半胱氨酸",
+      "english_name": "cysteine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CS)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; side-chain thiol uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C3H7NO2S",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-threonine",
+      "chinese_name": "苏氨酸",
+      "english_name": "threonine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H]([C@@H](C)O)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; side-chain hydroxyl uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C4H9NO3",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-valine",
+      "chinese_name": "缬氨酸",
+      "english_name": "valine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](C(C)C)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; alpha-amino and alpha-carboxyl groups uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C5H11NO2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-leucine",
+      "chinese_name": "亮氨酸",
+      "english_name": "leucine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CC(C)C)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; alpha-amino and alpha-carboxyl groups uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C6H13NO2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-isoleucine",
+      "chinese_name": "异亮氨酸",
+      "english_name": "isoleucine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H]([C@@H](C)CC)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; alpha-amino and alpha-carboxyl groups uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C6H13NO2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-methionine",
+      "chinese_name": "甲硫氨酸",
+      "english_name": "methionine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CCSC)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; side-chain thioether uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C5H11NO2S",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-proline",
+      "chinese_name": "脯氨酸",
+      "english_name": "proline",
+      "structure": {
+        "format": "smiles",
+        "value": "OC(=O)[C@@H]1CCCN1"
+      },
+      "protonation": "Neutral free amino acid; secondary amine and carboxyl uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C5H9NO2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-phenylalanine",
+      "chinese_name": "苯丙氨酸",
+      "english_name": "phenylalanine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](Cc1ccccc1)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; aromatic side chain uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C9H11NO2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-tyrosine",
+      "chinese_name": "酪氨酸",
+      "english_name": "tyrosine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](Cc1ccc(O)cc1)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; phenolic hydroxyl uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C9H11NO3",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-tryptophan",
+      "chinese_name": "色氨酸",
+      "english_name": "tryptophan",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; indole NH uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C11H12N2O2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-asparagine",
+      "chinese_name": "天冬酰胺",
+      "english_name": "asparagine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CC(N)=O)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; side-chain amide uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C4H8N2O3",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-glutamine",
+      "chinese_name": "谷氨酰胺",
+      "english_name": "glutamine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CCC(N)=O)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; side-chain amide uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C5H10N2O3",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-aspartic-acid",
+      "chinese_name": "天冬氨酸",
+      "english_name": "aspartic-acid",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CC(=O)O)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid drawn with both carboxyls protonated (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; acidic side chain shown in its neutral diacid form",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C4H7NO4",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-glutamic-acid",
+      "chinese_name": "谷氨酸",
+      "english_name": "glutamic-acid",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CCC(=O)O)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid drawn with both carboxyls protonated (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; acidic side chain shown in its neutral diacid form",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C5H9NO4",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-lysine",
+      "chinese_name": "赖氨酸",
+      "english_name": "lysine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CCCCN)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; both amino groups uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; basic side chain shown in its neutral form",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C6H14N2O2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-arginine",
+      "chinese_name": "精氨酸",
+      "english_name": "arginine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CCC/N=C(\\N)N)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; guanidine group drawn neutral as the E-imine tautomer (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; basic side chain shown in its neutral form",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C6H14N4O2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-histidine",
+      "chinese_name": "组氨酸",
+      "english_name": "histidine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](Cc1c[nH]cn1)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; imidazole drawn with N1-H tautomer (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; imidazole N1-H tautomer",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C6H9N3O2",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-selenocysteine",
+      "chinese_name": "硒代半胱氨酸",
+      "english_name": "selenocysteine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](C[SeH])C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; selenol uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        420,
+        280
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; 21st proteinogenic amino acid",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C3H7NO2Se",
+        "net_charge": 0
+      }
+    },
+    {
+      "id": "aa-pyrrolysine",
+      "chinese_name": "吡咯赖氨酸",
+      "english_name": "pyrrolysine",
+      "structure": {
+        "format": "smiles",
+        "value": "N[C@@H](CCCCNC(=O)[C@H]1N=C(C)CC1)C(=O)O"
+      },
+      "protonation": "Neutral free amino acid; pyrroline imine and amide uncharged (charge 0)",
+      "stereochemistry": "explicit",
+      "image_type": "neutral",
+      "show_carbon_numbers": false,
+      "show_lone_pairs": false,
+      "group": null,
+      "background": "transparent",
+      "size": [
+        520,
+        320
+      ],
+      "png_scale": 4,
+      "source": {
+        "type": "authored-educational-structure",
+        "reference": "IUPAC-IUBMB amino acid nomenclature; 22nd proteinogenic amino acid",
+        "accessed": "2026-09-20"
+      },
+      "expected": {
+        "formula": "C12H21N3O3",
+        "net_charge": 0
+      }
     }
   ],
   "groups": [

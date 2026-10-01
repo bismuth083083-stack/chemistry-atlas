@@ -1,0 +1,258 @@
+{
+  "formula": "C5H11NO2",
+  "relative_molecular_mass": 117.14799999999998,
+  "exact_mass": 117.078978592,
+  "net_charge": 0,
+  "atom_count": 8,
+  "heavy_atom_count": 8,
+  "atom_count_with_hydrogens": 19,
+  "canonical_isomeric_smiles": "CC(C)[C@H](N)C(=O)O",
+  "cxsmiles": "CC(C)[C@H](N)C(=O)O",
+  "inchikey": "KZSNJWFQEVHDMF-BYPYZUCNSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "S"
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 6,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 7,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 4,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 5,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 6,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 7,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 1,
+      "specified": "Specified",
+      "descriptor": "Tet_CW"
+    }
+  ],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "aa-valine",
+    "chinese_name": "缬氨酸",
+    "english_name": "valine",
+    "structure": {
+      "format": "smiles",
+      "value": "N[C@@H](C(C)C)C(=O)O"
+    },
+    "protonation": "Neutral free amino acid; alpha-amino and alpha-carboxyl groups uncharged (charge 0)",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "C5H11NO2",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "N[C@@H](C(C)C)C(=O)O",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 7,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 1,
+    "stereocenter_count": 1,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      591,
+      330,
+      1088,
+      792
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "aa-valine-valine-neutral.svg",
+      "sha256": "29bafb10a26417b95ad7ce599253bb86b30d0c1a8d334be82543acf702b8fdd1"
+    },
+    "png": {
+      "path": "aa-valine-valine-neutral.png",
+      "sha256": "211771cc4a2a3ce453fcea5fa5c2cf25789eef3816799512ec1f05bbe367b125"
+    },
+    "mol": {
+      "path": "aa-valine-valine-neutral.mol",
+      "sha256": "5386582475124f3f1b469698797433f0bb94cb5bc757017336d02ffa27cfc4ed"
+    }
+  }
+}

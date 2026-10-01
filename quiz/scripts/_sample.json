@@ -1,0 +1,92 @@
+{
+  "selection": {
+    "mode": "question-bank",
+    "counts": {
+      "single-choice": 10,
+      "multiple-choice": 4,
+      "true-false": 4,
+      "fill-in-the-blank": 4
+    }
+  },
+  "sample_with_image": [
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "理想化的 BeCl₂ 构型是……",
+      "options": [
+        {
+          "id": "A",
+          "text": "线形"
+        },
+        {
+          "id": "B",
+          "text": "折线形"
+        },
+        {
+          "id": "C",
+          "text": "平面三角形"
+        },
+        {
+          "id": "D",
+          "text": "四面体"
+        }
+      ],
+      "answer": "A",
+      "points": 1,
+      "explanation": "Be 周围有两个成键电子域、没有孤对电子，AX₂ 对应线形。",
+      "difficulty": "easy",
+      "tags": [
+        "BeCl2",
+        "linear"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-becl2-beryllium-dichloride-neutral.png",
+        "alt": "二氯化铍的线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    }
+  ],
+  "sample_fill": [
+    {
+      "id": "q035",
+      "type": "fill-in-the-blank",
+      "question": "AX₂E₂ 的电子域几何是____。",
+      "answer": "四面体",
+      "acceptableAnswers": [
+        "四面体",
+        "tetrahedral"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      },
+      "points": 3,
+      "explanation": "四个电子域尽量分开，构成四面体电子域几何；H₂O 的原子构型则是折线形。",
+      "difficulty": "challenging",
+      "tags": [
+        "AX2E2",
+        "electron-domain geometry"
+      ],
+      "image": {
+        "src": "assets/structure-renders/symmetry-water-water-neutral.png",
+        "alt": "水的折线形结构示意图",
+        "caption": "由 Chemical Structure Renderer 根据清晰的 SMILES 输入渲染。"
+      }
+    }
+  ],
+  "question_keys": [
+    "acceptableAnswers",
+    "answer",
+    "answers",
+    "difficulty",
+    "explanation",
+    "grading",
+    "id",
+    "image",
+    "options",
+    "points",
+    "question",
+    "tags",
+    "type"
+  ]
+}

@@ -1,0 +1,14 @@
+.DS_Store
+*.tar.gz
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.pyc
+
+# Scratch / intermediate render output
+# The published copies live in quiz/assets/structure-renders and quiz/dist/assets/structures.
+quiz/scripts/_aa-render/
+quiz/scripts/_aa-render-*/

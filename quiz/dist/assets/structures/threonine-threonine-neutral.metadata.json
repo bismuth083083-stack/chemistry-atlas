@@ -1,0 +1,264 @@
+{
+  "formula": "C4H9NO3",
+  "relative_molecular_mass": 119.11999999999998,
+  "exact_mass": 119.058243148,
+  "net_charge": 0,
+  "atom_count": 8,
+  "heavy_atom_count": 8,
+  "atom_count_with_hydrogens": 17,
+  "canonical_isomeric_smiles": "C[C@@H](O)[C@H](N)C(=O)O",
+  "cxsmiles": "C[C@@H](O)[C@H](N)C(=O)O",
+  "inchikey": "AYFVYJQAPQTCCC-GBXIJSLDSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "S"
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "R"
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 3,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 6,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 7,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 4,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 5,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 6,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 7,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 1,
+      "specified": "Specified",
+      "descriptor": "Tet_CW"
+    },
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 2,
+      "specified": "Specified",
+      "descriptor": "Tet_CW"
+    }
+  ],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "aa-threonine",
+    "chinese_name": "苏氨酸",
+    "english_name": "threonine",
+    "structure": {
+      "format": "smiles",
+      "value": "N[C@@H]([C@@H](C)O)C(=O)O"
+    },
+    "protonation": "Neutral free amino acid; side-chain hydroxyl uncharged (charge 0)",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "IUPAC-IUBMB amino acid nomenclature; standard amino acid set",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "C4H9NO3",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "N[C@@H]([C@@H](C)O)C(=O)O",
+  "topology": {
+    "ring_sizes": [],
+    "ring_count": 0,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 7,
+    "bridgehead_count": 0,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 0,
+    "double_bond_count": 1,
+    "stereocenter_count": 2,
+    "layout_mode": "constrained-fallback",
+    "template_id": null,
+    "template_score": 0,
+    "core_bond_length_deviation": 0,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      550,
+      341,
+      1128,
+      779
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "aa-threonine-threonine-neutral.svg",
+      "sha256": "57c6e3a0c838ead8078c46effd0f64910169a8ca42fe721bd2410f37e5ea9d9c"
+    },
+    "png": {
+      "path": "aa-threonine-threonine-neutral.png",
+      "sha256": "e36f602af37ffe689fe16fae0a3a1a159ae8bc35c6f11a08b332360a431bb11e"
+    },
+    "mol": {
+      "path": "aa-threonine-threonine-neutral.mol",
+      "sha256": "073ea35943c8c338458601f80f102c2e6a0cca98be5972a3b52c0890a58f1f6f"
+    }
+  }
+}

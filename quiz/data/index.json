@@ -849,6 +849,44 @@
       ],
       "path": "org-l08.json",
       "mode": "fixed"
+    },
+    {
+      "id": "BIOC-T01",
+      "title": "生物化学专题：21+ 种氨基酸的五个身份",
+      "description": "以氨基酸的五种身份（中文名、英文名、三字母缩写、单字母缩写、结构图）互相转换为主线：给出其中一种，答出另一种并判定正误。题库共 218 题，每次随机抽取 22 题；结构图由 Chemical Structure Renderer 依据显式 L-构型 SMILES 渲染。",
+      "subject": "biochemistry",
+      "type": "topic",
+      "lessonNumber": null,
+      "topicNumber": 1,
+      "examNumber": null,
+      "chapter": "Topic · Amino acid identifiers and structures",
+      "lesson": "Amino acid identifiers: name, English name, three-letter and one-letter codes, structure",
+      "topic": "Randomized amino-acid identification bank",
+      "questionCount": 218,
+      "difficulty": "intermediate",
+      "tags": [
+        "amino acids",
+        "nomenclature",
+        "three-letter code",
+        "one-letter code",
+        "structure",
+        "stereochemistry"
+      ],
+      "knowledgePoints": [
+        "Chinese and English names of the 22 proteinogenic amino acids",
+        "three-letter codes",
+        "one-letter codes",
+        "side-chain functional groups",
+        "L-configuration and CIP assignment",
+        "non-standard amino acids (selenocysteine, pyrrolysine)"
+      ],
+      "createdAt": "2026-10-01",
+      "updatedAt": "2026-10-01",
+      "relatedNotes": [
+        "/biochem/dist/chapter-02.html"
+      ],
+      "path": "bioc-t01.json",
+      "mode": "question-bank"
     }
   ]
 }

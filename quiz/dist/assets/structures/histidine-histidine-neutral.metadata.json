@@ -1,0 +1,321 @@
+{
+  "formula": "C6H9N3O2",
+  "relative_molecular_mass": 155.15699999999998,
+  "exact_mass": 155.069476528,
+  "net_charge": 0,
+  "atom_count": 11,
+  "heavy_atom_count": 11,
+  "atom_count_with_hydrogens": 20,
+  "canonical_isomeric_smiles": "N[C@@H](Cc1c[nH]cn1)C(=O)O",
+  "cxsmiles": "N[C@@H](Cc1c[nH]cn1)C(=O)O",
+  "inchikey": "HNDVDQJCIGZPNO-YFKPBYRVSA-N",
+  "atoms": [
+    {
+      "index": 0,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 1,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": "S"
+    },
+    {
+      "index": 2,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 2,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 3,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 4,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 5,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 6,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 7,
+      "atom_map": 0,
+      "element": "N",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": true,
+      "cip": null
+    },
+    {
+      "index": 8,
+      "atom_map": 0,
+      "element": "C",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 9,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 0,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    },
+    {
+      "index": 10,
+      "atom_map": 0,
+      "element": "O",
+      "isotope": 0,
+      "formal_charge": 0,
+      "hydrogen_count": 1,
+      "radical_electrons": 0,
+      "aromatic": false,
+      "cip": null
+    }
+  ],
+  "bonds": [
+    {
+      "begin": 0,
+      "end": 1,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 2,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 2,
+      "end": 3,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 3,
+      "end": 4,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 4,
+      "end": 5,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 5,
+      "end": 6,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 6,
+      "end": 7,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 1,
+      "end": 8,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 8,
+      "end": 9,
+      "order": 2.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 8,
+      "end": 10,
+      "order": 1.0,
+      "aromatic": false,
+      "stereo": "STEREONONE"
+    },
+    {
+      "begin": 7,
+      "end": 3,
+      "order": 1.5,
+      "aromatic": true,
+      "stereo": "STEREONONE"
+    }
+  ],
+  "potential_stereo": [
+    {
+      "type": "Atom_Tetrahedral",
+      "center": 1,
+      "specified": "Specified",
+      "descriptor": "Tet_CW"
+    }
+  ],
+  "rdkit_version": "2026.03.6",
+  "checks": {
+    "sanitization": "passed",
+    "expected_invariants": "passed",
+    "smiles_round_trip": "passed",
+    "name_identity": "requires_source_review",
+    "visual_review": "required",
+    "mol_round_trip": "passed"
+  },
+  "input": {
+    "stereochemistry": "explicit",
+    "image_type": "neutral",
+    "show_carbon_numbers": false,
+    "show_lone_pairs": false,
+    "group": null,
+    "background": "transparent",
+    "size": [
+      420,
+      280
+    ],
+    "png_scale": 4,
+    "id": "aa-histidine",
+    "chinese_name": "组氨酸",
+    "english_name": "histidine",
+    "structure": {
+      "format": "smiles",
+      "value": "N[C@@H](Cc1c[nH]cn1)C(=O)O"
+    },
+    "protonation": "Neutral free amino acid; imidazole drawn with N1-H tautomer (charge 0)",
+    "source": {
+      "type": "authored-educational-structure",
+      "reference": "IUPAC-IUBMB amino acid nomenclature; imidazole N1-H tautomer",
+      "accessed": "2026-09-20"
+    },
+    "expected": {
+      "formula": "C6H9N3O2",
+      "net_charge": 0
+    }
+  },
+  "original_structure": "N[C@@H](Cc1c[nH]cn1)C(=O)O",
+  "topology": {
+    "ring_sizes": [
+      5
+    ],
+    "ring_count": 1,
+    "shared_atom_counts": [],
+    "bridge_bond_count": 6,
+    "bridgehead_count": 1,
+    "spiro_atom_count": 0,
+    "fused_edge_count": 0,
+    "aromatic_ring_ratio": 1.0,
+    "double_bond_count": 1,
+    "stereocenter_count": 1,
+    "layout_mode": "template-coordgen",
+    "template_id": "single-ring",
+    "template_score": 2,
+    "core_bond_length_deviation": 0.00030825168604845714,
+    "core_bond_constraint_passed": true
+  },
+  "rendering": {
+    "engine": "RDKit",
+    "width": 420,
+    "height": 280,
+    "png_scale": 4,
+    "bond_length_px": 36,
+    "line_width_px": 1.6,
+    "font_size_px": 18,
+    "background": "transparent",
+    "carbon_numbering": "input atom index + 1",
+    "lone_pairs": "not displayed"
+  },
+  "image_checks": {
+    "svg_xml": "passed",
+    "png_dimensions": [
+      1680,
+      1120
+    ],
+    "background": "transparent",
+    "ink_bbox": [
+      492,
+      239,
+      1187,
+      877
+    ]
+  },
+  "files": {
+    "svg": {
+      "path": "aa-histidine-histidine-neutral.svg",
+      "sha256": "05e73c37ac4dceb08217d8d136336988fd5cb2fdc32586d310604ff5e69e87ca"
+    },
+    "png": {
+      "path": "aa-histidine-histidine-neutral.png",
+      "sha256": "f24a141b54114ae4393488824fe0a74d2662437ca0e09cad6b4736bb7ae33404"
+    },
+    "mol": {
+      "path": "aa-histidine-histidine-neutral.mol",
+      "sha256": "7ee9df099a6d92194ee8cfd43a102f6b20641d35085c76734e92635380c9e1b3"
+    }
+  }
+}

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="物理化学第八课：Helmholtz 能与 Gibbs 能、基本方程与 Maxwell 关系、内压、Gibbs 能随温度与压力的变化、化学势与真实气体逸度" />
+    <title>第八课 · 第二定律的机械 · 物理化学知识库</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="pchem.css" />
+    <link rel="stylesheet" href="math.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#171b1d" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="mark">物</span><span>物理化学知识库</span></a>
+      <label class="search"><span>⌕</span><input id="global-search" placeholder="搜索知识库…" aria-label="搜索知识库" /><kbd>⌘ K</kbd></label>
+      <button id="theme" class="icon-button">◐</button>
+    </header>
+    <aside class="sidebar">
+      <nav>
+        <p class="nav-label">知识库</p>
+        <a href="index.html"><span>◫</span>课程笔记</a>
+        <a href="terms.html"><span>Aa</span>双语词条库</a>
+        <p class="nav-label">物理化学 I</p>
+        <a href="lesson-01.html"><span>01</span>绪论、数学基础与理想气体</a>
+        <a href="lesson-02.html"><span>02</span>真实气体与状态方程</a>
+        <a href="lesson-03.html"><span>03</span>气体动理论与分子速率</a>
+        <a href="lesson-04.html"><span>04</span>热力学第一定律</a>
+        <a href="lesson-05.html"><span>05</span>第一定律的机械</a>
+        <a href="lesson-06.html"><span>06</span>热化学</a>
+        <a href="lesson-07.html"><span>07</span>热力学第二定律</a>
+        <a class="active" href="lesson-08.html"><span>08</span>第二定律的机械</a>
+      </nav>
+      <div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+    </aside>
+
+    <main class="workspace article">
+      <a class="back" href="index.html">← 返回课程笔记</a>
+      <header class="article-head">
+        <p class="eyebrow">LECTURE 08 · 2026/10/08</p>
+        <h1>第二定律的机械：Helmholtz 能、Gibbs 能与化学势</h1>
+        <p>The Second Law: the machinery — the Helmholtz and Gibbs energies, the fundamental equations, and the chemical potential</p>
+        <div><span>课堂笔记</span><span>课件原图</span><span>Maxwell 关系</span><span>逸度</span></div>
+      </header>
+
+      <section>
+        <h2>1. 这一讲在全课中的位置</h2>
+        <p>第七课用熵建立了自发方向的判据 Δ<i>S</i><sub>iso</sub> ≥ 0，但孤立体系的总熵很难直接测量：要判断一个烧杯里的反应是否自发，必须把环境一起算进来。这一讲要把判据改写成只用<b>体系自身</b>的状态函数表达，从而得到化学中最常用的两个函数——<a class="term-link" href="term.html?slug=helmholtz-energy">Helmholtz 能</a> <i>A</i> 与 <a class="term-link" href="term.html?slug=gibbs-energy">Gibbs 能</a> <i>G</i>。</p>
+        <p>课件的第 4.7 节与第 5 章承担两件事：第一，找出状态函数之间“看起来无关其实有关”的关系（<a class="term-link" href="term.html?slug=fundamental-equation">基本方程</a>与 <a class="term-link" href="term.html?slug=maxwell-relations">Maxwell 关系</a>），用来推出 <i>G</i> 随 <i>T</i> 与 <i>p</i> 的变化；第二，引入<a class="term-link" href="term.html?slug=chemical-potential">化学势</a>，并把理想气体的公式修补成对<a class="term-link" href="term.html?slug=real-gas">真实气体</a>也成立的形式，即<a class="term-link" href="term.html?slug=fugacity">逸度</a>。课件原文说，化学势是“几乎全部重要热力学应用的基础”。</p>
+        <div class="concept-strip">
+          <span><b>判据</b>从 Δ<i>S</i><sub>iso</sub> 换成 Δ<i>A</i>、Δ<i>G</i></span>
+          <span><b>桥梁</b>基本方程与 Maxwell 关系</span>
+          <span><b>结果</b><i>G</i>(<i>T</i>, <i>p</i>) 的完整图像</span>
+          <span><b>延伸</b>化学势与逸度</span>
+        </div>
+        <div class="note"><b>与上一讲的衔接</b><p>第七课末尾的“课件未展开的两节”正是本讲内容：4.6 Helmholtz 能与 Gibbs 能、4.7 标准摩尔 Gibbs 能。本讲的第 2—4 节对应 4.6，第 5—6 节对应 4.7，第 7 节起进入第 5 章。</p></div>
+      </section>
+
+      <section>
+        <h2>2. Helmholtz 能与 Gibbs 能的定义</h2>
+        <p>课件从“把判据从孤立体系搬到体系自身”出发，直接给出两个定义：</p>
+        <div class="formula"><i>A</i> = <i>U</i> − <i>TS</i>　　<i>G</i> = <i>H</i> − <i>TS</i></div>
+        <p>两者都是状态函数，因为 <i>U</i>、<i>H</i>、<i>S</i>、<i>T</i> 都只依赖状态。在<b>恒温</b>条件下取微分，<i>T</i> 视为常数：</p>
+        <div class="formula">d<i>A</i> = d<i>U</i> − <i>T</i>d<i>S</i>　　d<i>G</i> = d<i>H</i> − <i>T</i>d<i>S</i>　（恒 <i>T</i>）</div>
+        <figure class="tall">
+          <img src="assets/lecture-08/helmholtz-gibbs-definition.webp" alt="Helmholtz 能 A = U − TS 与 Gibbs 能 G = H − TS 的定义，以及在恒温下取微分得到 dA = dU − TdS 与 dG = dH − TdS" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 4 页下半：两个函数的定义与恒温微分形式。课件特意注明“所有符号都指体系”（All the symbols refer to the system）。</figcaption>
+        </figure>
+        <p>为什么这样定义就能得到判据？把 Clausius 不等式 <i>T</i>d<i>S</i> ≥ d<i>q</i> 与第一定律 d<i>U</i> = d<i>q</i> + d<i>w</i> 联立。课件同时给出两个版本，分别对应恒容与恒压：</p>
+        <div class="formula"><i>T</i>d<i>S</i> ≥ d<i>U</i>　（恒 <i>V</i>，不做非膨胀功）　　<i>T</i>d<i>S</i> ≥ d<i>H</i>　（恒 <i>p</i>，不做非膨胀功）</div>
+        <p>移项后得到 d<i>U</i> − <i>T</i>d<i>S</i> ≤ 0 与 d<i>H</i> − <i>T</i>d<i>S</i> ≤ 0，写成 <i>A</i> 与 <i>G</i> 就是自发判据：</p>
+        <div class="formula">d<i>A</i><sub><i>T</i>,<i>V</i></sub> ≤ 0　（恒 <i>T</i>、<i>V</i>）　　d<i>G</i><sub><i>T</i>,<i>p</i></sub> ≤ 0　（恒 <i>T</i>、<i>p</i>）</div>
+        <div class="law-grid">
+          <article><h3>&lt; 0：自发</h3><div>d<i>A</i><sub><i>T</i>,<i>V</i></sub> &lt; 0 或 d<i>G</i><sub><i>T</i>,<i>p</i></sub> &lt; 0</div><p>在给定约束下体系会自动朝该方向变化，直到函数取到极小值。</p></article>
+          <article><h3>= 0：平衡</h3><div>d<i>A</i><sub><i>T</i>,<i>V</i></sub> = 0 或 d<i>G</i><sub><i>T</i>,<i>p</i></sub> = 0</div><p>函数已在极小点，体系处于平衡。这正是化学平衡与相平衡条件的来源。</p></article>
+        </div>
+        <div class="note"><b>约束条件不能省</b><p>两个判据的适用范围不同：<i>A</i> 用的是恒 <i>T</i>、<b>恒 <i>V</i></b>，<i>G</i> 用的是恒 <i>T</i>、<b>恒 <i>p</i></b>，两者都要求<b>不做非膨胀功</b>（<i>w</i><sub>e</sub> = 0）。化学反应通常在敞口容器中进行，恒压条件自然满足，这就是 <i>G</i> 在化学中比 <i>A</i> 更常用的原因。</p></div>
+      </section>
+
+      <section>
+        <h2>3. 最大功与最大非膨胀功</h2>
+        <p><i>A</i> 与 <i>G</i> 的物理意义可以从“做功能力”读出。课件从 Clausius 不等式 <i>T</i>d<i>S</i> ≥ d<i>q</i> 出发：把 d<i>q</i> = d<i>U</i> − d<i>w</i> 代入，得到 d<i>U</i> ≤ <i>T</i>d<i>S</i> + d<i>w</i>，即</p>
+        <div class="formula">d<i>w</i> ≥ d<i>U</i> − <i>T</i>d<i>S</i>　⟹　d<i>w</i><sub>max</sub> = d<i>U</i> − <i>T</i>d<i>S</i></div>
+        <p>由恒温下 d<i>A</i> = d<i>U</i> − <i>T</i>d<i>S</i>，等号成立时（可逆过程）：</p>
+        <div class="formula">d<i>w</i><sub>max</sub> = d<i>A</i>　（恒 <i>T</i>）　　<i>w</i><sub>max</sub> = Δ<i>A</i>　（可逆、恒 <i>T</i>）</div>
+        <p>课件把 <i>A</i> 称为“最大功函数”（maximum work function），并提示 <i>A</i> 取自德语 <i>Arbeit</i>（功）。这就是 <i>A</i> 这个字母的来源。</p>
+        <figure class="tall">
+          <img src="assets/lecture-08/max-work.webp" alt="从 Clausius 不等式与第一定律推出最大功等于 Helmholtz 能变化，并说明 A 称为最大功函数" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 5 页下半：最大功的推导与结论 <i>w</i><sub>max</sub> = Δ<i>A</i>，并注明 <i>A</i> 又称 work function，Arbeit 是德语“功”。</figcaption>
+        </figure>
+        <p>更贴近化学的是<b>非膨胀功</b>。做功可分为膨胀功 −<i>p</i>d<i>V</i> 与非膨胀功 d<i>w</i><sub>e</sub>（电功、表面功等）。对恒 <i>T</i>、恒 <i>p</i> 的可逆过程，课件经过 d<i>G</i> = d<i>H</i> − <i>T</i>d<i>S</i> 与 d<i>H</i> = d(<i>U</i> + <i>pV</i>) 的替换得到：</p>
+        <div class="formula">d<i>w</i><sub>e,rev</sub> = d<i>G</i>　⟹　<i>w</i><sub>e,max</sub> = Δ<i>G</i>　（可逆、恒 <i>p</i>、恒 <i>T</i>）</div>
+        <p>也就是说：<b>恒温恒压下可逆过程能提供的最大非膨胀功等于 Gibbs 能的变化</b>。这正是原电池电动势、肌肉收缩等问题可以直接用 Δ<i>G</i> 计算的原因。</p>
+        <div class="worked-example">
+          <h3>葡萄糖燃烧能提供多少非膨胀功</h3>
+          <p>课件例题：1.00 mol 葡萄糖在 37 ℃（血液温度，310 K）的标准条件下燃烧，能提供多少用于肌肉与神经活动的能量？已知 Δ<sub>r</sub><i>H</i><sup>°</sup> = −2808 kJ·mol<sup>−1</sup>，Δ<sub>r</sub><i>S</i><sup>°</sup> = +182.4 J·K<sup>−1</sup>·mol<sup>−1</sup>。</p>
+          <p>反应的可用非膨胀功等于标准反应 Gibbs 能变，用 Δ<sub>r</sub><i>G</i><sup>°</sup> = Δ<sub>r</sub><i>H</i><sup>°</sup> − <i>T</i>Δ<sub>r</sub><i>S</i><sup>°</sup>：</p>
+          <div class="formula">Δ<sub>r</sub><i>G</i><sup>°</sup> = −2808 kJ·mol<sup>−1</sup> − 310 K × 182.4 J·K<sup>−1</sup>·mol<sup>−1</sup> = −2865 kJ·mol<sup>−1</sup></div>
+          <div class="formula"><i>w</i><sub>e,max</sub> = −2865 kJ</div>
+          <p>课件取整算作 −2862 kJ·mol<sup>−1</sup>（用 298 K），并给出一个直观换算：70 kg 的人垂直爬升 3.0 m 需做功 2.1 kJ，因此至少需要 0.13 g 葡萄糖。注意 Δ<i>G</i> 比 Δ<i>H</i> 更负——因为该反应熵增，<i>T</i>Δ<i>S</i> 一项额外贡献了做功能力。</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 基本方程</h2>
+        <p>课件先画出五个状态函数的关系网：<i>H</i> = <i>U</i> + <i>pV</i>，<i>A</i> = <i>U</i> − <i>TS</i>，<i>G</i> = <i>H</i> − <i>TS</i> = <i>U</i> + <i>pV</i> − <i>TS</i> = <i>A</i> + <i>pV</i>。对封闭体系、组成恒定、不做非膨胀功的可逆变化，有 d<i>w</i><sub>rev</sub> = −<i>p</i>d<i>V</i> 与 d<i>q</i><sub>rev</sub> = <i>T</i>d<i>S</i>，于是第一定律给出</p>
+        <div class="formula">d<i>U</i> = <i>T</i>d<i>S</i> − <i>p</i>d<i>V</i></div>
+        <p>课件强调：这个式子的适用范围写成“可逆或不可逆，封闭体系，不做非膨胀功”——因为 <i>U</i> 是状态函数，d<i>U</i> 是全微分，其值与路径无关，所以只要始末态确定，无论过程是否可逆该式都成立。</p>
+        <figure>
+          <img src="assets/lecture-08/fundamental-equations.webp" alt="由 dU = TdS − pdV 出发，经 H、A、G 的定义推出 dH = TdS + Vdp、dA = −pdV − SdT、dG = Vdp − SdT 的推导过程" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 13 页下半：四个基本方程的完整推导。右侧方框给出 <i>H</i>、<i>U</i>、<i>A</i>、<i>G</i> 与 <i>pV</i>、<i>TS</i> 的层级关系。</figcaption>
+        </figure>
+        <p>其余三式由定义直接微分得到。以 d<i>H</i> 为例：d<i>H</i> = d<i>U</i> + <i>p</i>d<i>V</i> + <i>V</i>d<i>p</i> = (<i>T</i>d<i>S</i> − <i>p</i>d<i>V</i>) + <i>p</i>d<i>V</i> + <i>V</i>d<i>p</i> = <i>T</i>d<i>S</i> + <i>V</i>d<i>p</i>，其中 −<i>p</i>d<i>V</i> 与 +<i>p</i>d<i>V</i> 恰好抵消。四个方程汇总为：</p>
+        <div class="formula-compare">
+          <div class="formula-compare-head"><div>函数与自变量</div><div>基本方程</div><div>对应的一阶偏导</div><div>记忆要点</div></div>
+          <div><div class="math-cell">U(S, V)</div><div class="math-cell">dU = TdS − pdV</div><div class="math-cell">(∂U/∂S)<sub>V</sub> = T，(∂U/∂V)<sub>S</sub> = −p</div><div>起点式，由第一定律与第二定律联立得到。</div></div>
+          <div><div class="math-cell">H(S, p)</div><div class="math-cell">dH = TdS + Vdp</div><div class="math-cell">(∂H/∂S)<sub>p</sub> = T，(∂H/∂p)<sub>S</sub> = V</div><div>把自变量从 V 换成 p，符号由 − 变 +。</div></div>
+          <div><div class="math-cell">A(T, V)</div><div class="math-cell">dA = −pdV − SdT</div><div class="math-cell">(∂A/∂V)<sub>T</sub> = −p，(∂A/∂T)<sub>V</sub> = −S</div><div>自变量换成 T，TdS 项的系数变为 −S。</div></div>
+          <div><div class="math-cell">G(T, p)</div><div class="math-cell">dG = Vdp − SdT</div><div class="math-cell">(∂G/∂p)<sub>T</sub> = V，(∂G/∂T)<sub>p</sub> = −S</div><div>化学最常用：自变量正是实验中最易控制的 T 与 p。</div></div>
+        </div>
+        <div class="note"><b>为什么自变量要成对出现</b><p>每个基本方程右侧的两项都是“一个强度量 × 一个广延量的微分”。自然自变量的配对不是随意选的：<i>U</i> 的自然变量是 (<i>S</i>, <i>V</i>)，<i>H</i> 是 (<i>S</i>, <i>p</i>)，<i>A</i> 是 (<i>T</i>, <i>V</i>)，<i>G</i> 是 (<i>T</i>, <i>p</i>)。只有用自然变量时，该状态函数的偏导数才直接给出另一个状态量；换成别的变量，导数就不再等于表中这些简单结果。</p></div>
+      </section>
+
+      <section>
+        <h2>5. Maxwell 关系</h2>
+        <p>Maxwell 关系的数学来源是一条非常简洁的定理：若 d<i>z</i> = <i>g</i>d<i>x</i> + <i>h</i>d<i>y</i> 是全微分，且 <i>g</i> = (∂<i>z</i>/∂<i>x</i>)<sub><i>y</i></sub>、<i>h</i> = (∂<i>z</i>/∂<i>y</i>)<sub><i>x</i></sub>，则二阶混合偏导与求导次序无关，于是</p>
+        <div class="formula">(∂<i>g</i>/∂<i>y</i>)<sub><i>x</i></sub> = (∂<i>h</i>/∂<i>x</i>)<sub><i>y</i></sub></div>
+        <p>把这条定理分别用到四个基本方程上，就得到四条 Maxwell 关系：</p>
+        <figure>
+          <img src="assets/lecture-08/maxwell-summary.webp" alt="四个基本方程与四条 Maxwell 关系的对应表：dU = TdS − pdV 对应 (∂T/∂V)S = −(∂p/∂S)V，依此类推" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 16 页上半：四个基本方程与其 Maxwell 关系的对应。右侧说明全微分判据 (∂<i>g</i>/∂<i>y</i>)<sub><i>x</i></sub> = (∂<i>h</i>/∂<i>x</i>)<sub><i>y</i></sub> 的由来。</figcaption>
+        </figure>
+        <div class="formula-compare">
+          <div class="formula-compare-head"><div>来源基本方程</div><div>Maxwell 关系</div><div>用途</div><div>可测量的量</div></div>
+          <div><div class="math-cell">dU = TdS − pdV</div><div class="math-cell">(∂T/∂V)<sub>S</sub> = −(∂p/∂S)<sub>V</sub></div><div>把绝热过程中的量换成可测量。</div><div>需要 S 固定，实验上较难直接实现。</div></div>
+          <div><div class="math-cell">dH = TdS + Vdp</div><div class="math-cell">(∂T/∂p)<sub>S</sub> = (∂V/∂S)<sub>p</sub></div><div>用于绝热压缩引起的温度变化。</div><div>与 Joule–Thomson 系数的推导相关。</div></div>
+          <div><div class="math-cell">dA = −pdV − SdT</div><div class="math-cell">(∂p/∂T)<sub>V</sub> = (∂S/∂V)<sub>T</sub></div><div><b>最有用的一条</b>：把熵对体积的导数换成 p、V、T 的导数。</div><div>(∂p/∂T)<sub>V</sub> 可由状态方程求得。</div></div>
+          <div><div class="math-cell">dG = Vdp − SdT</div><div class="math-cell">(∂V/∂T)<sub>p</sub> = −(∂S/∂p)<sub>T</sub></div><div>把熵对压力的导数换成热膨胀系数。</div><div>(∂V/∂T)<sub>p</sub> = Vα，α 为等压热膨胀系数。</div></div>
+        </div>
+        <p>这些关系之所以重要，是因为它们把<b>无法直接测量的熵的偏导数</b>（测量熵需要可逆热量的积分）换成<b>只含 p、V、T 的偏导数</b>。课件用一整页表格把这件事整理成三列对照，这张表值得整体记住：</p>
+        <figure class="lesson-map">
+          <img src="assets/lecture-08/maxwell-table.webp" alt="汇总表：左侧列出四个基本方程与自然变量，中部为四条 Maxwell 关系，右侧为全部一阶偏导数 (∂U/∂S)V = T、(∂U/∂V)S = −p、(∂H/∂p)S = V、(∂A/∂T)V = −S、(∂G/∂p)T = V、(∂G/∂T)p = −S" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 16 页下半：本讲的核心汇总表。首次给出条件“封闭体系、组成恒定、只做 <i>p</i>–<i>V</i> 功”，右侧一列即四个基本方程对应的六个一阶偏导数。</figcaption>
+        </figure>
+        <div class="worked-example">
+          <h3>内压：用 Maxwell 关系算一个原本算不出的量</h3>
+          <p><b>内压</b>（internal pressure）定义为 π<sub><i>T</i></sub> = (∂<i>U</i>/∂<i>V</i>)<sub><i>T</i></sub>，它描述恒温下体积变化时内能如何改变——即分子间作用力的宏观体现。从 d<i>U</i> = (∂<i>U</i>/∂<i>S</i>)<sub><i>V</i></sub>d<i>S</i> + (∂<i>U</i>/∂<i>V</i>)<sub><i>S</i></sub>d<i>V</i> 出发，两边除以 d<i>V</i> 并加上恒 <i>T</i> 的约束：</p>
+          <div class="formula">(∂<i>U</i>/∂<i>V</i>)<sub><i>T</i></sub> = (∂<i>U</i>/∂<i>S</i>)<sub><i>V</i></sub>(∂<i>S</i>/∂<i>V</i>)<sub><i>T</i></sub> + (∂<i>U</i>/∂<i>V</i>)<sub><i>S</i></sub></div>
+          <p>代入 (∂<i>U</i>/∂<i>S</i>)<sub><i>V</i></sub> = <i>T</i> 与 (∂<i>U</i>/∂<i>V</i>)<sub><i>S</i></sub> = −<i>p</i>，再用 Maxwell 关系把 (∂<i>S</i>/∂<i>V</i>)<sub><i>T</i></sub> 换成 (∂<i>p</i>/∂<i>T</i>)<sub><i>V</i></sub>：</p>
+          <div class="formula">π<sub><i>T</i></sub> = <i>T</i>(∂<i>p</i>/∂<i>T</i>)<sub><i>V</i></sub> − <i>p</i>　（热力学状态方程）</div>
+          <p>课件称之为“热力学状态方程”（thermodynamic equation of state）。对理想气体 <i>p</i> = <i>nRT</i>/<i>V</i>，<i>T</i>(∂<i>p</i>/∂<i>T</i>)<sub><i>V</i></sub> = <i>p</i>，所以 π<sub><i>T</i></sub> = 0——这与 Joule 实验的结论一致：理想气体内能只依赖温度。对真实气体 π<sub><i>T</i></sub> ≠ 0，其大小直接反映分子间吸引力。</p>
+        </div>
+        <figure class="tall">
+          <img src="assets/lecture-08/internal-pressure.webp" alt="内压的推导：从 (∂U/∂V)T 展开，代入 (∂U/∂S)V = T 与 (∂U/∂V)S = −p，再用 Maxwell 关系 (∂p/∂T)V = (∂S/∂V)T 得到 πT = T(∂p/∂T)V − p" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 17 页下半：内压推导的三个步骤，绿色箭头标出每一步代入的关系。</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>6. Gibbs 能随温度与压力的变化</h2>
+        <p>有了 (∂<i>G</i>/∂<i>T</i>)<sub><i>p</i></sub> = −<i>S</i> 与 (∂<i>G</i>/∂<i>p</i>)<sub><i>T</i></sub> = <i>V</i>，就可以讨论 <i>G</i> 的完整图像。</p>
+        <h3>随温度：由熵决定斜率</h3>
+        <p>因为 (∂<i>G</i>/∂<i>T</i>)<sub><i>p</i></sub> = −<i>S</i> 且 <i>S</i> 恒为正，<i>G</i> 随 <i>T</i> 单调下降；又因为 <i>S</i>(气) &gt; <i>S</i>(液) &gt; <i>S</i>(固)，三条曲线的下降斜率依次为气 &gt; 液 &gt; 固。斜率大的曲线最终会从上方向下穿过其他曲线，交点就是相变温度。</p>
+        <figure class="tall">
+          <img src="assets/lecture-08/gibbs-vs-temperature.webp" alt="Gibbs 能随温度变化的三条曲线：气相下降最快、液相次之、固相最慢，交点对应相变温度" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 20 页上半：<i>G</i> 随 <i>T</i> 的变化由熵决定。气态熵最大故斜率最陡，固相熵最小故最平缓。</figcaption>
+        </figure>
+        <h3>Gibbs–Helmholtz 方程</h3>
+        <p>直接用 (∂<i>G</i>/∂<i>T</i>)<sub><i>p</i></sub> = −<i>S</i> 不方便，因为 <i>S</i> 随温度变化。课件把 <i>G</i>/<i>T</i> 作为新的组合函数来求导，先由 <i>G</i> = <i>H</i> − <i>TS</i> 得 <i>S</i> = (<i>H</i> − <i>G</i>)/<i>T</i>，故 (∂<i>G</i>/∂<i>T</i>)<sub><i>p</i></sub> = (<i>G</i> − <i>H</i>)/<i>T</i>。再对 <i>G</i>/<i>T</i> 用乘积法则：</p>
+        <div class="formula">(∂(<i>G</i>/<i>T</i>)/∂<i>T</i>)<sub><i>p</i></sub> = <span class="frac"><span>1</span><span><i>T</i></span></span>(∂<i>G</i>/∂<i>T</i>)<sub><i>p</i></sub> + <i>G</i> · <span class="frac"><span>d(1/<i>T</i>)</span><span>d<i>T</i></span></span> = <span class="frac"><span>1</span><span><i>T</i></span></span>(∂<i>G</i>/∂<i>T</i>)<sub><i>p</i></sub> − <span class="frac"><span><i>G</i></span><span><i>T</i><sup>2</sup></span></span></div>
+        <p>把 (∂<i>G</i>/∂<i>T</i>)<sub><i>p</i></sub> = (<i>G</i> − <i>H</i>)/<i>T</i> 代入，<i>G</i> 项恰好抵消，得到<b>Gibbs–Helmholtz 方程</b>：</p>
+        <div class="formula">(∂(<i>G</i>/<i>T</i>)/∂<i>T</i>)<sub><i>p</i></sub> = −<span class="frac"><span><i>H</i></span><span><i>T</i><sup>2</sup></span></span>　　(∂(Δ<i>G</i>/<i>T</i>)/∂<i>T</i>)<sub><i>p</i></sub> = −<span class="frac"><span>Δ<i>H</i></span><span><i>T</i><sup>2</sup></span></span></div>
+        <p>右侧只含 <i>H</i>，不再含难以测量的 <i>S</i>，因此在讨论<b>恒压</b>下的相变与化学反应时特别好用。课件还给出另一种等价写法，把 <i>H</i> 表示成 <i>G</i>/<i>T</i> 对 1/<i>T</i> 的导数：</p>
+        <div class="formula"><i>H</i> = (∂(<i>G</i>/<i>T</i>)/∂(1/<i>T</i>))<sub><i>p</i></sub></div>
+        <p>这一形式说明：若以 1/<i>T</i> 为横轴作 <i>G</i>/<i>T</i> 图，曲线斜率就是 <i>H</i>——这就是从电化学或平衡数据提取反应焓的方法。</p>
+        <figure class="tall">
+          <img src="assets/lecture-08/gibbs-helmholtz.webp" alt="Gibbs-Helmholtz 方程的推导过程，从 (∂G/∂T)p = −S 与 S = (H − G)/T 出发，对 G/T 求导得到 (∂(G/T)/∂T)p = −H/T²" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 21 页下半：Gibbs–Helmholtz 方程的完整推导，以及右侧六个一阶偏导数的对照栏。</figcaption>
+        </figure>
+        <h3>随压力：由体积决定</h3>
+        <p>由 (∂<i>G</i>/∂<i>p</i>)<sub><i>T</i></sub> = <i>V</i>，恒温下积分得</p>
+        <div class="formula"><i>G</i><sub>m</sub>(<i>p</i><sub>f</sub>) − <i>G</i><sub>m</sub>(<i>p</i><sub>i</sub>) = ∫<sub><i>p</i><sub>i</sub></sub><sup><i>p</i><sub>f</sub></sup> <i>V</i><sub>m</sub> d<i>p</i></div>
+        <p>对<b>凝聚相</b>，<i>V</i><sub>m</sub> 近似与压力无关，可直接提出积分号：Δ<i>G</i><sub>m</sub> = <i>V</i><sub>m</sub>Δ<i>p</i>。因液体与固体的 <i>V</i><sub>m</sub> 很小（水约 18 cm³·mol<sup>−1</sup>），压力变化对 <i>G</i> 的影响远小于温度。对<b>理想气体</b> <i>V</i><sub>m</sub> = <i>RT</i>/<i>p</i>，积分给出对数关系，这正是下一节化学势公式的来源。</p>
+        <div class="worked-example">
+          <h3>压力从 1.0 bar 升到 2.0 bar 对 Gibbs 能的影响</h3>
+          <p>课件例题：298 K 下把压力等温地从 1.0 bar 升到 2.0 bar，求 (a) 液态水（视为不可压缩流体）与 (b) 水蒸气（视为理想气体）的摩尔 Gibbs 能变化。</p>
+          <p>(a) 液态水：取 <i>V</i><sub>m</sub> ≈ 18 × 10<sup>−6</sup> m³·mol<sup>−1</sup>，Δ<i>p</i> = 1.0 × 10<sup>5</sup> Pa，</p>
+          <div class="formula">Δ<i>G</i><sub>m</sub> = <i>V</i><sub>m</sub>Δ<i>p</i> ≈ 18 × 10<sup>−6</sup> × 1.0 × 10<sup>5</sup> = +1.8 J·mol<sup>−1</sup></div>
+          <p>(b) 水蒸气：用 Δ<i>G</i><sub>m</sub> = <i>RT</i> ln(<i>p</i><sub>f</sub>/<i>p</i><sub>i</sub>)，</p>
+          <div class="formula">Δ<i>G</i><sub>m</sub> = 8.314 × 298 × ln 2 = +1.7 × 10<sup>3</sup> J·mol<sup>−1</sup> = +1.7 kJ·mol<sup>−1</sup></div>
+          <p>两者相差近三个数量级。这个对比说明：讨论压力对凝聚相平衡的影响时，通常可以忽略 Δ<i>G</i> 的压力项，但对气相绝不能忽略。</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>7. 标准摩尔 Gibbs 能</h2>
+        <p>与第七课的生成焓、生成熵平行，标准反应 Gibbs 能也可由两部分构成：</p>
+        <div class="formula">Δ<sub>r</sub><i>G</i><sup>°</sup> = Δ<sub>r</sub><i>H</i><sup>°</sup> − <i>T</i>Δ<sub>r</sub><i>S</i><sup>°</sup></div>
+        <p>或者按生成 Gibbs 能加权求和，产物取正、反应物取负：</p>
+        <div class="formula">Δ<sub>r</sub><i>G</i><sup>°</sup> = ∑<sub>产物</sub> ν<sub>J</sub> Δ<sub>f</sub><i>G</i><sup>°</sup>(J) − ∑<sub>反应物</sub> ν<sub>J</sub> Δ<sub>f</sub><i>G</i><sup>°</sup>(J)</div>
+        <p><b>标准生成 Gibbs 能</b>定义为由参考状态的单质生成 1 mol 化合物时的标准反应 Gibbs 能。课件强调一条与生成焓相同的规则：<b>处于参考状态的单质的 Δ<sub>f</sub><i>G</i><sup>°</sup> = 0</b>，因为它们的“生成反应”是空的（null reaction）。</p>
+        <div class="worked-example">
+          <h3>CO(g) + ½O<sub>2</sub>(g) → CO<sub>2</sub>(g) 的标准反应 Gibbs 能</h3>
+          <p>25 ℃ 下已知 Δ<sub>f</sub><i>G</i><sup>°</sup>(CO<sub>2</sub>, g) = −394.4、Δ<sub>f</sub><i>G</i><sup>°</sup>(CO, g) = −137.2 kJ·mol<sup>−1</sup>，O<sub>2</sub> 处于参考状态故为零：</p>
+          <div class="formula">Δ<sub>r</sub><i>G</i><sup>°</sup> = −394.4 − (−137.2) − ½(0) = −257.2 kJ·mol<sup>−1</sup></div>
+          <p>结果为负，说明 25 ℃、标准状态下该反应自发。注意这里 <i>T</i>Δ<sub>r</sub><i>S</i><sup>°</sup> 这一项被生成 Gibbs 能表“吸收”了——查表比每次自己算熵变更省事。</p>
+        </div>
+        <div class="note"><b>Δ<sub>f</sub><i>G</i><sup>°</sup> = 0 的适用范围</b><p>“生成 Gibbs 能为零”只对<b>处于标准状态下的参考单质</b>成立，例如 25 ℃、1 bar 下的 O<sub>2</sub>(g)、H<sub>2</sub>(g)、C(石墨)、Br<sub>2</sub>(l)。金刚石、臭氧、O<sub>2</sub>(g) 在 300 bar 下都不适用。另外，离子在溶液中需要另行约定（通常取 Δ<sub>f</sub><i>G</i><sup>°</sup>(H<sup>+</sup>, aq) = 0）。</p></div>
+      </section>
+
+      <section>
+        <h2>8. 化学势</h2>
+        <p>第七课处理的是组成固定的封闭体系，但化学的核心是<b>组成变化</b>。为此要把基本方程推广，让 <i>G</i> 也依赖各物质的量 <i>n</i><sub>J</sub>：</p>
+        <div class="formula">d<i>G</i> = <i>V</i>d<i>p</i> − <i>S</i>d<i>T</i> + ∑<sub>J</sub> μ<sub>J</sub> d<i>n</i><sub>J</sub>　　μ<sub>J</sub> = (∂<i>G</i>/∂<i>n</i><sub>J</sub>)<sub><i>p</i>,<i>T</i>,<i>n</i><sub>其余</sub></sub></div>
+        <p>μ<sub>J</sub> 即物质 J 的<b>化学势</b>：恒温恒压下，向体系中加入极少量的 J 所引起 Gibbs 能的增量。对<b>纯物质</b>，由于 <i>G</i> 是广延量且只有一种组分，偏摩尔量就等于摩尔量：</p>
+        <div class="formula">μ = <i>G</i><sub>m</sub>　⟹　dμ = d<i>G</i><sub>m</sub></div>
+        <p>于是由 d<i>G</i><sub>m</sub> = <i>V</i><sub>m</sub>d<i>p</i> − <i>S</i><sub>m</sub>d<i>T</i>，在恒温下得到化学势随压力的基本关系：</p>
+        <div class="formula">dμ = <i>V</i><sub>m</sub> d<i>p</i>　（恒 <i>T</i>）</div>
+        <figure class="tall">
+          <img src="assets/lecture-08/chemical-potential.webp" alt="化学势的定义 μ = Gm 与 dμ = Vm dp，以及对理想气体积分得到 μ = μ° + RTln(p/p°)" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 29 页下半：由 dμ = <i>V</i><sub>m</sub>d<i>p</i> 出发，对理想气体 <i>V</i><sub>m</sub> = <i>RT</i>/<i>p</i> 积分，得到 μ = μ<sup>°</sup> + <i>RT</i>ln(<i>p</i>/<i>p</i><sup>°</sup>)。</figcaption>
+        </figure>
+        <p>对<b>理想气体</b> <i>V</i><sub>m</sub> = <i>RT</i>/<i>p</i>，代入得 dμ = <i>RT</i> d<i>p</i>/<i>p</i>，从标准压力 <i>p</i><sup>°</sup> 积分到 <i>p</i>：</p>
+        <div class="formula">μ = μ<sup>°</sup> + <i>RT</i> ln(<span class="frac"><span><i>p</i></span><span><i>p</i><sup>°</sup></span></span>)</div>
+        <p>其中 μ<sup>°</sup> 是<b>标准化学势</b>，即纯气体在 <i>p</i><sup>°</sup> = 1 bar 时的摩尔 Gibbs 能。这个式子是全部化学平衡理论的起点：由它出发，可以把 Δ<sub>r</sub><i>G</i> 写成各分压的函数，再令 Δ<sub>r</sub><i>G</i> = 0 就得到平衡常数 <i>K</i>。</p>
+        <div class="note"><b>μ 与 G 的关系容易混淆</b><p>对纯物质 μ = <i>G</i><sub>m</sub> 是恒等式；但对<b>混合物</b>，μ<sub>J</sub> 是偏摩尔 Gibbs 能 (∂<i>G</i>/∂<i>n</i><sub>J</sub>)，一般不等于 J 单独存在时的摩尔 Gibbs 能。<i>G</i> = ∑<sub>J</sub> <i>n</i><sub>J</sub>μ<sub>J</sub> 才是普遍成立的关系，而 <i>G</i> = <i>nG</i><sub>m</sub> 只对纯物质成立。</p></div>
+      </section>
+
+      <section>
+        <h2>9. 真实气体与逸度</h2>
+        <p>理想气体的 μ = μ<sup>°</sup> + <i>RT</i>ln(<i>p</i>/<i>p</i><sup>°</sup>) 简洁好用，但真实气体不服从 <i>pV</i> = <i>nRT</i>。课件的处理思路是：<b>不改变公式的形式，只把压力换成一个新的量</b>，使公式继续成立。这个量就是 <b>fugacity</b>（逸度，意为“逃逸倾向”）。</p>
+        <p>课件的开场说明了几点动机：从理想体系转向真实体系时，<b>保留理想体系已推出的表达式形式</b>是最方便的，这样偏离理想行为的部分可以用最简单的方式表达；而且真实气体与理想气体的状态方程差异其实很小，预期 <i>G</i> 的压力依赖也应相似。课件还提到 fugacity 这一术语由 Gilbert Lewis（1908）提出。</p>
+        <h3>定义与标准化</h3>
+        <p>逸度 <i>f</i> 的定义是让它替代压力后公式形式不变：</p>
+        <div class="formula"><i>G</i><sub>m</sub> = <i>G</i><sub>m</sub><sup>°</sup> + <i>RT</i> ln(<span class="frac"><span><i>f</i></span><span><i>p</i><sup>°</sup></span></span>)　　μ = μ<sup>°</sup> + <i>RT</i> ln(<span class="frac"><span><i>f</i></span><span><i>p</i><sup>°</sup></span></span>)</div>
+        <p>为了让它有唯一确定的数值，还需指定<b>真实气体的标准态</b>。课件的说法是：理想气体在压力为 <i>p</i><sup>°</sup>（1 bar）时处于标准态，此时压力完全来自分子的动能，没有分子间作用力需要考虑；而<b>真实气体的标准态是一个假想态</b>（hypothetical state）——气体处于压力 <i>p</i><sup>°</sup> 且<b>表现得像理想气体</b>。这个假想态是真实气体在 <i>p</i> → 0 时行为的延长线，1 bar 处的真实气体本身并不是它的标准态。</p>
+        <figure class="tall">
+          <img src="assets/lecture-08/fugacity-standard-state.webp" alt="真实气体标准态的说明：理想气体在 1 bar 处于标准态，真实气体的标准态是一个假想的、在 1 bar 下表现理想的状态，以及逸度定义 μ = μ° + RTln(f/p°)" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 33 页上半：理想气体与真实气体标准态的对比，以及逸度的定义式 dμ = <i>V</i><sub>m</sub>d<i>p</i> 与 μ = μ<sup>°</sup> + <i>RT</i>ln(<i>f</i>/<i>p</i><sup>°</sup>)。</figcaption>
+        </figure>
+        <h3>逸度系数</h3>
+        <p>定义<b>逸度系数</b> φ 为逸度与压力之比：</p>
+        <div class="formula">φ = <span class="frac"><span><i>f</i></span><span><i>p</i></span></span>　或　<i>f</i> = φ<i>p</i>　⟹　μ = μ<sup>°</sup> + <i>RT</i> ln(<span class="frac"><span><i>p</i></span><span><i>p</i><sup>°</sup></span></span>) + <i>RT</i> ln φ</div>
+        <figure class="tall">
+          <img src="assets/lecture-08/fugacity-coefficient.webp" alt="逸度系数的定义 φ = f/p 与 f = φp，以及逸度系数是无量纲的、依赖气体种类压力与温度两条性质，最后给出 μ = μ° + RTln(f/p°) = μ° + RTln(φp/p°)" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 33 页下半：逸度系数的定义与两条性质，并把 μ 写成理想项加 <i>RT</i>lnφ 修正项的形式。</figcaption>
+        </figure>
+        <p>课件明确指出 φ 的两条性质：① 它是<b>无量纲</b>的；② 它依赖气体的种类、压力与温度。当 <i>p</i> → 0 时真实气体趋于理想，故 <b>φ → 1、<i>f</i> → <i>p</i></b>。把 μ 的表达式写成“理想项 + 修正项”的两段式，正是逸度这个概念的实用价值：修正项 <i>RT</i>lnφ 可以单独处理。</p>
+        <h3>逸度与压力的定量关系</h3>
+        <p>课件用一个巧妙的对比来求 <i>f</i>。对真实气体，从某一参考压力 <i>p</i>′ 积分到 <i>p</i>：∫<sub><i>p</i>′</sub><sup><i>p</i></sup> <i>V</i><sub>m</sub>d<i>p</i> = μ − μ′ = <i>RT</i> ln(<i>f</i>/<i>f</i>′)；如果该气体是理想的，则 ∫<sub><i>p</i>′</sub><sup><i>p</i></sup> <i>V</i><sub>perfect,m</sub>d<i>p</i> = μ<sub>perfect</sub> − μ′<sub>perfect</sub> = <i>RT</i> ln(<i>p</i>/<i>p</i>′)。两式相减消去共同的参考态：</p>
+        <div class="formula">∫<sub><i>p</i>′</sub><sup><i>p</i></sup>(<i>V</i><sub>m</sub> − <i>V</i><sub>perfect,m</sub>)d<i>p</i> = <i>RT</i> ln(<span class="frac"><span><i>f</i></span><span><i>p</i></span></span> × <span class="frac"><span><i>p</i>′</span><span><i>f</i>′</span></span>)</div>
+        <p>当 <i>p</i>′ → 0 时气体表现理想，<i>f</i>′ = <i>p</i>′，故 <i>p</i>′/<i>f</i>′ → 1。以此为参考，上式化为逸度系数的积分表达式：</p>
+        <div class="formula">ln(<span class="frac"><span><i>f</i></span><span><i>p</i></span></span>) = <span class="frac"><span>1</span><span><i>RT</i></span></span> ∫<sub>0</sub><sup><i>p</i></sup>(<i>V</i><sub>m</sub> − <i>V</i><sub>perfect,m</sub>)d<i>p</i></div>
+        <p>课件随后引入<b>压缩因子</b> <i>Z</i> = <i>pV</i><sub>m</sub>/<i>RT</i>（也可写作 <i>Z</i> = <i>V</i><sub>m,real</sub>/<i>V</i><sub>m,ideal</sub>）。由于 <i>V</i><sub>m</sub> − <i>V</i><sub>perfect,m</sub> = (<i>Z</i> − 1)<i>RT</i>/<i>p</i>，代入上式得到本讲最实用的一个公式：</p>
+        <div class="formula">ln φ = ∫<sub>0</sub><sup><i>p</i></sup> (<span class="frac"><span><i>Z</i> − 1</span><span><i>p</i></span></span>) d<i>p</i></div>
+        <figure class="tall">
+          <img src="assets/lecture-08/fugacity-vs-pressure.webp" alt="逸度与压力关系：Z < 1 的中等压力下 ln φ < 0、f < p、μ < μideal；Z > 1 的高压下 ln φ > 0、f > p、μ > μideal。右侧为摩尔 Gibbs 能随压力变化的曲线，标出吸引力主导区与排斥力主导区" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 37 页下半：两种偏离行为的对照。绿色（<i>Z</i> &lt; 1，中等压力）对应分子相互吸引；粉色（<i>Z</i> &gt; 1，高压）对应分子相互排斥。右侧 <i>G</i><sub>m</sub>–<i>p</i> 曲线标出理想气体参考线与两种主导作用的分区。</figcaption>
+        </figure>
+        <div class="comparison-grid">
+          <article>
+            <h3><i>Z</i> &lt; 1：中等压力，吸引力主导</h3>
+            <p>分子相互吸引使实际压力低于理想值，(Z − 1)/p &lt; 0，故 ln φ &lt; 0，于是 <i>f</i> &lt; <i>p</i>、μ &lt; μ<sup>ideal</sup>、<i>G</i><sub>m,real</sub> &lt; <i>G</i><sub>m,ideal</sub>。课件用“粒子彼此黏在一起，逃逸倾向减弱”来描述。</p>
+          </article>
+          <article>
+            <h3><i>Z</i> &gt; 1：高压，排斥力主导</h3>
+            <p>分子间排斥使实际压力高于理想值，(Z − 1)/p &gt; 0，故 ln φ &gt; 0，于是 <i>f</i> &gt; <i>p</i>、μ &gt; μ<sup>ideal</sup>、<i>G</i><sub>m,real</sub> &gt; <i>G</i><sub>m,ideal</sub>。课件描述为“粒子被推开，逃逸倾向增强”。</p>
+          </article>
+        </div>
+        <p>课件还给出逸度图（fugacity coefficient vs reduced pressure），用<b>对比变量</b>把不同气体画到同一张图上：低压区按对应状态原理近似重合，高压区则按对比温度分层展开。这种图的用法是：知道气体的 <i>T</i><sub>r</sub> 与 <i>p</i><sub>r</sub>，查出 φ，再由 <i>f</i> = φ<i>p</i> 得到逸度。</p>
+        <div class="note"><b>逸度在平衡常数中的意义</b><p>课件点出一个常见问题：平时写平衡常数都用分压，<i>K</i> = <i>p</i><sub>HBr</sub><sup>2</sup>/(<i>p</i><sub>H<sub>2</sub></sub><i>p</i><sub>Br<sub>2</sub></sub>)，但严格来说这个式子只对逸度成立，精确表达式应为 <i>K</i> = <i>f</i><sub>HBr</sub><sup>2</sup>/(<i>f</i><sub>H<sub>2</sub></sub><i>f</i><sub>Br<sub>2</sub></sub>)。用分压代替逸度是一个近似，在低压下误差可以忽略。</p></div>
+      </section>
+
+      <section>
+        <h2>10. 从 Δ<i>G</i> 到反应方向的完整链条</h2>
+        <p>课件最后用一张总图把 Δ<i>G</i> 的计算串起来。判据是 d<i>G</i><sub><i>T</i>,<i>p</i>,<i>w</i><sub>e</sub>=0</sub> ≤ 0，对反应 <i>a</i>A + <i>b</i>B → <i>l</i>L + <i>m</i>M（恒 <i>p</i>、<i>T</i>），Δ<i>G</i> 的求法分三条路：</p>
+        <div class="formula-map">
+          <div class="map-root"><span class="math-cell">ΔG(T)</span><small>目标：任意温度下的反应 Gibbs 能</small></div>
+          <div class="map-branches">
+            <article>
+              <h3>路线一：由 H 与 S 组装</h3>
+              <div class="map-step"><span>先算 Δ<i>H</i><sup>°</sup>(298 K)</span><span class="math-cell">∑ν<sub>B</sub>Δ<sub>f</sub>H<sup>°</sup><sub>m,B</sub></span></div>
+              <div class="map-step"><span>再算 Δ<i>S</i><sup>°</sup>(298 K)</span><span class="math-cell">∑ν<sub>B</sub>S<sup>°</sup><sub>m,B</sub></span></div>
+              <div class="map-step accent"><span>组合</span><span class="math-cell">ΔG<sup>°</sup>(T) = ΔH<sup>°</sup> − TΔS<sup>°</sup></span></div>
+              <p>适用于只需知道某个温度下 Δ<i>G</i> 的场合。</p>
+            </article>
+            <article>
+              <h3>路线二：用生成 Gibbs 能</h3>
+              <div class="map-step"><span>查表求各物质的 Δ<sub>f</sub><i>G</i><sup>°</sup></span><span class="math-cell">ν<sub>B</sub> 取正负</span></div>
+              <div class="map-step accent"><span>加权求和</span><span class="math-cell">Δ<sub>r</sub>G<sup>°</sup> = ∑νΔ<sub>f</sub>G<sup>°</sup></span></div>
+              <p>最省事，但只能得到 298 K 附近的值。</p>
+            </article>
+          </div>
+        </div>
+        <p>若需要 <b>任意温度</b> 的 Δ<i>G</i>，还要把 Δ<i>H</i> 和 Δ<i>S</i> 各自随温度外推。课件给出的外推工具是 Kirchhoff 定律与熵的积分式：</p>
+        <div class="formula">Δ<sub>r</sub><i>H</i><sup>°</sup>(<i>T</i>) = Δ<sub>r</sub><i>H</i><sup>°</sup>(298 K) + ∫<sub>298</sub><sup><i>T</i></sup> Δ<sub>r</sub><i>C</i><sub>p</sub><sup>°</sup>d<i>T</i>　　Δ<sub>r</sub><i>S</i><sup>°</sup>(<i>T</i>) = Δ<sub>r</sub><i>S</i><sup>°</sup>(298 K) + ∫<sub>298</sub><sup><i>T</i></sup> <span class="frac"><span>Δ<sub>r</sub><i>C</i><sub>p</sub><sup>°</sup></span><span><i>T</i></span></span> d<i>T</i></div>
+        <p>其中 Δ<sub>r</sub><i>C</i><sub>p</sub><sup>°</sup> = ∑<sub>产物</sub>ν<i>C</i><sub>p,m</sub><sup>°</sup> − ∑<sub>反应物</sub>ν<i>C</i><sub>p,m</sub><sup>°</sup>。课件还给出恒温下反应 <i>a</i>A + <i>b</i>B → <i>l</i>L + <i>m</i>M 的另一种写法：对理想气体 Δ<i>H</i> = Δ<i>U</i> + Δ(<i>pV</i>) = Δ<i>U</i> + Δ<i>n</i><sub>g</sub><i>RT</i>；而 Δ<i>G</i><sub>m</sub><sup>°</sup>(298 K) = ∑νΔ<sub>f</sub><i>G</i><sub>m</sub><sup>°</sup> 并箭头指向 Δ<sub>r</sub><i>G</i><sup>°</sup>(<i>T</i>)。</p>
+        <figure class="lesson-map">
+          <img src="assets/lecture-08/reaction-gibbs-map.webp" alt="化学反应 ΔG 计算总图：判据 dG ≤ 0，左侧由 ΔH 与 ΔS 出发经 Kirchhoff 定律与熵积分外推到任意温度，右侧由生成 Gibbs 能加权求和" loading="lazy" decoding="async" />
+          <figcaption>课件 PDF 第 42 页：化学反应 Δ<i>G</i> 计算总图。红色圆圈标出 Kirchhoff 定律与熵的积分外推，底部方框给出 Gibbs–Helmholtz 方程在 Δ<i>H</i> 近似常数时的线性形式 Δ<i>G</i>(<i>T</i>)/<i>T</i> = Δ<i>G</i>(<i>T</i><sub>1</sub>)/<i>T</i><sub>1</sub> + Δ<i>H</i>(1/<i>T</i> − 1/<i>T</i><sub>1</sub>)。</figcaption>
+        </figure>
+        <div class="note"><b>Δ(<i>pV</i>) 何时可以忽略</b><p>课件标注：对理想气体，Δ<i>H</i> = Δ<i>U</i> + Δ(<i>pV</i>) = Δ<i>U</i> + Δ<i>n</i><sub>g</sub><i>RT</i>，必须保留 <i>RT</i>Δ<i>n</i><sub>g</sub> 项；而对<b>凝聚相反应</b>，Δ(<i>pV</i>) ≈ 0，可以忽略。这正是第七课热化学中那条“只对涉及气体的反应做 Δ<i>n</i><sub>g</sub> 修正”的经验规则的来源。</p></div>
+      </section>
+
+      <section>
+        <h2>11. 本课复习清单</h2>
+        <ol class="check-list">
+          <li>写出 <i>A</i> 与 <i>G</i> 的定义，并说明为什么把它们定义成 <i>U</i> − <i>TS</i> 与 <i>H</i> − <i>TS</i> 就能把孤立体系判据搬到体系自身。</li>
+          <li>区分 d<i>A</i><sub><i>T</i>,<i>V</i></sub> ≤ 0 与 d<i>G</i><sub><i>T</i>,<i>p</i></sub> ≤ 0 的适用约束，并解释为什么化学中更常用 <i>G</i>。</li>
+          <li>叙述 <i>A</i> 作为“最大功函数”与 <i>G</i> 作为“最大非膨胀功”的含义，写出对应的等号成立条件。</li>
+          <li>由 <i>H</i>、<i>A</i>、<i>G</i> 的定义推导 d<i>H</i>、d<i>A</i>、d<i>G</i> 三个基本方程，并写出四个方程对应的六个一阶偏导数。</li>
+          <li>说明自然变量为什么要成对出现，以及为什么 d<i>U</i> = <i>T</i>d<i>S</i> − <i>p</i>d<i>V</i> 对不可逆过程也成立。</li>
+          <li>由全微分判据 (∂<i>g</i>/∂<i>y</i>)<sub><i>x</i></sub> = (∂<i>h</i>/∂<i>x</i>)<sub><i>y</i></sub> 导出四条 Maxwell 关系，并说明其中哪一条最常用于把熵的导数换成可测量。</li>
+          <li>用 Maxwell 关系推导内压 π<sub><i>T</i></sub> = <i>T</i>(∂<i>p</i>/∂<i>T</i>)<sub><i>V</i></sub> − <i>p</i>，并验证理想气体 π<sub><i>T</i></sub> = 0。</li>
+          <li>画出 <i>G</i> 随 <i>T</i> 变化的三条曲线，说明斜率由熵决定，并指出交点对应什么。</li>
+          <li>推导 Gibbs–Helmholtz 方程 (∂(<i>G</i>/<i>T</i>)/∂<i>T</i>)<sub><i>p</i></sub> = −<i>H</i>/<i>T</i><sup>2</sup>，并说明它相比 (∂<i>G</i>/∂<i>T</i>)<sub><i>p</i></sub> = −<i>S</i> 的优势。</li>
+          <li>分别给出凝聚相与理想气体在恒温下 Δ<i>G</i><sub>m</sub> 随压力变化的表达式，并比较二者数量级。</li>
+          <li>写出 Δ<sub>r</sub><i>G</i><sup>°</sup> 的两种求法，并说明为什么参考状态单质的 Δ<sub>f</sub><i>G</i><sup>°</sup> = 0。</li>
+          <li>写出引入化学势后的 d<i>G</i> 全微分式，说明 μ 的定义与偏摩尔性质，以及为什么纯物质有 μ = <i>G</i><sub>m</sub>。</li>
+          <li>由 dμ = <i>V</i><sub>m</sub>d<i>p</i> 推出理想气体的 μ = μ<sup>°</sup> + <i>RT</i>ln(<i>p</i>/<i>p</i><sup>°</sup>)，并说明 μ<sup>°</sup> 的物理意义。</li>
+          <li>说明逸度的定义动机与归一化条件（<i>p</i> → 0 时 φ → 1），并解释真实气体标准态为什么是“假想态”。</li>
+          <li>写出逸度系数的积分表达式 ln φ = ∫<sub>0</sub><sup><i>p</i></sup>((<i>Z</i> − 1)/<i>p</i>)d<i>p</i>，并分别说明 <i>Z</i> &lt; 1 与 <i>Z</i> &gt; 1 时 <i>f</i>、μ 与理想值的相对大小。</li>
+          <li>说明为什么严格的热力学平衡常数要用逸度而非分压表示，以及低压下可以近似的理由。</li>
+        </ol>
+        <div class="note"><b>课件提示与待核对项</b><p>① 课件第 10 页同时列出 4.1—4.5 与 4.6—4.7 的章节提纲，本讲只展开 4.6、4.7 与第 5 章；4.1—4.5 属第七课内容。② 第 6—9 页的葡萄糖例题在第 7 页给出两种口径：用 310 K 得 Δ<sub>r</sub><i>G</i><sup>°</sup> = −2865 kJ·mol<sup>−1</sup>，用 298 K 取整得 −2862 kJ·mol<sup>−1</sup>；本课正文采用前者（血液温度 37 ℃），两者差异仅来自温度取值。③ 第 23 页例题只给出方法与积分式，未给数值答案，本课正文的 +1.8 J·mol<sup>−1</sup> 与 +1.7 kJ·mol<sup>−1</sup> 是按课件方法代入 <i>V</i><sub>m</sub>(H<sub>2</sub>O, l) ≈ 18 cm³·mol<sup>−1</sup> 算得，请与课程指定教材核对。④ 第 42 页总图底部写出的 Gibbs–Helmholtz 线性形式假设 Δ<i>H</i> 为常数，温度跨度大时需改用含 Δ<i>C</i><sub>p</sub> 的完整积分。⑤ 课件多处使用 “plank” 拼写与 ϕ/φ 混排，本课正文统一为 φ。</p></div>
+      </section>
+
+      <footer class="source">整理依据：PChem1_lec78 2nd 3rd Laws2 20261008.pdf 课堂课件（42 页，第 1—42 页），对应 Atkins’ Physical Chemistry 第 4.6、4.7 节与第 5 章；开篇关于逸度动机与 Gilbert Lewis 的说明取自该课件第 31 页。全部配图取自该课件原图裁剪（第 4、5、13、16、17、20、21、29、33、37、42 页），公式符号、条件限制与单位均按课件正文；原课件的表述差异与未给数值的例题列于“课件提示与待核对项”。</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

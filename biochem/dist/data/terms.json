@@ -1,40 +1,1975 @@
 [
-{"slug":"side-chain","zh":"侧链基团","en":"Side chain (R group)","category":"氨基酸","definition":"连接在 α-碳上的可变基团，决定氨基酸的大部分化学差异。","expanded":"侧链的极性、电离能力、体积、芳香性与反应性共同影响蛋白质的折叠、结合和催化。","properties":["决定疏水性与电荷","提供修饰和配位位点"],"confusions":"主链决定肽键与主链氢键，侧链并不等于主链。","related":["zwitterion","peptide-bond"],"source":"第2章PPT"},
-{"slug":"zwitterion","zh":"两性离子","en":"Zwitterion","category":"酸碱平衡","definition":"同一分子同时带有正、负电荷而总体可为零的形式。","expanded":"氨基酸常以 –NH₃⁺ 与 –COO⁻ 共存的形式出现；其比例随 pH 改变。","properties":["常在中间 pH 占优势","不是没有电荷"],"confusions":"净电荷为零不表示分子内部没有离子基团。","related":["isoelectric-point","pka"],"source":"第2章PPT"},
-{"slug":"isoelectric-point","zh":"等电点","en":"Isoelectric point (pI)","category":"酸碱平衡","definition":"分子平均净电荷为零时的 pH。","expanded":"pI 决定电泳迁移方向和某些溶解性质。计算时应选取夹住净电荷为零物种的两项 pKa。","properties":["pH<pI 时倾向带正","pH>pI 时倾向带负"],"confusions":"pI 不是所有可电离基团都未电离的 pH。","related":["zwitterion","pka"],"source":"第2章PPT"},
-{"slug":"pka","zh":"酸解离常数的负对数","en":"pKa","category":"酸碱平衡","definition":"用来表示基团失去质子倾向的参数。","expanded":"pH 与 pKa 的相对大小决定某可电离基团的主要质子化状态。","properties":["pH=pKa 时两态约等量"],"confusions":"pKa 属于基团与环境，不等同溶液 pH。","related":["isoelectric-point","histidine"],"source":"第2章PPT"},
-{"slug":"cysteine","zh":"半胱氨酸","en":"Cysteine","category":"氨基酸","definition":"侧链含巯基的可电离氨基酸。","expanded":"两个 Cys 可氧化为二硫键；巯基也可作为亲核基团参与反应或调控。","properties":["–SH","可形成二硫键"],"confusions":"二硫键在还原性胞质中通常不稳定。","related":["disulfide-bond","protein-folding"],"source":"第2章PPT"},
-{"slug":"histidine","zh":"组氨酸","en":"Histidine","category":"氨基酸","definition":"侧链含咪唑基的氨基酸。","expanded":"咪唑基 pKa 接近生理 pH，使 His 常可在酶活性中心担任质子供体或受体。","properties":["可参与酸碱催化","可配位金属"],"confusions":"pKa 接近 7 不意味着所有 His 在中性 pH 都恰好半电离。","related":["pka","active-site"],"source":"第2章PPT"},
-{"slug":"peptide-bond","zh":"肽键","en":"Peptide bond","category":"肽结构","definition":"连接一个氨基酸 α-羧基与另一个 α-氨基的酰胺键。","expanded":"共振使 C–N 具有部分双键性，因此肽单元近似平面且 ω 多接近 trans。","properties":["限制旋转","具有极性"],"confusions":"肽键受限不代表整条肽链没有柔性。","related":["peptide-plane","phi-psi"],"source":"第3章PPT"},
-{"slug":"peptide-plane","zh":"肽平面","en":"Peptide plane","category":"肽结构","definition":"肽键相关原子近似共面的结构单元。","expanded":"肽键共振提高转动势垒；ω 会涨落，X–Pro 还较常见 cis 构象。","properties":["近似刚性","ω 常近 180°"],"confusions":"“平面”是近似结构限制，而非绝对无柔性。","related":["peptide-bond","phi-psi"],"source":"第3章PPT"},
-{"slug":"phi-psi","zh":"φ/ψ 二面角","en":"Phi/Psi torsion angles","category":"肽结构","definition":"主链 N–Cα 与 Cα–C 单键的旋转角。","expanded":"它们在不使原子重叠的条件下决定主链走向，是二级结构几何的核心变量。","properties":["由位阻限制","对应 Ramachandran 图坐标"],"confusions":"ω 不是 φ 或 ψ。","related":["ramachandran-plot","alpha-helix"],"source":"第3章PPT"},
-{"slug":"ramachandran-plot","zh":"Ramachandran 图","en":"Ramachandran plot","category":"蛋白质结构","definition":"显示主链 φ 与 ψ 可允许组合的构象图。","expanded":"允许区来自原子间位阻；α 螺旋、β 折叠等在图上对应不同区域。","properties":["Gly 允许区更大","Pro 构象更受限"],"confusions":"它不是实验结构的二维照片，而是构象可行性图。","related":["phi-psi","alpha-helix"],"source":"第3章PPT"},
-{"slug":"alpha-helix","zh":"α 螺旋","en":"Alpha helix","category":"二级结构","definition":"由主链 n→n+4 氢键稳定的常见螺旋二级结构。","expanded":"蛋白质中主要为右手 α 螺旋，R 基向外伸出。Pro、强电荷排斥或位阻可破坏其稳定性。","properties":["每圈约3.6残基","主链氢键"],"confusions":"侧链不直接构成 n→n+4 的主链氢键。","related":["beta-sheet","ramachandran-plot"],"source":"第3章PPT"},
-{"slug":"beta-sheet","zh":"β 折叠","en":"Beta sheet","category":"二级结构","definition":"多个 β 股以主链氢键连接形成的片层结构。","expanded":"可平行或反平行；侧链交替伸向片层两面。","properties":["β股近似伸展","可跨同链或不同链"],"confusions":"β 折叠不是平整的纸片，而呈折褶状。","related":["beta-turn","alpha-helix"],"source":"第3章PPT"},
-{"slug":"tertiary-structure","zh":"三级结构","en":"Tertiary structure","category":"蛋白质结构","definition":"一条多肽链形成的完整三维构象。","expanded":"疏水效应、氢键、盐桥、范德华作用以及有时的二硫键或配位键共同稳定它。","properties":["包含模体和结构域","决定功能表面"],"confusions":"三级结构并不意味着蛋白质只有一个静态形状。","related":["domain","protein-folding"],"source":"第3章PPT"},
-{"slug":"quaternary-structure","zh":"四级结构","en":"Quaternary structure","category":"蛋白质结构","definition":"多亚基蛋白中亚基的种类、数目、排列与相互作用。","expanded":"四级结构可带来协同、变构与新的结合界面。","properties":["只适用于多亚基蛋白"],"confusions":"单链蛋白没有四级结构。","related":["tertiary-structure","protein-protein-interaction"],"source":"第3章PPT"},
-{"slug":"motif","zh":"模体","en":"Motif","category":"蛋白质结构","definition":"反复出现、具有几何或功能意义的局部结构组合。","expanded":"可指序列模体，也可指 β发夹、Rossmann 折叠等超二级结构。","properties":["小于结构域","常具识别意义"],"confusions":"模体不是一定能独立折叠的完整功能单元。","related":["domain","tertiary-structure"],"source":"第3章PPT"},
-{"slug":"domain","zh":"结构域","en":"Domain","category":"蛋白质结构","definition":"常可相对独立折叠并承担特定结构或功能的蛋白质模块。","expanded":"一个蛋白可含多个结构域，也可重复使用相同结构域。","properties":["常由多个模体组成","与功能模块相关"],"confusions":"结构域不是泛指任何一段序列。","related":["motif","tertiary-structure"],"source":"第3章PPT"},
-{"slug":"protein-folding","zh":"蛋白质折叠","en":"Protein folding","category":"折叠与稳态","definition":"多肽链在给定环境中形成可工作的构象集合的过程。","expanded":"一级序列编码化学倾向，折叠沿能量景观发生而非随机遍历；细胞中常需要伴侣蛋白辅助。","properties":["协同过程","受环境与动力学影响"],"confusions":"Anfinsen 法则不等于所有蛋白都会在细胞内自动折好。","related":["molecular-chaperone","intrinsically-disordered-region"],"source":"第3章PPT"},
-{"slug":"molecular-chaperone","zh":"分子伴侣","en":"Molecular chaperone","category":"折叠与稳态","definition":"帮助其他蛋白正确折叠或避免聚集的一类蛋白。","expanded":"Hsp70 暂时结合暴露的疏水片段；GroEL/GroES 提供隔离腔室。","properties":["降低错误聚集","不规定最终序列信息"],"confusions":"分子伴侣不是所有蛋白的永久组成部分。","related":["protein-folding","disulfide-bond"],"source":"第3章PPT"},
-{"slug":"disulfide-bond","zh":"二硫键","en":"Disulfide bond","category":"蛋白质结构","definition":"两个半胱氨酸巯基氧化后形成的共价连接。","expanded":"它能稳定某些蛋白质的构象，尤其常见于氧化性环境中的分泌蛋白；在还原性胞质中通常较难维持。","properties":["共价交联","由 Cys 残基形成"],"confusions":"二硫键不是所有蛋白质折叠都必需的结构力。","related":["cysteine","protein-folding"],"source":"第2章PPT；第3章PPT"},
-{"slug":"active-site","zh":"活性中心","en":"Active site","category":"蛋白质功能","definition":"酶中结合底物并完成催化的局部三维区域。","expanded":"来自序列上可相距很远的残基可在折叠后汇聚，其中 His 等残基常承担酸碱催化、亲核反应或金属配位。","properties":["由三维构象塑造","可包含结合位点与催化残基"],"confusions":"活性中心不是一段连续序列，也不一定只有一个氨基酸发挥作用。","related":["histidine","tertiary-structure"],"source":"第2章PPT；第3章PPT"},
-{"slug":"intrinsically-disordered-region","zh":"固有无序区","en":"Intrinsically disordered region (IDR)","category":"折叠与稳态","definition":"在单独存在时不稳定地固定为唯一三维结构的一段蛋白质区域。","expanded":"无序区可保留构象柔性，并常通过短线性基序或结合诱导折叠参与调控与信号传递。","properties":["构象集合而非单一结构","常参与调控和相互作用"],"confusions":"无序不等于无功能，也不等于整条蛋白没有结构。","related":["protein-folding","protein-protein-interaction"],"source":"第3章PPT"},
-{"slug":"protein-protein-interaction","zh":"蛋白质—蛋白质相互作用","en":"Protein-protein interaction (PPI)","category":"蛋白质功能","definition":"两个或更多蛋白质借助特定界面形成的可逆或稳定结合。","expanded":"相互作用可形成复合物、调节活性或传递信号；界面常由多种弱作用力共同决定。","properties":["可产生协同与变构","依赖互补表面"],"confusions":"结合界面不一定等同于酶的活性中心。","related":["quaternary-structure","intrinsically-disordered-region"],"source":"第3章PPT"},
-{"slug":"moonlighting-protein","zh":"兼职蛋白","en":"Moonlighting protein","category":"蛋白质功能","definition":"同一条多肽链在不同环境中承担两种或更多彼此独立功能的蛋白质。","expanded":"亚细胞定位、寡聚状态、配体和翻译后修饰可改变可接触的结合对象，使同一结构进入不同功能网络。","properties":["不依赖基因融合","功能随环境切换"],"confusions":"兼职蛋白不是由不同剪接体简单产生的多个蛋白。","related":["protein-protein-interaction","intrinsically-disordered-protein"],"source":"第4章PPT"},
-{"slug":"homolog","zh":"同源物","en":"Homolog","category":"分子进化","definition":"由共同祖先基因演化而来的基因或蛋白质。","expanded":"同源关系是进化关系，通常不使用百分比描述；直系同源与旁系同源都属于同源物。","properties":["共同祖先","可保留序列或结构相似性"],"confusions":"功能相似不能单独证明同源。","related":["ortholog","paralog"],"source":"第4章PPT"},
-{"slug":"ortholog","zh":"直系同源物","en":"Ortholog","category":"分子进化","definition":"不同物种中由物种分化产生的同源基因或蛋白质。","expanded":"直系同源物常保留相近功能，因此常用于跨物种功能推断，但仍可能发生功能偏移。","properties":["来自物种分化","通常跨物种比较"],"confusions":"直系同源不保证功能完全相同。","related":["homolog","paralog"],"source":"第4章PPT"},
-{"slug":"paralog","zh":"旁系同源物","en":"Paralog","category":"分子进化","definition":"由基因复制产生的同源基因或蛋白质。","expanded":"复制后的两个拷贝可保留、分担或产生新功能，因此旁系同源物更常出现功能分化。","properties":["来自基因复制","可位于同一物种"],"confusions":"旁系同源物也可能分布在不同物种，关键判据是复制事件。","related":["homolog","ortholog"],"source":"第4章PPT"},
-{"slug":"collagen","zh":"胶原蛋白","en":"Collagen","category":"纤维状蛋白","definition":"以 Gly-X-Y 重复和三股螺旋为核心结构的细胞外基质蛋白家族。","expanded":"Gly 位于三股螺旋拥挤的中心，Pro/Hyp 限制构象；羟化与成熟交联共同提高稳定性和抗拉强度。","properties":["三股螺旋","富含 Gly、Pro 与 Hyp"],"confusions":"胶原单链不是 α 螺旋，中心的 Gly 主要解决空间拥挤而非形成疏水核心。","related":["protein-folding","disulfide-bond"],"source":"第4章PPT"},
-{"slug":"heme","zh":"血红素","en":"Heme","category":"辅基与结合","definition":"由原卟啉 IX 与中心铁离子组成的含铁辅基。","expanded":"在 Mb/Hb 中，Fe²⁺通过四个卟啉 N、近端 His 与 O₂形成六配位环境。","properties":["可逆结合 O₂","Fe²⁺氧化为 Fe³⁺后失去正常携氧能力"],"confusions":"血红素不是蛋白质本身，而是与珠蛋白结合的辅基。","related":["myoglobin","hemoglobin"],"source":"第4章PPT"},
-{"slug":"myoglobin","zh":"肌红蛋白","en":"Myoglobin (Mb)","category":"氧结合蛋白","definition":"肌肉中以单体形式储存和缓冲氧的含血红素蛋白。","expanded":"Mb 只有一个氧结合位点，呈双曲线结合曲线，P₅₀较低，适合在低氧分压下保持较高饱和度。","properties":["单体","无亚基协同效应"],"confusions":"Mb 主要储氧，不负责血液中的远距离运输。","related":["heme","hemoglobin"],"source":"第4章PPT"},
-{"slug":"hemoglobin","zh":"血红蛋白","en":"Hemoglobin (Hb)","category":"氧结合蛋白","definition":"红细胞中负责氧运输的多亚基含血红素蛋白。","expanded":"成人 HbA 为 α₂β₂四聚体，T/R 构象平衡产生协同结合，并受 H⁺、CO₂和 2,3-BPG 调节。","properties":["四级结构","S 形氧结合曲线"],"confusions":"Hb 的高效运输依赖可调亲和力，不是始终维持最高亲和力。","related":["cooperativity","allostery","bohr-effect"],"source":"第4章PPT"},
-{"slug":"cooperativity","zh":"协同效应","en":"Cooperativity","category":"配体结合","definition":"一个结合位点占据后改变其他位点结合倾向的现象。","expanded":"Hb 中 O₂结合推动 T 态向 R 态转变，使后续位点平均亲和力升高，表现为正协同和 S 形曲线。","properties":["可为正或负","依赖位点间耦联"],"confusions":"协同效应不等于每个位点在任何时刻都具有相同亲和力。","related":["hemoglobin","allostery"],"source":"第4章PPT"},
-{"slug":"allostery","zh":"别构效应","en":"Allostery","category":"蛋白质调控","definition":"配体在一个位点结合后，通过构象平衡改变另一位点功能的现象。","expanded":"别构配体可稳定不同构象状态；Hb 中 O₂、H⁺、CO₂和 BPG 通过改变 T/R 平衡调节携氧。","properties":["位点间可相距较远","通过构象或动态耦联"],"confusions":"别构调节不要求蛋白质发生巨大可见运动。","related":["cooperativity","2-3-bpg"],"source":"第4章PPT"},
-{"slug":"bohr-effect","zh":"波尔效应","en":"Bohr effect","category":"氧运输调控","definition":"H⁺和 CO₂增加会降低 Hb 对 O₂亲和力并促进组织放氧的现象。","expanded":"质子化和 N 端氨基甲酸盐形成稳定 T 态；肺中 CO₂排出与 pH 回升促进氧结合。","properties":["曲线右移","连接代谢强度与供氧"],"confusions":"Bohr 效应不是 CO 与血红素竞争结合。","related":["hemoglobin","allostery"],"source":"第4章PPT"},
-{"slug":"2-3-bpg","zh":"2,3-二磷酸甘油酸","en":"2,3-Bisphosphoglycerate (2,3-BPG)","category":"氧运输调控","definition":"红细胞中结合脱氧 Hb 中央空腔并降低其氧亲和力的带负电代谢物。","expanded":"BPG 稳定 T 态，使氧结合曲线右移；高海拔适应时其浓度可升高。","properties":["结合 β 亚基间空腔","促进组织放氧"],"confusions":"BPG 不是占据血红素的氧结合位点。","related":["hemoglobin","allostery"],"source":"第4章PPT"},
-{"slug":"sickle-cell-hemoglobin","zh":"镰状细胞血红蛋白","en":"Sickle-cell hemoglobin (HbS)","category":"构象病","definition":"β 链第 6 位 Glu→Val 突变形成的血红蛋白变体。","expanded":"突变产生疏水表面斑块，脱氧 HbS 可彼此聚合成长纤维，使红细胞镰变并损伤微循环。","properties":["单点突变","脱氧状态促进聚合"],"confusions":"疾病关键不是 HbS 完全无法结合氧，而是异常蛋白质—蛋白质相互作用。","related":["hemoglobin","protein-protein-interaction"],"source":"第4章PPT"},
-{"slug":"intrinsically-disordered-protein","zh":"固有无序蛋白","en":"Intrinsically disordered protein (IDP)","category":"蛋白质结构与功能","definition":"在生理条件下整体缺乏唯一稳定三级结构、但仍具有生物功能的蛋白质。","expanded":"IDP 以构象集合存在，常富含带电和极性残基，并通过短线性基序、翻译后修饰或结合诱导折叠参与调控。","properties":["缺少稳定疏水核心","常参与信号与转录调控"],"confusions":"无序不等于变性，也不等于没有偏好的局部构象。","related":["intrinsically-disordered-region","moonlighting-protein"],"source":"第4章PPT"},
-{"slug":"analog","zh":"类似物","en":"Analog","category":"分子进化","definition":"功能相似但并非由共同祖先基因产生的蛋白质。","expanded":"不同谱系可在相似选择压力下独立演化出相近功能，这称为趋同进化。","properties":["功能相似","起源不同"],"confusions":"类似物与同源物的区别在进化来源，不是相似程度高低。","related":["homolog","ortholog"],"source":"第4章PPT"},
-{"slug":"beta-turn","zh":"β 转角","en":"Beta turn","category":"蛋白质结构","definition":"使多肽主链在四个残基范围内快速改变方向的常见二级结构。","expanded":"第一个与第四个残基的主链常形成氢键；Gly 的小体积和 Pro 的构象限制使它们常出现在转角中。","properties":["常含四个残基","连接相邻二级结构"],"confusions":"β 转角不是 β 折叠本身，也不要求形成完整 β 发夹。","related":["beta-sheet","phi-psi"],"source":"第3章PPT"}
+  {
+    "slug": "side-chain",
+    "zh": "侧链基团",
+    "en": "Side chain (R group)",
+    "category": "氨基酸",
+    "definition": "连接在 α-碳上的可变基团，决定氨基酸的大部分化学差异。",
+    "expanded": "侧链的极性、电离能力、体积、芳香性与反应性共同影响蛋白质的折叠、结合和催化。",
+    "properties": [
+      "决定疏水性与电荷",
+      "提供修饰和配位位点"
+    ],
+    "confusions": "主链决定肽键与主链氢键，侧链并不等于主链。",
+    "related": [
+      "zwitterion",
+      "peptide-bond"
+    ],
+    "source": "第2章PPT"
+  },
+  {
+    "slug": "zwitterion",
+    "zh": "两性离子",
+    "en": "Zwitterion",
+    "category": "酸碱平衡",
+    "definition": "同一分子同时带有正、负电荷而总体可为零的形式。",
+    "expanded": "氨基酸常以 –NH₃⁺ 与 –COO⁻ 共存的形式出现；其比例随 pH 改变。",
+    "properties": [
+      "常在中间 pH 占优势",
+      "不是没有电荷"
+    ],
+    "confusions": "净电荷为零不表示分子内部没有离子基团。",
+    "related": [
+      "isoelectric-point",
+      "pka"
+    ],
+    "source": "第2章PPT"
+  },
+  {
+    "slug": "isoelectric-point",
+    "zh": "等电点",
+    "en": "Isoelectric point (pI)",
+    "category": "酸碱平衡",
+    "definition": "分子平均净电荷为零时的 pH。",
+    "expanded": "pI 决定电泳迁移方向和某些溶解性质。计算时应选取夹住净电荷为零物种的两项 pKa。",
+    "properties": [
+      "pH<pI 时倾向带正",
+      "pH>pI 时倾向带负"
+    ],
+    "confusions": "pI 不是所有可电离基团都未电离的 pH。",
+    "related": [
+      "zwitterion",
+      "pka"
+    ],
+    "source": "第2章PPT"
+  },
+  {
+    "slug": "pka",
+    "zh": "酸解离常数的负对数",
+    "en": "pKa",
+    "category": "酸碱平衡",
+    "definition": "用来表示基团失去质子倾向的参数。",
+    "expanded": "pH 与 pKa 的相对大小决定某可电离基团的主要质子化状态。",
+    "properties": [
+      "pH=pKa 时两态约等量"
+    ],
+    "confusions": "pKa 属于基团与环境，不等同溶液 pH。",
+    "related": [
+      "isoelectric-point",
+      "histidine"
+    ],
+    "source": "第2章PPT"
+  },
+  {
+    "slug": "cysteine",
+    "zh": "半胱氨酸",
+    "en": "Cysteine",
+    "category": "氨基酸",
+    "definition": "侧链含巯基的可电离氨基酸。",
+    "expanded": "两个 Cys 可氧化为二硫键；巯基也可作为亲核基团参与反应或调控。",
+    "properties": [
+      "–SH",
+      "可形成二硫键"
+    ],
+    "confusions": "二硫键在还原性胞质中通常不稳定。",
+    "related": [
+      "disulfide-bond",
+      "protein-folding"
+    ],
+    "source": "第2章PPT"
+  },
+  {
+    "slug": "histidine",
+    "zh": "组氨酸",
+    "en": "Histidine",
+    "category": "氨基酸",
+    "definition": "侧链含咪唑基的氨基酸。",
+    "expanded": "咪唑基 pKa 接近生理 pH，使 His 常可在酶活性中心担任质子供体或受体。",
+    "properties": [
+      "可参与酸碱催化",
+      "可配位金属"
+    ],
+    "confusions": "pKa 接近 7 不意味着所有 His 在中性 pH 都恰好半电离。",
+    "related": [
+      "pka",
+      "active-site"
+    ],
+    "source": "第2章PPT"
+  },
+  {
+    "slug": "peptide-bond",
+    "zh": "肽键",
+    "en": "Peptide bond",
+    "category": "肽结构",
+    "definition": "连接一个氨基酸 α-羧基与另一个 α-氨基的酰胺键。",
+    "expanded": "共振使 C–N 具有部分双键性，因此肽单元近似平面且 ω 多接近 trans。",
+    "properties": [
+      "限制旋转",
+      "具有极性"
+    ],
+    "confusions": "肽键受限不代表整条肽链没有柔性。",
+    "related": [
+      "peptide-plane",
+      "phi-psi"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "peptide-plane",
+    "zh": "肽平面",
+    "en": "Peptide plane",
+    "category": "肽结构",
+    "definition": "肽键相关原子近似共面的结构单元。",
+    "expanded": "肽键共振提高转动势垒；ω 会涨落，X–Pro 还较常见 cis 构象。",
+    "properties": [
+      "近似刚性",
+      "ω 常近 180°"
+    ],
+    "confusions": "“平面”是近似结构限制，而非绝对无柔性。",
+    "related": [
+      "peptide-bond",
+      "phi-psi"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "phi-psi",
+    "zh": "φ/ψ 二面角",
+    "en": "Phi/Psi torsion angles",
+    "category": "肽结构",
+    "definition": "主链 N–Cα 与 Cα–C 单键的旋转角。",
+    "expanded": "它们在不使原子重叠的条件下决定主链走向，是二级结构几何的核心变量。",
+    "properties": [
+      "由位阻限制",
+      "对应 Ramachandran 图坐标"
+    ],
+    "confusions": "ω 不是 φ 或 ψ。",
+    "related": [
+      "ramachandran-plot",
+      "alpha-helix"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "ramachandran-plot",
+    "zh": "Ramachandran 图",
+    "en": "Ramachandran plot",
+    "category": "蛋白质结构",
+    "definition": "显示主链 φ 与 ψ 可允许组合的构象图。",
+    "expanded": "允许区来自原子间位阻；α 螺旋、β 折叠等在图上对应不同区域。",
+    "properties": [
+      "Gly 允许区更大",
+      "Pro 构象更受限"
+    ],
+    "confusions": "它不是实验结构的二维照片，而是构象可行性图。",
+    "related": [
+      "phi-psi",
+      "alpha-helix"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "alpha-helix",
+    "zh": "α 螺旋",
+    "en": "Alpha helix",
+    "category": "二级结构",
+    "definition": "由主链 n→n+4 氢键稳定的常见螺旋二级结构。",
+    "expanded": "蛋白质中主要为右手 α 螺旋，R 基向外伸出。Pro、强电荷排斥或位阻可破坏其稳定性。",
+    "properties": [
+      "每圈约3.6残基",
+      "主链氢键"
+    ],
+    "confusions": "侧链不直接构成 n→n+4 的主链氢键。",
+    "related": [
+      "beta-sheet",
+      "ramachandran-plot"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "beta-sheet",
+    "zh": "β 折叠",
+    "en": "Beta sheet",
+    "category": "二级结构",
+    "definition": "多个 β 股以主链氢键连接形成的片层结构。",
+    "expanded": "可平行或反平行；侧链交替伸向片层两面。",
+    "properties": [
+      "β股近似伸展",
+      "可跨同链或不同链"
+    ],
+    "confusions": "β 折叠不是平整的纸片，而呈折褶状。",
+    "related": [
+      "beta-turn",
+      "alpha-helix"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "tertiary-structure",
+    "zh": "三级结构",
+    "en": "Tertiary structure",
+    "category": "蛋白质结构",
+    "definition": "一条多肽链形成的完整三维构象。",
+    "expanded": "疏水效应、氢键、盐桥、范德华作用以及有时的二硫键或配位键共同稳定它。",
+    "properties": [
+      "包含模体和结构域",
+      "决定功能表面"
+    ],
+    "confusions": "三级结构并不意味着蛋白质只有一个静态形状。",
+    "related": [
+      "domain",
+      "protein-folding"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "quaternary-structure",
+    "zh": "四级结构",
+    "en": "Quaternary structure",
+    "category": "蛋白质结构",
+    "definition": "多亚基蛋白中亚基的种类、数目、排列与相互作用。",
+    "expanded": "四级结构可带来协同、变构与新的结合界面。",
+    "properties": [
+      "只适用于多亚基蛋白"
+    ],
+    "confusions": "单链蛋白没有四级结构。",
+    "related": [
+      "tertiary-structure",
+      "protein-protein-interaction"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "motif",
+    "zh": "模体",
+    "en": "Motif",
+    "category": "蛋白质结构",
+    "definition": "反复出现、具有几何或功能意义的局部结构组合。",
+    "expanded": "可指序列模体，也可指 β发夹、Rossmann 折叠等超二级结构。",
+    "properties": [
+      "小于结构域",
+      "常具识别意义"
+    ],
+    "confusions": "模体不是一定能独立折叠的完整功能单元。",
+    "related": [
+      "domain",
+      "tertiary-structure"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "domain",
+    "zh": "结构域",
+    "en": "Domain",
+    "category": "蛋白质结构",
+    "definition": "常可相对独立折叠并承担特定结构或功能的蛋白质模块。",
+    "expanded": "一个蛋白可含多个结构域，也可重复使用相同结构域。",
+    "properties": [
+      "常由多个模体组成",
+      "与功能模块相关"
+    ],
+    "confusions": "结构域不是泛指任何一段序列。",
+    "related": [
+      "motif",
+      "tertiary-structure"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "protein-folding",
+    "zh": "蛋白质折叠",
+    "en": "Protein folding",
+    "category": "折叠与稳态",
+    "definition": "多肽链在给定环境中形成可工作的构象集合的过程。",
+    "expanded": "一级序列编码化学倾向，折叠沿能量景观发生而非随机遍历；细胞中常需要伴侣蛋白辅助。",
+    "properties": [
+      "协同过程",
+      "受环境与动力学影响"
+    ],
+    "confusions": "Anfinsen 法则不等于所有蛋白都会在细胞内自动折好。",
+    "related": [
+      "molecular-chaperone",
+      "intrinsically-disordered-region"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "molecular-chaperone",
+    "zh": "分子伴侣",
+    "en": "Molecular chaperone",
+    "category": "折叠与稳态",
+    "definition": "帮助其他蛋白正确折叠或避免聚集的一类蛋白。",
+    "expanded": "Hsp70 暂时结合暴露的疏水片段；GroEL/GroES 提供隔离腔室。",
+    "properties": [
+      "降低错误聚集",
+      "不规定最终序列信息"
+    ],
+    "confusions": "分子伴侣不是所有蛋白的永久组成部分。",
+    "related": [
+      "protein-folding",
+      "disulfide-bond"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "disulfide-bond",
+    "zh": "二硫键",
+    "en": "Disulfide bond",
+    "category": "蛋白质结构",
+    "definition": "两个半胱氨酸巯基氧化后形成的共价连接。",
+    "expanded": "它能稳定某些蛋白质的构象，尤其常见于氧化性环境中的分泌蛋白；在还原性胞质中通常较难维持。",
+    "properties": [
+      "共价交联",
+      "由 Cys 残基形成"
+    ],
+    "confusions": "二硫键不是所有蛋白质折叠都必需的结构力。",
+    "related": [
+      "cysteine",
+      "protein-folding"
+    ],
+    "source": "第2章PPT；第3章PPT"
+  },
+  {
+    "slug": "active-site",
+    "zh": "活性中心",
+    "en": "Active site",
+    "category": "蛋白质功能",
+    "definition": "酶中结合底物并完成催化的局部三维区域。",
+    "expanded": "来自序列上可相距很远的残基可在折叠后汇聚，其中 His 等残基常承担酸碱催化、亲核反应或金属配位。",
+    "properties": [
+      "由三维构象塑造",
+      "可包含结合位点与催化残基"
+    ],
+    "confusions": "活性中心不是一段连续序列，也不一定只有一个氨基酸发挥作用。",
+    "related": [
+      "histidine",
+      "tertiary-structure"
+    ],
+    "source": "第2章PPT；第3章PPT"
+  },
+  {
+    "slug": "intrinsically-disordered-region",
+    "zh": "固有无序区",
+    "en": "Intrinsically disordered region (IDR)",
+    "category": "折叠与稳态",
+    "definition": "在单独存在时不稳定地固定为唯一三维结构的一段蛋白质区域。",
+    "expanded": "无序区可保留构象柔性，并常通过短线性基序或结合诱导折叠参与调控与信号传递。",
+    "properties": [
+      "构象集合而非单一结构",
+      "常参与调控和相互作用"
+    ],
+    "confusions": "无序不等于无功能，也不等于整条蛋白没有结构。",
+    "related": [
+      "protein-folding",
+      "protein-protein-interaction"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "protein-protein-interaction",
+    "zh": "蛋白质—蛋白质相互作用",
+    "en": "Protein-protein interaction (PPI)",
+    "category": "蛋白质功能",
+    "definition": "两个或更多蛋白质借助特定界面形成的可逆或稳定结合。",
+    "expanded": "相互作用可形成复合物、调节活性或传递信号；界面常由多种弱作用力共同决定。",
+    "properties": [
+      "可产生协同与变构",
+      "依赖互补表面"
+    ],
+    "confusions": "结合界面不一定等同于酶的活性中心。",
+    "related": [
+      "quaternary-structure",
+      "intrinsically-disordered-region"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "moonlighting-protein",
+    "zh": "兼职蛋白",
+    "en": "Moonlighting protein",
+    "category": "蛋白质功能",
+    "definition": "同一条多肽链在不同环境中承担两种或更多彼此独立功能的蛋白质。",
+    "expanded": "亚细胞定位、寡聚状态、配体和翻译后修饰可改变可接触的结合对象，使同一结构进入不同功能网络。",
+    "properties": [
+      "不依赖基因融合",
+      "功能随环境切换"
+    ],
+    "confusions": "兼职蛋白不是由不同剪接体简单产生的多个蛋白。",
+    "related": [
+      "protein-protein-interaction",
+      "intrinsically-disordered-protein"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "homolog",
+    "zh": "同源物",
+    "en": "Homolog",
+    "category": "分子进化",
+    "definition": "由共同祖先基因演化而来的基因或蛋白质。",
+    "expanded": "同源关系是进化关系，通常不使用百分比描述；直系同源与旁系同源都属于同源物。",
+    "properties": [
+      "共同祖先",
+      "可保留序列或结构相似性"
+    ],
+    "confusions": "功能相似不能单独证明同源。",
+    "related": [
+      "ortholog",
+      "paralog"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "ortholog",
+    "zh": "直系同源物",
+    "en": "Ortholog",
+    "category": "分子进化",
+    "definition": "不同物种中由物种分化产生的同源基因或蛋白质。",
+    "expanded": "直系同源物常保留相近功能，因此常用于跨物种功能推断，但仍可能发生功能偏移。",
+    "properties": [
+      "来自物种分化",
+      "通常跨物种比较"
+    ],
+    "confusions": "直系同源不保证功能完全相同。",
+    "related": [
+      "homolog",
+      "paralog"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "paralog",
+    "zh": "旁系同源物",
+    "en": "Paralog",
+    "category": "分子进化",
+    "definition": "由基因复制产生的同源基因或蛋白质。",
+    "expanded": "复制后的两个拷贝可保留、分担或产生新功能，因此旁系同源物更常出现功能分化。",
+    "properties": [
+      "来自基因复制",
+      "可位于同一物种"
+    ],
+    "confusions": "旁系同源物也可能分布在不同物种，关键判据是复制事件。",
+    "related": [
+      "homolog",
+      "ortholog"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "collagen",
+    "zh": "胶原蛋白",
+    "en": "Collagen",
+    "category": "纤维状蛋白",
+    "definition": "以 Gly-X-Y 重复和三股螺旋为核心结构的细胞外基质蛋白家族。",
+    "expanded": "Gly 位于三股螺旋拥挤的中心，Pro/Hyp 限制构象；羟化与成熟交联共同提高稳定性和抗拉强度。",
+    "properties": [
+      "三股螺旋",
+      "富含 Gly、Pro 与 Hyp"
+    ],
+    "confusions": "胶原单链不是 α 螺旋，中心的 Gly 主要解决空间拥挤而非形成疏水核心。",
+    "related": [
+      "protein-folding",
+      "disulfide-bond"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "heme",
+    "zh": "血红素",
+    "en": "Heme",
+    "category": "辅基与结合",
+    "definition": "由原卟啉 IX 与中心铁离子组成的含铁辅基。",
+    "expanded": "在 Mb/Hb 中，Fe²⁺通过四个卟啉 N、近端 His 与 O₂形成六配位环境。",
+    "properties": [
+      "可逆结合 O₂",
+      "Fe²⁺氧化为 Fe³⁺后失去正常携氧能力"
+    ],
+    "confusions": "血红素不是蛋白质本身，而是与珠蛋白结合的辅基。",
+    "related": [
+      "myoglobin",
+      "hemoglobin"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "myoglobin",
+    "zh": "肌红蛋白",
+    "en": "Myoglobin (Mb)",
+    "category": "氧结合蛋白",
+    "definition": "肌肉中以单体形式储存和缓冲氧的含血红素蛋白。",
+    "expanded": "Mb 只有一个氧结合位点，呈双曲线结合曲线，P₅₀较低，适合在低氧分压下保持较高饱和度。",
+    "properties": [
+      "单体",
+      "无亚基协同效应"
+    ],
+    "confusions": "Mb 主要储氧，不负责血液中的远距离运输。",
+    "related": [
+      "heme",
+      "hemoglobin"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "hemoglobin",
+    "zh": "血红蛋白",
+    "en": "Hemoglobin (Hb)",
+    "category": "氧结合蛋白",
+    "definition": "红细胞中负责氧运输的多亚基含血红素蛋白。",
+    "expanded": "成人 HbA 为 α₂β₂四聚体，T/R 构象平衡产生协同结合，并受 H⁺、CO₂和 2,3-BPG 调节。",
+    "properties": [
+      "四级结构",
+      "S 形氧结合曲线"
+    ],
+    "confusions": "Hb 的高效运输依赖可调亲和力，不是始终维持最高亲和力。",
+    "related": [
+      "cooperativity",
+      "allostery",
+      "bohr-effect"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "cooperativity",
+    "zh": "协同效应",
+    "en": "Cooperativity",
+    "category": "配体结合",
+    "definition": "一个结合位点占据后改变其他位点结合倾向的现象。",
+    "expanded": "Hb 中 O₂结合推动 T 态向 R 态转变，使后续位点平均亲和力升高，表现为正协同和 S 形曲线。",
+    "properties": [
+      "可为正或负",
+      "依赖位点间耦联"
+    ],
+    "confusions": "协同效应不等于每个位点在任何时刻都具有相同亲和力。",
+    "related": [
+      "hemoglobin",
+      "allostery"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "allostery",
+    "zh": "别构效应",
+    "en": "Allostery",
+    "category": "蛋白质调控",
+    "definition": "配体在一个位点结合后，通过构象平衡改变另一位点功能的现象。",
+    "expanded": "别构配体可稳定不同构象状态；Hb 中 O₂、H⁺、CO₂和 BPG 通过改变 T/R 平衡调节携氧。",
+    "properties": [
+      "位点间可相距较远",
+      "通过构象或动态耦联"
+    ],
+    "confusions": "别构调节不要求蛋白质发生巨大可见运动。",
+    "related": [
+      "cooperativity",
+      "2-3-bpg"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "bohr-effect",
+    "zh": "波尔效应",
+    "en": "Bohr effect",
+    "category": "氧运输调控",
+    "definition": "H⁺和 CO₂增加会降低 Hb 对 O₂亲和力并促进组织放氧的现象。",
+    "expanded": "质子化和 N 端氨基甲酸盐形成稳定 T 态；肺中 CO₂排出与 pH 回升促进氧结合。",
+    "properties": [
+      "曲线右移",
+      "连接代谢强度与供氧"
+    ],
+    "confusions": "Bohr 效应不是 CO 与血红素竞争结合。",
+    "related": [
+      "hemoglobin",
+      "allostery"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "2-3-bpg",
+    "zh": "2,3-二磷酸甘油酸",
+    "en": "2,3-Bisphosphoglycerate (2,3-BPG)",
+    "category": "氧运输调控",
+    "definition": "红细胞中结合脱氧 Hb 中央空腔并降低其氧亲和力的带负电代谢物。",
+    "expanded": "BPG 稳定 T 态，使氧结合曲线右移；高海拔适应时其浓度可升高。",
+    "properties": [
+      "结合 β 亚基间空腔",
+      "促进组织放氧"
+    ],
+    "confusions": "BPG 不是占据血红素的氧结合位点。",
+    "related": [
+      "hemoglobin",
+      "allostery"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "sickle-cell-hemoglobin",
+    "zh": "镰状细胞血红蛋白",
+    "en": "Sickle-cell hemoglobin (HbS)",
+    "category": "构象病",
+    "definition": "β 链第 6 位 Glu→Val 突变形成的血红蛋白变体。",
+    "expanded": "突变产生疏水表面斑块，脱氧 HbS 可彼此聚合成长纤维，使红细胞镰变并损伤微循环。",
+    "properties": [
+      "单点突变",
+      "脱氧状态促进聚合"
+    ],
+    "confusions": "疾病关键不是 HbS 完全无法结合氧，而是异常蛋白质—蛋白质相互作用。",
+    "related": [
+      "hemoglobin",
+      "protein-protein-interaction"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "intrinsically-disordered-protein",
+    "zh": "固有无序蛋白",
+    "en": "Intrinsically disordered protein (IDP)",
+    "category": "蛋白质结构与功能",
+    "definition": "在生理条件下整体缺乏唯一稳定三级结构、但仍具有生物功能的蛋白质。",
+    "expanded": "IDP 以构象集合存在，常富含带电和极性残基，并通过短线性基序、翻译后修饰或结合诱导折叠参与调控。",
+    "properties": [
+      "缺少稳定疏水核心",
+      "常参与信号与转录调控"
+    ],
+    "confusions": "无序不等于变性，也不等于没有偏好的局部构象。",
+    "related": [
+      "intrinsically-disordered-region",
+      "moonlighting-protein"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "analog",
+    "zh": "类似物",
+    "en": "Analog",
+    "category": "分子进化",
+    "definition": "功能相似但并非由共同祖先基因产生的蛋白质。",
+    "expanded": "不同谱系可在相似选择压力下独立演化出相近功能，这称为趋同进化。",
+    "properties": [
+      "功能相似",
+      "起源不同"
+    ],
+    "confusions": "类似物与同源物的区别在进化来源，不是相似程度高低。",
+    "related": [
+      "homolog",
+      "ortholog"
+    ],
+    "source": "第4章PPT"
+  },
+  {
+    "slug": "beta-turn",
+    "zh": "β 转角",
+    "en": "Beta turn",
+    "category": "蛋白质结构",
+    "definition": "使多肽主链在四个残基范围内快速改变方向的常见二级结构。",
+    "expanded": "第一个与第四个残基的主链常形成氢键；Gly 的小体积和 Pro 的构象限制使它们常出现在转角中。",
+    "properties": [
+      "常含四个残基",
+      "连接相邻二级结构"
+    ],
+    "confusions": "β 转角不是 β 折叠本身，也不要求形成完整 β 发夹。",
+    "related": [
+      "beta-sheet",
+      "phi-psi"
+    ],
+    "source": "第3章PPT"
+  },
+  {
+    "slug": "protein-denaturation",
+    "zh": "蛋白质变性",
+    "en": "Protein denaturation",
+    "category": "蛋白质性质",
+    "definition": "蛋白质受理化因素作用后高级结构被破坏、生物活性随之丧失的现象。由吴宪于1931年提出。",
+    "expanded": "变性的本质是<strong>只破坏维持高级结构的非共价键</strong>（氢键、疏水作用、离子键、范德华力），肽键和二硫键保持完好，因此一级结构不变。变性后出现五类可观测变化：溶解度降低、黏度增加、生物活性丧失（最重要）、更易被水解、失去结晶能力。变性因素分物理（加热、冷却、机械作用、流体压力、辐射）与化学（强酸、强碱、高浓度盐、尿素、重金属盐、疏水分子、有机溶剂）两类。",
+    "properties": [
+      "只破坏非共价键，肽键完好",
+      "一级结构不变，活性丧失",
+      "多数不可逆，少数可复性",
+      "检测指标五条：溶解度↓、黏度↑、活性丧失、易水解、失去结晶能力"
+    ],
+    "confusions": "变性 ≠ 水解：变性只是构象被破坏，肽链仍完整；水解是肽键被切断，属于一级结构的破坏。加热灭活的酶若降温后复活性，说明是变性而非水解。",
+    "related": [
+      "renaturation",
+      "protein-hydrolysis",
+      "protein-pi"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第4页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "renaturation",
+    "zh": "复性",
+    "en": "Renaturation",
+    "category": "蛋白质性质",
+    "definition": "变性因素去除后，蛋白质恢复天然构象与生物活性的现象。",
+    "expanded": "复性的可能性取决于变性程度与蛋白质本身。温和变性（如短暂加热、低浓度尿素）后许多蛋白质可以自行复性，说明<strong>一级结构决定了高级结构</strong>——这是 Anfinsen 实验的核心结论。变性严重或共价键被破坏（如二硫键错配、肽键断裂）后则难以复性。课件举了 Weiss（2015）用尿素加涡流剪切使熟鸡蛋蛋白部分恢复活性的例子，被媒体称为“煮熟的鸡蛋变生”。",
+    "properties": [
+      "一级结构决定高级结构的重要证据",
+      "温和变性后较易复性",
+      "二硫键错配会阻碍复性，需要异构酶协助"
+    ],
+    "confusions": "复性指恢复<b>构象与活性</b>，不是重新合成蛋白质；复性后的蛋白质一级结构与变性前完全相同。",
+    "related": [
+      "protein-denaturation",
+      "protein-folding",
+      "molecular-chaperone"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第4页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "protein-hydrolysis",
+    "zh": "蛋白质水解",
+    "en": "Protein hydrolysis",
+    "category": "蛋白质性质",
+    "definition": "蛋白质在酸、碱或蛋白酶催化下肽键断裂，最终生成小肽和游离氨基酸的过程。",
+    "expanded": "三种方式各有取舍。<strong>酸水解</strong>彻底快速且不消旋，但 Trp 几乎全部被破坏，三种羟基氨基酸也有损失，Gln 和 Asn 会脱氨变成 Glu 和 Asp；<strong>碱水解</strong>不破坏 Trp 但会破坏许多氨基酸并引起消旋（产生 D 型氨基酸）；<strong>酶水解</strong>效率高、不消旋、不破坏氨基酸，但蛋白酶对肽键有特异性，水解往往不完全。内切蛋白酶作用于肽链内部，外切蛋白酶从两端开始（氨肽酶作用于 N 端，羧肽酶作用于 C 端）。",
+    "properties": [
+      "酸水解破坏 Trp，碱水解保留 Trp 但引起消旋",
+      "酶水解条件温和、不消旋",
+      "内切酶切内部，外切酶切两端"
+    ],
+    "confusions": "测定 Trp 含量应选碱水解，常规氨基酸组成分析用酸水解但要单独说明 Trp 未测。把 Trp 的数据报成酸水解结果会系统性偏低。",
+    "related": [
+      "protein-denaturation",
+      "edman-degradation"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第6页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "protein-pi",
+    "zh": "蛋白质等电点",
+    "en": "Isoelectric point of protein (pI)",
+    "category": "蛋白质性质",
+    "definition": "蛋白质净电荷为零、在电场中不迁移时溶液的 pH 值。",
+    "expanded": "蛋白质的 pI <strong>不能直接计算</strong>，只能实验测定（等电聚焦或等电点沉淀）。原因是蛋白质有几十个可解离侧链，它们的 pKa 受局部微环境影响而偏离游离氨基酸的数值，没有公式能从序列算出准确结果。定性趋势可以判断：碱性残基（Lys、Arg、His）多则 pI 偏碱，酸性残基（Asp、Glu）多则 pI 偏酸。通过等电聚焦在 pH 梯度中测定，是该性质最重要的应用。",
+    "properties": [
+      "净电荷为零，电场中不迁移",
+      "不能由序列计算，必须实测",
+      "在 pI 处溶解度最低，可用于等电点沉淀"
+    ],
+    "confusions": "不要用“取夹住净电荷为零物种的两个 pKa 求平均”的小分子氨基酸公式去算蛋白质的 pI，这个公式只适用于游离氨基酸。",
+    "related": [
+      "isoelectric-point",
+      "isoelectric-focusing",
+      "zwitterion"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第2、11页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "protein-colloid",
+    "zh": "蛋白质胶体性质",
+    "en": "Colloidal property of proteins",
+    "category": "蛋白质性质",
+    "definition": "蛋白质分子大小在1~100 nm之间，属于胶体，其稳定性依赖水化层与表面同种电荷。",
+    "expanded": "稳定胶体需要同时满足两个条件：① 蛋白质表面极性基团吸引水分子形成<strong>水化层</strong>；② 表面带同种电荷互相<strong>排斥</strong>，阻止分子聚集成大颗粒。要破坏稳定性使蛋白质沉淀，只需破坏其中任意一条。理解这一点就能统一解释盐析、pI 沉淀和有机溶剂沉淀：盐析是破坏水化层，pI 沉淀是消除电荷，有机溶剂则同时破坏水化层并降低介电常数。",
+    "properties": [
+      "大小 1~100 nm",
+      "稳定靠水化层＋同种电荷",
+      "破坏任一条件即可沉淀",
+      "不能透过半透膜，可用于透析脱盐"
+    ],
+    "confusions": "盐析得到的蛋白质通常保持天然构象、可复溶，属于可逆沉淀；重金属盐和有机溶剂沉淀常导致变性，属于不可逆沉淀。两者不能混为一谈。",
+    "related": [
+      "salting-out",
+      "protein-precipitation",
+      "protein-pi"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第2页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "salting-out",
+    "zh": "盐析",
+    "en": "Salting out",
+    "category": "蛋白质性质",
+    "definition": "加入高浓度中性盐（常用硫酸铵）使蛋白质沉淀的方法，通过破坏水化层实现。",
+    "expanded": "盐析的原理是中性盐离子比蛋白质更强烈地吸引水分子，<strong>夺走水化层</strong>，使蛋白质失去胶体稳定性而聚集沉淀。它的最大优点是<strong>不使蛋白质变性</strong>，沉淀可重新溶解并恢复活性，因此是蛋白质分离纯化中最温和、最常用的初步分离手段。不同蛋白质盐析所需的盐浓度不同，因此可以通过调节硫酸铵饱和度实现分级沉淀。定量上常用硫酸铵饱和度（从 20% 到 90%）分段收集。",
+    "properties": [
+      "常用硫酸铵，因为溶解度大、价格低、对蛋白质影响小",
+      "不引起变性，沉淀可复溶",
+      "不同蛋白质所需盐浓度不同，可分级沉淀",
+      "常在 4 ℃ 下操作以减少变性风险"
+    ],
+    "confusions": "盐析与盐溶不同：低浓度盐可以增加某些蛋白质的溶解度（盐溶），高浓度才引起沉淀。操作时按饱和度计算应加固体硫酸铵的量，而不是简单按体积加。",
+    "related": [
+      "protein-precipitation",
+      "protein-colloid",
+      "ammonium-sulfate"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第2页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "protein-precipitation",
+    "zh": "蛋白质沉淀",
+    "en": "Protein precipitation",
+    "category": "蛋白质性质",
+    "definition": "破坏蛋白质胶体稳定性使其从溶液中析出的过程，常用盐析、pI、有机溶剂和重金属盐四种方式。",
+    "expanded": "四条路线的可逆性差别很大。<strong>盐析</strong>破坏水化层，最温和、可逆；<strong>pI 沉淀</strong>通过调节 pH 到 pI 消除表面净电荷，通常可逆；<strong>有机溶剂沉淀</strong>（乙醇、丙酮）降低介电常数并破坏水化层，低温下可减少变性；<strong>重金属盐沉淀</strong>（Pb²⁺、Hg²⁺、Cu²⁺）与巯基和羧基结合，基本不可逆且必然变性。选择哪种方式取决于后续是否需要保留活性。",
+    "properties": [
+      "盐析可逆、pI 沉淀通常可逆",
+      "有机溶剂需低温操作",
+      "重金属盐沉淀不可逆并导致变性",
+      "沉淀不等于变性，但变性常伴随沉淀"
+    ],
+    "confusions": "“沉淀”与“变性”是两件不同的事：沉淀是溶解度问题，变性是构象问题。盐析的沉淀没有变性，而加热后的沉淀既有变性又有沉淀。",
+    "related": [
+      "salting-out",
+      "protein-colloid",
+      "protein-denaturation"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第2页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "sds-page",
+    "zh": "SDS-聚丙烯酰胺凝胶电泳",
+    "en": "SDS-PAGE",
+    "category": "研究方法",
+    "definition": "用十二烷基硫酸钠使蛋白质带均匀负电荷后按分子量进行电泳分离的技术。",
+    "expanded": "SDS 与蛋白质结合后使所有蛋白质带上<strong>与分子量成正比的均匀负电荷</strong>，消除了不同蛋白质之间电荷差异的影响；再加入还原剂（如巯基乙醇或 DTT）打乱二硫键，蛋白质变成伸展的棒状。于是凝胶中的迁移率<strong>只由分子量决定</strong>，这是它比天然电泳更常用的原因。以已知分子量的标准蛋白作对照，可读出未知蛋白的分子量。它也用来判断亚基组成和纯度。",
+    "properties": [
+      "SDS 使电荷均匀化，消除电荷差异",
+      "还原剂打乱二硫键，消除形状差异",
+      "迁移率只反映分子量",
+      "需要已知分子量标准蛋白作对照"
+    ],
+    "confusions": "SDS-PAGE 给出的是<b>亚基分子量</b>而不是完整蛋白质的分子量；对于有多个亚基的蛋白质，条带数反映亚基种类数。糖蛋白因糖链结合 SDS 少，测得的分子量常偏高。",
+    "related": [
+      "two-dimensional-electrophoresis",
+      "isoelectric-focusing",
+      "protein-pi"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第10页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "isoelectric-focusing",
+    "zh": "等电聚焦",
+    "en": "Isoelectric focusing (IEF)",
+    "category": "研究方法",
+    "definition": "在 pH 梯度凝胶中使蛋白质迁移至各自 pI 位置而停止的电泳技术。",
+    "expanded": "凝胶中建立起稳定的 pH 梯度（酸性端在正极侧）。蛋白质在其中迁移，直到到达 pH 等于自身 pI 的位置——此处净电荷为零，没有电场力驱使它继续移动，于是聚焦成一条清晰的条带。这套机制使蛋白质的分离分辨率极高，可以直接读出 pI 值。它也是双向电泳的第一维。",
+    "properties": [
+      "需要稳定的 pH 梯度",
+      "分辨率极高，可测 pI",
+      "是双向电泳第一维",
+      "常用于蛋白质组学"
+    ],
+    "confusions": "等电聚焦测定的是 pI，SDS-PAGE 测定的是分子量，两者测量的物理量完全不同。等电聚焦中蛋白质没有停止在“分子量对应位置”的说法是错的。",
+    "related": [
+      "isoelectric-point",
+      "protein-pi",
+      "two-dimensional-electrophoresis",
+      "sds-page"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第11页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "two-dimensional-electrophoresis",
+    "zh": "双向电泳",
+    "en": "Two-dimensional electrophoresis (2-DE)",
+    "category": "研究方法",
+    "definition": "把等电聚焦与 SDS-PAGE 正交组合、分别按 pI 和分子量分离蛋白质的技术。",
+    "expanded": "第一维按 <strong>pI</strong> 分离，第二维按<strong>分子量</strong>分离。因为两个维度测量的是彼此独立的性质，所以一种蛋白质在二维图谱上对应<strong>一个点</strong>，图谱上的点数近似反映样品中蛋白质的种类数。比较不同条件的两张图谱时，同一个蛋白质位置基本相同，只有强度变化，这使二维电泳成为蛋白质组学比较分析的经典工具。主要限制是极碱、极酸和膜蛋白常难以进入图谱。",
+    "properties": [
+      "两个维度正交：pI 与分子量",
+      "一种蛋白质对应一个点",
+      "用于蛋白质组差异比较",
+      "极碱、极酸、膜蛋白难以检测"
+    ],
+    "confusions": "二维电泳中“位置相同”同时依赖 pI 和分子量两个参数，因此比单向电泳可靠；但不能仅凭位置相同就断定是同一蛋白质，还需要质谱确认。",
+    "related": [
+      "isoelectric-focusing",
+      "sds-page",
+      "protein-pi"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第12页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "biuret-reaction",
+    "zh": "双缩脲反应",
+    "en": "Biuret reaction",
+    "category": "呈色反应",
+    "definition": "蛋白质在碱性条件下与硫酸铜生成紫红色配合物（540 nm）的反应，可定量测定蛋白质。",
+    "expanded": "反应的显色基础是<strong>肽键</strong>：出现两个以上肽键即可与 Cu²⁺ 形成紫红色配合物。因为响应值主要来自肽键的数量而不是氨基酸的组成，所以它<strong>受氨基酸组成影响小</strong>，适合用于蛋白质的毫克级定量测定。这也是它比其他呈色反应更“通用”的原因。",
+    "properties": [
+      "显色基团是肽键，不是侧链",
+      "颜色紫红色，测定波长 540 nm",
+      "受氨基酸组成影响小",
+      "适合毫克级定量"
+    ],
+    "confusions": "双缩脲反应需要两个以上肽键，单独一个二肽或氨基酸不显色。这一点与茚三酮反应（针对游离氨基）区分开。",
+    "related": [
+      "bradford-assay",
+      "lowry-assay",
+      "peptide-bond"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第7页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "bradford-assay",
+    "zh": "考马斯亮蓝法",
+    "en": "Bradford assay",
+    "category": "呈色反应",
+    "definition": "利用考马斯亮蓝 G-250 与蛋白质结合后由棕色变为蓝色的性质定量蛋白质的方法。",
+    "expanded": "染料在酸性条件下与蛋白质的碱性氨基酸残基和疏水区结合，最大吸收峰从 465 nm 移到 595 nm，溶液由棕色变成蓝色，颜色深浅与蛋白质浓度成正比。优点是<strong>快速、操作简单、灵敏度高</strong>；主要缺点是响应值受氨基酸组成影响（碱性残基和芳香族残基贡献大），因此与标准蛋白组成差异大的样品存在系统误差。",
+    "properties": [
+      "试剂为考马斯亮蓝 G-250 酸性溶液",
+      "结合后变蓝，测 595 nm",
+      "快速、简单、灵敏",
+      "响应值依赖氨基酸组成"
+    ],
+    "confusions": "Bradford 法测的是染料结合量而不是肽键数，所以不能像双缩脲那样认为“与组成无关”。表面活性剂会干扰测定。",
+    "related": [
+      "biuret-reaction",
+      "lowry-assay"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第7页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "lowry-assay",
+    "zh": "福林-酚法",
+    "en": "Lowry (Folin-Ciocalteu) assay",
+    "category": "呈色反应",
+    "definition": "用磷钼酸和磷钨酸试剂与蛋白质反应生成蓝色产物的定量方法，灵敏度高但受组成影响。",
+    "expanded": "反应分两步：先生成铜-蛋白质配合物，再由福林-酚试剂被还原产生蓝色（钼蓝）。它的<strong>灵敏度很高</strong>，适合低浓度样品，但显色强度显著依赖酪氨酸和色氨酸的含量，因此当样品与标准蛋白的芳香族氨基酸组成差异大时会产生系统误差。操作上对时间和温度的控制要求也更严格。",
+    "properties": [
+      "试剂为磷钼酸和磷钨酸",
+      "显蓝色",
+      "灵敏度高",
+      "受芳香族氨基酸组成影响，有系统误差"
+    ],
+    "confusions": "不要把福林-酚法与双缩脲法混用同一套标准曲线；福林-酚法的响应强烈依赖 Tyr 和 Trp 含量，这正是课件标注“鉴定含有 Tyr 残基的蛋白质”的原因。",
+    "related": [
+      "biuret-reaction",
+      "bradford-assay",
+      "uv-absorbance-280"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第7页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "uv-absorbance-280",
+    "zh": "280 nm 紫外吸收",
+    "en": "UV absorbance at 280 nm",
+    "category": "蛋白质性质",
+    "definition": "蛋白质中 Phe、Tyr、Trp 的芳香环使其在 280 nm 有最大吸收，用于快速定量。",
+    "expanded": "三个芳香族氨基酸的侧链苯环提供共轭体系，其中 <strong>Trp 的贡献最大</strong>，Tyr 次之，Phe 最小。这个方法不需要任何试剂、样品不被破坏，是最简便的蛋白质定量手段。但它依赖芳香族氨基酸含量，因此不同蛋白质在同一浓度下的吸收值差异很大；样品中存在核酸时读数会显著偏高，需用 A260/A280 比值判断污染程度。",
+    "properties": [
+      "最大吸收 280 nm",
+      "Trp 贡献最大",
+      "无需试剂、不破坏样品",
+      "受芳香族氨基酸组成和核酸污染影响"
+    ],
+    "confusions": "280 nm 定量必须知道或假定蛋白质的消光系数；对不含 Trp 和 Tyr 的蛋白质（如部分胶原蛋白）此法基本不可用。纯蛋白质的 A260/A280 通常在 0.5 附近。",
+    "related": [
+      "lowry-assay",
+      "uv-absorbance-260"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第2页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "edman-degradation",
+    "zh": "Edman 降解",
+    "en": "Edman degradation",
+    "category": "研究方法",
+    "definition": "从 N 端逐个化学降解并鉴定氨基酸的蛋白质测序方法，可自动化。",
+    "expanded": "异硫氰酸苯酯（PITC）在碱性条件下与 N 端氨基结合，形成苯氨基硫甲酰衍生物，再用酸处理使 N 端氨基酸以苯乙内酰硫脲（PTH）衍生物形式脱落，鉴定后进入下一轮循环。它<strong>从 N 端开始逐个测定</strong>，已实现自动化（Sequencer）。局限是肽链的 N 端若被封闭（乙酰化、甲酰化）则无法进行，且长肽的测序效率随循环数增加而下降；现代更常用质谱测序。",
+    "properties": [
+      "从 N 端逐个降解",
+      "试剂为异硫氰酸苯酯 PITC",
+      "已可自动化",
+      "N 端封闭时无法进行"
+    ],
+    "confusions": "Edman 降解测的是 N 端向 C 端的方向，而羧肽酶测的是 C 端；两者互不相同。若肽链 N 端被封闭，需先设法去封闭或改用质谱。",
+    "related": [
+      "protein-hydrolysis",
+      "sanger-reagent"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第16页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "sanger-reagent",
+    "zh": "Sanger 试剂",
+    "en": "Sanger reagent (FDNB)",
+    "category": "研究方法",
+    "definition": "2,4-二硝基氟苯，用于测定蛋白质 N 端氨基酸的试剂。",
+    "expanded": "Sanger 试剂与肽链 N 端的游离氨基反应生成黄色的二硝基苯基（DNP）衍生物。完成反应后把肽链完全水解，带有 DNP 标记的 N 端氨基酸被释放出来，通过层析鉴定即可确定 N 端是什么氨基酸。丹磺酰氯（dansyl chloride）是另一种更灵敏的 N 端标记试剂，产物有强荧光，检测灵敏度更高。",
+    "properties": [
+      "2,4-二硝基氟苯（FDNB）",
+      "与 N 端氨基反应生成黄色 DNP 衍生物",
+      "水解后鉴定标记氨基酸，确定 N 端",
+      "丹磺酰氯是更灵敏的替代试剂"
+    ],
+    "confusions": "Sanger 试剂标记的是 N 端，不能用来测 C 端；C 端使用羧肽酶法。Sanger 法也用于 DNA 测序（双脱氧法），但那是另一种用途，不要混淆。",
+    "related": [
+      "edman-degradation",
+      "sanger-sequencing"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第16页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "nucleotide",
+    "zh": "核苷酸",
+    "en": "Nucleotide",
+    "category": "核苷酸",
+    "definition": "由核苷与磷酸通过磷酸酯键连接而成的化合物，是核酸的基本结构单元。",
+    "expanded": "核苷酸的磷酸基团连在糖环的羟基上，自然界主要使用 <strong>5′-核苷酸</strong>（磷酸连在 C5′ 上）。按磷酸基团数目分为 NMP（一磷酸）、NDP（二磷酸）、NTP（三磷酸），通过磷酸酐键相连，从糖一侧向外依次记为 α、β、γ。核苷酸不仅参与构成核酸，还承担能量转移、信号传递、辅酶组分、代谢调节等至少七类功能。",
+    "properties": [
+      "核苷 + 磷酸，通过磷酸酯键连接",
+      "自然界以 5′-核苷酸为主",
+      "NMP → NDP → NTP，磷酸酐键连接",
+      "既参与构成核酸，又是多功能分子"
+    ],
+    "confusions": "核苷（nucleoside）不含磷酸，核苷酸（nucleotide）含磷酸；英文中多出的那个 t 就是 phosphate 的标记。不要把两者混写。",
+    "related": [
+      "nucleoside",
+      "base",
+      "amp-adp-atp"
+    ],
+    "source": "第6章《核苷酸》PPT，第2页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "nucleoside",
+    "zh": "核苷",
+    "en": "Nucleoside",
+    "category": "核苷酸",
+    "definition": "由碱基与戊糖通过 β-N-糖苷键连接而成的化合物。",
+    "expanded": "戊糖与碱基之间通过 <strong>β-N-糖苷键</strong>连接：嘧啶碱基通过 N1 与糖连接，嘌呤碱基通过 N9 与糖连接。糖有两种：D-核糖（存在于 RNA）与 2-脱氧-D-核糖（存在于 DNA），差别只在 2′ 位——一个是羟基，一个是氢。糖苷键的旋转受阻，因此核苷存在顺式（syn）与反式（anti）两种构象。",
+    "properties": [
+      "碱基 + 戊糖，通过 β-N-糖苷键连接",
+      "嘧啶连 N1，嘌呤连 N9",
+      "核糖与脱氧核糖的差别在 2′ 位",
+      "存在 syn/anti 两种构象"
+    ],
+    "confusions": "核苷不含磷酸，核苷酸含磷酸。2′-OH 的有无是判定 RNA 与 DNA 的唯一化学标准。",
+    "related": [
+      "nucleotide",
+      "base",
+      "glycosidic-bond",
+      "ribose"
+    ],
+    "source": "第6章《核苷酸》PPT，第5页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "base",
+    "zh": "碱基",
+    "en": "(Nitrogenous) base",
+    "category": "核苷酸",
+    "definition": "核酸中的含氮芳香杂环化合物，分嘧啶类和嘌呤类。",
+    "expanded": "嘧啶类有胞嘧啶（C）、尿嘧啶（U）、胸腺嘧啶（T）；嘌呤类有腺嘌呤（A）和鸟嘌呤（G）。C 同时存在于 RNA 和 DNA，U 只存在于 RNA，T 只存在于 DNA，A 和 G 两者都有。碱基的三个共同性质：几乎不溶于水（芳香杂环）、存在互变异构（平衡强烈偏向酮式和氨基式）、在 <strong>260 nm</strong> 有强吸收。",
+    "properties": [
+      "嘧啶环编号 1~6，嘌呤环编号 1~9",
+      "糖通过嘧啶 N1 或嘌呤 N9 连接",
+      "几乎不溶于水",
+      "260 nm 强吸收"
+    ],
+    "confusions": "U 只在 RNA，T 只在 DNA，但 C、A、G 两者都有。“DNA 有四种碱基”这一说法虽然在数量上正确，但不要误以为 DNA 专有 T、甲 U 是四者之一。",
+    "related": [
+      "nucleotide",
+      "nucleoside",
+      "tautomerism",
+      "uv-absorbance-260"
+    ],
+    "source": "第6章《核苷酸》PPT，第2页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "tautomerism",
+    "zh": "碱基互变异构",
+    "en": "Base tautomerism",
+    "category": "核苷酸",
+    "definition": "碱基在酮式与烯醇式、氨基式与亚氨基式之间互变的现象，平衡强烈偏向酮式与氨基式。",
+    "expanded": "含氮杂环上的羰基与羟基、氨基与亚氨基可以互变。课件给出的比例很说明问题：<strong>酮式占 99.99%，烯醇式仅 0.01%；氨基式占 99.99%，亚氨基式仅 0.01%</strong>。这个数字的意义在于：正因平衡几乎完全偏在一侧，碱基配对才具有确定性。如果烯醇式占比可观，A 就有可能和 G 配对，遗传信息无法忠实传递。",
+    "properties": [
+      "酮式与烯醇式互变，平衡偏向酮式",
+      "氨基式与亚氨基式互变，平衡偏向氨基式",
+      "两种形式各占 99.99% 与 0.01%",
+      "是碱基配对确定性的化学基础"
+    ],
+    "confusions": "稀有互变异构体只占极少数，但它们确实是自发突变的内源原因之一——复制瞬间若出现烯醇式，就可能造成错配。不要因为比例极低就认为它没有生物学意义。",
+    "related": [
+      "base",
+      "base-pairing",
+      "chargaff-rules"
+    ],
+    "source": "第6章《核苷酸》PPT，第4页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "glycosidic-bond",
+    "zh": "β-N-糖苷键",
+    "en": "β-N-glycosidic bond",
+    "category": "核苷酸",
+    "definition": "连接碱基与戊糖的化学键，嘧啶通过 N1、嘌呤通过 N9 与糖的 C1′ 相连。",
+    "expanded": "糖苷键的旋转受到阻碍，因此核苷存在两种稳定构象：<strong>反式（anti）</strong>碱基平面远离糖环；<strong>顺式（syn）</strong>碱基平面转回糖环上方。游离的嘧啶核苷通常采取反式，因为顺式会与 O2 和 C5′ 产生空间位阻；游离的嘌呤核苷（尤其鸟苷）容易采取顺式。但在 DNA 或 RNA 双螺旋中，嘌呤核苷也主要是反式构象——链中的构象受碱基堆叠和骨架走向约束。",
+    "properties": [
+      "嘧啶连 N1，嘌呤连 N9",
+      "旋转变阻，形成 syn/anti 两种构象",
+      "游离嘧啶核苷偏反式，游离嘌呤核苷偏顺式",
+      "在双螺旋中嘌呤核苷主要为反式"
+    ],
+    "confusions": "“游离核苷的构象偏好”不能直接搬到核酸链中。这是构象讨论中最容易出错的地方。",
+    "related": [
+      "nucleoside",
+      "base",
+      "ribose"
+    ],
+    "source": "第6章《核苷酸》PPT，第5页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "ribose",
+    "zh": "核糖与脱氧核糖",
+    "en": "Ribose / 2-deoxyribose",
+    "category": "核苷酸",
+    "definition": "核酸中的戊糖，RNA 含 D-核糖，DNA 含 2-脱氧-D-核糖，差别只在 2′ 位。",
+    "expanded": "D-核糖的 2′ 位是羟基，2-脱氧-D-核糖的 2′ 位是氢。这个看似微小的差别影响极大：<strong>2′-OH 是亲核基团</strong>，会进攻骨架上的磷原子形成 2′,3′-环状磷酸二酯中间体，使 RNA 在碱性条件下容易水解；DNA 没有 2′-OH，因此显著更稳定，适合长期保存遗传信息。戊糖种类也是判定一个核酸是 DNA 还是 RNA 的<strong>唯一化学标准</strong>。",
+    "properties": [
+      "RNA 含 D-核糖，DNA 含 2-脱氧-D-核糖",
+      "差别仅在 2′ 位（–OH vs –H）",
+      "2′-OH 使 RNA 在碱性条件下易水解",
+      "是判定 DNA/RNA 的唯一标准"
+    ],
+    "confusions": "碱基种类（U/T）只能作为辅助判据，戊糖种类才是唯一标准。这是本章最容易考的细节之一。",
+    "related": [
+      "nucleoside",
+      "rna-vs-dna",
+      "nucleotide"
+    ],
+    "source": "第6章《核苷酸》PPT，第5页；第7章 PPT，第3页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "amp-adp-atp",
+    "zh": "AMP、ADP 与 ATP",
+    "en": "AMP / ADP / ATP",
+    "category": "核苷酸",
+    "definition": "腺苷的一、二、三磷酸形式，依次含 1、2、3 个磷酸基团，通过磷酸酐键连接。",
+    "expanded": "AMP 的 5′-磷酸与一分子无机磷酸缩合形成<strong>磷酸酐键</strong>得到 ADP；ADP 再与一分子无机磷酸缩合得到 ATP。三个磷酸从糖一侧向外依次记为 α、β、γ。ATP 之所以是通用能量货币，是因为两个磷酰基之间的磷酸酐键水解时释放较多自由能，而水解产物 ADP 和 Pi 都稳定、可反复再生——这个键恰好落在“既不太稳定也不太惰性”的合适区间。",
+    "properties": [
+      "NMP → NDP → NTP，通过磷酸酐键连接",
+      "磷酸从糖侧向外记为 α、β、γ",
+      "磷酸酐键水解释放较多自由能",
+      "ATP 是通用能量货币"
+    ],
+    "confusions": "不是所有代谢过程都用 ATP：糖原合成用 UTP，磷脂合成用 CTP，蛋白质合成中某些步骤用 GTP。用不同核苷三磷酸可以把不同代谢过程在能量层面区分开，便于独立调控。",
+    "related": [
+      "nucleotide",
+      "cyclic-nucleotide",
+      "phosphoanhydride-bond"
+    ],
+    "source": "第6章《核苷酸》PPT，第9页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "cyclic-nucleotide",
+    "zh": "环核苷酸",
+    "en": "Cyclic nucleotide",
+    "category": "核苷酸",
+    "definition": "磷酸同时与糖环上两个羟基成酯形成的环状核苷酸，如 3′,5′-cAMP 和 cGMP。",
+    "expanded": "最典型的是 <a class=\"term-link\" href=\"term.html?slug=camp\">cAMP</a> 和 cGMP，都是 3′,5′-环化。它们的意义在于<strong>是信号分子而非结构单元</strong>：作为第二信使把细胞外的信号（激素、神经递质）转成细胞内的响应。这与它们作为核酸单体的“本职工作”完全不同，是核苷酸功能多样性的最直接体现。除经典的 3′,5′-环化形式外，还有环二鸟苷酸（c-di-GMP）等。",
+    "properties": [
+      "磷酸同时与糖环两个羟基成酯",
+      "cAMP、cGMP 为 3′,5′-环化",
+      "作为第二信使参与信号转导",
+      "不参与构成核酸"
+    ],
+    "confusions": "cAMP 是信号分子，不能掺入 RNA 链；不要把它与 3′-AMP 或 5′-AMP 混为一谈。",
+    "related": [
+      "camp",
+      "nucleotide",
+      "amp-adp-atp"
+    ],
+    "source": "第6章《核苷酸》PPT，第10页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "camp",
+    "zh": "环腺苷酸",
+    "en": "Cyclic AMP (cAMP)",
+    "category": "核苷酸",
+    "definition": "3′,5′-环腺苷酸，细胞内重要的第二信使，把胞外信号转换为胞内响应。",
+    "expanded": "ATP 在腺苷酸环化酶催化下生成 cAMP，再由磷酸二酯酶水解为 5′-AMP 而失活。cAMP 通过激活蛋白激酶 A（PKA）等下游效应分子传递信号，参与糖代谢调节、基因表达调控等多种过程。它与 cGMP 共同构成细胞内第二信使系统的核心。",
+    "properties": [
+      "由 ATP 经腺苷酸环化酶生成",
+      "由磷酸二酯酶水解灭活",
+      "激活 PKA 等下游分子",
+      "与 cGMP 共同作为第二信使"
+    ],
+    "confusions": "cAMP 与 cGMP 的作用常常相反，但并非永远如此，取决于细胞类型和下游效应分子，不能一概而论。",
+    "related": [
+      "cyclic-nucleotide",
+      "amp-adp-atp"
+    ],
+    "source": "第6章《核苷酸》PPT，第10页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "uv-absorbance-260",
+    "zh": "260 nm 紫外吸收",
+    "en": "UV absorbance at 260 nm",
+    "category": "核苷酸",
+    "definition": "碱基的共轭杂环结构使核酸在 260 nm 有强吸收，是核酸定量与检测的基础。",
+    "expanded": "碱基的芳香杂环具有强共轭体系，在 260 nm 处吸收最大。这一性质的应用包括：测定核酸浓度（1 OD₂₆₀ 的双链 DNA 约相当于 50 μg/mL）、判断核酸纯度（A260/A280 比值，纯 DNA 约 1.8、纯 RNA 约 2.0）、监测变性（增色效应）以及检测杂交。",
+    "properties": [
+      "最大吸收 260 nm",
+      "1 OD₂₆₀ 双链 DNA ≈ 50 μg/mL",
+      "纯 DNA 的 A260/A280 ≈ 1.8，纯 RNA ≈ 2.0",
+      "变性时吸收增加（增色效应）"
+    ],
+    "confusions": "260 nm 是碱基的吸收，280 nm 是蛋白质芳香族氨基酸的吸收，两者用途不同。核酸样品中残留蛋白质会降低 A260/A280 比值。",
+    "related": [
+      "base",
+      "uv-absorbance-280"
+    ],
+    "source": "第6章《核苷酸》PPT，第2页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "nucleotide-functions",
+    "zh": "核苷酸的七大功能",
+    "en": "Biological functions of nucleotides",
+    "category": "核苷酸",
+    "definition": "核苷酸除作为核酸结构单元外，还承担能量转移、信号传递、辅酶组分、代谢调节等至少七类功能。",
+    "expanded": "课件归纳的七类功能：① <strong>核酸的结构单元</strong>；② <strong>能量货币</strong>（多数用 ATP，糖原合成用 UTP，磷脂合成用 CTP，蛋白质合成用 GTP）；③ <strong>信号转导</strong>（cAMP、cGMP 作为第二信使，核苷酸通过 G 蛋白调控）；④ <strong>辅酶与辅基的组分</strong>（辅酶 Ⅰ、Ⅱ 中都含 ADP）；⑤ <strong>活性中间产物的前体</strong>（SAM 作为甲基供体，UDP-糖参与糖基转移）；⑥ <strong>代谢调节的别构效应物</strong>（ATP 抑制磷酸果糖激酶-1，AMP 激活糖原磷酸化酶）；⑦ <strong>基因表达调控</strong>（ppGpp、pppGpp 参与原核生物的严紧反应）。",
+    "properties": [
+      "结构单元、能量、信号、辅酶、前体、别构、基因表达七大方面",
+      "ATP 是通用能量货币但非唯一",
+      "ATP/AMP 比值是细胞的能量电量表",
+      "把核苷酸只当核酸原料是最大的误解"
+    ],
+    "confusions": "第 ⑥ 条体现一种对称设计：ATP 充足时抑制消耗能量的糖酵解，AMP 积累时激活分解糖原的途径。用同一分子的两种形式传递相反信号，是代谢调控中很经济的设计。",
+    "related": [
+      "nucleotide",
+      "amp-adp-atp",
+      "cyclic-nucleotide"
+    ],
+    "source": "第6章《核苷酸》PPT，第12~16页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "ribonucleotide-vs-deoxyribonucleotide",
+    "zh": "核糖核苷酸与脱氧核糖核苷酸",
+    "en": "Ribonucleotide vs deoxyribonucleotide",
+    "category": "核酸结构",
+    "definition": "构成 RNA 与 DNA 的两类核苷酸，化学差别在戊糖的 2′ 位和第四种碱基。",
+    "expanded": "两类核苷酸的差别及其后果：① <strong>戊糖</strong>——RNA 含 D-核糖（2′-OH），DNA 含 2-脱氧-D-核糖（2′-H）。这是判定 DNA 与 RNA 的唯一化学标准。2′-OH 是亲核基团，会进攻骨架磷原子形成 2′,3′-环状磷酸二酯中间体，使 RNA 在碱性条件下易水解，而 DNA 明显更稳定。② <strong>第四种碱基</strong>——RNA 用 U，DNA 用 T。C 会自发脱氨变成 U，DNA 用带甲基的 T 给正常位置打标记，修复系统才能发现并替换没有标记的 U。",
+    "properties": [
+      "戊糖种类是判定 DNA/RNA 的唯一化学标准",
+      "2′-OH 使 RNA 易被碱水解",
+      "RNA 用 U，DNA 用 T",
+      "T 是 U 加一个甲基，用于标记正常位置"
+    ],
+    "confusions": "“DNA 比 RNA 稳定”的根本原因是缺少 2′-OH，不是碱基差异。另外，枯草杆菌噬菌体 PBS2 把 DNA 中的 T 全部替换成 U，说明“DNA 必用 T”并非绝对铁律。",
+    "related": [
+      "ribose",
+      "rna-vs-dna",
+      "base"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第2~3页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "rna-vs-dna",
+    "zh": "RNA 与 DNA 的三点差异",
+    "en": "Three differences between RNA and DNA",
+    "category": "核酸结构",
+    "definition": "RNA 与 DNA 在戊糖种类、第四种碱基和链的数目三方面存在系统性差异。",
+    "expanded": "三点差异及后果：① <strong>戊糖</strong>（见“核糖核苷酸与脱氧核糖核苷酸”），决定稳定性差异，是判定二者的唯一标准；② <strong>第四种碱基</strong>——RNA 用 U、DNA 用 T，使 DNA 能区分“正常碱基”与“C 脱氨产生的 U”，保证修复的准确性；③ <strong>链的数目</strong>——DNA 通常双链，适合作为复制、转录和修复的模板；RNA 通常单链，可以自身折叠形成与蛋白质复杂度相当的二级、三级结构，从而承担催化、识别、调控等多样功能。",
+    "properties": [
+      "戊糖、第四种碱基、链数目三点差异",
+      "DNA 一种类型一种功能，RNA 多种类型多种功能",
+      "差异 ① 决定稳定性，② 决定修复准确性，③ 决定功能多样性"
+    ],
+    "confusions": "核酸有二级结构但没有四级结构（与蛋白质不同）。环状核酸（细菌染色体、质粒、叶绿体与线粒体 DNA，以及环状 RNA 的类病毒）没有游离的 3′ 与 5′ 端，这一点在讲超螺旋时很关键。",
+    "related": [
+      "ribonucleotide-vs-deoxyribonucleotide",
+      "dna-double-helix",
+      "supercoiling"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第2~5页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "phosphodiester-bond",
+    "zh": "3′,5′-磷酸二酯键",
+    "en": "3′,5′-Phosphodiester bond",
+    "category": "核酸结构",
+    "definition": "连接多聚核苷酸链中相邻核苷酸的共价键，由一个 3′-磷酸单酯键和一个 5′-磷酸单酯键组成。",
+    "expanded": "每个 3′,5′-磷酸二酯键包含一个 3′-磷酸单酯键（连到前一个核苷酸的 3′-OH）和一个 5′-磷酸单酯键（连到后一个核苷酸的 5′-OH），都是 P–O 共价键。它构成了核酸的骨架。与之相伴的是链的<strong>极性</strong>：5′ 端有游离的 5′-OH，3′ 端有未成酯的 3′-OH。书写方向固定为 5′→3′。",
+    "properties": [
+      "一个键含两个磷酸单酯键",
+      "都是 P–O 共价键，非常稳定",
+      "构成核酸骨架",
+      "与链的极性和 5′→3′ 书写规则相关"
+    ],
+    "confusions": "RNA 在碱性条件下易水解并不是因为磷酸二酯键本身不稳定，而是因为 2′-OH 参与催化形成 2′,3′-环状中间体。不要归因错误。",
+    "related": [
+      "polarity",
+      "primary-structure-nucleic-acid",
+      "ribonucleotide-vs-deoxyribonucleotide"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第6页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "polarity",
+    "zh": "核酸链的极性",
+    "en": "Polarity of nucleic acid strand",
+    "category": "核酸结构",
+    "definition": "多聚核苷酸链具有两个不对称的末端：5′ 端与 3′ 端，决定了链的方向性。",
+    "expanded": "5′ 端有游离（未成酯）的 5′-OH，3′ 端有未成酯的 3′-OH，两端化学性质不同，因此链具有方向性。极性的意义在于：碱基序列只有在指定方向的前提下才有确定含义；两条链在双螺旋中反平行排列，这是形成稳定碱基配对的前提；复制、转录和翻译也都按固定方向进行。",
+    "properties": [
+      "5′ 端有游离 5′-OH，3′ 端有游离 3′-OH",
+      "两端化学性质不同，链有方向",
+      "双螺旋中两条链反平行",
+      "环状核酸没有游离末端"
+    ],
+    "confusions": "书写核酸序列时若不注明方向就会产生歧义，规范写法是标明 5′ 和 3′。二核苷酸的命名方向也不能随意颠倒。",
+    "related": [
+      "phosphodiester-bond",
+      "primary-structure-nucleic-acid",
+      "dna-double-helix"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第6页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "primary-structure-nucleic-acid",
+    "zh": "核酸的一级结构",
+    "en": "Primary structure of nucleic acids",
+    "category": "核酸结构",
+    "definition": "核酸中核苷酸（碱基）的排列顺序，书写方向为 5′→3′，是遗传信息的载体。",
+    "expanded": "多聚核苷酸链有四个共同特征：① 相邻核苷酸通过 <a class=\"term-link\" href=\"term.html?slug=phosphodiester-bond\">3′,5′-磷酸二酯键</a>相连；② 有两个不对称的末端（5′ 端与 3′ 端），即<strong>极性</strong>；③ 生理 pH 下骨架上磷酸基团解离，使核酸成为<strong>多聚阴离子</strong>；④ 有确定的碱基顺序。书写规则：5′→3′；有机化学上的“p”写在 5′ 端表示磷酸；碱基前加 d 表示脱氧（dAMP），加 r 表示核糖（rAMP）。",
+    "properties": [
+      "碱基排列顺序，5′→3′ 书写",
+      "骨架上磷酸解离，核酸为多聚阴离子",
+      "极性由两个不对称末端决定",
+      "一级结构是遗传信息的载体"
+    ],
+    "confusions": "一级结构是<b>顺序</b>，二级结构是<b>双螺旋等局部构象</b>。DNA 的一级结构储存信息，二级结构则辅助复制、转录、重组和修复——两者的功能分工不要混淆。",
+    "related": [
+      "phosphodiester-bond",
+      "polarity",
+      "dna-double-helix",
+      "chargaff-rules"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第6页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "dna-double-helix",
+    "zh": "DNA 双螺旋",
+    "en": "DNA double helix",
+    "category": "核酸结构",
+    "definition": "Watson 和 Crick 于 1953 年提出的 DNA 二级结构模型，两条反平行链形成右手双螺旋。",
+    "expanded": "要点：① 两条<strong>反平行</strong>链相互缠绕成<strong>右手双螺旋</strong>；② 两条链互补，A 配 T（2 个氢键），G 配 C（3 个氢键）；③ 碱基对位于螺旋<strong>内部</strong>，垂直于暴露在外的糖-磷酸骨架，靠疏水作用与范德华力堆叠；④ 表面有大沟（2.2 nm）和小沟（1.2 nm），蛋白质识别序列时主要与沟中的碱基边缘作用；⑤ 相邻碱基对相距 0.34 nm、相互旋转约 36°，螺旋直径 2 nm，每圈 10 个碱基对、高 3.4 nm。",
+    "properties": [
+      "两条反平行链，右手双螺旋",
+      "A=T 两个氢键，G≡C 三个氢键",
+      "碱基对在内，骨架在外",
+      "大沟 2.2 nm、小沟 1.2 nm",
+      "每圈 10 bp、3.4 nm，相邻碱基对 0.34 nm、36°"
+    ],
+    "confusions": "碱基对之间的氢键决定配对的特异性，但双螺旋的稳定性主要来自碱基堆积，而不是氢键数量——这是一个常见误解。支撑模型的证据包括 X 射线衍射、Chargaff 规则和碱基互变异构三方面。",
+    "related": [
+      "base-stacking",
+      "chargaff-rules",
+      "major-minor-groove",
+      "dna-abc-form",
+      "base-pairing"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第7页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "base-pairing",
+    "zh": "碱基配对",
+    "en": "Base pairing",
+    "category": "核酸结构",
+    "definition": "两条核酸链之间通过氢键形成的特异性配对，A 与 T（或 U）配对、G 与 C 配对。",
+    "expanded": "配对的特异性来自氢键供体与受体的几何互补：A 与 T 之间形成 2 个氢键，G 与 C 之间形成 3 个氢键。G≡C 含量高的 DNA 需要更高温度才能解链，因此 GC 含量直接影响核酸的熔解温度（Tm）。在 RNA 中还存在常见的 <strong>GU 配对</strong>，这打破了“只有 AU 和 GC”的直觉，也是 RNA 二级结构预测必须允许 GU 配对的原因。",
+    "properties": [
+      "A=T 两个氢键，G≡C 三个氢键",
+      "氢键决定特异性，堆积决定稳定性",
+      "GC 含量高则熔解温度高",
+      "RNA 螺旋中 GU 配对常见"
+    ],
+    "confusions": "碱基配对的氢键是链间的，碱基堆积是相邻碱基对之间的垂直相互作用。前者管特异性，后者管稳定性，分工不要混。",
+    "related": [
+      "base-stacking",
+      "dna-double-helix",
+      "chargaff-rules",
+      "tautomerism"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第7页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "base-stacking",
+    "zh": "碱基堆积",
+    "en": "Base stacking",
+    "category": "核酸结构",
+    "definition": "相邻碱基对之间的垂直疏水相互作用，是稳定双螺旋的主要贡献者。",
+    "expanded": "碱基堆积的本质是<strong>疏水作用加范德华力</strong>，作用强度与环的<strong>重叠面积成正比</strong>，因此顺序为：嘌呤-嘌呤 > 嘌呤-嘧啶 > 嘧啶-嘧啶。碱基甲基化会增大堆积作用（这也是 T 比 U 堆积更强的原因之一）。除堆积作用外，阳离子或带正电的化合物中和磷酸骨架的负电荷也是必需的，否则链间静电排斥会使双螺旋解体。",
+    "properties": [
+      "垂直相互作用，疏水＋范德华力",
+      "强度与环重叠面积成正比",
+      "嘌呤-嘌呤 > 嘌呤-嘧啶 > 嘧啶-嘧啶",
+      "是稳定双螺旋的主要贡献者"
+    ],
+    "confusions": "碱基堆积才是稳定性的主要来源，氢键主要负责特异性。把稳定性归因于氢键数量是最常见的错误理解。",
+    "related": [
+      "dna-double-helix",
+      "base-pairing",
+      "major-minor-groove"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第7页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "chargaff-rules",
+    "zh": "Chargaff 规则",
+    "en": "Chargaff's rules",
+    "category": "核酸结构",
+    "definition": "同一物种的 DNA 中 A=T、G=C，但 (A+T)/(G+C) 比值随物种不同而变化。",
+    "expanded": "规则包含两个层次：① 同一物种内 <strong>A:T 和 G:C 都接近 1</strong>，反映碱基配对的结构约束；② <strong>A:G 比值随物种大幅变化</strong>（大肠杆菌 1.05，酵母 1.67，粘质沙雷菌 0.70），反映不同物种基因组的碱基组成偏好。课件数据：人 1.00/1.00/1.56；大麻哈鱼 1.02/1.02/1.43；小麦 1.00/0.97/1.22；酵母 1.03/1.02/1.67；大肠杆菌 1.09/0.99/1.05；粘质沙雷菌 0.95/0.86/0.70。",
+    "properties": [
+      "同一物种 A=T、G=C",
+      "比值随物种变化（A:T 和 G:C 约为 1）",
+      "A:G 比值随物种变化很大",
+      "是支持双螺旋模型的独立证据之一"
+    ],
+    "confusions": "常被简化为“A=T，G=C”，但这只覆盖了第一条。第二条（碱基组成随物种变化）同样是规则的一部分，而且是“DNA 携带遗传信息”这一结论的间接支持。",
+    "related": [
+      "dna-double-helix",
+      "base-pairing"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第8页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "major-minor-groove",
+    "zh": "大沟与小沟",
+    "en": "Major and minor groove",
+    "category": "核酸结构",
+    "definition": "B 型 DNA 双螺旋表面的两条螺旋形凹槽，宽度分别为 2.2 nm 和 1.2 nm。",
+    "expanded": "两条链的糖-磷酸骨架螺旋缠绕时并不对称，形成宽窄不同的两条沟。大沟较宽（2.2 nm），小沟较窄（1.2 nm）。沟中暴露的是碱基对的边缘，不同碱基对边缘的氢键供体与受体模式不同，因此<strong>蛋白质可以不打开双螺旋就识别特定序列</strong>。许多 DNA 结合蛋白（如转录因子）的识别螺旋正是插入大沟中读取序列信息。",
+    "properties": [
+      "大沟 2.2 nm，小沟 1.2 nm",
+      "沟中暴露碱基对边缘的氢键模式",
+      "是蛋白质识别特定序列的主要通道",
+      "不同构象的沟宽不同（A 型大沟极窄极深，Z 型大沟平坦）"
+    ],
+    "confusions": "大沟比小沟宽，但深度关系随构象而变；Z 型 DNA 的大沟反而是平坦的。记忆时要连构象一起记。",
+    "related": [
+      "dna-double-helix",
+      "dna-abc-form"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第7页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "dna-abc-form",
+    "zh": "A、B、Z 三种构象",
+    "en": "A-, B-, and Z-forms of DNA",
+    "category": "核酸结构",
+    "definition": "核酸双螺旋的三种主要构象，在螺旋方向、直径、每圈碱基数和沟的形态上各不相同。",
+    "expanded": "<strong>A 型</strong>：短而宽，每 bp 上升 0.23 nm，直径 2.55 nm，右手，约 11 bp/圈，碱基对倾角 +19°，大沟极度窄深、小沟很宽浅，糖苷键反式、糖环 C3′-内式；存在于双链 RNA、RNA/DNA 杂交双链和低湿度 DNA。<strong>B 型</strong>：长而瘦，0.332 nm，2.37 nm，右手，约 10 bp/圈，倾角 1.2°±4.1°，大沟很宽深度中等、小沟窄深度中等，反式、C2′-内式；存在于高湿度（92%）双链 DNA。<strong>Z 型</strong>：长而细，0.38 nm，1.84 nm，<strong>左手</strong>，12 bp/圈，倾角 −9°，大沟平坦、小沟极窄极深，C 为反式、G 为顺式，嘧啶 C2′-内式、嘌呤 C3′-内式；存在于嘌呤与嘧啶交替的 DNA 区域。",
+    "properties": [
+      "Z 型是左手螺旋，A 和 B 型都是右手",
+      "A 型出现在 RNA 双链和 RNA/DNA 杂交链",
+      "B 型是最常见的生理形式",
+      "Z 型只能在嘌呤嘧啶交替区域形成"
+    ],
+    "confusions": "Z-DNA 中 C 的碱基仍保持反式，但整个胞苷酸（碱基加脱氧核糖）<b>翻转 180°</b>，因此 G:C 氢键得以保持。它并非碱基配对被破坏的结构。",
+    "related": [
+      "dna-double-helix",
+      "z-dna",
+      "major-minor-groove"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第9页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "z-dna",
+    "zh": "Z-DNA",
+    "en": "Z-DNA",
+    "category": "核酸结构",
+    "definition": "由 Alex Rich 发现的左手螺旋 DNA 构象，存在于富含 G:C 的区域。",
+    "expanded": "三个特点：① 存在于 DNA 富含 G:C 的区域；② <strong>G 为顺式构象</strong>；③ C 保持反式，但<strong>整个胞苷酸（碱基和脱氧核糖）翻转 180°</strong>。结果是 <strong>G:C 氢键在 Z-DNA 中得以保持</strong>。因为需要嘌呤与嘧啶交替排列才能让相邻碱基对以这种交替方式翻转，所以 Z 型只在嘌呤嘧啶交替的双链 DNA 区域出现。它由 Alex Rich 发现，是继 B 型之后认识到的第三种构象。",
+    "properties": [
+      "左手螺旋",
+      "由 Alex Rich 发现",
+      "G 为顺式，C 保持反式但整个胞苷酸翻转 180°",
+      "G:C 氢键得以保持",
+      "只在嘌呤嘧啶交替区域形成"
+    ],
+    "confusions": "Z-DNA 不是“配对被破坏”的异常结构，它的碱基配对完全正常，只是骨架走向换了一种组织方式。这一点常被误解。",
+    "related": [
+      "dna-abc-form",
+      "dna-double-helix"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第10页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "hoogsteen-pairing",
+    "zh": "Hoogsteen 碱基对",
+    "en": "Hoogsteen base pairing",
+    "category": "核酸结构",
+    "definition": "三链螺旋（H-DNA）中第三条链与双螺旋中的碱基以非 Watson-Crick 方式配对的形式。",
+    "expanded": "在三链螺旋中，第三条链的碱基通过 <strong>Hoogsteen 氢键</strong>与双螺旋中已有的碱基对结合，形成三碱基体（triplex）。这种配对方式与标准的 Watson-Crick 配对在氢键的供体-受体模式上不同。H-DNA 通常形成于富含嘌呤或富含嘧啶的镜像重复序列，与基因表达调控有关，属于 DNA 的非标准二级结构之一。",
+    "properties": [
+      "第三条链与双螺旋中的碱基对结合",
+      "氢键模式不同于 Watson-Crick",
+      "形成三碱基体（triplex）",
+      "常见于嘌呤/嘧啶丰富的镜像重复序列"
+    ],
+    "confusions": "Hoogsteen 配对不取代原有的 Watson-Crick 配对，而是在其基础上增加第三条链的结合。它与碱基互变异构无关。",
+    "related": [
+      "nonstandard-dna-structure",
+      "base-pairing",
+      "dna-double-helix"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第13页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "nonstandard-dna-structure",
+    "zh": "非标准 DNA 二级结构",
+    "en": "Non-standard DNA secondary structures",
+    "category": "核酸结构",
+    "definition": "在蛋白质诱导或特殊序列存在时，DNA 形成的弯曲、十字形、三链、四链等非常规结构。",
+    "expanded": "相关序列模式包括反向重复、回文、镜像重复、正向重复、嘌呤丰富区、嘧啶丰富区、A 丰富区和 G 丰富区。对应的结构有：<strong>弯曲、十字形、三链螺旋/H-DNA（Hoogsteen 碱基对）、碱基翻转、四链螺旋/G-四联体、滑动错配 DNA（SMP-DNA）</strong>。这些结构并非“异常”或“错误”，它们都有生理功能：G-四联体出现在端粒和某些基因的启动子区，参与调控；十字形结构与复制起点和重组有关；H-DNA 与基因表达调控有关。",
+    "properties": [
+      "由特定重复序列或蛋白质诱导形成",
+      "包括弯曲、十字形、三链、四链、碱基翻转、SMP-DNA",
+      "具有生理功能，不是病态结构",
+      "G-四联体与端粒和启动子调控有关"
+    ],
+    "confusions": "“非标准”只是相对于最普遍的 B 型而言，并不意味着这些结构是错误或有害的。它们在细胞内有明确的功能。",
+    "related": [
+      "hoogsteen-pairing",
+      "g-quadruplex",
+      "dna-abc-form"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第12~13页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "g-quadruplex",
+    "zh": "G-四联体与四链螺旋",
+    "en": "G-quadruplex / tetraplex",
+    "category": "核酸结构",
+    "definition": "由四个鸟嘌呤通过氢键构成平面四联体、并堆叠形成的四链螺旋结构。",
+    "expanded": "四个鸟嘌呤以 Hoogsteen 型氢键围成一个平面四联体（G-tetrad），多个四联体堆叠形成四链螺旋。这类结构需要富含 G 的序列，在<strong>端粒</strong>末端（人类端粒含 TTAGGG 重复）和某些基因的启动子区出现，参与基因表达调控和端粒保护。它与四链螺旋、三链螺旋同属 DNA 的非标准二级结构。",
+    "properties": [
+      "四个鸟嘌呤形成一个平面四联体",
+      "多个四联体堆叠成四链螺旋",
+      "需要富含 G 的序列",
+      "出现在端粒和基因启动子区，参与调控"
+    ],
+    "confusions": "G-四联体是平面单元，四链螺旋是多个四联体堆叠后的三维结构，两个名词指的不是同一层次。",
+    "related": [
+      "nonstandard-dna-structure",
+      "hoogsteen-pairing",
+      "dna-abc-form"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第14页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "supercoiling",
+    "zh": "超螺旋",
+    "en": "Supercoiling",
+    "category": "核酸结构",
+    "definition": "DNA 三级结构，当每圈碱基数偏离 10 且张力无法释放时自发形成的螺旋盘绕。",
+    "expanded": "形成条件是<strong>链的两端被固定</strong>或 DNA 是<strong>共价闭合的环状分子</strong>（没有游离末端）。当每圈螺旋的碱基对数多于或少于 10 时，双螺旋处于过旋或欠旋状态，张力无处释放，于是超螺旋自发形成。<strong>正超螺旋</strong>是左手螺旋，由过旋造成；<strong>负超螺旋</strong>是右手螺旋，由欠旋造成。生物学中绝大多数天然 DNA 是负超螺旋，因为负超螺旋有利于解链——解链是复制和转录的第一步。",
+    "properties": [
+      "正超螺旋 = 左手 = 过旋",
+      "负超螺旋 = 右手 = 欠旋",
+      "正负超螺旋的手性与成因方向相反",
+      "天然 DNA 多为负超螺旋，有利于解链",
+      "拓扑异构酶负责调节超螺旋水平"
+    ],
+    "confusions": "“正超螺旋是左手、由过旋造成”这条对应关系最容易记反。记忆抓手：<b>正（positive）对应过旋（overwinding）</b>，两者都是“多加”的意思；而超螺旋的手性与成因方向相反，所以正超螺旋表现为左手。",
+    "related": [
+      "dna-double-helix",
+      "topoisomerase",
+      "relaxed-dna"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第15页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "relaxed-dna",
+    "zh": "松弛 DNA",
+    "en": "Relaxed DNA",
+    "category": "核酸结构",
+    "definition": "超螺旋被解除、恢复到每圈约 10 个碱基对状态的 DNA。",
+    "expanded": "当超螺旋被拓扑异构酶切开、旋转、重新连接后消除，DNA 回到无张力的松弛状态。在电子显微镜下，超螺旋 DNA 显得紧凑缠绕，而松弛 DNA 呈舒展的环状——两者的形态差异非常直观。DNA 的超螺旋水平在细胞内受拓扑异构酶精确调控，因为它直接影响复制、转录和重组的难易程度。",
+    "properties": [
+      "超螺旋被解除的状态",
+      "每圈约 10 个碱基对，无额外张力",
+      "电镜下比超螺旋 DNA 舒展",
+      "电泳中迁移率慢于超螺旋 DNA"
+    ],
+    "confusions": "超螺旋 DNA 在电泳中跑得<b>比</b>松弛 DNA 快，因为它更紧凑；这与“分子量大跑得慢”的直觉相反，因为两者分子量相同而构象不同。",
+    "related": [
+      "supercoiling",
+      "topoisomerase",
+      "dna-double-helix"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第15页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "topoisomerase",
+    "zh": "拓扑异构酶",
+    "en": "Topoisomerase",
+    "category": "核酸结构",
+    "definition": "通过切断和重新连接 DNA 骨架来调节超螺旋水平的酶。",
+    "expanded": "拓扑异构酶Ⅰ切开一条链，改变连接数后重新连接，不需要 ATP；拓扑异构酶Ⅱ切开两条链，需要 ATP。它们的作用是<strong>解除复制叉前方的正超螺旋积累</strong>，并把 DNA 维持在合适的超螺旋水平。这也是许多抗生素和抗癌药物的靶点（如喹诺酮类靶向细菌拓扑异构酶Ⅱ）。",
+    "properties": [
+      "Ⅰ 型切一条链，不需 ATP",
+      "Ⅱ 型切两条链，需要 ATP",
+      "调节 DNA 超螺旋水平",
+      "是抗生素和抗癌药物的靶点"
+    ],
+    "confusions": "拓扑异构酶改变的是超螺旋（拓扑状态），不是碱基序列；它不切断也不需要 DNA 聚合酶参与。",
+    "related": [
+      "supercoiling",
+      "relaxed-dna"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第15页；补充自教材",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "rna-secondary-structure",
+    "zh": "RNA 的二级结构",
+    "en": "RNA secondary structure",
+    "category": "核酸结构",
+    "definition": "单链 RNA 通过分子内互补配对形成的局部 A 型双螺旋与环状结构。",
+    "expanded": "极少数病毒 RNA 是双链的，形成 A 型双螺旋；但<strong>绝大多数 RNA 是单链</strong>，通过<strong>分子内</strong>互补配对折叠：互补的碱基形成局部 A 型双螺旋，不互补的碱基则突出形成环。两个必须记住的细节：① RNA 螺旋采取 <strong>A 型</strong>而不是 B 型（与 C3′-内式糖环折叠一致）；② <strong>RNA 螺旋中 GU 碱基对很常见</strong>，这打破了“只有 AU 和 GC”的直觉。",
+    "properties": [
+      "多为单链，通过分子内配对折叠",
+      "螺旋采取 A 型而非 B 型",
+      "GU 碱基对常见",
+      "非互补碱基形成环或凸起"
+    ],
+    "confusions": "RNA 的二级结构是<b>分子内</b>的，不是两条链之间的；而 DNA 的二级结构通常是两条链之间的。这个区别是理解 RNA 折叠的起点。",
+    "related": [
+      "rna-tertiary-structure",
+      "tRNA",
+      "base-pairing",
+      "dna-abc-form"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第16页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "rna-tertiary-structure",
+    "zh": "RNA 的三级结构",
+    "en": "RNA tertiary structure",
+    "category": "核酸结构",
+    "definition": "在二级结构基础上通过长程相互作用形成的三维结构，主要元件为假节结构、吻式发夹和发夹环突起接触。",
+    "expanded": "RNA 三级结构建立在二级结构之上，复杂度可与蛋白质相当。螺旋区作为<strong>刚性支架</strong>，而由凸起、内环、发夹环和末端环构成的单链区则像蛋白质的侧链一样，是功能的关键部位。三个主要元件：<strong>假节结构（pseudoknot）</strong>——环区碱基与环外碱基配对形成两个堆叠螺旋；<strong>吻式发夹（kissing hairpin）</strong>——两个独立的发夹环之间互相配对；<strong>发夹环突起接触</strong>——一个发夹环与另一分子的凸起区相互作用。大型 RNA 需要 <strong>RNA 伴侣</strong>协助才能正确折叠。",
+    "properties": [
+      "建立在二级结构之上",
+      "三个主要元件：假节、吻式发夹、发夹环突起接触",
+      "螺旋区作刚性支架，单链区承担功能",
+      "大型 RNA 需要 RNA 伴侣协助折叠"
+    ],
+    "confusions": "假节结构（pseudoknot）不是“假的结”，它是一种真实的长程配对结构，只是二级结构的简单图示（只画发夹）无法表示它。",
+    "related": [
+      "rna-secondary-structure",
+      "pseudoknot",
+      "rna-chaperone",
+      "tRNA"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第17页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "pseudoknot",
+    "zh": "假节结构",
+    "en": "Pseudoknot",
+    "category": "核酸结构",
+    "definition": "RNA 中环区的碱基与环外碱基配对、形成两个堆叠螺旋的三级结构元件。",
+    "expanded": "当发夹环中的碱基与环外的单链区配对时，就形成假节结构：产生两个相互堆叠的螺旋。它的重要性在于<strong>二级结构的简单图示无法表示它</strong>——按 5′→3′ 顺序看，配对的碱基不是连续相邻的，因此在只画茎环的二级结构图上会“看不出”这个结构。假节结构在许多 RNA 的功能中起关键作用，例如某些病毒 RNA 的翻译调控和核酶的催化中心。",
+    "properties": [
+      "环区碱基与环外碱基配对",
+      "形成两个堆叠的螺旋",
+      "在常规二级结构图示中不可见",
+      "参与核酶催化和翻译调控"
+    ],
+    "confusions": "假节的存在说明“二级结构”和“三级结构”的界线并不绝对——它是一种介于两者之间的长程配对。RNA 二级结构预测算法若不考虑假节，会系统性遗漏这类结构。",
+    "related": [
+      "rna-tertiary-structure",
+      "rna-secondary-structure",
+      "ribozyme"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第17页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "rna-chaperone",
+    "zh": "RNA 伴侣",
+    "en": "RNA chaperone",
+    "category": "核酸结构",
+    "definition": "协助 RNA 正确折叠、防止其陷入错误构象的蛋白质或 RNA。",
+    "expanded": "与蛋白质需要分子伴侣的逻辑完全一致：RNA 的折叠路径上也存在容易陷入的动力学陷阱，大型 RNA（如 rRNA）需要外部帮助才能走到天然构象。RNA 伴侣通过暂时结合并解开错误配对，给 RNA 提供重新折叠的机会。它不进入最终结构，只催化折叠过程。",
+    "properties": [
+      "协助 RNA 折叠，不进入最终结构",
+      "解开错误配对，帮助 RNA 重新折叠",
+      "与蛋白质分子伴侣的逻辑一致",
+      "大型 RNA（如 rRNA）尤其需要"
+    ],
+    "confusions": "RNA 伴侣不是 RNA 的一部分，也不是核酶；它不参与催化化学反应，只帮助折叠。",
+    "related": [
+      "rna-tertiary-structure",
+      "molecular-chaperone",
+      "pseudoknot"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第17页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "tRNA",
+    "zh": "转运 RNA",
+    "en": "Transfer RNA (tRNA)",
+    "category": "核酸类型",
+    "definition": "由 73~94 个核苷酸组成的单链 RNA，二级结构呈三叶草形，三级结构呈倒 L 型，是氨基酸的运载工具。",
+    "expanded": "结构要点：单链，73~94 个核苷酸，含较多修饰核苷酸，<strong>3′ 端最后三个核苷酸总是 CCA</strong>（氨基酸即连接在此）。二级结构呈<strong>三叶草</strong>形，含四个环和四个茎：环是链内未配对碱基突出而成；茎是链内互补配对形成的局部 A 型双螺旋；臂是紧靠茎又不属于环的非配对核苷酸。三级结构为<strong>倒 L 型</strong>，由 D 环、不变碱基与 TψC 环碱基之间的氢键把 D 臂和 TψC 臂折叠到一起形成，参与三级结构的许多氢键<strong>并非通常的 AU 和 GC 配对</strong>。",
+    "properties": [
+      "73~94 个核苷酸，单链",
+      "3′ 端总是 CCA，氨基酸连接于此",
+      "二级结构为三叶草形，四个环四个茎",
+      "三级结构为倒 L 型",
+      "含较多修饰核苷酸"
+    ],
+    "confusions": "环、茎、臂是三个不同层次的概念，容易混用：环是未配对突出部分，茎是配对形成的双螺旋，臂是紧靠茎的非配对核苷酸。",
+    "related": [
+      "rna-tertiary-structure",
+      "rna-secondary-structure",
+      "ribozyme"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第18页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "rrna",
+    "zh": "核糖体 RNA",
+    "en": "Ribosomal RNA (rRNA)",
+    "category": "核酸类型",
+    "definition": "约占核糖体 2/3 的 RNA，通过大量分子内配对成为核糖体蛋白的支架，并可承担催化功能。",
+    "expanded": "rRNA 约占核糖体的 2/3，有大量分子内配对，是核糖体蛋白的<strong>支架</strong>。核糖体的整体构象由 rRNA 决定，核糖体蛋白嵌在 RNA 螺旋之间。一个惊人的事实是：<strong>大肠杆菌 23S rRNA 就是肽基转移酶</strong>——催化肽键形成的活性中心由 RNA 而非蛋白质构成。另外，不同物种的 rRNA <strong>一级结构差异很小，但二级结构高度相似</strong>，这是 RNA 结构保守性的有力证据。",
+    "properties": [
+      "约占核糖体 2/3",
+      "是核糖体蛋白的支架，决定核糖体整体构象",
+      "大肠杆菌 23S rRNA 是肽基转移酶",
+      "跨物种一级结构差异小，二级结构高度相似"
+    ],
+    "confusions": "“酶一定是蛋白质”是过时的观念。23S rRNA 催化肽键形成说明 RNA 也能是酶（核酶），这一发现支持了 RNA 世界假说。",
+    "related": [
+      "ribozyme",
+      "rna-secondary-structure"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第19页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "mrna",
+    "zh": "信使 RNA",
+    "en": "Messenger RNA (mRNA)",
+    "category": "核酸类型",
+    "definition": "DNA 的转录产物、蛋白质翻译的模板，真核 mRNA 带 5′ 帽子和 3′ poly(A) 尾。",
+    "expanded": "mRNA 是 DNA 的转录产物，也是翻译的模板。原核 mRNA 多为<strong>多顺反子</strong>（一条 mRNA 编码多个蛋白质），真核 mRNA 多为<strong>单顺反子</strong>且带 5′ 帽子和 3′ poly(A) 尾。其最常见的二级结构元件是<strong>茎环</strong>；两端的二级结构会影响翻译效率，部分 mRNA 正是利用末端结构来调控自身表达水平。",
+    "properties": [
+      "DNA 的转录产物，翻译的模板",
+      "原核多顺反子，真核单顺反子",
+      "真核有 5′ 帽子和 3′ poly(A) 尾",
+      "常见二级结构为茎环，影响翻译效率"
+    ],
+    "confusions": "mRNA 属于编码 RNA，rRNA 和 tRNA 属于非编码 RNA；但不要把“非编码”理解为“没有功能”——它们的功能不是编码蛋白质，而是参与翻译和调控。",
+    "related": [
+      "rrna",
+      "tRNA",
+      "rna-secondary-structure"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第20页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "nucleosome",
+    "zh": "核小体",
+    "en": "Nucleosome",
+    "category": "核酸-蛋白复合物",
+    "definition": "真核与古菌染色质的基本结构单位，约 147 bp 的 DNA 缠绕在组蛋白八聚体上。",
+    "expanded": "核小体由约 <strong>147 bp</strong> 的 DNA 缠绕在<strong>组蛋白八聚体</strong>上构成；八聚体由 H2A、H2B、H3、H4 各两个组成。多个核小体串成念珠状，再进一步折叠压缩形成染色质。它在电镜下呈现明显的“串珠”形态。核小体既压缩了 DNA（使长链能装进细胞核），又必须允许复制和转录机器在需要时接近 DNA，因此其结构是动态调节的。原核生物没有典型的核小体，而是有类似的 DNA-蛋白质复合物。",
+    "properties": [
+      "约 147 bp DNA + 组蛋白八聚体",
+      "八聚体由 H2A、H2B、H3、H4 各两个组成",
+      "多个核小体串成念珠状",
+      "既压缩 DNA，又须允许接近"
+    ],
+    "confusions": "核小体是 DNA-蛋白质复合物，不是核酸的高级结构层次；核酸只有一级、二级、三级结构，没有四级结构。",
+    "related": [
+      "dna-double-helix",
+      "supercoiling"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第21页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "ribozyme",
+    "zh": "核酶",
+    "en": "Ribozyme",
+    "category": "核酸功能",
+    "definition": "具有催化活性的 RNA，能像酶一样加速特定化学反应。",
+    "expanded": "核酶的发现打破了“酶一定是蛋白质”的传统观念。最著名的例子是<strong>大肠杆菌 23S rRNA 作为肽基转移酶</strong>催化肽键形成，此外还有自我剪接的内含子、RNase P 中的 RNA 组分等。核酶的存在是<strong>RNA 世界假说</strong>的关键证据：RNA 既能储存信息（像 DNA），又能催化反应（像蛋白质），因此可以胜任生命起源早期的全部关键角色。",
+    "properties": [
+      "具有催化活性的 RNA",
+      "打破“酶必是蛋白质”的观念",
+      "23S rRNA 是肽基转移酶",
+      "是 RNA 世界假说的关键证据"
+    ],
+    "confusions": "核酶是 RNA 分子本身具有催化活性，而不是 RNA 与蛋白质结合后由蛋白质催化。不要把核糖核蛋白复合物（如剪接体）的催化活性直接归给其中的 RNA，除非有实验证明。",
+    "related": [
+      "rrna",
+      "rna-tertiary-structure",
+      "pseudoknot"
+    ],
+    "source": "第7章《核酸的结构与功能》PPT，第19页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "caspase",
+    "zh": "胱天蛋白酶",
+    "en": "Caspase",
+    "category": "蛋白质水解",
+    "definition": "执行细胞凋亡的一类半胱氨酸蛋白酶，在特定天冬氨酸残基后切断底物。",
+    "expanded": "“caspase”这个名字来自 <strong>c</strong>ysteine-<strong>asp</strong>artate protease：活性中心含半胱氨酸，且切割位点在天冬氨酸之后。它以无活性的酶原形式合成，被凋亡信号激活后级联放大，通过切割细胞骨架蛋白、核纤层蛋白和 DNA 修复酶等底物，把细胞有序地拆解。它与其他蛋白酶水解途径（消化道消化、蛋白酶体降解、溶酶体自噬）并列，共同构成细胞内“受控水解”的四种主要场景。",
+    "properties": [
+      "半胱氨酸蛋白酶，切点在 Asp 之后",
+      "以酶原形式合成，级联激活",
+      "执行细胞凋亡，把细胞有序拆解",
+      "属于受控水解的典型场景之一"
+    ],
+    "confusions": "caspase 执行的是细胞凋亡（程序性死亡），不是坏死；它降解的是细胞内已有蛋白质，与泛素-蛋白酶体途径的标记-降解机制不同。",
+    "related": [
+      "protein-hydrolysis",
+      "protein-denaturation"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第6页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "wu-xian",
+    "zh": "吴宪",
+    "en": "Wu Xian (Hsien Wu)",
+    "category": "生物化学史",
+    "definition": "中国生物化学家，1931 年提出蛋白质变性学说。",
+    "expanded": "吴宪于 1931 年提出蛋白质变性学说，指出变性是蛋白质分子<strong>高级结构被破坏而一级结构不变</strong>的过程，这一判断至今仍然是变性的标准定义。他也以血液分析方法和营养学研究著称。在国际上，蛋白质变性理论通常被认为是生物化学史上中国学者最重要的贡献之一。把这个名字与“变性只破坏非共价键”这一结论绑定记忆，可以同时掌握人物与其核心观点。",
+    "properties": [
+      "1931 年提出蛋白质变性学说",
+      "核心判断：高级结构破坏、一级结构不变",
+      "在血液分析与营养学方面也有贡献",
+      "是中国学者在生物化学史上的标志性贡献"
+    ],
+    "confusions": "变性学说的提出者是吴宪，不要与提出双缩脲反应或 Edman 降解的学者混淆。",
+    "related": [
+      "protein-denaturation",
+      "renaturation"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第4页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "ammonium-sulfate",
+    "zh": "硫酸铵",
+    "en": "Ammonium sulfate",
+    "category": "研究方法",
+    "definition": "蛋白质盐析中最常用的中性盐，因溶解度大、价格低、对蛋白质影响小而广泛使用。",
+    "expanded": "硫酸铵成为盐析首选试剂有几方面的原因：<strong>溶解度极高</strong>（可达到很高的离子强度）、<strong>温度系数小</strong>（低温下仍能保持高溶解度，适合 4 ℃ 操作）、价格低廉，且一般不会使蛋白质变性。实际操作中按“硫酸铵饱和度”分级，从 20% 到 90% 分段沉淀不同蛋白质。计算时需要使用硫酸铵饱和度表，把目标饱和度换算成应加入的固体量或饱和溶液体积。",
+    "properties": [
+      "溶解度极高，离子强度大",
+      "温度系数小，适合低温操作",
+      "一般不变性，沉淀可复溶",
+      "按饱和度（20%~90%）分级沉淀"
+    ],
+    "confusions": "计算硫酸铵用量时要考虑加入固体后体积会变化，不能简单按初始体积的比例计算；这是操作中常见的系统误差来源。",
+    "related": [
+      "salting-out",
+      "protein-precipitation",
+      "protein-colloid"
+    ],
+    "source": "第5章《蛋白质的性质及研究方法》PPT，第2页",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "sanger-sequencing",
+    "zh": "Sanger 双脱氧测序法",
+    "en": "Sanger dideoxy sequencing",
+    "category": "研究方法",
+    "definition": "利用双脱氧核苷三磷酸终止 DNA 链延伸、从而读出碱基序列的方法。",
+    "expanded": "双脱氧核苷三磷酸（ddNTP）缺少 3′-OH，一旦掺入新合成的链就不能再延伸，于是产生一系列长度不同的片段。用四个反应体系分别加入一种 ddNTP，电泳分离后按片段长度读出序列。它是第一代 DNA 测序方法，也是人类基因组计划的主力技术。它的名称来自 Sanger（两次诺贝尔奖得主）；同一姓名的 Sanger 试剂（FDNB）用于蛋白质 N 端测定，两者用途完全不同。",
+    "properties": [
+      "ddNTP 缺 3′-OH，导致链延伸终止",
+      "四组反应分别对应四种碱基",
+      "第一代测序方法，人类基因组计划主力",
+      "与蛋白质 N 端测定的 Sanger 试剂同名不同用"
+    ],
+    "confusions": "Sanger 测序测的是 DNA 碱基序列，Sanger 试剂测的是蛋白质 N 端氨基酸，都是 Sanger 发明但完全不同。Edman 降解除外，那是蛋白质测序。",
+    "related": [
+      "sanger-reagent",
+      "primary-structure-nucleic-acid"
+    ],
+    "source": "补充自教材；与第5章 Sanger 试剂对照",
+    "updated": "2026-09-30"
+  },
+  {
+    "slug": "phosphoanhydride-bond",
+    "zh": "磷酸酐键",
+    "en": "Phosphoanhydride bond",
+    "category": "核苷酸",
+    "definition": "两个磷酸基团之间脱水缩合形成的键，水解时释放较多自由能。",
+    "expanded": "磷酸酐键（P–O–P）通过两个磷酸基团脱水缩合形成。ATP 中连接 β 和 γ 磷酸的磷酸酐键水解时释放较多自由能，因此 ATP 被称为高能化合物。课件特别标出“磷酸酐”这个结构名称，用意在于说明<strong>高能性来自结构本身</strong>，不是来自某个神秘的标记。NMP → NDP → NTP 的过程就是逐步形成磷酸酐键的过程。",
+    "properties": [
+      "P–O–P 结构，由两分子磷酸脱水缩合",
+      "水解释放较多自由能",
+      "ATP 的 β–γ 磷酸酐键是主要供能键",
+      "NMP → NDP → NTP 的过程中形成"
+    ],
+    "confusions": "“高能键”不是说键本身储存能量，而是指水解反应的自由能变化大。断键本身需要吸能，是整体反应的能量收支决定了它“高能”。",
+    "related": [
+      "amp-adp-atp",
+      "nucleotide"
+    ],
+    "source": "第6章《核苷酸》PPT，第9页",
+    "updated": "2026-09-30"
+  }
 ]

@@ -30,6 +30,9 @@
 <a class="active" href="chapter-02.html">02　氨基酸</a>
 <a href="chapter-03.html">03　蛋白质的结构</a>
 <a href="chapter-04.html">04　蛋白质的功能</a>
+<a href="chapter-05.html">05　性质与研究方法</a>
+<a href="chapter-06.html">06　核苷酸</a>
+<a href="chapter-07.html">07　核酸的结构与功能</a>
 </nav>
 <div class="privacy">
 <b>●　私人知识库</b>
@@ -49,7 +52,7 @@
 </div>
 </header>
 <section>
-<h2>1. 先抓住不变与可变</h2>
+<h2 id="mainchain">1. 先抓住不变与可变</h2>
 <div class="figure-card">
 <img src="assets/amino-acid-zwitterion.png" alt="氨基酸在酸性和碱性环境中的两性离解图">
 <p>图源：第2章《氨基酸》PPT，第19页。</p>
@@ -72,7 +75,7 @@
 </div>
 </section>
 <section>
-<h2>2. 分类的真正用途：预测它在蛋白质里想待在哪里</h2>
+<h2 id="classify">2. 分类的真正用途：预测它在蛋白质里想待在哪里</h2>
 <p>课程按 R 基团对水的亲和性分为疏水与亲水。更实用的理解是：非极性侧链倾向避水并参与疏水核心；极性但不带电的侧链常形成氢键；酸性和碱性侧链的电荷随 pH 变化，因而常位于结合面或催化位点。</p>
 <div class="classification">
 <article>
@@ -94,7 +97,7 @@
 </div>
 </section>
 <section class="amino-acids-reference">
-<h2>3. 二十种标准氨基酸：按“结构变化”成组记忆</h2>
+<h2 id="side-chain">3. 二十种标准氨基酸：按“结构变化”成组记忆</h2>
 <p>先记家族，再记例外。下面的“pH 7 侧链电荷”只讨论 R 基团，不把共同的 α-氨基和 α-羧基算进去；pKa 是游离侧链的常用近似值，在蛋白质内部会被局部介电环境、氢键和邻近电荷改变。</p>
 <div class="memory-ladder" aria-label="氨基酸结构家族记忆路线">
 <article><b>体积梯</b><span>Gly → Ala → Val / Leu / Ile</span><small>从 H、CH₃ 到支链烷基；疏水性与体积逐步增加。</small></article>
@@ -136,7 +139,7 @@
 <div class="memory-check"><b>三分钟闭眼重建</b><p>先写六组：脂肪族、芳香族、羟基、含硫、酰胺、酸碱；再把 20 种放回组内。最后只单独检查 Gly、Pro、His、Cys 四个“最容易出功能题”的例外。</p></div>
 </section>
 <section>
-<h2>4. pH、pKa 与 pI：用电荷状态读氨基酸</h2>
+<h2 id="charge">4. pH、pKa 与 pI：用电荷状态读氨基酸</h2>
 <p>氨基酸同时含酸性羧基和碱性氨基，水溶液中主要以 <a class="term-link" href="term.html?slug=zwitterion">两性离子</a>形式存在。pH 低时更易质子化，pH 高时更易去质子化。Henderson–Hasselbalch 方程不只是计算器：</p>
 <div class="formula">pH = pKa + log₁₀([A⁻]/[HA])</div>
 <p>当 pH = pKa，两种形态比例为 1:1；pH 每高 1，去质子化态约增加十倍。<a class="term-link" href="term.html?slug=isoelectric-point">等电点 pI</a>是平均净电荷为零的 pH，不代表分子没有任何电荷。无可电离 R 基的氨基酸，pI 取夹住两性离子那两个 pKa 的平均；酸性或碱性侧链存在时，要取夹住净电荷为 0 状态的两个 pKa。</p>
@@ -146,7 +149,7 @@
 </div>
 </section>
 <section>
-<h2>5. 从“官能团”走向功能</h2>
+<h2 id="special">5. 从“官能团”走向功能</h2>
 <p>课程最后列出的侧链贡献可以整理成一条更可迁移的逻辑：<strong>官能团决定局部化学，局部化学决定结合、催化和调控机会。</strong>
 </p>
 <div class="property-grid">
@@ -170,7 +173,7 @@
 <p>茚三酮能检测游离 α-氨基。绝大多数显蓝紫色，而 Pro 与羟脯氨酸因是亚氨基酸，产物偏黄。DNFB、PITC 则把“可反应的 N 端”转成可鉴定衍生物，历史上服务于多肽序列分析。</p>
 </section>
 <section>
-<h2>6. 拓展：看到一个残基，怎样推测它在蛋白质中做什么？</h2>
+<h2 id="modified">6. 拓展：看到一个残基，怎样推测它在蛋白质中做什么？</h2>
 <p>单看氨基酸名称只能得到“化学可能性”，真正的功能还取决于它所处的位置。一个 Leu 若埋在疏水核心，可能主要负责稳定折叠；若周期性出现在同一螺旋表面，就可能形成 Leu zipper。一个 Cys 若暴露在溶剂中，可能被氧化或化学探针标记；若藏在酶的活性中心且附近有碱性残基降低其 pKa，则可能成为高反应性的亲核体。</p>
 <div class="property-grid">
 <article><b>先看溶剂暴露</b><p>疏水残基大量暴露通常代价较高；带电与极性残基更常出现在表面。但膜蛋白恰好相反：朝向脂双层的表面往往富含疏水残基。</p></article>

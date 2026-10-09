@@ -2022,5 +2022,210 @@
       "chirality"
     ],
     "source": "Organic Chemistry I Lect. 7 (Chapter 5-1); Wade, Organic Chemistry, 8th ed., Chapter 5"
+  },
+  {
+    "slug": "fischer-projection",
+    "zh": "Fischer 投影式",
+    "en": "Fischer projection",
+    "category": "立体化学",
+    "definition": "把四面体手性中心投影到纸面上的二维写法：水平键指向观察者，竖直键背离观察者，十字交点即手性碳。",
+    "expanded": "由 Hermann Emil Fischer 为处理多手性中心的糖类分子而提出。它用横竖两个方向编码前后关系，因此只能在纸面内旋转 180°，不能旋转 90°，也不能翻出纸面。当最低优先级基团位于水平键上时，直接按 1→2→3 判读 R/S 需要把结论取反。",
+    "properties": [
+      "水平键向前、竖直键向后",
+      "十字交点通常是省略不画的手性碳",
+      "只允许纸面内旋转 180°",
+      "交换任意两个基团构型反转，交换两次复原"
+    ],
+    "confusions": "不是普通平面结构式，不能任意旋转或翻转。旋转 90° 等价于把 R 变成 S。",
+    "related": [
+      "chirality",
+      "r-s-configuration",
+      "enantiomer",
+      "diastereomer",
+      "meso-compound"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "diastereomer",
+    "zh": "非对映异构体",
+    "en": "Diastereomer",
+    "category": "立体化学",
+    "definition": "不是镜面关系的立体异构体，包括顺反（几何）异构体，以及多手性中心体系中只有部分中心构型不同的异构体。",
+    "expanded": "非对映体的物理性质（偶极矩、沸点、熔点、溶解度等）彼此不同，因此可用蒸馏、重结晶、柱色谱等常规方法分离。这一性质差异是手性拆分实验的基础：先把一对对映体转成一对非对映体，再用常规方法分开。",
+    "properties": [
+      "非镜面关系",
+      "物理性质不同，可常规分离",
+      "顺反异构体属于此类",
+      "对映体过量之外，非对映体过量用 d.e. 表示"
+    ],
+    "confusions": "不要与对映体混淆：对映体在非手性环境中性质几乎完全相同，非对映体则处处不同。",
+    "related": [
+      "stereoisomer",
+      "enantiomer",
+      "geometric-isomer",
+      "meso-compound",
+      "chiral-resolution"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "meso-compound",
+    "zh": "内消旋化合物",
+    "en": "Meso compound",
+    "category": "立体化学",
+    "definition": "含有手性中心（通常是不对称碳）但整体无手性的化合物，因为分子内部存在对称面等对称元素使各手性中心的贡献相互抵消。",
+    "expanded": "最标准的例子是 (2R,3S)-2,3-二溴丁烷：它有两个不对称碳，却因为有一个内对称面而是非手性的，其镜像可以与自身完全重叠。因此 2,3-二溴丁烷的立体异构体只有 3 个而不是 2²=4 个。判定 meso 最可靠的办法是找内对称面。",
+    "properties": [
+      "含手性中心但整体无手性",
+      "必定有内对称面或反演中心",
+      "无光学活性",
+      "使实际异构体数目少于 2ⁿ"
+    ],
+    "confusions": "“含立体中心的无手性化合物”是一个糟糕的定义：立体中心还包括产生顺反异构的双键碳，按此定义会把 2-丁烯错误地叫作 meso。",
+    "related": [
+      "diastereomer",
+      "internal-mirror-plane",
+      "stereocenter",
+      "chirality",
+      "enantiomer"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "optical-activity",
+    "zh": "光学活性",
+    "en": "Optical activity",
+    "category": "立体化学",
+    "definition": "手性化合物使平面偏振光的振动平面发生旋转的性质。",
+    "expanded": "一对对映体旋转偏振光的角度完全相同但方向相反，因此等量混合的消旋体没有光学活性。旋光方向必须由实验测定：无法由 R/S 构型或 D/L 标记预测某个对映体究竟把光转向哪一边。测量仪器为偏光计（polarimeter）。",
+    "properties": [
+      "右旋记 (+) 或 d，左旋记 (−) 或 l",
+      "对映体旋角相同、方向相反",
+      "消旋体无光学活性",
+      "非手性环境无法区分对映体"
+    ],
+    "confusions": "构型（R/S、D/L）与旋光方向（+/−）之间没有可预测的对应关系。",
+    "related": [
+      "specific-rotation",
+      "racemic-mixture",
+      "enantiomer",
+      "optical-purity",
+      "chirality"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "specific-rotation",
+    "zh": "比旋光度",
+    "en": "Specific rotation",
+    "category": "立体化学",
+    "definition": "用 10 cm（1 dm）样品管、浓度 1 g/mL 时测得的旋光度，记作 [α]，使旋光数据不受浓度与管长影响。",
+    "expanded": "公式为 [α]²⁵_D = α/(c·l)，其中 c 为浓度、l 为管长（dm）。上标 25 是测量温度（25 °C），下标 D 表示使用钠的 D 线（589 nm）。因旋光度同时依赖温度与波长，两者都必须写明。例：2.0 g (+)-甘油醛溶于 10.0 mL 水，100 mm 样品管测得 +1.74°，则 [α]²⁵_D = +8.7°。",
+    "properties": [
+      "[α]²⁵_D = α/(c·l)",
+      "浓度加倍旋光角加倍",
+      "管长加倍旋光角加倍",
+      "用于计算光学纯度"
+    ],
+    "confusions": "上标 25 是温度而非浓度或年份；下标 D 是钠 D 线而非“右旋”。",
+    "related": [
+      "optical-activity",
+      "optical-purity",
+      "racemic-mixture",
+      "enantiomer"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "optical-purity",
+    "zh": "光学纯度",
+    "en": "Optical purity",
+    "category": "立体化学",
+    "definition": "实测比旋光度与纯对映体比旋光度之比，用于衡量混合物中主要对映体的过量程度。",
+    "expanded": "光学纯度 o.p. = 实测 [α] / 纯对映体 [α]。对映体过量 e.e. = (主要对映体量 − 次要对映体量)/总量。两者数值相同，因为旋光度与浓度成正比，浓度、克数或百分数都可代入，单位自然抵消。例：测得 +9.72°、纯对映体 +13.5°，则 o.p. = 72%，反推得含 86% 主要对映体与 14% 次要者。",
+    "properties": [
+      "o.p. 与 e.e. 数值相等",
+      "由 d−l 与 d+l 两式可反推组成",
+      "与比旋光度直接换算",
+      "反映拆分或不对称合成的效果"
+    ],
+    "confusions": "不要把光学纯度理解为化学纯度——消旋杂质不影响化学纯度，却使光学纯度降为 0。",
+    "related": [
+      "specific-rotation",
+      "racemic-mixture",
+      "enantiomer",
+      "chiral-resolution",
+      "asymmetric-synthesis"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "racemic-mixture",
+    "zh": "消旋混合物",
+    "en": "Racemic mixture",
+    "category": "立体化学",
+    "definition": "等量的一对对映体的混合物，因两个对映体的旋光相互抵消而没有光学活性。",
+    "expanded": "记作 (±) 或 (d,l)，如 (±)-2-butanol。用无光学活性的反应物与催化剂不能生成有光学活性的产物——手性产物必然以消旋混合物形式得到，因为生成两个对映体的路径能量完全相同。由纯光学活性物质转变为消旋体的过程称为外消旋化。",
+    "properties": [
+      "等量对映体",
+      "无光学活性",
+      "记 (±) 或 (d,l)",
+      "物理性质与单个对映体相同（非手性环境下）"
+    ],
+    "confusions": "消旋体不是化合物而是混合物，也不是“没有手性分子”——它由两种手性分子等量组成。",
+    "related": [
+      "racemization",
+      "enantiomer",
+      "optical-activity",
+      "chiral-resolution",
+      "optical-purity"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "racemization",
+    "zh": "外消旋化",
+    "en": "Racemization",
+    "category": "立体化学",
+    "definition": "由纯光学活性物质转变为外消旋体的过程，即手性中心失去构型信息。",
+    "expanded": "难易取决于结构，课件给出两类典型途径：① 含一个手性碳且易形成碳正离子、碳负离子或自由基等平面化中间体者极易外消旋（如肾上腺素在 H⁺ 下 60–70 °C、4 小时即外消旋）；② α-碳氢在酸或碱催化下经烯醇中间体外消旋（如乳酸的两个对映体经烯醇互变）。沙利度胺的 R 与 S 在体内互变，是这一现象最著名的后果。",
+    "properties": [
+      "经平面化中间体进行",
+      "碳正离子途径与烯醇途径最常见",
+      "使光学纯度下降",
+      "药物安全评价必须考虑"
+    ],
+    "confusions": "与外消旋化不同，差向异构化只改变多个手性中心中的一个，产物仍有光学活性。",
+    "related": [
+      "racemic-mixture",
+      "carbocation",
+      "enantiomer",
+      "epimerization",
+      "optical-activity"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "epimerization",
+    "zh": "差向异构化",
+    "en": "Epimerization",
+    "category": "立体化学",
+    "definition": "含两个或更多手性中心的体系中，只有一个手性中心发生构型转化的过程。",
+    "expanded": "与外消旋化的区别在于：外消旋化最终得到等量对映体（无光学活性），而差向异构化只是把一个非对映体变成另一个非对映体，产物仍然有光学活性。互为差向异构体的两个分子之间正是非对映关系。乳酸经烯醇互变可在同一碳上改变构型，是单中心变化的典型。",
+    "properties": [
+      "只改变一个手性中心",
+      "产物仍有光学活性",
+      "产物与原物互为非对映体",
+      "常经烯醇或质子转移中间体进行"
+    ],
+    "confusions": "不要把差向异构化等同于外消旋化；前者是单中心、非对映体之间的转化，后者是双中心或整体消旋。",
+    "related": [
+      "racemization",
+      "diastereomer",
+      "stereocenter",
+      "enantiomer"
+    ],
+    "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
   }
 ]

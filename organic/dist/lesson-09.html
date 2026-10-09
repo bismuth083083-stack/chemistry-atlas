@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第八课：Fischer 投影式、非对映体与光学活性 · 有机化学知识库</title>
+<meta name="description" content="Fischer 投影式的画法与判读、非对映异构体与 meso 化合物、光学活性与比旋光度、外消旋化、拆分与不对称合成。">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="ppt-figures.css">
+<link rel="stylesheet" href="lecture-02.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#07111f">
+<style>
+.step-list{counter-reset:st;margin:20px 0;padding:0;list-style:none;max-width:900px}
+.step-list li{counter-increment:st;position:relative;padding:14px 18px 14px 56px;border:1px solid var(--line);border-radius:12px;background:rgba(7,17,31,.45);margin-bottom:10px}
+.step-list li::before{content:counter(st);position:absolute;left:16px;top:14px;width:24px;height:24px;display:grid;place-items:center;border:1px solid var(--accent);border-radius:50%;color:var(--accent);font:12px ui-monospace,monospace}
+.correction-list{padding-left:1.25rem;max-width:78ch}
+.correction-list li{margin:.65rem 0;line-height:1.75}
+.stereo-map{display:grid;gap:12px;margin:22px 0;max-width:960px}
+.stereo-map>div{border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,rgba(13,28,45,.96),rgba(9,23,38,.9));padding:18px 20px}
+.stereo-map h3{margin:0 0 10px;font-size:16px}
+.stereo-map ul{margin:0;padding-left:1.15rem;color:var(--muted);font-size:14px;line-height:1.9}
+.stereo-map ul b{color:var(--text);font-weight:600}
+.stereo-map .branch{color:var(--accent);font:11px ui-monospace,monospace;letter-spacing:.08em;margin-bottom:6px;display:block}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px 0;max-width:960px}
+.two-col>div{border:1px solid var(--line);border-radius:14px;background:rgba(7,17,31,.45);padding:18px 20px}
+.two-col h3{margin:0 0 10px;font-size:15px}
+.two-col ul{margin:0;padding-left:1.15rem;color:var(--muted);font-size:14px;line-height:1.85}
+@media(max-width:720px){.two-col{grid-template-columns:1fr}}
+.fischer{display:grid;place-items:center;margin:20px 0;padding:20px;border:1px solid var(--line);border-radius:14px;background:rgba(7,17,31,.45);max-width:900px}
+.fischer svg{max-width:100%;height:auto}
+.fischer figcaption{padding-top:12px;color:var(--muted);font-size:13px;text-align:center;line-height:1.6}
+.data-table{width:100%;max-width:900px;border-collapse:collapse;margin:20px 0;font-size:14px}
+.data-table th,.data-table td{border:1px solid var(--line);padding:9px 12px;text-align:left}
+.data-table th{background:rgba(13,28,45,.9);font-weight:600;font-size:13px}
+.data-table td{color:var(--muted)}
+.data-table td b{color:var(--text)}
+</style>
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html"><span class="mark">C</span><span>有机化学知识库</span></a>
+<label class="search"><span>⌕</span><input id="global-search" placeholder="搜索笔记、中文名或英文名…" aria-label="搜索知识库"><kbd>⌘ K</kbd></label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html"><span>◫</span>课程笔记</a>
+<a href="terms.html"><span>Aa</span>双语词条库</a>
+<p class="nav-label">有机化学 I</p>
+<a href="lesson-01.html"><span>01</span>介绍与回顾</a>
+<a href="lesson-02.html"><span>02</span>酸碱与分子轨道</a>
+<a href="lesson-03.html"><span>03</span>酸碱理论</a>
+<a href="lesson-04.html"><span>04</span>烷烃与系统命名</a>
+<a href="lesson-05.html"><span>05</span>异构、构象与反应</a>
+<a href="lesson-06.html"><span>06</span>自由基、热力学与动力学</a>
+<a href="lesson-07.html"><span>07</span>反应选择性与活性中间体</a>
+<a href="lesson-08.html"><span>08</span>手性、对映体与 R/S 构型</a>
+<a class="active" href="lesson-09.html"><span>09</span>Fischer 投影式与光学活性</a>
+<a href="resonance.html"><span>↔</span>共振专题</a>
+</nav>
+<div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+</aside>
+<main class="workspace article">
+<a class="back" href="index.html">← 返回课程笔记</a>
+<header class="article-head">
+<p class="eyebrow">LECTURE 08 · CHAPTER 5-2</p>
+<h1>Fischer 投影式、非对映体与光学活性</h1>
+<p>Fischer projections, diastereomers, and optical activity</p>
+<div><span>课件原图</span><span>Fischer 投影式规则</span><span>2ⁿ 规则与 meso</span><span>比旋光度计算</span><span>外消旋化</span><span>拆分与不对称合成</span></div>
+</header>
+
+<section>
+<h2>1. 这一讲接在哪里</h2>
+<p>上一讲建立了<a class="term-link" href="term.html?slug=chirality">手性</a>、<a class="term-link" href="term.html?slug=enantiomer">对映体</a>与 <i>R</i>/<i>S</i> 构型的判定流程，用的是透视式（楔形—虚线）写法。这一讲换一种画法：<b>Fischer 投影式</b>。它不是新知识，而是同一套三维信息的另一种二维表示，读法与透视式不同，容易在此处出错，所以课件单独用一整节处理。</p>
+<p>有了第二种画法之后，才能讨论<b>含两个及以上手性中心</b>的体系——这里出现了一个上一讲完全没涉及的概念：<a class="term-link" href="term.html?slug=stereoisomer">非对映异构体</a>（diastereomer）。非对映体与对映体的物理性质差别很大，这个差别既是分离它们的基础，也是<b>光学活性</b>这一整块内容的落点。</p>
+<p>本讲对应 Wade《Organic Chemistry》第 5 章的 5-4 至 5-9 节，是第 5 章提纲的后半段：Fischer 投影式、非对映体、光学活性、拆分与不对称合成。</p>
+<div class="note"><b>与上一讲的分工</b><p>上一讲（Chapter 5-1）回答“一个分子是不是手性的、它的构型是 <i>R</i> 还是 <i>S</i>”；这一讲（Chapter 5-2）回答“多个手性中心时一共有几种异构体、它们之间是什么关系、怎么测量和分离”。两讲合起来才构成完整的立体化学。</p></div>
+</section>
+
+<section>
+<h2>2. Fischer 投影式为什么这样画</h2>
+<p>Fischer 投影式由德国化学家 <b>Hermann Emil Fischer</b>（1852.10.09–1919.07.15）提出，他因嘌呤与糖类的合成研究获得 1902 年诺贝尔化学奖。糖类分子往往有多个手性中心，透视式画起来会变成一团线，Fischer 投影式就是为了让这类分子一眼看清而发明的。</p>
+<p>它的约定只有一句话：<b>“horizontal lines forward, vertical lines back”——水平键向前，竖直键向后</b>。十字交叉处的碳就是手性碳，通常不写出。也就是说，横线上两个基团朝向观察者（楔形键），竖线上两个基团背离观察者（虚线键）。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/fischer-definition.webp" alt="Fischer 投影式的约定：水平键向前、竖直键向后，十字中心为手性碳，以乳酸为例" loading="eager" decoding="async">
+<figcaption>水平键向前、竖直键向后；十字中心是手性碳。课件以乳酸为例给出 Fischer 投影式与透视式的对应关系。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 5 页</small></figcaption>
+</figure>
+<p>这里最容易犯的错误是把它当成普通的平面结构式来旋转。普通结构式可以任意旋转、翻转，Fischer 投影式不能，因为它已经用横竖两个方向编码了前后关系。旋转会让编码失效。</p>
+</section>
+
+<section>
+<h2>3. Fischer 投影式允许与不允许的操作</h2>
+<p>课件把允许的操作限定得非常窄，只有两条：</p>
+<div class="two-col">
+<div>
+<h3>✓ 允许</h3>
+<ul>
+<li><b>在纸面内旋转 180°</b>。竖直的虚线键仍然竖直，水平的楔形键仍然水平，编码不变，所以得到的是同一个化合物。</li>
+<li>交换<b>任意两个</b>基团，构型反转。交换两次即回到原构型——<b>奇数次变换改变构型，偶数次变换保持构型</b>。</li>
+</ul>
+</div>
+<div>
+<h3>✗ 不允许</h3>
+<ul>
+<li><b>旋转 90°</b>。旋转后原本竖直的键变成水平、原本水平的键变成竖直，前后关系全部错位，等价于把构型反转了。</li>
+<li><b>翻出纸面</b>（flip）。这与直接照镜子等价，会把 <i>R</i> 变成 <i>S</i>。</li>
+</ul>
+</div>
+</div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/fischer-rules-180-vs-90.webp" alt="上：纸面内旋转 180° 后仍是同一化合物同一种构型；下：旋转 90° 会把 R 变成 S，不被允许" loading="eager" decoding="async">
+<figcaption>上：旋转 180° 允许，<i>R</i> 仍是 <i>R</i>。下：旋转 90° 不允许，等价于把 <i>R</i> 变成 <i>S</i>。课件原文：“The Fischer projection must be kept in the plane of the paper, and it may be rotated only by 180°.”<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 7 页</small></figcaption>
+</figure>
+<div class="note"><b>一句话记住方向性</b><p>Fischer 投影式只有一个自由度：<b>在纸面内转 180°</b>。任何把分子“提出纸面”或“转过 90°”的操作都会改变构型。判断两个 Fischer 投影式是否代表同一化合物时，只能反复用“转 180°”和“交换两次”这两种手段，看能不能把一个变成另一个。</p></div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/fischer-interchange.webp" alt="在 Fischer 投影式上交换水平方向的两个基团，构型由 R 反转为 S" loading="lazy" decoding="async">
+<figcaption>交换水平方向上任意两个基团，构型反转。做两次交换即回到原来的构型。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 10 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>4. 从结构式画出 Fischer 投影式</h2>
+<p>课件给出一条固定流程。掌握了它，画出 Fischer 投影式就不需要空间想象力，只需要按步骤执行。</p>
+<ol class="step-list">
+<li><b>找出全部手性碳原子</b>。在 (R)-1,2-propanediol 中，C2 是唯一连有四个不同基团（H、OH、CH<sub>3</sub>、CH<sub>2</sub>OH）的碳。</li>
+<li><b>确定手性碳上各取代基的优先次序</b>。按上一讲的 CIP 规则：先比原子序数，再比后续原子。1,2-丙二醇中为 OH &gt; CH<sub>2</sub>OH &gt; CH<sub>3</sub> &gt; H。</li>
+<li><b>把主链竖直放置</b>：优先次序最低的基团之一放竖直方向，主链两端分列上下。这里把 CH<sub>2</sub>OH 置于顶端、CH<sub>3</sub> 置于底端。</li>
+<li><b>按 R/S 判定决定 OH 与 H 的左右</b>。使最低优先级的 H 朝向远离观察者，观察 1→2→3 的旋转方向：顺时针为 <i>R</i>，逆时针为 <i>S</i>。</li>
+<li><b>检查并完成投影式</b>。水平方向的 H 指向观察者，因此在实际判读时需要把结论反转一次——这正是下一节要讲的陷阱。</li>
+</ol>
+<p>课件用两个例子走完这条流程：(<i>R</i>)-1,2-propanediol 与 (<i>R</i>)-glyceraldehyde（甘油醛）。甘油醛的优先次序是 OH &gt; CHO &gt; CH<sub>2</sub>OH &gt; H，它是整个 D/L 体系的基准分子（见第 7 节）。</p>
+</section>
+
+<section>
+<h2>5. 直接从 Fischer 投影式判 R/S</h2>
+<p>有了 Fischer 投影式，其实<b>不需要</b>再把它转成透视式才能判 <i>R</i>/<i>S</i>。但必须记住一个方向反转的陷阱：</p>
+<p>Fischer 投影式中，位于<b>水平键</b>上的基团指向<b>观察者</b>。如果最低优先级的基团（通常是 H）正好在水平位置上，那么按 1→2→3 画出的旋转方向所对应的构型，与实际构型<b>相反</b>。处理办法有两种，任选一种：</p>
+<ul>
+<li><b>交换法</b>：把水平位置上最低优先级的基团与竖直线上的某个基团交换一次，构型反转；判读完再用一次交换把构型改回去。两次交换净效果为零。</li>
+<li><b>取反法</b>：直接按 1→2→3 判读，若 H 在水平位置，则把判读结果取反。</li>
+</ul>
+<div class="note"><b>为什么方向会反过来</b><p>判 <i>R</i>/<i>S</i> 的前提是把最低优先级基团转到<b>背离</b>观察者的方向。透视式中这靠旋转整个分子实现；Fischer 投影式不允许旋转（只能转 180°），所以只能靠“交换两次”或“结果取反”来等效地实现。理解了这一点，就不必死记规则。</p></div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/fischer-direct-rs.webp" alt="直接从 Fischer 投影式判定 R/S 构型的方法，以及最低优先级基团位于水平键时需要反转结论" loading="lazy" decoding="async">
+<figcaption>从 Fischer 投影式直接判定构型。当最低优先级基团位于水平键上时，判读结果需要反转。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 13 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>6. 用镜像检验 Fischer 投影式是否手性</h2>
+<p>课件给出一个可操作的判据：画出原物的 Fischer 投影式，再画出它的镜像，然后尝试在纸面内旋转 180° 使两者重合。</p>
+<ul>
+<li><b>能重合</b> ⟹ 两者是同一化合物，该分子<b>非手性</b>（achiral）。</li>
+<li><b>不能重合</b> ⟹ 两者是<a class="term-link" href="term.html?slug=enantiomer">对映异构体</a>，该分子<b>手性</b>。</li>
+</ul>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/fischer-mirror-test.webp" alt="用镜像加纸面内旋转 180° 检验 Fischer 投影式：能重合则为同一化合物，不能重合则为对映体" loading="lazy" decoding="async">
+<figcaption>“原物—镜像—在纸面内旋转 180°”的检验流程：能重合即为同一化合物，不能重合即为对映体。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 11 页</small></figcaption>
+</figure>
+<p>课件用四个分子演示了这一判据，其中最重要的是 <b>2,3-二溴丁烷</b>的两个立体异构体：</p>
+<table class="data-table">
+<tr><th>分子</th><th>手性？</th><th>原因</th></tr>
+<tr><td>2-propanol 异丙醇</td><td>非手性</td><td>没有手性碳（C2 连两个相同的 CH<sub>3</sub>）</td></tr>
+<tr><td>(2<i>S</i>,3<i>R</i>)-2,3-dibromobutane</td><td><b>非手性</b></td><td>分子内有镜面，是 <a class="term-link" href="term.html?slug=internal-mirror-plane">meso 内消旋体</a></td></tr>
+<tr><td>(<i>R</i>)-1,2-propanediol</td><td><b>手性</b></td><td>只有一个手性中心，镜像不能重合</td></tr>
+<tr><td>(2<i>S</i>,3<i>S</i>)-2,3-dibromobutane</td><td><b>手性</b></td><td>两个手性中心构型相同，无内对称面</td></tr>
+</table>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/fischer-chirality-cases.webp" alt="四个分子用 Fischer 投影式判手性：异丙醇与 meso-2,3-二溴丁烷非手性，(R)-1,2-丙二醇与(2S,3S)-2,3-二溴丁烷手性" loading="lazy" decoding="async">
+<figcaption>四个分子的手性判读。同为 2,3-二溴丁烷，两个手性中心构型相反时为 <i>meso</i>（非手性），构型相同时为手性。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 11–12 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>7. 绝对构型、相对构型与 D/L 体系</h2>
+<p>这一节涉及一个容易被忽略的历史转折点。</p>
+<p><b>相对构型</b>（relative configuration）指的是两个分子之间彼此的空间关系——如果我们知道 A 是 <i>R</i>，那么由 A 出发不发生断键反应得到 B，B 的构型也就可以确定。在不打断手性碳上任何键的反应中，相对构型保持不变。课件举了 (<i>R</i>)-2-butanol 的例子：知道名字就能画出准确的三维结构。</p>
+<p>但“相对”意味着需要一把标尺。<b>绝对构型</b>（absolute configuration）指的是原子在空间中的真实取向。在 1951 年之前，化学家只能确定相对关系，无法确定哪个对映体真的是 <i>R</i>。1951 年，X 射线晶体学首次直接测出了原子在晶体中的空间取向，绝对构型才第一次被实验确定——而此前靠化学方法推断的整套相对关系，事后被证明是<u>正确</u>的。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/absolute-relative-config.webp" alt="绝对构型与相对构型的区别，以及 1951 年 X 射线晶体学首次测出原子的空间取向" loading="lazy" decoding="async">
+<figcaption>绝对构型与相对构型的区别：不做断键的反应保持相对构型；1951 年 X 射线晶体学首次直接测出绝对构型。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 15 页</small></figcaption>
+</figure>
+<h3>D/L 体系（Fischer–Rosanoff 惯例）</h3>
+<p>在 <i>R</i>/<i>S</i> 体系普及之前，糖类与氨基酸使用的是 <b>D/L 标记</b>，它由 Fischer 与 Rosanoff 建立，故称费歇尔—罗森诺夫惯例。规则是：以<b>甘油醛</b>的两个对映体为基准——</p>
+<ul>
+<li>与 <b>(+)-甘油醛</b> 构型相同的，标为 <b>D</b>；</li>
+<li>与 <b>(−)-甘油醛</b> 构型相同的，标为 <b>L</b>。</li>
+</ul>
+<p>之所以能这样推广，是因为糖可以从醛端氧化降解，逐级缩短碳链直到甘油醛，从而把任意一个糖的构型与基准挂上钩。氨基酸也用同一套标记（如 L-丝氨酸、L-谷氨酸）。</p>
+<div class="note"><b>D/L 与 (+)/(−) 是两件不同的事</b><p>D/L 说的是<b>构型</b>（与甘油醛基准的空间关系），(+)/(−) 说的是<b>旋光方向</b>（实测的旋光符号）。两者没有必然联系：D 构型的分子既可能是 (+)，也可能是 (−)。同理，<i>R</i>/<i>S</i> 也不能预测旋光方向——这一点第 11 节还会再强调一次。</p></div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/dl-system.webp" alt="D/L 体系以甘油醛为基准：与(+)-甘油醛同构型者为 D，与(−)-甘油醛同构型者为 L；糖可氧化降解为甘油醛" loading="lazy" decoding="async">
+<figcaption>D/L 体系（Fischer–Rosanoff 惯例）。糖类可从醛端氧化降解为甘油醛，因此能与基准分子比较构型。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 16 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>8. 非对映异构体</h2>
+<p>课件给出立体异构体的定义：<b>原子以相同的次序相连，但在空间中的方向不同</b>的异构体。在这个集合里，按“是否为镜面关系”再分两支：</p>
+<div class="stereo-map">
+<div>
+<span class="branch">MIRROR-IMAGE RELATIONSHIP</span>
+<h3>对映异构体 · enantiomer</h3>
+<ul>
+<li>互为镜像，且不能完全重叠</li>
+<li>所有非手性环境下的物理性质几乎完全相同</li>
+<li>只有手性环境（如手性色谱柱、酶、其他手性分子）才能区分</li>
+</ul>
+</div>
+<div>
+<span class="branch">NOT MIRROR-IMAGE RELATED</span>
+<h3>非对映异构体 · diastereomer</h3>
+<ul>
+<li><b>不是</b>镜面关系的立体异构体</li>
+<li>包含顺反（几何）异构体，以及多手性中心体系中部分中心构型不同的异构体</li>
+<li>物理性质<b>不同</b>，因此可以用常规方法分离</li>
+</ul>
+</div>
+</div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/stereoisomer-tree.webp" alt="立体异构体的分类树：构型异构体与构象异构体，其中构型异构体分为顺反异构体与旋光异构体，旋光异构体分为对映体与非对映体" loading="lazy" decoding="async">
+<figcaption>立体异构体的完整分类树。课件把旋转异构体（rotamer）、交叉式与重叠式构象也一并列出，落在“构象异构体”一支。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 17 页</small></figcaption>
+</figure>
+<p>课件特别提醒：<b>顺反（几何）异构体属于非对映异构体</b>。这个归类常被忽略，但逻辑上很自然——顺-2-丁烯与反-2-丁烯显然不是镜面关系。环上的顺反关系（如 1,3-二甲基环戊烷的 cis/trans）同样属于非对映关系。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/cis-trans-diastereomers.webp" alt="顺反（几何）异构体属于非对映异构体，含 2-丁烯与环状分子的顺反关系" loading="lazy" decoding="async">
+<figcaption>顺反异构关系被归入非对映异构体。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 18 页</small></figcaption>
+</figure>
+<h3>含两个手性中心的四个异构体怎么画</h3>
+<p>课件给出五步画法，用来系统地列出全部非对映体，而不是靠碰运气：</p>
+<ol class="step-list">
+<li>找出分子中<b>全部</b>手性碳原子。</li>
+<li>任意画出其中一个立体异构体。</li>
+<li>画出它的<b>镜像</b>——这就得到一对对映体。</li>
+<li>在原来那个异构体的某个手性中心上，<b>交换两个基团</b>（只改这一个中心的构型）。</li>
+<li>再画出新结构的镜像——于是得到第二对对映体。</li>
+</ol>
+<p>四个结构之间的关系是：同一条竖线上的两个互为对映体；跨线的任意两个互为非对映体。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/diastereomer-two-centers.webp" alt="含两个手性中心时四个立体异构体的系统画法：先画一个，再画镜像，再交换一个中心的基团，再画镜像" loading="lazy" decoding="async">
+<figcaption>含两个手性中心的四个立体异构体的系统画法，以及它们之间的对映/非对映关系。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 19 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>9. 2ⁿ 规则与它的失效</h2>
+<p>手性中心的数目与立体异构体的数目之间有一个简单的上界：<b>含 n 个手性碳原子的分子，最多有 2ⁿ 个立体异构体</b>。</p>
+<table class="data-table">
+<tr><th>手性中心数 n</th><th>2ⁿ 上界</th><th>具体异构体</th></tr>
+<tr><td>1</td><td>2</td><td>(<i>R</i>) 与 (<i>S</i>) 一对对映体</td></tr>
+<tr><td>2</td><td>4</td><td>(<i>R</i>,<i>R</i>) / (<i>S</i>,<i>S</i>) 一对，与 (<i>R</i>,<i>S</i>) / (<i>S</i>,<i>R</i>) 另一对</td></tr>
+<tr><td>n</td><td>2ⁿ</td><td>——</td></tr>
+</table>
+<p>但课件紧接着强调这是<b>上界，不是保证</b>。“最多”两个字是这句话的关键：当分子内存在<b>相同的取代基</b>时，某些组合会因为分子内部出现对称面而变成同一个化合物，实际数目就少于 2ⁿ。</p>
+<p>最标准的例子还是 <b>2,3-二溴丁烷</b>。按 2ⁿ 应该有 4 个异构体，实际只有 <b>3 个</b>：一对对映体 (±)，加上一个 <b>meso 内消旋体</b>——(2<i>R</i>,3<i>S</i>) 与 (2<i>S</i>,3<i>R</i>) 其实是同一个化合物，因为它内部有一个镜面，整体不手性。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/two-n-rule.webp" alt="2ⁿ 规则：n 个手性中心最多有 2ⁿ 个立体异构体；2,3-二溴丁烷因取代基相同实际只有 3 个异构体" loading="lazy" decoding="async">
+<figcaption>2ⁿ 规则及其失效。括号中的提醒是本节的重点：取代基相同时异构体数目少于 2ⁿ。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 20 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>10. meso 化合物：一个被说坏了的定义</h2>
+<p>课件给出的定义是：<b>meso 化合物是含有手性中心（通常是不对称碳）但整体无手性的化合物</b>。2,3-二溴丁烷的 (2<i>R</i>,3<i>S</i>) 异构体就是标准例子——它有两个不对称碳，却是非手性的，因为它有一个内对称面，分子的一半是另一半的镜像。</p>
+<div class="note"><b>课件指出的一个坏定义</b><p>课件明确批评了另一种常见表述：“含立体中心的无手性化合物”。它认为这是<b>糟糕的定义</b>，理由是<a class="term-link" href="term.html?slug=stereocenter">立体中心</a>（stereocenter）的范围比手性中心更大，它还包括产生顺反异构的双键碳。例如 2-丁烯的两个异构体都含有立体中心（双键两端的碳），它们都无手性，也都没有手性的非对映体——按这个定义就会被错误地叫作 meso，而它们显然不是。</p></div>
+<p>所以准确的说法应当锁定在“<b>手性中心</b>”上：meso 化合物的手性中心必须存在于同一个分子内，且因为分子内的对称性而互相抵消。判断一个含多个手性中心的分子是否为 meso，最可靠的办法仍是找<b>内对称面</b>（internal mirror plane）——找到它就可以直接断定非手性。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/meso-compound.webp" alt="meso 化合物：(2R,3S)-2,3-二溴丁烷含手性中心但整体无手性，分子内有镜面" loading="lazy" decoding="async">
+<figcaption><i>meso</i> 化合物与其内对称面。课件同时给出了对“含立体中心的无手性化合物”这一定义的批评。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 21 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>11. 非对映体与对映体的性质差异</h2>
+<p>这一节是整讲的枢纽，它解释了为什么“分离对映体”是一件难事，而“分离非对映体”却相对容易。</p>
+<h3>非对映异构体：性质不同</h3>
+<p>非对映体的<b>物理性质不同</b>——包括偶极矩、沸点、熔点、溶解度等。课件用 2-丁烯举例：顺式与反式的偶极矩不同。另一个常被引用的例子是糖类：大多数常见的糖彼此之间都是葡萄糖的非对映异构体，所以它们的熔点、溶解度都不一样。</p>
+<p>正因为物理性质不同，非对映体可以用<b>常规方法</b>分离：蒸馏、重结晶、柱色谱都可以。这一点在后面的拆分实验中会被反复利用——手性拆分正是先把一对对映体转成一对非对映体，再用常规方法分开。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/diastereomer-properties.webp" alt="非对映异构体的物理性质不同，包括偶极矩、沸点、溶解度等，因此可用蒸馏、重结晶、柱色谱分离" loading="lazy" decoding="async">
+<figcaption>非对映体的物理性质不同，可用常规方法分离。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 22 页</small></figcaption>
+</figure>
+<h3>对映异构体：性质几乎相同</h3>
+<p>对映体的<b>沸点、熔点、密度</b>几乎完全相同，在非手性环境中无法用任何常规手段区分。要把它们分开，必须引入一个<b>手性环境</b>，让两个对映体与这个手性环境形成<b>非对映</b>的相互作用。</p>
+<p>课件举的例子是<b>肾上腺素</b>（adrenaline）：它的两个对映体在普通溶剂中行为一致，只有通过旋光法（polarimetry）或手性环境才能区分。在生物体内情况则完全不同——受体本身就是手性的，所以两个对映体的生理活性可以相差极大。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/enantiomer-properties.webp" alt="对映体的物理性质几乎相同，需用旋光法或手性环境区分，以肾上腺素为例" loading="lazy" decoding="async">
+<figcaption>对映体的物理性质几乎相同，必须依靠旋光法或在手性环境中区分。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 23 页</small></figcaption>
+</figure>
+<div class="note"><b>一句话抓住区别</b><p>对映体在<b>非手性</b>环境里是“同一个人”，在<b>手性</b>环境里才分得开；非对映体在任何环境里都是“两个人”。这就是分离策略的全部依据：<b>把对映体转成非对映体，问题就从“手性分离”降级成“普通分离”</b>。</p></div>
+</section>
+
+<section>
+<h2>12. 平面偏振光与旋光测定</h2>
+<p>要测量光学活性，先要有<b>平面偏振光</b>（plane-polarized light）：只在<b>一个平面</b>内振动的光波。普通光（非偏振光）在垂直于传播方向的<b>所有</b>平面内振动；让它通过一个偏振过滤器（polarizing filter），只有振动方向与滤光器轴一致的成分能通过，出射光就变成了平面偏振光。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/plane-polarized-light.webp" alt="平面偏振光的定义与非偏振光的对比，以及偏振过滤器的作用" loading="lazy" decoding="async">
+<figcaption>平面偏振光与非偏振光的对比，以及偏振过滤器如何只让一个振动方向通过。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 24 页</small></figcaption>
+</figure>
+<p>用两块偏振片就能验证这一点：当第二块偏振片的轴与第一块平行时，光能通过（最亮）；把第二块转过 90° 后，光被完全挡住（最暗）。测量光学活性的仪器——<b>偏光计</b>（polarimeter）——就是在这个原理上加了样品管和后继的检偏器。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/polarimetry-setup.webp" alt="用两块偏振片观察平面偏振光：轴平行时最亮，轴垂直时无光" loading="lazy" decoding="async">
+<figcaption>用偏振片验证平面偏振光：轴平行时透光最强，垂直时完全无光。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 25 页</small></figcaption>
+</figure>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/polarimeter.webp" alt="偏光计的结构：光源、起偏器、样品管、检偏器与读数盘" loading="lazy" decoding="async">
+<figcaption><b>polarimetry</b>（旋光测定）与 <b>polarimeter</b>（偏光计）。样品管长度是公式中的 <i>l</i>。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 26 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>13. 光学活性与旋光方向</h2>
+<p><b>光学活性</b>（optical activity）的定义是：手性化合物使平面偏振光的振动平面发生旋转的性质。能产生这种旋转的物质称为光学活性物质。</p>
+<p>这里有两个必须分清的事实：</p>
+<ul>
+<li>一对对映体旋转偏振光的<b>角度完全相同，但方向相反</b>。如果 (<i>R</i>) 使平面顺时针转 30°，那么 (<i>S</i>) 就使它逆时针转 30°。</li>
+<li><b>无法预测</b>某个对映体（(<i>R</i>) 或 (<i>S</i>)）究竟把光转向哪一边。旋光方向必须由实验测定，不能由构型推出，也不能由 D/L 推出。</li>
+</ul>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/optical-activity.webp" alt="平面偏振光通过手性化合物溶液后振动平面发生旋转；一对对映体旋转角度相同方向相反" loading="lazy" decoding="async">
+<figcaption>平面偏振光通过手性样品后振动平面被旋转；一对对映体的旋转角度相同、方向相反。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 27 页</small></figcaption>
+</figure>
+<h3>标记符号</h3>
+<table class="data-table">
+<tr><th>旋光方向</th><th>符号</th><th>旧记号</th><th>示例</th></tr>
+<tr><td>右旋（clockwise）</td><td><b>(+)</b></td><td><i>d</i></td><td>(+)-2-butanol 或 <i>d</i>-2-butanol</td></tr>
+<tr><td>左旋（counterclockwise）</td><td><b>(−)</b></td><td><i>l</i></td><td>(−)-2-butanol 或 <i>l</i>-2-butanol</td></tr>
+</table>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/dextro-levo.webp" alt="右旋记 (+) 或 d，左旋记 (−) 或 l，以 2-丁醇与氨基酸为例" loading="lazy" decoding="async">
+<figcaption>右旋记 (+) 或 <i>d</i>，左旋记 (−) 或 <i>l</i>。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 28 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>14. 比旋光度</h2>
+<p>实测的旋光角 α 会随实验条件变化，不能直接用来比较不同化合物。影响它的两个因素是<b>浓度</b>与<b>样品管长度</b>：浓度加倍，旋光角加倍；管长从 10 cm 变成 20 cm，旋光角也加倍。为了得到与条件无关的数值，定义<b>比旋光度</b>（specific rotation）[α] 为：</p>
+<div class="formula">[α]<sup>25</sup><sub>D</sub> = <i>α</i> / (<i>c</i> · <i>l</i>)</div>
+<p>即用 <b>10 cm（1 dm）</b>的样品管、浓度为<b>1 g/mL</b> 时的旋光度。式中 <i>c</i> 是浓度，<i>l</i> 是管长（单位 dm）。上标 <b>25</b> 是测量温度（25 °C），下标 <b>D</b> 表示使用的是钠的 D 线（589 nm）——这两个标记都必须写明，因为旋光度同时依赖温度与波长。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/specific-rotation.webp" alt="比旋光度的定义：10 cm 样品管、浓度 1 g/mL 时的旋光度，以及浓度与管长对比旋光度的影响" loading="lazy" decoding="async">
+<figcaption>比旋光度的定义与两个影响因素（浓度、管长）。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 29 页</small></figcaption>
+</figure>
+<h3>课件例题</h3>
+<div class="note"><b>求 (+)-甘油醛的比旋光度</b>
+<p>将 <b>2.0 g</b> 的 (+)-glyceraldehyde 溶于 <b>10.0 mL</b> 水中，用 <b>100 mm</b> 样品管、钠 D 线、<b>25 °C</b> 测得旋光角为 <b>+1.74°</b>。求比旋光度。</p>
+<p><b>解：</b>先统一单位。浓度 <i>c</i> = 2.0 g ÷ 10.0 mL = <b>0.20 g·mL<sup>−1</sup></b>；管长 <i>l</i> = 100 mm = 10 cm = <b>1 dm</b>。代入：</p>
+<div class="formula">[α]<sup>25</sup><sub>D</sub> = +1.74° / (0.20 × 1) = <b>+8.7°</b></div>
+<p>结果为正值，说明该物质在此条件下是右旋的。注意单位：比旋光度的单位是度（°），写的时候通常写成 +8.7°，而不是“+8.7°·mL·g<sup>−1</sup>·dm<sup>−1</sup>”，因为条件已经写在下标里了。</p>
+</div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/specific-rotation-example.webp" alt="比旋光度例题：2.0 g (+)-甘油醛溶于 10.0 mL 水，100 mm 样品管，测得 +1.74°，求得 +8.7°" loading="lazy" decoding="async">
+<figcaption>课件例题：由实测旋光角 +1.74° 求出比旋光度 +8.7°。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 30 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>15. 消旋混合物与光学纯度</h2>
+<p><b>消旋混合物</b>（racemic mixture，也叫 racemate）是<b>等量</b>的两个对映体的混合物。因为两个对映体旋转偏振光的角度相同、方向相反，等量混合后旋转恰好抵消，所以消旋混合物<b>没有光学活性</b>。标记为 <b>(±)</b> 或 <b>(<i>d</i>,<i>l</i>)</b>，例如 (±)-2-butanol。</p>
+<div class="note"><b>一条重要的合成推论</b><p>课件明确指出：用<b>无光学活性</b>的反应物与催化剂，<b>不能</b>生成有光学活性的产物；手性产物必然以消旋混合物的形式得到。原因是反应从非手性起点出发，生成两个对映体的路径能量完全相同，因此机会均等。这条推论在讲不对称合成时会正好被用来作为对比——要让反应有选择性，就必须引入手性因素。</p></div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/racemic-mixture.webp" alt="消旋混合物是等量对映体的混合物，旋光相互抵消故无光学活性，记 (±) 或 (d,l)" loading="lazy" decoding="async">
+<figcaption>消旋混合物：等量对映体混合，旋光抵消，无光学活性。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 31 页</small></figcaption>
+</figure>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/achiral-synthesis.webp" alt="用无光学活性的反应物与催化剂不能生成有光学活性的产物，手性产物必为消旋混合物" loading="lazy" decoding="async">
+<figcaption>无手性起点只能给出消旋产物。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 32 页</small></figcaption>
+</figure>
+<h3>光学纯度与对映体过量</h3>
+<p>实际得到的往往不是纯对映体，也不是完全的消旋体，而是两者的混合物。衡量它的指标有两个，数值相同但表述不同：</p>
+<ul>
+<li><b>光学纯度</b>（optical purity, o.p.）= 实测比旋光度 ÷ 纯对映体的比旋光度。</li>
+<li><b>对映体过量</b>（enantiomeric excess, e.e.）= (主要对映体的量 − 次要对映体的量) ÷ 总量。</li>
+</ul>
+<p>因为 <i>α</i> 与浓度成正比，两个定义里浓度、克数、百分数都可以代入，单位会自然抵消。课件用 2-butanol 举例：某样品的比旋光度为 <b>+9.72°</b>，而纯 (+)-2-butanol 为 <b>+13.5°</b>，则 o.p. = 9.72 / 13.5 = <b>72%</b>。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/optical-purity.webp" alt="光学纯度定义：实测比旋光度除以纯对映体的比旋光度；例 +9.72 除以 +13.5 得 72%" loading="lazy" decoding="async">
+<figcaption>光学纯度的定义与课件例题。对映体过量 e.e. 是表达相对含量的等价方法。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 33 页</small></figcaption>
+</figure>
+<h3>由光学纯度反推组成</h3>
+<p>得到 72% 之后，可以进一步算出两个对映体的实际比例。设主要对映体（<i>d</i>，即 (+)）所占百分数为 <i>d</i>，次要者（<i>l</i>）为 <i>l</i>：</p>
+<div class="formula">
+<i>d</i> − <i>l</i> = 72%　（对映体过量）<br>
+<i>d</i> + <i>l</i> = 100%　（两者之和）<br>
+两式相加：2<i>d</i> = 172%　⟹　<i>d</i> = <b>86%</b>，<i>l</i> = <b>14%</b>
+</div>
+<p>所以该样品含 <b>86%</b> 的 <i>d</i>/(+) 与 <b>14%</b> 的 <i>l</i>/(−)。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/ee-calculation.webp" alt="由光学纯度 72% 反推组成：d−l=72%、d+l=100%，相加得 2d=172%，故含 86% d 与 14% l" loading="lazy" decoding="async">
+<figcaption>由 o.p. = 72% 反推两个对映体的实际含量。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 34 页</small></figcaption>
+</figure>
+<div class="note"><b>课件练习</b><p>6.0 g (+)-2-butanol 与 4.0 g (−)-2-butanol 的混合物，纯 (+)-2-butanol 的比旋光度为 +13.5°。求 e.e. 与比旋光度。</p>
+<p><b>思路：</b>总量 10.0 g，e.e. = (6.0 − 4.0) / 10.0 = <b>20%</b>。因 e.e. 与 o.p. 数值相同，比旋光度 = 0.20 × (+13.5°) = <b>+2.7°</b>。<small>（课件第 35 页给出此题，解答按同一逻辑推得。）</small></p></div>
+</section>
+
+<section>
+<h2>16. 外消旋化</h2>
+<p><b>外消旋化</b>（racemization）的定义是：由纯光学活性物质转变为外消旋体的过程。它不是一个次要的现象——课件用<b>沙利度胺</b>（Thalidomide）作为例子，标题直接写着“A nightmare for 50 years”。</p>
+<p><i>R</i>-构型抑制妊娠反应，<i>S</i>-构型致畸。但两者在体内会互相转化，服用纯 <i>R</i> 构型也无法保证无毒。这个案例说明：<b>手性药物的安全性不能只靠“分离出单一对映体”来解决</b>，还要考虑分子本身在生理条件下能否外消旋化。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/thalidomide.webp" alt="沙利度胺案例：R-构型抑制妊娠反应，S-构型致畸，两者在体内互变消旋" loading="lazy" decoding="async">
+<figcaption>沙利度胺：<i>R</i> 与 <i>S</i> 在体内互变，单一对映体给药也不能保证安全。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 36 页</small></figcaption>
+</figure>
+<h3>外消旋化的难易取决于结构</h3>
+<p>课件把易外消旋化的结构分成两类，判断依据都是“手性碳上的基团能否被暂时移走再以相反方向装回”。</p>
+<div class="two-col">
+<div>
+<h3>① 能形成活性中间体</h3>
+<ul>
+<li>含<b>一个</b>手性碳原子，且该碳容易形成<b>碳正离子、碳负离子或自由基</b>等活性中间体时，极易外消旋化。</li>
+<li>中间体一旦变成平面（如碳正离子的 sp² 中心），重新成键时从两面进攻的机会均等，构型就丢掉了。</li>
+<li>例：肾上腺素在 H<sup>+</sup> 作用下生成碳正离子，<b>60–70 °C、4 小时</b>即可外消旋。</li>
+</ul>
+</div>
+<div>
+<h3>② α-碳氢经烯醇中间体</h3>
+<ul>
+<li>不对称碳上的氢若与<b>羰基相邻</b>（即 α-碳氢），在酸或碱催化下可经<b>烯醇</b>（enol）中间体外消旋。</li>
+<li>烯醇化把 sp³ 的手性碳变成 sp² 的烯醇碳，平面化之后重新质子化即可得到相反构型。</li>
+<li>例：D-(−)-乳酸与 L-(+)-乳酸经烯醇互变互相转化。</li>
+</ul>
+</div>
+</div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/racemization-carbocation.webp" alt="经碳正离子中间体外消旋化：肾上腺素在酸性条件下 60–70 °C 四小时即可外消旋" loading="lazy" decoding="async">
+<figcaption>经碳正离子中间体的外消旋化。课件同时给出 (+)- 与 (−)-肾上腺素在 H<sup>+</sup> 条件下的转化，以及两者 [α]<sub>D</sub> = ±50.72° 的对照。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 37 页</small></figcaption>
+</figure>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/racemization-enol.webp" alt="经烯醇中间体外消旋化：α-碳氢在酸或碱催化下经烯醇互变，乳酸的两个对映体互相转化" loading="lazy" decoding="async">
+<figcaption>经烯醇中间体的外消旋化，以乳酸的 D-(−) 与 L-(+) 对映体为例。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 38 页</small></figcaption>
+</figure>
+<div class="note"><b>差向异构化 · epimerization</b><p>课件在此处引入一个相关但不同的概念：在含<b>两个或更多</b>手性中心的体系中，<b>只有一个</b>手性中心发生构型转化的过程，称为差向异构化。它与外消旋化的区别很清楚——外消旋化最终得到等量对映体（无光学活性），差向异构化只是把一个非对映体变成另一个非对映体，产物仍然有光学活性。<a class="term-link" href="term.html?slug=diastereomer">含多个手性中心时</a>，差向异构体之间正是非对映关系。</p></div>
+</section>
+
+<section>
+<h2>17. 拆分与不对称合成</h2>
+<p>由无手性起点出发只能得到消旋体，而药物、农药、材料往往只需要其中一个对映体。于是问题变成：<b>怎样从消旋体中拿到单一对映体？</b>课件给出的答案是两条路线。</p>
+<h3>路线一：手性拆分（resolution）</h3>
+<p>直接分离对映体是不可能的——它们在非手性环境中性质完全相同（第 11 节）。所以采取的是一种“<b>先转成非对映体，再分开，最后拆回来</b>”的策略：</p>
+<ol class="step-list">
+<li>让消旋体与一个<b>手性拆分剂</b>反应，生成一对<b>非对映异构的盐</b>（diastereomeric salts）。</li>
+<li>因为这对盐是<b>非对映体</b>，它们的溶解度、结晶行为不同，可以用<b>重结晶</b>等常规方法分开。</li>
+<li>分开之后，再把每个非对映盐<b>分解</b>，回收拆分剂，得到单一对映体。</li>
+</ol>
+<p>这是传统的化学拆分方法，也是最经典的一条。它的全部可行性都建立在第 11 节那个结论上：非对映体的物理性质不同。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/resolution.webp" alt="拆分与不对称合成：由无手性反应物出发得到消旋体，需要拆分或不对称合成才能得到单一对映体" loading="lazy" decoding="async">
+<figcaption>拆分问题的提出：光学活性化合物的纯对映体常常只能通过拆分或不对称合成获得。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 39 页</small></figcaption>
+</figure>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/chemical-resolution.webp" alt="化学拆分法：消旋体与手性拆分剂生成一对非对映异构的盐，再用重结晶分离" loading="lazy" decoding="async">
+<figcaption>化学拆分：先与手性试剂生成一对非对映盐，再用常规方法分离。这就是“把对映体转成非对映体”策略的实例。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 41 页</small></figcaption>
+</figure>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/diastereomeric-salts.webp" alt="非对映异构盐的生成与分离过程示意" loading="lazy" decoding="async">
+<figcaption>非对映异构盐的生成过程。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 42 页</small></figcaption>
+</figure>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/diastereomeric-salts-2.webp" alt="非对映异构盐经重结晶分离后再分解回收单一对映体" loading="lazy" decoding="async">
+<figcaption>分离后分解回收，得到单一对映体并回收手性拆分剂。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 43 页</small></figcaption>
+</figure>
+<h3>路线一之变体：手性色谱拆分</h3>
+<p>把化学拆分中的“手性试剂”换成一个<b>手性固定相</b>，就得到色谱法拆分。化合物与手性固定相之间形成非对映的相互作用，两个对映体的保留时间不同，于是先后被洗脱下来。这条路线不需要结晶，适用面更广。</p>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/chromatographic-resolution.webp" alt="手性色谱拆分：用手性固定相使两个对映体保留时间不同从而分离" loading="lazy" decoding="async">
+<figcaption>色谱法拆分对映体：手性固定相提供了分离所需的手性环境。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 44 页</small></figcaption>
+</figure>
+<h3>路线二：不对称合成（asymmetric synthesis）</h3>
+<p>另一条思路是根本不生成消旋体——在反应中直接引入<b>手性因素</b>，使生成某一个对映体的路径能量更低，从而优先得到它。手性因素可以是手性催化剂、手性配体、手性溶剂或酶。课件把<b>生物催化</b>（biocatalytic process）单独列出，因为酶本身就是最高效的手性催化剂。</p>
+<div class="note"><b>两条路线的比较</b>
+<p><b>拆分</b>是“造完再分”，理论上最高只能拿到 50% 的目标产物（除非把不要的那个对映体再消旋化循环利用）；<b>不对称合成</b>是“只造想要的那个”，原子经济性更好，但需要合适的手性催化剂。</p>
+<p>工业上两者常结合使用：先用不对称合成拿到较高的 e.e.，再用拆分把残余的次要对映体除去。理解第 11 节关于两类异构体性质差异的讨论，就能理解为什么这两条路线的难度差别如此之大。</p></div>
+<figure class="ppt-figure ppt-figure-light">
+<img src="assets/lecture-09/inactive-reactants.webp" alt="由无手性反应物合成手性化合物时得到消旋体，不对称合成则通过引入手性因素避免消旋" loading="lazy" decoding="async">
+<figcaption>不对称合成的出发点：与“无手性起点必得消旋体”正好相对，引入手性因素即可偏向一个对映体。<small>图源：Organic Chemistry I Lect. 8 (Chapter 5-2)，第 40 页</small></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>18. 教材对照：本讲在 Wade 第 5 章中的位置</h2>
+<table class="data-table">
+<tr><th>本讲小节</th><th>Wade 8th ed.</th><th>要点</th></tr>
+<tr><td>2–3 Fischer 投影式</td><td>§5-4</td><td>水平键向前、竖直键向后；只允许纸面内转 180°</td></tr>
+<tr><td>4–5 判读与画法</td><td>§5-4</td><td>五步画法；水平位置最低优先级基团需反转结论</td></tr>
+<tr><td>6 镜像检验</td><td>§5-5</td><td>原物—镜像—转 180°；重合即同一化合物</td></tr>
+<tr><td>7 绝对与相对构型、D/L</td><td>§5-6</td><td>1951 年 X 射线；Fischer–Rosanoff 惯例以甘油醛为基准</td></tr>
+<tr><td>8–9 非对映体与 2ⁿ 规则</td><td>§5-7</td><td>顺反异构属非对映体；取代基相同时少于 2ⁿ</td></tr>
+<tr><td>10 meso 化合物</td><td>§5-7</td><td>含手性中心但整体无手性；靠内对称面判定</td></tr>
+<tr><td>11–14 光学活性与比旋光度</td><td>§5-8</td><td>平面偏振光、偏光计、[α] = <i>α</i>/(<i>c·l</i>)</td></tr>
+<tr><td>15 消旋体与 o.p./e.e.</td><td>§5-8</td><td>等量对映体无旋光；o.p. 与 e.e. 数值相同</td></tr>
+<tr><td>16 外消旋化</td><td>§5-9</td><td>经碳正离子或烯醇中间体；差向异构化是单中心变化</td></tr>
+<tr><td>17 拆分与不对称合成</td><td>§5-9</td><td>非对映盐重结晶拆分；手性色谱；不对称合成与生物催化</td></tr>
+</table>
+</section>
+
+<section>
+<h2>19. 本课复习清单</h2>
+<ol class="check-list">
+<li>Fischer 投影式的两条约定是什么？为什么十字中心通常不画出碳？</li>
+<li>Fischer 投影式允许哪些操作、不允许哪些操作？旋转 90° 会把 <i>R</i> 变成什么？</li>
+<li>从结构式画 Fischer 投影式的五步是什么？</li>
+<li>为什么不能直接从 Fischer 投影式按 1→2→3 判定 <i>R</i>/<i>S</i>（当 H 在水平位置时）？两种处理办法分别是什么？</li>
+<li>用“原物—镜像—转 180°”检验手性时，能重合说明什么？</li>
+<li>2,3-二溴丁烷有几种立体异构体？为什么不是 4 种？</li>
+<li><i>meso</i> 化合物的准确定义是什么？课件为什么批评“含立体中心的无手性化合物”这个说法？</li>
+<li>为什么顺反异构体被归入非对映异构体？</li>
+<li>非对映体与对映体在物理性质上分别有什么特点？这决定了它们各自用什么方法分离？</li>
+<li>比旋光度 [α]<sup>25</sup><sub>D</sub> 中，上标与下标分别代表什么？为什么需要指定它们？</li>
+<li>某样品比旋光度为 +9.72°，纯 (+)-对映体为 +13.5°，光学纯度是多少？两个对映体各占多少？</li>
+<li>用无光学活性的反应物与催化剂能否得到有光学活性的产物？为什么？</li>
+<li>外消旋化的两条典型机理途径是什么？各自举一个例子。</li>
+<li>差向异构化与外消旋化的区别是什么？</li>
+<li>化学拆分为什么必须先把对映体转成非对映体？这个策略依据的是哪一条性质差异？</li>
+<li>拆分与不对称合成相比，各自的优缺点是什么？</li>
+</ol>
+</section>
+
+<section>
+<h2>20. 课件勘误与提示</h2>
+<ol class="correction-list">
+<li>课件第 21 页明确批评了把 meso 定义为“含立体中心的无手性化合物”的做法，理由是该定义会把 2-丁烯这类含立体中心但无手性的分子错误地包含进来。本笔记采用课件的立场，把定义锁定在“含手性中心但整体无手性”。</li>
+<li>本讲沿用了课件“Chapter 5”的章号，但课程页眉标为 Lect. 8 (Chapter 5-2)，与上一讲 Lect. 7 (Chapter 5-1) 共同构成第 5 章。各小节与 Wade 第 5 章的对应关系见第 18 节，其中 §5-4 至 §5-9 的具体节号按 Wade 8th ed. 的编排填写，使用前建议核对所用版本。</li>
+<li>课件多个页面上的分子结构图是位图，个别碳上氢的数目在缩放时不易辨认（如第 5 页乳酸、第 16 页丝氨酸/谷氨酸）。本笔记在正文中独立写出优先次序与命名，不依赖图中标注，遇到与课件不一致时以正文的完整结构式为准。</li>
+<li>课件第 24–26 页关于偏振光的插图来自通用物理教材，其中的滤镜示意为概念图，不表示实际偏光计的光路。实际仪器的结构见第 26 页。</li>
+<li>课件第 37 页给出 (+)-肾上腺素 [α]<sub>D</sub> = +50.72°（无效药）与 (−)-肾上腺素 [α]<sub>D</sub> = −50.72°（有效药）。需要留意的是，<b>左旋体才是生理活性高的那一个</b>，这与“(+) 即活性”的直觉相反，也再次印证了旋光符号与生物活性之间没有可预测的对应关系。</li>
+<li>课件第 35 页的练习只给出了题目，未在本页给出解答。本笔记在第 15 节按同一逻辑推出了 e.e. = 20%、比旋光度 +2.7°，如需与课件答案核对请注意这一点。</li>
+<li>关于 Fisher 投影式的历史人物，课件拼写为“Hermann Emil Fischer”。Fischer 全名中 “Fischer” 首字母为 F，此处为课件的正常拼写，非笔误。</li>
+</ol>
+</section>
+
+<footer class="source">来源：Organic Chemistry I Lect. 8 (Chapter 5-2)，共 47 页；Wade, <i>Organic Chemistry</i>, 8th ed., §5-4–§5-9，教材对照见第 18 节。课件原图为 OLE 二进制 PPT，经 WPS 转出 PDF 后按整页裁剪并统一为 WebP，未做任何重绘；正文术语可进入双语词条库查看。</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,59 +1,1492 @@
 [
-{"slug":"coordination-number","zh":"配位数","en":"coordination number","category":"结构","definition":"与中心原子直接相连的供体原子数。","expanded":"配位数描述局部连接关系，不等于氧化态、价态或配体分子数；多齿与桥联配体须按实际供体原子计数。","properties":["常见值包括 4、5、6，也可更高","同一配位数可对应不同几何构型"],"confusions":"四配位不必为四面体，d8 金属常形成平面正方形结构。","related":["ligand","oxidation-state"],"source":"Lesson 01；Miessler Ch. 1"},
-{"slug":"ligand","zh":"配体","en":"ligand","category":"配位化学","definition":"向中心原子或离子提供电子对并形成配位相互作用的原子、离子或分子。","expanded":"配体可按电荷、供体原子、齿数、桥联方式以及 σ 给体或 π 受体能力分类。","properties":["可为单齿或多齿","可端基配位或桥联"],"confusions":"配体分子数不一定等于配位数。","related":["coordination-number","bridging-ligand"],"source":"Lesson 01"},
-{"slug":"bridging-ligand","zh":"桥联配体","en":"bridging ligand","category":"结构","definition":"同时连接两个或更多中心原子的配体。","expanded":"常用 μn 表示桥联的中心数，例如 μ2-H；桥联会同时影响配位数与电子计数。","properties":["常见桥联原子为 H、卤素、O、S","可跨越金属簇的边或面"],"confusions":"μ 表示桥联中心数，η 表示连续原子参与配位的齿合度。","related":["ligand","metal-cluster"],"source":"Lesson 01"},
-{"slug":"delta-bond","zh":"δ 键","en":"delta bond","category":"成键","definition":"由适当取向的 d 轨道面对面重叠形成、绕核间轴具有两个节面的成键相互作用。","expanded":"δ 键常作为金属—金属四重键中最弱的一个成键分量，并限制绕键旋转。","properties":["常见于过渡金属多重键","重叠通常弱于 σ 和 π"],"confusions":"δ 键不是简单的第四根等价共价键。","related":["metal-cluster","orbital"],"source":"Lesson 01；课件第 3–4 页"},
-{"slug":"metal-cluster","zh":"金属簇","en":"metal cluster","category":"结构","definition":"包含多个相互成键金属原子的有限多核化合物。","expanded":"金属中心可形成多面体骨架，配体可端基、桥边或盖面配位。","properties":["可能存在金属—金属键","可实现多中心协同反应"],"confusions":"金属簇是有限分子或离子，不等同于无限延展的金属晶体。","related":["bridging-ligand","delta-bond"],"source":"Lesson 01"},
-{"slug":"oxidation-state","zh":"氧化态","en":"oxidation state","category":"反应","definition":"按离子近似分配成键电子后赋予原子的形式电荷。","expanded":"氧化态是电子计数与氧化还原分析工具，不等于实验测得的真实原子电荷。","properties":["氧化时通常升高","还原时通常降低"],"confusions":"氧化态、形式电荷和实际电荷是不同概念。","related":["coordination-number","effective-nuclear-charge"],"source":"Lesson 01"},
-{"slug":"wavefunction","zh":"波函数","en":"wavefunction","category":"原子结构","definition":"描述量子体系状态的数学函数，通常记为 ψ。","expanded":"波函数包含相位信息，其模平方与概率密度相关；允许波函数必须满足边界条件并可归一化。","properties":["可正、负或为复数","不同本征态可正交"],"confusions":"ψ 不是概率，也不是电子的运动轨迹。","related":["orbital","radial-probability"],"source":"Lesson 02；Miessler Ch. 2"},
-{"slug":"orbital","zh":"原子轨道","en":"atomic orbital","category":"原子结构","definition":"氢样原子或多电子近似中描述一个电子空间状态的波函数。","expanded":"轨道由 n、l、ml 标记，每只空间轨道最多容纳两个自旋相反的电子。","properties":["具有能量、形状、取向和相位","可含径向与角节点"],"confusions":"轨道不是电子绕核运动的固定路径。","related":["wavefunction","quantum-number","node"],"source":"Lesson 02"},
-{"slug":"quantum-number","zh":"量子数","en":"quantum number","category":"原子结构","definition":"标记允许量子状态的一组离散数值。","expanded":"原子中常用 n、l、ml 和 ms 描述电子的壳层、亚层、轨道取向与自旋投影。","properties":["由方程与边界条件产生","四个量子数共同标记电子状态"],"confusions":"p 亚层能容纳六个电子，单只 p 轨道只能容纳两个。","related":["orbital","pauli-principle"],"source":"Lesson 02；课件第 16 页"},
-{"slug":"node","zh":"节点","en":"node","category":"原子结构","definition":"波函数等于零、概率密度也为零的区域。","expanded":"氢样轨道总节点数为 n−1，角节点为 l，径向节点为 n−l−1。","properties":["节点两侧相位改变","角节点决定轨道形状"],"confusions":"节点不是电子暂时没有经过的经典空隙。","related":["orbital","wavefunction","radial-probability"],"source":"Lesson 02"},
-{"slug":"radial-probability","zh":"径向概率函数","en":"radial probability function","category":"原子结构","definition":"电子出现在距核为 r 的薄球壳内的概率分布。","expanded":"对角度积分后，径向概率与 4πr²|R(r)|² 成正比，球壳因子使其与局部概率密度不同。","properties":["核处径向概率为零","曲线峰值给出最概然半径"],"confusions":"概率密度在核处可非零，而径向概率在 r=0 必为零。","related":["wavefunction","penetration","node"],"source":"Lesson 02；课件第 21–25 页"},
-{"slug":"penetration","zh":"穿透能力","en":"penetration","category":"原子结构","definition":"轨道电子进入靠近原子核区域的能力。","expanded":"同一主量子数下通常 s 大于 p，大于 d，大于 f；穿透较强的电子受到较少屏蔽。","properties":["影响轨道能量","与径向分布的内侧峰有关"],"confusions":"平均半径较大不必然意味着穿透能力更弱。","related":["shielding","effective-nuclear-charge","radial-probability"],"source":"Lesson 02"},
-{"slug":"shielding","zh":"屏蔽效应","en":"shielding effect","category":"周期性","definition":"其他电子削弱指定电子所感受到的核吸引的效应。","expanded":"内层电子通常屏蔽较强，同层电子屏蔽不完全，d、f 电子尤其不能完全抵消增加的核电荷。","properties":["与轨道穿透有关","决定有效核电荷"],"confusions":"屏蔽常数不是简单等于其他电子数。","related":["effective-nuclear-charge","slater-rules","penetration"],"source":"Lesson 02"},
-{"slug":"effective-nuclear-charge","zh":"有效核电荷","en":"effective nuclear charge","category":"周期性","definition":"指定电子在考虑屏蔽后感受到的净正核电荷，记为 Zeff。","expanded":"常用 Zeff=Z−S 近似；同周期向右通常增大，是半径和电离能趋势的重要原因。","properties":["针对具体电子或轨道","可由 Slater 规则估算"],"confusions":"一个原子不存在对所有电子都相同的唯一 Zeff。","related":["shielding","slater-rules","atomic-radius"],"source":"Lesson 02；课件第 31–37 页"},
-{"slug":"slater-rules","zh":"Slater 规则","en":"Slater's rules","category":"周期性","definition":"根据电子分组和经验系数估算屏蔽常数与有效核电荷的方法。","expanded":"ns/np 与 nd/nf 电子采用不同计数规则；适合解释趋势，不是高精度量子计算。","properties":["同组电子常贡献 0.35","内层电子贡献通常更大"],"confusions":"计算时必须排除正在考察的电子。","related":["shielding","effective-nuclear-charge"],"source":"Lesson 02；课件第 32–37 页"},
-{"slug":"pauli-principle","zh":"Pauli 不相容原理","en":"Pauli exclusion principle","category":"电子排布","definition":"同一原子中不能有两个电子具有完全相同的四个量子数。","expanded":"因此一只空间轨道最多容纳两个电子，并且它们的自旋投影相反。","properties":["限制轨道最大占据数","适用于费米子"],"confusions":"它与 Hund 规则解决的问题不同。","related":["hund-rule","quantum-number"],"source":"Lesson 02"},
-{"slug":"hund-rule","zh":"Hund 规则","en":"Hund's rule","category":"电子排布","definition":"简并轨道先由平行自旋电子单占，再发生配对。","expanded":"该排布兼顾电子间空间回避和交换稳定化，是判断基态构型与未成对电子数的基础。","properties":["适用于同一简并轨道组","倾向于最大化总自旋"],"confusions":"还需同时比较轨道能量差，不能在所有情形下机械套用。","related":["pauli-principle","aufbau-principle"],"source":"Lesson 02"},
-{"slug":"aufbau-principle","zh":"构造原理","en":"Aufbau principle","category":"电子排布","definition":"建立基态构型时电子依次占据可用的较低能量轨道。","expanded":"n+l 规则可近似预测中性原子填充顺序，但轨道能量随占据和电离而改变。","properties":["是电子排布的起点","存在 Cr、Cu 等经验例外"],"confusions":"先填 4s 不代表形成离子时最后才失去 4s。","related":["hund-rule","effective-nuclear-charge"],"source":"Lesson 02"},
-{"slug":"ionization-energy","zh":"电离能","en":"ionization energy","category":"周期性","definition":"从一摩尔气态原子或离子中移走一摩尔电子所需的能量。","expanded":"同周期总体增大，同族总体减小；亚层切换和电子成对可产生局部不连续。","properties":["连续电离能通常递增","跨越闭壳层时显著跃升"],"confusions":"电离能定义针对气态粒子。","related":["effective-nuclear-charge","electron-affinity","atomic-radius"],"source":"Lesson 02"},
-{"slug":"electron-affinity","zh":"电子亲和能","en":"electron affinity","category":"周期性","definition":"与气态原子获得电子或其逆过程相关的能量量度。","expanded":"不同教材可能采用相反反应方向或符号约定，必须连同反应式解释。","properties":["同周期通常向右更有利","第 2、15、18 族附近常有例外"],"confusions":"只报正负号而不写过程容易因定义差异出错。","related":["ionization-energy","effective-nuclear-charge"],"source":"Lesson 02；课件第 42–45 页"},
-{"slug":"atomic-radius","zh":"原子半径","en":"atomic radius","category":"周期性","definition":"根据原子间距离定义的原子有效尺寸。","expanded":"可分为共价、金属和范德华半径；电子云没有刚性边界，数值依赖定义和环境。","properties":["同周期总体减小","同族总体增大"],"confusions":"不同类型半径数据不能无条件横向比较。","related":["ionic-radius","effective-nuclear-charge","lanthanide-contraction"],"source":"Lesson 02"},
-{"slug":"ionic-radius","zh":"离子半径","en":"ionic radius","category":"周期性","definition":"在特定晶体模型、氧化态与配位环境中分配给离子的有效尺寸。","expanded":"阳离子通常小于对应原子，阴离子通常更大；数值随配位数、自旋态和半径体系变化。","properties":["高正电荷通常使半径减小","等电子系列中核电荷越大半径越小"],"confusions":"离子半径不是脱离结构环境的绝对常数。","related":["atomic-radius","lanthanide-contraction"],"source":"Lesson 02；课件第 48–50 页"},
-{"slug":"lanthanide-contraction","zh":"镧系收缩","en":"lanthanide contraction","category":"周期性","definition":"随镧系原子序数增加，原子和常见三价离子半径总体逐渐减小的现象。","expanded":"4f 电子屏蔽效率差，不能完全抵消核电荷增加，使有效核吸引逐步增强。","properties":["使 Zr 与 Hf 半径接近","影响镧系分离与配位化学"],"confusions":"不是周期表排版造成的视觉假象。","related":["atomic-radius","shielding","effective-nuclear-charge"],"source":"Lesson 02；课件第 37–38、46–47 页"},
-{"slug":"resonance","zh":"共振","en":"resonance","category":"成键","definition":"用多个仅电子分布不同的 Lewis 贡献式共同描述同一个离域电子态。","expanded":"贡献式之间原子位置与 σ 骨架不变；真实分子不是在这些结构之间随时间来回跳动。","properties":["常导致键长均化","可产生非整数平均键级"],"confusions":"共振箭头不表示化学平衡，贡献式也不是可分离异构体。","related":["formal-charge","vsepr"],"source":"Lesson 03；课件第 1–3 页"},
-{"slug":"formal-charge","zh":"形式电荷","en":"formal charge","category":"成键","definition":"把每根共价键的电子平均分给两端原子后得到的电子记账电荷。","expanded":"FC=价电子数−非键电子数−成键电子数的一半；全分子的形式电荷之和必须等于总电荷。","properties":["用于比较 Lewis 贡献式","不是实验原子净电荷"],"confusions":"形式电荷、氧化态和实际部分电荷是三个不同概念。","related":["resonance","oxidation-state"],"source":"Lesson 03；课件第 3–8 页"},
-{"slug":"vsepr","zh":"价层电子对互斥理论","en":"VSEPR theory","category":"结构","definition":"根据中心原子周围电子域趋向彼此远离来预测主族分子几何的模型。","expanded":"先由全部成键域与孤对电子确定电子域几何，再忽略孤对电子位置得到分子几何。","properties":["多重键算一个电子域","孤对电子通常造成键角压缩"],"confusions":"VSEPR 不能直接给出精确键能、磁性或完整电子结构。","related":["electron-domain","steric-number","resonance"],"source":"Lesson 03；课件第 9–19 页"},
-{"slug":"electron-domain","zh":"电子域","en":"electron domain","category":"结构","definition":"VSEPR 中中心原子周围一个成键方向或一对孤对电子所占据的空间区域。","expanded":"单键、双键和三键各算一个成键域；一对孤对电子算一个非键域。","properties":["总数决定理想电子域几何","不同类型电子域排斥强度不同"],"confusions":"多重键虽只计一个域，其空间影响通常强于单键。","related":["vsepr","steric-number"],"source":"Lesson 03"},
-{"slug":"steric-number","zh":"立体数","en":"steric number","category":"结构","definition":"中心原子周围 σ 成键电子域与孤对电子域的总数。","expanded":"立体数 2、3、4、5、6 分别对应直线、平面三角、四面体、三角双锥和八面体电子域几何。","properties":["用于 AXmEn 分类","不等同于金属配位数"],"confusions":"分子形状还要从电子域几何中去掉孤对电子位置。","related":["vsepr","electron-domain","coordination-number"],"source":"Lesson 03"},
-{"slug":"hypervalent-bonding","zh":"超价成键","en":"hypervalent bonding","category":"成键","definition":"Lewis 记账中中心原子周围电子数超过八隅体的主族成键情形。","expanded":"现代描述通常强调离域分子轨道、离子性和三中心四电子相互作用，而非必需的低能 d 轨道杂化。","properties":["常见于重主族卤化物","可由 VSEPR 预测几何"],"confusions":"扩展八隅体不意味着中心原子必须调用 d 轨道扩大价层。","related":["three-center-four-electron","vsepr"],"source":"Lesson 03；Miessler Ch. 3"},
-{"slug":"three-center-four-electron","zh":"三中心四电子键","en":"three-center four-electron bond","category":"成键","definition":"三个原子中心共同承载四个电子的离域成键模型，简称 3c–4e。","expanded":"三个轨道组合为成键、近似非键和反键轨道，四电子占据前两者，净成键分布于两个相邻原子间联系。","properties":["可描述 XeF2 与 I3−","不要求中心原子 d 轨道主导参与"],"confusions":"不是两根完整二中心二电子单键简单相加。","related":["hypervalent-bonding","vsepr"],"source":"Lesson 03；现代超价键模型"},
-{"slug":"ligand-close-packing","zh":"配体紧密堆积模型","en":"ligand close packing model","category":"结构","definition":"以外围配体之间近似稳定的非键接触距离解释键长和键角联动的几何模型。","expanded":"同一中心和同类配体的系列中，中心–配体键长变化可通过键角调整来维持适当配体间距。","properties":["可用三角关系定量估算","补充 VSEPR 的中心电子域视角"],"confusions":"配体间距是经验近似，不是严格固定的普适常数。","related":["vsepr","electron-domain"],"source":"Lesson 03；课件第 20 页"},
-{"slug":"symmetry-operation","zh":"对称操作","en":"symmetry operation","category":"分子对称性","definition":"使分子操作后的核构型与原构型不可区分的刚体变换。","expanded":"基本操作包括恒等、正旋转、反射、反演和非真旋转；同种原子可以在操作中互换位置。","properties":["复合满足群的封闭性","对应具体的对称元素"],"confusions":"不要求每个原子回到原编号，只要求最终结构不可区分。","related":["symmetry-element","point-group","improper-rotation"],"source":"Lesson 04；课件第 3–8 页"},
-{"slug":"symmetry-element","zh":"对称元素","en":"symmetry element","category":"分子对称性","definition":"执行对称操作所依赖的几何对象，如轴、镜面或反演中心。","expanded":"对称元素是几何位置，对称操作是围绕该元素执行的动作；二者在口语中常以同一符号简称。","properties":["可以是点、线或面","所有元素共享至少一个固定点"],"confusions":"C3 轴是元素，旋转 120° 的 C3 是操作。","related":["symmetry-operation","point-group"],"source":"Lesson 04"},
-{"slug":"principal-axis","zh":"主轴","en":"principal axis","category":"分子对称性","definition":"分子中阶数 n 最高的正旋转轴 Cn，通常选作 z 轴。","expanded":"同一几何轴可能同时对应 Cn 的多个幂；点群下标中的 n 取主轴阶数。","properties":["用于定义镜面下标","决定 Cn 或 Dn 家族名称"],"confusions":"轴最长或最明显不等于阶数最高。","related":["symmetry-operation","mirror-plane","point-group"],"source":"Lesson 04；课件第 4–5 页"},
-{"slug":"mirror-plane","zh":"镜面","en":"mirror plane","category":"分子对称性","definition":"关于该平面反射后使分子与原构型重合的对称元素。","expanded":"相对主轴分为垂直主轴的 σh、包含主轴的 σv，以及平分垂直 C2 轴夹角的 σd。","properties":["σh 垂直主轴","σv 与 σd 都包含主轴"],"confusions":"σd 不是任意倾斜镜面，必须满足二面平分条件。","related":["principal-axis","improper-rotation","chirality"],"source":"Lesson 04；课件第 5–10 页"},
-{"slug":"inversion-center","zh":"反演中心","en":"center of inversion","category":"分子对称性","definition":"使每一点 (x,y,z) 映射为 (−x,−y,−z) 后结构不变的中心点。","expanded":"每个原子穿过中心后，在反方向等距离处必须存在相同元素及等价环境。","properties":["等价于 S2 操作","导致 IR/Raman 互斥规则"],"confusions":"反演不是绕任一轴旋转 180°。","related":["improper-rotation","mutual-exclusion-rule","chirality"],"source":"Lesson 04；课件第 6 页"},
-{"slug":"improper-rotation","zh":"非真旋转","en":"improper rotation","category":"分子对称性","definition":"先绕轴旋转 360°/n，再关于垂直于该轴的平面反射的复合操作 Sn。","expanded":"S1 等价于镜面反射 σ，S2 等价于反演 i；存在任意 Sn 会排除构型手性。","properties":["也称旋转-反射","可在单步都非对称时整体成为对称操作"],"confusions":"不能只完成旋转或只完成反射后就判断。","related":["mirror-plane","inversion-center","chirality"],"source":"Lesson 04；课件第 7–8 页"},
-{"slug":"point-group","zh":"点群","en":"point group","category":"分子对称性","definition":"共享至少一个固定点的一组完整分子对称操作。","expanded":"点群按主轴、垂直 C2、镜面、反演与非真旋转分类，可用于判断极性、手性、轨道与光谱选择定则。","properties":["操作满足群的四条公理","名称编码主要对称元素"],"confusions":"配位几何相同的分子可因取代基不同而属于不同点群。","related":["symmetry-operation","character-table","principal-axis"],"source":"Lesson 04；课件第 11–33 页"},
-{"slug":"character-table","zh":"特征标表","en":"character table","category":"群论","definition":"汇总点群操作类、不可约表示字符及常用基函数变换性质的表。","expanded":"列对应操作类，行对应不可约表示；右侧 x/y/z、转动与二次函数用于判断平移、转动和光谱活性。","properties":["字符是表示矩阵的迹","不可约表示彼此正交"],"confusions":"字符 0 通常表示多维基函数发生混合，不是操作没有影响。","related":["reducible-representation","point-group","salc"],"source":"Lesson 04；课件第 35–58 页"},
-{"slug":"reducible-representation","zh":"可约表示","en":"reducible representation","category":"群论","definition":"可通过相似变换分解为多个不可约表示直和的群表示，通常记作 Γ。","expanded":"化学中常由一组键、轨道或 3N 个原子位移构造，再用约化公式求各不可约表示的次数。","properties":["字符可由未移位基函数贡献求得","可分解为对称性标签"],"confusions":"表示的维数与不可约表示出现次数不是同一概念。","related":["character-table","salc","normal-mode"],"source":"Lesson 04；课件第 37–47 页"},
-{"slug":"salc","zh":"对称性匹配线性组合","en":"symmetry-adapted linear combination","category":"成键","definition":"由若干等价配体轨道按点群不可约表示组合得到的群轨道。","expanded":"中心原子轨道只有与 SALC 同对称性时才可能产生非零重叠并参与相互作用。","properties":["用于构造分子轨道图","将多个配体轨道压缩为对称性基"],"confusions":"对称性允许只是必要条件，还需要能量接近与空间重叠。","related":["character-table","reducible-representation","orbital"],"source":"Lesson 04；课件第 59–70 页"},
-{"slug":"normal-mode","zh":"正常振动模式","en":"normal mode","category":"光谱","definition":"谐振近似下所有原子以同一频率和固定相位关系运动的独立振动。","expanded":"非线性 N 原子分子有 3N−6 个，线性分子有 3N−5 个；每个模式属于某个不可约表示。","properties":["可按点群分类","简并模式共享频率"],"confusions":"正常模式数不必等于实验中可分辨的峰数。","related":["character-table","mutual-exclusion-rule","reducible-representation"],"source":"Lesson 04；课件第 71–97 页"},
-{"slug":"mutual-exclusion-rule","zh":"红外-Raman 互斥规则","en":"mutual exclusion rule","category":"光谱","definition":"具有反演中心的分子中，同一正常振动不能同时具有 IR 与 Raman 活性。","expanded":"偶极矩分量在反演下为奇，极化率二次函数为偶，因此同一模式不可能同时满足两类选择定则。","properties":["仅适用于中心对称分子","可辅助区分几何异构体"],"confusions":"不是说中心对称分子只能有 IR 或只能有 Raman 光谱。","related":["inversion-center","normal-mode","character-table"],"source":"Lesson 04；课件第 93–104 页"},
-{"slug":"chirality","zh":"手性","en":"chirality","category":"分子对称性","definition":"物体与其镜像不能通过刚体转动和平移重合的性质。","expanded":"点群语言中，构型手性要求不存在任何非真旋转 Sn；常见允许手性的点群为 C1、Cn、Dn。","properties":["镜面与反演中心均排除手性","可产生对映体"],"confusions":"看起来像螺旋并不足以证明手性，仍需检查 Sn。","related":["improper-rotation","point-group","mirror-plane"],"source":"Lesson 04；课件第 49 页"},
-{"slug":"linear-geometry","zh":"直线形","en":"linear geometry","category":"分子几何","definition":"中心原子与两个外围原子位于同一直线上，键角为 180° 的分子几何。","expanded":"可由 AX₂ 的两个电子域直接形成，也可由三角双锥电子域中的 AX₂E₃ 形成；后者三个孤对电子占据赤道位。","properties":["理想键角 180°","典型点群可为 D∞h 或 C∞v"],"confusions":"直线形分子不一定非极性；外围原子不同时仍可具有净偶极矩。","related":["vsepr","electron-domain","trigonal-bipyramidal-geometry"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"trigonal-planar-geometry","zh":"平面三角形","en":"trigonal planar geometry","category":"分子几何","definition":"三个外围原子在同一平面内围绕中心原子分布，理想键角为 120° 的几何。","expanded":"对应 AX₃ 与立体数 3；三个成键电子域在平面内最大程度分离。","properties":["理想键角 120°","等配体时常属 D3h 点群"],"confusions":"不要与含一个孤对电子的折线形 AX₂E 混淆；二者电子域几何相同但分子几何不同。","related":["bent-geometry","vsepr","steric-number"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"bent-geometry","zh":"折线形","en":"bent geometry / angular geometry","category":"分子几何","definition":"两个外围原子与中心原子形成小于 180° 夹角的 V 形分子几何。","expanded":"常见来源为 AX₂E 的平面三角电子域或 AX₂E₂ 的四面体电子域；孤对电子使键角相对理想值压缩。","properties":["又称角形或 V 形","通常具有净偶极矩"],"confusions":"SO₂ 与 H₂O 都是折线形，但前者立体数 3，后者立体数 4。","related":["trigonal-planar-geometry","tetrahedral-geometry","vsepr"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"tetrahedral-geometry","zh":"四面体形","en":"tetrahedral geometry","category":"分子几何","definition":"四个外围原子指向正四面体四个顶点、理想键角约 109.5° 的几何。","expanded":"对应 AX₄ 与立体数 4；若用一个或两个孤对电子替代成键域，分子几何分别变为三角锥形或折线形。","properties":["理想键角 109.47°","等配体时属 Td 点群"],"confusions":"四面体电子域不表示所有 AX₃E 或 AX₂E₂ 分子都叫四面体形。","related":["trigonal-pyramidal-geometry","bent-geometry","vsepr"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"trigonal-pyramidal-geometry","zh":"三角锥形","en":"trigonal pyramidal geometry","category":"分子几何","definition":"三个外围原子形成三角形底面，中心原子位于锥顶的分子几何。","expanded":"对应 AX₃E；四个电子域为四面体排布，一个顶点由孤对电子占据。","properties":["键角通常小于 109.5°","典型实例 NH₃、PCl₃"],"confusions":"不是平面三角形；中心原子与三个外围原子通常不共面。","related":["tetrahedral-geometry","vsepr","electron-domain"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"trigonal-bipyramidal-geometry","zh":"三角双锥形","en":"trigonal bipyramidal geometry","category":"分子几何","definition":"三个赤道位与两个轴向位构成立体数 5 的分子或电子域几何。","expanded":"赤道位彼此为 120°，轴向位与赤道位为 90°，两个轴向位为 180°；轴向与赤道位置不等价。","properties":["轴向键通常较长","孤对电子优先占据赤道位"],"confusions":"不能把五个位置视为完全等价；这与正五边形平面结构不同。","related":["seesaw-geometry","t-shaped-geometry","linear-geometry"],"source":"Lesson 03；课件第 17–19 页"},
-{"slug":"seesaw-geometry","zh":"跷跷板形","en":"seesaw geometry / disphenoidal geometry","category":"分子几何","definition":"由三角双锥电子域去掉一个赤道位后得到的 AX₄E 分子几何。","expanded":"孤对电子占据赤道位，以减少 90° 相互作用；剩余两个轴向键与两个赤道键构成不对称的跷跷板形。","properties":["轴向与赤道键不等价","典型实例 SF₄"],"confusions":"不是四面体形，也不要把英文 seesaw 误译为平面结构。","related":["trigonal-bipyramidal-geometry","t-shaped-geometry","vsepr"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"t-shaped-geometry","zh":"T 形","en":"T-shaped geometry","category":"分子几何","definition":"三个外围原子围绕中心原子呈字母 T 排布的 AX₃E₂ 分子几何。","expanded":"来自三角双锥电子域；两个孤对电子占据两个赤道位，留下两个轴向位和一个赤道位。","properties":["主要角度约 90° 与 180°","典型实例 ClF₃"],"confusions":"实际 90° 键角常因孤对电子排斥而略小。","related":["trigonal-bipyramidal-geometry","seesaw-geometry","linear-geometry"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"octahedral-geometry","zh":"八面体形","en":"octahedral geometry","category":"分子几何","definition":"六个外围原子位于正八面体六个顶点，邻位夹角 90°、对位夹角 180° 的几何。","expanded":"对应 AX₆ 与立体数 6；六个理想位置等价。以孤对电子替代一个或两个相对顶点，可得四方锥形或平面正方形。","properties":["六个理想位置等价","等配体时属 Oh 点群"],"confusions":"八面体有六个顶点而不是八个；名称来自八个三角形面。","related":["square-pyramidal-geometry","square-planar-geometry","vsepr"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"square-pyramidal-geometry","zh":"四方锥形","en":"square pyramidal geometry","category":"分子几何","definition":"四个外围原子形成正方形底面、第五个外围原子位于锥顶的 AX₅E 几何。","expanded":"来自八面体电子域，其中一个顶点被孤对电子占据；典型实例为 BrF₅。","properties":["底面四原子近似共面","主要角度约 90° 与 180°"],"confusions":"四方锥是五配位分子几何，不等于四面体。","related":["octahedral-geometry","square-planar-geometry","vsepr"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"square-planar-geometry","zh":"平面正方形","en":"square planar geometry","category":"分子几何","definition":"四个外围原子与中心原子共面并位于正方形四个方向的几何。","expanded":"在主族 VSEPR 中可由 AX₄E₂ 的八面体电子域产生，两个孤对电子彼此相对；过渡金属配合物中也常由 d⁸ 电子结构稳定。","properties":["邻位 90°、对位 180°","典型实例 XeF₄、[PtCl₄]²⁻"],"confusions":"同为四配位时要与四面体形区分；过渡金属体系不能只靠 VSEPR 判断。","related":["octahedral-geometry","tetrahedral-geometry","square-pyramidal-geometry"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"pentagonal-bipyramidal-geometry","zh":"五角双锥形","en":"pentagonal bipyramidal geometry","category":"分子几何","definition":"五个赤道位构成正五边形、另有两个相对轴向位的七配位几何。","expanded":"赤道相邻方向为 72°，轴向与赤道方向为 90°，两轴向方向为 180°；典型实例 IF₇。","properties":["对应 AX₇ 与立体数 7","理想点群 D5h"],"confusions":"赤道位是五个，不是三角双锥的三个。","related":["trigonal-bipyramidal-geometry","vsepr","steric-number"],"source":"Lesson 03；VSEPR 几何表"},
-{"slug":"square-antiprismatic-geometry","zh":"平方反棱柱形","en":"square antiprismatic geometry","category":"配位几何","definition":"两个相互错转的正方形作为上下底面、八个顶点围绕中心排列的八配位几何。","expanded":"它是八配位体系的常见构型之一，上下两个正方形通常相对旋转约 45°，从而避免顶点直接重叠。","properties":["常见于八配位配合物","与十二面体构型可能竞争"],"confusions":"配位数 8 并不唯一对应平方反棱柱；中心、配体和晶体环境会改变构型。","related":["octahedral-geometry","steric-number","point-group"],"source":"Lesson 03；高配位几何扩展"}
+  {
+    "slug": "coordination-number",
+    "zh": "配位数",
+    "en": "coordination number",
+    "category": "结构",
+    "definition": "与中心原子直接相连的供体原子数。",
+    "expanded": "配位数描述局部连接关系，不等于氧化态、价态或配体分子数；多齿与桥联配体须按实际供体原子计数。",
+    "properties": [
+      "常见值包括 4、5、6，也可更高",
+      "同一配位数可对应不同几何构型"
+    ],
+    "confusions": "四配位不必为四面体，d8 金属常形成平面正方形结构。",
+    "related": [
+      "ligand",
+      "oxidation-state"
+    ],
+    "source": "Lesson 01；Miessler Ch. 1"
+  },
+  {
+    "slug": "ligand",
+    "zh": "配体",
+    "en": "ligand",
+    "category": "配位化学",
+    "definition": "向中心原子或离子提供电子对并形成配位相互作用的原子、离子或分子。",
+    "expanded": "配体可按电荷、供体原子、齿数、桥联方式以及 σ 给体或 π 受体能力分类。",
+    "properties": [
+      "可为单齿或多齿",
+      "可端基配位或桥联"
+    ],
+    "confusions": "配体分子数不一定等于配位数。",
+    "related": [
+      "coordination-number",
+      "bridging-ligand"
+    ],
+    "source": "Lesson 01"
+  },
+  {
+    "slug": "bridging-ligand",
+    "zh": "桥联配体",
+    "en": "bridging ligand",
+    "category": "结构",
+    "definition": "同时连接两个或更多中心原子的配体。",
+    "expanded": "常用 μn 表示桥联的中心数，例如 μ2-H；桥联会同时影响配位数与电子计数。",
+    "properties": [
+      "常见桥联原子为 H、卤素、O、S",
+      "可跨越金属簇的边或面"
+    ],
+    "confusions": "μ 表示桥联中心数，η 表示连续原子参与配位的齿合度。",
+    "related": [
+      "ligand",
+      "metal-cluster"
+    ],
+    "source": "Lesson 01"
+  },
+  {
+    "slug": "delta-bond",
+    "zh": "δ 键",
+    "en": "delta bond",
+    "category": "成键",
+    "definition": "由适当取向的 d 轨道面对面重叠形成、绕核间轴具有两个节面的成键相互作用。",
+    "expanded": "δ 键常作为金属—金属四重键中最弱的一个成键分量，并限制绕键旋转。",
+    "properties": [
+      "常见于过渡金属多重键",
+      "重叠通常弱于 σ 和 π"
+    ],
+    "confusions": "δ 键不是简单的第四根等价共价键。",
+    "related": [
+      "metal-cluster",
+      "orbital"
+    ],
+    "source": "Lesson 01；课件第 3–4 页"
+  },
+  {
+    "slug": "metal-cluster",
+    "zh": "金属簇",
+    "en": "metal cluster",
+    "category": "结构",
+    "definition": "包含多个相互成键金属原子的有限多核化合物。",
+    "expanded": "金属中心可形成多面体骨架，配体可端基、桥边或盖面配位。",
+    "properties": [
+      "可能存在金属—金属键",
+      "可实现多中心协同反应"
+    ],
+    "confusions": "金属簇是有限分子或离子，不等同于无限延展的金属晶体。",
+    "related": [
+      "bridging-ligand",
+      "delta-bond"
+    ],
+    "source": "Lesson 01"
+  },
+  {
+    "slug": "oxidation-state",
+    "zh": "氧化态",
+    "en": "oxidation state",
+    "category": "反应",
+    "definition": "按离子近似分配成键电子后赋予原子的形式电荷。",
+    "expanded": "氧化态是电子计数与氧化还原分析工具，不等于实验测得的真实原子电荷。",
+    "properties": [
+      "氧化时通常升高",
+      "还原时通常降低"
+    ],
+    "confusions": "氧化态、形式电荷和实际电荷是不同概念。",
+    "related": [
+      "coordination-number",
+      "effective-nuclear-charge"
+    ],
+    "source": "Lesson 01"
+  },
+  {
+    "slug": "wavefunction",
+    "zh": "波函数",
+    "en": "wavefunction",
+    "category": "原子结构",
+    "definition": "描述量子体系状态的数学函数，通常记为 ψ。",
+    "expanded": "波函数包含相位信息，其模平方与概率密度相关；允许波函数必须满足边界条件并可归一化。",
+    "properties": [
+      "可正、负或为复数",
+      "不同本征态可正交"
+    ],
+    "confusions": "ψ 不是概率，也不是电子的运动轨迹。",
+    "related": [
+      "orbital",
+      "radial-probability"
+    ],
+    "source": "Lesson 02；Miessler Ch. 2"
+  },
+  {
+    "slug": "orbital",
+    "zh": "原子轨道",
+    "en": "atomic orbital",
+    "category": "原子结构",
+    "definition": "氢样原子或多电子近似中描述一个电子空间状态的波函数。",
+    "expanded": "轨道由 n、l、ml 标记，每只空间轨道最多容纳两个自旋相反的电子。",
+    "properties": [
+      "具有能量、形状、取向和相位",
+      "可含径向与角节点"
+    ],
+    "confusions": "轨道不是电子绕核运动的固定路径。",
+    "related": [
+      "wavefunction",
+      "quantum-number",
+      "node"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "quantum-number",
+    "zh": "量子数",
+    "en": "quantum number",
+    "category": "原子结构",
+    "definition": "标记允许量子状态的一组离散数值。",
+    "expanded": "原子中常用 n、l、ml 和 ms 描述电子的壳层、亚层、轨道取向与自旋投影。",
+    "properties": [
+      "由方程与边界条件产生",
+      "四个量子数共同标记电子状态"
+    ],
+    "confusions": "p 亚层能容纳六个电子，单只 p 轨道只能容纳两个。",
+    "related": [
+      "orbital",
+      "pauli-principle"
+    ],
+    "source": "Lesson 02；课件第 16 页"
+  },
+  {
+    "slug": "node",
+    "zh": "节点",
+    "en": "node",
+    "category": "原子结构",
+    "definition": "波函数等于零、概率密度也为零的区域。",
+    "expanded": "氢样轨道总节点数为 n−1，角节点为 l，径向节点为 n−l−1。",
+    "properties": [
+      "节点两侧相位改变",
+      "角节点决定轨道形状"
+    ],
+    "confusions": "节点不是电子暂时没有经过的经典空隙。",
+    "related": [
+      "orbital",
+      "wavefunction",
+      "radial-probability"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "radial-probability",
+    "zh": "径向概率函数",
+    "en": "radial probability function",
+    "category": "原子结构",
+    "definition": "电子出现在距核为 r 的薄球壳内的概率分布。",
+    "expanded": "对角度积分后，径向概率与 4πr²|R(r)|² 成正比，球壳因子使其与局部概率密度不同。",
+    "properties": [
+      "核处径向概率为零",
+      "曲线峰值给出最概然半径"
+    ],
+    "confusions": "概率密度在核处可非零，而径向概率在 r=0 必为零。",
+    "related": [
+      "wavefunction",
+      "penetration",
+      "node"
+    ],
+    "source": "Lesson 02；课件第 21–25 页"
+  },
+  {
+    "slug": "penetration",
+    "zh": "穿透能力",
+    "en": "penetration",
+    "category": "原子结构",
+    "definition": "轨道电子进入靠近原子核区域的能力。",
+    "expanded": "同一主量子数下通常 s 大于 p，大于 d，大于 f；穿透较强的电子受到较少屏蔽。",
+    "properties": [
+      "影响轨道能量",
+      "与径向分布的内侧峰有关"
+    ],
+    "confusions": "平均半径较大不必然意味着穿透能力更弱。",
+    "related": [
+      "shielding",
+      "effective-nuclear-charge",
+      "radial-probability"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "shielding",
+    "zh": "屏蔽效应",
+    "en": "shielding effect",
+    "category": "周期性",
+    "definition": "其他电子削弱指定电子所感受到的核吸引的效应。",
+    "expanded": "内层电子通常屏蔽较强，同层电子屏蔽不完全，d、f 电子尤其不能完全抵消增加的核电荷。",
+    "properties": [
+      "与轨道穿透有关",
+      "决定有效核电荷"
+    ],
+    "confusions": "屏蔽常数不是简单等于其他电子数。",
+    "related": [
+      "effective-nuclear-charge",
+      "slater-rules",
+      "penetration"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "effective-nuclear-charge",
+    "zh": "有效核电荷",
+    "en": "effective nuclear charge",
+    "category": "周期性",
+    "definition": "指定电子在考虑屏蔽后感受到的净正核电荷，记为 Zeff。",
+    "expanded": "常用 Zeff=Z−S 近似；同周期向右通常增大，是半径和电离能趋势的重要原因。",
+    "properties": [
+      "针对具体电子或轨道",
+      "可由 Slater 规则估算"
+    ],
+    "confusions": "一个原子不存在对所有电子都相同的唯一 Zeff。",
+    "related": [
+      "shielding",
+      "slater-rules",
+      "atomic-radius"
+    ],
+    "source": "Lesson 02；课件第 31–37 页"
+  },
+  {
+    "slug": "slater-rules",
+    "zh": "Slater 规则",
+    "en": "Slater's rules",
+    "category": "周期性",
+    "definition": "根据电子分组和经验系数估算屏蔽常数与有效核电荷的方法。",
+    "expanded": "ns/np 与 nd/nf 电子采用不同计数规则；适合解释趋势，不是高精度量子计算。",
+    "properties": [
+      "同组电子常贡献 0.35",
+      "内层电子贡献通常更大"
+    ],
+    "confusions": "计算时必须排除正在考察的电子。",
+    "related": [
+      "shielding",
+      "effective-nuclear-charge"
+    ],
+    "source": "Lesson 02；课件第 32–37 页"
+  },
+  {
+    "slug": "pauli-principle",
+    "zh": "Pauli 不相容原理",
+    "en": "Pauli exclusion principle",
+    "category": "电子排布",
+    "definition": "同一原子中不能有两个电子具有完全相同的四个量子数。",
+    "expanded": "因此一只空间轨道最多容纳两个电子，并且它们的自旋投影相反。",
+    "properties": [
+      "限制轨道最大占据数",
+      "适用于费米子"
+    ],
+    "confusions": "它与 Hund 规则解决的问题不同。",
+    "related": [
+      "hund-rule",
+      "quantum-number"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "hund-rule",
+    "zh": "Hund 规则",
+    "en": "Hund's rule",
+    "category": "电子排布",
+    "definition": "简并轨道先由平行自旋电子单占，再发生配对。",
+    "expanded": "该排布兼顾电子间空间回避和交换稳定化，是判断基态构型与未成对电子数的基础。",
+    "properties": [
+      "适用于同一简并轨道组",
+      "倾向于最大化总自旋"
+    ],
+    "confusions": "还需同时比较轨道能量差，不能在所有情形下机械套用。",
+    "related": [
+      "pauli-principle",
+      "aufbau-principle"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "aufbau-principle",
+    "zh": "构造原理",
+    "en": "Aufbau principle",
+    "category": "电子排布",
+    "definition": "建立基态构型时电子依次占据可用的较低能量轨道。",
+    "expanded": "n+l 规则可近似预测中性原子填充顺序，但轨道能量随占据和电离而改变。",
+    "properties": [
+      "是电子排布的起点",
+      "存在 Cr、Cu 等经验例外"
+    ],
+    "confusions": "先填 4s 不代表形成离子时最后才失去 4s。",
+    "related": [
+      "hund-rule",
+      "effective-nuclear-charge"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "ionization-energy",
+    "zh": "电离能",
+    "en": "ionization energy",
+    "category": "周期性",
+    "definition": "从一摩尔气态原子或离子中移走一摩尔电子所需的能量。",
+    "expanded": "同周期总体增大，同族总体减小；亚层切换和电子成对可产生局部不连续。",
+    "properties": [
+      "连续电离能通常递增",
+      "跨越闭壳层时显著跃升"
+    ],
+    "confusions": "电离能定义针对气态粒子。",
+    "related": [
+      "effective-nuclear-charge",
+      "electron-affinity",
+      "atomic-radius"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "electron-affinity",
+    "zh": "电子亲和能",
+    "en": "electron affinity",
+    "category": "周期性",
+    "definition": "与气态原子获得电子或其逆过程相关的能量量度。",
+    "expanded": "不同教材可能采用相反反应方向或符号约定，必须连同反应式解释。",
+    "properties": [
+      "同周期通常向右更有利",
+      "第 2、15、18 族附近常有例外"
+    ],
+    "confusions": "只报正负号而不写过程容易因定义差异出错。",
+    "related": [
+      "ionization-energy",
+      "effective-nuclear-charge"
+    ],
+    "source": "Lesson 02；课件第 42–45 页"
+  },
+  {
+    "slug": "atomic-radius",
+    "zh": "原子半径",
+    "en": "atomic radius",
+    "category": "周期性",
+    "definition": "根据原子间距离定义的原子有效尺寸。",
+    "expanded": "可分为共价、金属和范德华半径；电子云没有刚性边界，数值依赖定义和环境。",
+    "properties": [
+      "同周期总体减小",
+      "同族总体增大"
+    ],
+    "confusions": "不同类型半径数据不能无条件横向比较。",
+    "related": [
+      "ionic-radius",
+      "effective-nuclear-charge",
+      "lanthanide-contraction"
+    ],
+    "source": "Lesson 02"
+  },
+  {
+    "slug": "ionic-radius",
+    "zh": "离子半径",
+    "en": "ionic radius",
+    "category": "周期性",
+    "definition": "在特定晶体模型、氧化态与配位环境中分配给离子的有效尺寸。",
+    "expanded": "阳离子通常小于对应原子，阴离子通常更大；数值随配位数、自旋态和半径体系变化。",
+    "properties": [
+      "高正电荷通常使半径减小",
+      "等电子系列中核电荷越大半径越小"
+    ],
+    "confusions": "离子半径不是脱离结构环境的绝对常数。",
+    "related": [
+      "atomic-radius",
+      "lanthanide-contraction"
+    ],
+    "source": "Lesson 02；课件第 48–50 页"
+  },
+  {
+    "slug": "lanthanide-contraction",
+    "zh": "镧系收缩",
+    "en": "lanthanide contraction",
+    "category": "周期性",
+    "definition": "随镧系原子序数增加，原子和常见三价离子半径总体逐渐减小的现象。",
+    "expanded": "4f 电子屏蔽效率差，不能完全抵消核电荷增加，使有效核吸引逐步增强。",
+    "properties": [
+      "使 Zr 与 Hf 半径接近",
+      "影响镧系分离与配位化学"
+    ],
+    "confusions": "不是周期表排版造成的视觉假象。",
+    "related": [
+      "atomic-radius",
+      "shielding",
+      "effective-nuclear-charge"
+    ],
+    "source": "Lesson 02；课件第 37–38、46–47 页"
+  },
+  {
+    "slug": "resonance",
+    "zh": "共振",
+    "en": "resonance",
+    "category": "成键",
+    "definition": "用多个仅电子分布不同的 Lewis 贡献式共同描述同一个离域电子态。",
+    "expanded": "贡献式之间原子位置与 σ 骨架不变；真实分子不是在这些结构之间随时间来回跳动。",
+    "properties": [
+      "常导致键长均化",
+      "可产生非整数平均键级"
+    ],
+    "confusions": "共振箭头不表示化学平衡，贡献式也不是可分离异构体。",
+    "related": [
+      "formal-charge",
+      "vsepr"
+    ],
+    "source": "Lesson 03；课件第 1–3 页"
+  },
+  {
+    "slug": "formal-charge",
+    "zh": "形式电荷",
+    "en": "formal charge",
+    "category": "成键",
+    "definition": "把每根共价键的电子平均分给两端原子后得到的电子记账电荷。",
+    "expanded": "FC=价电子数−非键电子数−成键电子数的一半；全分子的形式电荷之和必须等于总电荷。",
+    "properties": [
+      "用于比较 Lewis 贡献式",
+      "不是实验原子净电荷"
+    ],
+    "confusions": "形式电荷、氧化态和实际部分电荷是三个不同概念。",
+    "related": [
+      "resonance",
+      "oxidation-state"
+    ],
+    "source": "Lesson 03；课件第 3–8 页"
+  },
+  {
+    "slug": "vsepr",
+    "zh": "价层电子对互斥理论",
+    "en": "VSEPR theory",
+    "category": "结构",
+    "definition": "根据中心原子周围电子域趋向彼此远离来预测主族分子几何的模型。",
+    "expanded": "先由全部成键域与孤对电子确定电子域几何，再忽略孤对电子位置得到分子几何。",
+    "properties": [
+      "多重键算一个电子域",
+      "孤对电子通常造成键角压缩"
+    ],
+    "confusions": "VSEPR 不能直接给出精确键能、磁性或完整电子结构。",
+    "related": [
+      "electron-domain",
+      "steric-number",
+      "resonance"
+    ],
+    "source": "Lesson 03；课件第 9–19 页"
+  },
+  {
+    "slug": "electron-domain",
+    "zh": "电子域",
+    "en": "electron domain",
+    "category": "结构",
+    "definition": "VSEPR 中中心原子周围一个成键方向或一对孤对电子所占据的空间区域。",
+    "expanded": "单键、双键和三键各算一个成键域；一对孤对电子算一个非键域。",
+    "properties": [
+      "总数决定理想电子域几何",
+      "不同类型电子域排斥强度不同"
+    ],
+    "confusions": "多重键虽只计一个域，其空间影响通常强于单键。",
+    "related": [
+      "vsepr",
+      "steric-number"
+    ],
+    "source": "Lesson 03"
+  },
+  {
+    "slug": "steric-number",
+    "zh": "立体数",
+    "en": "steric number",
+    "category": "结构",
+    "definition": "中心原子周围 σ 成键电子域与孤对电子域的总数。",
+    "expanded": "立体数 2、3、4、5、6 分别对应直线、平面三角、四面体、三角双锥和八面体电子域几何。",
+    "properties": [
+      "用于 AXmEn 分类",
+      "不等同于金属配位数"
+    ],
+    "confusions": "分子形状还要从电子域几何中去掉孤对电子位置。",
+    "related": [
+      "vsepr",
+      "electron-domain",
+      "coordination-number"
+    ],
+    "source": "Lesson 03"
+  },
+  {
+    "slug": "hypervalent-bonding",
+    "zh": "超价成键",
+    "en": "hypervalent bonding",
+    "category": "成键",
+    "definition": "Lewis 记账中中心原子周围电子数超过八隅体的主族成键情形。",
+    "expanded": "现代描述通常强调离域分子轨道、离子性和三中心四电子相互作用，而非必需的低能 d 轨道杂化。",
+    "properties": [
+      "常见于重主族卤化物",
+      "可由 VSEPR 预测几何"
+    ],
+    "confusions": "扩展八隅体不意味着中心原子必须调用 d 轨道扩大价层。",
+    "related": [
+      "three-center-four-electron",
+      "vsepr"
+    ],
+    "source": "Lesson 03；Miessler Ch. 3"
+  },
+  {
+    "slug": "three-center-four-electron",
+    "zh": "三中心四电子键",
+    "en": "three-center four-electron bond",
+    "category": "成键",
+    "definition": "三个原子中心共同承载四个电子的离域成键模型，简称 3c–4e。",
+    "expanded": "三个轨道组合为成键、近似非键和反键轨道，四电子占据前两者，净成键分布于两个相邻原子间联系。",
+    "properties": [
+      "可描述 XeF2 与 I3−",
+      "不要求中心原子 d 轨道主导参与"
+    ],
+    "confusions": "不是两根完整二中心二电子单键简单相加。",
+    "related": [
+      "hypervalent-bonding",
+      "vsepr"
+    ],
+    "source": "Lesson 03；现代超价键模型"
+  },
+  {
+    "slug": "ligand-close-packing",
+    "zh": "配体紧密堆积模型",
+    "en": "ligand close packing model",
+    "category": "结构",
+    "definition": "以外围配体之间近似稳定的非键接触距离解释键长和键角联动的几何模型。",
+    "expanded": "同一中心和同类配体的系列中，中心–配体键长变化可通过键角调整来维持适当配体间距。",
+    "properties": [
+      "可用三角关系定量估算",
+      "补充 VSEPR 的中心电子域视角"
+    ],
+    "confusions": "配体间距是经验近似，不是严格固定的普适常数。",
+    "related": [
+      "vsepr",
+      "electron-domain"
+    ],
+    "source": "Lesson 03；课件第 20 页"
+  },
+  {
+    "slug": "symmetry-operation",
+    "zh": "对称操作",
+    "en": "symmetry operation",
+    "category": "分子对称性",
+    "definition": "使分子操作后的核构型与原构型不可区分的刚体变换。",
+    "expanded": "基本操作包括恒等、正旋转、反射、反演和非真旋转；同种原子可以在操作中互换位置。",
+    "properties": [
+      "复合满足群的封闭性",
+      "对应具体的对称元素"
+    ],
+    "confusions": "不要求每个原子回到原编号，只要求最终结构不可区分。",
+    "related": [
+      "symmetry-element",
+      "point-group",
+      "improper-rotation"
+    ],
+    "source": "Lesson 04；课件第 3–8 页"
+  },
+  {
+    "slug": "symmetry-element",
+    "zh": "对称元素",
+    "en": "symmetry element",
+    "category": "分子对称性",
+    "definition": "执行对称操作所依赖的几何对象，如轴、镜面或反演中心。",
+    "expanded": "对称元素是几何位置，对称操作是围绕该元素执行的动作；二者在口语中常以同一符号简称。",
+    "properties": [
+      "可以是点、线或面",
+      "所有元素共享至少一个固定点"
+    ],
+    "confusions": "C3 轴是元素，旋转 120° 的 C3 是操作。",
+    "related": [
+      "symmetry-operation",
+      "point-group"
+    ],
+    "source": "Lesson 04"
+  },
+  {
+    "slug": "principal-axis",
+    "zh": "主轴",
+    "en": "principal axis",
+    "category": "分子对称性",
+    "definition": "分子中阶数 n 最高的正旋转轴 Cn，通常选作 z 轴。",
+    "expanded": "同一几何轴可能同时对应 Cn 的多个幂；点群下标中的 n 取主轴阶数。",
+    "properties": [
+      "用于定义镜面下标",
+      "决定 Cn 或 Dn 家族名称"
+    ],
+    "confusions": "轴最长或最明显不等于阶数最高。",
+    "related": [
+      "symmetry-operation",
+      "mirror-plane",
+      "point-group"
+    ],
+    "source": "Lesson 04；课件第 4–5 页"
+  },
+  {
+    "slug": "mirror-plane",
+    "zh": "镜面",
+    "en": "mirror plane",
+    "category": "分子对称性",
+    "definition": "关于该平面反射后使分子与原构型重合的对称元素。",
+    "expanded": "相对主轴分为垂直主轴的 σh、包含主轴的 σv，以及平分垂直 C2 轴夹角的 σd。",
+    "properties": [
+      "σh 垂直主轴",
+      "σv 与 σd 都包含主轴"
+    ],
+    "confusions": "σd 不是任意倾斜镜面，必须满足二面平分条件。",
+    "related": [
+      "principal-axis",
+      "improper-rotation",
+      "chirality"
+    ],
+    "source": "Lesson 04；课件第 5–10 页"
+  },
+  {
+    "slug": "inversion-center",
+    "zh": "反演中心",
+    "en": "center of inversion",
+    "category": "分子对称性",
+    "definition": "使每一点 (x,y,z) 映射为 (−x,−y,−z) 后结构不变的中心点。",
+    "expanded": "每个原子穿过中心后，在反方向等距离处必须存在相同元素及等价环境。",
+    "properties": [
+      "等价于 S2 操作",
+      "导致 IR/Raman 互斥规则"
+    ],
+    "confusions": "反演不是绕任一轴旋转 180°。",
+    "related": [
+      "improper-rotation",
+      "mutual-exclusion-rule",
+      "chirality"
+    ],
+    "source": "Lesson 04；课件第 6 页"
+  },
+  {
+    "slug": "improper-rotation",
+    "zh": "非真旋转",
+    "en": "improper rotation",
+    "category": "分子对称性",
+    "definition": "先绕轴旋转 360°/n，再关于垂直于该轴的平面反射的复合操作 Sn。",
+    "expanded": "S1 等价于镜面反射 σ，S2 等价于反演 i；存在任意 Sn 会排除构型手性。",
+    "properties": [
+      "也称旋转-反射",
+      "可在单步都非对称时整体成为对称操作"
+    ],
+    "confusions": "不能只完成旋转或只完成反射后就判断。",
+    "related": [
+      "mirror-plane",
+      "inversion-center",
+      "chirality"
+    ],
+    "source": "Lesson 04；课件第 7–8 页"
+  },
+  {
+    "slug": "point-group",
+    "zh": "点群",
+    "en": "point group",
+    "category": "分子对称性",
+    "definition": "共享至少一个固定点的一组完整分子对称操作。",
+    "expanded": "点群按主轴、垂直 C2、镜面、反演与非真旋转分类，可用于判断极性、手性、轨道与光谱选择定则。",
+    "properties": [
+      "操作满足群的四条公理",
+      "名称编码主要对称元素"
+    ],
+    "confusions": "配位几何相同的分子可因取代基不同而属于不同点群。",
+    "related": [
+      "symmetry-operation",
+      "character-table",
+      "principal-axis"
+    ],
+    "source": "Lesson 04；课件第 11–33 页"
+  },
+  {
+    "slug": "character-table",
+    "zh": "特征标表",
+    "en": "character table",
+    "category": "群论",
+    "definition": "汇总点群操作类、不可约表示字符及常用基函数变换性质的表。",
+    "expanded": "列对应操作类，行对应不可约表示；右侧 x/y/z、转动与二次函数用于判断平移、转动和光谱活性。",
+    "properties": [
+      "字符是表示矩阵的迹",
+      "不可约表示彼此正交"
+    ],
+    "confusions": "字符 0 通常表示多维基函数发生混合，不是操作没有影响。",
+    "related": [
+      "reducible-representation",
+      "point-group",
+      "salc"
+    ],
+    "source": "Lesson 04；课件第 35–58 页"
+  },
+  {
+    "slug": "reducible-representation",
+    "zh": "可约表示",
+    "en": "reducible representation",
+    "category": "群论",
+    "definition": "可通过相似变换分解为多个不可约表示直和的群表示，通常记作 Γ。",
+    "expanded": "化学中常由一组键、轨道或 3N 个原子位移构造，再用约化公式求各不可约表示的次数。",
+    "properties": [
+      "字符可由未移位基函数贡献求得",
+      "可分解为对称性标签"
+    ],
+    "confusions": "表示的维数与不可约表示出现次数不是同一概念。",
+    "related": [
+      "character-table",
+      "salc",
+      "normal-mode"
+    ],
+    "source": "Lesson 04；课件第 37–47 页"
+  },
+  {
+    "slug": "salc",
+    "zh": "对称性匹配线性组合",
+    "en": "symmetry-adapted linear combination",
+    "category": "成键",
+    "definition": "由若干等价配体轨道按点群不可约表示组合得到的群轨道。",
+    "expanded": "中心原子轨道只有与 SALC 同对称性时才可能产生非零重叠并参与相互作用。",
+    "properties": [
+      "用于构造分子轨道图",
+      "将多个配体轨道压缩为对称性基"
+    ],
+    "confusions": "对称性允许只是必要条件，还需要能量接近与空间重叠。",
+    "related": [
+      "character-table",
+      "reducible-representation",
+      "orbital"
+    ],
+    "source": "Lesson 04；课件第 59–70 页"
+  },
+  {
+    "slug": "normal-mode",
+    "zh": "正常振动模式",
+    "en": "normal mode",
+    "category": "光谱",
+    "definition": "谐振近似下所有原子以同一频率和固定相位关系运动的独立振动。",
+    "expanded": "非线性 N 原子分子有 3N−6 个，线性分子有 3N−5 个；每个模式属于某个不可约表示。",
+    "properties": [
+      "可按点群分类",
+      "简并模式共享频率"
+    ],
+    "confusions": "正常模式数不必等于实验中可分辨的峰数。",
+    "related": [
+      "character-table",
+      "mutual-exclusion-rule",
+      "reducible-representation"
+    ],
+    "source": "Lesson 04；课件第 71–97 页"
+  },
+  {
+    "slug": "mutual-exclusion-rule",
+    "zh": "红外-Raman 互斥规则",
+    "en": "mutual exclusion rule",
+    "category": "光谱",
+    "definition": "具有反演中心的分子中，同一正常振动不能同时具有 IR 与 Raman 活性。",
+    "expanded": "偶极矩分量在反演下为奇，极化率二次函数为偶，因此同一模式不可能同时满足两类选择定则。",
+    "properties": [
+      "仅适用于中心对称分子",
+      "可辅助区分几何异构体"
+    ],
+    "confusions": "不是说中心对称分子只能有 IR 或只能有 Raman 光谱。",
+    "related": [
+      "inversion-center",
+      "normal-mode",
+      "character-table"
+    ],
+    "source": "Lesson 04；课件第 93–104 页"
+  },
+  {
+    "slug": "chirality",
+    "zh": "手性",
+    "en": "chirality",
+    "category": "分子对称性",
+    "definition": "物体与其镜像不能通过刚体转动和平移重合的性质。",
+    "expanded": "点群语言中，构型手性要求不存在任何非真旋转 Sn；常见允许手性的点群为 C1、Cn、Dn。",
+    "properties": [
+      "镜面与反演中心均排除手性",
+      "可产生对映体"
+    ],
+    "confusions": "看起来像螺旋并不足以证明手性，仍需检查 Sn。",
+    "related": [
+      "improper-rotation",
+      "point-group",
+      "mirror-plane"
+    ],
+    "source": "Lesson 04；课件第 49 页"
+  },
+  {
+    "slug": "linear-geometry",
+    "zh": "直线形",
+    "en": "linear geometry",
+    "category": "分子几何",
+    "definition": "中心原子与两个外围原子位于同一直线上，键角为 180° 的分子几何。",
+    "expanded": "可由 AX₂ 的两个电子域直接形成，也可由三角双锥电子域中的 AX₂E₃ 形成；后者三个孤对电子占据赤道位。",
+    "properties": [
+      "理想键角 180°",
+      "典型点群可为 D∞h 或 C∞v"
+    ],
+    "confusions": "直线形分子不一定非极性；外围原子不同时仍可具有净偶极矩。",
+    "related": [
+      "vsepr",
+      "electron-domain",
+      "trigonal-bipyramidal-geometry"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "trigonal-planar-geometry",
+    "zh": "平面三角形",
+    "en": "trigonal planar geometry",
+    "category": "分子几何",
+    "definition": "三个外围原子在同一平面内围绕中心原子分布，理想键角为 120° 的几何。",
+    "expanded": "对应 AX₃ 与立体数 3；三个成键电子域在平面内最大程度分离。",
+    "properties": [
+      "理想键角 120°",
+      "等配体时常属 D3h 点群"
+    ],
+    "confusions": "不要与含一个孤对电子的折线形 AX₂E 混淆；二者电子域几何相同但分子几何不同。",
+    "related": [
+      "bent-geometry",
+      "vsepr",
+      "steric-number"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "bent-geometry",
+    "zh": "折线形",
+    "en": "bent geometry / angular geometry",
+    "category": "分子几何",
+    "definition": "两个外围原子与中心原子形成小于 180° 夹角的 V 形分子几何。",
+    "expanded": "常见来源为 AX₂E 的平面三角电子域或 AX₂E₂ 的四面体电子域；孤对电子使键角相对理想值压缩。",
+    "properties": [
+      "又称角形或 V 形",
+      "通常具有净偶极矩"
+    ],
+    "confusions": "SO₂ 与 H₂O 都是折线形，但前者立体数 3，后者立体数 4。",
+    "related": [
+      "trigonal-planar-geometry",
+      "tetrahedral-geometry",
+      "vsepr"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "tetrahedral-geometry",
+    "zh": "四面体形",
+    "en": "tetrahedral geometry",
+    "category": "分子几何",
+    "definition": "四个外围原子指向正四面体四个顶点、理想键角约 109.5° 的几何。",
+    "expanded": "对应 AX₄ 与立体数 4；若用一个或两个孤对电子替代成键域，分子几何分别变为三角锥形或折线形。",
+    "properties": [
+      "理想键角 109.47°",
+      "等配体时属 Td 点群"
+    ],
+    "confusions": "四面体电子域不表示所有 AX₃E 或 AX₂E₂ 分子都叫四面体形。",
+    "related": [
+      "trigonal-pyramidal-geometry",
+      "bent-geometry",
+      "vsepr"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "trigonal-pyramidal-geometry",
+    "zh": "三角锥形",
+    "en": "trigonal pyramidal geometry",
+    "category": "分子几何",
+    "definition": "三个外围原子形成三角形底面，中心原子位于锥顶的分子几何。",
+    "expanded": "对应 AX₃E；四个电子域为四面体排布，一个顶点由孤对电子占据。",
+    "properties": [
+      "键角通常小于 109.5°",
+      "典型实例 NH₃、PCl₃"
+    ],
+    "confusions": "不是平面三角形；中心原子与三个外围原子通常不共面。",
+    "related": [
+      "tetrahedral-geometry",
+      "vsepr",
+      "electron-domain"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "trigonal-bipyramidal-geometry",
+    "zh": "三角双锥形",
+    "en": "trigonal bipyramidal geometry",
+    "category": "分子几何",
+    "definition": "三个赤道位与两个轴向位构成立体数 5 的分子或电子域几何。",
+    "expanded": "赤道位彼此为 120°，轴向位与赤道位为 90°，两个轴向位为 180°；轴向与赤道位置不等价。",
+    "properties": [
+      "轴向键通常较长",
+      "孤对电子优先占据赤道位"
+    ],
+    "confusions": "不能把五个位置视为完全等价；这与正五边形平面结构不同。",
+    "related": [
+      "seesaw-geometry",
+      "t-shaped-geometry",
+      "linear-geometry"
+    ],
+    "source": "Lesson 03；课件第 17–19 页"
+  },
+  {
+    "slug": "seesaw-geometry",
+    "zh": "跷跷板形",
+    "en": "seesaw geometry / disphenoidal geometry",
+    "category": "分子几何",
+    "definition": "由三角双锥电子域去掉一个赤道位后得到的 AX₄E 分子几何。",
+    "expanded": "孤对电子占据赤道位，以减少 90° 相互作用；剩余两个轴向键与两个赤道键构成不对称的跷跷板形。",
+    "properties": [
+      "轴向与赤道键不等价",
+      "典型实例 SF₄"
+    ],
+    "confusions": "不是四面体形，也不要把英文 seesaw 误译为平面结构。",
+    "related": [
+      "trigonal-bipyramidal-geometry",
+      "t-shaped-geometry",
+      "vsepr"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "t-shaped-geometry",
+    "zh": "T 形",
+    "en": "T-shaped geometry",
+    "category": "分子几何",
+    "definition": "三个外围原子围绕中心原子呈字母 T 排布的 AX₃E₂ 分子几何。",
+    "expanded": "来自三角双锥电子域；两个孤对电子占据两个赤道位，留下两个轴向位和一个赤道位。",
+    "properties": [
+      "主要角度约 90° 与 180°",
+      "典型实例 ClF₃"
+    ],
+    "confusions": "实际 90° 键角常因孤对电子排斥而略小。",
+    "related": [
+      "trigonal-bipyramidal-geometry",
+      "seesaw-geometry",
+      "linear-geometry"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "octahedral-geometry",
+    "zh": "八面体形",
+    "en": "octahedral geometry",
+    "category": "分子几何",
+    "definition": "六个外围原子位于正八面体六个顶点，邻位夹角 90°、对位夹角 180° 的几何。",
+    "expanded": "对应 AX₆ 与立体数 6；六个理想位置等价。以孤对电子替代一个或两个相对顶点，可得四方锥形或平面正方形。",
+    "properties": [
+      "六个理想位置等价",
+      "等配体时属 Oh 点群"
+    ],
+    "confusions": "八面体有六个顶点而不是八个；名称来自八个三角形面。",
+    "related": [
+      "square-pyramidal-geometry",
+      "square-planar-geometry",
+      "vsepr"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "square-pyramidal-geometry",
+    "zh": "四方锥形",
+    "en": "square pyramidal geometry",
+    "category": "分子几何",
+    "definition": "四个外围原子形成正方形底面、第五个外围原子位于锥顶的 AX₅E 几何。",
+    "expanded": "来自八面体电子域，其中一个顶点被孤对电子占据；典型实例为 BrF₅。",
+    "properties": [
+      "底面四原子近似共面",
+      "主要角度约 90° 与 180°"
+    ],
+    "confusions": "四方锥是五配位分子几何，不等于四面体。",
+    "related": [
+      "octahedral-geometry",
+      "square-planar-geometry",
+      "vsepr"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "square-planar-geometry",
+    "zh": "平面正方形",
+    "en": "square planar geometry",
+    "category": "分子几何",
+    "definition": "四个外围原子与中心原子共面并位于正方形四个方向的几何。",
+    "expanded": "在主族 VSEPR 中可由 AX₄E₂ 的八面体电子域产生，两个孤对电子彼此相对；过渡金属配合物中也常由 d⁸ 电子结构稳定。",
+    "properties": [
+      "邻位 90°、对位 180°",
+      "典型实例 XeF₄、[PtCl₄]²⁻"
+    ],
+    "confusions": "同为四配位时要与四面体形区分；过渡金属体系不能只靠 VSEPR 判断。",
+    "related": [
+      "octahedral-geometry",
+      "tetrahedral-geometry",
+      "square-pyramidal-geometry"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "pentagonal-bipyramidal-geometry",
+    "zh": "五角双锥形",
+    "en": "pentagonal bipyramidal geometry",
+    "category": "分子几何",
+    "definition": "五个赤道位构成正五边形、另有两个相对轴向位的七配位几何。",
+    "expanded": "赤道相邻方向为 72°，轴向与赤道方向为 90°，两轴向方向为 180°；典型实例 IF₇。",
+    "properties": [
+      "对应 AX₇ 与立体数 7",
+      "理想点群 D5h"
+    ],
+    "confusions": "赤道位是五个，不是三角双锥的三个。",
+    "related": [
+      "trigonal-bipyramidal-geometry",
+      "vsepr",
+      "steric-number"
+    ],
+    "source": "Lesson 03；VSEPR 几何表"
+  },
+  {
+    "slug": "square-antiprismatic-geometry",
+    "zh": "平方反棱柱形",
+    "en": "square antiprismatic geometry",
+    "category": "配位几何",
+    "definition": "两个相互错转的正方形作为上下底面、八个顶点围绕中心排列的八配位几何。",
+    "expanded": "它是八配位体系的常见构型之一，上下两个正方形通常相对旋转约 45°，从而避免顶点直接重叠。",
+    "properties": [
+      "常见于八配位配合物",
+      "与十二面体构型可能竞争"
+    ],
+    "confusions": "配位数 8 并不唯一对应平方反棱柱；中心、配体和晶体环境会改变构型。",
+    "related": [
+      "octahedral-geometry",
+      "steric-number",
+      "point-group"
+    ],
+    "source": "Lesson 03；高配位几何扩展"
+  },
+  {
+    "slug": "molecular-orbital",
+    "zh": "分子轨道",
+    "en": "Molecular orbital",
+    "category": "成键理论",
+    "definition": "由原子轨道线性组合（LCAO）得到的、遍及整个分子的单电子波函数。",
+    "expanded": "分子轨道不再是某个原子或某条键的私产，而是电子在整个分子骨架中运动的描述。n 个原子轨道组合出 n 个分子轨道，其中能量低于原料原子轨道的称为成键轨道，高于原料的称为反键轨道。电子按能量最低、泡利原理与洪特规则填入，因此 MO 图像能自然给出键级与磁性。",
+    "properties": [
+      "原子轨道线性组合而成",
+      "轨道数目守恒：n 个 AO 得 n 个 MO",
+      "成键轨道能量更低，反键轨道更高",
+      "用节点数判断能级高低"
+    ],
+    "confusions": "分子轨道不是「键」的另一种画法；它是所有原子共享的轨道，不局限于两个原子之间。",
+    "related": [
+      "molecular-orbital-theory",
+      "bonding-orbital",
+      "antibonding-orbital",
+      "bond-order",
+      "homo-lumo"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "molecular-orbital-theory",
+    "zh": "分子轨道理论",
+    "en": "Molecular orbital theory",
+    "category": "成键理论",
+    "definition": "把电子视为填充在遍及整个分子的分子轨道中，以此描述成键、磁性与光谱的成键理论。",
+    "expanded": "它取代价键理论成为更基本的描述，因为它能解释价键理论无法处理的事实：O₂ 有两个未成对电子因而顺磁。组合原子轨道必须满足三条规则——轨道数目守恒、对称性匹配、能量相近。分子轨道理论还给出键级这一可与键长、键能直接对照的定量指标，并能通过光电子能谱直接验证。",
+    "properties": [
+      "能解释 O₂ 的顺磁性",
+      "给出键级与键长趋势",
+      "与光电子能谱直接对照",
+      "可推广到多原子与固体"
+    ],
+    "confusions": "价键理论并非错误，只是 MO 在特定情况下的简化图像；两者对成键数目的判断常常一致。",
+    "related": [
+      "molecular-orbital",
+      "valence-bond-theory",
+      "bonding-orbital",
+      "antibonding-orbital",
+      "photoelectron-spectroscopy"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "bonding-orbital",
+    "zh": "成键轨道",
+    "en": "Bonding orbital",
+    "category": "成键理论",
+    "definition": "两个原子轨道同号（相长）叠加得到的分子轨道，核间电子密度增大，能量低于原料原子轨道。",
+    "expanded": "同号叠加使核间区域的波函数幅值相加，电子被集中到两个核之间，同时受到两个核的吸引，因此体系能量下降。被电子占据的成键轨道对键级贡献 +1（每个电子算半个键）。对 σ 型成键轨道，关于键轴呈圆柱对称且核间无节面；对 π 型则键轴处本身是一个节面。",
+    "properties": [
+      "核间电子密度增大",
+      "能量低于原料原子轨道",
+      "σ 型无核间节面",
+      "每个电子对键级贡献 +1"
+    ],
+    "confusions": "成键不等于一定有净成键效果——若对应的反键轨道也被电子填满，净效果为零。",
+    "related": [
+      "antibonding-orbital",
+      "molecular-orbital",
+      "bond-order",
+      "sigma-bond",
+      "pi-bond"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "antibonding-orbital",
+    "zh": "反键轨道",
+    "en": "Antibonding orbital",
+    "category": "成键理论",
+    "definition": "两个原子轨道反号（相消）叠加得到的分子轨道，核间出现节面、电子密度被排开，能量高于原料原子轨道。",
+    "expanded": "反号叠加使核间区域波函数抵消为零，形成一个节面，电子被排到核外侧，两个核之间的屏蔽减弱、排斥增强，因此能量上升。反键轨道用星号标记（σ*、π*）。反键轨道上的每个电子对键级贡献 −1，因此它抵消成键轨道的作用。反键轨道同时也常是重要的空轨道——例如 CO 的 π* 就是接受金属电子对的受体轨道。",
+    "properties": [
+      "核间存在节面",
+      "能量高于原料原子轨道",
+      "每个电子对键级贡献 −1",
+      "常作为接受电子的空轨道（如 CO 的 π*）"
+    ],
+    "confusions": "反键轨道不是「不参与成键的轨道」，它照样可以容纳电子，而且被占据时会显著削弱键。",
+    "related": [
+      "bonding-orbital",
+      "molecular-orbital",
+      "bond-order",
+      "node",
+      "back-bonding"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "bond-order",
+    "zh": "键级",
+    "en": "Bond order",
+    "category": "成键理论",
+    "definition": "成键轨道中的电子数与反键轨道中的电子数之差的一半，衡量净成键效果。",
+    "expanded": "键级是分子轨道理论最有说服力的输出，因为它能直接与实验测量的键长、键能对照。O₂ 的价电子排布给出 (8−4)/2 = 2，与 Lewis 结构的双键一致，同时又得到两个未成对电子解释其顺磁性——这两点价键理论无法同时满足。从 O₂ 到 O₂²⁻ 键级依次为 2、2.5（O₂⁺）、1.5（O₂⁻）、1，与键长依次增大的实验趋势相符。",
+    "properties": [
+      "= (成键电子数 − 反键电子数)/2",
+      "可以是半整数",
+      "与键长成反比、与键能成正比",
+      "O₂ 系列：2 → 1 对应键长递增"
+    ],
+    "confusions": "键级只是近似指标。C₂ 按 MO 算得键级 2，但其键能接近三键，故有「C₂ 是四重键」的修正主张。",
+    "related": [
+      "bonding-orbital",
+      "antibonding-orbital",
+      "molecular-orbital-theory",
+      "bond-length",
+      "bond-energy"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "photoelectron-spectroscopy",
+    "zh": "光电子能谱",
+    "en": "Photoelectron spectroscopy (PES)",
+    "category": "表征方法",
+    "definition": "用已知能量的光子把电子从占据轨道中电离出来，通过测量逸出电子的动能来直接测定各轨道能量的方法。",
+    "expanded": "光子能量减去逸出电子动能等于电子原来的结合能，也就是该分子轨道在能级图上的位置，因此 PES 可以看作分子轨道能级图的实验版本。使用 X 射线源的 XPS 适合内层电子，使用紫外源的 UPS 适合价层轨道。谱图中每个峰对应一个轨道，峰强度反映电子数，振动精细结构还能反映电离后键级变化导致的键长改变。",
+    "properties": [
+      "E轨道 = hν − E动能",
+      "XPS 测内层，UPS 测价层",
+      "每个峰对应一个分子轨道",
+      "振动精细结构反映键级变化"
+    ],
+    "confusions": "PES 测的是电离能而非轨道能量本身，只是在库普曼斯近似的意义上两者相等。",
+    "related": [
+      "molecular-orbital",
+      "molecular-orbital-theory",
+      "ionization-energy",
+      "bond-order"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "homo-lumo",
+    "zh": "前线轨道（HOMO 与 LUMO）",
+    "en": "Frontier orbitals (HOMO / LUMO)",
+    "category": "反应性",
+    "definition": "最高占据分子轨道（HOMO）与最低空分子轨道（LUMO）；两者的对称性与能量匹配程度决定两个分子能否有效反应。",
+    "expanded": "一个分子用 HOMO 提供电子对（Lewis 碱、亲核体），另一个分子用 LUMO 接受电子对（Lewis 酸、亲电体）。相互作用有效的条件是两条前线轨道对称性匹配且能量相近。NH₃ 的 HOMO（3a₁，氮的孤对）与 BF₃ 的 LUMO（2a₂″，垂直于分子平面的空 π 轨道）正是这样一对，因此自发形成 F₃B·NH₃ 加合物。形成后新的成键轨道被大幅稳定化，新的反键轨道被大幅去稳定化。",
+    "properties": [
+      "HOMO 提供电子，LUMO 接受电子",
+      "需对称性匹配 + 能量相近",
+      "解释 Lewis 酸碱加合物",
+      "形成后新 HOMO 稳定化、新 LUMO 去稳定化"
+    ],
+    "confusions": "HOMO–LUMO 相互作用是一级效应，但并非唯一；存在多个占据轨道时次高占据轨道也可能参与。",
+    "related": [
+      "molecular-orbital",
+      "lewis-acid",
+      "lewis-base",
+      "molecular-orbital-theory",
+      "back-bonding"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "group-orbital",
+    "zh": "群轨道",
+    "en": "Group orbital",
+    "category": "对称性",
+    "definition": "多原子分子中，若干个配体轨道按点群对称性线性组合成的、与中心原子轨道对称性匹配的组合。",
+    "expanded": "构建大分子的分子轨道时，先把所有配体轨道按对称性组合成群轨道，再与中心原子中对称性相同且能量相近的原子轨道两两作用。这样把「每个配体都要单独考虑」简化为少数几个对称性明确的组合。求法有两种：观察法与投影算符法。例：NH₃（C₃ᵥ）中三个氢 1s 给出 A₁ 与 E 两个群轨道；TaH₅（C₄ᵥ）中五个氢 1s 约化为 2A₁ + B₁ + E。",
+    "properties": [
+      "按点群对称性组合而成",
+      "与中心原子轨道配对成键",
+      "可用投影算符系统求出",
+      "数目等于配体轨道所属不可约表示的维数和"
+    ],
+    "confusions": "群轨道不是真实的分子轨道，只是构建分子轨道的中间步骤；它本身还要与中心原子轨道组合。",
+    "related": [
+      "salc",
+      "point-group",
+      "reducible-representation",
+      "molecular-orbital",
+      "symmetry-operation"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "projection-operator",
+    "zh": "投影算符方法",
+    "en": "Projection operator method",
+    "category": "对称性",
+    "definition": "用点群各操作的特征标对种子轨道加权求和，从而系统生成指定对称性的 SALC 的方法。",
+    "expanded": "做法是：选定一个配体轨道作为种子，对点群中每个对称操作求它的像，再乘以目标不可约表示在该操作下的特征标，最后求和并归一化。投影算符法避免了靠观察猜测组合系数，对高对称或多配体体系尤其必要。例：TaH₅（C₄ᵥ）中五个氢 1s 给出的群轨道为 Ψ(A₁) = ½(Ψ_B+Ψ_C+Ψ_D+Ψ_E)、Ψ(B₁) = ½(Ψ_B−Ψ_C+Ψ_D−Ψ_E)、Ψ(E₁) = (1/√2)(Ψ_B−Ψ_D)。",
+    "properties": [
+      "以种子轨道为起点",
+      "按特征标加权各操作的像",
+      "结果需归一化",
+      "避免靠观察猜系数"
+    ],
+    "confusions": "投影算符生成的组合还必须归一化，否则系数没有物理意义。",
+    "related": [
+      "salc",
+      "group-orbital",
+      "character-table",
+      "point-group",
+      "symmetry-operation"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "back-bonding",
+    "zh": "反馈键",
+    "en": "Back bonding",
+    "category": "配位化学",
+    "definition": "配体把电子对给金属的同时，金属已占据的 d 轨道把电子密度反馈到配体的空 π* 轨道，形成的双向成键作用。",
+    "expanded": "CO 是典型例子：它用碳上的孤对（HOMO）作为 σ 给体向金属提供电子，同时用空的 π* 反键轨道作为 π 受体接受金属 d 轨道的反馈电子。反馈键有两个可观测后果：金属–碳键被加强，而 C–O 键被削弱，因此配合物中 C–O 伸缩振动频率总是低于自由 CO 的 2143 cm⁻¹。这一图像是理解金属羰基配合物稳定性的关键。",
+    "properties": [
+      "配体 π* 接受金属 d 电子",
+      "金属–配体键增强",
+      "配体内键（C–O）减弱",
+      "红外 C–O 频率下降可作为证据"
+    ],
+    "confusions": "反馈键不是独立的第二种键，它与 σ 给体作用是同一个成键图像的两半，合称 Dewar–Chatt–Duncanson 模型。",
+    "related": [
+      "homo-lumo",
+      "ligand",
+      "molecular-orbital",
+      "antibonding-orbital",
+      "pi-bond"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "paramagnetism",
+    "zh": "顺磁性",
+    "en": "Paramagnetism",
+    "category": "磁学基础",
+    "definition": "物质因含未成对电子而被外加磁场吸引的性质。",
+    "expanded": "O₂ 是分子轨道理论最经典的胜利：价键理论画出双键时强制所有电子成对，预言 O₂ 反磁；实验测得液态氧能被磁铁吸住，说明有两个未成对电子。分子轨道能级图中，最后两个电子按洪特规则分别进入简并的 π*_x 与 π*_y 且自旋平行，自然给出两个未成对电子，因此 O₂ 是顺磁性的。含未成对电子的过渡金属配合物同样表现顺磁性，可用磁天平或磁强计测定其磁矩。",
+    "properties": [
+      "由未成对电子引起",
+      "O₂ 有两个未成对电子",
+      "用磁矩可推算未成对电子数",
+      "分子轨道理论能自然解释"
+    ],
+    "confusions": "不要把顺磁性与铁磁性混淆：顺磁性是弱吸引，铁磁性是自发磁化。",
+    "related": [
+      "molecular-orbital-theory",
+      "hund-rule",
+      "bond-order",
+      "molecular-orbital"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "valence-bond-theory",
+    "zh": "价键理论",
+    "en": "Valence bond theory",
+    "category": "成键理论",
+    "definition": "认为化学键由两个原子间一对自旋相反的电子配对形成，键定域在两个原子之间。",
+    "expanded": "价键理论能正确画出多数分子的 Lewis 结构与键角，但把键视为定域的电子对。它在两个经典事实上失效：无法解释 O₂ 的顺磁性（它预言所有电子成对），也无法解释苯的离域与光谱。分子轨道理论把电子放到遍及整个分子的轨道上，因此能自然处理这两类问题。两者对键的数目判断通常一致，差别在电子是否离域。",
+    "properties": [
+      "键定域于两个原子之间",
+      "能画 Lewis 结构",
+      "无法解释 O₂ 顺磁性",
+      "无法描述离域"
+    ],
+    "confusions": "价键理论并不「错」，只是对离域与磁性描述不足；简单分子的键级判断两者一致。",
+    "related": [
+      "molecular-orbital-theory",
+      "bonding-orbital",
+      "resonance",
+      "paramagnetism"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "sigma-bond",
+    "zh": "σ 键",
+    "en": "Sigma bond",
+    "category": "成键理论",
+    "definition": "电子云关于键轴呈圆柱形对称的化学键，由轨道沿键轴头碰头重叠形成。",
+    "expanded": "σ 键的电子密度集中在两个核之间的键轴上，绕键轴旋转任意角度形状不变，因此不限制旋转。它可由 s–s、s–p 或 p–p（头碰头）重叠形成，也可由 d 轨道参与（如 d_z² 与 s 之间也形成 σ 型重叠）。σ 键比同一对原子间的 π 键更强，因为重叠更直接。单键一律是 σ 键；双键为一个 σ 加一个 π。",
+    "properties": [
+      "绕键轴圆柱对称",
+      "电子密度集中在键轴",
+      "允许自由旋转",
+      "重叠直接、强度大"
+    ],
+    "confusions": "σ 与 π 不是两种「不同的键」，而是同一多重键中按对称性分类的两个成分。",
+    "related": [
+      "pi-bond",
+      "bonding-orbital",
+      "bond-order",
+      "molecular-orbital"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "pi-bond",
+    "zh": "π 键",
+    "en": "Pi bond",
+    "category": "成键理论",
+    "definition": "电子云分布在键轴上下两侧、键轴本身是一个节面的化学键，由 p 或 d 轨道肩并肩重叠形成。",
+    "expanded": "π 键的键轴处电子密度为零，重叠程度小于 σ 键，因此更弱、更容易被打开——这正是烯烃容易发生加成反应的原因。π 键限制绕键轴旋转，因此产生顺反异构。π 键既可以由两个 p 轨道肩并肩形成，也可以由 d 轨道参与（如 d_xz 与 p_x 之间）。在配位化学中，配体的空 π* 轨道接受金属 d 电子就构成反馈键。",
+    "properties": [
+      "键轴处为节面",
+      "肩并肩重叠、比 σ 弱",
+      "限制旋转、产生顺反异构",
+      "容易被打开"
+    ],
+    "confusions": "π 键弱不等于它不重要；双键的化学活性主要来自 π 键。",
+    "related": [
+      "sigma-bond",
+      "bonding-orbital",
+      "antibonding-orbital",
+      "back-bonding",
+      "node"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "bond-length",
+    "zh": "键长",
+    "en": "Bond length",
+    "category": "分子结构",
+    "definition": "分子中两个成键原子核之间的平衡距离，通常用 pm 或 Å 表示。",
+    "expanded": "键长由吸引与排斥的平衡决定：核间电子密度越大，平衡距离越短。因此键长与键级成反比。氧分子系列是教科书例子：O₂⁺（键级 2.5）的键长 112 pm 短于 O₂（键级 2）的 121 pm，而 O₂⁻（键级 1.5）与 O₂²⁻（键级 1）依次更长。同核双原子中 H₂ 键长 74 pm（键级 1）、H₂⁺ 106 pm（键级 ½）也是同一规律的体现。",
+    "properties": [
+      "与键级成反比",
+      "由吸引—排斥平衡决定",
+      "可用转动光谱或晶体学测定",
+      "H₂ 74 pm、H₂⁺ 106 pm"
+    ],
+    "confusions": "不同分子之间比较键长要考虑原子半径差异，不能只看键级。",
+    "related": [
+      "bond-order",
+      "bond-energy",
+      "molecular-orbital-theory",
+      "covalent-radius"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "bond-energy",
+    "zh": "键能",
+    "en": "Bond energy",
+    "category": "热化学",
+    "definition": "断开一摩尔特定化学键所需吸收的能量，是衡量键强度的直接指标。",
+    "expanded": "键能与键级大致成正比：键级越高，键越强。C₂ 是一个有趣的例外——按分子轨道算键级为 2，但其键能高达约 599 kJ·mol⁻¹，接近三键水平，因此有工作主张 C₂ 应视为四重键（两个 π 加两个「半个」σ）。键能可通过热化学循环、光谱解离能或量热法测定；与键长联合使用可以判断分子轨道图像是否正确。",
+    "properties": [
+      "与键级大致成正比",
+      "C₂ 键能异常高（约 599 kJ·mol⁻¹）",
+      "可用光谱解离能测定",
+      "与键长联用可检验 MO 图像"
+    ],
+    "confusions": "平均键能来自多种分子的统计，与某个具体分子的解离能不完全相同。",
+    "related": [
+      "bond-length",
+      "bond-order",
+      "molecular-orbital-theory",
+      "bonding-orbital"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "lewis-acid",
+    "zh": "Lewis 酸",
+    "en": "Lewis acid",
+    "category": "酸碱理论",
+    "definition": "能接受一对电子的物种。",
+    "expanded": "Lewis 酸具有空的低能轨道（前线轨道理论中的 LUMO），可以接受 Lewis 碱的电子对形成配位键。典型例子有 BF₃（硼上空 p 轨道）、AlCl₃、H⁺ 与过渡金属离子。BF₃ 接受 NH₃ 氮上孤对形成 F₃B·NH₃ 就是经典的 Lewis 酸碱加合物，其驱动力可用 HOMO–LUMO 相互作用定量描述：两者对称性匹配且能量相近，因此相互作用强、稳定化大。",
+    "properties": [
+      "接受电子对",
+      "具有低能空轨道（LUMO）",
+      "BF₃、AlCl₃、H⁺、金属离子",
+      "与 Lewis 碱形成加合物"
+    ],
+    "confusions": "Lewis 酸不限于含 H⁺ 的物种；凡接受电子对者都算，包括金属中心。",
+    "related": [
+      "lewis-base",
+      "homo-lumo",
+      "vsepr",
+      "ligand"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "lewis-base",
+    "zh": "Lewis 碱",
+    "en": "Lewis base",
+    "category": "酸碱理论",
+    "definition": "能提供一对电子的物种。",
+    "expanded": "Lewis 碱具有被占据的高能轨道（HOMO），其孤对或 π 电子可以用来形成配位键。典型例子有 NH₃、H₂O、F⁻、CO、膦与胺。NH₃ 的 HOMO 是 3a₁（氮上的 sp 型孤对），它与 BF₃ 的空 2a₂″ 轨道对称性匹配、能量相近，因此自发形成加合物。在配位化学中 Lewis 碱即配体。",
+    "properties": [
+      "提供电子对",
+      "具有高能占据轨道（HOMO）",
+      "NH₃、H₂O、F⁻、CO",
+      "在配位化学中即配体"
+    ],
+    "confusions": "碱性与亲核性相关但不等同：亲核性还取决于 HOMO 的能量与空间可及性。",
+    "related": [
+      "lewis-acid",
+      "homo-lumo",
+      "ligand",
+      "molecular-orbital"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "covalent-radius",
+    "zh": "共价半径",
+    "en": "Covalent radius",
+    "category": "分子结构",
+    "definition": "把共价键键长在成键两原子之间对半分配所得的原子半径参数。",
+    "expanded": "共价半径使我们可以从原子半径预估未知键长：两个原子的共价半径之和近似等于键长。它随周期从左到右减小（有效核电荷增加），从上到下增大（主量子数增加）。以此作为基准，可以判断实际键长偏离单键多远，从而推断键级——例如 C₂ 的实测键长明显短于单键预估，支持其多重键性质。",
+    "properties": [
+      "两原子共价半径之和 ≈ 键长",
+      "随周期从左到右减小",
+      "可用于反推键级",
+      "与离子半径是不同概念"
+    ],
+    "confusions": "共价半径与离子半径、van der Waals 半径不可混用，三者定义不同。",
+    "related": [
+      "bond-length",
+      "atomic-radius",
+      "bond-order",
+      "ionic-radius"
+    ],
+    "source": "第五课：Molecular Orbitals 讲义"
+  }
 ]

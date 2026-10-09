@@ -1,6 +1,6 @@
-const CACHE='chemistry-atlas-v18';
+const CACHE='chemistry-atlas-v19';
 const SHELL=[
-  './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','lesson-07.html','lesson-08.html','resonance.html','terms.html','term.html',
+  './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','lesson-07.html','lesson-08.html','lesson-09.html','resonance.html','terms.html','term.html',
   'style.css','content.css','lecture-02.css','term-figures.css','ppt-figures.css','resonance.css',
   'script.js','data/terms.json','data/notes.json',
   'assets/resonance/ppt/formaldehyde.webp','assets/resonance/ppt/acetate.webp',
@@ -44,7 +44,8 @@ const SHELL=[
   'assets/lecture-08/structures/og08-009-cis-13-dimethylcyclopentane-neutral.png',
   'assets/lecture-08/structures/og08-010-trans-13-dimethylcyclopentane-1S3S-neutral.png',
   'assets/lecture-08/structures/og08-011-trans-13-dimethylcyclopentane-1R3R-neutral.png',
-  'assets/lecture-08/structures/og08-013-methylcyclohexane-neutral.png','assets/lecture-08/structures/og08-014-R-2-methylcyclohexanone-neutral.png'
+  'assets/lecture-08/structures/og08-013-methylcyclohexane-neutral.png','assets/lecture-08/structures/og08-014-R-2-methylcyclohexanone-neutral.png',
+  'assets/lecture-09/absolute-relative-config.webp','assets/lecture-09/achiral-synthesis.webp','assets/lecture-09/chemical-resolution.webp','assets/lecture-09/chromatographic-resolution.webp','assets/lecture-09/cis-trans-diastereomers.webp','assets/lecture-09/dextro-levo.webp','assets/lecture-09/diastereomer-properties.webp','assets/lecture-09/diastereomer-two-centers.webp','assets/lecture-09/diastereomeric-salts-2.webp','assets/lecture-09/diastereomeric-salts.webp','assets/lecture-09/dl-system.webp','assets/lecture-09/ee-calculation.webp','assets/lecture-09/enantiomer-properties.webp','assets/lecture-09/fischer-chirality-cases.webp','assets/lecture-09/fischer-definition.webp','assets/lecture-09/fischer-direct-rs.webp','assets/lecture-09/fischer-interchange.webp','assets/lecture-09/fischer-mirror-test.webp','assets/lecture-09/fischer-rules-180-vs-90.webp','assets/lecture-09/inactive-reactants.webp','assets/lecture-09/meso-compound.webp','assets/lecture-09/optical-activity.webp','assets/lecture-09/optical-purity.webp','assets/lecture-09/plane-polarized-light.webp','assets/lecture-09/polarimeter.webp','assets/lecture-09/polarimetry-setup.webp','assets/lecture-09/racemic-mixture.webp','assets/lecture-09/racemization-carbocation.webp','assets/lecture-09/racemization-enol.webp','assets/lecture-09/resolution.webp','assets/lecture-09/specific-rotation-example.webp','assets/lecture-09/specific-rotation.webp','assets/lecture-09/stereoisomer-tree.webp','assets/lecture-09/thalidomide.webp','assets/lecture-09/two-n-rule.webp'
 ];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

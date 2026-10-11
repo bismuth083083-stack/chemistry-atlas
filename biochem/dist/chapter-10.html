@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第10章 酶动力学 · 生物化学</title>
+<link rel="canonical" href="https://biochem.chemistryatlas.xyz/chapter-10.html">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="mark">B</span><span>生物化学 · Memory Atlas</span></a><label class="search">⌕ <input id="global-search" placeholder="搜索笔记、中文名或英文名…"><kbd>⌘ K</kbd></label><button id="theme">◐</button></header>
+<aside class="sidebar"><nav><p class="nav-label">自学空间</p><a href="index.html">◫　学习总览</a><a class="active" href="lesson-01.html">01　章节学习</a><a href="recall.html">↻　主动回忆</a><a href="practice.html">✓　练习中心</a><a href="terms.html">Aa　双语词条库</a><p class="nav-label">当前章节</p><a href="chapter-02.html">02　氨基酸</a><a href="chapter-03.html">03　蛋白质的结构</a><a href="chapter-04.html">04　蛋白质的功能</a><a href="chapter-05.html">05　蛋白质的性质及研究方法</a><a href="chapter-06.html">06　核苷酸</a><a href="chapter-07.html">07　核酸的结构与功能</a><a href="chapter-08.html">08　核酸的性质及研究方法</a><a href="chapter-09.html">09　酶学概论</a><a class="active" href="chapter-10.html">10　酶动力学</a></nav><div class="privacy"><b>●　私人知识库</b><small>仅所有者可访问</small></div></aside>
+<main class="workspace article">
+<a class="back" href="lesson-01.html">← 返回章节学习</a>
+<header class="article-head"><p class="eyebrow">CHAPTER 10 · ENZYME KINETICS</p><h1>酶动力学</h1><p>第 9 章说酶“高效、专一、可调控”，但都是定性的。这一章把它们转成<strong>可以测量的数字</strong>：Km、Vmax、kcat、kcat/Km 各代表什么，三种可逆抑制剂怎样在双倒数图上留下不同的“指纹”，别构酶为什么必须换一套方程来描述。</p><div><span>米氏方程推导</span><span>Km/Vmax/kcat</span><span>双倒数作图</span><span>三类可逆抑制</span><span>不可逆抑制</span><span>Hill 方程</span><span>协同性</span></div></header>
+
+<section>
+<h2 id="factors">1. 影响酶促反应速率的各种因素</h2>
+<p>酶促反应速率和非酶促反应一样，一般以<strong>单位时间内底物或产物浓度的变化值</strong>来表示。课件列出五类影响因素：</p>
+<p>先建立两个贯穿全章的核心概念：<a class="term-link" href="term.html?slug=km-value">米氏常数 Km</a> 与 <a class="term-link" href="term.html?slug=vmax">最大反应速率 Vmax</a>；它们由 <a class="term-link" href="term.html?slug=michaelis-menten-equation">米氏方程</a>联系在一起。</p>
+<div class="classification">
+<article><p><b>酶浓度 [E]</b> 在底物充足的前提下，速率与酶浓度成<strong>正比</strong>——这是最直接的关系。</p></article>
+<article><p><b>底物浓度 [S]</b> 关系最复杂，呈<strong>饱和曲线</strong>（米氏酶）或 <strong>S 形曲线</strong>（别构酶）。本章第 2–4 节专门讨论。</p></article>
+<article><p><b>反应温度</b> 呈钟形曲线，存在<strong>最适温度</strong>（第 9 章已讨论机制）。</p></article>
+<article><p><b>反应介质的 pH 与离子强度</b> pH 呈钟形曲线，存在<strong>最适 pH</strong>。离子强度影响活性中心的静电环境与底物结合。</p></article>
+<article><p><b>有无抑制剂存在</b> 抑制剂是本章第 5–6 节的主题，也是药物设计的核心。</p></article>
+</div>
+<div class="figure-card"><img src="assets/10-enzyme-conc.webp" alt="酶浓度对反应速率的影响，呈线性关系"><p>图源：第10章《酶动力学》PPT，第 4 页。酶浓度对反应速率的影响——在底物过量的条件下呈直线。</p></div>
+<div class="figure-card"><img src="assets/10-temperature-opt.webp" alt="温度对酶促反应速率的影响曲线，显示最适温度"><p>图源：第10章 PPT 第 5 页。最适温度。</p></div>
+<div class="figure-card"><img src="assets/10-ph-opt.webp" alt="pH对酶促反应速率的影响曲线，显示最适pH"><p>图源：第10章 PPT 第 6 页。最适 pH。</p></div>
+<div class="figure-card"><img src="assets/10-substrate-curves.webp" alt="底物浓度对酶促反应速率的影响：米氏酶的双曲线与别构酶的S形曲线"><p>图源：第10章 PPT 第 7 页。左：大多数酶（米氏酶）的动力学曲线为<strong>双曲线</strong>；右：少数酶（别构酶）为 <strong>S 形曲线</strong>。<strong>这一页是整章的入口</strong>——两种曲线形状对应两套完全不同的数学描述。</p></div>
+<div class="note"><b>[S] 曲线的形状本身就是信息</b><p>把 [S] 曲线当成“测出来的一条线”是浪费。<strong>曲线的形状直接告诉你这个酶属于哪一类</strong>：双曲线意味着各底物结合位点相互独立（米氏酶），S 形曲线意味着位点之间存在正协同（别构酶）。所以实验上第一件事不是算 Km，而是<strong>先看曲线长什么样</strong>。</p></div>
+</section>
+
+<section>
+<h2 id="derivation">2. 米氏方程的推导</h2>
+<p>酶反应动力学最简单的模型由 <strong>Leonor Michaelis 和 Maud Menten 于 1913 年</strong>提出，因此又名 Michaelis-Menten 模型或 M-M 模型。当年 Michaelis 的论文合作者 Menten 是一位女性科学家，她在实验技术上贡献极大。</p>
+<div class="figure-card"><img src="assets/10-mm-params.webp" alt="几种酶的动力学参数表"><p>图源：第10章 PPT 第 12 页。几种酶的动力学参数——不同酶的 Km 值可以相差几个数量级，这个差异本身就是生理意义的来源。</p></div>
+<h3 id="assumptions">2.1 推导前的三个前提</h3>
+<div class="property-grid">
+<article><b>① 反应速率为初速率</b><p>只测反应刚开始的速率（v₀），此时<strong>[S] 的变化可以忽略</strong>，而且没有产物积累造成的逆反应与产物抑制。这是所有酶动力学测量的标准做法。</p></article>
+<article><b>② ES 复合物处于稳态</b><p>即 <strong>[ES] 不随时间变化</strong>（稳态近似，steady state）。注意“不变”不等于“很少”——ES 在持续生成和分解，只是两者速率相等，浓度维持恒定。</p></article>
+<article><b>③ 符合质量作用定律</b><p>反应速率与反应物浓度的乘积成正比，可以写出每个基元步骤的速率表达式。</p></article>
+</div>
+<h3 id="steps">2.2 推导过程</h3>
+<p>考虑一个单底物-单产物反应，酶与底物先结合成 ES，再转变为产物并释放酶：</p>
+<div class="formula">E + S ⇌ ES → E + P</div>
+<p>用 k₁ 表示 ES 形成的速率常数，k₋₁ 表示 ES 解离回 E + S 的速率常数，k₂ 表示 ES 转变为产物的速率常数（催化常数）。</p>
+<p><strong>第一步：写出 ES 的形成与解离速率。</strong>设 νf 为 ES 形成的速率，νd 为 ES 解离的速率。ES 的解离有两条途径——解回原料，或者前进到产物：</p>
+<div class="formula">νf = k₁[E][S]　　νd = k₋₁[ES] + k₂[ES] = (k₋₁ + k₂)[ES]</div>
+<p><strong>第二步：应用稳态近似。</strong>稳态时 ES 形成与解离速率相等，νd = νf：</p>
+<div class="formula">k₁[E][S] = (k₋₁ + k₂)[ES]　　…①</div>
+<p><strong>第三步：引入酶的总浓度守恒。</strong>设 [Eₜ] 为酶的总浓度，[E] 为游离酶浓度，[ES] 为与底物结合的酶浓度，则：</p>
+<div class="formula">[Eₜ] = [E] + [ES]　即　[E] = [Eₜ] − [ES]</div>
+<p>代入 ① 式：</p>
+<div class="formula">k₁([Eₜ] − [ES])[S] = (k₋₁ + k₂)[ES]</div>
+<p>整理并解出 [ES]：</p>
+<div class="formula">[ES] = k₁[Eₜ][S] / (k₋₁ + k₂ + k₁[S]) = [Eₜ][S] / (Km + [S])</div>
+<p>其中定义了<strong>米氏常数</strong>：</p>
+<div class="formula">Km = (k₋₁ + k₂) / k₁</div>
+<div class="note"><b>Km 的定义要点</b><p>Km <strong>不是</strong>简单的解离常数。只有当 k₂ ≪ k₋₁（即催化这一步远慢于解离，ES 大部分时间在“来回结合”而不是前进）时，Km ≈ k₋₁/k₁ = Ks，也就是真正的解离常数。这个区别在考试中经常被考察：<strong>Km 是操作定义上的常数，Ks 是热力学意义上的解离常数，两者只有在特定条件下才相等</strong>。</p></div>
+<h3 id="final">2.3 得到米氏方程</h3>
+<p>酶促反应的初速率就是产物形成的速率：</p>
+<div class="formula">v = k₂[ES] = k₂[Eₜ][S] / (Km + [S])</div>
+<p>当 [S] → ∞ 时，酶被底物<strong>饱和</strong>（所有酶都以 ES 形式存在），此时速率达到<strong>最大反应速率 Vmax</strong>：</p>
+<div class="formula">Vmax = k₂[Eₜ]</div>
+<p>代回并整理，就得到<strong>米氏方程</strong>：</p>
+<div class="formula">v = Vmax[S] / (Km + [S])</div>
+<div class="note"><b>这个方程的形状说明了什么</b><p>米氏方程是 [S] 的<strong>双曲线</strong>。<strong>[S] 很小时</strong>，分母近似为 Km，v ≈ (Vmax/Km)[S]，速率与 [S] 成正比——<strong>一级动力学</strong>；<strong>[S] 很大时</strong>，分母近似为 [S]，v ≈ Vmax，速率与 [S] 无关——<strong>零级动力学</strong>。这就是下一节要讲的“双重性”。<strong>Vmax 在数学上永远无法达到，只能渐近逼近</strong>——这一点在后面为什么需要双倒数作图时会变得关键。</p></div>
+</section>
+
+<section>
+<h2 id="parameters">3. 米氏方程的四组参数</h2>
+<p>课件把米氏方程的解读分成四块，每一块都对应一个可以测量的量。</p>
+<h3 id="km">3.1 Km：米氏常数</h3>
+<p><strong>Km 是酶反应初速率为 Vmax 一半时底物的浓度。</strong>这个定义可以直接用米氏方程验证：令 v = Vmax/2，解得 [S] = Km。</p>
+<p>在一定条件下，可以用 Km 表示<strong>酶与底物的亲和力</strong>：</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>Km</th><th>亲和力</th><th>达到 Vmax/2 所需 [S]</th></tr></thead><tbody>
+<tr><td>越大</td><td>越<strong>低</strong></td><td>越高</td></tr>
+<tr><td>越小</td><td>越<strong>高</strong></td><td>越低</td></tr>
+</tbody></table></div>
+<div class="note"><b>为什么 Km 越小亲和力越高</b><p>因为 Km 是“需要多少底物才能把酶用到一半速度”的度量。<strong>Km 小意味着很少的底物就够用了，说明酶抓底物抓得紧</strong>。这个直觉比死记“Km 与亲和力成反比”更可靠。注意课件写的是“在一定条件下”——正是上面说的 k₂ ≪ k₋₁ 条件。</p></div>
+<p>Km 还有一个重要的应用：<strong>帮助判断体内一个可逆反应进行的方向</strong>。如果酶对底物的 Km 值<strong>小于</strong>对产物的 Km 值，则反应有利于<strong>正反应</strong>；否则有利于逆反应。</p>
+<div class="note"><b>这个判据的直觉</b><p>同一个酶催化可逆反应，两个方向各有自己的 Km（记为 Km(S) 与 Km(P)）。<strong>Km 小的一侧意味着该物质在较低浓度下就能把酶“喂饱”</strong>，因此酶更容易朝着消耗这一侧的方向工作。反过来也可以理解为：Km 小的物质更容易被酶抓住并转化。所以 Km(S) &lt; Km(P) 时正反应占优。</p></div>
+<h3 id="vmax">3.2 Vmax：最大反应速率</h3>
+<p>Vmax 也是酶的特征常数，但<strong>随着酶浓度的变化而变化</strong>。这一点很重要：Vmax 并不像 Km 那样是酶的内在属性——它正比于酶量（Vmax = k₂[Eₜ]）。所以在比较不同实验的 Vmax 时，必须先确认酶浓度相同。</p>
+<h3 id="kcat">3.3 kcat：催化常数</h3>
+<p><strong>kcat</strong> 称为酶的<strong>催化常数</strong>，也叫<strong>转换数</strong>或<strong>周转数</strong>。它指在单位时间内，<strong>一个酶分子将底物转变成产物的分子总数</strong>，单位是 <strong>s⁻¹</strong>。详见词条 <a class="term-link" href="term.html?slug=turnover-number">转换数</a>。</p>
+<p>如果一个酶遵守米氏方程，则：</p>
+<div class="formula">kcat = k₂ = Vmax / [Eₜ]</div>
+<p>所以 kcat 的物理意义是<strong>单个酶分子的“工作速度”</strong>——每秒钟能处理多少个底物分子。它把宏观测得的 Vmax 转换成了单分子层面的指标，因此可以用来比较不同酶（甚至不同来源的同一种酶）的本征催化能力。</p>
+<h3 id="efficiency">3.4 kcat/Km：催化效率</h3>
+<p><strong>kcat/Km 通常被用来衡量酶的催化效率，还可以反映一个酶的“完美程度”。</strong>大的 kcat 和/或小的 Km 将给出大的 kcat/Km 值。</p>
+<div class="note"><b>为什么 kcat/Km 才是真正的效率指标</b><p>单看 kcat 会漏掉一半信息：一个酶可能转化得很快（kcat 大），但需要极高的底物浓度才能把酶喂饱（Km 大）。<strong>kcat/Km 相当于“在底物浓度很低时，酶把底物转成产物的效率”</strong>——因为低 [S] 下 v ≈ (kcat/Km)[E][S]，此时速率常数就是 kcat/Km。它同时包含了“抓得紧”（小 Km）和“转得快”（大 kcat）两个方面。<br><br>kcat/Km 还有一个理论上限：<strong>酶的催化速度不可能超过底物扩散到活性中心的速度</strong>，这个扩散限制约在 10⁸–10⁹ M⁻¹s⁻¹ 量级。达到这个上限的酶称为“完美酶”（如碳酸酐酶、超氧化物歧化酶）——此时每遇到一个底物分子就催化一次，效率已无提升空间。</p></div>
+</section>
+
+<section>
+<h2 id="duality">4. 米氏方程的双重性</h2>
+<p>同一个方程在两种极端条件下退化成两种不同级的动力学，这称为米氏方程的<strong>双重性</strong>。</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>条件</th><th>简化结果</th><th>动力学级数</th><th>物理含义</th></tr></thead><tbody>
+<tr><td><strong>[S] ≪ Km</strong></td><td>v = (Vmax/Km)[S]</td><td><strong>一级动力学</strong></td><td>速率与底物浓度成正比。<strong>酶远未饱和</strong>，游离酶充足，速率受“底物多久碰到酶”限制</td></tr>
+<tr><td><strong>[S] ≫ Km</strong></td><td>v = Vmax</td><td><strong>零级动力学</strong></td><td>速率接近最大值，继续增加 [S] 也不能再提高。<strong>酶已被底物饱和</strong>，速率受“酶处理一个底物需要多久”限制</td></tr>
+</tbody></table></div>
+<div class="figure-card"><img src="assets/10-substrate-curves.webp" alt="米氏酶的双曲线动力学"><p>图源：第10章 PPT 第 7 页（同第 1 节）。曲线的左下段近似直线（一级），右上段趋于水平（零级）——<strong>双曲线本身就是两种极端动力学的连接</strong>。</p></div>
+<div class="note"><b>为什么要区分这两种极限</b><p>这不是数学游戏，而是实验设计的基础。<strong>想比较不同酶的 kcat/Km，必须在 [S] ≪ Km 的条件下测；想比较 Vmax，必须在 [S] ≫ Km（饱和）条件下测。</strong>选错浓度区间，得到的“动力学参数”就没有意义。同样的区分在临床检验中也很实用：<strong>测定血清酶活时通常让底物过量（零级条件），这样测得的速率才正比于酶量</strong>，从而反映组织损伤程度——这正是第 9 章诊断指标能够成立的前提。</p></div>
+</section>
+
+<section>
+<h2 id="linear">5. 米氏方程的线性转换：双倒数作图</h2>
+<p>直接用 v 对 [S] 作图得到的是曲线。虽然从图上也能读出 Km 和 Vmax，但存在两个实际困难：</p>
+<ol>
+<li><strong>Vmax 是渐近线，永远达不到</strong>，只能靠肉眼外推，误差很大。</li>
+<li><strong>实验误差必然存在</strong>。只要数据点偏离真实位置，就很难画出完美曲线；而在同样条件下<strong>画直线要容易得多</strong>，且直线的偏差更容易判断。</li>
+</ol>
+<p>因此需要把米氏方程<strong>线性化</strong>。取倒数：</p>
+<div class="formula">1/v = Km/Vmax · 1/[S] + 1/Vmax</div>
+<p>这是一条直线。以 <strong>1/[S] 为横轴、1/v 为纵轴</strong>作图，得到<strong>双倒数作图</strong>（Lineweaver-Burk 作图）：</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>图上的量</th><th>等于</th><th>怎样读出参数</th></tr></thead><tbody>
+<tr><td><strong>纵截距</strong></td><td>1/Vmax</td><td>取倒数得 Vmax</td></tr>
+<tr><td><strong>横截距</strong></td><td>−1/Km</td><td>取绝对值倒数得 Km</td></tr>
+<tr><td><strong>斜率</strong></td><td>Km/Vmax</td><td>由斜率与截距可交叉验证 Km</td></tr>
+</tbody></table></div>
+<div class="figure-card"><img src="assets/10-lineweaver-burk.webp" alt="米氏酶的双倒数作图，标注纵截距1/Vmax、横截距-1/Km、斜率Km/Vmax"><p>图源：第10章 PPT 第 15 页。米氏酶的双倒数作图——<strong>三个参数全部落在坐标轴截距和斜率上，可以一次读出</strong>。</p></div>
+<div class="note"><b>双倒数作图的优雅之处，以及它的代价</b><p><strong>优雅之处</strong>：Km 和 Vmax 不再需要外推到无穷远，而是变成两个坐标轴上的截距，直接读出。<br><br><strong>代价</strong>：取倒数会<strong>放大低 [S] 数据的误差</strong>。因为 1/[S] 在 [S] 小时会变得很大，而小 [S] 下的速率测量本来误差就大；取倒数后这些点被推到图的最右端，对直线斜率的影响被放大。所以严格做法应使用 Eadie-Hofstee 或 Hanes 作图，或用非线性回归直接拟合米氏方程。但双倒数作图<strong>在判断抑制类型时不可替代</strong>——因为不同抑制类型给出的直线位置变化非常有特征（见下一节）。</p></div>
+</section>
+
+<section>
+<h2 id="inhibitors">6. 酶抑制剂作用的动力学</h2>
+<p>抑制剂按<strong>结合方式</strong>先分成两大类，这个划分决定了能否通过物理方法恢复活性。</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>类型</th><th>结合方式</th><th>能否去除</th><th>后果</th></tr></thead><tbody>
+<tr><td><b>可逆性抑制剂</b></td><td>以<strong>次级键</strong>与酶<strong>可逆</strong>结合</td><td><strong>能</strong>——用透析或超滤即可去除，酶恢复活性</td><td>降低酶的有效活性，但酶量不变</td></tr>
+<tr><td><b>不可逆性抑制剂</b><br><small>酶灭活剂</small></td><td>以<strong>强的化学键</strong>（通常是共价键）与酶<strong>不可逆</strong>结合</td><td><strong>不能</strong>——一旦失活不可逆转</td><td>导致酶<strong>有效浓度降低</strong>。想恢复活性，唯一手段是<strong>补充新酶</strong></td></tr>
+</tbody></table></div>
+<div class="note"><b>这个划分的实用含义</b><p>可逆与不可逆的差别不在于“结合得牢不牢”，而在于<strong>有没有形成共价键</strong>。这直接决定了治疗策略：<strong>可逆抑制剂的效果取决于浓度，停药后活性可恢复；不可逆抑制剂的效果取决于“被修饰掉多少酶分子”，需要机体重新合成酶才能恢复</strong>。阿司匹林不可逆地乙酰化 COX，因此低剂量就能长期抑制血小板功能——因为血小板没有细胞核，无法重新合成酶，药效持续整个血小板寿命（约 7–10 天）。这是理解给药方案的关键。</p></div>
+<h3 id="reversible">6.1 三类可逆性抑制剂</h3>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>类型</th><th>结合对象</th><th>Km</th><th>Vmax</th><th>双倒数图的特征</th></tr></thead><tbody>
+<tr><td><b>竞争性</b><br><small>competitive</small></td><td><strong>只与游离酶 E 结合</strong>（在活性中心，与底物竞争）</td><td><strong>提高</strong></td><td><strong>不变</strong></td><td>纵截距不变（1/Vmax 不变），横截距向原点靠近（−1/Km 绝对值变小），<strong>直线绕纵轴交点旋转</strong></td></tr>
+<tr><td><b>非竞争性</b><br><small>noncompetitive</small></td><td><strong>既能与 ES 结合，又能与游离酶 E 结合</strong></td><td><strong>不变</strong></td><td><strong>降低</strong></td><td>横截距不变（−1/Km 不变），纵截距增大（1/Vmax 变大），<strong>直线绕横轴交点旋转</strong></td></tr>
+<tr><td><b>反竞争性</b><br><small>uncompetitive</small></td><td><strong>只能与 ES 结合，不能与游离酶结合</strong></td><td><strong>降低</strong></td><td><strong>降低</strong></td><td>横纵截距<strong>同时按相同比例变化</strong>，得到一组<strong>平行线</strong></td></tr>
+</tbody></table></div>
+<div class="figure-card"><img src="assets/10-competitive.webp" alt="竞争性抑制的双倒数作图与直接作图，Km升高Vmax不变"><p>图源：第10章 PPT 第 20 页。竞争性抑制剂：<strong>Km 升高，Vmax 不变</strong>。有抑制剂时表观 Km 变为 Km(1 + [I]/K_I)，斜率相应变为 Km(1 + [I]/K_I)/Vmax，但纵截距 1/Vmax 不变。</p></div>
+<div class="figure-card"><img src="assets/10-noncompetitive.webp" alt="非竞争性抑制的双倒数作图，Km不变Vmax降低"><p>图源：第10章 PPT 第 21 页。非竞争性抑制剂：<strong>Km 不变，Vmax 降低</strong>。</p></div>
+<div class="figure-card"><img src="assets/10-uncompetitive.webp" alt="反竞争性抑制的双倒数作图，Km降低Vmax降低，平行线"><p>图源：第10章 PPT 第 22 页。反竞争性抑制剂：<strong>Km 降低，Vmax 降低</strong>。表观 Km 变为 Km/(1 + [I]/K_I′)，表观 Vmax 变为 Vmax/(1 + [I]/K_I′)，两者按同一因子变化，因此双倒数图给出一组平行线。</p></div>
+<div class="figure-card"><img src="assets/10-succinate-competitive.webp" alt="琥珀酸脱氢酶的竞争性抑制，丙二酸与琥珀酸结构相似"><p>图源：第10章 PPT 第 19 页。琥珀酸脱氢酶的竞争性抑制——<strong>丙二酸与琥珀酸结构相似</strong>，因此能占据同一活性中心。这是“与底物结构相似”这一类竞争性抑制剂的经典例子。</p></div>
+<div class="note"><b>怎样三次记住这三张图</b><p>不要背图，<strong>从“抑制剂结合谁”推出参数变化</strong>：<br><br>① <strong>竞争性——只结合 E</strong>：抑制剂和底物抢同一个位点。<strong>提高 [S] 就能把抑制剂挤掉</strong>，所以只要底物足够多，Vmax 仍然能达到 ⇒ <strong>Vmax 不变</strong>。但在同样的 [S] 下速率降低了，相当于需要更多底物才能到半速 ⇒ <strong>Km 升高</strong>。<br><br>② <strong>非竞争性——E 和 ES 都能结合</strong>：抑制剂不抢位点，所以<strong>加多少底物都救不回来</strong>，一部分酶被永久性（在本次实验中）封住 ⇒ <strong>Vmax 降低</strong>。但由于剩余酶与底物的结合不受影响 ⇒ <strong>Km 不变</strong>。<br><br>③ <strong>反竞争性——只结合 ES</strong>：抑制剂只抓住已经结合的 ES，形成 ESI 三元复合物，<strong>相当于把 ES“吸走”</strong>。这会拉动 E + S ⇌ ES 平衡右移，因此 <strong>Km 表观降低</strong>；同时被封住的 ES 不能产生产物 ⇒ <strong>Vmax 降低</strong>。<br><br>记住这个推法，三张图和六个数都不用背。</p></div>
+<div class="figure-card"><img src="assets/10-inhibitor-drugs.webp" alt="几种常见的酶抑制剂药物表"><p>图源：第10章 PPT 第 17 页。几种常见的酶抑制剂药物——抑制剂动力学不是理论游戏，而是药物设计的基础。</p></div>
+</section>
+
+<section>
+<h2 id="irreversible">7. 不可逆性抑制剂的四种类型</h2>
+<p>课件按作用机制把不可逆抑制剂分成四类，这个分类的核心维度是<strong>“抑制剂最初是否像底物”</strong>和<strong>“是否需要酶自己把它激活”</strong>。</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>类型</th><th>结构特点</th><th>作用机制</th></tr></thead><tbody>
+<tr><td><b>① 基团特异性抑制剂</b></td><td>与底物<strong>无相似</strong>之处</td><td>能<strong>共价修饰酶活性中心上的必需侧链基团</strong>，导致不可逆失活。由于许多氨基酸残基含有亲核侧链基团，所以充当这类抑制剂的<strong>一般是亲电试剂</strong></td></tr>
+<tr><td><b>② 底物类似物抑制剂</b></td><td>结构上<strong>相似于底物</strong></td><td>因此能在活性中心与酶结合，然后<strong>不可逆地修饰活性中心上的必需基团</strong>，导致酶活性丧失</td></tr>
+<tr><td><b>③ 过渡态类似物抑制剂</b></td><td>与酶促反应的<strong>过渡态极为相似</strong></td><td>在化学结构和分子形状上与活性中心<strong>十分般配</strong>，能以<strong>极高的亲和力</strong>与活性中心结合，从而导致底物无法进入而不可逆抑制</td></tr>
+<tr><td><b>④ 自杀型抑制剂</b><br><small>课件原文：“农夫与蛇的故事”</small></td><td>本身不具反应性</td><td><strong>受酶本身的激活</strong>：与酶结合后，<strong>受到酶的催化发生几步反应，但并不形成产物，而是变成高度反应性的化合物</strong>，转而修饰酶的必需基团，导致酶活性丧失</td></tr>
+</tbody></table></div>
+<div class="figure-card"><img src="assets/10-ache-inhibitor.webp" alt="乙酰胆碱酯酶的基团特异性抑制剂的作用机制"><p>图源：第10章 PPT 第 24 页。乙酰胆碱酯酶的基团特异性抑制剂的作用。</p></div>
+<div class="figure-card"><img src="assets/10-tpck.webp" alt="TPCK对糜蛋白酶活性中心组氨酸的修饰"><p>图源：第10章 PPT 第 25 页。TPCK 对糜蛋白酶活性中心 His 的修饰——底物类似物型不可逆抑制剂：先像底物一样结合，再共价修饰。</p></div>
+<div class="figure-card"><img src="assets/10-suicide-mao.webp" alt="N,N-二甲基炔丙胺对单胺氧化酶的自杀型抑制机制"><p>图源：第10章 PPT 第 26 页。N,N-二甲基炔丙胺对单胺氧化酶的自杀型抑制——酶亲自把抑制剂“加工”成了灭活自己的武器。</p></div>
+<div class="note"><b>为什么“自杀型”这个比喻很准确</b><p>课件用“农夫与蛇”来形容这类抑制剂，抓住了机制的要害：<strong>酶把抑制剂当成底物结合并催化它，结果催化产物反过头来灭活了酶</strong>。它的选择性因此极高——只有真正能催化这个反应的酶才会被灭活，其他酶即使结合了抑制剂也不会把它转化成活性形式。<br><br>这个特征在药物设计中极有价值：<strong>自杀型抑制剂（机制基础性抑制剂）只作用于特定靶酶，副作用小</strong>。临床上的单胺氧化酶抑制剂、某些抗病毒药与抗生素都属于这一类。<br><br>注意它与“过渡态类似物”的区别：<strong>过渡态类似物靠“像过渡态”获得高亲和力，本身已经是有反应性的分子；自杀型抑制剂本身不活泼，是被酶当场激活的</strong>。</p></div>
+</section>
+
+<section>
+<h2 id="allosteric">8. 别构酶的动力学</h2>
+<p>前面所有讨论都建立在米氏方程上，而米氏方程给出的是<strong>双曲线</strong>。但有一类酶的 [S] 曲线是 <strong>S 形</strong>的——米氏方程<strong>不适合</strong>描述它们，需要换用 Hill 方程。</p>
+<h3 id="properties">8.1 别构酶的性质（六条）</h3>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>性质</th><th>含义</th></tr></thead><tbody>
+<tr><td><b>速率/底物浓度曲线为 S 型</b></td><td>曲线的核心特征，说明存在<strong>底物协同性</strong>。这直接排除了米氏方程</td></tr>
+<tr><td><b>具有别构效应物</b></td><td>活性受其他分子（效应物）调节，效应物结合在活性中心<strong>之外</strong>的别构位点</td></tr>
+<tr><td><b>对竞争性抑制表现双相反应</b></td><td>动力学行为比米氏酶复杂，不能简单套用竞争性抑制的规律</td></tr>
+<tr><td><b>温和变性可导致别构效应丧失</b></td><td>说明别构效应依赖<strong>完整的四级结构</strong>；而催化活性中心本身可能仍保留——这证明“别构”是比“催化”更容易被破坏的更高层次性质</td></tr>
+<tr><td><b>通常是寡聚酶</b></td><td>由多个亚基组成——<strong>协同性需要亚基之间传递构象变化</strong>，这是结构基础</td></tr>
+<tr><td><b>与非别构酶相比占少数</b></td><td>别构酶是特例，但常常是关键调控点</td></tr>
+</tbody></table></div>
+<div class="figure-card"><img src="assets/10-allosteric-sigmoid.webp" alt="典型的别构酶催化反应速率与底物浓度的S型曲线"><p>图源：第10章 PPT 第 28 页。典型的别构酶 S 型曲线——注意它<strong>在一段浓度区间内非常陡峭</strong>，这正是协同性的意义所在。</p></div>
+<div class="figure-card"><img src="assets/10-allosteric-effectors.webp" alt="激活剂或抑制剂对别构酶活性的影响"><p>图源：第10章 PPT 第 29 页。激活剂使曲线更陡、向低 [S] 方向移动；抑制剂则相反。</p></div>
+<h3 id="hill">8.2 Hill 方程</h3>
+<p>Hill 方程能够很好地说明别构酶的动力学：</p>
+<div class="formula">v = Vmax[S]ʰ / (K₀.₅ʰ + [S]ʰ)</div>
+<p>Hill 方程与米氏方程十分相似，主要差别有两处：</p>
+<div class="property-grid">
+<article><b>① 底物浓度被提高到 h 次幂</b><p>[S] 变为 [S]ʰ，h 称为 <strong>Hill 系数</strong>。这个“指数”就是协同性的数学表达——<strong>[S] 的变化被放大了 h 倍</strong>。</p></article>
+<article><b>② 底部常数不是 Km 而是 K₀.₅</b><p>K₀.₅ 也被提高到 h 次幂。它与 Km 相似，<strong>也是指速率为最大速率一半时的底物浓度</strong>。</p></article>
+</div>
+<p>Hill 系数反映底物协同性的程度：</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>h</th><th>含义</th><th>曲线形状</th><th>与米氏方程的关系</th></tr></thead><tbody>
+<tr><td><strong>h = 1</strong></td><td><strong>无</strong>底物协同性，<strong>不是别构酶</strong></td><td>双曲线</td><td>Hill 方程<strong>与米氏方程一模一样</strong>，K₀.₅ = Km</td></tr>
+<tr><td><strong>h &gt; 1</strong></td><td><strong>正</strong>底物协同性</td><td><strong>S 形</strong>曲线</td><td>米氏方程无法描述</td></tr>
+<tr><td><strong>h &lt; 1</strong></td><td><strong>负</strong>底物协同性</td><td>比双曲线更平缓</td><td>米氏方程无法描述</td></tr>
+</tbody></table></div>
+<div class="figure-card"><img src="assets/10-hill-curves.webp" alt="Hill系数不同的酶反应速率与底物浓度关系曲线，h=4、2、1、0.5"><p>图源：第10章 PPT 第 31 页。<strong>这四条曲线共用同一个 K₀.₅（都交于 v = Vmax/2 处）</strong>，唯一变量是 h。h=4 呈明显 S 形，h=1 是标准双曲线，h=0.5 则比双曲线更平缓。这张图是理解 Hill 系数的最好工具。</p></div>
+<h3 id="hillplot">8.3 Hill 作图</h3>
+<p>把 Hill 方程重新整理并两边取对数：</p>
+<div class="formula">lg[v/(Vmax − v)] = h·lg[S] − h·lg K₀.₅</div>
+<p>以 <strong>lg[v/(Vmax − v)] 对 lg[S]</strong> 作图，得到一条直线：</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>图上的量</th><th>等于</th></tr></thead><tbody>
+<tr><td><strong>斜率</strong></td><td>h（Hill 系数）</td></tr>
+<tr><td><strong>纵截距</strong></td><td>−h·lg K₀.₅</td></tr>
+<tr><td><strong>横截距</strong></td><td>lg K₀.₅</td></tr>
+</tbody></table></div>
+<div class="figure-card"><img src="assets/10-hill-plot.webp" alt="Hill作图法，以lg[v/(Vmax-v)]对lg[S]作图"><p>图源：第10章 PPT 第 33 页。Hill 作图——与双倒数作图同样的思路：<strong>把曲线转成直线，让参数落在斜率和截距上</strong>。</p></div>
+<div class="note"><b>两个作图的共同逻辑</b><p>双倒数作图和 Hill 作图做的是同一件事：<strong>通过代数变换把非线性方程变成线性方程，使参数可以从斜率与截距直接读出</strong>。区别只在于变换的目的不同——双倒数是为了让 Km 和 Vmax 可测，Hill 作图是为了让 h 和 K₀.₅ 可测。把这个统一逻辑记住，两套公式就不必分别死记。<br><br>另外要注意，Hill 作图在实测中<strong>直线往往只在中间一段成立</strong>，两端会偏离。原因是：极低 [S] 时协同性尚未启动，极高 [S] 时已全部饱和。所以 <strong>h 是“表观协同性系数”，通常小于真实的结合位点数 n</strong>——它反映的是协同作用的强度，而不是位点数目。</p></div>
+<h3 id="advantage">8.4 协同性的优点</h3>
+<p>课件用具体的倍数说明了协同性的意义。</p>
+<div class="property-grid">
+<article><b>正协同性的优势</b><p>对于<strong>无协同性</strong>的米氏酶，把反应速率从 Vmax 的 <strong>10% 增加到 90%</strong> 需要<strong>较大的底物浓度增加</strong>。正协同效应意味着<strong>酶对环境中底物浓度的变化更为敏感</strong>——浓度稍变，速率就大幅变化。这使得机体内某些重要的<strong>调节酶能够根据环境变化对代谢进行更加灵敏的调节</strong>。</p></article>
+<article><b>负协同性的优势</b><p>呈现负协同效应的别构酶（<strong>h = 0.5</strong>）要把反应速率从 Vmax 的 10% 增加到 90%，<strong>需要将底物浓度提高 6561 倍</strong>。如此大幅度的提高意味着该酶对底物浓度的变化<strong>极度不敏感</strong>——即速率在很宽的底物浓度范围内保持稳定。</p></article>
+</div>
+<div class="note"><b>为什么两种“相反”的性质都有用</b><p>这看似矛盾，实则对应两种不同的调控需求：<br><br><strong>正协同（h &gt; 1）适合做“开关”</strong>——需要在某个浓度阈值附近迅速响应，比如糖酵解和糖异生的关键调节酶，或者血红蛋白在肺部与外周组织之间的氧结合/释放。S 形曲线的陡峭段就是一个灵敏的“分子开关”。<br><br><strong>负协同（h &lt; 1）适合做“缓冲”</strong>——需要速率在底物浓度大幅波动时保持稳定。6561 倍这个数字（3⁸ = 6561，对应 10% 与 90% 的比值 9 的 8 次方关系）显示了负协同酶可以多么“迟钝”，这对维持代谢稳态很有利。<br><br><strong>同一个数学特征（h 偏离 1）向两个方向偏离，各自服务于不同的生理需要</strong>——这是本章最能体现“结构服务于功能”的一点。</p></div>
+</section>
+
+<section>
+<h2 id="checklist">9. 复习清单</h2>
+<ol>
+<li>影响酶促反应速率的<strong>五类因素</strong>是什么？其中哪两类呈钟形曲线？</li>
+<li>为什么<strong>[S] 曲线的形状</strong>本身就是重要的实验信息？双曲线与 S 形曲线各说明什么？</li>
+<li>米氏模型是哪两位科学家在<strong>哪一年</strong>提出的？</li>
+<li>推导米氏方程的<strong>三个前提</strong>是什么？“初速率”为什么要单独限定？</li>
+<li>写出 νf 与 νd 的表达式，并说明稳态近似的具体含义。</li>
+<li><strong>Km 的定义式</strong>是什么？它为什么不等于解离常数 Ks？两者何时近似相等？</li>
+<li>写出<strong>米氏方程的最终形式</strong>，并说明 Vmax 与 k₂、[Eₜ] 的关系。</li>
+<li><strong>Km 的定义</strong>（用 Vmax 表述）是什么？Km 越小说明亲和力怎样？</li>
+<li>怎样用 Km 判断<strong>可逆反应的方向</strong>？背后的直觉是什么？</li>
+<li>Vmax 与 Km 哪一个随酶浓度变化？为什么？</li>
+<li><strong>kcat</strong> 的另两个名称是什么？单位是什么？物理意义是什么？</li>
+<li>为什么说 <strong>kcat/Km 才是真正的效率指标</strong>？它为什么有理论上限？达到上限的酶叫什么？</li>
+<li>米氏方程的<strong>双重性</strong>指什么？两种极限各自的动力学级数？</li>
+<li>为什么比较 kcat/Km 和比较 Vmax 需要选<strong>不同的 [S] 区间</strong>？</li>
+<li>双倒数作图的<strong>斜率、纵截距、横截距</strong>分别等于什么？</li>
+<li>双倒数作图有什么<strong>代价</strong>？为什么判断抑制类型时仍首选它？</li>
+<li><strong>可逆与不可逆抑制剂</strong>的划分标准是什么？为什么阿司匹林药效能持续数天？</li>
+<li>三类可逆抑制剂<strong>各自结合谁</strong>？由此推出的 Km 与 Vmax 变化是什么？</li>
+<li>为什么<strong>反竞争性抑制</strong>的双倒数图是一组平行线？</li>
+<li>不可逆抑制剂分<strong>四类</strong>？各有什么结构特点与作用机制？</li>
+<li><strong>过渡态类似物</strong>与<strong>自杀型抑制剂</strong>的关键区别是什么？</li>
+<li>别构酶的<strong>六条性质</strong>是什么？“温和变性导致别构效应丧失”说明了什么？</li>
+<li>Hill 方程与米氏方程的<strong>两处差别</strong>是什么？</li>
+<li>h = 1、h &gt; 1、h &lt; 1 各说明什么？h = 1 时 Hill 方程与米氏方程是什么关系？</li>
+<li>Hill 作图的<strong>斜率与截距</strong>各等于什么？</li>
+<li>为什么 h 通常<strong>小于</strong>真实的结合位点数？</li>
+<li><strong>正协同</strong>与<strong>负协同</strong>各有什么生理优势？各适合承担什么角色？</li>
+</ol>
+<div class="next-step">
+<p><b>本章小结</b>　第 9 章回答了“酶是什么、凭什么高效专一”，这一章把它们变成了可以测量的数字。三章连起来看：<strong>第 9 章定性 → 第 10 章定量</strong>，而抑制剂动力学正是药物设计（第 9 章第 10 节提到的“酶是许多药物作用的目标”）的理论工具。</p>
+<a class="term-link" href="chapter-09.html">← 回到第 9 章 · 酶学概论</a>
+</div>
+</section>
+
+<section>
+<h2 id="corrections">10. 课件提示与待核对项</h2>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>位置</th><th>课件原文情况</th><th>整理时的处理</th></tr></thead><tbody>
+<tr><td>第 9–10 页</td><td>课件推导中的中间步骤<strong>只给出①式与结果</strong>，跳过了代入与整理过程；且部分公式以图片形式呈现</td><td>正文补全了三步推导（稳态近似 → 总量守恒代入 → 解出 [ES]），并把公式重排为可读形式。<strong>每一步都可对照课件原页核验</strong></td></tr>
+<tr><td>第 8 页</td><td>课件写作 “Lenor Michaelis”，姓名拼写有误</td><td>正文改为正确的 <strong>Leonor Michaelis</strong>（1875–1949）。课件括注的生卒年为准</td></tr>
+<tr><td>第 11 页</td><td>“Km 可以帮助判断体内一个可逆反应进行的方向。如果酶对底物的 Km 值小于对产物的 Km 值，则反应有利于正反应”</td><td>照录，并补写了直觉解释。<strong>这条判据依赖“同一酶催化可逆反应、两侧各有 Km”的前提</strong>，请对教材确认适用范围</td></tr>
+<tr><td>第 20–22 页</td><td>三页的公式以图片形式给出，部分符号被 OCR 打乱（如 “(1+ /(1+[I]/KI)/Vmax”）</td><td>正文按标准形式重写：竞争性表观 Km = Km(1 + [I]/K_I)；反竞争性表观 Km = Km/(1 + [I]/K_I′)，表观 Vmax = Vmax/(1 + [I]/K_I′)。<strong>请对课件原图核对符号下标（K_I 与 K_I′ 的用法）</strong></td></tr>
+<tr><td>第 22 页</td><td>反竞争性抑制一页同时给出了直接作图与双倒数作图两套标注</td><td>正文只保留结论（Km 与 Vmax 同比例降低 ⇒ 平行线），未复现两套标注</td></tr>
+<tr><td>第 34 页</td><td>负协同部分写“需要将底物浓度提高 6561 倍”</td><td>照录。补充说明 6561 = 3⁸，与 10%→90% 的比值关系一致，便于记忆与验算</td></tr>
+<tr><td>第 8 页</td><td>提纲写作“米氏方程的双重性”，正文并未使用“双重性”一词</td><td>正文按提纲用语命名第 4 节，内容对应课件第 13 页的两级动力学极限</td></tr>
+</tbody></table></div>
+</section>
+
+<footer class="source">来源：第10章《酶动力学》课件（34 页）；公式按课件原页核对并补全推导步骤；术语沿用第 9 章约定。图片均为课件原图忠实裁剪，未作重绘。</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

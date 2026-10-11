@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第8章 核酸的性质及研究方法 · 生物化学</title>
+<link rel="canonical" href="https://biochem.chemistryatlas.xyz/chapter-08.html">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="mark">B</span><span>生物化学 · Memory Atlas</span></a><label class="search">⌕ <input id="global-search" placeholder="搜索笔记、中文名或英文名…"><kbd>⌘ K</kbd></label><button id="theme">◐</button></header>
+<aside class="sidebar"><nav><p class="nav-label">自学空间</p><a href="index.html">◫　学习总览</a><a class="active" href="lesson-01.html">01　章节学习</a><a href="recall.html">↻　主动回忆</a><a href="practice.html">✓　练习中心</a><a href="terms.html">Aa　双语词条库</a><p class="nav-label">当前章节</p><a href="chapter-02.html">02　氨基酸</a><a href="chapter-03.html">03　蛋白质的结构</a><a href="chapter-04.html">04　蛋白质的功能</a><a href="chapter-05.html">05　蛋白质的性质及研究方法</a><a href="chapter-06.html">06　核苷酸</a><a href="chapter-07.html">07　核酸的结构与功能</a><a class="active" href="chapter-08.html">08　核酸的性质及研究方法</a><a href="chapter-09.html">09　酶学概论</a></nav><div class="privacy"><b>●　私人知识库</b><small>仅所有者可访问</small></div></aside>
+<main class="workspace article">
+<a class="back" href="lesson-01.html">← 返回章节学习</a>
+<header class="article-head"><p class="eyebrow">CHAPTER 08 · NUCLEIC ACID PROPERTIES &amp; METHODS</p><h1>核酸的性质及研究方法</h1><p>第 7 章讲了核酸<strong>长什么样</strong>，这一章讲<strong>它有什么性质、以及怎样利用这些性质去研究它</strong>。核心逻辑只有一条：<strong>把理化性质当成实验手段</strong>——变性复性变成杂交，水解选择性变成测序与酶切，紫外吸收变成定量，电荷与形状变成电泳与离心。</p><div><span>紫外吸收</span><span>变性与 Tm</span><span>增色/减色效应</span><span>复性与 Cot 曲线</span><span>酸/碱/酶水解</span><span>分离纯化</span><span>Sanger 测序</span><span>高通量测序</span></div></header>
+
+<section>
+<h2 id="properties">1. 核酸的理化性质总览</h2>
+<p>课件把核酸的理化性质归为五类，这五类各自对应后面的一种研究方法：</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>性质</th><th>内容</th><th>对应的研究方法</th></tr></thead><tbody>
+<tr><td><b>紫外吸收</b></td><td>碱基的共轭双键在 260 nm 有特征吸收</td><td><strong>定量与纯度检测</strong>（A₂₆₀/A₂₈₀）</td></tr>
+<tr><td><b>酸碱解离</b></td><td>磷酸基与碱基可解离，带负电</td><td><strong>电泳、离子交换层析</strong></td></tr>
+<tr><td><b>沉淀</b></td><td>可被无水乙醇沉淀</td><td><strong>核酸的抽取与浓缩</strong></td></tr>
+<tr><td><b>变性、复性和杂交</b></td><td>双螺旋可解开并重新配对</td><td><strong>杂交、Tm 测定、Cot 分析、PCR</strong></td></tr>
+<tr><td><b>水解</b></td><td>糖苷键与磷酸二酯键可被酸、碱或酶切断</td><td><strong>序列测定、限制性酶切、核酸酶工具</strong></td></tr>
+</tbody></table></div>
+<div class="note"><b>这一章的学法</b><p>不要把这五条当成五组孤立的知识点去背。<strong>每一条性质后面都挂着一类技术</strong>，而技术的细节（为什么用 260 nm、为什么要缓慢冷却、为什么用 ddNTP）全部都由性质决定。把「性质 → 技术」的对应关系建立起来，记忆量会大幅减少。</p></div>
+</section>
+
+<section>
+<h2 id="denaturation">2. DNA 的变性</h2>
+<h3 id="def">2.1 定义</h3>
+<p><strong>变性</strong>是指核酸受到<strong>加热、极端的 pH 或离子强度降低</strong>等因素，或特殊化学试剂的作用，其双螺旋区的<strong>氢键断裂，变成单链</strong>的过程。</p>
+<div class="figure-card"><img src="assets/08-denaturation.webp" alt="DNA变性过程的示意图，双螺旋解成单链"><p>图源：第8章 PPT 第 4 页。DNA 的变性——双螺旋区的氢键断裂、解成单链，而磷酸二酯键骨架完好。</p></div>
+<div class="note"><b>最重要的一句话：变性不涉及共价键断裂</b><p>课件明确定义里就有这一句。变性的本质是<strong>维持双螺旋的氢键与碱基堆积力被破坏，而磷酸二酯键骨架完好</strong>。这直接决定了变性是可逆的（见第 4 节复性）——因为一级结构没被破坏，只要条件恢复，互补单链就能重新配对。<strong>如果共价键断裂了，那就叫降解或水解，不是变性</strong>（见第 5 节）。这个区分是整章的枢纽。</p></div>
+<h3 id="signs">2.2 变性的表征</h3>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>指标</th><th>变性时变化</th><th>原因</th></tr></thead><tbody>
+<tr><td><b>紫外吸收</b></td><td><strong>升高</strong>（增色效应）</td><td>双螺旋解开后碱基暴露，堆积作用减弱，260 nm 吸光增强</td></tr>
+<tr><td><b>浮力密度</b></td><td><strong>升高</strong></td><td>单链比双链更松散，与溶剂结合更多，密度增大</td></tr>
+<tr><td><b>黏度</b></td><td><strong>降低</strong></td><td>刚性的双螺旋变成柔软的单链线团，流体力学体积减小</td></tr>
+<tr><td><b>生物活性</b></td><td>不变、降低或丧失</td><td>取决于变性程度与是否可复性</td></tr>
+</tbody></table></div>
+<p>其中紫外吸收增加的现象称为<strong>增色效应</strong>。它的可逆对应现象是复性时的<strong>减色效应</strong>。</p>
+<div class="note"><b>为什么这三条都指向同一件事</b><p>「紫外吸收升高、密度升高、黏度降低」看似三个独立现象，其实全部来自<strong>双螺旋 → 单链线团</strong>这一个结构变化：<strong>碱基从堆积状态变为暴露状态</strong>（吸光升高）、<strong>结构从紧密变为松散</strong>（密度升高）、<strong>分子从刚性棒变为柔性线团</strong>（黏度降低）。抓住这一个变化，三条表征就能一起推出来。</p></div>
+<h3 id="tm">2.3 Tm：DNA 的「熔点」</h3>
+<p><strong>双链 DNA 的热变性是在很窄的温度范围内发生的</strong>，与晶体在熔点时突然熔化的情形相似，因此 DNA 也具有「熔点」，用 <strong>Tm</strong> 表示。</p>
+<p><strong>Tm 实际是 DNA 的双螺旋有一半发生热变性时相应的温度</strong>。也就是说，Tm 处双链与单链各占约一半，对应变性曲线（吸光度对温度作图）的拐点。</p>
+<div class="figure-card"><img src="assets/08-gc-tm-curve.webp" alt="DNA分子中的GC含量与DNA Tm之间的关系曲线，两条线分别为低盐和高盐条件"><p>图源：第8章《核酸的性质及研究方法》PPT，第 6 页。DNA 分子中的 GC 含量与 Tm 之间的关系曲线。<strong>两条直线的差别揭示了离子强度的影响</strong>：上方蓝线为低盐条件（0.01 mol·L⁻¹ 磷酸 + 0.001 mol·L⁻¹ EDTA），下方黑线为高盐条件（0.15 mol·L⁻¹ NaCl + 0.015 mol·L⁻¹ 柠檬酸钠）。<strong>同样 GC 含量下，低离子强度使 Tm 显著降低</strong>——因为阳离子可以中和磷酸骨架的负电荷，屏蔽链间排斥；离子强度越低，两条链的排斥越强，双链越不稳定。</p></div>
+<p>课件指出，DNA 的 Tm 值受<strong>四类因素</strong>影响：</p>
+<div class="property-grid">
+<article><b>① DNA 的均一性</b><p>样品中 DNA 序列越均一，变性发生的温度范围越窄，转变越「陡」；样品越杂，曲线越平缓。这是由「熔点时突然熔化」这一类比推出来的。</p></article>
+<article><b>② G-C 含量</b><p>GC 含量越高，Tm 越高。原因是 <strong>G≡C 有三个氢键，A=T 只有两个</strong>；而且 GC 的碱基堆积作用也更强。所以 Tm 可以作为 GC 含量的间接指标——这正是图中横轴与纵轴关系的来源。</p></article>
+<article><b>③ 离子强度</b><p>离子强度越低，Tm 越低（见图）。阳离子屏蔽磷酸骨架的负电荷，减少两条链之间的静电排斥；缺少阳离子时排斥增强，双链更容易解开。</p></article>
+<article><b>④ 特殊的化学试剂</b><p>如甲酰胺、尿素等变性剂会降低 Tm，因为它们能与碱基形成氢键、竞争性地破坏碱基配对。这也是杂交实验中可以用甲酰胺降低杂交温度的原因。</p></article>
+</div>
+<div class="note"><b>把 Tm 的四个影响因素归纳成一句</b><p><strong>凡是增强双链间相互作用的因素，都提高 Tm；凡是削弱它的，都降低 Tm。</strong>GC 含量高 → 氢键多 → Tm 高；离子强度高 → 静电排斥被屏蔽 → Tm 高；变性剂存在 → 竞争性破坏配对 → Tm 低；样品均一性好 → 转变集中 → 曲线陡（但不改变 Tm 本身）。用这一句可以复原全部四条。</p></div>
+</section>
+
+<section>
+<h2 id="renaturation">3. DNA 的复性与 Cot 曲线</h2>
+<h3 id="renat">3.1 复性与退火</h3>
+<p>核酸变性在一定条件下也是<strong>可逆</strong>的。当各种变性因素不复存在时，变性时解开的互补单链<strong>全部或部分恢复到天然双螺旋结构</strong>的现象称为<strong>复性</strong>。</p>
+<p>热变性 DNA 一般经<strong>缓慢冷却</strong>后即可复性，此过程称为<strong>退火</strong>。</p>
+<div class="note"><b>为什么必须「缓慢」冷却</b><p>这一点是理解复性的关键。如果迅速冷却（淬火），单链来不及找到互补序列就已各自「冻结」成随机构象，无法重新配对；<strong>缓慢降温给互补链留出搜索与配对的时间</strong>。这也解释了 PCR 中退火步骤的温度设定——它是一个受控的、有目的地让引物与模板配对的复性过程。</p></div>
+<p>伴随 DNA 复性的表征变化<strong>恰好与变性相反</strong>：浮力密度和紫外吸收<strong>减少</strong>、黏度<strong>增加</strong>，生物活性<strong>恢复</strong>。其中紫外吸收减少的现象称为<strong>减色效应</strong>。</p>
+<p>影响 DNA 复性的因素有四个方面：<strong>温度、离子强度、DNA 浓度和 DNA 序列的复杂度</strong>。</p>
+<div class="figure-card"><img src="assets/08-renaturation-kinetics.webp" alt="DNA的复性历程曲线"><p>图源：第8章 PPT 第 8 页。DNA 的复性历程——曲线反映单链随时间重新配对的进程。</p></div>
+<h3 id="cot">3.2 复性动力学：Cot 曲线</h3>
+<div class="figure-card"><img src="assets/08-cot-curves.webp" alt="不同DNA的复性动力学曲线，反映序列复杂度差异"><p>图源：第8章 PPT 第 9 页。<strong>不同 DNA 的复性动力学曲线</strong>——不同来源的 DNA 复性速率差别很大，这一差别正是「序列复杂度」的直接体现。</p></div>
+<div class="note"><b>Cot 曲线为什么能测复杂度</b><p>复性的速率取决于<strong>互补序列彼此相遇的概率</strong>。基因组的序列复杂度越高（重复序列越少），要找到互补链就越难，复性就越慢。因此把复性程度对 <strong>Cot</strong>（浓度 × 时间的乘积）作图，曲线的位置直接反映序列复杂度。<br><br>这也是为什么真核基因组会出现<strong>多相曲线</strong>：高度重复序列（如卫星 DNA）复性极快，在中度重复序列之后，单拷贝序列需要很长的 Cot 才能复性。这个实验在测序技术出现之前，是了解基因组组成的主要手段——它不需要知道序列，只需要测「复性有多快」。</p></div>
+</section>
+
+<section>
+<h2 id="hydrolysis">4. 核酸的水解</h2>
+<p>核酸分子中有两类关键共价键：<strong>糖苷键</strong>（碱基与糖之间）和<strong>磷酸二酯键</strong>（连接核苷酸的骨架）。不同水解方式对这两类键的选择性完全不同，而这些选择性正是各类研究工具的基础。</p>
+<h3 id="acid">4.1 酸水解</h3>
+<p>核酸分子内的<strong>糖苷键和磷酸二酯键对酸的敏感性不同</strong>：</p>
+<div class="formula">糖苷键 &gt; 磷酸酯键　　（即糖苷键更容易被酸水解）</div>
+<p>而在糖苷键内部又有进一步的选择性：</p>
+<div class="formula">嘌呤糖苷键 &gt; 嘧啶糖苷键</div>
+<div class="note"><b>这两条选择性的实际后果</b><p>酸水解会<strong>优先脱去嘌呤碱基</strong>，生成无嘌呤酸（apurinic acid，AP 位点）。这正是 DNA 损伤中「脱嘌呤」的化学基础，也是 Maxam-Gilbert 化学断裂法测序的原理来源之一（见第 7 节）——用酸处理可以让嘌呤碱基脱落，再在碱性条件下用哌啶切断骨架。</p></div>
+<h3 id="base">4.2 碱水解</h3>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>核酸</th><th>对碱的敏感性</th><th>产物</th></tr></thead><tbody>
+<tr><td><b>RNA</b></td><td>磷酸二酯键对碱<strong>异常敏感</strong></td><td>得到 <strong>2′- 或 3′-核苷酸的混合物</strong></td></tr>
+<tr><td><b>DNA</b></td><td>对碱的作用<strong>并不敏感</strong></td><td>抗碱水解</td></tr>
+</tbody></table></div>
+<p>课件特别说明了这种差异的<strong>生理意义</strong>：</p>
+<div class="property-grid">
+<article><b>DNA 抗碱水解的意义</b><p>作为<strong>遗传物质</strong>的 DNA 应该<strong>更稳定，不易水解</strong>——遗传信息需要长期保存，化学稳定性是必要条件。</p></article>
+<article><b>RNA 易碱水解的意义</b><p>RNA（主要是 mRNA）是 DNA 的<strong>信使</strong>，<strong>完成任务后应该迅速降解</strong>——信息的价值在于及时，不需要长期保存。</p></article>
+</div>
+<div class="note"><b>结构差异导致了稳定性差异</b><p>RNA 易被碱水解的根本原因是其核糖 2′ 位有<strong>游离羟基</strong>，可以在碱性条件下作为亲核试剂进攻自身的磷酸二酯键，形成 2′,3′-环磷酸中间体，进而水解。<strong>DNA 的脱氧核糖没有 2′-OH，因此无法进行这个分子内进攻</strong>，所以抗碱。这与第 7 章讨论的「RNA 为什么不适合做遗传物质」是同一个化学事实的两个侧面——<strong>2′-OH 既是 RNA 能折叠催化的原因，也是它不稳定的原因</strong>。</p></div>
+<h3 id="enzyme">4.3 酶促水解与核酸酶的分类</h3>
+<div class="figure-card"><img src="assets/08-nuclease-table.webp" alt="不同性质的核酸酶分类表，Pu表示嘌呤，Py表示嘧啶"><p>图源：第8章 PPT 第 11 页。不同性质的核酸酶（Pu 表示嘌呤，Py 表示嘧啶）。这张表把核酸酶按多个维度分类，是理解核酸酶工具的基础。</p></div>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>分类维度</th><th>类型</th><th>说明</th></tr></thead><tbody>
+<tr><td rowspan="2"><b>按底物</b></td><td>DNase</td><td>只水解 DNA</td></tr>
+<tr><td>RNase</td><td>只水解 RNA</td></tr>
+<tr><td rowspan="5"><b>按作用位置</b></td><td><b>核酸外切酶</b><br><small>exonuclease</small></td><td>从链的<strong>末端</strong>逐个水解，产生单核苷酸</td></tr>
+<tr><td><b>核酸内切酶</b><br><small>endonuclease</small></td><td>从链的<strong>内部</strong>切断，产生寡核苷酸片段</td></tr>
+<tr><td>5′→3′ 外切酶</td><td>从 5′ 端向 3′ 端方向水解</td></tr>
+<tr><td>3′→5′ 外切酶</td><td>从 3′ 端向 5′ 端方向水解</td></tr>
+<tr><td><b>限制性内切酶</b></td><td>识别特定序列并在特定位点切断，是分子克隆的核心工具</td></tr>
+<tr><td rowspan="3"><b>按切割产物</b></td><td>产生 5′-磷酸</td><td>切口留下 5′-磷酸末端</td></tr>
+<tr><td>产生 3′-磷酸</td><td>切口留下 3′-磷酸末端</td></tr>
+<tr><td>产生黏性末端 / 平末端</td><td>决定能否用于连接与克隆</td></tr>
+</tbody></table></div>
+<div class="note"><b>为什么核酸酶的分类要背这么多维度</b><p>因为「用哪个酶」取决于实验目的。要做<strong>序列分析</strong>，需要内切酶把长链切成可读的片段；要<strong>删除末端磷酸</strong>防止自连，需要外切酶或磷酸酶；要<strong>把基因切下来再拼到载体上</strong>，需要限制性内切酶产生特定末端。<strong>每一个维度对应一个实验需求</strong>——这也是这一章把核酸酶放在「研究方法」而不是「结构」里的原因。</p></div>
+</section>
+
+<section>
+<h2 id="purification">5. 核酸的分离、纯化与定量</h2>
+<p>课件把这一整套流程分为六步：</p>
+<div class="mechanism-chain"><p><b>核酸的抽取</b> → <b>两种核蛋白的分离</b> → <b>蛋白质的去除</b> → <b>核酸的沉淀</b> → <b>电泳 / 离心 / 层析</b> → <b>纯度的检测和定量</b></p></div>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>步骤</th><th>做什么</th><th>依据的性质</th></tr></thead><tbody>
+<tr><td><b>核酸的抽取</b></td><td>破碎细胞、释放核酸</td><td>细胞结构</td></tr>
+<tr><td><b>两种核蛋白的分离</b></td><td>把 DNA 与 RNA 分开</td><td>两者在密度、电荷、稳定性上的差异</td></tr>
+<tr><td><b>蛋白质的去除</b></td><td>用酚、氯仿等变性并抽提蛋白</td><td>蛋白质与核酸在溶剂中的分配差异</td></tr>
+<tr><td><b>核酸的沉淀</b></td><td>用<strong>无水乙醇</strong>沉淀核酸</td><td>核酸不溶于乙醇（课件第 1 页即列此项）</td></tr>
+<tr><td><b>电泳 / 离心 / 层析</b></td><td>按大小、密度或电荷进一步分离</td><td>电荷、大小、形状、密度</td></tr>
+<tr><td><b>纯度检测与定量</b></td><td>测紫外吸收</td><td>碱基在 <strong>260 nm</strong> 的特征吸收</td></tr>
+</tbody></table></div>
+<div class="note"><b>纯度为什么用 A₂₆₀/A₂₈₀</b><p>核酸在 <strong>260 nm</strong> 有最大吸收（来自碱基的共轭双键），而蛋白质在 <strong>280 nm</strong> 有最大吸收（主要来自芳香族氨基酸）。因此<strong>两者的比值就是核酸纯度指标</strong>：纯的 DNA 样品 A₂₆₀/A₂₈₀ 约 1.8，纯 RNA 约 2.0。比值偏低说明蛋白质污染，偏高说明可能有 RNA 残留或降解。<br><br>这个指标把两章的内容连起来了：<strong>260 nm 来自第 6 章的碱基结构，280 nm 来自第 2 章的芳香族氨基酸侧链</strong>。理解了各自的来源，就不必死记数值。</p></div>
+</section>
+
+<section>
+<h2 id="sequencing">6. DNA 一级结构的测定</h2>
+<p>课件列出三类方法：<strong>Sanger 发明的末端终止法（双脱氧法）</strong>、<strong>Maxam 和 Gilbert 发明的化学断裂法</strong>、以及<strong>焦磷酸测序与深度测序</strong>。</p>
+<h3 id="sanger">6.1 末端终止法（双脱氧法）</h3>
+<p><strong>原理：ddNTP 掺入可导致 DNA 复制的末端终止。</strong></p>
+<p>关键在于 <strong>ddNTP（双脱氧核苷酸）缺少 3′-OH</strong>。DNA 聚合酶延伸链时必须用上一个核苷酸的 3′-OH 去进攻下一个核苷酸的 5′-磷酸；ddNTP 一旦掺入，链的 3′ 端就不再带有羟基，<strong>下一个核苷酸无法再连接，延伸就此终止</strong>。</p>
+<p>课件给出的步骤：</p>
+<ol>
+<li>进行<strong>四组平行反应</strong>。</li>
+<li>每一组反应混合物含有四种 dNTP。</li>
+<li>每一组反应还含有<strong>一种少量的 ddNTP</strong>（四组分别是 ddA、ddT、ddG、ddC）。</li>
+<li>在多数情况下，聚合酶使用正常核苷酸，DNA 合成正常延伸。</li>
+<li>有时，聚合酶使用 ddNTP，而导致末端终止。</li>
+<li>每一组反应中 ddNTP 的随机插入留下一系列<strong>长度不等的、以该双脱氧核苷酸结尾</strong>的 DNA 链。</li>
+<li>对每一组反应混合物走<strong>凝胶电泳</strong>。</li>
+<li>片段越短，走得越快，就越靠近凝胶的底部。</li>
+<li><strong>从凝胶的底部向上读出序列。</strong></li>
+<li>将读出的序列转化成<strong>互补链</strong>的序列。</li>
+</ol>
+<div class="figure-card"><img src="assets/08-sanger-sequencing.webp" alt="末端终止法测序原理图解"><p>图源：第8章 PPT 第 15 页。末端终止法图解——四个泳道对应四种 ddNTP，从下往上读即得序列。</p></div>
+<div class="note"><b>»为什么「少量」是关键，以及为什么必须读互补链</b><p><strong>①「少量 ddNTP」的作用</strong>：如果 ddNTP 浓度高，链会在第一个位置就终止，只能得到一条带；只有让 ddNTP 以<strong>低概率随机掺入</strong>，才能在每个可能的位置都产生一部分终止的链，形成<strong>长度连续的一套片段</strong>。这是「末端终止法」能读出完整序列的数学前提。<br><br><strong>② 为什么最终要转化</strong>：测序反应合成的是<strong>新链</strong>，而新链与模板链互补。所以电泳读出的是新链的序列，<strong>真正的待测序列是它的互补序列</strong>。这一步是初学者最容易漏掉的。</p></div>
+<div class="figure-card"><img src="assets/08-auto-sequencer.webp" alt="DNA自动分析仪的组成示意"><p>图源：第8章 PPT 第 16 页。DNA 自动分析仪的组成——把四组反应合并到一台仪器中，用荧光标记代替放射性同位素，实现自动化读取。这是 Sanger 法能够承担人类基因组计划的技术前提。</p></div>
+<h3 id="maxam">6.2 化学断裂法（Maxam-Gilbert 法）</h3>
+<p><strong>原理</strong>：用特殊的化学试剂处理待测的、具有末端放射性同位素（<strong>³²P</strong>）标记的单链 DNA（或只有一条链的末端被标记的双链 DNA 片段），造成<strong>特定碱基的修饰、脱落和戊糖-磷酸骨架被特异性切割</strong>，从而产生一组长度不同的 DNA 链降解产物，经聚丙烯酰胺凝胶电泳分离和放射自显影之后，可直接读出待测 DNA 片段的核苷酸序列。</p>
+<p><strong>步骤</strong>：进行四组平行的反应。</p>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>反应</th><th>处理方式</th></tr></thead><tbody>
+<tr><td><b>G 特异性剪切</b></td><td>在碱性条件下，先用<strong>硫酸二甲酯（DMS）</strong>处理，然后再使用<strong>哌啶</strong>处理</td></tr>
+<tr><td><b>嘌呤碱基特异性剪切</b>（A+G）</td><td>DNA 先进行<strong>酸处理</strong>，然后再加 DMS</td></tr>
+<tr><td><b>嘧啶碱基特异性剪切</b>（C+T）</td><td>先用<strong>肼</strong>处理，然后用哌啶处理</td></tr>
+<tr><td><b>C 特异性剪切</b></td><td>在<strong>高盐</strong>下，先用肼处理，然后用哌啶处理</td></tr>
+</tbody></table></div>
+<p>最后进行聚丙烯酰胺凝胶电泳和放射自显影。<strong>比较 G、A+G、C+T 和 C 各个泳道，自下而上从自显影片上就可读出 DNA 序列。</strong></p>
+<div class="figure-card"><img src="assets/08-maxam-gilbert.webp" alt="化学断裂法测定DNA一级结构的原理图"><p>图源：第8章 PPT 第 18 页。化学断裂法测定 DNA 一级结构的原理。</p></div>
+<div class="note"><b>为什么用四组而不是两组，以及高盐的作用</b><p>注意四个泳道是 <strong>G、A+G、C+T、C</strong>，而不是简单的 A/G/C/T 四组。原因是化学试剂很难做到对单一碱基的绝对专一：<strong>「A+G」与「C+T」是粗分，「G」与「C」是细分</strong>。通过比较泳道之间的<strong>差集</strong>才能确定每个位置的确切碱基——某位置若出现在「A+G」但不出现在「G」泳道，那就是 A。<br><br><strong>高盐的作用</strong>是抑制肼对 T 的反应，从而把「C+T」变成只切 C。这是化学选择性的一个典型技巧：<strong>用反应条件而不是新试剂来实现专一性</strong>。<br><br>对比两种方法：<strong>Sanger 法靠酶（聚合酶 + ddNTP），Maxam-Gilbert 法靠化学试剂</strong>。后者需要放射性标记且操作繁琐、试剂有毒，因此在自动化竞争中落败，但它的原理（特定碱基修饰 → 骨架切割 → 电泳读出）在 DNA 足迹分析等领域仍在使用。</p></div>
+<h3 id="ngs">6.3 焦磷酸测序与高通量测序</h3>
+<div class="figure-card"><img src="assets/08-pyrosequencing.webp" alt="焦磷酸测序的级联化学发光反应原理"><p>图源：第8章 PPT 第 19 页。焦磷酸测序原理。</p></div>
+<p><strong>焦磷酸测序的原理</strong>：需要在同一反应体系中发生由 <strong>4 种特异性酶催化的级联化学发光反应</strong>。在每一轮测序反应中，<strong>只加入一种 dNTP</strong>：</p>
+<ol>
+<li>若该 dNTP 与模板配对，聚合酶就可以将其掺入到引物链的 3′ 端，并<strong>释放出等量的 PPi（焦磷酸）</strong>。</li>
+<li>PPi 可转化为<strong>可见光信号</strong>，并最终转化为一个峰值。</li>
+<li><strong>每个峰值的高度与反应中掺入的核苷酸数目成正比。</strong></li>
+<li>第一轮反应结束后，再加入下一种 dNTP，继续下一轮 DNA 链的合成。</li>
+</ol>
+<div class="note"><b>焦磷酸测序为什么能测「连续相同碱基」</b><p>这是它相对于 Sanger 法的独特优势。因为<strong>峰值高度正比于掺入的核苷酸数目</strong>，如果模板上有连续的 TTTT，一次加入 dTTP 就会有四个核苷酸同时掺入，产生一个<strong>四倍高的峰</strong>。所以焦磷酸测序不仅能读序列，还能直接读出<strong>同聚物（homopolymer）的长度</strong>。<br><br>代价是：同聚物过长时（通常超过 5–6 个），峰高与数目的线性关系会变差，容易读错长度——这是 454 测序平台的主要错误来源。这也解释了为什么后来发展的 Illumina 等平台采用了完全不同的「可逆终止 + 荧光成像」策略。</p></div>
+<div class="figure-card"><img src="assets/08-ion-torrent.webp" alt="离子流（ion torrent）测序原理"><p>图源：第8章 PPT 第 20 页。离子流（Ion Torrent）测序——用半导体传感器直接检测掺入核苷酸时释放的<strong>氢离子</strong>引起的 pH 变化，把「化学信号 → 光信号」简化为「化学信号 → 电信号」，无需光学系统。</p></div>
+<div class="figure-card"><img src="assets/08-nanopore.webp" alt="纳米孔（nanopore）测序原理"><p>图源：第8章 PPT 第 21 页。纳米孔（Nanopore）测序——单链 DNA 穿过纳米孔时，不同碱基引起特征性的电流变化，通过电流信号直接读出序列。<strong>它的优势是能测长读长（long reads）</strong>，可以跨越重复序列区域，弥补了短读长测序在基因组组装上的短板。</p></div>
+<div class="note"><b>测序技术的三代演进，以及每一代解决了什么问题</b><p><strong>第一代（Sanger、Maxam-Gilbert）</strong>：准确度极高，是「金标准」，但通量低、成本高，一次只能读一条序列。<br><br><strong>第二代（焦磷酸测序、Ion Torrent、Illumina）</strong>：核心突破是<strong>大规模并行</strong>——把测序反应分散到数百万个微小反应单元中同时进行。课件提到的<strong>深度测序（deep sequencing）</strong>正是建立在此基础上：高通量测序技术<strong>可以对数百万个 DNA 分子同时进行测序，操作极为简便，大大节约了成本和时间</strong>，使得对一个物种基因组和转录组进行细致全面的分析成为可能。<br><br><strong>第三代（纳米孔、单分子测序）</strong>：核心突破是<strong>长读长与单分子</strong>——不需要扩增，直接读单个分子，读长可达数十 kb，能够解决重复序列、结构变异等问题。</p></div>
+</section>
+
+<section>
+<h2 id="rna">7. RNA 一级结构的测定</h2>
+<p>课件列出三种主要方法：</p>
+<div class="classification">
+<article><p><b>① 逆转录后测序</b> 先使用<strong>逆转录酶</strong>将待测 RNA 逆转录成 <strong>cDNA</strong>，然后再使用<strong>末端终止法</strong>等进行测定。</p></article>
+<article><p><b>② 部分消化 + 电泳</b> 用<strong>化学或/和酶学方法</strong>对放射性同位素标记的 RNA 进行<strong>部分消化</strong>后，再进行聚丙烯酰胺电泳分析。</p></article>
+<article><p><b>③ 质谱法</b> 直接用质谱测定。</p></article>
+</div>
+<div class="note"><b>为什么 RNA 测序要「绕道」cDNA</b><p>因为 Sanger 法依赖 <strong>DNA 聚合酶</strong>，而 DNA 聚合酶不能以 RNA 为模板。逆转录酶恰好能做到这一点，于是把 RNA 问题转化成 DNA 问题——<strong>这是「把不熟悉的体系转化为熟悉的体系」这一方法学思想的典型例子</strong>。<br><br>这也解释了为什么 RNA 测序在历史上远晚于 DNA 测序，以及为什么转录组研究要依赖逆转录（今天的 RNA-seq 依然如此：逆转录 → 建库 → 高通量测序）。</p></div>
+</section>
+
+<section>
+<h2 id="checklist">8. 复习清单</h2>
+<ol>
+<li>核酸的五类理化性质各对应哪一类研究方法？</li>
+<li>变性的<strong>定义</strong>是什么？定义中<strong>最关键的一句</strong>是哪句？为什么它决定了变性可逆？</li>
+<li>变性时<strong>紫外吸收、浮力密度、黏度、生物活性</strong>各怎样变化？这四条能否用一个结构变化统一解释？</li>
+<li><strong>增色效应</strong>与<strong>减色效应</strong>分别发生在什么过程？</li>
+<li><strong>Tm 的准确定义</strong>是什么？（提示：不要只说「熔点」）</li>
+<li>影响 Tm 的<strong>四类因素</strong>各是什么？各自的机制？</li>
+<li>为什么 <strong>GC 含量越高 Tm 越高</strong>？有几个层次的原因？</li>
+<li>从第 8 章第 6 页的图中读出：<strong>离子强度如何影响 Tm</strong>？为什么？</li>
+<li><strong>复性</strong>与<strong>退火</strong>的定义分别是什么？为什么必须<strong>缓慢冷却</strong>？</li>
+<li>复性时各表征如何变化？影响复性的<strong>四个因素</strong>是什么？</li>
+<li><strong>Cot 曲线</strong>为什么能反映序列复杂度？真核基因组为什么呈多相曲线？</li>
+<li>酸水解对<strong>糖苷键与磷酸酯键</strong>、<strong>嘌呤糖苷键与嘧啶糖苷键</strong>的选择性各是什么？会导致什么后果？</li>
+<li><strong>RNA 与 DNA 对碱水解</strong>的敏感性有何不同？结构原因是什么？</li>
+<li>这种碱敏感性差异的<strong>生理意义</strong>是什么？DNA 为什么应该更稳定？</li>
+<li>核酸酶可以按哪些<strong>维度</strong>分类？外切酶与内切酶的区别是什么？</li>
+<li>核酸分离纯化的<strong>六个步骤</strong>是什么？每一步依据什么性质？</li>
+<li>为什么用 <strong>A₂₆₀/A₂₈₀</strong> 判断核酸纯度？纯 DNA 与纯 RNA 的比值各约为多少？</li>
+<li><strong>ddNTP 为什么能终止链延伸</strong>？「少量 ddNTP」为什么是关键？</li>
+<li>写出 Sanger 法的<strong>完整操作步骤</strong>，并说明为什么最后要把读出的序列<strong>转化成互补链</strong>。</li>
+<li>Maxam-Gilbert 法为什么要用 <strong>G、A+G、C+T、C 四组</strong>而不是四组单一碱基？怎样从差集确定碱基？</li>
+<li>「高盐下用肼处理只切 C」体现了什么方法学思想？</li>
+<li><strong>Sanger 法与 Maxam-Gilbert 法</strong>的本质区别是什么（用什么实现专一性）？</li>
+<li><strong>焦磷酸测序</strong>的四种酶级联反应中，PPi 是怎样变成光信号的？</li>
+<li>焦磷酸测序为什么能读出<strong>同聚物长度</strong>？它的局限是什么？</li>
+<li><strong>Ion Torrent 与纳米孔</strong>分别检测什么信号？纳米孔的核心优势是什么？</li>
+<li><strong>深度测序</strong>的定义是什么？它使什么样的分析成为可能？</li>
+<li>RNA 一级结构测定的<strong>三种方法</strong>是什么？为什么第一条要「绕道 cDNA」？</li>
+</ol>
+<div class="next-step">
+<p><b>下一章预告</b> 第 7 章讲核酸的结构与功能，这一章讲核酸的性质与研究方法，两者共同完成了「核酸」这一模块。从第 9 章开始进入<strong>酶</strong>——生命化学反应的催化剂，也是本书后半部分（代谢）的必备工具。</p>
+<a class="term-link" href="chapter-09.html">前往第 9 章 · 酶学概论 →</a>
+</div>
+</section>
+
+<section>
+<h2 id="corrections">9. 课件提示与待核对项</h2>
+<div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>位置</th><th>课件原文情况</th><th>整理时的处理</th></tr></thead><tbody>
+<tr><td>第 4 页</td><td>表征写「生物活性不变、降低或丧失」</td><td>照录。这是课件自己的谨慎表述——变性程度不同，生物活性可以是部分保留的，不能一概说「丧失」</td></tr>
+<tr><td>第 4 页</td><td>「DNA 的 Tm 值受到 DNA 的均一性、G-C 含量、离子强度和特殊的化学试剂的影响」，<strong>只说有四类因素，未解释机制</strong></td><td>正文补写了每一类的机制。其中<strong>「均一性」影响的是曲线陡度而非 Tm 绝对值</strong>，请注意区分，此处按课件原文并列列出</td></tr>
+<tr><td>第 6 页</td><td>图中有两条直线（低盐与高盐），但该页只有图题，<strong>未标注具体盐浓度</strong></td><td>正文补注了图上的浓度：低盐 0.01 mol·L⁻¹ 磷酸 + 0.001 mol·L⁻¹ EDTA；高盐 0.15 mol·L⁻¹ NaCl + 0.015 mol·L⁻¹ 柠檬酸钠。<strong>这些数值来自图内标注</strong></td></tr>
+<tr><td>第 10 页</td><td>「酸碱解离」在第 1 页提纲中列为理化性质之一，<strong>但正文各页未单独展开</strong></td><td>正文只在总览表中保留该项并注明对应技术（电泳、离子交换层析），未另行展开。<strong>如需补充请对教材</strong></td></tr>
+<tr><td>第 11 页</td><td>核酸酶分类表以图片形式给出，文字转储为「不同性质的核酸酶（Pu 表示嘌呤，Py 表示嘧啶）」</td><td>正文按通用分类维度（底物、作用位置、切割产物）重写为表格。<strong>维度划分与课件表可能不完全一致，请对原图核对</strong></td></tr>
+<tr><td>第 19 页</td><td>焦磷酸测序写「由 4 种特异性酶催化的级联化学发光反应」，<strong>未列出这四种酶的名称</strong></td><td>正文照录「四种酶」的说法，未擅自补名（通用教材为 DNA 聚合酶、ATP 硫酸化酶、荧光素酶、腺苷三磷酸双磷酸酶，请对课件核对后再补）</td></tr>
+<tr><td>第 23–24 页</td><td>「RNA 一级结构的测定」两页内容<strong>完全相同</strong>（重复页）</td><td>正文合并为一节，未重复</td></tr>
+<tr><td>第 15 / 18 页</td><td>末端终止法与化学断裂法各有一页纯图（图题分别为「末端终止法图解」「化学断裂法测定 DNA 一级结构的原理」）</td><td>正文按图题命名并保留原图，图注中说明其在流程中的位置</td></tr>
+</tbody></table></div>
+</section>
+
+<footer class="source">来源：第8章《核酸的性质及研究方法》课件（24 页）；术语沿用第 6–7 章约定；测序部分按课件原页整理并补充方法学背景。图片均为课件原图忠实裁剪，未作重绘。</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

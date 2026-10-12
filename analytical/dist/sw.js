@@ -1,4 +1,4 @@
-const CACHE='analytical-atlas-v10';
+﻿const CACHE='analytical-atlas-v11';
 const SHELL=['./','index.html','chapter-1.html','chapter-2.html','chapter-3.html','chapter-4.html','chapter-5.html','chapter-6.html','chapter-7.html','terms.html','term.html','style.css','content.css','lesson.css','course-extra.css','ppt-figures.css','script.js','icon.svg','manifest.webmanifest','data/terms.json','data/notes.json'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

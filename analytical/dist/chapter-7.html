@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="分析化学 I 第7章 络合滴定">
+<title>07 络合滴定 · 分析化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="course-extra.css">
+<link rel="stylesheet" href="ppt-figures.css">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<a href="chapter-3.html">
+<span>03</span>酸碱平衡</a>
+<a href="chapter-4.html">
+<span>04</span>酸碱滴定</a>
+<a href="chapter-5.html">
+<span>05</span>重量分析</a>
+<a href="chapter-6.html">
+<span>06</span>沉淀滴定</a>
+<a class="active" href="chapter-7.html">
+<span>07</span>络合滴定</a>
+<p class="nav-label">本章目录</p>
+<a href="#kf">
+<span>9.1</span>络合物与形成常数</a>
+<a href="#chelate">
+<span>9.2</span>螯合效应</a>
+<a href="#edta">
+<span>9.3</span>EDTA 及其解离平衡</a>
+<a href="#conditional">
+<span>9.4</span>条件形成常数</a>
+<a href="#curves">
+<span>9.5</span>络合滴定曲线</a>
+<a href="#minph">
+<span>9.6</span>最低 pH 与滴定选择性</a>
+<a href="#indicator">
+<span>9.7</span>金属指示剂</a>
+<a href="#masking">
+<span>9.8</span>掩蔽与解蔽</a>
+<a href="#beta">
+<span>9.9</span>累积形成常数与物种分布</a>
+<a href="#applications">
+<span>9.10</span>络合滴定的应用</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside>
+<main class="workspace">
+<article class="article lesson">
+<header class="article-head">
+<p class="eyebrow">07 · COMPLEXOMETRIC TITRATIONS</p>
+<h1>络合滴定</h1>
+<p>金属离子在水里从来不是裸的：只要有能提供孤对电子的配体，它就会被包起来。这一章先把络合平衡的常数体系搭好，再用 EDTA 把「配位」变成一种可以滴定到突跃的分析手段——条件形成常数、最低 pH、指示剂与掩蔽，全部由此展开。</p>
+<div>
+<span>教材 Ch.9</span>
+<span>形成常数 Kf</span>
+<span>条件形成常数 K′f</span>
+<span>EDTA</span>
+<span>铬黑 T</span>
+<span>掩蔽</span>
+</div>
+</header>
+<nav class="chapter-jump" aria-label="本章快速导航">
+<a href="#kf">络合物与形成常数</a>
+<a href="#chelate">螯合效应</a>
+<a href="#edta">EDTA 及其解离平衡</a>
+<a href="#conditional">条件形成常数</a>
+<a href="#curves">络合滴定曲线</a>
+<a href="#minph">最低 pH 与滴定选择性</a>
+<a href="#indicator">金属指示剂</a>
+<a href="#masking">掩蔽与解蔽</a>
+<a href="#beta">累积形成常数与物种分布</a>
+<a href="#applications">络合滴定的应用</a>
+</nav>
+<section id="kf">
+<p class="section-kicker">9.1 COMPLEXES AND FORMATION CONSTANTS</p>
+<h2>络合物与形成常数</h2>
+<p>络合（complexation）是路易斯酸与路易斯碱之间的配位反应。金属阳离子有空轨道，是电子对受体；配体（ligand）有孤对电子（通常在 O、S、N 上），是电子对给体。配体的个数由金属的配位数和配体上可配位基团的数目共同决定。</p>
+<p>最直观的例子是铜氨络离子：水合铜离子在溶液中呈浅蓝色，加入氨以后变成深蓝色的四氨合铜离子。银离子也能被氨络合，且是分步进行的——每加一个氨分子写一个常数，这一类常数叫形成常数 K<sub>f</sub>。</p>
+<div class="equation large">
+<b>Ag<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sup>+</sup></b>&nbsp;&nbsp;&nbsp;K<sub>f1</sub> = [Ag(NH<sub>3</sub>)<sup>+</sup>] / ([Ag<sup>+</sup>][NH<sub>3</sub>]) = 2.5 × 10<sup>3</sup><br><b>Ag(NH<sub>3</sub>)<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup></b>&nbsp;&nbsp;&nbsp;K<sub>f2</sub> = 1.0 × 10<sup>4</sup>
+</div>
+<p>K<sub>f</sub> 也叫稳定常数 K<sub>s</sub> 或 K<sub>stab</sub>。如果反过来写解离反应，浓度项取倒数，常数就是形成常数的倒数，叫不稳定常数 K<sub>i</sub> 或解离常数 K<sub>d</sub>，即 K<sub>f</sub> = K<sub>s</sub> = 1/K<sub>i</sub> = 1/K<sub>d</sub>。两个常数都能用，但要与所写的反应式严格对应。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>形成常数 K<sub>f</sub></th>
+<th>解离常数 K<sub>d</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>反应方向</td>
+<td>M + nL ⇌ ML<sub>n</sub>（缔合）</td>
+<td>ML<sub>n</sub> ⇌ M + nL（解离）</td>
+</tr>
+<tr>
+<td>表达式</td>
+<td>K<sub>f</sub> = [ML<sub>n</sub>] / ([M][L]<sup>n</sup>)</td>
+<td>K<sub>d</sub> = [M][L]<sup>n</sup> / [ML<sub>n</sub>]</td>
+</tr>
+<tr>
+<td>数值关系</td>
+<td>越大表示络合物越稳定</td>
+<td>K<sub>d</sub> = 1/K<sub>f</sub>，越小越稳定</td>
+</tr>
+<tr>
+<td>酸碱类比</td>
+<td>相当于酸碱的 K<sub>a</sub></td>
+<td>相当于酸碱的 K<sub>b</sub></td>
+</tr>
+<tr>
+<td>Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup></td>
+<td>2.5 × 10<sup>7</sup></td>
+<td>4.0 × 10<sup>−8</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">教材把酸的解离 HA ⇌ H<sup>+</sup> + A<sup>−</sup> 与络合物的解离 ML ⇌ M + L 并列，差别只在于惯例把前者写成解离、后者写成缔合。</p>
+<p>教材用两道例题说明计算套路：当 K<sub>f</sub> 很大时，可以先假设络合反应「基本进行完全」，用被稀释后的初始浓度算出络合物的量，再令剩余的游离金属浓度为 x 代回 K<sub>f</sub> 求解。</p>
+<div class="worked-example">
+<span>例</span>
+<h3>等体积混合 0.20 mol·L⁻¹ 的 M²⁺ 与 L（K<sub>f</sub> = 1.0 × 10<sup>8</sup>）</h3>
+<p>等体积混合使两者初始浓度都减半为 0.10 mol·L<sup>−1</sup>。设平衡时 [M<sup>2+</sup>] = x，则 [L] = x，[ML<sup>2+</sup>] = 0.10 − x ≈ 0.10。</p><p>代入 K<sub>f</sub>：0.10 / x<sup>2</sup> = 1.0 × 10<sup>8</sup>，解得 x = [M<sup>2+</sup>] = <b>3.2 × 10<sup>−5</sup> mol·L<sup>−1</sup></b>。注意这一步的前提是 x 远小于 0.10；若 K<sub>f</sub> 不够大，就得直接解二次方程（教材建议用 Excel 的单变量求解 Goal Seek）。</p>
+</div>
+<div class="worked-example">
+<span>例</span>
+<h3>25 mL 0.010 M AgNO₃ 加入 50 mL 0.015 M trien（K<sub>f</sub> = 5.0 × 10<sup>7</sup>）</h3>
+<p>先算毫摩尔数：Ag<sup>+</sup> 为 0.25 mmol，trien 为 0.75 mmol。反应几乎完全，0.25 mmol 的 Ag<sup>+</sup> 消耗等量 trien，余下 0.50 mmol trien 过量，生成 0.25 mmol 络合物，总体积 75 mL。</p><p>于是 [trien] = 0.50/75 = 6.7 × 10<sup>−3</sup> mol·L<sup>−1</sup>，[Ag(trien)<sup>+</sup>] = 0.25/75 = 3.3 × 10<sup>−3</sup> mol·L<sup>−1</sup>，设 [Ag<sup>+</sup>] = x：</p><p>3.3 × 10<sup>−3</sup> / (x × 6.7 × 10<sup>−3</sup>) = 5.0 × 10<sup>7</sup>，得 [Ag<sup>+</sup>] = <b>9.8 × 10<sup>−9</sup> mol·L<sup>−1</sup></b>。由于 x 比 6.7 × 10<sup>−3</sup> 小五个数量级，忽略 x 是成立的。</p>
+</div>
+<p class="source-note">来源：教材 §9.1 Complexes and Formation Constants，p322–324；例 9.1、9.2。</p>
+</section>
+<section id="chelate">
+<p class="section-kicker">9.2 CHELATES &amp; THE CHELON EFFECT</p>
+<h2>螯合效应：为什么多齿配体更稳定</h2>
+<p>像氨这样的简单配体很少直接用作滴定剂。原因是分步常数彼此接近且都不大，溶液中同时存在 ML、ML<sub>2</sub>、ML<sub>3</sub>……多种物种，无法对应一个化学计量明确的产物，滴定终点自然不锐利。</p>
+<p>解决办法是让一个配体分子上带两个或更多配位基团。Schwarzenbach 证明，把氨换成二齿的乙二胺 NH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>NH<sub>2</sub>（en），生成的 Cu(en)<sub>2</sub><sup>2+</sup> 稳定性显著提高。分子上带两个或更多可配位基团的有机试剂叫螯合剂（chelating agent），生成的环状络合物叫螯合物（chelate）；chelate 一词来自希腊语「爪」，形象地说明配体把金属离子「抓」在中间。</p>
+<b>螯合效应：多齿比单齿更稳定</b>
+<p>这种稳定性提升主要是熵效应，所以又叫螯合效应（chelon effect / chelate effect）。反应的驱动力是自由能下降 ΔG = ΔH − TΔS。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>对比</th>
+<th>Cu(NH<sub>3</sub>)<sub>4</sub><sup>2+</sup></th>
+<th>Cu(en)<sub>2</sub><sup>2+</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>配位基团</td>
+<td>4 个 NH<sub>3</sub> 分子</td>
+<td>2 个 en 分子，共 4 个氨基</td>
+</tr>
+<tr>
+<td>焓变 ΔH</td>
+<td>放出热量（相近）</td>
+<td>放出热量（相近）</td>
+</tr>
+<tr>
+<td>解离后物种数</td>
+<td>5 种（Cu<sup>2+</sup> + 4NH<sub>3</sub>）</td>
+<td>3 种（Cu<sup>2+</sup> + 2en）</td>
+</tr>
+<tr>
+<td>熵变 ΔS</td>
+<td>较大</td>
+<td>较小</td>
+</tr>
+<tr>
+<td>解离倾向</td>
+<td>较强</td>
+<td>较弱</td>
+</tr>
+<tr>
+<td>稳定性</td>
+<td>较低</td>
+<td>较高</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">两边的 ΔH 相差不大，区别在解离后生成的物种数：物种越多、无序度越大、ΔS 越大，解离的 ΔG 越负。因此多齿螯合物的 K<sub>f</sub> 更大。</p>
+<p class="source-note">来源：教材 §9.2 The Chelon Effect，p324–325。</p>
+</section>
+<section id="edta">
+<p class="section-kicker">9.3 EDTA EQUILIBRIA</p>
+<h2>EDTA 及其解离平衡</h2>
+<p>最有用的螯合剂是氨羧络合剂，其中氨基氮和羧基氧共同充当配位原子。氨基氮碱性更强、更容易质子化；一旦与金属配位，这些质子就被金属取代下来，因此生成的螯合物带负电。</p>
+<p>最典型的是乙二胺四乙酸（EDTA），记作 H<sub>4</sub>Y。它是四元酸，四个可解离氢来自四个羧基。在足够低的 pH 下两个氮还可再质子化成为六元酸，但那个 pH 极低，实际几乎不用。<b>真正与金属配位的是完全去质子的 Y<sup>4−</sup>。</b></p>
+<p>EDTA 一个分子上有六个配位原子，足以满足大多数金属离子的配位需求，所以它与金属几乎总是形成 <b>1:1</b> 络合物，与金属电荷无关——这正是它能当滴定剂的关键。</p>
+<p>H<sub>4</sub>Y 本身在水中溶解度很低，实际使用的是二钠盐 Na<sub>2</sub>H<sub>2</sub>Y·2H<sub>2</sub>O，溶于水后主要物种是 H<sub>2</sub>Y<sup>2−</sup>，溶液 pH 约 4～5（由 [H<sup>+</sup>] = √(K<sub>a2</sub>K<sub>a3</sub>) 算得理论值 4.4）。</p>
+<b>四个解离常数</b>
+<div class="equation large">
+<b>H<sub>4</sub>Y ⇌ H<sup>+</sup> + H<sub>3</sub>Y<sup>−</sup></b>&nbsp;&nbsp;K<sub>a1</sub> = 1.0 × 10<sup>−2</sup><br><b>H<sub>3</sub>Y<sup>−</sup> ⇌ H<sup>+</sup> + H<sub>2</sub>Y<sup>2−</sup></b>&nbsp;&nbsp;K<sub>a2</sub> = 2.2 × 10<sup>−3</sup><br><b>H<sub>2</sub>Y<sup>2−</sup> ⇌ H<sup>+</sup> + HY<sup>3−</sup></b>&nbsp;&nbsp;K<sub>a3</sub> = 6.9 × 10<sup>−7</sup><br><b>HY<sup>3−</sup> ⇌ H<sup>+</sup> + Y<sup>4−</sup></b>&nbsp;&nbsp;K<sub>a4</sub> = 5.5 × 10<sup>−11</sup>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>pH</th>
+<th>Y<sup>4−</sup> 的分数 α<sub>4</sub></th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0～2</td>
+<td>≈ 0</td>
+<td>几乎全是 H<sub>4</sub>Y / H<sub>3</sub>Y<sup>−</sup>，不能络合</td>
+</tr>
+<tr>
+<td>4.4</td>
+<td>很小</td>
+<td>Na<sub>2</sub>H<sub>2</sub>Y 溶液的自身 pH</td>
+</tr>
+<tr>
+<td>7</td>
+<td>4.8 × 10<sup>−4</sup></td>
+<td>仅万分之五的 EDTA 有络合能力</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.35</td>
+<td>约三分之一的 EDTA 处于 Y<sup>4−</sup> 形式</td>
+</tr>
+<tr>
+<td>≥12</td>
+<td>≈ 1</td>
+<td>EDTA 几乎全部解离为 Y<sup>4−</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">α<sub>4</sub> 是本章的核心开关：pH 越低，Y<sup>4−</sup> 占比越小，质子对金属的竞争越强，络合越不完全。</p>
+<p class="source-note">来源：教材 §9.2 EDTA Equilibria，p325–328；式 9.5–9.8、图 9.1。</p>
+</section>
+<section id="conditional">
+<p class="section-kicker">9.4 CONDITIONAL FORMATION CONSTANT</p>
+<h2>条件形成常数：把 pH 打包进常数</h2>
+<p>以 Ca<sup>2+</sup> 为例，络合反应写成：</p>
+<div class="equation large">
+<b>Ca<sup>2+</sup> + Y<sup>4−</sup> ⇌ CaY<sup>2−</sup></b>&nbsp;&nbsp;&nbsp;K<sub>f</sub> = [CaY<sup>2−</sup>] / ([Ca<sup>2+</sup>][Y<sup>4−</sup>])
+</div>
+<p>问题在于：实验中我们只知道 EDTA 的总浓度 C<sub>H4Y</sub>，而 K<sub>f</sub> 的表达式里要的是 [Y<sup>4−</sup>]。两者由 α<sub>4</sub> 联系：[Y<sup>4−</sup>] = α<sub>4</sub>C<sub>H4Y</sub>。把它代进 K<sub>f</sub> 并移项，就得到<b>条件形成常数</b>：</p>
+<div class="equation large">
+<b>K<sub>f</sub> α<sub>4</sub> = K′<sub>f</sub> = [CaY<sup>2−</sup>] / ([Ca<sup>2+</sup>]C<sub>H4Y</sub>)</b>
+</div>
+<div class="notation-box">
+<b>K′f 的双重含义</b>
+<p>
+K′<sub>f</sub> 既可以看成「pH 修正后的形成常数」，也可以看成「把 C<sub>H4Y</sub> 当作配体分析浓度时的表观常数」。它的好处是：只要 pH 固定（缓冲溶液），后面的计算与处理一元酸碱完全一样，不必每次再算 α<sub>4</sub>。</p>
+</div>
+<div class="worked-example">
+<span>例</span>
+<h3>pH 10 时 α₄ 是多少？0.100 M Ca²⁺ 加入等量 EDTA 后 pCa 是多少？</h3>
+<p>把 [H<sup>+</sup>] = 10<sup>−10</sup> 与四个 K<sub>a</sub> 代入 Q<sub>4</sub>，得 Q<sub>4</sub> = 2.35 × 10<sup>−21</sup>；分子 Ka1Ka2Ka3Ka4 = 8.35 × 10<sup>−22</sup>。</p><p>α<sub>4</sub> = 8.35 × 10<sup>−22</sup> / 2.35 × 10<sup>−21</sup> = <b>0.36</b>。</p><p>再算等当点：10.0 mmol Ca<sup>2+</sup> 与 10.0 mmol EDTA 在 200 mL 中生成 0.0500 mol·L<sup>−1</sup> 的 CaY<sup>2−</sup>。此刻游离的 [Ca<sup>2+</sup>] 全部来自络合物解离，设它为 x；游离的 Y<sup>4−</sup> 也由解离产生，但其中只有 α<sub>4</sub> 那一份以 Y<sup>4−</sup> 形式存在，故 [Y<sup>4−</sup>] = α<sub>4</sub>x = 0.36x。把这两个量代回 K<sub>f</sub> 的定义式：</p><p>5.0 × 10<sup>10</sup> = 0.0500 / (x · 0.36x)，解得 x = 1.7 × 10<sup>−6</sup> mol·L<sup>−1</sup>，即 <b>pCa = 5.77</b>。</p><p>这里有一个常见的坑：<b>不要把条件常数与同一个 x 再乘一次 α<sub>4</sub></b>。K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub> 的分母用的是 EDTA 的分析浓度 C<sub>H4Y</sub>；等当点处若同时用 K′<sub>f</sub> 又用 C<sub>H4Y</sub> = 0.36x，就等于把 α<sub>4</sub> 算了两次，会得到 pCa ≈ 5.05，与教材的 5.77 不符。实用做法是：<b>等当点前、等当点后</b>用 K′<sub>f</sub>（条件常数，处理过量组分最方便），<b>等当点本身</b>回到 K<sub>f</sub> 加 α<sub>4</sub> 的定义式。</p>
+</div>
+<p class="source-note">来源：教材 §9.2 Conditional Formation Constant，p328–329；式 9.11–9.14，例 9.3。</p>
+</section>
+<section id="curves">
+<p class="section-kicker">9.5 METAL–EDTA TITRATION CURVES</p>
+<h2>络合滴定曲线：三段式与二次方程</h2>
+<p>有了 K′<sub>f</sub>，络合滴定的曲线可以像酸碱滴定那样分段计算。教材用 pH 10 下 0.1 M Ca<sup>2+</sup> 被 0.1 M EDTA 滴定为例，把曲线分成三段——这三段的算法与酸碱滴定、沉淀滴定完全同构。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>主导物种</th>
+<th>算法</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>滴定前</td>
+<td>游离 Ca<sup>2+</sup></td>
+<td>pCa = −log C<sub>M</sub></td>
+<td>最简单的一段</td>
+</tr>
+<tr>
+<td>等当点前</td>
+<td>过量 Ca<sup>2+</sup> + 生成的 CaY<sup>2−</sup></td>
+<td>游离金属 ≈ 未反应的毫摩尔数 / 总体积</td>
+<td>络合物解离很少，可忽略</td>
+</tr>
+<tr>
+<td>等当点</td>
+<td>几乎全是 CaY<sup>2−</sup></td>
+<td>由 K′<sub>f</sub> 反解 [Ca<sup>2+</sup>]</td>
+<td>[Ca<sup>2+</sup>] = C<sub>H4Y</sub>，设为 x</td>
+</tr>
+<tr>
+<td>等当点后</td>
+<td>过量 EDTA</td>
+<td>C<sub>H4Y</sub> 取过量的 EDTA 浓度</td>
+<td>[Ca<sup>2+</sup>] 由 K′<sub>f</sub> 与 C<sub>H4Y</sub> 共同决定</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">「等当点前看剩余金属，等当点后看过量 EDTA」——这条分界线是三类滴定通用的思维。</p>
+<div class="worked-example">
+<span>例</span>
+<h3>pH 10 下用 0.100 M EDTA 滴定 100 mL 0.100 M Ca²⁺</h3>
+<p>(a) 滴定前：pCa = −log 0.100 = <b>1.00</b>。</p><p>(b) 加入 50 mL EDTA：Ca<sup>2+</sup> 余 10.0 − 5.0 = 5.0 mmol，总体积 150 mL，[Ca<sup>2+</sup>] = 0.033 mol·L<sup>−1</sup>，<b>pCa = 1.48</b>。</p><p>(c) 等当点（加 100 mL）：CaY<sup>2−</sup> = 10.0/200 = 0.0500 mol·L<sup>−1</sup>，用 K<sub>f</sub> = 5.0 × 10<sup>10</sup> 与 [Y<sup>4−</sup>] = 0.36x：x = √(0.0500/(0.36 × 5.0 × 10<sup>10</sup>)) = 1.7 × 10<sup>−6</sup>，<b>pCa = 5.77</b>。</p><p>(d) 加入 150 mL：过量 EDTA 5.0 mmol，C<sub>H4Y</sub> = 5.0/250 = 0.020 mol·L<sup>−1</sup>，CaY<sup>2−</sup> = 10.0/250 = 0.0400 mol·L<sup>−1</sup>。这一段用过量的条件常数最省事（K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub> = 5.0 × 10<sup>10</sup> × 0.36 = 1.8 × 10<sup>10</sup>）：</p><p>0.0400/(x × 0.020) = 1.8 × 10<sup>10</sup>，x = 1.1 × 10<sup>−10</sup>，<b>pCa = 9.95</b>。</p>
+</div>
+<p>教材还给出一个经验判据：对 A + B ⇌ C 这样的二元缔合反应，只要<b>有效平衡常数大于约 10<sup>6</sup></b>，就可以认为限量试剂反应定量完成（&gt;99.9%）。pCa 从 1.48 跳到 5.77 再到 9.95，这个跨度就是可用指示剂定位终点的依据。</p>
+<p>如果需要「给定 pM 反求体积」，教材给出显式解（式 9.15），也可由质量平衡导出关于 [ML] 的二次方程：</p>
+<div class="equation large">
+K′<sub>f</sub>(C<sub>M</sub>V<sub>M</sub> − [ML]V<sub>T</sub>)(C<sub>L</sub>V<sub>L</sub> − [ML]V<sub>T</sub>) = [ML]V<sub>T</sub><sup>2</sup>
+</div>
+<p class="source-note">来源：教材 §9.3 Metal–EDTA Titration Curves，p330–332；式 9.15，图 9.3，例 9.4。</p>
+</section>
+<section id="minph">
+<p class="section-kicker">9.6 MINIMUM pH &amp; SELECTIVITY</p>
+<h2>最低 pH 与滴定选择性</h2>
+<p>曲线能不能出现锐利突跃，取决于 K′<sub>f</sub> 够不够大。教材把判据定为 log K′<sub>f</sub> ≥ 6。由于 K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub>，K<sub>f</sub> 越小的金属就需要越高的 pH（让 α<sub>4</sub> 更大）来补偿。</p>
+<p>按此画出「最低 pH」图后，金属被分成三组：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>分组</th>
+<th>最低 pH 区间</th>
+<th>代表金属</th>
+<th>分析意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一组</td>
+<td>pH &lt; 3（强酸性）</td>
+<td>Bi<sup>3+</sup>、Fe<sup>3+</sup>、Th<sup>4+</sup>、Hg<sup>2+</sup>、In<sup>3+</sup>、Sc<sup>3+</sup></td>
+<td>可在其余金属共存时选择性滴定</td>
+</tr>
+<tr>
+<td>第二组</td>
+<td>pH 3～7</td>
+<td>Cu<sup>2+</sup>、Zn<sup>2+</sup>、Pb<sup>2+</sup>、Ni<sup>2+</sup>、Co<sup>2+</sup>、Cd<sup>2+</sup>、Al<sup>3+</sup></td>
+<td>第三组在此不络合，故可与第三组共存时滴定</td>
+</tr>
+<tr>
+<td>第三组</td>
+<td>pH &gt; 7</td>
+<td>Ca<sup>2+</sup>、Mg<sup>2+</sup>、Sr<sup>2+</sup>、Ba<sup>2+</sup>、Mn<sup>2+</sup></td>
+<td>K<sub>f</sub> 较小，必须提高 pH 才能滴定</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">教材图 9.4 的判据是 log K′<sub>f</sub> = 6；虚线把金属按形成常数分成三组。</p>
+<div class="notation-box">
+<b>高 pH 的两难</b>
+<p>
+pH 越高 α<sub>4</sub> 越大，但氢氧根也开始与金属竞争：M<sup>2+</sup> + OH<sup>−</sup> → MOH<sup>+</sup>，甚至生成氢氧化物沉淀。所以 Fe<sup>3+</sup>、Th<sup>4+</sup> 这类易水解的金属<b>不能直接滴定</b>，必须改用返滴定或加入辅助络合剂。Ca<sup>2+</sup>（K<sub>f</sub> 约 10<sup>10</sup>）则要求 pH ≳ 8 才能得到 log K′<sub>f</sub> = 6。</p>
+</div>
+<p>教材同时点出 K′<sub>f</sub> 与 pH 关系曲线的另一个特征：由于 K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub>，同一 pH 下每条曲线都乘以同一个 α<sub>4</sub>，所以三条曲线彼此近似平行。在 pH 13 附近 α<sub>4</sub> ≈ 1，K′<sub>f</sub> 就几乎等于 K<sub>f</sub> 本身。</p>
+<p>反过来，这也意味着<b>络合滴定可以靠调 pH 获得选择性</b>：把 pH 压到某一组金属的最低 pH 以下，其余金属就不会被滴定。</p>
+<p class="source-note">来源：教材 §9.3 Minimum pH and Masking，p332–334；图 9.2、9.4。</p>
+</section>
+<section id="indicator">
+<p class="section-kicker">9.7 METALLOCHROMIC INDICATORS</p>
+<h2>金属指示剂：本身也是螯合剂</h2>
+<p>终点可以电位法测定（用离子选择性电极），但更简单的是加指示剂。<b>络合滴定的指示剂本身就是螯合剂</b>，通常属于邻,邻′-二羟基偶氮类染料。</p>
+<p>最典型的是铬黑 T（Eriochrome Black T）。它有三个可解离质子，记作 H<sub>3</sub>In。以 Mg<sup>2+</sup> 的滴定为例：加少量指示剂后，它与部分 Mg<sup>2+</sup> 生成红色络合物，而游离指示剂是蓝色。当游离 Mg<sup>2+</sup> 被滴定完后，EDTA 夺走指示剂上的镁，颜色由红变蓝：</p>
+<div class="equation large">
+<b>MgIn<sup>−</sup>（红） + H<sub>2</sub>Y<sup>2−</sup>（无色） → MgY<sup>2−</sup>（无色） + HIn<sup>2−</sup>（蓝） + H<sup>+</sup></b>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>要求</th>
+<th>为什么</th>
+<th>违反的后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M–指示剂络合物必须比 M–EDTA 弱</td>
+<td>否则 EDTA 夺不走指示剂</td>
+<td>终点时颜色不变或拖尾</td>
+</tr>
+<tr>
+<td>但也不能太弱</td>
+<td>否则滴定一开始 EDTA 就取代指示剂</td>
+<td>终点弥散、变色提前</td>
+</tr>
+<tr>
+<td>定量判据：K<sub>f</sub>(MIn) 比 K<sub>f</sub>(MY) 小 10～100 倍</td>
+<td>既保证先络合又保证能被取代</td>
+<td>这是选择指示剂的核心依据</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">指示剂络合物稳定性处在「够强以显色、够弱以被取代」的窗口内，这个窗口就是它能指示终点的原因。</p>
+<div class="notation-box">
+<b>Ca²⁺ 为什么必须「借」一点镁</b>
+<p>
+Ca–EDTA 与 Mg–EDTA 的形成常数太接近，调 pH 也无法区分，所以两者会一起被滴定（这正是水的总硬度的测定原理，以 ppm CaCO<sub>3</sub> 表示）。但铬黑 T 与 Ca<sup>2+</sup> 生成的络合物太弱，单独滴定钙时变色不锐利。解决办法是加入少量 Mg<sup>2+</sup> 或 Mg–EDTA：加入 MgCl<sub>2</sub> 时需做空白校正；而加入 Mg–EDTA 时，试样中的 Ca<sup>2+</sup> 会把 EDTA 从 Mg 上置换下来（因为 Ca–EDTA 更稳定），游离出的 Mg<sup>2+</sup> 再去与指示剂显色，终点时等量的 EDTA 夺走指示剂上的镁——<b>这个办法不需要校正</b>。</p>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>指示剂</th>
+<th>适用对象</th>
+<th>使用条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>铬黑 T（Eriochrome Black T）</td>
+<td>Mg<sup>2+</sup>、Ca<sup>2+</sup>+Mg<sup>2+</sup>、Zn<sup>2+</sup> 等</td>
+<td>pH 10 氨性缓冲（NH<sub>3</sub>–NH<sub>4</sub>Cl）</td>
+</tr>
+<tr>
+<td>钙镁指示剂（Calmagite）</td>
+<td>Ca<sup>2+</sup>、Mg<sup>2+</sup></td>
+<td>性质与铬黑 T 类似，变色更清晰</td>
+</tr>
+<tr>
+<td>二甲酚橙（Xylenol orange）</td>
+<td>Bi<sup>3+</sup>、Th<sup>4+</sup>、Zn<sup>2+</sup>、Pb<sup>2+</sup></td>
+<td>酸性介质中使用</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">实际工作中还常用「先滴定总量、再掩蔽其中一种后滴定另一种」的办法做差减。</p>
+<p>关于 EDTA 标准溶液：把 Na<sub>2</sub>H<sub>2</sub>Y·2H<sub>2</sub>O 在 80 °C 干燥 2 h，结晶水不会失去，因此高纯试剂可直接作基准物质配制标准溶液。</p>
+<p class="source-note">来源：教材 §9.4 Detection of the End Point，p334–336；式 9.16。</p>
+</section>
+<section id="masking">
+<p class="section-kicker">9.8 MASKING &amp; DEMASKING</p>
+<h2>掩蔽与解蔽</h2>
+<p>当试样中有多种金属共存时，仅靠调 pH 往往不够。掩蔽（masking）就是让干扰离子「暂时失去反应能力」，而待测离子照常被滴定。教材列出四类途径：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>掩蔽途径</th>
+<th>机理</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>络合掩蔽（最常用）</td>
+<td>选择性地生成稳定的可溶性络合物</td>
+<td>F<sup>−</sup> 掩蔽 Sn(IV) 以滴定 Sn(II)</td>
+</tr>
+<tr>
+<td>沉淀掩蔽</td>
+<td>把干扰离子沉淀掉</td>
+<td>以硫酸盐沉淀 Pb<sup>2+</sup> 后滴定 Bi<sup>3+</sup></td>
+</tr>
+<tr>
+<td>氧化还原掩蔽</td>
+<td>改变价态使其不再络合</td>
+<td>抗坏血酸把 Cu<sup>2+</sup> 还原为 Cu(I)</td>
+</tr>
+<tr>
+<td>动力学掩蔽</td>
+<td>利用络合速度差异</td>
+<td>Cr(III) 的 EDTA 络合物虽稳定但生成很慢，故可在 Cr(III) 存在下滴定其他金属</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">实际工作中常把这几种方式组合使用。</p>
+<p>教材给出几个经典例子：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>体系</th>
+<th>做法</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cu<sup>2+</sup> 的掩蔽</td>
+<td>抗坏血酸还原为 Cu(I) + I<sup>−</sup> 络合</td>
+<td>双重掩蔽；也解释了为什么在强氨性介质中很难用 EDTA 滴定 Cu(II)</td>
+</tr>
+<tr>
+<td>Al<sup>3+</sup> 对 Ca<sup>2+</sup> 的干扰</td>
+<td>用 OH<sup>−</sup> 把铝络合成 Al(OH)<sub>4</sub><sup>−</sup> / AlO<sub>2</sub><sup>−</sup></td>
+<td>把干扰离子变成阴离子，从而与 Ca<sup>2+</sup> 分离</td>
+</tr>
+<tr>
+<td>NH<sub>3</sub> 对 Cu<sup>2+</sup> 的影响</td>
+<td>氨与铜强烈络合</td>
+<td>氨性缓冲中 Cu(II) 有条件形成常数量级下降，滴定变得勉强</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">掩蔽的本质是把「实际参与滴定的自由金属浓度」降下来。</p>
+<p>掩蔽的反操作是<b>解蔽</b>（demasking）：把掩蔽剂夺走或破坏，让被掩蔽的离子重新释放出来继续滴定。这是实现差减滴定、连续滴定多种金属的关键手段。</p>
+<p class="source-note">来源：教材 §9.3 Masking，p333–334；§9.5 Other Uses of Complexes，p336。</p>
+</section>
+<section id="beta">
+<p class="section-kicker">9.9 CUMULATIVE FORMATION CONSTANTS</p>
+<h2>累积形成常数与逐级络合的物种分布</h2>
+<p>EDTA 与金属形成 1:1 络合物，数学上简单；但配位基团较少的配体（如氨、硫代硫酸根）会<b>逐级</b>络合，生成 ML、ML<sub>2</sub>、……、ML<sub>n</sub> 一整套物种。要描述这种体系，需要<b>累积形成常数</b> β。</p>
+<div class="equation large">
+<b>β<sub>n</sub> = K<sub>f1</sub>K<sub>f2</sub>K<sub>f3</sub> … K<sub>fn</sub></b>
+</div>
+<p>把各级物种加起来就是金属的分析浓度：</p>
+<div class="equation large">
+<b>C<sub>M</sub> = [M] + β<sub>1</sub>[M][L] + β<sub>2</sub>[M][L]<sup>2</sup> + … + β<sub>n</sub>[M][L]<sup>n</sup> = [M] · Σβ<sub>i</sub>L<sup>i</sup></b>
+</div>
+<p>这个 α<sub>M</sub> 与 EDTA 的 α<sub>4</sub> 地位完全相同——都是「把副反应打包进常数」的工具。把两者一起乘进 K<sub>f</sub> 就得到有副反应时的条件形成常数：</p>
+<div class="equation large">
+<b>K′<sub>f</sub> = α<sub>M</sub> · α<sub>Y4−</sub> · K<sub>f</sub></b>
+</div>
+<div class="worked-example">
+<span>例</span>
+<h3>氨性缓冲中 Cu²⁺–EDTA 的条件形成常数（pH 10，[NH₃] = 1.0 M）</h3>
+<p>已知 Cu<sup>2+</sup> 的四氨络合物 log β<sub>i</sub> 依次为 3.99、7.33、10.06、12.03；Cu<sup>2+</sup>–EDTA 的 K<sub>f</sub> = 6.30 × 10<sup>18</sup>；pH 10 时 α<sub>Y4−</sub> = 0.35。</p><p>先算 α<sub>Cu</sub>（式 9.20）：</p><p>α<sub>Cu</sub> = (1 + 10<sup>3.99</sup> + 10<sup>7.33</sup> + 10<sup>10.06</sup> + 10<sup>12.03</sup>)<sup>−1</sup> = (1 + 9770 + 2.14 × 10<sup>7</sup> + 1.15 × 10<sup>10</sup> + 1.07 × 10<sup>12</sup>)<sup>−1</sup> = 9.26 × 10<sup>−13</sup></p><p>于是 K′<sub>f</sub> = 9.26 × 10<sup>−13</sup> × 0.35 × 6.30 × 10<sup>18</sup> = <b>1.2 × 10<sup>6</sup></b>。</p><p>判据是 log K′<sub>f</sub> ≥ 6，这里刚好压线，所以<b>只是勉强可行</b>。氨把铜「锁」得太牢，这就是强氨性介质中不宜直接滴定 Cu(II) 的定量理由。</p>
+</div>
+<div class="worked-example">
+<span>例</span>
+<h3>0.010 M 氨溶液中 Ni²⁺ 各级络合物的浓度</h3>
+<p>11.9 mg NiCl<sub>2</sub>·6H<sub>2</sub>O（M = 237.7）为 0.0500 mmol，溶于 0.1 L，故 C<sub>Ni</sub> = 5.00 × 10<sup>−4</sup> mol·L<sup>−1</sup>。log β<sub>i</sub> 依次为 2.67、4.79、6.40、7.47、8.10、8.01（i = 1～6）。</p><p>设游离 [NH<sub>3</sub>] ≈ 1.0 × 10<sup>−2</sup> mol·L<sup>−1</sup>，则 α<sub>Ni</sub> = (1 + 4.68 + 6.17 + 2.51 + 0.30 + 0.01 + 1.0 × 10<sup>−4</sup>)<sup>−1</sup> = 6.8 × 10<sup>−2</sup>，[Ni<sup>2+</sup>] = 3.4 × 10<sup>−5</sup> mol·L<sup>−1</sup>。</p>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>物种</th>
+<th>计算</th>
+<th>浓度 / mol·L<sup>−1</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ni<sup>2+</sup></td>
+<td>C<sub>Ni</sub>α<sub>Ni</sub></td>
+<td>3.4 × 10<sup>−5</sup></td>
+</tr>
+<tr>
+<td>Ni(NH<sub>3</sub>)<sup>2+</sup></td>
+<td>[Ni<sup>2+</sup>]β<sub>1</sub>L</td>
+<td>1.6 × 10<sup>−4</sup></td>
+</tr>
+<tr>
+<td>Ni(NH<sub>3</sub>)<sub>2</sub><sup>2+</sup></td>
+<td>[Ni<sup>2+</sup>]β<sub>2</sub>L<sup>2</sup></td>
+<td>2.1 × 10<sup>−4</sup></td>
+</tr>
+<tr>
+<td>Ni(NH<sub>3</sub>)<sub>3</sub><sup>2+</sup></td>
+<td>[Ni<sup>2+</sup>]β<sub>3</sub>L<sup>3</sup></td>
+<td>8.5 × 10<sup>−5</sup></td>
+</tr>
+<tr>
+<td>Ni(NH<sub>3</sub>)<sub>4</sub><sup>2+</sup></td>
+<td>[Ni<sup>2+</sup>]β<sub>4</sub>L<sup>4</sup></td>
+<td>1.0 × 10<sup>−5</sup></td>
+</tr>
+<tr>
+<td>Ni(NH<sub>3</sub>)<sub>5</sub><sup>2+</sup></td>
+<td>[Ni<sup>2+</sup>]β<sub>5</sub>L<sup>5</sup></td>
+<td>3.4 × 10<sup>−7</sup></td>
+</tr>
+<tr>
+<td>Ni(NH<sub>3</sub>)<sub>6</sub><sup>2+</sup></td>
+<td>[Ni<sup>2+</sup>]β<sub>6</sub>L<sup>6</sup></td>
+<td>3.4 × 10<sup>−9</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">分布呈明显的钟形：由 Ni²⁺ 到 Ni(NH₃)₆²⁺ 先升后降，最大物种是 Ni(NH₃)₂²⁺。教材提醒这个解只是近似——它忽略了生成各级络合物所消耗的氨（共约 0.88 mmol，而起始总量为 10 mmol），严格解需用质量平衡配合 Goal Seek，得 [Ni²⁺] = 3.97 × 10⁻⁵ mol·L⁻¹。</p>
+<p class="source-note">来源：教材 §9.6 Cumulative Formation Constants β，p336–339；式 9.17–9.21，例 9.5、9.6。</p>
+</section>
+<section id="applications">
+<p class="section-kicker">9.10 APPLICATIONS</p>
+<h2>络合滴定的应用与临床意义</h2>
+<p>除碱金属外，几乎所有的金属都能用络合滴定高精度、高准确度地测定。与重量法相比，络合滴定<b>快速、方便</b>，因此在多数场合取代了重量法；只有在要求更高准确度时才回到重量法。而近年来，这两类方法都在被原子光谱法和质谱法取代。</p>
+<p>临床检验中，络合滴定的应用限于浓度较高的组分，因为容量法灵敏度有限。其中最重要的一项是<b>血钙的测定</b>。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>应用领域</th>
+<th>具体用法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>水的总硬度</td>
+<td>铬黑 T 指示，pH 10 氨性缓冲，EDTA 滴定 Ca²⁺+Mg²⁺</td>
+<td>结果以 ppm CaCO<sub>3</sub> 表示</td>
+</tr>
+<tr>
+<td>血钙测定</td>
+<td>EDTA 滴定</td>
+<td>临床检验中最重要的络合滴定项目</td>
+</tr>
+<tr>
+<td>重金属中毒治疗</td>
+<td>注射 Na<sub>2</sub>CaY（Ca–EDTA）</td>
+<td>Pb 等重金属的 EDTA 络合物比钙的更稳定，会把钙置换出来并被螯合，经肾排出</td>
+</tr>
+<tr>
+<td>分离与测定</td>
+<td>络合后溶剂萃取、显色后分光光度测定、生成荧光络合物</td>
+<td>双硫腙（dithizone）用于萃取</td>
+</tr>
+<tr>
+<td>沉淀与色谱</td>
+<td>丁二酮肟镍沉淀用于重量法；络合剂作掩蔽剂改善色谱分离</td>
+<td>例：用 oxine 萃取钒时，先用 EDTA 络合铜以避免生成其 oxine 螯合物</td>
+</tr>
+<tr>
+<td>色谱–显色联用</td>
+<td>先分离金属，再用非选择性的显色螯合剂统一显色检测</td>
+<td>此处「缺乏选择性」反而是优点</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">教材特别指出，所有这些络合反应都依赖 pH，因此缓冲与 pH 调控是优化目标反应、抑制副反应的常规手段。</p>
+<div class="notation-box">
+<b>为什么用 Ca–EDTA 而不是 Na₂EDTA 治疗铅中毒</b>
+<p>
+如果直接注射 Na<sub>2</sub>EDTA，它会与体内的钙络合，把骨骼中的钙「抽」出来。改用 Na<sub>2</sub>CaY 就可避免这一点：铅的 EDTA 络合物比钙的更稳定，会自发把 Ca 置换下来，而体内的钙总量不受影响。</p>
+</div>
+<p>常用螯合剂与显色剂的结构母体：双硫腙（dithizone）用于萃取，丁二酮肟（dimethylglyoxime）用于镍的沉淀，8-羟基喹啉（oxine）既用于萃取也用于重量法。</p>
+<p class="source-note">来源：教材 §9.5 Other Uses of Complexes，p336；§9.6 应用综述。</p>
+</section>
+</article>
+</main>
+<script src="script.js">
+</script>
+
+</body>
+</html>

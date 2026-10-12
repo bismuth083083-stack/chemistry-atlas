@@ -2104,5 +2104,337 @@
     ],
     "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
     "updated": "2026-10-08"
+  },
+  {
+    "slug": "complexation",
+    "zh": "络合反应",
+    "en": "Complexation",
+    "category": "络合平衡",
+    "definition": "路易斯酸（金属离子）与路易斯碱（配体）之间形成配位键的反应。",
+    "expanded": "金属阳离子有空轨道，是电子对受体；配体在 O、S、N 等原子上有孤对电子，是电子对给体。配体的个数由金属的配位数与配体上可配位基团的数目共同决定，形成的产物叫络合物（complex）或配位化合物。",
+    "properties": [
+      "金属离子作电子对受体",
+      "配体作电子对给体",
+      "常在水溶液中进行，与 pH 和竞争配体密切相关",
+      "可以分步进行，每步有各自的形成常数"
+    ],
+    "confusions": "络合与沉淀、酸碱反应常同时发生：金属离子水解本身就是与 OH⁻ 的络合，所以讨论络合平衡时必须同时交代 pH。",
+    "related": [
+      "ligand",
+      "formation-constant",
+      "complexometric-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "ligand",
+    "zh": "配体与配位原子",
+    "en": "Ligand / donor atom",
+    "category": "络合平衡",
+    "definition": "向中心金属离子提供孤对电子、与之形成配位键的分子或离子；直接提供电子的那个原子叫配位原子。",
+    "expanded": "常见配位原子是 O、S、N，有时是卤素。EDTA 的四个羧基氧加两个氨基氮共六个配位原子；氨只提供一个氮，因此是单齿配体。配体上可配位基团的数目决定它的齿数（denticity）。",
+    "properties": [
+      "配位原子通常是 O、S、N",
+      "单齿配体只提供一个配位原子",
+      "多齿配体提供两个以上配位原子",
+      "齿数越高，形成的络合物越稳定"
+    ],
+    "confusions": "配体上的可配位基团数目与金属的配位数是两回事：一个 EDTA 有六个配位原子，但它与多数金属只按 1:1 结合。",
+    "related": [
+      "complexation",
+      "chelate-effect",
+      "edta"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "chelate",
+    "zh": "螯合物",
+    "en": "Chelate",
+    "category": "络合平衡",
+    "definition": "由多齿配体与同一金属离子形成、含有一个或多个环状结构的络合物。",
+    "expanded": "chelate 一词来自希腊语「爪」，形象地说明配体把金属离子「抓」在中间。环的大小通常为五元或六元，例如乙二胺与 Cu²⁺ 形成的两个五元环。",
+    "properties": [
+      "分子内至少含一个螯合环",
+      "环多为五元或六元",
+      "稳定性显著高于同种配位原子构成的单齿络合物",
+      "螯合物常带负电（EDTA 类）"
+    ],
+    "confusions": "螯合与络合不是并列关系：螯合是络合的一种特殊形式，关键区别在于同一个配体分子上是否有两个以上配位原子。",
+    "related": [
+      "chelating-agent",
+      "chelate-effect",
+      "ligand"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "chelating-agent",
+    "zh": "螯合剂",
+    "en": "Chelating agent",
+    "category": "络合平衡",
+    "definition": "分子上带有两个或更多配位基团、能与同一金属离子形成环状络合物的试剂。",
+    "expanded": "最重要的螯合剂是氨羧络合剂，其氨基氮与羧基氧共同作为配位原子。氨基氮碱性较强、容易质子化，与金属配位后这些质子被金属取代，因此产物带负电。EDTA 是最典型的代表。",
+    "properties": [
+      "同一分子上有两个以上配位基团",
+      "与金属形成环状结构",
+      "氨羧络合剂的配位原子是 N 与 O",
+      "生成的螯合物通常带负电"
+    ],
+    "confusions": "不要与「掩蔽剂」混淆：掩蔽剂可以是螯合剂，但螯合剂的作用是形成稳定产物，掩蔽剂的作用是让干扰离子失去反应能力。",
+    "related": [
+      "chelate",
+      "edta",
+      "masking"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "chelate-effect",
+    "zh": "螯合效应",
+    "en": "Chelon effect / chelate effect",
+    "category": "络合平衡",
+    "definition": "同种配位原子构成的多齿螯合物比单齿络合物更稳定，这种稳定性提升称为螯合效应。",
+    "expanded": "驱动力主要是熵效应。以 Cu²⁺ 为例，Cu(NH₃)₄²⁺ 解离会放出 5 种物种（Cu²⁺ 加 4 个 NH₃），而 Cu(en)₂²⁺ 解离只放出 3 种（Cu²⁺ 加 2 个 en）；产物的物种数越多、无序度越大、ΔS 越大，解离的 ΔG 越负。两边的 ΔH 相差不大，所以差别主要来自熵。",
+    "properties": [
+      "多齿配体的络合物更稳定",
+      "驱动力以熵效应为主",
+      "解离后生成的物种数越多，螯合效应越明显",
+      "五元、六元螯合环最稳定"
+    ],
+    "confusions": "螯合效应不是因为多齿配体「键更强」，单个配位键的强度差别不大，差别在于解离时的熵变。",
+    "related": [
+      "chelate",
+      "chelating-agent",
+      "formation-constant"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "formation-constant",
+    "zh": "形成常数 Kf",
+    "en": "Formation constant",
+    "category": "络合平衡",
+    "definition": "络合反应 M + nL ⇌ MLₙ 的平衡常数，表示络合物的稳定性；也叫稳定常数 Ks 或 Kstab。",
+    "expanded": "分步反应各自有分步形成常数 Kf1、Kf2……，其连乘积即总形成常数。逆向的解离反应常数为不稳定常数 Ki（解离常数 Kd），满足 Kf = Ks = 1/Ki = 1/Kd。Kf 越大络合物越稳定。Ag(NH₃)₂⁺ 的 Kf1 = 2.5 × 10³、Kf2 = 1.0 × 10⁴，故总 Kf = 2.5 × 10⁷。",
+    "properties": [
+      "量纲随 n 变化，比较时须注意",
+      "越大越稳定",
+      "分步常数之积等于总常数",
+      "与解离常数互为倒数"
+    ],
+    "confusions": "Kf 只描述络合平衡本身，不含 pH 与竞争配体的影响；要在实际滴定条件下使用，必须换成条件形成常数 K′f。",
+    "related": [
+      "cumulative-formation-constant",
+      "conditional-formation-constant",
+      "complexation"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "dissociation-constant-complex",
+    "zh": "不稳定常数 Kd",
+    "en": "Instability constant / dissociation constant",
+    "category": "络合平衡",
+    "definition": "络合物解离反应 MLₙ ⇌ M + nL 的平衡常数，等于形成常数的倒数。",
+    "expanded": "教材把络合物的解离 ML ⇌ M + L 与酸的解离 HA ⇌ H⁺ + A⁻ 并列，差别只在惯例：酸碱写解离、络合写缔合。两者可以互换使用，但必须与所写的反应式严格对应。",
+    "properties": [
+      "Kd = 1/Kf",
+      "数值越小络合物越稳定",
+      "与酸碱的 Kb 在形式上对应"
+    ],
+    "confusions": "同一个络合物既有稳定常数又有不稳定常数，看到数值时先确认它对应的是哪一个反应方向。",
+    "related": [
+      "formation-constant",
+      "complexation"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "cumulative-formation-constant",
+    "zh": "累积形成常数 βₙ",
+    "en": "Cumulative formation constant",
+    "category": "络合平衡",
+    "definition": "逐级形成常数的连乘积，βₙ = Kf1Kf2Kf3…Kfn；β₀ 规定为 1。",
+    "expanded": "有了 βₙ，金属的分析浓度可以写成 CM = [M] + β₁[M][L] + β₂[M][L]² + … + βₙ[M][L]ⁿ = [M]·ΣβᵢLⁱ，由此得到游离金属的分数 αM = [M]/CM = (ΣβᵢLⁱ)⁻¹。αM 的地位与 EDTA 的 α₄ 完全相同，都是把副反应打包进常数。",
+    "properties": [
+      "βₙ 是逐级常数的乘积",
+      "β₀ ≡ 1（约定）",
+      "用于计算各级络合物的浓度分布",
+      "分布曲线通常呈钟形"
+    ],
+    "confusions": "用 αM 计算分布时，忽略了生成各级络合物消耗掉的配体；严格解必须用质量平衡联立求解（可用 Excel Goal Seek）。",
+    "related": [
+      "formation-constant",
+      "conditional-formation-constant",
+      "edta"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "edta",
+    "zh": "EDTA",
+    "en": "EDTA (ethylenediaminetetraacetic acid)",
+    "category": "络合平衡",
+    "definition": "乙二胺四乙酸（H₄Y），最常用的氨羧螯合剂，一个分子含四个羧基和两个氨基，共有六个配位原子。",
+    "expanded": "EDTA 与金属几乎总是形成 1:1 络合物，与金属电荷无关，这正是它能作滴定剂的关键。H₄Y 在水中溶解度低，实际使用二钠盐 Na₂H₂Y·2H₂O，其溶液 pH 约 4～5（理论值 4.4）。把该盐在 80 ℃ 干燥 2 h，结晶水不会失去，因此高纯试剂可直接作基准物质。四个 Kₐ 依次为 1.0 × 10⁻²、2.2 × 10⁻³、6.9 × 10⁻⁷、5.5 × 10⁻¹¹。",
+    "properties": [
+      "六齿配体，含 4 个羧基 + 2 个氨基",
+      "与绝大多数金属形成 1:1 络合物",
+      "真正配位的形式是 Y⁴⁻",
+      "商品为二钠盐，可作基准物质",
+      "络合能力强烈依赖 pH"
+    ],
+    "confusions": "EDTA 与 Ca²⁺、Mg²⁺ 的形成常数太接近，无法靠调 pH 区分，因此两者会一起被滴定——这正是水的总硬度测定的原理。",
+    "related": [
+      "alpha-y4",
+      "conditional-formation-constant",
+      "metal-indicator",
+      "masking",
+      "complexometric-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "alpha-y4",
+    "zh": "α₄（EDTA 的 Y⁴⁻ 分数）",
+    "en": "Alpha 4",
+    "category": "络合平衡",
+    "definition": "在给定 pH 下，EDTA 总浓度中以完全去质子的 Y⁴⁻ 形式存在的分数。",
+    "expanded": "α₄ = Ka1Ka2Ka3Ka4 / Q₄，其中 Q₄ = [H⁺]⁴ + Ka1[H⁺]³ + Ka1Ka2[H⁺]² + Ka1Ka2Ka3[H⁺] + Ka1Ka2Ka3Ka4。pH 10 时 α₄ = 0.35（约三分之一）；pH 12 以上 α₄ ≈ 1；pH 7 时只有 4.8 × 10⁻⁴。",
+    "properties": [
+      "随 pH 升高而增大",
+      "pH ≥ 12 时约为 1",
+      "pH 10 时约 0.35",
+      "是条件形成常数的核心因子"
+    ],
+    "confusions": "α₄ 描述的是「Y⁴⁻ 占总 EDTA 的比例」，不是「EDTA 参与络合的比例」；后者还要看金属本身的竞争情况。",
+    "related": [
+      "edta",
+      "conditional-formation-constant"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "conditional-formation-constant",
+    "zh": "条件形成常数 K′f",
+    "en": "Conditional formation constant",
+    "category": "络合平衡",
+    "definition": "把 pH（以及配体副反应）的影响并入形成常数后得到的表观常数，K′f = Kf·α₄（有金属副反应时再乘 αM）。",
+    "expanded": "K′f = Kf·α₄ = [MY] / ([M]·C_EDTA)，分母用的是 EDTA 的分析浓度而不是游离的 [Y⁴⁻]。与第 6 章的条件溶度积 K′sp 是完全平行的概念，都只在指定 pH 下成立。判据 log K′f ≥ 6 是络合滴定可行的门槛。",
+    "properties": [
+      "只在指定 pH 下有效",
+      "pH 越高 K′f 越大",
+      "可用来计算最低 pH",
+      "可引入 αM 兼顾金属的副反应"
+    ],
+    "confusions": "等当点计算中不能把 K′f 与「游离 EDTA 浓度 = 游离金属浓度」同时使用，否则 α₄ 被算两次，结果偏低。等当点前、后用 K′f，等当点本身回到 Kf 与 α₄ 的定义式。",
+    "related": [
+      "formation-constant",
+      "alpha-y4",
+      "minimum-ph",
+      "conditional-solubility-product"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "minimum-ph",
+    "zh": "最低 pH",
+    "en": "Minimum pH",
+    "category": "络合平衡",
+    "definition": "使 log K′f 恰好达到 6、从而保证络合滴定突跃可用的最低 pH。",
+    "expanded": "由于 K′f = Kf·α₄，Kf 越小的金属就需要越高的 pH 来补偿。按此把金属分为三组：pH < 3（Bi³⁺、Fe³⁺、Th⁴⁺ 等）、pH 3～7（Cu²⁺、Zn²⁺、Pb²⁺、Ni²⁺ 等）、pH > 7（Ca²⁺、Mg²⁺ 等）。通过把 pH 压到某一组以下，可实现选择性滴定。",
+    "properties": [
+      "判据为 log K′f ≥ 6",
+      "金属据此分为三组",
+      "是选择性滴定的主要手段",
+      "受金属水解的限制"
+    ],
+    "confusions": "pH 不能无限提高：氢氧根会与金属竞争（生成 MOH⁺ 甚至氢氧化物沉淀），所以 Fe³⁺、Th⁴⁺ 这类易水解金属不能直接滴定，需用返滴定或辅助络合剂。",
+    "related": [
+      "conditional-formation-constant",
+      "masking",
+      "complexometric-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "metal-indicator",
+    "zh": "金属指示剂",
+    "en": "Metallochromic indicator",
+    "category": "络合平衡",
+    "definition": "本身是螯合剂、能与金属离子形成颜色明显不同于游离态的有色络合物，用以指示络合滴定终点的指示剂。",
+    "expanded": "最典型的是铬黑 T（Eriochrome Black T），有三个可解离质子，记作 H₃In。滴定 Mg²⁺ 时先形成红色 MgIn⁻，游离 Mg²⁺ 被滴完后 EDTA 夺走指示剂上的镁，颜色由红变蓝。要求 M–指示剂络合物比 M–EDTA 弱、但也不能太弱，定量判据是 Kf(MIn) 比 Kf(MY) 小 10～100 倍。常用者还有钙镁指示剂与二甲酚橙。",
+    "properties": [
+      "本身是螯合剂",
+      "游离态与络合态颜色不同",
+      "Kf(MIn) 应比 Kf(MY) 小 10～100 倍",
+      "指示剂浓度越低，变色越锐利",
+      "使用受 pH 限制（铬黑 T 用于 pH 10 氨性缓冲）"
+    ],
+    "confusions": "Ca²⁺ 与铬黑 T 的络合物太弱，单独滴定钙时变色不锐利；加入少量 Mg²⁺ 或 Mg–EDTA 可改善，其中加入 MgCl₂ 需做空白校正，而加入 Mg–EDTA 不需要校正。",
+    "related": [
+      "edta",
+      "indicator",
+      "complexometric-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "masking",
+    "zh": "掩蔽与解蔽",
+    "en": "Masking and demasking",
+    "category": "络合平衡",
+    "definition": "掩蔽是让干扰离子暂时失去反应能力而待测离子照常被滴定；解蔽是把掩蔽剂夺走或破坏、使被掩蔽离子重新释放出来。",
+    "expanded": "四类掩蔽途径：络合掩蔽（最常用，如 F⁻ 掩蔽 Sn(IV)）、沉淀掩蔽（如以硫酸盐沉淀 Pb²⁺ 后滴定 Bi³⁺）、氧化还原掩蔽（如抗坏血酸把 Cu²⁺ 还原为 Cu(I)）、动力学掩蔽（利用络合速度差异，如 Cr(III) 的 EDTA 络合物生成很慢）。解蔽则是实现差减滴定、连续滴定多种金属的关键手段。",
+    "properties": [
+      "络合掩蔽最常用",
+      "也可以靠沉淀或改变价态",
+      "动力学掩蔽利用速度差异",
+      "解蔽是掩蔽的逆操作"
+    ],
+    "confusions": "掩蔽的对象是「干扰离子」，不是待测离子；把待测离子沉淀掉再测定，那是分离而不是掩蔽。",
+    "related": [
+      "chelating-agent",
+      "minimum-ph",
+      "complexometric-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "auxiliary-complexing-agent",
+    "zh": "辅助络合剂",
+    "en": "Auxiliary complexing agent",
+    "category": "络合平衡",
+    "definition": "为防止金属水解沉淀或改善滴定条件而加入的、不参与定量反应的络合剂，如氨、酒石酸、柠檬酸。",
+    "expanded": "辅助络合剂会降低游离金属的浓度，引入 αM 因子，使条件形成常数变为 K′f = αM·α(Y4−)·Kf。教材例 9.5 显示：pH 10、[NH₃] = 1.0 M 时，Cu²⁺ 的 αM = 9.26 × 10⁻¹³，使 Cu–EDTA 的 K′f 只有 1.2 × 10⁶，刚过 log K′f = 6 的门槛。",
+    "properties": [
+      "防止金属水解",
+      "降低游离金属浓度，引入 αM",
+      "会削弱滴定突跃",
+      "氨、酒石酸、柠檬酸是常见选择"
+    ],
+    "confusions": "辅助络合剂与掩蔽剂在化学上是同一类物质，区别在目的：前者是为让待测离子稳定存在，后者是为让干扰离子失去反应能力。",
+    "related": [
+      "conditional-formation-constant",
+      "cumulative-formation-constant",
+      "masking"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
+    "updated": "2026-10-11"
   }
 ]

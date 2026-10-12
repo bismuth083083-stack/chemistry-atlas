@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="分析化学 I 专题：平衡与滴定公式compendium">
+<title>◆ 平衡与滴定公式专题 · 分析化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="course-extra.css">
+<link rel="stylesheet" href="ppt-figures.css">
+<link rel="stylesheet" href="topic-formulas.css">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<a href="chapter-3.html">
+<span>03</span>酸碱平衡</a>
+<a href="chapter-4.html">
+<span>04</span>酸碱滴定</a>
+<a href="chapter-5.html">
+<span>05</span>络合滴定</a>
+<a href="chapter-6.html">
+<span>06</span>重量分析</a>
+<a href="chapter-7.html">
+<span>07</span>沉淀滴定</a>
+<a class="active" href="topic-formulas.html">
+<span>◆</span>平衡与滴定公式</a>
+<p class="nav-label">本页目录</p>
+<a href="#howto">
+<span>◆.0</span>这一页怎么用</a>
+<a href="#skeleton">
+<span>◆.1</span>计算骨架与分布分数</a>
+<a href="#acidbase">
+<span>◆.2</span>酸碱平衡</a>
+<a href="#complex">
+<span>◆.3</span>络合平衡</a>
+<a href="#precip">
+<span>◆.4</span>沉淀平衡</a>
+<a href="#redox">
+<span>◆.5</span>氧化还原平衡</a>
+<a href="#templates">
+<span>◆.6</span>滴定计算模板</a>
+<a href="#curves">
+<span>◆.7</span>四类滴定曲线</a>
+<a href="#indicator">
+<span>◆.8</span>指示剂与终点误差</a>
+<a href="#tables">
+<span>◆.9</span>公式总表</a>
+<a href="#drill">
+<span>◆.10</span>例题训练</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside>
+<main class="workspace">
+<article class="article lesson">
+<header class="article-head">
+<p class="eyebrow">◆ · EQUILIBRIUM &amp; TITRATION FORMULA COMPENDIUM</p>
+<h1>平衡与滴定公式专题</h1>
+<p>把四大平衡（酸碱、络合、沉淀、氧化还原）与四类滴定的全部公式收在一处。每张卡只回答四件事：式子在说什么、每个量是什么、什么时候能用、怎么代进去算。这一页不参与章节编号，序号一律用 ◆。</p>
+<div>
+<span>不参与编号</span>
+<span>四大平衡</span>
+<span>四类滴定</span>
+<span>公式卡</span>
+<span>例题训练</span>
+</div>
+</header>
+<div class="notation-box">
+<b>这一页与七章的关系</b>
+<p>它有两条用途。一是<b>考试前默写</b>：◆.9 的公式总表把六类常数、四类滴定与终点误差排在一起，遮住右半边即可自测。二是<b>做题时查条件</b>：本页所有简化式都写明失效条件，判断条件那一栏比公式本身更值钱。页码不参与编号，下一章仍从 <b>08 氧化还原滴定</b> 开始，与本页并存不冲突。</p>
+</div>
+<nav class="chapter-jump" aria-label="本页快速导航">
+<a href="#howto">这一页怎么用</a>
+<a href="#skeleton">计算骨架与分布分数</a>
+<a href="#acidbase">酸碱平衡</a>
+<a href="#complex">络合平衡</a>
+<a href="#precip">沉淀平衡</a>
+<a href="#redox">氧化还原平衡</a>
+<a href="#templates">滴定计算模板</a>
+<a href="#curves">四类滴定曲线</a>
+<a href="#indicator">指示剂与终点误差</a>
+<a href="#tables">公式总表</a>
+<a href="#drill">例题训练</a>
+</nav>
+<section id="howto">
+<p class="section-kicker">◆.0 HOW TO USE</p>
+<h2>这一页怎么用：先条件，后公式</h2>
+<p>这一页不是一章，而是一张<b>公式地图</b>。前面的七章按课堂顺序讲「是什么、为什么」，这一页只回答两个问题：<b>考试时该写哪个式子</b>、<b>这个式子在什么条件下才成立</b>。全页分两部分：<b>A 平衡篇</b>把四大平衡（酸碱、络合、沉淀、氧化还原）的常数体系与浓度算法排成一条线；<b>B 滴定篇</b>把四类滴定曲线、指示剂选择与终点误差放在一起对照。</p>
+<p>每一张公式卡都按同样的四件事写：<b>含义</b>（这个式子在做一件什么事）、<b>各量</b>（每个符号代表什么、单位是什么）、<b>什么时候用</b>（适用条件与失效条件）、<b>怎么算</b>（代入的手感，含唯一的近似步骤）。凡是容易记混的地方，都在同一张卡里并排写出「相似但不同」的那个式子。</p>
+<div class="notation-box">
+<b>三句话使用说明</b>
+<p>① <b>先看条件再套式子</b>——本页所有近似式都标出了失效条件，考场上先判断条件再看要不要用简化式。② <b>近似式只有一处近似</b>——如果你发现算了两次近似，多半是把某个常数用了两遍（例如条件常数与游离浓度同时乘 α）。③ <b>单位与有效数字</b>：浓度一律 mol·L<sup>−1</sup>，p 函数取负对数，对数运算的位数决定结果的有效数字（首数为 1 时可多留一位）。</p>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>部分</th>
+<th>内容</th>
+<th>对应章节</th>
+<th>考试分量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A 平衡篇</td>
+<td>四大平衡的常数体系、分布分数、条件常数、浓度算法</td>
+<td>第 3、5、6、7 章</td>
+<td>简答 + 计算</td>
+</tr>
+<tr>
+<td>B 滴定篇</td>
+<td>四类滴定曲线、计量点、突跃、指示剂、终点误差</td>
+<td>第 4、5、7 章</td>
+<td>计算 + 判断</td>
+</tr>
+<tr>
+<td>公式总表</td>
+<td>六类常数的定义、单位、相互关系与适用条件</td>
+<td>全课</td>
+<td>填空 + 改错</td>
+</tr>
+<tr>
+<td>例题训练</td>
+<td>按平衡类型分组的典型题与解题步骤</td>
+<td>全课</td>
+<td>大题</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">本页用符号 ◆ 作序号，不参与章节编号；下一章仍从 08 开始。</p>
+</section>
+<section id="skeleton">
+<p class="section-kicker">◆.1 CALCULATION SKELETON</p>
+<h2>计算骨架：三种平衡式与分布分数</h2>
+<p>四大平衡的计算没有本质区别，都是同一套骨架：<b>写出平衡常数表达式，凑出质量平衡与电荷平衡，再用一个合理的近似把方程降次</b>。区别只在于常数叫什么名字、有几个。</p>
+<h3>三种平衡式，一张表分清</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>式子</th>
+<th>写法</th>
+<th>它约束什么</th>
+<th>写的时候注意</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>质量平衡 (MBE)</td>
+<td>某组分的分析浓度 = 它在溶液中各形态浓度之和<br><i>C</i><sub>T</sub> = [A] + [HA] + [H<sub>2</sub>A] + …</td>
+<td>物质守恒：原子不会凭空多出来</td>
+<td>先确定「分析浓度」指的是哪个组分，再列它所有的存在形式；沉淀、气体逸出要单独处理</td>
+</tr>
+<tr>
+<td>电荷平衡 (CBE)</td>
+<td>正离子总电荷 = 负离子总电荷<br>[H<sup>+</sup>] + [Na<sup>+</sup>] = [OH<sup>−</sup>] + [A<sup>−</sup>]</td>
+<td>溶液整体电中性</td>
+<td>浓度必须乘上离子电荷数；中性分子不出现；这是唯一能给出 [H<sup>+</sup>] 的独立方程</td>
+</tr>
+<tr>
+<td>质子平衡 (PBE)</td>
+<td>得质子产物浓度之和 = 失质子产物浓度之和<br>以零水准为基准列出</td>
+<td>质子守恒，等价于 MBE 与 CBE 的组合</td>
+<td>选「零水准」（通常是原始酸碱与水）；PBE 比 MBE+CBE 更快，但容易漏项</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">三者不独立：两个独立方程 + 一个平衡常数，就能解出两个未知浓度。列方程组时永远先数未知数、再数独立方程。</p>
+<h3>分布分数：所有浓度题的第一块积木</h3>
+<div class="equation large">
+<b>α<sub>0</sub> = [A<sup>−</sup>]/<i>C</i><sub>T</sub> 在弱酸 HA 中：</b> α<sub>1</sub> = [HA]/<i>C</i><sub>T</sub> = [H<sup>+</sup>] / ([H<sup>+</sup>] + K<sub>a</sub>)&nbsp;&nbsp;&nbsp; α<sub>0</sub> = [A<sup>−</sup>]/<i>C</i><sub>T</sub> = K<sub>a</sub> / ([H<sup>+</sup>] + K<sub>a</sub>)
+</div>
+<div class="notation-box">
+<b>分布分数的三条考试规律</b>
+<p>① <b>和恒为 1</b>：所有形态的 α 加起来等于 1，验算时用它兜底。<br>② <b>交叉点在 pK<sub>a</sub></b>：pH = pK<sub>a</sub> 时两种形态各占一半（α = 0.5）。<br>③ <b>差两个单位就一边倒</b>：pH 比 pK<sub>a</sub> 低 2 个单位以上时，酸式形态占 99% 以上，可以当作「只有一种形态」来处理——这是所有简化式的来源。</p>
+</div>
+<div class="notation-box">
+<b>多元酸的高阶写法（EDTA 用的就是它）</b>
+<p>二元酸：α<sub>0</sub> = K<sub>a1</sub>K<sub>a2</sub> / Q<sub>2</sub>，α<sub>1</sub> = K<sub>a1</sub>[H<sup>+</sup>] / Q<sub>2</sub>，α<sub>2</sub> = [H<sup>+</sup>]<sup>2</sup> / Q<sub>2</sub>，其中 <b>Q<sub>2</sub> = [H<sup>+</sup>]<sup>2</sup> + K<sub>a1</sub>[H<sup>+</sup>] + K<sub>a1</sub>K<sub>a2</sub></b>。<br>推广到 n 元酸：<b>Q<sub>n</sub></b> 就是 2<sup>n</sup> 项的求和，分子依次是 [H<sup>+</sup>]<sup>n</sup>、K<sub>a1</sub>[H<sup>+</sup>]<sup>n−1</sup>、…、K<sub>a1</sub>…K<sub>an</sub>。EDTA 是六元酸，算 α<sub>4</sub> 时用 n = 4 的 Q<sub>4</sub> 与分子 K<sub>a1</sub>K<sub>a2</sub>K<sub>a3</sub>K<sub>a4</sub>。</p>
+</div>
+<h3>近似有效性的统一判据</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>近似</th>
+<th>做法</th>
+<th>有效条件</th>
+<th>失效时怎么办</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>忽略水的解离</td>
+<td>用 K<sub>a</sub> 算 [H<sup>+</sup>]，不管 [OH<sup>−</sup>]</td>
+<td>[H<sup>+</sup>] ≫ 10<sup>−7</sup>，即 cK<sub>a</sub> ≫ K<sub>w</sub></td>
+<td>解一元二次方程，或写出 [H<sup>+</sup>] = [OH<sup>−</sup>] + [A<sup>−</sup>]</td>
+</tr>
+<tr>
+<td>离解度很小</td>
+<td>把平衡浓度当作初始浓度（c − x ≈ c）</td>
+<td>K<sub>a</sub>/c ≪ 10<sup>−3</sup> 量级</td>
+<td>保留 x 解二次方程；或改用逐步逼近</td>
+</tr>
+<tr>
+<td>盐的水解很小</td>
+<td>把 c − [OH<sup>−</sup>] ≈ c</td>
+<td>K<sub>b</sub>/c 很小</td>
+<td>解二次方程；K<sub>b</sub> 大时直接按强碱处理</td>
+</tr>
+<tr>
+<td>络合滴定计量点附近</td>
+<td>认为络合物几乎完全生成</td>
+<td>lg K′<sub>f</sub> ≥ 6</td>
+<td>K′<sub>f</sub> 更小时改用解离度法，或直接解二次方程</td>
+</tr>
+<tr>
+<td>沉淀完全</td>
+<td>认为剩余离子浓度可忽略</td>
+<td>残余 < 0.1%（约 10<sup>−6</sup> mol·L<sup>−1</sup>）</td>
+<td>条件溶度积过大时该沉淀不能当「完全」用</td>
+</tr>
+<tr>
+<td>用浓度代替活度</td>
+<td>把浓度直接代入 K<sub>sp</sub>、K<sub>a</sub> 等表达式</td>
+<td>稀溶液（< 10<sup>−3</sup> mol·L<sup>−1</sup>）或离子强度很小</td>
+<td>改用活度积：<i>a</i> = γc，γ 由离子强度与离子电荷查表得到</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">判据的记忆法：把「被忽略的量」与「保留的量」比一下，比值在 10⁻³ 以下就放心用简化式。最后一行是异离子效应的源头：离子的「有效浓度」是活度而不是浓度。</p>
+<h3>拿到一道 pH 题的判断流程</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>第几步</th>
+<th>问自己</th>
+<th>若答案为是</th>
+<th>若答案为否</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 是强酸强碱吗</td>
+<td>完全解离、浓度 ≥ 10<sup>−6</sup> mol·L<sup>−1</sup>？</td>
+<td>直接 [H<sup>+</sup>] = c 或 [OH<sup>−</sup>] = c</td>
+<td>进入 ②</td>
+</tr>
+<tr>
+<td>② 是缓冲体系吗</td>
+<td>同时存在共轭酸碱对（或加了一半滴定剂）？</td>
+<td>用 pH = pK<sub>a</sub> + lg(c<sub>碱</sub>/c<sub>酸</sub>)</td>
+<td>进入 ③</td>
+</tr>
+<tr>
+<td>③ 是两性物质吗</td>
+<td>既含可给出的质子又含可接受的质子（如 NaHCO<sub>3</sub>、氨基酸）？</td>
+<td>pH = ½(pK<sub>a1</sub> + pK<sub>a2</sub>)，结果与浓度无关</td>
+<td>进入 ④</td>
+</tr>
+<tr>
+<td>④ 是盐的水解吗</td>
+<td>只有弱酸根的碱式或弱碱的酸式（如 NaOAc、NH<sub>4</sub>Cl）？</td>
+<td>用 [OH<sup>−</sup>] = √(K<sub>w</sub>c/K<sub>a</sub>) 或 [H<sup>+</sup>] = √(K<sub>a</sub>c/K<sub>b</sub>)</td>
+<td>进入 ⑤</td>
+</tr>
+<tr>
+<td>⑤ 是简单一元弱酸/碱吗</td>
+<td>只有一种弱酸或弱碱？</td>
+<td>用 [H<sup>+</sup>] = √(K<sub>a</sub>c) 并检验 c/K<sub>a</sub> ≥ 500</td>
+<td>进入 ⑥</td>
+</tr>
+<tr>
+<td>⑥ 是多元酸吗</td>
+<td>K<sub>a1</sub> ≫ K<sub>a2</sub>（差 10<sup>4</sup> 以上）？</td>
+<td>按第一级解离当一元酸处理</td>
+<td>解联立方程或用电荷平衡法</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">这张流程表覆盖了本课程全部酸碱 pH 计算题。按顺序问下来，每一题都只会命中其中一行。</p>
+<div class="exam-focus">
+<h3>应试要点</h3>
+<ul><li>任何浓度计算题，第一步都先把<b>常数表达式、MBE、CBE</b> 三个式子写出来再动手——写了就有步骤分。</li><li>判断「能不能忽略水的解离」看的是 <b>[H<sup>+</sup>] 的量级</b>，不是浓度大小：极稀的强酸（10<sup>−8</sup> mol·L<sup>−1</sup>）pH 是约 6.98 而不是 8。</li><li>同一题里出现两个近似时要检查是否互相矛盾（例如既假设离解度很小、又假设 [H<sup>+</sup>] 与 c 同量级）。</li></ul>
+</div>
+</section>
+<section id="acidbase">
+<p class="section-kicker">◆.2 ACID-BASE EQUILIBRIA</p>
+<h2>酸碱平衡：六类情形一个式子</h2>
+<p>酸碱平衡是唯一一个「题目类型可以穷举」的平衡：一元强酸/强碱、一元弱酸/弱碱、两性物质、盐类水解、缓冲溶液、多元酸，一共六类情形，每类一个主式子。把下面这张表背熟，酸碱 pH 计算就没有新题。</p>
+<h3>六类情形的 pH 主公式</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>情形</th>
+<th>典型物质</th>
+<th>主公式</th>
+<th>有效条件 / 备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一元强酸</td>
+<td>HCl、HNO<sub>3</sub></td>
+<td>[H<sup>+</sup>] = c</td>
+<td>c ≥ 10<sup>−6</sup>；更稀时必须加上水的贡献</td>
+</tr>
+<tr>
+<td>一元强碱</td>
+<td>NaOH、KOH</td>
+<td>[OH<sup>−</sup>] = c</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>一元弱酸</td>
+<td>HOAc、HCOOH</td>
+<td>[H<sup>+</sup>] = √(K<sub>a</sub>c)</td>
+<td>最简式，要求 c/K<sub>a</sub> ≥ 500 且 cK<sub>a</sub> ≥ 10 K<sub>w</sub></td>
+</tr>
+<tr>
+<td>一元弱碱</td>
+<td>NH<sub>3</sub>、苯胺</td>
+<td>[OH<sup>−</sup>] = √(K<sub>b</sub>c)</td>
+<td>同上，把 K<sub>a</sub> 换成 K<sub>b</sub></td>
+</tr>
+<tr>
+<td>两性物质</td>
+<td>NaHCO<sub>3</sub>、KHP、氨基酸</td>
+<td><b>[H<sup>+</sup>] = √(K<sub>a1</sub>K<sub>a2</sub>)</b>，即 pH = ½(pK<sub>a1</sub> + pK<sub>a2</sub>)</td>
+<td>要求 c ≫ K<sub>a1</sub> 且 cK<sub>a2</sub> ≫ K<sub>w</sub>；浓度不出现在结果里，这是最容易考的一点</td>
+</tr>
+<tr>
+<td>盐类水解</td>
+<td>NaOAc、NaCN、NH<sub>4</sub>Cl</td>
+<td>[OH<sup>−</sup>] = √(K<sub>w</sub>c / K<sub>a</sub>)</td>
+<td>弱酸强碱盐；弱碱强酸盐对称处理（用 K<sub>b</sub>）</td>
+</tr>
+<tr>
+<td>缓冲溶液</td>
+<td>HOAc/NaOAc、NH<sub>3</sub>/NH<sub>4</sub>Cl</td>
+<td><b>pH = pK<sub>a</sub> + lg(c<sub>碱</sub>/c<sub>酸</sub>)</b></td>
+<td>最简式；缓冲比超出 1:10 到 10:1 就不再是缓冲体系</td>
+</tr>
+<tr>
+<td>多元酸</td>
+<td>H<sub>2</sub>C<sub>2</sub>O<sub>4</sub>、H<sub>3</sub>PO<sub>4</sub></td>
+<td>按第一级解离做一元酸处理</td>
+<td>要求 K<sub>a1</sub> ≫ K<sub>a2</sub>（一般差 10<sup>4</sup> 以上）；否则需解联立方程</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">两性物质的 pH 与浓度无关，是这类题最好用的自检：如果算出的 pH 随 c 变化，一定是套错了式子。</p>
+<h3>缓冲溶液的三个量：pH、缓冲比、缓冲容量</h3>
+<div class="equation large">
+<b>pH = pK<sub>a</sub> + lg([共轭碱]/[弱酸])</b>&nbsp;&nbsp;&nbsp;缓冲容量 β = d<i>c</i><sub>b</sub>/d(pH) ≈ 2.303 × [共轭碱][弱酸]/([共轭碱] + [弱酸])
+</div>
+<div class="notation-box">
+<b>缓冲三问</b>
+<p><b>问 pH</b>：套 Henderson–Hasselbalch 式，注意代入的是<b>共轭酸碱对的</b>浓度，不是「酸 + 盐」的总量。<br><b>问选什么体系</b>：让 <b>pK<sub>a</sub> 尽量接近目标 pH</b>（相差 1 个 pH 单位以内）。所以配 pH 4 用 HOAc/HOAc<sup>−</sup>（pK<sub>a</sub> 4.76），配 pH 9 用 NH<sub>3</sub>/NH<sub>4</sub><sup>+</sup>（pK<sub>a</sub> 9.25），配 pH 7 用 H<sub>2</sub>PO<sub>4</sub><sup>−</sup>/HPO<sub>4</sub><sup>2−</sup>（pK<sub>a2</sub> 7.20）。<br><b>问缓冲容量</b>：同一 pK<sub>a</sub> 下，<b>总浓度越大、缓冲比越接近 1，容量越大</b>；容量最大时 pH = pK<sub>a</sub>。</p>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>对缓冲比的影响</th>
+<th>pH 变化</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>加入少量强酸</td>
+<td>碱/酸 变小</td>
+<td>下降</td>
+<td>强酸把等当量的共轭碱转成弱酸</td>
+</tr>
+<tr>
+<td>加入少量强碱</td>
+<td>碱/酸 变大</td>
+<td>上升</td>
+<td>强碱把等当量的弱酸转成共轭碱</td>
+</tr>
+<tr>
+<td>稀释</td>
+<td>比值不变（近似）</td>
+<td>几乎不变</td>
+<td>这是缓冲溶液区别于其他体系的核心特征</td>
+</tr>
+<tr>
+<td>稀释到极稀</td>
+<td>水的解离不可忽略</td>
+<td>偏离计算值</td>
+<td>体系失去缓冲能力</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">缓冲溶液的「抗稀释」是其定义性特征之一；考试里问「稀释后 pH 如何变化」，答案通常是「基本不变」。</p>
+<div class="worked-example">
+<span>例1</span>
+<h3>两性物质与盐类水解的对照（教材 Ch.7 习题 41、28）</h3>
+<p><b>(a)</b> 求 0.250 mol·L<sup>−1</sup> NaHCO<sub>3</sub> 的 pH。</p><p>碳酸的 K<sub>a1</sub> = 4.3 × 10<sup>−7</sup>（pK<sub>a1</sub> 6.37），K<sub>a2</sub> = 4.7 × 10<sup>−11</sup>（pK<sub>a2</sub> 10.33）。HCO<sub>3</sub><sup>−</sup> 是两性物质，用 pH = ½(pK<sub>a1</sub> + pK<sub>a2</sub>)：</p><div class="equation large">
+pH = ½ (6.37 + 10.33) = <b>8.35</b>
+</div><p>检验条件：c = 0.250 mol·L<sup>−1</sup> ≫ K<sub>a1</sub>，且 cK<sub>a2</sub> = 1.2 × 10<sup>−11</sup>，与 K<sub>w</sub> = 10<sup>−14</sup> 相比仍大三个数量级，条件成立。注意结果与浓度无关。</p><p><b>(b)</b> 求 0.010 mol·L<sup>−1</sup> NaCN 的 pH。</p><p>这是弱酸强碱盐，用 [OH<sup>−</sup>] = √(K<sub>w</sub>c/K<sub>a</sub>)。HCN 的 K<sub>a</sub> = 6.2 × 10<sup>−10</sup>，故 K<sub>b</sub> = K<sub>w</sub>/K<sub>a</sub> = 1.6 × 10<sup>−5</sup>：</p><div class="equation large">
+[OH<sup>−</sup>] = √(1.6 × 10<sup>−5</sup> × 0.010) = 4.0 × 10<sup>−4</sup> mol·L<sup>−1</sup>&nbsp;→&nbsp; pOH = 3.40&nbsp;→&nbsp; pH = <b>10.60</b>
+</div><p>检验：K<sub>b</sub>/c = 1.6 × 10<sup>−3</sup>，水解度约 4%，「水解很小」的近似勉强成立；若要求更准，应解二次方程 x<sup>2</sup> + K<sub>b</sub>x − K<sub>b</sub>c = 0。</p>
+</div>
+<p class="source-note">来源：教材 Ch.7 酸碱平衡 §7.1–§7.6；习题 28、41。式 7.78–7.84 给出分布分数通式。</p>
+</section>
+<section id="complex">
+<p class="section-kicker">◆.3 COMPLEX EQUILIBRIA</p>
+<h2>络合平衡：条件常数与最低 pH</h2>
+<p>络合平衡的全部难点集中在一件事上：<b>EDTA 有很多种质子化形态，而只有 Y<sup>4−</sup> 参与络合</b>。于是「把 pH 的影响打包进常数」这件事必须做两次——一次打包进 α<sub>4</sub>，一次打包进金属的副反应系数 α<sub>M</sub>。这一节的核心公式只有四条，但每条都有典型的错法。</p>
+<h3>四条核心公式</h3>
+<div class="formula-card"><span>1</span><b>形成常数（稳定常数）</b><div class="formula-body">K<sub>f</sub> = [MY] / ([M][Y<sup>4−</sup>])</div><p>K<sub>f</sub> 越大，络合物越稳定。注意分母是<b>游离</b> Y<sup>4−</sup>，不是 EDTA 总量。</p><p class="formula-count"><b>怎么算：</b>逐级常数相乘：β<sub>n</sub> = K<sub>f1</sub>K<sub>f2</sub>…K<sub>fn</sub>；K<sub>d</sub> = 1/K<sub>f</sub></p><p class="formula-when"><b>什么时候用：</b>只适用于「已经知道 [Y<sup>4−</sup>]」的场合；一旦 pH 固定，就该换成条件常数。</p></div>
+<div class="formula-card"><span>2</span><b>酸效应与分布分数 α<sub>4</sub></b><div class="formula-body">[Y<sup>4−</sup>] = α<sub>4</sub> <i>C</i><sub>H4Y</sub></div><p><i>C</i><sub>H4Y</sub> 是所有未络合 EDTA 形态的总浓度；α<sub>4</sub> 是其中 Y<sup>4−</sup> 所占的分数。</p><p class="formula-count"><b>怎么算：</b>α<sub>4</sub> = K<sub>a1</sub>K<sub>a2</sub>K<sub>a3</sub>K<sub>a4</sub> / Q<sub>4</sub></p><p class="formula-when"><b>什么时候用：</b>pH 已知时用它把 [Y<sup>4−</sup>] 换算成总量。pH ≥ 12 时 α<sub>4</sub> ≈ 1。</p></div>
+<div class="formula-card"><span>3</span><b>条件形成常数</b><div class="formula-body">K′<sub>f</sub> = K<sub>f</sub> α<sub>4</sub> = [MY] / ([M] <i>C</i><sub>H4Y</sub>)</div><p>把 pH 的影响折叠进常数，于是分母里的 EDTA 可以写成「总量」，不必再区分形态。</p><p class="formula-count"><b>怎么算：</b>lg K′<sub>f</sub> = lg K<sub>f</sub> + lg α<sub>4</sub></p><p class="formula-when"><b>什么时候用：</b>指定 pH 下使用。<b>注意：用了 K′<sub>f</sub> 就不能再乘一次 α<sub>4</sub></b>，否则重复计算。</p></div>
+<div class="formula-card"><span>4</span><b>同时考虑金属副反应</b><div class="formula-body">K″<sub>f</sub> = K′<sub>f</sub> / α<sub>M</sub></div><p>当溶液里有 NH<sub>3</sub>、OH<sup>−</sup>、其他配体 L 时，金属也被「抢走」一部分，α<sub>M</sub> 就是这个被抢走的程度。</p><p class="formula-count"><b>怎么算：</b>α<sub>M</sub> = 1 + β<sub>1</sub>[L] + β<sub>2</sub>[L]<sup>2</sup> + …</p><p class="formula-when"><b>什么时候用：</b>氨性缓冲中滴定、有掩蔽剂或辅助络合剂时使用。</p></div>
+<div class="notation-box">
+<b>α<sub>4</sub> 的速查与记忆</b>
+<p>教材给出的四个常数是 K<sub>a1</sub> = 1.0 × 10<sup>−2</sup>、K<sub>a2</sub> = 2.2 × 10<sup>−3</sup>、K<sub>a3</sub> = 6.9 × 10<sup>−7</sup>、K<sub>a4</sub> = 5.5 × 10<sup>−11</sup>。常用的 α<sub>4</sub> 值：<b>pH 3 约 2.5 × 10<sup>−11</sup>（log α<sub>4</sub> ≈ −10.6）、pH 7 约 4.8 × 10<sup>−4</sup>（−3.3）、pH 10 约 0.35（−0.45）、pH 12 约 0.98、pH 13 约 1.0</b>。<br>考试通常直接给 α<sub>4</sub> 或它的对数值，<b>不必自己算 Q<sub>4</sub></b>；但要记住 pH 10 这个数字 0.35（教材常简写为 0.36），因为它出现在几乎所有 EDTA 例题里。</p>
+</div>
+<h3>最低 pH：把「能不能滴定」变成一道不等式</h3>
+<div class="equation large">
+<b>log K′<sub>f</sub> = log K<sub>f</sub> + log α<sub>4</sub>(pH) ≥ 8</b>&nbsp;&nbsp;（教材的判别标准是 log K′<sub>f</sub> ≥ 6～8，取 8 更保险）
+</div>
+<div class="notation-box">
+<b>为什么是 8</b>
+<p>在计量点处 [M] ≈ √(<i>C</i><sub>M</sub>/(K′<sub>f</sub>·<i>V</i>))，要让终点附近金属浓度有足够的突跃（约两个数量级），经验上要求 log K′<sub>f</sub> ≥ 8。<br>反过来解不等式就得到<b>允许的最低 pH</b>：由 log α<sub>4</sub> ≥ 8 − log K<sub>f</sub> 查表定 pH。K<sub>f</sub> 越小（Ca<sup>2+</sup>），要求的 pH 越高；K<sub>f</sub> 越大（Fe<sup>3+</sup>、Bi<sup>3+</sup>）就越能在酸性下滴定。</p>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>金属</th>
+<th>log K<sub>f</sub> (MY)</th>
+<th>典型最低 pH</th>
+<th>常用缓冲/条件</th>
+<th>对应指示剂</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fe<sup>3+</sup></td>
+<td>≈ 25</td>
+<td>1～2</td>
+<td>强酸介质（HNO<sub>3</sub>）</td>
+<td>磺基水杨酸</td>
+</tr>
+<tr>
+<td>Bi<sup>3+</sup></td>
+<td>≈ 28</td>
+<td>1～2</td>
+<td>HNO<sub>3</sub> 介质，防水解</td>
+<td>二甲酚橙</td>
+</tr>
+<tr>
+<td>Pb<sup>2+</sup></td>
+<td>18.0</td>
+<td>4～5</td>
+<td>六亚甲基四胺缓冲</td>
+<td>二甲酚橙</td>
+</tr>
+<tr>
+<td>Zn<sup>2+</sup></td>
+<td>16.5</td>
+<td>4～5</td>
+<td>六亚甲基四胺或 pH 5 缓冲</td>
+<td>二甲酚橙</td>
+</tr>
+<tr>
+<td>Cu<sup>2+</sup></td>
+<td>18.8</td>
+<td>5～6</td>
+<td>pH 5 缓冲（氨性会生成氨络合物）</td>
+<td>PAN</td>
+</tr>
+<tr>
+<td>Mg<sup>2+</sup></td>
+<td>8.7</td>
+<td>10</td>
+<td>NH<sub>3</sub>–NH<sub>4</sub>Cl 缓冲</td>
+<td>铬黑 T</td>
+</tr>
+<tr>
+<td>Ca<sup>2+</sup></td>
+<td>10.7</td>
+<td>10</td>
+<td>NH<sub>3</sub>–NH<sub>4</sub>Cl 缓冲</td>
+<td>铬黑 T、钙镁指示剂</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">记忆线索：K<sub>f</sub> 每差 10 个数量级，要求的 pH 大约差 2～3 个单位；Fe³⁺、Bi³⁺ 属于「酸性下滴定」一档。</p>
+<div class="worked-example">
+<span>例2</span>
+<h3>条件常数的双重用法（教材 Ch.9 例 9.3/9.4 与习题 11）</h3>
+<p><b>题：</b>100 mL 0.100 mol·L<sup>−1</sup> Ca<sup>2+</sup> 在 pH 10 下用 0.100 mol·L<sup>−1</sup> EDTA 滴定，求 (a) 加入 100 mL 时、(b) 加入 150 mL 时的 pCa。已知 K<sub>f</sub>(CaY<sup>2−</sup>) = 5.0 × 10<sup>10</sup>，pH 10 时 α<sub>4</sub> = 0.35。</p><p><b>(a) 计量点处（V = 100 mL）：</b>先算条件常数，再由解离平衡解出游离金属。</p><div class="equation large">
+K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub> = 5.0 × 10<sup>10</sup> × 0.35 = 1.8 × 10<sup>10</sup><br><i>C</i><sub>CaY</sub> = 10.0 mmol / 200 mL = 0.0500 mol·L<sup>−1</sup><br>设 [Ca<sup>2+</sup>] = <i>x</i>，则游离 EDTA 总量 <i>x</i>，1.8 × 10<sup>10</sup> = 0.0500/<i>x</i><sup>2</sup> → <i>x</i> = 1.7 × 10<sup>−6</sup>
+</div><p>故 <b>pCa = 5.77</b>。</p><p><b>(b) 计量点后（V = 150 mL）：</b>此时 EDTA 过量，用「过量滴定剂」直接算：</p><div class="equation large">
+过量 EDTA 总量 = (150 − 100) mL × 0.100 = 5.00 mmol，在 250 mL 中为 0.0200 mol·L<sup>−1</sup><br>[Ca<sup>2+</sup>] = [CaY]/(K′<sub>f</sub>·<i>C</i><sub>EDTA,过量</sub>) = 0.0400/(1.8 × 10<sup>10</sup> × 0.0200) = 1.1 × 10<sup>−10</sup>
+</div><p>故 <b>pCa = 9.95</b>。可见计量点后 pCa 继续上升，突跃出现在计量点附近。</p><p><b>陷阱提醒：</b>本题 (a) 用的是「游离 EDTA 总量 = <i>x</i>，而 [Y<sup>4−</sup>] = α<sub>4</sub><i>x</i>」，K′<sub>f</sub> 已经把 α<sub>4</sub> 折进去了，所以代入的必须是总量 <i>x</i>。如果写成 [Y<sup>4−</sup>] = 0.35<i>x</i> 同时又用 K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub>，α<sub>4</sub> 就被算了两次，会得到 pCa ≈ 5.05，与标准答案 5.77 不符。</p>
+</div>
+<p class="source-note">来源：教材 Ch.9 §9.2–§9.5；例 9.3、9.4；习题 9–12。α₄ 数值见式 9.12b 与图 9.1。</p>
+</section>
+<section id="precip">
+<p class="section-kicker">◆.4 PRECIPITATION EQUILIBRIA</p>
+<h2>沉淀平衡：Ksp 的四种修正</h2>
+<p>沉淀平衡的公式都很短，难在<b>「不溶」不是绝对的</b>：任何沉淀都有溶解度，而且溶解度会被同离子、异离子、酸、络合剂四个因素改变。这一节把 K<sub>sp</sub> 的四种修正按「谁被改变了」分类，考试时先判断是哪一个因素在起作用。</p>
+<h3>溶度积与溶解度：先看价型再比大小</h3>
+<div class="equation large">
+M<sub>m</sub>A<sub>n</sub>(s) ⇌ <i>m</i>M<sup>n+</sup> + <i>n</i>A<sup>m−</sup>&nbsp;&nbsp;&nbsp;K<sub>sp</sub> = [M<sup>n+</sup>]<sup>m</sup>[A<sup>m−</sup>]<sup>n</sup>&nbsp;&nbsp;&nbsp;溶解度 <i>s</i> = (K<sub>sp</sub>/(<i>m</i><sup>m</sup><i>n</i><sup>n</sup>))<sup>1/(m+n)</sup>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>价型</th>
+<th>例子</th>
+<th><i>s</i> 与 K<sub>sp</sub> 的关系</th>
+<th>数值例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1:1 (AB)</td>
+<td>AgCl、BaSO<sub>4</sub></td>
+<td><i>s</i> = √K<sub>sp</sub></td>
+<td>K<sub>sp</sub> = 1.0 × 10<sup>−10</sup> → <i>s</i> = 1.0 × 10<sup>−5</sup> mol·L<sup>−1</sup></td>
+</tr>
+<tr>
+<td>1:2 / 2:1 (AB<sub>2</sub>)</td>
+<td>Ag<sub>2</sub>CrO<sub>4</sub>、CaF<sub>2</sub></td>
+<td><i>s</i> = (K<sub>sp</sub>/4)<sup>1/3</sup></td>
+<td>K<sub>sp</sub> = 1.1 × 10<sup>−12</sup> → <i>s</i> = 6.5 × 10<sup>−5</sup> mol·L<sup>−1</sup></td>
+</tr>
+<tr>
+<td>1:3 / 3:1 (AB<sub>3</sub>)</td>
+<td>Fe(OH)<sub>3</sub>、Ag<sub>3</sub>PO<sub>4</sub></td>
+<td><i>s</i> = (K<sub>sp</sub>/27)<sup>1/4</sup></td>
+<td>K<sub>sp</sub> = 4 × 10<sup>−38</sup> → <i>s</i> = 2.0 × 10<sup>−10</sup> mol·L<sup>−1</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">必考结论：<b>K<sub>sp</sub> 大的沉淀不一定溶解度高</b>。AgCl（K<sub>sp</sub> 10⁻¹⁰）与 Ag₂CrO₄（K<sub>sp</sub> 10⁻¹²）相比，K<sub>sp</sub> 后者更小，但摩尔溶解度后者反而更大（6.5 × 10⁻⁵ 对 1.0 × 10⁻⁵）。比较溶解度时必须先统一价型。</p>
+<h3>四种影响因素：谁被改变了</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>因素</th>
+<th>改变了什么</th>
+<th>定量表达</th>
+<th>典型后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同离子效应</td>
+<td>平衡中某一离子的浓度被人为提高</td>
+<td><i>s</i> ≈ K<sub>sp</sub>/[同名离子]（同名离子过量时）</td>
+<td>溶解度下降，沉淀更完全；洗涤沉淀时用稀的同名离子溶液而不是纯水</td>
+</tr>
+<tr>
+<td>异离子（盐）效应</td>
+<td>溶液离子强度提高，活度系数下降</td>
+<td>用活度积 K<sub>sp</sub><sup>0</sup> = <i>a</i><sub>M</sub><i>a</i><sub>A</sub> 代替浓度积</td>
+<td>溶解度反而<b>上升</b>；离子价型越高、浓度越大越明显</td>
+</tr>
+<tr>
+<td>酸效应</td>
+<td>阴离子被质子化，从平衡中「抽走」</td>
+<td>K′<sub>sp</sub> = K<sub>sp</sub>·α<sub>A</sub>（α<sub>A</sub> 是阴离子未质子化的分数）</td>
+<td>弱酸根沉淀（CaC<sub>2</sub>O<sub>4</sub>、AgIO<sub>3</sub>）在酸性中溶解度大幅上升</td>
+</tr>
+<tr>
+<td>络合效应</td>
+<td>金属离子被配体「抽走」</td>
+<td>K′<sub>sp</sub> = K<sub>sp</sub>·α<sub>M</sub></td>
+<td>AgCl 在氨水、AgBr 在硫代硫酸钠中溶解度大增，可用于分离</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">记忆法：<b>同离子压溶解度，其余三个都抬溶解度</b>。酸效应动阴离子，络合效应动阳离子，盐效应动「活度」这一层。</p>
+<div class="notation-box">
+<b>条件溶度积 K′<sub>sp</sub> 的写法</b>
+<p><b>K′<sub>sp</sub> = K<sub>sp</sub> · α<sub>A</sub> · α<sub>M</sub></b>（只用到哪个就乘哪个）。以 CaC<sub>2</sub>O<sub>4</sub> 在强酸中为例：K<sub>sp</sub> = [Ca<sup>2+</sup>][C<sub>2</sub>O<sub>4</sub><sup>2−</sup>]，而总草酸浓度 <i>C</i><sub>ox</sub> = [C<sub>2</sub>O<sub>4</sub><sup>2−</sup>]/α<sub>2</sub>，于是 K′<sub>sp</sub> = [Ca<sup>2+</sup>]<i>C</i><sub>ox</sub> = K<sub>sp</sub>/α<sub>2</sub>。注意 α 在<b>分母</b>：酸度越高 α<sub>2</sub> 越小，K′<sub>sp</sub> 越大，溶解度越大。这个「α 在上还是在下」是选择题的高频陷阱。</p>
+</div>
+<div class="worked-example">
+<span>例3</span>
+<h3>四种影响因素的连算（教材 Ch.10 习题 38 与 Ch.7 例 7.x）</h3>
+<p><b>(a)</b> 计算 BaSO<sub>4</sub> 在 0.0125 mol·L<sup>−1</sup> BaCl<sub>2</sub> 中的溶解度（考虑异离子效应）。K<sub>sp</sub>(BaSO<sub>4</sub>) = 1.1 × 10<sup>−10</sup>。</p><p>先按理想情况算同离子效应：</p><div class="equation large">
+<i>s</i> = [SO<sub>4</sub><sup>2−</sup>] = K<sub>sp</sub>/[Ba<sup>2+</sup>] = 1.1 × 10<sup>−10</sup>/0.0125 = 8.8 × 10<sup>−9</sup> mol·L<sup>−1</sup>
+</div><p>再考虑异离子效应：溶液离子强度由 0.0125 mol·L<sup>−1</sup> BaCl<sub>2</sub> 决定，I = ½(0.0125 × 4 + 0.025 × 1) = 0.0375。查表得 γ(Ba<sup>2+</sup>) ≈ 0.47、γ(SO<sub>4</sub><sup>2−</sup>) ≈ 0.47，故 <i>s</i> = K<sub>sp</sub>/(γ<sub>+</sub>γ<sub>−</sub>[Ba<sup>2+</sup>]) = 1.1 × 10<sup>−10</sup>/(0.47 × 0.47 × 0.0125) = <b>4.0 × 10<sup>−8</sup> mol·L<sup>−1</sup></b>。</p><p><b>结论：</b>异离子效应把溶解度抬高了约 4.5 倍，方向与同离子效应相反。考试中若同时给出离子强度和活度系数，必须两者都算。</p><p><b>(b)</b> 求 0.10 mol·L<sup>−1</sup> FeCl<sub>3</sub> 中 Fe(OH)<sub>3</sub> 刚开始沉淀的 pH。</p><div class="equation large">
+[Fe<sup>3+</sup>][OH<sup>−</sup>]<sup>3</sup> = 4 × 10<sup>−38</sup>&nbsp;&nbsp;→&nbsp;&nbsp;[OH<sup>−</sup>] = (4 × 10<sup>−38</sup>/0.10)<sup>1/3</sup> = 7.4 × 10<sup>−13</sup> mol·L<sup>−1</sup><br>pOH = 12.13&nbsp;&nbsp;→&nbsp;&nbsp;pH = <b>1.87</b>
+</div><p>所以配制 Fe<sup>3+</sup> 溶液必须酸化到 pH 2 以下，否则它会缓慢水解生成铁锈色凝胶。实际开始沉淀的 pH 会略高于计算值，因为沉淀需要过饱和度。</p>
+</div>
+<p class="source-note">来源：教材 Ch.10 §10.7–§10.9（溶度积、同离子效应、异离子效应）；例 10.4–10.6 与习题 38。</p>
+</section>
+<section id="redox">
+<p class="section-kicker">◆.5 REDOX EQUILIBRIA</p>
+<h2>氧化还原平衡：n 放在哪里</h2>
+<p>氧化还原平衡的公式里出现了新的东西：<b>电子数 n</b>。它进入对数项的系数，也进入计量点电位的加权平均。把 n 放对位置，这一类题就不会错。</p>
+<h3>三条公式撑起全部计算</h3>
+<div class="equation large">
+<b><i>E</i> = <i>E</i><sup>0</sup> − (0.05916/<i>n</i>) lg([Red]<sup>b</sup>/[Ox]<sup>a</sup>)</b>&nbsp;&nbsp;<small>（25 ℃，把通用式里的 2.3026RT/F 代入即得 0.05916 V）</small>
+</div><div class="notation-box">
+<b>能斯特方程</b>
+<p><b>含义.</b> 把「电位」翻译成「浓度比」。电位越低说明还原态越容易存在；对数项前的 0.05916/n 就是「每十倍浓度比对应多少伏」。<br><b>各量.</b> <i>n</i> 取半反应配平后的电子数；对数项里浓度要带各自的化学计量数作为指数；纯固体、纯液体、溶剂取 1<br><b>什么时候用.</b> 求某一半反应在给定浓度下的实际电位；判断反应方向（<i>E</i> > 0 则正向自发）。<br><b>怎么算.</b> 把题给的分析浓度、体积与常数按「各量」一栏对号入座后直接代入；先统一单位（浓度 mol·L<sup>−1</sup>，体积的 mL 与 L 不能混用），再按对数运算的位数决定结果的有效数字。</p>
+</div>
+<div class="equation large">
+<b>lg <i>K</i> = <i>n</i>Δ<i>E</i><sup>0</sup> / 0.05916 = <i>n</i>(<i>E</i><sup>0</sup><sub>正</sub> − <i>E</i><sup>0</sup><sub>负</sub>)/0.05916</b>
+</div><div class="notation-box">
+<b>电位与平衡常数</b>
+<p><b>含义.</b> 把「标准电位差」翻译成「反应完全程度」。Δ<i>E</i><sup>0</sup> 越大，<i>K</i> 越大，反应越完全。<br><b>各量.</b> 由 Δ<i>G</i><sup>0</sup> = −<i>nFE</i><sup>0</sup> 与 Δ<i>G</i><sup>0</sup> = −2.303<i>RT</i> lg <i>K</i> 联立得到；<i>n</i> 是总反应转移的电子数<br><b>什么时候用.</b> 判断某氧化还原反应能否用于滴定（一般要求 lg <i>K</i> > 6，即 Δ<i>E</i><sup>0</sup> > 0.35～0.4 V）。<br><b>怎么算.</b> 把题给的分析浓度、体积与常数按「各量」一栏对号入座后直接代入；先统一单位（浓度 mol·L<sup>−1</sup>，体积的 mL 与 L 不能混用），再按对数运算的位数决定结果的有效数字。</p>
+</div>
+<div class="equation large">
+<b><i>E</i><sub>eq</sub> = (<i>n</i><sub>1</sub><i>E</i><sup>0</sup><sub>1</sub> + <i>n</i><sub>2</sub><i>E</i><sup>0</sup><sub>2</sub>)/(<i>n</i><sub>1</sub> + <i>n</i><sub>2</sub>)</b>
+</div><div class="notation-box">
+<b>计量点电位</b>
+<p><b>含义.</b> 计量点电位是两个半反应电位的<b>加权平均</b>，权重就是电子数。当 <i>n</i><sub>1</sub> = <i>n</i><sub>2</sub> 时退化为简单平均。<br><b>各量.</b> 两个半反应的电子数与标准电位；<i>n</i> 只在有电子转移的那一项里出现<br><b>什么时候用.</b> <b>只在没有多原子物种、也没有 [H<sup>+</sup>] 依赖时成立</b>。涉及 MnO<sub>4</sub><sup>−</sup>、Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup> 或含 H<sup>+</sup> 的半反应时，必须把 pH 与浓度代入能斯特方程另行求解。<br><b>怎么算.</b> 把题给的分析浓度、体积与常数按「各量」一栏对号入座后直接代入；先统一单位（浓度 mol·L<sup>−1</sup>，体积的 mL 与 L 不能混用），再按对数运算的位数决定结果的有效数字。</p>
+</div>
+<div class="notation-box">
+<b>为什么计量点电位是加权平均</b>
+<p>在计量点处，两个半反应的电位相等（体系处于平衡），把两个能斯特方程相加、利用计量关系消去未知的对数项，剩下的就是 <i>n</i><sub>1</sub><i>E</i><sub>1</sub> + <i>n</i><sub>2</sub><i>E</i><sub>2</sub> = <i>n</i><sub>1</sub><i>E</i><sup>0</sup><sub>1</sub> + <i>n</i><sub>2</sub><i>E</i><sup>0</sup><sub>2</sub>。换句话说，<b>电子数多的那个半反应对计量点电位贡献更大</b>——这就是 MnO<sub>4</sub><sup>−</sup> 滴定 Fe<sup>2+</sup> 时计量点电位（1.39 V）明显偏向 MnO<sub>4</sub><sup>−</sup>/Mn<sup>2+</sup>（1.51 V）而不是 Fe<sup>3+</sup>/Fe<sup>2+</sup>（0.77 V）的原因。而 Ce<sup>4+</sup> 滴定 Fe<sup>2+</sup> 两个 n 都是 1，所以正好取中值 1.19 V。</p>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>半反应</th>
+<th><i>E</i><sup>0</sup> / V</th>
+<th><i>n</i></th>
+<th>常见用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ce<sup>4+</sup> + e<sup>−</sup> ⇌ Ce<sup>3+</sup></td>
+<td>1.61</td>
+<td>1</td>
+<td>基准氧化剂，可在 HClO<sub>4</sub> 或 HNO<sub>3</sub> 中直接滴定</td>
+</tr>
+<tr>
+<td>MnO<sub>4</sub><sup>−</sup> + 8H<sup>+</sup> + 5e<sup>−</sup> ⇌ Mn<sup>2+</sup> + 4H<sub>2</sub>O</td>
+<td>1.51</td>
+<td>5</td>
+<td>自身指示剂，需酸性介质</td>
+</tr>
+<tr>
+<td>Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup> + 14H<sup>+</sup> + 6e<sup>−</sup> ⇌ 2Cr<sup>3+</sup> + 7H<sub>2</sub>O</td>
+<td>1.33</td>
+<td>6</td>
+<td>基准氧化剂，可标定还原剂</td>
+</tr>
+<tr>
+<td>Fe<sup>3+</sup> + e<sup>−</sup> ⇌ Fe<sup>2+</sup></td>
+<td>0.77</td>
+<td>1</td>
+<td>最常用的被滴定对象之一</td>
+</tr>
+<tr>
+<td>I<sub>2</sub> + 2e<sup>−</sup> ⇌ 2I<sup>−</sup></td>
+<td>0.54</td>
+<td>2</td>
+<td>间接碘量法的基础</td>
+</tr>
+<tr>
+<td>S<sub>4</sub>O<sub>6</sub><sup>2−</sup> + 2e<sup>−</sup> ⇌ 2S<sub>2</sub>O<sub>3</sub><sup>2−</sup></td>
+<td>0.08</td>
+<td>2</td>
+<td>碘量法的标准还原剂</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">口诀：Ce⁴⁺ 1.61、MnO₄⁻ 1.51、Cr₂O₇²⁻ 1.33、Fe³⁺ 0.77、I₂ 0.54、S₄O₆²⁻ 0.08。按电位顺序就能排出谁能氧化谁。</p>
+<div class="worked-example">
+<span>例4</span>
+<h3>由电位差算平衡常数，再判断能否滴定（教材 Ch.14 例 14.1/14.2）</h3>
+<p><b>题：</b>用 Ce<sup>4+</sup> 滴定 Fe<sup>2+</sup>，E<sup>0</sup>(Ce<sup>4+</sup>/Ce<sup>3+</sup>) = 1.61 V，E<sup>0</sup>(Fe<sup>3+</sup>/Fe<sup>2+</sup>) = 0.77 V。求反应 Ce<sup>4+</sup> + Fe<sup>2+</sup> ⇌ Ce<sup>3+</sup> + Fe<sup>3+</sup> 的平衡常数与计量点电位。</p><p><b>(a) 平衡常数：</b>总反应转移 1 个电子（<i>n</i> = 1），Δ<i>E</i><sup>0</sup> = 1.61 − 0.77 = 0.84 V。</p><div class="equation large">
+lg <i>K</i> = 1 × 0.84/0.05916 = 14.20&nbsp;&nbsp;→&nbsp;&nbsp;<i>K</i> = 1.6 × 10<sup>14</sup>
+</div><p>lg <i>K</i> ≫ 6，反应进行得很完全，可以作为滴定反应。</p><p><b>(b) 计量点电位：</b>两个半反应的 <i>n</i> 都是 1，故为简单平均：</p><div class="equation large">
+<i>E</i><sub>eq</sub> = (1 × 1.61 + 1 × 0.77)/(1 + 1) = <b>1.19 V</b>
+</div><p>换成 MnO<sub>4</sub><sup>−</sup> 滴定 Fe<sup>2+</sup>（<i>n</i><sub>1</sub> = 5，<i>n</i><sub>2</sub> = 1）：<i>E</i><sub>eq</sub> = (5 × 1.51 + 1 × 0.77)/6 = <b>1.39 V</b>，明显偏向 MnO<sub>4</sub><sup>−</sup> 一侧——这就是「加权」二字的含义。</p><p><b>注意：</b>MnO<sub>4</sub><sup>−</sup> 的半反应含 H<sup>+</sup>，上式严格来说只在 [H<sup>+</sup>] = 1 mol·L<sup>−1</sup> 时成立；实际滴定（0.5～1 mol·L<sup>−1</sup> 硫酸）中要把它代入能斯特方程修正。</p>
+</div>
+<p class="source-note">来源：教材 Ch.12 §12.3（能斯特方程、式 12.20–12.22）与 Ch.14 §14.2–§14.3（式 14.2）。</p>
+</section>
+<section id="templates">
+<p class="section-kicker">◆.6 TITRATION TEMPLATES</p>
+<h2>滴定计算模板：标定、等量关系、四类对照</h2>
+<p>滴定计算有大量重复出现的「模板题」：标准溶液的标定、浓度与滴定度的换算、以及四类滴定在三个区段的取值。这一节把它们做成可以直接套用的模板。</p>
+<h3>模板一：标准溶液的标定与浓度换算</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>量</th>
+<th>关系式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>滴定度 <i>T</i></td>
+<td><i>T</i> = <i>c</i><sub>滴定剂</sub> × <i>M</i><sub>待测物</sub> × (计量比)</td>
+<td>单位 g·mL<sup>−1</sup>，表示 1 mL 滴定剂相当于多少克待测物</td>
+</tr>
+<tr>
+<td>标定计算</td>
+<td><i>c</i><sub>滴定剂</sub> = <i>m</i><sub>基准物</sub>/(<i>M</i><sub>基准物</sub> × <i>V</i><sub>滴定剂</sub>) × 计量比</td>
+<td>基准物与滴定剂的计量比由反应式确定，EDTA 与金属、CaCO<sub>3</sub> 与 EDTA 都是 1:1</td>
+</tr>
+<tr>
+<td>试样含量</td>
+<td>w = <i>c</i><sub>滴定剂</sub><i>V</i><sub>滴定剂</sub> × 计量比 × <i>M</i><sub>待测物</sub>/<i>m</i><sub>试样</sub> × 100%</td>
+<td>分取试样时不要忘记乘稀释倍数</td>
+</tr>
+<tr>
+<td>稀释倍数</td>
+<td>倍数 = <i>V</i><sub>定容</sub>/<i>V</i><sub>分取</sub></td>
+<td>这是最常被漏掉的一步，也是最常被扣分的一步</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">模板的本质是「摩尔关系 + 单位换算」：先用 cV 求出滴定剂的摩尔数，再按计量比换成待测物的摩尔数，最后换算成质量或质量分数。</p>
+<h3>模板二：强酸强碱滴定的四个点</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>加入滴定剂的量</th>
+<th>主变量算法</th>
+<th>0.100 M NaOH 滴定 50.0 mL 0.100 M HCl 的具体值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V = 0</td>
+<td>[H<sup>+</sup>] = <i>c</i><sub>酸</sub></td>
+<td>pH = 1.00</td>
+</tr>
+<tr>
+<td>V &lt; V<sub>eq</sub></td>
+<td>剩余酸的稀释浓度 [H<sup>+</sup>] = <i>c</i><sub>酸</sub><i>V</i><sub>酸</sub>/(<i>V</i><sub>酸</sub>+<i>V</i>) − 已中和部分</td>
+<td>V = 25.0 mL 时 pH = 1.48</td>
+</tr>
+<tr>
+<td>V = V<sub>eq</sub></td>
+<td>强酸强碱恰好中和，pH 由水决定</td>
+<td>pH = 7.00（25 ℃）</td>
+</tr>
+<tr>
+<td>V &gt; V<sub>eq</sub></td>
+<td>过量碱的稀释浓度 [OH<sup>−</sup>] = <i>c</i><sub>碱</sub>(<i>V</i>−<i>V</i><sub>eq</sub>)/(<i>V</i><sub>酸</sub>+<i>V</i>)</td>
+<td>V = 50.5 mL 时 pH = 10.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">注意各点的写法：<b>计量点前用「减去已中和」，计量点后用「过量的量」</b>。突跃范围在 0.100 mol·L<sup>−1</sup> 时约 pH 4.3→9.7，所以甲基橙与酚酞都能用；浓度降到 10<sup>−3</sup> mol·L<sup>−1</sup> 时突跃缩到 pH 5.3→8.7，只剩溴百里酚蓝可用。</p>
+<h3>模板三：四类滴定的「等量关系」</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>滴定类型</th>
+<th>计量点的摩尔关系</th>
+<th>典型的计算式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>酸碱滴定</td>
+<td>酸给出的质子数 = 碱接受的质子数</td>
+<td><i>c</i><sub>酸</sub><i>V</i><sub>酸</sub> × <i>n</i><sub>酸</sub> = <i>c</i><sub>碱</sub><i>V</i><sub>碱</sub> × <i>n</i><sub>碱</sub>（<i>n</i> 为每个分子能给出的质子数，如 Na<sub>2</sub>CO<sub>3</sub> 到甲基橙终点时 <i>n</i> = 2）</td>
+</tr>
+<tr>
+<td>络合滴定</td>
+<td>金属离子与 EDTA 1:1 络合</td>
+<td><i>c</i><sub>M</sub><i>V</i><sub>M</sub> = <i>c</i><sub>EDTA</sub><i>V</i><sub>EDTA</sub>（若金属为 1:1，几乎所有 EDTA 滴定都是）</td>
+</tr>
+<tr>
+<td>沉淀滴定</td>
+<td>Ag<sup>+</sup> 与阴离子按 AgX 的组成比反应</td>
+<td>莫尔法：<i>n</i>(Cl<sup>−</sup>) = <i>n</i>(Ag<sup>+</sup>)；佛尔哈德法用返滴定，<i>n</i>(X<sup>−</sup>) = <i>n</i>(Ag<sup>+</sup>)<sub>总</sub> − <i>n</i>(SCN<sup>−</sup>)</td>
+</tr>
+<tr>
+<td>氧化还原滴定</td>
+<td>得失电子数相等</td>
+<td><i>n</i><sub>1</sub><i>c</i><sub>1</sub><i>V</i><sub>1</sub> = <i>n</i><sub>2</sub><i>c</i><sub>2</sub><i>V</i><sub>2</sub>（<i>n</i> 为半反应电子数，这是四类里唯一需要带 n 的等量关系）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">等量关系是全部滴定计算的骨架；把它写对，后面的算术只是单位换算。</p>
+<div class="exam-focus">
+<h3>应试要点</h3>
+<ul><li>写等量关系时，铁律是<b>「摩尔数 × 计量数」两边相等</b>：酸碱用质子数，氧化还原用电子数，络合与沉淀用反应计量比。</li><li>标定与测定的计算式必须使用<b>同一个</b>计量比；若基准物与试样反应的计量比不同，要分别列出，不要图省事复用。</li><li>分取试样（如 250.0 mL 取 25.00 mL）时，最终结果一定要乘 10；这一步在草稿纸上单独写一行，避免遗漏。</li></ul>
+</div>
+</section>
+<section id="curves">
+<p class="section-kicker">◆.7 TITRATION CURVES</p>
+<h2>四类滴定的三个区段</h2>
+<p>滴定曲线题看起来千变万化，实际上只有<b>三个区段</b>，而每个区段用的公式在四类滴定里都能一一对应。把这张对应表记住，任何滴定曲线题都能直接下手。</p>
+<h3>三个区段的统一算法</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>区段</th>
+<th>物理状态</th>
+<th>酸–碱滴定</th>
+<th>络合滴定</th>
+<th>沉淀滴定</th>
+<th>氧化还原滴定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 计量点前</td>
+<td>剩余的被测物决定主变量</td>
+<td>剩余弱酸 + 生成共轭碱 → <b>缓冲式</b><br>pH = pK<sub>a</sub> + lg([A<sup>−</sup>]/[HA])</td>
+<td>剩余金属的稀释浓度<br>[M] = <i>C</i><sub>M</sub><i>V</i><sub>M</sub>/(<i>V</i><sub>M</sub>+<i>V</i><sub>L</sub>)</td>
+<td>剩余阴离子的稀释浓度<br>[X] = <i>C</i><sub>X</sub><i>V</i><sub>X</sub>/(<i>V</i><sub>X</sub>+<i>V</i><sub>L</sub>)</td>
+<td>按能斯特方程算<b>剩余还原剂</b>一侧的电位</td>
+</tr>
+<tr>
+<td>② 计量点</td>
+<td>两个平衡同时成立，需要联立</td>
+<td>按产物性质分类：强碱弱酸盐用 √(K<sub>w</sub>c/K<sub>a</sub>)，两性用 ½(pK<sub>a1</sub>+pK<sub>a2</sub>)</td>
+<td>[M] = √(<i>C</i><sub>M</sub><i>V</i><sub>M</sub>/(K′<sub>f</sub><i>V</i><sub>总</sub>))</td>
+<td>[X] = √(K<sub>sp</sub>)（1:1 型）</td>
+<td><i>E</i><sub>eq</sub> = (<i>n</i><sub>1</sub><i>E</i><sup>0</sup><sub>1</sub>+<i>n</i><sub>2</sub><i>E</i><sup>0</sup><sub>2</sub>)/(<i>n</i><sub>1</sub>+<i>n</i><sub>2</sub>)</td>
+</tr>
+<tr>
+<td>③ 计量点后</td>
+<td>过量的滴定剂决定主变量</td>
+<td>过量强碱 → [OH<sup>−</sup>] = 过量碱的稀释浓度</td>
+<td>[M] = [M]<sub>计量点</sub> × <i>V</i><sub>总</sub>/(<i>V</i><sub>L</sub> − <i>V</i><sub>eq</sub>)</td>
+<td>[X] = K<sub>sp</sub>/[Ag<sup>+</sup>]，[Ag<sup>+</sup>] 取过量滴定剂浓度</td>
+<td>按能斯特方程算<b>过量氧化剂</b>一侧的电位</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">四类滴定的区段逻辑完全同构：<b>计量点前看剩下多少被测物，计量点后看过量多少滴定剂，计量点处两个条件联立</b>。唯一需要单独记的是计量点处的那个式子。</p>
+<div class="notation-box">
+<b>四类滴定的一次性对照</b>
+<p>酸碱滴定的主变量是 <b>pH</b>，常数是 K<sub>a</sub>（或 K<sub>b</sub>），计量点式子是<b>缓冲式与水解式的交界</b>；<br>络合滴定的主变量是 <b>pM</b>，常数是 K′<sub>f</sub>，计量点式子是<b>解离平方根</b>；<br>沉淀滴定的主变量是 <b>pX</b>，常数是 K<sub>sp</sub>，计量点式子是<b>溶解度的平方根</b>；<br>氧化还原滴定的主变量是 <b><i>E</i></b>，常数是 <i>E</i><sup>0</sup>，计量点式子是<b>加权平均</b>。<br>络合与沉淀的计量点式子形式相同（都是 √(K 的倒数或 K 本身)），因为它们的数学结构都是「1:1 结合、产物几乎完全生成」。</p>
+</div>
+<h3>突跃大小由什么决定</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>滴定类型</th>
+<th>决定突跃的常数</th>
+<th>常数越大突跃</th>
+<th>提高突跃的办法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>酸碱滴定</td>
+<td>K<sub>a</sub> 或 K<sub>b</sub>（及浓度 c）</td>
+<td>越大（酸性越强）突跃越大</td>
+<td>提高浓度；多元酸分级滴定时要求相邻 K 差 10<sup>4</sup> 以上</td>
+</tr>
+<tr>
+<td>络合滴定</td>
+<td>K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub></td>
+<td>越大突跃越大</td>
+<td>提高 pH 以增大 α<sub>4</sub>；加掩蔽剂消除副反应（增大 K″<sub>f</sub>）</td>
+</tr>
+<tr>
+<td>沉淀滴定</td>
+<td>K<sub>sp</sub>（越小越好）</td>
+<td><b>越小</b>突跃越大</td>
+<td>选 K<sub>sp</sub> 更小的沉淀体系；降低溶解度（同离子、非水介质）</td>
+</tr>
+<tr>
+<td>氧化还原滴定</td>
+<td>Δ<i>E</i><sup>0</sup>（以及转移电子数 n）</td>
+<td>越大突跃越大</td>
+<td>选择电位相差大的体系；改变介质使条件电位差变大</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">注意沉淀滴定是<b>反向</b>的：K<sub>sp</sub> 越小（越难溶）突跃越大。这是四类里唯一需要「反过来记」的一条。</p>
+<div class="exam-focus">
+<h3>应试要点</h3>
+<ul><li>看到滴定曲线题，先在草稿纸上写「① ② ③」三个区段，再分别填公式——不要试图一口气算整条曲线。</li><li>区段① 在酸碱滴定里几乎总是缓冲式，所以「加入一半滴定剂时 pH = pK<sub>a</sub>」是最常考的一句话。</li><li>区段③ 的络合滴定不能直接用「过量的 EDTA 总量」当游离浓度，要先除以 K′<sub>f</sub>；这一点与沉淀滴定用 [Ag<sup>+</sup>] 过量直接算 pX 不同。</li></ul>
+</div>
+</section>
+<section id="indicator">
+<p class="section-kicker">◆.8 INDICATORS & ERROR</p>
+<h2>指示剂选择与终点误差</h2>
+<p>指示剂只做一件事：<b>把「终点」翻译成「看得见的信号」</b>。四类滴定各有自己的翻译方式，但共同的要求只有一个——<b>指示剂的响应区间要落在滴定曲线的突跃范围内</b>。</p>
+<h3>四类指示剂的原理与选择规则</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>滴定类型</th>
+<th>指示剂本质</th>
+<th>响应区间</th>
+<th>选择规则</th>
+<th>常用品种</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>酸碱滴定</td>
+<td>弱酸或弱碱，两种形态颜色不同</td>
+<td>pH = pK<sub>a</sub> ± 1（人眼需要 10:1 的浓度比）</td>
+<td>让 <b>pK<sub>a</sub> 落在计量点附近的突跃内</b></td>
+<td>酚酞（8.2–10.0）、甲基橙（3.1–4.4）、甲基红（4.4–6.2）、溴百里酚蓝（6.0–7.6）</td>
+</tr>
+<tr>
+<td>络合滴定</td>
+<td>本身就是螯合剂，与金属生成有色络合物</td>
+<td>pM 在 <b>lg K′<sub>MIn</sub> 附近</b>变色</td>
+<td>要求 lg K′<sub>MIn</sub> 比 lg K′<sub>MY</sub> <b>小 2～3 个单位</b>（太大则终点拖后，太小则变色太早）</td>
+<td>铬黑 T（pH 10，Ca/Mg）、二甲酚橙（pH &lt; 6，Bi/Pb/Zn）、钙镁指示剂、PAN</td>
+</tr>
+<tr>
+<td>沉淀滴定</td>
+<td>① 与滴定剂生成有色沉淀；② 吸附指示剂</td>
+<td>① 出现第二种沉淀的颜色；② 吸附后颜色改变</td>
+<td>① 指示剂浓度要算出来（见下）；② 让沉淀保持胶体以提供表面积</td>
+<td>① 铬酸钾（莫尔法）；② 荧光黄、二氯荧光黄、曙红（法扬司法）</td>
+</tr>
+<tr>
+<td>氧化还原滴定</td>
+<td>自身指示剂或专属指示剂</td>
+<td>① 滴定剂自身颜色；② 指示剂在特定电位下变色</td>
+<td>选择<b>变色电位落在突跃内</b>的指示剂</td>
+<td>KMnO<sub>4</sub>（自身）、淀粉（碘量法）、二苯胺磺酸钠（<i>E</i><sup>0</sup>′ ≈ 0.85 V）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">共同判据：<b>指示剂的变色区间必须与滴定曲线的突跃区间重叠</b>；重叠得越好，终点误差越小。</p>
+<h3>终点误差：三条来源、一张定量公式</h3>
+<div class="equation large">
+终点误差 <i>TE</i> = (终点时多加（或少加）的滴定剂量) / (计量点时应加的滴定剂量) × 100%&nbsp;&nbsp;<small>（体积量度式，最常用于交代数计算）</small>
+</div>
+<div class="notation-box">
+<b>三类误差来源，各自的应对</b>
+<p><b>① 指示剂误差</b>：指示剂变色点与计量点不重合。对策是选 pK<sub>In</sub> 合适的指示剂，或做<b>指示剂空白</b>并从结果中扣除（莫尔法尤其强调这一点）。<br><b>② 滴定误差（操作误差）</b>：多加或少加半滴。通常按 0.02～0.04 mL（约半滴）估算，相对误差约为 0.04 mL/<i>V</i><sub>eq</sub>。所以<b>滴定体积越大，相对误差越小</b>——这就是为什么常量分析要求消耗体积在 20 mL 以上。<br><b>③ 副反应误差</b>：共存离子、pH 漂移、空气氧化等。对策是掩蔽、控制介质。</p>
+</div>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>滴定类型</th>
+<th>终点误差的定量表达</th>
+<th>什么时候会偏大</th>
+<th>对策</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>酸碱滴定</td>
+<td>由终点时的 [H<sup>+</sup>] 或 [OH<sup>−</sup>] 与计量点 pH 之差换算成过量滴定剂</td>
+<td>突跃小（弱酸、稀溶液），或指示剂 pK<sub>In</sub> 离计量点 pH 超过 1 个单位</td>
+<td>换指示剂；提高浓度；改用仪器法（pH 计）确定终点</td>
+</tr>
+<tr>
+<td>络合滴定</td>
+<td>由游离金属在终点的 pM 与计量点 pM 之差换算</td>
+<td>lg K′<sub>MY</sub> 不够大（< 8）；指示剂被封闭或僵化</td>
+<td>提高 pH；加掩蔽剂；换指示剂；用返滴定</td>
+</tr>
+<tr>
+<td>沉淀滴定</td>
+<td>由过量 Ag<sup>+</sup>（或过量 SCN<sup>−</sup>）换算</td>
+<td>指示剂浓度偏离 0.002～0.005 mol·L<sup>−1</sup>；pH 不在约 8；AgCl 未过滤导致返滴定倒行</td>
+<td>做指示剂空白；控制 pH；测氯时必须滤去 AgCl 或加硝基苯包裹</td>
+</tr>
+<tr>
+<td>氧化还原滴定</td>
+<td>由终点电位与计量点电位之差换算</td>
+<td>Δ<i>E</i><sup>0</sup> 太小；指示剂变色电位偏离 <i>E</i><sub>eq</sub></td>
+<td>选 Δ<i>E</i><sup>0</sup> 更大的体系；用预氧化/预还原处理试样</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">记忆法：四类滴定的终点误差都是同一个形状——<b>（终点状态 − 计量点状态）换算成过量滴定剂的量</b>，只是「状态」用什么表征不同（pH、pM、pX、E）。</p>
+<div class="worked-example">
+<span>例5</span>
+<h3>终点误差的定量估算（按半滴估算与按指示剂浓度估算）</h3>
+<p><b>(a) 操作误差的估算。</b>用 0.100 mol·L<sup>−1</sup> NaOH 滴定 25.00 mL 0.100 mol·L<sup>−1</sup> HCl，滴定终点有半滴（0.02 mL）过量，求相对误差。</p><p>计量点体积 <i>V</i><sub>eq</sub> = 25.00 mL，故</p><div class="equation large">
+<i>TE</i> = 0.02/25.00 × 100% = <b>+0.08%</b>
+</div><p>若改用 0.0100 mol·L<sup>−1</sup> 的稀溶液（<i>V</i><sub>eq</sub> 仍为 25.00 mL），半滴的相对误差不变；但若试样只有 2.00 mL，则 <i>TE</i> = 0.02/2.00 = +1%，已经不能接受。这就是「滴定体积不宜过小」的定量理由。</p><p><b>(b) 莫尔法的指示剂误差。</b>已知计量点时 [Ag<sup>+</sup>] = 1.0 × 10<sup>−5</sup> mol·L<sup>−1</sup>，若实际使用的 [CrO<sub>4</sub><sup>2−</sup>] = 0.0050 mol·L<sup>−1</sup>，求 Ag<sub>2</sub>CrO<sub>4</sub> 开始沉淀时过量的 Ag<sup>+</sup> 浓度。</p><div class="equation large">
+[Ag<sup>+</sup>]<sup>2</sup> × 0.0050 = 1.1 × 10<sup>−12</sup>&nbsp;&nbsp;→&nbsp;&nbsp;[Ag<sup>+</sup>] = 1.5 × 10<sup>−5</sup> mol·L<sup>−1</sup>
+</div><p>比计量点时的 1.0 × 10<sup>−5</sup> 高出 0.5 × 10<sup>−5</sup> mol·L<sup>−1</sup>，即需要多加这么多 Ag<sup>+</sup> 才能看到终点。相对过量约为 0.5 × 10<sup>−5</sup>/0.100 ≈ 0.005%——<b>可忽略</b>，这正是选 0.002～0.005 mol·L<sup>−1</sup> 这个浓度区间的定量依据。</p>
+</div>
+<p class="source-note">来源：教材 Ch.8 §8.3（指示剂与变色范围、式 8.11–8.13）、Ch.11 §11.3–§11.4（莫尔法指示剂浓度与吸附指示剂）。</p>
+</section>
+<section id="tables">
+<p class="section-kicker">◆.9 FORMULA INDEX</p>
+<h2>公式总表：默写清单</h2>
+<p>最后一页是「默写清单」：把全课出现过的常数排成一张表，写明它的定义式、单位、与相邻常数的换算关系，以及适用条件。考前一天只看这一张。</p>
+<h3>六类常数总表</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>常数</th>
+<th>定义式</th>
+<th>单位 / 量级</th>
+<th>与相邻常数的关系</th>
+<th>适用条件与易错点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K<sub>w</sub></td>
+<td>[H<sup>+</sup>][OH<sup>−</sup>]</td>
+<td>无量纲，25 ℃ 为 1.0 × 10<sup>−14</sup></td>
+<td>pK<sub>w</sub> = pH + pOH；只与温度有关</td>
+<td>温度升高 K<sub>w</sub> 变大（37 ℃ 为 2.5 × 10<sup>−14</sup>），<b>中性溶液的 pH 不再是 7</b></td>
+</tr>
+<tr>
+<td>K<sub>a</sub> / K<sub>b</sub></td>
+<td>K<sub>a</sub> = [H<sup>+</sup>][A<sup>−</sup>]/[HA]</td>
+<td>无量纲，pK<sub>a</sub> 常见 2～12</td>
+<td><b>K<sub>a</sub>K<sub>b</sub> = K<sub>w</sub></b>（同一共轭对）；pK<sub>a</sub> + pK<sub>b</sub> = pK<sub>w</sub></td>
+<td>K<sub>a</sub> 与 K<sub>b</sub> 必须属于同一共轭对；多元酸要写清是第几级</td>
+</tr>
+<tr>
+<td>K<sub>f</sub>（β<sub>n</sub>）</td>
+<td>K<sub>f</sub> = [ML<sub>n</sub>]/([M][L]<sup>n</sup>)</td>
+<td>无量纲，常见 10<sup>5</sup>～10<sup>30</sup></td>
+<td>逐级常数相乘得累积常数：β<sub>n</sub> = K<sub>f1</sub>K<sub>f2</sub>…K<sub>fn</sub>；K<sub>d</sub> = 1/K<sub>f</sub></td>
+<td>分母用游离配体浓度，不是配体总量；逐级常数与累积常数不能混用</td>
+</tr>
+<tr>
+<td>K′<sub>f</sub>（条件常数）</td>
+<td>K′<sub>f</sub> = [MY]/([M]<i>C</i><sub>EDTA</sub>)</td>
+<td>无量纲，随 pH 变化</td>
+<td><b>K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub></b>；有金属副反应时再除以 α<sub>M</sub></td>
+<td>只对指定 pH 有效；<b>用了它就不能再乘 α<sub>4</sub></b>（最高频错误）</td>
+</tr>
+<tr>
+<td>K<sub>sp</sub></td>
+<td>K<sub>sp</sub> = [M]<sup>m</sup>[A]<sup>n</sup></td>
+<td>量纲随价型变化（(mol·L<sup>−1</sup>)<sup>m+n</sup>）</td>
+<td><i>s</i> = (K<sub>sp</sub>/(<i>m<sup>m</sup>n<sup>n</sup></i>))<sup>1/(m+n)</sup>；K′<sub>sp</sub> = K<sub>sp</sub>α<sub>A</sub>α<sub>M</sub></td>
+<td>浓度积用浓度、活度积用活度；<b>比较溶解度必须先统一价型</b></td>
+</tr>
+<tr>
+<td><i>E</i><sup>0</sup>（条件电位 <i>E</i><sup>0</sup>′）</td>
+<td><i>E</i> = <i>E</i><sup>0</sup> − (0.05916/<i>n</i>) lg([Red]<sup>b</sup>/[Ox]<sup>a</sup>)</td>
+<td>V（伏）</td>
+<td>lg <i>K</i> = <i>n</i>Δ<i>E</i><sup>0</sup>/0.05916；<i>E</i><sub>eq</sub> = (<i>n</i><sub>1</sub><i>E</i><sup>0</sup><sub>1</sub>+<i>n</i><sub>2</sub><i>E</i><sup>0</sup><sub>2</sub>)/(<i>n</i><sub>1</sub>+<i>n</i><sub>2</sub>)</td>
+<td>0.05916 只在 25 ℃ 成立；条件电位随介质改变，用条件电位代替标准电位更贴近实际</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">这张表里被标粗的三条是阅卷高频扣分点：K<sub>a</sub>K<sub>b</sub> = K<sub>w</sub> 必须同一共轭对；K′<sub>f</sub> 用了就不能再乘 α<sub>4</sub>；比较溶解度先统一价型。</p>
+<h3>全部计算式子一览</h3>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>计算对象</th>
+<th>式子</th>
+<th>条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>强酸/强碱 pH</td>
+<td>[H<sup>+</sup>] = c 或 [OH<sup>−</sup>] = c</td>
+<td>c ≥ 10<sup>−6</sup> mol·L<sup>−1</sup></td>
+</tr>
+<tr>
+<td>一元弱酸 pH</td>
+<td>[H<sup>+</sup>] = √(K<sub>a</sub>c)</td>
+<td>c/K<sub>a</sub> ≥ 500，cK<sub>a</sub> ≥ 10K<sub>w</sub></td>
+</tr>
+<tr>
+<td>两性物质 pH</td>
+<td>pH = ½(pK<sub>a1</sub> + pK<sub>a2</sub>)</td>
+<td>c ≫ K<sub>a1</sub>，cK<sub>a2</sub> ≫ K<sub>w</sub></td>
+</tr>
+<tr>
+<td>盐类水解 pH</td>
+<td>[OH<sup>−</sup>] = √(K<sub>w</sub>c/K<sub>a</sub>)</td>
+<td>水解度小</td>
+</tr>
+<tr>
+<td>缓冲溶液 pH</td>
+<td>pH = pK<sub>a</sub> + lg(c<sub>碱</sub>/c<sub>酸</sub>)</td>
+<td>缓冲比在 1:10～10:1 之间</td>
+</tr>
+<tr>
+<td>分布分数</td>
+<td>α<sub>i</sub> = 分子/Q<sub>n</sub></td>
+<td>任何 pH，但要注意质子化级数</td>
+</tr>
+<tr>
+<td>EDTA 的 α<sub>4</sub></td>
+<td>α<sub>4</sub> = K<sub>a1</sub>K<sub>a2</sub>K<sub>a3</sub>K<sub>a4</sub>/Q<sub>4</sub></td>
+<td>pH 已知</td>
+</tr>
+<tr>
+<td>条件形成常数</td>
+<td>K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub></td>
+<td>指定 pH</td>
+</tr>
+<tr>
+<td>最低 pH 判据</td>
+<td>lg K′<sub>f</sub> ≥ 8</td>
+<td>作为能否直接滴定的门槛</td>
+</tr>
+<tr>
+<td>摩尔溶解度</td>
+<td><i>s</i> = (K<sub>sp</sub>/(<i>m<sup>m</sup>n<sup>n</sup></i>))<sup>1/(m+n)</sup></td>
+<td>纯水中，无副反应</td>
+</tr>
+<tr>
+<td>条件溶度积</td>
+<td>K′<sub>sp</sub> = K<sub>sp</sub>α<sub>A</sub>α<sub>M</sub></td>
+<td>有酸效应或络合效应时</td>
+</tr>
+<tr>
+<td>能斯特方程</td>
+<td><i>E</i> = <i>E</i><sup>0</sup> − (0.05916/<i>n</i>) lg([Red]<sup>b</sup>/[Ox]<sup>a</sup>)</td>
+<td>25 ℃</td>
+</tr>
+<tr>
+<td>电位与平衡常数</td>
+<td>lg <i>K</i> = <i>n</i>Δ<i>E</i><sup>0</sup>/0.05916</td>
+<td>25 ℃</td>
+</tr>
+<tr>
+<td>计量点电位</td>
+<td><i>E</i><sub>eq</sub> = (<i>n</i><sub>1</sub><i>E</i><sup>0</sup><sub>1</sub>+<i>n</i><sub>2</sub><i>E</i><sup>0</sup><sub>2</sub>)/(<i>n</i><sub>1</sub>+<i>n</i><sub>2</sub>)</td>
+<td>无多原子物种、无 [H<sup>+</sup>] 依赖</td>
+</tr>
+<tr>
+<td>计量点 pM（络合）</td>
+<td>[M] = √(<i>C</i><sub>M</sub><i>V</i><sub>M</sub>/(K′<sub>f</sub><i>V</i><sub>总</sub>))</td>
+<td>lg K′<sub>f</sub> ≥ 6</td>
+</tr>
+<tr>
+<td>计量点 pX（沉淀 1:1）</td>
+<td>[X] = √(K<sub>sp</sub>)</td>
+<td>1:1 型沉淀</td>
+</tr>
+<tr>
+<td>终点误差</td>
+<td><i>TE</i> = 过量滴定剂体积/计量点体积 × 100%</td>
+<td>按半滴或按指示剂变色点估算</td>
+</tr>
+<tr>
+<td>换算因数</td>
+<td>F = <i>a</i>·M<sub>待测</sub>/(<i>b</i>·M<sub>称量形式</sub>)</td>
+<td>配平系数 a、b 由化学计量关系决定</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">这张表可以当作考场上的「查表」使用：先定位题型，再读出对应式子与条件。</p>
+<h3>滴定篇公式卡：含义 / 怎么算 / 什么时候用</h3>
+<p>上面的「全部计算式子一览」是查表用的清单，这里再把滴定篇里真正会考的式子逐条写成公式卡。自测方法是<b>遮住右边三列</b>，只留「式子」一栏，然后口述它的含义、代入步骤与适用条件。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>式子</th>
+<th>含义（这个式子在说什么）</th>
+<th>怎么算（代入的顺序）</th>
+<th>什么时候用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i>c</i><sub>标</sub> = <i>m</i><sub>基准物</sub>/(<i>M</i>·<i>V</i><sub>标</sub>) × 计量比</td>
+<td>标定：用已知质量的基准物确定滴定剂的准确浓度</td>
+<td>先算基准物的摩尔数 <i>m</i>/<i>M</i>，除以用去的滴定剂体积（L），再乘计量比</td>
+<td>配制标准溶液后、正式测定之前；基准物必须干燥恒重、只与滴定剂发生一个确定反应</td>
+</tr>
+<tr>
+<td><i>T</i> = <i>c</i><sub>滴定剂</sub><i>M</i><sub>待测物</sub> × 计量比</td>
+<td>滴定度：1 mL 滴定剂相当于多少克待测物</td>
+<td>把滴定剂浓度与待测物摩尔质量相乘，乘计量比；注意单位 g·mL<sup>−1</sup></td>
+<td>工业或常规分析里要求「体积即含量」时；换算后 w = <i>T</i>·<i>V</i>/<i>m</i><sub>试样</sub></td>
+</tr>
+<tr>
+<td><i>c</i><sub>1</sub><i>V</i><sub>1</sub>·<i>n</i><sub>1</sub> = <i>c</i><sub>2</sub><i>V</i><sub>2</sub>·<i>n</i><sub>2</sub></td>
+<td>等量关系：滴定剂与被测物在计量点按计量数恰好反应完全</td>
+<td>先写出配平的反应式，读出各自的计量数 <i>n</i>，再代入 cV 两边相等</td>
+<td>所有滴定计算的骨架。酸碱的 <i>n</i> 是质子数、氧化还原的 <i>n</i> 是电子数、络合与沉淀的 <i>n</i> 是反应计量比</td>
+</tr>
+<tr>
+<td>计量点前：[M] = <i>C</i><sub>M</sub><i>V</i><sub>M</sub>/(<i>V</i><sub>M</sub>+<i>V</i>)</td>
+<td>滴定曲线的「过量被测物」区段：只算剩余的、未被络合的金属</td>
+<td>用被测物总摩尔数除以当前总体积；不必考虑已生成络合物的解离</td>
+<td>加入体积小于计量点体积时。到达计量点前后一个突跃单位即改用下一行</td>
+</tr>
+<tr>
+<td>计量点：[M] = √(<i>C</i><sub>M</sub><i>V</i><sub>M</sub>/(K′<sub>f</sub><i>V</i><sub>总</sub>))</td>
+<td>计量点处金属浓度由络合物的解离决定，络合物越稳定浓度越低</td>
+<td>先用 cV 算出计量点时络合物的分析浓度，再除以 K′<sub>f</sub> 开平方</td>
+<td>K′<sub>f</sub> 很大、络合基本完全时；<b>用了 K′<sub>f</sub> 就不能再乘一次 α<sub>4</sub></b></td>
+</tr>
+<tr>
+<td>计量点后：[M] = [M]<sub>计量点</sub> × <i>V</i><sub>总</sub>/(<i>V</i>−<i>V</i><sub>eq</sub>)</td>
+<td>滴定曲线的「过量滴定剂」区段：金属被过量的 EDTA 压得更低</td>
+<td>取计量点的 [M] 乘总体积，再除以过量的滴定剂体积</td>
+<td>加入体积大于计量点体积时；过量越多 pM 越大（曲线上升）</td>
+</tr>
+<tr>
+<td>突跃 ΔpM = lg(K′<sub>f</sub><i>C</i><sub>M</sub>) − 常数项</td>
+<td>突跃大小由条件常数与浓度的乘积决定，与浓度只成对数关系</td>
+<td>比较两个 pH 下的 lg K′<sub>f</sub> 即可判断突跃是否够大</td>
+<td>判断某 pH 下能否直接滴定；教材判据是 lg K′<sub>f</sub> ≥ 8</td>
+</tr>
+<tr>
+<td><i>E</i> = <i>E</i><sup>0</sup> − (0.05916/<i>n</i>) lg([Red]<sup>b</sup>/[Ox]<sup>a</sup>)</td>
+<td>能斯特方程：把电位翻译成浓度比</td>
+<td>先配平半反应确定 <i>n</i> 与指数，把浓度按计量数取幂再取对数</td>
+<td>求半反应在给定浓度下的实际电位；判方向看 <i>E</i> > 0</td>
+</tr>
+<tr>
+<td>lg <i>K</i> = <i>n</i>Δ<i>E</i><sup>0</sup>/0.05916</td>
+<td>把标准电位差翻译成反应完全程度</td>
+<td><i>n</i> 取配平后总反应转移的电子数，Δ<i>E</i><sup>0</sup> 取两半反应之差</td>
+<td>判断氧化还原反应能否用于滴定：要求 lg <i>K</i> > 6，即 Δ<i>E</i><sup>0</sup> > 0.35～0.4 V</td>
+</tr>
+<tr>
+<td><i>E</i><sub>eq</sub> = (<i>n</i><sub>1</sub><i>E</i><sup>0</sup><sub>1</sub>+<i>n</i><sub>2</sub><i>E</i><sup>0</sup><sub>2</sub>)/(<i>n</i><sub>1</sub>+<i>n</i><sub>2</sub>)</td>
+<td>计量点电位是两个半反应电位的加权平均，权重就是电子数</td>
+<td>分别写出两个半反应的 <i>n</i> 与 <i>E</i><sup>0</sup>，代入加权式</td>
+<td><b>只适用于没有多原子物种、也没有 [H<sup>+</sup>] 依赖的反应</b>；含 MnO<sub>4</sub><sup>−</sup>、Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup> 时必须另行代入能斯特方程</td>
+</tr>
+<tr>
+<td><i>K</i><sub>sp</sub> = [M<sup><i>m</i>+</sup>]<sup><i>m</i></sup>[A<sup><i>n</i>−</sup>]<sup><i>n</i></sup></td>
+<td>溶度积：饱和溶液中各离子浓度按计量数取幂的乘积</td>
+<td>先由离子浓度写出表达式，比较同价型才能直接比大小</td>
+<td>判断沉淀生成（<i>Q</i> > <i>K</i><sub>sp</sub>）、计算溶解度或分步沉淀的次序</td>
+</tr>
+<tr>
+<td><i>s</i> = (K<sub>sp</sub>/(<i>m<sup>m</sup>n<sup>n</sup></i>))<sup>1/(<i>m</i>+<i>n</i>)</sup></td>
+<td>摩尔溶解度：每升饱和溶液能溶解多少摩尔该化合物</td>
+<td>把价型 <i>m</i>、<i>n</i> 代入分母，再开 1/(<i>m</i>+<i>n</i>) 次方</td>
+<td><b>不同价型的化合物比较溶解度时必须先换算</b>；AB 型 <i>s</i> = √K<sub>sp</sub>，AB<sub>2</sub> 型 <i>s</i> = ³√(K<sub>sp</sub>/4)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">四栏对应「式子 → 含义 → 怎么算 → 什么时候用」。凡是「什么时候用」一栏写成两个以上条件的，都是考卷上最容易漏判的地方。</p>
+<div class="exam-focus">
+<h3>应试要点</h3>
+<ul><li><b>必背数字</b>：0.05916 V（25 ℃ 的 2.303RT/F）、EDTA 在 pH 10 的 α<sub>4</sub> ≈ 0.35、lg K′<sub>f</sub> ≥ 8、莫尔法的 [CrO<sub>4</sub><sup>2−</sup>] 0.002～0.005 mol·L<sup>−1</sup> 与 pH ≈ 8。</li><li><b>必背电位</b>：Ce<sup>4+</sup>/Ce<sup>3+</sup> 1.61、MnO<sub>4</sub><sup>−</sup>/Mn<sup>2+</sup> 1.51、Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>/Cr<sup>3+</sup> 1.33、Fe<sup>3+</sup>/Fe<sup>2+</sup> 0.77、I<sub>2</sub>/I<sup>−</sup> 0.54。</li><li><b>必背换算</b>：K<sub>a</sub>K<sub>b</sub> = K<sub>w</sub>、K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub>、lg K = nΔE<sup>0</sup>/0.05916、pH = ½(pK<sub>a1</sub>+pK<sub>a2</sub>)。</li></ul>
+</div>
+</section>
+<section id="drill">
+<p class="section-kicker">◆.10 EXAM DRILL</p>
+<h2>例题训练：八道分类型自测</h2>
+<p>最后是八道按类型编排的自测题，全部改编自教材各章习题（题号已注明），覆盖四类平衡与四类滴定。建议先遮住答案独立算一遍，再对照「解题路线」核对步骤。</p>
+<div class="worked-example">
+<span>例6</span>
+<h3>训练 1 · 缓冲与稀释（教材 Ch.7 习题 45、26）</h3>
+<p><b>题：</b>计算 0.050 mol·L<sup>−1</sup> HCOOH 与 0.10 mol·L<sup>−1</sup> HCOONa 混合溶液的 pH（K<sub>a</sub> = 1.8 × 10<sup>−4</sup>）。若把该溶液稀释 10 倍，pH 如何变化？</p><p><b>解题路线：</b>先判断这是缓冲体系（弱酸 + 其共轭碱），直接套缓冲式；稀释 10 倍时两个浓度同比降低，比值不变，故 pH 基本不变。</p><div class="equation large">
+pH = 3.74 + lg(0.10/0.050) = 3.74 + 0.30 = <b>4.04</b>&nbsp;&nbsp;（稀释后仍为 4.04）
+</div><p><b>易错：</b>把 HCOONa 的浓度当成「共轭碱浓度」时不要忘记它是<b>完全解离</b>的，所以 c<sub>碱</sub> 直接等于盐的浓度；不要再去乘解离度。</p>
+</div>
+<div class="worked-example">
+<span>例7</span>
+<h3>训练 2 · 两类酸碱滴定曲线的关键点（教材 Ch.8 §8.1、§8.5）</h3>
+<p><b>题 A（强酸强碱）：</b>用 0.100 mol·L<sup>−1</sup> NaOH 滴定 50.0 mL 0.100 mol·L<sup>−1</sup> HCl，求 (a) 加入 50.5 mL 时的 pH，以及 (b) 突跃范围。</p><p><b>(a)</b>计量点体积正好 50.0 mL，过量碱的体积为 0.5 mL：</p><div class="equation large">
+[OH<sup>−</sup>] = 0.100 × 0.50/(50.0 + 50.5) = 4.98 × 10<sup>−4</sup> mol·L<sup>−1</sup><br>pOH = 3.30&nbsp;&nbsp;→&nbsp;&nbsp;pH = <b>10.70</b>
+</div><p><b>(b)</b>突跃范围取「计量点前 0.1% 到计量点后 0.1%」：计量点前 0.1% 剩余 [H<sup>+</sup>] ≈ 10<sup>−4</sup> mol·L<sup>−1</sup>（pH 4.3），计量点后 0.1% 过量 [OH<sup>−</sup>] ≈ 10<sup>−4</sup> mol·L<sup>−1</sup>（pH 9.7），故突跃约为 <b>pH 4.3～9.7</b>，两个指示剂（甲基橙、酚酞）都可用。</p><p><b>题 B（弱酸强碱）：</b>用 0.100 mol·L<sup>−1</sup> NaOH 滴定 50.0 mL 0.100 mol·L<sup>−1</sup> HOAc（K<sub>a</sub> = 1.75 × 10<sup>−5</sup>）。求 (a) 起点 pH、(b) 半中和点 pH、(c) 计量点 pH 与指示剂选择。</p><p><b>(a) 起点：</b>纯弱酸，[H<sup>+</sup>] = √(K<sub>a</sub>c)。</p><div class="equation large">
+[H<sup>+</sup>] = √(1.75 × 10<sup>−5</sup> × 0.100) = 1.32 × 10<sup>−3</sup>&nbsp;→&nbsp;pH = <b>2.88</b>
+</div><p><b>(b) 半中和点（V = 25.0 mL）：</b>HOAc 与 OAc<sup>−</sup> 各占一半，缓冲比 = 1，故 pH = pK<sub>a</sub>。</p><div class="equation large">
+pH = pK<sub>a</sub> = <b>4.76</b>
+</div><p>这是最常考的一句话：<b>半中和点的 pH 等于 pK<sub>a</sub></b>，与浓度无关。反过来说，从滴定曲线读半中和点的 pH 就能求出 K<sub>a</sub>。</p><p><b>(c) 计量点（V = 50.0 mL）：</b>全部变成 NaOAc，浓度稀释为 0.0500 mol·L<sup>−1</sup>，按弱酸强碱盐水解计算。</p><div class="equation large">
+[OH<sup>−</sup>] = √(K<sub>w</sub>c/K<sub>a</sub>) = √(10<sup>−14</sup> × 0.0500/1.75 × 10<sup>−5</sup>) = 5.35 × 10<sup>−6</sup>&nbsp;→&nbsp;pOH = 5.27&nbsp;→&nbsp;pH = <b>8.73</b>
+</div><p><b>选指示剂：</b>计量点 pH 8.73 落在酚酞（8.2–10.0）区间内，故选酚酞；甲基橙（3.1–4.4）在突跃之外，不能用。对照题 A：强酸强碱滴定突跃长，两个都能用；弱酸滴定的突跃整体上移且变短，只剩酚酞可用——<b>这就是「弱酸只能用酚酞」的由来</b>。</p>
+</div>
+<div class="worked-example">
+<span>例8</span>
+<h3>训练 3 · 络合滴定的条件常数与 pM（教材 Ch.9 习题 9、10）</h3>
+<p><b>题：</b>K<sub>f</sub>(PbY<sup>2−</sup>) = 1.10 × 10<sup>18</sup>。(a) 求 pH 3 与 pH 10 的条件形成常数；(b) 50.0 mL 0.0250 mol·L<sup>−1</sup> Pb<sup>2+</sup> 用 0.0100 mol·L<sup>−1</sup> EDTA 滴定，求计量点时的 pPb。</p><p><b>(a)</b>查 α<sub>4</sub>：pH 3 约 2.5 × 10<sup>−11</sup>，pH 10 约 0.35。</p><div class="equation large">
+pH 3：K′<sub>f</sub> = 1.10 × 10<sup>18</sup> × 2.5 × 10<sup>−11</sup> = 2.8 × 10<sup>7</sup><br>pH 10：K′<sub>f</sub> = 1.10 × 10<sup>18</sup> × 0.35 = 3.9 × 10<sup>17</sup>
+</div><p><b>结论：</b>pH 3 时 lg K′<sub>f</sub> = 7.4，小于 8，<b>突跃不足，不能准确滴定</b>；pH 10 时 lg K′<sub>f</sub> = 17.6，可以准确滴定。这就把「最低 pH」从概念变成了数字判断。</p><p><b>(b)</b>计量点体积 V<sub>eq</sub> = 50.0 × 0.0250/0.0100 = 125.0 mL，在 pH 10 下：</p><div class="equation large">
+[Pb<sup>2+</sup>] = √(<i>C</i><sub>Pb</sub><i>V</i><sub>Pb</sub>/(K′<sub>f</sub><i>V</i><sub>总</sub>)) = √(0.0250 × 50.0/(3.9 × 10<sup>17</sup> × 175.0)) = 1.4 × 10<sup>−10</sup><br>pPb = <b>9.87</b>
+</div><p><b>对照：</b>同一点在 pH 3 下 pPb 只有 4.80。两者相差 5 个数量级，直观地说明了 pH 对突跃大小的控制作用。</p><p><b>(c) 补算计量点前后各一点（说明曲线形状）：</b>pH 10 下，计量点前 50.0 mL（即加入 75.0 mL，<i>f</i> = 0.6）时按剩余金属的稀释浓度算：</p><div class="equation large">
+[Pb<sup>2+</sup>] = 0.0250 × 50.0/125.0 = 1.00 × 10<sup>−2</sup> mol·L<sup>−1</sup>&nbsp;→&nbsp;pPb = 2.00
+</div><p>计量点后加入 130.0 mL（过量 5.0 mL）时：</p><div class="equation large">
+[Pb<sup>2+</sup>] = 1.4 × 10<sup>−10</sup> × 180.0/5.0 = 5.0 × 10<sup>−9</sup>&nbsp;→&nbsp;pPb = 8.30
+</div><p>于是 pH 10 下的突跃大致是 pPb 2.0 → 8.3 → 9.9，跨度约 6 个数量级；而 pH 3 下同样是 130.0 mL 时 pPb 只有 3.2，跨度不足 2 个数量级，肉眼无法判断终点。把这三个点连起来就是络合滴定曲线的典型形状。</p>
+</div>
+<div class="worked-example">
+<span>例9</span>
+<h3>训练 4 · 沉淀的溶解度与分步沉淀（教材 Ch.10 例 10.6 与 Ch.11 习题）</h3>
+<p><b>题：</b>(a) 求 AgCl 在纯水中的摩尔溶解度（K<sub>sp</sub> = 1.0 × 10<sup>−10</sup>）；(b) 向含 0.10 mol·L<sup>−1</sup> I<sup>−</sup> 与 0.10 mol·L<sup>−1</sup> Cl<sup>−</sup> 的混合液中滴加 AgNO<sub>3</sub>，判断能否分步滴定（K<sub>sp</sub>(AgI) = 1 × 10<sup>−16</sup>）。</p><p><b>(a)</b>1:1 型沉淀，<i>s</i> = √K<sub>sp</sub>：</p><div class="equation large">
+<i>s</i> = √(1.0 × 10<sup>−10</sup>) = <b>1.0 × 10<sup>−5</sup> mol·L<sup>−1</sup></b>
+</div><p><b>(b)</b>分步沉淀的判据是「两种沉淀的 K<sub>sp</sub> 相差是否足够大」。先算 Cl<sup>−</sup> 开始沉淀所需的 [Ag<sup>+</sup>]，再算此时 I<sup>−</sup> 还剩多少：</p><div class="equation large">
+AgCl 开始沉淀：[Ag<sup>+</sup>] = 1.0 × 10<sup>−10</sup>/0.10 = 1.0 × 10<sup>−9</sup> mol·L<sup>−1</sup><br>此时剩余 [I<sup>−</sup>] = 1 × 10<sup>−16</sup>/1.0 × 10<sup>−9</sup> = 1.0 × 10<sup>−7</sup> mol·L<sup>−1</sup>
+</div><p>I<sup>−</sup> 已被沉淀掉 99.9999%（从 0.10 降到 10<sup>−7</sup>），残余量远小于 0.1%，<b>可以分步滴定</b>。这与教材食盐中碘含量测定（I<sup>−</sup> 先在 AgCl 之前沉淀完全）是同一个判据。</p><p><b>易错：</b>不要把「K<sub>sp</sub> 小」直接等同于「先沉淀」就结束——必须验证先沉淀的那个离子是否已经沉淀完全（残余 &lt; 0.1%），否则两个突跃会重叠。</p>
+</div>
+<div class="worked-example">
+<span>例10</span>
+<h3>训练 5 · 氧化还原滴定的电位与平衡常数（教材 Ch.14 例 14.2）</h3>
+<p><b>题：</b>用 0.0200 mol·L<sup>−1</sup> KMnO<sub>4</sub> 滴定 Fe<sup>2+</sup>（酸性介质）。(a) 求反应的平衡常数；(b) 求计量点电位；(c) 判断能否用二苯胺磺酸钠（<i>E</i><sup>0</sup>′ ≈ 0.85 V）作指示剂。</p><p><b>(a)</b>半反应为 MnO<sub>4</sub><sup>−</sup> + 8H<sup>+</sup> + 5e<sup>−</sup> ⇌ Mn<sup>2+</sup> + 4H<sub>2</sub>O（<i>E</i><sup>0</sup> = 1.51 V）与 Fe<sup>3+</sup> + e<sup>−</sup> ⇌ Fe<sup>2+</sup>（0.77 V），总反应转移 5 个电子，Δ<i>E</i><sup>0</sup> = 0.74 V。</p><div class="equation large">
+lg <i>K</i> = 5 × 0.74/0.05916 = 62.5&nbsp;&nbsp;→&nbsp;&nbsp;<i>K</i> = 3.5 × 10<sup>62</sup>
+</div><p><b>(b)</b>用加权平均（近似，忽略 [H<sup>+</sup>] 的贡献）：</p><div class="equation large">
+<i>E</i><sub>eq</sub> = (5 × 1.51 + 1 × 0.77)/(5 + 1) = <b>1.39 V</b>
+</div><p><b>(c)</b>二苯胺磺酸钠的变色电位 0.85 V 明显低于 <i>E</i><sub>eq</sub> = 1.39 V，变色点落在突跃<b>之内</b>（因为突跃上端由过量 MnO<sub>4</sub><sup>−</sup> 决定，电位可达 1.45 V 以上，下端由剩余 Fe<sup>2+</sup> 决定，电位约 0.9 V）。<b>可以用</b>，这也是经典的 Fe<sup>2+</sup> 测定体系（常加 H<sub>3</sub>PO<sub>4</sub> 降低 Fe<sup>3+</sup>/Fe<sup>2+</sup> 电位，使突跃更大）。</p>
+</div>
+<div class="worked-example">
+<span>例11</span>
+<h3>训练 6 · 换算因数与重量分析计算（教材 Ch.10 习题）</h3>
+<p><b>题：</b>称取 0.2711 g 含磷试样，沉淀为 (NH<sub>4</sub>)<sub>3</sub>PO<sub>4</sub>·12MoO<sub>3</sub>，灼烧后称得 1.1682 g。求试样中 P 与 P<sub>2</sub>O<sub>5</sub> 的质量分数。</p><p><b>解题路线：</b>先写换算因数。称量形式 M = 1876.5 g·mol<sup>−1</sup>；每个称量形式含 1 个 P（M<sub>P</sub> = 30.97），故</p><div class="equation large">
+F<sub>P</sub> = 30.97/1876.5 = 0.01650&nbsp;&nbsp;→&nbsp;&nbsp;w(P) = 1.1682 × 0.01650/0.2711 × 100% = <b>7.11%</b>
+</div><p>对于 P<sub>2</sub>O<sub>5</sub>，注意化学计量关系：2 个称量形式才对应 1 个 P<sub>2</sub>O<sub>5</sub>（M<sub>P2O5</sub> = 141.95），故</p><div class="equation large">
+F<sub>P2O5</sub> = 141.95/(2 × 1876.5) = 0.03782&nbsp;&nbsp;→&nbsp;&nbsp;w(P<sub>2</sub>O<sub>5</sub>) = 1.1682 × 0.03782/0.2711 × 100% = <b>16.30%</b>
+</div><p><b>自检：</b>P 占 P<sub>2</sub>O<sub>5</sub> 的质量分数为 2 × 30.97/141.95 = 43.6%，而 7.11/16.30 = 43.6%，两者一致，说明换算因数的系数取对了。这个「用元素占比反查」的自检法在两种换算因数之间必须总是成立。</p>
+</div>
+<div class="worked-example">
+<span>例12</span>
+<h3>训练 7 · 沉淀滴定的标准溶液计算（教材 Ch.9 习题 14 与 Ch.11 习题）</h3>
+<p><b>题：</b>以 0.3982 g 基准 CaCO<sub>3</sub> 标定 EDTA 溶液，耗去 38.26 mL，求 EDTA 的浓度；再用它滴定某水样 100.0 mL，耗去 0.01000 mol·L<sup>−1</sup> 的 EDTA （此处为标准溶液换算式练习）。</p><p><b>标定：</b>CaCO<sub>3</sub> 与 EDTA 是 1:1 反应（M<sub>CaCO3</sub> = 100.09 g·mol<sup>−1</sup>）。</p><div class="equation large">
+<i>n</i>(CaCO<sub>3</sub>) = 0.3982/100.09 = 3.978 × 10<sup>−3</sup> mol<br><i>C</i>(EDTA) = 3.978 × 10<sup>−3</sup> mol / 0.03826 L = <b>0.1040 mol·L<sup>−1</sup></b>
+</div><p><b>样品测定：</b>100.0 mL 水样耗去 12.50 mL 上述 EDTA（假设值），则钙的含量为</p><div class="equation large">
+w(Ca) = 0.1040 × 0.01250 × 40.08 = 0.05210 g = 52.10 mg　（即 52.10 mg/100 mL，约 521 mg·L<sup>−1</sup> 以 Ca 计）
+</div><p><b>应试要点：</b>① 标定与测定都用同一个 1:1 关系，不必列方程；② 水硬度常以 CaCO<sub>3</sub> 计，换算时用 M<sub>CaCO3</sub> 而不是 M<sub>Ca</sub>；③ 有效数字由最不精确的那个体积决定（38.26 mL 为 4 位）。</p>
+</div>
+<div class="worked-example">
+<span>例13</span>
+<h3>训练 8 · 综合：一个试样里的两个组分</h3>
+<p><b>题：</b>某混合碱试样含 NaOH 与 Na<sub>2</sub>CO<sub>3</sub>。取 1.000 g 试样溶解后稀释至 250.0 mL。取 25.00 mL 用 0.1000 mol·L<sup>−1</sup> HCl 滴定至酚酞终点耗去 20.00 mL，继续滴定至甲基橙终点又耗去 12.00 mL。求试样中 NaOH 与 Na<sub>2</sub>CO<sub>3</sub> 的质量分数。</p><p><b>解题路线（双指示剂法）：</b>酚酞终点对应 NaOH 全部中和 + Na<sub>2</sub>CO<sub>3</sub> 转化为 NaHCO<sub>3</sub>；甲基橙终点对应 NaHCO<sub>3</sub> 全部转化为 CO<sub>2</sub>。</p><div class="equation large">
+第二段（甲基橙段）耗酸 12.00 mL 全部用于 NaHCO<sub>3</sub> → CO<sub>2</sub>，故 Na<sub>2</sub>CO<sub>3</sub> 消耗的酸为 2 × 12.00 = 24.00 mL<br>NaOH 消耗的酸为 20.00 − 12.00 = 8.00 mL
+</div><p>于是</p><div class="equation large">
+<i>n</i>(Na<sub>2</sub>CO<sub>3</sub>) = ½ × 0.1000 × 0.02400 = 1.200 × 10<sup>−3</sup> mol<br>w(Na<sub>2</sub>CO<sub>3</sub>) = 1.200 × 10<sup>−3</sup> × 105.99 × (250.0/25.00)/1.000 = <b>12.72%</b><br><i>n</i>(NaOH) = 0.1000 × 0.00800 = 8.000 × 10<sup>−4</sup> mol<br>w(NaOH) = 8.000 × 10<sup>−4</sup> × 40.00 × 10/1.000 = <b>3.20%</b>
+</div><p><b>关键判断：</b>若第二段体积 <b>大于</b> 第一段的一半，说明试样中还有 NaHCO<sub>3</sub>；等于一半则只有 NaOH + Na<sub>2</sub>CO<sub>3</sub>；小于一半则只有 Na<sub>2</sub>CO<sub>3</sub> + NaHCO<sub>3</sub>。本题 12.00 = 20.00/2 + 2.00，所以第一段里既有 NaOH 又有 Na<sub>2</sub>CO<sub>3</sub>。这个判断是双指示剂法最常考的一步。</p>
+</div>
+<p class="source-note">来源：全部训练题改编自教材 Ch.7 习题 26/45、Ch.8 §8.5 例题结构、Ch.9 习题 9/10/14、Ch.10 例 10.6 与习题、Ch.11 习题、Ch.14 例 14.2。参考《分析化学》第 7 版（Christian）各章末习题。</p>
+</section>
+</article>
+</main>
+<script src="script.js">
+</script>
+
+</body>
+</html>

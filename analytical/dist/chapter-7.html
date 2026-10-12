@@ -89,6 +89,11 @@
 <span>佛尔哈德法</span>
 <span>法扬司法</span>
 </div>
+<div class="notation-box">
+<b>修订说明（对齐课件 7）</b>
+<p>
+本章初稿依教材第 11 章撰写，现按教师课件《Precipitation titrations》（共 27 张幻灯片）逐页校对后对齐。两者的<b>重合度很高</b>：课件 27 页中约 <b>20 页</b>直接对应教材第 11 章——沉淀平衡与 K<sub>sp</sub>、酸与络合对溶解度的影响、条件溶度积、滴定曲线的逐点计算、分步沉淀以及实验数据（如食盐碘含量例题）两边数字完全一致。相对教材，课件主要补充了四处内容：<b>① 指示剂的两类划分</b>（与滴定剂反应生成有色沉淀、吸附指示剂）；<b>② 莫尔法指示剂浓度的推导</b>（由 Ag₂CrO₄ 的 K<sub>sp</sub> 反推 0.011 mol·L⁻¹ 这一临界值）；<b>③ 佛尔哈德法的适用边界</b>（AgX 与 AgSCN 溶解度的比较决定要不要过滤沉淀）；<b>④ 吸附指示剂表</b>（Table 11.1 的完整形式）。这些内容已分别补入 §7.4–§7.7。</p>
+</div>
 </header>
 <nav class="chapter-jump" aria-label="本章快速导航">
 <a href="#acid">酸对溶解度的影响</a>
@@ -293,6 +298,16 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α<sub>M</sub> = [M⁺]<sub>T</sub> · [A�
 <p>银量法的曲线画法与酸碱滴定完全平行，只是把 pH 换成 pX
 （X 为卤素离子，pX = −log[X⁻]）。以 0.1000 mol·L⁻¹ Cl⁻ 用 0.1000 mol·L⁻¹ AgNO₃
 滴定为例，曲线分三段：</p>
+
+<p>课件把沉淀滴定的计算明确切成<b>五步</b>，比“三段式”更细，考试时按这五步逐段套用最不容易出错：<b>滴定前</b>（before the titration）→<b>计量点前</b>（before the equivalence point）→<b>计量点附近</b>（near the equivalence point）→<b>计量点</b>（at the equivalence point）→<b>计量点后</b>（beyond the equivalence point）。其中“计量点附近”单独列一步是有道理的：这一小段恰恰是突跃所在的陡峭区，精密计算的误差也集中在这里。</p>
+
+<p>三条曲线的 K<sub>sp</sub> 必须记住：<b>AgCl 1.0 × 10⁻¹⁰、AgBr 4 × 10⁻¹³、AgI 1 × 10⁻¹⁶</b>。课件把结论压成一句话：<b>K<sub>sp</sub> 越小，计量点处的突跃越大</b>（the smaller the K<sub>sp</sub>, the larger the break at the equivalence point）——沉淀越难溶，终点越敏锐。</p>
+
+<figure class="ppt-figure">
+<img src="assets/lecture-05/pcl-titration-curve.webp" alt="沉淀滴定曲线：左侧列出滴定计算的五个步骤，右侧为 pX 对 AgNO₃ 体积的曲线，AgI、AgBr、AgCl 三条曲线在计量点处的突跃依次减小" loading="lazy" decoding="async">
+<figcaption>左栏的五个步骤对应右侧曲线的五段；右图三条曲线对应 AgI（1 × 10⁻¹⁶）、AgBr（4 × 10⁻¹³）、AgCl（1.0 × 10⁻¹⁰）。计量点前三条曲线几乎重合，计量点后按 K<sub>sp</sub> 由大到小依次向上平移——<b>AgI 的突跃最大，AgCl 的最小</b>。<small>图源：Precipitation titrations, slide 9</small></figcaption>
+</figure>
+
 <div class="table-scroll wide">
 <table>
 <thead>
@@ -350,6 +365,13 @@ p² − (C<sub>X</sub>V<sub>X</sub> + C<sub>Y</sub>V<sub>Y</sub>)p + (C<sub>X</s
 在一次滴定中出现两个突跃。经典例子是 I⁻ 与 Cl⁻ 的混合物用 Ag⁺ 滴定——
 AgI 的 Ksp 比 AgCl 小 <b>10⁶ 倍</b>，所以 AgI 先沉淀。</p>
 
+<p>课件的判据说得更直接：<b>只有当两个 K<sub>sp</sub> 相差足够大时，两种能被同一试剂沉淀的组分才可能分步滴定</b>（if K<sub>sp</sub> values differ sufficiently, two analytes that can be precipitated by the same reagent can be titrated stepwise）。AgI 的 K<sub>sp</sub>（1 × 10⁻¹⁶）比 AgCl 的（1.0 × 10⁻¹⁰）小 10⁶ 倍，这个差值就是分步滴定的依据，也正是 <b>AgI 先沉淀</b>的原因。</p>
+
+<figure class="ppt-figure">
+<img src="assets/lecture-05/stepwise-precipitation.webp" alt="I⁻ 与 Cl⁻ 混合液用 AgNO₃ 滴定的分步沉淀曲线（教材 Fig. 11.2）：pAg 与 pCl、pI 三条曲线，计量点上出现两个突跃" loading="lazy" decoding="async">
+<figcaption>教材 Fig. 11.2：100 mL 含 0.1 mol·L⁻¹ I⁻ 与 0.1 mol·L⁻¹ Cl⁻ 的混合液用 0.1 mol·L⁻¹ AgNO₃ 滴定。第一个突跃对应 AgI 沉淀完全，第二个突跃对应 AgCl 沉淀完全——一次滴定里出现<b>两个突跃</b>，这是分步沉淀最直观的证据。注意 pI 曲线在两个突跃之间被“压平”在很低的位置，说明此时碘早已沉淀干净。<small>图源：Precipitation titrations, slide 15</small></figcaption>
+</figure>
+
 <p>分步滴定的关键在于判断<b>第二种沉淀何时开始出现</b>。判据是：
 滴定剂浓度 [Ag⁺] 达到使第二种沉淀的 Ksp 也被满足的那一刻。</p>
 <div class="equation">
@@ -364,7 +386,7 @@ V<sub>Ag</sub>C<sub>Ag</sub> = (V<sub>X</sub>I₀ − [I⁻]V<sub>T</sub>) + (V<
 <b>分步滴定的实用判据</b>
 <p>
 从上面的计算能看出，仅凭 Ksp 相差 10⁶ 倍还不足以保证定量准确。实际的判据要结合两种离子的<b>浓度比</b>一起看：浓度比越接近 1，所需的 Ksp 差值就越大。这与第 4 章多元酸分步滴定的判据 Ka₁ ≥ 10⁴Ka₂ 是同一个思路——都是要求第一步反应足够完全，第二步才开始。</p>
-</div><p class="source-note">来源：教材 §11.4 分步沉淀滴定部分，Example 11.7，式 (11.14)–(11.15)，Figure 11.2。</p>
+</div><p class="source-note">来源：教材 §11.4 分步沉淀滴定部分，Example 11.7，式 (11.14)–(11.15)，Figure 11.2；课件 7 slides 15-17。</p>
 </section>
 <section id="precip-indicator">
 <p class="section-kicker">7.6 INDICATORS REACTING WITH TITRANT</p>
@@ -372,8 +394,13 @@ V<sub>Ag</sub>C<sub>Ag</sub> = (V<sub>X</sub>I₀ − [I⁻]V<sub>T</sub>) + (V<
 
 <p>终点可以靠电位法（测 pCl 或 pAg）确定，但更方便的是用指示剂。
 沉淀滴定的指示剂理论<b>与酸碱指示剂完全不同</b>——
-它的性质不一定取决于溶液中某个离子的浓度，而是基于两个截然不同的机制。
-教材把它们分成两类。</p>
+它的变化<b>不取决于溶液中某个离子的浓度</b>，而是基于<b>两种截然不同的机制</b>。
+这两类机制是把本节和下节全部内容串起来的线索：一类靠与滴定剂生成有色沉淀，另一类靠沉淀表面对染料的吸附。教材把它们分成两类。</p>
+
+<figure class="ppt-figure">
+<img src="assets/lecture-05/indicator-two-types.webp" alt="沉淀滴定两类指示剂的总览：与过量滴定剂生成有色沉淀；吸附指示剂在计量点后因沉淀性质突变而被吸附并变色" loading="lazy" decoding="async">
+<figcaption>课件对两类指示剂的原话概括：第一类在<b>滴定剂过量时与滴定剂生成有色沉淀</b>；第二类是<b>吸附指示剂</b>——计量点处沉淀的性质发生突变，它<b>突然被吸附</b>到沉淀上，而指示剂<b>被吸附后的颜色与游离态不同</b>。两者都不是“某个离子浓度变化导致指示剂解离平衡移动”，这正是它们与酸碱指示剂的根本区别。<small>图源：Precipitation titrations, slide 18</small></figcaption>
+</figure>
 
 <p><b>第一类：与滴定剂反应生成有色沉淀。</b>
 指示剂在计量点后与过量的滴定剂反应，突然产生颜色变化。</p>
@@ -405,11 +432,13 @@ V<sub>Ag</sub>C<sub>Ag</sub> = (V<sub>X</sub>I₀ − [I⁻]V<sub>T</sub>) + (V<
 </div>
 <p class="table-caveat">来源：教材 §11.4 指示剂部分。这两个方法是分析化学史上最经典的银量法：盖-吕萨克 1829 年用浊度法测定银的精度已达 0.05%，莫尔随后用 K₂CrO₄ 改进了终点判断。</p>
 <h3>莫尔法：指示剂浓度是算出来的</h3>
-<p>莫尔法的难点在于<b>指示剂该加多少</b>。要求是 Ag₂CrO₄ 恰好在计量点开始沉淀，
-而计量点时 [Ag⁺] = 10⁻⁵ mol·L⁻¹（饱和 AgCl 溶液）。代入 Ag₂CrO₄ 的 Ksp = 1.1 × 10⁻¹²：</p>
+<p>莫尔法的难点在于<b>指示剂该加多少</b>。这里要建立一个观念：铬酸钾的用量<b>不是凭经验随手加的，而是由 K<sub>sp</sub> 算出来的</b>。
+要求是 Ag₂CrO₄ 恰好在计量点开始沉淀，而计量点时溶液是饱和 AgCl 溶液，其<b>摩尔溶解度 s(AgCl) = 1.0 × 10⁻⁵ mol·L⁻¹</b>，即 [Ag⁺] = 1.0 × 10⁻⁵ mol·L⁻¹。代入 Ag₂CrO₄ 的 Ksp = 1.1 × 10⁻¹²：</p>
 <div class="equation large">
-(10⁻⁵)²[CrO₄²⁻] = 1.1 × 10⁻¹²  ⟹  [CrO₄²⁻] = 1.1 × 10⁻² mol·L⁻¹
-</div><div class="table-scroll wide">
+(1.0 × 10⁻⁵)²[CrO₄²⁻] = 1.1 × 10⁻¹²  ⟹  [CrO₄²⁻] = 0.011 mol·L⁻¹
+</div>
+<p>由此得到<b>0.011 mol·L⁻¹ 这个临界值</b>。它给出的是一个<b>方向</b>：高于它，Ag₂CrO₄ 在计量点<b>之前</b>就析出；低于它，则必须超过计量点才析出。两种偏离都直接写成终点误差：</p>
+<div class="table-scroll wide">
 <table>
 <thead>
 <tr>
@@ -419,16 +448,16 @@ V<sub>Ag</sub>C<sub>Ag</sub> = (V<sub>X</sub>I₀ − [I⁻]V<sub>T</sub>) + (V<
 </thead>
 <tbody>
 <tr>
-<td>> 0.011 mol·L⁻¹</td>
-<td>Ag₂CrO₄ 在 [Ag⁺] < 10⁻⁵ 时就析出，终点<b>提前</b>（结果偏低）</td>
+<td>&gt; 0.011 mol·L⁻¹</td>
+<td>Ag₂CrO₄ 在 [Ag⁺] &lt; 10⁻⁵ M 时（计量点<b>之前</b>）就析出，终点<b>提前</b>（结果偏低）</td>
 </tr>
 <tr>
-<td>< 0.011 mol·L⁻¹</td>
-<td>[Ag⁺] 必须超过 10⁻⁵ 才析出，终点<b>拖后</b>（结果偏高）</td>
+<td>&lt; 0.011 mol·L⁻¹</td>
+<td>需要 [Ag⁺] &gt; 10⁻⁵ M，即计量点<b>之后</b>才析出，终点<b>拖后</b>（结果偏高）</td>
 </tr>
 <tr>
 <td>实际取值 0.002–0.005 mol·L⁻¹</td>
-<td>远低于理论值，因为铬酸根的深黄色会掩盖砖红色沉淀；由此产生的指示剂误差用<b>空白滴定</b>扣除，或用 NaCl 基准物标定 AgNO₃ 一并校正</td>
+<td>远低于理论值 0.011 mol·L⁻¹。理由是：<b>铬酸根的深黄色会掩盖 Ag₂CrO₄ 的红色</b>，浓度太高时需要过量 Ag⁺ 才能生成足量的沉淀被看出来；由此产生的指示剂误差用<b>空白滴定</b>扣除，或用 NaCl 基准物标定 AgNO₃ 一并校正</td>
 </tr>
 </tbody>
 </table>
@@ -436,15 +465,23 @@ V<sub>Ag</sub>C<sub>Ag</sub> = (V<sub>X</sub>I₀ − [I⁻]V<sub>T</sub>) + (V<
 <p class="table-caveat">来源：教材 §11.4。这个细节很能说明问题：理论计算给出的是<b>方向</b>，实际取值还要考虑人眼对颜色的分辨能力。</p><div class="notation-box">
 <b>莫尔法为什么必须控制在 pH ≈ 8</b>
 <p>
-<b>pH < 6</b>：部分 CrO₄²⁻ 质子化成 HCrO₄⁻，需要更多 Ag⁺ 才能生成 Ag₂CrO₄，终点拖后。<br><b>pH > 10</b>：会析出 AgOH / Ag₂O 沉淀。<br>实际操作用加入<b>固体碳酸钙</b>的方式维持在 pH ≈ 8——碳酸根是较强的布朗斯特碱，饱和碳酸钙溶液的碱度刚好合适。莫尔法适用于中性或非缓冲溶液，如饮用水中的氯离子。</p>
+这是本法的<b>硬性条件</b>，两侧的失效原因不同，要分开记：<br><b>pH &lt; 6（酸性太强）</b>：部分指示剂以 <b>HCrO₄⁻</b> 形式存在（CrO₄²⁻ 被质子化），需要<b>更多 Ag⁺</b> 才能生成 Ag₂CrO₄ 沉淀，终点拖后（结果偏高）。<br><b>pH &gt; 10（碱性太强）</b>：可能析出 <b>AgOH / Ag₂O</b> 沉淀，银离子被白白消耗。<br>所以实际操作用加入<b>固体碳酸钙</b>的方式维持在 pH ≈ 8——碳酸根是较强的布朗斯特碱，饱和碳酸钙溶液的碱度刚好合适。莫尔法适用于中性或非缓冲溶液，如饮用水中的氯离子。</p>
 </div>
 <h3>佛尔哈德法：返滴定与那个必须过滤的例外</h3>
-<p>佛尔哈德法是<b>间接</b>滴定：先加过量 AgNO₃ 把阴离子沉淀掉，
-再用标准 KSCN 返滴定剩余的 Ag⁺。终点由铁铵矾指示——
-第一个过量的 SCN⁻ 会与 Fe³⁺ 生成红色络合物。</p>
+<p>佛尔哈德法是<b>间接</b>滴定（indirect titration），在<b>酸性</b>溶液中完成：先加过量 AgNO₃ 把阴离子沉淀掉，
+再用标准 KSCN 返滴定（back-titration）剩余的 Ag⁺。终点由铁铵矾指示——
+第一个过量的 SCN⁻ 会与 Fe³⁺ 生成可溶的红色络合物。</p>
+
+<figure class="ppt-figure">
+<img src="assets/lecture-05/volhard-reactions.webp" alt="佛尔哈德法课件页：间接滴定在酸性溶液中进行，先加过量 AgNO₃ 沉淀阴离子，再用 KSCN 返滴定过量 Ag⁺，铁铵矾与过量滴定剂生成红色络合物" loading="lazy" decoding="async">
+<figcaption>课件把佛尔哈德法的三步写成一个流程：<b>①</b> X⁻ + Ag⁺（过量）→ AgX↓ + 剩余 Ag⁺；<b>②</b> 剩余 Ag⁺ + SCN⁻ → AgSCN↓；<b>③</b> Fe³⁺ + SCN⁻ → Fe(SCN)²⁺（红色），用第一个过量的 SCN⁻ 报出终点。<small>图源：Precipitation titrations, slide 22</small></figcaption>
+</figure>
+
 <div class="equation">
 X⁻ + Ag⁺（过量）→ AgX↓ + Ag⁺（剩余）<br>Ag⁺（剩余）+ SCN⁻ → AgSCN↓<br>Fe³⁺ + SCN⁻ → Fe(SCN)²⁺（红色）
-</div><div class="table-scroll wide">
+</div>
+<p>返滴定法的<b>适用边界</b>完全由 AgX 与 AgSCN 的溶解度比较决定。课件给的判据是一条干脆的分界线：</p>
+<div class="table-scroll wide">
 <table>
 <thead>
 <tr>
@@ -457,32 +494,40 @@ X⁻ + Ag⁺（过量）→ AgX↓ + Ag⁺（剩余）<br>Ag⁺（剩余）+ SCN
 <tbody>
 <tr>
 <td>I⁻、Br⁻、SCN⁻</td>
-<td>AgX 比 AgSCN <b>更难溶</b>或相当</td>
+<td>AgX 比 AgSCN <b>更难溶</b>或与之<b>相等</b></td>
 <td>不需要</td>
-<td>沉淀不会与滴定剂反应，终点清晰</td>
+<td>沉淀不会与滴定剂反应，终点清晰。判据是：AgX 的溶解度 ≤ AgSCN 时，<b>不必过滤沉淀</b>即可直接滴定</td>
 </tr>
 <tr>
 <td>Cl⁻</td>
 <td>AgCl 比 AgSCN <b>更易溶</b></td>
 <td><b>必须过滤</b></td>
-<td>AgCl + SCN⁻ → AgSCN + Cl⁻，沉淀会被返滴定的 SCN⁻ 转化，终点偏高且拖尾</td>
+<td>沉淀会与滴定剂反应：AgCl + SCN⁻ → AgSCN + Cl⁻，把返滴定的 SCN⁻ 消耗掉，终点<b>偏高且拖尾</b>（a high and diffuse end point）。测氯时必须<b>滤去 AgCl 沉淀</b>，或加<b>硝基苯</b>把沉淀包裹起来使其不与 SCN⁻ 接触，然后再返滴定</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p class="table-caveat">来源：教材 §11.4。这是佛尔哈德法最容易被忽略的一步：测氯必须先把 AgCl 滤掉，测溴和碘则不必。</p><div class="notation-box">
+<p class="table-caveat">来源：教材 §11.4；课件 7 slide 23。这是佛尔哈德法最容易被忽略的一步：判据只有一条——<b>AgX 与 AgSCN 谁更难溶</b>。比 AgSCN 更难溶或相当的（AgI、AgBr、AgSCN）可以带着沉淀直接滴；比 AgSCN 更易溶的（AgCl）必须先处理掉沉淀，否则沉淀会“倒吸”返滴定的 SCN⁻，测出的氯必然<b>偏高</b>。</p><div class="notation-box">
 <b>佛尔哈德法的两条操作纪律</b>
 <p>
 ① 测 I⁻ 时<b>指示剂要等碘离子全部沉淀后再加</b>——否则 Fe³⁺ 会把 I⁻ 氧化成 I₂，产生正误差。<br>② 指示剂生成的沉淀<b>不能比被测沉淀更稳定</b>，否则第一滴滴定剂就会显色，终点完全失效。</p>
-</div><p class="source-note">来源：教材 §11.4 指示剂部分，式 (11.16)–(11.19)。</p>
+</div><p class="source-note">来源：教材 §11.4 指示剂部分，式 (11.16)–(11.19)；课件 7 slides 18-23。</p>
 </section>
 <section id="adsorption">
 <p class="section-kicker">7.7 ADSORPTION INDICATORS</p>
 <h2>第二类指示剂：吸附指示剂与法扬司法</h2>
 
-<p>吸附指示剂的机理完全不同：反应发生在<b>沉淀表面</b>，
-而指示剂是一种染料，在溶液中以阴离子 In⁻ 形式存在。
-它的颜色变化来自于<b>被吸附</b>，而不是与滴定剂生成新化合物。</p>
+<p>吸附指示剂的机理走的是另一条路线：<b>反应发生在沉淀表面</b>（on the surface of the precipitate），
+而指示剂是一种<b>染料</b>（dye），在溶液中以离子形式存在，通常是<b>阴离子 In⁻</b>。
+它的颜色变化来自于<b>被吸附</b>，而不是与滴定剂生成新化合物。整套机理可以拆成四步：</p>
+
+<p><b>① 指示剂以阴离子形式存在。</b>染料在溶液中解离成 In⁻，本身是游离态的颜色；反应只有在<b>沉淀表面</b>才谈得上。</p>
+
+<p><b>② 计量点前，Cl⁻ 过量，吸附层是 Cl⁻。</b>沉淀表面倾向于吸附溶液中过量的那种离子。此时<b>第一吸附层（primary adsorbed layer）是 Cl⁻</b>，粒子带负电，它<b>排斥</b>指示剂阴离子 In⁻，In⁻ 只能留在溶液里；而结合较松的<b>反离子层（counter layer，又称第二层）是 Na⁺ 之类的阳离子</b>。整个表面结构写作 <b>AgCl: Cl⁻∷Na⁺</b>。</p>
+
+<p><b>③ 计量点后，Ag⁺ 过量，吸附层翻转为 Ag⁺。</b>沉淀表面带正电，<b>第一吸附层变成 Ag⁺</b>，于是反过来<b>吸引</b>指示剂阴离子 In⁻，把它拉进反离子层吸附住。此时表面结构写作 <b>AgCl: Ag⁺∷In⁻</b>。</p>
+
+<p><b>④ 被吸附的指示剂颜色与游离态不同，颜色突变即终点。</b>同一个染料，被吸附前后的颜色不一样，所以“变色”本身就是终点信号。</p>
 
 <p>以 Cl⁻ 用 Ag⁺ 滴定为例，沉淀表面的带电情况在计量点前后发生翻转：</p>
 <div class="table-scroll wide">
@@ -511,7 +556,14 @@ X⁻ + Ag⁺（过量）→ AgX↓ + Ag⁺（剩余）<br>Ag⁺（剩余）+ SCN
 </tbody>
 </table>
 </div>
-<p class="table-caveat">来源：教材 §11.4 吸附指示剂部分。写法上教材用 AgCl:Cl⁻::Na⁺ 与 AgCl:Ag⁺::In⁻ 表示两个阶段的表面结构。</p><div class="notation-box">
+<p class="table-caveat">来源：教材 §11.4 吸附指示剂部分。写法上教材用 <b>AgCl: Cl⁻∷Na⁺</b> 与 <b>AgCl: Ag⁺∷In⁻</b> 表示两个阶段的表面结构（“∷”左边是第一吸附层，右边是反离子层）。</p>
+
+<figure class="ppt-figure">
+<img src="assets/lecture-05/adsorption-mechanism.webp" alt="吸附指示剂机理课件页：指示剂为染料，以阴离子 In⁻ 存在，反应在沉淀表面；计量点前第一吸附层是 Cl⁻，反离子层是 Na⁺ 等阳离子，右侧为吸附层与反离子层的粒子示意图" loading="lazy" decoding="async">
+<figcaption>课件对第一步机理的原文：<b>沉淀表面倾向于吸附溶液中过量的那种离子</b>（the surface tends to adsorb the ion of the precipitate particle that is in excess in the solution）。右下角的粒子图中，标 “Primary adsorptive layer” 的一圈是 Cl⁻ 与 Ag⁺ 构成的第一吸附层，外圈 “Counter layer” 则是 Na⁺、K⁺、H⁺、NO₃⁻ 等反离子——正是 <b>AgCl: Cl⁻∷Na⁺</b> 这幅图。<small>图源：Precipitation titrations, slides 24-25</small></figcaption>
+</figure>
+
+<div class="notation-box">
 <b>颜色为什么变了</b>
 <p>
 教材给出一个合理的解释：指示剂与 Ag⁺ 形成<b>有色络合物</b>，该络合物在溶液中太弱、无法稳定存在，但被吸附到沉淀表面后相当于被固定住，形成过程就被<b>促进</b>了。换句话说，吸附起到了降低有效溶解度的作用。</p>
@@ -555,14 +607,32 @@ X⁻ + Ag⁺（过量）→ AgX↓ + Ag⁺（剩余）<br>Ag⁺（剩余）+ SCN
 <td>Ag⁺ 用 Br⁻ 滴定</td>
 <td>HNO₃ 溶液</td>
 </tr>
+<tr>
+<td>钍试剂（thorin）</td>
+<td>SO₄²⁻、及 Ag⁺ 用 Cl⁻ 滴定等</td>
+<td>稀 HNO₃ 或中性</td>
+</tr>
 </tbody>
 </table>
 </div>
-<p class="table-caveat">来源：教材 Table 11.1。用吸附指示剂的滴定统称<b>法扬司法</b>（Fajans method）。</p><div class="notation-box">
-<b>pH 与吸附强弱之间的权衡</b>
+<p class="table-caveat">来源：教材 Table 11.1；课件 7 slide 26。用吸附指示剂的滴定统称<b>法扬司法</b>（Fajans method）。表中“使用 pH”一列排下来就是一条规律：<b>酸性越强的指示剂，可用的 pH 越宽</b>——曙红可在 pH 2、二氯荧光黄到 pH 4、荧光黄只到 pH 7 附近。<b>荧光黄</b>适用于 Cl⁻、Br⁻、I⁻ 等多种卤化物（稀 HNO₃ 或中性条件均可），是最常用的一种。</p>
+
+<figure class="ppt-figure">
+<img src="assets/lecture-05/adsorption-indicator-table.webp" alt="课件页：吸附指示剂的三条实用规则，以及常见吸附指示剂表（荧光黄 pH 7-8、二氯荧光黄 pH 4、溴甲酚绿 pH 4-5、曙红 pH 2、甲基紫、罗丹明 6G 等及其适用滴定对象）" loading="lazy" decoding="async">
+<figcaption>课件把吸附指示剂的实用规则和指示剂表放在同一页：上半页是三条规则（酸度提高会降低吸附程度、指示剂酸性越强可用 pH 越宽、希望沉淀表面积最大），下半页就是吸附指示剂表。<small>图源：Precipitation titrations, slide 26</small></figcaption>
+</figure>
+
+<div class="notation-box">
+<b>吸附指示剂的三条实用规则</b>
+<p>
+<b>① pH 不能太低。</b>吸附指示剂大多是<b>弱酸</b>，酸性太强时解离不足，无法以阴离子 In⁻ 的形式被吸附；反过来，<b>指示剂本身的酸性越强，可用的 pH 范围就越宽</b>（the stronger an acid the indicator is, the wider the pH range over which it can be adsorbed）。<br><b>② 提高酸度会降低指示剂的吸附程度。</b>酸度增大时指示剂解离减少，能进入反离子层的 In⁻ 变少，吸附量随之下降。<br><b>③ 与重量分析相反，吸附指示剂希望沉淀表面积尽可能大。</b>沉淀滴定的终点靠表面吸附，<b>胶体状态（小晶粒、大比表面积）反而更好</b>；而重量分析追求大晶粒以减少表面吸附与共沉淀。<b>两者的要求正好相反</b>——这是本节最容易被忽略的一处对比，考试里常作为简答点。<br>（补充一条教材的推演：沉淀越难溶、阴离子吸附越强，就能用吸附更强的指示剂，也就能在更酸的条件下滴定。Br⁻ 与 Ag⁺ 生成的沉淀比 AgCl 更难溶、吸附更强，所以能用曙红在 pH 2 下滴定；而 Cl⁻ 只能用荧光黄，且必须接近中性。）</p>
+</div>
+<div class="notation-box">
+<b>pH 与吸附强弱之间的权衡（教材的进一步推演）</b>
 <p>
 吸附指示剂通常是弱酸，pH 太低就解离不足，无法以 In⁻ 形式被吸附。但吸附也<b>不能太强</b>，否则它会在计量点前就把沉淀的 Cl⁻ 从第一吸附层挤走，造成终点提前。<br>这一对矛盾决定了规则：<b>沉淀越难溶、阴离子吸附越强，就能用吸附更强的指示剂，也就能在更酸的条件下滴定</b>。Br⁻ 与 Ag⁺ 生成的沉淀比 AgCl 更难溶、吸附更强，所以能用曙红在 pH 2 下滴定；而 Cl⁻ 只能用荧光黄，且必须接近中性。<br>荧光黄在 pH 7 可用于所有卤化物（它不挤走任何一个）；二氯荧光黄在 pH 7 会挤走 Cl⁻ 但在 pH 4 不会——所以在 pH 7 用二氯荧光黄测氯，结果往往<b>偏低</b>。</p>
-</div><p class="source-note">来源：教材 §11.4 吸附指示剂部分，Table 11.1。</p>
+</div>
+<p class="source-note">来源：教材 §11.4 吸附指示剂部分，Table 11.1；课件 7 slides 24-26。</p>
 </section>
 <section id="compare">
 <p class="section-kicker">7.8 METHOD COMPARISON</p>
@@ -634,7 +704,7 @@ X⁻ + Ag⁺（过量）→ AgX↓ + Ag⁺（剩余）<br>Ag⁺（剩余）+ SCN
 <b>本章与第 10 章的接力关系</b>
 <p>
 第 10 章讲的是<b>怎么把一个沉淀做干净、称准</b>，属于重量法；第 11 章讲的是<b>怎么用沉淀的体积关系定量</b>，属于滴定法。两者共享同一套沉淀平衡，只是测量的物理量不同——一个称质量，一个量体积。教材也指出，很多用重量法做的分析改用沉淀滴定时操作更方便，代价是精密度略低。本章引入的条件溶度积 K′sp 与第 9 章的条件形成常数 K′f 也是平行的概念，都是把副反应打包进主常数。</p>
-</div><p class="source-note">来源：教材 §11.1–§11.4 归纳；本章无课件 PPT，全部内容取自教材第 11 章。</p>
+</div><p class="source-note">来源：教材 §11.1–§11.4 归纳；课件 7 slides 1-27（本章已按课件逐页校对对齐，课件与教材重合度约 20/27 页）。</p>
 </section>
 </article>
 </main>

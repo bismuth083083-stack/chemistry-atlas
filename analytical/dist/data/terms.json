@@ -2436,5 +2436,336 @@
     ],
     "source": "Analytical Chemistry, 7th Ed., Ch.9 Complexometric Reactions and Titrations",
     "updated": "2026-10-11"
+  },
+  {
+    "slug": "complexing-agent",
+    "zh": "络合剂",
+    "en": "complexing agent / ligand",
+    "category": "络合平衡",
+    "definition": "能提供孤对电子、与金属离子配位形成络合物的物种。按可键合原子数分为无机络合剂与有机络合剂两类。",
+    "expanded": "无机络合剂（NH<sub>3</sub>、F<sup>−</sup>）通常只有一个配位原子，与金属逐级络合，溶液中往往同时存在 ML、ML<sub>2</sub>……多种物种，与多元弱酸的逐级解离完全类似，因此单用它很难做滴定。有机络合剂含两个或以上可键合原子，与金属形成低络合比、环状结构的螯合物，稳定而且不存在逐级络合，实用价值大得多。",
+    "properties": [
+      "无机络合剂：单配位原子、逐级络合、多物种共存",
+      "有机络合剂：多配位原子、常形成 1:1 螯合物",
+      "最重要的一类是氨羧络合剂，含 –N(CH<sub>2</sub>COOH)<sub>2</sub> 基团"
+    ],
+    "confusions": "「络合剂」是功能名称，「配体」是结构名称，两者常通用；但配体的个数由金属配位数与配体上可配位基团数目共同决定，不是只看分子数。",
+    "related": [
+      "complexation",
+      "ligand",
+      "chelate",
+      "edta",
+      "aminocarboxylic-complexing-agent"
+    ],
+    "source": "课件 5 slides 3-4；教材 §9.1",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "aminocarboxylic-complexing-agent",
+    "zh": "氨羧络合剂",
+    "en": "aminocarboxylic complexing agent",
+    "category": "络合平衡",
+    "definition": "分子中同时含有氨基与羧基、以 –N(CH<sub>2</sub>COOH)<sub>2</sub> 为特征基团的有机络合剂，是目前应用最广的一类螯合剂。",
+    "expanded": "每个 –N(CH<sub>2</sub>COOH)<sub>2</sub> 基团提供一个氮原子和两个羧基氧作为配位原子。EDTA 含两个这样的基团，因此共有六个配位基团，不论金属离子的电荷高低都形成 1:1 络合物。同类还有 CyDTA、DTPA、EGTA 等，通过改变配位基团数目来调节选择性。",
+    "properties": [
+      "特征基团 –N(CH<sub>2</sub>COOH)<sub>2</sub>",
+      "EDTA、CyDTA、DTPA、EGTA 均属此类",
+      "多配位原子 → 络合比低、螯合稳定"
+    ],
+    "confusions": "不要与「氨羧配位剂」以外的有机沉淀剂（如丁二酮肟、8-羟基喹啉）混淆：那些主要是沉淀剂，这里说的是滴定剂。",
+    "related": [
+      "complexing-agent",
+      "edta",
+      "chelate",
+      "chelating-agent"
+    ],
+    "source": "课件 5 slide 3；教材 §9.2",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "chelon",
+    "zh": "螯合物",
+    "en": "chelate",
+    "category": "络合平衡",
+    "definition": "多齿配体以两个或以上配位原子同时键合同一个金属离子、形成环状结构的络合物。",
+    "expanded": "「螯合」一词来自希腊语 chele（蟹爪），形象地表示配体把金属离子「抓」在中间。成环是螯合物稳定的关键：五元环与六元环张力最小，因此乙二胺、EDTA 这类配体生成的螯合物格外稳定。成环数目越多，稳定性提升越明显，这就是螯合效应。",
+    "properties": [
+      "至少含一个螯合环，常见五元环、六元环",
+      "与同种配位原子的单齿配体相比稳定性显著提高",
+      "不带电的螯合物水化程度低、易于过滤和萃取"
+    ],
+    "confusions": "螯合物是「环状」络合物，不是所有络合物都是螯合物：Cu(NH<sub>3</sub>)<sub>4</sub><sup>2+</sup> 是简单络合物，Cu(en)<sub>2</sub><sup>2+</sup> 才是螯合物。",
+    "related": [
+      "chelate-effect",
+      "chelating-agent",
+      "edta",
+      "complexation"
+    ],
+    "source": "课件 5 slides 3, 6；教材 §9.2",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "coagulation",
+    "zh": "凝结",
+    "en": "coagulation",
+    "category": "重量分析",
+    "definition": "胶体粒子通过加入电解质压缩双电层，使粒子相互聚集长大成可过滤沉淀的过程。是重量分析希望发生的方向。",
+    "expanded": "胶粒表面先吸附构晶离子形成吸附层（primary layer），再吸引反电荷离子形成扩散层/反离子层（counterlayer）。反离子层越紧密、粒子间排斥越小，越容易聚集成大颗粒。洗去电解质会使反离子层重新变得松散，粒子又回到胶体状态，那就是胶溶。",
+    "properties": [
+      "加电解质可促进凝结",
+      "与胶溶互为逆过程",
+      "与加热、搅拌配合可改善过滤性能"
+    ],
+    "confusions": "凝结（coagulation）是把胶体变成沉淀，胶溶（peptization）是把沉淀变回胶体，方向相反，别写反。",
+    "related": [
+      "peptization",
+      "surface-adsorption",
+      "coprecipitation",
+      "digestion"
+    ],
+    "source": "课件 6 slide 11；教材 §10.1",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "nucleation",
+    "zh": "晶核形成",
+    "en": "nucleation",
+    "category": "重量分析",
+    "definition": "溶液中溶质粒子聚集到最小数目、形成固相微观晶核的过程，是沉淀生成的起点。",
+    "expanded": "成核速率随过饱和度升高而急剧增大。单位体积内形成的晶核越多，最终得到的晶体总数越多、平均粒径越小；反之晶核少则晶体大。因此控制过饱和度就等价于控制沉淀的颗粒度。成核分均相成核（溶液内部自发成核）与异相成核（在已有表面或杂质上成核）两类，后者更容易得到大颗粒。",
+    "properties": [
+      "过饱和度越高 → 成核越快 → 晶粒越细",
+      "低于临界相对过饱和度时以异相成核为主",
+      "与晶体生长是竞争关系：成核快则生长慢"
+    ],
+    "confusions": "「过饱和」是溶液的浓度状态，「成核」是固相出现的事件；先有过饱和，才可能成核。",
+    "related": [
+      "supersaturation",
+      "relative-supersaturation",
+      "particle-size",
+      "homogeneous-precipitation"
+    ],
+    "source": "课件 6 slides 5, 8；教材 §10.2",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "supersaturation",
+    "zh": "过饱和",
+    "en": "supersaturation",
+    "category": "重量分析",
+    "definition": "溶液中所含溶解态溶质的量超过该温度下平衡溶解度的状态，是沉淀发生的推动力。",
+    "expanded": "过饱和度常用 Q − S 表示，Q 是沉淀剂加入瞬间沉淀物质的浓度，S 是沉淀在平衡时的溶解度。Q − S 是过饱和度本身，(Q − S)/S 是相对过饱和度，后者才是决定颗粒度的量。沉淀剂加入瞬间的局部浓度最高，所以「缓慢加入 + 充分搅拌」能有效压低 Q。",
+    "properties": [
+      "Q − S：过饱和度（绝对量）",
+      "(Q − S)/S：相对过饱和度（决定晶粒大小）",
+      "升高温度可提高 S，从而降低相对过饱和度"
+    ],
+    "confusions": "过饱和不是说溶液「浓度很高」，而是说「超过该条件下的平衡溶解度」。",
+    "related": [
+      "relative-supersaturation",
+      "nucleation",
+      "particle-size",
+      "von-weimarn-ratio"
+    ],
+    "source": "课件 6 slides 5-6；教材 §10.2",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "von-weimarn-ratio",
+    "zh": "冯·韦曼比",
+    "en": "von Weimarn ratio",
+    "category": "重量分析",
+    "definition": "相对过饱和度的定量表达 (Q − S)/S，用来判断沉淀将形成大晶粒还是细晶粒。",
+    "expanded": "Q 为沉淀剂加入瞬间沉淀物质的浓度，S 为沉淀的平衡溶解度。相对过饱和度越小，晶核形成速度越慢，越能得到大颗粒沉淀。每种沉淀都有一个能大量自发产生晶核的极限值，称为临界值：低于临界值时以异相成核为主，得到大颗粒；高于临界值则以均相成核为主，得到小颗粒。BaSO<sub>4</sub> 的临界值为 1000，CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 为 31，AgCl 仅 5.5 —— 临界值越小，越容易越过它而得到细颗粒，沉淀条件就必须控制得越严。",
+    "properties": [
+      "(Q − S)/S 越小 → 晶核形成越慢 → 沉淀颗粒越大",
+      "临界值：BaSO<sub>4</sub> 1000、CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 31、AgCl 5.5",
+      "压低 Q 的手段：稀溶液、缓慢加沉淀剂并搅拌、热溶液、尽量低 pH"
+    ],
+    "confusions": "不要把 (Q − S)/S 与 Ksp 混为一谈：Ksp 是平衡常数，冯·韦曼比是动力学判断量。",
+    "related": [
+      "supersaturation",
+      "relative-supersaturation",
+      "nucleation",
+      "particle-size"
+    ],
+    "source": "课件 6 slides 6-8；教材 §10.2",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "particle-size",
+    "zh": "沉淀颗粒度",
+    "en": "precipitate particle size",
+    "category": "重量分析",
+    "definition": "沉淀中晶体的大小，直接决定过滤、洗涤的难易以及共沉淀程度。",
+    "expanded": "颗粒度由成核与晶体生长两个竞争过程决定：成核占优则得到大量细晶粒，生长占优则得到少量粗晶粒。粗大晶粒总表面积小，吸附杂质少、易于过滤和洗涤；细晶粒与胶体则总表面积大，吸附杂质多、易穿过滤纸。因此重量分析总是设法提高 S、压低 Q，让晶体有充分时间长大。",
+    "properties": [
+      "大颗粒：易过滤、易洗涤、共沉淀少",
+      "小颗粒/胶体：比表面大、吸附杂质多、难过滤",
+      "控制手段：稀溶液、热溶液、缓慢加入、搅拌、陈化"
+    ],
+    "confusions": "颗粒度是结果，成核与生长是原因；不要把它和「溶解度」混为一谈——同一种沉淀在不同条件下溶解度相同，颗粒度可以完全不同。",
+    "related": [
+      "nucleation",
+      "von-weimarn-ratio",
+      "digestion",
+      "coprecipitation"
+    ],
+    "source": "课件 6 slides 5, 8-9；教材 §10.2",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "chromate-indicator",
+    "zh": "铬酸钾指示剂",
+    "en": "chromate indicator",
+    "category": "沉淀滴定",
+    "definition": "莫尔法中与过量 Ag<sup>+</sup> 生成砖红色 Ag<sub>2</sub>CrO<sub>4</sub> 沉淀、指示终点的指示剂。",
+    "expanded": "理论用量可由溶度积反推：AgCl 的摩尔溶解度 s = 1.0 × 10<sup>−5</sup> mol·L<sup>−1</sup>，Ag<sub>2</sub>CrO<sub>4</sub> 的 Ksp = 1.1 × 10<sup>−12</sup>。若 [CrO<sub>4</sub><sup>2−</sup>] > 0.011 mol·L<sup>−1</sup>，Ag<sub>2</sub>CrO<sub>4</sub> 会在 [Ag<sup>+</sup>] < 10<sup>−5</sup> mol·L<sup>−1</sup> 时就沉淀，即在计量点之前变色；浓度低于此值则需要过量 Ag<sup>+</sup> 才变色。实际取 0.002–0.005 mol·L<sup>−1</sup>，因为浓度太高时铬酸根的深黄色会掩盖 Ag<sub>2</sub>CrO<sub>4</sub> 的红色。",
+    "properties": [
+      "变色反应 CrO<sub>4</sub><sup>2−</sup> + 2Ag<sup>+</sup> → Ag<sub>2</sub>CrO<sub>4</sub>↓（砖红）",
+      "理论浓度 0.011 mol·L<sup>−1</sup>，实用 0.002–0.005 mol·L<sup>−1</sup>",
+      "须在 pH 约 8 使用"
+    ],
+    "confusions": "pH < 6 时部分铬酸根转为 HCrO<sub>4</sub><sup>−</sup>，需要更多 Ag<sup>+</sup> 才生成 Ag<sub>2</sub>CrO<sub>4</sub>；pH > 10 则可能析出 AgOH／Ag<sub>2</sub>O，所以莫尔法不是任何 pH 都能用。",
+    "related": [
+      "mohr-method",
+      "argentometric-titration",
+      "solubility-product",
+      "adsorption-indicator"
+    ],
+    "source": "课件 7 slides 20-21；教材 §11.3",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "indicator-blocking",
+    "zh": "指示剂封闭",
+    "en": "indicator blocking",
+    "category": "络合平衡",
+    "definition": "金属指示剂与某些共存金属离子形成过于稳定（或难溶）的络合物，以致 EDTA 无法把它夺回，终点因此拖长或根本不变色。",
+    "expanded": "指示剂能指示终点，前提是 M–In 的稳定性**小于** M–EDTA。当共存离子与指示剂生成的络合物比它与 EDTA 的络合物还稳定，或生成了难溶的指示剂盐，指示剂就被「封闭」了：溶液中再也看不到游离指示剂的底色，终点颜色不会出现。常见封闭离子有 Fe<sup>3+</sup>、Al<sup>3+</sup>、Cu<sup>2+</sup>、Ni<sup>2+</sup>、Co<sup>2+</sup>。对策有三类：加**掩蔽剂**把这些离子锁住（三乙醇胺掩蔽 Fe<sup>3+</sup>、Al<sup>3+</sup>，KCN 掩蔽 Cu<sup>2+</sup>、Ni<sup>2+</sup>、Co<sup>2+</sup>）；改用不易被封闭的指示剂；或先分离。",
+    "properties": [
+      "判据：M–In 必须弱于 M–EDTA",
+      "常见封闭离子 Fe<sup>3+</sup>、Al<sup>3+</sup>、Cu<sup>2+</sup>、Ni<sup>2+</sup>、Co<sup>2+</sup>",
+      "对策：掩蔽、换指示剂、预先分离"
+    ],
+    "confusions": "「封闭」与「僵化」不同：封闭是终点不变色，僵化是变色迟钝、拖尾。两者的根因都是 M–In 相对太稳定。",
+    "related": [
+      "metal-indicator",
+      "masking",
+      "demasking",
+      "edta"
+    ],
+    "source": "教材 §9.4；课件 5 slide 26 相关讨论",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "demasking",
+    "zh": "解蔽",
+    "en": "demasking",
+    "category": "络合平衡",
+    "definition": "用试剂把已被掩蔽剂结合的目标离子重新释放出来，使其能够被滴定或检测的操作。",
+    "expanded": "掩蔽是让干扰离子「暂时失去反应能力」，解蔽则相反，是把目标离子从掩蔽状态放出来。典型做法：用甲醛解蔽已被 KCN 掩蔽的 Zn<sup>2+</sup>（Zn(CN)<sub>4</sub><sup>2−</sup> + 4HCHO + 4H<sub>2</sub>O → Zn<sup>2+</sup> + 4HOCH<sub>2</sub>CN + 4OH<sup>−</sup>），从而可以在 Cu<sup>2+</sup>、Ni<sup>2+</sup>、Co<sup>2+</sup> 共存下单独滴定锌。掩蔽—解蔽配合使用，是提高络合滴定选择性的主要手段之一。",
+    "properties": [
+      "掩蔽的逆操作，用于释放目标离子",
+      "甲醛解蔽 Zn(CN)<sub>4</sub><sup>2−</sup> 是经典例子",
+      "常与掩蔽联用实现混合金属的选择性滴定"
+    ],
+    "confusions": "解蔽释放的是**待测**离子，掩蔽锁住的是**干扰**离子；同一种试剂对不同对象可能起相反作用，要看目的是哪个。",
+    "related": [
+      "masking",
+      "indicator-blocking",
+      "selectivity",
+      "complexometric-titration"
+    ],
+    "source": "教材 §9.5；课件 5 slide 24 相关讨论",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "indicator-range",
+    "zh": "指示剂变色范围",
+    "en": "indicator transition range",
+    "category": "沉淀滴定",
+    "definition": "指示剂由一种颜色转变为另一种颜色所对应的 pH 或 pM 区间，通常为 pK<sub>In</sub> ± 1。",
+    "expanded": "之所以是 ± 1，是因为人眼要可靠分辨颜色变化，两种形式的浓度比大约需要达到 10:1，代入平衡式就得到 pH = pK<sub>In</sub> ± 1。酸碱指示剂与金属指示剂共用这一规则，但含义不同：酸碱指示剂对应的是 [H<sup>+</sup>] 的缓冲区间，金属指示剂对应的是 pM 区间；沉淀滴定的吸附指示剂则是由吸附前后颜色的差别来指示。",
+    "properties": [
+      "酸碱指示剂：pH = pK<sub>In</sub> ± 1",
+      "金属指示剂：pM 由 M–In 的 K<sub>f</sub> 决定",
+      "10:1 的浓度比是人眼可靠辨色的经验下限"
+    ],
+    "confusions": "变色范围不等于「突跃范围」：突跃是滴定曲线的性质，变色范围是指示剂本身的性质，选择指示剂是让两者重叠。",
+    "related": [
+      "indicator",
+      "metal-indicator",
+      "end-point",
+      "titration-error"
+    ],
+    "source": "教材 §9.4、§11.4",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "crystal-growth",
+    "zh": "晶体生长",
+    "en": "crystal growth",
+    "category": "重量分析",
+    "definition": "已形成的晶核从溶液中继续沉积溶质、使晶体逐渐长大的过程。与成核过程竞争，决定最终颗粒度。",
+    "expanded": "成核与生长竞争同一份过饱和溶质：成核速率快于生长，就得到大量细晶粒；生长占优，就得到少量粗晶粒。因此重量分析的操作目标是**抑制成核、促进生长**——用稀溶液、缓慢加入沉淀剂并充分搅拌压低 Q，用热溶液提高 S，再借陈化让「小晶体溶解、大晶体继续长大」完成粗化。注意离子强度过高的加料顺序（把沉淀剂加入试液，还是反过来）也会影响生长质量，课件特别提醒「加入顺序对沉淀的纯度与颗粒度有影响」。",
+    "properties": [
+      "与成核竞争同一份过饱和溶质",
+      "生长占优 → 少量粗晶粒（重量分析想要的）",
+      "陈化（Ostwald 熟化）是促进生长的后处理手段"
+    ],
+    "confusions": "晶体生长不是「溶解度变大」，而是溶质从溶液转移到已有晶格上；溶解度提高只是让溶液能容纳更多溶质，从而降低成核速率。",
+    "related": [
+      "nucleation",
+      "particle-size",
+      "digestion",
+      "von-weimarn-ratio"
+    ],
+    "source": "课件 6 slides 5, 8-9；教材 §10.2",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "critical-supersaturation",
+    "zh": "临界过饱和度",
+    "en": "critical relative supersaturation",
+    "category": "重量分析",
+    "definition": "每种沉淀能大量自发产生晶核的相对过饱和极限值，低于它时沉淀以异相成核为主，得到大颗粒。",
+    "expanded": "把相对过饱和度 (Q − S)/S 控制在临界值以下，溶液中已有的杂质表面或容器壁成为成核中心，晶核数目少、晶体随之长大，沉淀颗粒粗大、易于过滤洗涤。一旦超过临界值，均相成核爆发式发生，得到大量细颗粒甚至胶体。不同沉淀的临界值差别很大：BaSO<sub>4</sub> 为 1000，CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 为 31，AgCl 只有 5.5。临界值越小，越容易越过它，沉淀条件就必须控制得越严——这就是为什么 AgCl 一类的沉淀总是倾向于形成胶体。",
+    "properties": [
+      "BaSO<sub>4</sub> 1000、CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 31、AgCl 5.5",
+      "临界值以下：异相成核，大颗粒",
+      "临界值以上：均相成核，细颗粒或胶体"
+    ],
+    "confusions": "临界过饱和度是**相对**过饱和度的阈值，不是一个绝对浓度；同一个沉淀在不同温度下临界值也不同。",
+    "related": [
+      "von-weimarn-ratio",
+      "nucleation",
+      "crystal-growth",
+      "relative-supersaturation"
+    ],
+    "source": "课件 6 slide 8；教材 §10.2",
+    "updated": "2026-10-12"
+  },
+  {
+    "slug": "solid-state-surface",
+    "zh": "沉淀表面吸附",
+    "en": "adsorption on precipitate surface",
+    "category": "沉淀滴定",
+    "definition": "沉淀表面按构晶离子优先的规则吸附溶液中过量离子、形成带电表面并吸引反电荷离子的现象。",
+    "expanded": "以 AgCl 为例：计量点前 Cl<sup>−</sup> 过量，沉淀表面吸附 Cl<sup>−</sup> 带负电，反离子层是 Na<sup>+</sup> 之类的阳离子，写作 AgCl: Cl<sup>−</sup>∷Na<sup>+</sup>，此时指示剂阴离子被排斥；计量点后 Ag<sup>+</sup> 过量，表面转为吸附 Ag<sup>+</sup> 带正电，于是把指示剂阴离子引进反离子层，写作 AgCl: Ag<sup>+</sup>∷In<sup>−</sup>，颜色随即突变。沉淀的吸附量随表面积增大而增大，这就是吸附指示剂希望沉淀处于胶体状态的原因。",
+    "properties": [
+      "吸附具有选择性：优先吸附构晶离子",
+      "表面电荷符号随过量离子种类改变",
+      "表面积越大吸附越多"
+    ],
+    "confusions": "沉淀表面吸附与共沉淀中的表面吸附是同一个机制，但用途相反：重量分析要减少它，沉淀滴定要利用它。",
+    "related": [
+      "adsorption-indicator",
+      "fajans-method",
+      "surface-adsorption",
+      "argentometric-titration"
+    ],
+    "source": "课件 7 slides 19, 24-25；教材 §11.4",
+    "updated": "2026-10-12"
   }
 ]

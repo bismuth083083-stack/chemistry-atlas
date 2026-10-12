@@ -94,6 +94,10 @@
 <span>盐效应</span>
 </div>
 </header>
+<div class="notation-box">
+<b>本章已按课件 6 重新对齐</b>
+<p>本章原先完全依据教材 Ch.10 撰写，现按教师课件 <i>Gravimetric analysis</i> 逐页核对，正文的节次与十个主题保持不变，只在既有节内补入课件独有、教材没有展开的部分：<b>分析天平的选型与读数精度</b>（slide 3）、<b>成核机制与相对过饱和度的临界值</b>（slides 5、8）、<b>有机沉淀剂一览表</b>（slide 20）以及两道课件例题（slides 17、26）。凡补充内容都在节尾的来源注中标出课件页码。</p>
+</div>
 <nav class="chapter-jump" aria-label="本章快速导航">
 <a href="#steps">流程八步</a>
 <a href="#conditions">沉淀条件</a>
@@ -113,7 +117,19 @@
 <p>重量分析（gravimetric analysis）是定量分析中最古老、也最不依赖仪器的一类方法。
 它的思路只有一句话：<b>把待测组分定量地转成一种组成固定的固体，然后称它的质量</b>。
 因为称的是质量而不是信号强度，所以它不需要标准曲线，也不需要响应因子——
-这是它最大的优点，也是它最大的负担：全部准确度都押在操作上。</p>
+这是它最大的优点，也是它最大的负担：全部准确度都押在天平与操作上。</p>
+
+<p>把这句话说透：重量分析的样品处理可以很复杂，仪器清单却可以短到只有一件——<b>分析天平（analytical balance）是唯一必备的仪器</b>。
+换句话说，方法的全部准确度与精密度，最终都落在一台天平的读数能力和操作者的手上。</p>
+
+<figure class="ppt-figure">
+<img src="assets/lecture-05/balance-readability.webp" alt="五类分析天平的最大量程与读数精度对比：常量天平 160–300 g / 0.1 mg、半微量天平 200 g / 0.01 mg、微量天平 30 g / 1 µg、超微量天平 2 g / 0.1 µg、电化学石英晶体天平 100 µg / 1 ng" loading="lazy" decoding="async">
+<figcaption>课件把「分析天平」拆成五档来看。注意两个参数的方向是相反的：<b>量程越小的天平，读数精度越高</b>——从常量天平的 0.1 mg 一路做到超微量天平的 0.1 µg，相差三个数量级；到电化学石英晶体天平（electrochemical quartz balance）已经进入纳克级。所以选天平其实是选量程与读数精度的搭配：常量分析（沉淀在 0.1 g 量级）用标准分析天平，样品量再小才逐级上移。<small>图源：Gravimetric analysis, slide 3</small></figcaption>
+</figure>
+
+<p>重量法的历史地位正是由天平精度直接决定的。历史上最著名的一次重量法工作是 Theodore W. Richards 在哈佛大学完成的：
+他用高度精密、高度准确的重量分析流程测定了 <b>25 种元素的原子量</b>，结果达到<b>六位有效数字</b>，
+并因此成为<b>第一位获得诺贝尔奖的美国人</b>。这条历史线索说明了一件事：重量分析的准确度上限，历史上就是天平的准确度上限。</p>
 
 <p>先分清两个几乎每份考卷都会问的名词。它们描述的是同一条转化链上的<b>两个不同阶段</b>：</p>
 <div class="table-scroll wide">
@@ -197,11 +213,16 @@
 </tbody>
 </table>
 </div>
-<p class="table-caveat">来源：教材 §10.1 重量分析的一般步骤。</p><div class="notation-box">
+<p class="table-caveat">来源：教材 §10.1 重量分析的一般步骤；课件 6 slide 4 给出的步骤编号与之一一对应。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/gravimetric-steps.webp" alt="重量分析八步总览：1 制备溶液、2 沉淀、3 陈化、4 过滤、5 洗涤、6 烘干或灼烧、7 称量、8 计算" loading="lazy" decoding="async">
+<figcaption>课件的八步提纲：<b>1</b> 制备溶液 → <b>2</b> 沉淀（precipitation）→ <b>3</b> 陈化 → <b>4</b> 过滤 → <b>5</b> 洗涤 → <b>6</b> 烘干或灼烧 → <b>7</b> 称量 → <b>8</b> 计算。其中第 1 步课件特别强调三点：有必要时先做<b>初步分离</b>以除去干扰物；要维持沉淀<b>足够低的溶解度</b>并让它处于<b>适合过滤</b>的形态；<b>pH 尤其重要</b>，因为它同时影响沉淀的溶解度和共存物的干扰程度。这与上面表格里的第 1–3 步是同一件事的两种讲法。<small>图源：Gravimetric analysis, slide 4</small></figcaption>
+</figure>
+<div class="notation-box">
 <b>一个反直觉的结论</b>
 <p>
 重量法看起来是最老实的定量方法——不依赖标准曲线、不依赖仪器响应因子。但它的可靠性完全押在<b>操作</b>上：沉淀是否纯净、是否过滤得干净、是否有损失。教材把大半篇幅花在第 1–5 步上，讲的其实都是同一件事——<b>怎么把沉淀做对</b>。</p>
-</div><p class="source-note">来源：教材 §10.1；第 8 步用到的换算因数见 §10.6。</p>
+</div><p class="source-note">来源：教材 §10.1；课件 6 slides 2-4。第 8 步用到的换算因数见 §10.6。</p>
 </section>
 <section id="conditions">
 <p class="section-kicker">6.2 PRECIPITATION CONDITIONS</p>
@@ -214,6 +235,56 @@
 </div>
 <p>这条式子解释了重量分析里几乎所有看似繁琐的操作规定。把 (Q − S)/S 压小只有两条路：
 <b>把 Q 压小</b>，或者<b>把 S 抬高</b>。</p>
+<p>在背操作规定之前，先把式子里的三个物理量弄清楚。课件把 Q、S 的定义直接写进公式，又把沉淀的析出拆成先后两步：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>符号／名词</th>
+<th>英文</th>
+<th>指什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q</td>
+<td>concentration of the mixed reagents</td>
+<td>沉淀发生<b>之前</b>，两种试剂混合后待测组分与沉淀剂的<b>分析浓度</b>——即「如果全溶，它应该是多少」</td>
+</tr>
+<tr>
+<td>S</td>
+<td>solubility of the precipitate at equilibrium</td>
+<td>该沉淀在平衡时的<b>溶解度</b></td>
+</tr>
+<tr>
+<td>Q − S</td>
+<td>degree of supersaturation</td>
+<td><b>过饱和度</b>，是引起沉淀作用的<b>推动力</b></td>
+</tr>
+<tr>
+<td>(Q − S) / S</td>
+<td>relative supersaturation</td>
+<td><b>相对过饱和度</b>，决定晶核形成速度 v = K(Q − S)/S，K 与沉淀性质、介质和温度有关</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">只有相对过饱和度才有可比性：Q − S 相同的两个体系，S 大的那个相对过饱和度反而小，颗粒反而粗。</p>
+<h3>第一步是过饱和，第二步是成核</h3>
+<p>沉淀的生成不是「一加沉淀剂就立刻出固体」，中间隔着两步：</p>
+<p><b>过饱和（supersaturation）</b>：溶液相中所含的溶解盐<b>超过了它在平衡时所能容纳的量</b>。
+此时体系在热力学上不稳定，但还没有固相出现——这一步是沉淀的<b>前提</b>，没有过饱和就没有沉淀的推动力。</p>
+<p><b>成核（nucleation）</b>：必须有<b>最少量的粒子聚集到一起</b>，才能产生固相的微观晶核。
+晶核一旦形成，后续的溶质既可以继续成核，也可以沉积到已有晶核上长大——两者是竞争关系。</p>
+<p>由此得到本章最核心的一条因果链：<b>过饱和度越高 → 成核速率越大 → 单位体积内的晶核数目越多 → 最终晶体总数多而粒径小</b>；反之，过饱和度低时成核少，物质主要沉积在少数晶核上，得到<b>少而大</b>的晶体。这就是重量分析里所有沉淀条件规定的物理来源。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/nucleation-supersaturation.webp" alt="过饱和与成核的定义：过饱和是溶液中所含溶解盐超过平衡量，成核是需要最少量粒子聚集形成微观晶核；过饱和度越高成核越快，晶体总数多而粒径小" loading="lazy" decoding="async">
+<figcaption>课件的定义式讲法，最后一行给出了判据：<b>相对过饱和度高 → 大量小晶体（比表面大）</b>；反过来就是<b>相对过饱和度低 → 少量大晶体</b>。所以「颗粒大不大」不是靠搅拌或温度本身决定的，而是这些操作改变了相对过饱和度之后的结果。<small>图源：Gravimetric analysis, slide 5</small></figcaption>
+</figure>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/von-weimarn-ratio.webp" alt="冯·韦曼比：相对过饱和度 = (Q − S) / S，以及压低 Q、提高 S 的四条操作要点" loading="lazy" decoding="async">
+<figcaption>冯·韦曼比与其操作推论。课件把「压低 Q、提高 S」落成四条可执行的规定：<b>①</b> 在稀溶液中沉淀（Q 低）；<b>②</b> 缓慢加入稀的沉淀剂并<b>有效搅拌</b>（Q 低，且搅拌避免局部过量）；<b>③</b> 在热溶液中沉淀（S 变大），但溶解度也不能大过头，否则沉淀不完全——本体沉淀可以在热溶液中进行，再冷却使沉淀定量；<b>④</b> 在能保证定量沉淀的前提下，<b>pH 尽可能低</b>，因为许多沉淀在酸性介质中溶解度更大，沉淀速度因而变慢。<small>图源：Gravimetric analysis, slide 6</small></figcaption>
+</figure>
 <div class="table-scroll wide">
 <table>
 <thead>
@@ -253,6 +324,41 @@
 </table>
 </div>
 <p class="table-caveat">结论：沉淀操作的全部技巧，都是在把 (Q − S)/S 压小。</p>
+<h3>临界值：每种沉淀都有一条线</h3>
+<p>操作规定为什么能生效，还要靠一个定量边界来解释。各种沉淀都有一个<b>能大批自发产生晶核的相对过饱和极限值</b>，称为<b>临界值</b>（critical value）：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>沉淀</th>
+<th>临界相对过饱和度</th>
+<th>实践含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BaSO₄</td>
+<td>1000</td>
+<td>临界值很大，容许相当高的过饱和度，所以稀溶液、热溶液、缓慢加料这类规定正好把它压在临界值以下，容易得到粗大晶形沉淀</td>
+</tr>
+<tr>
+<td>CaC₂O₄·H₂O</td>
+<td>31</td>
+<td>余量中等，仍以异相成核为主，是最经典的晶形沉淀体系</td>
+</tr>
+<tr>
+<td>AgCl</td>
+<td>5.5</td>
+<td>临界值最小，稍有过饱和就越过临界值，成核极快、颗粒必然细，沉淀条件必须控制得更严</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">读这张表的关键就在比较：<b>临界值越小（如 AgCl 只有 5.5），越容易越过临界值而得到细颗粒，所以沉淀条件必须控制得更严</b>；反过来，BaSO₄ 的 1000 给了很大的操作余地。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/digestion-criteria.webp" alt="相对过饱和度越小晶核形成速度越慢、得到大颗粒沉淀；控制相对过饱和度在临界值以下时沉淀以异相成核为主，超过临界值则以均相成核为主；BaSO₄ 临界值 1000、CaC₂O₄·H₂O 31、AgCl 5.5" loading="lazy" decoding="async">
+<figcaption>课件第 8 页原话：相对过饱和度越小，晶核形成速度越慢，能得到大颗粒沉淀；<b>控制相对过饱和度在临界值以下，沉淀以异相成核（heterogeneous nucleation）为主，得到大颗粒沉淀；超过临界值后，沉淀以均相成核（homogeneous nucleation）为主，得到小颗粒沉淀</b>。所谓「异相」是指晶核在已有的固相表面（容器壁、尘埃、已有晶粒）上形成，「均相」是指在溶液本体中自发形成——后者数量巨大，所以颗粒细。<small>图源：Gravimetric analysis, slide 8</small></figcaption>
+</figure>
 <h3>均相沉淀：把 Q 压到极限</h3>
 
 <p>常规加料方式无论多慢，滴入点附近总是局部过浓。均相沉淀（homogeneous precipitation）
@@ -286,11 +392,11 @@
 </tbody>
 </table>
 </div>
-<p class="table-caveat">来源：教材 §10.1 均相沉淀部分。均相沉淀还有一个附带好处：沉淀剂不引入外来离子，沉淀更纯净。</p><div class="notation-box">
+<p class="table-caveat">来源：教材 §10.1 均相沉淀部分；课件 6 slide 8 把它的机理讲得更直接——让沉淀剂缓慢生成，其目的正是把 Q 长期压在<b>临界值以下</b>，使沉淀全程以异相成核为主。均相沉淀还有一个附带好处：沉淀剂不引入外来离子，沉淀更纯净。</p><div class="notation-box">
 <b>一个重要的反直觉点</b>
 <p>
 教材特别点出：<b>最难溶的沉淀并不是重量分析最好的选择</b>。因为溶解度太小意味着 S 本来就很低，即使 Q 控制得很好，相对过饱和度依然很高，成核太快，颗粒必然细。典型反例是<b>水合氧化铁 Fe(OH)₃·xH₂O</b>——它形成表面积巨大的<b>胶状沉淀</b>，既难过滤又极易吸附杂质。所以溶度积越小越好这个直觉在重量法里是<b>不成立</b>的。</p>
-</div><p class="source-note">来源：教材 §10.1 沉淀条件与冯·韦曼比部分。</p>
+</div><p class="source-note">来源：教材 §10.1 沉淀条件与冯·韦曼比部分；课件 6 slides 5-8。</p>
 </section>
 <section id="digestion">
 <p class="section-kicker">6.3 DIGESTION & COLLOIDS</p>
@@ -357,7 +463,16 @@
 <p>胶溶是洗涤环节最容易犯的错误。对策是<b>不要用纯水洗</b>，而要用含少量电解质的
 挥发性洗液（如稀 NH₄NO₃、稀 NH₄Cl），既维持了离子强度防止胶溶，
 又能在灼烧时全部挥发而不留残渣。</p>
-<p class="source-note">来源：教材 §10.1 陈化、胶体、洗涤与过滤部分。</p>
+<h3>双电层：胶粒为什么带电，又为什么能聚沉</h3>
+<p>要理解「胶溶为什么怕洗、凝结为什么怕电解质不够」，必须看清胶粒表面的<b>双电层</b>（electric double layer）结构。课件把它拆成两层：</p>
+<p><b>① 吸附层（primary layer，又称一次吸附层）</b>：胶粒表面选择性地吸附溶液中的<b>构晶离子</b>（lattice ions，即组成该沉淀本身的离子），形成一层强烈吸附的带电层。这一层<b>不是外加的污物，而是晶体本身的组成部分</b>——所以它既洗不掉，也不该洗掉。</p>
+<p><b>② 反离子层（counterlayer / secondary layer，又称扩散层）</b>：带电的吸附层再吸引溶液中带<b>相反电荷</b>的离子，围在它外面，使粒子整体呈<b>电中性</b>。这一层是紧是松，直接决定颗粒往哪个方向走。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/coagulation-peptization.webp" alt="胶体双电层：吸附层由构晶离子组成、是晶体的组成部分，反离子层中和电荷；反离子层紧密时凝结成大颗粒，松散时胶溶回到胶体状态" loading="lazy" decoding="async">
+<figcaption>课件第 11 页给出的双电层机制：当沉淀的相对过饱和度不利、得不到晶形沉淀时，沉淀<b>首先以胶体形式出现</b>；胶粒极小（<b>1–100 nm</b>）、比表面极大，因而强烈发生表面吸附。这个机制直接解释了洗涤规定：<b>用纯水洗会把反离子层稀释掉</b>，吸附层的电荷失去屏蔽，粒子重新分散（胶溶）穿过滤纸；<b>用含少量挥发性电解质的洗液</b>，则既维持了离子强度让反离子层保持紧密（凝结），又能在灼烧时挥发不留残渣。<small>图源：Gravimetric analysis, slide 11</small></figcaption>
+</figure>
+<p><b>一句话结论：洗液不能只用纯水，必须用含少量挥发性电解质的洗液</b>——它的作用不是「冲掉」什么，而是<b>维持离子强度、把反离子层保持在紧密状态，防止胶溶</b>；同时所选的电解质要能在灼烧时完全挥发，不留下新的残渣。</p>
+<p class="source-note">来源：教材 §10.1 陈化、胶体、洗涤与过滤部分；课件 6 slide 11。</p>
 </section>
 <section id="coprecip">
 <p class="section-kicker">6.4 COPRECIPITATION</p>
@@ -584,11 +699,46 @@ F = <span class="frac"><b>a × M(待测组分)</b><i>b × M(称量形式)</i></s
 <span>例</span>
 <h3>求换算因数：Bi₂S₃ 法测铋</h3>
 <p>把 Bi³⁺ 沉淀为 Bi₂S₃，再灼烧成 Bi₂O₃ 称量。求 F。</p><p>一个 Bi₂O₃ 分子对应两个 Bi，而两个 Bi 来自<b>一个</b> Bi₂S₃ 单元，所以 a = 2、b = 1：</p><p>F = 2 × M(Bi) / M(Bi₂O₃) = 2 × 208.98 / 465.96 = 0.8970。</p>
-</div><div class="notation-box">
+</div><div class="worked-example">
+<span>例</span>
+<h3>磷钼酸铵法测磷：换算因数怎么构造</h3>
+<p>正磷酸盐（orthophosphate，PO₄³⁻）以磷钼酸铵 (NH₄)₃PO₄·12MoO₃ 的形式称量。
+由 0.2711 g 试样得到 1.1682 g 沉淀，求试样中磷的质量分数与 P₂O₅ 的质量分数。</p>
+<p>先把换算因数写出来。F 的构造规则是：<b>分子放待测组分的式量乘系数 a，分母放称量形式的式量乘系数 b</b>，
+即 F = a × M(待测组分) / (b × M(称量形式))，其中 a、b 由配平的计量关系确定。① 求 %P：
+一个 (NH₄)₃PO₄·12MoO₃ 单元里只有 <b>一个</b> P，所以 a = b = 1，
+F = M(P) / M((NH₄)₃PO₄·12MoO₃) = 30.97 / 1876.5 = 0.016 51。</p>
+<p>② %P = (1.1682 × 0.016 51) / 0.2711 × 100% = <b>7.111%</b>。</p>
+<p>③ 求 %P₂O₅ 时换一个待测组分。由 <b>2P ~ P₂O₅</b> 的关系，a = 1、b = 2——即每两个磷钼酸铵单元才对应一个 P₂O₅：
+F′ = M(P₂O₅) / (2 × M((NH₄)₃PO₄·12MoO₃)) = 141.95 / (2 × 1876.5) = 0.037 83。</p>
+<p>④ %P₂O₅ = (1.1682 × 0.037 83) / 0.2711 × 100% = <b>16.30%</b>。</p>
+<p>校验一下答案的合理性：P₂O₅ 中磷的质量分数是 2 × 30.97 / 141.95 = 43.6%，而 7.111% ÷ 0.436 = 16.3%，两种算法一致——
+这也是检查系数 a、b 有没有写反的最快办法。</p>
+</div>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/gf-phosphate-example.webp" alt="磷钼酸铵重量法计算：1.1682 g 沉淀乘以换算因数 P/(NH₄)₃PO₄·12MoO₃ 即 30.97/1876.5，除以 0.2711 g 试样，得 %P = 7.111%" loading="lazy" decoding="async">
+<figcaption>课件给出的标准写法：<b>%P = 沉淀质量 × [M(P)/M(称量形式)] ÷ 试样质量 × 100%</b>，
+代入得 1.1682 × (30.97/1876.5) / 0.2711 × 100% = 7.111%。%P₂O₅ 的分母则取 <b>2 ×</b> 称量形式的式量，答案 16.30%。
+注意换算因数的一步到位特性：它把「称了什么」直接变成「待测组分有多少」，中间不需要先算出磷的绝对质量。课件幻灯片上的化学式印作 (NH₄)PO₄·12MoO₃（漏写下标 3），但它在同一页使用的式量 1876.5 只与 (NH₄)₃PO₄·12MoO₃ 相符，本章统一按后者书写。<small>图源：Gravimetric analysis, slide 17</small></figcaption>
+</figure>
+<div class="worked-example">
+<span>例</span>
+<h3>Fe(OH)₃ 刚开始沉淀需要多高的 pH</h3>
+<p>在 0.10 mol·L⁻¹ FeCl₃ 溶液中，Fe(OH)₃ 刚开始沉淀所需的 pH 是多少？已知 K<sub>sp</sub>(Fe(OH)₃) = 4 × 10⁻³⁸。</p>
+<p>① 写出溶解平衡：Fe(OH)₃ ⇌ Fe³⁺ + 3OH⁻，因此 <b>K<sub>sp</sub> = [Fe³⁺][OH⁻]³ = 4 × 10⁻³⁸</b>。</p>
+<p>② 代入 [Fe³⁺] = 0.10 mol·L⁻¹：0.10 × [OH⁻]³ = 4 × 10⁻³⁸。</p>
+<p>③ 解出 [OH⁻] = (4 × 10⁻³⁸ / 0.10)^(1/3) = <b>7 × 10⁻¹³ mol·L⁻¹</b>。</p>
+<p>④ 取负对数：pOH = −log (7 × 10⁻¹³) = 12.2，所以 pH = 14.0 − 12.2 = <b>1.8</b>。</p>
+<p>结论出人意料却在情理之中：只要 pH 超过 1.8，Fe³⁺ 就会开始以 Fe(OH)₃ 沉淀析出。</p>
+</div>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/feoh3-ph-example.webp" alt="Fe(OH)₃ 沉淀 pH 计算：Fe(OH)₃ ⇌ Fe³⁺ + 3OH⁻，[Fe³⁺][OH⁻]³ = 4 × 10⁻³⁸，(0.1)[OH⁻]³ = 4 × 10⁻³⁸，[OH⁻] = 7 × 10⁻¹³ M，pOH = 12.2" loading="lazy" decoding="async">
+<figcaption>课件的逐步演算。它给出的结论有两条实用含义：<b>① 配制 Fe³⁺ 溶液必须酸化</b>（例如加盐酸），否则 Fe³⁺ 会缓慢水解，生成铁锈色的凝胶状沉淀（rust-colored gelatinous precipitate），溶液的浓度就不再可靠；<b>② 实际沉淀开始的 pH 会略高于计算值</b>，因为析出固相需要一定的<b>过饱和</b>——这正是 §6.2 讲的成核前提，计算给出的是热力学下限。<small>图源：Gravimetric analysis, slide 26</small></figcaption>
+</figure><div class="notation-box">
 <b>换算因数的两个常见陷阱</b>
 <p>
 ① <b>a 与 b 不能凭化学式直接读</b>——必须从沉淀形式到称量形式的配平反应里数。例如上例中 Bi₂S₃ 灼烧成 Bi₂O₃ 时，硫以 SO₂ 形式失去，铋的个数比保持不变，这一点要靠配平确认。<br>② <b>F 只与化学式和配比有关，与取样量无关</b>，所以同一物质的 F 是一个常数，应当记在笔记上反复使用。</p>
-</div><p class="source-note">来源：教材 §10.2、§10.6 重量计算与例题。</p>
+</div><p class="source-note">来源：教材 §10.2、§10.6 重量计算与例题；课件 6 slides 15-17、slide 26。</p>
 </section>
 <section id="organic">
 <p class="section-kicker">6.7 ORGANIC REAGENTS</p>
@@ -597,6 +747,37 @@ F = <span class="frac"><b>a × M(待测组分)</b><i>b × M(称量形式)</i></s
 <p>有机沉淀剂在重量分析里地位特殊，因为它们往往能同时解决三个问题：
 <b>选择性高</b>、<b>沉淀呈晶形</b>、<b>摩尔质量大因而换算因数小</b>。
 教材列出的常用试剂集中在螯合剂和缔合剂两大类。</p>
+<h3>有机沉淀剂的两大优势与一条选择性规律</h3>
+<p>课件把有机沉淀剂的优点归纳成两条，这两条正好对应重量分析最看重的两件事：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>优势</th>
+<th>英文表述</th>
+<th>为什么对重量分析特别重要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生成的沉淀<b>水溶性极低</b></td>
+<td>very low solubility in water</td>
+<td>溶解损失可忽略，沉淀能定量回收；同时低溶解度意味着沉淀本体致密、易于过滤洗涤</td>
+</tr>
+<tr>
+<td><b>换算因数有利</b></td>
+<td>favorable gravimetric factor</td>
+<td>试剂的摩尔质量大，而<b>被测组分在称量形式中所占的比例很小</b>，换算因数随之变小——称量误差在乘以 F 时被摊薄，结果的相对误差显著下降</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>从结构上看，它们大多是<b>螯合剂</b>（chelating agents），与金属离子形成难溶的、<b>不带电荷</b>的螯合物（uncharged chelates）。
+「不带电」这一点很关键：不带电的分子不被水化，不会像带电胶粒那样形成稳定的水化层，因此沉淀容易聚结、容易过滤，
+这一点与 §6.3 讲的胶体双电层问题正好互为对照。</p>
+<p>又因为螯合剂本身是<b>弱酸</b>，必须先解离出配位基团才能与金属配位，所以<b>能被沉淀的元素种类——也就是方法的选择性——通常由 pH 调节</b>。
+课件给出的规律很直接：<b>金属螯合物越弱（稳定常数越小），所需的沉淀 pH 越高</b>。反过来，螯合物越稳定，就越能在较低 pH 下定量沉淀，
+这正是「调 pH 就能选性沉淀某一种离子」的化学基础。</p>
 <div class="table-scroll wide">
 <table>
 <thead>
@@ -627,6 +808,12 @@ F = <span class="frac"><b>a × M(待测组分)</b><i>b × M(称量形式)</i></s
 <td>以大离子沉淀大离子，F 极小</td>
 </tr>
 <tr>
+<td>铜铁试剂（cupferron，N-亚硝基苯胲铵）</td>
+<td>Cu²⁺、Fe³⁺、Ti(IV)、Zr(IV)、V(V) 等在强酸性溶液中</td>
+<td>相应的螯合物，需灼烧成金属氧化物称量</td>
+<td>可在强酸中沉淀，因而能把上述离子与 Al³⁺、Cr³⁺、Ni²⁺ 等分开；沉淀需灼烧成氧化物称量</td>
+</tr>
+<tr>
 <td>四苯砷氯化物</td>
 <td>ClO₄⁻、ReO₄⁻ 等大阴离子</td>
 <td>相应的缔合物</td>
@@ -635,15 +822,20 @@ F = <span class="frac"><b>a × M(待测组分)</b><i>b × M(称量形式)</i></s
 </tbody>
 </table>
 </div>
-<p class="table-caveat">来源：教材 Table 10.1、Table 10.2。ox = 8-羟基喹啉单阴离子；dmg = 丁二酮肟单阴离子。</p><div class="notation-box">
+<p class="table-caveat">来源：教材 Table 10.1、Table 10.2；课件 6 slide 20 的试剂表。ox = 8-羟基喹啉单阴离子；dmg = 丁二酮肟单阴离子。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/organic-reagents.webp" alt="常用有机沉淀剂一览表：丁二酮肟（沉淀 Ni(II)、Pd(II)）、α-安息香肟（沉淀 Cu(II)，Mo(VI)、W(VI) 以氧化物称量）、8-羟基喹啉（Al(III)、Mg(II) 等）、二乙基二硫代氨基甲酸钠、四苯硼钠（K⁺、Rb⁺、Cs⁺、NH₄⁺ 等）" loading="lazy" decoding="async">
+<figcaption>课件第 20 页的有机沉淀剂表，列出了试剂结构、被沉淀的金属与沉淀反应式。课件明确点名的代表试剂有四类：<b>丁二酮肟</b>（dimethylglyoxime，沉淀 Ni²⁺，也可用于 Pd(II)）、<b>α-安息香肟</b>（α-benzoin oxime，用于 Cu(II)，以及 Mo(VI) 与 W(VI)，称量形式为金属氧化物）、<b>8-羟基喹啉</b>（8-hydroxyquinoline，又称 oxine，可沉淀多种金属，对 Al(III) 与 Mg(II) 最有用）、<b>四苯硼钠</b>（sodium tetraphenylboron，用于 K⁺、Rb⁺、Cs⁺、Ag⁺、NH₄⁺ 等大阳离子）。表中还有一条通用规律：凡注明「metal oxide weighed」的试剂，其螯合物组成往往不够稳定，必须灼烧成金属氧化物再称量——这与本节末尾的提醒是一致的。<small>图源：Gravimetric analysis, slide 20</small></figcaption>
+</figure>
+<div class="notation-box">
 <b>有机沉淀剂为什么选择性好</b>
 <p>
-无机沉淀剂靠溶解度差异工作，而很多离子的硫化物、氢氧化物溶解度差别不够大。有机螯合剂靠<b>配位几何的匹配</b>工作：只有当离子的半径、电荷和配位构型与螯合环的尺寸相容时才能形成稳定螯合物，所以选择性来自结构而不是溶解度。</p>
+无机沉淀剂靠溶解度差异工作，而很多离子的硫化物、氢氧化物溶解度差别不够大。有机螯合剂靠<b>螯合环尺寸与离子半径、电荷的匹配</b>工作：只有当离子的半径、电荷和配位构型与螯合环的尺寸相容时才能形成稳定的螯合物，所以选择性来自结构而不是溶解度；再叠加上弱酸解离所需的 pH，选择性就有了两级调节。</p>
 </div><div class="notation-box">
 <b>用有机沉淀剂时要留神的一件事</b>
 <p>
 有些螯合物组成不严格符合化学计量，或含有不定量的溶剂分子，这时不能直接烘干称量，必须灼烧成金属氧化物才能得到准确结果。反过来，Al(C₉H₆NO)₃ 这类组成稳定、摩尔质量又大的螯合物，正是重量分析最理想的称量形式。</p>
-</div><p class="source-note">来源：教材 §10.3、§10.4，Table 10.1、Table 10.2。</p>
+</div><p class="source-note">来源：教材 §10.3、§10.4，Table 10.1、Table 10.2；课件 6 slides 19-20。</p>
 </section>
 <section id="ksp">
 <p class="section-kicker">6.8 SOLUBILITY PRODUCT</p>
@@ -661,6 +853,16 @@ K<sub>sp</sub> = [M<sup>n+</sup>]<sup>m</sup> [X<sup>m−</sup>]<sup>n</sup>
 <h3>从 Ksp 到摩尔溶解度</h3>
 <p>溶解度 s（mol·L⁻¹）与 Ksp 之间的换算取决于化合物的价型，
 因为一个分子解离出的离子数目不同。</p>
+<p class="table-caveat">先记住课件给出的总结论：<b>摩尔溶解度不能直接由 Ksp 的大小来比较</b>。Ksp 只是平衡常数，
+它到摩尔溶解度的换算还要经过价型（化学计量）这一道换算；<b>Ksp 相同时，AB 型（如 AgCl）的摩尔溶解度小于 AC₂ 型（如 Ag₂CrO₄）</b>。
+直观理解：AB 型溶 1 mol 只放出 2 mol 离子，AC₂ 型溶 1 mol 放出 3 mol 离子；后者「按单元算」产生的离子更多，
+所以在放出同样多离子的前提下，AC₂ 型需要的溶解量更少。于是 Ksp 相同（= 离子浓度的幂积相同）时，
+需要溶得更多的反而是 AC₂ 型——<b>AC₂ 型的摩尔溶解度更大</b>。因此「Ksp 小就更难溶」这个直觉在跨价型比较时不成立。</p>
+<figure class="ppt-figure">
+<img src="assets/lecture-05/molar-solubility-stoich.webp" alt="溶解度取决于化学计量：Ksp 相同时 AB 型化合物的摩尔溶解度小于 AC₂ 型；常见难溶盐的 Ksp 与溶解度对照表，包括 PbSO₄ 1.6×10⁻⁸ / 1.3×10⁻⁴、AgCl 1.0×10⁻⁶ / 1.0×10⁻⁵、AgBr 4×10⁻¹³ / 6×10⁻⁷、AgI 1×10⁻¹⁶ / 1×10⁻⁸、Al(OH)₃ 2×10⁻³² / 5×10⁻⁹、Fe(OH)₃ 4×10⁻³⁸ / 2×10⁻¹⁰" loading="lazy" decoding="async">
+<figcaption>课件的核心论断与数据表。<b>AgI 与 Al(OH)₃ 被框选出来做对照</b>，是本页最值得记的一组数据：AgI 的 Ksp 比 Al(OH)₃ <b>大 10¹⁶ 倍</b>，但两者的摩尔溶解度却落在同一个数量级（1 × 10⁻⁸ 对 5 × 10⁻⁹）——差别全在价型上。
+这也从数据层面印证了 §6.2 的反直觉结论：<b>Ksp 越小并不意味着沉淀越「好用」</b>，Fe(OH)₃ 的 Ksp 只有 4 × 10⁻³⁸，正因为它溶解度太低、S 太小，相对过饱和度压不下来，才总是长成难过滤的胶状沉淀。<small>图源：Gravimetric analysis, slide 25</small></figcaption>
+</figure>
 <div class="table-scroll wide">
 <table>
 <thead>
@@ -707,7 +909,7 @@ K<sub>sp</sub> = [M<sup>n+</sup>]<sup>m</sup> [X<sup>m−</sup>]<sup>n</sup>
 <b>Ksp 数值的直观感受</b>
 <p>
 教材 Table 10.3 给出两个极端。AgI 的 Ksp 比 Al(OH)₃ <b>大 5 × 10¹⁵ 倍</b>，但摩尔溶解度只有它的两倍——又是价型在起作用。另一头，<b>HgS 的 Ksp = 4 × 10⁻⁵³</b>，摩尔溶解度只有 6 × 10⁻²⁷ mol·L⁻¹——这意味着即使把溶液稀释到极其稀薄，汞离子也几乎完全沉淀，这就是硫化物分离法能做得那么彻底的原因。</p>
-</div><p class="source-note">来源：教材 §10.5，Table 10.3，Example 10.6–10.12。</p>
+</div><p class="source-note">来源：教材 §10.5，Table 10.3，Example 10.6–10.12；课件 6 slide 25。</p>
 </section>
 <section id="commonion">
 <p class="section-kicker">6.9 COMMON ION EFFECT</p>

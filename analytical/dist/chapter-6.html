@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="分析化学 I 第6章 沉淀滴定">
+<title>06 沉淀滴定 · 分析化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="course-extra.css">
+<link rel="stylesheet" href="ppt-figures.css">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<a href="chapter-3.html">
+<span>03</span>酸碱平衡</a>
+<a href="chapter-4.html">
+<span>04</span>酸碱滴定</a>
+<a href="chapter-5.html">
+<span>05</span>重量分析</a>
+<a class="active" href="chapter-6.html">
+<span>06</span>沉淀滴定</a>
+<p class="nav-label">本章目录</p>
+<a href="#acid">
+<span>11.1</span>酸对溶解度的影响</a>
+<a href="#massbalance">
+<span>11.2</span>质量平衡法</a>
+<a href="#complex">
+<span>11.3</span>络合与条件溶度积</a>
+<a href="#curves">
+<span>11.4</span>沉淀滴定曲线</a>
+<a href="#stepwise">
+<span>11.5</span>分步沉淀</a>
+<a href="#precip-indicator">
+<span>11.6</span>与滴定剂反应的指示剂</a>
+<a href="#adsorption">
+<span>11.7</span>吸附指示剂</a>
+<a href="#compare">
+<span>11.8</span>三种银量法对比</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside>
+<main class="workspace">
+<article class="article lesson">
+<header class="article-head">
+<p class="eyebrow">06 · PRECIPITATION TITRATIONS</p>
+<h1>沉淀滴定</h1>
+<p>沉淀平衡不是孤立的：酸、络合剂都会把沉淀拉进溶液。先把条件溶度积算清楚，再谈银量法的三条路线与两类指示剂。</p>
+<div>
+<span>教材 Ch.11</span>
+<span>条件溶度积</span>
+<span>滴定曲线</span>
+<span>莫尔法</span>
+<span>佛尔哈德法</span>
+<span>法扬司法</span>
+</div>
+</header>
+<nav class="chapter-jump" aria-label="本章快速导航">
+<a href="#acid">酸对溶解度的影响</a>
+<a href="#massbalance">质量平衡法</a>
+<a href="#complex">络合与条件溶度积</a>
+<a href="#curves">沉淀滴定曲线</a>
+<a href="#stepwise">分步沉淀</a>
+<a href="#precip-indicator">与滴定剂反应的指示剂</a>
+<a href="#adsorption">吸附指示剂</a>
+<a href="#compare">三种银量法对比</a>
+</nav>
+<section id="acid">
+<p class="section-kicker">11.1 ACIDITY EFFECT</p>
+<h2>酸对溶解度的影响与条件溶度积</h2>
+
+<p>第 10 章把沉淀当成孤立的平衡处理：只要固体还在，[M⁺][A⁻] 就是常数。
+但只要溶液中还发生<b>别的</b>平衡，这个常数的含义就要重新解读——
+因为真正影响溶解度的不是自由离子浓度，而是<b>总分析浓度</b>。</p>
+
+<p>一个直接的问题：<b>草酸钙在酸性溶液中能溶多少？</b>
+草酸根是弱碱，会与质子结合。质子在这里扮演了和 Ca²⁺ 争夺草酸根的角色，
+于是沉淀被拉进溶液。教材用三个平衡描述这个体系：</p>
+<div class="equation">
+CaC₂O₄ ⇌ Ca²⁺ + C₂O₄²⁻    K<sub>sp</sub> = 2.6 × 10⁻⁹<br>C₂O₄²⁻ + H⁺ ⇌ HC₂O₄⁻    K<sub>a2</sub> = 6.1 × 10⁻⁵<br>HC₂O₄⁻ + H⁺ ⇌ H₂C₂O₄    K<sub>a1</sub> = 6.5 × 10⁻²
+</div>
+<p>令 Ox<sub>T</sub> 表示<b>所有</b>草酸物种的总浓度，即
+Ox<sub>T</sub> = [H₂C₂O₄] + [HC₂O₄⁻] + [C₂O₄²⁻]。溶解度 s 既等于 [Ca²⁺]，
+也等于 Ox<sub>T</sub>（因为没有过量组分）。把 [C₂O₄²⁻] = Ox<sub>T</sub>α₂ 代进 Ksp：</p>
+<div class="equation large">
+K<sub>sp</sub> = [Ca²⁺] · Ox<sub>T</sub> α₂
+</div>
+<p>于是定义<b>条件溶度积</b>（conditional solubility product）K′sp：</p>
+<div class="equation large">
+K′<sub>sp</sub> = K<sub>sp</sub> / α₂ = [Ca²⁺] · Ox<sub>T</sub> = s²
+</div><div class="notation-box">
+<b>条件溶度积只在指定 pH 下成立</b>
+<p>
+这句话是理解 K′sp 的关键。K′sp 把 pH 的影响<b>打包</b>进了一个数里，所以它必须和 pH 绑定使用。这与第 9 章的条件形成常数 K′f 是完全平行的概念——两者都是把副反应系数并进主常数。</p>
+</div><div class="worked-example">
+<span>例</span>
+<h3>酸对草酸钙溶解度的影响</h3>
+<p>计算 CaC₂O₄ 在 [H⁺] = 0.0010 mol·L⁻¹ 溶液中的溶解度。</p><p>① 先算 α₂：</p><p>α₂ = (6.5 × 10⁻²)(6.1 × 10⁻⁵) / [(1.0 × 10⁻³)² + (6.5 × 10⁻²)(1.0 × 10⁻³) + (6.5 × 10⁻²)(6.1 × 10⁻⁵)] = 5.7 × 10⁻²</p><p>② 再算溶解度：s = √(Ksp / α₂) = √(2.6 × 10⁻⁹ / 5.7 × 10⁻²) = 2.1 × 10⁻⁴ mol·L⁻¹。</p><p>③ 对照：纯水中 s = √Ksp = 5.1 × 10⁻⁵ mol·L⁻¹。酸性条件下溶解度增大了约 <b>4 倍</b>。</p>
+</div><div class="notation-box">
+<b>一个必须讲清楚的逻辑</b>
+<p>
+多重平衡的存在<b>不会</b>使任何一个平衡表达式失效。在上面的例子里，Ksp = [Ca²⁺][C₂O₄²⁻] <b>始终</b>成立——只要还有固体 CaC₂O₄ 存在，这两个自由离子的浓度乘积就是常数。溶解度之所以增大，是因为一部分 C₂O₄²⁻ 被转成了 HC₂O₄⁻ 和 H₂C₂O₄，体系必须再溶解更多固体来补充自由 C₂O₄²⁻。换句话说：<b>常数没变，变的是自由离子的储备方式</b>。</p>
+</div><div class="notation-box">
+<b>更严格的问题要用迭代</b>
+<p>
+上面的计算<b>假定</b>平衡时 [H⁺] = 0.0010 mol·L⁻¹。但如果真的把 CaC₂O₄ 溶进 0.0010 mol·L⁻¹ 的 HCl，溶解过程会消耗质子（约五分之一变成 HC₂O₄⁻），平衡时 [H⁺] 会低于 0.0010。用 0.8 × 10⁻³ 重新算得 1.9 × 10⁻⁴ mol·L⁻¹，比刚才低约 10%。要得到精确结果，必须反复代入直到收敛——这就是<b>迭代法</b>。考试中若题目给出的是平衡 [H⁺]，直接用；若给出的是初始酸浓度，就要说明这里做了近似。</p>
+</div><p class="source-note">来源：教材 §11.1，Example 11.1，式 (11.4)–(11.6)。</p>
+</section>
+<section id="massbalance">
+<p class="section-kicker">11.2 MASS BALANCE</p>
+<h2>质量平衡法处理多重平衡</h2>
+
+<p>条件溶度积走的是<b>修正常数</b>的路线。教材同时给出另一条更系统的路线——
+<b>质量平衡法</b>（mass balance approach），即把所有的平衡表达式、
+质量平衡式和电荷平衡式全部列出来，联立求解。当副反应比较复杂、
+α 系数不好直接写时，这条路更稳。</p>
+
+<p>教材的例题很典型：MA 的 Ksp = 1.0 × 10⁻⁸，HA 的 Ka = 1.0 × 10⁻⁶，
+问 1 L 0.10 mol·L⁻¹ HCl 中能溶解多少摩尔 MA。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>表达式</th>
+<th>编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平衡常数</td>
+<td>[M⁺][A⁻] = 1.0 × 10⁻⁸</td>
+<td>(1)</td>
+</tr>
+<tr>
+<td>平衡常数</td>
+<td>[H⁺][A⁻] / [HA] = 1.0 × 10⁻⁶</td>
+<td>(2)</td>
+</tr>
+<tr>
+<td>平衡常数</td>
+<td>[H⁺][OH⁻] = 1.0 × 10⁻¹⁴</td>
+<td>(3)</td>
+</tr>
+<tr>
+<td>质量平衡</td>
+<td>[M⁺] = [A⁻] + [HA] = A<sub>T</sub></td>
+<td>(4)</td>
+</tr>
+<tr>
+<td>质量平衡</td>
+<td>[H⁺] = [Cl⁻] + [OH⁻] − [HA]</td>
+<td>(5)</td>
+</tr>
+<tr>
+<td>质量平衡</td>
+<td>[Cl⁻] = 0.10 mol·L⁻¹</td>
+<td>(6)</td>
+</tr>
+<tr>
+<td>电荷平衡</td>
+<td>[H⁺] + [M⁺] = [A⁻] + [Cl⁻] + [OH⁻]</td>
+<td>(7)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §11.2，Example 11.2。六个未知量（[H⁺]、[OH⁻]、[Cl⁻]、[HA]、[M⁺]、[A⁻]）配六个独立方程——电荷平衡式可以由其余式子线性组合得到，所以不计入独立方程。</p>
+<h3>两条简化假设</h3>
+<p>方程够了，但直接解是四次方程。教材用两条在<b>酸性溶液</b>中显然成立的假设来降次：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>假设</th>
+<th>依据</th>
+<th>化简结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[A⁻] ≪ [HA]</td>
+<td>酸性下 HA 的解离被抑制</td>
+<td>由 (4) 得 [M⁺] = [A⁻] + [HA] ≈ [HA]</td>
+</tr>
+<tr>
+<td>[OH⁻] 极小</td>
+<td>强酸性溶液</td>
+<td>由 (5)(6) 得 [H⁺] ≈ 0.10 − [HA]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §11.2。化简的判据是酸的强弱与溶液的酸碱性，两条假设都必须在<b>最终结果</b>上自洽才算成立。</p>
+<p>把 (1) 除以 (2)，消去 [A⁻]：</p>
+<div class="equation large">
+[M⁺] = K<sub>sp</sub>[H⁺] / (K<sub>a</sub>[HA])
+</div><div class="notation-box">
+<b>质量平衡法的三步套路</b>
+<p>
+① <b>列全部方程</b>：平衡常数式 + 质量平衡式 + 电荷平衡式，并检查方程数 ≥ 未知量数。<br>② <b>找简化假设</b>：酸性下忽略 HA 解离、忽略 [OH⁻]；碱性下反过来忽略 [H⁺]。<br>③ <b>解完要自检</b>：把结果代回被忽略的项，确认它确实小到可以忽略。若不自洽，就要换更强的假设或直接解方程。</p>
+</div><p class="source-note">来源：教材 §11.2，Example 11.2–11.3。</p>
+</section>
+<section id="complex">
+<p class="section-kicker">11.3 COMPLEXATION</p>
+<h2>络合效应与条件溶度积</h2>
+
+<p>酸效应处理的是<b>阴离子</b>被质子夺走。对称地，<b>金属离子</b>也会被络合剂夺走——
+银离子与氨络合会让氯化银溶解，这是定性分析里就学过的现象。
+定量描述的方式与酸效应完全平行：把金属离子的分布分数 α<sub>M</sub> 引进 Ksp。</p>
+<div class="equation large">
+K′<sub>sp</sub> = K<sub>sp</sub> / α<sub>M</sub> = [M⁺]<sub>T</sub> · [A⁻] = s²
+</div><div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>副反应</th>
+<th>受影响的离子</th>
+<th>分布分数</th>
+<th>对 K′sp 的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>酸效应</td>
+<td>弱酸根阴离子 A⁻</td>
+<td>α<sub>A</sub>（如 α₂）</td>
+<td>K′sp = Ksp / α<sub>A</sub>，变大</td>
+</tr>
+<tr>
+<td>络合效应</td>
+<td>金属阳离子 M⁺</td>
+<td>α<sub>M</sub></td>
+<td>K′sp = Ksp / α<sub>M</sub>，变大</td>
+</tr>
+<tr>
+<td>两者同时存在</td>
+<td>阴阳离子都被夺走</td>
+<td>α<sub>A</sub> 与 α<sub>M</sub> 同时 < 1</td>
+<td>K′sp = Ksp / (α<sub>A</sub> α<sub>M</sub>)，效果<b>相乘</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">两个副反应同时存在时，溶解度按两条路线同时被拉高，所以条件溶度积要把两个 α 都除进去。</p><div class="notation-box">
+<b>α<sub>M</sub> 怎么写</b>
+<p>
+如果金属离子与配体 L 形成逐级络合物 ML⁺、ML₂⁺……，则<br>α<sub>M</sub> = 1 / (1 + β₁[L] + β₂[L]² + …)，其中 β 是累积形成常数。<br>这与第 9 章络合滴定的副反应系数是同一个公式——同一套数学在不同章节反复出现，这正是教材把它单独列一节的原因。</p>
+</div><p class="source-note">来源：教材 §11.3，Example 11.4–11.5，式 (11.10)–(11.11)。</p>
+</section>
+<section id="curves">
+<p class="section-kicker">11.4 TITRATION CURVES</p>
+<h2>沉淀滴定曲线的三段式</h2>
+
+<p>沉淀滴定要能用，需要两个条件：<b>平衡要快</b>，以及<b>要有合适的终点检测手段</b>。
+和酸碱滴定一样，理解滴定曲线的形状才能选对指示剂、判断精度、处理混合体系。</p>
+
+<p>银量法的曲线画法与酸碱滴定完全平行，只是把 pH 换成 pX
+（X 为卤素离子，pX = −log[X⁻]）。以 0.1000 mol·L⁻¹ Cl⁻ 用 0.1000 mol·L⁻¹ AgNO₃
+滴定为例，曲线分三段：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>主导平衡</th>
+<th>怎么算 [Cl⁻]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>滴定前</td>
+<td>无需平衡</td>
+<td>直接由初始浓度决定，pCl = −log 0.1000 = 1.00</td>
+</tr>
+<tr>
+<td>计量点前</td>
+<td>残留 Cl⁻ 为主要来源，沉淀的解离可忽略</td>
+<td>[Cl⁻] = (剩余 Cl⁻ 的毫摩尔数) / 总体积</td>
+</tr>
+<tr>
+<td>计量点</td>
+<td>饱和 AgCl 溶液</td>
+<td>[Cl⁻] = √Ksp = 1.0 × 10⁻⁵ mol·L⁻¹，pCl = 5.00</td>
+</tr>
+<tr>
+<td>计量点后</td>
+<td>过量 Ag⁺ 决定 [Cl⁻]</td>
+<td>[Cl⁻] = Ksp / [Ag⁺]，[Ag⁺] = 过量 Ag⁺ 的毫摩尔数 / 总体积</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §11.4。三段的分界点就是计量点，这一点与第 4 章酸碱滴定曲线的三段式结构完全对应。</p><div class="worked-example">
+<span>例</span>
+<h3>氯离子滴定曲线的完整计算</h3>
+<p>100.0 mL 0.1000 mol·L⁻¹ Cl⁻ 用 0.1000 mol·L⁻¹ AgNO₃ 滴定，Ksp(AgCl) = 1.0 × 10⁻¹⁰。计算各点的 pCl。</p><p><b>0.00 mL</b>：pCl = −log 0.1000 = 1.00。</p><p><b>20.00 mL</b>：Cl⁻ 总量 = 100.0 × 0.1000 = 10.00 mmol；加入 Ag⁺ = 2.000 mmol；剩余 Cl⁻ = 8.00 mmol / 120.0 mL = 0.0667 mol·L⁻¹；pCl = 1.18。</p><p><b>99.00 mL</b>：剩余 Cl⁻ = 0.10 mmol / 199.0 mL = 5.0 × 10⁻⁴ mol·L⁻¹；pCl = 3.30。</p><p><b>99.50 mL</b>：剩余 0.05 mmol / 199.5 mL = 2.5 × 10⁻⁴ mol·L⁻¹；pCl = 3.60。</p><p><b>100.00 mL（计量点）</b>：[Cl⁻] = √Ksp = 1.0 × 10⁻⁵ mol·L⁻¹；pCl = 5.00。</p><p><b>100.50 mL</b>：过量 Ag⁺ = 0.05 mmol / 200.5 mL = 2.5 × 10⁻⁴ mol·L⁻¹；[Cl⁻] = Ksp / [Ag⁺] = 4.0 × 10⁻⁷ mol·L⁻¹；pCl = 6.40。</p><p><b>110.00 mL</b>：过量 Ag⁺ = 1.00 mmol / 210 mL = 4.76 × 10⁻³ mol·L⁻¹；[Cl⁻] = 2.1 × 10⁻⁸ mol·L⁻¹；pCl = 7.67。</p><p>注意突跃的位置：从 99.5 mL 到 100.5 mL，仅 1 mL 之差，pCl 就从 3.60 跳到 6.40——<b>近三个 pX 单位</b>。这就是沉淀滴定可行的原因。</p>
+</div><div class="equation">
+p² − (C<sub>X</sub>V<sub>X</sub> + C<sub>Y</sub>V<sub>Y</sub>)p + (C<sub>X</sub>V<sub>X</sub>C<sub>Y</sub>V<sub>Y</sub> − V<sub>T</sub>²K<sub>sp</sub>) = 0
+</div><div class="notation-box">
+<b>Ksp 越小，突跃越大</b>
+<p>
+比较 Cl⁻、Br⁻、I⁻ 的滴定曲线：Ksp 分别为 1 × 10⁻¹⁰、4 × 10⁻¹³、1 × 10⁻¹⁶。三者的初始浓度相同，所以计量点前的曲线几乎重合。但在计量点及其之后，Ksp 越小则 [X⁻] 越小、pX 越大，曲线<b>向上平移</b>得更厉害，于是突跃也更宽。结论一句话：<b>沉淀越难溶，终点越敏锐</b>。</p>
+</div><div class="notation-box">
+<b>为什么沉淀滴定比络合滴定简单</b>
+<p>
+教材指出两者都可以用一个二次方程完整求解，但沉淀滴定更简单——因为 Ksp 的表达式中<b>没有分母项</b>，而络合滴定的形成常数按惯例写成缔合常数，分母里带着 [M][L]。两者在数学上是同一问题，只是常数写法不同。</p>
+</div><p class="source-note">来源：教材 §11.4，Example 11.6，式 (11.12)–(11.13)，Figure 11.1。</p>
+</section>
+<section id="stepwise">
+<p class="section-kicker">11.5 STEPWISE TITRATION</p>
+<h2>分步沉淀滴定</h2>
+
+<p>如果两种离子与同一滴定剂生成的沉淀溶解度差别足够大，它们就能<b>分步沉淀</b>，
+在一次滴定中出现两个突跃。经典例子是 I⁻ 与 Cl⁻ 的混合物用 Ag⁺ 滴定——
+AgI 的 Ksp 比 AgCl 小 <b>10⁶ 倍</b>，所以 AgI 先沉淀。</p>
+
+<p>分步滴定的关键在于判断<b>第二种沉淀何时开始出现</b>。判据是：
+滴定剂浓度 [Ag⁺] 达到使第二种沉淀的 Ksp 也被满足的那一刻。</p>
+<div class="equation">
+V<sub>Ag</sub>C<sub>Ag</sub> = (V<sub>X</sub>I₀ − [I⁻]V<sub>T</sub>) + (V<sub>X</sub>Cl₀ − [Cl⁻]V<sub>T</sub>) + [Ag⁺]V<sub>T</sub>
+</div><div class="equation">
+(V<sub>Ag</sub>C<sub>Ag</sub> − V<sub>X</sub>(I₀ + Cl₀)) / V<sub>T</sub> = [Ag⁺] − (K<sub>sp,AgI</sub> + K<sub>sp,AgCl</sub>) / [Ag⁺]
+</div><div class="worked-example">
+<span>例</span>
+<h3>食盐中碘含量的测定——分步沉淀的实际判断</h3>
+<p>美国食盐按 45 mg I / kg 盐加入碘化钾。忽略其他组分，若把盐配成 0.1 mol·L⁻¹ NaCl 溶液并用 AgNO₃ 滴定，问 AgCl 开始沉淀时还有多少比例的碘留在溶液中？</p><p>① 求 Cl⁻ 与 I⁻ 的摩尔比：M(NaCl) = 58.5 g·mol⁻¹，M(I) = 127 g·mol⁻¹，</p><p>(1000 / 58.5) / (0.045 / 127) = 4.82 × 10⁴</p><p>② 若 [Cl⁻] = 0.1 mol·L⁻¹，则 [I⁻] = 0.1 / (4.82 × 10⁴) = 2.07 × 10⁻⁶ mol·L⁻¹。</p><p>③ AgCl 开始沉淀时：[Ag⁺] = Ksp,AgCl / [Cl⁻] = 10⁻¹⁰ / 0.1 = 10⁻⁹ mol·L⁻¹。</p><p>④ 此时碘离子浓度：[I⁻] = Ksp,AgI / [Ag⁺] = 10⁻¹⁶ / 10⁻⁹ = 10⁻⁷ mol·L⁻¹。</p><p>⑤ 未沉淀的碘比例：10⁻⁷ / 2.07 × 10⁻⁶ = <b>4.83%</b>。</p><p>这说明即使 Ksp 相差 10⁶ 倍，滴定误差仍有近 5%——要把碘测准，必须用别的方法（如电位法确定第二个突跃）。</p>
+</div><div class="notation-box">
+<b>分步滴定的实用判据</b>
+<p>
+从上面的计算能看出，仅凭 Ksp 相差 10⁶ 倍还不足以保证定量准确。实际的判据要结合两种离子的<b>浓度比</b>一起看：浓度比越接近 1，所需的 Ksp 差值就越大。这与第 4 章多元酸分步滴定的判据 Ka₁ ≥ 10⁴Ka₂ 是同一个思路——都是要求第一步反应足够完全，第二步才开始。</p>
+</div><p class="source-note">来源：教材 §11.4 分步沉淀滴定部分，Example 11.7，式 (11.14)–(11.15)，Figure 11.2。</p>
+</section>
+<section id="precip-indicator">
+<p class="section-kicker">11.6 INDICATORS REACTING WITH TITRANT</p>
+<h2>第一类指示剂：莫尔法与佛尔哈德法</h2>
+
+<p>终点可以靠电位法（测 pCl 或 pAg）确定，但更方便的是用指示剂。
+沉淀滴定的指示剂理论<b>与酸碱指示剂完全不同</b>——
+它的性质不一定取决于溶液中某个离子的浓度，而是基于两个截然不同的机制。
+教材把它们分成两类。</p>
+
+<p><b>第一类：与滴定剂反应生成有色沉淀。</b>
+指示剂在计量点后与过量的滴定剂反应，突然产生颜色变化。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>滴定对象</th>
+<th>指示剂与反应</th>
+<th>溶液条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>莫尔法（Mohr）</td>
+<td>Cl⁻（用 Ag⁺ 滴定）</td>
+<td>K₂CrO₄：CrO₄²⁻（黄）+ 2Ag⁺ → Ag₂CrO₄↓（砖红）</td>
+<td>pH ≈ 8，中性或弱碱性</td>
+</tr>
+<tr>
+<td>佛尔哈德法（Volhard）</td>
+<td>Cl⁻、Br⁻、SCN⁻（返滴定）</td>
+<td>铁铵矾：Fe³⁺ + SCN⁻ → Fe(SCN)²⁺（红色）</td>
+<td>酸性（HNO₃）溶液</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §11.4 指示剂部分。这两个方法是分析化学史上最经典的银量法：盖-吕萨克 1829 年用浊度法测定银的精度已达 0.05%，莫尔随后用 K₂CrO₄ 改进了终点判断。</p>
+<h3>莫尔法：指示剂浓度是算出来的</h3>
+<p>莫尔法的难点在于<b>指示剂该加多少</b>。要求是 Ag₂CrO₄ 恰好在计量点开始沉淀，
+而计量点时 [Ag⁺] = 10⁻⁵ mol·L⁻¹（饱和 AgCl 溶液）。代入 Ag₂CrO₄ 的 Ksp = 1.1 × 10⁻¹²：</p>
+<div class="equation large">
+(10⁻⁵)²[CrO₄²⁻] = 1.1 × 10⁻¹²  ⟹  [CrO₄²⁻] = 1.1 × 10⁻² mol·L⁻¹
+</div><div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>实际加入的 [CrO₄²⁻]</th>
+<th>后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>> 0.011 mol·L⁻¹</td>
+<td>Ag₂CrO₄ 在 [Ag⁺] < 10⁻⁵ 时就析出，终点<b>提前</b>（结果偏低）</td>
+</tr>
+<tr>
+<td>< 0.011 mol·L⁻¹</td>
+<td>[Ag⁺] 必须超过 10⁻⁵ 才析出，终点<b>拖后</b>（结果偏高）</td>
+</tr>
+<tr>
+<td>实际取值 0.002–0.005 mol·L⁻¹</td>
+<td>远低于理论值，因为铬酸根的深黄色会掩盖砖红色沉淀；由此产生的指示剂误差用<b>空白滴定</b>扣除，或用 NaCl 基准物标定 AgNO₃ 一并校正</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §11.4。这个细节很能说明问题：理论计算给出的是<b>方向</b>，实际取值还要考虑人眼对颜色的分辨能力。</p><div class="notation-box">
+<b>莫尔法为什么必须控制在 pH ≈ 8</b>
+<p>
+<b>pH < 6</b>：部分 CrO₄²⁻ 质子化成 HCrO₄⁻，需要更多 Ag⁺ 才能生成 Ag₂CrO₄，终点拖后。<br><b>pH > 10</b>：会析出 AgOH / Ag₂O 沉淀。<br>实际操作用加入<b>固体碳酸钙</b>的方式维持在 pH ≈ 8——碳酸根是较强的布朗斯特碱，饱和碳酸钙溶液的碱度刚好合适。莫尔法适用于中性或非缓冲溶液，如饮用水中的氯离子。</p>
+</div>
+<h3>佛尔哈德法：返滴定与那个必须过滤的例外</h3>
+<p>佛尔哈德法是<b>间接</b>滴定：先加过量 AgNO₃ 把阴离子沉淀掉，
+再用标准 KSCN 返滴定剩余的 Ag⁺。终点由铁铵矾指示——
+第一个过量的 SCN⁻ 会与 Fe³⁺ 生成红色络合物。</p>
+<div class="equation">
+X⁻ + Ag⁺（过量）→ AgX↓ + Ag⁺（剩余）<br>Ag⁺（剩余）+ SCN⁻ → AgSCN↓<br>Fe³⁺ + SCN⁻ → Fe(SCN)²⁺（红色）
+</div><div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>被测离子</th>
+<th>AgX 与 AgSCN 的溶解度比较</th>
+<th>是否需要过滤沉淀</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I⁻、Br⁻、SCN⁻</td>
+<td>AgX 比 AgSCN <b>更难溶</b>或相当</td>
+<td>不需要</td>
+<td>沉淀不会与滴定剂反应，终点清晰</td>
+</tr>
+<tr>
+<td>Cl⁻</td>
+<td>AgCl 比 AgSCN <b>更易溶</b></td>
+<td><b>必须过滤</b></td>
+<td>AgCl + SCN⁻ → AgSCN + Cl⁻，沉淀会被返滴定的 SCN⁻ 转化，终点偏高且拖尾</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §11.4。这是佛尔哈德法最容易被忽略的一步：测氯必须先把 AgCl 滤掉，测溴和碘则不必。</p><div class="notation-box">
+<b>佛尔哈德法的两条操作纪律</b>
+<p>
+① 测 I⁻ 时<b>指示剂要等碘离子全部沉淀后再加</b>——否则 Fe³⁺ 会把 I⁻ 氧化成 I₂，产生正误差。<br>② 指示剂生成的沉淀<b>不能比被测沉淀更稳定</b>，否则第一滴滴定剂就会显色，终点完全失效。</p>
+</div><p class="source-note">来源：教材 §11.4 指示剂部分，式 (11.16)–(11.19)。</p>
+</section>
+<section id="adsorption">
+<p class="section-kicker">11.7 ADSORPTION INDICATORS</p>
+<h2>第二类指示剂：吸附指示剂与法扬司法</h2>
+
+<p>吸附指示剂的机理完全不同：反应发生在<b>沉淀表面</b>，
+而指示剂是一种染料，在溶液中以阴离子 In⁻ 形式存在。
+它的颜色变化来自于<b>被吸附</b>，而不是与滴定剂生成新化合物。</p>
+
+<p>以 Cl⁻ 用 Ag⁺ 滴定为例，沉淀表面的带电情况在计量点前后发生翻转：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>溶液中过量的离子</th>
+<th>沉淀表面的吸附层</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计量点前</td>
+<td>Cl⁻ 过量</td>
+<td>第一吸附层是 Cl⁻，表面带负电；反离子层是 Na⁺ 等阳离子</td>
+<td>指示剂阴离子 In⁻ 被排斥，<b>不被吸附</b>，溶液呈游离染料的颜色</td>
+</tr>
+<tr>
+<td>计量点后</td>
+<td>Ag⁺ 过量</td>
+<td>第一吸附层变成 Ag⁺，表面带正电</td>
+<td>In⁻ 被吸引进入反离子层而<b>被吸附</b>，颜色改变，指示终点</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §11.4 吸附指示剂部分。写法上教材用 AgCl:Cl⁻::Na⁺ 与 AgCl:Ag⁺::In⁻ 表示两个阶段的表面结构。</p><div class="notation-box">
+<b>颜色为什么变了</b>
+<p>
+教材给出一个合理的解释：指示剂与 Ag⁺ 形成<b>有色络合物</b>，该络合物在溶液中太弱、无法稳定存在，但被吸附到沉淀表面后相当于被固定住，形成过程就被<b>促进</b>了。换句话说，吸附起到了降低有效溶解度的作用。</p>
+</div><div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>指示剂</th>
+<th>适用滴定</th>
+<th>使用 pH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>荧光黄（fluorescein）</td>
+<td>Cl⁻ 用 Ag⁺ 滴定</td>
+<td>pH 7–8</td>
+</tr>
+<tr>
+<td>二氯荧光黄（dichlorofluorescein）</td>
+<td>Cl⁻ 用 Ag⁺ 滴定</td>
+<td>pH 4</td>
+</tr>
+<tr>
+<td>溴甲酚绿（bromcresol green）</td>
+<td>SCN⁻ 用 Ag⁺ 滴定</td>
+<td>pH 4–5</td>
+</tr>
+<tr>
+<td>曙红（eosin）</td>
+<td>Br⁻、I⁻、SCN⁻ 用 Ag⁺ 滴定</td>
+<td>pH 2</td>
+</tr>
+<tr>
+<td>甲基紫（methyl violet）</td>
+<td>Ag⁺ 用 Cl⁻ 滴定</td>
+<td>酸性溶液</td>
+</tr>
+<tr>
+<td>罗丹明 6G（rhodamine 6G）</td>
+<td>Ag⁺ 用 Br⁻ 滴定</td>
+<td>HNO₃ 溶液</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 Table 11.1。用吸附指示剂的滴定统称<b>法扬司法</b>（Fajans method）。</p><div class="notation-box">
+<b>pH 与吸附强弱之间的权衡</b>
+<p>
+吸附指示剂通常是弱酸，pH 太低就解离不足，无法以 In⁻ 形式被吸附。但吸附也<b>不能太强</b>，否则它会在计量点前就把沉淀的 Cl⁻ 从第一吸附层挤走，造成终点提前。<br>这一对矛盾决定了规则：<b>沉淀越难溶、阴离子吸附越强，就能用吸附更强的指示剂，也就能在更酸的条件下滴定</b>。Br⁻ 与 Ag⁺ 生成的沉淀比 AgCl 更难溶、吸附更强，所以能用曙红在 pH 2 下滴定；而 Cl⁻ 只能用荧光黄，且必须接近中性。<br>荧光黄在 pH 7 可用于所有卤化物（它不挤走任何一个）；二氯荧光黄在 pH 7 会挤走 Cl⁻ 但在 pH 4 不会——所以在 pH 7 用二氯荧光黄测氯，结果往往<b>偏低</b>。</p>
+</div><p class="source-note">来源：教材 §11.4 吸附指示剂部分，Table 11.1。</p>
+</section>
+<section id="compare">
+<p class="section-kicker">11.8 METHOD COMPARISON</p>
+<h2>三种银量法的系统对比</h2>
+
+<p>三个方法都以 AgNO₃ 为核心，但适用的对象、溶液条件和终点机制各不相同。
+把它们的差别整理成一张表，考试时按<b>被测离子 → 选方法 → 定 pH → 说终点</b>的顺序回答即可。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>莫尔法</th>
+<th>佛尔哈德法</th>
+<th>法扬司法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>滴定方式</td>
+<td>直接滴定</td>
+<td>返滴定（先加过量 Ag⁺）</td>
+<td>直接滴定</td>
+</tr>
+<tr>
+<td>标准溶液</td>
+<td>AgNO₃</td>
+<td>AgNO₃ + KSCN</td>
+<td>AgNO₃</td>
+</tr>
+<tr>
+<td>被测对象</td>
+<td>Cl⁻、Br⁻、I⁻、CN⁻</td>
+<td>Cl⁻、Br⁻、I⁻、SCN⁻ 及多种阴离子</td>
+<td>Cl⁻、Br⁻、I⁻、SCN⁻</td>
+</tr>
+<tr>
+<td>指示剂</td>
+<td>K₂CrO₄</td>
+<td>铁铵矾（Fe³⁺）</td>
+<td>吸附指示剂（荧光黄类染料）</td>
+</tr>
+<tr>
+<td>终点现象</td>
+<td>生成砖红色 Ag₂CrO₄ 沉淀</td>
+<td>生成红色 Fe(SCN)²⁺ 络合物</td>
+<td>沉淀表面吸附染料而变色</td>
+</tr>
+<tr>
+<td>溶液条件</td>
+<td>中性或弱碱性，pH ≈ 8</td>
+<td>酸性（HNO₃）</td>
+<td>视指示剂而定，pH 2–8</td>
+</tr>
+<tr>
+<td>主要限制</td>
+<td>酸性下 CrO₄²⁻ 质子化；碱性太强生成 AgOH</td>
+<td>测 Cl⁻ 必须过滤 AgCl；测 I⁻ 要后加指示剂</td>
+<td>指示剂吸附强度与 pH 之间存在权衡</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §11.4 全文归纳。选择顺序：先看被测离子，再看溶液酸碱性，最后确认终点机制是否与共存离子冲突。</p><div class="notation-box">
+<b>为什么佛尔哈德法能在酸性下用</b>
+<p>
+这是三个方法对比时最容易被问的一点。莫尔法和法扬司法都受 pH 限制，而佛尔哈德法的指示剂是 Fe³⁺/Fe(SCN)²⁺ 体系，它的显色反应不涉及弱酸根的质子化，所以在强酸性下照样工作。更实际的好处是：酸性条件能防止很多金属离子水解，也让 Fe³⁺ 保持游离状态——这让佛尔哈德法成为适用面最广的银量法。</p>
+</div><div class="notation-box">
+<b>本章与第 10 章的接力关系</b>
+<p>
+第 10 章讲的是<b>怎么把一个沉淀做干净、称准</b>，属于重量法；第 11 章讲的是<b>怎么用沉淀的体积关系定量</b>，属于滴定法。两者共享同一套沉淀平衡，只是测量的物理量不同——一个称质量，一个量体积。教材也指出，很多用重量法做的分析改用沉淀滴定时操作更方便，代价是精密度略低。本章引入的条件溶度积 K′sp 与第 9 章的条件形成常数 K′f 也是平行的概念，都是把副反应打包进主常数。</p>
+</div><p class="source-note">来源：教材 §11.1–§11.4 归纳；本章无课件 PPT，全部内容取自教材第 11 章。</p>
+</section>
+</article>
+</main>
+<script src="script.js">
+</script>
+
+</body>
+</html>

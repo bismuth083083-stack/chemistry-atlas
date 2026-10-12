@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="分析化学 I 第5章 重量分析">
+<title>05 重量分析 · 分析化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="course-extra.css">
+<link rel="stylesheet" href="ppt-figures.css">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<a href="chapter-3.html">
+<span>03</span>酸碱平衡</a>
+<a href="chapter-4.html">
+<span>04</span>酸碱滴定</a>
+<a class="active" href="chapter-5.html">
+<span>05</span>重量分析</a>
+<a href="chapter-6.html">
+<span>06</span>沉淀滴定</a>
+<p class="nav-label">本章目录</p>
+<a href="#steps">
+<span>10.1</span>流程八步</a>
+<a href="#conditions">
+<span>10.2</span>沉淀条件</a>
+<a href="#digestion">
+<span>10.3</span>陈化与胶体</a>
+<a href="#coprecip">
+<span>10.4</span>共沉淀与后沉淀</a>
+<a href="#washing">
+<span>10.5</span>洗涤与灼烧</a>
+<a href="#calc">
+<span>10.6</span>重量计算</a>
+<a href="#organic">
+<span>10.7</span>有机沉淀剂</a>
+<a href="#ksp">
+<span>10.8</span>溶度积</a>
+<a href="#commonion">
+<span>10.9</span>同离子效应</a>
+<a href="#diverse">
+<span>10.10</span>盐效应</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside>
+<main class="workspace">
+<article class="article lesson">
+<header class="article-head">
+<p class="eyebrow">05 · GRAVIMETRIC ANALYSIS</p>
+<h1>重量分析</h1>
+<p>把待测组分变成一种纯净、可过滤、可称量的沉淀：八个操作步骤背后的理由、共沉淀的四类机制、换算因数的算法，以及支撑这一切的溶度积与同离子效应。</p>
+<div>
+<span>教材 Ch.10</span>
+<span>沉淀形式与称量形式</span>
+<span>换算因数</span>
+<span>Ksp</span>
+<span>同离子效应</span>
+<span>盐效应</span>
+</div>
+</header>
+<nav class="chapter-jump" aria-label="本章快速导航">
+<a href="#steps">流程八步</a>
+<a href="#conditions">沉淀条件</a>
+<a href="#digestion">陈化与胶体</a>
+<a href="#coprecip">共沉淀与后沉淀</a>
+<a href="#washing">洗涤与灼烧</a>
+<a href="#calc">重量计算</a>
+<a href="#organic">有机沉淀剂</a>
+<a href="#ksp">溶度积</a>
+<a href="#commonion">同离子效应</a>
+<a href="#diverse">盐效应</a>
+</nav>
+<section id="steps">
+<p class="section-kicker">10.1 GENERAL STEPS</p>
+<h2>重量分析的流程与两个关键名词</h2>
+
+<p>重量分析（gravimetric analysis）是定量分析中最古老、也最不依赖仪器的一类方法。
+它的思路只有一句话：<b>把待测组分定量地转成一种组成固定的固体，然后称它的质量</b>。
+因为称的是质量而不是信号强度，所以它不需要标准曲线，也不需要响应因子——
+这是它最大的优点，也是它最大的负担：全部准确度都押在操作上。</p>
+
+<p>先分清两个几乎每份考卷都会问的名词。它们描述的是同一条转化链上的<b>两个不同阶段</b>：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>名词</th>
+<th>英文</th>
+<th>指的是什么</th>
+<th>对它提什么要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>沉淀形式</td>
+<td>precipitation form</td>
+<td>加入沉淀剂后<b>实际析出、被过滤和洗涤</b>的那种固体，常常是水合物或中间产物</td>
+<td>溶解度要足够小；要纯净；要容易过滤和洗涤；要能定量地转成称量形式</td>
+</tr>
+<tr>
+<td>称量形式</td>
+<td>weighing form</td>
+<td>经过过滤、洗涤、（烘干或灼烧）之后<b>真正放到天平上去称</b>的那种物质</td>
+<td>组成必须严格固定；化学性质必须稳定（不吸水、不吸收 CO₂、不挥发）；摩尔质量越大越好</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">若沉淀形式本身就已经满足称量形式的三条要求，则两者是同一物质，只需烘干即可——AgCl、BaSO₄、Al(C₉H₆NO)₃、Ni(C₄H₇N₂O)₂ 都属于这一类。</p>
+<p>把这两个名词连起来，整章的技术路线就清楚了。教材把它拆成八个步骤：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>操作</th>
+<th>为什么必须这样做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>称取试样并溶解</td>
+<td>取样量要使得最后得到的沉淀质量足够大（一般不小于 0.1 g），否则称量相对误差过大</td>
+</tr>
+<tr>
+<td>2</td>
+<td>加入合适的沉淀剂</td>
+<td>沉淀剂要有选择性，且最好是挥发性物质，这样过量的部分能在灼烧时除去</td>
+</tr>
+<tr>
+<td>3</td>
+<td>控制沉淀条件</td>
+<td>通过浓度、温度、加料速度、pH 把<b>相对过饱和度</b>压下来，从而得到粗大的晶形沉淀</td>
+</tr>
+<tr>
+<td>4</td>
+<td>陈化（digestion）</td>
+<td>让小晶体溶解、大晶体长大，同时把吸附的杂质释放回溶液——只对晶形沉淀有效</td>
+</tr>
+<tr>
+<td>5</td>
+<td>过滤</td>
+<td>把沉淀从母液中分离出来。此时母液中的可溶性杂质若残留在沉淀上，就会造成正误差</td>
+</tr>
+<tr>
+<td>6</td>
+<td>洗涤</td>
+<td>用合适的洗液把沉淀表面吸附的杂质洗掉。<b>洗涤是本章唯一可以事后补救的一步</b></td>
+</tr>
+<tr>
+<td>7</td>
+<td>烘干或灼烧</td>
+<td>把沉淀转成组成固定的称量形式，同时除去水分和挥发性杂质</td>
+</tr>
+<tr>
+<td>8</td>
+<td>冷却、称量、计算</td>
+<td>干燥器中冷却至室温后称量，重复至恒重，再按换算因数算出待测组分含量</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §10.1 重量分析的一般步骤。</p><div class="notation-box">
+<b>一个反直觉的结论</b>
+<p>
+重量法看起来是最老实的定量方法——不依赖标准曲线、不依赖仪器响应因子。但它的可靠性完全押在<b>操作</b>上：沉淀是否纯净、是否过滤得干净、是否有损失。教材把大半篇幅花在第 1–5 步上，讲的其实都是同一件事——<b>怎么把沉淀做对</b>。</p>
+</div><p class="source-note">来源：教材 §10.1；第 8 步用到的换算因数见 §10.6。</p>
+</section>
+<section id="conditions">
+<p class="section-kicker">10.2 PRECIPITATION CONDITIONS</p>
+<h2>相对过饱和度与冯·韦曼比</h2>
+
+<p>沉淀能不能长得粗大、好不好过滤，取决于析出瞬间的<b>相对过饱和度</b>。
+冯·韦曼（von Weimarn）给出的经验关系是：</p>
+<div class="equation">
+分散度 ∝ (Q − S) / S
+</div>
+<p>这条式子解释了重量分析里几乎所有看似繁琐的操作规定。把 (Q − S)/S 压小只有两条路：
+<b>把 Q 压小</b>，或者<b>把 S 抬高</b>。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>操作规定</th>
+<th>它在压 (Q − S)/S 的哪一项</th>
+<th>机理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>沉淀剂要<b>缓慢滴加</b>并不断搅拌</td>
+<td>压低局部 Q</td>
+<td>避免某一瞬间局部浓度过高；搅拌让加入的沉淀剂立刻分散，不形成高过饱和区</td>
+</tr>
+<tr>
+<td>在<b>热溶液</b>中进行</td>
+<td>抬高 S</td>
+<td>升温增大溶解度，S 变大则比值变小；同时升温还能加快离子扩散，利于晶体长大</td>
+</tr>
+<tr>
+<td>用<b>稀溶液</b></td>
+<td>同时压低 Q、抬高相对 S</td>
+<td>降低总浓度使 Q 小；稀溶液也让杂质的挟带量减少</td>
+</tr>
+<tr>
+<td>沉淀剂<b>不过量太多</b></td>
+<td>避免副作用</td>
+<td>过量 50%–100% 已足够；过量太多会引起盐效应或络合效应，反而增大溶解度并带入杂质</td>
+</tr>
+<tr>
+<td>必要时改用<b>均相沉淀</b></td>
+<td>从根本上压低 Q</td>
+<td>让沉淀剂在溶液中缓慢、均匀地产生，全程没有局部过浓——见下一节</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">结论：沉淀操作的全部技巧，都是在把 (Q − S)/S 压小。</p>
+<h3>均相沉淀：把 Q 压到极限</h3>
+
+<p>常规加料方式无论多慢，滴入点附近总是局部过浓。均相沉淀（homogeneous precipitation）
+换了个思路：<b>不直接加沉淀剂，而是加入一种能在溶液中缓慢生成沉淀剂的试剂</b>。
+这样沉淀剂一产生就被消耗掉，全溶液任何时刻的过饱和度都极低，得到的晶体特别粗大、特别纯净。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>目标沉淀</th>
+<th>加入的试剂</th>
+<th>缓慢生成的沉淀剂</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BaSO₄</td>
+<td>硫代乙酰胺（thioacetamide）或二甲基硫酸酯</td>
+<td>水解缓慢释放 SO₄²⁻</td>
+</tr>
+<tr>
+<td>CaC₂O₄</td>
+<td>草酸二乙酯，或尿素 + 草酸</td>
+<td>酯水解 / 尿素水解释放的 C₂O₄²⁻ 与 OH⁻</td>
+</tr>
+<tr>
+<td>Fe(OH)₃、Al(OH)₃、MgNH₄PO₄</td>
+<td>尿素</td>
+<td>尿素水解释放 NH₃，逐渐升高 pH</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §10.1 均相沉淀部分。均相沉淀还有一个附带好处：沉淀剂不引入外来离子，沉淀更纯净。</p><div class="notation-box">
+<b>一个重要的反直觉点</b>
+<p>
+教材特别点出：<b>最难溶的沉淀并不是重量分析最好的选择</b>。因为溶解度太小意味着 S 本来就很低，即使 Q 控制得很好，相对过饱和度依然很高，成核太快，颗粒必然细。典型反例是<b>水合氧化铁 Fe(OH)₃·xH₂O</b>——它形成表面积巨大的<b>胶状沉淀</b>，既难过滤又极易吸附杂质。所以溶度积越小越好这个直觉在重量法里是<b>不成立</b>的。</p>
+</div><p class="source-note">来源：教材 §10.1 沉淀条件与冯·韦曼比部分。</p>
+</section>
+<section id="digestion">
+<p class="section-kicker">10.3 DIGESTION & COLLOIDS</p>
+<h2>陈化、胶体与胶溶</h2>
+
+<p>沉淀刚析出时，颗粒大小是参差不齐的：小颗粒溶解度比大颗粒略大（表面能效应），
+于是如果把沉淀和母液一起放置，小晶体会慢慢溶解，而大晶体继续长大。
+这个过程叫<b>陈化</b>（digestion 或 aging）。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>陈化带来的两个好处</th>
+<th>机理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>颗粒变粗、易于过滤和洗涤</td>
+<td>小晶体溶解、大晶体长大，平均粒径上升，总表面积下降</td>
+</tr>
+<tr>
+<td>纯度提高</td>
+<td>表面吸附的杂质随着小晶体溶解被重新释放回溶液</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §10.1。这两个好处其实是同一件事的两面——总表面积下降，吸附位点就少，可挟带的杂质自然就少。</p><div class="notation-box">
+<b>陈化的边界</b>
+<p>
+陈化对<b>晶形沉淀</b>是必需的。但对<b>胶状/无定形沉淀</b>（如水合氧化铁）恰恰相反：陈化会让它脱水硬化、更加难以洗涤，所以这类沉淀应当<b>趁热过滤、不要陈化</b>。这一条在第 10.5 节洗涤时还会再出现。</p>
+</div>
+<h3>胶体的两个方向</h3>
+<p>颗粒直径落在 1–100 nm 就进入胶体范围。此时比表面极大，表面能成为主导，
+沉淀的行为和普通晶体完全不同。教材反复用到两个相反的过程：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>过程</th>
+<th>方向</th>
+<th>怎么发生</th>
+<th>对分析的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>凝聚（coagulation）</td>
+<td>溶胶 → 沉淀</td>
+<td>加入电解质压缩双电层，或加热破坏水化层</td>
+<td>这是<b>我们想要的</b>方向：让胶体聚沉成可过滤的沉淀</td>
+</tr>
+<tr>
+<td>胶溶（peptization）</td>
+<td>沉淀 → 溶胶</td>
+<td>洗涤时电解质被洗掉，胶粒重新带上同种电荷互相排斥而分散</td>
+<td>这是<b>我们想避免的</b>方向：沉淀会穿过滤纸造成负误差</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">记忆要点：凝聚与胶溶是一对可逆过程，洗涤方式决定往哪边走。</p>
+<p>胶溶是洗涤环节最容易犯的错误。对策是<b>不要用纯水洗</b>，而要用含少量电解质的
+挥发性洗液（如稀 NH₄NO₃、稀 NH₄Cl），既维持了离子强度防止胶溶，
+又能在灼烧时全部挥发而不留残渣。</p>
+<p class="source-note">来源：教材 §10.1 陈化、胶体、洗涤与过滤部分。</p>
+</section>
+<section id="coprecip">
+<p class="section-kicker">10.4 COPRECIPITATION</p>
+<h2>共沉淀的四类与后沉淀</h2>
+
+<p>沉淀不可能绝对纯净。凡是沉淀析出时同时进入沉淀的杂质，统称为<b>共沉淀</b>
+（coprecipitation）。教材按机理分成四类，对策完全不同——这是本章最容易出简答题的地方。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>机理</th>
+<th>能不能洗掉</th>
+<th>与时间的关系</th>
+<th>对策</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表面吸附（adsorption）</td>
+<td>沉淀表面带电，吸引溶液中带相反电荷的离子；比表面越大吸附越多</td>
+<td>能（洗涤可逆）</td>
+<td>平衡过程，与时间无关</td>
+<td>洗涤；也可通过陈化减小总表面积</td>
+</tr>
+<tr>
+<td>吸留（occlusion）</td>
+<td>沉淀生长太快，把母液机械地包在晶体内部</td>
+<td>不能（结构性）</td>
+<td>与时间有关</td>
+<td>放慢沉淀速度；重新沉淀</td>
+</tr>
+<tr>
+<td>包藏（inclusion）</td>
+<td>杂质离子与主沉淀离子半径相近，被直接嵌入晶格</td>
+<td>不能（结构性）</td>
+<td>与时间有关</td>
+<td>重新沉淀，且要改变沉淀条件</td>
+</tr>
+<tr>
+<td>同晶置换（isomorphous replacement）</td>
+<td>杂质离子与主离子半径、电荷、极化能力相近，直接替代其位置形成混晶</td>
+<td>不能（结构性）</td>
+<td>与时间无关</td>
+<td>几乎无解，只能改用其他沉淀剂或预先分离</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §10.1 沉淀中的杂质部分。核心区分：吸附是平衡过程且可洗，吸留/包藏/同晶置换是结构性的且不可洗，后沉淀只与时间有关。</p><div class="notation-box">
+<b>怎么记这四类</b>
+<p>
+按能不能洗掉和跟时间有没有关系两条线记：<br><b>能洗掉的只有表面吸附</b>（因为它发生在表面，是平衡过程）。<br><b>和时间有关的是后沉淀</b>（放久了才出现，所以对策是尽快过滤）。<br><b>既不能洗、又和时间无关</b>的是吸留/包藏和同晶置换（结构性问题，只能重新沉淀，同晶置换甚至无解）。</p>
+</div>
+<h3>后沉淀：唯一与时间直接相关的一类</h3>
+
+<p>后沉淀（postprecipitation）与共沉淀不同：它在沉淀<b>生成的那一刻并不发生</b>，
+而是在沉淀放置的过程中，溶液中本来不该沉淀的组分慢慢沉积到已有沉淀的表面上。</p>
+
+<p>经典例子是草酸钙。若溶液中有 Mg²⁺，草酸镁倾向形成过饱和溶液，
+在草酸钙刚析出时并不会跟着沉淀；但如果把沉淀放置过久，
+草酸镁就会逐渐沉积在草酸钙表面，使测定结果偏高。对策很简单——
+<b>沉淀后不要久放，尽快过滤</b>。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>是否属于共沉淀</th>
+<th>关键判据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AgCl 沉淀表面吸附 Cl⁻ 与 Ag⁺</td>
+<td>是（表面吸附）</td>
+<td>沉淀生成瞬间就发生，洗涤可除去</td>
+</tr>
+<tr>
+<td>BaSO₄ 中夹带 BaCl₂</td>
+<td>是（吸留）</td>
+<td>沉淀过快导致，重新沉淀可改善</td>
+</tr>
+<tr>
+<td>草酸钙放置过久后表面出现草酸镁</td>
+<td><b>不是</b>（后沉淀）</td>
+<td>沉淀生成后随时间出现，唯一对策是尽快过滤</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">区分共沉淀与后沉淀的唯一标准是<b>发生的时间</b>：与沉淀同时发生的是共沉淀，在沉淀之后慢慢出现的是后沉淀。</p><p class="source-note">来源：教材 §10.1 共沉淀与后沉淀部分。</p>
+</section>
+<section id="washing">
+<p class="section-kicker">10.5 FILTRATION & IGNITION</p>
+<h2>洗涤、灼烧与称量形式</h2>
+
+<p>过滤和洗涤是唯一能补救前几步失误的环节。洗液的选择要同时满足三条：
+<b>能洗掉杂质</b>、<b>不溶解沉淀</b>、<b>不引入新的干扰</b>。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>沉淀类型</th>
+<th>洗液</th>
+<th>为什么这样选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>晶形沉淀（BaSO₄ 等）</td>
+<td>稀 H₂SO₄ 或含少量沉淀剂的水</td>
+<td>同离子效应降低溶解度，防止洗涤时溶解损失</td>
+</tr>
+<tr>
+<td>胶状沉淀（Fe(OH)₃·xH₂O 等）</td>
+<td>含挥发性电解质的稀溶液（如稀 NH₄NO₃）</td>
+<td>维持离子强度防止胶溶；NH₄NO₃ 灼烧时分解挥发不留残渣</td>
+</tr>
+<tr>
+<td>需避免胶溶的沉淀</td>
+<td>不用纯水</td>
+<td>纯水洗去电解质后胶粒重新带同种电荷而分散，会穿过滤纸造成负误差</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §10.1 洗涤与过滤部分。</p>
+<h3>从沉淀形式到称量形式</h3>
+<p>灼烧的目的不只是除去水分，更要把沉淀形式<b>定量地</b>转化成组成固定的称量形式。
+这一步的化学计量关系必须明确，否则换算因数就无从谈起。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>沉淀形式</th>
+<th>灼烧后得到的称量形式</th>
+<th>灼烧过程发生了什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CaC₂O₄·H₂O</td>
+<td>CaO（900–1000 °C）</td>
+<td>失去结晶水，草酸根分解为 CO 与 CO₂，留下 CaO</td>
+</tr>
+<tr>
+<td>CaC₂O₄·H₂O</td>
+<td>CaCO₃（500–600 °C，低温）</td>
+<td>只失去结晶水并部分分解；温度控制不同，称量形式就不同</td>
+</tr>
+<tr>
+<td>MgNH₄PO₄·6H₂O</td>
+<td>Mg₂P₂O₇</td>
+<td>失去结晶水与 NH₃，两分子磷酸盐缩合成一分子焦磷酸盐</td>
+</tr>
+<tr>
+<td>Fe(OH)₃·xH₂O</td>
+<td>Fe₂O₃</td>
+<td>失去水，两分子氢氧化铁脱水缩合为一分子氧化铁</td>
+</tr>
+<tr>
+<td>Al(C₉H₆NO)₃</td>
+<td>Al(C₉H₆NO)₃（直接烘干）</td>
+<td>有机螯合物本身组成固定，灼烧反而会挥发损失</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">注意：有些沉淀（如 AgCl、BaSO₄、Al(ox)₃、Ni(dmg)₂）本身就是称量形式，只需烘干不必灼烧。</p><div class="notation-box">
+<b>称量形式为什么要选摩尔质量大的</b>
+<p>
+待测组分质量 = 称量形式质量 × 换算因数。换算因数越小，称量误差传递到结果上被<b>压缩得越厉害</b>。而换算因数与称量形式的摩尔质量成反比，所以用摩尔质量大的有机沉淀剂（如 8-羟基喹啉、丁二酮肟）能把误差缩小一个数量级。</p>
+</div><p class="source-note">来源：教材 §10.1 洗涤与过滤、烘干或灼烧部分。</p>
+</section>
+<section id="calc">
+<p class="section-kicker">10.6 CALCULATIONS</p>
+<h2>换算因数与重量计算</h2>
+
+<p>所有计算最后都归结为一个乘数——换算因数（gravimetric factor），
+通常记作 F。它把称量形式的质量换算成待测组分的质量。</p>
+<div class="equation">
+F = <span class="frac"><b>a × M(待测组分)</b><i>b × M(称量形式)</i></span>
+</div>
+<p>教材把重量计算分成三类问题，难度依次上升：</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>已知</th>
+<th>求</th>
+<th>关键动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直接计算</td>
+<td>试样质量、称量形式质量、F</td>
+<td>待测组分含量</td>
+<td>直接用 F 换算，注意单位与有效数字</td>
+</tr>
+<tr>
+<td>求换算因数</td>
+<td>沉淀形式与称量形式的化学式</td>
+<td>F</td>
+<td>先配平从沉淀到称量的反应，再代入公式</td>
+</tr>
+<tr>
+<td>需自己配平计量比</td>
+<td>两个不同物质的化学式</td>
+<td>F</td>
+<td>这类题必须先写出配平的反应，确定 a 与 b</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §10.2 重量计算部分。</p><div class="worked-example">
+<span>例</span>
+<h3>直接计算：BaSO₄ 法测硫</h3>
+<p>称取试样 0.5000 g，经处理得到 BaSO₄ 沉淀，灼烧后称得 0.2330 g。求试样中硫的质量分数。</p><p>① 求换算因数：F = M(S) / M(BaSO₄) = 32.06 / 233.39 = 0.1374。</p><p>② 求硫质量：0.2330 × 0.1374 = 0.03201 g。</p><p>③ 求质量分数：0.03201 / 0.5000 = 6.402%。</p>
+</div><div class="worked-example">
+<span>例</span>
+<h3>求换算因数：Bi₂S₃ 法测铋</h3>
+<p>把 Bi³⁺ 沉淀为 Bi₂S₃，再灼烧成 Bi₂O₃ 称量。求 F。</p><p>一个 Bi₂O₃ 分子对应两个 Bi，而两个 Bi 来自<b>一个</b> Bi₂S₃ 单元，所以 a = 2、b = 1：</p><p>F = 2 × M(Bi) / M(Bi₂O₃) = 2 × 208.98 / 465.96 = 0.8970。</p>
+</div><div class="notation-box">
+<b>换算因数的两个常见陷阱</b>
+<p>
+① <b>a 与 b 不能凭化学式直接读</b>——必须从沉淀形式到称量形式的配平反应里数。例如上例中 Bi₂S₃ 灼烧成 Bi₂O₃ 时，硫以 SO₂ 形式失去，铋的个数比保持不变，这一点要靠配平确认。<br>② <b>F 只与化学式和配比有关，与取样量无关</b>，所以同一物质的 F 是一个常数，应当记在笔记上反复使用。</p>
+</div><p class="source-note">来源：教材 §10.2、§10.6 重量计算与例题。</p>
+</section>
+<section id="organic">
+<p class="section-kicker">10.7 ORGANIC REAGENTS</p>
+<h2>有机沉淀剂</h2>
+
+<p>有机沉淀剂在重量分析里地位特殊，因为它们往往能同时解决三个问题：
+<b>选择性高</b>、<b>沉淀呈晶形</b>、<b>摩尔质量大因而换算因数小</b>。
+教材列出的常用试剂集中在螯合剂和缔合剂两大类。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>试剂</th>
+<th>针对的离子</th>
+<th>沉淀形式</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8-羟基喹啉（oxine, Hox）</td>
+<td>Al³⁺、Mg²⁺、Zn²⁺、Ca²⁺ 等</td>
+<td>Al(C₉H₆NO)₃ 等螯合物</td>
+<td>摩尔质量大（F = 0.05853），可在不同 pH 下选择性沉淀不同离子</td>
+</tr>
+<tr>
+<td>丁二酮肟（dimethylglyoxime, H₂dmg）</td>
+<td>Ni²⁺、Pd²⁺</td>
+<td>Ni(C₄H₇N₂O)₂</td>
+<td>在氨性溶液中只沉淀这几种离子，选择性极高；沉淀本身即称量形式</td>
+</tr>
+<tr>
+<td>四苯硼钠（NaB(C₆H₅)₄）</td>
+<td>K⁺、NH₄⁺、Rb⁺、Cs⁺</td>
+<td>KB(C₆H₅)₄ 等</td>
+<td>以大离子沉淀大离子，F 极小</td>
+</tr>
+<tr>
+<td>四苯砷氯化物</td>
+<td>ClO₄⁻、ReO₄⁻ 等大阴离子</td>
+<td>相应的缔合物</td>
+<td>与四苯硼钠方向相反，针对大阴离子</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 Table 10.1、Table 10.2。ox = 8-羟基喹啉单阴离子；dmg = 丁二酮肟单阴离子。</p><div class="notation-box">
+<b>有机沉淀剂为什么选择性好</b>
+<p>
+无机沉淀剂靠溶解度差异工作，而很多离子的硫化物、氢氧化物溶解度差别不够大。有机螯合剂靠<b>配位几何的匹配</b>工作：只有当离子的半径、电荷和配位构型与螯合环的尺寸相容时才能形成稳定螯合物，所以选择性来自结构而不是溶解度。</p>
+</div><div class="notation-box">
+<b>用有机沉淀剂时要留神的一件事</b>
+<p>
+有些螯合物组成不严格符合化学计量，或含有不定量的溶剂分子，这时不能直接烘干称量，必须灼烧成金属氧化物才能得到准确结果。反过来，Al(C₉H₆NO)₃ 这类组成稳定、摩尔质量又大的螯合物，正是重量分析最理想的称量形式。</p>
+</div><p class="source-note">来源：教材 §10.3、§10.4，Table 10.1、Table 10.2。</p>
+</section>
+<section id="ksp">
+<p class="section-kicker">10.8 SOLUBILITY PRODUCT</p>
+<h2>溶度积与摩尔溶解度</h2>
+
+<p>前面都是操作技巧，这里转到支撑一切定量判断的平衡。对难溶电解质
+M<sub>m</sub>X<sub>n</sub>，教材定义的溶度积是：</p>
+<div class="equation">
+K<sub>sp</sub> = [M<sup>n+</sup>]<sup>m</sup> [X<sup>m−</sup>]<sup>n</sup>
+</div><div class="notation-box">
+<b>固体不出现在 Ksp 里</b>
+<p>
+固体的活度按定义为 1，所以已经被并入平衡常数。这个关系<b>与是否存在未解离中间体无关</b>——自由离子的浓度严格由 Ksp 定义，我们就用它来度量化合物的溶解度。</p>
+</div>
+<h3>从 Ksp 到摩尔溶解度</h3>
+<p>溶解度 s（mol·L⁻¹）与 Ksp 之间的换算取决于化合物的价型，
+因为一个分子解离出的离子数目不同。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>价型</th>
+<th>实例</th>
+<th>解离关系</th>
+<th>s 与 Ksp 的关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 : 1</td>
+<td>AgCl、BaSO₄</td>
+<td>MX ⇌ M⁺ + X⁻</td>
+<td>s = √Ksp</td>
+</tr>
+<tr>
+<td>1 : 2 或 2 : 1</td>
+<td>Ag₂CrO₄、CaF₂</td>
+<td>MX₂ ⇌ M²⁺ + 2X⁻</td>
+<td>s = ∛(Ksp / 4)</td>
+</tr>
+<tr>
+<td>1 : 3 或 3 : 1</td>
+<td>Al(OH)₃、Ag₃PO₄</td>
+<td>MX₃ ⇌ M³⁺ + 3X⁻</td>
+<td>s = ∜(Ksp / 27)</td>
+</tr>
+<tr>
+<td>2 : 3</td>
+<td>Bi₂S₃</td>
+<td>M₂X₃ ⇌ 2M³⁺ + 3X²⁻</td>
+<td>s = ⁵√(Ksp / 108)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">同价型才能直接比较 Ksp 的大小。价型不同时，必须都换算成摩尔溶解度 s 才能比。</p><div class="notation-box">
+<b>两个与体积无关的推论</b>
+<p>
+饱和溶液中溶质的<b>浓度</b>与容器大小无关（游泳池里能溶的固体当然更多，但浓度一样），也与未溶解固体的<b>多少</b>无关——只要还有固体存在。此外，因为是<b>多相平衡</b>，达到平衡比均相溶液平衡<b>慢得多</b>。</p>
+</div><div class="notation-box">
+<b>Ksp 数值的直观感受</b>
+<p>
+教材 Table 10.3 给出两个极端。AgI 的 Ksp 比 Al(OH)₃ <b>大 5 × 10¹⁵ 倍</b>，但摩尔溶解度只有它的两倍——又是价型在起作用。另一头，<b>HgS 的 Ksp = 4 × 10⁻⁵³</b>，摩尔溶解度只有 6 × 10⁻²⁷ mol·L⁻¹——这意味着即使把溶液稀释到极其稀薄，汞离子也几乎完全沉淀，这就是硫化物分离法能做得那么彻底的原因。</p>
+</div><p class="source-note">来源：教材 §10.5，Table 10.3，Example 10.6–10.12。</p>
+</section>
+<section id="commonion">
+<p class="section-kicker">10.9 COMMON ION EFFECT</p>
+<h2>同离子效应</h2>
+
+<p>如果溶液里已经有和沉淀同种的离子，平衡会向左移动，溶解度下降。
+这就是<b>同离子效应</b>（common ion effect），也是重量分析必须加过量沉淀剂的理论依据。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>情形</th>
+<th>加入的离子</th>
+<th>定性结论</th>
+<th>定量效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>沉淀剂过量一倍</td>
+<td>同种离子</td>
+<td>溶解度下降</td>
+<td>残余浓度按 1/(过量倍数) 关系下降，一般过量 50%–100% 已使损失可忽略</td>
+</tr>
+<tr>
+<td>过量很多</td>
+<td>同种离子</td>
+<td>可能出现反向效应</td>
+<td>盐效应使活度系数下降，或络合效应形成可溶络离子，溶解度反而回升</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §10.5 降低溶解度——同离子效应部分。</p><div class="worked-example">
+<span>例</span>
+<h3>同离子效应的定量估算</h3>
+<p>已知 BaSO₄ 的 Ksp = 1.1 × 10⁻¹⁰。求在 0.010 mol·L⁻¹ Na₂SO₄ 溶液中的溶解度。</p><p>设溶解度为 s，则 [Ba²⁺] = s、[SO₄²⁻] = 0.010 + s ≈ 0.010。</p><p>s × 0.010 = 1.1 × 10⁻¹⁰，得 s = 1.1 × 10⁻⁸ mol·L⁻¹。</p><p>与纯水中的 s = √Ksp = 1.05 × 10⁻⁵ 相比，溶解度下降了约 <b>1000 倍</b>——这正是重量分析中必须用稀 H₂SO₄ 而不是纯水作洗液的原因。</p>
+</div><div class="notation-box">
+<b>同离子效应与洗涤的关系</b>
+<p>
+纯水作洗液时，BaSO₄ 的溶解损失按 s = 1.05 × 10⁻⁵ mol·L⁻¹ 计算，每 100 mL 洗液会损失约 0.24 mg BaSO₄——对 0.2 g 的沉淀来说是 0.1% 的负误差。改用稀 H₂SO₄ 后损失可忽略。这是<b>洗液必须含沉淀剂离子</b>的定量理由。</p>
+</div><p class="source-note">来源：教材 §10.5 同离子效应，Example 10.7，Figure 10.3。</p>
+</section>
+<section id="diverse">
+<p class="section-kicker">10.10 DIVERSE ION EFFECT</p>
+<h2>条件溶度积与盐效应</h2>
+
+<p>Ksp 是热力学量，用的是<b>活度</b>。当我们用浓度代替活度时，实际上是在定义一个
+随离子强度变化的<b>条件溶度积</b>：</p>
+<div class="equation">
+cK<sub>sp</sub> = K<sub>sp</sub> / (γ<sub>M</sub><sup>m</sup> γ<sub>X</sub><sup>n</sup>)
+</div><div class="notation-box">
+<b>两条必须记住的区别</b>
+<p>
+<b>① Ksp 的数值在所有离子强度下都成立</b>（它是热力学量）；<b>② cKsp 只在零离子强度下等于 Ksp</b>，在其他离子强度下必须按上式重新计算。<br>上式还给出定性的结论：<b>离子活度下降 → cKsp 增大 → 摩尔溶解度增大</b>。这正是异离子效应的数学表达。</p>
+</div>
+<p>这种<b>因加入不参与沉淀的强电解质而导致溶解度增大</b>的现象叫<b>异离子效应</b>
+（diverse ion effect），也叫盐效应。它和同离子效应是一对反向作用，
+在沉淀剂过量很多时会显现出来。</p>
+<div class="table-scroll wide">
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>原因</th>
+<th>对沉淀的影响</th>
+<th>实验中怎么处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同离子效应</td>
+<td>同种离子使平衡左移</td>
+<td>溶解度下降</td>
+<td>加适量过量沉淀剂（50%–100%）</td>
+</tr>
+<tr>
+<td>盐效应（异离子效应）</td>
+<td>离子强度上升使活度系数下降</td>
+<td>溶解度上升</td>
+<td>沉淀剂不要过量太多；必要时用活度而非浓度计算</td>
+</tr>
+<tr>
+<td>络合效应</td>
+<td>过量沉淀剂与沉淀离子形成可溶络离子</td>
+<td>溶解度上升</td>
+<td>控制沉淀剂用量；经典例子是过量 Cl⁻ 使 AgCl 生成 [AgCl₂]⁻ 而溶解</td>
+</tr>
+<tr>
+<td>酸效应</td>
+<td>弱酸根型沉淀在强酸性下质子化</td>
+<td>溶解度上升</td>
+<td>控制 pH。这也是第 6 章条件溶度积的主题</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-caveat">来源：教材 §10.6。前两项是本章内容，后两项是第 6 章（沉淀滴定与条件溶度积）的主题。</p><div class="notation-box">
+<b>为什么这两条要放在第 6 章展开</b>
+<p>
+第 10 章只需要你记住<b>方向</b>：酸让弱酸根型沉淀溶解、络合剂让金属型沉淀溶解。第 6 章会给出<b>条件溶度积 K′sp</b> 的定量算法，把 α 系数（酸效应）和络合副反应系数乘进 Ksp 里。本章与第 6 章是定性到定量的接力。</p>
+</div><p class="source-note">来源：教材 §10.6，Example 10.13，Figure 10.4。</p>
+</section>
+</article>
+</main>
+<script src="script.js">
+</script>
+
+</body>
+</html>

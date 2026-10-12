@@ -1,31 +1,333 @@
 [
-  {"title":"绪论：分析化学的任务","href":"chapter-1.html#scope","keywords":"分析化学 定性 定量 结构 形态 选择性 特异性 what where how much"},
-  {"title":"分析方法的分类","href":"chapter-1.html#classify","keywords":"化学分析 仪器分析 定性 定量 结构分析 形态分析"},
-  {"title":"七步分析流程","href":"chapter-1.html#process","keywords":"定义问题 选择方法 代表性样品 样品制备 分离 测量 报告 空白"},
-  {"title":"样品尺度与方法选择","href":"chapter-1.html#range","keywords":"常量 微量 痕量 超痕量 macro micro ultramicro method selection"},
-  {"title":"禁药检测与火星分析案例","href":"chapter-1.html#cases","keywords":"Olympics WADA screening identification quantification SAM Mars"},
-  {"title":"GLP 与方法验证","href":"chapter-2.html#glp","keywords":"GLP SOP QAU 选择性 线性 准确度 精密度 灵敏度 LOD LOQ ruggedness robustness"},
-  {"title":"实验材料与试剂等级","href":"chapter-2.html#materials","keywords":"硼硅玻璃 石英 铂 PTFE 聚乙烯 聚丙烯 GR AR CP LR HPLC spectroscopy"},
-  {"title":"分析天平与空气浮力","href":"chapter-2.html#balance","keywords":"balance 称量 零点漂移 温度 湿度 静电 buoyancy 浮力"},
-  {"title":"容量器皿与校准","href":"chapter-2.html#glassware","keywords":"volumetric flask pipet buret syringe 移液管 滴定管 容量瓶 弯月面 校准"},
-  {"title":"标准溶液配制与稀释","href":"chapter-2.html#standards","keywords":"standard solution primary standard stock solution dilution normality 标准溶液 一级标准物 储备液 稀释"},
-  {"title":"样品制备与消解","href":"chapter-2.html#prep","keywords":"grinding drying dry ashing wet digestion microwave digestion separation desiccator 研磨 干燥 灰化 湿法消解 微波消解"},
-  {"title":"滴定概述与四类滴定","href":"chapter-3.html#overview","keywords":"titration titrant titrand 滴定剂 被滴定物 酸碱滴定 络合滴定 氧化还原滴定 沉淀滴定 volumetric analysis"},
-  {"title":"酸碱理论的四次扩展","href":"chapter-3.html#theories","keywords":"Arrhenius Franklin Brønsted Lowry Lewis 溶剂体系 质子理论 电子理论 共轭酸碱对 conjugate pair"},
-  {"title":"水的质子自递与 Kw","href":"chapter-3.html#water","keywords":"autoprotolysis 质子自递 Kw 水的离子积 活度 温度"},
-  {"title":"pH 标度与负 pH","href":"chapter-3.html#scale","keywords":"pH pOH pKw Sørensen 中性 37 度 血液 极稀溶液 负 pH 浓酸浓度"},
-  {"title":"Ka、Kb 与共轭关系","href":"chapter-3.html#strength","keywords":"Ka Kb 酸解离常数 碱常数 强酸 弱酸 同离子效应 KaKb=Kw 解离度 忽略 x"},
-  {"title":"缓冲溶液与缓冲容量","href":"chapter-3.html#buffer","keywords":"buffer 缓冲溶液 Henderson-Hasselbalch 缓冲容量 beta 同离子效应 pKa±1"},
-  {"title":"多元酸与分布分数","href":"chapter-3.html#polyprotic","keywords":"polyprotic 多元酸 逐级解离 分布分数 alpha 体系点 system point 磷酸 pKa1 pKa2 pKa3"},
-  {"title":"两性物质与酸式盐","href":"chapter-3.html#amphiprotic","keywords":"amphoteric amphiprotic 两性盐 酸式盐 质子条件 H2PO4- HPO4^2- 与浓度无关"},
-  {"title":"生理缓冲体系","href":"chapter-3.html#physiological","keywords":"physiological buffer 血液 pH 碳酸氢盐 bicarbonate 血红蛋白 Tris 磷酸盐 37 度"},
-  {"title":"计量点、终点与滴定误差","href":"chapter-4.html#basics","keywords":"equivalence point end point titration error 计量点 终点 滴定误差 准确滴定条件"},
-  {"title":"四种滴定方式","href":"chapter-4.html#methods","keywords":"direct back displacement titration 直接滴定 返滴定 置换滴定 生成可滴定物质 甲醛 钙 EDTA 煤中硫"},
-  {"title":"滴定曲线与终点误差","href":"chapter-4.html#curve","keywords":"titration curve sigmoidal 滴定曲线 突跃 终点误差 滴定管 A 级 B 级 允差"},
-  {"title":"强酸强碱滴定计算","href":"chapter-4.html#strongstrong","keywords":"strong acid strong base 强酸强碱 计量点 7.00 三段式 Vtotal 过量滴定剂"},
-  {"title":"弱酸强碱滴定四区域","href":"chapter-4.html#weakstrong","keywords":"weak acid strong base 弱酸强碱 四个区域 中点 pKa Henderson 共轭碱水解 弱碱强酸 镜像 pOH=pKb"},
-  {"title":"pH 指示剂的选择","href":"chapter-4.html#indicators","keywords":"indicator 指示剂 变色范围 pKIn 2 个 pH 单位 百里酚蓝 酚酞 甲基红 用量"},
-  {"title":"多元酸与碳酸钠滴定","href":"chapter-4.html#polyprotic","keywords":"polyprotic Na2CO3 碳酸钠 二元碱 分步滴定 10^4 煮沸除 CO2 磷酸 混合酸 甲基红 溴百里酚蓝"},
-  {"title":"氨基酸滴定","href":"chapter-4.html#amino","keywords":"amino acid 氨基酸 两性离子 zwitterion 半胱氨酸 Ka 比值 分步终点"},
-  {"title":"凯氏定氮法","href":"chapter-4.html#kjeldahl","keywords":"Kjeldahl 凯氏定氮 蛋白质 16.2% 消解 蒸馏 返滴定 peptide bond"}
+  {
+    "title": "绪论：分析化学的任务",
+    "href": "chapter-1.html#scope",
+    "keywords": "分析化学 定性 定量 结构 形态 选择性 特异性 what where how much"
+  },
+  {
+    "title": "分析方法的分类",
+    "href": "chapter-1.html#classify",
+    "keywords": "化学分析 仪器分析 定性 定量 结构分析 形态分析"
+  },
+  {
+    "title": "七步分析流程",
+    "href": "chapter-1.html#process",
+    "keywords": "定义问题 选择方法 代表性样品 样品制备 分离 测量 报告 空白"
+  },
+  {
+    "title": "样品尺度与方法选择",
+    "href": "chapter-1.html#range",
+    "keywords": "常量 微量 痕量 超痕量 macro micro ultramicro method selection"
+  },
+  {
+    "title": "禁药检测与火星分析案例",
+    "href": "chapter-1.html#cases",
+    "keywords": "Olympics WADA screening identification quantification SAM Mars"
+  },
+  {
+    "title": "GLP 与方法验证",
+    "href": "chapter-2.html#glp",
+    "keywords": "GLP SOP QAU 选择性 线性 准确度 精密度 灵敏度 LOD LOQ ruggedness robustness"
+  },
+  {
+    "title": "实验材料与试剂等级",
+    "href": "chapter-2.html#materials",
+    "keywords": "硼硅玻璃 石英 铂 PTFE 聚乙烯 聚丙烯 GR AR CP LR HPLC spectroscopy"
+  },
+  {
+    "title": "分析天平与空气浮力",
+    "href": "chapter-2.html#balance",
+    "keywords": "balance 称量 零点漂移 温度 湿度 静电 buoyancy 浮力"
+  },
+  {
+    "title": "容量器皿与校准",
+    "href": "chapter-2.html#glassware",
+    "keywords": "volumetric flask pipet buret syringe 移液管 滴定管 容量瓶 弯月面 校准"
+  },
+  {
+    "title": "标准溶液配制与稀释",
+    "href": "chapter-2.html#standards",
+    "keywords": "standard solution primary standard stock solution dilution normality 标准溶液 一级标准物 储备液 稀释"
+  },
+  {
+    "title": "样品制备与消解",
+    "href": "chapter-2.html#prep",
+    "keywords": "grinding drying dry ashing wet digestion microwave digestion separation desiccator 研磨 干燥 灰化 湿法消解 微波消解"
+  },
+  {
+    "title": "滴定概述与四类滴定",
+    "href": "chapter-3.html#overview",
+    "keywords": "titration titrant titrand 滴定剂 被滴定物 酸碱滴定 络合滴定 氧化还原滴定 沉淀滴定 volumetric analysis"
+  },
+  {
+    "title": "酸碱理论的四次扩展",
+    "href": "chapter-3.html#theories",
+    "keywords": "Arrhenius Franklin Brønsted Lowry Lewis 溶剂体系 质子理论 电子理论 共轭酸碱对 conjugate pair"
+  },
+  {
+    "title": "水的质子自递与 Kw",
+    "href": "chapter-3.html#water",
+    "keywords": "autoprotolysis 质子自递 Kw 水的离子积 活度 温度"
+  },
+  {
+    "title": "pH 标度与负 pH",
+    "href": "chapter-3.html#scale",
+    "keywords": "pH pOH pKw Sørensen 中性 37 度 血液 极稀溶液 负 pH 浓酸浓度"
+  },
+  {
+    "title": "Ka、Kb 与共轭关系",
+    "href": "chapter-3.html#strength",
+    "keywords": "Ka Kb 酸解离常数 碱常数 强酸 弱酸 同离子效应 KaKb=Kw 解离度 忽略 x"
+  },
+  {
+    "title": "缓冲溶液与缓冲容量",
+    "href": "chapter-3.html#buffer",
+    "keywords": "buffer 缓冲溶液 Henderson-Hasselbalch 缓冲容量 beta 同离子效应 pKa±1"
+  },
+  {
+    "title": "多元酸与分布分数",
+    "href": "chapter-3.html#polyprotic",
+    "keywords": "polyprotic 多元酸 逐级解离 分布分数 alpha 体系点 system point 磷酸 pKa1 pKa2 pKa3"
+  },
+  {
+    "title": "两性物质与酸式盐",
+    "href": "chapter-3.html#amphiprotic",
+    "keywords": "amphoteric amphiprotic 两性盐 酸式盐 质子条件 H2PO4- HPO4^2- 与浓度无关"
+  },
+  {
+    "title": "生理缓冲体系",
+    "href": "chapter-3.html#physiological",
+    "keywords": "physiological buffer 血液 pH 碳酸氢盐 bicarbonate 血红蛋白 Tris 磷酸盐 37 度"
+  },
+  {
+    "title": "计量点、终点与滴定误差",
+    "href": "chapter-4.html#basics",
+    "keywords": "equivalence point end point titration error 计量点 终点 滴定误差 准确滴定条件"
+  },
+  {
+    "title": "四种滴定方式",
+    "href": "chapter-4.html#methods",
+    "keywords": "direct back displacement titration 直接滴定 返滴定 置换滴定 生成可滴定物质 甲醛 钙 EDTA 煤中硫"
+  },
+  {
+    "title": "滴定曲线与终点误差",
+    "href": "chapter-4.html#curve",
+    "keywords": "titration curve sigmoidal 滴定曲线 突跃 终点误差 滴定管 A 级 B 级 允差"
+  },
+  {
+    "title": "强酸强碱滴定计算",
+    "href": "chapter-4.html#strongstrong",
+    "keywords": "strong acid strong base 强酸强碱 计量点 7.00 三段式 Vtotal 过量滴定剂"
+  },
+  {
+    "title": "弱酸强碱滴定四区域",
+    "href": "chapter-4.html#weakstrong",
+    "keywords": "weak acid strong base 弱酸强碱 四个区域 中点 pKa Henderson 共轭碱水解 弱碱强酸 镜像 pOH=pKb"
+  },
+  {
+    "title": "pH 指示剂的选择",
+    "href": "chapter-4.html#indicators",
+    "keywords": "indicator 指示剂 变色范围 pKIn 2 个 pH 单位 百里酚蓝 酚酞 甲基红 用量"
+  },
+  {
+    "title": "多元酸与碳酸钠滴定",
+    "href": "chapter-4.html#polyprotic",
+    "keywords": "polyprotic Na2CO3 碳酸钠 二元碱 分步滴定 10^4 煮沸除 CO2 磷酸 混合酸 甲基红 溴百里酚蓝"
+  },
+  {
+    "title": "氨基酸滴定",
+    "href": "chapter-4.html#amino",
+    "keywords": "amino acid 氨基酸 两性离子 zwitterion 半胱氨酸 Ka 比值 分步终点"
+  },
+  {
+    "title": "凯氏定氮法",
+    "href": "chapter-4.html#kjeldahl",
+    "keywords": "Kjeldahl 凯氏定氮 蛋白质 16.2% 消解 蒸馏 返滴定 peptide bond"
+  },
+  {
+    "title": "重量分析的流程与两个关键名词",
+    "href": "chapter-5.html#steps",
+    "keywords": [
+      "重量分析",
+      "gravimetric",
+      "沉淀形式",
+      "称量形式",
+      "过滤",
+      "灼烧"
+    ]
+  },
+  {
+    "title": "相对过饱和度与冯·韦曼比",
+    "href": "chapter-5.html#conditions",
+    "keywords": [
+      "冯·韦曼",
+      "过饱和度",
+      "均相沉淀",
+      "von Weimarn"
+    ]
+  },
+  {
+    "title": "陈化、胶体与胶溶",
+    "href": "chapter-5.html#digestion",
+    "keywords": [
+      "陈化",
+      "胶体",
+      "胶溶",
+      "凝聚",
+      "digestion"
+    ]
+  },
+  {
+    "title": "共沉淀的四类与后沉淀",
+    "href": "chapter-5.html#coprecip",
+    "keywords": [
+      "共沉淀",
+      "后沉淀",
+      "吸留",
+      "包藏",
+      "同晶置换"
+    ]
+  },
+  {
+    "title": "洗涤、灼烧与称量形式",
+    "href": "chapter-5.html#washing",
+    "keywords": [
+      "洗涤液",
+      "灼烧",
+      "称量形式",
+      "CaO",
+      "Mg2P2O7"
+    ]
+  },
+  {
+    "title": "换算因数与重量计算",
+    "href": "chapter-5.html#calc",
+    "keywords": [
+      "换算因数",
+      "gravimetric factor",
+      "BaSO4",
+      "计算"
+    ]
+  },
+  {
+    "title": "有机沉淀剂",
+    "href": "chapter-5.html#organic",
+    "keywords": [
+      "有机沉淀剂",
+      "8-羟基喹啉",
+      "丁二酮肟",
+      "四苯硼钠"
+    ]
+  },
+  {
+    "title": "溶度积与摩尔溶解度",
+    "href": "chapter-5.html#ksp",
+    "keywords": [
+      "溶度积",
+      "Ksp",
+      "摩尔溶解度",
+      "价型"
+    ]
+  },
+  {
+    "title": "同离子效应",
+    "href": "chapter-5.html#commonion",
+    "keywords": [
+      "同离子效应",
+      "common ion",
+      "溶解度下降"
+    ]
+  },
+  {
+    "title": "条件溶度积与盐效应",
+    "href": "chapter-5.html#diverse",
+    "keywords": [
+      "条件溶度积",
+      "盐效应",
+      "异离子效应",
+      "活度系数"
+    ]
+  },
+  {
+    "title": "酸对溶解度的影响与条件溶度积",
+    "href": "chapter-6.html#acid",
+    "keywords": [
+      "酸效应",
+      "条件溶度积",
+      "草酸钙",
+      "分布分数"
+    ]
+  },
+  {
+    "title": "质量平衡法处理多重平衡",
+    "href": "chapter-6.html#massbalance",
+    "keywords": [
+      "质量平衡",
+      "电荷平衡",
+      "mass balance",
+      "多重平衡"
+    ]
+  },
+  {
+    "title": "络合效应与条件溶度积",
+    "href": "chapter-6.html#complex",
+    "keywords": [
+      "络合效应",
+      "氨",
+      "αM",
+      "条件溶度积"
+    ]
+  },
+  {
+    "title": "沉淀滴定曲线的三段式",
+    "href": "chapter-6.html#curves",
+    "keywords": [
+      "滴定曲线",
+      "pCl",
+      "pAg",
+      "突跃"
+    ]
+  },
+  {
+    "title": "分步沉淀滴定",
+    "href": "chapter-6.html#stepwise",
+    "keywords": [
+      "分步沉淀",
+      "碘",
+      "食盐",
+      "AgI",
+      "AgCl"
+    ]
+  },
+  {
+    "title": "第一类指示剂：莫尔法与佛尔哈德法",
+    "href": "chapter-6.html#precip-indicator",
+    "keywords": [
+      "莫尔法",
+      "佛尔哈德法",
+      "铬酸钾",
+      "铁铵矾"
+    ]
+  },
+  {
+    "title": "第二类指示剂：吸附指示剂与法扬司法",
+    "href": "chapter-6.html#adsorption",
+    "keywords": [
+      "吸附指示剂",
+      "法扬司法",
+      "荧光黄",
+      "曙红"
+    ]
+  },
+  {
+    "title": "三种银量法的系统对比",
+    "href": "chapter-6.html#compare",
+    "keywords": [
+      "银量法",
+      "对比",
+      "莫尔法",
+      "佛尔哈德法",
+      "法扬司法"
+    ]
+  }
 ]

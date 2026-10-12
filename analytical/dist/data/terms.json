@@ -1,76 +1,2108 @@
 [
-  {"slug":"analytical-chemistry","zh":"分析化学","en":"Analytical chemistry","category":"学科基础","definition":"研究物质组成、含量、空间分布、结构与存在形态的测量科学。","expanded":"它不仅包含测量技术，也包含问题定义、采样、样品制备、分离、校准、统计评价和结果报告。","properties":["回答 what、where、how much 与 what form","服务临床、工业、环境、食品和法庭科学"],"confusions":"分析化学不等于仪器分析；湿化学方法、采样与数据解释同样属于完整分析过程。","related":["qualitative-analysis","quantitative-analysis","analytical-process"],"source":"笔记大纲；Introduction slides 9–21；Christian 7e §1.1","updated":"2026-09-15"},
-  {"slug":"qualitative-analysis","zh":"定性分析","en":"Qualitative analysis","category":"分析目标","definition":"鉴定样品中元素、离子、基团或化合物的分析。","expanded":"它回答“是什么”。可使用选择性化学反应、光谱、色谱或其他仪器证据。","properties":["通常比完整定量更快","可作为后续定量的筛查步骤"],"confusions":"出现某信号不一定代表反应具有特异性，还需要评估其他组分能否产生相似信号。","related":["quantitative-analysis","selectivity","specificity"],"source":"Introduction slides 23–27；Christian 7e §1.2","updated":"2026-09-15"},
-  {"slug":"quantitative-analysis","zh":"定量分析","en":"Quantitative analysis","category":"分析目标","definition":"测定样品中一个或多个组分含量的分析。","expanded":"它回答“有多少”，通常需要校准、重复测量、空白与统计评价。","properties":["结果应带单位与不确定性信息","可能同时提供定性证据"],"confusions":"仪器显示数字不等于结果可靠；采样、基质效应和校准都可能主导误差。","related":["qualitative-analysis","calibration","blank"],"source":"Introduction slide 28；Christian 7e §1.2","updated":"2026-09-15"},
-  {"slug":"selectivity","zh":"选择性","en":"Selectivity","category":"方法验证","definition":"方法在样品基质中优先测量目标分析物而较少受其他组分影响的能力。","expanded":"选择性可通过分离、掩蔽、衍生化或选择性检测器提高。","properties":["受基质组成影响","可以是程度而非绝对性质"],"confusions":"选择性不等于特异性；真正只对目标物响应的方法很少。","related":["specificity","matrix-effect","method-validation"],"source":"笔记大纲；Basic operation slide 7","updated":"2026-09-15"},
-  {"slug":"specificity","zh":"特异性","en":"Specificity","category":"方法性质","definition":"反应或试验只对目标物发生或响应的性质。","expanded":"它是比选择性更严格的概念。分析化学中很少有真正完全特异的反应。","properties":["排除所有非目标物响应","实际方法通常只能达到较高选择性"],"confusions":"不要把“响应明显”直接称为 specific。","related":["selectivity","qualitative-analysis"],"source":"Introduction slides 23–24；Christian 7e §1.2","updated":"2026-09-15"},
-  {"slug":"analytical-process","zh":"分析流程","en":"Analytical process","category":"分析流程","definition":"从定义问题到报告结果的完整工作链。","expanded":"典型步骤为定义问题、选择方法、代表性采样、样品制备、必要分离、测量、计算与报告。","properties":["每一步都可能产生误差","前端采样误差无法靠后端仪器精度补偿"],"confusions":"测量只是分析流程中的一步。","related":["representative-sample","blank","calibration"],"source":"Introduction slides 36–49；Christian 7e §1.3","updated":"2026-09-15"},
-  {"slug":"representative-sample","zh":"代表性样品","en":"Representative sample","category":"采样","definition":"在与分析目的有关的性质上能够代表总体的样品。","expanded":"总体样品经缩分形成实验室样品，再得到实际称量或量取的分析样品。异质性与采样设计决定代表性。","properties":["关注固液气形态、均匀性与规模","采样统计是总误差的重要组成"],"confusions":"样品量小不等于不代表；关键在于抽样方式与总体异质性。","related":["analytical-process","sample-preparation"],"source":"Introduction slide 42；Christian 7e §1.3、§2.9","updated":"2026-09-15"},
-  {"slug":"blank","zh":"空白","en":"Blank","category":"质量控制","definition":"含有分析流程中全部试剂并经历完整步骤、但不含目标分析物的对照。","expanded":"空白用于估计试剂、容器、环境和过程造成的本底信号。基质空白还尽可能模拟样品基质。","properties":["与样品同批处理","用于空白校正与估算检出限"],"confusions":"空白不是简单的纯水；它应覆盖真实流程引入的全部本底来源。","related":["limit-of-detection","analytical-process","matrix-effect"],"source":"笔记大纲；Introduction slide 44","updated":"2026-09-15"},
-  {"slug":"good-laboratory-practice","zh":"良好实验室规范","en":"Good Laboratory Practice, GLP","category":"质量体系","definition":"为保证实验室结果质量、正确性和可追溯性而建立的规则、程序与实践。","expanded":"GLP 的常见组成包括标准操作规范、独立质量保证、记录与审计。","properties":["强调可执行与可审计","覆盖人员、设备、样品和记录"],"confusions":"GLP 不是个人习惯清单，而是组织级质量体系。","related":["standard-operating-procedure","method-validation"],"source":"Basic operation slides 2–6；Christian 7e Chapter 4","updated":"2026-09-15"},
-  {"slug":"standard-operating-procedure","zh":"标准操作规范","en":"Standard operating procedure, SOP","category":"质量体系","definition":"对实验室活动如何执行给出详细书面说明的文件。","expanded":"可覆盖样品监管链、前处理、方法步骤、仪器维护与记录归档。","properties":["保证不同人员按同一方式执行","是培训与审计的依据"],"confusions":"SOP 可以规定 procedure 或 protocol，但这几个层级并不完全同义。","related":["good-laboratory-practice","method-validation"],"source":"Basic operation slide 2","updated":"2026-09-15"},
-  {"slug":"method-validation","zh":"方法验证","en":"Method validation","category":"方法验证","definition":"用实验数据证明方法在预定用途下满足性能要求的过程。","expanded":"常评价选择性、线性、准确度、精密度、范围、检出限、定量限、耐用性和鲁棒性。","properties":["性能要求来自分析问题","验证结果只适用于规定的样品与条件"],"confusions":"一次得到正确结果不能替代系统验证。","related":["selectivity","accuracy","precision","linearity","limit-of-detection","limit-of-quantitation"],"source":"笔记大纲；Basic operation slides 4–15","updated":"2026-09-15"},
-  {"slug":"linearity","zh":"线性度","en":"Linearity","category":"方法验证","definition":"方法响应在规定范围内与分析物浓度成线性关系的程度。","expanded":"课件建议用多个浓度水平考察，并同时检查判定系数、截距与残差，而不能只看一项指标。","properties":["课件参考判据 R² > 0.998","高低浓度端更易偏离线性"],"confusions":"R² 很高仍可能存在系统弯曲或异常残差。","related":["calibration","sensitivity","method-validation"],"formula":"<i>y</i> = <i>a</i> + <i>b</i><i>c</i>","derivation":"用线性回归估计截距 a 与斜率 b，并检查残差是否随机分布。","notation":"y 为响应，c 为浓度，a 为截距，b 为灵敏度。","source":"Basic operation slide 8","updated":"2026-09-15"},
-  {"slug":"accuracy","zh":"准确度","en":"Accuracy","category":"方法验证","definition":"测得值与真值或接受参考值接近的程度。","expanded":"可通过标准物质、可靠比较方法或加标回收研究评估。","properties":["主要反映系统误差","需要合适参考值"],"confusions":"准确度高不意味着重复结果一定集中。","related":["precision","method-validation"],"source":"笔记大纲；Basic operation slide 9","updated":"2026-09-15"},
-  {"slug":"precision","zh":"精密度","en":"Precision","category":"方法验证","definition":"规定条件下重复测量结果之间的一致程度。","expanded":"常用标准偏差或相对标准偏差表示，可区分重复性与实验室间重现性。","properties":["主要反映随机误差","依赖重复条件的定义"],"confusions":"精密但不准确的结果可能稳定偏离真值。","related":["accuracy","repeatability","reproducibility"],"source":"笔记大纲；Basic operation slide 10","updated":"2026-09-15"},
-  {"slug":"sensitivity","zh":"灵敏度","en":"Sensitivity","category":"方法验证","definition":"校准曲线响应随浓度变化的速率，通常由斜率表示。","expanded":"斜率越大，同样浓度差造成的响应差越大；但实际可区分能力还取决于噪声与精密度。","properties":["是校准关系的局部斜率","不等同于检出限"],"confusions":"口语中常把 sensitivity 错当成 LOD。","related":["calibration","limit-of-detection","linearity"],"formula":"<i>S</i> = d<i>y</i>/d<i>c</i>","derivation":"把响应 y 对浓度 c 求导；线性校准时 S 等于回归斜率。","notation":"S 为灵敏度，y 为响应，c 为分析物浓度。","source":"Basic operation slide 11","updated":"2026-09-15"},
-  {"slug":"limit-of-detection","zh":"检出限","en":"Limit of detection, LOD","category":"方法验证","definition":"在规定统计准则下可与空白信号区分的最低分析物水平。","expanded":"课件采用空白均值加 3 倍空白标准偏差的响应判据；再经校准曲线换算为浓度。","properties":["表示可检出，不保证可准确定量","依赖空白噪声与校准灵敏度"],"confusions":"低于 LOD 应报告为低于检出限，不能报告为零。","related":["limit-of-quantitation","blank","sensitivity"],"formula":"<i>y</i><sub>LOD</sub> = <span style=\"font-style:normal\">ȳ</span><sub>blank</sub> + 3<i>s</i><sub>blank</sub>","derivation":"先用多个空白估计本底分布，再把高于空白均值约 3 个标准差的响应作为检出判据。","notation":"yLOD 为检出响应，ȳblank 为空白均值，sblank 为空白标准偏差。","source":"笔记大纲；Basic operation slide 13","updated":"2026-09-15"},
-  {"slug":"limit-of-quantitation","zh":"定量限","en":"Limit of quantitation, LOQ","category":"方法验证","definition":"能够以可接受准确度与精密度定量测定的最低分析物水平。","expanded":"没有具体性能标准时，课件采用空白均值上方 10–12 倍空白标准偏差的经验信号判据。","properties":["通常高于 LOD","需要结合准确度与 RSD 判断"],"confusions":"检出并不等于可以定量。","related":["limit-of-detection","precision","accuracy"],"formula":"<i>y</i><sub>LOQ</sub> ≈ <span style=\"font-style:normal\">ȳ</span><sub>blank</sub> + (10–12)<i>s</i><sub>blank</sub>","derivation":"把更严格的信噪要求用于空白分布，并用校准关系换算为浓度。","notation":"符号含义同 LOD 公式。","source":"笔记大纲；Basic operation slide 14","updated":"2026-09-15"},
-  {"slug":"matrix-effect","zh":"基质效应","en":"Matrix effect","category":"干扰","definition":"除目标分析物外的样品成分使分析响应增大或减小的现象。","expanded":"基质可能影响反应、传质、雾化、离子化或检测过程，导致正偏差或负偏差。","properties":["可以正向或负向","常通过基质匹配、标准加入、分离或内标控制"],"confusions":"基质不是杂质的同义词；它是样品中除目标物外的整体环境。","related":["selectivity","blank","sample-preparation"],"source":"Basic operation slide 7","updated":"2026-09-15"},
-  {"slug":"analytical-balance","zh":"分析天平","en":"Analytical balance","category":"基本操作","definition":"用于分析化学中高精度质量比较的天平，常规读数分辨率为 0.1 mg。","expanded":"称量误差可能来自零点漂移、温度对流、湿度、静电、空气浮力与污染。","properties":["现代仪器多采用电磁力补偿","被称物应使用称量容器并达到室温"],"confusions":"天平直接比较表观重量，但分析计算通常关心质量。","related":["air-buoyancy","weighing-by-difference"],"source":"Basic operation slides 18–21；Christian 7e §2.3","updated":"2026-09-15"},
-  {"slug":"air-buoyancy","zh":"空气浮力校正","en":"Air buoyancy correction","category":"称量","definition":"校正被称物与标准砝码因密度不同而受到不同空气浮力的处理。","expanded":"被称物和砝码单位质量排开空气体积不同，导致表观质量与真空质量有小差异。","properties":["常规组成分析中常可抵消","容量器皿校准等高精度工作更重要"],"confusions":"1 mL 体积排开空气对应约 1.2 mg 浮力，不等于读数一定误差 1.2 mg。","related":["analytical-balance","volumetric-glassware"],"formula":"<i>W</i><sub>vac</sub> = <i>W</i><sub>air</sub> + <i>W</i><sub>air</sub>(0.0012/<i>D</i><sub>o</sub> − 0.0012/<i>D</i><sub>w</sub>)","derivation":"校正项来自被称物和砝码各自排开空气重量的差。","notation":"Wvac 为真空质量，Wair 为空气中表观质量，Do 与 Dw 分别为被称物和砝码密度。","source":"Christian 7e §2.3, Eq. 2.1","updated":"2026-09-15"},
-  {"slug":"volumetric-glassware","zh":"容量器皿","en":"Volumetric glassware","category":"基本操作","definition":"为准确量入或量出液体体积而校准的玻璃器皿。","expanded":"容量瓶通常为量入式；单标移液管和滴定管通常为量出式。校准依靠称量水并按密度换算体积。","properties":["在规定温度标定","弯月面与视线位置影响读数"],"confusions":"烧杯和量筒不能替代容量瓶完成高精度定容。","related":["volumetric-flask","volumetric-pipet","buret"],"formula":"<i>V</i><sub>t</sub> = <i>W</i><sub>vac,t</sub>/<i>ρ</i><sub>water,t</sub>","derivation":"体积等于质量除以密度；水的质量先按空气浮力校正。","notation":"Vt 为温度 t 下体积，Wvac,t 为校正水质量，ρwater,t 为该温度水密度。","source":"Basic operation slides 22–29；Christian 7e §2.4","updated":"2026-09-15"},
-  {"slug":"volumetric-flask","zh":"容量瓶","en":"Volumetric flask","category":"容量器皿","definition":"在规定温度下量入一个准确体积的单标容器。","expanded":"用于标准溶液配制和准确稀释；定容后需充分混匀。","properties":["TC/IN 量入式","读弯月面最低点"],"confusions":"容量瓶不适合直接加热或用作长期反应容器。","related":["volumetric-glassware","standard-solution"],"source":"Basic operation slide 23","updated":"2026-09-15"},
-  {"slug":"volumetric-pipet","zh":"单标移液管","en":"Volumetric pipet","category":"容量器皿","definition":"经校准可准确量出一个固定体积的移液管。","expanded":"通常让液体自然排出并等待规定时间；是否吹出尖端残液取决于器皿标识。","properties":["TD/EX 量出式","准确度高于普通吸量管"],"confusions":"尖端残留常包含在校准中，不能随意吹出。","related":["volumetric-glassware","buret"],"source":"Basic operation slide 24；Christian 7e §2.4","updated":"2026-09-15"},
-  {"slug":"buret","zh":"滴定管","en":"Buret","category":"容量器皿","definition":"用于准确量出可变体积溶液的刻度器皿，主要用于滴定。","expanded":"使用前需润洗、排尽尖端气泡并检查漏液；读数差给出量出体积。","properties":["需保持相对一致的流速","内径不均使校准曲线随体积变化"],"confusions":"滴定管 0 刻度通常在上方，读数向下增大。","related":["volumetric-glassware","standard-solution"],"source":"Basic operation slide 29；Christian 7e §2.4","updated":"2026-09-15"},
-  {"slug":"standard-solution","zh":"标准溶液","en":"Standard solution","category":"溶液配制","definition":"浓度准确已知的溶液。","expanded":"可由一级标准物质直接配制，或把近似溶液用一级标准物质标定。","properties":["配制使用准确称量和容量器皿","浓度可能随储存而改变"],"confusions":"标称配制浓度与经标定得到的实际浓度应区分。","related":["primary-standard","stock-solution","dilution"],"source":"Basic operation slides 32–41","updated":"2026-09-15"},
-  {"slug":"primary-standard","zh":"一级标准物质","en":"Primary standard","category":"溶液配制","definition":"纯度高、组成稳定且能按明确计量关系反应，可直接用于配制或标定标准溶液的物质。","expanded":"理想物质易干燥、不吸湿、式量较大、反应快速完全并有清晰终点。","properties":["纯度与杂质已知","长期稳定"],"confusions":"高纯试剂不一定自动满足一级标准物质的全部化学和操作条件。","related":["standard-solution","stock-solution"],"source":"Basic operation slide 33；Christian 7e §2.2","updated":"2026-09-15"},
-  {"slug":"stock-solution","zh":"储备液","en":"Stock solution","category":"溶液配制","definition":"用于后续稀释的一组标准溶液中浓度最高的母液。","expanded":"可由纯固体准确称量后定容，或由已知纯液体准确量取后稀释。","properties":["便于批量制备低浓度标准","储存稳定性需要验证"],"confusions":"stock solution 不必然是一级标准溶液。","related":["standard-solution","dilution"],"formula":"<i>m</i> = <i>cVM</i>","derivation":"由 n=cV 与 m=nM 联立。","notation":"m 为质量，c 为浓度，V 为体积，M 为摩尔质量。","source":"Basic operation slides 34–37","updated":"2026-09-15"},
-  {"slug":"dilution","zh":"稀释","en":"Dilution","category":"溶液配制","definition":"加入溶剂降低溶液浓度而保持溶质物质的量不变的操作。","expanded":"准确稀释时用移液管量取储备液，在容量瓶中定容并充分混匀。","properties":["适用于稀释过程中溶质不损失、不反应的情形","可多级稀释以获得很低浓度"],"confusions":"体积通常不能简单相加；以定容后的最终体积为准。","related":["stock-solution","volumetric-flask"],"formula":"<i>c</i><sub>0</sub><i>V</i><sub>0</sub> = <i>c</i><sub>d</sub><i>V</i><sub>d</sub>","derivation":"稀释前后溶质物质的量相等。","notation":"下标 0 表示储备液，下标 d 表示稀释后溶液。","source":"Basic operation slides 39–41","updated":"2026-09-15"},
-  {"slug":"sample-preparation","zh":"样品制备","en":"Sample preparation","category":"样品处理","definition":"把原始样品转化为适合测量形态并控制干扰、污染和损失的全部操作。","expanded":"可包括研磨、干燥、溶解、消解、富集、衍生化、分离与掩蔽。","properties":["通常决定分析总耗时","可能是误差与污染的主要来源"],"confusions":"样品制备并非测量前的附属步骤，而是分析方法的一部分。","related":["representative-sample","dry-ashing","wet-digestion","microwave-digestion"],"source":"Basic operation slides 42–62；Christian 7e §2.9–2.10","updated":"2026-09-15"},
-  {"slug":"dry-ashing","zh":"干灰化","en":"Dry ashing","category":"样品制备","definition":"在空气或氧气中高温氧化有机基质并保留无机残渣的分解方法。","expanded":"残渣常用少量热浓盐酸或较浓盐酸浸取，再转入后续分析。","properties":["试剂少、空白较低","可能发生挥发损失和壁面滞留"],"confusions":"高温并不保证所有元素定量保留。","related":["wet-digestion","microwave-digestion","sample-preparation"],"source":"Basic operation slide 48；Christian 7e §2.10","updated":"2026-09-15"},
-  {"slug":"wet-digestion","zh":"湿法消解","en":"Wet digestion","category":"样品制备","definition":"用氧化性无机酸和热量分解样品基质的处理方法。","expanded":"常用硝酸、硫酸及其组合；高氯酸体系效率高但危险性显著，必须使用专用设施。","properties":["速度较快、温度较低","试剂可能引入空白污染"],"confusions":"湿法消解不是把样品简单溶于酸，而是破坏基质的化学分解过程。","related":["dry-ashing","microwave-digestion","sample-preparation"],"source":"Basic operation slides 49–57；Christian 7e §2.10","updated":"2026-09-15"},
-  {"slug":"microwave-digestion","zh":"微波消解","en":"Microwave digestion","category":"样品制备","definition":"在专用微波系统中利用介电加热加速酸消解的样品制备方法。","expanded":"密闭容器提高压力与酸的有效沸点，缩短时间并减少挥发损失；设备需保护磁控管并控制温度和压力。","properties":["偶极转动与离子传导产生热","通常比热板消解更快"],"confusions":"家用微波炉不适合实验室小样品和酸消解。","related":["wet-digestion","sample-preparation"],"source":"Basic operation slides 58–59；Christian 7e §2.10","updated":"2026-09-15"},
-  {"slug":"calibration","zh":"校准","en":"Calibration","category":"测量基础","definition":"建立测量响应与已知参考量之间关系的过程。","expanded":"相对分析方法通常用已知浓度标准建立响应函数，再由未知样响应反求浓度。校准模型、标准范围与空白都会影响结果。","properties":["可以是线性或非线性","标准应覆盖未知样的合理范围"],"confusions":"校准仪器不等于验证完整分析方法。","related":["linearity","sensitivity","standard-solution"],"source":"Introduction slides 46–47；Basic operation slide 8","updated":"2026-09-15"},
-  {"slug":"repeatability","zh":"重复性","en":"Repeatability","category":"方法验证","definition":"同一实验室在短时间内、相同方法与近似相同条件下重复测量的一致程度。","expanded":"它属于实验室内精密度的严格条件层级，通常要求相同人员、设备和操作条件。","properties":["条件变化最小","用标准偏差或 RSD 表示"],"confusions":"Repeatability 不等于 ruggedness；后者有意跨日期、人员或设备。","related":["precision","reproducibility","method-validation"],"source":"Basic operation slides 10、15；大纲纠错","updated":"2026-09-15"},
-  {"slug":"reproducibility","zh":"重现性","en":"Reproducibility","category":"方法验证","definition":"不同实验室对同一均匀样品采用规定方法所得结果的一致程度。","expanded":"它纳入实验室、人员、仪器与环境等更广泛变化，用于评价方法跨场所转移后的表现。","properties":["实验室间精密度","变化条件比 repeatability 更广"],"confusions":"中文文献中重复性与重现性的译法偶有混用，应结合条件定义判断。","related":["repeatability","precision","method-validation"],"source":"Basic operation slides 10、15","updated":"2026-09-15"},
-  {"slug":"weighing-by-difference","zh":"差量法称量","en":"Weighing by difference","category":"称量","definition":"用称量瓶转移样品前后的质量差得到实际转移样品质量的方法。","expanded":"该方法不要求一次转移到预定名义质量，只需准确记录转移前后读数，因此适合固体定量转移。","properties":["减少样品直接暴露与损失","实际质量由两次读数相减"],"confusions":"差量法称量不要求把天平读数调到某个目标整数。","related":["analytical-balance","standard-solution"],"source":"Christian 7e §2.1、§2.3","updated":"2026-09-15"},
-  {"slug":"titrant","zh":"滴定剂","en":"Titrant","category":"滴定","definition":"由滴定管加入、与被滴定物反应且浓度已知的溶液。","expanded":"酸碱滴定中滴定剂通常配成标准溶液，并且几乎总是强酸或强碱，以保证反应完全、计量关系明确。滴定剂的浓度与所消耗体积之积给出反应掉的物质的量。","properties":["装在滴定管中，由滴定管放出","浓度必须已知或经过标定","酸碱滴定中一般为强酸或强碱"],"confusions":"滴定剂与被滴定物是角色区分而不是物质分类：同一瓶 NaOH 在测定盐酸时是滴定剂，在标定邻苯二甲酸氢钾时也是滴定剂，但被滴定物不同。","related":["titrand","acid-base-titration","standard-solution"],"source":"Acid-Base Equilibria slide 2；Acid-Base Titration slide 2；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"titrand","zh":"被滴定物","en":"Titrand","category":"滴定","definition":"盛放在被滴定容器中、浓度待测的那一份溶液。","expanded":"被滴定物可以是强酸或强碱，也可以是弱酸或弱碱。弱酸弱碱被滴定时计量点 pH 由共轭酸碱对的水解决定，因此不等于 7。","properties":["浓度未知，是测定的目标","可为强酸、强碱、弱酸或弱碱","有时需要预先调节 pH 或掩蔽干扰"],"confusions":"titrand 是溶液中的分析物，不等于瓶子里所有的东西；样品基质中的其他组分不参与计量关系，但可能干扰终点判断。","related":["titrant","acid-base-titration","equivalence-point"],"source":"Acid-Base Equilibria slide 2；课堂笔记；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"acid-base-titration","zh":"酸碱滴定","en":"Acid-base titration","category":"滴定","definition":"以质子转移为基础，用酸性或碱性滴定剂滴定碱性或酸性被滴定物的滴定方法。","expanded":"酸碱滴定是四类滴定之一，另外三类是络合滴定、氧化还原滴定和沉淀滴定。滴定剂几乎总是强酸或强碱，被滴定物可以是强酸（强碱）也可以是弱酸（弱碱）。","properties":["唯一必需器材是把滴定剂送入被滴定液的装置","需要指示剂或仪器信号确定终点","溶液越稀，终点选择越关键"],"confusions":"酸碱滴定不是用 pH 计测 pH；滴定测量的是到达计量点所需的滴定剂体积，pH 只是判断终点的信号之一。","related":["titrant","titrand","equivalence-point","titration-curve","indicator"],"source":"Acid-Base Equilibria slide 3；Acid-Base Titration slides 3、14；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"complexometric-titration","zh":"络合滴定","en":"Complexometric titration","category":"滴定","definition":"以金属离子与配体形成络合物（螯合物）为基础的一类滴定方法。","expanded":"最广泛使用的络合剂是含氨羧基团的有机络合剂，其中 EDTA 应用最多。与酸碱滴定相比，络合滴定更复杂：无机络合剂常只有一个配位原子，会形成逐级络合物并存在逐级解离平衡，溶液中同时存在多种形式。","properties":["有机络合剂常含两个以上键合原子，形成低络合比的环状螯合物","螯合物稳定，一般不存在逐级络合","常需控制 pH 并使用金属指示剂"],"confusions":"络合滴定与酸碱滴定在形式上相似（都有计量点、突跃和指示剂），但络合平衡受 pH 影响，不能把酸碱滴定的结论直接照搬。","related":["acid-base-titration","displacement-titration","redox-titration"],"source":"Acid-Base Titration slide 52 备注；教材络合滴定章引言","updated":"2026-03-18"},
-  {"slug":"redox-titration","zh":"氧化还原滴定","en":"Redox titration","category":"滴定","definition":"以电子转移反应为基础，用氧化剂或还原剂作滴定剂的滴定方法。","expanded":"常见体系包括高锰酸钾法、碘量法和重铬酸钾法。许多氧化还原反应动力学较慢，因此返滴定与间接滴定在氧化还原体系中尤其常见。","properties":["滴定剂为氧化剂或还原剂","终点可由指示剂、自身指示剂或电位法确定","反应速率往往是限制因素"],"confusions":"氧化还原滴定中计量关系由电子得失数决定，同一物质在不同反应中的当量可能不同，不能只凭化学式判断。","related":["acid-base-titration","back-titration","precipitation-titration"],"source":"Acid-Base Titration slides 3、8；教材氧化还原滴定章引言","updated":"2026-03-18"},
-  {"slug":"precipitation-titration","zh":"沉淀滴定","en":"Precipitation titration","category":"滴定","definition":"被滴定物与滴定剂生成沉淀的一类滴定方法。","expanded":"银量法是典型代表。这类方法需要沉淀溶解度足够小、组成恒定，并且终点指示可靠。","properties":["滴定剂与被滴定物生成难溶化合物","常见体系为 Ag⁺ 与卤素或 SCN⁻","沉淀吸附可能干扰终点判断"],"confusions":"沉淀滴定不适用于所有沉淀反应：沉淀的溶解度、共沉淀和吸附都会限制可用范围。","related":["acid-base-titration","direct-titration","end-point"],"source":"Acid-Base Titration slides 3、7；教材沉淀滴定章引言","updated":"2026-03-18"},
-  {"slug":"conjugate-acid-base-pair","zh":"共轭酸碱对","en":"Conjugate acid-base pair","category":"酸碱理论","definition":"在质子理论中彼此相差一个质子的酸与碱组成的一对物质。","expanded":"酸 AH 放出质子后变成它的共轭碱 A⁻，碱 B 接受质子后变成它的共轭酸 BH⁺。溶液里不存在游离质子，质子给体必须同时遇到质子受体，因此实际反应写为 AH + B ⇌ BH⁺ + A⁻。","properties":["酸越强，其共轭碱越弱；碱越强，其共轭酸越弱","共轭酸碱对的 Ka 与 Kb 满足 KaKb = Kw","同一物质可同时出现在酸表和碱表中（两性物质）"],"confusions":"共轭关系是相差一个质子，不是结构相似；H₂PO₄⁻ 与 HPO₄²⁻ 是一对，而 H₃PO₄ 与 HPO₄²⁻ 相差两个质子，不构成共轭对。","related":["bronsted-lowry-theory","ka","kb","amphiprotic-species"],"source":"Acid-Base Equilibria slides 6–8、27；课堂笔记；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"bronsted-lowry-theory","zh":"Brønsted–Lowry 质子理论","en":"Brønsted–Lowry theory","category":"酸碱理论","definition":"把酸定义为质子给体、碱定义为质子受体的酸碱理论。","expanded":"该理论不要求溶剂可电离，因此可应用于苯、二氧六环等非电离性溶剂中的酸碱反应。它用共轭酸碱对统一描述酸碱关系，也是本课程后文全部计算的语言基础。","properties":["酸 = proton donor，碱 = proton acceptor","反应写作 AH + B ⇌ BH⁺ + A⁻","酸碱强度是相对于溶剂而言的"],"confusions":"质子理论没有取代 Arrhenius 理论，而是扩大了适用范围；讨论水溶液中的强酸强碱时两者结论一致。","related":["conjugate-acid-base-pair","lewis-theory","amphiprotic-species"],"source":"Acid-Base Equilibria slides 6–7；课堂笔记；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"lewis-theory","zh":"Lewis 电子理论","en":"Lewis theory","category":"酸碱理论","definition":"把酸定义为电子对受体、碱定义为电子对给体的酸碱理论。","expanded":"Lewis 酸与碱之间不发生原子交换，而是直接结合形成配位共价键。Lewis 碱常含氧或氮作为电子对给体，例如 BF₃ + :NH₃ → F₃B←NH₃。","properties":["酸 = electron-pair acceptor","碱 = electron-pair donor","与质子无关，可描述无质子的酸碱反应"],"confusions":"Lewis 酸不一定是 Brønsted 酸：BF₃ 没有可给出的质子，但在 Lewis 意义上是酸。判断时先看有没有质子转移。","related":["bronsted-lowry-theory","conjugate-acid-base-pair"],"source":"Acid-Base Equilibria slide 9；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"amphiprotic-species","zh":"两性物质","en":"Amphiprotic species","category":"酸碱理论","definition":"既能给出质子（作为酸）又能接受质子（作为碱）的物质。","expanded":"按 Brønsted 理论，H₂PO₄⁻、HPO₄²⁻、HCO₃⁻、氨基酸和蛋白质都属于两性物质。酸式盐在水溶液中同时进行酸式解离和碱式水解，溶液的酸碱性由两个方向的相对强弱决定。","properties":["同一物质在酸表和碱表中都出现","酸式盐溶液的 pH 可由相邻两级 pKa 估算","氨基酸以内盐（两性离子）形式存在"],"confusions":"两性物质不等于中性物质：NaH₂PO₄ 溶液 pH 约 4.5，明显偏酸；Na₂HPO₄ 溶液 pH 约 9.7，明显偏碱。","related":["amphoteric-salt","conjugate-acid-base-pair","distribution-fraction"],"source":"Acid-Base Equilibria slides 7、55–59；教材 §10.2","updated":"2026-03-18"},
-  {"slug":"autoprotolysis","zh":"质子自递反应","en":"Autoprotolysis","category":"酸碱平衡","definition":"溶剂自身电离，给出该溶剂特征的阳离子和阴离子的过程。","expanded":"水的自递反应 2H₂O ⇌ H₃O⁺ + OH⁻ 是整个水溶液酸碱体系的基准，其常数 Kw 在 25 °C 时约为 1.0 × 10⁻¹⁴。其他可电离溶剂（如液氨）也有各自的质子自递反应。","properties":["是溶剂自身的性质，与外加溶质无关","常数随温度升高而增大","决定了该溶剂中中性对应的 pH"],"confusions":"质子自递是溶剂分子之间的反应，不要与溶质的水解混淆；NaOAc 使溶液显碱性的原因是 Ac⁻ 水解，不是水的自递增强。","related":["kw","ph-scale","amphiprotic-species"],"source":"Acid-Base Equilibria slides 10–11；教材 §9.6","updated":"2026-03-18"},
-  {"slug":"ph-scale","zh":"pH 标度","en":"pH scale","category":"酸碱平衡","definition":"用氢离子浓度的负对数表示溶液酸度的标度，pH = −log[H⁺]。","expanded":"约定 pX = −log X，因此 pOH = −log[OH⁻]，pKw = pH + pOH。25 °C 时 pKw = 14.00；37 °C 时 pKw = 13.60，中性点相应移到 pH 6.80。浓酸的 pH 可以为负，例如 10 mol·L⁻¹ HCl 的 pH 为 −1。","properties":["把跨越十几个数量级的浓度压缩到对数刻度","中性对应 pH = pKw/2，随温度变化","极稀溶液中必须考虑水自递的贡献"],"confusions":"pH 7 并不总是中性。判断酸碱性要以当时温度下的 pKw/2 为参照；体温下血液 pH 7.40 比中性点高 0.60 个单位。","related":["kw","autoprotolysis","buffer-solution"],"formula":"pH = −log[H<sup>+</sup>] &nbsp; pOH = −log[OH<sup>−</sup>] &nbsp; pH + pOH = p<i>K</i><sub>w</sub>","derivation":"对 Kw = [H⁺][OH⁻] 两边取负对数，由 −log(ab) = −log a − log b 得 pKw = pH + pOH。","notation":"[H⁺]、[OH⁻] 为摩尔浓度；pKw 在 25 °C 为 14.00，37 °C 为 13.60。","source":"Acid-Base Equilibria slides 12–20；教材 §9.6、生理 pH 章节","updated":"2026-03-18"},
-  {"slug":"kw","zh":"水的离子积","en":"Ion product of water, Kw","category":"酸碱平衡","definition":"水的质子自递反应的热力学平衡常数，稀溶液中近似表示为 Kw = [H⁺][OH⁻]。","expanded":"25 °C 时 Kw ≈ 1.0 × 10⁻¹⁴，随温度升高明显增大（30 °C 约 1.468 × 10⁻¹⁴，50 °C 约 5.74 × 10⁻¹⁴）；0 °C 时仅约 0.113 × 10⁻¹⁴。它是自递常数的浓度近似形式。","properties":["纯水中 [H⁺] = [OH⁻] = √Kw","是温度的函数","与 Ka、Kb 一起构成共轭酸碱对的换算关系"],"confusions":"严格定义的 Kw 用活度表示；以浓度代替活度只在稀溶液中成立，离子强度升高时必须回到活度。","related":["autoprotolysis","ka","kb","ph-scale"],"formula":"<i>K</i><sub>w</sub> = <i>a</i><sub>H⁺</sub><i>a</i><sub>OH⁻</sub> ≈ [H<sup>+</sup>][OH<sup>−</sup>] = 1.0 × 10<sup>−14</sup> (25 °C)","derivation":"由水的自递反应 H₂O ⇌ H⁺ + OH⁻ 写平衡常数；稀溶液中水的活度近似为 1，因此只剩两个离子的活度项。","notation":"a 表示活度；[ ] 表示摩尔浓度。","source":"Acid-Base Equilibria slide 11；教材 §9.6","updated":"2026-03-18"},
-  {"slug":"ka","zh":"酸解离常数","en":"Acid dissociation constant, Ka","category":"酸碱平衡","definition":"弱酸在水溶液中解离平衡的平衡常数，是酸强度的定量量度。","expanded":"对 HA + H₂O ⇌ A⁻ + H₃O⁺，Ka = [H⁺][A⁻]/[HA]（水的活度为常数，并入 Ka）。Ka 越大，分子解离越多，酸性越强。强酸（无机酸）的 Ka 极大，弱酸（多数有机酸）的 Ka 较小。","properties":["Ka 越大酸性越强","只与物质本性和温度有关","可由滴定曲线中点（pH = pKa）实验测定"],"confusions":"Ka 不是 pH。Ka 描述酸本身交出质子的倾向，pH 描述溶液当前的酸度：少量强酸就能给出很低的 pH，而同浓度的弱酸给不出。","related":["kb","kw","buffer-solution","polyprotic-acid"],"formula":"<i>K</i><sub>a</sub> = [H<sup>+</sup>][A<sup>−</sup>]/[HA] &nbsp;&nbsp; p<i>K</i><sub>a</sub> = −log <i>K</i><sub>a</sub>","derivation":"对 HA + H₂O ⇌ A⁻ + H₃O⁺ 写平衡常数，并把水的活度（常数）并入 Ka。","notation":"HA 为未解离酸，A⁻ 为共轭碱；pKa 越小酸性越强。","source":"Acid-Base Equilibria slides 22–24；教材 §9.3","updated":"2026-03-18"},
-  {"slug":"kb","zh":"碱常数","en":"Base constant, Kb","category":"酸碱平衡","definition":"弱碱从水中夺取质子的水解平衡常数。","expanded":"对 B + H₂O ⇌ BH⁺ + OH⁻，Kb = [BH⁺][OH⁻]/[B]。Kb 越大碱性越强。它同时也就是该弱碱对应盐的水解常数 KH。","properties":["强碱（金属氢氧化物）的 Kb 极大","与共轭酸的 Ka 通过 KaKb = Kw 相联系","氨的 Kb = 1.75 × 10⁻⁵（25 °C）"],"confusions":"氨的 Kb 数值恰好与醋酸的 Ka 相同，这纯属巧合，两者之间没有任何对应关系。","related":["ka","kw","conjugate-acid-base-pair"],"formula":"<i>K</i><sub>b</sub> = [BH<sup>+</sup>][OH<sup>−</sup>]/[B] &nbsp;&nbsp; p<i>K</i><sub>a</sub> + p<i>K</i><sub>b</sub> = p<i>K</i><sub>w</sub>","derivation":"弱碱水解式与水的自递式相加；或在弱酸解离式中把 [H⁺] 换成 Kw/[OH⁻]。","notation":"B 为未质子化碱，BH⁺ 为其共轭酸。","source":"Acid-Base Equilibria slides 25–26；教材 §9.4","updated":"2026-03-18"},
-  {"slug":"common-ion-effect","zh":"同离子效应","en":"Common ion effect","category":"酸碱平衡","definition":"加入与弱电解质解离产物相同的离子，使该弱电解质的解离度降低的效应。","expanded":"在醋酸缓冲体系中加入醋酸钠提供大量 OAc⁻，把 HOAc 的解离压回去，使 [H⁺] 由 Ka[HOAc]/[OAc⁻] 决定，而不是由自解离决定。这是缓冲溶液能同时保有可观 HA 与 A⁻ 储备的原因。","properties":["使弱酸（弱碱）解离度下降","是缓冲机制的定量基础","也用于控制沉淀溶解度和络合平衡"],"confusions":"同离子效应不改变平衡常数，只改变平衡位置；Ka 仍是同一个数值。","related":["buffer-solution","ka","kb"],"source":"Acid-Base Equilibria slides 29、35；教材 §9.8","updated":"2026-03-18"},
-  {"slug":"buffer-solution","zh":"缓冲溶液","en":"Buffer solution","category":"酸碱平衡","definition":"在加入少量酸、少量碱或被稀释时能抵抗 pH 变化的溶液。","expanded":"缓冲液通常由弱酸与其共轭碱，或弱碱与其共轭酸按预定浓度或比例组成。加入强酸时 A⁻ 与 H⁺ 结合成 HA；加入强碱时 HA 与 OH⁻ 反应生成 A⁻，因此 [A⁻]/[HA] 比值变化很小。稀释时分子分母同比减小，比值不变，pH 几乎不变。","properties":["pH ≈ pKa + log([A⁻]/[HA])","在 pH = pKa 处缓冲容量最大","实用范围为 pKa ± 1"],"confusions":"缓冲液的 pH 由共轭酸碱对的比例决定，而不是由浓度决定；改变总浓度只改变缓冲能力，不改变 pH。","related":["buffer-capacity","common-ion-effect","henderson-hasselbalch","physiological-buffer"],"source":"Acid-Base Equilibria slides 28–35；课堂笔记；教材 §9.8–9.9","updated":"2026-03-18"},
-  {"slug":"henderson-hasselbalch","zh":"Henderson–Hasselbalch 方程","en":"Henderson-Hasselbalch equation","category":"酸碱平衡","definition":"由共轭酸碱对的浓度比直接计算缓冲溶液 pH 的方程。","expanded":"对弱酸/共轭碱体系 pH = pKa + log([A⁻]/[HA])；对弱碱/共轭酸体系 pOH = pKb + log([BH⁺]/[B])，或写成 pH = pKw − pKb + log([B]/[BH⁺])。中性酸 HA 与阳离子酸 HA⁺（如 NH₄⁺）可套用同一形式。","properties":["比值为 1 时 pH = pKa","比值变化 10 倍，pH 变化 1 个单位","是滴定曲线第二区域的直接计算工具"],"confusions":"方程中的浓度应为平衡浓度；只有同离子效应使解离量很小时，才可以用分析浓度代替。","related":["buffer-solution","ka","kb","titration-curve"],"formula":"pH = p<i>K</i><sub>a</sub> + log([A<sup>−</sup>]/[HA])","derivation":"由 Ka = [H⁺][A⁻]/[HA] 解出 [H⁺]，再取负对数并整理。","notation":"[A⁻] 为共轭碱浓度，[HA] 为酸浓度；log 为常用对数。","source":"Acid-Base Equilibria slides 30–34；教材 §9.8","updated":"2026-03-18"},
-  {"slug":"buffer-capacity","zh":"缓冲容量","en":"Buffer capacity, β","category":"酸碱平衡","definition":"使溶液 pH 改变一个单位所需加入的强酸或强碱的量，衡量缓冲溶液抗 pH 变化的能力。","expanded":"定义为 β = dCB/dpH = −dCHA/dpH。对浓度大于 0.001 mol·L⁻¹ 的一元弱酸/共轭碱体系，β ≈ 2.303·CHA·CA⁻/(CHA + CA⁻)。当 [HA] = [A⁻]（即 pH = pKa）时 β 取最大值；比值变化 10 倍，pH 只变化 1。","properties":["在 pH = pKa 处最大","随缓冲对总浓度增大而增大","碱性缓冲对的最大值出现在 pOH = pKb"],"confusions":"缓冲容量与缓冲液的 pH 不是一回事：一个 pH 恰好等于 pKa 的高浓度缓冲液容量很大，稀释后 pH 不变但容量显著下降。","related":["buffer-solution","henderson-hasselbalch","common-ion-effect"],"formula":"β = d<i>C</i><sub>B</sub>/dpH = −d<i>C</i><sub>HA</sub>/dpH &nbsp;≈&nbsp; 2.303 <i>C</i><sub>HA</sub><i>C</i><sub>A⁻</sub>/(<i>C</i><sub>HA</sub>+<i>C</i><sub>A⁻</sub>)","derivation":"对 Henderson–Hasselbalch 方程求导，把 pH 对加入强碱量的变化写成微分形式。","notation":"CB、CHA 为使 pH 改变 dpH 所需强碱或强酸的浓度（mol·L⁻¹）。(注：课件原文误印为 CHA。)","source":"Acid-Base Equilibria slides 36–38；教材 §9.9","updated":"2026-03-18"},
-  {"slug":"polyprotic-acid","zh":"多元酸","en":"Polyprotic acid","category":"酸碱平衡","definition":"能给出一个以上质子的酸；多元碱则能接受一个以上质子。","expanded":"多元酸逐级解离，每一步都有独立的平衡常数，且 Ka₁ > Ka₂ > Ka₃：负电荷增加使下一个质子更难离去。若相邻两级常数之比大于 10³，各质子可以在滴定中分别对待；要得到良好的终点突跃，则要求 Ka₁ ≥ 10⁴ × Ka₂。","properties":["解离逐级进行，逐级常数依次减小","相差 10³ 以上可以分辨","相邻共轭酸碱对各自构成缓冲体系"],"confusions":"多元酸的分布不是要么全解离要么全不解离：在任意 pH 下多种形态同时存在，比例由分布分数决定。","related":["distribution-fraction","ka","amphoteric-salt","titration-curve"],"source":"Acid-Base Equilibria slides 42–46；Acid-Base Titration slides 38–42；教材 §10.1","updated":"2026-03-18"},
-  {"slug":"distribution-fraction","zh":"分布分数","en":"Distribution fraction, α","category":"酸碱平衡","definition":"某一种存在形态的平衡浓度占分析物总浓度的分数。","expanded":"以磷酸为例，α₀ = [H₃PO₄]/C、α₁ = [H₂PO₄⁻]/C、α₂ = [HPO₄²⁻]/C、α₃ = [PO₄³⁻]/C，且四者之和恒为 1。把每个形态都用 [H₃PO₄] 表示后取倒数并通分，可得分母相同的一组表达式。","properties":["分母 D = [H⁺]³ + Ka₁[H⁺]² + Ka₁Ka₂[H⁺] + Ka₁Ka₂Ka₃","只与 pH 和各级 Ka 有关，与总浓度无关","是绘制分布图（α–pH 图）的依据"],"confusions":"分布分数与解离度不是同一个概念：解离度描述有多少比例解离了，分布分数描述总浓度中有多少以某一种形态存在。","related":["polyprotic-acid","system-point","amphiprotic-species"],"formula":"α<sub>0</sub> = [H<sup>+</sup>]<sup>3</sup>/<i>D</i> &nbsp; α<sub>1</sub> = <i>K</i><sub>a1</sub>[H<sup>+</sup>]<sup>2</sup>/<i>D</i> &nbsp; α<sub>2</sub> = <i>K</i><sub>a1</sub><i>K</i><sub>a2</sub>[H<sup>+</sup>]/<i>D</i> &nbsp; α<sub>3</sub> = <i>K</i><sub>a1</sub><i>K</i><sub>a2</sub><i>K</i><sub>a3</sub>/<i>D</i>","derivation":"把各形态用累积常数与 [H⁺] 表示、代入总浓度后取倒数，再通分并乘以 [H⁺]³。","notation":"D 为共同分母；下标 0–3 依次对应失去 0–3 个质子的形态。","source":"Acid-Base Equilibria slides 47–54；教材 §10.1","updated":"2026-03-18"},
-  {"slug":"system-point","zh":"体系点","en":"System point","category":"酸碱平衡","definition":"分布分数图中相邻两条分布曲线的交点，该点满足 pH = pKa 且共轭酸与共轭碱浓度相等。","expanded":"正磷酸的三个体系点分别在 pH 1.96、7.12 和 12.32。体系点两侧分别是各级缓冲对的最佳工作区间，因此分布图可以直接用来判断在某个 pH 下该用哪一对做缓冲。","properties":["满足 pH = pKa、两形态浓度相等（α = 0.50）","与滴定曲线的中点（V = ½Veq）相对应","是选择缓冲对和指示剂的共同依据"],"confusions":"体系点是分布图上的概念，不能与滴定曲线上的计量点混用：计量点处产物的形态通常不是两形态等量，而是只有一种形态。","related":["distribution-fraction","polyprotic-acid","buffer-solution"],"source":"Acid-Base Equilibria slide 54；教材 §10.1","updated":"2026-03-18"},
-  {"slug":"amphoteric-salt","zh":"两性盐（酸式盐）","en":"Amphoteric salt","category":"酸碱平衡","definition":"既能作为弱酸解离、又能作为 Brønsted 碱水解的盐。","expanded":"磷酸体系中 H₃PO₄ 只能解离、PO₄³⁻ 只能水解，而 H₂PO₄⁻ 与 HPO₄²⁻ 两条路都能走。以 HA⁻ 为例的质子条件为 [H⁺] + [H₃A] = [A²⁻] + [OH⁻]，简化后 [H⁺] ≈ √(Ka₁Ka₂)，即 pH ≈ ½(pKa₁ + pKa₂)，与浓度无关。","properties":["H₂PO₄⁻ 显酸性，pH ≈ ½(1.96+7.12) = 4.54","HPO₄²⁻ 显碱性，pH ≈ ½(7.12+12.32) = 9.72","pH 与自身浓度无关"],"confusions":"判断酸式盐显酸还是显碱，必须比较它自身的酸式解离常数与它自身的水解常数：H₂PO₄⁻ 的 Kb（= Kw/Ka₁ = 9.1 × 10⁻¹³）与 Ka₂（7.5 × 10⁻⁸）比；HPO₄²⁻ 的 Kb（= Kw/Ka₂ = 1.3 × 10⁻⁷）与 Ka₃（4.8 × 10⁻¹³）比。","related":["amphiprotic-species","polyprotic-acid","distribution-fraction"],"formula":"[H<sup>+</sup>] ≈ √(<i>K</i><sub>a1</sub><i>K</i><sub>a2</sub>) &nbsp;⇒&nbsp; pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>)","derivation":"由质子条件 [H⁺] + [H₃A] = [A²⁻] + [OH⁻]，在 Ka₁Kw ≪ Ka₁Ka₂C 且 Ka₁ ≪ C 时略去小项后整理。","notation":"HA⁻ 为两性离子；Ka₁、Ka₂ 为相邻两级解离常数。","source":"Acid-Base Equilibria slides 55–59；教材 §10.2","updated":"2026-03-18"},
-  {"slug":"physiological-buffer","zh":"生理缓冲体系","en":"Physiological buffer system","category":"酸碱平衡","definition":"维持生物体液（尤其是血液）pH 稳定的多组分缓冲体系。","expanded":"血液 pH 稳定在 7.35–7.45。对 CO₂ 的缓冲能力大致分配为：血红蛋白与氧合血红蛋白 62%，H₂PO₄⁻/HPO₄²⁻ 22%，血浆蛋白 11%，HCO₃⁻ 体系 5%。其中碳酸氢盐体系浓度虽小，却受呼吸速率控制，是实际调控的核心。","properties":["37 °C 时碳酸的 pKa₁ = 6.10，正常 [HCO₃⁻] ≈ 26.0 mmol·L⁻¹、[CO₂] ≈ 1.3 mmol·L⁻¹","±0.3 个 pH 单位的变化已属极端","蛋白质上的羧基与氨基分别是弱酸和弱碱"],"confusions":"比例最大的组分不一定是最重要的调控组分。血红蛋白贡献最大缓冲能力，而碳酸氢盐体系凭借可快速调节的 CO₂ 分压承担主要调控作用。","related":["buffer-solution","henderson-hasselbalch","ph-scale"],"source":"Acid-Base Equilibria slides 13、60–63；教材 §9.6、§10.3","updated":"2026-03-18"},
-  {"slug":"equivalence-point","zh":"计量点","en":"Equivalence point","category":"滴定","definition":"滴定剂与被滴定物恰好按化学计量比完全反应的那一点，是理论上的滴定终点。","expanded":"在计量点处 n(滴定剂) 与 n(被滴定物) 按计量系数相等，反应在理论上完成，被滴定物分数 f = 1。强酸强碱滴定的计量点为 pH 7.00（25 °C）；弱酸强碱或弱碱强酸滴定的计量点 pH 不等于 7。","properties":["理论点，无法直接观察","Veq 与滴定剂浓度之积给出反应掉的物质的量","附近 pH 变化最快，滴定曲线斜率最大"],"confusions":"计量点不是实验能看到的点；我们只能通过终点去逼近它，两者的差就是滴定误差。","related":["end-point","titration-error","titration-curve"],"source":"Acid-Base Titration slides 4–5、15、18；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"end-point","zh":"终点","en":"End point","category":"滴定","definition":"实验观察到的停止滴定的那一点，通常由指示剂变色判定。","expanded":"终点由人为选择，因此操作中到达终点时加入的滴定剂量往往已经略微超过计量点。滴定分析的全部技巧就是把终点选在计量点附近的陡峭段上。","properties":["可观察，依赖指示剂或仪器信号","终点体积常略大于 Veq","选择依据是指示剂的变色区间"],"confusions":"终点不等于计量点。例如 HCl 用 NaOH 滴定时选 pH 11.6 作终点会带来 +8.28% 的误差，而选 pH 6.8 时误差仅约 2 × 10⁻⁴%。","related":["equivalence-point","titration-error","indicator"],"source":"Acid-Base Titration slides 5、12、15；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"titration-error","zh":"滴定误差","en":"Titration error","category":"滴定","definition":"终点体积与计量点体积之差所引起的相对误差。","expanded":"误差大小取决于终点与计量点的接近程度、滴定反应的完全程度以及指示剂用量。课件用强酸强碱体系给出对照：终点 pH 6.8 时误差约 −2 × 10⁻⁴%，终点 pH 11.6 时误差达 +8.28%。","properties":["可通过选择合适指示剂压到可忽略","溶液越稀，突跃越短，误差控制越难","指示剂本身消耗滴定剂也会引入误差"],"confusions":"把终点定在突跃之外，无论操作多仔细都会产生系统误差；这类误差不能靠重复测量取平均来消除。","related":["end-point","equivalence-point","indicator","titration-curve"],"source":"Acid-Base Titration slides 5、12；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"direct-titration","zh":"直接滴定","en":"Direct titration","category":"滴定方式","definition":"滴定剂直接与被测物反应并滴定到终点的滴定方式。","expanded":"这是最基本的方式，要求反应快速、完全、计量关系明确，并且有合适的终点判定手段。课件示例：用 SCN⁻ 滴定 Ag⁺，预先加入少量 Fe³⁺，终点时生成红色的 Fe(SCN)²⁺ 络合物作为信号。","properties":["操作最简单、步骤最少","对反应速率和完全程度要求最高","必须有合适的指示剂或终点信号"],"confusions":"直接滴定不是唯一的滴定方式。当反应太慢、没有合适指示剂或没有合适的直接反应时，应改用返滴定、置换滴定或先转化成可滴定物质。","related":["back-titration","displacement-titration","titration-curve"],"source":"Acid-Base Titration slide 7；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"back-titration","zh":"返滴定","en":"Back titration","category":"滴定方式","definition":"先加入已知过量的试剂与样品反应，待反应完全后再用另一种标准溶液滴定剩余试剂的滴定方式。","expanded":"当直接反应太慢或没有合适指示剂时使用。课件示例：甲醛与 I₃⁻ 的反应太慢，先加入过量 I₃⁻ 让其反应完全，再用 S₂O₃²⁻ 滴定剩余的 I₃⁻（淀粉为指示剂）。结果由加入量减去剩余量得到。","properties":["适用于反应慢、终点不明确或挥发损失的情形","计算式为 n(分析物) = n(加入过量试剂) − n(回滴所耗)","过量试剂必须能被准确滴定"],"confusions":"返滴定多测一次体积，误差来源比直接滴定多一项；只有当直接滴定不可行时才采用。","related":["direct-titration","displacement-titration","kjeldahl-method"],"formula":"<i>n</i><sub>分析物</sub> = <i>n</i><sub>加入的过量试剂</sub> − <i>n</i><sub>回滴所耗</sub>","derivation":"过量试剂按化学计量与分析物反应，剩余部分被回滴测定；两部分之差即与分析物反应的量。","notation":"n 为物质的量（mmol 或 mol），计算时保持单位一致。","source":"Acid-Base Titration slides 8、49–51；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"displacement-titration","zh":"置换滴定","en":"Displacement titration","category":"滴定方式","definition":"让分析物置换出等物质的量的另一种可滴定物质，再滴定该物质的滴定方式。","expanded":"适用于分析物本身没有合适指示剂的情形。课件示例：Ca²⁺ 与 EDTA 的直接滴定无合适指示剂，改为先让 Ca²⁺ 与过量 MgY²⁻ 反应（Ca²⁺ + MgY²⁻ ⇌ CaY²⁻ + Mg²⁺），释放出与 Ca²⁺ 等量的 Mg²⁺，再用 EBT 作指示剂滴定 Mg²⁺。","properties":["被置换出的物质的量等于分析物的量（注意计量系数）","反应方向由络合物稳定性差异决定","适用于没有合适金属指示剂的体系"],"confusions":"置换滴定成立的前提是置换是定量的：若两个络合物稳定性相近，置换不完全，结果会偏低。","related":["complexometric-titration","direct-titration","back-titration"],"source":"Acid-Base Titration slide 9；教材络合滴定章","updated":"2026-03-18"},
-  {"slug":"titration-curve","zh":"滴定曲线","en":"Titration curve","category":"滴定","definition":"把滴定过程中某性质随滴定剂加入量的变化画成图，酸碱滴定通常画 pH–V 曲线。","expanded":"滴定曲线不是酸碱滴定独有的：任何把某物种浓度取对数后对滴定剂体积作图的曲线都具有相同的 S 形（sigmoidal）形状。曲线上计量点处的斜率最大，中点（V = ½Veq）处斜率最小。","properties":["曲线上斜率最大的点对应计量点","弱酸滴定的中点处 pH = pKa","突跃幅度随浓度降低而减小"],"confusions":"滴定曲线的形状随浓度变化，但强酸强碱体系的计量点 pH 恒为 7.00；不要因为曲线位置不同就认为计量点 pH 改变了。","related":["equivalence-point","indicator","polyprotic-acid"],"source":"Acid-Base Titration slides 11–12、20–21、34；教材 §9.2–9.5","updated":"2026-03-18"},
-  {"slug":"neutralization-reaction","zh":"中和反应","en":"Neutralization reaction","category":"滴定","definition":"酸与碱反应生成盐和水的化学反应。","expanded":"酸碱滴定的化学基础。强酸与强碱的中和反应实质是 H⁺ + OH⁻ → H₂O；弱酸或弱碱参与时还需考虑解离平衡，因此计量点 pH 不再等于 7。","properties":["产物为盐和水","强酸强碱的中和反应实质是质子与氢氧根结合","放热反应，但滴定计算只关心计量关系"],"confusions":"中和反应不等于 pH 变成 7。强酸与弱碱、弱酸与强碱的中和反应在计量点处溶液分别显酸性和碱性。","related":["equivalence-point","acid-base-titration","indicator"],"source":"Acid-Base Titration slides 14、18；教材 §9.1","updated":"2026-03-18"},
-  {"slug":"indicator","zh":"指示剂","en":"Indicator","category":"滴定","definition":"本身有颜色的弱酸或弱碱，其电离态与非电离态颜色差别明显，用于目视判断滴定终点。","expanded":"以弱酸型 HIn 为例：HIn ⇌ H⁺ + In⁻，pH = pKIn + log([In⁻]/[HIn])。当某一种颜色的强度是另一种的 10 倍时人眼只能分辨出一种颜色，因此 [In⁻]/[HIn] = 1/10 时看到酸色、10/1 时看到碱色，变色范围约为 pKIn ± 1，即 2 个 pH 单位。","properties":["变色范围约 2 个 pH 单位","范围中点处 pH = pKIn","用量应尽可能少","溶液越稀越要谨慎选择"],"confusions":"指示剂本身也参与酸碱反应，会消耗少量滴定剂；用量过多不仅使颜色变化迟钝，还会让自身对 pH 的贡献不可忽略。","related":["end-point","titration-error","titration-curve","ph-scale"],"formula":"pH = p<i>K</i><sub>In</sub> + log([In<sup>−</sup>]/[HIn])","derivation":"对指示剂的解离平衡 HIn ⇌ H⁺ + In⁻ 写平衡常数后取负对数，与 Henderson–Hasselbalch 方程同形。","notation":"pKIn 为指示剂常数；变色范围为 pKIn ± 1。","source":"Acid-Base Titration slides 22–25、35–36；教材 §9.6","updated":"2026-03-18"},
-  {"slug":"kjeldahl-method","zh":"凯氏定氮法","en":"Kjeldahl nitrogen analysis","category":"分析方法","definition":"通过测定样品中的氮含量来推算蛋白质含量的经典分析方法。","expanded":"步骤为：用浓硫酸消解把氮转化为硫酸氢铵；冷却后用浓碱中和释放 NH₃；把 NH₃ 蒸馏收集到已知量的标准酸中；再用标准碱返滴定剩余的酸。多数蛋白质含氮量接近 16.2 wt%，据此换算蛋白质量。","properties":["本质是一个返滴定体系","含氮量换算系数典型值为 16.2 wt%","适用于蛋白质、土壤和食品中氮的测定"],"confusions":"16.2% 是所有蛋白质的平均值。若样品含非蛋白氮（如尿素、硝酸盐），或含有含氮量明显不同的蛋白，换算会带来系统偏差。","related":["back-titration","neutralization-reaction","indicator"],"formula":"<i>n</i><sub>N</sub> = <i>n</i><sub>加入的 HCl</sub> − <i>n</i><sub>回滴所耗的 NaOH</sub> &nbsp;&nbsp; <i>m</i><sub>protein</sub> = <i>m</i><sub>N</sub>/0.162","derivation":"吸收 NH₃ 后剩余的 HCl 由标准 NaOH 回滴测出；加入量与剩余量之差即与 NH₃ 反应的 HCl 量，也就是氮的物质的量。","notation":"n 为物质的量；16.2% 为蛋白质的平均含氮质量分数。","source":"Acid-Base Titration slides 49–53；教材 §10.5","updated":"2026-03-18"},
-  {"slug":"strong-acid-strong-base-titration","zh":"强酸强碱滴定","en":"Strong acid–strong base titration","category":"滴定","definition":"滴定剂与被滴定物都完全电离的酸碱滴定，是最简单的一类滴定曲线。","expanded":"整个滴定只需物质的量守恒，不需要平衡常数。计量点前用剩余强酸算 pH，计量点处 pH 恒为 7.00，计量点后用过量强碱算 pOH 再换算。100.00 mL 0.1000 mol·L⁻¹ HCl 用 0.1000 mol·L⁻¹ NaOH 滴定：加 50.00 mL 时 pH 1.48，加 100.00 mL 时 pH 7.00，加 110.00 mL 时 pH 11.68。","properties":["计量点 pH 恒为 7.00（25 °C），与浓度无关","突跃幅度由酸和碱的浓度共同决定","浓度越低突跃越短，指示剂选择越关键"],"confusions":"计量点 pH 恒为 7.00 不代表曲线形状不变：浓度降低时突跃收缩，同样的指示剂可能不再适用。","related":["titration-curve","equivalence-point","indicator","weak-acid-strong-base-titration"],"formula":"[H<sup>+</sup>] = (<i>M</i><sub>酸</sub><i>V</i><sub>酸</sub> − <i>M</i><sub>碱</sub><i>V</i><sub>碱</sub>)/<i>V</i><sub>总</sub> &nbsp;(f &lt; 1) &nbsp;&nbsp; [OH<sup>−</sup>] = (<i>M</i><sub>碱</sub><i>V</i><sub>碱</sub> − <i>M</i><sub>酸</sub><i>V</i><sub>酸</sub>)/<i>V</i><sub>总</sub> &nbsp;(f &gt; 1)","derivation":"计量点前强酸过量，剩余 H⁺ 全部来自未中和的强酸；计量点后强碱过量，先算 pOH 再用 pH = pKw − pOH。","notation":"f 为被滴定物分数；V总 = V酸 + V碱。","source":"Acid-Base Titration slides 15–21；教材 §9.3","updated":"2026-03-18"},
-  {"slug":"weak-acid-strong-base-titration","zh":"弱酸强碱滴定","en":"Weak acid–strong base titration","category":"滴定","definition":"用强碱滴定弱酸的滴定，滴定曲线分为四个区域，需要平衡常数才能计算。","expanded":"以 50.00 mL 0.1000 mol·L⁻¹ HOAc 用 0.1000 mol·L⁻¹ NaOH 滴定为例：未加碱时 pH 2.88；计量点前是 HA/A⁻ 缓冲体系，用 Henderson–Hasselbalch 计算（加 10.00 mL 时 pH 4.16）；中点是 ½Veq，pH = pKa = 4.76；计量点时只剩 A⁻，水解使溶液显碱（pH 8.73）；计量点后由过量碱控制（加 60.00 mL 时 pH 11.96）。","properties":["四个区域各有独立的计算式","中点 pH = pKa，可用于测定未知酸的 pKa","计量点 pH > 7，需选在碱性区变色的指示剂"],"confusions":"弱酸强碱滴定不能用酚酞以外的随意指示剂：甲基红会在到达计量点前就变色，造成负误差。","related":["titration-curve","henderson-hasselbalch","buffer-solution","indicator"],"formula":"[H<sup>+</sup>] = √(<i>K</i><sub>a</sub><i>C</i><sub>HA</sub>) &nbsp;(f=0) &nbsp;&nbsp; pH = p<i>K</i><sub>a</sub> + log([A<sup>−</sup>]/[HA]) &nbsp;(0&lt;f&lt;1) &nbsp;&nbsp; [OH<sup>−</sup>] = √(<i>K</i><sub>b</sub><i>C</i><sub>A⁻</sub>) &nbsp;(f=1)","derivation":"各区域分别取主导平衡：纯弱酸用解离平衡，缓冲区用同离子效应后的比例关系，计量点用共轭碱的水解平衡。","notation":"Kb = Kw/Ka；CA⁻ 为计量点时共轭碱的分析浓度。","source":"Acid-Base Titration slides 26–35；教材 §9.4–9.5","updated":"2026-03-18"},
-  {"slug":"weak-base-strong-acid-titration","zh":"弱碱强酸滴定","en":"Weak base–strong acid titration","category":"滴定","definition":"用强酸滴定弱碱的滴定，曲线是弱酸强碱滴定的镜像。","expanded":"以 100.00 mL 0.1000 mol·L⁻¹ NH₃ 用 0.1000 mol·L⁻¹ HCl 滴定（HCl + NH₃ → NH₄⁺ + Cl⁻）为例：起点在碱性区；中点是 ½Veq，此时 pOH = pKb，曲线在该处最平缓；计量点偏酸，需选用在酸性区变色的指示剂。","properties":["中点的判据是 pOH = pKb","计量点 pH < 7","计算时把每一式做 H⁺/OH⁻ 镜像替换"],"confusions":"弱碱滴定中不要沿用弱酸滴定的“中点 pH = pKa”；对应的关系是 pOH = pKb，写成 pH 则要经过 pKw 换算。","related":["titration-curve","henderson-hasselbalch","buffer-solution","indicator"],"formula":"[OH<sup>−</sup>] = √(<i>K</i><sub>b</sub><i>C</i><sub>B</sub>) &nbsp;(f=0) &nbsp;&nbsp; pH = (p<i>K</i><sub>w</sub> − p<i>K</i><sub>b</sub>) + log(<i>C</i><sub>B</sub>/<i>C</i><sub>BH⁺</sub>) &nbsp;(0&lt;f&lt;1) &nbsp;&nbsp; [H<sup>+</sup>] = √((<i>K</i><sub>w</sub>/<i>K</i><sub>b</sub>)·<i>C</i><sub>BH⁺</sub>) &nbsp;(f=1)","derivation":"与弱酸强碱滴定完全对称：把 HA 换成 B、A⁻ 换成 BH⁺、pH 换成 pOH 即可逐式对应。","notation":"B 为弱碱，BH⁺ 为其共轭酸。","source":"Acid-Base Titration slides 36–37；教材 §9.5","updated":"2026-03-18"},
-  {"slug":"amino-acid-titration","zh":"氨基酸滴定","en":"Amino acid titration","category":"滴定","definition":"利用氨基酸的两性性质进行的酸碱滴定，曲线形态与二元酸相似。","expanded":"氨基酸同时含羧基（酸性）与氨基（碱性），在水中通过内质子转移形成两性离子。两性离子的共轭酸是二元酸，分步电离；若相邻两级 Ka 之比 ≥ 10⁴，曲线上可分辨多个终点突跃。半胱氨酸有三个可电离质子（Ka₁ = 2.0 × 10⁻²、Ka₂ = 4.4 × 10⁻⁹、Ka₃ = 1.8 × 10⁻¹¹），但 Ka₂/Ka₃ ≈ 244 < 10⁴，因此第二、三级电离无法分开。","properties":["两性离子形态的 pH ≈ ½(pKa₁ + pKa₂)","侧链含可电离基团时质子数增加","能否分步取决于相邻 Ka 之比是否 ≥ 10⁴"],"confusions":"蛋白质和氨基酸都有两性，但蛋白质的滴定曲线一般没有清晰的突跃，因此蛋白质定量更常用凯氏定氮而非直接滴定。","related":["amphiprotic-species","amphoteric-salt","kjeldahl-method","titration-curve"],"source":"Acid-Base Titration slides 46–48；教材 §10.4","updated":"2026-03-18"}
+  {
+    "slug": "analytical-chemistry",
+    "zh": "分析化学",
+    "en": "Analytical chemistry",
+    "category": "学科基础",
+    "definition": "研究物质组成、含量、空间分布、结构与存在形态的测量科学。",
+    "expanded": "它不仅包含测量技术，也包含问题定义、采样、样品制备、分离、校准、统计评价和结果报告。",
+    "properties": [
+      "回答 what、where、how much 与 what form",
+      "服务临床、工业、环境、食品和法庭科学"
+    ],
+    "confusions": "分析化学不等于仪器分析；湿化学方法、采样与数据解释同样属于完整分析过程。",
+    "related": [
+      "qualitative-analysis",
+      "quantitative-analysis",
+      "analytical-process"
+    ],
+    "source": "笔记大纲；Introduction slides 9–21；Christian 7e §1.1",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "qualitative-analysis",
+    "zh": "定性分析",
+    "en": "Qualitative analysis",
+    "category": "分析目标",
+    "definition": "鉴定样品中元素、离子、基团或化合物的分析。",
+    "expanded": "它回答“是什么”。可使用选择性化学反应、光谱、色谱或其他仪器证据。",
+    "properties": [
+      "通常比完整定量更快",
+      "可作为后续定量的筛查步骤"
+    ],
+    "confusions": "出现某信号不一定代表反应具有特异性，还需要评估其他组分能否产生相似信号。",
+    "related": [
+      "quantitative-analysis",
+      "selectivity",
+      "specificity"
+    ],
+    "source": "Introduction slides 23–27；Christian 7e §1.2",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "quantitative-analysis",
+    "zh": "定量分析",
+    "en": "Quantitative analysis",
+    "category": "分析目标",
+    "definition": "测定样品中一个或多个组分含量的分析。",
+    "expanded": "它回答“有多少”，通常需要校准、重复测量、空白与统计评价。",
+    "properties": [
+      "结果应带单位与不确定性信息",
+      "可能同时提供定性证据"
+    ],
+    "confusions": "仪器显示数字不等于结果可靠；采样、基质效应和校准都可能主导误差。",
+    "related": [
+      "qualitative-analysis",
+      "calibration",
+      "blank"
+    ],
+    "source": "Introduction slide 28；Christian 7e §1.2",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "selectivity",
+    "zh": "选择性",
+    "en": "Selectivity",
+    "category": "方法验证",
+    "definition": "方法在样品基质中优先测量目标分析物而较少受其他组分影响的能力。",
+    "expanded": "选择性可通过分离、掩蔽、衍生化或选择性检测器提高。",
+    "properties": [
+      "受基质组成影响",
+      "可以是程度而非绝对性质"
+    ],
+    "confusions": "选择性不等于特异性；真正只对目标物响应的方法很少。",
+    "related": [
+      "specificity",
+      "matrix-effect",
+      "method-validation"
+    ],
+    "source": "笔记大纲；Basic operation slide 7",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "specificity",
+    "zh": "特异性",
+    "en": "Specificity",
+    "category": "方法性质",
+    "definition": "反应或试验只对目标物发生或响应的性质。",
+    "expanded": "它是比选择性更严格的概念。分析化学中很少有真正完全特异的反应。",
+    "properties": [
+      "排除所有非目标物响应",
+      "实际方法通常只能达到较高选择性"
+    ],
+    "confusions": "不要把“响应明显”直接称为 specific。",
+    "related": [
+      "selectivity",
+      "qualitative-analysis"
+    ],
+    "source": "Introduction slides 23–24；Christian 7e §1.2",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "analytical-process",
+    "zh": "分析流程",
+    "en": "Analytical process",
+    "category": "分析流程",
+    "definition": "从定义问题到报告结果的完整工作链。",
+    "expanded": "典型步骤为定义问题、选择方法、代表性采样、样品制备、必要分离、测量、计算与报告。",
+    "properties": [
+      "每一步都可能产生误差",
+      "前端采样误差无法靠后端仪器精度补偿"
+    ],
+    "confusions": "测量只是分析流程中的一步。",
+    "related": [
+      "representative-sample",
+      "blank",
+      "calibration"
+    ],
+    "source": "Introduction slides 36–49；Christian 7e §1.3",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "representative-sample",
+    "zh": "代表性样品",
+    "en": "Representative sample",
+    "category": "采样",
+    "definition": "在与分析目的有关的性质上能够代表总体的样品。",
+    "expanded": "总体样品经缩分形成实验室样品，再得到实际称量或量取的分析样品。异质性与采样设计决定代表性。",
+    "properties": [
+      "关注固液气形态、均匀性与规模",
+      "采样统计是总误差的重要组成"
+    ],
+    "confusions": "样品量小不等于不代表；关键在于抽样方式与总体异质性。",
+    "related": [
+      "analytical-process",
+      "sample-preparation"
+    ],
+    "source": "Introduction slide 42；Christian 7e §1.3、§2.9",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "blank",
+    "zh": "空白",
+    "en": "Blank",
+    "category": "质量控制",
+    "definition": "含有分析流程中全部试剂并经历完整步骤、但不含目标分析物的对照。",
+    "expanded": "空白用于估计试剂、容器、环境和过程造成的本底信号。基质空白还尽可能模拟样品基质。",
+    "properties": [
+      "与样品同批处理",
+      "用于空白校正与估算检出限"
+    ],
+    "confusions": "空白不是简单的纯水；它应覆盖真实流程引入的全部本底来源。",
+    "related": [
+      "limit-of-detection",
+      "analytical-process",
+      "matrix-effect"
+    ],
+    "source": "笔记大纲；Introduction slide 44",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "good-laboratory-practice",
+    "zh": "良好实验室规范",
+    "en": "Good Laboratory Practice, GLP",
+    "category": "质量体系",
+    "definition": "为保证实验室结果质量、正确性和可追溯性而建立的规则、程序与实践。",
+    "expanded": "GLP 的常见组成包括标准操作规范、独立质量保证、记录与审计。",
+    "properties": [
+      "强调可执行与可审计",
+      "覆盖人员、设备、样品和记录"
+    ],
+    "confusions": "GLP 不是个人习惯清单，而是组织级质量体系。",
+    "related": [
+      "standard-operating-procedure",
+      "method-validation"
+    ],
+    "source": "Basic operation slides 2–6；Christian 7e Chapter 4",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "standard-operating-procedure",
+    "zh": "标准操作规范",
+    "en": "Standard operating procedure, SOP",
+    "category": "质量体系",
+    "definition": "对实验室活动如何执行给出详细书面说明的文件。",
+    "expanded": "可覆盖样品监管链、前处理、方法步骤、仪器维护与记录归档。",
+    "properties": [
+      "保证不同人员按同一方式执行",
+      "是培训与审计的依据"
+    ],
+    "confusions": "SOP 可以规定 procedure 或 protocol，但这几个层级并不完全同义。",
+    "related": [
+      "good-laboratory-practice",
+      "method-validation"
+    ],
+    "source": "Basic operation slide 2",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "method-validation",
+    "zh": "方法验证",
+    "en": "Method validation",
+    "category": "方法验证",
+    "definition": "用实验数据证明方法在预定用途下满足性能要求的过程。",
+    "expanded": "常评价选择性、线性、准确度、精密度、范围、检出限、定量限、耐用性和鲁棒性。",
+    "properties": [
+      "性能要求来自分析问题",
+      "验证结果只适用于规定的样品与条件"
+    ],
+    "confusions": "一次得到正确结果不能替代系统验证。",
+    "related": [
+      "selectivity",
+      "accuracy",
+      "precision",
+      "linearity",
+      "limit-of-detection",
+      "limit-of-quantitation"
+    ],
+    "source": "笔记大纲；Basic operation slides 4–15",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "linearity",
+    "zh": "线性度",
+    "en": "Linearity",
+    "category": "方法验证",
+    "definition": "方法响应在规定范围内与分析物浓度成线性关系的程度。",
+    "expanded": "课件建议用多个浓度水平考察，并同时检查判定系数、截距与残差，而不能只看一项指标。",
+    "properties": [
+      "课件参考判据 R² > 0.998",
+      "高低浓度端更易偏离线性"
+    ],
+    "confusions": "R² 很高仍可能存在系统弯曲或异常残差。",
+    "related": [
+      "calibration",
+      "sensitivity",
+      "method-validation"
+    ],
+    "formula": "<i>y</i> = <i>a</i> + <i>b</i><i>c</i>",
+    "derivation": "用线性回归估计截距 a 与斜率 b，并检查残差是否随机分布。",
+    "notation": "y 为响应，c 为浓度，a 为截距，b 为灵敏度。",
+    "source": "Basic operation slide 8",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "accuracy",
+    "zh": "准确度",
+    "en": "Accuracy",
+    "category": "方法验证",
+    "definition": "测得值与真值或接受参考值接近的程度。",
+    "expanded": "可通过标准物质、可靠比较方法或加标回收研究评估。",
+    "properties": [
+      "主要反映系统误差",
+      "需要合适参考值"
+    ],
+    "confusions": "准确度高不意味着重复结果一定集中。",
+    "related": [
+      "precision",
+      "method-validation"
+    ],
+    "source": "笔记大纲；Basic operation slide 9",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "precision",
+    "zh": "精密度",
+    "en": "Precision",
+    "category": "方法验证",
+    "definition": "规定条件下重复测量结果之间的一致程度。",
+    "expanded": "常用标准偏差或相对标准偏差表示，可区分重复性与实验室间重现性。",
+    "properties": [
+      "主要反映随机误差",
+      "依赖重复条件的定义"
+    ],
+    "confusions": "精密但不准确的结果可能稳定偏离真值。",
+    "related": [
+      "accuracy",
+      "repeatability",
+      "reproducibility"
+    ],
+    "source": "笔记大纲；Basic operation slide 10",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "sensitivity",
+    "zh": "灵敏度",
+    "en": "Sensitivity",
+    "category": "方法验证",
+    "definition": "校准曲线响应随浓度变化的速率，通常由斜率表示。",
+    "expanded": "斜率越大，同样浓度差造成的响应差越大；但实际可区分能力还取决于噪声与精密度。",
+    "properties": [
+      "是校准关系的局部斜率",
+      "不等同于检出限"
+    ],
+    "confusions": "口语中常把 sensitivity 错当成 LOD。",
+    "related": [
+      "calibration",
+      "limit-of-detection",
+      "linearity"
+    ],
+    "formula": "<i>S</i> = d<i>y</i>/d<i>c</i>",
+    "derivation": "把响应 y 对浓度 c 求导；线性校准时 S 等于回归斜率。",
+    "notation": "S 为灵敏度，y 为响应，c 为分析物浓度。",
+    "source": "Basic operation slide 11",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "limit-of-detection",
+    "zh": "检出限",
+    "en": "Limit of detection, LOD",
+    "category": "方法验证",
+    "definition": "在规定统计准则下可与空白信号区分的最低分析物水平。",
+    "expanded": "课件采用空白均值加 3 倍空白标准偏差的响应判据；再经校准曲线换算为浓度。",
+    "properties": [
+      "表示可检出，不保证可准确定量",
+      "依赖空白噪声与校准灵敏度"
+    ],
+    "confusions": "低于 LOD 应报告为低于检出限，不能报告为零。",
+    "related": [
+      "limit-of-quantitation",
+      "blank",
+      "sensitivity"
+    ],
+    "formula": "<i>y</i><sub>LOD</sub> = <span style=\"font-style:normal\">ȳ</span><sub>blank</sub> + 3<i>s</i><sub>blank</sub>",
+    "derivation": "先用多个空白估计本底分布，再把高于空白均值约 3 个标准差的响应作为检出判据。",
+    "notation": "yLOD 为检出响应，ȳblank 为空白均值，sblank 为空白标准偏差。",
+    "source": "笔记大纲；Basic operation slide 13",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "limit-of-quantitation",
+    "zh": "定量限",
+    "en": "Limit of quantitation, LOQ",
+    "category": "方法验证",
+    "definition": "能够以可接受准确度与精密度定量测定的最低分析物水平。",
+    "expanded": "没有具体性能标准时，课件采用空白均值上方 10–12 倍空白标准偏差的经验信号判据。",
+    "properties": [
+      "通常高于 LOD",
+      "需要结合准确度与 RSD 判断"
+    ],
+    "confusions": "检出并不等于可以定量。",
+    "related": [
+      "limit-of-detection",
+      "precision",
+      "accuracy"
+    ],
+    "formula": "<i>y</i><sub>LOQ</sub> ≈ <span style=\"font-style:normal\">ȳ</span><sub>blank</sub> + (10–12)<i>s</i><sub>blank</sub>",
+    "derivation": "把更严格的信噪要求用于空白分布，并用校准关系换算为浓度。",
+    "notation": "符号含义同 LOD 公式。",
+    "source": "笔记大纲；Basic operation slide 14",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "matrix-effect",
+    "zh": "基质效应",
+    "en": "Matrix effect",
+    "category": "干扰",
+    "definition": "除目标分析物外的样品成分使分析响应增大或减小的现象。",
+    "expanded": "基质可能影响反应、传质、雾化、离子化或检测过程，导致正偏差或负偏差。",
+    "properties": [
+      "可以正向或负向",
+      "常通过基质匹配、标准加入、分离或内标控制"
+    ],
+    "confusions": "基质不是杂质的同义词；它是样品中除目标物外的整体环境。",
+    "related": [
+      "selectivity",
+      "blank",
+      "sample-preparation"
+    ],
+    "source": "Basic operation slide 7",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "analytical-balance",
+    "zh": "分析天平",
+    "en": "Analytical balance",
+    "category": "基本操作",
+    "definition": "用于分析化学中高精度质量比较的天平，常规读数分辨率为 0.1 mg。",
+    "expanded": "称量误差可能来自零点漂移、温度对流、湿度、静电、空气浮力与污染。",
+    "properties": [
+      "现代仪器多采用电磁力补偿",
+      "被称物应使用称量容器并达到室温"
+    ],
+    "confusions": "天平直接比较表观重量，但分析计算通常关心质量。",
+    "related": [
+      "air-buoyancy",
+      "weighing-by-difference"
+    ],
+    "source": "Basic operation slides 18–21；Christian 7e §2.3",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "air-buoyancy",
+    "zh": "空气浮力校正",
+    "en": "Air buoyancy correction",
+    "category": "称量",
+    "definition": "校正被称物与标准砝码因密度不同而受到不同空气浮力的处理。",
+    "expanded": "被称物和砝码单位质量排开空气体积不同，导致表观质量与真空质量有小差异。",
+    "properties": [
+      "常规组成分析中常可抵消",
+      "容量器皿校准等高精度工作更重要"
+    ],
+    "confusions": "1 mL 体积排开空气对应约 1.2 mg 浮力，不等于读数一定误差 1.2 mg。",
+    "related": [
+      "analytical-balance",
+      "volumetric-glassware"
+    ],
+    "formula": "<i>W</i><sub>vac</sub> = <i>W</i><sub>air</sub> + <i>W</i><sub>air</sub>(0.0012/<i>D</i><sub>o</sub> − 0.0012/<i>D</i><sub>w</sub>)",
+    "derivation": "校正项来自被称物和砝码各自排开空气重量的差。",
+    "notation": "Wvac 为真空质量，Wair 为空气中表观质量，Do 与 Dw 分别为被称物和砝码密度。",
+    "source": "Christian 7e §2.3, Eq. 2.1",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "volumetric-glassware",
+    "zh": "容量器皿",
+    "en": "Volumetric glassware",
+    "category": "基本操作",
+    "definition": "为准确量入或量出液体体积而校准的玻璃器皿。",
+    "expanded": "容量瓶通常为量入式；单标移液管和滴定管通常为量出式。校准依靠称量水并按密度换算体积。",
+    "properties": [
+      "在规定温度标定",
+      "弯月面与视线位置影响读数"
+    ],
+    "confusions": "烧杯和量筒不能替代容量瓶完成高精度定容。",
+    "related": [
+      "volumetric-flask",
+      "volumetric-pipet",
+      "buret"
+    ],
+    "formula": "<i>V</i><sub>t</sub> = <i>W</i><sub>vac,t</sub>/<i>ρ</i><sub>water,t</sub>",
+    "derivation": "体积等于质量除以密度；水的质量先按空气浮力校正。",
+    "notation": "Vt 为温度 t 下体积，Wvac,t 为校正水质量，ρwater,t 为该温度水密度。",
+    "source": "Basic operation slides 22–29；Christian 7e §2.4",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "volumetric-flask",
+    "zh": "容量瓶",
+    "en": "Volumetric flask",
+    "category": "容量器皿",
+    "definition": "在规定温度下量入一个准确体积的单标容器。",
+    "expanded": "用于标准溶液配制和准确稀释；定容后需充分混匀。",
+    "properties": [
+      "TC/IN 量入式",
+      "读弯月面最低点"
+    ],
+    "confusions": "容量瓶不适合直接加热或用作长期反应容器。",
+    "related": [
+      "volumetric-glassware",
+      "standard-solution"
+    ],
+    "source": "Basic operation slide 23",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "volumetric-pipet",
+    "zh": "单标移液管",
+    "en": "Volumetric pipet",
+    "category": "容量器皿",
+    "definition": "经校准可准确量出一个固定体积的移液管。",
+    "expanded": "通常让液体自然排出并等待规定时间；是否吹出尖端残液取决于器皿标识。",
+    "properties": [
+      "TD/EX 量出式",
+      "准确度高于普通吸量管"
+    ],
+    "confusions": "尖端残留常包含在校准中，不能随意吹出。",
+    "related": [
+      "volumetric-glassware",
+      "buret"
+    ],
+    "source": "Basic operation slide 24；Christian 7e §2.4",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "buret",
+    "zh": "滴定管",
+    "en": "Buret",
+    "category": "容量器皿",
+    "definition": "用于准确量出可变体积溶液的刻度器皿，主要用于滴定。",
+    "expanded": "使用前需润洗、排尽尖端气泡并检查漏液；读数差给出量出体积。",
+    "properties": [
+      "需保持相对一致的流速",
+      "内径不均使校准曲线随体积变化"
+    ],
+    "confusions": "滴定管 0 刻度通常在上方，读数向下增大。",
+    "related": [
+      "volumetric-glassware",
+      "standard-solution"
+    ],
+    "source": "Basic operation slide 29；Christian 7e §2.4",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "standard-solution",
+    "zh": "标准溶液",
+    "en": "Standard solution",
+    "category": "溶液配制",
+    "definition": "浓度准确已知的溶液。",
+    "expanded": "可由一级标准物质直接配制，或把近似溶液用一级标准物质标定。",
+    "properties": [
+      "配制使用准确称量和容量器皿",
+      "浓度可能随储存而改变"
+    ],
+    "confusions": "标称配制浓度与经标定得到的实际浓度应区分。",
+    "related": [
+      "primary-standard",
+      "stock-solution",
+      "dilution"
+    ],
+    "source": "Basic operation slides 32–41",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "primary-standard",
+    "zh": "一级标准物质",
+    "en": "Primary standard",
+    "category": "溶液配制",
+    "definition": "纯度高、组成稳定且能按明确计量关系反应，可直接用于配制或标定标准溶液的物质。",
+    "expanded": "理想物质易干燥、不吸湿、式量较大、反应快速完全并有清晰终点。",
+    "properties": [
+      "纯度与杂质已知",
+      "长期稳定"
+    ],
+    "confusions": "高纯试剂不一定自动满足一级标准物质的全部化学和操作条件。",
+    "related": [
+      "standard-solution",
+      "stock-solution"
+    ],
+    "source": "Basic operation slide 33；Christian 7e §2.2",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "stock-solution",
+    "zh": "储备液",
+    "en": "Stock solution",
+    "category": "溶液配制",
+    "definition": "用于后续稀释的一组标准溶液中浓度最高的母液。",
+    "expanded": "可由纯固体准确称量后定容，或由已知纯液体准确量取后稀释。",
+    "properties": [
+      "便于批量制备低浓度标准",
+      "储存稳定性需要验证"
+    ],
+    "confusions": "stock solution 不必然是一级标准溶液。",
+    "related": [
+      "standard-solution",
+      "dilution"
+    ],
+    "formula": "<i>m</i> = <i>cVM</i>",
+    "derivation": "由 n=cV 与 m=nM 联立。",
+    "notation": "m 为质量，c 为浓度，V 为体积，M 为摩尔质量。",
+    "source": "Basic operation slides 34–37",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "dilution",
+    "zh": "稀释",
+    "en": "Dilution",
+    "category": "溶液配制",
+    "definition": "加入溶剂降低溶液浓度而保持溶质物质的量不变的操作。",
+    "expanded": "准确稀释时用移液管量取储备液，在容量瓶中定容并充分混匀。",
+    "properties": [
+      "适用于稀释过程中溶质不损失、不反应的情形",
+      "可多级稀释以获得很低浓度"
+    ],
+    "confusions": "体积通常不能简单相加；以定容后的最终体积为准。",
+    "related": [
+      "stock-solution",
+      "volumetric-flask"
+    ],
+    "formula": "<i>c</i><sub>0</sub><i>V</i><sub>0</sub> = <i>c</i><sub>d</sub><i>V</i><sub>d</sub>",
+    "derivation": "稀释前后溶质物质的量相等。",
+    "notation": "下标 0 表示储备液，下标 d 表示稀释后溶液。",
+    "source": "Basic operation slides 39–41",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "sample-preparation",
+    "zh": "样品制备",
+    "en": "Sample preparation",
+    "category": "样品处理",
+    "definition": "把原始样品转化为适合测量形态并控制干扰、污染和损失的全部操作。",
+    "expanded": "可包括研磨、干燥、溶解、消解、富集、衍生化、分离与掩蔽。",
+    "properties": [
+      "通常决定分析总耗时",
+      "可能是误差与污染的主要来源"
+    ],
+    "confusions": "样品制备并非测量前的附属步骤，而是分析方法的一部分。",
+    "related": [
+      "representative-sample",
+      "dry-ashing",
+      "wet-digestion",
+      "microwave-digestion"
+    ],
+    "source": "Basic operation slides 42–62；Christian 7e §2.9–2.10",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "dry-ashing",
+    "zh": "干灰化",
+    "en": "Dry ashing",
+    "category": "样品制备",
+    "definition": "在空气或氧气中高温氧化有机基质并保留无机残渣的分解方法。",
+    "expanded": "残渣常用少量热浓盐酸或较浓盐酸浸取，再转入后续分析。",
+    "properties": [
+      "试剂少、空白较低",
+      "可能发生挥发损失和壁面滞留"
+    ],
+    "confusions": "高温并不保证所有元素定量保留。",
+    "related": [
+      "wet-digestion",
+      "microwave-digestion",
+      "sample-preparation"
+    ],
+    "source": "Basic operation slide 48；Christian 7e §2.10",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "wet-digestion",
+    "zh": "湿法消解",
+    "en": "Wet digestion",
+    "category": "样品制备",
+    "definition": "用氧化性无机酸和热量分解样品基质的处理方法。",
+    "expanded": "常用硝酸、硫酸及其组合；高氯酸体系效率高但危险性显著，必须使用专用设施。",
+    "properties": [
+      "速度较快、温度较低",
+      "试剂可能引入空白污染"
+    ],
+    "confusions": "湿法消解不是把样品简单溶于酸，而是破坏基质的化学分解过程。",
+    "related": [
+      "dry-ashing",
+      "microwave-digestion",
+      "sample-preparation"
+    ],
+    "source": "Basic operation slides 49–57；Christian 7e §2.10",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "microwave-digestion",
+    "zh": "微波消解",
+    "en": "Microwave digestion",
+    "category": "样品制备",
+    "definition": "在专用微波系统中利用介电加热加速酸消解的样品制备方法。",
+    "expanded": "密闭容器提高压力与酸的有效沸点，缩短时间并减少挥发损失；设备需保护磁控管并控制温度和压力。",
+    "properties": [
+      "偶极转动与离子传导产生热",
+      "通常比热板消解更快"
+    ],
+    "confusions": "家用微波炉不适合实验室小样品和酸消解。",
+    "related": [
+      "wet-digestion",
+      "sample-preparation"
+    ],
+    "source": "Basic operation slides 58–59；Christian 7e §2.10",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "calibration",
+    "zh": "校准",
+    "en": "Calibration",
+    "category": "测量基础",
+    "definition": "建立测量响应与已知参考量之间关系的过程。",
+    "expanded": "相对分析方法通常用已知浓度标准建立响应函数，再由未知样响应反求浓度。校准模型、标准范围与空白都会影响结果。",
+    "properties": [
+      "可以是线性或非线性",
+      "标准应覆盖未知样的合理范围"
+    ],
+    "confusions": "校准仪器不等于验证完整分析方法。",
+    "related": [
+      "linearity",
+      "sensitivity",
+      "standard-solution"
+    ],
+    "source": "Introduction slides 46–47；Basic operation slide 8",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "repeatability",
+    "zh": "重复性",
+    "en": "Repeatability",
+    "category": "方法验证",
+    "definition": "同一实验室在短时间内、相同方法与近似相同条件下重复测量的一致程度。",
+    "expanded": "它属于实验室内精密度的严格条件层级，通常要求相同人员、设备和操作条件。",
+    "properties": [
+      "条件变化最小",
+      "用标准偏差或 RSD 表示"
+    ],
+    "confusions": "Repeatability 不等于 ruggedness；后者有意跨日期、人员或设备。",
+    "related": [
+      "precision",
+      "reproducibility",
+      "method-validation"
+    ],
+    "source": "Basic operation slides 10、15；大纲纠错",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "reproducibility",
+    "zh": "重现性",
+    "en": "Reproducibility",
+    "category": "方法验证",
+    "definition": "不同实验室对同一均匀样品采用规定方法所得结果的一致程度。",
+    "expanded": "它纳入实验室、人员、仪器与环境等更广泛变化，用于评价方法跨场所转移后的表现。",
+    "properties": [
+      "实验室间精密度",
+      "变化条件比 repeatability 更广"
+    ],
+    "confusions": "中文文献中重复性与重现性的译法偶有混用，应结合条件定义判断。",
+    "related": [
+      "repeatability",
+      "precision",
+      "method-validation"
+    ],
+    "source": "Basic operation slides 10、15",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "weighing-by-difference",
+    "zh": "差量法称量",
+    "en": "Weighing by difference",
+    "category": "称量",
+    "definition": "用称量瓶转移样品前后的质量差得到实际转移样品质量的方法。",
+    "expanded": "该方法不要求一次转移到预定名义质量，只需准确记录转移前后读数，因此适合固体定量转移。",
+    "properties": [
+      "减少样品直接暴露与损失",
+      "实际质量由两次读数相减"
+    ],
+    "confusions": "差量法称量不要求把天平读数调到某个目标整数。",
+    "related": [
+      "analytical-balance",
+      "standard-solution"
+    ],
+    "source": "Christian 7e §2.1、§2.3",
+    "updated": "2026-09-15"
+  },
+  {
+    "slug": "titrant",
+    "zh": "滴定剂",
+    "en": "Titrant",
+    "category": "滴定",
+    "definition": "由滴定管加入、与被滴定物反应且浓度已知的溶液。",
+    "expanded": "酸碱滴定中滴定剂通常配成标准溶液，并且几乎总是强酸或强碱，以保证反应完全、计量关系明确。滴定剂的浓度与所消耗体积之积给出反应掉的物质的量。",
+    "properties": [
+      "装在滴定管中，由滴定管放出",
+      "浓度必须已知或经过标定",
+      "酸碱滴定中一般为强酸或强碱"
+    ],
+    "confusions": "滴定剂与被滴定物是角色区分而不是物质分类：同一瓶 NaOH 在测定盐酸时是滴定剂，在标定邻苯二甲酸氢钾时也是滴定剂，但被滴定物不同。",
+    "related": [
+      "titrand",
+      "acid-base-titration",
+      "standard-solution"
+    ],
+    "source": "Acid-Base Equilibria slide 2；Acid-Base Titration slide 2；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "titrand",
+    "zh": "被滴定物",
+    "en": "Titrand",
+    "category": "滴定",
+    "definition": "盛放在被滴定容器中、浓度待测的那一份溶液。",
+    "expanded": "被滴定物可以是强酸或强碱，也可以是弱酸或弱碱。弱酸弱碱被滴定时计量点 pH 由共轭酸碱对的水解决定，因此不等于 7。",
+    "properties": [
+      "浓度未知，是测定的目标",
+      "可为强酸、强碱、弱酸或弱碱",
+      "有时需要预先调节 pH 或掩蔽干扰"
+    ],
+    "confusions": "titrand 是溶液中的分析物，不等于瓶子里所有的东西；样品基质中的其他组分不参与计量关系，但可能干扰终点判断。",
+    "related": [
+      "titrant",
+      "acid-base-titration",
+      "equivalence-point"
+    ],
+    "source": "Acid-Base Equilibria slide 2；课堂笔记；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "acid-base-titration",
+    "zh": "酸碱滴定",
+    "en": "Acid-base titration",
+    "category": "滴定",
+    "definition": "以质子转移为基础，用酸性或碱性滴定剂滴定碱性或酸性被滴定物的滴定方法。",
+    "expanded": "酸碱滴定是四类滴定之一，另外三类是络合滴定、氧化还原滴定和沉淀滴定。滴定剂几乎总是强酸或强碱，被滴定物可以是强酸（强碱）也可以是弱酸（弱碱）。",
+    "properties": [
+      "唯一必需器材是把滴定剂送入被滴定液的装置",
+      "需要指示剂或仪器信号确定终点",
+      "溶液越稀，终点选择越关键"
+    ],
+    "confusions": "酸碱滴定不是用 pH 计测 pH；滴定测量的是到达计量点所需的滴定剂体积，pH 只是判断终点的信号之一。",
+    "related": [
+      "titrant",
+      "titrand",
+      "equivalence-point",
+      "titration-curve",
+      "indicator"
+    ],
+    "source": "Acid-Base Equilibria slide 3；Acid-Base Titration slides 3、14；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "complexometric-titration",
+    "zh": "络合滴定",
+    "en": "Complexometric titration",
+    "category": "滴定",
+    "definition": "以金属离子与配体形成络合物（螯合物）为基础的一类滴定方法。",
+    "expanded": "最广泛使用的络合剂是含氨羧基团的有机络合剂，其中 EDTA 应用最多。与酸碱滴定相比，络合滴定更复杂：无机络合剂常只有一个配位原子，会形成逐级络合物并存在逐级解离平衡，溶液中同时存在多种形式。",
+    "properties": [
+      "有机络合剂常含两个以上键合原子，形成低络合比的环状螯合物",
+      "螯合物稳定，一般不存在逐级络合",
+      "常需控制 pH 并使用金属指示剂"
+    ],
+    "confusions": "络合滴定与酸碱滴定在形式上相似（都有计量点、突跃和指示剂），但络合平衡受 pH 影响，不能把酸碱滴定的结论直接照搬。",
+    "related": [
+      "acid-base-titration",
+      "displacement-titration",
+      "redox-titration"
+    ],
+    "source": "Acid-Base Titration slide 52 备注；教材络合滴定章引言",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "redox-titration",
+    "zh": "氧化还原滴定",
+    "en": "Redox titration",
+    "category": "滴定",
+    "definition": "以电子转移反应为基础，用氧化剂或还原剂作滴定剂的滴定方法。",
+    "expanded": "常见体系包括高锰酸钾法、碘量法和重铬酸钾法。许多氧化还原反应动力学较慢，因此返滴定与间接滴定在氧化还原体系中尤其常见。",
+    "properties": [
+      "滴定剂为氧化剂或还原剂",
+      "终点可由指示剂、自身指示剂或电位法确定",
+      "反应速率往往是限制因素"
+    ],
+    "confusions": "氧化还原滴定中计量关系由电子得失数决定，同一物质在不同反应中的当量可能不同，不能只凭化学式判断。",
+    "related": [
+      "acid-base-titration",
+      "back-titration",
+      "precipitation-titration"
+    ],
+    "source": "Acid-Base Titration slides 3、8；教材氧化还原滴定章引言",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "precipitation-titration",
+    "zh": "沉淀滴定",
+    "en": "precipitation titration",
+    "category": "沉淀滴定",
+    "definition": "以生成难溶沉淀的反应为基础的容量分析方法，通过测量沉淀反应所消耗的滴定剂体积来确定待测组分含量。",
+    "expanded": "沉淀滴定要求反应迅速、定量完全，且有合适的终点指示方法。最有实用价值的是以 AgNO₃ 为标准溶液的银量法，包括莫尔法、佛尔哈德法和法扬司法。许多可用重量法完成的分析改用沉淀滴定后操作更方便，但精密度略低。",
+    "properties": [
+      "滴定反应必须迅速且定量完全",
+      "需要合适的终点检测手段",
+      "银量法是最主要的应用",
+      "比重量法快捷，但精密度稍低"
+    ],
+    "confusions": "沉淀滴定与重量分析共用同一套沉淀平衡，区别在于测量的物理量是体积而非质量。",
+    "related": [
+      "argentometric-titration",
+      "titration-curve",
+      "mohr-method",
+      "volhard-method",
+      "fajans-method"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "conjugate-acid-base-pair",
+    "zh": "共轭酸碱对",
+    "en": "Conjugate acid-base pair",
+    "category": "酸碱理论",
+    "definition": "在质子理论中彼此相差一个质子的酸与碱组成的一对物质。",
+    "expanded": "酸 AH 放出质子后变成它的共轭碱 A⁻，碱 B 接受质子后变成它的共轭酸 BH⁺。溶液里不存在游离质子，质子给体必须同时遇到质子受体，因此实际反应写为 AH + B ⇌ BH⁺ + A⁻。",
+    "properties": [
+      "酸越强，其共轭碱越弱；碱越强，其共轭酸越弱",
+      "共轭酸碱对的 Ka 与 Kb 满足 KaKb = Kw",
+      "同一物质可同时出现在酸表和碱表中（两性物质）"
+    ],
+    "confusions": "共轭关系是相差一个质子，不是结构相似；H₂PO₄⁻ 与 HPO₄²⁻ 是一对，而 H₃PO₄ 与 HPO₄²⁻ 相差两个质子，不构成共轭对。",
+    "related": [
+      "bronsted-lowry-theory",
+      "ka",
+      "kb",
+      "amphiprotic-species"
+    ],
+    "source": "Acid-Base Equilibria slides 6–8、27；课堂笔记；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "bronsted-lowry-theory",
+    "zh": "Brønsted–Lowry 质子理论",
+    "en": "Brønsted–Lowry theory",
+    "category": "酸碱理论",
+    "definition": "把酸定义为质子给体、碱定义为质子受体的酸碱理论。",
+    "expanded": "该理论不要求溶剂可电离，因此可应用于苯、二氧六环等非电离性溶剂中的酸碱反应。它用共轭酸碱对统一描述酸碱关系，也是本课程后文全部计算的语言基础。",
+    "properties": [
+      "酸 = proton donor，碱 = proton acceptor",
+      "反应写作 AH + B ⇌ BH⁺ + A⁻",
+      "酸碱强度是相对于溶剂而言的"
+    ],
+    "confusions": "质子理论没有取代 Arrhenius 理论，而是扩大了适用范围；讨论水溶液中的强酸强碱时两者结论一致。",
+    "related": [
+      "conjugate-acid-base-pair",
+      "lewis-theory",
+      "amphiprotic-species"
+    ],
+    "source": "Acid-Base Equilibria slides 6–7；课堂笔记；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "lewis-theory",
+    "zh": "Lewis 电子理论",
+    "en": "Lewis theory",
+    "category": "酸碱理论",
+    "definition": "把酸定义为电子对受体、碱定义为电子对给体的酸碱理论。",
+    "expanded": "Lewis 酸与碱之间不发生原子交换，而是直接结合形成配位共价键。Lewis 碱常含氧或氮作为电子对给体，例如 BF₃ + :NH₃ → F₃B←NH₃。",
+    "properties": [
+      "酸 = electron-pair acceptor",
+      "碱 = electron-pair donor",
+      "与质子无关，可描述无质子的酸碱反应"
+    ],
+    "confusions": "Lewis 酸不一定是 Brønsted 酸：BF₃ 没有可给出的质子，但在 Lewis 意义上是酸。判断时先看有没有质子转移。",
+    "related": [
+      "bronsted-lowry-theory",
+      "conjugate-acid-base-pair"
+    ],
+    "source": "Acid-Base Equilibria slide 9；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "amphiprotic-species",
+    "zh": "两性物质",
+    "en": "Amphiprotic species",
+    "category": "酸碱理论",
+    "definition": "既能给出质子（作为酸）又能接受质子（作为碱）的物质。",
+    "expanded": "按 Brønsted 理论，H₂PO₄⁻、HPO₄²⁻、HCO₃⁻、氨基酸和蛋白质都属于两性物质。酸式盐在水溶液中同时进行酸式解离和碱式水解，溶液的酸碱性由两个方向的相对强弱决定。",
+    "properties": [
+      "同一物质在酸表和碱表中都出现",
+      "酸式盐溶液的 pH 可由相邻两级 pKa 估算",
+      "氨基酸以内盐（两性离子）形式存在"
+    ],
+    "confusions": "两性物质不等于中性物质：NaH₂PO₄ 溶液 pH 约 4.5，明显偏酸；Na₂HPO₄ 溶液 pH 约 9.7，明显偏碱。",
+    "related": [
+      "amphoteric-salt",
+      "conjugate-acid-base-pair",
+      "distribution-fraction"
+    ],
+    "source": "Acid-Base Equilibria slides 7、55–59；教材 §10.2",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "autoprotolysis",
+    "zh": "质子自递反应",
+    "en": "Autoprotolysis",
+    "category": "酸碱平衡",
+    "definition": "溶剂自身电离，给出该溶剂特征的阳离子和阴离子的过程。",
+    "expanded": "水的自递反应 2H₂O ⇌ H₃O⁺ + OH⁻ 是整个水溶液酸碱体系的基准，其常数 Kw 在 25 °C 时约为 1.0 × 10⁻¹⁴。其他可电离溶剂（如液氨）也有各自的质子自递反应。",
+    "properties": [
+      "是溶剂自身的性质，与外加溶质无关",
+      "常数随温度升高而增大",
+      "决定了该溶剂中中性对应的 pH"
+    ],
+    "confusions": "质子自递是溶剂分子之间的反应，不要与溶质的水解混淆；NaOAc 使溶液显碱性的原因是 Ac⁻ 水解，不是水的自递增强。",
+    "related": [
+      "kw",
+      "ph-scale",
+      "amphiprotic-species"
+    ],
+    "source": "Acid-Base Equilibria slides 10–11；教材 §9.6",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "ph-scale",
+    "zh": "pH 标度",
+    "en": "pH scale",
+    "category": "酸碱平衡",
+    "definition": "用氢离子浓度的负对数表示溶液酸度的标度，pH = −log[H⁺]。",
+    "expanded": "约定 pX = −log X，因此 pOH = −log[OH⁻]，pKw = pH + pOH。25 °C 时 pKw = 14.00；37 °C 时 pKw = 13.60，中性点相应移到 pH 6.80。浓酸的 pH 可以为负，例如 10 mol·L⁻¹ HCl 的 pH 为 −1。",
+    "properties": [
+      "把跨越十几个数量级的浓度压缩到对数刻度",
+      "中性对应 pH = pKw/2，随温度变化",
+      "极稀溶液中必须考虑水自递的贡献"
+    ],
+    "confusions": "pH 7 并不总是中性。判断酸碱性要以当时温度下的 pKw/2 为参照；体温下血液 pH 7.40 比中性点高 0.60 个单位。",
+    "related": [
+      "kw",
+      "autoprotolysis",
+      "buffer-solution"
+    ],
+    "formula": "pH = −log[H<sup>+</sup>] &nbsp; pOH = −log[OH<sup>−</sup>] &nbsp; pH + pOH = p<i>K</i><sub>w</sub>",
+    "derivation": "对 Kw = [H⁺][OH⁻] 两边取负对数，由 −log(ab) = −log a − log b 得 pKw = pH + pOH。",
+    "notation": "[H⁺]、[OH⁻] 为摩尔浓度；pKw 在 25 °C 为 14.00，37 °C 为 13.60。",
+    "source": "Acid-Base Equilibria slides 12–20；教材 §9.6、生理 pH 章节",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "kw",
+    "zh": "水的离子积",
+    "en": "Ion product of water, Kw",
+    "category": "酸碱平衡",
+    "definition": "水的质子自递反应的热力学平衡常数，稀溶液中近似表示为 Kw = [H⁺][OH⁻]。",
+    "expanded": "25 °C 时 Kw ≈ 1.0 × 10⁻¹⁴，随温度升高明显增大（30 °C 约 1.468 × 10⁻¹⁴，50 °C 约 5.74 × 10⁻¹⁴）；0 °C 时仅约 0.113 × 10⁻¹⁴。它是自递常数的浓度近似形式。",
+    "properties": [
+      "纯水中 [H⁺] = [OH⁻] = √Kw",
+      "是温度的函数",
+      "与 Ka、Kb 一起构成共轭酸碱对的换算关系"
+    ],
+    "confusions": "严格定义的 Kw 用活度表示；以浓度代替活度只在稀溶液中成立，离子强度升高时必须回到活度。",
+    "related": [
+      "autoprotolysis",
+      "ka",
+      "kb",
+      "ph-scale"
+    ],
+    "formula": "<i>K</i><sub>w</sub> = <i>a</i><sub>H⁺</sub><i>a</i><sub>OH⁻</sub> ≈ [H<sup>+</sup>][OH<sup>−</sup>] = 1.0 × 10<sup>−14</sup> (25 °C)",
+    "derivation": "由水的自递反应 H₂O ⇌ H⁺ + OH⁻ 写平衡常数；稀溶液中水的活度近似为 1，因此只剩两个离子的活度项。",
+    "notation": "a 表示活度；[ ] 表示摩尔浓度。",
+    "source": "Acid-Base Equilibria slide 11；教材 §9.6",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "ka",
+    "zh": "酸解离常数",
+    "en": "Acid dissociation constant, Ka",
+    "category": "酸碱平衡",
+    "definition": "弱酸在水溶液中解离平衡的平衡常数，是酸强度的定量量度。",
+    "expanded": "对 HA + H₂O ⇌ A⁻ + H₃O⁺，Ka = [H⁺][A⁻]/[HA]（水的活度为常数，并入 Ka）。Ka 越大，分子解离越多，酸性越强。强酸（无机酸）的 Ka 极大，弱酸（多数有机酸）的 Ka 较小。",
+    "properties": [
+      "Ka 越大酸性越强",
+      "只与物质本性和温度有关",
+      "可由滴定曲线中点（pH = pKa）实验测定"
+    ],
+    "confusions": "Ka 不是 pH。Ka 描述酸本身交出质子的倾向，pH 描述溶液当前的酸度：少量强酸就能给出很低的 pH，而同浓度的弱酸给不出。",
+    "related": [
+      "kb",
+      "kw",
+      "buffer-solution",
+      "polyprotic-acid"
+    ],
+    "formula": "<i>K</i><sub>a</sub> = [H<sup>+</sup>][A<sup>−</sup>]/[HA] &nbsp;&nbsp; p<i>K</i><sub>a</sub> = −log <i>K</i><sub>a</sub>",
+    "derivation": "对 HA + H₂O ⇌ A⁻ + H₃O⁺ 写平衡常数，并把水的活度（常数）并入 Ka。",
+    "notation": "HA 为未解离酸，A⁻ 为共轭碱；pKa 越小酸性越强。",
+    "source": "Acid-Base Equilibria slides 22–24；教材 §9.3",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "kb",
+    "zh": "碱常数",
+    "en": "Base constant, Kb",
+    "category": "酸碱平衡",
+    "definition": "弱碱从水中夺取质子的水解平衡常数。",
+    "expanded": "对 B + H₂O ⇌ BH⁺ + OH⁻，Kb = [BH⁺][OH⁻]/[B]。Kb 越大碱性越强。它同时也就是该弱碱对应盐的水解常数 KH。",
+    "properties": [
+      "强碱（金属氢氧化物）的 Kb 极大",
+      "与共轭酸的 Ka 通过 KaKb = Kw 相联系",
+      "氨的 Kb = 1.75 × 10⁻⁵（25 °C）"
+    ],
+    "confusions": "氨的 Kb 数值恰好与醋酸的 Ka 相同，这纯属巧合，两者之间没有任何对应关系。",
+    "related": [
+      "ka",
+      "kw",
+      "conjugate-acid-base-pair"
+    ],
+    "formula": "<i>K</i><sub>b</sub> = [BH<sup>+</sup>][OH<sup>−</sup>]/[B] &nbsp;&nbsp; p<i>K</i><sub>a</sub> + p<i>K</i><sub>b</sub> = p<i>K</i><sub>w</sub>",
+    "derivation": "弱碱水解式与水的自递式相加；或在弱酸解离式中把 [H⁺] 换成 Kw/[OH⁻]。",
+    "notation": "B 为未质子化碱，BH⁺ 为其共轭酸。",
+    "source": "Acid-Base Equilibria slides 25–26；教材 §9.4",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "common-ion-effect",
+    "zh": "同离子效应",
+    "en": "common ion effect",
+    "category": "沉淀平衡",
+    "definition": "在难溶电解质饱和溶液中加入含有相同离子的强电解质，使溶解平衡左移、溶解度下降的现象。",
+    "expanded": "同离子效应是重量分析中加入过量沉淀剂的理论依据。一般过量 50%–100% 即可使溶解损失降到可忽略。但过量太多会引发盐效应或络合效应，反而使溶解度回升。",
+    "properties": [
+      "使溶解度下降，是正效应的抑制手段",
+      "是加入过量沉淀剂的依据",
+      "过量过多时会被盐效应与络合效应抵消",
+      "定量计算时须考虑活度系数"
+    ],
+    "confusions": "同离子效应与盐效应方向相反：前者使溶解度下降，后者使溶解度上升，二者常同时存在。",
+    "related": [
+      "solubility-product",
+      "diverse-ion-effect",
+      "washing-solution",
+      "molar-solubility"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "buffer-solution",
+    "zh": "缓冲溶液",
+    "en": "Buffer solution",
+    "category": "酸碱平衡",
+    "definition": "在加入少量酸、少量碱或被稀释时能抵抗 pH 变化的溶液。",
+    "expanded": "缓冲液通常由弱酸与其共轭碱，或弱碱与其共轭酸按预定浓度或比例组成。加入强酸时 A⁻ 与 H⁺ 结合成 HA；加入强碱时 HA 与 OH⁻ 反应生成 A⁻，因此 [A⁻]/[HA] 比值变化很小。稀释时分子分母同比减小，比值不变，pH 几乎不变。",
+    "properties": [
+      "pH ≈ pKa + log([A⁻]/[HA])",
+      "在 pH = pKa 处缓冲容量最大",
+      "实用范围为 pKa ± 1"
+    ],
+    "confusions": "缓冲液的 pH 由共轭酸碱对的比例决定，而不是由浓度决定；改变总浓度只改变缓冲能力，不改变 pH。",
+    "related": [
+      "buffer-capacity",
+      "common-ion-effect",
+      "henderson-hasselbalch",
+      "physiological-buffer"
+    ],
+    "source": "Acid-Base Equilibria slides 28–35；课堂笔记；教材 §9.8–9.9",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "henderson-hasselbalch",
+    "zh": "Henderson–Hasselbalch 方程",
+    "en": "Henderson-Hasselbalch equation",
+    "category": "酸碱平衡",
+    "definition": "由共轭酸碱对的浓度比直接计算缓冲溶液 pH 的方程。",
+    "expanded": "对弱酸/共轭碱体系 pH = pKa + log([A⁻]/[HA])；对弱碱/共轭酸体系 pOH = pKb + log([BH⁺]/[B])，或写成 pH = pKw − pKb + log([B]/[BH⁺])。中性酸 HA 与阳离子酸 HA⁺（如 NH₄⁺）可套用同一形式。",
+    "properties": [
+      "比值为 1 时 pH = pKa",
+      "比值变化 10 倍，pH 变化 1 个单位",
+      "是滴定曲线第二区域的直接计算工具"
+    ],
+    "confusions": "方程中的浓度应为平衡浓度；只有同离子效应使解离量很小时，才可以用分析浓度代替。",
+    "related": [
+      "buffer-solution",
+      "ka",
+      "kb",
+      "titration-curve"
+    ],
+    "formula": "pH = p<i>K</i><sub>a</sub> + log([A<sup>−</sup>]/[HA])",
+    "derivation": "由 Ka = [H⁺][A⁻]/[HA] 解出 [H⁺]，再取负对数并整理。",
+    "notation": "[A⁻] 为共轭碱浓度，[HA] 为酸浓度；log 为常用对数。",
+    "source": "Acid-Base Equilibria slides 30–34；教材 §9.8",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "buffer-capacity",
+    "zh": "缓冲容量",
+    "en": "Buffer capacity, β",
+    "category": "酸碱平衡",
+    "definition": "使溶液 pH 改变一个单位所需加入的强酸或强碱的量，衡量缓冲溶液抗 pH 变化的能力。",
+    "expanded": "定义为 β = dCB/dpH = −dCHA/dpH。对浓度大于 0.001 mol·L⁻¹ 的一元弱酸/共轭碱体系，β ≈ 2.303·CHA·CA⁻/(CHA + CA⁻)。当 [HA] = [A⁻]（即 pH = pKa）时 β 取最大值；比值变化 10 倍，pH 只变化 1。",
+    "properties": [
+      "在 pH = pKa 处最大",
+      "随缓冲对总浓度增大而增大",
+      "碱性缓冲对的最大值出现在 pOH = pKb"
+    ],
+    "confusions": "缓冲容量与缓冲液的 pH 不是一回事：一个 pH 恰好等于 pKa 的高浓度缓冲液容量很大，稀释后 pH 不变但容量显著下降。",
+    "related": [
+      "buffer-solution",
+      "henderson-hasselbalch",
+      "common-ion-effect"
+    ],
+    "formula": "β = d<i>C</i><sub>B</sub>/dpH = −d<i>C</i><sub>HA</sub>/dpH &nbsp;≈&nbsp; 2.303 <i>C</i><sub>HA</sub><i>C</i><sub>A⁻</sub>/(<i>C</i><sub>HA</sub>+<i>C</i><sub>A⁻</sub>)",
+    "derivation": "对 Henderson–Hasselbalch 方程求导，把 pH 对加入强碱量的变化写成微分形式。",
+    "notation": "CB、CHA 为使 pH 改变 dpH 所需强碱或强酸的浓度（mol·L⁻¹）。(注：课件原文误印为 CHA。)",
+    "source": "Acid-Base Equilibria slides 36–38；教材 §9.9",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "polyprotic-acid",
+    "zh": "多元酸",
+    "en": "Polyprotic acid",
+    "category": "酸碱平衡",
+    "definition": "能给出一个以上质子的酸；多元碱则能接受一个以上质子。",
+    "expanded": "多元酸逐级解离，每一步都有独立的平衡常数，且 Ka₁ > Ka₂ > Ka₃：负电荷增加使下一个质子更难离去。若相邻两级常数之比大于 10³，各质子可以在滴定中分别对待；要得到良好的终点突跃，则要求 Ka₁ ≥ 10⁴ × Ka₂。",
+    "properties": [
+      "解离逐级进行，逐级常数依次减小",
+      "相差 10³ 以上可以分辨",
+      "相邻共轭酸碱对各自构成缓冲体系"
+    ],
+    "confusions": "多元酸的分布不是要么全解离要么全不解离：在任意 pH 下多种形态同时存在，比例由分布分数决定。",
+    "related": [
+      "distribution-fraction",
+      "ka",
+      "amphoteric-salt",
+      "titration-curve"
+    ],
+    "source": "Acid-Base Equilibria slides 42–46；Acid-Base Titration slides 38–42；教材 §10.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "distribution-fraction",
+    "zh": "分布分数",
+    "en": "Distribution fraction, α",
+    "category": "酸碱平衡",
+    "definition": "某一种存在形态的平衡浓度占分析物总浓度的分数。",
+    "expanded": "以磷酸为例，α₀ = [H₃PO₄]/C、α₁ = [H₂PO₄⁻]/C、α₂ = [HPO₄²⁻]/C、α₃ = [PO₄³⁻]/C，且四者之和恒为 1。把每个形态都用 [H₃PO₄] 表示后取倒数并通分，可得分母相同的一组表达式。",
+    "properties": [
+      "分母 D = [H⁺]³ + Ka₁[H⁺]² + Ka₁Ka₂[H⁺] + Ka₁Ka₂Ka₃",
+      "只与 pH 和各级 Ka 有关，与总浓度无关",
+      "是绘制分布图（α–pH 图）的依据"
+    ],
+    "confusions": "分布分数与解离度不是同一个概念：解离度描述有多少比例解离了，分布分数描述总浓度中有多少以某一种形态存在。",
+    "related": [
+      "polyprotic-acid",
+      "system-point",
+      "amphiprotic-species"
+    ],
+    "formula": "α<sub>0</sub> = [H<sup>+</sup>]<sup>3</sup>/<i>D</i> &nbsp; α<sub>1</sub> = <i>K</i><sub>a1</sub>[H<sup>+</sup>]<sup>2</sup>/<i>D</i> &nbsp; α<sub>2</sub> = <i>K</i><sub>a1</sub><i>K</i><sub>a2</sub>[H<sup>+</sup>]/<i>D</i> &nbsp; α<sub>3</sub> = <i>K</i><sub>a1</sub><i>K</i><sub>a2</sub><i>K</i><sub>a3</sub>/<i>D</i>",
+    "derivation": "把各形态用累积常数与 [H⁺] 表示、代入总浓度后取倒数，再通分并乘以 [H⁺]³。",
+    "notation": "D 为共同分母；下标 0–3 依次对应失去 0–3 个质子的形态。",
+    "source": "Acid-Base Equilibria slides 47–54；教材 §10.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "system-point",
+    "zh": "体系点",
+    "en": "System point",
+    "category": "酸碱平衡",
+    "definition": "分布分数图中相邻两条分布曲线的交点，该点满足 pH = pKa 且共轭酸与共轭碱浓度相等。",
+    "expanded": "正磷酸的三个体系点分别在 pH 1.96、7.12 和 12.32。体系点两侧分别是各级缓冲对的最佳工作区间，因此分布图可以直接用来判断在某个 pH 下该用哪一对做缓冲。",
+    "properties": [
+      "满足 pH = pKa、两形态浓度相等（α = 0.50）",
+      "与滴定曲线的中点（V = ½Veq）相对应",
+      "是选择缓冲对和指示剂的共同依据"
+    ],
+    "confusions": "体系点是分布图上的概念，不能与滴定曲线上的计量点混用：计量点处产物的形态通常不是两形态等量，而是只有一种形态。",
+    "related": [
+      "distribution-fraction",
+      "polyprotic-acid",
+      "buffer-solution"
+    ],
+    "source": "Acid-Base Equilibria slide 54；教材 §10.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "amphoteric-salt",
+    "zh": "两性盐（酸式盐）",
+    "en": "Amphoteric salt",
+    "category": "酸碱平衡",
+    "definition": "既能作为弱酸解离、又能作为 Brønsted 碱水解的盐。",
+    "expanded": "磷酸体系中 H₃PO₄ 只能解离、PO₄³⁻ 只能水解，而 H₂PO₄⁻ 与 HPO₄²⁻ 两条路都能走。以 HA⁻ 为例的质子条件为 [H⁺] + [H₃A] = [A²⁻] + [OH⁻]，简化后 [H⁺] ≈ √(Ka₁Ka₂)，即 pH ≈ ½(pKa₁ + pKa₂)，与浓度无关。",
+    "properties": [
+      "H₂PO₄⁻ 显酸性，pH ≈ ½(1.96+7.12) = 4.54",
+      "HPO₄²⁻ 显碱性，pH ≈ ½(7.12+12.32) = 9.72",
+      "pH 与自身浓度无关"
+    ],
+    "confusions": "判断酸式盐显酸还是显碱，必须比较它自身的酸式解离常数与它自身的水解常数：H₂PO₄⁻ 的 Kb（= Kw/Ka₁ = 9.1 × 10⁻¹³）与 Ka₂（7.5 × 10⁻⁸）比；HPO₄²⁻ 的 Kb（= Kw/Ka₂ = 1.3 × 10⁻⁷）与 Ka₃（4.8 × 10⁻¹³）比。",
+    "related": [
+      "amphiprotic-species",
+      "polyprotic-acid",
+      "distribution-fraction"
+    ],
+    "formula": "[H<sup>+</sup>] ≈ √(<i>K</i><sub>a1</sub><i>K</i><sub>a2</sub>) &nbsp;⇒&nbsp; pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>)",
+    "derivation": "由质子条件 [H⁺] + [H₃A] = [A²⁻] + [OH⁻]，在 Ka₁Kw ≪ Ka₁Ka₂C 且 Ka₁ ≪ C 时略去小项后整理。",
+    "notation": "HA⁻ 为两性离子；Ka₁、Ka₂ 为相邻两级解离常数。",
+    "source": "Acid-Base Equilibria slides 55–59；教材 §10.2",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "physiological-buffer",
+    "zh": "生理缓冲体系",
+    "en": "Physiological buffer system",
+    "category": "酸碱平衡",
+    "definition": "维持生物体液（尤其是血液）pH 稳定的多组分缓冲体系。",
+    "expanded": "血液 pH 稳定在 7.35–7.45。对 CO₂ 的缓冲能力大致分配为：血红蛋白与氧合血红蛋白 62%，H₂PO₄⁻/HPO₄²⁻ 22%，血浆蛋白 11%，HCO₃⁻ 体系 5%。其中碳酸氢盐体系浓度虽小，却受呼吸速率控制，是实际调控的核心。",
+    "properties": [
+      "37 °C 时碳酸的 pKa₁ = 6.10，正常 [HCO₃⁻] ≈ 26.0 mmol·L⁻¹、[CO₂] ≈ 1.3 mmol·L⁻¹",
+      "±0.3 个 pH 单位的变化已属极端",
+      "蛋白质上的羧基与氨基分别是弱酸和弱碱"
+    ],
+    "confusions": "比例最大的组分不一定是最重要的调控组分。血红蛋白贡献最大缓冲能力，而碳酸氢盐体系凭借可快速调节的 CO₂ 分压承担主要调控作用。",
+    "related": [
+      "buffer-solution",
+      "henderson-hasselbalch",
+      "ph-scale"
+    ],
+    "source": "Acid-Base Equilibria slides 13、60–63；教材 §9.6、§10.3",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "equivalence-point",
+    "zh": "计量点",
+    "en": "Equivalence point",
+    "category": "滴定",
+    "definition": "滴定剂与被滴定物恰好按化学计量比完全反应的那一点，是理论上的滴定终点。",
+    "expanded": "在计量点处 n(滴定剂) 与 n(被滴定物) 按计量系数相等，反应在理论上完成，被滴定物分数 f = 1。强酸强碱滴定的计量点为 pH 7.00（25 °C）；弱酸强碱或弱碱强酸滴定的计量点 pH 不等于 7。",
+    "properties": [
+      "理论点，无法直接观察",
+      "Veq 与滴定剂浓度之积给出反应掉的物质的量",
+      "附近 pH 变化最快，滴定曲线斜率最大"
+    ],
+    "confusions": "计量点不是实验能看到的点；我们只能通过终点去逼近它，两者的差就是滴定误差。",
+    "related": [
+      "end-point",
+      "titration-error",
+      "titration-curve"
+    ],
+    "source": "Acid-Base Titration slides 4–5、15、18；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "end-point",
+    "zh": "终点",
+    "en": "End point",
+    "category": "滴定",
+    "definition": "实验观察到的停止滴定的那一点，通常由指示剂变色判定。",
+    "expanded": "终点由人为选择，因此操作中到达终点时加入的滴定剂量往往已经略微超过计量点。滴定分析的全部技巧就是把终点选在计量点附近的陡峭段上。",
+    "properties": [
+      "可观察，依赖指示剂或仪器信号",
+      "终点体积常略大于 Veq",
+      "选择依据是指示剂的变色区间"
+    ],
+    "confusions": "终点不等于计量点。例如 HCl 用 NaOH 滴定时选 pH 11.6 作终点会带来 +8.28% 的误差，而选 pH 6.8 时误差仅约 2 × 10⁻⁴%。",
+    "related": [
+      "equivalence-point",
+      "titration-error",
+      "indicator"
+    ],
+    "source": "Acid-Base Titration slides 5、12、15；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "titration-error",
+    "zh": "滴定误差",
+    "en": "Titration error",
+    "category": "滴定",
+    "definition": "终点体积与计量点体积之差所引起的相对误差。",
+    "expanded": "误差大小取决于终点与计量点的接近程度、滴定反应的完全程度以及指示剂用量。课件用强酸强碱体系给出对照：终点 pH 6.8 时误差约 −2 × 10⁻⁴%，终点 pH 11.6 时误差达 +8.28%。",
+    "properties": [
+      "可通过选择合适指示剂压到可忽略",
+      "溶液越稀，突跃越短，误差控制越难",
+      "指示剂本身消耗滴定剂也会引入误差"
+    ],
+    "confusions": "把终点定在突跃之外，无论操作多仔细都会产生系统误差；这类误差不能靠重复测量取平均来消除。",
+    "related": [
+      "end-point",
+      "equivalence-point",
+      "indicator",
+      "titration-curve"
+    ],
+    "source": "Acid-Base Titration slides 5、12；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "direct-titration",
+    "zh": "直接滴定",
+    "en": "Direct titration",
+    "category": "滴定方式",
+    "definition": "滴定剂直接与被测物反应并滴定到终点的滴定方式。",
+    "expanded": "这是最基本的方式，要求反应快速、完全、计量关系明确，并且有合适的终点判定手段。课件示例：用 SCN⁻ 滴定 Ag⁺，预先加入少量 Fe³⁺，终点时生成红色的 Fe(SCN)²⁺ 络合物作为信号。",
+    "properties": [
+      "操作最简单、步骤最少",
+      "对反应速率和完全程度要求最高",
+      "必须有合适的指示剂或终点信号"
+    ],
+    "confusions": "直接滴定不是唯一的滴定方式。当反应太慢、没有合适指示剂或没有合适的直接反应时，应改用返滴定、置换滴定或先转化成可滴定物质。",
+    "related": [
+      "back-titration",
+      "displacement-titration",
+      "titration-curve"
+    ],
+    "source": "Acid-Base Titration slide 7；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "back-titration",
+    "zh": "返滴定",
+    "en": "Back titration",
+    "category": "滴定方式",
+    "definition": "先加入已知过量的试剂与样品反应，待反应完全后再用另一种标准溶液滴定剩余试剂的滴定方式。",
+    "expanded": "当直接反应太慢或没有合适指示剂时使用。课件示例：甲醛与 I₃⁻ 的反应太慢，先加入过量 I₃⁻ 让其反应完全，再用 S₂O₃²⁻ 滴定剩余的 I₃⁻（淀粉为指示剂）。结果由加入量减去剩余量得到。",
+    "properties": [
+      "适用于反应慢、终点不明确或挥发损失的情形",
+      "计算式为 n(分析物) = n(加入过量试剂) − n(回滴所耗)",
+      "过量试剂必须能被准确滴定"
+    ],
+    "confusions": "返滴定多测一次体积，误差来源比直接滴定多一项；只有当直接滴定不可行时才采用。",
+    "related": [
+      "direct-titration",
+      "displacement-titration",
+      "kjeldahl-method"
+    ],
+    "formula": "<i>n</i><sub>分析物</sub> = <i>n</i><sub>加入的过量试剂</sub> − <i>n</i><sub>回滴所耗</sub>",
+    "derivation": "过量试剂按化学计量与分析物反应，剩余部分被回滴测定；两部分之差即与分析物反应的量。",
+    "notation": "n 为物质的量（mmol 或 mol），计算时保持单位一致。",
+    "source": "Acid-Base Titration slides 8、49–51；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "displacement-titration",
+    "zh": "置换滴定",
+    "en": "Displacement titration",
+    "category": "滴定方式",
+    "definition": "让分析物置换出等物质的量的另一种可滴定物质，再滴定该物质的滴定方式。",
+    "expanded": "适用于分析物本身没有合适指示剂的情形。课件示例：Ca²⁺ 与 EDTA 的直接滴定无合适指示剂，改为先让 Ca²⁺ 与过量 MgY²⁻ 反应（Ca²⁺ + MgY²⁻ ⇌ CaY²⁻ + Mg²⁺），释放出与 Ca²⁺ 等量的 Mg²⁺，再用 EBT 作指示剂滴定 Mg²⁺。",
+    "properties": [
+      "被置换出的物质的量等于分析物的量（注意计量系数）",
+      "反应方向由络合物稳定性差异决定",
+      "适用于没有合适金属指示剂的体系"
+    ],
+    "confusions": "置换滴定成立的前提是置换是定量的：若两个络合物稳定性相近，置换不完全，结果会偏低。",
+    "related": [
+      "complexometric-titration",
+      "direct-titration",
+      "back-titration"
+    ],
+    "source": "Acid-Base Titration slide 9；教材络合滴定章",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "titration-curve",
+    "zh": "沉淀滴定曲线",
+    "en": "precipitation titration curve",
+    "category": "沉淀滴定",
+    "definition": "以滴定剂体积为横坐标、以被测离子浓度的负对数 pX 为纵坐标绘制的曲线，用于描述滴定过程中浓度的变化规律。",
+    "expanded": "曲线分为三段：滴定前由初始浓度直接决定；计量点前由剩余被测离子决定，沉淀解离的贡献可忽略；计量点时为难溶盐的饱和溶液，[X⁻] = √Ksp；计量点后由过量滴定剂和 Ksp 共同决定。突跃范围与 Ksp 大小直接相关。",
+    "properties": [
+      "以 pX 对滴定剂体积作图",
+      "三段式结构与酸碱滴定完全平行",
+      "Ksp 越小突跃越大",
+      "可用统一二次方程完整求解"
+    ],
+    "confusions": "计量点前沉淀的少量解离通常可以忽略，但接近计量点时不能忽略，此处必须用饱和溶液的 Ksp 关系计算。",
+    "related": [
+      "precipitation-titration",
+      "argentometric-titration",
+      "stepwise-precipitation"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "neutralization-reaction",
+    "zh": "中和反应",
+    "en": "Neutralization reaction",
+    "category": "滴定",
+    "definition": "酸与碱反应生成盐和水的化学反应。",
+    "expanded": "酸碱滴定的化学基础。强酸与强碱的中和反应实质是 H⁺ + OH⁻ → H₂O；弱酸或弱碱参与时还需考虑解离平衡，因此计量点 pH 不再等于 7。",
+    "properties": [
+      "产物为盐和水",
+      "强酸强碱的中和反应实质是质子与氢氧根结合",
+      "放热反应，但滴定计算只关心计量关系"
+    ],
+    "confusions": "中和反应不等于 pH 变成 7。强酸与弱碱、弱酸与强碱的中和反应在计量点处溶液分别显酸性和碱性。",
+    "related": [
+      "equivalence-point",
+      "acid-base-titration",
+      "indicator"
+    ],
+    "source": "Acid-Base Titration slides 14、18；教材 §9.1",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "indicator",
+    "zh": "指示剂",
+    "en": "Indicator",
+    "category": "滴定",
+    "definition": "本身有颜色的弱酸或弱碱，其电离态与非电离态颜色差别明显，用于目视判断滴定终点。",
+    "expanded": "以弱酸型 HIn 为例：HIn ⇌ H⁺ + In⁻，pH = pKIn + log([In⁻]/[HIn])。当某一种颜色的强度是另一种的 10 倍时人眼只能分辨出一种颜色，因此 [In⁻]/[HIn] = 1/10 时看到酸色、10/1 时看到碱色，变色范围约为 pKIn ± 1，即 2 个 pH 单位。",
+    "properties": [
+      "变色范围约 2 个 pH 单位",
+      "范围中点处 pH = pKIn",
+      "用量应尽可能少",
+      "溶液越稀越要谨慎选择"
+    ],
+    "confusions": "指示剂本身也参与酸碱反应，会消耗少量滴定剂；用量过多不仅使颜色变化迟钝，还会让自身对 pH 的贡献不可忽略。",
+    "related": [
+      "end-point",
+      "titration-error",
+      "titration-curve",
+      "ph-scale"
+    ],
+    "formula": "pH = p<i>K</i><sub>In</sub> + log([In<sup>−</sup>]/[HIn])",
+    "derivation": "对指示剂的解离平衡 HIn ⇌ H⁺ + In⁻ 写平衡常数后取负对数，与 Henderson–Hasselbalch 方程同形。",
+    "notation": "pKIn 为指示剂常数；变色范围为 pKIn ± 1。",
+    "source": "Acid-Base Titration slides 22–25、35–36；教材 §9.6",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "kjeldahl-method",
+    "zh": "凯氏定氮法",
+    "en": "Kjeldahl nitrogen analysis",
+    "category": "分析方法",
+    "definition": "通过测定样品中的氮含量来推算蛋白质含量的经典分析方法。",
+    "expanded": "步骤为：用浓硫酸消解把氮转化为硫酸氢铵；冷却后用浓碱中和释放 NH₃；把 NH₃ 蒸馏收集到已知量的标准酸中；再用标准碱返滴定剩余的酸。多数蛋白质含氮量接近 16.2 wt%，据此换算蛋白质量。",
+    "properties": [
+      "本质是一个返滴定体系",
+      "含氮量换算系数典型值为 16.2 wt%",
+      "适用于蛋白质、土壤和食品中氮的测定"
+    ],
+    "confusions": "16.2% 是所有蛋白质的平均值。若样品含非蛋白氮（如尿素、硝酸盐），或含有含氮量明显不同的蛋白，换算会带来系统偏差。",
+    "related": [
+      "back-titration",
+      "neutralization-reaction",
+      "indicator"
+    ],
+    "formula": "<i>n</i><sub>N</sub> = <i>n</i><sub>加入的 HCl</sub> − <i>n</i><sub>回滴所耗的 NaOH</sub> &nbsp;&nbsp; <i>m</i><sub>protein</sub> = <i>m</i><sub>N</sub>/0.162",
+    "derivation": "吸收 NH₃ 后剩余的 HCl 由标准 NaOH 回滴测出；加入量与剩余量之差即与 NH₃ 反应的 HCl 量，也就是氮的物质的量。",
+    "notation": "n 为物质的量；16.2% 为蛋白质的平均含氮质量分数。",
+    "source": "Acid-Base Titration slides 49–53；教材 §10.5",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "strong-acid-strong-base-titration",
+    "zh": "强酸强碱滴定",
+    "en": "Strong acid–strong base titration",
+    "category": "滴定",
+    "definition": "滴定剂与被滴定物都完全电离的酸碱滴定，是最简单的一类滴定曲线。",
+    "expanded": "整个滴定只需物质的量守恒，不需要平衡常数。计量点前用剩余强酸算 pH，计量点处 pH 恒为 7.00，计量点后用过量强碱算 pOH 再换算。100.00 mL 0.1000 mol·L⁻¹ HCl 用 0.1000 mol·L⁻¹ NaOH 滴定：加 50.00 mL 时 pH 1.48，加 100.00 mL 时 pH 7.00，加 110.00 mL 时 pH 11.68。",
+    "properties": [
+      "计量点 pH 恒为 7.00（25 °C），与浓度无关",
+      "突跃幅度由酸和碱的浓度共同决定",
+      "浓度越低突跃越短，指示剂选择越关键"
+    ],
+    "confusions": "计量点 pH 恒为 7.00 不代表曲线形状不变：浓度降低时突跃收缩，同样的指示剂可能不再适用。",
+    "related": [
+      "titration-curve",
+      "equivalence-point",
+      "indicator",
+      "weak-acid-strong-base-titration"
+    ],
+    "formula": "[H<sup>+</sup>] = (<i>M</i><sub>酸</sub><i>V</i><sub>酸</sub> − <i>M</i><sub>碱</sub><i>V</i><sub>碱</sub>)/<i>V</i><sub>总</sub> &nbsp;(f &lt; 1) &nbsp;&nbsp; [OH<sup>−</sup>] = (<i>M</i><sub>碱</sub><i>V</i><sub>碱</sub> − <i>M</i><sub>酸</sub><i>V</i><sub>酸</sub>)/<i>V</i><sub>总</sub> &nbsp;(f &gt; 1)",
+    "derivation": "计量点前强酸过量，剩余 H⁺ 全部来自未中和的强酸；计量点后强碱过量，先算 pOH 再用 pH = pKw − pOH。",
+    "notation": "f 为被滴定物分数；V总 = V酸 + V碱。",
+    "source": "Acid-Base Titration slides 15–21；教材 §9.3",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "weak-acid-strong-base-titration",
+    "zh": "弱酸强碱滴定",
+    "en": "Weak acid–strong base titration",
+    "category": "滴定",
+    "definition": "用强碱滴定弱酸的滴定，滴定曲线分为四个区域，需要平衡常数才能计算。",
+    "expanded": "以 50.00 mL 0.1000 mol·L⁻¹ HOAc 用 0.1000 mol·L⁻¹ NaOH 滴定为例：未加碱时 pH 2.88；计量点前是 HA/A⁻ 缓冲体系，用 Henderson–Hasselbalch 计算（加 10.00 mL 时 pH 4.16）；中点是 ½Veq，pH = pKa = 4.76；计量点时只剩 A⁻，水解使溶液显碱（pH 8.73）；计量点后由过量碱控制（加 60.00 mL 时 pH 11.96）。",
+    "properties": [
+      "四个区域各有独立的计算式",
+      "中点 pH = pKa，可用于测定未知酸的 pKa",
+      "计量点 pH > 7，需选在碱性区变色的指示剂"
+    ],
+    "confusions": "弱酸强碱滴定不能用酚酞以外的随意指示剂：甲基红会在到达计量点前就变色，造成负误差。",
+    "related": [
+      "titration-curve",
+      "henderson-hasselbalch",
+      "buffer-solution",
+      "indicator"
+    ],
+    "formula": "[H<sup>+</sup>] = √(<i>K</i><sub>a</sub><i>C</i><sub>HA</sub>) &nbsp;(f=0) &nbsp;&nbsp; pH = p<i>K</i><sub>a</sub> + log([A<sup>−</sup>]/[HA]) &nbsp;(0&lt;f&lt;1) &nbsp;&nbsp; [OH<sup>−</sup>] = √(<i>K</i><sub>b</sub><i>C</i><sub>A⁻</sub>) &nbsp;(f=1)",
+    "derivation": "各区域分别取主导平衡：纯弱酸用解离平衡，缓冲区用同离子效应后的比例关系，计量点用共轭碱的水解平衡。",
+    "notation": "Kb = Kw/Ka；CA⁻ 为计量点时共轭碱的分析浓度。",
+    "source": "Acid-Base Titration slides 26–35；教材 §9.4–9.5",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "weak-base-strong-acid-titration",
+    "zh": "弱碱强酸滴定",
+    "en": "Weak base–strong acid titration",
+    "category": "滴定",
+    "definition": "用强酸滴定弱碱的滴定，曲线是弱酸强碱滴定的镜像。",
+    "expanded": "以 100.00 mL 0.1000 mol·L⁻¹ NH₃ 用 0.1000 mol·L⁻¹ HCl 滴定（HCl + NH₃ → NH₄⁺ + Cl⁻）为例：起点在碱性区；中点是 ½Veq，此时 pOH = pKb，曲线在该处最平缓；计量点偏酸，需选用在酸性区变色的指示剂。",
+    "properties": [
+      "中点的判据是 pOH = pKb",
+      "计量点 pH < 7",
+      "计算时把每一式做 H⁺/OH⁻ 镜像替换"
+    ],
+    "confusions": "弱碱滴定中不要沿用弱酸滴定的“中点 pH = pKa”；对应的关系是 pOH = pKb，写成 pH 则要经过 pKw 换算。",
+    "related": [
+      "titration-curve",
+      "henderson-hasselbalch",
+      "buffer-solution",
+      "indicator"
+    ],
+    "formula": "[OH<sup>−</sup>] = √(<i>K</i><sub>b</sub><i>C</i><sub>B</sub>) &nbsp;(f=0) &nbsp;&nbsp; pH = (p<i>K</i><sub>w</sub> − p<i>K</i><sub>b</sub>) + log(<i>C</i><sub>B</sub>/<i>C</i><sub>BH⁺</sub>) &nbsp;(0&lt;f&lt;1) &nbsp;&nbsp; [H<sup>+</sup>] = √((<i>K</i><sub>w</sub>/<i>K</i><sub>b</sub>)·<i>C</i><sub>BH⁺</sub>) &nbsp;(f=1)",
+    "derivation": "与弱酸强碱滴定完全对称：把 HA 换成 B、A⁻ 换成 BH⁺、pH 换成 pOH 即可逐式对应。",
+    "notation": "B 为弱碱，BH⁺ 为其共轭酸。",
+    "source": "Acid-Base Titration slides 36–37；教材 §9.5",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "amino-acid-titration",
+    "zh": "氨基酸滴定",
+    "en": "Amino acid titration",
+    "category": "滴定",
+    "definition": "利用氨基酸的两性性质进行的酸碱滴定，曲线形态与二元酸相似。",
+    "expanded": "氨基酸同时含羧基（酸性）与氨基（碱性），在水中通过内质子转移形成两性离子。两性离子的共轭酸是二元酸，分步电离；若相邻两级 Ka 之比 ≥ 10⁴，曲线上可分辨多个终点突跃。半胱氨酸有三个可电离质子（Ka₁ = 2.0 × 10⁻²、Ka₂ = 4.4 × 10⁻⁹、Ka₃ = 1.8 × 10⁻¹¹），但 Ka₂/Ka₃ ≈ 244 < 10⁴，因此第二、三级电离无法分开。",
+    "properties": [
+      "两性离子形态的 pH ≈ ½(pKa₁ + pKa₂)",
+      "侧链含可电离基团时质子数增加",
+      "能否分步取决于相邻 Ka 之比是否 ≥ 10⁴"
+    ],
+    "confusions": "蛋白质和氨基酸都有两性，但蛋白质的滴定曲线一般没有清晰的突跃，因此蛋白质定量更常用凯氏定氮而非直接滴定。",
+    "related": [
+      "amphiprotic-species",
+      "amphoteric-salt",
+      "kjeldahl-method",
+      "titration-curve"
+    ],
+    "source": "Acid-Base Titration slides 46–48；教材 §10.4",
+    "updated": "2026-03-18"
+  },
+  {
+    "slug": "gravimetric-analysis",
+    "zh": "重量分析",
+    "en": "gravimetric analysis",
+    "category": "重量分析",
+    "definition": "通过将待测组分转化为组成固定的难溶化合物沉淀，经分离、干燥或灼烧后称量其质量，从而计算待测组分含量的定量分析方法。",
+    "expanded": "重量分析是最古老的定量方法之一，其准确度直接由称量精度保证，不需要标准溶液或标准曲线。流程包括取样溶解、加入沉淀剂、控制沉淀条件、陈化、过滤、洗涤、干燥或灼烧、称量计算等步骤。",
+    "properties": [
+      "不需要标准溶液与仪器校准",
+      "准确度高但操作繁琐耗时",
+      "适用于含量较高的组分测定",
+      "沉淀的纯度与操作损失是主要误差来源"
+    ],
+    "confusions": "容易与滴定分析混淆：重量法测量的是质量，容量法测量的是体积。",
+    "related": [
+      "precipitation-form",
+      "weighing-form",
+      "gravimetric-factor"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "precipitation-form",
+    "zh": "沉淀形式",
+    "en": "precipitation form",
+    "category": "重量分析",
+    "definition": "待测组分与沉淀剂反应后实际析出、被过滤和洗涤的固体化合物形态。",
+    "expanded": "沉淀形式常常是水合物或中间产物，未必是最终称量的物质。例如测定钙时沉淀形式为 CaC₂O₄·H₂O，而称量形式为 CaO；测定镁时沉淀形式为 MgNH₄PO₄·6H₂O，称量形式为 Mg₂P₂O₇。",
+    "properties": [
+      "溶解度必须足够小",
+      "应易于过滤和洗涤",
+      "必须能定量地转化为称量形式",
+      "比表面小有利于减少吸附杂质"
+    ],
+    "confusions": "沉淀形式不等于称量形式。若两者相同（如 AgCl、BaSO₄），则只需烘干不必灼烧。",
+    "related": [
+      "weighing-form",
+      "gravimetric-analysis",
+      "digestion",
+      "coprecipitation"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "weighing-form",
+    "zh": "称量形式",
+    "en": "weighing form",
+    "category": "重量分析",
+    "definition": "沉淀经干燥或灼烧后，实际放在天平上称量的物质形态。",
+    "expanded": "称量形式的组成必须严格固定、化学性质稳定、摩尔质量尽可能大。摩尔质量越大，换算因数越小，称量误差在折算为待测组分时被压缩得越明显。",
+    "properties": [
+      "组成必须严格符合化学计量",
+      "在空气中稳定，不吸水、不吸收 CO₂、不挥发",
+      "摩尔质量大以降低换算因数",
+      "可由沉淀形式烘干或灼烧得到"
+    ],
+    "confusions": "灼烧温度不同可能得到不同的称量形式：CaC₂O₄ 在 500–600 °C 得到 CaCO₃，在 900–1000 °C 才得到 CaO。",
+    "related": [
+      "precipitation-form",
+      "gravimetric-factor"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "gravimetric-factor",
+    "zh": "换算因数",
+    "en": "gravimetric factor",
+    "category": "重量分析",
+    "definition": "将称量形式的质量换算为待测组分质量的系数，等于待测组分与称量形式的摩尔质量之比乘以化学计量数之比。",
+    "formula": "F = a·M(待测组分) / (b·M(称量形式))",
+    "derivation": "a 为称量形式中待测组分的原子或离子数目，b 为称量形式的分子数目，二者由配平后的化学反应计量关系确定。",
+    "expanded": "换算因数与取样量无关，只由化学式和配比决定，因此可作为常数反复使用。由于换算因数通常小于 1，称量形式的摩尔质量越大，误差传递被压缩得越多。",
+    "properties": [
+      "与取样量无关，只由化学式与配比决定",
+      "写成待测组分在分子、称量形式在分母",
+      "通常小于 1，起缩小误差的作用"
+    ],
+    "confusions": "a 与 b 不能凭化学式直接读出，必须从沉淀形式到称量形式的配平反应中数出来。",
+    "related": [
+      "weighing-form",
+      "precipitation-form"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "digestion",
+    "zh": "陈化",
+    "en": "digestion",
+    "category": "重量分析",
+    "definition": "沉淀生成后与母液一起放置，使小晶体溶解、大晶体长大并获得更完整晶格的过程，又称熟化。",
+    "expanded": "陈化利用小颗粒比大颗粒溶解度略大的表面能效应，使晶体平均粒径上升、总表面积下降。它带来两个直接好处：沉淀更易过滤洗涤，且吸附的杂质随小晶体溶解而被释放回溶液。",
+    "properties": [
+      "只适用于晶形沉淀",
+      "可提高纯度并改善过滤性能",
+      "加热可加速陈化",
+      "胶状或非晶形沉淀不宜陈化，应趁热过滤"
+    ],
+    "confusions": "陈化与放置过久要区分：陈化是有益的晶体重组，但放置过久可能引发后沉淀而带入杂质。",
+    "related": [
+      "coprecipitation",
+      "postprecipitation",
+      "precipitation-form",
+      "relative-supersaturation"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "relative-supersaturation",
+    "zh": "相对过饱和度",
+    "en": "relative supersaturation",
+    "category": "重量分析",
+    "definition": "沉淀析出瞬间溶液中溶质总浓度与溶解度之差同溶解度的比值，记为 (Q−S)/S，是决定沉淀颗粒大小的关键参数。",
+    "formula": "分散度 ∝ (Q − S) / S",
+    "expanded": "由冯·韦曼（von Weimarn）提出。比值越大，成核速率越占优势，生成颗粒越细，比表面越大，吸附杂质越多。重量分析中所有沉淀条件的控制都归结为把该比值压小，即压低 Q 或抬高 S。",
+    "properties": [
+      "比值越小则颗粒越粗大",
+      "通过缓慢加料、搅拌压低局部 Q",
+      "通过加热、稀释抬高 S",
+      "均相沉淀把 Q 压到最低"
+    ],
+    "confusions": "S 是溶解度而非加入量；升温同时增大 S 并加快扩散，对晶形沉淀有利。",
+    "related": [
+      "homogeneous-precipitation",
+      "digestion",
+      "coprecipitation"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "homogeneous-precipitation",
+    "zh": "均相沉淀",
+    "en": "homogeneous precipitation",
+    "category": "重量分析",
+    "definition": "不直接加入沉淀剂，而是加入能在溶液中缓慢、均匀地生成沉淀剂的试剂，使沉淀在整个溶液中均匀析出的技术。",
+    "expanded": "均相沉淀从根本上避免了局部过浓，因此过饱和度极低，得到粗大而纯净的晶体。常用于 BaSO₄（硫代乙酰胺或二甲基硫酸酯水解释放 SO₄²⁻）、CaC₂O₄（草酸二乙酯水解）、以及 Fe(OH)₃、Al(OH)₃、MgNH₄PO₄（尿素水解释放 NH₃）。",
+    "properties": [
+      "沉淀剂在溶液中缓慢生成，无局部过浓",
+      "沉淀颗粒粗大、纯净、易过滤",
+      "常借助水解反应产生沉淀剂",
+      "沉淀剂本身不引入外来干扰离子"
+    ],
+    "confusions": "与陈化不同：均相沉淀控制的是析出过程，陈化处理的是已经生成的沉淀。",
+    "related": [
+      "relative-supersaturation",
+      "digestion",
+      "precipitation-form"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "coprecipitation",
+    "zh": "共沉淀",
+    "en": "coprecipitation",
+    "category": "重量分析",
+    "definition": "沉淀析出时，溶液中本不应沉淀的可溶性组分同时被沉淀带入固相的现象。",
+    "expanded": "共沉淀按机理分为四类：表面吸附（可洗涤除去）、吸留、包藏（均为结构性夹带）、同晶置换（杂质离子替代主离子形成混晶）。其中表面吸附是平衡过程，可通过洗涤或陈化减轻；其余三类为结构性问题，通常只能通过改变条件重新沉淀。",
+    "properties": [
+      "表面吸附可逆且可洗除",
+      "吸留与包藏与沉淀速度有关",
+      "同晶置换与时间无关且难以消除",
+      "是重量分析中正误差的主要来源"
+    ],
+    "confusions": "共沉淀与后沉淀的区别在于发生时间：与沉淀同时发生的是共沉淀，沉淀之后才出现的是后沉淀。",
+    "related": [
+      "postprecipitation",
+      "surface-adsorption",
+      "digestion",
+      "precipitation-form"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "postprecipitation",
+    "zh": "后沉淀",
+    "en": "postprecipitation",
+    "category": "重量分析",
+    "definition": "沉淀生成之后，在放置过程中溶液中其他组分逐渐沉积到已有沉淀表面的现象。",
+    "expanded": "后沉淀是唯一与放置时间直接相关的污染方式。经典例子是草酸钙：当溶液中有 Mg²⁺ 时，草酸镁倾向形成过饱和溶液，草酸钙析出时不会伴随沉淀，但放置过久便会沉积在草酸钙表面使结果偏高。",
+    "properties": [
+      "发生在沉淀生成之后，与时间相关",
+      "放置越久污染越严重",
+      "唯一对策是沉淀后尽快过滤",
+      "不是共沉淀的四类机理之一"
+    ],
+    "confusions": "判断标准是时间：后沉淀在沉淀生成的那一刻并不发生。",
+    "related": [
+      "coprecipitation",
+      "digestion"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "surface-adsorption",
+    "zh": "表面吸附",
+    "en": "surface adsorption",
+    "category": "重量分析",
+    "definition": "沉淀表面因带电而吸引溶液中带相反电荷的离子，使其附着在沉淀表面的现象。",
+    "expanded": "吸附量随沉淀比表面积增大而增加，因此粗大晶体吸附少。吸附是平衡过程且发生在表面，可通过洗涤除去；洗涤时应使用含少量挥发性电解质的洗液，避免胶溶。",
+    "properties": [
+      "属于平衡过程，可洗涤除去",
+      "比表面越大吸附越严重",
+      "与放置时间无关",
+      "洗涤时应维持一定离子强度防止胶溶"
+    ],
+    "confusions": "表面吸附与吸留、包藏的区别在于是否可逆：只有表面吸附可以用洗涤解决。",
+    "related": [
+      "coprecipitation",
+      "peptization",
+      "postprecipitation"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "peptization",
+    "zh": "胶溶",
+    "en": "peptization",
+    "category": "重量分析",
+    "definition": "洗涤过程中电解质被除去后，胶体沉淀重新分散成溶胶并穿过滤纸的现象，又称胶溶作用。",
+    "expanded": "胶溶与凝聚是一对可逆过程。洗涤时若使用纯水，沉淀表面的电解质被洗去，胶粒重新带同种电荷互相排斥而分散，造成沉淀穿过滤纸的负误差。对策是改用含少量挥发性电解质的洗液，如稀 NH₄NO₃。",
+    "properties": [
+      "是凝聚的逆过程",
+      "纯水洗涤时最容易发生",
+      "造成沉淀穿过滤纸的负误差",
+      "用挥发性电解质洗液抑制"
+    ],
+    "confusions": "胶溶不是溶解，沉淀并未真正溶于水，只是分散度增大到能透过滤纸。",
+    "related": [
+      "surface-adsorption",
+      "coprecipitation",
+      "washing-solution"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "washing-solution",
+    "zh": "洗涤液",
+    "en": "washing solution",
+    "category": "重量分析",
+    "definition": "用于洗去沉淀表面吸附杂质的溶液，其选择需同时满足洗去杂质、不溶解沉淀、不引入新干扰三项要求。",
+    "expanded": "晶形沉淀常用稀 H₂SO₄ 或含少量沉淀剂的水，利用同离子效应降低溶解损失；胶状沉淀则用含挥发性电解质的稀溶液（如稀 NH₄NO₃）以维持离子强度防止胶溶，电解质在灼烧时可全部分解挥发。",
+    "properties": [
+      "必须含少量电解质以防止胶溶",
+      "应利用同离子效应抑制沉淀溶解",
+      "最好选用灼烧时可完全挥发的组分",
+      "洗涤应少量多次"
+    ],
+    "confusions": "纯水并非总是安全洗液：对胶状沉淀用纯水会引发胶溶而损失沉淀。",
+    "related": [
+      "peptization",
+      "common-ion-effect",
+      "precipitation-form"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "organic-precipitant",
+    "zh": "有机沉淀剂",
+    "en": "organic precipitant",
+    "category": "重量分析",
+    "definition": "分子中含有能与金属离子形成螯合环的配位基团的有机试剂，与无机沉淀剂相比选择性更高、摩尔质量更大。",
+    "expanded": "有机沉淀剂靠配位几何的匹配而非溶解度差异获得选择性，同时生成摩尔质量大的沉淀使换算因数很小。常用试剂包括 8-羟基喹啉（测 Al³⁺、Mg²⁺、Zn²⁺）、丁二酮肟（氨性溶液中测 Ni²⁺、Pd²⁺）、四苯硼钠（测 K⁺、NH₄⁺ 等大阳离子）和四苯砷氯化物（测 ClO₄⁻ 等大阴离子）。",
+    "properties": [
+      "选择性来自配位几何匹配",
+      "沉淀多为晶形、易于过滤",
+      "摩尔质量大，换算因数小",
+      "部分螯合物组成不严格，需灼烧成氧化物"
+    ],
+    "confusions": "并非所有有机沉淀剂都能直接烘干称量；组成不定或含不定量溶剂分子的螯合物必须灼烧转化。",
+    "related": [
+      "gravimetric-factor",
+      "weighing-form",
+      "precipitation-form"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "solubility-product",
+    "zh": "溶度积",
+    "en": "solubility product",
+    "category": "沉淀平衡",
+    "definition": "难溶电解质饱和溶液中，各离子浓度幂的乘积，用 Ksp 表示，是温度的函数。",
+    "formula": "Ksp = [Mⁿ⁺]ᵐ[Xᵐ⁻]ⁿ",
+    "derivation": "对难溶电解质 MₘXₙ，其溶解平衡为 MₘXₙ(s) ⇌ mMⁿ⁺ + nXᵐ⁻，平衡常数即为各离子浓度的幂之积；固体活度定义为 1，故不出现在表达式中。",
+    "expanded": "Ksp 是热力学量，严格应使用活度。在稀溶液且离子强度可忽略时可用浓度代替。固体不出现在表达式中，且这一关系与溶液中是否存在未解离中间体无关。",
+    "properties": [
+      "只与温度有关",
+      "固体与纯液体不写入表达式",
+      "同价型化合物才能直接比较 Ksp 大小",
+      "价型不同时必须换算为摩尔溶解度再比较"
+    ],
+    "confusions": "Ksp 大小不能直接用于比较不同价型化合物的溶解度，必须换算成摩尔溶解度。",
+    "related": [
+      "molar-solubility",
+      "common-ion-effect",
+      "diverse-ion-effect",
+      "conditional-solubility-product"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "molar-solubility",
+    "zh": "摩尔溶解度",
+    "en": "molar solubility",
+    "category": "沉淀平衡",
+    "definition": "在一定温度下，饱和溶液中每升溶液所含溶质的物质的量，是衡量难溶物溶解能力的统一尺度。",
+    "formula": "1:1 型 s = √Ksp；1:2 型 s = ∛(Ksp/4)；1:3 型 s = ∜(Ksp/27)",
+    "expanded": "溶解度与溶度积的换算取决于化合物的价型，因为一个化学式单位解离出的离子数目不同。价型相同时可直接比较 Ksp，价型不同时必须都换算为摩尔溶解度。",
+    "properties": [
+      "单位是 mol·L⁻¹",
+      "与容器大小无关（只要还有固体存在）",
+      "与未溶解固体的多少无关",
+      "多相平衡建立得比均相平衡慢得多"
+    ],
+    "confusions": "AgI 的 Ksp 比 Al(OH)₃ 大 5 × 10¹⁵ 倍，摩尔溶解度却只有它的两倍，原因是价型不同。",
+    "related": [
+      "solubility-product",
+      "common-ion-effect",
+      "diverse-ion-effect"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "diverse-ion-effect",
+    "zh": "盐效应",
+    "en": "diverse ion effect",
+    "category": "沉淀平衡",
+    "definition": "加入不含共同离子的强电解质使难溶电解质溶解度增大的现象，又称异离子效应。",
+    "expanded": "强电解质提高了溶液离子强度，使离子活度系数下降、有效浓度降低，因而需要溶解更多固体来维持 Ksp 所要求的活度积。它是同离子效应的反向作用，在沉淀剂过量很多时显现。",
+    "properties": [
+      "使溶解度增大",
+      "由离子强度上升引起",
+      "与同离子效应方向相反",
+      "用条件溶度积 cKsp 定量描述"
+    ],
+    "confusions": "盐效应不是化学反应，而是活度系数变化引起的物理效应。",
+    "related": [
+      "common-ion-effect",
+      "conditional-solubility-product",
+      "solubility-product"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.10 Gravimetric Analysis and Precipitation Equilibria",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "conditional-solubility-product",
+    "zh": "条件溶度积",
+    "en": "conditional solubility product",
+    "category": "沉淀平衡",
+    "definition": "把副反应（酸效应、络合效应等）的影响并入溶度积后得到的、适用于特定条件的表观溶度积，记作 K′sp。",
+    "formula": "K′sp = Ksp / α   或   K′sp = Ksp / (α_A · α_M)",
+    "derivation": "以 CaC₂O₄ 为例，草酸根受质子化影响，[C₂O₄²⁻] = Ox_T·α₂。代入 Ksp = [Ca²⁺][C₂O₄²⁻] 得 Ksp = [Ca²⁺]·Ox_T·α₂，令 K′sp = Ksp/α₂ 即得。",
+    "expanded": "K′sp 把某一副反应的影响打包进常数，因此只在指定的 pH 或配体浓度下成立。它与第 9 章的条件形成常数 K′f 是完全平行的概念，都是将副反应系数并入主常数。",
+    "properties": [
+      "只适用于指定 pH 或指定配体浓度",
+      "酸效应与络合效应同时存在时两个 α 相乘",
+      "α 的计算方法与多元酸分布分数完全相同",
+      "可用于快速估算溶解度随条件的变化"
+    ],
+    "confusions": "Ksp 在所有离子强度下始终成立，而 K′sp 只在特定条件下成立，两者不可混用。",
+    "related": [
+      "solubility-product",
+      "common-ion-effect",
+      "diverse-ion-effect"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "argentometric-titration",
+    "zh": "银量法",
+    "en": "argentometric titration",
+    "category": "沉淀滴定",
+    "definition": "以硝酸银为标准溶液、通过生成难溶银盐沉淀来测定卤素离子、硫氰酸根等阴离子的沉淀滴定方法的总称。",
+    "expanded": "按照终点指示方式的不同，银量法分为三类：莫尔法（用 K₂CrO₄ 生成砖红色 Ag₂CrO₄ 指示终点）、佛尔哈德法（用铁铵矾与返滴定的 SCN⁻ 生成红色络合物指示终点）和法扬司法（用吸附指示剂在沉淀表面变色指示终点）。",
+    "properties": [
+      "标准溶液为 AgNO₃ 或 KSCN",
+      "可测定 Cl⁻、Br⁻、I⁻、SCN⁻ 等",
+      "三种方法适用 pH 范围不同",
+      "见光易分解，AgNO₃ 溶液需避光保存"
+    ],
+    "confusions": "银量法并不等于莫尔法，莫尔法只是其中一种终点指示方式。",
+    "related": [
+      "precipitation-titration",
+      "mohr-method",
+      "volhard-method",
+      "fajans-method"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "stepwise-precipitation",
+    "zh": "分步沉淀",
+    "en": "stepwise precipitation",
+    "category": "沉淀滴定",
+    "definition": "当溶液中存在两种都能与同一滴定剂生成沉淀的离子，且两者溶解度差别足够大时，溶解度较小的先沉淀、较大的后沉淀的现象。",
+    "expanded": "以 I⁻ 与 Cl⁻ 的混合物用 Ag⁺ 滴定为例，AgI 的 Ksp 比 AgCl 小 10⁶ 倍，先沉淀 AgI，直到 [Ag⁺] 达到 AgCl 的 Ksp 要求时 AgCl 才开始析出，曲线上出现两个突跃。所需 Ksp 差异取决于两种离子的浓度比。",
+    "properties": [
+      "Ksp 相差越大分步越完全",
+      "浓度比越接近 1，所需 Ksp 差值越大",
+      "曲线上出现两个独立突跃",
+      "判据与多元酸分步滴定类似"
+    ],
+    "confusions": "即使 Ksp 相差 10⁶ 倍，若浓度比悬殊，第一步突跃的准确度仍可能很差（如食盐测碘的例子误差约 5%）。",
+    "related": [
+      "titration-curve",
+      "precipitation-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "mohr-method",
+    "zh": "莫尔法",
+    "en": "Mohr method",
+    "category": "沉淀滴定",
+    "definition": "以铬酸钾为指示剂、用硝酸银标准溶液直接滴定氯离子等卤素离子的沉淀滴定方法。",
+    "expanded": "滴定过程中 Ag⁺ 先与 Cl⁻ 生成白色 AgCl 沉淀；到达计量点后，微过量的 Ag⁺ 与 CrO₄²⁻ 生成砖红色 Ag₂CrO₄ 沉淀指示终点。为使 Ag₂CrO₄ 恰在计量点析出，理论上 [CrO₄²⁻] 应为 0.011 mol·L⁻¹，但实际只用 0.002–0.005 mol·L⁻¹，因为浓度过高时铬酸根的深黄色会掩盖砖红色。",
+    "properties": [
+      "直接滴定，标准溶液为 AgNO₃",
+      "指示剂为 K₂CrO₄，终点生成砖红色沉淀",
+      "需在 pH ≈ 8 的中性或弱碱性条件下进行",
+      "指示剂误差用空白滴定扣除"
+    ],
+    "confusions": "pH < 6 时 CrO₄²⁻ 质子化为 HCrO₄⁻ 使终点拖后；pH > 10 时生成 AgOH 沉淀。",
+    "related": [
+      "argentometric-titration",
+      "precipitation-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "volhard-method",
+    "zh": "佛尔哈德法",
+    "en": "Volhard method",
+    "category": "沉淀滴定",
+    "definition": "先加入过量硝酸银标准溶液沉淀待测阴离子，再用硫氰酸钾标准溶液返滴定剩余 Ag⁺ 的间接沉淀滴定方法。",
+    "expanded": "终点由铁铵矾指示：过量的 SCN⁻ 与 Fe³⁺ 生成红色络合物 Fe(SCN)²⁺。方法在酸性（HNO₃）溶液中进行，因此不受弱酸根质子化的限制，适用面最广。测定 Cl⁻ 时必须先滤去 AgCl 沉淀，否则 AgCl 会与 SCN⁻ 反应转化为 AgSCN 使终点拖后偏高；测定 I⁻ 时需等碘离子全部沉淀后再加指示剂，以免 Fe³⁺ 氧化 I⁻。",
+    "properties": [
+      "返滴定方式，需两种标准溶液",
+      "在强酸性条件下进行，适用面广",
+      "指示剂为铁铵矾（Fe³⁺）",
+      "测 Cl⁻ 必须过滤沉淀，测 Br⁻、I⁻ 则不必"
+    ],
+    "confusions": "指示剂生成的沉淀不能比被测沉淀更稳定，否则第一滴滴定剂即显色，终点完全失效。",
+    "related": [
+      "argentometric-titration",
+      "precipitation-titration",
+      "back-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "adsorption-indicator",
+    "zh": "吸附指示剂",
+    "en": "adsorption indicator",
+    "category": "沉淀滴定",
+    "definition": "在计量点前后因沉淀表面电荷翻转而被吸附或排斥、从而发生颜色变化的染料类指示剂，用于法扬司法。",
+    "expanded": "计量点前被测阴离子过量，沉淀表面第一吸附层为阴离子、带负电，排斥指示剂阴离子；计量点后滴定剂 Ag⁺ 过量，表面带正电，吸引指示剂阴离子进入反离子层而被吸附，颜色随之改变。颜色变化的合理解释是指示剂与 Ag⁺ 形成的有色络合物在溶液中太弱、被吸附后才得以稳定存在。",
+    "properties": [
+      "反应发生在沉淀表面",
+      "通常是弱酸性染料，以阴离子形式被吸附",
+      "pH 过低时解离不足而无法被吸附",
+      "吸附过强会挤走沉淀自身离子导致终点提前"
+    ],
+    "confusions": "吸附指示剂与酸碱指示剂的机理完全不同：它变色不取决于溶液中某个离子的浓度，而取决于沉淀表面电荷。",
+    "related": [
+      "fajans-method",
+      "argentometric-titration",
+      "precipitation-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  },
+  {
+    "slug": "fajans-method",
+    "zh": "法扬司法",
+    "en": "Fajans method",
+    "category": "沉淀滴定",
+    "definition": "使用吸附指示剂指示终点的银量法。",
+    "expanded": "常用指示剂包括荧光黄（pH 7–8 测 Cl⁻）、二氯荧光黄（pH 4 测 Cl⁻）、曙红（pH 2 测 Br⁻、I⁻、SCN⁻）、溴甲酚绿（pH 4–5 测 SCN⁻）等。沉淀越难溶、其组成离子吸附越强，就能采用吸附更强的指示剂，从而在更酸的条件下滴定。",
+    "properties": [
+      "终点由沉淀表面吸附染料变色指示",
+      "指示剂选择与沉淀的吸附强度相匹配",
+      "适用 pH 随指示剂不同而变化",
+      "沉淀应保持胶体状态以提供足够表面"
+    ],
+    "confusions": "二氯荧光黄在 pH 7 会挤走 Cl⁻ 使结果偏低，只有在 pH 4 才适用。",
+    "related": [
+      "adsorption-indicator",
+      "argentometric-titration",
+      "precipitation-titration"
+    ],
+    "source": "Analytical Chemistry, 7th Ed., Ch.11 Precipitation Reactions and Titrations",
+    "updated": "2026-10-08"
+  }
 ]

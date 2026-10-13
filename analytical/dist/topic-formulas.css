@@ -34,6 +34,42 @@
 }
 .table-scroll.formula-card-table td:nth-child(n+2){line-height:1.7}
 
+/* ---- 窄列修正：自动布局会把首列压到 2~3 个字一行 ----
+   实测（1440px 视口、正文栏 936px）有四个表出现了「1~2 字一行」的窄列：
+   ◆.2 六类 pH 主公式（首列 77px）、◆.5 半反应电位表（n 列 53px）、
+   ◆.6 四类滴定区段表（首列 64px）、◆.8 指示剂选择表（首列 71px）。
+   下面给这几个表固定列宽比例，首列一律留足 3~4 个汉字的位置。
+   列宽用百分比 + table-layout:fixed，所以任何时候都正好占满正文栏、不横向溢出。 */
+.table-scroll.t-acidbase table,
+.table-scroll.t-redox table,
+.table-scroll.t-curves table,
+.table-scroll.t-indicator table{
+  table-layout:fixed;
+  width:100%;
+}
+.table-scroll.t-acidbase th:nth-child(1),.table-scroll.t-acidbase td:nth-child(1){width:19%}
+.table-scroll.t-acidbase th:nth-child(2),.table-scroll.t-acidbase td:nth-child(2){width:19%}
+.table-scroll.t-acidbase th:nth-child(3),.table-scroll.t-acidbase td:nth-child(3){width:26%}
+.table-scroll.t-acidbase th:nth-child(4),.table-scroll.t-acidbase td:nth-child(4){width:36%}
+
+.table-scroll.t-redox th:nth-child(1),.table-scroll.t-redox td:nth-child(1){width:41%}
+.table-scroll.t-redox th:nth-child(2),.table-scroll.t-redox td:nth-child(2){width:11%}
+.table-scroll.t-redox th:nth-child(3),.table-scroll.t-redox td:nth-child(3){width:10%}
+.table-scroll.t-redox th:nth-child(4),.table-scroll.t-redox td:nth-child(4){width:38%}
+
+.table-scroll.t-curves th:nth-child(1),.table-scroll.t-curves td:nth-child(1){width:13%}
+.table-scroll.t-curves th:nth-child(2),.table-scroll.t-curves td:nth-child(2){width:14%}
+.table-scroll.t-curves th:nth-child(3),.table-scroll.t-curves td:nth-child(3){width:19%}
+.table-scroll.t-curves th:nth-child(4),.table-scroll.t-curves td:nth-child(4){width:17%}
+.table-scroll.t-curves th:nth-child(5),.table-scroll.t-curves td:nth-child(5){width:17%}
+.table-scroll.t-curves th:nth-child(6),.table-scroll.t-curves td:nth-child(6){width:20%}
+
+.table-scroll.t-indicator th:nth-child(1),.table-scroll.t-indicator td:nth-child(1){width:13%}
+.table-scroll.t-indicator th:nth-child(2),.table-scroll.t-indicator td:nth-child(2){width:22%}
+.table-scroll.t-indicator th:nth-child(3),.table-scroll.t-indicator td:nth-child(3){width:17%}
+.table-scroll.t-indicator th:nth-child(4),.table-scroll.t-indicator td:nth-child(4){width:22%}
+.table-scroll.t-indicator th:nth-child(5),.table-scroll.t-indicator td:nth-child(5){width:26%}
+
 /* ---- 公式卡：含义 / 各量 / 什么时候用 / 怎么算 四栏 ---- */
 .formula-card{
   position:relative;

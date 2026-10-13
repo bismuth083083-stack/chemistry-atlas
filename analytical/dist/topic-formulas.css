@@ -7,6 +7,33 @@
 /* ---- ◆.0 使用说明里的分区表：首列用主题色 ---- */
 #howto .table-scroll td:first-child{white-space:nowrap;color:var(--accent)}
 
+/* ---- ◆.9 四栏公式卡表 ----
+   用固定表格布局按百分比分栏。自动布局会把「式子」这一列压到最窄
+   （窄视口下甚至只剩一两个字符宽），固定布局则保证四列比例稳定。 */
+.table-scroll.formula-card-table{overflow-x:auto}
+.table-scroll.formula-card-table table{
+  table-layout:fixed;
+  width:100%;
+  min-width:880px;
+}
+.table-scroll.formula-card-table th:nth-child(1),
+.table-scroll.formula-card-table td:nth-child(1){width:28%}
+.table-scroll.formula-card-table th:nth-child(2),
+.table-scroll.formula-card-table td:nth-child(2){width:20%}
+.table-scroll.formula-card-table th:nth-child(3),
+.table-scroll.formula-card-table td:nth-child(3){width:22%}
+.table-scroll.formula-card-table th:nth-child(4),
+.table-scroll.formula-card-table td:nth-child(4){width:30%}
+.table-scroll.formula-card-table td:first-child{
+  color:var(--accent-soft);
+  font-family:Georgia,"Times New Roman","Noto Serif SC",serif;
+  font-size:13.5px;
+  line-height:1.85;
+  white-space:normal;
+  word-break:break-word;
+}
+.table-scroll.formula-card-table td:nth-child(n+2){line-height:1.7}
+
 /* ---- 公式卡：含义 / 各量 / 什么时候用 / 怎么算 四栏 ---- */
 .formula-card{
   position:relative;

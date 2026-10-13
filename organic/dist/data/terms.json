@@ -2227,5 +2227,319 @@
       "enantiomer"
     ],
     "source": "第八课：Lect. 8 (Chapter 5-2) 课件"
+  },
+  {
+    "slug": "alkyl-halide",
+    "zh": "卤代烷",
+    "en": "Alkyl halide",
+    "category": "官能团",
+    "definition": "卤素原子直接连在 sp³ 杂化碳上的有机化合物，通式 R–X。",
+    "expanded": "它是本章的主角。卤代烷既是亲核取代的底物，也是制备其他官能团的常用中间体：碳–卤键极化使碳带部分正电荷而成为亲电中心，卤素则能带着一对电子离去。由于卤素在 IUPAC 命名中永远只作取代基，卤代烷没有专属后缀，只能按卤烷烃（haloalkane）或俗名（alkyl halide）命名。按卤素所连碳的类型还可分为甲基卤、伯卤、仲卤与叔卤，这一分类直接决定取代与消除的竞争结果。",
+    "properties": [
+      "碳–卤键极化，碳为亲电中心、卤素为离去基团",
+      "卤素只作取代基，无 IUPAC 专属后缀",
+      "按所连碳的类型分为甲基/伯/仲/叔四级"
+    ],
+    "confusions": "卤代烷（alkyl halide，卤素连 sp³ 碳）不同于乙烯基卤（连 sp² 双键碳）和芳基卤（连芳环碳）：后两者的碳–卤键因共轭而短而强，不能发生 SN2。",
+    "related": [
+      "haloalkane",
+      "vinyl-halide",
+      "aryl-halide",
+      "nucleophile",
+      "leaving-group",
+      "sn2"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "haloalkane",
+    "zh": "卤烷烃（卤代烷的系统名）",
+    "en": "Haloalkane",
+    "category": "命名",
+    "definition": "把卤代烷当作“带 halo- 取代基的烷烃”来命名的 IUPAC 名称形式。",
+    "expanded": "系统命名法把卤代烷视为烷烃的衍生物，卤素写成前缀：fluoro-、chloro-、bromo-、iodo-，中文对应氟、氯、溴、碘。因为卤素只是取代基，它不会成为主官能团，所以名称永远以烷烃骨架为主体。四个位置各自回答一个问题：Prefix（取代基是什么）– Locant（主官能团在哪里）– Parent（有几个碳）– Suffix（主官能团是什么）。",
+    "properties": [
+      "卤素永远作前缀，不作后缀",
+      "中文取代基按原子序数由小到大排列",
+      "英文取代基按字母顺序排列，iso 参与排序、n-/t-/sec- 不参与"
+    ],
+    "confusions": "俗名 alkyl halide 与系统名 haloalkane 是两套并行体系，不能混用：俗名只对简单结构可靠，复杂结构（课件标注 none）只能走系统名。",
+    "related": [
+      "alkyl-halide",
+      "iupac-nomenclature",
+      "cip-priority"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "vinyl-halide",
+    "zh": "乙烯基卤",
+    "en": "Vinyl halide",
+    "category": "官能团",
+    "definition": "卤素原子直接连在 sp² 杂化双键碳上的化合物，如氯乙烯。",
+    "expanded": "双键碳上的卤素与碳–碳 π 键共轭，孤对电子离域进入 π* 轨道，使碳–卤键带有部分双键性质：键长变短、键能升高。后果是这类碳–卤键很难断裂，乙烯基卤与芳基卤都不能发生 SN2 反应，通常需要过渡金属催化才能偶联。",
+    "properties": [
+      "卤素连 sp² 双键碳",
+      "孤对与 π 键共轭，碳–卤键增强",
+      "不参与 SN2 亲核取代"
+    ],
+    "confusions": "工业上四氟乙烯（TFE）是单体、氯乙烯是塑料单体；它们不是亲核取代的底物。",
+    "related": [
+      "alkyl-halide",
+      "aryl-halide",
+      "resonance-hybrid"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "aryl-halide",
+    "zh": "芳基卤",
+    "en": "Aryl halide",
+    "category": "官能团",
+    "definition": "卤素原子直接连在芳环 sp² 碳上的化合物，如氯苯。",
+    "expanded": "芳环上的卤素与芳香 π 体系共轭，碳–卤键同样被加强，因此芳基卤既不发生 SN2，也不发生 SN1。亲核取代只能走加成–消除（芳炔）或取代氢的 SNAr 途径，而工业上更常用的是钯催化的交叉偶联。课件用对二氯苯作例，与乙烯基卤并排说明“卤素在 sp² 碳上”的共同后果。",
+    "properties": [
+      "卤素连芳环 sp² 碳",
+      "碳–卤键因共轭而短而强",
+      "不发生 SN1/SN2，需 SNAr 或金属催化"
+    ],
+    "confusions": "苄基卤（benzyl halide，ArCH₂X）的卤素在 sp³ 碳上，属于卤代烷，反应性与芳基卤完全不同，不要混为一谈。",
+    "related": [
+      "alkyl-halide",
+      "vinyl-halide",
+      "resonance-hybrid"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "leaving-group",
+    "zh": "离去基团",
+    "en": "Leaving group",
+    "category": "反应性",
+    "definition": "在取代或消除反应中带着一对电子离开底物的基团或离子。",
+    "expanded": "在 SN2 反应中，亲核试剂从背面进攻，碳–离去基团的键同时断裂，卤素离子带着原键合电子离去。离去能力与碱性强弱相反：越弱的碱越容易带着电子稳定地离开，所以 I⁻ > Br⁻ > Cl⁻ ≫ F⁻。教材给出的另一条补充是离去基团必须能与新键形成竞争，否则反应不会发生。",
+    "properties": [
+      "带走一对电子，带走负电荷",
+      "酸性越强（碱性越弱）离去能力越强",
+      "卤素离去顺序 I > Br > Cl ≫ F"
+    ],
+    "confusions": "离去基团不等于“副产物”：它在机理中是一个必须被断键的物种，它的性质决定反应能否发生，而亲核性决定反应有多快。",
+    "related": [
+      "nucleophile",
+      "alkyl-halide",
+      "sn2"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "sn2",
+    "zh": "SN2 反应（双分子亲核取代）",
+    "en": "Sₙ₂ reaction",
+    "category": "反应类型",
+    "definition": "亲核试剂从离去基团背面一步协同进攻底物碳、构型同时翻转的亲核取代反应。",
+    "expanded": "SN2 的“2”指速率方程中同时出现两个物种：rate = kᵣ[CH₃I][⁻OH]，对每个反应物各为一级、总二级。一步协同意味着断键与成键同步进行，能量图上只有一个峰，中间结构是过渡态而不是中间体。背面进攻使碳原子的三个取代基像伞被吹翻一样翻转，得到构型完全反转的产物。底物反应性顺序为 CH₃X > 1° > 2°，3° 卤代烷因位阻不能走这条机理。",
+    "properties": [
+      "协同一步，无中间体，只有一个过渡态",
+      "二级动力学：rate = kᵣ[R–X][Nu⁻]",
+      "背面进攻，中心碳构型翻转（Walden 转化）",
+      "底物活性 CH₃X > 1° > 2° ≫ 3°"
+    ],
+    "confusions": "SN2 是机理名称而不是“取代反应”的同义词；速率方程为二级只与协同一步相符，不能用来排除其他同样呈现二级动力学的路径。",
+    "related": [
+      "nucleophile",
+      "leaving-group",
+      "transition-state",
+      "reaction-order"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "stereospecific-inversion",
+    "zh": "构型翻转（Walden 转化）",
+    "en": "Inversion of configuration (Walden inversion)",
+    "category": "立体化学",
+    "definition": "SN2 反应中亲核试剂从背面进攻使中心碳构型完全反转的现象。",
+    "expanded": "课件用伞被风吹翻的比喻描述这个过程：进攻方向与离去基团正好相对，三个原有取代基向另一侧张开。过渡态中碳原子近似 sp² 平面，H₃C 与 HO 之间的夹角为 180°；成键与断键各完成一半。因此光学活性的底物经 SN2 后得到构型反转的产物，这也是判定机理的立体化学证据，与动力学的判据互补。",
+    "properties": [
+      "进攻发生在离去基团的背面（180°）",
+      "过渡态碳原子近似平面",
+      "产物构型与底物完全相反"
+    ],
+    "confusions": "构型翻转是 SN2 的立体化学结果；如果中心碳不是手性中心，“翻转”在结构上看不出来，但机理仍然如此。",
+    "related": [
+      "sn2",
+      "transition-state",
+      "chirality"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "nucleophilicity",
+    "zh": "亲核性",
+    "en": "Nucleophilicity",
+    "category": "反应性",
+    "definition": "亲核试剂进攻亲电碳原子时表现出的反应速率能力。",
+    "expanded": "亲核性是动力学量：它由进攻碳的速率常数 kᵣ 衡量，而碱性由夺取质子的平衡常数 Kₑₔ 衡量。课件给出三条影响因素：亲核试剂自身的电子密度与可极化性、进攻路径上的位阻、以及溶剂对阴离子的溶剂化程度。在质子溶剂中常见的强弱次序是 RS⁻ ≈ ArS⁻ > I⁻ > NH₃(RNH₂) > CN⁻ > RO⁻ ≈ HO⁻ > Br⁻ > PhO⁻ > Cl⁻ > H₂O > F⁻。",
+    "properties": [
+      "由速率常数衡量，是动力学概念",
+      "阴离子比其中性共轭酸亲核性强",
+      "同一族向下递增（I⁻ > Br⁻ > Cl⁻ > F⁻）",
+      "受位阻与溶剂化强烈调制"
+    ],
+    "confusions": "亲核性强不等于碱性强：叔丁氧基碱性强但亲核性弱，碘离子碱性强（HI 是强酸）却亲核性强。引用任何亲核性次序都必须连溶剂前提一起引用。",
+    "related": [
+      "basicity",
+      "nucleophile",
+      "polarizability",
+      "steric-hindrance",
+      "protic-solvent",
+      "aprotic-solvent"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "basicity",
+    "zh": "碱性",
+    "en": "Basicity",
+    "category": "反应性",
+    "definition": "碱夺取质子时表现出的能力，由该平衡的平衡常数衡量。",
+    "expanded": "碱性描述的是 B⁻ + H–A ⇌ B–H + A⁻ 这个平衡的位置，即夺取质子的平衡常数。亲核性描述的是 B⁻ + R–X → B–R + X⁻ 这一进攻碳的速率。两者都表示“有孤对电子、能成新键”，但进攻对象不同：质子很小，几乎不考虑位阻，所以电负性与键能主导；碳上有取代基，所以距离、可极化性与位阻变得重要。结果是大多数（并非全部）强亲核试剂也是强碱。",
+    "properties": [
+      "由平衡常数衡量，是热力学量",
+      "进攻对象是质子，几乎不受位阻影响",
+      "同一族向下碱性递减（与亲核性递增相反）"
+    ],
+    "confusions": "碱性强弱与亲核性强弱没有必然的平行关系；决定性差别在于进攻质子还是进攻碳。",
+    "related": [
+      "nucleophilicity",
+      "nucleophile",
+      "lewis-base",
+      "steric-hindrance"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "polarizability",
+    "zh": "可极化性",
+    "en": "Polarizability",
+    "category": "化学键",
+    "definition": "原子或离子的电子云在外电场下发生畸变、偏离原子核的难易程度。",
+    "expanded": "课件用它解释亲核性“同族向下递增”这条看似与碱性相反的规律。沿一个族向下，原子半径增大，电子离核更远、束缚更松，因此可极化性升高。可极化的电子能在较远的距离上开始向正电荷移动，使过渡态中形成更强的键；对位阻较大的碳尤其有利。氟离子的价层小而“硬”，碘离子则能通过较大的价层与碳形成更强的相互作用。",
+    "properties": [
+      "随原子半径增大而升高（同族向下递增）",
+      "与电负性大致反向变化",
+      "决定阴离子在 SN2 过渡态中的成键强度"
+    ],
+    "confusions": "可极化性不同于电负性：电负性描述静态吸引电子的能力，可极化性描述电子云被外场扰动后变形的能力。",
+    "related": [
+      "nucleophilicity",
+      "electronegativity",
+      "steric-hindrance"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "steric-hindrance",
+    "zh": "位阻（空间位阻）",
+    "en": "Steric hindrance",
+    "category": "反应性",
+    "definition": "体积较大的基团挡住反应中心、使反应速率下降的效应。",
+    "expanded": "亲核试剂必须靠近碳原子才能进攻；亲核试剂上的大基团会阻碍这个接近路径。课件用叔丁氧基与乙氧基对照：叔丁氧基有三个甲基挡路，是更强的碱但更弱的亲核试剂；乙氧基没有位阻，是更弱的碱但更强的亲核试剂。位阻对碱性影响很小，因为碱性进攻的是没有位阻的质子——这就是两条规律分道扬镳的原因。实用的合成规则是：想让它当碱，用大位阻试剂（叔丁氧基）；想让它当亲核试剂，用位阻小的试剂（乙氧基）。",
+    "properties": [
+      "只影响进攻碳的路径，几乎不影响夺质子",
+      "使试剂“碱性强、亲核性弱”",
+      "随底物取代度增加而急剧增大（3° 不走 SN2）"
+    ],
+    "confusions": "位阻效应与电子效应要分开判断：不是说大基团亲核性弱就代表它不好用，作碱时它反而更合适。",
+    "related": [
+      "nucleophilicity",
+      "basicity",
+      "sn2",
+      "nucleophile"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "protic-solvent",
+    "zh": "质子溶剂",
+    "en": "Protic solvent",
+    "category": "溶剂",
+    "definition": "含有 O–H 或 N–H 等酸性氢、能给出氢键的溶剂。",
+    "expanded": "水、醇、氨都属于质子溶剂。它们能与带负电荷的亲核试剂形成氢键，把阴离子包裹并稳定下来，从而降低其亲核性。小阴离子被溶剂化得更强；大阴离子溶剂化弱，所以亲核性反而更高——这就是“同族向下递增”的溶剂学解释。质子溶剂的另一个好处是溶解性好：卤代烷等有机底物与离子型试剂都能溶，反应相是均相的。",
+    "properties": [
+      "含 O–H 或 N–H，可形成氢键",
+      "通过氢键稳定阴离子，降低其亲核性",
+      "极性大，能同时溶解有机底物与离子试剂"
+    ],
+    "confusions": "水、醇既可以是溶剂也可以是亲核试剂，题目里要分清哪一个是过量的溶剂、哪一个是被讨论的亲核试剂。",
+    "related": [
+      "aprotic-solvent",
+      "nucleophilicity",
+      "polarizability",
+      "polar-aprotic-solvent"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "aprotic-solvent",
+    "zh": "非质子溶剂",
+    "en": "Aprotic solvent",
+    "category": "溶剂",
+    "definition": "不含 O–H 或 N–H 基团、不能给出氢键的溶剂。",
+    "expanded": "非质子溶剂不包裹阴离子，因此阴离子更“裸露”、活性更高。课件给出两条理由：一是阴离子没有被溶剂化稳定；二是溶剂为亲核试剂让路时不需要先破坏氢键，因此没有额外的能量代价。代价是溶解性：非质子溶剂（尤其是烷烃类）溶解极性离子试剂的能力较弱，离子型亲核试剂常常溶不进去。",
+    "properties": [
+      "不含 O–H、N–H，不能形成氢键",
+      "使阴离子亲核性升高",
+      "溶解极性离子试剂的能力较弱"
+    ],
+    "confusions": "“非质子”不等于“非极性”：DMSO、DMF、乙腈都是强极性非质子溶剂，它们既溶解离子试剂又不溶剂化阴离子。",
+    "related": [
+      "protic-solvent",
+      "polar-aprotic-solvent",
+      "nucleophilicity",
+      "crown-ether"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "polar-aprotic-solvent",
+    "zh": "极性非质子溶剂",
+    "en": "Polar aprotic solvent",
+    "category": "溶剂",
+    "definition": "具有强偶极矩却不含 O–H/N–H、从而不溶剂化阴离子的溶剂。",
+    "expanded": "乙腈（CH₃CN）、N,N-二甲基甲酰胺（DMF）与丙酮是课件的三个例子。强偶极矩保证离子型试剂能溶，缺少氢键给体则保证阴离子不被包裹，于是亲核取代速率显著提高。课件给的实例是 KF 在 18-冠-6/CH₃CN 体系中把苄基氯换成苄基氟——氟离子在质子溶剂中是弱亲核试剂，在这个体系里却能顺利反应。",
+    "properties": [
+      "强偶极矩，溶解离子型试剂",
+      "无氢键给体，阴离子不被溶剂化",
+      "显著提高 SN2 速率（尤其对 F⁻）"
+    ],
+    "confusions": "极性非质子溶剂是“极性非质子”的交叉项，既有极性溶剂的溶解能力，又有非质子溶剂的不溶剂化阴离子特性，两个条件都不能省。",
+    "related": [
+      "aprotic-solvent",
+      "protic-solvent",
+      "crown-ether",
+      "nucleophilicity"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "crown-ether",
+    "zh": "冠醚",
+    "en": "Crown ether",
+    "category": "试剂",
+    "definition": "由乙氧基单元成环、能通过氧原子螯合金属阳离子的中性大环化合物。",
+    "expanded": "18-冠-6 的六个氧原子朝内，正好把钾离子包在环中。把亲核试剂的钾盐与冠醚一起使用，阳离子被包裹、阴离子被“带”进溶液，等于把离子对拆开。结果是既解决了非质子溶剂溶解离子试剂的问题，又不改变阴离子自身的反应性。课件给的实例是 KF/18-冠-6/CH₃CN 体系把苄基氯转化为苄基氟。",
+    "properties": [
+      "氧原子螯合阳离子，把离子对拆开",
+      "提高阴离子在非质子溶剂中的溶解度与活性",
+      "改变亲核性而不改变亲核试剂的电子结构"
+    ],
+    "confusions": "冠醚的作用对象是阳离子，不是阴离子：它让阴离子更自由，而不是直接活化阴离子。",
+    "related": [
+      "polar-aprotic-solvent",
+      "aprotic-solvent",
+      "nucleophilicity"
+    ],
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
   }
 ]

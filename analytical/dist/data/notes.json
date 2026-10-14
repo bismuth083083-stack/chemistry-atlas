@@ -1141,5 +1141,150 @@
       "和终点机",
       "制各不相"
     ]
+  },
+  {
+    "title": "知识体系：先确定计量，再计算电位",
+    "href": "chapter-8.html#map",
+    "keywords": [
+      "redox",
+      "氧化还原",
+      "电子守恒"
+    ]
+  },
+  {
+    "title": "电子守恒与半反应配平",
+    "href": "chapter-8.html#balance",
+    "keywords": [
+      "half reaction",
+      "配平",
+      "氧化剂",
+      "还原剂"
+    ]
+  },
+  {
+    "title": "Nernst 方程、标准电位与条件电位",
+    "href": "chapter-8.html#nernst",
+    "keywords": [
+      "Nernst",
+      "能斯特",
+      "条件电位",
+      "标准电位"
+    ]
+  },
+  {
+    "title": "由电位差求平衡常数与混合溶液电位",
+    "href": "chapter-8.html#equilibrium",
+    "keywords": [
+      "equilibrium",
+      "平衡常数",
+      "混合电位"
+    ]
+  },
+  {
+    "title": "Fe²⁺–Ce⁴⁺滴定曲线：三个区段与半滴定点",
+    "href": "chapter-8.html#curve",
+    "keywords": [
+      "titration curve",
+      "滴定曲线",
+      "半滴定点",
+      "Fe",
+      "Ce"
+    ]
+  },
+  {
+    "title": "含H⁺电对：高锰酸根滴定Fe²⁺",
+    "href": "chapter-8.html#acid",
+    "keywords": [
+      "MnO4",
+      "酸度",
+      "高锰酸钾",
+      "H+"
+    ]
+  },
+  {
+    "title": "终点指示：自指示、淀粉与氧化还原指示剂",
+    "href": "chapter-8.html#indicators",
+    "keywords": [
+      "indicator",
+      "指示剂",
+      "ferroin",
+      "自指示"
+    ]
+  },
+  {
+    "title": "直接碘量法与间接碘量法",
+    "href": "chapter-8.html#iodine",
+    "keywords": [
+      "iodimetry",
+      "iodometry",
+      "碘量法",
+      "淀粉",
+      "KI"
+    ]
+  },
+  {
+    "title": "碘量法例题与计量关系总表",
+    "href": "chapter-8.html#iodine-calculations",
+    "keywords": [
+      "KBrO3",
+      "Cu",
+      "铜",
+      "硫代硫酸",
+      "计量"
+    ]
+  },
+  {
+    "title": "常用氧化剂、还原剂及标定",
+    "href": "chapter-8.html#reagents",
+    "keywords": [
+      "reagent",
+      "标定",
+      "氧化剂",
+      "还原剂"
+    ]
+  },
+  {
+    "title": "教材补充：电极测量、终点定位与样品价态",
+    "href": "chapter-8.html#potentiometry",
+    "keywords": [
+      "potentiometric",
+      "电位滴定",
+      "参比电极",
+      "导数"
+    ]
+  },
+  {
+    "title": "详实应试笔记：公式、条件与解题顺序",
+    "href": "chapter-8.html#exam",
+    "keywords": [
+      "formula",
+      "应试",
+      "公式"
+    ]
+  },
+  {
+    "title": "课程问答与易混概念",
+    "href": "chapter-8.html#qa",
+    "keywords": [
+      "FAQ",
+      "问答"
+    ]
+  },
+  {
+    "title": "课件校订与条件说明",
+    "href": "chapter-8.html#errata",
+    "keywords": [
+      "errata",
+      "勘误",
+      "错字"
+    ]
+  },
+  {
+    "title": "本章22题测验与来源",
+    "href": "chapter-8.html#practice",
+    "keywords": [
+      "quiz",
+      "测验"
+    ]
   }
 ]

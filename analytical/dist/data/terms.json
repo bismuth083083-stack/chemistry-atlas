@@ -821,23 +821,27 @@
   {
     "slug": "redox-titration",
     "zh": "氧化还原滴定",
-    "en": "Redox titration",
-    "category": "滴定",
-    "definition": "以电子转移反应为基础，用氧化剂或还原剂作滴定剂的滴定方法。",
-    "expanded": "常见体系包括高锰酸钾法、碘量法和重铬酸钾法。许多氧化还原反应动力学较慢，因此返滴定与间接滴定在氧化还原体系中尤其常见。",
+    "en": "redox titration",
+    "category": "氧化还原与电位滴定",
+    "definition": "以氧化剂和还原剂之间的电子转移反应建立样品与标准液计量关系的滴定。",
+    "expanded": "先配平总反应确定电子当量，再按计量点前后选择Nernst方程。典型例子是Ce⁴⁺滴定Fe²⁺及酸性KMnO₄滴定Fe²⁺。反应必须足够完全、快速，且能够检测终点。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
     "properties": [
-      "滴定剂为氧化剂或还原剂",
-      "终点可由指示剂、自身指示剂或电位法确定",
-      "反应速率往往是限制因素"
+      "Fe/Ce计量比1∶1",
+      "Fe/MnO₄⁻在酸中为5∶1",
+      "检测可用颜色或电位"
     ],
-    "confusions": "氧化还原滴定中计量关系由电子得失数决定，同一物质在不同反应中的当量可能不同，不能只凭化学式判断。",
+    "confusions": "氧化还原滴定描述反应类型；电位滴定描述检测方式，两者可以同时成立。",
     "related": [
-      "acid-base-titration",
-      "back-titration",
-      "precipitation-titration"
+      "potentiometric-titration",
+      "oxidizing-agent",
+      "reducing-agent"
     ],
-    "source": "Acid-Base Titration slides 3、8；教材氧化还原滴定章引言",
-    "updated": "2026-03-18"
+    "source": "课件8 第2–3页；教材第14章",
+    "updated": "2026-10-14",
+    "aliases": [
+      "氧化还原滴定",
+      "redox titration"
+    ]
   },
   {
     "slug": "precipitation-titration",
@@ -2767,5 +2771,510 @@
     ],
     "source": "课件 7 slides 19, 24-25；教材 §11.4",
     "updated": "2026-10-12"
+  },
+  {
+    "slug": "oxidizing-agent",
+    "zh": "氧化剂",
+    "en": "oxidizing agent",
+    "aliases": [
+      "氧化剂",
+      "oxidizing agent"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "接受电子、使其他物种氧化而自身被还原的物质。",
+    "expanded": "Ce⁴⁺接受1个电子成为Ce³⁺；酸性MnO₄⁻接受5个电子成为Mn²⁺。判断驱动力必须比较同一介质、同一参比标度的还原电位，并区分标准条件和实际组成。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "自身被还原",
+      "氧化能力受酸度与络合影响"
+    ],
+    "confusions": "氧化剂的名称依据其对反应对象的作用，自身发生的是还原。",
+    "related": [
+      "reducing-agent",
+      "standard-reduction-potential",
+      "formal-potential"
+    ],
+    "source": "课件8 第3、45页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "reducing-agent",
+    "zh": "还原剂",
+    "en": "reducing agent",
+    "aliases": [
+      "还原剂",
+      "reducing agent"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "给出电子、使其他物种还原而自身被氧化的物质。",
+    "expanded": "Fe²⁺被Ce⁴⁺氧化为Fe³⁺，是还原剂。S₂O₃²⁻在碘量分析中氧化为S₄O₆²⁻；Cr²⁺和Ti³⁺还原能力较强但易受空气氧化。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "自身被氧化",
+      "很多还原剂标准液受空气影响"
+    ],
+    "confusions": "较强还原能力并不保证溶液稳定、计量唯一或操作便利。",
+    "related": [
+      "oxidizing-agent",
+      "thiosulfate",
+      "redox-titration"
+    ],
+    "source": "课件8 第3、46页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "redox-couple",
+    "zh": "氧化还原电对",
+    "en": "redox couple",
+    "aliases": [
+      "氧化还原电对",
+      "redox couple"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "由同一半反应中可相互转化的氧化型和还原型组成的物种对。",
+    "expanded": "电位由两种形态的活度比和半反应条件共同决定。例如Fe³⁺/Fe²⁺中Fe³⁺为氧化型。要用Nernst式计算，两形态活度均须已知或通过平衡求得。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "半反应通常按还原方向书写",
+      "平衡相连电对电位相等"
+    ],
+    "confusions": "不能只知道一种形态的浓度，就唯一决定该电对电位。",
+    "related": [
+      "nernst-equation",
+      "equilibrium-redox-potential"
+    ],
+    "source": "课件8 第6–8页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "nernst-equation",
+    "zh": "Nernst方程",
+    "en": "Nernst equation",
+    "aliases": [
+      "Nernst方程",
+      "Nernst equation"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "用反应商描述非标准条件下电极电位与标准电位关系的方程。",
+    "expanded": "对Ox+ne⁻⇌Red，在298.15 K时，E等于E°减去<span class=\"rd-frac\"><span>0.05916 V</span><span><i>n</i></span></span>乘以活度比<span class=\"rd-frac\"><span><i>a</i><sub>Red</sub></span><span><i>a</i><sub>Ox</sub></span></span>的常用对数。复杂电对需按计量系数写活度指数，例如MnO₄⁻式中包含H⁺的8次幂。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "温度改变时使用RT项",
+      "活度无量纲",
+      "整体倍乘反应不改变电位"
+    ],
+    "confusions": "0.05916不是任意温度下的固定常数，n是所写半反应的电子数。",
+    "related": [
+      "redox-couple",
+      "standard-reduction-potential",
+      "formal-potential"
+    ],
+    "source": "课件8 第4–8、26页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "standard-reduction-potential",
+    "zh": "标准还原电位",
+    "en": "standard reduction potential",
+    "aliases": [
+      "标准还原电位",
+      "standard reduction potential"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "还原半反应在规定标准态下相对于指定参比标度的电极电位。",
+    "expanded": "标准态规定活度而不是把任意实际溶液都设为1 mol·L⁻¹。比较电位应统一还原方向和参比标度。电位是强度量，半反应乘系数时E°不乘该系数。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "决定标准自由能差",
+      "必须指定温度与参比"
+    ],
+    "confusions": "真实介质中的浓度比、酸度和络合会使实际电位偏离标准值。",
+    "related": [
+      "nernst-equation",
+      "formal-potential"
+    ],
+    "source": "课件8 第4–5、16页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "formal-potential",
+    "zh": "条件电位",
+    "en": "formal electrode potential",
+    "aliases": [
+      "条件电位",
+      "formal electrode potential"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "在指定介质下把活度、酸度或副反应影响并入常数项，以规定浓度变量表达的电位。",
+    "expanded": "常记作E°′。固定pH时，含H⁺半反应的对应项可吸收进条件电位；络合改变游离氧化型和还原型比例，也会改变条件电位。使用时必须保留介质条件。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "依赖介质组成",
+      "可用于同一介质下的浓度形式Nernst式"
+    ],
+    "confusions": "不能把不同酸介质的条件电位或游离离子与配合物电位混用。",
+    "related": [
+      "nernst-equation",
+      "standard-reduction-potential",
+      "complexation"
+    ],
+    "source": "课件8 第16、45；教材§14.6页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "equilibrium-redox-potential",
+    "zh": "平衡氧化还原电位",
+    "en": "equilibrium redox potential",
+    "aliases": [
+      "平衡氧化还原电位",
+      "equilibrium redox potential"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "达到快速电子交换平衡的电对共同具有的电极电位。",
+    "expanded": "Fe/Ce混合例题中，Fe电对和Ce电对在平衡时给出同一电位。两个电对彼此电位差为零，不表示电极相对于外部参比电极的电位为零。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "各电对电位相等",
+      "计量点前后均可达到平衡"
+    ],
+    "confusions": "计量点按物质的量定义，电子交换平衡按驱动力定义。",
+    "related": [
+      "redox-couple",
+      "equivalence-point",
+      "reference-electrode"
+    ],
+    "source": "课件8 第5–16页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "potentiometric-titration",
+    "zh": "电位滴定",
+    "en": "potentiometric titration",
+    "aliases": [
+      "电位滴定",
+      "potentiometric titration"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "滴定过程中测量指示电极与参比电极之间的电位差，以定位终点的滴定方式。",
+    "expanded": "氧化还原滴定可用Pt指示电极。稳定参比偏移主要平移曲线纵轴；终点取决于电位随体积的变化。接近突跃时减小加液间隔，并等待电位稳定。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "检测方式不限氧化还原反应",
+      "可用原曲线或导数处理"
+    ],
+    "confusions": "电位滴定不等于直接电位法，定量依据仍是滴定计量体积。",
+    "related": [
+      "indicator-electrode",
+      "reference-electrode",
+      "redox-titration"
+    ],
+    "source": "课件8 第2、30；教材§14.9页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "indicator-electrode",
+    "zh": "指示电极",
+    "en": "indicator electrode",
+    "aliases": [
+      "指示电极",
+      "indicator electrode"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "电位随被测物种活度或电对组成变化而响应的电极。",
+    "expanded": "可溶性氧化还原电对通常用惰性Pt电极交换电子，电极本身不作为计量反应物消耗。电位测量需配合稳定参比电极；响应速度和表面状态会影响终点。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "Pt常用于氧化还原滴定",
+      "近零电流测量"
+    ],
+    "confusions": "指示电极与溶液中的显色指示剂是两种不同终点检测手段。",
+    "related": [
+      "reference-electrode",
+      "potentiometric-titration"
+    ],
+    "source": "课件8 第30；教材§14.9页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "reference-electrode",
+    "zh": "参比电极",
+    "en": "reference electrode",
+    "aliases": [
+      "参比电极",
+      "reference electrode"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "在测量条件下保持可重复稳定电位、提供电位差基准的电极。",
+    "expanded": "Ag/AgCl是常见例子。课件NHE标度的数值与以Ag/AgCl为参比的仪器读数不应直接比较，需考虑参比电位与液接电位。参比稳定时曲线主要整体偏移。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "定义测量基准",
+      "应保持电位稳定"
+    ],
+    "confusions": "读数为零只表示按当前接线约定的电位差为零，不表示所有电对标准电位为零。",
+    "related": [
+      "indicator-electrode",
+      "potentiometric-titration"
+    ],
+    "source": "课件8 第30；教材§14.9页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "redox-indicator",
+    "zh": "氧化还原指示剂",
+    "en": "redox indicator",
+    "aliases": [
+      "氧化还原指示剂",
+      "redox indicator"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "氧化型与还原型颜色不同、依靠电位控制形态比变化来指示终点的试剂。",
+    "expanded": "指示剂有自己的半反应和条件电位。按两型比例10∶1到1∶10的目视近似，298.15 K变色全宽为<span class=\"rd-frac\"><span>0.11832 V</span><span><i>n</i><sub>In</sub></span></span>，应落在滴定突跃区间内，同时要求电子交换快速且可逆。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "电位控制颜色比",
+      "n取指示剂电子数"
+    ],
+    "confusions": "淀粉碘显色依靠结合，并不是淀粉自身被氧化还原。",
+    "related": [
+      "ferroin",
+      "starch-indicator",
+      "indicator-range"
+    ],
+    "source": "课件8 第32–35页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "self-indication",
+    "zh": "自指示法",
+    "en": "self-indication",
+    "aliases": [
+      "自指示法",
+      "self-indication"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "利用滴定剂或反应物自身颜色变化识别终点的方法。",
+    "expanded": "KMnO₄在酸性滴定中消耗前呈紫色，生成Mn²⁺颜色很浅。反应物耗尽后少量过量MnO₄⁻留下持续浅粉红。终点需要微量过量剂，可能略超过计量点。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "常见于KMnO₄滴定",
+      "无需另加氧化还原染料"
+    ],
+    "confusions": "有颜色不保证一定可自指示，还需颜色变化清楚且背景干扰可控。",
+    "related": [
+      "permanganometry",
+      "end-point",
+      "equivalence-point"
+    ],
+    "source": "课件8 第30–31页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "starch-indicator",
+    "zh": "淀粉指示剂",
+    "en": "starch indicator",
+    "aliases": [
+      "淀粉指示剂",
+      "starch indicator"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "通过与碘/多碘物种形成深蓝显色体系指示含碘滴定终点的试剂。",
+    "expanded": "直接碘量法终点蓝色出现，间接碘量法终点蓝色消失。碘多时过早加淀粉可导致释放缓慢和终点拖延；间接法常在浅黄色时加入。强酸长期放置会水解淀粉。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "显色灵敏",
+      "间接法通常近终点加入"
+    ],
+    "confusions": "本法不是淀粉的氧化型和还原型颜色不同。",
+    "related": [
+      "iodimetry",
+      "iodometry",
+      "triiodide"
+    ],
+    "source": "课件8 第31、41–43页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "iodimetry",
+    "zh": "直接碘量法",
+    "en": "iodimetry",
+    "aliases": [
+      "直接碘量法",
+      "iodimetry"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "用碘标准液直接滴定适合被碘定量氧化的还原剂的方法。",
+    "expanded": "碘液常以过量KI中的I₃⁻存在。淀粉蓝色出现指示少量碘过量。应按分析物选择pH，过强碱性导致碘歧化，过强酸性会影响平衡、淀粉与空气氧化。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "被测对象为还原剂",
+      "滴定剂为碘液",
+      "终点为蓝色出现"
+    ],
+    "confusions": "不要与用硫代硫酸钠测生成碘的间接碘量法混淆。",
+    "related": [
+      "iodometry",
+      "starch-indicator",
+      "triiodide"
+    ],
+    "source": "课件8 第36–38页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "iodometry",
+    "zh": "间接碘量法",
+    "en": "iodometry",
+    "aliases": [
+      "间接碘量法",
+      "iodometry"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "先让样品氧化剂与过量I⁻生成碘，再用标准硫代硫酸钠测生成碘量的方法。",
+    "expanded": "样品量经碘的电子当量链换算，每mol I₂消耗2 mol S₂O₃²⁻。淀粉近终点加入，蓝色消失为终点。不同分析物所需酸度及释放碘条件不同。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "被测对象通常为氧化剂",
+      "测生成碘而非剩余KI",
+      "应减少空气氧化和碘损失"
+    ],
+    "confusions": "加入过量KI并不意味着返滴定，因为没有测剩余KI再作差。",
+    "related": [
+      "iodimetry",
+      "thiosulfate",
+      "back-titration"
+    ],
+    "source": "课件8 第39–44页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "triiodide",
+    "zh": "三碘离子",
+    "en": "triiodide ion",
+    "aliases": [
+      "三碘离子",
+      "triiodide ion"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "由I₂与I⁻平衡结合形成的I₃⁻。",
+    "expanded": "I₂+I⁻⇌I₃⁻提高碘在水溶液中的溶解度。I₃⁻接受2个电子生成3I⁻，与2 mol S₂O₃²⁻反应产生连四硫酸根。写I₂当量时须清楚实际介质含过量KI。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "I₃⁻每mol接受2 mol电子",
+      "碘标准液中的重要物种"
+    ],
+    "confusions": "I₂与I₃⁻表达可对应相同碘当量，但半反应商和条件电位须按具体物种书写。",
+    "related": [
+      "iodimetry",
+      "iodometry",
+      "starch-indicator"
+    ],
+    "source": "课件8 第38–39页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "thiosulfate",
+    "zh": "硫代硫酸根",
+    "en": "thiosulfate ion",
+    "aliases": [
+      "硫代硫酸根",
+      "thiosulfate ion"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "化学式S₂O₃²⁻、在碘量滴定中可按规定计量氧化成S₄O₆²⁻的还原剂。",
+    "expanded": "I₂+2S₂O₃²⁻→2I⁻+S₄O₆²⁻。强酸中可分解产生硫和SO₂；强氧化剂可能继续氧化为其他产物，使计量不唯一。Na₂S₂O₃标准液需标定并妥善储存。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "与碘计量为2∶1",
+      "可用KBrO₃生成碘进行标定"
+    ],
+    "confusions": "相对稳定不等于永久稳定，不能把所有氧化剂都按碘反应比例计算。",
+    "related": [
+      "iodometry",
+      "reducing-agent",
+      "standard-solution"
+    ],
+    "source": "课件8 第39–44、46页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "permanganometry",
+    "zh": "高锰酸钾滴定法",
+    "en": "permanganometry",
+    "aliases": [
+      "高锰酸钾滴定法",
+      "permanganometry"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "以高锰酸根作为氧化滴定剂的分析方法。",
+    "expanded": "酸性MnO₄⁻接受5个电子成为Mn²⁺，适合Fe²⁺及草酸盐等分析。可自指示，但标准液需要去除可能促进分解的MnO₂并标定。反应产物与电子数随介质变化。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "酸性Fe²⁺计量比1∶5",
+      "常用草酸钠标定",
+      "终点浅粉红"
+    ],
+    "confusions": "必须注明酸度和产物，不能把酸中5电子关系套到全部pH。",
+    "related": [
+      "oxidizing-agent",
+      "self-indication",
+      "primary-standard"
+    ],
+    "source": "课件8 第25–29、45页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "dichromatometry",
+    "zh": "重铬酸钾滴定法",
+    "en": "dichromatometry",
+    "aliases": [
+      "重铬酸钾滴定法",
+      "dichromatometry"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "以Cr₂O₇²⁻在酸性介质中氧化分析物的滴定方法。",
+    "expanded": "Cr₂O₇²⁻还原为2Cr³⁺时接受6个电子；高纯K₂Cr₂O₇可用作一级标准物。常需另用适宜氧化还原指示剂，且注意实际介质对电位及终点颜色的影响。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "每mol转移6 mol电子",
+      "可由高纯固体直接配制标准液"
+    ],
+    "confusions": "一级标准物的纯度优势不能消除方法产生的终点偏差。",
+    "related": [
+      "primary-standard",
+      "redox-indicator",
+      "oxidizing-agent"
+    ],
+    "source": "课件8 第45页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "ferroin",
+    "zh": "邻菲啰啉亚铁指示剂",
+    "en": "ferroin",
+    "aliases": [
+      "邻菲啰啉亚铁指示剂",
+      "ferroin"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "Fe(II)与1,10-邻菲啰啉形成的配合物型氧化还原指示剂。",
+    "expanded": "还原型为红色，氧化型为浅蓝色。课件在1 mol·L⁻¹ H₂SO₄中给出1.06 V，常用于适宜的Ce(IV)滴定。络合显著改变电位，不能等同游离Fe电对。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "Fe(II)形态红色",
+      "Fe(III)形态浅蓝",
+      "需匹配突跃区间"
+    ],
+    "confusions": "同样含铁不代表它的条件电位就是Fe³⁺/Fe²⁺的0.771 V。",
+    "related": [
+      "redox-indicator",
+      "formal-potential",
+      "complexation"
+    ],
+    "source": "课件8 第35页；教材第14章",
+    "updated": "2026-10-14"
+  },
+  {
+    "slug": "redox-preconditioning",
+    "zh": "氧化还原预处理",
+    "en": "redox preconditioning",
+    "aliases": [
+      "氧化还原预处理",
+      "redox preconditioning"
+    ],
+    "category": "氧化还原与电位滴定",
+    "definition": "滴定前将分析物定量转换为规定价态，并消除残余预氧化剂或预还原剂干扰的处理。",
+    "expanded": "测总铁时须先统一铁价态，才能用单一电子当量定量。过量预还原剂若残留，会额外消耗氧化滴定剂而使按铁计算的结果偏高。应按规定方法检验反应和去除步骤。 <a href=\"chapter-8.html\">返回第8章笔记</a>",
+    "properties": [
+      "价态必须明确",
+      "预处理剂残余影响计量"
+    ],
+    "confusions": "样品价态统一与去除多余试剂是两个都要完成的条件。",
+    "related": [
+      "sample-preparation",
+      "redox-titration",
+      "reducing-agent"
+    ],
+    "source": "课件8 第2；教材§14.8页；教材第14章",
+    "updated": "2026-10-14"
   }
 ]

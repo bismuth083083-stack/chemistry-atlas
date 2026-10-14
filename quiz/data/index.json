@@ -887,6 +887,40 @@
       ],
       "path": "bioc-t01.json",
       "mode": "question-bank"
+    },
+    {
+      "id": "ANA-L08",
+      "title": "氧化还原与电位滴定",
+      "description": "Nernst方程与平衡常数、滴定曲线分段、含H⁺电对、终点指示、碘量法和标准液标定。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 8,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 8 · Redox and potentiometric titrations",
+      "lesson": "Redox and potentiometric titrations",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "redox",
+        "Nernst",
+        "iodometry",
+        "potentiometry"
+      ],
+      "knowledgePoints": [
+        "electron balance",
+        "equilibrium constant",
+        "titration curves",
+        "iodimetry and iodometry",
+        "standardization"
+      ],
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14",
+      "relatedNotes": [
+        "/analytical/dist/chapter-8.html"
+      ],
+      "path": "ana-l08.json",
+      "mode": "fixed"
     }
   ]
 }

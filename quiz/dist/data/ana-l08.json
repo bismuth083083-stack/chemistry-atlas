@@ -1,0 +1,661 @@
+{
+  "id": "ANA-L08",
+  "title": "氧化还原与电位滴定",
+  "description": "Nernst方程与平衡常数、滴定曲线分段、含H⁺电对、终点指示、碘量法和标准液标定。",
+  "subject": "analytical-chemistry",
+  "chapter": "Chapter 8 · Redox and potentiometric titrations",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "scopeNote": "根据课件8及Christian等教材第14章独立编写，包含课件的条件说明与勘误。22题：15单选、3多选、2判断、2填空；难度5易、10中、4难、3拓展。",
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Ce⁴⁺ + Fe²⁺ → Ce³⁺ + Fe³⁺中，哪一项正确？",
+      "points": 1,
+      "explanation": "Ce⁴⁺接受电子成为Ce³⁺，使Fe²⁺失电子成为Fe³⁺，所以Ce⁴⁺是氧化剂、Fe²⁺是还原剂。",
+      "difficulty": "easy",
+      "tags": [
+        "oxidation state",
+        "oxidizing agent"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Fe²⁺是氧化剂，自身被还原"
+        },
+        {
+          "id": "B",
+          "text": "Ce⁴⁺与Fe²⁺都得到电子"
+        },
+        {
+          "id": "C",
+          "text": "Ce⁴⁺是还原剂，自身被氧化"
+        },
+        {
+          "id": "D",
+          "text": "Ce⁴⁺是氧化剂，自身被还原"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "酸性介质中，1 mol MnO₄⁻定量还原为Mn²⁺，能氧化多少mol Fe²⁺为Fe³⁺？",
+      "points": 1,
+      "explanation": "Mn从+7降到+2得到5 mol电子，Fe²⁺每mol只失去1 mol电子。因此计量比MnO₄⁻∶Fe²⁺=1∶5；8是H⁺系数。",
+      "difficulty": "easy",
+      "tags": [
+        "stoichiometry",
+        "permanganate"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1 mol"
+        },
+        {
+          "id": "B",
+          "text": "2 mol"
+        },
+        {
+          "id": "C",
+          "text": "5 mol"
+        },
+        {
+          "id": "D",
+          "text": "8 mol"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "用0.100 mol·L⁻¹ Ce⁴⁺滴定100.0 mL 0.100 mol·L⁻¹ Fe²⁺，反应计量比1∶1。计量点体积是多少？",
+      "points": 1,
+      "explanation": "初始Fe²⁺为10.00 mmol，需同量Ce⁴⁺；0.100 mmol·mL⁻¹的滴定剂需100.0 mL。",
+      "difficulty": "easy",
+      "tags": [
+        "equivalence point",
+        "volume"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "200.0 mL"
+        },
+        {
+          "id": "B",
+          "text": "50.0 mL"
+        },
+        {
+          "id": "C",
+          "text": "20.0 mL"
+        },
+        {
+          "id": "D",
+          "text": "100.0 mL"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "间接碘量法用Na₂S₂O₃滴定释放的碘，淀粉指示终点的现象是什么？",
+      "points": 1,
+      "explanation": "硫代硫酸根将剩余碘还原为I⁻，深蓝显色体系消失。直接用碘滴定还原剂时则是蓝色出现。",
+      "difficulty": "easy",
+      "tags": [
+        "iodometry",
+        "starch"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "CuI沉淀完全消失"
+        },
+        {
+          "id": "B",
+          "text": "持续浅粉红出现"
+        },
+        {
+          "id": "C",
+          "text": "蓝色首次出现"
+        },
+        {
+          "id": "D",
+          "text": "蓝色消失"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "Pt指示电极与Ag/AgCl参比电极在氧化还原电位滴定中的主要分工是什么？",
+      "points": 1,
+      "explanation": "Pt是惰性指示电极，电位随电对活度比变化；参比电极提供稳定基准，仪器测二者电位差。",
+      "difficulty": "easy",
+      "tags": [
+        "potentiometry",
+        "electrode"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两电极电位都必须始终为零"
+        },
+        {
+          "id": "B",
+          "text": "Pt的溶解量决定样品质量"
+        },
+        {
+          "id": "C",
+          "text": "Pt响应溶液电对组成，参比电极提供稳定电位基准"
+        },
+        {
+          "id": "D",
+          "text": "Pt提供固定参比，Ag/AgCl计量消耗样品"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "关于Nernst方程，哪些说法正确？",
+      "points": 1,
+      "explanation": "温度为298.15 K时，2.303RT/F约0.05916 V。活度相对标准态定义。倍乘半反应同时改变电子数及活度指数，因此电位不变。",
+      "difficulty": "medium",
+      "tags": [
+        "Nernst",
+        "activity",
+        "intensive quantity"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所写半反应中的计量系数决定反应商指数"
+        },
+        {
+          "id": "B",
+          "text": "将半反应整体乘5，电位也必须乘5"
+        },
+        {
+          "id": "C",
+          "text": "298.15 K时常用对数形式含0.05916 V系数"
+        },
+        {
+          "id": "D",
+          "text": "反应商中的活度应为无量纲量"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "298.15 K，简单一电子电对的氧化型活度为还原型的100倍。电位相对于E°改变多少？",
+      "points": 1,
+      "explanation": "E−E°为0.05916 V乘以lg100，即升高0.11832 V。使用氧化型相对还原型的比值时是正号。",
+      "difficulty": "medium",
+      "tags": [
+        "Nernst",
+        "potential calculation"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "升高0.05916 V"
+        },
+        {
+          "id": "B",
+          "text": "不变"
+        },
+        {
+          "id": "C",
+          "text": "降低0.11832 V"
+        },
+        {
+          "id": "D",
+          "text": "升高0.11832 V"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "Ce⁴⁺/Ce³⁺与Fe³⁺/Fe²⁺的题设电位分别为1.610 V和0.771 V。298.15 K、总反应转移1个电子时，lg K约是多少？",
+      "points": 1,
+      "explanation": "标准电位差为1.610−0.771=0.839 V。由ΔG°=−nFΔE°=−RT ln K，lg K为0.839除以0.05916，约14.18。",
+      "difficulty": "medium",
+      "tags": [
+        "equilibrium constant",
+        "standard potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−14.18"
+        },
+        {
+          "id": "B",
+          "text": "14.18"
+        },
+        {
+          "id": "C",
+          "text": "28.36"
+        },
+        {
+          "id": "D",
+          "text": "0.839"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "5.0 mL 0.10 mol·L⁻¹ Ce⁴⁺与5.0 mL 0.30 mol·L⁻¹ Fe²⁺混合，反应近于完全。电位最便于用哪一组已知量计算？",
+      "points": 1,
+      "explanation": "Ce⁴⁺消耗0.50 mmol Fe²⁺，留下1.00 mmol Fe²⁺并生成0.50 mmol Fe³⁺。这两形态近似量均已知，同一总体积可约去。",
+      "difficulty": "medium",
+      "tags": [
+        "mixed potential",
+        "mass balance"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "生成Fe³⁺0.50 mmol与剩余Fe²⁺1.00 mmol"
+        },
+        {
+          "id": "B",
+          "text": "把Fe²⁺与Ce⁴⁺均设为零后代Nernst式"
+        },
+        {
+          "id": "C",
+          "text": "只用剩余Fe²⁺1.00 mmol"
+        },
+        {
+          "id": "D",
+          "text": "生成Ce³⁺0.50 mmol与Ce⁴⁺初始0.50 mmol"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "两个可快速交换电子的电对在溶液中达到化学平衡时，它们彼此电位差为零；这并不要求Pt相对于参比电极的读数为零。",
+      "points": 1,
+      "explanation": "电子交换平衡使两个电对电位相等。相对于外部参比电极，溶液共同电位可以不为零。",
+      "difficulty": "medium",
+      "tags": [
+        "equilibrium",
+        "reference scale"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "用0.100 mol·L⁻¹ Ce⁴⁺滴定100.0 mL 0.100 mol·L⁻¹ Fe²⁺。加入10.0 mL时，按E°Fe=0.771 V、298.15 K计算电位约为多少？",
+      "points": 1,
+      "explanation": "生成Fe³⁺1.00 mmol、剩余Fe²⁺9.00 mmol。E为0.771 V加0.05916 V乘以lg(1除以9)，得0.7145 V。",
+      "difficulty": "medium",
+      "tags": [
+        "pre-equivalence",
+        "Nernst"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.827 V"
+        },
+        {
+          "id": "B",
+          "text": "1.610 V"
+        },
+        {
+          "id": "C",
+          "text": "0.715 V"
+        },
+        {
+          "id": "D",
+          "text": "1.191 V"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "同一Fe²⁺–Ce⁴⁺体系，加入200.0 mL滴定剂时，应优先怎样计算电位？",
+      "points": 1,
+      "explanation": "计量点为100.0 mL。加入200.0 mL时，过量Ce⁴⁺10.00 mmol、生成Ce³⁺10.00 mmol，活度比近似1。",
+      "difficulty": "medium",
+      "tags": [
+        "post-equivalence",
+        "cerium"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "用Ce⁴⁺/Ce³⁺，两者近似等量，E≈1.610 V"
+        },
+        {
+          "id": "B",
+          "text": "用Fe电对半滴定点公式，E≈0.771 V"
+        },
+        {
+          "id": "C",
+          "text": "把两标准电位相减，E≈0.839 V"
+        },
+        {
+          "id": "D",
+          "text": "用Fe³⁺/Fe²⁺并直接把Fe²⁺设为零"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "298.15 K，一电子氧化还原指示剂从还原型∶氧化型=10∶1变到1∶10，所需完整变色电位宽度约是多少？",
+      "points": 1,
+      "explanation": "两端分别位于指示剂条件电位上下约0.05916 V，完整宽度约0.11832 V。电子数取指示剂半反应的值。",
+      "difficulty": "medium",
+      "tags": [
+        "indicator transition",
+        "potential range"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.118 V"
+        },
+        {
+          "id": "B",
+          "text": "0.236 V"
+        },
+        {
+          "id": "C",
+          "text": "0.059 V"
+        },
+        {
+          "id": "D",
+          "text": "固定为0.200 V"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于碘量法的操作和计量，哪些说法正确？",
+      "points": 1,
+      "explanation": "间接法测生成的碘，不测剩余KI。后加淀粉减少碘滞留；空气副反应生成额外碘会增大硫代硫酸钠消耗。",
+      "difficulty": "medium",
+      "tags": [
+        "iodometry",
+        "starch timing",
+        "error"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "酸性中空气氧化I⁻可能额外生成碘，使氧化剂测定偏高"
+        },
+        {
+          "id": "B",
+          "text": "只要加入过量KI，就必须用“加入KI量减剩余KI量”计算样品"
+        },
+        {
+          "id": "C",
+          "text": "1 mol I₂按规定反应消耗2 mol S₂O₃²⁻"
+        },
+        {
+          "id": "D",
+          "text": "间接碘量法通常在接近终点、碘呈浅黄色时加入淀粉"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "0.200 g含铜样品消耗20.0 mL 0.100 mol·L⁻¹ Na₂S₂O₃。Cu²⁺与S₂O₃²⁻净计量比1∶1，M(Cu)=63.546 g·mol⁻¹。样品铜质量分数约为____%。（填到小数点后一位）",
+      "points": 1,
+      "explanation": "Cu物质的量为0.00200 mol，铜质量0.127092 g，除以0.200 g再乘100%，得63.546%，保留一位小数为63.5%。",
+      "difficulty": "medium",
+      "tags": [
+        "iodometric calculation",
+        "copper"
+      ],
+      "answer": "63.5",
+      "acceptableAnswers": [
+        "63.5%",
+        "63.5 %"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      }
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "在题设Fe²⁺–Ce⁴⁺的1∶1体系计量点，两种反应物残余浓度同为x、两种产物浓度同为C−x。为什么Eₑ为两标准电位的算术平均？",
+      "points": 2,
+      "explanation": "平均式来自本体系具体物料关系与两个一电子Nernst式。残余反应物并非零，产物活度也不必为1。复杂计量或酸度项可能不能相消。",
+      "difficulty": "hard",
+      "tags": [
+        "equivalence potential",
+        "derivation"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两Nernst方程相加时，互为倒数的活度比对数项相消"
+        },
+        {
+          "id": "B",
+          "text": "因为计量点时全部物种活度均为1"
+        },
+        {
+          "id": "C",
+          "text": "因为两种初始标准液浓度在任何题目中都相等"
+        },
+        {
+          "id": "D",
+          "text": "所有氧化还原计量点都必须取算术平均"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "酸性MnO₄⁻滴定Fe²⁺时，哪些条件和推导正确？",
+      "points": 2,
+      "explanation": "由半反应MnO₄⁻+8H⁺+5e⁻→Mn²⁺+4H₂O可直接得到5与8的系数。H⁺降低使氧化能力和电位降低，平均式需保留酸度修正。",
+      "difficulty": "hard",
+      "tags": [
+        "permanganate",
+        "acidity",
+        "Nernst"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "计量关系为1 mol MnO₄⁻对应5 mol Fe²⁺"
+        },
+        {
+          "id": "B",
+          "text": "Mn电对反应商必须包含H⁺的8次幂"
+        },
+        {
+          "id": "C",
+          "text": "若其余活度关系固定，降低H⁺活度会降低Mn电对电位"
+        },
+        {
+          "id": "D",
+          "text": "计量点电位必为0.771与1.510 V的算术平均"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "一种氧化还原电对只含单独给定浓度的Fe²⁺，题目没有给Fe³⁺活度或其他平衡信息。哪项判断最准确？",
+      "points": 2,
+      "explanation": "Nernst式需要两种形态的活度比。真实电极可受痕量Fe³⁺、氧或表面过程影响而有读数，不应把模型信息不足等同于绝对无法测量。",
+      "difficulty": "hard",
+      "tags": [
+        "initial potential",
+        "model conditions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "现有信息不足以唯一计算该电对电位，但真实仪器可能有读数"
+        },
+        {
+          "id": "B",
+          "text": "所有参比电极都无法产生读数"
+        },
+        {
+          "id": "C",
+          "text": "电位必须严格等于0.771 V"
+        },
+        {
+          "id": "D",
+          "text": "电位必须为零"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "测总铁时，样品已定量预还原为Fe²⁺，但有能与Ce⁴⁺反应的过量预还原剂残留。若忽略它，按全部Ce⁴⁺用于铁计算，结果通常如何？",
+      "points": 2,
+      "explanation": "残余预还原剂额外消耗Ce⁴⁺。把这部分消耗也换算成铁，会高估铁量。价态统一后仍须除去会干扰滴定的剩余试剂。",
+      "difficulty": "hard",
+      "tags": [
+        "preconditioning",
+        "systematic error"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "总铁结果偏高"
+        },
+        {
+          "id": "B",
+          "text": "只要K足够大，结果一定不受影响"
+        },
+        {
+          "id": "C",
+          "text": "总铁结果偏低"
+        },
+        {
+          "id": "D",
+          "text": "只改变电极纵轴，不影响体积"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "298.15 K，溶液中I₂和I⁻的无量纲活度分别为0.0100与0.0200。对I₂+2e⁻⇌2I⁻，E相对于E°约如何变化？",
+      "points": 3,
+      "explanation": "反应商为a(I⁻)²除以a(I₂)，即0.0200²除以0.0100=0.0400。E−E°为−0.02958 V乘以lg0.0400，等于+0.04135 V。形态浓度比2∶1不能推出固定−0.018 V。",
+      "difficulty": "challenging",
+      "tags": [
+        "polyatomic stoichiometry",
+        "activity powers",
+        "extension"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "等于E°"
+        },
+        {
+          "id": "B",
+          "text": "降低0.0414 V"
+        },
+        {
+          "id": "C",
+          "text": "升高0.0414 V"
+        },
+        {
+          "id": "D",
+          "text": "降低0.0180 V"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "间接碘量法加入过量KI，再滴定生成的碘；因为存在“过量试剂”，样品量必须由准确加入KI量减去KI剩余量来求。",
+      "points": 3,
+      "explanation": "本法以生成碘的当量测样品，未反应的KI无需测定。“已知加入量减剩余量”属于返滴定的另一种计算逻辑。",
+      "difficulty": "challenging",
+      "tags": [
+        "iodometry",
+        "back titration",
+        "extension"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "用0.1262 g高纯KBrO₃释放碘并标定Na₂S₂O₃，消耗44.97 mL。M(KBrO₃)=167.00 g·mol⁻¹，1 mol BrO₃⁻对应6 mol S₂O₃²⁻。Na₂S₂O₃浓度约为____ mol·L⁻¹。（保留4位有效数字，填数值）",
+      "points": 3,
+      "explanation": "KBrO₃物质的量为0.1262除以167.00 mol，乘6后再除以0.04497 L，得0.1008257 mol·L⁻¹；4位有效数字为0.1008 mol·L⁻¹。",
+      "difficulty": "challenging",
+      "tags": [
+        "standardization",
+        "bromate",
+        "extension"
+      ],
+      "answer": "0.1008",
+      "acceptableAnswers": [
+        "0.1008 mol/L",
+        "0.1008 mol·L⁻¹",
+        "0.1008 M",
+        "0.1008 mol L-1"
+      ],
+      "grading": {
+        "caseSensitive": false,
+        "collapseWhitespace": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "id": "ORG-L10",
+  "title": "卤代烷、亲核取代与SN2",
+  "description": "对应第10章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "organic-chemistry",
+  "chapter": "Lesson 10 · 卤代烷、亲核取代与SN2",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "卤代烷、亲核取代与SN2 · Chemistry Atlas笔记",
+      "url": "https://organic.chemistryatlas.xyz/lesson-10.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "SN2的基本步骤数为？",
+      "points": 1,
+      "explanation": "成键与断键在同一协同步骤进行，无普通中间体。",
+      "difficulty": "easy",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两步经碳正离子"
+        },
+        {
+          "id": "B",
+          "text": "三步自由基链"
+        },
+        {
+          "id": "C",
+          "text": "四步逐级电离"
+        },
+        {
+          "id": "D",
+          "text": "一步协同"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "SN2的典型速率式为？",
+      "points": 1,
+      "explanation": "常见SN2对底物与亲核试剂各一级，总二级。",
+      "difficulty": "easy",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "v=k[R–X]"
+        },
+        {
+          "id": "B",
+          "text": "v=k[R–X][Nu]"
+        },
+        {
+          "id": "C",
+          "text": "v=k[Nu]²"
+        },
+        {
+          "id": "D",
+          "text": "v=k/[R–X]"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "SN2亲核试剂进攻反应中心的方向是？",
+      "points": 1,
+      "explanation": "背面进攻与C–X反键轨道作用，导致几何构型翻转。",
+      "difficulty": "easy",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只从任意侧面"
+        },
+        {
+          "id": "B",
+          "text": "先攻击卤素核"
+        },
+        {
+          "id": "C",
+          "text": "离去基团的背面"
+        },
+        {
+          "id": "D",
+          "text": "与离去基团同面"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "相同离去基团等条件下，普通底物哪类通常SN2最快？",
+      "points": 1,
+      "explanation": "甲基位阻最小；普通顺序甲基>伯>仲，叔碳不利SN2。",
+      "difficulty": "easy",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "新戊基卤"
+        },
+        {
+          "id": "B",
+          "text": "叔卤代烷"
+        },
+        {
+          "id": "C",
+          "text": "乙烯基卤"
+        },
+        {
+          "id": "D",
+          "text": "甲基卤"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "CH₂=CHCl属于哪类？",
+      "points": 1,
+      "explanation": "卤素直接连sp²双键碳；CH₂=CH–CH₂Cl才是烯丙基卤。",
+      "difficulty": "easy",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "烯丙基卤"
+        },
+        {
+          "id": "B",
+          "text": "乙烯基卤"
+        },
+        {
+          "id": "C",
+          "text": "烷基卤"
+        },
+        {
+          "id": "D",
+          "text": "苄基卤"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "哪些是判断SN2速率时的重要因素？",
+      "points": 1,
+      "explanation": "反应由过渡态能垒控制，多个结构与环境因素共同影响。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "亲核试剂及其溶剂化"
+        },
+        {
+          "id": "B",
+          "text": "底物位阻"
+        },
+        {
+          "id": "C",
+          "text": "离去基团能力"
+        },
+        {
+          "id": "D",
+          "text": "只看总反应是否放热"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "亲核性主要是何种性质？",
+      "points": 1,
+      "explanation": "亲核性衡量进攻亲电中心的速率；碱性主要衡量质子转移平衡。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只由分子质量决定"
+        },
+        {
+          "id": "B",
+          "text": "质子转移平衡常数本身"
+        },
+        {
+          "id": "C",
+          "text": "针对具体反应的动力学性质"
+        },
+        {
+          "id": "D",
+          "text": "与溶剂无关的绝对排序"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "水、醇等质子溶剂中，卤离子常见亲核性顺序为？",
+      "points": 1,
+      "explanation": "小阴离子被氢键溶剂化更强；换溶剂可能改变顺序。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "F⁻>Cl⁻>Br⁻>I⁻"
+        },
+        {
+          "id": "B",
+          "text": "全部相同"
+        },
+        {
+          "id": "C",
+          "text": "Cl⁻>I⁻>F⁻>Br⁻"
+        },
+        {
+          "id": "D",
+          "text": "I⁻>Br⁻>Cl⁻>F⁻"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "哪种溶剂属于极性非质子溶剂？",
+      "points": 1,
+      "explanation": "DMSO有较大极性而无O–H/N–H供氢键基团。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "DMSO"
+        },
+        {
+          "id": "B",
+          "text": "甲醇"
+        },
+        {
+          "id": "C",
+          "text": "乙醇"
+        },
+        {
+          "id": "D",
+          "text": "水"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "SN2几何构型翻转保证产物R/S标签一定与底物相反。",
+      "points": 1,
+      "explanation": "置换后CIP优先次序可能改变；几何翻转与标签改变不是同一件事。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "1-碘丙烷与CN⁻经碳端取代，可生成？",
+      "points": 1,
+      "explanation": "引入–C≡N增加一个碳，得到CH₃CH₂CH₂CN。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1-丁醇"
+        },
+        {
+          "id": "B",
+          "text": "丙腈"
+        },
+        {
+          "id": "C",
+          "text": "丁腈"
+        },
+        {
+          "id": "D",
+          "text": "丙胺"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "叔丁氧基负离子常作为强碱而较不利SN2亲核试剂，主要原因是？",
+      "points": 1,
+      "explanation": "体积大阻碍进攻碳，仍可夺取较易接近的质子。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只溶于水"
+        },
+        {
+          "id": "B",
+          "text": "位阻大"
+        },
+        {
+          "id": "C",
+          "text": "没有电子对"
+        },
+        {
+          "id": "D",
+          "text": "不带负电"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "18-冠-6促进钾盐参与非质子溶剂反应的主要作用为？",
+      "points": 1,
+      "explanation": "冠醚包合阳离子，可减少紧密离子配对、提高阴离子反应性。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "共价消耗F⁻"
+        },
+        {
+          "id": "B",
+          "text": "把F⁻变成质子"
+        },
+        {
+          "id": "C",
+          "text": "使碳变成碳正离子必经中间体"
+        },
+        {
+          "id": "D",
+          "text": "络合K⁺，改善盐溶解和阴离子可用性"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于SN2，哪些正确？",
+      "points": 1,
+      "explanation": "更换基团后常是不同化合物，不能把构型翻转一概称为形成对映体。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "背面进攻导致几何翻转"
+        },
+        {
+          "id": "B",
+          "text": "手性底物与不同取代基产物必为一对对映体"
+        },
+        {
+          "id": "C",
+          "text": "无可停留的碳正离子中间体"
+        },
+        {
+          "id": "D",
+          "text": "能量图通常有一个主要峰"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "SN2中底物浓度变为原来3倍，亲核试剂变为2倍，k不变，初速率变为____倍。",
+      "points": 1,
+      "explanation": "速率倍数3×2=6。",
+      "difficulty": "medium",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六",
+        "6.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "0.50 M底物、1.0 M亲核剂时v=0.050 M s⁻¹；改为0.10 M与2.0 M，v为？",
+      "points": 2,
+      "explanation": "0.050×(0.10/0.50)×(2.0/1.0)=0.020。",
+      "difficulty": "hard",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.020 M s⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "0.10 M s⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "0.0050 M s⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "0.50 M s⁻¹"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "哪些操作通常有助于伯卤代烷的SN2取代？",
+      "points": 2,
+      "explanation": "这些条件可降低SN2有效能垒；还须考虑溶解性和消除竞争。",
+      "difficulty": "hard",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "选择较好的离去基团"
+        },
+        {
+          "id": "B",
+          "text": "采用适当极性非质子溶剂"
+        },
+        {
+          "id": "C",
+          "text": "选用位阻较小的亲核试剂"
+        },
+        {
+          "id": "D",
+          "text": "一律换为叔卤代烷"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "溴乙烷与乙炔负离子HC≡C⁻经SN2生成？",
+      "points": 2,
+      "explanation": "两个碳的乙基接上两个碳的乙炔基，得HC≡CCH₂CH₃。",
+      "difficulty": "hard",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "乙炔"
+        },
+        {
+          "id": "B",
+          "text": "2-丁烯"
+        },
+        {
+          "id": "C",
+          "text": "1-丙炔"
+        },
+        {
+          "id": "D",
+          "text": "1-丁炔"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "使用大量过量NH₃从伯卤代烷制伯胺，主要目的为？",
+      "points": 2,
+      "explanation": "伯胺也可作亲核剂；过量氨改善伯胺选择性而非绝对保证。",
+      "difficulty": "hard",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "保证绝无任何副产物"
+        },
+        {
+          "id": "B",
+          "text": "减少生成伯胺继续烷基化的相对机会"
+        },
+        {
+          "id": "C",
+          "text": "使碳正离子寿命无限"
+        },
+        {
+          "id": "D",
+          "text": "使氨失去孤对电子"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "仅观测v=k[A][B]，可得出的最严谨结论是？",
+      "points": 3,
+      "explanation": "动力学可约束机理，立体化学及其他实验共同支持一步协同。",
+      "difficulty": "challenging",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必定存在自由基链"
+        },
+        {
+          "id": "B",
+          "text": "与SN2相符，但需结合其他机理证据"
+        },
+        {
+          "id": "C",
+          "text": "能确定产物的R/S标签"
+        },
+        {
+          "id": "D",
+          "text": "已唯一证明所有键同步变化"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "F⁻在质子溶剂中较弱，意味着它在任何溶剂和离子配对条件下都不能进行SN2。",
+      "points": 3,
+      "explanation": "溶剂化、盐溶解性和阳离子络合会改变F⁻的有效亲核反应性。",
+      "difficulty": "challenging",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "SN2在原温度下，0.50 M底物与1.0 M亲核剂时v=0.050 M s⁻¹。改为0.10 M与2.0 M，同时升温使k增至原来2倍，新初速率=____ M s⁻¹。",
+      "points": 3,
+      "explanation": "原k=0.050/(0.50×1.0)=0.10 M⁻¹ s⁻¹；新k=0.20，新v=0.20×0.10×2.0=0.040。",
+      "difficulty": "challenging",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "answer": "0.040",
+      "acceptableAnswers": [
+        "0.040",
+        "0.04"
+      ]
+    }
+  ]
+}

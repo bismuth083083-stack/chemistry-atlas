@@ -80,8 +80,8 @@
 <tr><td>越大</td><td>越<strong>低</strong></td><td>越高</td></tr>
 <tr><td>越小</td><td>越<strong>高</strong></td><td>越低</td></tr>
 </tbody></table></div>
-<div class="note"><b>为什么 Km 越小亲和力越高</b><p>因为 Km 是“需要多少底物才能把酶用到一半速度”的度量。<strong>Km 小意味着很少的底物就够用了，说明酶抓底物抓得紧</strong>。这个直觉比死记“Km 与亲和力成反比”更可靠。注意课件写的是“在一定条件下”——正是上面说的 k₂ ≪ k₋₁ 条件。</p></div>
-<p>Km 还有一个重要的应用：<strong>帮助判断体内一个可逆反应进行的方向</strong>。如果酶对底物的 Km 值<strong>小于</strong>对产物的 Km 值，则反应有利于<strong>正反应</strong>；否则有利于逆反应。</p>
+<div class="note"><b>为什么 Km 越小亲和力越高</b><p>[S]=Km时初速率达到Vmax的一半；这不自动等于结合了一半活性位点的热力学解离常数。仅在kcat≪k₋₁等条件下，Km≈Kd，此时才可较直接以Km讨论结合亲和力。</p></div>
+<p>Km是动力学参数，不能仅凭底物和产物两侧Km的大小确定可逆反应净方向。方向由实际ΔG=ΔG°+RT ln Q决定，需要浓度、平衡常数等信息；完整正逆动力学参数之间还受到热力学约束。</p>
 <div class="note"><b>这个判据的直觉</b><p>同一个酶催化可逆反应，两个方向各有自己的 Km（记为 Km(S) 与 Km(P)）。<strong>Km 小的一侧意味着该物质在较低浓度下就能把酶“喂饱”</strong>，因此酶更容易朝着消耗这一侧的方向工作。反过来也可以理解为：Km 小的物质更容易被酶抓住并转化。所以 Km(S) &lt; Km(P) 时正反应占优。</p></div>
 <h3 id="vmax">3.2 Vmax：最大反应速率</h3>
 <p>Vmax 也是酶的特征常数，但<strong>随着酶浓度的变化而变化</strong>。这一点很重要：Vmax 并不像 Km 那样是酶的内在属性——它正比于酶量（Vmax = k₂[Eₜ]）。所以在比较不同实验的 Vmax 时，必须先确认酶浓度相同。</p>
@@ -132,7 +132,7 @@
 <tr><td><b>可逆性抑制剂</b></td><td>以<strong>次级键</strong>与酶<strong>可逆</strong>结合</td><td><strong>能</strong>——用透析或超滤即可去除，酶恢复活性</td><td>降低酶的有效活性，但酶量不变</td></tr>
 <tr><td><b>不可逆性抑制剂</b><br><small>酶灭活剂</small></td><td>以<strong>强的化学键</strong>（通常是共价键）与酶<strong>不可逆</strong>结合</td><td><strong>不能</strong>——一旦失活不可逆转</td><td>导致酶<strong>有效浓度降低</strong>。想恢复活性，唯一手段是<strong>补充新酶</strong></td></tr>
 </tbody></table></div>
-<div class="note"><b>这个划分的实用含义</b><p>可逆与不可逆的差别不在于“结合得牢不牢”，而在于<strong>有没有形成共价键</strong>。这直接决定了治疗策略：<strong>可逆抑制剂的效果取决于浓度，停药后活性可恢复；不可逆抑制剂的效果取决于“被修饰掉多少酶分子”，需要机体重新合成酶才能恢复</strong>。阿司匹林不可逆地乙酰化 COX，因此低剂量就能长期抑制血小板功能——因为血小板没有细胞核，无法重新合成酶，药效持续整个血小板寿命（约 7–10 天）。这是理解给药方案的关键。</p></div>
+<div class="note"><b>这个划分的实用含义</b><p>可逆与不可逆不能单凭结合强弱判断。许多不可逆抑制通过共价修饰造成持久失活，但高亲和力的非共价抑制也可以仍然可逆。需要结合稀释、去除抑制剂后的恢复和化学修饰证据进行分类。</p></div>
 <h3 id="reversible">6.1 三类可逆性抑制剂</h3>
 <div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>类型</th><th>结合对象</th><th>Km</th><th>Vmax</th><th>双倒数图的特征</th></tr></thead><tbody>
 <tr><td><b>竞争性</b><br><small>competitive</small></td><td><strong>只与游离酶 E 结合</strong>（在活性中心，与底物竞争）</td><td><strong>提高</strong></td><td><strong>不变</strong></td><td>纵截距不变（1/Vmax 不变），横截距向原点靠近（−1/Km 绝对值变小），<strong>直线绕纵轴交点旋转</strong></td></tr>
@@ -148,18 +148,18 @@
 </section>
 
 <section>
-<h2 id="irreversible">7. 不可逆性抑制剂的四种类型</h2>
-<p>课件按作用机制把不可逆抑制剂分成四类，这个分类的核心维度是<strong>“抑制剂最初是否像底物”</strong>和<strong>“是否需要酶自己把它激活”</strong>。</p>
+<h2 id="irreversible">7. 不可逆抑制与高亲和类似物：分类边界</h2>
+<p>课件把下列四种策略并列介绍，其中“过渡态类似物”并不自动属于不可逆抑制，这个分类的核心维度是<strong>“抑制剂最初是否像底物”</strong>和<strong>“是否需要酶自己把它激活”</strong>。</p>
 <div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>类型</th><th>结构特点</th><th>作用机制</th></tr></thead><tbody>
 <tr><td><b>① 基团特异性抑制剂</b></td><td>与底物<strong>无相似</strong>之处</td><td>能<strong>共价修饰酶活性中心上的必需侧链基团</strong>，导致不可逆失活。由于许多氨基酸残基含有亲核侧链基团，所以充当这类抑制剂的<strong>一般是亲电试剂</strong></td></tr>
 <tr><td><b>② 底物类似物抑制剂</b></td><td>结构上<strong>相似于底物</strong></td><td>因此能在活性中心与酶结合，然后<strong>不可逆地修饰活性中心上的必需基团</strong>，导致酶活性丧失</td></tr>
-<tr><td><b>③ 过渡态类似物抑制剂</b></td><td>与酶促反应的<strong>过渡态极为相似</strong></td><td>在化学结构和分子形状上与活性中心<strong>十分般配</strong>，能以<strong>极高的亲和力</strong>与活性中心结合，从而导致底物无法进入而不可逆抑制</td></tr>
+<tr><td><b>③ 过渡态类似物抑制剂</b></td><td>与酶促反应的<strong>过渡态极为相似</strong></td><td>在化学结构和分子形状上与活性中心<strong>十分般配</strong>，能以<strong>极高的亲和力</strong>与活性中心结合，阻止底物有效结合或转化；可为紧密可逆抑制，不能仅凭高亲和力归为不可逆</td></tr>
 <tr><td><b>④ 自杀型抑制剂</b><br><small>课件原文：“农夫与蛇的故事”</small></td><td>本身不具反应性</td><td><strong>受酶本身的激活</strong>：与酶结合后，<strong>受到酶的催化发生几步反应，但并不形成产物，而是变成高度反应性的化合物</strong>，转而修饰酶的必需基团，导致酶活性丧失</td></tr>
 </tbody></table></div>
 <div class="figure-card"><img src="assets/10-ache-inhibitor.webp" alt="乙酰胆碱酯酶的基团特异性抑制剂的作用机制"><p>图源：第10章 PPT 第 24 页。乙酰胆碱酯酶的基团特异性抑制剂的作用。</p></div>
 <div class="figure-card"><img src="assets/10-tpck.webp" alt="TPCK对糜蛋白酶活性中心组氨酸的修饰"><p>图源：第10章 PPT 第 25 页。TPCK 对糜蛋白酶活性中心 His 的修饰——底物类似物型不可逆抑制剂：先像底物一样结合，再共价修饰。</p></div>
 <div class="figure-card"><img src="assets/10-suicide-mao.webp" alt="N,N-二甲基炔丙胺对单胺氧化酶的自杀型抑制机制"><p>图源：第10章 PPT 第 26 页。N,N-二甲基炔丙胺对单胺氧化酶的自杀型抑制——酶亲自把抑制剂“加工”成了灭活自己的武器。</p></div>
-<div class="note"><b>为什么“自杀型”这个比喻很准确</b><p>课件用“农夫与蛇”来形容这类抑制剂，抓住了机制的要害：<strong>酶把抑制剂当成底物结合并催化它，结果催化产物反过头来灭活了酶</strong>。它的选择性因此极高——只有真正能催化这个反应的酶才会被灭活，其他酶即使结合了抑制剂也不会把它转化成活性形式。<br><br>这个特征在药物设计中极有价值：<strong>自杀型抑制剂（机制基础性抑制剂）只作用于特定靶酶，副作用小</strong>。临床上的单胺氧化酶抑制剂、某些抗病毒药与抗生素都属于这一类。<br><br>注意它与“过渡态类似物”的区别：<strong>过渡态类似物靠“像过渡态”获得高亲和力，本身已经是有反应性的分子；自杀型抑制剂本身不活泼，是被酶当场激活的</strong>。</p></div>
+<div class="note"><b>为什么“自杀型”这个比喻很准确</b><p>机制基础性（自杀型）抑制剂经过靶酶催化被转成活性形式，进而使酶失活，其选择性取决于识别、活化及后续反应。过渡态类似物则利用与过渡态相似的结构取得高亲和力，并不要求本身有化学反应性；高亲和力也不自动保证不可逆或低副作用。</p></div>
 </section>
 
 <section>
@@ -222,7 +222,7 @@
 <li><strong>Km 的定义式</strong>是什么？它为什么不等于解离常数 Ks？两者何时近似相等？</li>
 <li>写出<strong>米氏方程的最终形式</strong>，并说明 Vmax 与 k₂、[Eₜ] 的关系。</li>
 <li><strong>Km 的定义</strong>（用 Vmax 表述）是什么？Km 越小说明亲和力怎样？</li>
-<li>怎样用 Km 判断<strong>可逆反应的方向</strong>？背后的直觉是什么？</li>
+<li>为何不能只用 Km 判断<strong>可逆反应的方向</strong>？背后的直觉是什么？</li>
 <li>Vmax 与 Km 哪一个随酶浓度变化？为什么？</li>
 <li><strong>kcat</strong> 的另两个名称是什么？单位是什么？物理意义是什么？</li>
 <li>为什么说 <strong>kcat/Km 才是真正的效率指标</strong>？它为什么有理论上限？达到上限的酶叫什么？</li>
@@ -253,7 +253,7 @@
 <div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>位置</th><th>课件原文情况</th><th>整理时的处理</th></tr></thead><tbody>
 <tr><td>第 9–10 页</td><td>课件推导中的中间步骤<strong>只给出①式与结果</strong>，跳过了代入与整理过程；且部分公式以图片形式呈现</td><td>正文补全了三步推导（稳态近似 → 总量守恒代入 → 解出 [ES]），并把公式重排为可读形式。<strong>每一步都可对照课件原页核验</strong></td></tr>
 <tr><td>第 8 页</td><td>课件写作 “Lenor Michaelis”，姓名拼写有误</td><td>正文改为正确的 <strong>Leonor Michaelis</strong>（1875–1949）。课件括注的生卒年为准</td></tr>
-<tr><td>第 11 页</td><td>“Km 可以帮助判断体内一个可逆反应进行的方向。如果酶对底物的 Km 值小于对产物的 Km 值，则反应有利于正反应”</td><td>照录，并补写了直觉解释。<strong>这条判据依赖“同一酶催化可逆反应、两侧各有 Km”的前提</strong>，请对教材确认适用范围</td></tr>
+<tr><td>第 11 页</td><td>“Km 可以帮助判断体内一个可逆反应进行的方向。如果酶对底物的 Km 值小于对产物的 Km 值，则反应有利于正反应”</td><td>照录，并补写了直觉解释。<strong>本次核对后不采用这条简化判据；反应方向还取决于浓度、平衡常数与完整正逆参数</strong>，请对教材确认适用范围</td></tr>
 <tr><td>第 20–22 页</td><td>三页的公式以图片形式给出，部分符号被 OCR 打乱（如 “(1+ /(1+[I]/KI)/Vmax”）</td><td>正文按标准形式重写：竞争性表观 Km = Km(1 + [I]/K_I)；反竞争性表观 Km = Km/(1 + [I]/K_I′)，表观 Vmax = Vmax/(1 + [I]/K_I′)。<strong>请对课件原图核对符号下标（K_I 与 K_I′ 的用法）</strong></td></tr>
 <tr><td>第 22 页</td><td>反竞争性抑制一页同时给出了直接作图与双倒数作图两套标注</td><td>正文只保留结论（Km 与 Vmax 同比例降低 ⇒ 平行线），未复现两套标注</td></tr>
 <tr><td>第 34 页</td><td>负协同部分写“需要将底物浓度提高 6561 倍”</td><td>照录。补充说明 6561 = 3⁸，与 10%→90% 的比值关系一致，便于记忆与验算</td></tr>
@@ -262,7 +262,8 @@
 </section>
 
 <footer class="source">来源：第10章《酶动力学》课件（34 页）；公式按课件原页核对并补全推导步骤；术语沿用第 9 章约定。图片均为课件原图忠实裁剪，未作重绘。</footer>
-</main>
+<section id="chapter-quiz"><p class="source">概念校对参考：<a href="https://pubmed.ncbi.nlm.nih.gov/16766115/">Relations between biochemical thermodynamics and biochemical kinetics</a>。</p><div class="note"><p><strong>本次测验的概念校正：</strong>Km仅在特定条件下近似解离常数，单独比较正逆反应的Km不能确定净方向。过渡态类似物的高亲和结合不自动等于不可逆抑制；需区分紧密可逆结合与化学失活。</p></div><h2>章节测验</h2><p><a href="https://quiz.chemistryatlas.xyz/index.html?quiz=BIOC-L10">第10章/课测验：22题，32分 →</a></p><p>15道单选、3道多选、2道判断、2道填空。按5道基础、10道中等、4道较难、3道拓展递进；交卷后查看答案与解析。</p></section></main>
 <script src="script.js"></script>
 </body>
 </html>
+

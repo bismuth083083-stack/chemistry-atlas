@@ -1,0 +1,634 @@
+{
+  "id": "BIOC-L05",
+  "title": "蛋白质的性质及研究方法",
+  "description": "对应第5章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "biochemistry",
+  "chapter": "Lesson 05 · 蛋白质的性质及研究方法",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "蛋白质的性质及研究方法 · Chemistry Atlas笔记",
+      "url": "https://biochem.chemistryatlas.xyz/chapter-05.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    },
+    {
+      "title": "ExPASy Compute pI/Mw documentation",
+      "url": "https://web.expasy.org/compute_pi/pi_tool-doc.html",
+      "role": "序列预测pI的方法与预测局限"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "蛋白质变性与水解的主要区别是？",
+      "points": 1,
+      "explanation": "常规非共价变性不等于肽链降解；具体试剂可能另有化学反应。",
+      "difficulty": "easy",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "变性主要破坏高级结构，水解切断肽键"
+        },
+        {
+          "id": "B",
+          "text": "水解只改变折叠"
+        },
+        {
+          "id": "C",
+          "text": "二者都只改变颜色"
+        },
+        {
+          "id": "D",
+          "text": "变性必把全部肽键切断"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "蛋白质A₂₈₀主要来自哪些残基？",
+      "points": 1,
+      "explanation": "Trp、Tyr是280 nm主要贡献者，Phe在该波长贡献较弱。",
+      "difficulty": "easy",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Trp与Tyr"
+        },
+        {
+          "id": "B",
+          "text": "Asp与Glu"
+        },
+        {
+          "id": "C",
+          "text": "Gly与Ala"
+        },
+        {
+          "id": "D",
+          "text": "Lys与Arg"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "等电聚焦主要按什么分离？",
+      "points": 1,
+      "explanation": "蛋白在pH梯度中聚焦于净电荷接近零的位置。",
+      "difficulty": "easy",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "核酸碱基组成"
+        },
+        {
+          "id": "B",
+          "text": "肽键数量绝对相等"
+        },
+        {
+          "id": "C",
+          "text": "等电点pI"
+        },
+        {
+          "id": "D",
+          "text": "旋光正负"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "常规还原SDS-PAGE主要提供哪种信息？",
+      "points": 1,
+      "explanation": "SDS变性并使电荷质量比近似一致，还原剂拆开二硫键。",
+      "difficulty": "easy",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "原生复合物的精确形状"
+        },
+        {
+          "id": "B",
+          "text": "多肽链的表观分子质量"
+        },
+        {
+          "id": "C",
+          "text": "酶活性绝对值"
+        },
+        {
+          "id": "D",
+          "text": "DNA序列"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "Western blot检测目标蛋白的关键识别工具是？",
+      "points": 1,
+      "explanation": "抗体与特异抗原结合；条带须结合合适对照解释。",
+      "difficulty": "easy",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "限制性内切酶"
+        },
+        {
+          "id": "B",
+          "text": "ddNTP"
+        },
+        {
+          "id": "C",
+          "text": "EDTA滴定剂"
+        },
+        {
+          "id": "D",
+          "text": "特异抗体"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "哪些是蛋白质纯化常用分离依据？",
+      "points": 1,
+      "explanation": "不同层析方法可利用大小、电荷、疏水性或亲和结合。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "每种蛋白都有相同溶解度"
+        },
+        {
+          "id": "B",
+          "text": "表面电荷"
+        },
+        {
+          "id": "C",
+          "text": "大小与形状"
+        },
+        {
+          "id": "D",
+          "text": "配体结合能力"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "常规强酸完全水解做氨基酸组成分析，哪个残基容易被严重破坏？",
+      "points": 1,
+      "explanation": "常规酸水解不能可靠测Trp，须采用适当替代方法。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Ala"
+        },
+        {
+          "id": "B",
+          "text": "Trp"
+        },
+        {
+          "id": "C",
+          "text": "Leu"
+        },
+        {
+          "id": "D",
+          "text": "Gly"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "胰蛋白酶通常优先切在哪些残基之后？",
+      "points": 1,
+      "explanation": "Lys/Arg后常切割，但邻近Pro等可影响，不能把规则视为无例外。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Lys或Arg的C端一侧"
+        },
+        {
+          "id": "B",
+          "text": "所有Pro之后"
+        },
+        {
+          "id": "C",
+          "text": "Trp的N端一侧"
+        },
+        {
+          "id": "D",
+          "text": "任意Gly之后"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "Edman降解从哪端逐个鉴定？",
+      "points": 1,
+      "explanation": "需要可反应的N端，逐轮释放与鉴定末端残基。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "C端"
+        },
+        {
+          "id": "B",
+          "text": "侧链末端"
+        },
+        {
+          "id": "C",
+          "text": "N端"
+        },
+        {
+          "id": "D",
+          "text": "随机中段"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "仅由基因编码序列推导，就可完整确定样品蛋白的所有翻译后修饰。",
+      "points": 1,
+      "explanation": "编码序列提供主链基础，修饰、加工等仍需蛋白层面的实验。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "双向电泳的经典两维是？",
+      "points": 1,
+      "explanation": "第一维按pI，第二维主要按表观分子质量。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只按pI两次"
+        },
+        {
+          "id": "B",
+          "text": "先等电聚焦，再SDS-PAGE"
+        },
+        {
+          "id": "C",
+          "text": "先滴定再过滤"
+        },
+        {
+          "id": "D",
+          "text": "两次相同方向SDS-PAGE"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "盐析沉淀蛋白质时，最合理的理解是？",
+      "points": 1,
+      "explanation": "盐析不等于变性；不同蛋白的沉淀盐浓度可不同。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "一定不可逆"
+        },
+        {
+          "id": "B",
+          "text": "必使所有蛋白等量沉淀"
+        },
+        {
+          "id": "C",
+          "text": "必切断全部肽键"
+        },
+        {
+          "id": "D",
+          "text": "改变溶解性，可在适当条件下保持活性"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "双缩脲反应主要利用什么结构？",
+      "points": 1,
+      "explanation": "碱性Cu²⁺与多个肽键相关基团形成有色络合物。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "单个游离脂肪酸"
+        },
+        {
+          "id": "B",
+          "text": "DNA双螺旋"
+        },
+        {
+          "id": "C",
+          "text": "磷酸二酯键"
+        },
+        {
+          "id": "D",
+          "text": "肽键的配位显色"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "蛋白质定量时哪些因素需注意？",
+      "points": 1,
+      "explanation": "不同组成和基质影响A₂₈₀、Bradford等方法，需合适校准与空白。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "检测是否处于线性范围"
+        },
+        {
+          "id": "B",
+          "text": "任何蛋白A₂₈₀响应都完全相同"
+        },
+        {
+          "id": "C",
+          "text": "样品是否含核酸或其他干扰物"
+        },
+        {
+          "id": "D",
+          "text": "标准与样品的响应是否可比"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "总活力200 U，总蛋白质量10 mg，比活力=____ U mg⁻¹。",
+      "points": 1,
+      "explanation": "比活力=总活力/蛋白质量=200/10。",
+      "difficulty": "medium",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "20.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "某步纯化比活力由5升至50 U mg⁻¹，纯化倍数为？",
+      "points": 2,
+      "explanation": "比活力之比50/5=10；回收率是另一个指标。",
+      "difficulty": "hard",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "0.1"
+        },
+        {
+          "id": "C",
+          "text": "250"
+        },
+        {
+          "id": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "哪些方法可提供蛋白三维结构信息？",
+      "points": 2,
+      "explanation": "选择方法需考虑大小、结晶性、样品状态和实验条件。",
+      "difficulty": "hard",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "冷冻电镜"
+        },
+        {
+          "id": "B",
+          "text": "单独一次Bradford显色"
+        },
+        {
+          "id": "C",
+          "text": "NMR"
+        },
+        {
+          "id": "D",
+          "text": "X射线晶体衍射"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "还原前有一条100 kDa带，还原后为50 kDa带，最直接支持？",
+      "points": 2,
+      "explanation": "还原剂拆二硫键而非肽键；须结合其他证据确定亚基组成。",
+      "difficulty": "hard",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "还原剂把每条肽链精确切半"
+        },
+        {
+          "id": "B",
+          "text": "一定含DNA"
+        },
+        {
+          "id": "C",
+          "text": "原蛋白必是单链50 kDa"
+        },
+        {
+          "id": "D",
+          "text": "可能含二硫键连接的两条约50 kDa链"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "使用两种不同切割方式后，测序时重叠肽段主要用于？",
+      "points": 2,
+      "explanation": "不同切割产生跨越原切点的重叠，支持序列拼接。",
+      "difficulty": "hard",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "消除所有修饰"
+        },
+        {
+          "id": "B",
+          "text": "建立原肽链片段顺序"
+        },
+        {
+          "id": "C",
+          "text": "提高每个氨基酸的原子序数"
+        },
+        {
+          "id": "D",
+          "text": "确定溶剂pH"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "已知序列后能否计算蛋白质pI？",
+      "points": 3,
+      "explanation": "序列pI可预测；真实pKa与结构环境可能使预测偏离实测。",
+      "difficulty": "challenging",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只取任意两个侧链pKa平均"
+        },
+        {
+          "id": "B",
+          "text": "必精确等于7"
+        },
+        {
+          "id": "C",
+          "text": "可用基团pKa模型估算，实际值受微环境影响"
+        },
+        {
+          "id": "D",
+          "text": "完全不存在任何计算模型"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "一个二维电泳斑点只能对应一种蛋白，且一个蛋白永远只形成一个斑点。",
+      "points": 3,
+      "explanation": "不同蛋白可共迁移，修饰或加工也可使同一蛋白分布于多个点。",
+      "difficulty": "challenging",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "纯化前100 mg蛋白、比活力10 U mg⁻¹；纯化后3.0 mg蛋白、比活力200 U mg⁻¹。活力回收率=____%。",
+      "points": 3,
+      "explanation": "初总活力100×10=1000 U，末总活力3×200=600 U，回收率60%；比活力提高不代表全量回收。",
+      "difficulty": "challenging",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60.0"
+      ]
+    }
+  ]
+}

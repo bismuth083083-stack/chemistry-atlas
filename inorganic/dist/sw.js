@@ -1,4 +1,4 @@
-const CACHE='inorganic-atlas-v16';
+const CACHE='inorganic-atlas-v16-quiz-backfill';
 const SHELL=[
   './',
   'index.html',
@@ -93,3 +93,4 @@ self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET'||new URL(event.request.url).origin!==location.origin)return;
   event.respondWith((async()=>{const cached=await caches.match(event.request);try{const response=await fetch(event.request);if(response.ok){const cache=await caches.open(CACHE);await cache.put(event.request,response.clone())}return response}catch{if(cached)return cached;if(event.request.mode==='navigate')return (await caches.match('index.html'))||new Response('<h1>暂时离线</h1><p>联网访问一次后即可离线阅读已缓存内容。</p>',{status:503,headers:{'Content-Type':'text/html; charset=utf-8'}});return new Response('',{status:503,statusText:'Offline'})}})());
 });
+

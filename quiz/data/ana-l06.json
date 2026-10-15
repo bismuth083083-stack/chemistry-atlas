@@ -1,0 +1,629 @@
+{
+  "id": "ANA-L06",
+  "title": "重量分析",
+  "description": "对应第6章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "analytical-chemistry",
+  "chapter": "Lesson 06 · 重量分析",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "重量分析 · Chemistry Atlas笔记",
+      "url": "https://analytical.chemistryatlas.xyz/chapter-6.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "沉淀重量分析最终直接测量什么？",
+      "points": 1,
+      "explanation": "需将分析物定量转为组成明确稳定的称量形式。",
+      "difficulty": "easy",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "初始溶液颜色"
+        },
+        {
+          "id": "B",
+          "text": "所有离子活度"
+        },
+        {
+          "id": "C",
+          "text": "指示剂旋光度"
+        },
+        {
+          "id": "D",
+          "text": "已知组成称量形式的质量"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "沉淀形式与称量形式的关系是？",
+      "points": 1,
+      "explanation": "沉淀经干燥灼烧等处理，可能变为另一化合物。",
+      "difficulty": "easy",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "永远必须相同"
+        },
+        {
+          "id": "B",
+          "text": "可以不同，需按转化计量换算"
+        },
+        {
+          "id": "C",
+          "text": "不需要知道化学式"
+        },
+        {
+          "id": "D",
+          "text": "都必须为气体"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "相对过饱和度常写为？",
+      "points": 1,
+      "explanation": "Q为相关过饱和浓度，S为平衡溶解度；比值越大通常越利成核。",
+      "difficulty": "easy",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "S/Q²"
+        },
+        {
+          "id": "B",
+          "text": "(Q−S)/S"
+        },
+        {
+          "id": "C",
+          "text": "Q+S"
+        },
+        {
+          "id": "D",
+          "text": "QS"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "为获得较粗晶体，通常希望相对过饱和度？",
+      "points": 1,
+      "explanation": "低过饱和通常偏向晶体生长而减少大量新核。",
+      "difficulty": "easy",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "无限高"
+        },
+        {
+          "id": "B",
+          "text": "等于负无穷"
+        },
+        {
+          "id": "C",
+          "text": "较低"
+        },
+        {
+          "id": "D",
+          "text": "与粒径完全无关"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "重量换算因数F的作用是？",
+      "points": 1,
+      "explanation": "按化学式与计量比确定F，m分析物=Fm称量物。",
+      "difficulty": "easy",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "把质量变成pH"
+        },
+        {
+          "id": "B",
+          "text": "把沉淀量变成光谱波长"
+        },
+        {
+          "id": "C",
+          "text": "校正所有杂质不需化学式"
+        },
+        {
+          "id": "D",
+          "text": "将称量物质量转为待测物质量"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "哪些操作通常有利于较粗晶形沉淀？",
+      "points": 1,
+      "explanation": "降低局部Q或提高S有助控制过饱和，需同时保证定量回收。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "缓慢加沉淀剂并搅拌"
+        },
+        {
+          "id": "B",
+          "text": "在适用条件下提高温度"
+        },
+        {
+          "id": "C",
+          "text": "使用适当稀溶液"
+        },
+        {
+          "id": "D",
+          "text": "瞬间加入大量浓沉淀剂制造极高过饱和"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "陈化过程中小晶体溶解、大晶体生长，重要驱动是？",
+      "points": 1,
+      "explanation": "Ostwald熟化可增大平均粒径并减少表面吸附。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "小颗粒较高表面能和溶解度"
+        },
+        {
+          "id": "B",
+          "text": "大颗粒摩尔质量自动变大"
+        },
+        {
+          "id": "C",
+          "text": "只由滤纸孔径决定"
+        },
+        {
+          "id": "D",
+          "text": "全部沉淀变气体"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "胶状沉淀用纯水洗后重新分散穿过滤纸，称为？",
+      "points": 1,
+      "explanation": "电解质被洗去，胶粒重新分散可导致沉淀损失。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "胶溶"
+        },
+        {
+          "id": "B",
+          "text": "正常熔化"
+        },
+        {
+          "id": "C",
+          "text": "共价聚合"
+        },
+        {
+          "id": "D",
+          "text": "结晶"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "表面吸附污染与晶体内部吸留相比，通常更容易通过什么减少？",
+      "points": 1,
+      "explanation": "表面杂质更可接近洗液；内部夹带常需重新沉淀等处理。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "无条件加更多杂质"
+        },
+        {
+          "id": "B",
+          "text": "完全不处理"
+        },
+        {
+          "id": "C",
+          "text": "合适洗涤"
+        },
+        {
+          "id": "D",
+          "text": "只提高天平精度"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "只要天平足够精确，杂质共沉淀不会影响重量分析准确度。",
+      "points": 1,
+      "explanation": "称到的质量包含杂质，精确称量不能消除化学系统误差。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "AgCl(s)⇌Ag⁺+Cl⁻的热力学Ksp严格采用？",
+      "points": 1,
+      "explanation": "纯固体活度视为1，自由离子活度决定溶解平衡。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "AgCl固体质量"
+        },
+        {
+          "id": "B",
+          "text": "水体积"
+        },
+        {
+          "id": "C",
+          "text": "两自由离子活度乘积"
+        },
+        {
+          "id": "D",
+          "text": "总银浓度乘总氯浓度"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "MX在纯水中1:1溶解且无副反应，摩尔溶解度s与浓度Ksp关系为？",
+      "points": 1,
+      "explanation": "两自由离子均为s，所以Ksp=s²。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "s=Ksp"
+        },
+        {
+          "id": "B",
+          "text": "s=√Ksp"
+        },
+        {
+          "id": "C",
+          "text": "s=Ksp²"
+        },
+        {
+          "id": "D",
+          "text": "s=1/Ksp"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "共同离子加入饱和体系，忽略其他效应时通常使溶解度？",
+      "points": 1,
+      "explanation": "共同离子提高一反应物离子活度，平衡向固体移动。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "降低"
+        },
+        {
+          "id": "B",
+          "text": "不可能变化"
+        },
+        {
+          "id": "C",
+          "text": "无限增加"
+        },
+        {
+          "id": "D",
+          "text": "必增加100倍"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "合格称量形式应具备哪些性质？",
+      "points": 1,
+      "explanation": "质量须能可靠映射到分析物量，组成漂移会导致误差。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "可准确干燥或处理至恒量"
+        },
+        {
+          "id": "B",
+          "text": "吸湿和任意变价完全不影响"
+        },
+        {
+          "id": "C",
+          "text": "处理后足够稳定"
+        },
+        {
+          "id": "D",
+          "text": "组成明确"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "称量物0.5000 g，换算因数F=0.2000，待测物质量为____ g。",
+      "points": 1,
+      "explanation": "0.5000×0.2000=0.1000 g。",
+      "difficulty": "medium",
+      "tags": [
+        "重量分析"
+      ],
+      "answer": "0.1000",
+      "acceptableAnswers": [
+        "0.1000",
+        "0.1",
+        "0.100"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "M(OH)₂在纯水只发生理想解离，溶解度s，则Ksp为？",
+      "points": 2,
+      "explanation": "[M²⁺]=s，[OH⁻]=2s，Ksp=s(2s)²=4s³。",
+      "difficulty": "hard",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "4s³"
+        },
+        {
+          "id": "B",
+          "text": "2s²"
+        },
+        {
+          "id": "C",
+          "text": "s²"
+        },
+        {
+          "id": "D",
+          "text": "s³/4"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "哪些会带来重量法偏差？",
+      "points": 2,
+      "explanation": "化学回收率与称量组成同天平读数一样重要。",
+      "difficulty": "hard",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "残留水或杂质未除尽"
+        },
+        {
+          "id": "B",
+          "text": "洗涤造成目标沉淀溶失"
+        },
+        {
+          "id": "C",
+          "text": "灼烧时损失或转化不完全"
+        },
+        {
+          "id": "D",
+          "text": "准确按计量关系换算"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "BaSO₄称量测SO₄²⁻，取摩尔质量分别233.4与96.1，F约为？",
+      "points": 2,
+      "explanation": "一个BaSO₄对应一个硫酸根，F=96.1/233.4≈0.412。",
+      "difficulty": "hard",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "96.1"
+        },
+        {
+          "id": "B",
+          "text": "0.412"
+        },
+        {
+          "id": "C",
+          "text": "2.43"
+        },
+        {
+          "id": "D",
+          "text": "1.00"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "1.000 g试样生成0.2500 g称量物，F=0.4000，分析物质量分数为？",
+      "points": 2,
+      "explanation": "分析物0.2500×0.4000=0.1000 g，除1.000 g为10.00%。",
+      "difficulty": "hard",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "40.00%"
+        },
+        {
+          "id": "B",
+          "text": "25.00%"
+        },
+        {
+          "id": "C",
+          "text": "62.50%"
+        },
+        {
+          "id": "D",
+          "text": "10.00%"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "提高盐浓度后难溶盐溶解度增加，且不存在显著络合，可能由什么解释？",
+      "points": 3,
+      "explanation": "非共同电解质可能降低活度系数，为满足Ksp需较高离子浓度。",
+      "difficulty": "challenging",
+      "tags": [
+        "重量分析"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "共同离子一定消失"
+        },
+        {
+          "id": "B",
+          "text": "离子活度系数改变的盐效应"
+        },
+        {
+          "id": "C",
+          "text": "固体原子质量降低"
+        },
+        {
+          "id": "D",
+          "text": "热力学Ksp被任意改变"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "有机沉淀剂形成较大摩尔质量的称量物可改善称量灵敏度，但不自动消除杂质误差。",
+      "points": 3,
+      "explanation": "换算因数较小可放大分析物对应质量，仍需选择性与稳定组成。",
+      "difficulty": "challenging",
+      "tags": [
+        "重量分析"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "1.000 g试样生成BaSO₄ 0.23340 g，空白同法生成0.02334 g。取M(BaSO₄)=233.4、M(SO₄²⁻)=96.1 g mol⁻¹，校正后的硫酸根质量百分数为____%（保留两位小数）。",
+      "points": 3,
+      "explanation": "校正BaSO₄为0.21006 g，n=0.0009000 mol；硫酸根0.08649 g，占8.649%，取8.65%。",
+      "difficulty": "challenging",
+      "tags": [
+        "重量分析"
+      ],
+      "answer": "8.65",
+      "acceptableAnswers": [
+        "8.65"
+      ]
+    }
+  ]
+}

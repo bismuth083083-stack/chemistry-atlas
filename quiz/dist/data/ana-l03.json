@@ -1,0 +1,629 @@
+{
+  "id": "ANA-L03",
+  "title": "酸碱平衡",
+  "description": "对应第3章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "analytical-chemistry",
+  "chapter": "Lesson 03 · 酸碱平衡",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "酸碱平衡 · Chemistry Atlas笔记",
+      "url": "https://analytical.chemistryatlas.xyz/chapter-3.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Brønsted酸的定义为？",
+      "points": 1,
+      "explanation": "Brønsted酸给予质子，碱接受质子；Lewis定义改用电子对。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "质子给体"
+        },
+        {
+          "id": "B",
+          "text": "电子对给体"
+        },
+        {
+          "id": "C",
+          "text": "只提供OH⁻"
+        },
+        {
+          "id": "D",
+          "text": "所有阳离子"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "Lewis碱的定义为？",
+      "points": 1,
+      "explanation": "Lewis碱提供电子对成键。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必为中性水分子"
+        },
+        {
+          "id": "B",
+          "text": "电子对给体"
+        },
+        {
+          "id": "C",
+          "text": "电子对受体"
+        },
+        {
+          "id": "D",
+          "text": "质子给体"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "严格pH定义采用什么？",
+      "points": 1,
+      "explanation": "pH=−log aH⁺，稀溶液常以相对浓度近似。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "溶液总质量"
+        },
+        {
+          "id": "B",
+          "text": "水的物质的量"
+        },
+        {
+          "id": "C",
+          "text": "氢离子活度"
+        },
+        {
+          "id": "D",
+          "text": "任意离子总浓度"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "25 ℃稀溶液中Kw约为？",
+      "points": 1,
+      "explanation": "Kw为水自递平衡的活度乘积，浓度形式为近似。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1.0×10⁻⁷"
+        },
+        {
+          "id": "B",
+          "text": "1.0×10⁻¹⁴"
+        },
+        {
+          "id": "C",
+          "text": "14 mol L⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "同温度下共轭酸碱的Ka、Kb满足？",
+      "points": 1,
+      "explanation": "共轭两平衡相乘得到水的自递平衡。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "KaKb=1"
+        },
+        {
+          "id": "B",
+          "text": "KaKb=Kw"
+        },
+        {
+          "id": "C",
+          "text": "Ka/Kb=Kw"
+        },
+        {
+          "id": "D",
+          "text": "Ka+Kb=Kw"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "典型HA/A⁻缓冲体系抵抗小量酸碱加入，原因有哪些？",
+      "points": 1,
+      "explanation": "缓冲能力有限，添加量不能耗尽某一组分。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "A⁻消耗加入的H⁺"
+        },
+        {
+          "id": "B",
+          "text": "HA消耗加入的OH⁻"
+        },
+        {
+          "id": "C",
+          "text": "储备足够时两组分比值变化小"
+        },
+        {
+          "id": "D",
+          "text": "缓冲液能无限量中和任何酸碱"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "Ka较大通常表示同类弱酸？",
+      "points": 1,
+      "explanation": "酸强度与具体溶液pH不同，后者还受浓度与组成影响。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "一定溶液pH较低，不论浓度"
+        },
+        {
+          "id": "B",
+          "text": "酸性较强"
+        },
+        {
+          "id": "C",
+          "text": "一定是强碱"
+        },
+        {
+          "id": "D",
+          "text": "解离比例永不随浓度改变"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "Henderson–Hasselbalch式为？",
+      "points": 1,
+      "explanation": "浓度写法需活度近似，并以平衡或合理近似组成计算。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "pH=Ka/[A⁻]"
+        },
+        {
+          "id": "B",
+          "text": "pH=pKa+log([A⁻]/[HA])"
+        },
+        {
+          "id": "C",
+          "text": "pH=pKa−log([A⁻]/[HA])"
+        },
+        {
+          "id": "D",
+          "text": "pH=pKa+[HA]"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "若[A⁻]=[HA]，缓冲体系pH约为？",
+      "points": 1,
+      "explanation": "对数比值为0，因此pH≈pKa。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "pKa"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "pKb"
+        },
+        {
+          "id": "D",
+          "text": "7必然成立"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "任何温度下中性水溶液的pH都严格为7。",
+      "points": 1,
+      "explanation": "中性要求aH⁺=aOH⁻，pH=pKw/2；Kw随温度改变。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "忽略水自递且弱酸解离很小，单元弱酸HA的[H⁺]近似为？",
+      "points": 1,
+      "explanation": "由x²/(C−x)=Ka，x≪C时得x≈√(KaC)。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "√(KaC)"
+        },
+        {
+          "id": "B",
+          "text": "C/Ka"
+        },
+        {
+          "id": "C",
+          "text": "KaC"
+        },
+        {
+          "id": "D",
+          "text": "Kw/C"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "H₂PO₄⁻既可给出又可接受质子，属于？",
+      "points": 1,
+      "explanation": "既可失质子为HPO₄²⁻，又可得质子为H₃PO₄。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两性物种"
+        },
+        {
+          "id": "B",
+          "text": "只可能是强碱"
+        },
+        {
+          "id": "C",
+          "text": "只可能是强酸"
+        },
+        {
+          "id": "D",
+          "text": "不含氢的惰性离子"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "相同缓冲比值下适度稀释，最主要改变是？",
+      "points": 1,
+      "explanation": "同比稀释近似保持比值，但单位体积酸碱储备减少。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "pH必增加7"
+        },
+        {
+          "id": "B",
+          "text": "缓冲容量降低，pH可近似不变"
+        },
+        {
+          "id": "C",
+          "text": "Ka变成零"
+        },
+        {
+          "id": "D",
+          "text": "容量无限增大"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "弱酸√(KaC)近似应检查哪些条件？",
+      "points": 1,
+      "explanation": "很稀或解离比例大时需用更完整平衡。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "浓度近似活度是否合理"
+        },
+        {
+          "id": "B",
+          "text": "解离量相对总浓度小"
+        },
+        {
+          "id": "C",
+          "text": "只要称为弱酸即可无条件使用"
+        },
+        {
+          "id": "D",
+          "text": "酸贡献明显大于水自递"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "25 ℃、活度近似浓度，[H⁺]=1.0×10⁻³ mol L⁻¹，则pH=____。",
+      "points": 1,
+      "explanation": "−log10(10⁻³)=3。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3.0",
+        "3.00"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "pKa=4.76的缓冲液中[A⁻]/[HA]=10，pH约为？",
+      "points": 2,
+      "explanation": "pH=4.76+log10=5.76。",
+      "difficulty": "hard",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "4.76"
+        },
+        {
+          "id": "B",
+          "text": "3.76"
+        },
+        {
+          "id": "C",
+          "text": "5.76"
+        },
+        {
+          "id": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于多元酸分布分数αᵢ，哪些正确？",
+      "points": 2,
+      "explanation": "α描述总分析浓度在不同质子化形态间的分配。",
+      "difficulty": "hard",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有pH下各分数都相等"
+        },
+        {
+          "id": "B",
+          "text": "各物种分数总和为1"
+        },
+        {
+          "id": "C",
+          "text": "相邻平衡物种等浓度时对应相关pKa"
+        },
+        {
+          "id": "D",
+          "text": "分布随pH改变"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "0.100 M单元弱酸Ka=1.0×10⁻⁵，满足简化条件时pH约为？",
+      "points": 2,
+      "explanation": "[H⁺]≈√(10⁻⁵×0.100)=10⁻³ M。",
+      "difficulty": "hard",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1.00"
+        },
+        {
+          "id": "B",
+          "text": "7.00"
+        },
+        {
+          "id": "C",
+          "text": "3.00"
+        },
+        {
+          "id": "D",
+          "text": "5.00"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "两性HA⁻满足常用简化条件，pKa1=2、pKa2=8，pH约为？",
+      "points": 2,
+      "explanation": "pH≈(pKa1+pKa2)/2=5，需检查水自递与浓度影响。",
+      "difficulty": "hard",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "向原有HA、A⁻各10 mmol的缓冲体系加入1 mmol H⁺，反应后pH−pKa约为？",
+      "points": 3,
+      "explanation": "H⁺消耗A⁻成HA，量分别9与11 mmol，再用比值求pH。",
+      "difficulty": "challenging",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−1"
+        },
+        {
+          "id": "B",
+          "text": "log(11/9)≈+0.087"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "log(9/11)≈−0.087"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "10⁻⁸ M强酸在25 ℃水中可直接用pH=8，忽略水的贡献。",
+      "points": 3,
+      "explanation": "此时水自递不能忽略，加入酸应使pH略低于7而非碱性。",
+      "difficulty": "challenging",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "缓冲体系初有HA、A⁻各10.0 mmol，pKa=4.76。加入3.0 mmol OH⁻后，再同比稀释，假定仍满足缓冲近似。最终pH=____（保留两位小数）。",
+      "points": 3,
+      "explanation": "先中和得到HA 7.0、A⁻ 13.0 mmol；同比稀释近似不改比值，pH=4.76+log(13/7)=5.0288。",
+      "difficulty": "challenging",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "answer": "5.03",
+      "acceptableAnswers": [
+        "5.03"
+      ]
+    }
+  ]
+}

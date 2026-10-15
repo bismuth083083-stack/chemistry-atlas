@@ -21,12 +21,12 @@
 <div class="property-grid">
 <article><b>手性</b><p>除 Gly 外，构成蛋白质的氨基酸都是 L 型，所以蛋白质整体具有手性并表现出旋光性。旋光度的变化可以直接反映构象是否被破坏。</p></article>
 <article><b>紫外吸收</b><p>Phe、Tyr、Trp 三个芳香族氨基酸的侧链苯环使蛋白质在 <a class="term-link" href="term.html?slug=uv-absorbance-280">280 nm</a> 有最大吸收，其中 Trp 贡献最大。这是最简便的定量方法。</p></article>
-<article><b>两性解离与 pI</b><p>可解离基团既来自侧链，也来自肽链两端的 α-氨基与 α-羧基。蛋白质的 <a class="term-link" href="term.html?slug=protein-pi">pI 不能直接计算</a>，只能实测。</p></article>
+<article><b>两性解离与 pI</b><p>可解离基团来自侧链及肽链两端。蛋白质pI可用序列和基团pKa模型估算，但实际微环境与修饰会影响结果，需用等电聚焦等实验验证。</p></article>
 <article><b>胶体性质</b><p>分子大小在 1~100 nm 之间，属于胶体。稳定靠两件事：表面形成水化层，以及表面带同种电荷互相排斥。</p></article>
 <article><b>沉淀反应</b><p>破坏水化层或中和表面电荷即可沉淀。盐析、pI 沉淀、有机溶剂沉淀、重金属盐沉淀四条路线的可逆性完全不同。</p></article>
 <article><b>变性、复性与水解</b><p>变性只破坏高级结构，水解则切断肽键。二者常被混为一谈，其实是完全不同的两个层次。</p></article>
 </div>
-<p>“蛋白质的 pI 不能直接计算”这句话值得单独强调。小分子氨基酸的 pI 只需取夹住净电荷为零物种的两个 pKa 求平均，但蛋白质有几十个可解离侧链，它们的 pKa 会互相影响、随微环境改变，因此<strong>没有任何公式能从序列算出 pI</strong>。实验上只能用等电聚焦或等电点沉淀来测定。定性趋势倒是可以判断：碱性残基（Lys、Arg、His）多则 pI 偏碱，酸性残基（Asp、Glu）多则 pI 偏酸，两者数量相近时 pI 落在中性偏酸的范围。</p>
+<p>蛋白质pI可以根据序列、各可电离基团的pKa和电荷平衡模型估算。真实蛋白的微环境、构象及修饰会影响pKa，因此预测值不等于精确实测值；等电聚焦等方法可提供实验检验。不能把小分子氨基酸的两个pKa平均公式直接套到任意蛋白。</p>
 <div class="note"><b>一个常被忽略的定量细节</b><p>用 A280 定量时，如果样品里混有核酸，读数会偏高。标准做法是同时测 A260 和 A280，用 A260/A280 的比值判断污染程度；纯蛋白质的这个比值通常在 0.5 附近，核酸污染时显著升高。</p></div>
 </section>
 
@@ -96,7 +96,8 @@
 
 <section class="next-step"><p class="eyebrow">RECALL BEFORE REVIEW</p><h2>把技术选择变成可检验的判断</h2><p>面对一份未知蛋白样品，你能说出每一种方法<strong>测的是什么</strong>、<strong>给出的数值是什么单位</strong>、以及<strong>什么情况下会给出错误结论</strong>吗？</p><a class="primary" href="recall.html">进入主动回忆 →</a></section>
 <footer class="source">来源：第5章《蛋白质的性质及研究方法》PPT；杨荣武《生物化学原理》第四版（用于概念核对与补充）。</footer>
-</main>
+<section id="chapter-quiz"><p class="source">概念校对参考：<a href="https://web.expasy.org/compute_pi/pi_tool-doc.html">ExPASy Compute pI/Mw documentation</a>。</p><div class="note"><p><strong>本次测验的概念校正：</strong>pI可按序列和pKa模型预测；常规变性主要破坏高级结构，但还原剂可同时断开二硫键。SDS-PAGE给出的是表观质量，二维斑点与蛋白种类不一定一一对应。</p></div><h2>章节测验</h2><p><a href="https://quiz.chemistryatlas.xyz/index.html?quiz=BIOC-L05">第5章/课测验：22题，32分 →</a></p><p>15道单选、3道多选、2道判断、2道填空。按5道基础、10道中等、4道较难、3道拓展递进；交卷后查看答案与解析。</p></section></main>
 <script src="script.js"></script>
 </body>
 </html>
+

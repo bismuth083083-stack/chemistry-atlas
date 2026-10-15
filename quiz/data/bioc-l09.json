@@ -1,0 +1,629 @@
+{
+  "id": "BIOC-L09",
+  "title": "酶学概论",
+  "description": "对应第9章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "biochemistry",
+  "chapter": "Lesson 09 · 酶学概论",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "酶学概论 · Chemistry Atlas笔记",
+      "url": "https://biochem.chemistryatlas.xyz/chapter-09.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "酶对反应平衡的作用是？",
+      "points": 1,
+      "explanation": "催化改变路径与能垒，平衡由反应物和产物热力学决定。",
+      "difficulty": "easy",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只加速正反应"
+        },
+        {
+          "id": "B",
+          "text": "改变标准反应自由能"
+        },
+        {
+          "id": "C",
+          "text": "加快达到平衡，不改变K"
+        },
+        {
+          "id": "D",
+          "text": "把K总变为1"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "酶的主要化学本质是？",
+      "points": 1,
+      "explanation": "蛋白质酶占多数，但核酶是明确例外。",
+      "difficulty": "easy",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "全部都是DNA"
+        },
+        {
+          "id": "B",
+          "text": "任何酶都必须是脂质"
+        },
+        {
+          "id": "C",
+          "text": "多数为蛋白质，部分催化RNA为核酶"
+        },
+        {
+          "id": "D",
+          "text": "全部只是游离金属"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "活性中心最直接包括哪两类功能基团？",
+      "points": 1,
+      "explanation": "底物识别定位与化学转化可由不同基团协同完成。",
+      "difficulty": "easy",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "结合与催化基团"
+        },
+        {
+          "id": "B",
+          "text": "仅形成晶体的基团"
+        },
+        {
+          "id": "C",
+          "text": "只有糖与脂质"
+        },
+        {
+          "id": "D",
+          "text": "只有运输基团"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "脱辅酶与所需辅因子结合后称为？",
+      "points": 1,
+      "explanation": "全酶为具所需辅因子的完整功能体系。",
+      "difficulty": "easy",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "全酶"
+        },
+        {
+          "id": "B",
+          "text": "变性酶"
+        },
+        {
+          "id": "C",
+          "text": "底物"
+        },
+        {
+          "id": "D",
+          "text": "酶原必然活化"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "诱导契合模型强调？",
+      "points": 1,
+      "explanation": "酶的柔性使识别和催化构象可随结合调整。",
+      "difficulty": "easy",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只要形状相同就必催化"
+        },
+        {
+          "id": "B",
+          "text": "底物不接触酶"
+        },
+        {
+          "id": "C",
+          "text": "酶永远绝对刚性"
+        },
+        {
+          "id": "D",
+          "text": "底物结合伴随适配的构象变化"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "酶与一般催化剂有哪些共同点？",
+      "points": 1,
+      "explanation": "催化剂参与过程但循环后再生，热力学平衡不因催化改变。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "不改变反应平衡常数"
+        },
+        {
+          "id": "B",
+          "text": "必使所有反应成为不可逆"
+        },
+        {
+          "id": "C",
+          "text": "催化循环中可再生"
+        },
+        {
+          "id": "D",
+          "text": "降低有效活化自由能"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "酶具有立体专一性主要体现？",
+      "points": 1,
+      "explanation": "蛋白活性中心为手性环境，可能区分对映体。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "对所有镜像底物作用完全相同"
+        },
+        {
+          "id": "B",
+          "text": "活性中心的手性识别"
+        },
+        {
+          "id": "C",
+          "text": "与构象无关"
+        },
+        {
+          "id": "D",
+          "text": "只能识别分子质量"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "酶活性与pH的关系常与什么有关？",
+      "points": 1,
+      "explanation": "质子化和构象改变均可影响活性，最适值因酶和条件而异。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有酶最适pH均为7"
+        },
+        {
+          "id": "B",
+          "text": "pH不影响蛋白质"
+        },
+        {
+          "id": "C",
+          "text": "催化基团及底物的质子化状态"
+        },
+        {
+          "id": "D",
+          "text": "pH只改变分子质量"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "高温使测得酶活性下降，可能因为？",
+      "points": 1,
+      "explanation": "观测活性取决于催化加速与时间相关失活的竞争。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "平衡常数必归零"
+        },
+        {
+          "id": "B",
+          "text": "温度越高分子运动越慢"
+        },
+        {
+          "id": "C",
+          "text": "热失活抵消或超过升温的动力学加速"
+        },
+        {
+          "id": "D",
+          "text": "底物必全变成酶"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "活性中心的残基必须在一级序列上连续相邻。",
+      "points": 1,
+      "explanation": "折叠可使序列上远离的残基在空间会合。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "按催化反应类型，蛋白激酶通常属于？",
+      "points": 1,
+      "explanation": "激酶将磷酸基团从供体转移给受体。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "异构酶"
+        },
+        {
+          "id": "B",
+          "text": "转移酶"
+        },
+        {
+          "id": "C",
+          "text": "连接酶"
+        },
+        {
+          "id": "D",
+          "text": "水解酶"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "催化肽键水解的蛋白酶属于？",
+      "points": 1,
+      "explanation": "加水断键对应水解酶类别。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "氧化还原酶"
+        },
+        {
+          "id": "B",
+          "text": "水解酶"
+        },
+        {
+          "id": "C",
+          "text": "连接酶"
+        },
+        {
+          "id": "D",
+          "text": "易位酶"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "氧化还原酶主要催化哪类变化？",
+      "points": 1,
+      "explanation": "脱氢酶等催化底物氧化还原变化。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只改变溶液体积"
+        },
+        {
+          "id": "B",
+          "text": "无化学变化的过滤"
+        },
+        {
+          "id": "C",
+          "text": "电子转移"
+        },
+        {
+          "id": "D",
+          "text": "任何单纯几何旋转"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "哪些可属于酶所需辅因子？",
+      "points": 1,
+      "explanation": "辅因子总称包括非蛋白辅助成分，底物是被转化的反应物。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "紧密结合的辅基"
+        },
+        {
+          "id": "B",
+          "text": "金属离子"
+        },
+        {
+          "id": "C",
+          "text": "所有底物都自动成为辅因子"
+        },
+        {
+          "id": "D",
+          "text": "有机辅酶"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "某酶未催化时反应平衡常数K=100，同温度加入酶后最终K=____。",
+      "points": 1,
+      "explanation": "催化不改变同一反应的平衡常数。",
+      "difficulty": "medium",
+      "tags": [
+        "酶学概论"
+      ],
+      "answer": "100",
+      "acceptableAnswers": [
+        "100",
+        "100.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "依本章的结合强度划分，辅基与松散结合辅酶的区别主要是？",
+      "points": 2,
+      "explanation": "术语在不同体系可有交叠，本章按紧密与松散结合区分。",
+      "difficulty": "hard",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必为更大蛋白质"
+        },
+        {
+          "id": "B",
+          "text": "与蛋白结合更紧密"
+        },
+        {
+          "id": "C",
+          "text": "辅基从不含任何有机原子"
+        },
+        {
+          "id": "D",
+          "text": "辅酶就是底物的同义词"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "酶专一性模型中哪些理解合理？",
+      "points": 2,
+      "explanation": "结构匹配与动态性可同时参与；模型是不同侧重。",
+      "difficulty": "hard",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "构象选择强调已有构象群体被选择"
+        },
+        {
+          "id": "B",
+          "text": "诱导契合加入动态适配"
+        },
+        {
+          "id": "C",
+          "text": "三模型都要求酶完全不能变形"
+        },
+        {
+          "id": "D",
+          "text": "锁钥突出结构互补"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "非活性中心残基突变也使酶活性下降，最合理解释是？",
+      "points": 2,
+      "explanation": "突变效应不等于直接催化证据，需区分结构与化学作用。",
+      "difficulty": "hard",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "违反活性中心定义"
+        },
+        {
+          "id": "B",
+          "text": "可影响折叠、稳定性或构象传递"
+        },
+        {
+          "id": "C",
+          "text": "证明酶不是蛋白质"
+        },
+        {
+          "id": "D",
+          "text": "因此该残基必直接与底物成键"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "“酶同样催化正逆方向”应怎样理解？",
+      "points": 2,
+      "explanation": "非平衡条件下两方向通量可不同，最终平衡不改变。",
+      "difficulty": "hard",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只加速正向后逆向自动消失"
+        },
+        {
+          "id": "B",
+          "text": "提供可逆路径，平衡时正逆通量相等"
+        },
+        {
+          "id": "C",
+          "text": "使ΔG°总为负"
+        },
+        {
+          "id": "D",
+          "text": "任何组成下两方向净速率都相同"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "比较不同测定时间得到不同最适温度，主要提醒？",
+      "points": 3,
+      "explanation": "长时间受热更容易累积失活，观测最适值可改变。",
+      "difficulty": "challenging",
+      "tags": [
+        "酶学概论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "温度计必全损坏"
+        },
+        {
+          "id": "B",
+          "text": "酶平衡常数变成温度"
+        },
+        {
+          "id": "C",
+          "text": "最适温度是不可改变的元素常数"
+        },
+        {
+          "id": "D",
+          "text": "最适温度受热失活与测定条件影响"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "只要底物与活性中心结合足够紧，酶催化一定更快。",
+      "points": 3,
+      "explanation": "催化关键是相对稳定过渡态；过度稳定基态底物可能不利周转。",
+      "difficulty": "challenging",
+      "tags": [
+        "酶学概论"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "假定初速率随活性酶浓度线性变化。在某条件下加入全活性酶使速率为无酶背景的100倍。再将总酶量增至4倍但仅50%保持活性，忽略背景加和，速率约为原无酶速率的____倍。",
+      "points": 3,
+      "explanation": "有效活性酶量为4×0.5=2倍，催化速率近似100×2=200倍；题设限定初速率线性区。",
+      "difficulty": "challenging",
+      "tags": [
+        "酶学概论"
+      ],
+      "answer": "200",
+      "acceptableAnswers": [
+        "200",
+        "200.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "id": "BIOC-L10",
+  "title": "酶动力学",
+  "description": "对应第10章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "biochemistry",
+  "chapter": "Lesson 10 · 酶动力学",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "酶动力学 · Chemistry Atlas笔记",
+      "url": "https://biochem.chemistryatlas.xyz/chapter-10.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    },
+    {
+      "title": "Relations between biochemical thermodynamics and biochemical kinetics",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16766115/",
+      "role": "完整正逆动力学参数与平衡常数的热力学约束"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "米氏方程为？",
+      "points": 1,
+      "explanation": "适用简单米氏初速率模型，体现底物饱和。",
+      "difficulty": "easy",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "v₀=Vmax(Km+[S])"
+        },
+        {
+          "id": "B",
+          "text": "v₀=Vmax/[E]"
+        },
+        {
+          "id": "C",
+          "text": "v₀=Km/[S]"
+        },
+        {
+          "id": "D",
+          "text": "v₀=Vmax[S]/(Km+[S])"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "[S]=Km时，v₀等于？",
+      "points": 1,
+      "explanation": "直接代入得Vmax Km/(2Km)。",
+      "difficulty": "easy",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "Vmax"
+        },
+        {
+          "id": "C",
+          "text": "Vmax/2"
+        },
+        {
+          "id": "D",
+          "text": "2Vmax"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "增加总酶浓度而其他条件相同，Vmax通常如何？",
+      "points": 1,
+      "explanation": "Vmax=kcat[E]T；本征Km通常不因酶量改变。",
+      "difficulty": "easy",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "变成Km"
+        },
+        {
+          "id": "B",
+          "text": "保持为所有酶同一常数"
+        },
+        {
+          "id": "C",
+          "text": "成比例增加"
+        },
+        {
+          "id": "D",
+          "text": "总降低"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "kcat常用单位是？",
+      "points": 1,
+      "explanation": "每个活性位点在饱和底物下单位时间完成的转化次数。",
+      "difficulty": "easy",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "L mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "mol L⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "J mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "s⁻¹"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "竞争性抑制的简单模型中，表观Km与Vmax如何变化？",
+      "points": 1,
+      "explanation": "竞争抑制增加达到同一饱和程度所需底物浓度。",
+      "difficulty": "easy",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "二者都不变"
+        },
+        {
+          "id": "B",
+          "text": "Km不变，Vmax升高"
+        },
+        {
+          "id": "C",
+          "text": "Km降低，Vmax升高"
+        },
+        {
+          "id": "D",
+          "text": "Km升高，Vmax不变"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "米氏初速率稳态推导常用哪些条件？",
+      "points": 1,
+      "explanation": "稳态是浓度变化近零而通量持续，不等于热力学平衡。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "底物通常明显多于酶"
+        },
+        {
+          "id": "B",
+          "text": "产物积累较少"
+        },
+        {
+          "id": "C",
+          "text": "ES完全停止形成与分解"
+        },
+        {
+          "id": "D",
+          "text": "ES生成和分解近似平衡速率"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "[S]≪Km时，反应对底物近似几级？",
+      "points": 1,
+      "explanation": "v≈(Vmax/Km)[S]，随底物线性变化。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "零级"
+        },
+        {
+          "id": "B",
+          "text": "一级"
+        },
+        {
+          "id": "C",
+          "text": "二级"
+        },
+        {
+          "id": "D",
+          "text": "负一级"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "[S]≫Km时，反应对底物近似几级？",
+      "points": 1,
+      "explanation": "酶接近饱和，v≈Vmax，继续增加底物影响很小。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "零级"
+        },
+        {
+          "id": "B",
+          "text": "二级"
+        },
+        {
+          "id": "C",
+          "text": "一级"
+        },
+        {
+          "id": "D",
+          "text": "必须负二级"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "双倒数图1/v对1/[S]的纵截距为？",
+      "points": 1,
+      "explanation": "1/v=(Km/Vmax)(1/[S])+1/Vmax。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Vmax"
+        },
+        {
+          "id": "B",
+          "text": "−1/Km"
+        },
+        {
+          "id": "C",
+          "text": "1/Vmax"
+        },
+        {
+          "id": "D",
+          "text": "Km"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "简单E+S⇌ES→E+P模型中，Km在任何条件下都等于ES解离常数。",
+      "points": 1,
+      "explanation": "Km=(k₋₁+kcat)/k₁；仅kcat≪k₋₁时近似Kd=k₋₁/k₁。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "纯非竞争性抑制的简单模型给出？",
+      "points": 1,
+      "explanation": "纯非竞争是对E与ES结合影响相当的混合抑制特殊情形。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Km降低，Vmax不变"
+        },
+        {
+          "id": "B",
+          "text": "二者都升高"
+        },
+        {
+          "id": "C",
+          "text": "Km不变，Vmax降低"
+        },
+        {
+          "id": "D",
+          "text": "Km升高，Vmax不变"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "反竞争性抑制只结合ES时，典型表观参数变化为？",
+      "points": 1,
+      "explanation": "两者按相同因子降低，双倒数图平行。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "仅Km升高"
+        },
+        {
+          "id": "B",
+          "text": "Km升高，Vmax升高"
+        },
+        {
+          "id": "C",
+          "text": "Km与Vmax都降低"
+        },
+        {
+          "id": "D",
+          "text": "二者均不变"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "kcat/Km最常用来表示？",
+      "points": 1,
+      "explanation": "单位通常L mol⁻¹ s⁻¹，综合结合与后续转化。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有底物的浓度"
+        },
+        {
+          "id": "B",
+          "text": "平衡常数本身"
+        },
+        {
+          "id": "C",
+          "text": "低底物条件下的催化效率"
+        },
+        {
+          "id": "D",
+          "text": "酶的总分子量"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "双倒数作图有哪些性质或限制？",
+      "points": 1,
+      "explanation": "线性图便于教学判断，但参数估计需注意误差结构。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "斜率为Km/Vmax"
+        },
+        {
+          "id": "B",
+          "text": "可放大低底物处测量误差"
+        },
+        {
+          "id": "C",
+          "text": "横截距为−1/Km"
+        },
+        {
+          "id": "D",
+          "text": "总比直接非线性拟合更可靠"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "Vmax=100 μmol min⁻¹，[S]=3Km，则v₀=____ μmol min⁻¹。",
+      "points": 1,
+      "explanation": "v=100×3/(1+3)=75。",
+      "difficulty": "medium",
+      "tags": [
+        "酶动力学"
+      ],
+      "answer": "75",
+      "acceptableAnswers": [
+        "75",
+        "75.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "E+S⇌ES→E+P，k₁=10⁶ M⁻¹ s⁻¹、k₋₁=100 s⁻¹、kcat=100 s⁻¹。Km为？",
+      "points": 2,
+      "explanation": "Km=(100+100)/10⁶=2×10⁻⁴ M。",
+      "difficulty": "hard",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "100 M"
+        },
+        {
+          "id": "B",
+          "text": "2×10⁻⁴ M"
+        },
+        {
+          "id": "C",
+          "text": "2×10⁶ M"
+        },
+        {
+          "id": "D",
+          "text": "1×10⁻⁴ M"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于酶抑制的判断，哪些正确？",
+      "points": 2,
+      "explanation": "高亲和结合与不可逆化学失活是不同概念。",
+      "difficulty": "hard",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "紧密结合不必等于形成共价键"
+        },
+        {
+          "id": "B",
+          "text": "不可逆失活常减少有效酶量"
+        },
+        {
+          "id": "C",
+          "text": "机制性自杀抑制需酶将抑制剂活化"
+        },
+        {
+          "id": "D",
+          "text": "所有过渡态类似物都必是不可逆共价抑制剂"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "Vmax=2 μM s⁻¹，总活性位点浓度0.10 μM，kcat为？",
+      "points": 2,
+      "explanation": "kcat=Vmax/[E]T=2/0.10=20，须按活性位点浓度计算。",
+      "difficulty": "hard",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.20 s⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "20 s⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "2.1 s⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "0.05 s⁻¹"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "竞争抑制中[I]/Ki=3，原Km=2 mM，表观Km为？",
+      "points": 2,
+      "explanation": "Km,app=Km(1+[I]/Ki)=2×4=8。",
+      "difficulty": "hard",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.5 mM"
+        },
+        {
+          "id": "B",
+          "text": "8 mM"
+        },
+        {
+          "id": "C",
+          "text": "2 mM"
+        },
+        {
+          "id": "D",
+          "text": "6 mM"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "仅知道某可逆反应对底物的Km小于对产物的Km，能否确定净反应方向？",
+      "points": 3,
+      "explanation": "反应方向由ΔG=ΔG°+RT ln Q决定，单独比较Km不充分。",
+      "difficulty": "challenging",
+      "tags": [
+        "酶动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两侧Km决定ΔG°全部信息"
+        },
+        {
+          "id": "B",
+          "text": "不能，还需浓度与热力学等信息"
+        },
+        {
+          "id": "C",
+          "text": "一定逆向"
+        },
+        {
+          "id": "D",
+          "text": "一定正向"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "一个过渡态类似物即使结合极紧，也不能仅据此认定它不可逆抑制。",
+      "points": 3,
+      "explanation": "需观察解离、稀释恢复或化学修饰等证据；紧密可逆结合仍可存在。",
+      "difficulty": "challenging",
+      "tags": [
+        "酶动力学"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "简单竞争抑制，[I]/Ki=3；Vmax=100单位，[S]=2 mM时测得v=20单位。未加抑制剂的本征Km=____ mM。",
+      "points": 3,
+      "explanation": "Km,app=4Km；20=100×2/(4Km+2)，解得4Km+2=10，Km=2 mM。",
+      "difficulty": "challenging",
+      "tags": [
+        "酶动力学"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "2.0"
+      ]
+    }
+  ]
+}

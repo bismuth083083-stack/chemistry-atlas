@@ -1,0 +1,631 @@
+{
+  "id": "ORG-L09",
+  "title": "Fischer投影、非对映体与光学活性",
+  "description": "对应第9章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "organic-chemistry",
+  "chapter": "Lesson 09 · Fischer投影、非对映体与光学活性",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "Fischer投影、非对映体与光学活性 · Chemistry Atlas笔记",
+      "url": "https://organic.chemistryatlas.xyz/lesson-09.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Fischer投影的水平键指向？",
+      "points": 1,
+      "explanation": "水平键向前，竖直键向后。",
+      "difficulty": "easy",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "观察者"
+        },
+        {
+          "id": "B",
+          "text": "背离观察者"
+        },
+        {
+          "id": "C",
+          "text": "不能表达前后"
+        },
+        {
+          "id": "D",
+          "text": "纸面左侧无限远"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "单手性中心的Fischer投影在纸面内旋转多少可保持构型？",
+      "points": 1,
+      "explanation": "180°净效果保持构型；90°重新按投影规则读会改变构型。",
+      "difficulty": "easy",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "180°"
+        },
+        {
+          "id": "B",
+          "text": "90°"
+        },
+        {
+          "id": "C",
+          "text": "任意角度"
+        },
+        {
+          "id": "D",
+          "text": "只能0°"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "两个立体异构体不是镜像关系，称为？",
+      "points": 1,
+      "explanation": "连接次序相同而空间排列不同、又非镜像的一对属于非对映体。",
+      "difficulty": "easy",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "构造异构体"
+        },
+        {
+          "id": "B",
+          "text": "对映体"
+        },
+        {
+          "id": "C",
+          "text": "同位素"
+        },
+        {
+          "id": "D",
+          "text": "非对映异构体"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "消旋混合物指？",
+      "points": 1,
+      "explanation": "两对映体等量时旋光相互抵消。",
+      "difficulty": "easy",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只有R构型"
+        },
+        {
+          "id": "B",
+          "text": "等量的一对对映体混合物"
+        },
+        {
+          "id": "C",
+          "text": "任意两种异构体各半"
+        },
+        {
+          "id": "D",
+          "text": "一个meso分子"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "D/L标记直接描述？",
+      "points": 1,
+      "explanation": "D/L与甘油醛的构型关系有关，不能直接预测旋光方向。",
+      "difficulty": "easy",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "比旋光度大小"
+        },
+        {
+          "id": "B",
+          "text": "一定对应R/S"
+        },
+        {
+          "id": "C",
+          "text": "相对构型体系"
+        },
+        {
+          "id": "D",
+          "text": "旋光正负"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "关于Fischer投影，哪些正确？",
+      "points": 1,
+      "explanation": "交换的奇偶性和最低优先级的前后方向必须检查。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "交换一对基团会反转单个中心构型"
+        },
+        {
+          "id": "B",
+          "text": "最低优先级在水平位置时，直接读出的R/S需取反"
+        },
+        {
+          "id": "C",
+          "text": "交换两次可保持构型"
+        },
+        {
+          "id": "D",
+          "text": "90°纸面旋转总保持构型"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "Fischer投影最低优先级在横线，1→2→3为顺时针，该中心为？",
+      "points": 1,
+      "explanation": "最低优先级朝向观察者，因此顺时针的表观R须取反为S。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "S"
+        },
+        {
+          "id": "B",
+          "text": "无法判定"
+        },
+        {
+          "id": "C",
+          "text": "必为meso"
+        },
+        {
+          "id": "D",
+          "text": "R"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "三个独立手性中心且无内部对称造成重复，最多多少立体异构体？",
+      "points": 1,
+      "explanation": "上界2ⁿ，n=3得8；对称性可降低实际数目。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "9"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "2,3-二溴丁烷的立体异构体数为？",
+      "points": 1,
+      "explanation": "一对(R,R)/(S,S)加一个meso异构体；(R,S)与(S,R)相同。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "R构型必为右旋，S构型必为左旋。",
+      "points": 1,
+      "explanation": "R/S描述空间构型，(+)/(−)由指定条件下旋光实验确定。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "meso化合物最符合哪一描述？",
+      "points": 1,
+      "explanation": "meso是一个非手性分子的属性，消旋是混合物组成。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两个对映体等量混合"
+        },
+        {
+          "id": "B",
+          "text": "任意旋光度为零的样品"
+        },
+        {
+          "id": "C",
+          "text": "含手性中心但整体非手性"
+        },
+        {
+          "id": "D",
+          "text": "完全没有立体中心的分子"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "比旋光度公式[α]=α/(lc)中，常用管长单位是？",
+      "points": 1,
+      "explanation": "采用c为g mL⁻¹的约定时，l须换算为dm。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "dm"
+        },
+        {
+          "id": "B",
+          "text": "g"
+        },
+        {
+          "id": "C",
+          "text": "mL"
+        },
+        {
+          "id": "D",
+          "text": "mm"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "一般对映体在相同非手性环境下，哪项有区别？",
+      "points": 1,
+      "explanation": "在相同测量条件下纯对映体比旋光度等大反号。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "连接次序不同"
+        },
+        {
+          "id": "B",
+          "text": "分子式不同"
+        },
+        {
+          "id": "C",
+          "text": "旋光方向相反"
+        },
+        {
+          "id": "D",
+          "text": "沸点必不同"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "哪些可用于对映体拆分？",
+      "points": 1,
+      "explanation": "引入手性环境可使对映体表现不同相互作用或反应速率。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "先与单一对映体试剂形成非对映衍生物再分离"
+        },
+        {
+          "id": "B",
+          "text": "手性色谱"
+        },
+        {
+          "id": "C",
+          "text": "酶促选择性转化"
+        },
+        {
+          "id": "D",
+          "text": "保证用普通非手性蒸馏分开任何对映体"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "混合物含80%一种对映体、20%其镜像，则ee=____%（填非负数）。",
+      "points": 1,
+      "explanation": "ee=|80−20|/(80+20)×100%=60%。",
+      "difficulty": "medium",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "α=+1.74°，c=0.20 g mL⁻¹，l=1 dm，[α]为？",
+      "points": 2,
+      "explanation": "1.74/(0.20×1)=8.7，正号保留。",
+      "difficulty": "hard",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−8.7"
+        },
+        {
+          "id": "B",
+          "text": "+1.74"
+        },
+        {
+          "id": "C",
+          "text": "+8.7"
+        },
+        {
+          "id": "D",
+          "text": "+0.348"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于旋光测量，哪些正确？",
+      "points": 2,
+      "explanation": "消旋样品也可零旋光；构型标签与旋光符号无必然关系。",
+      "difficulty": "hard",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "零旋光不能单独证明分子非手性"
+        },
+        {
+          "id": "B",
+          "text": "相同条件下纯对映体旋光等大反向"
+        },
+        {
+          "id": "C",
+          "text": "应注明温度和波长"
+        },
+        {
+          "id": "D",
+          "text": "D构型的所有分子都右旋"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "只含一对对映体且满足旋光线性加和，测得[α]=+9.72、纯正旋体为+13.5，正旋体比例为？",
+      "points": 2,
+      "explanation": "ee=9.72/13.5=72%；主要体=(100+72)/2=86%。",
+      "difficulty": "hard",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "36%"
+        },
+        {
+          "id": "B",
+          "text": "14%"
+        },
+        {
+          "id": "C",
+          "text": "72%"
+        },
+        {
+          "id": "D",
+          "text": "86%"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "2,3-二溴丁烷的(R,R)与(R,S)关系是？",
+      "points": 2,
+      "explanation": "一个中心不同而不是全部中心镜像；(R,S)是meso。",
+      "difficulty": "hard",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "对映体"
+        },
+        {
+          "id": "B",
+          "text": "构造异构体"
+        },
+        {
+          "id": "C",
+          "text": "完全相同"
+        },
+        {
+          "id": "D",
+          "text": "非对映体"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "手性羰基α碳经平面烯醇中间体后再质子化，可能发生？",
+      "points": 3,
+      "explanation": "平面化可丢失该中心原有立体信息，两面再成键可能生成两种构型。",
+      "difficulty": "challenging",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只改变分子量"
+        },
+        {
+          "id": "B",
+          "text": "外消旋化"
+        },
+        {
+          "id": "C",
+          "text": "必产生meso分子"
+        },
+        {
+          "id": "D",
+          "text": "必保持原构型"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "任何只有对映体组成的样品测得零旋光，就一定是一个meso化合物。",
+      "points": 3,
+      "explanation": "一对手性对映体等量混合也零旋光，meso必须依据单个分子结构判断。",
+      "difficulty": "challenging",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "只有一对对映体且旋光线性加和，6.0 g正旋体与4.0 g负旋体混合，纯正旋体[α]=+13.5。混合物[α]=____（填带符号数值）。",
+      "points": 3,
+      "explanation": "ee=(6−4)/10=0.20；[α]混=0.20×13.5=+2.7。",
+      "difficulty": "challenging",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "answer": "+2.7",
+      "acceptableAnswers": [
+        "+2.7",
+        "2.7",
+        "+2.70",
+        "2.70"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "id": "ANA-L04",
+  "title": "酸碱滴定",
+  "description": "对应第4章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "analytical-chemistry",
+  "chapter": "Lesson 04 · 酸碱滴定",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "酸碱滴定 · Chemistry Atlas笔记",
+      "url": "https://analytical.chemistryatlas.xyz/chapter-4.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "计量点是？",
+      "points": 1,
+      "explanation": "计量点由反应计量决定，终点由实验信号判定。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "看到任何颜色的点"
+        },
+        {
+          "id": "B",
+          "text": "pH必为7的点"
+        },
+        {
+          "id": "C",
+          "text": "滴定管完全放空的点"
+        },
+        {
+          "id": "D",
+          "text": "按计量关系恰好加入所需滴定剂的点"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "滴定终点与计量点的区别最符合？",
+      "points": 1,
+      "explanation": "两点不必重合，差异可带来系统滴定误差。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "二者定义永远完全相同"
+        },
+        {
+          "id": "B",
+          "text": "终点是观测停止点，可有偏差"
+        },
+        {
+          "id": "C",
+          "text": "计量点只能靠肉眼定义"
+        },
+        {
+          "id": "D",
+          "text": "终点一定比计量点早"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "25 ℃等浓度强酸强碱的理想水溶液计量点pH约为？",
+      "points": 1,
+      "explanation": "强酸强碱计量后主要由水自递决定，温度改变时中性值也变。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必等于酸的pKa"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "14"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "单元弱酸被强碱滴定到半计量点时pH近似为？",
+      "points": 1,
+      "explanation": "缓冲区中HA与A⁻近似等量。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "pKa"
+        },
+        {
+          "id": "B",
+          "text": "pKb"
+        },
+        {
+          "id": "C",
+          "text": "7"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "弱酸强碱计量点通常显碱性，是因为？",
+      "points": 1,
+      "explanation": "所得A⁻接受水中质子产生OH⁻。",
+      "difficulty": "easy",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "弱酸没有反应"
+        },
+        {
+          "id": "B",
+          "text": "强酸大过量"
+        },
+        {
+          "id": "C",
+          "text": "指示剂创造大量OH⁻"
+        },
+        {
+          "id": "D",
+          "text": "共轭碱水解"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "选择酸碱指示剂应考虑哪些条件？",
+      "points": 1,
+      "explanation": "指示剂是酸碱物种，必须在合适区间给出足够接近的终点。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只要颜色鲜艳就适用于所有滴定"
+        },
+        {
+          "id": "B",
+          "text": "指示剂自身用量与干扰"
+        },
+        {
+          "id": "C",
+          "text": "变色区间与滴定突跃匹配"
+        },
+        {
+          "id": "D",
+          "text": "反应体系的计量点附近pH"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "强酸强碱计量点前，计算剩余H⁺浓度必须除以？",
+      "points": 1,
+      "explanation": "先算剩余物质的量，再除以反应混合总体积。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "滴定管容量"
+        },
+        {
+          "id": "B",
+          "text": "仅原酸体积"
+        },
+        {
+          "id": "C",
+          "text": "混合后的总液体体积"
+        },
+        {
+          "id": "D",
+          "text": "仅已加碱体积"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "返滴定的基本思路是？",
+      "points": 1,
+      "explanation": "分析物耗量=初加量−剩余量，须保证第一反应完成。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只测初始pH"
+        },
+        {
+          "id": "B",
+          "text": "加已知过量试剂后测剩余量"
+        },
+        {
+          "id": "C",
+          "text": "重复滴定相同样品三次"
+        },
+        {
+          "id": "D",
+          "text": "完全不使用标准液"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "常用弱酸型指示剂的近似变色区间为？",
+      "points": 1,
+      "explanation": "以两色物种比值约1/10到10估计约2个pH单位范围。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "固定pH=7"
+        },
+        {
+          "id": "B",
+          "text": "任意12个pH单位"
+        },
+        {
+          "id": "C",
+          "text": "pKIn±1"
+        },
+        {
+          "id": "D",
+          "text": "Ka±100"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "所有酸碱滴定的计量点都在pH=7。",
+      "points": 1,
+      "explanation": "弱酸/弱碱盐水解、温度和介质均可改变计量点pH。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "0.1000 M NaOH滴定25.00 mL 0.1000 M单元强酸，计量体积为？",
+      "points": 1,
+      "explanation": "1:1计量，n酸=2.500 mmol，需碱25.00 mL。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "12.50 mL"
+        },
+        {
+          "id": "B",
+          "text": "25.00 mL"
+        },
+        {
+          "id": "C",
+          "text": "100.00 mL"
+        },
+        {
+          "id": "D",
+          "text": "50.00 mL"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "弱酸强碱滴定超过计量点后，常主要按什么计算pH？",
+      "points": 1,
+      "explanation": "过量碱通常主导，但非常接近计量点或很稀时要检查近似。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只用pH=pKa"
+        },
+        {
+          "id": "B",
+          "text": "只用初始酸体积"
+        },
+        {
+          "id": "C",
+          "text": "过量强碱浓度"
+        },
+        {
+          "id": "D",
+          "text": "原弱酸Ka独自决定"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "甘氨酸无可电离侧链，pKa1=2.34、pKa2=9.60，pI近似为？",
+      "points": 1,
+      "explanation": "净零电荷物种两侧的pKa取平均：(2.34+9.60)/2。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "5.97"
+        },
+        {
+          "id": "B",
+          "text": "11.94"
+        },
+        {
+          "id": "C",
+          "text": "9.60"
+        },
+        {
+          "id": "D",
+          "text": "2.34"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "多元酸是否能清楚分步滴定，需关注？",
+      "points": 1,
+      "explanation": "常数分离是重要条件，但没有独立于浓度与测法的万能阈值。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "浓度和检测方式"
+        },
+        {
+          "id": "B",
+          "text": "只要有两个氢就必有两个清晰突跃"
+        },
+        {
+          "id": "C",
+          "text": "相邻解离常数差距"
+        },
+        {
+          "id": "D",
+          "text": "各级酸强度"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "单元酸与碱1:1反应，消耗20.00 mL 0.1000 M碱，中和的酸量为____ mmol。",
+      "points": 1,
+      "explanation": "0.1000 mol L⁻¹×0.02000 L=0.002000 mol=2.000 mmol。",
+      "difficulty": "medium",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "2.0",
+        "2.000"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "25.00 mL 0.1000 M HCl加入20.00 mL同浓度NaOH，忽略水自递，pH约为？",
+      "points": 2,
+      "explanation": "剩0.500 mmol H⁺，总体积45.00 mL，[H⁺]=0.01111 M，pH≈1.95。",
+      "difficulty": "hard",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1.95"
+        },
+        {
+          "id": "B",
+          "text": "12.05"
+        },
+        {
+          "id": "C",
+          "text": "1.00"
+        },
+        {
+          "id": "D",
+          "text": "7.00"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "凯氏定氮的计量路线有哪些要点？",
+      "points": 2,
+      "explanation": "方法有适用范围，需检查消解、蒸馏和捕集的定量性。",
+      "difficulty": "hard",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有形态的氮在任何消解条件下都自动定量转化"
+        },
+        {
+          "id": "B",
+          "text": "碱化释放NH₃"
+        },
+        {
+          "id": "C",
+          "text": "把适用氮组分转为可收集氨"
+        },
+        {
+          "id": "D",
+          "text": "用捕集和滴定计算氨量"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "0.10 M HA的Ka=10⁻⁵；用同浓度强碱滴定到计量点，A⁻浓度约0.050 M。pH约为？",
+      "points": 2,
+      "explanation": "Kb=10⁻⁹，[OH⁻]≈√(10⁻⁹×0.050)=7.07×10⁻⁶ M，pH≈8.85。",
+      "difficulty": "hard",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "7.00"
+        },
+        {
+          "id": "B",
+          "text": "5.00"
+        },
+        {
+          "id": "C",
+          "text": "3.00"
+        },
+        {
+          "id": "D",
+          "text": "8.85"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "理论计量体积25.00 mL，观测终点25.10 mL，以体积相对误差定义滴定误差为？",
+      "points": 2,
+      "explanation": "(25.10−25.00)/25.00×100%=+0.40%。",
+      "difficulty": "hard",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "+4.0%"
+        },
+        {
+          "id": "B",
+          "text": "+0.40%"
+        },
+        {
+          "id": "C",
+          "text": "+0.10%"
+        },
+        {
+          "id": "D",
+          "text": "−0.40%"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "弱酸滴定缓冲区中加入碱使已转化分数f=0.75，pH−pKa约为？",
+      "points": 3,
+      "explanation": "A⁻/HA≈f/(1−f)=0.75/0.25=3。",
+      "difficulty": "challenging",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "log3≈0.477"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "log(1/3)≈−0.477"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "Na₂CO₃被强酸完全转化为CO₂和水，每mol通常需2 mol H⁺。",
+      "points": 3,
+      "explanation": "CO₃²⁻先成HCO₃⁻，再成碳酸/CO₂，合计两当量质子。",
+      "difficulty": "challenging",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "凯氏定氮简化模型：样品1.000 g，初加捕集酸5.00 mmol，返滴定剩余酸需2.00 mmol碱。假定NH₃:H⁺=1:1、M(N)=14.00 g mol⁻¹、全部测得氮来自蛋白且蛋白换算因数6.25。蛋白质量百分数=____%。",
+      "points": 3,
+      "explanation": "氨3.00 mmol→氮42.00 mg→蛋白262.5 mg；除样品1000 mg得26.25%。",
+      "difficulty": "challenging",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "answer": "26.25",
+      "acceptableAnswers": [
+        "26.25",
+        "26.250"
+      ]
+    }
+  ]
+}

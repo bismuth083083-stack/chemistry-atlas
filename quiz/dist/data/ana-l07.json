@@ -1,0 +1,631 @@
+{
+  "id": "ANA-L07",
+  "title": "沉淀滴定",
+  "description": "对应第7章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "analytical-chemistry",
+  "chapter": "Lesson 07 · 沉淀滴定",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "沉淀滴定 · Chemistry Atlas笔记",
+      "url": "https://analytical.chemistryatlas.xyz/chapter-7.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Ag⁺滴定Cl⁻的主要反应为？",
+      "points": 1,
+      "explanation": "银与氯离子1:1形成难溶盐。",
+      "difficulty": "easy",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Ag⁺+Cl⁻→HCl"
+        },
+        {
+          "id": "B",
+          "text": "Ag⁺+Cl⁻→Ag金属"
+        },
+        {
+          "id": "C",
+          "text": "Ag⁺+Cl⁻→Cl₂"
+        },
+        {
+          "id": "D",
+          "text": "Ag⁺+Cl⁻→AgCl(s)"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "pAg的浓度近似定义为？",
+      "points": 1,
+      "explanation": "pAg反映游离Ag⁺，而非所有银形态总量。",
+      "difficulty": "easy",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "log[Cl⁻]"
+        },
+        {
+          "id": "B",
+          "text": "AgCl沉淀质量"
+        },
+        {
+          "id": "C",
+          "text": "总银的质量分数"
+        },
+        {
+          "id": "D",
+          "text": "−log[Ag⁺]"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "莫尔法的指示剂为？",
+      "points": 1,
+      "explanation": "过量Ag⁺形成砖红色Ag₂CrO₄指示终点。",
+      "difficulty": "easy",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "铬酸根"
+        },
+        {
+          "id": "B",
+          "text": "淀粉"
+        },
+        {
+          "id": "C",
+          "text": "酚酞"
+        },
+        {
+          "id": "D",
+          "text": "铬黑T"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "佛尔哈德法滴定Ag⁺常用的滴定剂为？",
+      "points": 1,
+      "explanation": "Ag⁺与SCN⁻形成AgSCN，过量SCN⁻与Fe³⁺显色。",
+      "difficulty": "easy",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "EDTA必然"
+        },
+        {
+          "id": "B",
+          "text": "NaOH"
+        },
+        {
+          "id": "C",
+          "text": "SCN⁻标准溶液"
+        },
+        {
+          "id": "D",
+          "text": "H₂O"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "法扬司法使用哪类指示剂？",
+      "points": 1,
+      "explanation": "终点附近沉淀表面电性改变，使染料吸附并变色。",
+      "difficulty": "easy",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "仅pH指示剂"
+        },
+        {
+          "id": "B",
+          "text": "外加任意沉淀质量"
+        },
+        {
+          "id": "C",
+          "text": "金属氧化还原指示剂"
+        },
+        {
+          "id": "D",
+          "text": "吸附指示剂"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "沉淀滴定适用反应应有哪些特征？",
+      "points": 1,
+      "explanation": "溶度积、动力学和终点指示共同决定定量性。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "计量关系明确"
+        },
+        {
+          "id": "B",
+          "text": "只要看见白色就能准确滴定"
+        },
+        {
+          "id": "C",
+          "text": "沉淀反应较完全且终点可检测"
+        },
+        {
+          "id": "D",
+          "text": "反应足够快"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "AgNO₃滴定Cl⁻计量点前，忽略过量副反应，[Ag⁺]主要由什么求？",
+      "points": 1,
+      "explanation": "AgCl平衡使自由银由剩余氯控制。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "已加银总浓度直接等于游离Ag⁺"
+        },
+        {
+          "id": "B",
+          "text": "与氯无关"
+        },
+        {
+          "id": "C",
+          "text": "固定为1 M"
+        },
+        {
+          "id": "D",
+          "text": "Ksp/[Cl⁻]剩余"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "1:1 AgCl体系计量点、无副反应时，[Ag⁺]近似？",
+      "points": 1,
+      "explanation": "两自由离子相等，Ksp=[Ag⁺]²。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0绝对值"
+        },
+        {
+          "id": "B",
+          "text": "1/Ksp"
+        },
+        {
+          "id": "C",
+          "text": "√Ksp"
+        },
+        {
+          "id": "D",
+          "text": "Ksp"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "佛尔哈德指示终点主要观察？",
+      "points": 1,
+      "explanation": "Fe³⁺与首个可持续过量SCN⁻显色。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "淀粉出现紫色"
+        },
+        {
+          "id": "B",
+          "text": "过量SCN⁻与Fe³⁺形成红色络合物"
+        },
+        {
+          "id": "C",
+          "text": "AgCl由白变蓝"
+        },
+        {
+          "id": "D",
+          "text": "EDTA释放蓝色指示剂"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "莫尔法适合任何强酸或强碱介质，不需控制pH。",
+      "points": 1,
+      "explanation": "强酸改变铬酸根形态，强碱可引入银氧化物等干扰。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "法扬司法中，Cl⁻过量时AgCl表面通常优先吸附？",
+      "points": 1,
+      "explanation": "计量点前过量Cl⁻使表面偏负，排斥阴离子染料。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Cl⁻而偏负"
+        },
+        {
+          "id": "B",
+          "text": "Ag⁺而偏正"
+        },
+        {
+          "id": "C",
+          "text": "全部染料必已吸附"
+        },
+        {
+          "id": "D",
+          "text": "只有中性水"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "滴定超过计量点，过量Ag⁺使AgCl表面通常？",
+      "points": 1,
+      "explanation": "表面吸附Ag⁺后，吸附指示剂的颜色或环境可改变。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必全部溶解"
+        },
+        {
+          "id": "B",
+          "text": "偏正，可吸附阴离子染料"
+        },
+        {
+          "id": "C",
+          "text": "永远偏负"
+        },
+        {
+          "id": "D",
+          "text": "不存在任何电荷"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "络合剂与Ag⁺形成可溶络合物，通常如何影响AgCl溶解度？",
+      "points": 1,
+      "explanation": "消耗游离Ag⁺可推动AgCl继续溶解，须区分自由与总银。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "与任何平衡无关"
+        },
+        {
+          "id": "B",
+          "text": "可增加总溶解量"
+        },
+        {
+          "id": "C",
+          "text": "必降低总溶解量"
+        },
+        {
+          "id": "D",
+          "text": "改变Ag原子量"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "返滴定Cl⁻的佛尔哈德法中应注意？",
+      "points": 1,
+      "explanation": "AgSCN比AgCl更难溶，需过滤或采用有效保护等方法。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "保证酸性等指示条件适当"
+        },
+        {
+          "id": "B",
+          "text": "SCN⁻与所有沉淀绝不会进一步反应"
+        },
+        {
+          "id": "C",
+          "text": "准确加入过量Ag⁺"
+        },
+        {
+          "id": "D",
+          "text": "防止SCN⁻对AgCl的置换干扰"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "25.00 mL 0.01000 M Cl⁻样品，用0.01000 M AgNO₃滴定，计量体积=____ mL。",
+      "points": 1,
+      "explanation": "两者1:1且等浓度，所以体积相等。",
+      "difficulty": "medium",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "answer": "25.00",
+      "acceptableAnswers": [
+        "25.00",
+        "25",
+        "25.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "AgCl的Ksp=1.0×10⁻¹⁰，计量点游离Ag⁺约为？",
+      "points": 2,
+      "explanation": "[Ag⁺]=√Ksp=10⁻⁵ M。",
+      "difficulty": "hard",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1.0×10⁵ M"
+        },
+        {
+          "id": "B",
+          "text": "1.0×10⁻¹⁰ M"
+        },
+        {
+          "id": "C",
+          "text": "1.0 M"
+        },
+        {
+          "id": "D",
+          "text": "1.0×10⁻⁵ M"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "沉淀与溶解判断中，哪些正确？",
+      "points": 2,
+      "explanation": "严格比较相同活度表达式；实际析出还可能受成核动力学影响。",
+      "difficulty": "hard",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只比较固体质量与Ksp大小"
+        },
+        {
+          "id": "B",
+          "text": "Qsp<Ksp时未饱和"
+        },
+        {
+          "id": "C",
+          "text": "采用浓度时需注意活度近似"
+        },
+        {
+          "id": "D",
+          "text": "Qsp>Ksp时具有析出驱动力"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "AgCl平衡且剩余[Cl⁻]=0.010 M、Ksp=10⁻¹⁰，pAg近似？",
+      "points": 2,
+      "explanation": "[Ag⁺]=10⁻¹⁰/10⁻²=10⁻⁸，pAg=8。",
+      "difficulty": "hard",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "混合X⁻、Y⁻用Ag⁺沉淀，初始自由浓度相同且Ksp(AgX)<Ksp(AgY)，通常先析出？",
+      "points": 2,
+      "explanation": "起始析出所需[Ag⁺]=Ksp/[阴离子]，AgX阈值较低。",
+      "difficulty": "hard",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "二者必同刻"
+        },
+        {
+          "id": "B",
+          "text": "AgY"
+        },
+        {
+          "id": "C",
+          "text": "不能由Ksp提供任何信息"
+        },
+        {
+          "id": "D",
+          "text": "AgX"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "Ksp(AgX)=10⁻¹²，Ksp(AgY)=10⁻¹⁰；初始[Y⁻]=0.010 M。AgY开始析出时残余[X⁻]约为？",
+      "points": 3,
+      "explanation": "此时[Ag⁺]=10⁻¹⁰/0.010=10⁻⁸；[X⁻]=10⁻¹²/10⁻⁸=10⁻⁴。",
+      "difficulty": "challenging",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1.0×10⁻² M"
+        },
+        {
+          "id": "B",
+          "text": "1.0×10⁻⁴ M"
+        },
+        {
+          "id": "C",
+          "text": "1.0 M"
+        },
+        {
+          "id": "D",
+          "text": "1.0×10⁻¹⁰ M"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "络合使银盐总溶解量增加，就意味着同温度的热力学Ksp必变大。",
+      "points": 3,
+      "explanation": "副反应改变自由离子与总浓度的联系，不改变既定溶解反应Ksp。",
+      "difficulty": "challenging",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "20.00 mL Cl⁻样品加10.00 mL 0.05000 M Ag⁺，剩余银用6.00 mL 0.02000 M SCN⁻返滴定。已排除置换等干扰，原样Cl⁻浓度=____ mol L⁻¹。",
+      "points": 3,
+      "explanation": "加银0.5000 mmol，剩银0.1200 mmol，氯0.3800 mmol；除20.00 mL得0.01900 M。",
+      "difficulty": "challenging",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "answer": "0.0190",
+      "acceptableAnswers": [
+        "0.0190",
+        "0.019",
+        "0.01900"
+      ]
+    }
+  ]
+}

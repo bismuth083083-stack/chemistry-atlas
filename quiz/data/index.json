@@ -981,6 +981,583 @@
       ],
       "path": "pchem-l10.json",
       "mode": "fixed"
+    },
+    {
+      "id": "ORG-L06",
+      "title": "自由基链反应、热力学与反应动力学",
+      "description": "对应第6章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 6,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 06 · 自由基链反应、热力学与反应动力学",
+      "lesson": "自由基链反应、热力学与反应动力学",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "knowledgePoints": [
+        "1. 研究反应时要分清三个问题",
+        "2. 甲烷氯化为何需要蓝光",
+        "3. 自由基链反应的三类基本步骤",
+        "4. 为什么会继续氯化并得到混合物",
+        "5. 平衡常数与标准吉布斯自由能",
+        "6. 焓、熵与键解离焓",
+        "7. 速率方程与反应级数",
+        "8. Arrhenius 方程：温度如何改变速率常数"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/organic/dist/lesson-06.html"
+      ],
+      "path": "org-l06.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L07",
+      "title": "自由基卤代的选择性与活性中间体",
+      "description": "对应第7章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 7,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 07 · 自由基卤代的选择性与活性中间体",
+      "lesson": "自由基卤代的选择性与活性中间体",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "knowledgePoints": [
+        "1. 多步反应中的限速步骤",
+        "2. 产物比例同时取决于位点数与单个位点反应性",
+        "3. 溴代比氯代更有选择性",
+        "4. Hammond 假说：过渡态为何影响选择性",
+        "5. 自由基的结构与稳定性",
+        "6. 自由基抑制剂与抗氧化剂",
+        "7. 活性中间体的结构分类",
+        "8. 碳正离子：空  p  轨道、诱导效应与超共轭"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/organic/dist/lesson-07.html"
+      ],
+      "path": "org-l07.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L09",
+      "title": "Fischer投影、非对映体与光学活性",
+      "description": "对应第9章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 9,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 09 · Fischer投影、非对映体与光学活性",
+      "lesson": "Fischer投影、非对映体与光学活性",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "Fischer投影、非对映体与光学活性"
+      ],
+      "knowledgePoints": [
+        "1. 这一讲接在哪里",
+        "2. Fischer 投影式为什么这样画",
+        "3. Fischer 投影式允许与不允许的操作",
+        "4. 从结构式画出 Fischer 投影式",
+        "5. 直接从 Fischer 投影式判 R/S",
+        "6. 用镜像检验 Fischer 投影式是否手性",
+        "7. 绝对构型、相对构型与 D/L 体系",
+        "8. 非对映异构体"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/organic/dist/lesson-09.html"
+      ],
+      "path": "org-l09.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L10",
+      "title": "卤代烷、亲核取代与SN2",
+      "description": "对应第10章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 10,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 10 · 卤代烷、亲核取代与SN2",
+      "lesson": "卤代烷、亲核取代与SN2",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "卤代烷、亲核取代与SN2"
+      ],
+      "knowledgePoints": [
+        "1. 这一讲接在哪里",
+        "2. 卤代烷：三类含卤化合物",
+        "3. 按连卤碳的级数分类",
+        "4. IUPAC 命名：把卤素当取代基",
+        "5. 中文名与英文名的排序规则相反",
+        "6. C–X 键的结构：极性从哪来",
+        "7. 物理性质：沸点与色散力",
+        "8. 取代与消除：两类反应的竞争"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/organic/dist/lesson-10.html"
+      ],
+      "path": "org-l10.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L05",
+      "title": "蛋白质的性质及研究方法",
+      "description": "对应第5章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 5,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 05 · 蛋白质的性质及研究方法",
+      "lesson": "蛋白质的性质及研究方法",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "蛋白质的性质及研究方法"
+      ],
+      "knowledgePoints": [
+        "1. 理化性质的六个抓手",
+        "2. 变性：只拆高级结构，不动肽键",
+        "3. 水解：三种方式，各有损失",
+        "4. 呈色反应：每一管试剂都在挑一种侧链",
+        "5. 研究方法总览：围绕一个“蛋白质 X”提问",
+        "6. 等电聚焦与双向电泳：把电荷和大小分两步测",
+        "7. 一级结构测定：直接法与间接法",
+        "8. 蛋白质的分类（自学）"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/biochem/dist/chapter-05.html"
+      ],
+      "path": "bioc-l05.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L06",
+      "title": "核苷酸",
+      "description": "对应第6章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 6,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 06 · 核苷酸",
+      "lesson": "核苷酸",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "核苷酸"
+      ],
+      "knowledgePoints": [
+        "1. 三级概念：碱基 → 核苷 → 核苷酸",
+        "2. 碱基：五种主要碱基的编号与结构",
+        "3. 核苷：β-糖苷键与顺反两种构象",
+        "4. 核苷酸：磷酸连在哪里，为什么是 5′",
+        "5. 环核苷酸：3′,5′-环化与第二信使",
+        "6. 核苷酸的七重身份",
+        "把三层概念串成一条链"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/biochem/dist/chapter-06.html"
+      ],
+      "path": "bioc-l06.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L07",
+      "title": "核酸的结构与功能",
+      "description": "对应第7章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 7,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 07 · 核酸的结构与功能",
+      "lesson": "核酸的结构与功能",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "knowledgePoints": [
+        "1. 分类，以及 DNA 与 RNA 的三点差异",
+        "2. 一级结构：3′,5′-磷酸二酯键与极性",
+        "3. 二级结构：从 B 型双螺旋说起",
+        "4. A 型、B 型、Z 型以及其他非标准结构",
+        "5. 三级结构：超螺旋",
+        "6. RNA 的二级与三级结构",
+        "7. 核酸与蛋白质的复合物",
+        "8. 功能：信息存在哪里，功能靠什么实现"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/biochem/dist/chapter-07.html"
+      ],
+      "path": "bioc-l07.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L08",
+      "title": "核酸的性质及研究方法",
+      "description": "对应第8章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 8,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 08 · 核酸的性质及研究方法",
+      "lesson": "核酸的性质及研究方法",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "knowledgePoints": [
+        "1. 核酸的理化性质总览",
+        "2. DNA 的变性",
+        "3. DNA 的复性与 Cot 曲线",
+        "4. 核酸的水解",
+        "5. 核酸的分离、纯化与定量",
+        "6. DNA 一级结构的测定",
+        "7. RNA 一级结构的测定",
+        "8. 复习清单"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/biochem/dist/chapter-08.html"
+      ],
+      "path": "bioc-l08.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L09",
+      "title": "酶学概论",
+      "description": "对应第9章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 9,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 09 · 酶学概论",
+      "lesson": "酶学概论",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "酶学概论"
+      ],
+      "knowledgePoints": [
+        "1. 酶的定义与化学本质",
+        "2. 酶与非酶催化剂的共同性质",
+        "3. 酶特有的催化性质",
+        "4. 专一性：四种类型",
+        "5. 活性中心及其七个特征",
+        "6. 解释专一性的三种模型",
+        "7. 温度与 pH 对酶活性的影响",
+        "8. 单纯酶与缀合酶：辅因子的三类划分"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/biochem/dist/chapter-09.html"
+      ],
+      "path": "bioc-l09.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "BIOC-L10",
+      "title": "酶动力学",
+      "description": "对应第10章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "biochemistry",
+      "type": "lesson",
+      "lessonNumber": 10,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 10 · 酶动力学",
+      "lesson": "酶动力学",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "酶动力学"
+      ],
+      "knowledgePoints": [
+        "1. 影响酶促反应速率的各种因素",
+        "2. 米氏方程的推导",
+        "3. 米氏方程的四组参数",
+        "4. 米氏方程的双重性",
+        "5. 米氏方程的线性转换：双倒数作图",
+        "6. 酶抑制剂作用的动力学",
+        "7. 不可逆性抑制剂的四种类型",
+        "8. 别构酶的动力学"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/biochem/dist/chapter-10.html"
+      ],
+      "path": "bioc-l10.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ANA-L03",
+      "title": "酸碱平衡",
+      "description": "对应第3章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 3,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 03 · 酸碱平衡",
+      "lesson": "酸碱平衡",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "酸碱平衡"
+      ],
+      "knowledgePoints": [
+        "从滴定到酸碱体系",
+        "酸碱理论的四次扩展",
+        "水的质子自递与 Kw",
+        "pH、pOH 与 pKw",
+        "强酸强碱与弱酸弱碱：Ka 与 Kb",
+        "缓冲溶液、Henderson–Hasselbalch 方程与缓冲容量",
+        "多元酸的逐级解离与分布分数 α",
+        "两性物质（酸式盐）的 pH"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/analytical/dist/chapter-3.html"
+      ],
+      "path": "ana-l03.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ANA-L04",
+      "title": "酸碱滴定",
+      "description": "对应第4章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 4,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 04 · 酸碱滴定",
+      "lesson": "酸碱滴定",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "酸碱滴定"
+      ],
+      "knowledgePoints": [
+        "计量点、终点与滴定误差",
+        "当直接滴定走不通：四种替代方式",
+        "滴定曲线与终点误差",
+        "强酸强碱滴定 ：三段式计算",
+        "弱酸强碱滴定 ：四个区域与一个捷径",
+        "指示剂：为什么只变 2 个 pH 单位",
+        "多元酸（碱）的分步滴定",
+        "氨基酸滴定 ：天然的两性物质"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/analytical/dist/chapter-4.html"
+      ],
+      "path": "ana-l04.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ANA-L05",
+      "title": "络合滴定",
+      "description": "对应第5章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 5,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 05 · 络合滴定",
+      "lesson": "络合滴定",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "络合滴定"
+      ],
+      "knowledgePoints": [
+        "络合物与形成常数",
+        "螯合效应：为什么多齿配体更稳定",
+        "EDTA 及其解离平衡",
+        "条件形成常数：把 pH 打包进常数",
+        "络合滴定曲线：三段式与二次方程",
+        "最低 pH 与滴定选择性",
+        "金属指示剂：本身也是螯合剂",
+        "掩蔽与解蔽"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/analytical/dist/chapter-5.html"
+      ],
+      "path": "ana-l05.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ANA-L06",
+      "title": "重量分析",
+      "description": "对应第6章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 6,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 06 · 重量分析",
+      "lesson": "重量分析",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "重量分析"
+      ],
+      "knowledgePoints": [
+        "重量分析的流程与两个关键名词",
+        "相对过饱和度与冯·韦曼比",
+        "陈化、胶体与胶溶",
+        "共沉淀的四类与后沉淀",
+        "洗涤、灼烧与称量形式",
+        "换算因数与重量计算",
+        "有机沉淀剂",
+        "溶度积与摩尔溶解度"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/analytical/dist/chapter-6.html"
+      ],
+      "path": "ana-l06.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ANA-L07",
+      "title": "沉淀滴定",
+      "description": "对应第7章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 7,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 07 · 沉淀滴定",
+      "lesson": "沉淀滴定",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "沉淀滴定"
+      ],
+      "knowledgePoints": [
+        "酸对溶解度的影响与条件溶度积",
+        "质量平衡法处理多重平衡",
+        "络合效应与条件溶度积",
+        "沉淀滴定曲线的三段式",
+        "分步沉淀滴定",
+        "第一类指示剂：莫尔法与佛尔哈德法",
+        "第二类指示剂：吸附指示剂与法扬司法",
+        "三种银量法的系统对比"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/analytical/dist/chapter-7.html"
+      ],
+      "path": "ana-l07.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L08",
+      "title": "Helmholtz能、Gibbs能与化学势",
+      "description": "对应第8章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 8,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 08 · Helmholtz能、Gibbs能与化学势",
+      "lesson": "Helmholtz能、Gibbs能与化学势",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "knowledgePoints": [
+        "1. 这一讲在全课中的位置",
+        "2. Helmholtz 能与 Gibbs 能的定义",
+        "3. 最大功与最大非膨胀功",
+        "4. 基本方程",
+        "5. Maxwell 关系",
+        "6. Gibbs 能随温度与压力的变化",
+        "7. 标准摩尔 Gibbs 能",
+        "8. 化学势"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/physical/dist/lesson-08.html"
+      ],
+      "path": "pchem-l08.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "INORG-L05",
+      "title": "分子轨道与群轨道",
+      "description": "对应第5章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+      "subject": "inorganic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 5,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lesson 05 · 分子轨道与群轨道",
+      "lesson": "分子轨道与群轨道",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "knowledgePoints": [
+        "1. 价键理论缺了什么",
+        "2. 原子轨道怎样组合成分子轨道",
+        "3. 第二周期双原子分子的能级图",
+        "4. 键级：一个能直接对照实验的数字",
+        "5. 实验证据：光电子能谱",
+        "6. d 轨道参与成键与异核双原子分子",
+        "7. CO：同时是 σ 给体和 π 受体",
+        "8. 多原子分子：群轨道与 SALC"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-05.html"
+      ],
+      "path": "inorg-l05.json",
+      "mode": "fixed"
     }
   ]
 }

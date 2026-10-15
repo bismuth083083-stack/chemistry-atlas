@@ -1,0 +1,629 @@
+{
+  "id": "BIOC-L06",
+  "title": "核苷酸",
+  "description": "对应第6章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "biochemistry",
+  "chapter": "Lesson 06 · 核苷酸",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "核苷酸 · Chemistry Atlas笔记",
+      "url": "https://biochem.chemistryatlas.xyz/chapter-06.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "核苷的基本组成是？",
+      "points": 1,
+      "explanation": "核苷=碱基+糖；磷酸化后成为核苷酸。",
+      "difficulty": "easy",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "碱基和戊糖"
+        },
+        {
+          "id": "B",
+          "text": "三个磷酸"
+        },
+        {
+          "id": "C",
+          "text": "碱基和磷酸"
+        },
+        {
+          "id": "D",
+          "text": "只有糖和磷酸"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "哪一组都是嘌呤碱基？",
+      "points": 1,
+      "explanation": "腺嘌呤与鸟嘌呤为双环嘌呤；C、T、U为嘧啶。",
+      "difficulty": "easy",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "U和C"
+        },
+        {
+          "id": "B",
+          "text": "A和G"
+        },
+        {
+          "id": "C",
+          "text": "A和U"
+        },
+        {
+          "id": "D",
+          "text": "C和T"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "核糖与2′-脱氧核糖的重要差别是？",
+      "points": 1,
+      "explanation": "脱氧核糖2′位为H，核糖为OH。",
+      "difficulty": "easy",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2′位OH与H不同"
+        },
+        {
+          "id": "B",
+          "text": "两种糖磷酸数固定不同"
+        },
+        {
+          "id": "C",
+          "text": "5′位没有碳"
+        },
+        {
+          "id": "D",
+          "text": "碱基都不同"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "常见嘌呤核苷中，糖C1′连接碱基哪个位点？",
+      "points": 1,
+      "explanation": "常见嘌呤通过N9成β-N-糖苷键；嘧啶通常为N1。",
+      "difficulty": "easy",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "N7"
+        },
+        {
+          "id": "B",
+          "text": "N9"
+        },
+        {
+          "id": "C",
+          "text": "C5"
+        },
+        {
+          "id": "D",
+          "text": "N1"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "常见嘧啶核苷中，糖C1′连接碱基哪个位点？",
+      "points": 1,
+      "explanation": "嘧啶核苷的常规N-糖苷键连N1与糖C1′。",
+      "difficulty": "easy",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "N1"
+        },
+        {
+          "id": "B",
+          "text": "C8"
+        },
+        {
+          "id": "C",
+          "text": "N7"
+        },
+        {
+          "id": "D",
+          "text": "N9"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "哪些属于核苷酸及其衍生物的功能？",
+      "points": 1,
+      "explanation": "ATP、cAMP以及含核苷酸部分的辅酶体现多种功能。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只能作为遗传信息的结构单元"
+        },
+        {
+          "id": "B",
+          "text": "参与能量转移"
+        },
+        {
+          "id": "C",
+          "text": "构成核酸"
+        },
+        {
+          "id": "D",
+          "text": "参与信号与辅酶作用"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "碱基和糖的连接键通常称为？",
+      "points": 1,
+      "explanation": "常见核苷为碱基N与糖C1′相连的β-N-糖苷键。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "β-N-糖苷键"
+        },
+        {
+          "id": "B",
+          "text": "磷酸酐键"
+        },
+        {
+          "id": "C",
+          "text": "二硫键"
+        },
+        {
+          "id": "D",
+          "text": "肽键"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "AMP中糖与磷酸的连接属于？",
+      "points": 1,
+      "explanation": "糖羟基与磷酸形成酯键；ATP磷酸间则有磷酸酐键。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "C–C键"
+        },
+        {
+          "id": "B",
+          "text": "磷酸酯键"
+        },
+        {
+          "id": "C",
+          "text": "肽键"
+        },
+        {
+          "id": "D",
+          "text": "磷酸酐键"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "胸腺嘧啶与尿嘧啶的结构关系是？",
+      "points": 1,
+      "explanation": "T与U相差嘧啶5位甲基。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "T为二甲基腺嘌呤"
+        },
+        {
+          "id": "B",
+          "text": "二者互为对映体"
+        },
+        {
+          "id": "C",
+          "text": "二者都是嘌呤"
+        },
+        {
+          "id": "D",
+          "text": "T为5-甲基尿嘧啶"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "核苷酸只能出现在DNA或RNA聚合物中，不能游离存在。",
+      "points": 1,
+      "explanation": "ATP、GTP、cAMP等游离核苷酸承担能量和调控功能。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "3′,5′-cAMP中的磷酸连接哪些糖位置？",
+      "points": 1,
+      "explanation": "磷酸形成连接同一糖3′、5′羟基的环磷酸二酯。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两个核糖的1′与2′"
+        },
+        {
+          "id": "B",
+          "text": "同一碱基的N1与N9"
+        },
+        {
+          "id": "C",
+          "text": "只连糖2′"
+        },
+        {
+          "id": "D",
+          "text": "同一核糖的3′与5′"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "碱基在约260 nm吸收，主要由什么产生？",
+      "points": 1,
+      "explanation": "碱基的共轭体系产生紫外吸收，是核酸定量依据。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "糖环只有σ键"
+        },
+        {
+          "id": "B",
+          "text": "肽键振动"
+        },
+        {
+          "id": "C",
+          "text": "共轭杂环电子结构"
+        },
+        {
+          "id": "D",
+          "text": "磷酸核的颜色"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "ATP具有几个磷酸基团？",
+      "points": 1,
+      "explanation": "腺苷三磷酸由α、β、γ三个磷酸组成。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "哪些关于ATP正确？",
+      "points": 1,
+      "explanation": "断键需能量；净水解有利源于产物形成和稳定化等整体差值。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只要断开一根键本身就必然释放能量"
+        },
+        {
+          "id": "B",
+          "text": "相邻磷酸之间含磷酸酐键"
+        },
+        {
+          "id": "C",
+          "text": "糖与α磷酸之间是磷酸酯键"
+        },
+        {
+          "id": "D",
+          "text": "水解自由能须考虑反应物和产物整体"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "ATP水解成ADP与Pi时，ATP与ADP的磷酸基团数相差____个。",
+      "points": 1,
+      "explanation": "ATP为3个，ADP为2个，相差1个。",
+      "difficulty": "medium",
+      "tags": [
+        "核苷酸"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1",
+        "一"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "核苷的syn/anti构象主要关联哪种旋转？",
+      "points": 2,
+      "explanation": "syn/anti描述碱基与糖的相对取向，不改变连接次序。",
+      "difficulty": "hard",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "围绕糖苷键的旋转"
+        },
+        {
+          "id": "B",
+          "text": "把D糖变成L糖"
+        },
+        {
+          "id": "C",
+          "text": "切断全部糖环"
+        },
+        {
+          "id": "D",
+          "text": "将磷酸变成碱基"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于碱基互变异构，哪些合理？",
+      "points": 2,
+      "explanation": "互变异构比例受结构与环境影响，不应机械套一个固定数值。",
+      "difficulty": "hard",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "常见配对依赖主要互变异构形式"
+        },
+        {
+          "id": "B",
+          "text": "稀有形式可能参与复制错误"
+        },
+        {
+          "id": "C",
+          "text": "稀有形式可改变氢键配对"
+        },
+        {
+          "id": "D",
+          "text": "所有碱基的稀有形式比例在任何条件下都严格相同"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "NAD⁺参与氧化还原的主要电子接受部分是？",
+      "points": 2,
+      "explanation": "烟酰胺环接受氢负离子等；腺苷核苷酸部分参与识别。",
+      "difficulty": "hard",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有磷酸逐个被还原"
+        },
+        {
+          "id": "B",
+          "text": "烟酰胺部分"
+        },
+        {
+          "id": "C",
+          "text": "核糖直接变成葡萄糖"
+        },
+        {
+          "id": "D",
+          "text": "腺嘌呤每次断裂"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "UDP-葡萄糖最直接体现核苷酸的哪种功能？",
+      "points": 2,
+      "explanation": "UDP糖是糖基转移反应中的活化供体。",
+      "difficulty": "hard",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "降解所有RNA"
+        },
+        {
+          "id": "B",
+          "text": "活化糖基参与转移"
+        },
+        {
+          "id": "C",
+          "text": "作为DNA聚合酶唯一终止剂"
+        },
+        {
+          "id": "D",
+          "text": "只改变细胞颜色"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "ATP水解耦联推动不利反应，最关键的要求是？",
+      "points": 3,
+      "explanation": "自由能可加和，但实际推动还须通过共同中间体或机制实现耦联。",
+      "difficulty": "challenging",
+      "tags": [
+        "核苷酸"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只比较断键数量"
+        },
+        {
+          "id": "B",
+          "text": "机制上耦联并使总ΔG有利"
+        },
+        {
+          "id": "C",
+          "text": "把ATP放在同一杯就够"
+        },
+        {
+          "id": "D",
+          "text": "不利反应的ΔG必永远不变"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "“U只在RNA、T只在DNA”是无任何例外的化学规律。",
+      "points": 3,
+      "explanation": "这是主要碱基组成的简化描述；RNA可含核糖胸腺嘧啶等修饰残基。",
+      "difficulty": "challenging",
+      "tags": [
+        "核苷酸"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "某转化实际ΔG=+20 kJ mol⁻¹，每mol ATP水解实际ΔG=−12 kJ mol⁻¹。假定机制可按整数个ATP有效耦联，要使总ΔG<0，每mol转化最少需____ mol ATP。",
+      "points": 3,
+      "explanation": "一个ATP使总ΔG=+8，两个使总ΔG=−4 kJ mol⁻¹；这里只在已声明的有效耦联模型内作自由能加和。",
+      "difficulty": "challenging",
+      "tags": [
+        "核苷酸"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "二"
+      ]
+    }
+  ]
+}

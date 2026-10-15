@@ -1,0 +1,630 @@
+{
+  "id": "ORG-L07",
+  "title": "自由基卤代的选择性与活性中间体",
+  "description": "对应第7章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "organic-chemistry",
+  "chapter": "Lesson 07 · 自由基卤代的选择性与活性中间体",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "自由基卤代的选择性与活性中间体 · Chemistry Atlas笔记",
+      "url": "https://organic.chemistryatlas.xyz/lesson-07.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "自由基的关键电子特征是？",
+      "points": 1,
+      "explanation": "自由基可为电中性；圆点表示未成对电子。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "含未成对电子"
+        },
+        {
+          "id": "B",
+          "text": "必带正电"
+        },
+        {
+          "id": "C",
+          "text": "必有一对孤电子"
+        },
+        {
+          "id": "D",
+          "text": "必为八电子阳离子"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "普通烷基自由基的常见稳定性顺序为？",
+      "points": 1,
+      "explanation": "仅对可比的普通烷基自由基，超共轭等使较高取代度更稳定。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "甲基>伯>仲>叔"
+        },
+        {
+          "id": "B",
+          "text": "全部相等"
+        },
+        {
+          "id": "C",
+          "text": "伯>叔>仲>甲基"
+        },
+        {
+          "id": "D",
+          "text": "叔>仲>伯>甲基"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "简单烷基碳正离子的碳中心通常为？",
+      "points": 1,
+      "explanation": "三键碳正离子缺电子，空p轨道可接受电子对。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必有一个未成对电子"
+        },
+        {
+          "id": "B",
+          "text": "线形sp、满p轨道"
+        },
+        {
+          "id": "C",
+          "text": "四面体sp³、八电子"
+        },
+        {
+          "id": "D",
+          "text": "近似平面sp²、具有空p轨道"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "比较常见烷烃自由基氯代与溴代，通常哪一个更有位点选择性？",
+      "points": 1,
+      "explanation": "溴夺氢的吸热、产物样过渡态对自由基稳定性更敏感。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "氯代"
+        },
+        {
+          "id": "B",
+          "text": "完全相同"
+        },
+        {
+          "id": "C",
+          "text": "溴代"
+        },
+        {
+          "id": "D",
+          "text": "无法讨论任何趋势"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "卡宾的典型碳中心有几个键和几个非键电子？",
+      "points": 1,
+      "explanation": "中性二价碳卡宾有两个非键电子，可呈单线态或三线态。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "三键、一个"
+        },
+        {
+          "id": "B",
+          "text": "二键、两个非键电子"
+        },
+        {
+          "id": "C",
+          "text": "四键、零个"
+        },
+        {
+          "id": "D",
+          "text": "三键、零个"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "低转化率自由基卤代的产物比例受哪些因素影响？",
+      "points": 1,
+      "explanation": "各类初始生成量近似正比nᵢkᵢ，kᵢ受条件影响。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "反应温度与条件"
+        },
+        {
+          "id": "B",
+          "text": "只由哪种自由基最稳定决定"
+        },
+        {
+          "id": "C",
+          "text": "每个氢的相对夺取速率"
+        },
+        {
+          "id": "D",
+          "text": "某类等价氢的数量"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "丙烷有6个伯氢与2个仲氢，k仲/k伯=4.5时仲位产物比例约为？",
+      "points": 1,
+      "explanation": "2×4.5/(6×1+2×4.5)=9/15=60%。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "90%"
+        },
+        {
+          "id": "B",
+          "text": "75%"
+        },
+        {
+          "id": "C",
+          "text": "60%"
+        },
+        {
+          "id": "D",
+          "text": "25%"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "异丁烷9个伯氢、1个叔氢，k叔/k伯=5.5时，主产物是哪类？",
+      "points": 1,
+      "explanation": "伯位权重9大于叔位5.5；伯位比例9/14.5≈62%。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "无法由给定数据计算"
+        },
+        {
+          "id": "B",
+          "text": "伯位取代产物"
+        },
+        {
+          "id": "C",
+          "text": "二者必相等"
+        },
+        {
+          "id": "D",
+          "text": "叔位取代产物"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "Hammond假说对吸热夺氢步骤的典型判断是？",
+      "points": 1,
+      "explanation": "吸热步骤的过渡态通常晚期、产物样；这是结构类比。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "过渡态更早且必像反应物"
+        },
+        {
+          "id": "B",
+          "text": "过渡态必无法含自由基特征"
+        },
+        {
+          "id": "C",
+          "text": "过渡态一定就是产物"
+        },
+        {
+          "id": "D",
+          "text": "过渡态更接近产物自由基"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "“晚期过渡态”表示它在真实时间上持续存在很久。",
+      "points": 1,
+      "explanation": "早期/晚期描述反应坐标上的结构相似性，不是寿命。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "酚类抑制剂捕获R·时生成的ArO·较难传播原链，重要原因是？",
+      "points": 1,
+      "explanation": "氢原子转移后形成较稳定的酚氧自由基，减少活泼链载体。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "ArO·必立即变成质子"
+        },
+        {
+          "id": "B",
+          "text": "ArO·没有电子"
+        },
+        {
+          "id": "C",
+          "text": "苯环不能参与离域"
+        },
+        {
+          "id": "D",
+          "text": "酚氧自由基可被共振稳定"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "比较普通、不共振稳定的烷基碳负离子，增加烷基给电子通常？",
+      "points": 1,
+      "explanation": "简单烷基碳负离子的趋势常与碳正离子相反；共振与杂化须另计。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必使中心完全平面"
+        },
+        {
+          "id": "B",
+          "text": "使负电荷变为正"
+        },
+        {
+          "id": "C",
+          "text": "一定与碳正离子完全相同"
+        },
+        {
+          "id": "D",
+          "text": "不利于负电荷稳定"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "苄基自由基不能仅按“伯自由基”推断稳定性，主要因为？",
+      "points": 1,
+      "explanation": "共振可额外稳定未成对电子，取代度规则有适用范围。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "苯环只提供位阻"
+        },
+        {
+          "id": "B",
+          "text": "苄基必带负电"
+        },
+        {
+          "id": "C",
+          "text": "所有伯自由基稳定性相同"
+        },
+        {
+          "id": "D",
+          "text": "可与芳环共振离域"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "哪些关于中间体的描述正确？",
+      "points": 1,
+      "explanation": "电荷、非键电子数及自旋状态是不同分类维度。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "单线态和三线态卡宾自旋排布不同"
+        },
+        {
+          "id": "B",
+          "text": "碳负离子常具有孤对电子"
+        },
+        {
+          "id": "C",
+          "text": "所有自由基都属于碳正离子"
+        },
+        {
+          "id": "D",
+          "text": "碳正离子通常亲电"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "丙烷溴代仲位:伯位产物=97:3，仲氢2个、伯氢6个。k仲/k伯=____。",
+      "points": 1,
+      "explanation": "(97/2)/(3/6)=97，不是直接使用97/3。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "answer": "97",
+      "acceptableAnswers": [
+        "97",
+        "97.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "Br·夺氢时D(C–H)=397、D(H–Br)=368 kJ mol⁻¹，估算该步焓变为？",
+      "points": 2,
+      "explanation": "断C–H减成H–Br：397−368=+29，吸热。",
+      "difficulty": "hard",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "+29 kJ mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "+765 kJ mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "−29 kJ mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "−397 kJ mol⁻¹"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "比较多步反应限速因素，哪些判断合理？",
+      "points": 2,
+      "explanation": "简单局部能垒是起点，严格速率控制还依赖完整动力学。",
+      "difficulty": "hard",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "局部峰高应相对前一能谷读取"
+        },
+        {
+          "id": "B",
+          "text": "图中绝对最高峰必定控制任何条件下的总速率"
+        },
+        {
+          "id": "C",
+          "text": "要关注有效活化自由能"
+        },
+        {
+          "id": "D",
+          "text": "应考虑前置平衡和物种浓度"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "两竞争路径具有相近前因子，k₁/k₂=e²，ΔG₁‡−ΔG₂‡是多少？",
+      "points": 2,
+      "explanation": "ln(k₁/k₂)=−(ΔG₁‡−ΔG₂‡)/(RT)=2。",
+      "difficulty": "hard",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−RT/2"
+        },
+        {
+          "id": "B",
+          "text": "+2RT"
+        },
+        {
+          "id": "C",
+          "text": "0"
+        },
+        {
+          "id": "D",
+          "text": "−2RT"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "普通叔碳正离子较稳定的重要轨道因素为？",
+      "points": 2,
+      "explanation": "超共轭分散缺电子中心的正电荷特征。",
+      "difficulty": "hard",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "把孤对电子填满全部四个键"
+        },
+        {
+          "id": "B",
+          "text": "碳正离子有两个单占p轨道"
+        },
+        {
+          "id": "C",
+          "text": "强吸电子作用总使正电荷更稳定"
+        },
+        {
+          "id": "D",
+          "text": "邻近σ键与空p轨道的超共轭"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "若要求判定一种特殊碳负离子的稳定性，最可靠的策略是？",
+      "points": 3,
+      "explanation": "共振吸电子基团及较高s成分可能改变简单烷基趋势。",
+      "difficulty": "challenging",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "直接复制碳正离子顺序"
+        },
+        {
+          "id": "B",
+          "text": "只数伯仲叔"
+        },
+        {
+          "id": "C",
+          "text": "同时检查共振、诱导效应与杂化"
+        },
+        {
+          "id": "D",
+          "text": "只看分子质量"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "溴代更有选择性，意味着它在所有条件下都比氯代更快。",
+      "points": 3,
+      "explanation": "选择性比较竞争路径的差别；总体速度与反应能垒另行判断。",
+      "difficulty": "challenging",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "某底物有6个A类氢、2个B类氢。若B位产物占50%，则kB/kA=____。",
+      "points": 3,
+      "explanation": "2kB=6kA，故kB/kA=3。",
+      "difficulty": "challenging",
+      "tags": [
+        "自由基卤代的选择性与活性中间体"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3.0",
+        "三"
+      ]
+    }
+  ]
+}

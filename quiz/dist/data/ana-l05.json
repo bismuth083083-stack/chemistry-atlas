@@ -1,0 +1,629 @@
+{
+  "id": "ANA-L05",
+  "title": "络合滴定",
+  "description": "对应第5章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "analytical-chemistry",
+  "chapter": "Lesson 05 · 络合滴定",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "络合滴定 · Chemistry Atlas笔记",
+      "url": "https://analytical.chemistryatlas.xyz/chapter-5.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "EDTA与许多金属离子的常用滴定计量比为？",
+      "points": 1,
+      "explanation": "常用金属–EDTA分析模型为一个金属配一个EDTA。",
+      "difficulty": "easy",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1:2固定"
+        },
+        {
+          "id": "B",
+          "text": "2:1固定"
+        },
+        {
+          "id": "C",
+          "text": "1:1"
+        },
+        {
+          "id": "D",
+          "text": "等于金属电荷数"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "配体在Lewis意义上通常是？",
+      "points": 1,
+      "explanation": "配体用孤对电子与金属中心配位。",
+      "difficulty": "easy",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必须是阳离子"
+        },
+        {
+          "id": "B",
+          "text": "只能是无机酸"
+        },
+        {
+          "id": "C",
+          "text": "电子对受体"
+        },
+        {
+          "id": "D",
+          "text": "电子对给体"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "螯合剂的结构特征为？",
+      "points": 1,
+      "explanation": "多齿配体与同一中心连接形成螯合环。",
+      "difficulty": "easy",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只能形成沉淀"
+        },
+        {
+          "id": "B",
+          "text": "必只有一个给电子原子"
+        },
+        {
+          "id": "C",
+          "text": "一个配体提供多个配位位点并可成环"
+        },
+        {
+          "id": "D",
+          "text": "必不含氮氧"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "只考虑EDTA质子化副反应时K′f为？",
+      "points": 1,
+      "explanation": "α是未络合EDTA中Y⁴⁻分数；把游离配体平衡打包进条件常数。",
+      "difficulty": "easy",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Kf+αY⁴⁻"
+        },
+        {
+          "id": "B",
+          "text": "KfαY⁴⁻"
+        },
+        {
+          "id": "C",
+          "text": "Kf/αY⁴⁻"
+        },
+        {
+          "id": "D",
+          "text": "αY⁴⁻/Kf"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "pM定义为？",
+      "points": 1,
+      "explanation": "浓度定义采用题设近似，pM不同于总分析浓度的负对数。",
+      "difficulty": "easy",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "金属总质量"
+        },
+        {
+          "id": "B",
+          "text": "所有络合物数量"
+        },
+        {
+          "id": "C",
+          "text": "EDTA总浓度"
+        },
+        {
+          "id": "D",
+          "text": "−log[M的游离离子浓度]"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "EDTA滴定通常应控制哪些条件？",
+      "points": 1,
+      "explanation": "有效滴定取决于条件常数、计量和动力学。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "pH与配体质子化"
+        },
+        {
+          "id": "B",
+          "text": "指示剂及络合反应速率"
+        },
+        {
+          "id": "C",
+          "text": "金属副反应和干扰"
+        },
+        {
+          "id": "D",
+          "text": "只要Kf很大就无需任何条件控制"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "升高pH通常使未络合EDTA中Y⁴⁻分数如何？",
+      "points": 1,
+      "explanation": "去质子化程度增加；同时也要警惕金属水解沉淀。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "等于金属的电荷"
+        },
+        {
+          "id": "B",
+          "text": "增加"
+        },
+        {
+          "id": "C",
+          "text": "永久不变"
+        },
+        {
+          "id": "D",
+          "text": "总减为零"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "铬黑T在常见pH 10总硬度滴定中，典型终点为？",
+      "points": 1,
+      "explanation": "EDTA夺取指示剂络合的金属，释放蓝色指示剂。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "由金属指示剂络合物酒红色转游离指示剂蓝色"
+        },
+        {
+          "id": "B",
+          "text": "蓝色变AgCl白沉淀"
+        },
+        {
+          "id": "C",
+          "text": "无色变黑色金属"
+        },
+        {
+          "id": "D",
+          "text": "红色变成CO₂气泡"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "掩蔽的直接目的为？",
+      "points": 1,
+      "explanation": "选择性处理干扰物，使待测物仍可定量滴定。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "降低干扰离子的有效反应性"
+        },
+        {
+          "id": "B",
+          "text": "让待测物完全消失"
+        },
+        {
+          "id": "C",
+          "text": "改变天平读数"
+        },
+        {
+          "id": "D",
+          "text": "使所有反应无法发生"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "EDTA滴定只需使用金属固有Kf，与pH无关。",
+      "points": 1,
+      "explanation": "质子化降低有效Y⁴⁻比例，条件形成常数随pH变化。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "逐级络合常数K1、K2与累积常数β2的关系是？",
+      "points": 1,
+      "explanation": "两步平衡反应相加，常数相乘。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "β2=K1K2"
+        },
+        {
+          "id": "B",
+          "text": "β2=K2/K1"
+        },
+        {
+          "id": "C",
+          "text": "β2=K1+K2"
+        },
+        {
+          "id": "D",
+          "text": "β2=1/K2"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "金属指示剂终点能释放，通常要求？",
+      "points": 1,
+      "explanation": "既要初始显色可辨，又要终点置换足够完全快速。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "EDTA与金属不反应"
+        },
+        {
+          "id": "B",
+          "text": "指示剂比EDTA无限稳定"
+        },
+        {
+          "id": "C",
+          "text": "EDTA有效络合能从指示剂夺走金属"
+        },
+        {
+          "id": "D",
+          "text": "指示剂络合物绝对不解离"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "定义CY为全部未络合EDTA形态之和，αY=[Y⁴⁻]/CY。K′f的浓度式为？",
+      "points": 1,
+      "explanation": "必须明确分母是游离未络合配体分析浓度，不能重复包含MY。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "[MY]/([M]CY)"
+        },
+        {
+          "id": "B",
+          "text": "[M]CY/[MY]"
+        },
+        {
+          "id": "C",
+          "text": "[MY][M]CY"
+        },
+        {
+          "id": "D",
+          "text": "[MY]/([M]总EDTA包括MY)"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "哪些副反应可能削弱目标金属–EDTA的有效络合？",
+      "points": 1,
+      "explanation": "副反应改变自由反应物可用性；须纳入条件或避开。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "金属形成氢氧化物"
+        },
+        {
+          "id": "B",
+          "text": "金属与其他配体络合"
+        },
+        {
+          "id": "C",
+          "text": "把样品准确量取"
+        },
+        {
+          "id": "D",
+          "text": "EDTA被质子化"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "Kf=10¹⁰，未络合EDTA中Y⁴⁻分数αY=10⁻³，只计该副反应时log K′f=____。",
+      "points": 1,
+      "explanation": "K′f=10¹⁰×10⁻³=10⁷，十进对数为7。",
+      "difficulty": "medium",
+      "tags": [
+        "络合滴定"
+      ],
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "7.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "25.00 mL金属样品消耗20.00 mL 0.01000 M EDTA，1:1反应，金属浓度为？",
+      "points": 2,
+      "explanation": "n=0.01000×0.02000=0.0002000 mol，除0.02500 L。",
+      "difficulty": "hard",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.0002000 M"
+        },
+        {
+          "id": "B",
+          "text": "0.02000 M"
+        },
+        {
+          "id": "C",
+          "text": "0.008000 M"
+        },
+        {
+          "id": "D",
+          "text": "0.01250 M"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "为提高混合金属测定的选择性，可考虑？",
+      "points": 2,
+      "explanation": "选择性源于热力学及动力学差别，高pH也可能引发沉淀。",
+      "difficulty": "hard",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "一律将pH升到无限高"
+        },
+        {
+          "id": "B",
+          "text": "选择性掩蔽干扰物"
+        },
+        {
+          "id": "C",
+          "text": "利用络合速度差异"
+        },
+        {
+          "id": "D",
+          "text": "调节pH"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "1:1络合计量点总浓度C=0.010 M，K′f=10⁸，解离少且两游离浓度相等，游离[M]约为？",
+      "points": 2,
+      "explanation": "K′≈C/x²，x≈√(C/K′)=√10⁻¹⁰=10⁻⁵。",
+      "difficulty": "hard",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "10⁻¹⁰ M"
+        },
+        {
+          "id": "B",
+          "text": "10⁻⁵ M"
+        },
+        {
+          "id": "C",
+          "text": "10⁻⁸ M"
+        },
+        {
+          "id": "D",
+          "text": "10⁻³ M"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "只考虑配体质子化，αY从10⁻⁴升至10⁻²、Kf不变，K′f变为？",
+      "points": 2,
+      "explanation": "条件常数与αY成正比，10⁻²/10⁻⁴=100。",
+      "difficulty": "hard",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1/100倍"
+        },
+        {
+          "id": "B",
+          "text": "2倍"
+        },
+        {
+          "id": "C",
+          "text": "100倍"
+        },
+        {
+          "id": "D",
+          "text": "不变"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "络合非常稳定但形成很慢，直接快速滴定终点不佳，合理对策为？",
+      "points": 3,
+      "explanation": "定量滴定同时要求热力学足够完全与反应足够快。",
+      "difficulty": "challenging",
+      "tags": [
+        "络合滴定"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "把所有指示剂加到无限量"
+        },
+        {
+          "id": "B",
+          "text": "立刻报告初始体积"
+        },
+        {
+          "id": "C",
+          "text": "考虑适当条件促进反应或返滴定"
+        },
+        {
+          "id": "D",
+          "text": "只依据Kf忽略等待"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "EDTA的所有质子化形态都完全不能参与金属络合的实际反应过程。",
+      "points": 3,
+      "explanation": "可伴随解离质子形成络合物；Y⁴⁻常用于定义Kf，而非排除其他形态参与过程。",
+      "difficulty": "challenging",
+      "tags": [
+        "络合滴定"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "25.00 mL水样EDTA滴定消耗7.50 mL 0.01000 M标准液，空白消耗0.50 mL。金属与EDTA按1:1，以CaCO₃（100.0 g mol⁻¹）计，总硬度=____ mg L⁻¹。",
+      "points": 3,
+      "explanation": "扣空白7.00 mL对应0.0700 mmol，除25.00 mL为2.80 mmol L⁻¹；乘100.0 mg mmol⁻¹得280。",
+      "difficulty": "challenging",
+      "tags": [
+        "络合滴定"
+      ],
+      "answer": "280",
+      "acceptableAnswers": [
+        "280",
+        "280.0"
+      ]
+    }
+  ]
+}

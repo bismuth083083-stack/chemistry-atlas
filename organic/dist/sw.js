@@ -1,4 +1,4 @@
-const CACHE='chemistry-atlas-v21';
+const CACHE='chemistry-atlas-v21-quiz-backfill';
 const SHELL=[
   './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','lesson-07.html','lesson-08.html','lesson-09.html','lesson-10.html','resonance.html','terms.html','term.html',
   'style.css','content.css','lecture-02.css','term-figures.css','ppt-figures.css','resonance.css','custom.css',
@@ -64,3 +64,4 @@ self.addEventListener('fetch',event=>{
     }
   })());
 });
+

@@ -1,0 +1,634 @@
+{
+  "id": "INORG-L05",
+  "title": "分子轨道与群轨道",
+  "description": "对应第5章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Lesson 05 · 分子轨道与群轨道",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "分子轨道与群轨道 · Chemistry Atlas笔记",
+      "url": "https://inorganic.chemistryatlas.xyz/lesson-05.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    },
+    {
+      "title": "Unravelling CO Activation on Flat and Stepped Co Surfaces: A Molecular Orbital Analysis",
+      "url": "https://pubs.acs.org/jpccck/article/128/22/8947/215218/Unravelling-CO-Activation-on-Flat-and-Stepped-Co",
+      "role": "CO的5σ HOMO、2π LUMO与金属相互作用"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "基态O₂的磁性与未成对电子数是？",
+      "points": 1,
+      "explanation": "两电子分别占据简并π*轨道，洪特规则给出未成对电子。",
+      "difficulty": "easy",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "反磁性，0个"
+        },
+        {
+          "id": "B",
+          "text": "顺磁性，4个"
+        },
+        {
+          "id": "C",
+          "text": "顺磁性，2个"
+        },
+        {
+          "id": "D",
+          "text": "反磁性，2个"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "分子轨道模型中键级的常用公式是？",
+      "points": 1,
+      "explanation": "一对成键电子贡献+1，一对反键电子贡献−1。",
+      "difficulty": "easy",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有电子数/2"
+        },
+        {
+          "id": "B",
+          "text": "成键数减反键数，不除2"
+        },
+        {
+          "id": "C",
+          "text": "(成键电子数−反键电子数)/2"
+        },
+        {
+          "id": "D",
+          "text": "成键数加反键数"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "两个适当AO相长组合通常形成？",
+      "points": 1,
+      "explanation": "相长组合可增加核间电子密度并降低相应能量。",
+      "difficulty": "easy",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只有两个原AO不变"
+        },
+        {
+          "id": "B",
+          "text": "成键MO"
+        },
+        {
+          "id": "C",
+          "text": "核间零电子密度"
+        },
+        {
+          "id": "D",
+          "text": "反键MO必然"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "以z为双原子分子键轴，两个pz端对端组合属于？",
+      "points": 1,
+      "explanation": "σ轨道绕键轴具有相应轴对称性质；px、py侧向组合为π。",
+      "difficulty": "easy",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "π型"
+        },
+        {
+          "id": "B",
+          "text": "δ型"
+        },
+        {
+          "id": "C",
+          "text": "σ型"
+        },
+        {
+          "id": "D",
+          "text": "无任何对称性"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "SALC的含义为？",
+      "points": 1,
+      "explanation": "配体轨道按对称性组合后用于匹配中心原子轨道。",
+      "difficulty": "easy",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "单独的能级常数"
+        },
+        {
+          "id": "B",
+          "text": "只有满电子轨道"
+        },
+        {
+          "id": "C",
+          "text": "对称性适配的线性组合"
+        },
+        {
+          "id": "D",
+          "text": "一种金属元素"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "AO形成显著相互作用应检查哪些条件？",
+      "points": 1,
+      "explanation": "对称允许只是必要条件之一，能量与重叠决定混合强度。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "有效空间重叠"
+        },
+        {
+          "id": "B",
+          "text": "只要能量相同，无重叠也必强成键"
+        },
+        {
+          "id": "C",
+          "text": "能量接近程度"
+        },
+        {
+          "id": "D",
+          "text": "对称性匹配"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "O₂失去一个π*电子成为O₂⁺，键级变为？",
+      "points": 1,
+      "explanation": "从反键轨道去电子提高键级0.5。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "3.5"
+        },
+        {
+          "id": "B",
+          "text": "2.0"
+        },
+        {
+          "id": "C",
+          "text": "2.5"
+        },
+        {
+          "id": "D",
+          "text": "1.5"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "O₂得到一个π*电子成为O₂⁻，键级变为？",
+      "points": 1,
+      "explanation": "加入反键电子降低键级0.5。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2.5"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "1.5"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "g/u标记适用于什么对称条件？",
+      "points": 1,
+      "explanation": "g/u描述反演下波函数不变/变号，须有反演操作。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "任何异核双原子分子"
+        },
+        {
+          "id": "B",
+          "text": "具有反演中心的分子"
+        },
+        {
+          "id": "C",
+          "text": "所有分子都必须用"
+        },
+        {
+          "id": "D",
+          "text": "只要有镜面"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "σ轨道都成键、π轨道都反键。",
+      "points": 1,
+      "explanation": "σ、π是对称类型，二者都可有成键或反键轨道。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "CO作为配体的重要双重作用是？",
+      "points": 1,
+      "explanation": "CO碳端σ给体轨道与空π*受体轨道支持协同给受作用。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "不能与金属成键"
+        },
+        {
+          "id": "B",
+          "text": "只能把所有π电子给出"
+        },
+        {
+          "id": "C",
+          "text": "σ给电子和π接受反馈电子"
+        },
+        {
+          "id": "D",
+          "text": "只能σ接受"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "金属向CO π*轨道反馈电子通常使C–O键？",
+      "points": 1,
+      "explanation": "反键占据增加通常降低C–O键级，同时增强金属–CO相互作用。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "增强且频率必增"
+        },
+        {
+          "id": "B",
+          "text": "直接变成三条完全独立σ键"
+        },
+        {
+          "id": "C",
+          "text": "减弱，伸缩频率降低"
+        },
+        {
+          "id": "D",
+          "text": "摩尔质量降低"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "苯的六个pz基轨道在线性组合中得到多少π MO？",
+      "points": 1,
+      "explanation": "线性组合保持所选基空间维数，一个AO基函数对应一个MO组合。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "12"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于SALC与中心轨道匹配，哪些正确？",
+      "points": 1,
+      "explanation": "对称性先筛选相互作用，再看能量、重叠与独立性。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "组合应检查线性独立与归一化"
+        },
+        {
+          "id": "B",
+          "text": "不同不可约表示必在对称保持条件下强烈混合"
+        },
+        {
+          "id": "C",
+          "text": "相同不可约表示可允许混合"
+        },
+        {
+          "id": "D",
+          "text": "投影算符可构造对称组合"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "某双原子分子成键电子8个、反键电子4个，键级为____。",
+      "points": 1,
+      "explanation": "(8−4)/2=2。",
+      "difficulty": "medium",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "2.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "采用N₂常用价层MO顺序，N₂基态键级与磁性为？",
+      "points": 2,
+      "explanation": "10个价电子占据对应成键与反键轨道后净键级3且全部配对。",
+      "difficulty": "hard",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2，顺磁性"
+        },
+        {
+          "id": "B",
+          "text": "3，反磁性"
+        },
+        {
+          "id": "C",
+          "text": "1，顺磁性"
+        },
+        {
+          "id": "D",
+          "text": "0，反磁性"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "异核双原子MO有哪些常见特点？",
+      "points": 2,
+      "explanation": "能量差影响混合；等系数只是某些同核对称组合的特征。",
+      "difficulty": "hard",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两原子的AO能量可不同"
+        },
+        {
+          "id": "B",
+          "text": "反键MO常偏重较高能AO成分"
+        },
+        {
+          "id": "C",
+          "text": "所有MO中两端系数必完全相等"
+        },
+        {
+          "id": "D",
+          "text": "成键MO常偏重较低能AO成分"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "平面H₂O位于xz面，z为C₂轴，两H 1s的差组合常属于C₂v哪种表示？",
+      "points": 2,
+      "explanation": "在该坐标约定下差组合与O px同为B₁；换分子平面约定可交换B₁/B₂标签。",
+      "difficulty": "hard",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "B₂"
+        },
+        {
+          "id": "B",
+          "text": "E"
+        },
+        {
+          "id": "C",
+          "text": "B₁"
+        },
+        {
+          "id": "D",
+          "text": "A₂"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "C₄v方锥模型五个H 1s约化为2A₁+B₁+E，总维数为？",
+      "points": 2,
+      "explanation": "A₁、B₁各一维，E二维，总维数2×1+1+2=5。",
+      "difficulty": "hard",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "PES中已知hν=21 eV，逸出电子动能8 eV，忽略其他修正，电离结合能为？",
+      "points": 3,
+      "explanation": "正的结合/电离能为hν−Ek；不能直接把它等同为带符号的精确MO能量。",
+      "difficulty": "challenging",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2.625 eV"
+        },
+        {
+          "id": "B",
+          "text": "13 eV"
+        },
+        {
+          "id": "C",
+          "text": "−13 eV"
+        },
+        {
+          "id": "D",
+          "text": "29 eV"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "BF₃存在π相互作用，因此三个B–F键都应称为完整三键、各键级为3。",
+      "points": 3,
+      "explanation": "部分π成键不等于每条键都是三键；具体有效键级也依所用定义与模型而变。",
+      "difficulty": "challenging",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "C₄v五个配体1s的Γ特征标按E、2C₄、C₂、2σv、2σd为(5,1,1,3,1)，A₁各特征标为1，群阶8。用aᵢ=Σ类(n类χΓχᵢ)/8约化，A₁出现____次。",
+      "points": 3,
+      "explanation": "按类数加权：(1×5+2×1+1×1+2×3+2×1)/8=16/8=2；不能漏掉每类操作数。",
+      "difficulty": "challenging",
+      "tags": [
+        "分子轨道与群轨道"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "二"
+      ]
+    }
+  ]
+}

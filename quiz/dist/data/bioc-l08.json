@@ -1,0 +1,628 @@
+{
+  "id": "BIOC-L08",
+  "title": "核酸的性质及研究方法",
+  "description": "对应第8章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "biochemistry",
+  "chapter": "Lesson 08 · 核酸的性质及研究方法",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "核酸的性质及研究方法 · Chemistry Atlas笔记",
+      "url": "https://biochem.chemistryatlas.xyz/chapter-08.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "DNA热变性的主要结构变化是？",
+      "points": 1,
+      "explanation": "常规热变性保留骨架，改变氢键与堆积作用。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "双链非共价作用被破坏、链分开"
+        },
+        {
+          "id": "B",
+          "text": "碱基全部脱落"
+        },
+        {
+          "id": "C",
+          "text": "所有磷酸二酯键水解"
+        },
+        {
+          "id": "D",
+          "text": "糖全部变成蛋白质"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "DNA变性时A₂₆₀通常如何变化？",
+      "points": 1,
+      "explanation": "增色效应与碱基堆积被破坏有关。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "增加"
+        },
+        {
+          "id": "B",
+          "text": "改在600 nm吸收"
+        },
+        {
+          "id": "C",
+          "text": "降低为零"
+        },
+        {
+          "id": "D",
+          "text": "必不变"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "DNA的Tm通常定义为？",
+      "points": 1,
+      "explanation": "通常指约一半双螺旋结构熔解时的温度，需限定测量条件。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "DNA开始任何振动的温度"
+        },
+        {
+          "id": "B",
+          "text": "磷酸骨架完全水解温度"
+        },
+        {
+          "id": "C",
+          "text": "热变性转变中点温度"
+        },
+        {
+          "id": "D",
+          "text": "所有DNA都相同的固定温度"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "ddNTP导致Sanger延伸终止，关键是缺少？",
+      "points": 1,
+      "explanation": "没有3′-OH就不能继续形成下一磷酸二酯键。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "全部碳原子"
+        },
+        {
+          "id": "B",
+          "text": "3′-OH"
+        },
+        {
+          "id": "C",
+          "text": "碱基"
+        },
+        {
+          "id": "D",
+          "text": "5′磷酸"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "核酸紫外定量常用哪个波长？",
+      "points": 1,
+      "explanation": "260 nm来自碱基共轭体系吸收。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "700 nm"
+        },
+        {
+          "id": "B",
+          "text": "2800 nm"
+        },
+        {
+          "id": "C",
+          "text": "260 nm"
+        },
+        {
+          "id": "D",
+          "text": "540 nm"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "其他条件可比时，哪些通常提高DNA双链热稳定性？",
+      "points": 1,
+      "explanation": "盐屏蔽骨架排斥，碱基序列与堆积影响稳定性；变性剂通常降低Tm。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "加入更多尿素"
+        },
+        {
+          "id": "B",
+          "text": "完全移除阳离子"
+        },
+        {
+          "id": "C",
+          "text": "适当增加屏蔽负电的盐浓度"
+        },
+        {
+          "id": "D",
+          "text": "较高GC含量"
+        }
+      ],
+      "answers": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "RNA比DNA更易碱性断链的直接结构原因是？",
+      "points": 1,
+      "explanation": "2′-OH可形成2′,3′环磷酸中间体，促进断链。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "RNA具有2′-OH可分子内进攻磷酸"
+        },
+        {
+          "id": "B",
+          "text": "RNA所有碱基不芳香"
+        },
+        {
+          "id": "C",
+          "text": "RNA没有磷酸"
+        },
+        {
+          "id": "D",
+          "text": "DNA从不含嘌呤"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "核酸外切酶通常从何处作用？",
+      "points": 1,
+      "explanation": "外切与内切按从末端还是链内部切割区分。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只去除蛋白质"
+        },
+        {
+          "id": "B",
+          "text": "只从分子正中心"
+        },
+        {
+          "id": "C",
+          "text": "仅切游离碱基"
+        },
+        {
+          "id": "D",
+          "text": "链末端"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "常见较纯DNA的A₂₆₀/A₂₈₀参考值约为？",
+      "points": 1,
+      "explanation": "这是条件相关的粗略纯度指标，不足以单独证明样品完全纯。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1.8"
+        },
+        {
+          "id": "B",
+          "text": "0.1"
+        },
+        {
+          "id": "C",
+          "text": "10"
+        },
+        {
+          "id": "D",
+          "text": "100"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "DNA受碱导致解链，就说明DNA骨架一定像RNA那样迅速水解。",
+      "points": 1,
+      "explanation": "解链与断链不同；DNA缺2′-OH，通常较耐相应碱水解。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "在可比复性条件下，高重复DNA序列通常？",
+      "points": 1,
+      "explanation": "相同序列有效浓度较高，互补链相遇概率较大。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "一定完全不能复性"
+        },
+        {
+          "id": "B",
+          "text": "没有互补链"
+        },
+        {
+          "id": "C",
+          "text": "比所有单拷贝序列更慢"
+        },
+        {
+          "id": "D",
+          "text": "较快复性"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "Cot指什么？",
+      "points": 1,
+      "explanation": "Cot曲线用于比较复性动力学和序列复杂度。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "电荷乘温度"
+        },
+        {
+          "id": "B",
+          "text": "Tm与pH之差"
+        },
+        {
+          "id": "C",
+          "text": "初始核酸浓度与时间的乘积"
+        },
+        {
+          "id": "D",
+          "text": "蛋白浓度除盐浓度"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "测RNA序列的一条常用间接路线是？",
+      "points": 1,
+      "explanation": "逆转录将RNA序列信息转为互补DNA，须关注建库偏差。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "先逆转录为cDNA再测序"
+        },
+        {
+          "id": "B",
+          "text": "只测A₂₆₀即可得序列"
+        },
+        {
+          "id": "C",
+          "text": "先翻译成蛋白再测pI"
+        },
+        {
+          "id": "D",
+          "text": "加入SDS使RNA变成DNA"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "哪些有助于核酸样品分析可靠性？",
+      "points": 1,
+      "explanation": "吸收比值只是指标之一，结构完整性和杂质需其他证据。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "同时考虑纯度比值与可能污染"
+        },
+        {
+          "id": "B",
+          "text": "A₂₆₀/A₂₈₀正常就证明无任何污染或降解"
+        },
+        {
+          "id": "C",
+          "text": "适当空白与浓度线性范围"
+        },
+        {
+          "id": "D",
+          "text": "结合电泳评估完整性"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "1 cm光程下，双链DNA采用A₂₆₀=1约为50 μg mL⁻¹的换算；A₂₆₀=0.40且未稀释，则浓度=____ μg mL⁻¹。",
+      "points": 1,
+      "explanation": "0.40×50=20；换算需限定双链DNA与光程。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "20.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "传统Sanger胶图从最短至最长读出的序列是哪条？",
+      "points": 2,
+      "explanation": "片段逐步延长，读出新链；要求模板5′→3′序列时取反向互补。",
+      "difficulty": "hard",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "蛋白质N→C序列"
+        },
+        {
+          "id": "B",
+          "text": "新链的3′→5′序列"
+        },
+        {
+          "id": "C",
+          "text": "新合成链的5′→3′序列"
+        },
+        {
+          "id": "D",
+          "text": "模板链的5′→3′原序列"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于核酸酶工具，哪些正确？",
+      "points": 2,
+      "explanation": "脱磷酸与切断核酸链是不同操作。",
+      "difficulty": "hard",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "去磷酸必须用会降解主链的外切酶"
+        },
+        {
+          "id": "B",
+          "text": "内切酶可在链内部切割"
+        },
+        {
+          "id": "C",
+          "text": "去除末端磷酸通常用磷酸酶"
+        },
+        {
+          "id": "D",
+          "text": "限制性酶可识别特定序列"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "同一DNA样品缓慢退火出现A₂₆₀下降，最符合？",
+      "points": 2,
+      "explanation": "重新配对与堆积使紫外吸收降低。",
+      "difficulty": "hard",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "互补链复性产生减色效应"
+        },
+        {
+          "id": "B",
+          "text": "磷酸骨架必被完全破坏"
+        },
+        {
+          "id": "C",
+          "text": "所有DNA变为ATP"
+        },
+        {
+          "id": "D",
+          "text": "蛋白质开始生长"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "焦磷酸测序模板下一段为TTTT，理想连续掺入对应需要加入？",
+      "points": 2,
+      "explanation": "新链与模板互补，模板T需要掺入A；峰高理想上反映掺入数量。",
+      "difficulty": "hard",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "ddTTP"
+        },
+        {
+          "id": "B",
+          "text": "dCTP"
+        },
+        {
+          "id": "C",
+          "text": "dTTP"
+        },
+        {
+          "id": "D",
+          "text": "dATP"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "Cot曲线显示复杂序列较晚复性，解释最合理的是？",
+      "points": 3,
+      "explanation": "复性依赖相遇概率，不能只按总DNA量忽略序列分布。",
+      "difficulty": "challenging",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "给定总浓度下单种互补序列的有效浓度较低"
+        },
+        {
+          "id": "B",
+          "text": "全部核酸都必须同速复性"
+        },
+        {
+          "id": "C",
+          "text": "复杂序列必不含GC"
+        },
+        {
+          "id": "D",
+          "text": "复杂DNA一定无氢键"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "只去除变性因素，就能保证任意DNA样品瞬间且完全复性。",
+      "points": 3,
+      "explanation": "复性还受温度、盐、浓度、复杂度、链完整性和时间影响。",
+      "difficulty": "challenging",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "双链DNA稀释50倍后，1 cm光程A₂₆₀=0.40。取A₂₆₀=1对应50 μg mL⁻¹，原液20 μL中DNA质量为____ μg。",
+      "points": 3,
+      "explanation": "稀释液20 μg mL⁻¹，原液1000 μg mL⁻¹=1 μg μL⁻¹，20 μL含20 μg。",
+      "difficulty": "challenging",
+      "tags": [
+        "核酸的性质及研究方法"
+      ],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "20.0"
+      ]
+    }
+  ]
+}

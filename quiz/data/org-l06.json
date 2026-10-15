@@ -1,0 +1,627 @@
+{
+  "id": "ORG-L06",
+  "title": "自由基链反应、热力学与反应动力学",
+  "description": "对应第6章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "organic-chemistry",
+  "chapter": "Lesson 06 · 自由基链反应、热力学与反应动力学",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "自由基链反应、热力学与反应动力学 · Chemistry Atlas笔记",
+      "url": "https://organic.chemistryatlas.xyz/lesson-06.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Cl–Cl均裂时，两个成键电子如何分配？",
+      "points": 1,
+      "explanation": "均裂各分一个电子，产生两个Cl·；异裂才产生离子。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "都归一个Cl"
+        },
+        {
+          "id": "B",
+          "text": "两个Cl各得到一个"
+        },
+        {
+          "id": "C",
+          "text": "都离开分子"
+        },
+        {
+          "id": "D",
+          "text": "变成质子"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "甲烷氯化中Cl₂吸光生成Cl·属于哪一步？",
+      "points": 1,
+      "explanation": "引发产生链载体。光提供均裂所需能量。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "链终止"
+        },
+        {
+          "id": "B",
+          "text": "酸碱中和"
+        },
+        {
+          "id": "C",
+          "text": "链引发"
+        },
+        {
+          "id": "D",
+          "text": "链增长"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "哪一步是链增长？",
+      "points": 1,
+      "explanation": "增长步骤消耗一个自由基并再生另一个，可继续传链。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "CH₃·+CH₃·→C₂H₆"
+        },
+        {
+          "id": "B",
+          "text": "Cl·+Cl·→Cl₂"
+        },
+        {
+          "id": "C",
+          "text": "CH₃·+Cl·→CH₃Cl"
+        },
+        {
+          "id": "D",
+          "text": "CH₃·+Cl₂→CH₃Cl+Cl·"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "ΔG°与平衡常数K的关系是？",
+      "points": 1,
+      "explanation": "平衡时ΔG=ΔG°+RT ln Q=0且Q=K。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔG°=RT ln K"
+        },
+        {
+          "id": "B",
+          "text": "ΔG°=−RT ln K"
+        },
+        {
+          "id": "C",
+          "text": "ΔG°=K"
+        },
+        {
+          "id": "D",
+          "text": "ΔG°=−R ln T"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "中间体在反应能量图上通常对应？",
+      "points": 1,
+      "explanation": "中间体有有限寿命；过渡态沿反应坐标处于能垒顶。",
+      "difficulty": "easy",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "最终产物唯一最低点"
+        },
+        {
+          "id": "B",
+          "text": "局部能量最低点"
+        },
+        {
+          "id": "C",
+          "text": "任意横轴位置"
+        },
+        {
+          "id": "D",
+          "text": "峰顶过渡态"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "哪些步骤会终止甲烷氯化的自由基链？",
+      "points": 1,
+      "explanation": "终止消耗链自由基而不产生新的链载体；夺氢仍传递自由基。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Cl·+CH₄→HCl+CH₃·"
+        },
+        {
+          "id": "B",
+          "text": "CH₃·+Cl·→CH₃Cl"
+        },
+        {
+          "id": "C",
+          "text": "Cl·+Cl·→Cl₂"
+        },
+        {
+          "id": "D",
+          "text": "CH₃·+CH₃·→C₂H₆"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "ΔG°<0能直接说明什么？",
+      "points": 1,
+      "explanation": "标准自由能决定K；实际方向还需Q，速率还需能垒。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "标准平衡常数K>1"
+        },
+        {
+          "id": "B",
+          "text": "任意组成下正向自发"
+        },
+        {
+          "id": "C",
+          "text": "反应一定瞬间完成"
+        },
+        {
+          "id": "D",
+          "text": "活化能必为零"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "按键解离焓估算反应焓，应计算？",
+      "points": 1,
+      "explanation": "断键吸热、成键放热；BDE法是气相近似。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "成键减断键"
+        },
+        {
+          "id": "B",
+          "text": "断键BDE总和减成键BDE总和"
+        },
+        {
+          "id": "C",
+          "text": "所有BDE相加"
+        },
+        {
+          "id": "D",
+          "text": "只算产物键"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "若v=k[A][B]，将[A]加倍、[B]减半，其他条件不变，速率变为？",
+      "points": 1,
+      "explanation": "两个浓度倍数相乘为2×1/2=1。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "原速率"
+        },
+        {
+          "id": "B",
+          "text": "1/2倍"
+        },
+        {
+          "id": "C",
+          "text": "2倍"
+        },
+        {
+          "id": "D",
+          "text": "4倍"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "一般多步反应的反应级数可以直接从总反应式的计量系数读取。",
+      "points": 1,
+      "explanation": "总速率式须由实验或机理推导；只有相应基元步骤可按其分子数写式。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "Arrhenius图ln k对1/T的斜率为？",
+      "points": 1,
+      "explanation": "ln k=ln A−(Eₐ/R)(1/T)，温度必须使用K。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−R/Eₐ"
+        },
+        {
+          "id": "B",
+          "text": "Eₐ/R"
+        },
+        {
+          "id": "C",
+          "text": "ln A"
+        },
+        {
+          "id": "D",
+          "text": "−Eₐ/R"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "CH₃Cl为何可以继续氯化？",
+      "points": 1,
+      "explanation": "Cl·还能夺取其氢，继而形成更高氯代物。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "它仍有可被夺取的C–H键"
+        },
+        {
+          "id": "B",
+          "text": "光只能照一次"
+        },
+        {
+          "id": "C",
+          "text": "C–Cl必须先水解"
+        },
+        {
+          "id": "D",
+          "text": "氯原子自动变成氢"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "提高甲烷一氯代产物比例的合理方法是？",
+      "points": 1,
+      "explanation": "过量甲烷减少生成的CH₃Cl相对于CH₄参与后续反应的机会。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "甲烷过量并限制氯气、控制低转化率"
+        },
+        {
+          "id": "B",
+          "text": "延长至完全多氯化"
+        },
+        {
+          "id": "C",
+          "text": "使用氯气大过量"
+        },
+        {
+          "id": "D",
+          "text": "只增加终止自由基浓度"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于催化剂，哪些正确？",
+      "points": 1,
+      "explanation": "催化剂改变达到平衡的速率，不能改变反应物与产物的热力学差值。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "不改变同温度下的平衡常数"
+        },
+        {
+          "id": "B",
+          "text": "可提供较低能垒路径"
+        },
+        {
+          "id": "C",
+          "text": "把ΔG°变为零"
+        },
+        {
+          "id": "D",
+          "text": "只能加速正向反应"
+        }
+      ],
+      "answers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "反应速率v=k[A]²[B]的总级数为____。",
+      "points": 1,
+      "explanation": "总级数为2+1=3。",
+      "difficulty": "medium",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "若K=100、Q=10，在同一温度下正向反应的ΔG符号为？",
+      "points": 2,
+      "explanation": "ΔG=RT ln(Q/K)=RT ln(0.1)<0。",
+      "difficulty": "hard",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "零"
+        },
+        {
+          "id": "B",
+          "text": "正"
+        },
+        {
+          "id": "C",
+          "text": "必须知道催化剂"
+        },
+        {
+          "id": "D",
+          "text": "负"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "反应能量图应如何解读？",
+      "points": 2,
+      "explanation": "过渡态为峰，中间体为谷；动力学与热力学读不同的差值。",
+      "difficulty": "hard",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "始末态自由能差影响平衡"
+        },
+        {
+          "id": "B",
+          "text": "能垒关系影响速率"
+        },
+        {
+          "id": "C",
+          "text": "能量图的每个峰都是可分离中间体"
+        },
+        {
+          "id": "D",
+          "text": "反应坐标不等于实际时间"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "给定断裂键BDE为410、243，形成键为431、350 kJ mol⁻¹，估算ΔH为？",
+      "points": 2,
+      "explanation": "410+243−431−350=−128 kJ mol⁻¹，近似放热。",
+      "difficulty": "hard",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "+128 kJ mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "−243 kJ mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "+1434 kJ mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "−128 kJ mol⁻¹"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "同温度下两条路径的指前因子近似相同，活化能较低者通常？",
+      "points": 2,
+      "explanation": "Arrhenius指数项使较低Eₐ对应更大的k，不能由此确定产物稳定性。",
+      "difficulty": "hard",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "速率常数较大"
+        },
+        {
+          "id": "B",
+          "text": "产物一定更稳定"
+        },
+        {
+          "id": "C",
+          "text": "焓变必更负"
+        },
+        {
+          "id": "D",
+          "text": "平衡常数必更大"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "一条路径产物更稳定但能垒更高，短时间实验主要生成另一产物，说明？",
+      "points": 3,
+      "explanation": "短时间产物比例可由竞争路径速率决定；长期平衡需另外判断。",
+      "difficulty": "challenging",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "违反自由能判据"
+        },
+        {
+          "id": "B",
+          "text": "平衡常数变得无意义"
+        },
+        {
+          "id": "C",
+          "text": "可能处于动力学控制"
+        },
+        {
+          "id": "D",
+          "text": "低能垒产物必定热力学最稳定"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "一个引发光子能够产生许多产物分子，与自由基链机理相符。",
+      "points": 3,
+      "explanation": "增长循环不断再生链载体，量子产率可大于1。",
+      "difficulty": "challenging",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "同一机理、指前因子不变，Ea=40.0 kJ mol⁻¹。300 K时速率常数为k₁，升温后k₂=4k₁。取R=8.314 J mol⁻¹ K⁻¹，T₂约为____ K（四舍五入到整数）。",
+      "points": 3,
+      "explanation": "ln4=Ea/R(1/300−1/T₂)，解得T₂≈328.39 K；必须统一J与绝对温度。",
+      "difficulty": "challenging",
+      "tags": [
+        "自由基链反应、热力学与反应动力学"
+      ],
+      "answer": "328",
+      "acceptableAnswers": [
+        "328"
+      ]
+    }
+  ]
+}

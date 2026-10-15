@@ -1,0 +1,628 @@
+{
+  "id": "PCHEM-L08",
+  "title": "Helmholtz能、Gibbs能与化学势",
+  "description": "对应第8章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "physical-chemistry",
+  "chapter": "Lesson 08 · Helmholtz能、Gibbs能与化学势",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "Helmholtz能、Gibbs能与化学势 · Chemistry Atlas笔记",
+      "url": "https://physical.chemistryatlas.xyz/lesson-08.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Helmholtz能A的定义为？",
+      "points": 1,
+      "explanation": "A以T、V为自然变量，用于相应约束的平衡判断。",
+      "difficulty": "easy",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "H−TS"
+        },
+        {
+          "id": "B",
+          "text": "TS−U"
+        },
+        {
+          "id": "C",
+          "text": "U−TS"
+        },
+        {
+          "id": "D",
+          "text": "U+pV"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "Gibbs能G的定义为？",
+      "points": 1,
+      "explanation": "G=U+pV−TS，适合恒温恒压约束。",
+      "difficulty": "easy",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "pV−U"
+        },
+        {
+          "id": "B",
+          "text": "H−TS"
+        },
+        {
+          "id": "C",
+          "text": "U−TS"
+        },
+        {
+          "id": "D",
+          "text": "H+TS"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "组成固定、只有通常体积功模型时，G的微分为？",
+      "points": 1,
+      "explanation": "从G=H−TS及dH=TdS+Vdp导出。",
+      "difficulty": "easy",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "dG=SdT−Vdp"
+        },
+        {
+          "id": "B",
+          "text": "dG=TdS−pdV"
+        },
+        {
+          "id": "C",
+          "text": "dG=Vdp−SdT"
+        },
+        {
+          "id": "D",
+          "text": "dG=VdT−Sdp"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "恒温恒压且无非膨胀功时，自发变化要求？",
+      "points": 1,
+      "explanation": "这些约束下G下降，平衡处达到适当极小值。",
+      "difficulty": "easy",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "dH必为0"
+        },
+        {
+          "id": "B",
+          "text": "dG>0"
+        },
+        {
+          "id": "C",
+          "text": "dG<0"
+        },
+        {
+          "id": "D",
+          "text": "G必须等于0"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "纯物质化学势μ等于？",
+      "points": 1,
+      "explanation": "纯物质偏摩尔Gibbs能等于摩尔Gibbs能；混合物需用偏摩尔定义。",
+      "difficulty": "easy",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "摩尔Gibbs能Gm"
+        },
+        {
+          "id": "B",
+          "text": "总熵"
+        },
+        {
+          "id": "C",
+          "text": "总Gibbs能G总是如此"
+        },
+        {
+          "id": "D",
+          "text": "摩尔质量"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "哪些是四个热力学势的自然变量配对？",
+      "points": 1,
+      "explanation": "组成固定时H的自然变量是S、p。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "G:(T,p)"
+        },
+        {
+          "id": "B",
+          "text": "U:(S,V)"
+        },
+        {
+          "id": "C",
+          "text": "A:(T,V)"
+        },
+        {
+          "id": "D",
+          "text": "H:(T,V)"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "由dA=−SdT−pdV得到的Maxwell关系为？",
+      "points": 1,
+      "explanation": "混合二阶偏导相等，两个负号抵消。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "(∂p/∂V)T=S"
+        },
+        {
+          "id": "B",
+          "text": "(∂S/∂V)T=−(∂p/∂T)V"
+        },
+        {
+          "id": "C",
+          "text": "(∂S/∂V)T=(∂p/∂T)V"
+        },
+        {
+          "id": "D",
+          "text": "(∂S/∂T)V=p"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "由dG=Vdp−SdT得到？",
+      "points": 1,
+      "explanation": "混合偏导相等，一边来自V，一边来自−S。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "(∂G/∂p)T=−V"
+        },
+        {
+          "id": "B",
+          "text": "(∂S/∂p)T=(∂V/∂T)p"
+        },
+        {
+          "id": "C",
+          "text": "(∂G/∂T)p=+S"
+        },
+        {
+          "id": "D",
+          "text": "(∂S/∂p)T=−(∂V/∂T)p"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "理想气体恒温化学势压力项为？",
+      "points": 1,
+      "explanation": "由dμ=Vm dp和Vm=RT/p积分。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "RT(p−p°)"
+        },
+        {
+          "id": "B",
+          "text": "pV²"
+        },
+        {
+          "id": "C",
+          "text": "−RT ln(p/p°)"
+        },
+        {
+          "id": "D",
+          "text": "RT ln(p/p°)"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "某反应ΔG°<0就能保证任何非标准组成下正向都自发。",
+      "points": 1,
+      "explanation": "实际方向由ΔrG=ΔrG°+RT ln Q决定。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "逸度系数φ定义为？",
+      "points": 1,
+      "explanation": "φ无量纲；理想气体极限φ→1。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "f+p"
+        },
+        {
+          "id": "B",
+          "text": "p/f"
+        },
+        {
+          "id": "C",
+          "text": "f/p"
+        },
+        {
+          "id": "D",
+          "text": "fp"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "低压极限下真实气体逸度应满足？",
+      "points": 1,
+      "explanation": "归一化使逸度在理想气体极限趋于压力。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "f/p→∞"
+        },
+        {
+          "id": "B",
+          "text": "f总为0"
+        },
+        {
+          "id": "C",
+          "text": "f/p→1"
+        },
+        {
+          "id": "D",
+          "text": "f/p→0"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "Gibbs–Helmholtz方程的恒压形式为？",
+      "points": 1,
+      "explanation": "对G/T求导并用G=H−TS可得。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "∂G/∂T=H"
+        },
+        {
+          "id": "B",
+          "text": "∂G/∂p=−H"
+        },
+        {
+          "id": "C",
+          "text": "∂(G/T)/∂T=+H/T²"
+        },
+        {
+          "id": "D",
+          "text": "∂(G/T)/∂T=−H/T²"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "使用自由能与功的关系时哪些正确？",
+      "points": 1,
+      "explanation": "可逆过程达到相应理论上限，须区分输出功与体系受功符号。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "须写明恒温等约束"
+        },
+        {
+          "id": "B",
+          "text": "最大输出非膨胀功大小为−ΔG（恒T、p可逆）"
+        },
+        {
+          "id": "C",
+          "text": "只要不可逆过程也必达到最大输出功"
+        },
+        {
+          "id": "D",
+          "text": "功对体系为正的约定下可逆非膨胀功w=ΔG"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "纯物质恒T增压Δp=1.00×10⁵ Pa，Vm=18.0×10⁻⁶ m³ mol⁻¹近似恒定，Δμ=____ J mol⁻¹。",
+      "points": 1,
+      "explanation": "Δμ=VmΔp=18.0×10⁻⁶×10⁵=1.80。",
+      "difficulty": "medium",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "answer": "1.8",
+      "acceptableAnswers": [
+        "1.8",
+        "1.80"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "理想气体298 K时压力加倍，Δμ约为？",
+      "points": 2,
+      "explanation": "Δμ=RT ln2≈8.314×298×0.693=1717 J mol⁻¹。",
+      "difficulty": "hard",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−1.72 kJ mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "+1.8 J mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "+1.72 kJ mol⁻¹"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于组成变化体系的化学势，哪些正确？",
+      "points": 2,
+      "explanation": "偏摩尔性质取决于温度、压力和组成，不能把混合物当各纯物质独立相加。",
+      "difficulty": "hard",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "dG中包含Σμi dni"
+        },
+        {
+          "id": "B",
+          "text": "μi是偏摩尔Gibbs能"
+        },
+        {
+          "id": "C",
+          "text": "混合物μi永远等于纯i物质的Gm"
+        },
+        {
+          "id": "D",
+          "text": "广延均匀体系G=Σniμi"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "内压πT=(∂U/∂V)T的热力学表达式为？",
+      "points": 2,
+      "explanation": "由基本方程和Maxwell关系导出，理想气体两项抵消。",
+      "difficulty": "hard",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−p必然"
+        },
+        {
+          "id": "B",
+          "text": "p/T"
+        },
+        {
+          "id": "C",
+          "text": "T(∂p/∂T)V−p"
+        },
+        {
+          "id": "D",
+          "text": "T(∂p/∂T)V+p"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "若固定T下Z=1+Bp且B为常量，φ在p→0归一化，则ln φ为？",
+      "points": 2,
+      "explanation": "ln φ=∫₀ᵖ(Z−1)/p′ dp′=∫₀ᵖB dp′=Bp，B单位为压力倒数。",
+      "difficulty": "hard",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Bp"
+        },
+        {
+          "id": "B",
+          "text": "B ln p"
+        },
+        {
+          "id": "C",
+          "text": "B/p"
+        },
+        {
+          "id": "D",
+          "text": "0必然"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "只知道终点压力处Z<1，能否必然断定该压力处φ<1？",
+      "points": 3,
+      "explanation": "lnφ=∫₀ᵖ(Z−1)/p′dp′，端点符号不足以确定整个积分。",
+      "difficulty": "challenging",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "能，二者永远相同"
+        },
+        {
+          "id": "B",
+          "text": "不能，因为逸度没有定义"
+        },
+        {
+          "id": "C",
+          "text": "能，因为φ=Z定义"
+        },
+        {
+          "id": "D",
+          "text": "不能，φ取决于从0到该压力的积分"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "把平衡状态间的dU=TdS−pdV写成立，并不允许把实际不可逆路径的热量直接写成TdS。",
+      "points": 3,
+      "explanation": "基本关系是状态函数关系；实际不可逆热、功要用各自过程关系。",
+      "difficulty": "challenging",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "300 K下气体压力2.00 bar，逸度系数φ=0.800。标准化学势按p°=1.00 bar理想参考态定义，取R=8.314 J mol⁻¹ K⁻¹。μ−μ°≈____ J mol⁻¹（四舍五入到整数）。",
+      "points": 3,
+      "explanation": "f=φp=1.60 bar；μ−μ°=RT ln(f/p°)=8.314×300×ln1.60=1172.28 J mol⁻¹。",
+      "difficulty": "challenging",
+      "tags": [
+        "Helmholtz能、Gibbs能与化学势"
+      ],
+      "answer": "1172",
+      "acceptableAnswers": [
+        "1172"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "id": "BIOC-L07",
+  "title": "核酸的结构与功能",
+  "description": "对应第7章/课笔记的22题练习：概念、原理、计算和适用条件，含答案解析。",
+  "subject": "biochemistry",
+  "chapter": "Lesson 07 · 核酸的结构与功能",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "核酸的结构与功能 · Chemistry Atlas笔记",
+      "url": "https://biochem.chemistryatlas.xyz/chapter-07.html",
+      "role": "章节范围与概念来源；题目独立编写，易错表述以解析中的适用条件为准。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "核酸主链常见连接是？",
+      "points": 1,
+      "explanation": "相邻核苷酸的糖通过3′、5′羟基与磷酸连接。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "β-1,4糖苷键"
+        },
+        {
+          "id": "B",
+          "text": "肽键"
+        },
+        {
+          "id": "C",
+          "text": "3′,5′-磷酸二酯键"
+        },
+        {
+          "id": "D",
+          "text": "二硫键"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "典型B-DNA双链的方向关系是？",
+      "points": 1,
+      "explanation": "一条5′→3′对应另一条3′→5′。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "无方向性"
+        },
+        {
+          "id": "B",
+          "text": "一条无5′端"
+        },
+        {
+          "id": "C",
+          "text": "同向平行"
+        },
+        {
+          "id": "D",
+          "text": "反向平行"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "标准Watson–Crick配对中A与哪种DNA碱基配对？",
+      "points": 1,
+      "explanation": "标准DNA中A–T配对，G–C配对。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "T"
+        },
+        {
+          "id": "B",
+          "text": "A"
+        },
+        {
+          "id": "C",
+          "text": "C"
+        },
+        {
+          "id": "D",
+          "text": "G"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "标准G–C碱基对有几个氢键？",
+      "points": 1,
+      "explanation": "G–C为3个，A–T为2个；稳定性还依赖堆积等因素。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "Z-DNA的典型螺旋手性是？",
+      "points": 1,
+      "explanation": "Z型为左手双螺旋，A型和B型通常右手。",
+      "difficulty": "easy",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "左手"
+        },
+        {
+          "id": "B",
+          "text": "右手"
+        },
+        {
+          "id": "C",
+          "text": "无磷酸骨架"
+        },
+        {
+          "id": "D",
+          "text": "完全平面"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "哪些因素有助于典型DNA双螺旋稳定？",
+      "points": 1,
+      "explanation": "DNA双链主要通过非共价作用稳定，磷酸骨架带负电。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "碱基堆积"
+        },
+        {
+          "id": "B",
+          "text": "适当离子对负电骨架的屏蔽"
+        },
+        {
+          "id": "C",
+          "text": "两条链主链通过大量肽键交联"
+        },
+        {
+          "id": "D",
+          "text": "互补碱基配对"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "B-DNA中磷酸骨架通常位于？",
+      "points": 1,
+      "explanation": "亲水带电骨架朝外，碱基通常朝内堆积。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "螺旋外侧"
+        },
+        {
+          "id": "B",
+          "text": "仅在碱基N9内部"
+        },
+        {
+          "id": "C",
+          "text": "完全消失"
+        },
+        {
+          "id": "D",
+          "text": "螺旋中心紧密堆积"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "A型核酸结构常见于哪种情况？",
+      "points": 1,
+      "explanation": "RNA的2′-OH使其双链偏好A型几何，杂交双链也通常接近A型。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有蛋白质α螺旋"
+        },
+        {
+          "id": "B",
+          "text": "单个游离ATP"
+        },
+        {
+          "id": "C",
+          "text": "只在无核糖体系"
+        },
+        {
+          "id": "D",
+          "text": "双链RNA或DNA–RNA杂交双链"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "双链DNA中A占30%，按配对组成关系G占多少？",
+      "points": 1,
+      "explanation": "A=T=30%，余下G+C=40%，故G=C=20%。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "60%"
+        },
+        {
+          "id": "B",
+          "text": "40%"
+        },
+        {
+          "id": "C",
+          "text": "30%"
+        },
+        {
+          "id": "D",
+          "text": "20%"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "所有RNA都只能是没有局部配对的直线单链。",
+      "points": 1,
+      "explanation": "RNA可形成茎环和复杂三级结构，也可有双链RNA。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "tRNA携带氨基酸的末端通常是？",
+      "points": 1,
+      "explanation": "氨基酸连接于3′末端腺苷的糖羟基。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "内部反密码子直接共价连氨基酸"
+        },
+        {
+          "id": "B",
+          "text": "3′端CCA"
+        },
+        {
+          "id": "C",
+          "text": "任意磷酸位点"
+        },
+        {
+          "id": "D",
+          "text": "5′端GGG"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "mRNA的主要功能是？",
+      "points": 1,
+      "explanation": "mRNA由核苷酸顺序携带蛋白质编码信息。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "构成所有催化中心"
+        },
+        {
+          "id": "B",
+          "text": "运输全部脂肪酸"
+        },
+        {
+          "id": "C",
+          "text": "只充当染色体骨架"
+        },
+        {
+          "id": "D",
+          "text": "提供翻译所需编码信息"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "核酶说明哪种认识过于绝对？",
+      "points": 1,
+      "explanation": "某些RNA可催化反应，结构与功能并不限于信使。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只有蛋白质能催化生物反应"
+        },
+        {
+          "id": "B",
+          "text": "RNA含磷酸"
+        },
+        {
+          "id": "C",
+          "text": "RNA可形成碱基配对"
+        },
+        {
+          "id": "D",
+          "text": "RNA具有方向性"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于RNA结构与功能，哪些正确？",
+      "points": 1,
+      "explanation": "局部互补和长程相互作用使RNA形成多层结构。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "可形成茎环"
+        },
+        {
+          "id": "B",
+          "text": "单链RNA不能含任何氢键"
+        },
+        {
+          "id": "C",
+          "text": "三级结构影响分子识别"
+        },
+        {
+          "id": "D",
+          "text": "某些RNA可催化"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "典型B-DNA每圈约10.5 bp，210 bp约相当于____圈。",
+      "points": 1,
+      "explanation": "210/10.5=20。这里采用题给的近似螺距。",
+      "difficulty": "medium",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "20.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "DNA链5′-AGTC-3′的互补链以5′→3′写为？",
+      "points": 2,
+      "explanation": "先配出3′-TCAG-5′，再反向写为5′-GACT-3′。",
+      "difficulty": "hard",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "5′-CTGA-3′"
+        },
+        {
+          "id": "B",
+          "text": "5′-AGTC-3′"
+        },
+        {
+          "id": "C",
+          "text": "5′-TCAG-3′"
+        },
+        {
+          "id": "D",
+          "text": "5′-GACT-3′"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "闭合环状双链DNA的拓扑分析中，哪些正确？",
+      "points": 2,
+      "explanation": "超螺旋是更高层扭绕，不等于局部双螺旋手性。",
+      "difficulty": "hard",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "拓扑异构酶可通过断链重连改变Lk"
+        },
+        {
+          "id": "B",
+          "text": "骨架未断且无链穿越时Lk保持"
+        },
+        {
+          "id": "C",
+          "text": "连接数Lk=Tw+Wr"
+        },
+        {
+          "id": "D",
+          "text": "负超螺旋必表示每段双螺旋都为左手"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "DNA上大沟与小沟的重要作用之一是？",
+      "points": 2,
+      "explanation": "沟内暴露碱基官能团，可支持不解开整段DNA的识别。",
+      "difficulty": "hard",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "把主链变成肽链"
+        },
+        {
+          "id": "B",
+          "text": "为蛋白提供序列识别的化学表面"
+        },
+        {
+          "id": "C",
+          "text": "只表示绘图空白"
+        },
+        {
+          "id": "D",
+          "text": "决定每个糖没有氧"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "核小体的基本结构最符合？",
+      "points": 2,
+      "explanation": "核小体是DNA与组蛋白的复合结构，支持染色质组织。",
+      "difficulty": "hard",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "RNA缠绕ATP"
+        },
+        {
+          "id": "B",
+          "text": "DNA完全水解后再压缩"
+        },
+        {
+          "id": "C",
+          "text": "DNA缠绕组蛋白核心"
+        },
+        {
+          "id": "D",
+          "text": "一条蛋白嵌入每个碱基对"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "DNA单链G占40%，能否直接推出该单链C占40%？",
+      "points": 3,
+      "explanation": "Chargaff等量关系用于典型双链整体，单链组成不必满足。",
+      "difficulty": "challenging",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "能，任何单链都G=C"
+        },
+        {
+          "id": "B",
+          "text": "能，因为G只能转成C"
+        },
+        {
+          "id": "C",
+          "text": "不能，因为DNA没有C"
+        },
+        {
+          "id": "D",
+          "text": "不能，仅凭双链整体配对规律不足"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "DNA既有氢键又有堆积作用，因此只数氢键就能精确预测任意短DNA的Tm。",
+      "points": 3,
+      "explanation": "序列邻近效应、盐、长度等都会影响热稳定性。",
+      "difficulty": "challenging",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "某闭合环状DNA初始Lk=100。拓扑异构酶使Lk下降2，随后Tw=99。此时Wr=____。",
+      "points": 3,
+      "explanation": "新Lk=98，由Lk=Tw+Wr得Wr=98−99=−1；未断链时Lk不由普通形变改变。",
+      "difficulty": "challenging",
+      "tags": [
+        "核酸的结构与功能"
+      ],
+      "answer": "-1",
+      "acceptableAnswers": [
+        "-1",
+        "−1",
+        "-1.0"
+      ]
+    }
+  ]
+}

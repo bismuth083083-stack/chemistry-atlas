@@ -1,0 +1,674 @@
+{
+  "id": "ORG-L11",
+  "title": "SN2底物效应、SN1机理与重排",
+  "description": "离去基团、底物位阻、溶剂解、离子对、碳正离子重排与立体化学。",
+  "subject": "organic-chemistry",
+  "chapter": "Website Lesson 11 · Lecture 10 · Chapter 6-2",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "第11课笔记",
+      "url": "https://organic.chemistryatlas.xyz/lesson-11.html",
+      "role": "章节知识与限定条件；依据本次课件独立编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "同类可比条件下，较好的阴离子离去基团通常具有哪种特征？",
+      "points": 1,
+      "explanation": "离去能力需要考虑离去后稳定性、键强度、可极化性与介质，不由电负性单独决定。",
+      "difficulty": "easy",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "离去后较稳定、碱性较弱"
+        },
+        {
+          "id": "B",
+          "text": "必须完全不能被极化"
+        },
+        {
+          "id": "C",
+          "text": "碱性越强越好"
+        },
+        {
+          "id": "D",
+          "text": "必须电负性最大"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "典型电离控速SN1的简单速率式是？",
+      "points": 1,
+      "explanation": "简单SN1控速步骤为底物电离，对底物一级、亲核体近似零级。",
+      "difficulty": "easy",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "v=k/[R–LG]"
+        },
+        {
+          "id": "B",
+          "text": "v=k₂[R–LG][Nu]"
+        },
+        {
+          "id": "C",
+          "text": "v=k₁[R–LG]"
+        },
+        {
+          "id": "D",
+          "text": "v=k[Nu]²"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "典型SN1能量图的碳正离子对应？",
+      "points": 1,
+      "explanation": "碳正离子为有限寿命中间体，前后与过渡态相连。",
+      "difficulty": "easy",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "局部能量最低点"
+        },
+        {
+          "id": "B",
+          "text": "唯一峰顶"
+        },
+        {
+          "id": "C",
+          "text": "任何反应物的零能点"
+        },
+        {
+          "id": "D",
+          "text": "所有图上最高点"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "1,2-氢迁移时电子箭头通常从何处出发？",
+      "points": 1,
+      "explanation": "迁移的氢带着原C–H成键电子对，箭头从键指向缺电子中心。",
+      "difficulty": "easy",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "相邻C–H键"
+        },
+        {
+          "id": "B",
+          "text": "溶剂的任意空白处"
+        },
+        {
+          "id": "C",
+          "text": "正电荷符号"
+        },
+        {
+          "id": "D",
+          "text": "一个没有电子的H⁺"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "普通SN2在反应中心的几何结果为？",
+      "points": 1,
+      "explanation": "SN2一步协同，成键与离去沿相对方向进行。",
+      "difficulty": "easy",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必定完全消旋"
+        },
+        {
+          "id": "B",
+          "text": "必先成平面正离子"
+        },
+        {
+          "id": "C",
+          "text": "总保持原四面体构型"
+        },
+        {
+          "id": "D",
+          "text": "背面进攻导致构型翻转"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "哪些通常有利于普通烷基底物的SN2？",
+      "points": 1,
+      "explanation": "新戊基的伯碳仍可因邻位叔丁基而极慢；须检查完整结构。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "反应中心背面通道较通畅"
+        },
+        {
+          "id": "B",
+          "text": "亲核试剂与介质相容"
+        },
+        {
+          "id": "C",
+          "text": "具合适离去基团"
+        },
+        {
+          "id": "D",
+          "text": "只要是伯碳就绝不受邻位位阻影响"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "(R)-2-溴戊烷与CN⁻经碳端SN2取代，产物的正确连接与名称为？",
+      "points": 1,
+      "explanation": "CN带入一个碳，腈碳纳入母链；本例重新排CIP后得到S产物。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "CH₃–CH(CN)–CH₂CH₂CH₃，2-甲基戊腈"
+        },
+        {
+          "id": "B",
+          "text": "CH₃CH₂CH₂CN，丁腈"
+        },
+        {
+          "id": "C",
+          "text": "戊烷只增加一个氮原子"
+        },
+        {
+          "id": "D",
+          "text": "2-氨基戊烷"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "(CH₃)₃C–CH₂Br的连卤碳是伯碳但SN2极慢，主要原因是？",
+      "points": 1,
+      "explanation": "新戊基效应说明反应中心级数不能独自代表整个位阻环境。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "相邻叔丁基严重遮挡背面进攻"
+        },
+        {
+          "id": "B",
+          "text": "分子中所有碳均带正电"
+        },
+        {
+          "id": "C",
+          "text": "伯碳没有反键轨道"
+        },
+        {
+          "id": "D",
+          "text": "连Br碳其实是叔碳"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "叔丁基溴在甲醇中按SN1生成醚，中性甲醇捕获后首先生成？",
+      "points": 1,
+      "explanation": "CH₃OH用氧孤对成键后氧带正电，再经去质子化得中性醚。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "甲基自由基"
+        },
+        {
+          "id": "B",
+          "text": "直接生成无氢的中性醚"
+        },
+        {
+          "id": "C",
+          "text": "质子化醚氧鎓离子"
+        },
+        {
+          "id": "D",
+          "text": "先生成游离OH⁻"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "SN2几何构型翻转后，产物的R/S标签必定与底物相反。",
+      "points": 1,
+      "explanation": "换基团可能改变CIP排序，几何翻转与R/S字母须分别判断。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "普通醇经酸活化后，常作为中性分子离去的是？",
+      "points": 1,
+      "explanation": "R–OH质子化为R–OH₂⁺后可离去水；酸也会质子化强碱亲核体。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "O²⁻"
+        },
+        {
+          "id": "B",
+          "text": "游离H原子"
+        },
+        {
+          "id": "C",
+          "text": "H₂O"
+        },
+        {
+          "id": "D",
+          "text": "OH⁻"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "SN1产物常未完全消旋的合理解释为？",
+      "points": 1,
+      "explanation": "离去阴离子可部分遮挡原来一面，保留空间记忆。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有平面中心都必保持构型"
+        },
+        {
+          "id": "B",
+          "text": "碳正离子永远四面体"
+        },
+        {
+          "id": "C",
+          "text": "离子对或溶剂笼使两面捕获不等概率"
+        },
+        {
+          "id": "D",
+          "text": "SN1必只有一步"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "哪一对必须区分，不能直接共用普通烷基卤取代规则？",
+      "points": 1,
+      "explanation": "前者为苄基sp³反应中心，后者为芳基sp²反应中心。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "CH₃Br与溴甲烷"
+        },
+        {
+          "id": "B",
+          "text": "甲醇与CH₃OH"
+        },
+        {
+          "id": "C",
+          "text": "H₂O与水"
+        },
+        {
+          "id": "D",
+          "text": "PhCH₂X与PhX"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "哪些SN1条件判断合理？",
+      "points": 1,
+      "explanation": "介电常数是一个指标，溶剂化、离子对和溶解性等也需考虑。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "正离子稳定性影响电离能垒"
+        },
+        {
+          "id": "B",
+          "text": "只按相对介电常数就能唯一预测任意体系速率"
+        },
+        {
+          "id": "C",
+          "text": "合适离去基团对SN1也重要"
+        },
+        {
+          "id": "D",
+          "text": "具体溶剂化影响反应"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "在典型一级SN1模型中，其他条件不变，将底物初始浓度增至3倍，初速率增至____倍。",
+      "points": 1,
+      "explanation": "v=k₁[R–LG]，浓度与速率同比增加。",
+      "difficulty": "medium",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三",
+        "3.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "某仲正离子相邻碳为C(CH₃)₃且不含氢，要从该邻碳发生有利重排，应优先检查？",
+      "points": 2,
+      "explanation": "季碳没有可迁移的C–H键，甲基带成键电子对迁移可形成新正离子。",
+      "difficulty": "hard",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "先释放一个游离H⁻"
+        },
+        {
+          "id": "B",
+          "text": "相邻C–C键的甲基迁移"
+        },
+        {
+          "id": "C",
+          "text": "该季碳上的氢迁移"
+        },
+        {
+          "id": "D",
+          "text": "只把正电荷在纸面任意移动"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于重排，哪些正确？",
+      "points": 2,
+      "explanation": "需比较迁移与捕获动力学以及可形成结构的稳定性。",
+      "difficulty": "hard",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "迁移与亲核捕获可竞争"
+        },
+        {
+          "id": "B",
+          "text": "重排可改变原子连接关系"
+        },
+        {
+          "id": "C",
+          "text": "共振式不等于重排产物"
+        },
+        {
+          "id": "D",
+          "text": "形成碳正离子就保证一定重排"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "(R)-2-溴丁烷水解，产物形成贡献SN1:SN2=2:1；SN1完全消旋、SN2只翻转，产物R:S为？",
+      "points": 2,
+      "explanation": "SN1两份各分一份R/S，SN2一份为S，共R一份、S两份。",
+      "difficulty": "hard",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0:1"
+        },
+        {
+          "id": "B",
+          "text": "1:2"
+        },
+        {
+          "id": "C",
+          "text": "1:1"
+        },
+        {
+          "id": "D",
+          "text": "2:1"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "上述R:S=1:2的2-丁醇混合物，纯R比旋光度−13.5、纯S为+13.5；线性加和时混合物为？",
+      "points": 2,
+      "explanation": "(1/3)(−13.5)+(2/3)(+13.5)=+4.5。主要S并不从字母本身决定正号，正号依题给旋光数据。",
+      "difficulty": "hard",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−4.5"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "+9.0"
+        },
+        {
+          "id": "D",
+          "text": "+4.5"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "已知SN1:SN2产物贡献2:1，但未给SN1两面进攻比例，能否唯一求ee？",
+      "points": 3,
+      "explanation": "离子对可使SN1不完全消旋；只有额外假设SN1等概率且无后续变化，才有简化ee关系。",
+      "difficulty": "challenging",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "能，必为100%"
+        },
+        {
+          "id": "B",
+          "text": "能，必为0"
+        },
+        {
+          "id": "C",
+          "text": "能，必为33.3%"
+        },
+        {
+          "id": "D",
+          "text": "不能，还需SN1产物的立体分配等条件"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "叔卤代烷不能走普通SN2，因此在任何强碱、任何温度下都必定主要生成SN1取代产物。",
+      "points": 3,
+      "explanation": "排除SN2不等于证明取代占优；强碱等条件下消除竞争可能重要。",
+      "difficulty": "challenging",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "并行模型kobs=k₁+k₂[Nu]，k₁=4.0×10⁻⁴ s⁻¹；[Nu]=0.10 M时kobs=6.0×10⁻⁴ s⁻¹。假定SN1完全消旋、SN2只翻转且无其他路径，主要产物ee约为____%（保留一位小数）。",
+      "points": 3,
+      "explanation": "SN2贡献=kobs−k₁=2.0×10⁻⁴ s⁻¹，占总速率1/3；在题设立体条件下ee=SN2分数≈33.3%。",
+      "difficulty": "challenging",
+      "tags": [
+        "SN1",
+        "SN2",
+        "substitution"
+      ],
+      "answer": "33.3",
+      "acceptableAnswers": [
+        "33.3",
+        "33.30"
+      ]
+    }
+  ]
+}

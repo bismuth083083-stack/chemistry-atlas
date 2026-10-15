@@ -1558,6 +1558,41 @@
       ],
       "path": "inorg-l05.json",
       "mode": "fixed"
+    },
+    {
+      "id": "ORG-L11",
+      "title": "SN2底物效应、SN1机理与重排",
+      "description": "离去基团、底物位阻、溶剂解、离子对、碳正离子重排与立体化学。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 11,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 11 · Lecture 10 · Chapter 6-2",
+      "lesson": "SN2底物效应、SN1机理与重排",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "SN1",
+        "SN2",
+        "rearrangement"
+      ],
+      "knowledgePoints": [
+        "leaving groups",
+        "substrate effects",
+        "Walden inversion",
+        "solvolysis",
+        "SN1 kinetics",
+        "ion pairs",
+        "carbocation rearrangements"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/organic/dist/lesson-11.html"
+      ],
+      "path": "org-l11.json",
+      "mode": "fixed"
     }
   ]
 }

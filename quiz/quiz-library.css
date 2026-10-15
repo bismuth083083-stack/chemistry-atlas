@@ -39,7 +39,7 @@ body::after { right: -180px; bottom: 4%; background: #ffc277; animation: library
 .library-reset { padding: 7px 11px; border: 1px solid var(--library-line); border-radius: 9px; background: transparent; color: var(--library-muted); font: 10px 'DM Mono', monospace; cursor: pointer; transition: transform .2s, border-color .2s, color .2s, background .2s; }
 .library-reset:hover { transform: translateY(-2px); border-color: var(--library-blue); background: rgba(128,151,255,.1); color: var(--library-ink); }
 .quiz-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
-.library-card { --card-accent: var(--library-blue); position: relative; min-height: 330px; display: flex; flex-direction: column; padding: 24px 24px 20px; overflow: hidden; border: 1px solid var(--library-line); border-radius: 18px; background: linear-gradient(145deg, rgba(13,28,45,.96), rgba(9,23,38,.92)); color: var(--library-ink); isolation: isolate; opacity: 0; animation: library-card-in .56s var(--card-delay, 0ms) cubic-bezier(.22,1,.36,1) both; transition: transform .24s cubic-bezier(.22,1,.36,1), border-color .24s ease, box-shadow .24s ease, background .3s ease; }
+.library-card { --card-accent: var(--library-blue); position: relative; min-height: 164px; display: flex; flex-direction: column; padding: 17px 18px 15px; overflow: hidden; border: 1px solid var(--library-line); border-radius: 18px; background: linear-gradient(145deg, rgba(13,28,45,.96), rgba(9,23,38,.92)); color: var(--library-ink); text-decoration: none; isolation: isolate; opacity: 0; animation: library-card-in .56s var(--card-delay, 0ms) cubic-bezier(.22,1,.36,1) both; transition: transform .24s cubic-bezier(.22,1,.36,1), border-color .24s ease, box-shadow .24s ease, background .3s ease; }
 .library-card.theme-organic { --card-accent: #ffc477; }
 .library-card.theme-physical { --card-accent: #d39a86; }
 .library-card.theme-inorganic { --card-accent: #a8a0d6; }
@@ -52,21 +52,13 @@ body::after { right: -180px; bottom: 4%; background: #ffc277; animation: library
 .library-card:hover::before { opacity: .38; transform: translate(-9px,-9px) rotate(18deg); }
 .library-card:active { transform: translateY(-1px) scale(.99); }
 .library-card:focus-visible { outline: 3px solid color-mix(in srgb, var(--card-accent) 55%, transparent); outline-offset: 4px; }
-.library-card-top, .library-card-meta, .library-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-.library-card-top { margin-bottom: 25px; }
+.library-card-top, .library-card-meta, .library-card-top { margin-bottom: 11px; }
 .quiz-code { color: var(--card-accent); font: 500 12px 'DM Mono', monospace; letter-spacing: .1em; }
 .subject-badge { padding: 5px 8px; border: 1px solid color-mix(in srgb, var(--card-accent) 48%, var(--library-line)); border-radius: 999px; color: var(--card-accent); font: 9px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; }
-.library-card-kicker { color: #8195a7; font: 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .1em; }
-.library-card h3 { max-width: 280px; margin: 10px 0 12px; font: 600 26px/1.08 'Space Grotesk', 'Noto Sans SC', sans-serif; letter-spacing: -.05em; }
-.library-card p { min-height: 45px; margin: 0; color: var(--library-muted); font-size: 13px; line-height: 1.55; }
-.library-card-meta { justify-content: flex-start; flex-wrap: wrap; margin-top: 20px; color: var(--library-ink); font: 10px 'DM Mono', monospace; }
+.library-card h3 { max-width: none; margin: 0 0 14px; overflow-wrap: anywhere; font: 600 22px/1.25 'Space Grotesk', 'Noto Sans SC', sans-serif; letter-spacing: -.05em; }
+.library-card-meta { justify-content: flex-start; flex-wrap: wrap; margin-top: auto; color: var(--library-ink); font: 10px 'DM Mono', monospace; }
 .library-card-meta span + span::before { content: '·'; margin-right: 9px; color: #61778a; }
-.library-card-tags { display: flex; flex-wrap: wrap; gap: 6px; min-height: 29px; margin-top: 15px; }
-.library-card-tags span { padding: 4px 7px; border-radius: 5px; background: rgba(255,255,255,.055); color: #9cafbd; font: 9px 'DM Mono', monospace; }
-.library-card-footer { margin-top: auto; padding-top: 17px; border-top: 1px solid rgba(144,176,197,.15); color: #8ca0b0; font: 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .05em; }
-.library-card-footer b { color: var(--card-accent); font-size: 18px; font-weight: 400; transition: transform .22s ease; }
-.library-card:hover .library-card-footer b { transform: translate(3px,-3px); }
-.library-empty, .library-error { display: grid; place-items: center; min-height: 300px; padding: 40px; border: 1px dashed var(--library-line); border-radius: 18px; text-align: center; }
+.library-card:hover .library-empty, .library-error { display: grid; place-items: center; min-height: 300px; padding: 40px; border: 1px dashed var(--library-line); border-radius: 18px; text-align: center; }
 .library-empty h2, .library-error h1 { margin: 14px 0 8px; font: 600 30px 'Space Grotesk', 'Noto Sans SC', sans-serif; letter-spacing: -.05em; }
 .library-empty p, .library-error p { margin: 0 0 18px; color: var(--library-muted); }
 .library-kicker { color: var(--library-blue); font: 10px 'DM Mono', monospace; letter-spacing: .1em; }
@@ -97,10 +89,15 @@ body::after { right: -180px; bottom: 4%; background: #ffc277; animation: library
   .library-search-wrap { grid-column: auto; }
   .library-filter-bar { align-items: flex-start; }
   .quiz-grid { grid-template-columns: 1fr; }
-  .library-card { min-height: 290px; }
+  .library-card { min-height: 142px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { animation: none !important; transition-duration: .01ms !important; }
 }
 .library-card.theme-biochem { --card-accent: #62d2bd; }
 .library-card.theme-analytical { --card-accent: #d58caf; }
+
+
+.library-card-arrow{margin-left:auto;color:var(--card-accent);font-size:17px;font-weight:400}.library-card:hover .library-card-arrow{transform:translate(2px,-2px)}
+@media(min-width:1280px){.quiz-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:560px){.library-card h3{font-size:21px}.library-card-meta{gap:8px}.library-card-top{margin-bottom:10px}}

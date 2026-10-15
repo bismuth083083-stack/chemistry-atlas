@@ -2316,62 +2316,61 @@
     "zh": "离去基团",
     "en": "Leaving group",
     "category": "反应性",
-    "definition": "在取代或消除反应中带着一对电子离开底物的基团或离子。",
-    "expanded": "在 SN2 反应中，亲核试剂从背面进攻，碳–离去基团的键同时断裂，卤素离子带着原键合电子离去。离去能力与碱性强弱相反：越弱的碱越容易带着电子稳定地离开，所以 I⁻ > Br⁻ > Cl⁻ ≫ F⁻。教材给出的另一条补充是离去基团必须能与新键形成竞争，否则反应不会发生。",
+    "definition": "离去基团断键时带走原键电子对；相近条件下稳定弱碱通常较易离去。",
+    "expanded": "需结合键强度、可极化性与介质判断。醇质子化后离去的是水而不是OH⁻；SN1、SN2都需要合适的离去基团。",
     "properties": [
-      "带走一对电子，带走负电荷",
-      "酸性越强（碱性越弱）离去能力越强",
-      "卤素离去顺序 I > Br > Cl ≫ F"
+      "离去基团断键时带走原键电子对；相近条件下稳定弱碱通常较易离去。",
+      "需结合键强度、可极化性与介质判断。醇质子化后离去的是水而不是OH⁻；SN1、SN2都需要合适的离去基团。"
     ],
-    "confusions": "离去基团不等于“副产物”：它在机理中是一个必须被断键的物种，它的性质决定反应能否发生，而亲核性决定反应有多快。",
+    "confusions": "电负性高不自动等于好离去；不能把亲核性与离去能力视为同一个排序。",
     "related": [
       "nucleophile",
       "alkyl-halide",
       "sn2"
     ],
-    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第11页；结合上课内容修订",
+    "updated": "2026-10-15"
   },
   {
     "slug": "sn2",
     "zh": "SN2 反应（双分子亲核取代）",
     "en": "Sₙ₂ reaction",
     "category": "反应类型",
-    "definition": "亲核试剂从离去基团背面一步协同进攻底物碳、构型同时翻转的亲核取代反应。",
-    "expanded": "SN2 的“2”指速率方程中同时出现两个物种：rate = kᵣ[CH₃I][⁻OH]，对每个反应物各为一级、总二级。一步协同意味着断键与成键同步进行，能量图上只有一个峰，中间结构是过渡态而不是中间体。背面进攻使碳原子的三个取代基像伞被吹翻一样翻转，得到构型完全反转的产物。底物反应性顺序为 CH₃X > 1° > 2°，3° 卤代烷因位阻不能走这条机理。",
+    "definition": "一步协同、亲核进攻与离去同步发生的双分子亲核取代。",
+    "expanded": "简单模型v=k₂[R–LG][Nu]，背面进攻使反应中心几何翻转。新戊基说明伯位也可能严重受阻；普通SN2不经过游离正离子重排。",
     "properties": [
-      "协同一步，无中间体，只有一个过渡态",
-      "二级动力学：rate = kᵣ[R–X][Nu⁻]",
-      "背面进攻，中心碳构型翻转（Walden 转化）",
-      "底物活性 CH₃X > 1° > 2° ≫ 3°"
+      "一步协同、亲核进攻与离去同步发生的双分子亲核取代。",
+      "简单模型v=k₂[R–LG][Nu]，背面进攻使反应中心几何翻转。新戊基说明伯位也可能严重受阻；普通SN2不经过游离正离子重排。"
     ],
-    "confusions": "SN2 是机理名称而不是“取代反应”的同义词；速率方程为二级只与协同一步相符，不能用来排除其他同样呈现二级动力学的路径。",
+    "confusions": "二级速率式需要与其他证据合用；几何翻转不保证R/S标签反转。",
     "related": [
       "nucleophile",
       "leaving-group",
       "transition-state",
       "reaction-order"
     ],
-    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第17页；结合上课内容修订",
+    "updated": "2026-10-15"
   },
   {
     "slug": "stereospecific-inversion",
     "zh": "构型翻转（Walden 转化）",
     "en": "Inversion of configuration (Walden inversion)",
     "category": "立体化学",
-    "definition": "SN2 反应中亲核试剂从背面进攻使中心碳构型完全反转的现象。",
-    "expanded": "课件用伞被风吹翻的比喻描述这个过程：进攻方向与离去基团正好相对，三个原有取代基向另一侧张开。过渡态中碳原子近似 sp² 平面，H₃C 与 HO 之间的夹角为 180°；成键与断键各完成一半。因此光学活性的底物经 SN2 后得到构型反转的产物，这也是判定机理的立体化学证据，与动力学的判据互补。",
+    "definition": "亲核体从背面进攻引起反应中心四面体几何构型翻转。",
+    "expanded": "普通SN2的Walden翻转需与产物的新CIP排序分别检查。未反应立体中心不应被任意翻转。",
     "properties": [
-      "进攻发生在离去基团的背面（180°）",
-      "过渡态碳原子近似平面",
-      "产物构型与底物完全相反"
+      "亲核体从背面进攻引起反应中心四面体几何构型翻转。",
+      "普通SN2的Walden翻转需与产物的新CIP排序分别检查。未反应立体中心不应被任意翻转。"
     ],
-    "confusions": "构型翻转是 SN2 的立体化学结果；如果中心碳不是手性中心，“翻转”在结构上看不出来，但机理仍然如此。",
+    "confusions": "取代改变了基团，底物与产物通常不是同一组成的对映体；旋光方向也不能直接由构型猜。",
     "related": [
       "sn2",
       "transition-state",
       "chirality"
     ],
-    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第18页；结合上课内容修订",
+    "updated": "2026-10-15"
   },
   {
     "slug": "nucleophilicity",
@@ -2485,42 +2484,42 @@
     "zh": "非质子溶剂",
     "en": "Aprotic solvent",
     "category": "溶剂",
-    "definition": "不含 O–H 或 N–H 基团、不能给出氢键的溶剂。",
-    "expanded": "非质子溶剂不包裹阴离子，因此阴离子更“裸露”、活性更高。课件给出两条理由：一是阴离子没有被溶剂化稳定；二是溶剂为亲核试剂让路时不需要先破坏氢键，因此没有额外的能量代价。代价是溶解性：非质子溶剂（尤其是烷烃类）溶解极性离子试剂的能力较弱，离子型亲核试剂常常溶不进去。",
+    "definition": "通常不具有O–H或N–H等氢键给体基团的溶剂。",
+    "expanded": "非质子不等于非极性。极性非质子溶剂仍会溶剂化离子，只是对某些阴离子的氢键束缚较质子溶剂弱。",
     "properties": [
-      "不含 O–H、N–H，不能形成氢键",
-      "使阴离子亲核性升高",
-      "溶解极性离子试剂的能力较弱"
+      "通常不具有O–H或N–H等氢键给体基团的溶剂。",
+      "非质子不等于非极性。极性非质子溶剂仍会溶剂化离子，只是对某些阴离子的氢键束缚较质子溶剂弱。"
     ],
-    "confusions": "“非质子”不等于“非极性”：DMSO、DMF、乙腈都是强极性非质子溶剂，它们既溶解离子试剂又不溶剂化阴离子。",
+    "confusions": "不能把“非质子”写成“所有离子完全不被溶剂化”；溶解性、离子配对与具体溶剂都重要。",
     "related": [
       "protic-solvent",
       "polar-aprotic-solvent",
       "nucleophilicity",
       "crown-ether"
     ],
-    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第35页；结合上课内容修订",
+    "updated": "2026-10-15"
   },
   {
     "slug": "polar-aprotic-solvent",
     "zh": "极性非质子溶剂",
     "en": "Polar aprotic solvent",
     "category": "溶剂",
-    "definition": "具有强偶极矩却不含 O–H/N–H、从而不溶剂化阴离子的溶剂。",
-    "expanded": "乙腈（CH₃CN）、N,N-二甲基甲酰胺（DMF）与丙酮是课件的三个例子。强偶极矩保证离子型试剂能溶，缺少氢键给体则保证阴离子不被包裹，于是亲核取代速率显著提高。课件给的实例是 KF 在 18-冠-6/CH₃CN 体系中把苄基氯换成苄基氟——氟离子在质子溶剂中是弱亲核试剂，在这个体系里却能顺利反应。",
+    "definition": "兼具较强极性与缺少常见氢键给体特征的溶剂。",
+    "expanded": "DMSO、DMF、乙腈、丙酮是常见例子。它们常有利于阴离子参与的SN2，但仍存在溶剂化与离子配对。",
     "properties": [
-      "强偶极矩，溶解离子型试剂",
-      "无氢键给体，阴离子不被溶剂化",
-      "显著提高 SN2 速率（尤其对 F⁻）"
+      "兼具较强极性与缺少常见氢键给体特征的溶剂。",
+      "DMSO、DMF、乙腈、丙酮是常见例子。它们常有利于阴离子参与的SN2，但仍存在溶剂化与离子配对。"
     ],
-    "confusions": "极性非质子溶剂是“极性非质子”的交叉项，既有极性溶剂的溶解能力，又有非质子溶剂的不溶剂化阴离子特性，两个条件都不能省。",
+    "confusions": "不是对阴离子完全没有相互作用；不能把SN1的电离溶剂效应与SN2的亲核体溶剂化混用。",
     "related": [
       "aprotic-solvent",
       "protic-solvent",
       "crown-ether",
       "nucleophilicity"
     ],
-    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第35页；结合上课内容修订",
+    "updated": "2026-10-15"
   },
   {
     "slug": "crown-ether",
@@ -2541,5 +2540,333 @@
       "nucleophilicity"
     ],
     "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+  },
+  {
+    "slug": "sn1",
+    "zh": "单分子亲核取代",
+    "en": "Unimolecular nucleophilic substitution (SN1)",
+    "aliases": [
+      "单分子亲核取代",
+      "Unimolecular nucleophilic substitution (SN1)"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "在典型模型中以底物电离形成碳正离子为控速步骤的亲核取代。",
+    "expanded": "简单速率式v=k₁[R–LG]，对亲核体近似零级；电离后由亲核体捕获，中性亲核体常还需去质子化。可出现离子对、重排与不完全消旋。",
+    "properties": [
+      "简单速率式v=k₁[R–LG]，对亲核体近似零级；电离后由亲核体捕获，中性亲核体常还需去质子化",
+      "“1”指控速步骤单分子性，不是整个反应只有一个物种"
+    ],
+    "confusions": "“1”指控速步骤单分子性，不是整个反应只有一个物种；叔卤体系仍可能发生消除竞争。",
+    "related": [
+      "sn2",
+      "solvolysis",
+      "carbocation",
+      "ion-pair"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第23页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "solvolysis",
+    "zh": "溶剂解",
+    "en": "Solvolysis",
+    "aliases": [
+      "溶剂解",
+      "Solvolysis"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "溶剂作为反应试剂参与底物裂解或取代的过程。",
+    "expanded": "叔丁基溴在甲醇中的取代由溶剂甲醇捕获碳正离子，先形成氧鎓离子再去质子化。水解是用水参与的相关过程。",
+    "properties": [
+      "叔丁基溴在甲醇中的取代由溶剂甲醇捕获碳正离子，先形成氧鎓离子再去质子化",
+      "溶剂解不自动等于SN1"
+    ],
+    "confusions": "溶剂解不自动等于SN1；应以底物、速率和其他机理证据判断。",
+    "related": [
+      "sn1",
+      "nucleophile",
+      "protic-solvent"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第23页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "walden-inversion",
+    "zh": "Walden翻转",
+    "en": "Walden inversion",
+    "aliases": [
+      "Walden翻转",
+      "Walden inversion"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "反应中心的四面体几何构型在反应中发生翻转。",
+    "expanded": "普通SN2经背面进攻导致翻转。产物应重新排CIP次序，若取代改变优先顺序，R/S字母不一定反转。",
+    "properties": [
+      "普通SN2经背面进攻导致翻转",
+      "几何翻转不等于旋光正负翻转，也不保证更换了基团的底物和产物是一对对映体。"
+    ],
+    "confusions": "几何翻转不等于旋光正负翻转，也不保证更换了基团的底物和产物是一对对映体。",
+    "related": [
+      "sn2",
+      "stereospecificity",
+      "r-s-configuration"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第18页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "ion-pair",
+    "zh": "离子对",
+    "en": "Ion pair",
+    "aliases": [
+      "离子对",
+      "Ion pair"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "相反电荷的离子因静电与溶剂环境而相关联的组合。",
+    "expanded": "SN1电离后生成的正离子与离去阴离子可尚未充分分离，保留部分空间记忆，使亲核体从两面进攻的概率不完全相同。",
+    "properties": [
+      "SN1电离后生成的正离子与离去阴离子可尚未充分分离，保留部分空间记忆，使亲核体从两面进攻的概率不完全相同",
+      "平面正离子不保证实际产物精确50:50"
+    ],
+    "confusions": "平面正离子不保证实际产物精确50:50；离子对也不等于共价键完全保持。",
+    "related": [
+      "sn1",
+      "racemization",
+      "carbocation"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第37页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "carbocation-rearrangement",
+    "zh": "碳正离子重排",
+    "en": "Carbocation rearrangement",
+    "aliases": [
+      "碳正离子重排",
+      "Carbocation rearrangement"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "通过邻近键迁移等改变连接关系、重新分配正电中心的过程。",
+    "expanded": "本课讨论1,2-氢迁移与1,2-烷基迁移，迁移键电子对成新键，正电中心转到原迁移起点；随后可能被亲核体捕获。",
+    "properties": [
+      "本课讨论1,2-氢迁移与1,2-烷基迁移，迁移键电子对成新键，正电中心转到原迁移起点；随后可能被亲核体捕获",
+      "重排不是共振"
+    ],
+    "confusions": "重排不是共振；有正离子不等于必定重排，必须比较迁移与捕获的竞争。",
+    "related": [
+      "carbocation",
+      "hydride-shift",
+      "alkyl-shift",
+      "sn1"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第40页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "hydride-shift",
+    "zh": "1,2-氢迁移",
+    "en": "1,2-Hydride shift",
+    "aliases": [
+      "1,2-氢迁移",
+      "1,2-Hydride shift"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "相邻C–H键的氢连同成键电子对迁向缺电子碳的重排。",
+    "expanded": "箭头由C–H键指向正电中心，新C–H键形成，正电荷位置转移；形成更稳定正离子可提供驱动力。",
+    "properties": [
+      "箭头由C–H键指向正电中心，新C–H键形成，正电荷位置转移；形成更稳定正离子可提供驱动力",
+      "H⁻迁移是电子记账，不表示先在溶液中生成游离氢负离子。"
+    ],
+    "confusions": "H⁻迁移是电子记账，不表示先在溶液中生成游离氢负离子。",
+    "related": [
+      "carbocation-rearrangement",
+      "alkyl-shift",
+      "carbocation"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第40页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "alkyl-shift",
+    "zh": "1,2-烷基迁移",
+    "en": "1,2-Alkyl shift",
+    "aliases": [
+      "1,2-烷基迁移",
+      "1,2-Alkyl shift"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "相邻C–C键的烷基连同成键电子对迁移到缺电子中心。",
+    "expanded": "甲基迁移是本课实例。若相邻季碳没有C–H键，就不能从该位画氢迁移；改以邻近C–C键迁移形成新连接。",
+    "properties": [
+      "甲基迁移是本课实例",
+      "迁移箭头从键出发，不从一个没有电子的CH₃文字出发"
+    ],
+    "confusions": "迁移箭头从键出发，不从一个没有电子的CH₃文字出发；正电中心位置也随之改变。",
+    "related": [
+      "carbocation-rearrangement",
+      "hydride-shift",
+      "carbocation"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第43页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "dielectric-constant",
+    "zh": "相对介电常数",
+    "en": "Relative permittivity (dielectric constant)",
+    "aliases": [
+      "相对介电常数",
+      "Relative permittivity (dielectric constant)"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "描述介质相对于真空电响应的无量纲量εr。",
+    "expanded": "在讨论离子电离时常作为介质极性的指标之一。SN1还受氢键、具体溶剂化、离子对、底物溶解性等影响。",
+    "properties": [
+      "在讨论离子电离时常作为介质极性的指标之一",
+      "不能只凭介电常数唯一预测所有反应的溶剂速率顺序。"
+    ],
+    "confusions": "不能只凭介电常数唯一预测所有反应的溶剂速率顺序。",
+    "related": [
+      "sn1",
+      "protic-solvent",
+      "polar-aprotic-solvent"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第35页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "allylic-halide",
+    "zh": "烯丙基卤",
+    "en": "Allylic halide",
+    "aliases": [
+      "烯丙基卤",
+      "Allylic halide"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "卤素连接在邻近C=C的sp³碳上的化合物。",
+    "expanded": "典型结构CH₂=CH–CH₂X，既可因过渡态电子效应有利SN2，又可因烯丙基正离子的共振稳定而促进相应SN1。",
+    "properties": [
+      "典型结构CH₂=CH–CH₂X，既可因过渡态电子效应有利SN2，又可因烯丙基正离子的共振稳定而促进相应SN1",
+      "CH₂=CH–CH₂X不是CH₂=CHX"
+    ],
+    "confusions": "CH₂=CH–CH₂X不是CH₂=CHX；后者是乙烯基卤。不能仅凭活泼就唯一判定SN1。",
+    "related": [
+      "vinyl-halide",
+      "benzylic-halide",
+      "sn1",
+      "sn2"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第30页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "benzylic-halide",
+    "zh": "苄基卤",
+    "en": "Benzylic halide",
+    "aliases": [
+      "苄基卤",
+      "Benzylic halide"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "卤素连接在与芳环相邻的sp³碳上的化合物。",
+    "expanded": "PhCH₂X是典型苄基卤，反应中心不是芳环碳。SN2与形成苄基正离子的路径均可能被促进，取决于条件。",
+    "properties": [
+      "PhCH₂X是典型苄基卤，反应中心不是芳环碳",
+      "PhCH₂X与PhX的反应中心不同，后者是芳基卤。"
+    ],
+    "confusions": "PhCH₂X与PhX的反应中心不同，后者是芳基卤。",
+    "related": [
+      "aryl-halide",
+      "allylic-halide",
+      "carbocation",
+      "sn2"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第30页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "neopentyl-effect",
+    "zh": "新戊基效应",
+    "en": "Neopentyl effect",
+    "aliases": [
+      "新戊基效应",
+      "Neopentyl effect"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "反应碳虽为伯碳，却因邻位严重支化使普通SN2极慢的现象。",
+    "expanded": "(CH₃)₃C–CH₂X的CH₂X为伯位，但邻接叔丁基挡住背面接近路径。判SN2位阻须同时检查反应中心和相邻位置。",
+    "properties": [
+      "(CH₃)₃C–CH₂X的CH₂X为伯位，但邻接叔丁基挡住背面接近路径",
+      "伯、仲、叔分类不等于整个分子的位阻大小"
+    ],
+    "confusions": "伯、仲、叔分类不等于整个分子的位阻大小；新戊基不能改称为叔卤。",
+    "related": [
+      "steric-hindrance",
+      "sn2",
+      "alkyl-halide"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第16页；本站第11课",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "stereospecificity",
+    "zh": "立体专一性",
+    "en": "Stereospecificity",
+    "aliases": [
+      "立体专一性",
+      "Stereospecificity"
+    ],
+    "category": "亲核取代与机理",
+    "definition": "反应物的立体化学通过特定机理约束产物立体化学的性质。",
+    "expanded": "普通SN2的背面进攻是典型例子，不同反应中心构型在同一规则下给出相应翻转结果。",
+    "properties": [
+      "普通SN2的背面进攻是典型例子，不同反应中心构型在同一规则下给出相应翻转结果",
+      "立体专一性不同于某一反应物生成多种可能立体产物时的比例偏好"
+    ],
+    "confusions": "立体专一性不同于某一反应物生成多种可能立体产物时的比例偏好；后者常称立体选择性。",
+    "related": [
+      "sn2",
+      "walden-inversion",
+      "stereoisomer"
+    ],
+    "relatedReactions": [
+      "亲核取代"
+    ],
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第18页；本站第11课",
+    "updated": "2026-10-15"
   }
 ]

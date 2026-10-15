@@ -11,6 +11,23 @@ const query=new URLSearchParams(location.search).get('q');
 if(termSearch&&query)termSearch.value=query;
 async function getTerms(){const r=await fetch('data/terms.json');return r.json()}
 const TERM_IMAGES={
+"sn1":["lecture-11/sn1-mechanism.webp", "单分子亲核取代的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第23页"],
+"solvolysis":["lecture-11/sn1-mechanism.webp", "溶剂解的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第23页"],
+"walden-inversion":["lecture-11/walden-inversion.webp", "Walden翻转的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第18页"],
+"ion-pair":["lecture-11/ion-pair.webp", "离子对的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第37页"],
+"carbocation-rearrangement":["lecture-11/hydride-shift.webp", "碳正离子重排的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第40页"],
+"hydride-shift":["lecture-11/hydride-shift.webp", "1,2-氢迁移的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第40页"],
+"alkyl-shift":["lecture-11/methyl-shift.webp", "1,2-烷基迁移的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第43页"],
+"dielectric-constant":["lecture-11/solvent-rates.webp", "相对介电常数的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第35页"],
+"allylic-halide":["lecture-11/resonance-stabilization.webp", "烯丙基卤的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第30页"],
+"benzylic-halide":["lecture-11/resonance-stabilization.webp", "苄基卤的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第30页"],
+"neopentyl-effect":["lecture-11/neopentyl.webp", "新戊基效应的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第16页"],
+"stereospecificity":["lecture-11/walden-inversion.webp", "立体专一性的课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第18页"],
+"leaving-group":["lecture-11/leaving-groups.webp", "离去基团相关课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第11页"],
+"sn2":["lecture-11/backside-orbital.webp", "SN2 反应（双分子亲核取代）相关课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第17页"],
+"stereospecific-inversion":["lecture-11/walden-inversion.webp", "构型翻转（Walden 转化）相关课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第18页"],
+"aprotic-solvent":["lecture-11/solvent-rates.webp", "非质子溶剂相关课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第35页"],
+"polar-aprotic-solvent":["lecture-11/solvent-rates.webp", "极性非质子溶剂相关课件图", "Organic Chemistry I Lect. 10 (Chapter 6-2)，第35页"],
 'chirality':['lecture-08/chirality-hands.webp',,'手性：左手与右手互为镜像但不能重合','Organic Chemistry I Lect. 8 (Chapter 5-2)，第 3 页'],
 'chirality-center':['lecture-08/tetrahedral-four-groups.webp',,'四个不同基团取代的四面体碳：手性中心','Organic Chemistry I Lect. 8 (Chapter 5-2)，第 4 页'],
 'asymmetric-carbon':['lecture-08/tetrahedral-four-groups.webp',,'连有四个不同基团的碳原子','Wade《Organic Chemistry》第 8 版，第 5 章结构图'],
@@ -41,16 +58,11 @@ const TERM_IMAGES={
 'haloalkane':['lecture-10/haloalkane-naming.webp','IUPAC 卤代烷命名的 Prefix–Locant–Parent–Suffix 结构','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 6 页'],
 'vinyl-halide':['lecture-10/halide-classes.webp','烷基卤、乙烯基卤与芳基卤三类含卤化合物的划分','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 3 页'],
 'aryl-halide':['lecture-10/halide-classes.webp','烷基卤、乙烯基卤与芳基卤三类含卤化合物的划分','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 3 页'],
-'leaving-group':['lecture-10/substitution-elimination.webp','取代与消除：离去基团带走一对电子，碱夺取 β-氢生成烯烃','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 20–21 页'],
-'sn2':['lecture-10/sn2-mechanism.webp','SN2 亲核取代的通式：亲核试剂背面进攻、离去基团带走电子','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 22 页'],
-'stereospecific-inversion':['lecture-10/sn2-transition-state.webp','SN2 过渡态：碳原子近似平面、键角 180°，成键与断键各完成一半','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 24 页'],
 'nucleophilicity':['lecture-10/nucleophile-table.webp','常见亲核试剂按亲核性递减排列（前提：质子溶剂如水与醇）','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 37 页'],
 'basicity':['lecture-10/basicity-vs-nucleophilicity.webp','碱性（进攻质子、看平衡常数）与亲核性（进攻碳、看速率）的对照','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 35 页'],
 'polarizability':['lecture-10/polarizability.webp','F⁻ 的“硬”小价层与 I⁻ 的可极化电子云：过渡态成键强度的差别','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 39 页'],
 'steric-hindrance':['lecture-10/steric-hindrance.webp','叔丁氧基（受阻）与乙氧基（不受阻）：前者碱性强、亲核性弱','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 40 页'],
 'protic-solvent':['lecture-10/solvent-effects.webp','质子溶剂通过氢键包裹阴离子：小阴离子被包得更紧、更难进攻碳','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 41 页'],
-'aprotic-solvent':['lecture-10/solvent-effects.webp','质子溶剂与非质子溶剂对阴离子亲核性的影响','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 41–43 页'],
-'polar-aprotic-solvent':['lecture-10/polar-aprotic-solvent.webp','极性非质子溶剂（乙腈、DMF、丙酮）与 18-冠-6 溶剂化钾离子','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 44 页'],
 'crown-ether':['lecture-10/polar-aprotic-solvent.webp','18-冠-6 溶剂化钾离子，使氟离子被带入非质子溶剂','Organic Chemistry I Lect. 9 (Chapter 6-1)，第 44 页'],
   'rate-limiting-step':['lecture-07/rate-limiting-step.webp','限速步骤与多步反应速率示意','Organic Chemistry I Lect. 6，第 4–8 页'],
   'selectivity':['lecture-07/propane-halogenation-selectivity.webp','丙烷自由基卤代产物统计与单氢反应性','Organic Chemistry I Lect. 6，第 9–18 页'],
@@ -146,3 +158,4 @@ async function loadTerms(){const terms=await getTerms();const list=document.quer
 async function loadTermDetail(){const slug=new URLSearchParams(location.search).get('slug');if(!slug)return;const terms=await getTerms();const t=terms.find(x=>x.slug===slug);if(!t)return;document.title=t.zh+' · 有机化学知识库';const related=t.related.map(s=>terms.find(x=>x.slug===s)).filter(Boolean);const image=TERM_IMAGES[slug];const imageSrc=image?(image[0].includes("/")?`assets/${image[0]}`:`assets/terms/${image[0]}`):"";const figure=image?`<figure class="term-figure"><img src="${imageSrc}" alt="${image[1]}" loading="eager" decoding="async"><figcaption>${image[1]}<small>图源：${image[2]} · 局部截图</small></figcaption></figure>`:'';document.querySelector('#term-detail').className='term-detail';document.querySelector('#term-detail').innerHTML=`<header><p class="eyebrow">${t.category}</p><h1>${t.zh}</h1><p class="english">${t.en}</p></header>${figure}<section><h2>定义</h2><p class="lead">${t.definition}</p></section><section><h2>详细说明</h2><p>${t.expanded}</p></section><section><h2>主要性质</h2><ul>${t.properties.map(x=>'<li>'+x+'</li>').join('')}</ul></section><section class="note"><h2>辨析与常见误区</h2><p>${t.confusions}</p></section><section><h2>相关词条</h2><div class="related">${related.map(x=>'<a href="term.html?slug='+x.slug+'">'+x.zh+'<small>'+x.en+'</small></a>').join('')}</div></section><footer class="source">笔记来源：${t.source}</footer>`}
 
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
+

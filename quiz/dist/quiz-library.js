@@ -99,19 +99,14 @@ function compareEntries(left, right, sort) {
 
 function cardMarkup(entry, index = 0) {
   const meta = subjectMeta(entry.subject);
-  const tags = (entry.tags || []).slice(0, 4).map((tag) => `<span>#${escapeHtml(tag)}</span>`).join('');
   const count = entry.questionCount ?? entry.questions?.length ?? '—';
   const difficulty = DIFFICULTY_LABELS[difficultyValue(entry)] || 'Basic';
   return `
-    <a class="library-card theme-${meta.className}" style="--card-delay: ${Math.min(index, 8) * 55}ms" href="?quiz=${encodeURIComponent(entry.id)}">
+    <a class="library-card theme-${meta.className}" style="--card-delay: ${Math.min(index, 8) * 35}ms" href="?quiz=${encodeURIComponent(entry.id)}">
       <span class="library-card-accent" aria-hidden="true"></span>
       <span class="library-card-top"><span class="quiz-code">${escapeHtml(entryCode(entry))}</span><span class="subject-badge">${escapeHtml(meta.label)}</span></span>
-      <span class="library-card-kicker">${escapeHtml(TYPE_LABELS[entry.type] || 'Quiz')}</span>
       <h3>${escapeHtml(entry.title)}</h3>
-      <p>${escapeHtml(entry.description || entry.chapter || 'A focused Chemistry Atlas practice set.')}</p>
-      <span class="library-card-meta"><span>${escapeHtml(String(count))} Questions</span><span>${escapeHtml(difficulty)}</span><span>${escapeHtml(displayDate(entry.updatedAt || entry.createdAt))}</span></span>
-      <span class="library-card-tags">${tags}</span>
-      <span class="library-card-footer"><span>${escapeHtml(entry.chapter || entry.lesson || 'Practice set')}</span><b aria-hidden="true">↗</b></span>
+      <span class="library-card-meta"><span>${escapeHtml(String(count))} Questions</span><span>${escapeHtml(difficulty)}</span><span>${escapeHtml(displayDate(entry.updatedAt || entry.createdAt))}</span><b class="library-card-arrow" aria-hidden="true">↗</b></span>
     </a>
   `;
 }
@@ -119,7 +114,7 @@ function cardMarkup(entry, index = 0) {
 class QuizLibrary {
   constructor(entries) {
     this.entries = entries;
-    this.pageSize = 9;
+    this.pageSize = 36;
     this.visibleLimit = this.pageSize;
     this.loadingMore = false;
     this.loadTimer = null;
@@ -258,3 +253,4 @@ async function start() {
 }
 
 start();
+

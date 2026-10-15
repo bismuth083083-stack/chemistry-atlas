@@ -1234,5 +1234,420 @@
       "chemical-potential"
     ],
     "source": "第八课：PChem1 lec78 2nd 3rd Laws2 课件"
+  },
+  {
+    "slug": "phase",
+    "zh": "相",
+    "en": "Phase",
+    "category": "纯物质相平衡",
+    "definition": "化学组成和物理状态均匀的物质部分。",
+    "expanded": "碎冰的块数不等于相数；相同晶体结构的冰属于同一相。冰和水共存为两相，不同晶型也可形成不同固相。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "相数与容器数不同",
+      "同一种物质可有多个固相"
+    ],
+    "confusions": "相不是简单的“固液气类别”；不同固体结构也需区分。",
+    "related": [
+      "phase-rule",
+      "phase-transition"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "phase-transition",
+    "zh": "相变",
+    "en": "Phase transition",
+    "category": "纯物质相平衡",
+    "definition": "物质由一种相转变为另一种相的过程。",
+    "expanded": "给定压力下的平衡转变温度使两相化学势相等。热力学给出方向和共存条件，能否快速观察到还取决于成核与动力学。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "相平衡要求μ相等",
+      "方向与速率分别判断"
+    ],
+    "confusions": "不要把自发趋势解释成立即发生。",
+    "related": [
+      "chemical-potential",
+      "metastable-phase",
+      "first-order-transition"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "phase-rule",
+    "zh": "Gibbs相律",
+    "en": "Gibbs phase rule",
+    "category": "纯物质相平衡",
+    "definition": "联系组分数、平衡相数和独立强度变量数的关系F=C−P+2。",
+    "expanded": "在通常温压模型中，纯物质C=1，所以单相区F=2，两相共存线F=1，三相点F=0。相份额和总量不计入此自由度。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "单组分F=3−P",
+      "相平衡约束减少自由度"
+    ],
+    "confusions": "压力p与相数P应采用不同符号；含空气的水体系未必单组分。",
+    "related": [
+      "phase",
+      "triple-point",
+      "coexistence-curve"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "coexistence-curve",
+    "zh": "相界线",
+    "en": "Coexistence curve / phase boundary",
+    "category": "纯物质相平衡",
+    "definition": "相图上两相化学势相等、可以平衡共存的温压组合曲线。",
+    "expanded": "沿共存线移动需保持dμα=dμβ，这给出温度与压力的联动关系。线的局部斜率由Clapeyron方程确定；不要将亚稳延拓与稳定边界混为一谈。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "两相线上通常F=1",
+      "不是任意独立改变温压"
+    ],
+    "confusions": "共存线上的dp/dT与单相恒压偏导属于不同路径。",
+    "related": [
+      "phase-rule",
+      "clapeyron-equation",
+      "triple-point"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "triple-point",
+    "zh": "三相点",
+    "en": "Triple point",
+    "category": "纯物质相平衡",
+    "definition": "纯物质三种相在特征温度与压力同时平衡共存的状态。",
+    "expanded": "对通常单组分温压体系，三相点F=0。不同三相组合可形成多个交点，例如水的多种高压冰组合；每个交点各自有确定温压。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "不一定都是固液气",
+      "水常见三相点273.16 K、约611.657 Pa"
+    ],
+    "confusions": "临界点不是三相点；总量与相份额仍可改变。",
+    "related": [
+      "phase-rule",
+      "critical-point",
+      "phase"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "vapour-pressure",
+    "zh": "饱和蒸气压",
+    "en": "Saturation vapour pressure",
+    "category": "纯物质相平衡",
+    "definition": "蒸气与其凝聚相达到平衡时，蒸气具有的压力。",
+    "expanded": "无其他气体时就是蒸气总压；存在惰性气体时须明确蒸气分压。沸腾温度由蒸气压与外压相匹配确定，压力修正还需考虑液体承压。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "随温度变化",
+      "共存曲线上的压力"
+    ],
+    "confusions": "把气相总压当作目标物蒸气分压，会误用化学势的压力关系。",
+    "related": [
+      "normal-boiling-point",
+      "clausius-clapeyron-equation",
+      "poynting-correction"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "normal-boiling-point",
+    "zh": "正常沸点",
+    "en": "Normal boiling point",
+    "category": "纯物质相平衡",
+    "definition": "纯液体饱和蒸气压等于1 atm时的温度。",
+    "expanded": "标准沸点对应1 bar。由于1 bar略低于1 atm，对蒸气压随温度上升的普通液体，标准沸点略低。沸点应与压力条件一起使用。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "正常取1 atm",
+      "标准取1 bar"
+    ],
+    "confusions": "固定体积密闭加热不能直接按固定大气压的沸腾路径解释。",
+    "related": [
+      "vapour-pressure",
+      "critical-point"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "metastable-phase",
+    "zh": "亚稳相",
+    "en": "Metastable phase",
+    "category": "纯物质相平衡",
+    "definition": "给定条件下不是最低G状态，却因转变能垒而可长时间保持的相。",
+    "expanded": "常温常压金刚石有转向石墨的热力学趋势，但键网络重排非常慢。过冷与过热也可形成亚稳分支，成核速率决定其持续时间。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "驱动力存在",
+      "动力学阻碍维持"
+    ],
+    "confusions": "两相长期同时存在不必是严格平衡共存。",
+    "related": [
+      "spontaneous-change",
+      "chemical-potential",
+      "phase-transition"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "supercritical-fluid",
+    "zh": "超临界流体",
+    "en": "Supercritical fluid",
+    "category": "纯物质相平衡",
+    "definition": "通常指温度和压力分别高于液气临界温度、临界压力的流体状态。",
+    "expanded": "超临界区域无普通液气分界，可连续连接液体样和气体样状态。仅高于Tc但低于pc的气体样状态不宜一概命名为超临界流体。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "无普通气液共存线",
+      "CO₂可用于萃取"
+    ],
+    "confusions": "临界点上两流体分支不可再按普通两相区处理。",
+    "related": [
+      "critical-point",
+      "coexistence-curve"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "superfluid",
+    "zh": "超流体",
+    "en": "Superfluid",
+    "category": "纯物质相平衡",
+    "definition": "具有无黏流动超流组分及相应量子集体性质的流体状态。",
+    "expanded": "⁴He的He-II具有超流组分，He-I是正常液体。饱和蒸气压附近λ转变约2.17 K；³He在更低温也有超流态，同位素统计性质不同。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "低温量子行为",
+      "⁴He转变处有λ型热容异常"
+    ],
+    "confusions": "不能把³He与⁴He相图或转变温度互换。",
+    "related": [
+      "lambda-transition",
+      "phase-transition"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "clapeyron-equation",
+    "zh": "Clapeyron方程",
+    "en": "Clapeyron equation",
+    "category": "纯物质相平衡",
+    "definition": "由共存两相化学势相等导出的相界线局部斜率关系。",
+    "expanded": "沿共存线dμα=dμβ，结合dμ=Vm dp−Sm dT，得到dp/dT等于ΔSm除以ΔVm；相平衡时也等于ΔHm除以TΔVm。相变量方向必须一致。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "描述共存曲线斜率",
+      "单位Pa·K⁻¹",
+      "正负由ΔS、ΔV共同决定"
+    ],
+    "confusions": "ΔS和ΔV均趋零的连续转变不可机械套0/0。",
+    "related": [
+      "coexistence-curve",
+      "clausius-clapeyron-equation",
+      "fusion-enthalpy"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "clausius-clapeyron-equation",
+    "zh": "Clausius–Clapeyron方程",
+    "en": "Clausius–Clapeyron equation",
+    "category": "纯物质相平衡",
+    "definition": "在理想蒸气且蒸气体积远大于凝聚相的近似下，联系蒸气压温度导数与相变焓的方程。",
+    "expanded": "d ln p/dT约为ΔvapHm除以RT²。积分成两点式还须假定相变焓近似恒定。以ln(p/pref)对1/T作图，斜率约−ΔHm/R。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "温度用K",
+      "压力比单位一致",
+      "近临界点需谨慎"
+    ],
+    "confusions": "它比一般Clapeyron关系多了体积与理想气体近似。",
+    "related": [
+      "clapeyron-equation",
+      "vapour-pressure",
+      "vaporization-enthalpy"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "poynting-correction",
+    "zh": "Poynting压力修正",
+    "en": "Poynting correction",
+    "category": "纯物质相平衡",
+    "definition": "描述凝聚相承压改变其化学势、进而影响相平衡蒸气活度的压力修正。",
+    "expanded": "固定T、液体近不可压缩、蒸气理想时，p=p*exp(Vm,ℓΔP除以RT)。ΔP是液体总压相对于参考压力的改变；气相非理想时需使用逸度。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "液体总压与蒸气分压不同",
+      "25℃水增压10 bar的修正约0.73%"
+    ],
+    "confusions": "惰性气体溶解或相互作用会超出简单模型。",
+    "related": [
+      "chemical-potential",
+      "vapour-pressure",
+      "fugacity"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "fusion-enthalpy",
+    "zh": "摩尔熔化焓",
+    "en": "Molar enthalpy of fusion",
+    "category": "纯物质相平衡",
+    "definition": "在给定相平衡条件下，一摩尔固体转为液体的焓差。",
+    "expanded": "通常为正，与熔化体积差共同决定熔化线斜率；低温³He存在负熔化焓的特殊范围。相平衡时ΔfusSm=ΔfusHm除以Tf。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "应注明温压",
+      "普通冰附近约6 kJ·mol⁻¹"
+    ],
+    "confusions": "熔化焓不是物质在全部条件下的固定常数。",
+    "related": [
+      "clapeyron-equation",
+      "first-order-transition"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "vaporization-enthalpy",
+    "zh": "摩尔汽化焓",
+    "en": "Molar enthalpy of vaporization",
+    "category": "纯物质相平衡",
+    "definition": "在给定条件下，一摩尔液体转为蒸气的焓差。",
+    "expanded": "常用来估计蒸气压温度依赖和减压沸点。积分近似要求ΔvapHm在区间内变化不大；临界点附近潜热趋于零，常数外推失效。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "通常随温度改变",
+      "与ΔvapSm及转变温度关联"
+    ],
+    "confusions": "Trouton规则仅作经验估计，不应替代具体给定数值。",
+    "related": [
+      "clausius-clapeyron-equation",
+      "trouton-rule"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "sublimation",
+    "zh": "升华",
+    "en": "Sublimation",
+    "category": "纯物质相平衡",
+    "definition": "固体直接转为气相的相变。",
+    "expanded": "CO₂在1 atm没有稳定液体区，干冰因此升华。近三相点且熔化焓为正时，升华焓比汽化焓大，其对数蒸气压温度斜率通常更大。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "properties": [
+      "不经过稳定液态",
+      "ΔsubH=ΔfusH+ΔvapH须在同温比较"
+    ],
+    "confusions": "不能只凭焓大小比较任意两个不同温压点的dp/dT。",
+    "related": [
+      "vapour-pressure",
+      "triple-point",
+      "clausius-clapeyron-equation"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "first-order-transition",
+    "zh": "一阶相变",
+    "en": "First-order phase transition",
+    "category": "纯物质相平衡",
+    "definition": "自由能连续而至少一种相关一阶导数出现有限不连续的相变。",
+    "expanded": "温压描述中Gm的一阶导数为−Sm和Vm，普通熔化、汽化有熵及体积跃变和潜热。恒压吸热时可在相变过程中保持温度，不能将这种潜热与两侧单相热容混淆。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "常见熔化和汽化",
+      "可有有限潜热"
+    ],
+    "confusions": "有限分辨率下的热容峰不单独证明转变阶数。",
+    "related": [
+      "phase-transition",
+      "continuous-transition",
+      "latent-heat"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "continuous-transition",
+    "zh": "连续相变",
+    "en": "Continuous phase transition",
+    "category": "纯物质相平衡",
+    "definition": "无有限一阶自由能导数跃变、但更高阶响应出现非解析行为的相变。",
+    "expanded": "经典Ehrenfest二阶模型是一阶导数连续而二阶导数有有限跳变的情形。现代连续转变还包括临界尖峰或发散，不能要求每一个连续相变Cp都无限。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "常无有限潜热",
+      "可有热容跳变或临界异常"
+    ],
+    "confusions": "对称性改变不自动确定其阶数，须核对材料和条件。",
+    "related": [
+      "first-order-transition",
+      "lambda-transition"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "lambda-transition",
+    "zh": "λ相变",
+    "en": "Lambda transition",
+    "category": "纯物质相平衡",
+    "definition": "以转变附近热容出现λ型异常为特征的连续转变现象。",
+    "expanded": "⁴He正常液体与超流He-II之间的转变是典型例子；一些合金的有序–无序变化也出现λ型热容。尖峰由响应与涨落发展而来，不能简单等同一阶潜热峰。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "以热容曲线形状命名",
+      "⁴He是典型例子"
+    ],
+    "confusions": "经典有限二阶跳变式不一定能处理所有临界奇异行为。",
+    "related": [
+      "superfluid",
+      "continuous-transition",
+      "heat-capacity"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "latent-heat",
+    "zh": "潜热",
+    "en": "Latent heat",
+    "category": "纯物质相平衡",
+    "definition": "相变中在转变温度下吸收或释放而不直接表现为温度升高的热量。",
+    "expanded": "对平衡一阶转变，摩尔潜热为TΔSm并等于相变焓。有限样品中热量主要改变两相份额；仪器记录的峰形还受加热速率与响应影响。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "与相变熵关联",
+      "改变相份额而非仅升温"
+    ],
+    "confusions": "形式上的dq/dT奇异性不表示全部单相Cp都无限。",
+    "related": [
+      "first-order-transition",
+      "entropy",
+      "heat-capacity"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
+  },
+  {
+    "slug": "ehrenfest-classification",
+    "zh": "Ehrenfest相变分类",
+    "en": "Ehrenfest classification",
+    "category": "纯物质相平衡",
+    "definition": "以自由能中最低阶不连续导数的阶数给相变分级的历史分类方案。",
+    "expanded": "一阶对应熵或体积等一阶导数跃变；经典二阶对应一阶连续、相关二阶响应跳变。现代临界行为可能不适合简单有限跳变分类，应保留其适用边界。 <a href=\"lesson-10.html\">返回本课笔记</a>",
+    "properties": [
+      "导数连续性是核心",
+      "二阶不等于必须Cp无限"
+    ],
+    "confusions": "只看晶体图或热容峰形不够，需热力学证据。",
+    "related": [
+      "first-order-transition",
+      "continuous-transition",
+      "lambda-transition"
+    ],
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
+    "updated": "2026-10-15"
   }
 ]

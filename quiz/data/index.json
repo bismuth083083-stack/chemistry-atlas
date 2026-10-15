@@ -921,6 +921,66 @@
       ],
       "path": "ana-l08.json",
       "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L09",
+      "title": "相图与相的稳定性",
+      "description": "对应新课件与笔记的22题练习，包含基本概念、公式条件、推导和计算。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 9,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lecture 9 · Phase diagrams and phase stability",
+      "lesson": "Phase diagrams and phase stability",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "phase equilibrium",
+        "thermodynamics"
+      ],
+      "knowledgePoints": [
+        "chemical potential",
+        "phase diagrams"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/physical/dist/lesson-09.html"
+      ],
+      "path": "pchem-l09.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L10",
+      "title": "相界线、Clapeyron方程与相变类型",
+      "description": "对应新课件与笔记的22题练习，包含基本概念、公式条件、推导和计算。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 10,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lecture 10 · Phase boundaries and phase transitions",
+      "lesson": "Phase boundaries and phase transitions",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "phase equilibrium",
+        "thermodynamics"
+      ],
+      "knowledgePoints": [
+        "Clapeyron equation",
+        "Clausius–Clapeyron equation",
+        "Poynting correction",
+        "phase transitions"
+      ],
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "relatedNotes": [
+        "/physical/dist/lesson-10.html"
+      ],
+      "path": "pchem-l10.json",
+      "mode": "fixed"
     }
   ]
 }

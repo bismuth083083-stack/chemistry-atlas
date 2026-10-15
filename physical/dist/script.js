@@ -13,6 +13,28 @@ async function getTerms(){const r=await fetch('data/terms.json');return r.json()
 function termRow(t){return `<a class="term-table row" href="term.html?slug=${encodeURIComponent(t.slug)}"><strong>${t.zh}</strong><span>${t.en}</span><span>${t.category}</span><span>${t.related.length}</span></a>`}
 async function loadTerms(){const terms=await getTerms();const list=document.querySelector('#term-list');document.querySelector('#term-count').textContent=terms.length;const render=()=>{const q=(termSearch?.value||'').trim().toLowerCase();const shown=terms.filter(t=>[t.zh,t.en,t.category,...(t.properties||[])].join(' ').toLowerCase().includes(q));list.className=shown.length?'':'table-empty';list.innerHTML=shown.length?shown.map(termRow).join(''):'<b>没有匹配词条</b><p>尝试中文名、英文名或分类。</p>'};termSearch?.addEventListener('input',render);render()}
 const TERM_IMAGES={
+"phase":["lecture-09-10/water-phase.webp", "相的课件图示", "PDF第8页"],
+"phase-transition":["lecture-09-10/mu-temperature.webp", "相变的课件图示", "PDF第2页"],
+"phase-rule":["lecture-09-10/water-phase.webp", "Gibbs相律的课件图示", "PDF第8页"],
+"coexistence-curve":["lecture-09-10/clapeyron-derivation.webp", "相界线的课件图示", "PDF第17页"],
+"triple-point":["lecture-09-10/water-freezing.webp", "三相点的课件图示", "PDF第8页"],
+"vapour-pressure":["lecture-09-10/critical-boiling.webp", "饱和蒸气压的课件图示", "PDF第6页"],
+"normal-boiling-point":["lecture-09-10/critical-boiling.webp", "正常沸点的课件图示", "PDF第6页"],
+"metastable-phase":["lecture-09-10/carbon-metastability.webp", "亚稳相的课件图示", "PDF第4页"],
+"supercritical-fluid":["lecture-09-10/co2-phase.webp", "超临界流体的课件图示", "PDF第10页"],
+"superfluid":["lecture-09-10/helium-phase.webp", "超流体的课件图示", "PDF第11页"],
+"clapeyron-equation":["lecture-09-10/clapeyron-derivation.webp", "Clapeyron方程的课件图示", "PDF第17页"],
+"clausius-clapeyron-equation":["lecture-09-10/sublimation-curve.webp", "Clausius–Clapeyron方程的课件图示", "PDF第19页"],
+"poynting-correction":["lecture-09-10/poynting-derivation.webp", "Poynting压力修正的课件图示", "PDF第14页"],
+"fusion-enthalpy":["lecture-09-10/pressure-melting.webp", "摩尔熔化焓的课件图示", "PDF第13页"],
+"vaporization-enthalpy":["lecture-09-10/sublimation-curve.webp", "摩尔汽化焓的课件图示", "PDF第19页"],
+"sublimation":["lecture-09-10/co2-phase.webp", "升华的课件图示", "PDF第10页"],
+"first-order-transition":["lecture-09-10/transition-classification.webp", "一阶相变的课件图示", "PDF第21页"],
+"continuous-transition":["lecture-09-10/transition-classification.webp", "连续相变的课件图示", "PDF第21页"],
+"lambda-transition":["lecture-09-10/lambda-transition.webp", "λ相变的课件图示", "PDF第22页"],
+"latent-heat":["lecture-09-10/transition-classification.webp", "潜热的课件图示", "PDF第21页"],
+"ehrenfest-classification":["lecture-09-10/transition-classification.webp", "Ehrenfest相变分类的课件图示", "PDF第21页"],
+
   'second-law':['lecture-07/clausius-refrigerator.webp','第二定律两种表述对应的不可能过程与可行过程：左图热由低温流向高温且无功耗，违反第二定律；右图有外部功输入，可行','PChem1 lec78 2nd Law1，第 3 页'],
   'heat-engine':['lecture-07/heat-engine.webp','热机从高温热源吸热，一部分转化为功，其余排入低温热源','PChem1 lec78 2nd Law1，第 2 页'],
   'heat-engine-efficiency':['lecture-07/heat-engine-accounting.webp','热机循环的能量记账：吸热 +20、做功 5、排热 −15，三者满足 q_h + q_c = −w，效率小于 1','PChem1 lec78 2nd Law1，第 10 页'],
@@ -51,3 +73,4 @@ const TERM_IMAGES={
 };
 async function loadTermDetail(){const slug=new URLSearchParams(location.search).get('slug');if(!slug)return;const terms=await getTerms();const t=terms.find(x=>x.slug===slug);if(!t)return;document.title=t.zh+' · 物理化学知识库';const related=t.related.map(s=>terms.find(x=>x.slug===s)).filter(Boolean);const image=TERM_IMAGES[slug];const figure=image?`<figure class="term-figure"><img src="assets/${image[0]}" alt="${image[1]}" loading="eager" decoding="async"><figcaption>${image[1]}<small>图源：${image[2]}</small></figcaption></figure>`:'';document.querySelector('#term-detail').className='term-detail';document.querySelector('#term-detail').innerHTML=`<header><p class="eyebrow">${t.category}</p><h1>${t.zh}</h1><p class="english">${t.en}</p></header>${figure}<section><h2>定义</h2><p class="lead">${t.definition}</p></section><section><h2>详细说明</h2><p>${t.expanded}</p></section><section><h2>主要性质</h2><ul>${t.properties.map(x=>'<li>'+x+'</li>').join('')}</ul></section><section class="note"><h2>辨析与常见误区</h2><p>${t.confusions}</p></section><section><h2>相关词条</h2><div class="related">${related.map(x=>'<a href="term.html?slug='+x.slug+'">'+x.zh+'<small>'+x.en+'</small></a>').join('')}</div></section><footer class="source">笔记来源：${t.source}</footer>`}
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
+

@@ -1,0 +1,647 @@
+{
+  "id": "PCHEM-L09",
+  "title": "相图与相的稳定性",
+  "description": "对应新课件与笔记的22题练习，包含基本概念、公式条件、推导和计算。",
+  "subject": "physical-chemistry",
+  "chapter": "Lecture 9 · Phase diagrams and phase stability",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "许多冰块与一杯液态纯水在平衡时共存，共有多少种相？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "相数按均匀组成和物理状态区分，不按冰块数计算。冰和液水为两相。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "冰块数加1"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "恒温恒压下，纯物质的稳定相对应哪项？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "G=nμ，同量纯物质在恒温恒压下稳定态使G最低。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "化学势最低"
+        },
+        {
+          "id": "B",
+          "text": "化学势最高"
+        },
+        {
+          "id": "C",
+          "text": "摩尔熵一定最小"
+        },
+        {
+          "id": "D",
+          "text": "摩尔体积最大"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "纯物质三相平衡的自由度F是多少？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "F=C−P+2=1−3+2=0。三相点的温度和压力固定。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "正常沸点（normal boiling point）采用的外压是？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "正常沸点以1 atm为基准；标准沸点通常以1 bar为基准，二者不能混用。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1 atm"
+        },
+        {
+          "id": "B",
+          "text": "1 bar"
+        },
+        {
+          "id": "C",
+          "text": "任意压力"
+        },
+        {
+          "id": "D",
+          "text": "611.657 Pa"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "1 atm下干冰受热时的平衡相变通常是？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "CO₂三相点压力约5.11 atm，高于1 atm，故常压下无稳定液态区。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "升华"
+        },
+        {
+          "id": "B",
+          "text": "液化"
+        },
+        {
+          "id": "C",
+          "text": "先熔化再汽化"
+        },
+        {
+          "id": "D",
+          "text": "凝华"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "关于纯物质平衡相图，哪些正确？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "平衡条件是化学势相等，不是绝对值为零。纯物质单相F=2，两相F=1，三相F=0。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "共存曲线上的两相化学势都必须为零"
+        },
+        {
+          "id": "B",
+          "text": "每个稳定单相区自由度为2"
+        },
+        {
+          "id": "C",
+          "text": "三相点三相化学势相等"
+        },
+        {
+          "id": "D",
+          "text": "共存曲线上两相化学势相等"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "在恒压μ–T图上，某一相曲线的斜率等于？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "dμ=Vₘdp−SₘdT，因此(∂μ/∂T)p=−Sₘ。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Sₘ"
+        },
+        {
+          "id": "B",
+          "text": "Vₘ"
+        },
+        {
+          "id": "C",
+          "text": "−Sₘ"
+        },
+        {
+          "id": "D",
+          "text": "−Vₘ"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "通常气相的μ随T增加下降更快，直接原因是？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "μ–T斜率是−Sₘ；较大的Sₘ对应更负的斜率。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "气相压力总为1 atm"
+        },
+        {
+          "id": "B",
+          "text": "气相热容一定为零"
+        },
+        {
+          "id": "C",
+          "text": "气相摩尔体积一定等于零"
+        },
+        {
+          "id": "D",
+          "text": "气相摩尔熵通常较大"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "金刚石在常温常压下长期存在，说明？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "热力学稳定性与动力学速率不同。较高化学势的亚稳态也可因成核或重排障碍持续存在。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "动力学障碍可使亚稳相长期保留"
+        },
+        {
+          "id": "B",
+          "text": "稳定相图能直接预测转化时间"
+        },
+        {
+          "id": "C",
+          "text": "金刚石化学势一定更低"
+        },
+        {
+          "id": "D",
+          "text": "金刚石与石墨必定处于两相平衡"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "同一种物质的不同晶体结构，可以对应不同的固相。",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "相以均匀状态区分；不同晶体结构可以构成不同固相，不因化学式相同就合并为一个相。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "水的普通冰–液水相界线在p–T图上斜率为负，主要是因为？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "普通冰熔化ΔVₘ<0，而ΔHₘ>0，所以dp/dT=ΔHₘ/(TΔVₘ)<0。高压冰相须另行分析。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "熔化使摩尔体积减小"
+        },
+        {
+          "id": "B",
+          "text": "液水摩尔熵小于冰"
+        },
+        {
+          "id": "C",
+          "text": "熔化焓为负"
+        },
+        {
+          "id": "D",
+          "text": "所有固体熔化都缩小体积"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "水的液–气临界温度和压力约为？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "水临界点为647.096 K、22.064 MPa；0.01 ℃与611.657 Pa描述三相点。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2.17 K、1 atm"
+        },
+        {
+          "id": "B",
+          "text": "0.01 ℃、611.657 Pa"
+        },
+        {
+          "id": "C",
+          "text": "373.946 ℃、22.064 MPa"
+        },
+        {
+          "id": "D",
+          "text": "100 ℃、1 atm"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "液–气临界点的核心特征是？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "临界点是液–气共存曲线终点；它与三相点不同。高于临界温度不能仅靠加压获得通常液–气分界。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有相的化学势为零"
+        },
+        {
+          "id": "B",
+          "text": "固、液、气三相共存"
+        },
+        {
+          "id": "C",
+          "text": "任意温度下加压都可液化"
+        },
+        {
+          "id": "D",
+          "text": "液、气两相的区别消失"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于⁴He，哪些表述正确？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "⁴He约2.17 K的λ转变与超流有关，固化需要较高压力。³He与⁴He的量子统计不同。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "超流与普通液态有不同物理性质"
+        },
+        {
+          "id": "B",
+          "text": "⁴He与³He的相图和统计性质完全相同"
+        },
+        {
+          "id": "C",
+          "text": "达到固态一般需要施加较高压力"
+        },
+        {
+          "id": "D",
+          "text": "低压下约2.17 K出现超流转变"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "在恒温恒压下，α相转为β相的dG=(μβ−μα)dn。若dn>0，要自发进行，应满足μβ____μα（填比较符号）。",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "自发变化要求dG<0，因此μβ<μα。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "answer": "<",
+      "acceptableAnswers": [
+        "<",
+        "＜",
+        "小于"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "纯物质两相共存时，在温度和压力中任选一个后，另一个通常如何？",
+      "points": 2,
+      "difficulty": "hard",
+      "explanation": "F=1，只能独立改变一个强度变量。沿共存曲线T和p相关。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必须达到临界值"
+        },
+        {
+          "id": "B",
+          "text": "由共存关系确定"
+        },
+        {
+          "id": "C",
+          "text": "必须为零"
+        },
+        {
+          "id": "D",
+          "text": "仍可独立任取"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "使用纯物质相律F=3−P前，应注意哪些条件？",
+      "points": 2,
+      "difficulty": "hard",
+      "explanation": "相律需明确组分数、平衡条件与外场变量。空气或溶质加入后一般不能直接套纯物质C=1。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所计相处于相平衡"
+        },
+        {
+          "id": "B",
+          "text": "通常只计温度与压力等常规变量"
+        },
+        {
+          "id": "C",
+          "text": "加入空气后仍一律按单组分处理"
+        },
+        {
+          "id": "D",
+          "text": "体系确实只有一个独立组分"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "过冷液体尚未结晶，最合理的解释是？",
+      "points": 2,
+      "difficulty": "hard",
+      "explanation": "过冷液体可处于亚稳区；相图判断稳定相，成核动力学决定是否立刻转变。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "液体一定是最低G相"
+        },
+        {
+          "id": "B",
+          "text": "低G固相已更稳定，但成核可存在障碍"
+        },
+        {
+          "id": "C",
+          "text": "过冷不属于亚稳现象"
+        },
+        {
+          "id": "D",
+          "text": "温度下降使所有相化学势完全相同"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "若某稳定相Sₘ>0且Cₚ,ₘ>0，其恒压μ–T曲线通常？",
+      "points": 2,
+      "difficulty": "hard",
+      "explanation": "一阶导数−Sₘ<0，二阶导数−Cₚ,ₘ/T<0。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "斜率为正，二阶导数为零"
+        },
+        {
+          "id": "B",
+          "text": "斜率为负，二阶导数为负"
+        },
+        {
+          "id": "C",
+          "text": "斜率为正，二阶导数为正"
+        },
+        {
+          "id": "D",
+          "text": "斜率为零，二阶导数为正"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "将纯物质置于刚性密闭容器加热，要使路径通过液–气临界点，还需关注什么？",
+      "points": 3,
+      "difficulty": "challenging",
+      "explanation": "密闭刚性容器的平均密度固定，温度达到T꜀不保证同时达到p꜀及临界密度。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "容器体积无需考虑"
+        },
+        {
+          "id": "B",
+          "text": "总体密度是否与临界路径匹配"
+        },
+        {
+          "id": "C",
+          "text": "只要T达到T꜀必定通过临界点"
+        },
+        {
+          "id": "D",
+          "text": "只要初始有两相便必定通过临界点"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "任何满足T>T꜀的状态都可以直接称为超临界流体，无需考虑压力。",
+      "points": 3,
+      "difficulty": "challenging",
+      "explanation": "通常所说超临界流体要求T>T꜀且p>p꜀；仅高温不能确定超临界区域。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "恒温恒压时，μβ−μα=−200 J mol⁻¹，α转为β的量dn=0.030 mol。dG=____ J（填数值）。",
+      "points": 3,
+      "difficulty": "challenging",
+      "explanation": "dG=(−200)×0.030=−6 J，自发方向使G降低。",
+      "tags": [
+        "pure substances",
+        "Phase diagrams and phase stability"
+      ],
+      "answer": "-6",
+      "acceptableAnswers": [
+        "-6",
+        "−6",
+        "-6.0",
+        "−6.0"
+      ]
+    }
+  ]
+}

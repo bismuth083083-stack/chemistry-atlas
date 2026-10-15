@@ -1,0 +1,649 @@
+{
+  "id": "PCHEM-L10",
+  "title": "相界线、Clapeyron方程与相变类型",
+  "description": "对应新课件与笔记的22题练习，包含基本概念、公式条件、推导和计算。",
+  "subject": "physical-chemistry",
+  "chapter": "Lecture 10 · Phase boundaries and phase transitions",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "纯物质的化学势微分是？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "由dG=Vdp−SdT及μ=Gₘ得到摩尔形式。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "dμ=Sₘdp−VₘdT"
+        },
+        {
+          "id": "B",
+          "text": "dμ=−Vₘdp+SₘdT"
+        },
+        {
+          "id": "C",
+          "text": "dμ=VₘdT−Sₘdp"
+        },
+        {
+          "id": "D",
+          "text": "dμ=Vₘdp−SₘdT"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "恒温下化学势对压力的导数为？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "(∂μ/∂p)T=Vₘ。通常Vₘ>0，增压使该相μ升高。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−Sₘ"
+        },
+        {
+          "id": "B",
+          "text": "−Vₘ"
+        },
+        {
+          "id": "C",
+          "text": "Vₘ"
+        },
+        {
+          "id": "D",
+          "text": "Cₚ,ₘ"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "Clapeyron方程给出的相界斜率是？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "沿共存线两相dμ相等，可得ΔVₘdp=ΔSₘdT，再用ΔHₘ=TΔSₘ。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "dp/dT=ΔHₘ/(TΔVₘ)"
+        },
+        {
+          "id": "B",
+          "text": "dp/dT=TΔVₘ/ΔHₘ"
+        },
+        {
+          "id": "C",
+          "text": "dp/dT=ΔHₘΔVₘ/T"
+        },
+        {
+          "id": "D",
+          "text": "dp/dT=−ΔHₘ/(TΔVₘ)"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "Clapeyron式dp/dT在SI制中的单位为？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "ΔHₘ/(TΔVₘ)单位为(J mol⁻¹)/(K m³ mol⁻¹)=Pa K⁻¹。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "K Pa⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "J mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "Pa K⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "Pa mol⁻¹"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "1 cm³ mol⁻¹换算成m³ mol⁻¹为？",
+      "points": 1,
+      "difficulty": "easy",
+      "explanation": "1 cm=10⁻² m，因此1 cm³=10⁻⁶ m³。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "10⁻⁶"
+        },
+        {
+          "id": "B",
+          "text": "10³"
+        },
+        {
+          "id": "C",
+          "text": "10⁻³"
+        },
+        {
+          "id": "D",
+          "text": "10⁶"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "将汽化Clapeyron式近似为常用Clausius–Clapeyron微分式，需要哪些条件？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "气体理想且Vg≫Vℓ时，ΔV≈RT/p。临界点两相体积差消失，该近似失效。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "气相摩尔体积远大于液相"
+        },
+        {
+          "id": "B",
+          "text": "液气摩尔体积在临界点仍相差极大"
+        },
+        {
+          "id": "C",
+          "text": "蒸气可近似为理想气体"
+        },
+        {
+          "id": "D",
+          "text": "用Vg≈RT/p近似相变体积"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "积分得到ln(p₂/p₁)=−ΔHₘ/R(1/T₂−1/T₁)，还新增了哪项常用近似？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "积分把ΔHₘ提出积分号，要求其在所用温区变化不显著；温度须使用K。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "液相体积大于气相"
+        },
+        {
+          "id": "B",
+          "text": "R随温度线性增加"
+        },
+        {
+          "id": "C",
+          "text": "温度可以直接使用摄氏度"
+        },
+        {
+          "id": "D",
+          "text": "积分温区ΔHₘ近似恒定"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "蒸气压图中ln p对1/T的近似直线斜率为？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "由积分式整理为ln p=常数−(ΔvapHₘ/R)(1/T)。严格对数应理解为相对于参考压力的无量纲量。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−R/ΔvapHₘ"
+        },
+        {
+          "id": "B",
+          "text": "−ΔvapHₘ/R"
+        },
+        {
+          "id": "C",
+          "text": "ΔvapHₘ/R"
+        },
+        {
+          "id": "D",
+          "text": "ΔvapHₘ"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "普通冰熔化ΔVₘ<0且ΔHₘ>0，小范围增压会？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "dT/dp=TΔVₘ/ΔHₘ<0，所以局部增压降低熔点。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必定不改变熔点"
+        },
+        {
+          "id": "B",
+          "text": "使熔化焓变为零"
+        },
+        {
+          "id": "C",
+          "text": "降低熔点"
+        },
+        {
+          "id": "D",
+          "text": "升高熔点"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "在积分Clausius–Clapeyron式中，可以将T₁、T₂直接代入摄氏温度而结果不变。",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "倒数温度必须使用绝对温度K。摄氏温度带加性偏移，不能替换1/T。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "Poynting修正中的p与Pℓ应分别理解为？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "有加压气体时，总压与目标物蒸气分压不同。平衡比较的是同一物质两相化学势。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "液体密度与气体密度"
+        },
+        {
+          "id": "B",
+          "text": "目标物蒸气分压与液体承受的总压力"
+        },
+        {
+          "id": "C",
+          "text": "都只表示空气分压"
+        },
+        {
+          "id": "D",
+          "text": "都必定等于目标物蒸气压"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "25 ℃下液水Vₘ=18.1 cm³ mol⁻¹，液体压力增加10 bar。理想蒸气、近不可压缩模型给出的蒸气分压相对增量约为？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "x=VₘΔP/(RT)=18.1×10⁻⁶×10⁶/(8.314×298.15)≈0.00730，exp(x)−1≈0.733%。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "73%"
+        },
+        {
+          "id": "B",
+          "text": "7.3倍"
+        },
+        {
+          "id": "C",
+          "text": "0.73%"
+        },
+        {
+          "id": "D",
+          "text": "0.0073%"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "Trouton规则给出许多非缔合液体在正常沸点的汽化熵约为？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "这是经验近似，不是普适常数；强氢键缔合液体常明显偏离。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "8.5 J mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "85 J mol⁻¹ K⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "85 kJ mol⁻¹ K⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "0 J mol⁻¹ K⁻¹"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于相变分类，哪些说法正确？",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "一级转变有G的一阶导数不连续；连续转变无有限潜热，一阶导数连续，较高导数可不连续或奇异。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "连续转变的热容可跳变或出现奇异性"
+        },
+        {
+          "id": "B",
+          "text": "连续转变的熵和体积可连续"
+        },
+        {
+          "id": "C",
+          "text": "所有相变的热容都必须是普通意义下的无限大"
+        },
+        {
+          "id": "D",
+          "text": "一级转变通常有潜热"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "普通冰在273.15 K熔化，ΔfusVₘ=−1.6 cm³ mol⁻¹，ΔfusHₘ=6008 J mol⁻¹。每增加1 bar压力，熔点局部约下降____ mK（保留两位小数）。",
+      "points": 1,
+      "difficulty": "medium",
+      "explanation": "ΔT=TΔVΔp/ΔH=273.15×(−1.6×10⁻⁶)×10⁵/6008 K≈−0.00727 K，下降量7.27 mK。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "answer": "7.27",
+      "acceptableAnswers": [
+        "7.27",
+        "7.3",
+        "7.274"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "乙醇正常沸点351.45 K、汽化焓38.9 kJ mol⁻¹；取焓恒定，估计298.15 K蒸气压最接近？",
+      "points": 2,
+      "difficulty": "hard",
+      "explanation": "ln(p/101325)=−38900/8.314(1/298.15−1/351.45)，得p约9.38×10³ Pa。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "9.38 kPa"
+        },
+        {
+          "id": "B",
+          "text": "101.3 kPa"
+        },
+        {
+          "id": "C",
+          "text": "938 MPa"
+        },
+        {
+          "id": "D",
+          "text": "0.938 Pa"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "推导Clapeyron方程时，哪些步骤正确？",
+      "points": 2,
+      "difficulty": "hard",
+      "explanation": "两相平衡条件与一致的相变方向保证斜率符号正确。ΔV为零或连续转变时需取合适极限或使用其他关系。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "沿共存线使用dμα=dμβ"
+        },
+        {
+          "id": "B",
+          "text": "利用ΔGₘ=0得到ΔHₘ=TΔSₘ"
+        },
+        {
+          "id": "C",
+          "text": "ΔH与ΔV采用同一相变方向"
+        },
+        {
+          "id": "D",
+          "text": "把ΔV设为零后仍直接除以它求普通斜率"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "若熔化ΔHₘ和ΔVₘ近似恒定，对Clapeyron式积分得到？",
+      "points": 2,
+      "difficulty": "hard",
+      "explanation": "dp=(ΔHₘ/ΔVₘ)dT/T；积分产生ln(T/T₀)，不是温差本身。小温差时再作线性化。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "p−p₀=(ΔHₘ/ΔVₘ)ln(T/T₀)"
+        },
+        {
+          "id": "B",
+          "text": "p−p₀=(ΔVₘ/ΔHₘ)ln(T/T₀)"
+        },
+        {
+          "id": "C",
+          "text": "ln(p/p₀)=ΔHₘ(T−T₀)/ΔVₘ"
+        },
+        {
+          "id": "D",
+          "text": "pT=p₀T₀"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "乙醇38.9 kJ mol⁻¹除以351.45 K约为110.7 J mol⁻¹ K⁻¹，高于Trouton常见值，主要提示？",
+      "points": 2,
+      "difficulty": "hard",
+      "explanation": "乙醇具有氢键作用；Trouton规则主要适用于许多非缔合液体，不能强制套用。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "气体常数应改为110.7"
+        },
+        {
+          "id": "B",
+          "text": "正常沸点必须用摄氏度"
+        },
+        {
+          "id": "C",
+          "text": "任何计算结果都必须强制修正为85"
+        },
+        {
+          "id": "D",
+          "text": "氢键缔合等作用使经验规则偏离"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "连续转变中ΔSₘ=ΔVₘ=0，直接代入ΔHₘ/(TΔVₘ)得到0/0，合理处理是？",
+      "points": 3,
+      "difficulty": "challenging",
+      "explanation": "0/0不能确定斜率。有限跃变与一阶导数连续等条件满足时，可由Ehrenfest关系求斜率；λ奇异性不能机械套用。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "判定斜率必定无限大"
+        },
+        {
+          "id": "B",
+          "text": "判定共存线斜率必定为零"
+        },
+        {
+          "id": "C",
+          "text": "将零体积差替换为1"
+        },
+        {
+          "id": "D",
+          "text": "考察极限或在条件满足时使用Ehrenfest关系"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "加压不溶气体使液体承压后，目标物蒸气分压略升高，不能据此断言同一外压下沸点下降。",
+      "points": 3,
+      "difficulty": "challenging",
+      "explanation": "Poynting修正讨论固定温度的分压；沸腾须达到外压条件。外压提高通常仍使沸点升高，两问题的控制条件不同。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "连续转变在有限跃变等适用条件下，Δα=2.0×10⁻⁴ K⁻¹，ΔκT=1.0×10⁻¹⁰ Pa⁻¹；由Ehrenfest关系dp/dT=Δα/ΔκT得____ Pa K⁻¹。",
+      "points": 3,
+      "difficulty": "challenging",
+      "explanation": "(2.0×10⁻⁴)/(1.0×10⁻¹⁰)=2.0×10⁶ Pa K⁻¹。该关系需满足连续转变及相应导数跃变的适用条件。",
+      "tags": [
+        "pure substances",
+        "Phase boundaries and phase transitions"
+      ],
+      "answer": "2000000",
+      "acceptableAnswers": [
+        "2000000",
+        "2e6",
+        "2E6",
+        "2×10^6",
+        "2.0×10^6",
+        "2000000.0"
+      ]
+    }
+  ]
+}

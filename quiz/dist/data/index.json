@@ -641,6 +641,7 @@
       "lesson": "VSEPR, molecular structure, and point groups",
       "topic": "Randomized symmetry challenge bank",
       "questionCount": 120,
+      "practiceQuestionCount": 22,
       "difficulty": "advanced",
       "tags": [
         "VSEPR",
@@ -863,6 +864,7 @@
       "lesson": "Amino acid identifiers: name, English name, three-letter and one-letter codes, structure",
       "topic": "Randomized amino-acid identification bank",
       "questionCount": 218,
+      "practiceQuestionCount": 22,
       "difficulty": "intermediate",
       "tags": [
         "amino acids",

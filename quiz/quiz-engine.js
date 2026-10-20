@@ -102,9 +102,20 @@ async function loadQuiz() {
   return quiz;
 }
 
-function selectQuestions(quiz) {
+function hasAnswer(answer) {
+  return Array.isArray(answer) ? answer.length > 0 : answer !== undefined && answer !== null && String(answer).trim() !== '';
+}
+
+function selectQuestions(quiz, savedState = null) {
   const selection = quiz.selection || { mode: 'fixed' };
   if (selection.mode !== 'question-bank') return [...quiz.questions];
+  const byId = new Map(quiz.questions.map((question) => [question.id, question]));
+  const storedIds = Array.isArray(savedState?.selectedQuestionIds) ? savedState.selectedQuestionIds
+    : Array.isArray(savedState?.result?.details) ? savedState.result.details.map((detail) => detail.questionId) : [];
+  if (storedIds.length && new Set(storedIds).size === storedIds.length && storedIds.every((id) => byId.has(id))) {
+    return storedIds.map((id) => byId.get(id));
+  }
+  const answeredIds = new Set(Object.entries(savedState?.answers || {}).filter(([, answer]) => hasAnswer(answer)).map(([id]) => id));
   let candidates = [...quiz.questions];
   ['chapter', 'difficulty'].forEach((filter) => { if (selection[filter]) candidates = candidates.filter((question) => question[filter] === selection[filter]); });
   if (Array.isArray(selection.tags) && selection.tags.length) candidates = candidates.filter((question) => selection.tags.every((tag) => question.tags.includes(tag)));
@@ -119,7 +130,9 @@ function selectQuestions(quiz) {
   const counts = selection.counts || {};
   Object.entries(counts).forEach(([type, count]) => {
     const pool = shuffle(candidates.filter((question) => question.type === type));
-    chosen.push(...pool.slice(0, Number(count)));
+    const previouslyAnswered = pool.filter((question) => answeredIds.has(question.id)).slice(0, Number(count));
+    const remaining = pool.filter((question) => !answeredIds.has(question.id));
+    chosen.push(...previouslyAnswered, ...remaining.slice(0, Math.max(0, Number(count) - previouslyAnswered.length)));
   });
   return chosen.length ? shuffle(chosen) : [...quiz.questions];
 }
@@ -127,9 +140,16 @@ function selectQuestions(quiz) {
 class QuizSession {
   constructor(quiz) {
     this.quiz = quiz;
-    this.questions = selectQuestions(quiz);
     this.storageKey = `${STORAGE_PREFIX}${escapeKey(quiz.id)}.v1`;
     this.state = this.restore() || { answers: {}, currentIndex: 0, submitted: false, result: null };
+    this.questions = selectQuestions(quiz, this.state);
+    if (quiz.selection?.mode === 'question-bank') {
+      const selectedQuestionIds = this.questions.map((question) => question.id);
+      if (JSON.stringify(this.state.selectedQuestionIds) !== JSON.stringify(selectedQuestionIds)) {
+        this.state.selectedQuestionIds = selectedQuestionIds;
+        this.save();
+      }
+    }
     this.state.currentIndex = Math.min(Math.max(Number(this.state.currentIndex) || 0, 0), this.questions.length - 1);
     if (this.state.submitted && this.state.result) this.state.result = this.grade();
   }
@@ -138,7 +158,7 @@ class QuizSession {
   setAnswer(questionId, answer) { if (this.state.submitted) return; this.state.answers[questionId] = answer; this.save(); }
   answerFor(questionId) { return this.state.answers[questionId]; }
   answeredCount() { return this.questions.filter((question) => this.isAnswered(question)).length; }
-  isAnswered(question) { const answer = this.answerFor(question.id); return Array.isArray(answer) ? answer.length > 0 : answer !== undefined && answer !== null && String(answer).trim() !== ''; }
+  isAnswered(question) { return hasAnswer(this.answerFor(question.id)); }
   grade() {
     const details = this.questions.map((question) => {
       const userAnswer = this.answerFor(question.id);
@@ -153,7 +173,7 @@ class QuizSession {
     return { score, totalPoints: this.questions.reduce((sum, question) => sum + question.points, 0), correctCount: details.filter((item) => item.correct).length, incorrectCount: details.filter((item) => this.isAnswered(this.questions.find((question) => question.id === item.questionId)) && !item.correct).length, unansweredCount: details.filter((item) => !this.isAnswered(this.questions.find((question) => question.id === item.questionId))).length, details, submittedAt: new Date().toISOString() };
   }
   submit() { this.state.submitted = true; this.state.result = this.grade(); this.save(); }
-  reset() { this.state = { answers: {}, currentIndex: 0, submitted: false, result: null }; this.save(); }
+  reset() { this.state = { answers: {}, currentIndex: 0, submitted: false, result: null, ...(this.quiz.selection?.mode === 'question-bank' ? { selectedQuestionIds: this.questions.map((question) => question.id) } : {}) }; this.save(); }
 }
 
 class QuizUI {

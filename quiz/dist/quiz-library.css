@@ -101,3 +101,7 @@ body::after { right: -180px; bottom: 4%; background: #ffc277; animation: library
 .library-card-arrow{margin-left:auto;color:var(--card-accent);font-size:17px;font-weight:400}.library-card:hover .library-card-arrow{transform:translate(2px,-2px)}
 @media(min-width:1280px){.quiz-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:560px){.library-card h3{font-size:21px}.library-card-meta{gap:8px}.library-card-top{margin-bottom:10px}}
+
+/* Progress occupies the card's former arrow slot: no card height change. */
+.library-card-progress { display: inline-flex; width: 17px; height: 17px; align-items: center; justify-content: center; vertical-align: -3px; }
+.library-progress-circle { display: block; box-sizing: border-box; flex: 0 0 13px; width: 13px; height: 13px; border: 1px solid var(--card-accent); border-radius: 50%; background: conic-gradient(var(--card-accent) var(--quiz-progress, 0%), transparent 0); }

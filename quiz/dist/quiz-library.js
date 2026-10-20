@@ -97,16 +97,48 @@ function compareEntries(left, right, sort) {
     || entryCode(left).localeCompare(entryCode(right));
 }
 
+function hasSavedAnswer(answer) {
+  return Array.isArray(answer) ? answer.length > 0 : answer !== undefined && answer !== null && String(answer).trim() !== '';
+}
+
+function quizProgress(entry) {
+  let total = Math.max(0, Number(entry.practiceQuestionCount ?? entry.questionCount ?? 0) || 0);
+  let answered = 0;
+  try {
+    const key = `chemistry-atlas.quiz.${String(entry.id).replace(/[^a-z0-9_-]/gi, '-')}.v1`;
+    const saved = JSON.parse(localStorage.getItem(key) || 'null');
+    const answers = saved && saved.answers && typeof saved.answers === 'object' && !Array.isArray(saved.answers) ? saved.answers : {};
+    const selectedIds = Array.isArray(saved?.selectedQuestionIds)
+      ? [...new Set(saved.selectedQuestionIds.filter((id) => typeof id === 'string'))] : [];
+    if (selectedIds.length) {
+      total = selectedIds.length;
+      answered = selectedIds.filter((id) => hasSavedAnswer(answers[id])).length;
+    } else {
+      answered = Object.values(answers).filter(hasSavedAnswer).length;
+    }
+  } catch {
+    // Browsers may restrict localStorage; show the empty state.
+  }
+  answered = Math.min(answered, total);
+  return {
+    answered, total,
+    percent: total ? (answered / total) * 100 : 0,
+    status: answered === 0 ? '尚未作答' : answered === total ? '全部完成' : '部分完成'
+  };
+}
+
 function cardMarkup(entry, index = 0) {
   const meta = subjectMeta(entry.subject);
   const count = entry.questionCount ?? entry.questions?.length ?? '—';
   const difficulty = DIFFICULTY_LABELS[difficultyValue(entry)] || 'Basic';
+  const progress = quizProgress(entry);
+  const progressDescription = `${progress.status} · ${progress.answered}/${progress.total} 题`;
   return `
     <a class="library-card theme-${meta.className}" style="--card-delay: ${Math.min(index, 8) * 35}ms" href="?quiz=${encodeURIComponent(entry.id)}">
       <span class="library-card-accent" aria-hidden="true"></span>
       <span class="library-card-top"><span class="quiz-code">${escapeHtml(entryCode(entry))}</span><span class="subject-badge">${escapeHtml(meta.label)}</span></span>
       <h3>${escapeHtml(entry.title)}</h3>
-      <span class="library-card-meta"><span>${escapeHtml(String(count))} Questions</span><span>${escapeHtml(difficulty)}</span><span>${escapeHtml(displayDate(entry.updatedAt || entry.createdAt))}</span><b class="library-card-arrow" aria-hidden="true">↗</b></span>
+      <span class="library-card-meta"><span>${escapeHtml(String(count))} Questions</span><span>${escapeHtml(difficulty)}</span><span>${escapeHtml(displayDate(entry.updatedAt || entry.createdAt))}</span><span class="library-card-arrow library-card-progress" role="img" aria-label="${escapeHtml(progressDescription)}" title="${escapeHtml(progressDescription)}"><span class="library-progress-circle" style="--quiz-progress: ${progress.percent}%" aria-hidden="true"></span></span></span>
     </a>
   `;
 }
@@ -122,6 +154,7 @@ class QuizLibrary {
     this.bindControls();
     this.bindInfiniteScroll();
     this.render();
+    window.addEventListener('pageshow', (event) => { if (event.persisted) this.render(); });
   }
 
   restoreState() {

@@ -17,3 +17,8 @@ related reactions, related term slugs, source references, and last updated date.
 
 Known terms in note prose are linked to term.html?slug=<slug>. New uploads update
 existing records by slug or aliases and create only genuinely new records.
+
+
+## Formula typography (all future imports)
+
+Follow [the shared formula typography standard](../FORMULA_STYLE.md). All authored divisions, including inline formulas, tables, glossary explanations and fractional powers, use stacked fractions rather than `/` or `÷`. Preserve full numerator/denominator grouping and use serif math with italic variables. URLs, units, dates, exercise identifiers and chemical-pair labels retain their original notation.

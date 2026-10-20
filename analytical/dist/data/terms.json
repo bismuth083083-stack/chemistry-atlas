@@ -297,7 +297,7 @@
       "limit-of-detection",
       "linearity"
     ],
-    "formula": "<i>S</i> = d<i>y</i>/d<i>c</i>",
+    "formula": "<i>S</i> = <span class=\"math-frac\"><span>d<i>y</i></span><span>d<i>c</i></span></span>",
     "derivation": "把响应 y 对浓度 c 求导；线性校准时 S 等于回归斜率。",
     "notation": "S 为灵敏度，y 为响应，c 为分析物浓度。",
     "source": "Basic operation slide 11",
@@ -404,7 +404,7 @@
       "analytical-balance",
       "volumetric-glassware"
     ],
-    "formula": "<i>W</i><sub>vac</sub> = <i>W</i><sub>air</sub> + <i>W</i><sub>air</sub>(0.0012/<i>D</i><sub>o</sub> − 0.0012/<i>D</i><sub>w</sub>)",
+    "formula": "<i>W</i><sub>vac</sub> = <i>W</i><sub>air</sub> + <i>W</i><sub>air</sub>(<span class=\"math-frac\"><span>0.0012</span><span><i>D</i><sub>o</sub></span></span> − <span class=\"math-frac\"><span>0.0012</span><span><i>D</i><sub>w</sub></span></span>)",
     "derivation": "校正项来自被称物和砝码各自排开空气重量的差。",
     "notation": "Wvac 为真空质量，Wair 为空气中表观质量，Do 与 Dw 分别为被称物和砝码密度。",
     "source": "Christian 7e §2.3, Eq. 2.1",
@@ -427,7 +427,7 @@
       "volumetric-pipet",
       "buret"
     ],
-    "formula": "<i>V</i><sub>t</sub> = <i>W</i><sub>vac,t</sub>/<i>ρ</i><sub>water,t</sub>",
+    "formula": "<i>V</i><sub>t</sub> = <span class=\"math-frac\"><span><i>W</i><sub>vac,t</sub></span><span><i>ρ</i><sub>water,t</sub></span></span>",
     "derivation": "体积等于质量除以密度；水的质量先按空气浮力校正。",
     "notation": "Vt 为温度 t 下体积，Wvac,t 为校正水质量，ρwater,t 为该温度水密度。",
     "source": "Basic operation slides 22–29；Christian 7e §2.4",
@@ -981,16 +981,16 @@
     "expanded": "约定 pX = −log X，因此 pOH = −log[OH⁻]，pKw = pH + pOH。25 °C 时 pKw = 14.00；37 °C 时 pKw = 13.60，中性点相应移到 pH 6.80。浓酸的 pH 可以为负，例如 10 mol·L⁻¹ HCl 的 pH 为 −1。",
     "properties": [
       "把跨越十几个数量级的浓度压缩到对数刻度",
-      "中性对应 pH = pKw/2，随温度变化",
+      "中性对应 pH = <span class=\"math-frac\"><span>pKw</span><span>2</span></span>，随温度变化",
       "极稀溶液中必须考虑水自递的贡献"
     ],
-    "confusions": "pH 7 并不总是中性。判断酸碱性要以当时温度下的 pKw/2 为参照；体温下血液 pH 7.40 比中性点高 0.60 个单位。",
+    "confusions": "pH 7 并不总是中性。判断酸碱性要以当时温度下的 <span class=\"math-frac\"><span>pKw</span><span>2</span></span> 为参照；体温下血液 pH 7.40 比中性点高 0.60 个单位。",
     "related": [
       "kw",
       "autoprotolysis",
       "buffer-solution"
     ],
-    "formula": "pH = −log[H<sup>+</sup>] &nbsp; pOH = −log[OH<sup>−</sup>] &nbsp; pH + pOH = p<i>K</i><sub>w</sub>",
+    "formula": "pH = −log[H<sup>+</sup>]   pOH = −log[OH<sup>−</sup>]   pH + pOH = p<i>K</i><sub>w</sub>",
     "derivation": "对 Kw = [H⁺][OH⁻] 两边取负对数，由 −log(ab) = −log a − log b 得 pKw = pH + pOH。",
     "notation": "[H⁺]、[OH⁻] 为摩尔浓度；pKw 在 25 °C 为 14.00，37 °C 为 13.60。",
     "source": "Acid-Base Equilibria slides 12–20；教材 §9.6、生理 pH 章节",
@@ -1027,7 +1027,7 @@
     "en": "Acid dissociation constant, Ka",
     "category": "酸碱平衡",
     "definition": "弱酸在水溶液中解离平衡的平衡常数，是酸强度的定量量度。",
-    "expanded": "对 HA + H₂O ⇌ A⁻ + H₃O⁺，Ka = [H⁺][A⁻]/[HA]（水的活度为常数，并入 Ka）。Ka 越大，分子解离越多，酸性越强。强酸（无机酸）的 Ka 极大，弱酸（多数有机酸）的 Ka 较小。",
+    "expanded": "对 HA + H₂O ⇌ A⁻ + H₃O⁺，Ka = <span class=\"math-frac\"><span>[H⁺][A⁻]</span><span>[HA]</span></span>（水的活度为常数，并入 Ka）。Ka 越大，分子解离越多，酸性越强。强酸（无机酸）的 Ka 极大，弱酸（多数有机酸）的 Ka 较小。",
     "properties": [
       "Ka 越大酸性越强",
       "只与物质本性和温度有关",
@@ -1040,7 +1040,7 @@
       "buffer-solution",
       "polyprotic-acid"
     ],
-    "formula": "<i>K</i><sub>a</sub> = [H<sup>+</sup>][A<sup>−</sup>]/[HA] &nbsp;&nbsp; p<i>K</i><sub>a</sub> = −log <i>K</i><sub>a</sub>",
+    "formula": "<i>K</i><sub>a</sub> = <span class=\"math-frac\"><span>[H<sup>+</sup>][A<sup>−</sup>]</span><span>[HA]</span></span>    p<i>K</i><sub>a</sub> = −log <i>K</i><sub>a</sub>",
     "derivation": "对 HA + H₂O ⇌ A⁻ + H₃O⁺ 写平衡常数，并把水的活度（常数）并入 Ka。",
     "notation": "HA 为未解离酸，A⁻ 为共轭碱；pKa 越小酸性越强。",
     "source": "Acid-Base Equilibria slides 22–24；教材 §9.3",
@@ -1052,7 +1052,7 @@
     "en": "Base constant, Kb",
     "category": "酸碱平衡",
     "definition": "弱碱从水中夺取质子的水解平衡常数。",
-    "expanded": "对 B + H₂O ⇌ BH⁺ + OH⁻，Kb = [BH⁺][OH⁻]/[B]。Kb 越大碱性越强。它同时也就是该弱碱对应盐的水解常数 KH。",
+    "expanded": "对 B + H₂O ⇌ BH⁺ + OH⁻，Kb = <span class=\"math-frac\"><span>[BH⁺][OH⁻]</span><span>[B]</span></span>。Kb 越大碱性越强。它同时也就是该弱碱对应盐的水解常数 KH。",
     "properties": [
       "强碱（金属氢氧化物）的 Kb 极大",
       "与共轭酸的 Ka 通过 KaKb = Kw 相联系",
@@ -1064,8 +1064,8 @@
       "kw",
       "conjugate-acid-base-pair"
     ],
-    "formula": "<i>K</i><sub>b</sub> = [BH<sup>+</sup>][OH<sup>−</sup>]/[B] &nbsp;&nbsp; p<i>K</i><sub>a</sub> + p<i>K</i><sub>b</sub> = p<i>K</i><sub>w</sub>",
-    "derivation": "弱碱水解式与水的自递式相加；或在弱酸解离式中把 [H⁺] 换成 Kw/[OH⁻]。",
+    "formula": "<i>K</i><sub>b</sub> = <span class=\"math-frac\"><span>[BH<sup>+</sup>][OH<sup>−</sup>]</span><span>[B]</span></span>    p<i>K</i><sub>a</sub> + p<i>K</i><sub>b</sub> = p<i>K</i><sub>w</sub>",
+    "derivation": "弱碱水解式与水的自递式相加；或在弱酸解离式中把 [H⁺] 换成 <span class=\"math-frac\"><span>Kw</span><span>[OH⁻]</span></span>。",
     "notation": "B 为未质子化碱，BH⁺ 为其共轭酸。",
     "source": "Acid-Base Equilibria slides 25–26；教材 §9.4",
     "updated": "2026-03-18"
@@ -1099,9 +1099,9 @@
     "en": "Buffer solution",
     "category": "酸碱平衡",
     "definition": "在加入少量酸、少量碱或被稀释时能抵抗 pH 变化的溶液。",
-    "expanded": "缓冲液通常由弱酸与其共轭碱，或弱碱与其共轭酸按预定浓度或比例组成。加入强酸时 A⁻ 与 H⁺ 结合成 HA；加入强碱时 HA 与 OH⁻ 反应生成 A⁻，因此 [A⁻]/[HA] 比值变化很小。稀释时分子分母同比减小，比值不变，pH 几乎不变。",
+    "expanded": "缓冲液通常由弱酸与其共轭碱，或弱碱与其共轭酸按预定浓度或比例组成。加入强酸时 A⁻ 与 H⁺ 结合成 HA；加入强碱时 HA 与 OH⁻ 反应生成 A⁻，因此 <span class=\"math-frac\"><span>[A⁻]</span><span>[HA]</span></span> 比值变化很小。稀释时分子分母同比减小，比值不变，pH 几乎不变。",
     "properties": [
-      "pH ≈ pKa + log([A⁻]/[HA])",
+      "pH ≈ pKa + log(<span class=\"math-frac\"><span>[A⁻]</span><span>[HA]</span></span>)",
       "在 pH = pKa 处缓冲容量最大",
       "实用范围为 pKa ± 1"
     ],
@@ -1121,7 +1121,7 @@
     "en": "Henderson-Hasselbalch equation",
     "category": "酸碱平衡",
     "definition": "由共轭酸碱对的浓度比直接计算缓冲溶液 pH 的方程。",
-    "expanded": "对弱酸/共轭碱体系 pH = pKa + log([A⁻]/[HA])；对弱碱/共轭酸体系 pOH = pKb + log([BH⁺]/[B])，或写成 pH = pKw − pKb + log([B]/[BH⁺])。中性酸 HA 与阳离子酸 HA⁺（如 NH₄⁺）可套用同一形式。",
+    "expanded": "对弱酸/共轭碱体系 pH = pKa + log(<span class=\"math-frac\"><span>[A⁻]</span><span>[HA]</span></span>)；对弱碱/共轭酸体系 pOH = pKb + log(<span class=\"math-frac\"><span>[BH⁺]</span><span>[B]</span></span>)，或写成 pH = pKw − pKb + log(<span class=\"math-frac\"><span>[B]</span><span>[BH⁺]</span></span>)。中性酸 HA 与阳离子酸 HA⁺（如 NH₄⁺）可套用同一形式。",
     "properties": [
       "比值为 1 时 pH = pKa",
       "比值变化 10 倍，pH 变化 1 个单位",
@@ -1134,8 +1134,8 @@
       "kb",
       "titration-curve"
     ],
-    "formula": "pH = p<i>K</i><sub>a</sub> + log([A<sup>−</sup>]/[HA])",
-    "derivation": "由 Ka = [H⁺][A⁻]/[HA] 解出 [H⁺]，再取负对数并整理。",
+    "formula": "pH = p<i>K</i><sub>a</sub> + log(<span class=\"math-frac\"><span>[A<sup>−</sup>]</span><span>[HA]</span></span>)",
+    "derivation": "由 Ka = <span class=\"math-frac\"><span>[H⁺][A⁻]</span><span>[HA]</span></span> 解出 [H⁺]，再取负对数并整理。",
     "notation": "[A⁻] 为共轭碱浓度，[HA] 为酸浓度；log 为常用对数。",
     "source": "Acid-Base Equilibria slides 30–34；教材 §9.8",
     "updated": "2026-03-18"
@@ -1146,7 +1146,7 @@
     "en": "Buffer capacity, β",
     "category": "酸碱平衡",
     "definition": "使溶液 pH 改变一个单位所需加入的强酸或强碱的量，衡量缓冲溶液抗 pH 变化的能力。",
-    "expanded": "定义为 β = dCB/dpH = −dCHA/dpH。对浓度大于 0.001 mol·L⁻¹ 的一元弱酸/共轭碱体系，β ≈ 2.303·CHA·CA⁻/(CHA + CA⁻)。当 [HA] = [A⁻]（即 pH = pKa）时 β 取最大值；比值变化 10 倍，pH 只变化 1。",
+    "expanded": "定义为 β = <span class=\"math-frac\"><span>dCB</span><span>dpH</span></span> = −<span class=\"math-frac\"><span>dCHA</span><span>dpH</span></span>。对浓度大于 0.001 mol·L⁻¹ 的一元弱酸/共轭碱体系，β ≈ <span class=\"math-frac\"><span>2.303·CHA·CA⁻</span><span>(CHA + CA⁻)</span></span>。当 [HA] = [A⁻]（即 pH = pKa）时 β 取最大值；比值变化 10 倍，pH 只变化 1。",
     "properties": [
       "在 pH = pKa 处最大",
       "随缓冲对总浓度增大而增大",
@@ -1158,7 +1158,7 @@
       "henderson-hasselbalch",
       "common-ion-effect"
     ],
-    "formula": "β = d<i>C</i><sub>B</sub>/dpH = −d<i>C</i><sub>HA</sub>/dpH &nbsp;≈&nbsp; 2.303 <i>C</i><sub>HA</sub><i>C</i><sub>A⁻</sub>/(<i>C</i><sub>HA</sub>+<i>C</i><sub>A⁻</sub>)",
+    "formula": "β = <span class=\"math-frac\"><span>d<i>C</i><sub>B</sub></span><span>dpH</span></span> = −<span class=\"math-frac\"><span>d<i>C</i><sub>HA</sub></span><span>dpH</span></span>  ≈  <span class=\"math-frac\"><span>2.303 <i>C</i><sub>HA</sub><i>C</i><sub>A⁻</sub></span><span>(<i>C</i><sub>HA</sub>+<i>C</i><sub>A⁻</sub>)</span></span>",
     "derivation": "对 Henderson–Hasselbalch 方程求导，把 pH 对加入强碱量的变化写成微分形式。",
     "notation": "CB、CHA 为使 pH 改变 dpH 所需强碱或强酸的浓度（mol·L⁻¹）。(注：课件原文误印为 CHA。)",
     "source": "Acid-Base Equilibria slides 36–38；教材 §9.9",
@@ -1192,7 +1192,7 @@
     "en": "Distribution fraction, α",
     "category": "酸碱平衡",
     "definition": "某一种存在形态的平衡浓度占分析物总浓度的分数。",
-    "expanded": "以磷酸为例，α₀ = [H₃PO₄]/C、α₁ = [H₂PO₄⁻]/C、α₂ = [HPO₄²⁻]/C、α₃ = [PO₄³⁻]/C，且四者之和恒为 1。把每个形态都用 [H₃PO₄] 表示后取倒数并通分，可得分母相同的一组表达式。",
+    "expanded": "以磷酸为例，α₀ = <span class=\"math-frac\"><span>[H₃PO₄]</span><span>C</span></span>、α₁ = <span class=\"math-frac\"><span>[H₂PO₄⁻]</span><span>C</span></span>、α₂ = <span class=\"math-frac\"><span>[HPO₄²⁻]</span><span>C</span></span>、α₃ = <span class=\"math-frac\"><span>[PO₄³⁻]</span><span>C</span></span>，且四者之和恒为 1。把每个形态都用 [H₃PO₄] 表示后取倒数并通分，可得分母相同的一组表达式。",
     "properties": [
       "分母 D = [H⁺]³ + Ka₁[H⁺]² + Ka₁Ka₂[H⁺] + Ka₁Ka₂Ka₃",
       "只与 pH 和各级 Ka 有关，与总浓度无关",
@@ -1204,7 +1204,7 @@
       "system-point",
       "amphiprotic-species"
     ],
-    "formula": "α<sub>0</sub> = [H<sup>+</sup>]<sup>3</sup>/<i>D</i> &nbsp; α<sub>1</sub> = <i>K</i><sub>a1</sub>[H<sup>+</sup>]<sup>2</sup>/<i>D</i> &nbsp; α<sub>2</sub> = <i>K</i><sub>a1</sub><i>K</i><sub>a2</sub>[H<sup>+</sup>]/<i>D</i> &nbsp; α<sub>3</sub> = <i>K</i><sub>a1</sub><i>K</i><sub>a2</sub><i>K</i><sub>a3</sub>/<i>D</i>",
+    "formula": "α<sub>0</sub> = <span class=\"math-frac\"><span>[H<sup>+</sup>]<sup>3</sup></span><span><i>D</i></span></span>   α<sub>1</sub> = <span class=\"math-frac\"><span><i>K</i><sub>a1</sub>[H<sup>+</sup>]<sup>2</sup></span><span><i>D</i></span></span>   α<sub>2</sub> = <span class=\"math-frac\"><span><i>K</i><sub>a1</sub><i>K</i><sub>a2</sub>[H<sup>+</sup>]</span><span><i>D</i></span></span>   α<sub>3</sub> = <span class=\"math-frac\"><span><i>K</i><sub>a1</sub><i>K</i><sub>a2</sub><i>K</i><sub>a3</sub></span><span><i>D</i></span></span>",
     "derivation": "把各形态用累积常数与 [H⁺] 表示、代入总浓度后取倒数，再通分并乘以 [H⁺]³。",
     "notation": "D 为共同分母；下标 0–3 依次对应失去 0–3 个质子的形态。",
     "source": "Acid-Base Equilibria slides 47–54；教材 §10.1",
@@ -1219,7 +1219,7 @@
     "expanded": "正磷酸的三个体系点分别在 pH 1.96、7.12 和 12.32。体系点两侧分别是各级缓冲对的最佳工作区间，因此分布图可以直接用来判断在某个 pH 下该用哪一对做缓冲。",
     "properties": [
       "满足 pH = pKa、两形态浓度相等（α = 0.50）",
-      "与滴定曲线的中点（V = ½Veq）相对应",
+      "与滴定曲线的中点（V = <span class=\"math-frac\"><span>1</span><span>2</span></span>Veq）相对应",
       "是选择缓冲对和指示剂的共同依据"
     ],
     "confusions": "体系点是分布图上的概念，不能与滴定曲线上的计量点混用：计量点处产物的形态通常不是两形态等量，而是只有一种形态。",
@@ -1237,19 +1237,19 @@
     "en": "Amphoteric salt",
     "category": "酸碱平衡",
     "definition": "既能作为弱酸解离、又能作为 Brønsted 碱水解的盐。",
-    "expanded": "磷酸体系中 H₃PO₄ 只能解离、PO₄³⁻ 只能水解，而 H₂PO₄⁻ 与 HPO₄²⁻ 两条路都能走。以 HA⁻ 为例的质子条件为 [H⁺] + [H₃A] = [A²⁻] + [OH⁻]，简化后 [H⁺] ≈ √(Ka₁Ka₂)，即 pH ≈ ½(pKa₁ + pKa₂)，与浓度无关。",
+    "expanded": "磷酸体系中 H₃PO₄ 只能解离、PO₄³⁻ 只能水解，而 H₂PO₄⁻ 与 HPO₄²⁻ 两条路都能走。以 HA⁻ 为例的质子条件为 [H⁺] + [H₃A] = [A²⁻] + [OH⁻]，简化后 [H⁺] ≈ √(Ka₁Ka₂)，即 pH ≈ <span class=\"math-frac\"><span>1</span><span>2</span></span>(pKa₁ + pKa₂)，与浓度无关。",
     "properties": [
-      "H₂PO₄⁻ 显酸性，pH ≈ ½(1.96+7.12) = 4.54",
-      "HPO₄²⁻ 显碱性，pH ≈ ½(7.12+12.32) = 9.72",
+      "H₂PO₄⁻ 显酸性，pH ≈ <span class=\"math-frac\"><span>1</span><span>2</span></span>(1.96+7.12) = 4.54",
+      "HPO₄²⁻ 显碱性，pH ≈ <span class=\"math-frac\"><span>1</span><span>2</span></span>(7.12+12.32) = 9.72",
       "pH 与自身浓度无关"
     ],
-    "confusions": "判断酸式盐显酸还是显碱，必须比较它自身的酸式解离常数与它自身的水解常数：H₂PO₄⁻ 的 Kb（= Kw/Ka₁ = 9.1 × 10⁻¹³）与 Ka₂（7.5 × 10⁻⁸）比；HPO₄²⁻ 的 Kb（= Kw/Ka₂ = 1.3 × 10⁻⁷）与 Ka₃（4.8 × 10⁻¹³）比。",
+    "confusions": "判断酸式盐显酸还是显碱，必须比较它自身的酸式解离常数与它自身的水解常数：H₂PO₄⁻ 的 Kb（= <span class=\"math-frac\"><span>Kw</span><span>Ka₁</span></span> = 9.1 × 10⁻¹³）与 Ka₂（7.5 × 10⁻⁸）比；HPO₄²⁻ 的 Kb（= <span class=\"math-frac\"><span>Kw</span><span>Ka₂</span></span> = 1.3 × 10⁻⁷）与 Ka₃（4.8 × 10⁻¹³）比。",
     "related": [
       "amphiprotic-species",
       "polyprotic-acid",
       "distribution-fraction"
     ],
-    "formula": "[H<sup>+</sup>] ≈ √(<i>K</i><sub>a1</sub><i>K</i><sub>a2</sub>) &nbsp;⇒&nbsp; pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>)",
+    "formula": "[H<sup>+</sup>] ≈ √(<i>K</i><sub>a1</sub><i>K</i><sub>a2</sub>)  ⇒  pH ≈ <span class=\"math-frac\"><span>1</span><span>2</span></span>(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>)",
     "derivation": "由质子条件 [H⁺] + [H₃A] = [A²⁻] + [OH⁻]，在 Ka₁Kw ≪ Ka₁Ka₂C 且 Ka₁ ≪ C 时略去小项后整理。",
     "notation": "HA⁻ 为两性离子；Ka₁、Ka₂ 为相邻两级解离常数。",
     "source": "Acid-Base Equilibria slides 55–59；教材 §10.2",
@@ -1455,7 +1455,7 @@
     "en": "Indicator",
     "category": "滴定",
     "definition": "本身有颜色的弱酸或弱碱，其电离态与非电离态颜色差别明显，用于目视判断滴定终点。",
-    "expanded": "以弱酸型 HIn 为例：HIn ⇌ H⁺ + In⁻，pH = pKIn + log([In⁻]/[HIn])。当某一种颜色的强度是另一种的 10 倍时人眼只能分辨出一种颜色，因此 [In⁻]/[HIn] = 1/10 时看到酸色、10/1 时看到碱色，变色范围约为 pKIn ± 1，即 2 个 pH 单位。",
+    "expanded": "以弱酸型 HIn 为例：HIn ⇌ H⁺ + In⁻，pH = pKIn + log(<span class=\"math-frac\"><span>[In⁻]</span><span>[HIn]</span></span>)。当某一种颜色的强度是另一种的 10 倍时人眼只能分辨出一种颜色，因此 <span class=\"math-frac\"><span>[In⁻]</span><span>[HIn]</span></span> = <span class=\"math-frac\"><span>1</span><span>10</span></span> 时看到酸色、<span class=\"math-frac\"><span>10</span><span>1</span></span> 时看到碱色，变色范围约为 pKIn ± 1，即 2 个 pH 单位。",
     "properties": [
       "变色范围约 2 个 pH 单位",
       "范围中点处 pH = pKIn",
@@ -1469,7 +1469,7 @@
       "titration-curve",
       "ph-scale"
     ],
-    "formula": "pH = p<i>K</i><sub>In</sub> + log([In<sup>−</sup>]/[HIn])",
+    "formula": "pH = p<i>K</i><sub>In</sub> + log(<span class=\"math-frac\"><span>[In<sup>−</sup>]</span><span>[HIn]</span></span>)",
     "derivation": "对指示剂的解离平衡 HIn ⇌ H⁺ + In⁻ 写平衡常数后取负对数，与 Henderson–Hasselbalch 方程同形。",
     "notation": "pKIn 为指示剂常数；变色范围为 pKIn ± 1。",
     "source": "Acid-Base Titration slides 22–25、35–36；教材 §9.6",
@@ -1493,7 +1493,7 @@
       "neutralization-reaction",
       "indicator"
     ],
-    "formula": "<i>n</i><sub>N</sub> = <i>n</i><sub>加入的 HCl</sub> − <i>n</i><sub>回滴所耗的 NaOH</sub> &nbsp;&nbsp; <i>m</i><sub>protein</sub> = <i>m</i><sub>N</sub>/0.162",
+    "formula": "<i>n</i><sub>N</sub> = <i>n</i><sub>加入的 HCl</sub> − <i>n</i><sub>回滴所耗的 NaOH</sub>    <i>m</i><sub>protein</sub> = <span class=\"math-frac\"><span><i>m</i><sub>N</sub></span><span>0.162</span></span>",
     "derivation": "吸收 NH₃ 后剩余的 HCl 由标准 NaOH 回滴测出；加入量与剩余量之差即与 NH₃ 反应的 HCl 量，也就是氮的物质的量。",
     "notation": "n 为物质的量；16.2% 为蛋白质的平均含氮质量分数。",
     "source": "Acid-Base Titration slides 49–53；教材 §10.5",
@@ -1518,7 +1518,7 @@
       "indicator",
       "weak-acid-strong-base-titration"
     ],
-    "formula": "[H<sup>+</sup>] = (<i>M</i><sub>酸</sub><i>V</i><sub>酸</sub> − <i>M</i><sub>碱</sub><i>V</i><sub>碱</sub>)/<i>V</i><sub>总</sub> &nbsp;(f &lt; 1) &nbsp;&nbsp; [OH<sup>−</sup>] = (<i>M</i><sub>碱</sub><i>V</i><sub>碱</sub> − <i>M</i><sub>酸</sub><i>V</i><sub>酸</sub>)/<i>V</i><sub>总</sub> &nbsp;(f &gt; 1)",
+    "formula": "[H<sup>+</sup>] = <span class=\"math-frac\"><span>(<i>M</i><sub>酸</sub><i>V</i><sub>酸</sub> − <i>M</i><sub>碱</sub><i>V</i><sub>碱</sub>)</span><span><i>V</i><sub>总</sub></span></span>  (f &lt; 1)    [OH<sup>−</sup>] = <span class=\"math-frac\"><span>(<i>M</i><sub>碱</sub><i>V</i><sub>碱</sub> − <i>M</i><sub>酸</sub><i>V</i><sub>酸</sub>)</span><span><i>V</i><sub>总</sub></span></span>  (f &gt; 1)",
     "derivation": "计量点前强酸过量，剩余 H⁺ 全部来自未中和的强酸；计量点后强碱过量，先算 pOH 再用 pH = pKw − pOH。",
     "notation": "f 为被滴定物分数；V总 = V酸 + V碱。",
     "source": "Acid-Base Titration slides 15–21；教材 §9.3",
@@ -1530,7 +1530,7 @@
     "en": "Weak acid–strong base titration",
     "category": "滴定",
     "definition": "用强碱滴定弱酸的滴定，滴定曲线分为四个区域，需要平衡常数才能计算。",
-    "expanded": "以 50.00 mL 0.1000 mol·L⁻¹ HOAc 用 0.1000 mol·L⁻¹ NaOH 滴定为例：未加碱时 pH 2.88；计量点前是 HA/A⁻ 缓冲体系，用 Henderson–Hasselbalch 计算（加 10.00 mL 时 pH 4.16）；中点是 ½Veq，pH = pKa = 4.76；计量点时只剩 A⁻，水解使溶液显碱（pH 8.73）；计量点后由过量碱控制（加 60.00 mL 时 pH 11.96）。",
+    "expanded": "以 50.00 mL 0.1000 mol·L⁻¹ HOAc 用 0.1000 mol·L⁻¹ NaOH 滴定为例：未加碱时 pH 2.88；计量点前是 HA/A⁻ 缓冲体系，用 Henderson–Hasselbalch 计算（加 10.00 mL 时 pH 4.16）；中点是 <span class=\"math-frac\"><span>1</span><span>2</span></span>Veq，pH = pKa = 4.76；计量点时只剩 A⁻，水解使溶液显碱（pH 8.73）；计量点后由过量碱控制（加 60.00 mL 时 pH 11.96）。",
     "properties": [
       "四个区域各有独立的计算式",
       "中点 pH = pKa，可用于测定未知酸的 pKa",
@@ -1543,9 +1543,9 @@
       "buffer-solution",
       "indicator"
     ],
-    "formula": "[H<sup>+</sup>] = √(<i>K</i><sub>a</sub><i>C</i><sub>HA</sub>) &nbsp;(f=0) &nbsp;&nbsp; pH = p<i>K</i><sub>a</sub> + log([A<sup>−</sup>]/[HA]) &nbsp;(0&lt;f&lt;1) &nbsp;&nbsp; [OH<sup>−</sup>] = √(<i>K</i><sub>b</sub><i>C</i><sub>A⁻</sub>) &nbsp;(f=1)",
+    "formula": "[H<sup>+</sup>] = √(<i>K</i><sub>a</sub><i>C</i><sub>HA</sub>)  (f=0)    pH = p<i>K</i><sub>a</sub> + log(<span class=\"math-frac\"><span>[A<sup>−</sup>]</span><span>[HA]</span></span>)  (0&lt;f&lt;1)    [OH<sup>−</sup>] = √(<i>K</i><sub>b</sub><i>C</i><sub>A⁻</sub>)  (f=1)",
     "derivation": "各区域分别取主导平衡：纯弱酸用解离平衡，缓冲区用同离子效应后的比例关系，计量点用共轭碱的水解平衡。",
-    "notation": "Kb = Kw/Ka；CA⁻ 为计量点时共轭碱的分析浓度。",
+    "notation": "Kb = <span class=\"math-frac\"><span>Kw</span><span>Ka</span></span>；CA⁻ 为计量点时共轭碱的分析浓度。",
     "source": "Acid-Base Titration slides 26–35；教材 §9.4–9.5",
     "updated": "2026-03-18"
   },
@@ -1555,7 +1555,7 @@
     "en": "Weak base–strong acid titration",
     "category": "滴定",
     "definition": "用强酸滴定弱碱的滴定，曲线是弱酸强碱滴定的镜像。",
-    "expanded": "以 100.00 mL 0.1000 mol·L⁻¹ NH₃ 用 0.1000 mol·L⁻¹ HCl 滴定（HCl + NH₃ → NH₄⁺ + Cl⁻）为例：起点在碱性区；中点是 ½Veq，此时 pOH = pKb，曲线在该处最平缓；计量点偏酸，需选用在酸性区变色的指示剂。",
+    "expanded": "以 100.00 mL 0.1000 mol·L⁻¹ NH₃ 用 0.1000 mol·L⁻¹ HCl 滴定（HCl + NH₃ → NH₄⁺ + Cl⁻）为例：起点在碱性区；中点是 <span class=\"math-frac\"><span>1</span><span>2</span></span>Veq，此时 pOH = pKb，曲线在该处最平缓；计量点偏酸，需选用在酸性区变色的指示剂。",
     "properties": [
       "中点的判据是 pOH = pKb",
       "计量点 pH < 7",
@@ -1568,7 +1568,7 @@
       "buffer-solution",
       "indicator"
     ],
-    "formula": "[OH<sup>−</sup>] = √(<i>K</i><sub>b</sub><i>C</i><sub>B</sub>) &nbsp;(f=0) &nbsp;&nbsp; pH = (p<i>K</i><sub>w</sub> − p<i>K</i><sub>b</sub>) + log(<i>C</i><sub>B</sub>/<i>C</i><sub>BH⁺</sub>) &nbsp;(0&lt;f&lt;1) &nbsp;&nbsp; [H<sup>+</sup>] = √((<i>K</i><sub>w</sub>/<i>K</i><sub>b</sub>)·<i>C</i><sub>BH⁺</sub>) &nbsp;(f=1)",
+    "formula": "[OH<sup>−</sup>] = √(<i>K</i><sub>b</sub><i>C</i><sub>B</sub>)  (f=0)    pH = (p<i>K</i><sub>w</sub> − p<i>K</i><sub>b</sub>) + log(<span class=\"math-frac\"><span><i>C</i><sub>B</sub></span><span><i>C</i><sub>BH⁺</sub></span></span>)  (0&lt;f&lt;1)    [H<sup>+</sup>] = √((<span class=\"math-frac\"><span><i>K</i><sub>w</sub></span><span><i>K</i><sub>b</sub></span></span>)·<i>C</i><sub>BH⁺</sub>)  (f=1)",
     "derivation": "与弱酸强碱滴定完全对称：把 HA 换成 B、A⁻ 换成 BH⁺、pH 换成 pOH 即可逐式对应。",
     "notation": "B 为弱碱，BH⁺ 为其共轭酸。",
     "source": "Acid-Base Titration slides 36–37；教材 §9.5",
@@ -1580,9 +1580,9 @@
     "en": "Amino acid titration",
     "category": "滴定",
     "definition": "利用氨基酸的两性性质进行的酸碱滴定，曲线形态与二元酸相似。",
-    "expanded": "氨基酸同时含羧基（酸性）与氨基（碱性），在水中通过内质子转移形成两性离子。两性离子的共轭酸是二元酸，分步电离；若相邻两级 Ka 之比 ≥ 10⁴，曲线上可分辨多个终点突跃。半胱氨酸有三个可电离质子（Ka₁ = 2.0 × 10⁻²、Ka₂ = 4.4 × 10⁻⁹、Ka₃ = 1.8 × 10⁻¹¹），但 Ka₂/Ka₃ ≈ 244 < 10⁴，因此第二、三级电离无法分开。",
+    "expanded": "氨基酸同时含羧基（酸性）与氨基（碱性），在水中通过内质子转移形成两性离子。两性离子的共轭酸是二元酸，分步电离；若相邻两级 Ka 之比 ≥ 10⁴，曲线上可分辨多个终点突跃。半胱氨酸有三个可电离质子（Ka₁ = 2.0 × 10⁻²、Ka₂ = 4.4 × 10⁻⁹、Ka₃ = 1.8 × 10⁻¹¹），但 <span class=\"math-frac\"><span>Ka₂</span><span>Ka₃</span></span> ≈ 244 &lt; 10⁴，因此第二、三级电离无法分开。",
     "properties": [
-      "两性离子形态的 pH ≈ ½(pKa₁ + pKa₂)",
+      "两性离子形态的 pH ≈ <span class=\"math-frac\"><span>1</span><span>2</span></span>(pKa₁ + pKa₂)",
       "侧链含可电离基团时质子数增加",
       "能否分步取决于相邻 Ka 之比是否 ≥ 10⁴"
     ],
@@ -1668,7 +1668,7 @@
     "en": "gravimetric factor",
     "category": "重量分析",
     "definition": "将称量形式的质量换算为待测组分质量的系数，等于待测组分与称量形式的摩尔质量之比乘以化学计量数之比。",
-    "formula": "F = a·M(待测组分) / (b·M(称量形式))",
+    "formula": "F = <span class=\"math-frac\"><span>a·M(待测组分)</span><span>(b·M(称量形式))</span></span>",
     "derivation": "a 为称量形式中待测组分的原子或离子数目，b 为称量形式的分子数目，二者由配平后的化学反应计量关系确定。",
     "expanded": "换算因数与取样量无关，只由化学式和配比决定，因此可作为常数反复使用。由于换算因数通常小于 1，称量形式的摩尔质量越大，误差传递被压缩得越多。",
     "properties": [
@@ -1712,8 +1712,8 @@
     "zh": "相对过饱和度",
     "en": "relative supersaturation",
     "category": "重量分析",
-    "definition": "沉淀析出瞬间溶液中溶质总浓度与溶解度之差同溶解度的比值，记为 (Q−S)/S，是决定沉淀颗粒大小的关键参数。",
-    "formula": "分散度 ∝ (Q − S) / S",
+    "definition": "沉淀析出瞬间溶液中溶质总浓度与溶解度之差同溶解度的比值，记为 <span class=\"math-frac\"><span>(Q−S)</span><span>S</span></span>，是决定沉淀颗粒大小的关键参数。",
+    "formula": "分散度 ∝ <span class=\"math-frac\"><span>(Q − S)</span><span>S</span></span>",
     "expanded": "由冯·韦曼（von Weimarn）提出。比值越大，成核速率越占优势，生成颗粒越细，比表面越大，吸附杂质越多。重量分析中所有沉淀条件的控制都归结为把该比值压小，即压低 Q 或抬高 S。",
     "properties": [
       "比值越小则颗粒越粗大",
@@ -1915,7 +1915,7 @@
     "en": "molar solubility",
     "category": "沉淀平衡",
     "definition": "在一定温度下，饱和溶液中每升溶液所含溶质的物质的量，是衡量难溶物溶解能力的统一尺度。",
-    "formula": "1:1 型 s = √Ksp；1:2 型 s = ∛(Ksp/4)；1:3 型 s = ∜(Ksp/27)",
+    "formula": "1:1 型 s = √Ksp；1:2 型 s = ∛(<span class=\"math-frac\"><span>Ksp</span><span>4</span></span>)；1:3 型 s = ∜(<span class=\"math-frac\"><span>Ksp</span><span>27</span></span>)",
     "expanded": "溶解度与溶度积的换算取决于化合物的价型，因为一个化学式单位解离出的离子数目不同。价型相同时可直接比较 Ksp，价型不同时必须都换算为摩尔溶解度。",
     "properties": [
       "单位是 mol·L⁻¹",
@@ -1960,8 +1960,8 @@
     "en": "conditional solubility product",
     "category": "沉淀平衡",
     "definition": "把副反应（酸效应、络合效应等）的影响并入溶度积后得到的、适用于特定条件的表观溶度积，记作 K′sp。",
-    "formula": "K′sp = Ksp / α   或   K′sp = Ksp / (α_A · α_M)",
-    "derivation": "以 CaC₂O₄ 为例，草酸根受质子化影响，[C₂O₄²⁻] = Ox_T·α₂。代入 Ksp = [Ca²⁺][C₂O₄²⁻] 得 Ksp = [Ca²⁺]·Ox_T·α₂，令 K′sp = Ksp/α₂ 即得。",
+    "formula": "K′sp = <span class=\"math-frac\"><span>Ksp</span><span>α</span></span>   或   K′sp = <span class=\"math-frac\"><span>Ksp</span><span>(α_A · α_M)</span></span>",
+    "derivation": "以 CaC₂O₄ 为例，草酸根受质子化影响，[C₂O₄²⁻] = Ox_T·α₂。代入 Ksp = [Ca²⁺][C₂O₄²⁻] 得 Ksp = [Ca²⁺]·Ox_T·α₂，令 K′sp = <span class=\"math-frac\"><span>Ksp</span><span>α₂</span></span> 即得。",
     "expanded": "K′sp 把某一副反应的影响打包进常数，因此只在指定的 pH 或配体浓度下成立。它与第 9 章的条件形成常数 K′f 是完全平行的概念，都是将副反应系数并入主常数。",
     "properties": [
       "只适用于指定 pH 或指定配体浓度",
@@ -2225,7 +2225,7 @@
     "en": "Formation constant",
     "category": "络合平衡",
     "definition": "络合反应 M + nL ⇌ MLₙ 的平衡常数，表示络合物的稳定性；也叫稳定常数 Ks 或 Kstab。",
-    "expanded": "分步反应各自有分步形成常数 Kf1、Kf2……，其连乘积即总形成常数。逆向的解离反应常数为不稳定常数 Ki（解离常数 Kd），满足 Kf = Ks = 1/Ki = 1/Kd。Kf 越大络合物越稳定。Ag(NH₃)₂⁺ 的 Kf1 = 2.5 × 10³、Kf2 = 1.0 × 10⁴，故总 Kf = 2.5 × 10⁷。",
+    "expanded": "分步反应各自有分步形成常数 Kf1、Kf2……，其连乘积即总形成常数。逆向的解离反应常数为不稳定常数 Ki（解离常数 Kd），满足 Kf = Ks = <span class=\"math-frac\"><span>1</span><span>Ki</span></span> = <span class=\"math-frac\"><span>1</span><span>Kd</span></span>。Kf 越大络合物越稳定。Ag(NH₃)₂⁺ 的 Kf1 = 2.5 × 10³、Kf2 = 1.0 × 10⁴，故总 Kf = 2.5 × 10⁷。",
     "properties": [
       "量纲随 n 变化，比较时须注意",
       "越大越稳定",
@@ -2249,7 +2249,7 @@
     "definition": "络合物解离反应 MLₙ ⇌ M + nL 的平衡常数，等于形成常数的倒数。",
     "expanded": "教材把络合物的解离 ML ⇌ M + L 与酸的解离 HA ⇌ H⁺ + A⁻ 并列，差别只在惯例：酸碱写解离、络合写缔合。两者可以互换使用，但必须与所写的反应式严格对应。",
     "properties": [
-      "Kd = 1/Kf",
+      "Kd = <span class=\"math-frac\"><span>1</span><span>Kf</span></span>",
       "数值越小络合物越稳定",
       "与酸碱的 Kb 在形式上对应"
     ],
@@ -2267,7 +2267,7 @@
     "en": "Cumulative formation constant",
     "category": "络合平衡",
     "definition": "逐级形成常数的连乘积，βₙ = Kf1Kf2Kf3…Kfn；β₀ 规定为 1。",
-    "expanded": "有了 βₙ，金属的分析浓度可以写成 CM = [M] + β₁[M][L] + β₂[M][L]² + … + βₙ[M][L]ⁿ = [M]·ΣβᵢLⁱ，由此得到游离金属的分数 αM = [M]/CM = (ΣβᵢLⁱ)⁻¹。αM 的地位与 EDTA 的 α₄ 完全相同，都是把副反应打包进常数。",
+    "expanded": "有了 βₙ，金属的分析浓度可以写成 CM = [M] + β₁[M][L] + β₂[M][L]² + … + βₙ[M][L]ⁿ = [M]·ΣβᵢLⁱ，由此得到游离金属的分数 αM = <span class=\"math-frac\"><span>[M]</span><span>CM</span></span> = (ΣβᵢLⁱ)⁻¹。αM 的地位与 EDTA 的 α₄ 完全相同，都是把副反应打包进常数。",
     "properties": [
       "βₙ 是逐级常数的乘积",
       "β₀ ≡ 1（约定）",
@@ -2314,7 +2314,7 @@
     "en": "Alpha 4",
     "category": "络合平衡",
     "definition": "在给定 pH 下，EDTA 总浓度中以完全去质子的 Y⁴⁻ 形式存在的分数。",
-    "expanded": "α₄ = Ka1Ka2Ka3Ka4 / Q₄，其中 Q₄ = [H⁺]⁴ + Ka1[H⁺]³ + Ka1Ka2[H⁺]² + Ka1Ka2Ka3[H⁺] + Ka1Ka2Ka3Ka4。pH 10 时 α₄ = 0.35（约三分之一）；pH 12 以上 α₄ ≈ 1；pH 7 时只有 4.8 × 10⁻⁴。",
+    "expanded": "α₄ = <span class=\"math-frac\"><span>Ka1Ka2Ka3Ka4</span><span>Q₄</span></span>，其中 Q₄ = [H⁺]⁴ + Ka1[H⁺]³ + Ka1Ka2[H⁺]² + Ka1Ka2Ka3[H⁺] + Ka1Ka2Ka3Ka4。pH 10 时 α₄ = 0.35（约三分之一）；pH 12 以上 α₄ ≈ 1；pH 7 时只有 4.8 × 10⁻⁴。",
     "properties": [
       "随 pH 升高而增大",
       "pH ≥ 12 时约为 1",
@@ -2335,7 +2335,7 @@
     "en": "Conditional formation constant",
     "category": "络合平衡",
     "definition": "把 pH（以及配体副反应）的影响并入形成常数后得到的表观常数，K′f = Kf·α₄（有金属副反应时再乘 αM）。",
-    "expanded": "K′f = Kf·α₄ = [MY] / ([M]·C_EDTA)，分母用的是 EDTA 的分析浓度而不是游离的 [Y⁴⁻]。与第 6 章的条件溶度积 K′sp 是完全平行的概念，都只在指定 pH 下成立。判据 log K′f ≥ 6 是络合滴定可行的门槛。",
+    "expanded": "K′f = Kf·α₄ = <span class=\"math-frac\"><span>[MY]</span><span>([M]·C_EDTA)</span></span>，分母用的是 EDTA 的分析浓度而不是游离的 [Y⁴⁻]。与第 6 章的条件溶度积 K′sp 是完全平行的概念，都只在指定 pH 下成立。判据 log K′f ≥ 6 是络合滴定可行的门槛。",
     "properties": [
       "只在指定 pH 下有效",
       "pH 越高 K′f 越大",
@@ -2558,10 +2558,10 @@
     "en": "supersaturation",
     "category": "重量分析",
     "definition": "溶液中所含溶解态溶质的量超过该温度下平衡溶解度的状态，是沉淀发生的推动力。",
-    "expanded": "过饱和度常用 Q − S 表示，Q 是沉淀剂加入瞬间沉淀物质的浓度，S 是沉淀在平衡时的溶解度。Q − S 是过饱和度本身，(Q − S)/S 是相对过饱和度，后者才是决定颗粒度的量。沉淀剂加入瞬间的局部浓度最高，所以「缓慢加入 + 充分搅拌」能有效压低 Q。",
+    "expanded": "过饱和度常用 Q − S 表示，Q 是沉淀剂加入瞬间沉淀物质的浓度，S 是沉淀在平衡时的溶解度。Q − S 是过饱和度本身，<span class=\"math-frac\"><span>(Q − S)</span><span>S</span></span> 是相对过饱和度，后者才是决定颗粒度的量。沉淀剂加入瞬间的局部浓度最高，所以「缓慢加入 + 充分搅拌」能有效压低 Q。",
     "properties": [
       "Q − S：过饱和度（绝对量）",
-      "(Q − S)/S：相对过饱和度（决定晶粒大小）",
+      "<span class=\"math-frac\"><span>(Q − S)</span><span>S</span></span>：相对过饱和度（决定晶粒大小）",
       "升高温度可提高 S，从而降低相对过饱和度"
     ],
     "confusions": "过饱和不是说溶液「浓度很高」，而是说「超过该条件下的平衡溶解度」。",
@@ -2579,14 +2579,14 @@
     "zh": "冯·韦曼比",
     "en": "von Weimarn ratio",
     "category": "重量分析",
-    "definition": "相对过饱和度的定量表达 (Q − S)/S，用来判断沉淀将形成大晶粒还是细晶粒。",
+    "definition": "相对过饱和度的定量表达 <span class=\"math-frac\"><span>(Q − S)</span><span>S</span></span>，用来判断沉淀将形成大晶粒还是细晶粒。",
     "expanded": "Q 为沉淀剂加入瞬间沉淀物质的浓度，S 为沉淀的平衡溶解度。相对过饱和度越小，晶核形成速度越慢，越能得到大颗粒沉淀。每种沉淀都有一个能大量自发产生晶核的极限值，称为临界值：低于临界值时以异相成核为主，得到大颗粒；高于临界值则以均相成核为主，得到小颗粒。BaSO<sub>4</sub> 的临界值为 1000，CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 为 31，AgCl 仅 5.5 —— 临界值越小，越容易越过它而得到细颗粒，沉淀条件就必须控制得越严。",
     "properties": [
-      "(Q − S)/S 越小 → 晶核形成越慢 → 沉淀颗粒越大",
+      "<span class=\"math-frac\"><span>(Q − S)</span><span>S</span></span> 越小 → 晶核形成越慢 → 沉淀颗粒越大",
       "临界值：BaSO<sub>4</sub> 1000、CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 31、AgCl 5.5",
       "压低 Q 的手段：稀溶液、缓慢加沉淀剂并搅拌、热溶液、尽量低 pH"
     ],
-    "confusions": "不要把 (Q − S)/S 与 Ksp 混为一谈：Ksp 是平衡常数，冯·韦曼比是动力学判断量。",
+    "confusions": "不要把 <span class=\"math-frac\"><span>(Q − S)</span><span>S</span></span> 与 Ksp 混为一谈：Ksp 是平衡常数，冯·韦曼比是动力学判断量。",
     "related": [
       "supersaturation",
       "relative-supersaturation",
@@ -2624,13 +2624,13 @@
     "en": "chromate indicator",
     "category": "沉淀滴定",
     "definition": "莫尔法中与过量 Ag<sup>+</sup> 生成砖红色 Ag<sub>2</sub>CrO<sub>4</sub> 沉淀、指示终点的指示剂。",
-    "expanded": "理论用量可由溶度积反推：AgCl 的摩尔溶解度 s = 1.0 × 10<sup>−5</sup> mol·L<sup>−1</sup>，Ag<sub>2</sub>CrO<sub>4</sub> 的 Ksp = 1.1 × 10<sup>−12</sup>。若 [CrO<sub>4</sub><sup>2−</sup>] > 0.011 mol·L<sup>−1</sup>，Ag<sub>2</sub>CrO<sub>4</sub> 会在 [Ag<sup>+</sup>] < 10<sup>−5</sup> mol·L<sup>−1</sup> 时就沉淀，即在计量点之前变色；浓度低于此值则需要过量 Ag<sup>+</sup> 才变色。实际取 0.002–0.005 mol·L<sup>−1</sup>，因为浓度太高时铬酸根的深黄色会掩盖 Ag<sub>2</sub>CrO<sub>4</sub> 的红色。",
+    "expanded": "理论用量可由溶度积反推：AgCl 的摩尔溶解度 s = 1.0 × 10<sup>−5</sup> mol·L<sup>−1</sup>，Ag<sub>2</sub>CrO<sub>4</sub> 的 Ksp = 1.1 × 10<sup>−12</sup>。若 [CrO<sub>4</sub><sup>2−</sup>] &gt; 0.011 mol·L<sup>−1</sup>，Ag<sub>2</sub>CrO<sub>4</sub> 会在 [Ag<sup>+</sup>] &lt; 10<sup>−5</sup> mol·L<sup>−1</sup> 时就沉淀，即在计量点之前变色；浓度低于此值则需要过量 Ag<sup>+</sup> 才变色。实际取 0.002–0.005 mol·L<sup>−1</sup>，因为浓度太高时铬酸根的深黄色会掩盖 Ag<sub>2</sub>CrO<sub>4</sub> 的红色。",
     "properties": [
       "变色反应 CrO<sub>4</sub><sup>2−</sup> + 2Ag<sup>+</sup> → Ag<sub>2</sub>CrO<sub>4</sub>↓（砖红）",
       "理论浓度 0.011 mol·L<sup>−1</sup>，实用 0.002–0.005 mol·L<sup>−1</sup>",
       "须在 pH 约 8 使用"
     ],
-    "confusions": "pH < 6 时部分铬酸根转为 HCrO<sub>4</sub><sup>−</sup>，需要更多 Ag<sup>+</sup> 才生成 Ag<sub>2</sub>CrO<sub>4</sub>；pH > 10 则可能析出 AgOH／Ag<sub>2</sub>O，所以莫尔法不是任何 pH 都能用。",
+    "confusions": "pH &lt; 6 时部分铬酸根转为 HCrO<sub>4</sub><sup>−</sup>，需要更多 Ag<sup>+</sup> 才生成 Ag<sub>2</sub>CrO<sub>4</sub>；pH &gt; 10 则可能析出 AgOH／Ag<sub>2</sub>O，所以莫尔法不是任何 pH 都能用。",
     "related": [
       "mohr-method",
       "argentometric-titration",
@@ -2734,7 +2734,7 @@
     "en": "critical relative supersaturation",
     "category": "重量分析",
     "definition": "每种沉淀能大量自发产生晶核的相对过饱和极限值，低于它时沉淀以异相成核为主，得到大颗粒。",
-    "expanded": "把相对过饱和度 (Q − S)/S 控制在临界值以下，溶液中已有的杂质表面或容器壁成为成核中心，晶核数目少、晶体随之长大，沉淀颗粒粗大、易于过滤洗涤。一旦超过临界值，均相成核爆发式发生，得到大量细颗粒甚至胶体。不同沉淀的临界值差别很大：BaSO<sub>4</sub> 为 1000，CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 为 31，AgCl 只有 5.5。临界值越小，越容易越过它，沉淀条件就必须控制得越严——这就是为什么 AgCl 一类的沉淀总是倾向于形成胶体。",
+    "expanded": "把相对过饱和度 <span class=\"math-frac\"><span>(Q − S)</span><span>S</span></span> 控制在临界值以下，溶液中已有的杂质表面或容器壁成为成核中心，晶核数目少、晶体随之长大，沉淀颗粒粗大、易于过滤洗涤。一旦超过临界值，均相成核爆发式发生，得到大量细颗粒甚至胶体。不同沉淀的临界值差别很大：BaSO<sub>4</sub> 为 1000，CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 为 31，AgCl 只有 5.5。临界值越小，越容易越过它，沉淀条件就必须控制得越严——这就是为什么 AgCl 一类的沉淀总是倾向于形成胶体。",
     "properties": [
       "BaSO<sub>4</sub> 1000、CaC<sub>2</sub>O<sub>4</sub>·H<sub>2</sub>O 31、AgCl 5.5",
       "临界值以下：异相成核，大颗粒",

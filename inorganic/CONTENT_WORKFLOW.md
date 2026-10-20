@@ -32,3 +32,8 @@ Navigation, search, bilingual term-page structure, cross-linking, theme controls
 accessibility, and offline/PWA behavior form a shared five-site feature layer.
 Changes to that layer are propagated to all chemistry sites; subject content and
 theme colors remain independent.
+
+
+## Formula typography (all future imports)
+
+Follow [the shared formula typography standard](../FORMULA_STYLE.md). All authored divisions, including inline formulas, tables, glossary explanations and fractional powers, use stacked fractions rather than `/` or `÷`. Preserve full numerator/denominator grouping and use serif math with italic variables. URLs, units, dates, exercise identifiers and chemical-pair labels retain their original notation.

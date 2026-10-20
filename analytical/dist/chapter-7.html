@@ -13,7 +13,7 @@
 
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-</head>
+<link rel="stylesheet" href="fractions.css"></head>
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">
@@ -115,7 +115,7 @@ K<sub>sp</sub> = [Ca²⁺] · Ox<sub>T</sub> α₂
 </div>
 <p>于是定义<b>条件溶度积</b>（conditional solubility product）K′sp：</p>
 <div class="equation large">
-K′<sub>sp</sub> = K<sub>sp</sub> / α₂ = [Ca²⁺] · Ox<sub>T</sub> = s²
+K′<sub>sp</sub> = <span class="math-frac" role="math"><span>K<sub>sp</sub></span><span>α₂</span></span> = [Ca²⁺] · Ox<sub>T</sub> = s²
 </div><div class="notation-box">
 <b>条件溶度积只在指定 pH 下成立</b>
 <p>
@@ -123,7 +123,7 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α₂ = [Ca²⁺] · Ox<sub>T</sub> = s²
 </div><div class="worked-example">
 <span>例</span>
 <h3>酸对草酸钙溶解度的影响</h3>
-<p>计算 CaC₂O₄ 在 [H⁺] = 0.0010 mol·L⁻¹ 溶液中的溶解度。</p><p>① 先算 α₂：</p><p>α₂ = (6.5 × 10⁻²)(6.1 × 10⁻⁵) / [(1.0 × 10⁻³)² + (6.5 × 10⁻²)(1.0 × 10⁻³) + (6.5 × 10⁻²)(6.1 × 10⁻⁵)] = 5.7 × 10⁻²</p><p>② 再算溶解度：s = √(Ksp / α₂) = √(2.6 × 10⁻⁹ / 5.7 × 10⁻²) = 2.1 × 10⁻⁴ mol·L⁻¹。</p><p>③ 对照：纯水中 s = √Ksp = 5.1 × 10⁻⁵ mol·L⁻¹。酸性条件下溶解度增大了约 <b>4 倍</b>。</p>
+<p>计算 CaC₂O₄ 在 [H⁺] = 0.0010 mol·L⁻¹ 溶液中的溶解度。</p><p>① 先算 α₂：</p><p>α₂ = <span class="math-frac" role="math"><span>(6.5 × 10⁻²)(6.1 × 10⁻⁵)</span><span>[(1.0 × 10⁻³)² + (6.5 × 10⁻²)(1.0 × 10⁻³) + (6.5 × 10⁻²)(6.1 × 10⁻⁵)]</span></span> = 5.7 × 10⁻²</p><p>② 再算溶解度：s = √(<span class="math-frac" role="math"><span>Ksp</span><span>α₂</span></span>) = √(<span class="math-frac" role="math"><span>2.6 × 10⁻⁹</span><span>5.7 × 10⁻²</span></span>) = 2.1 × 10⁻⁴ mol·L⁻¹。</p><p>③ 对照：纯水中 s = √Ksp = 5.1 × 10⁻⁵ mol·L⁻¹。酸性条件下溶解度增大了约 <b>4 倍</b>。</p>
 </div><div class="notation-box">
 <b>一个必须讲清楚的逻辑</b>
 <p>
@@ -162,7 +162,7 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α₂ = [Ca²⁺] · Ox<sub>T</sub> = s²
 </tr>
 <tr>
 <td>平衡常数</td>
-<td>[H⁺][A⁻] / [HA] = 1.0 × 10⁻⁶</td>
+<td><span class="math-frac" role="math"><span>[H⁺][A⁻]</span><span>[HA]</span></span> = 1.0 × 10⁻⁶</td>
 <td>(2)</td>
 </tr>
 <tr>
@@ -222,7 +222,7 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α₂ = [Ca²⁺] · Ox<sub>T</sub> = s²
 <p class="table-caveat">来源：教材 §11.2。化简的判据是酸的强弱与溶液的酸碱性，两条假设都必须在<b>最终结果</b>上自洽才算成立。</p>
 <p>把 (1) 除以 (2)，消去 [A⁻]：</p>
 <div class="equation large">
-[M⁺] = K<sub>sp</sub>[H⁺] / (K<sub>a</sub>[HA])
+[M⁺] = <span class="math-frac" role="math"><span>K<sub>sp</sub>[H⁺]</span><span>(K<sub>a</sub>[HA])</span></span>
 </div><div class="notation-box">
 <b>质量平衡法的三步套路</b>
 <p>
@@ -237,7 +237,7 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α₂ = [Ca²⁺] · Ox<sub>T</sub> = s²
 银离子与氨络合会让氯化银溶解，这是定性分析里就学过的现象。
 定量描述的方式与酸效应完全平行：把金属离子的分布分数 α<sub>M</sub> 引进 Ksp。</p>
 <div class="equation large">
-K′<sub>sp</sub> = K<sub>sp</sub> / α<sub>M</sub> = [M⁺]<sub>T</sub> · [A⁻] = s²
+K′<sub>sp</sub> = <span class="math-frac" role="math"><span>K<sub>sp</sub></span><span>α<sub>M</sub></span></span> = [M⁺]<sub>T</sub> · [A⁻] = s²
 </div><div class="table-scroll wide">
 <table>
 <thead>
@@ -253,19 +253,19 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α<sub>M</sub> = [M⁺]<sub>T</sub> · [A�
 <td>酸效应</td>
 <td>弱酸根阴离子 A⁻</td>
 <td>α<sub>A</sub>（如 α₂）</td>
-<td>K′sp = Ksp / α<sub>A</sub>，变大</td>
+<td>K′sp = <span class="math-frac" role="math"><span>Ksp</span><span>α<sub>A</sub></span></span>，变大</td>
 </tr>
 <tr>
 <td>络合效应</td>
 <td>金属阳离子 M⁺</td>
 <td>α<sub>M</sub></td>
-<td>K′sp = Ksp / α<sub>M</sub>，变大</td>
+<td>K′sp = <span class="math-frac" role="math"><span>Ksp</span><span>α<sub>M</sub></span></span>，变大</td>
 </tr>
 <tr>
 <td>两者同时存在</td>
 <td>阴阳离子都被夺走</td>
-<td>α<sub>A</sub> 与 α<sub>M</sub> 同时 < 1</td>
-<td>K′sp = Ksp / (α<sub>A</sub> α<sub>M</sub>)，效果<b>相乘</b></td>
+<td>α<sub>A</sub> 与 α<sub>M</sub> 同时 &lt; 1</td>
+<td>K′sp = <span class="math-frac" role="math"><span>Ksp</span><span>(α<sub>A</sub> α<sub>M</sub>)</span></span>，效果<b>相乘</b></td>
 </tr>
 </tbody>
 </table>
@@ -273,7 +273,7 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α<sub>M</sub> = [M⁺]<sub>T</sub> · [A�
 <p class="table-caveat">两个副反应同时存在时，溶解度按两条路线同时被拉高，所以条件溶度积要把两个 α 都除进去。</p><div class="notation-box">
 <b>α<sub>M</sub> 怎么写</b>
 <p>
-如果金属离子与配体 L 形成逐级络合物 ML⁺、ML₂⁺……，则<br>α<sub>M</sub> = 1 / (1 + β₁[L] + β₂[L]² + …)，其中 β 是累积形成常数。<br>这与第 9 章络合滴定的副反应系数是同一个公式——同一套数学在不同章节反复出现，这正是教材把它单独列一节的原因。</p>
+如果金属离子与配体 L 形成逐级络合物 ML⁺、ML₂⁺……，则<br>α<sub>M</sub> = <span class="math-frac" role="math"><span>1</span><span>(1 + β₁[L] + β₂[L]² + …)</span></span>，其中 β 是累积形成常数。<br>这与第 9 章络合滴定的副反应系数是同一个公式——同一套数学在不同章节反复出现，这正是教材把它单独列一节的原因。</p>
 </div><p class="source-note">来源：教材 §11.3，Example 11.4–11.5，式 (11.10)–(11.11)。</p>
 </section>
 <section id="curves">
@@ -314,7 +314,7 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α<sub>M</sub> = [M⁺]<sub>T</sub> · [A�
 <tr>
 <td>计量点前</td>
 <td>残留 Cl⁻ 为主要来源，沉淀的解离可忽略</td>
-<td>[Cl⁻] = (剩余 Cl⁻ 的毫摩尔数) / 总体积</td>
+<td>[Cl⁻] = <span class="math-frac" role="math"><span>(剩余 Cl⁻ 的毫摩尔数)</span><span>总体积</span></span></td>
 </tr>
 <tr>
 <td>计量点</td>
@@ -324,7 +324,7 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α<sub>M</sub> = [M⁺]<sub>T</sub> · [A�
 <tr>
 <td>计量点后</td>
 <td>过量 Ag⁺ 决定 [Cl⁻]</td>
-<td>[Cl⁻] = Ksp / [Ag⁺]，[Ag⁺] = 过量 Ag⁺ 的毫摩尔数 / 总体积</td>
+<td>[Cl⁻] = <span class="math-frac" role="math"><span>Ksp</span><span>[Ag⁺]</span></span>，[Ag⁺] = <span class="math-frac" role="math"><span>过量 Ag⁺ 的毫摩尔数</span><span>总体积</span></span></td>
 </tr>
 </tbody>
 </table>
@@ -332,7 +332,7 @@ K′<sub>sp</sub> = K<sub>sp</sub> / α<sub>M</sub> = [M⁺]<sub>T</sub> · [A�
 <p class="table-caveat">来源：教材 §11.4。三段的分界点就是计量点，这一点与第 4 章酸碱滴定曲线的三段式结构完全对应。</p><div class="worked-example">
 <span>例</span>
 <h3>氯离子滴定曲线的完整计算</h3>
-<p>100.0 mL 0.1000 mol·L⁻¹ Cl⁻ 用 0.1000 mol·L⁻¹ AgNO₃ 滴定，Ksp(AgCl) = 1.0 × 10⁻¹⁰。计算各点的 pCl。</p><p><b>0.00 mL</b>：pCl = −log 0.1000 = 1.00。</p><p><b>20.00 mL</b>：Cl⁻ 总量 = 100.0 × 0.1000 = 10.00 mmol；加入 Ag⁺ = 2.000 mmol；剩余 Cl⁻ = 8.00 mmol / 120.0 mL = 0.0667 mol·L⁻¹；pCl = 1.18。</p><p><b>99.00 mL</b>：剩余 Cl⁻ = 0.10 mmol / 199.0 mL = 5.0 × 10⁻⁴ mol·L⁻¹；pCl = 3.30。</p><p><b>99.50 mL</b>：剩余 0.05 mmol / 199.5 mL = 2.5 × 10⁻⁴ mol·L⁻¹；pCl = 3.60。</p><p><b>100.00 mL（计量点）</b>：[Cl⁻] = √Ksp = 1.0 × 10⁻⁵ mol·L⁻¹；pCl = 5.00。</p><p><b>100.50 mL</b>：过量 Ag⁺ = 0.05 mmol / 200.5 mL = 2.5 × 10⁻⁴ mol·L⁻¹；[Cl⁻] = Ksp / [Ag⁺] = 4.0 × 10⁻⁷ mol·L⁻¹；pCl = 6.40。</p><p><b>110.00 mL</b>：过量 Ag⁺ = 1.00 mmol / 210 mL = 4.76 × 10⁻³ mol·L⁻¹；[Cl⁻] = 2.1 × 10⁻⁸ mol·L⁻¹；pCl = 7.67。</p><p>注意突跃的位置：从 99.5 mL 到 100.5 mL，仅 1 mL 之差，pCl 就从 3.60 跳到 6.40——<b>近三个 pX 单位</b>。这就是沉淀滴定可行的原因。</p>
+<p>100.0 mL 0.1000 mol·L⁻¹ Cl⁻ 用 0.1000 mol·L⁻¹ AgNO₃ 滴定，Ksp(AgCl) = 1.0 × 10⁻¹⁰。计算各点的 pCl。</p><p><b>0.00 mL</b>：pCl = −log 0.1000 = 1.00。</p><p><b>20.00 mL</b>：Cl⁻ 总量 = 100.0 × 0.1000 = 10.00 mmol；加入 Ag⁺ = 2.000 mmol；剩余 Cl⁻ = <span class="math-frac" role="math"><span>8.00 mmol</span><span>120.0 mL</span></span> = 0.0667 mol·L⁻¹；pCl = 1.18。</p><p><b>99.00 mL</b>：剩余 Cl⁻ = <span class="math-frac" role="math"><span>0.10 mmol</span><span>199.0 mL</span></span> = 5.0 × 10⁻⁴ mol·L⁻¹；pCl = 3.30。</p><p><b>99.50 mL</b>：剩余 <span class="math-frac" role="math"><span>0.05 mmol</span><span>199.5 mL</span></span> = 2.5 × 10⁻⁴ mol·L⁻¹；pCl = 3.60。</p><p><b>100.00 mL（计量点）</b>：[Cl⁻] = √Ksp = 1.0 × 10⁻⁵ mol·L⁻¹；pCl = 5.00。</p><p><b>100.50 mL</b>：过量 Ag⁺ = <span class="math-frac" role="math"><span>0.05 mmol</span><span>200.5 mL</span></span> = 2.5 × 10⁻⁴ mol·L⁻¹；[Cl⁻] = <span class="math-frac" role="math"><span>Ksp</span><span>[Ag⁺]</span></span> = 4.0 × 10⁻⁷ mol·L⁻¹；pCl = 6.40。</p><p><b>110.00 mL</b>：过量 Ag⁺ = <span class="math-frac" role="math"><span>1.00 mmol</span><span>210 mL</span></span> = 4.76 × 10⁻³ mol·L⁻¹；[Cl⁻] = 2.1 × 10⁻⁸ mol·L⁻¹；pCl = 7.67。</p><p>注意突跃的位置：从 99.5 mL 到 100.5 mL，仅 1 mL 之差，pCl 就从 3.60 跳到 6.40——<b>近三个 pX 单位</b>。这就是沉淀滴定可行的原因。</p>
 </div><div class="equation">
 p² − (C<sub>X</sub>V<sub>X</sub> + C<sub>Y</sub>V<sub>Y</sub>)p + (C<sub>X</sub>V<sub>X</sub>C<sub>Y</sub>V<sub>Y</sub> − V<sub>T</sub>²K<sub>sp</sub>) = 0
 </div><div class="notation-box">
@@ -364,12 +364,11 @@ AgI 的 Ksp 比 AgCl 小 <b>10⁶ 倍</b>，所以 AgI 先沉淀。</p>
 滴定剂浓度 [Ag⁺] 达到使第二种沉淀的 Ksp 也被满足的那一刻。</p>
 <div class="equation">
 V<sub>Ag</sub>C<sub>Ag</sub> = (V<sub>X</sub>I₀ − [I⁻]V<sub>T</sub>) + (V<sub>X</sub>Cl₀ − [Cl⁻]V<sub>T</sub>) + [Ag⁺]V<sub>T</sub>
-</div><div class="equation">
-(V<sub>Ag</sub>C<sub>Ag</sub> − V<sub>X</sub>(I₀ + Cl₀)) / V<sub>T</sub> = [Ag⁺] − (K<sub>sp,AgI</sub> + K<sub>sp,AgCl</sub>) / [Ag⁺]
+</div><div class="equation"><span class="math-frac" role="math"><span>(V<sub>Ag</sub>C<sub>Ag</sub> − V<sub>X</sub>(I₀ + Cl₀))</span><span>V<sub>T</sub></span></span> = [Ag⁺] − <span class="math-frac" role="math"><span>(K<sub>sp,AgI</sub> + K<sub>sp,AgCl</sub>)</span><span>[Ag⁺]</span></span>
 </div><div class="worked-example">
 <span>例</span>
 <h3>食盐中碘含量的测定——分步沉淀的实际判断</h3>
-<p>美国食盐按 45 mg I / kg 盐加入碘化钾。忽略其他组分，若把盐配成 0.1 mol·L⁻¹ NaCl 溶液并用 AgNO₃ 滴定，问 AgCl 开始沉淀时还有多少比例的碘留在溶液中？</p><p>① 求 Cl⁻ 与 I⁻ 的摩尔比：M(NaCl) = 58.5 g·mol⁻¹，M(I) = 127 g·mol⁻¹，</p><p>(1000 / 58.5) / (0.045 / 127) = 4.82 × 10⁴</p><p>② 若 [Cl⁻] = 0.1 mol·L⁻¹，则 [I⁻] = 0.1 / (4.82 × 10⁴) = 2.07 × 10⁻⁶ mol·L⁻¹。</p><p>③ AgCl 开始沉淀时：[Ag⁺] = Ksp,AgCl / [Cl⁻] = 10⁻¹⁰ / 0.1 = 10⁻⁹ mol·L⁻¹。</p><p>④ 此时碘离子浓度：[I⁻] = Ksp,AgI / [Ag⁺] = 10⁻¹⁶ / 10⁻⁹ = 10⁻⁷ mol·L⁻¹。</p><p>⑤ 未沉淀的碘比例：10⁻⁷ / 2.07 × 10⁻⁶ = <b>4.83%</b>。</p><p>这说明即使 Ksp 相差 10⁶ 倍，滴定误差仍有近 5%——要把碘测准，必须用别的方法（如电位法确定第二个突跃）。</p>
+<p>美国食盐按 <span class="math-frac" role="math"><span>45 mg I</span><span>kg</span></span> 盐加入碘化钾。忽略其他组分，若把盐配成 0.1 mol·L⁻¹ NaCl 溶液并用 AgNO₃ 滴定，问 AgCl 开始沉淀时还有多少比例的碘留在溶液中？</p><p>① 求 Cl⁻ 与 I⁻ 的摩尔比：M(NaCl) = 58.5 g·mol⁻¹，M(I) = 127 g·mol⁻¹，</p><p><span class="math-frac" role="math"><span>(<span class="math-frac" role="math"><span>1000</span><span>58.5</span></span>)</span><span>(<span class="math-frac" role="math"><span>0.045</span><span>127</span></span>)</span></span> = 4.82 × 10⁴</p><p>② 若 [Cl⁻] = 0.1 mol·L⁻¹，则 [I⁻] = <span class="math-frac" role="math"><span>0.1</span><span>(4.82 × 10⁴)</span></span> = 2.07 × 10⁻⁶ mol·L⁻¹。</p><p>③ AgCl 开始沉淀时：[Ag⁺] = <span class="math-frac" role="math"><span>Ksp,AgCl</span><span>[Cl⁻]</span></span> = <span class="math-frac" role="math"><span>10⁻¹⁰</span><span>0.1</span></span> = 10⁻⁹ mol·L⁻¹。</p><p>④ 此时碘离子浓度：[I⁻] = <span class="math-frac" role="math"><span>Ksp,AgI</span><span>[Ag⁺]</span></span> = <span class="math-frac" role="math"><span>10⁻¹⁶</span><span>10⁻⁹</span></span> = 10⁻⁷ mol·L⁻¹。</p><p>⑤ 未沉淀的碘比例：<span class="math-frac" role="math"><span>10⁻⁷</span><span>2.07 × 10⁻⁶</span></span> = <b>4.83%</b>。</p><p>这说明即使 Ksp 相差 10⁶ 倍，滴定误差仍有近 5%——要把碘测准，必须用别的方法（如电位法确定第二个突跃）。</p>
 </div><div class="notation-box">
 <b>分步滴定的实用判据</b>
 <p>
@@ -701,5 +700,3 @@ X⁻ + Ag⁺（过量）→ AgX↓ + Ag⁺（剩余）<br>Ag⁺（剩余）+ SCN
 
 </body>
 </html>
-
-

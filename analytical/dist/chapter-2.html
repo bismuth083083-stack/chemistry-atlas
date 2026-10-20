@@ -12,7 +12,7 @@
 
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-</head>
+<link rel="stylesheet" href="fractions.css"></head>
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">
@@ -63,7 +63,7 @@
 <main class="workspace">
 <article class="article lesson">
 <header class="article-head">
-<p class="eyebrow">02 · BASIC OPERATIONS & SAMPLE PREPARATION</p>
+<p class="eyebrow">02 · BASIC OPERATIONS &amp; SAMPLE PREPARATION</p>
 <h1>基本操作与样品制备</h1>
 <p>可靠结果始于可追溯记录、合适材料、受控称量与定容，以及不会引入损失或污染的样品前处理。</p>
 <div>
@@ -247,7 +247,7 @@
 </section>
 
 <section id="materials">
-<p class="section-kicker">2.2 LABORATORY MATERIALS & REAGENTS</p>
+<p class="section-kicker">2.2 LABORATORY MATERIALS &amp; REAGENTS</p>
 <h2>实验材料与试剂等级</h2>
 <p>硼硅玻璃是烧杯、烧瓶、移液管和滴定管最常用的材料，耐热溶液和快速温度变化；但热碱会逐渐侵蚀它。材料选择同时受最高工作温度、热冲击和化学相容性约束。</p>
 <details class="data-details" open>
@@ -318,7 +318,7 @@
 <td>约 1500</td>
 <td>—</td>
 <td>耐多数酸和熔盐；受王水、熔融硝酸盐/氰化物及高温氯化物侵蚀；可与多种金属形成合金</td>
-<td>常与 Ir/Rh 合金化；熔融和 HF 处理</td>
+<td>常与 <span>Ir / Rh</span> 合金化；熔融和 HF 处理</td>
 </tr>
 <tr>
 <td>镍与铁</td>
@@ -487,13 +487,12 @@
 <span>污染与腐蚀</span>
 </div>
 <h3>空气浮力校正</h3>
-<div class="equation large">
-<i>W</i>
+<div class="equation large"><i>W</i>
 <sub>vac</sub> = <i>W</i>
 <sub>air</sub> + <i>W</i>
-<sub>air</sub> (0.0012/<i>D</i>
-<sub>o</sub> − 0.0012/<i>D</i>
-<sub>w</sub>)</div>
+<sub>air</sub> (<span class="math-frac" role="math"><span>0.0012</span><span><i>D</i>
+<sub>o</sub></span></span> − <span class="math-frac" role="math"><span>0.0012</span><span><i>D</i>
+<sub>w</sub></span></span>)</div>
 <div class="notation-box">
 <b>符号说明</b>
 <p>
@@ -582,11 +581,10 @@
 <p>三者应处在同一水平面。无色透明溶液读最低点；视线过高会产生视差并把体积读小，过低则读大。</p>
 </div>
 <h3>容量器皿校准的共同原理</h3>
-<div class="equation large">
-<i>V</i>
-<sub>t</sub> = <i>W</i>
-<sub>vac,t</sub> / <i>ρ</i>
-<sub>water,t</sub>
+<div class="equation large"><i>V</i>
+<sub>t</sub> = <span class="math-frac" role="math"><span><i>W</i>
+<sub>vac,t</sub></span><span><i>ρ</i>
+<sub>water,t</sub></span></span>
 </div>
 <p>称量器皿量入或量出的水，根据测量温度下水的密度换算体积，再按玻璃热膨胀修正到标定温度。容量瓶称量“装满前后”的质量差；移液管称量一次量出水的质量；滴定管需在多个体积点建立校正曲线，因为内径并非完全均匀。</p>
 <div class="notation-box">
@@ -1015,8 +1013,7 @@
 <p>稀释前后溶质的物质的量不变。用 0.2000 M 储备液配制 250.0 mL 0.0080 M Na₂CO₃ 时，<i>V</i>
 <sub>0</sub>=10.00 mL；用单标移液管移取后在 250.0 mL 容量瓶中定容。</p>
 <h3>当量浓度 Normality</h3>
-<div class="equation">
-<i>N</i> = (g / equivalent weight) / L</div>
+<div class="equation"><i>N</i> = <span class="math-frac" role="math"><span>(<span class="math-frac" role="math"><span>g</span><span>equivalent weight</span></span>)</span><span>L</span></span></div>
 <p>1 N 表示每升含 1 当量。反应单元依具体反应而定，可为 H⁺ 或电子；因此 normality 会随反应定义变化，不能脱离反应式使用。</p>
 <p class="source-note">来源：Basic operation 课件 slides 32–41；教材 §2.4–2.6 与 Chapter 5。</p>
 </section>
@@ -1243,4 +1240,3 @@
 
 </body>
 </html>
-

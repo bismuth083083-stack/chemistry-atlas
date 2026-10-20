@@ -13,7 +13,7 @@
 
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-</head>
+<link rel="stylesheet" href="fractions.css"></head>
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">
@@ -209,7 +209,7 @@
 </article>
 <article>
 <h3>突跃大小取决于浓度</h3>
-<p>酸的浓度与碱的浓度同时决定突跃幅度。三条曲线（0.1/0.1、0.01/0.01、0.001 mol·L⁻¹ 对 0.0001 mol·L⁻¹）的计量点 pH 都是 7.00，但浓度越低突跃越短。溶液越稀，指示剂选择越关键——这是第 4.6 节反复强调的一点。</p>
+<p>酸的浓度与碱的浓度同时决定突跃幅度。三条曲线（<span class="math-frac" role="math"><span>0.1</span><span>0.1</span></span>、<span class="math-frac" role="math"><span>0.01</span><span>0.01</span></span>、0.001 mol·L⁻¹ 对 0.0001 mol·L⁻¹）的计量点 pH 都是 7.00，但浓度越低突跃越短。溶液越稀，指示剂选择越关键——这是第 4.6 节反复强调的一点。</p>
 </article>
 </div>
 <h3>滴定管与体积准确度</h3>
@@ -290,7 +290,7 @@
 <section id="strongstrong">
 <p class="section-kicker">4.4 STRONG ACID VERSUS STRONG BASE</p>
 <h2><a class="term-link" href="term.html?slug=strong-acid-strong-base-titration">强酸强碱滴定</a>：三段式计算</h2>
-<p>强酸与强碱在水溶液中都完全电离，因此计算不需要平衡常数，只需要物质的量守恒和总积体。以 100.00 mL 0.1000 mol·L⁻¹ HCl 用 0.1000 mol·L⁻¹ NaOH 滴定为标准例题。定义被滴定物分数 <i>f</i> = 已加滴定剂量/计量点所需量，计量点时 <i>f</i> = 1。</p>
+<p>强酸与强碱在水溶液中都完全电离，因此计算不需要平衡常数，只需要物质的量守恒和总积体。以 100.00 mL 0.1000 mol·L⁻¹ HCl 用 0.1000 mol·L⁻¹ NaOH 滴定为标准例题。定义被滴定物分数 <i>f</i> = <span class="math-frac" role="math"><span>已加滴定剂量</span><span>计量点所需量</span></span>，计量点时 <i>f</i> = 1。</p>
 <div class="table-scroll wide">
 <table>
 <thead>
@@ -307,8 +307,8 @@
 <td>计量点前</td>
 <td>0 &lt; <i>f</i> &lt; 1</td>
 <td>剩余强酸</td>
-<td>[H⁺] = (<i>M</i><sub>酸</sub><i>V</i><sub>酸</sub> − <i>M</i><sub>碱</sub><i>V</i><sub>碱</sub>)/<i>V</i><sub>总</sub></td>
-<td>加入 50.00 mL：5.000 mmol/150.00 mL = 0.03333 M，pH = <b>1.48</b></td>
+<td>[H⁺] = <span class="math-frac" role="math"><span>(<i>M</i><sub>酸</sub><i>V</i><sub>酸</sub> − <i>M</i><sub>碱</sub><i>V</i><sub>碱</sub>)</span><span><i>V</i><sub>总</sub></span></span></td>
+<td>加入 50.00 mL：<span class="math-frac" role="math"><span>5.000 mmol</span><span>150.00 mL</span></span> = 0.03333 M，pH = <b>1.48</b></td>
 </tr>
 <tr>
 <td>计量点</td>
@@ -321,8 +321,8 @@
 <td>计量点后</td>
 <td><i>f</i> &gt; 1</td>
 <td>过量强碱</td>
-<td>[OH⁻] = (<i>M</i><sub>碱</sub><i>V</i><sub>碱</sub> − <i>M</i><sub>酸</sub><i>V</i><sub>酸</sub>)/<i>V</i><sub>总</sub></td>
-<td>加入 110.00 mL：1.000 mmol/210.00 mL = 0.004762 M，pOH = 2.32，pH = <b>11.68</b></td>
+<td>[OH⁻] = <span class="math-frac" role="math"><span>(<i>M</i><sub>碱</sub><i>V</i><sub>碱</sub> − <i>M</i><sub>酸</sub><i>V</i><sub>酸</sub>)</span><span><i>V</i><sub>总</sub></span></span></td>
+<td>加入 110.00 mL：<span class="math-frac" role="math"><span>1.000 mmol</span><span>210.00 mL</span></span> = 0.004762 M，pOH = 2.32，pH = <b>11.68</b></td>
 </tr>
 </tbody>
 </table>
@@ -369,8 +369,8 @@
 <tr>
 <td>② 计量点前</td>
 <td>HA/A⁻ 缓冲对</td>
-<td>pH = p<i>K</i><sub>a</sub> + log([A⁻]/[HA])</td>
-<td>加 10.00 mL：4.76 + log(1.000/4.000) = <b>4.16</b></td>
+<td>pH = p<i>K</i><sub>a</sub> + log(<span class="math-frac" role="math"><span>[A⁻]</span><span>[HA]</span></span>)</td>
+<td>加 10.00 mL：4.76 + log(<span class="math-frac" role="math"><span>1.000</span><span>4.000</span></span>) = <b>4.16</b></td>
 </tr>
 <tr>
 <td>②中点</td>
@@ -381,14 +381,14 @@
 <tr>
 <td>③ 计量点</td>
 <td>只有共轭碱 A⁻</td>
-<td>[OH⁻] = √(<i>K</i><sub>b</sub><i>C</i><sub>A⁻</sub>)，<i>K</i><sub>b</sub> = <i>K</i><sub>w</sub>/<i>K</i><sub>a</sub></td>
-<td><i>C</i><sub>OAc⁻</sub> = 5.000/100.00 = 0.05000 M；[OH⁻] = 5.35 × 10<sup>−6</sup>，pOH = 5.27，pH = <b>8.73</b></td>
+<td>[OH⁻] = √(<i>K</i><sub>b</sub><i>C</i><sub>A⁻</sub>)，<i>K</i><sub>b</sub> = <span class="math-frac" role="math"><span><i>K</i><sub>w</sub></span><span><i>K</i><sub>a</sub></span></span></td>
+<td><i>C</i><sub>OAc⁻</sub> = <span class="math-frac" role="math"><span>5.000</span><span>100.00</span></span> = 0.05000 M；[OH⁻] = 5.35 × 10<sup>−6</sup>，pOH = 5.27，pH = <b>8.73</b></td>
 </tr>
 <tr>
 <td>④ 计量点后</td>
 <td>过量强碱</td>
 <td>[OH⁻] = 过量碱的浓度</td>
-<td>加 60.00 mL：1.000 mmol/110.00 mL = 0.009091 M，pOH = 2.04，pH = <b>11.96</b></td>
+<td>加 60.00 mL：<span class="math-frac" role="math"><span>1.000 mmol</span><span>110.00 mL</span></span> = 0.009091 M，pOH = 2.04，pH = <b>11.96</b></td>
 </tr>
 </tbody>
 </table>
@@ -396,9 +396,8 @@
 <h3>中点即 pKa：一条能用于实验的捷径</h3>
 <p>区域②的中点（加入一半计量点体积的滴定剂）处 [HA] = [A⁻]，Henderson–Hasselbalch 方程退化为 pH = pKa。这条关系有三个直接用途：</p>
 <div class="definition-rail">
-<p>
-<b>读 pKa</b>
-<span>由实验滴定曲线上 <i>V</i><sub>NaOH</sub> = ½<i>V</i><sub>eq</sub> 处的 pH 直接读出分析物的 pKa。这是测定未知弱酸 pKa 的标准方法之一。</span>
+<p><b>读 pKa</b>
+<span>由实验滴定曲线上 <i>V</i><sub>NaOH</sub> = <span class="math-frac" role="math"><span>1</span><span>2</span></span><i>V</i><sub>eq</sub> 处的 pH 直接读出分析物的 pKa。这是测定未知弱酸 pKa 的标准方法之一。</span>
 </p>
 <p>
 <b>找缓冲最强点</b>
@@ -416,7 +415,7 @@
 </div>
 <figure class="ppt-figure">
 <img src="assets/lecture-04/weak-acid-curve-34.webp" alt="弱酸强碱滴定曲线与四个区域的统一计算式对照表" loading="lazy" decoding="async">
-<figcaption>曲线的两个特征点：<i>V</i> = ½<i>V</i><sub>eq</sub> 处斜率最小（pH = pKa），计量点处斜率最大。下方表格是四区域的统一计算式，弱碱滴定只需把每一行做 H⁺/OH⁻ 的镜像替换。<small>图源：Acid-Base Titration, slide 34</small>
+<figcaption>曲线的两个特征点：<i>V</i> = <span class="math-frac" role="math"><span>1</span><span>2</span></span><i>V</i><sub>eq</sub> 处斜率最小（pH = pKa），计量点处斜率最大。下方表格是四区域的统一计算式，弱碱滴定只需把每一行做 H⁺/OH⁻ 的镜像替换。<small>图源：Acid-Base Titration, slide 34</small>
 </figcaption>
 </figure>
 <h3><a class="term-link" href="term.html?slug=weak-base-strong-acid-titration">弱碱强酸滴定</a>：镜像处理</h3>
@@ -436,11 +435,11 @@
 </tr>
 <tr>
 <td>0 &lt; <i>f</i> &lt; 1</td>
-<td>pH = (p<i>K</i><sub>w</sub> − p<i>K</i><sub>b</sub>) + log(<i>C</i><sub>B</sub>/<i>C</i><sub>BH⁺</sub>)，中点处 pOH = p<i>K</i><sub>b</sub></td>
+<td>pH = (p<i>K</i><sub>w</sub> − p<i>K</i><sub>b</sub>) + log(<span class="math-frac" role="math"><span><i>C</i><sub>B</sub></span><span><i>C</i><sub>BH⁺</sub></span></span>)，中点处 pOH = p<i>K</i><sub>b</sub></td>
 </tr>
 <tr>
 <td><i>f</i> = 1</td>
-<td>[H⁺] = √((<i>K</i><sub>w</sub>/<i>K</i><sub>b</sub>)·<i>C</i><sub>BH⁺</sub>)</td>
+<td>[H⁺] = √((<span class="math-frac" role="math"><span><i>K</i><sub>w</sub></span><span><i>K</i><sub>b</sub></span></span>)·<i>C</i><sub>BH⁺</sub>)</td>
 </tr>
 <tr>
 <td><i>f</i> &gt; 1</td>
@@ -465,16 +464,16 @@
 <b><a class="term-link" href="term.html?slug=indicator">指示剂 Indicator</a></b> 是一类本身有颜色的弱酸或弱碱，它的电离态与非电离态颜色差别明显，因此可用于目视判断终点。以百里酚蓝 Thymol blue（H₂In）为例：非电离态 H₂In 在 pH &lt; 1.7 时为红色，第一级去质子态 HIn⁻ 在 pH 1.7–8.9 时为黄色，第二级去质子态 In²⁻ 在 pH &gt; 8.9 时为蓝色。</p>
 <p>设指示剂为弱酸 HIn，非电离态为红色、电离态为蓝色，则有 HIn ⇌ H⁺ + In⁻，写成 Henderson–Hasselbalch 形式：</p>
 <div class="equation large">
-pH = p<i>K</i><sub>In</sub> + log([In<sup>−</sup>]/[HIn])
+pH = p<i>K</i><sub>In</sub> + log(<span class="math-frac" role="math"><span>[In<sup>−</sup>]</span><span>[HIn]</span></span>)
 </div>
 <div class="compare-pair">
 <article>
 <h3>看到“酸色”的边界</h3>
-<p>当 [In⁻]/[HIn] = 1/10 时，人眼基本只能看出非电离态的颜色。代入方程得 pH = pKIn + log(1/10) = <b>pKIn − 1</b>。</p>
+<p>当 <span class="math-frac" role="math"><span>[In⁻]</span><span>[HIn]</span></span> = <span class="math-frac" role="math"><span>1</span><span>10</span></span> 时，人眼基本只能看出非电离态的颜色。代入方程得 pH = pKIn + log(<span class="math-frac" role="math"><span>1</span><span>10</span></span>) = <b>pKIn − 1</b>。</p>
 </article>
 <article>
 <h3>看到“碱色”的边界</h3>
-<p>当 [In⁻]/[HIn] = 10/1 时，人眼基本只能看出电离态的颜色。代入得 pH = pKIn + log(10) = <b>pKIn + 1</b>。</p>
+<p>当 <span class="math-frac" role="math"><span>[In⁻]</span><span>[HIn]</span></span> = <span class="math-frac" role="math"><span>10</span><span>1</span></span> 时，人眼基本只能看出电离态的颜色。代入得 pH = pKIn + log(10) = <b>pKIn + 1</b>。</p>
 </article>
 </div>
 <p>两个边界之间就是变色范围，因此<b>大多数指示剂的变色范围约为 2 个 pH 单位</b>；范围中点处 [In⁻] = [HIn]，pH = pKIn。</p>
@@ -523,9 +522,9 @@ pH = p<i>K</i><sub>In</sub> + log([In<sup>−</sup>]/[HIn])
 <h3>碳酸钠：一个二元碱的完整滴定</h3>
 <p>碳酸钠是可用于标定强酸的<b>一级标准物质</b>，它作为 Brønsted 碱分两步水解：</p>
 <div class="equation">
-CO<sub>3</sub><sup>2−</sup> + H<sub>2</sub>O ⇌ HCO<sub>3</sub><sup>−</sup> + OH<sup>−</sup> &nbsp;&nbsp;&nbsp; HCO<sub>3</sub><sup>−</sup> + H<sub>2</sub>O ⇌ H<sub>2</sub>CO<sub>3</sub> + OH<sup>−</sup>
+CO<sub>3</sub><sup>2−</sup> + H<sub>2</sub>O ⇌ HCO<sub>3</sub><sup>−</sup> + OH<sup>−</sup>     HCO<sub>3</sub><sup>−</sup> + H<sub>2</sub>O ⇌ H<sub>2</sub>CO<sub>3</sub> + OH<sup>−</sup>
 </div>
-<p>用 HCl 滴定时出现两个计量点。第一计量点（酚酞终点，pH ≈ 8.3）产物是 HCO₃⁻——一个两性物质，其 pH 与浓度无关，约为 ½(pKa₁ + pKa₂) = ½(6.35 + 10.33) = 8.3。第二计量点（甲基橙终点，pH ≈ 3.9）产物是 H₂CO₃（即溶解的 CO₂），此时溶液被 CO₂ 饱和。</p>
+<p>用 HCl 滴定时出现两个计量点。第一计量点（酚酞终点，pH ≈ 8.3）产物是 HCO₃⁻——一个两性物质，其 pH 与浓度无关，约为 <span class="math-frac" role="math"><span>1</span><span>2</span></span>(pKa₁ + pKa₂) = <span class="math-frac" role="math"><span>1</span><span>2</span></span>(6.35 + 10.33) = 8.3。第二计量点（甲基橙终点，pH ≈ 3.9）产物是 H₂CO₃（即溶解的 CO₂），此时溶液被 CO₂ 饱和。</p>
 <div class="worked-example">
 <span>例</span>
 <h3>碳酸钠两级滴定需要的酸量</h3>
@@ -540,7 +539,7 @@ CO<sub>3</sub><sup>2−</sup> + H<sub>2</sub>O ⇌ HCO<sub>3</sub><sup>−</sup>
 </div>
 <figure class="ppt-figure">
 <img src="assets/lecture-04/triprotic-curve-42.webp" alt="三元酸（磷酸）滴定曲线的理想形状与各特征点的 pH 关系" loading="lazy" decoding="async">
-<figcaption>磷酸的理想滴定曲线：两个中点分别落在 pH = pKa₁ 与 pH = pKa₂，两个计量点附近的 pH 依次为 ½(pKa₁+pKa₂) 与 ½(pKa₂+pKa₃)。Ka₃ 太小，第三个突跃实际不可用。<small>图源：Acid-Base Titration, slide 42</small>
+<figcaption>磷酸的理想滴定曲线：两个中点分别落在 pH = pKa₁ 与 pH = pKa₂，两个计量点附近的 pH 依次为 <span class="math-frac" role="math"><span>1</span><span>2</span></span>(pKa₁+pKa₂) 与 <span class="math-frac" role="math"><span>1</span><span>2</span></span>(pKa₂+pKa₃)。Ka₃ 太小，第三个突跃实际不可用。<small>图源：Acid-Base Titration, slide 42</small>
 </figcaption>
 </figure>
 <h3>混合酸的分步滴定</h3>
@@ -563,7 +562,7 @@ CO<sub>3</sub><sup>2−</sup> + H<sub>2</sub>O ⇌ HCO<sub>3</sub><sup>−</sup>
 <b>氨基酸 Amino acid</b> 同时含有酸性基团（羧基 –COOH）和碱性基团（氨基 –NH₂），是典型的两性物质。它在水中会发生<b>内质子转移</b>，形成<b>两性离子 Zwitterion</b>——同一分子上不同位置分别带正电荷与负电荷，整体电中性。</p>
 <p>两性离子的共轭酸是二元酸（分步电离），因此氨基酸的滴定曲线与二元酸类似，有两个可以利用的中点：</p>
 <div class="equation large">
-pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>) &nbsp;（两性离子形态）
+pH ≈ <span class="math-frac" role="math"><span>1</span><span>2</span></span>(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>)  （两性离子形态）
 </div>
 <div class="compare-pair">
 <article>
@@ -572,7 +571,7 @@ pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>) &nbsp;（两性离子
 </article>
 <article>
 <h3>侧链带可电离基团</h3>
-<p>如半胱氨酸（含巯基侧链）有三个可电离质子，Ka₁ = 2.0 × 10<sup>−2</sup>、Ka₂ = 4.4 × 10<sup>−9</sup>、Ka₃ = 1.8 × 10<sup>−11</sup>。Ka₁/Ka₂ ≈ 4.5 × 10⁶，差距足够；但 Ka₂/Ka₃ ≈ 244，远小于 10⁴，因此第二步与第三步电离无法分开。</p>
+<p>如半胱氨酸（含巯基侧链）有三个可电离质子，Ka₁ = 2.0 × 10<sup>−2</sup>、Ka₂ = 4.4 × 10<sup>−9</sup>、Ka₃ = 1.8 × 10<sup>−11</sup>。<span class="math-frac" role="math"><span>Ka₁</span><span>Ka₂</span></span> ≈ 4.5 × 10⁶，差距足够；但 <span class="math-frac" role="math"><span>Ka₂</span><span>Ka₃</span></span> ≈ 244，远小于 10⁴，因此第二步与第三步电离无法分开。</p>
 </article>
 </div>
 <p>判断某个氨基酸能出现几个分步终点，只需算相邻 Ka 的比值：≥ 10⁴ 才可以分开。</p>
@@ -625,7 +624,7 @@ pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>) &nbsp;（两性离子
 <p><b>②</b> 回滴消耗的 NaOH：0.0198 × 3.26 = 0.0645 mmol，即未反应的 HCl 为 0.0645 mmol。</p>
 <p><b>③</b> 与 NH₃ 反应的 HCl：0.214 − 0.0645 = 0.1495 mmol，所以氮的物质的量为 0.1495 mmol。</p>
 <p><b>④</b> 换算质量：0.1495 mmol × 14.007 mg·mmol⁻¹ = 2.094 mg N。</p>
-<p><b>⑤</b> 除以 16.2% 得蛋白质质量：2.094/0.162 = 12.9 mg。再除以取样体积 0.50 mL，得浓度 <b>≈ 18.6 mg protein/mL</b>（12.9 mg ÷ 0.50 mL）。</p>
+<p><b>⑤</b> 除以 16.2% 得蛋白质质量：<span class="math-frac" role="math"><span>2.094</span><span>0.162</span></span> = 12.9 mg。再除以取样体积 0.50 mL，得浓度 <b>≈ </b><span class="math-frac" role="math"><span><b>18.6 mg protein</b></span><span><b>mL</b></span></span>（<span class="math-frac" role="math"><span>12.9 mg</span><span>0.50 mL</span></span>）。</p>
 </div>
 <div class="exam-focus">
 <h3>本章计算题的六条检查清单</h3>
@@ -633,7 +632,7 @@ pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>) &nbsp;（两性离子
 <li><b>先判类型：</b>强酸强碱、弱酸强碱、弱碱强酸、两性物质，还是混合物？计算式完全不同。</li>
 <li><b>体积别忘相加：</b>所有浓度都要除以 <i>V</i><sub>总</sub> = <i>V</i><sub>被滴定液</sub> + <i>V</i><sub>已加滴定剂</sub>，或干脆全程用物质的量之比。</li>
 <li><b>计量点 pH 要判断：</b>强酸强碱为 7.00；弱酸强碱偏碱（用 Kb 算）；弱碱强酸偏酸（用 Ka 算）。</li>
-<li><b>中点给的是 pKa：</b><i>V</i> = ½<i>V</i><sub>eq</sub> 处 pH = pKa（弱碱则为 pOH = pKb），这是最快的读图依据。</li>
+<li><b>中点给的是 pKa：</b><i>V</i> = <span class="math-frac" role="math"><span>1</span><span>2</span></span><i>V</i><sub>eq</sub> 处 pH = pKa（弱碱则为 pOH = pKb），这是最快的读图依据。</li>
 <li><b>指示剂配突跃：</b>pKIn 靠近计量点 pH，且两边差距控制在 2 个 pH 单位内；溶液越稀越要谨慎。</li>
 <li><b>多元体系先看常数差：</b>相邻常数相差 ≥ 10⁴ 才有分开的终点突跃。</li>
 </ul>
@@ -647,5 +646,3 @@ pH ≈ ½(p<i>K</i><sub>a1</sub> + p<i>K</i><sub>a2</sub>) &nbsp;（两性离子
 
 </body>
 </html>
-
-

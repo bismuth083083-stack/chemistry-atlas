@@ -13,7 +13,7 @@
 
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-</head>
+<link rel="stylesheet" href="fractions.css"></head>
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">
@@ -109,10 +109,9 @@
 <figcaption>络合剂按「有无环状结构」分成两支：无机络合剂只给出简单络合物（AlF<sub>6</sub><sup>3−</sup>、Cu(NH<sub>3</sub>)<sub>4</sub><sup>2+</sup>），有机络合剂给出螯合物（如 8-羟基喹啉与铝）；氨羧络合剂是后一支中最重要的类别，共同结构单元是 –N(CH<sub>2</sub>COOH)<sub>2</sub>。<small>图源：Complexometric reaction and titrations, slide 3</small></figcaption>
 </figure>
 <p>最直观的例子是铜氨络离子：水合铜离子在溶液中呈浅蓝色，加入氨以后变成深蓝色的四氨合铜离子。银离子也能被氨络合，且是分步进行的——每加一个氨分子写一个常数，这一类常数叫形成常数 K<sub>f</sub>。</p>
-<div class="equation large">
-<b>Ag<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sup>+</sup></b>&nbsp;&nbsp;&nbsp;K<sub>f1</sub> = [Ag(NH<sub>3</sub>)<sup>+</sup>] / ([Ag<sup>+</sup>][NH<sub>3</sub>]) = 2.5 × 10<sup>3</sup><br><b>Ag(NH<sub>3</sub>)<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup></b>&nbsp;&nbsp;&nbsp;K<sub>f2</sub> = 1.0 × 10<sup>4</sup>
+<div class="equation large"><b>Ag<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sup>+</sup></b>   K<sub>f1</sub> = <span class="math-frac" role="math"><span>[Ag(NH<sub>3</sub>)<sup>+</sup>]</span><span>([Ag<sup>+</sup>][NH<sub>3</sub>])</span></span> = 2.5 × 10<sup>3</sup><br><b>Ag(NH<sub>3</sub>)<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup></b>   K<sub>f2</sub> = 1.0 × 10<sup>4</sup>
 </div>
-<p>K<sub>f</sub> 也叫稳定常数 K<sub>s</sub> 或 K<sub>stab</sub>。如果反过来写解离反应，浓度项取倒数，常数就是形成常数的倒数，叫不稳定常数 K<sub>i</sub> 或解离常数 K<sub>d</sub>，即 K<sub>f</sub> = K<sub>s</sub> = 1/K<sub>i</sub> = 1/K<sub>d</sub>。两个常数都能用，但要与所写的反应式严格对应。</p>
+<p>K<sub>f</sub> 也叫稳定常数 K<sub>s</sub> 或 K<sub>stab</sub>。如果反过来写解离反应，浓度项取倒数，常数就是形成常数的倒数，叫不稳定常数 K<sub>i</sub> 或解离常数 K<sub>d</sub>，即 K<sub>f</sub> = K<sub>s</sub> = <span class="math-frac" role="math"><span>1</span><span>K<sub>i</sub></span></span> = <span class="math-frac" role="math"><span>1</span><span>K<sub>d</sub></span></span>。两个常数都能用，但要与所写的反应式严格对应。</p>
 <div class="table-scroll wide">
 <table>
 <thead>
@@ -130,13 +129,13 @@
 </tr>
 <tr>
 <td>表达式</td>
-<td>K<sub>f</sub> = [ML<sub>n</sub>] / ([M][L]<sup>n</sup>)</td>
-<td>K<sub>d</sub> = [M][L]<sup>n</sup> / [ML<sub>n</sub>]</td>
+<td>K<sub>f</sub> = <span class="math-frac" role="math"><span>[ML<sub>n</sub>]</span><span>([M][L]<sup>n</sup>)</span></span></td>
+<td>K<sub>d</sub> = <span class="math-frac" role="math"><span>[M][L]<sup>n</sup></span><span>[ML<sub>n</sub>]</span></span></td>
 </tr>
 <tr>
 <td>数值关系</td>
 <td>越大表示络合物越稳定</td>
-<td>K<sub>d</sub> = 1/K<sub>f</sub>，越小越稳定</td>
+<td>K<sub>d</sub> = <span class="math-frac" role="math"><span>1</span><span>K<sub>f</sub></span></span>，越小越稳定</td>
 </tr>
 <tr>
 <td>酸碱类比</td>
@@ -156,12 +155,12 @@
 <div class="worked-example">
 <span>例</span>
 <h3>等体积混合 0.20 mol·L⁻¹ 的 M²⁺ 与 L（K<sub>f</sub> = 1.0 × 10<sup>8</sup>）</h3>
-<p>等体积混合使两者初始浓度都减半为 0.10 mol·L<sup>−1</sup>。设平衡时 [M<sup>2+</sup>] = x，则 [L] = x，[ML<sup>2+</sup>] = 0.10 − x ≈ 0.10。</p><p>代入 K<sub>f</sub>：0.10 / x<sup>2</sup> = 1.0 × 10<sup>8</sup>，解得 x = [M<sup>2+</sup>] = <b>3.2 × 10<sup>−5</sup> mol·L<sup>−1</sup></b>。注意这一步的前提是 x 远小于 0.10；若 K<sub>f</sub> 不够大，就得直接解二次方程（教材建议用 Excel 的单变量求解 Goal Seek）。</p>
+<p>等体积混合使两者初始浓度都减半为 0.10 mol·L<sup>−1</sup>。设平衡时 [M<sup>2+</sup>] = x，则 [L] = x，[ML<sup>2+</sup>] = 0.10 − x ≈ 0.10。</p><p>代入 K<sub>f</sub>：<span class="math-frac" role="math"><span>0.10</span><span>x<sup>2</sup></span></span> = 1.0 × 10<sup>8</sup>，解得 x = [M<sup>2+</sup>] = <b>3.2 × 10<sup>−5</sup> mol·L<sup>−1</sup></b>。注意这一步的前提是 x 远小于 0.10；若 K<sub>f</sub> 不够大，就得直接解二次方程（教材建议用 Excel 的单变量求解 Goal Seek）。</p>
 </div>
 <div class="worked-example">
 <span>例</span>
 <h3>25 mL 0.010 M AgNO₃ 加入 50 mL 0.015 M trien（K<sub>f</sub> = 5.0 × 10<sup>7</sup>）</h3>
-<p>先算毫摩尔数：Ag<sup>+</sup> 为 0.25 mmol，trien 为 0.75 mmol。反应几乎完全，0.25 mmol 的 Ag<sup>+</sup> 消耗等量 trien，余下 0.50 mmol trien 过量，生成 0.25 mmol 络合物，总体积 75 mL。</p><p>于是 [trien] = 0.50/75 = 6.7 × 10<sup>−3</sup> mol·L<sup>−1</sup>，[Ag(trien)<sup>+</sup>] = 0.25/75 = 3.3 × 10<sup>−3</sup> mol·L<sup>−1</sup>，设 [Ag<sup>+</sup>] = x：</p><p>3.3 × 10<sup>−3</sup> / (x × 6.7 × 10<sup>−3</sup>) = 5.0 × 10<sup>7</sup>，得 [Ag<sup>+</sup>] = <b>9.8 × 10<sup>−9</sup> mol·L<sup>−1</sup></b>。由于 x 比 6.7 × 10<sup>−3</sup> 小五个数量级，忽略 x 是成立的。</p>
+<p>先算毫摩尔数：Ag<sup>+</sup> 为 0.25 mmol，trien 为 0.75 mmol。反应几乎完全，0.25 mmol 的 Ag<sup>+</sup> 消耗等量 trien，余下 0.50 mmol trien 过量，生成 0.25 mmol 络合物，总体积 75 mL。</p><p>于是 [trien] = <span class="math-frac" role="math"><span>0.50</span><span>75</span></span> = 6.7 × 10<sup>−3</sup> mol·L<sup>−1</sup>，[Ag(trien)<sup>+</sup>] = <span class="math-frac" role="math"><span>0.25</span><span>75</span></span> = 3.3 × 10<sup>−3</sup> mol·L<sup>−1</sup>，设 [Ag<sup>+</sup>] = x：</p><p><span class="math-frac" role="math"><span>3.3 × 10<sup>−3</sup></span><span>(x × 6.7 × 10<sup>−3</sup>)</span></span> = 5.0 × 10<sup>7</sup>，得 [Ag<sup>+</sup>] = <b>9.8 × 10<sup>−9</sup> mol·L<sup>−1</sup></b>。由于 x 比 6.7 × 10<sup>−3</sup> 小五个数量级，忽略 x 是成立的。</p>
 </div>
 <h3>络合滴定与酸碱滴定的平行关系</h3>
 <p>课件第 3 页备注把这层类比明说了：<b>络合滴定与酸碱滴定有许多相似之处，但更为复杂</b>。把两者逐项对照，络合滴定的整套算法其实都能在酸碱滴定里找到原型——只是「质子转移」换成了「配位反应」，「pH」换成了「pM」，「K<sub>a</sub>」换成了「K<sub>f</sub>」，指示剂换成了金属指示剂。</p>
@@ -328,7 +327,7 @@
 </div>
 <p class="table-caveat">课件把 EDTA 当作<b>六元酸</b>处理，写出全部六个 pK<sub>a</sub>：0.0、1.5、2.0、2.66、6.16、10.24，对应 H<sub>6</sub>Y<sup>2+</sup> 一路去质子到 Y<sup>4−</sup>；教材则把前两个已超出常规 pH 范围的质子略去，只把 H<sub>4</sub>Y 之后的后四步记为 K<sub>a1</sub>–K<sub>a4</sub>。两套编号相差两步，<b>但曲线和 α<sub>4</sub> 完全一致</b>——真正与金属配位的始终是 Y<sup>4−</sup>。</p>
 <div class="equation large">
-<b>H<sub>4</sub>Y ⇌ H<sup>+</sup> + H<sub>3</sub>Y<sup>−</sup></b>&nbsp;&nbsp;K<sub>a1</sub> = 1.0 × 10<sup>−2</sup><br><b>H<sub>3</sub>Y<sup>−</sup> ⇌ H<sup>+</sup> + H<sub>2</sub>Y<sup>2−</sup></b>&nbsp;&nbsp;K<sub>a2</sub> = 2.2 × 10<sup>−3</sup><br><b>H<sub>2</sub>Y<sup>2−</sup> ⇌ H<sup>+</sup> + HY<sup>3−</sup></b>&nbsp;&nbsp;K<sub>a3</sub> = 6.9 × 10<sup>−7</sup><br><b>HY<sup>3−</sup> ⇌ H<sup>+</sup> + Y<sup>4−</sup></b>&nbsp;&nbsp;K<sub>a4</sub> = 5.5 × 10<sup>−11</sup>
+<b>H<sub>4</sub>Y ⇌ H<sup>+</sup> + H<sub>3</sub>Y<sup>−</sup></b>  K<sub>a1</sub> = 1.0 × 10<sup>−2</sup><br><b>H<sub>3</sub>Y<sup>−</sup> ⇌ H<sup>+</sup> + H<sub>2</sub>Y<sup>2−</sup></b>  K<sub>a2</sub> = 2.2 × 10<sup>−3</sup><br><b>H<sub>2</sub>Y<sup>2−</sup> ⇌ H<sup>+</sup> + HY<sup>3−</sup></b>  K<sub>a3</sub> = 6.9 × 10<sup>−7</sup><br><b>HY<sup>3−</sup> ⇌ H<sup>+</sup> + Y<sup>4−</sup></b>  K<sub>a4</sub> = 5.5 × 10<sup>−11</sup>
 </div>
 <div class="table-scroll wide">
 <table>
@@ -343,7 +342,7 @@
 <tr>
 <td>0～2</td>
 <td>≈ 0</td>
-<td>几乎全是 H<sub>4</sub>Y / H<sub>3</sub>Y<sup>−</sup>，不能络合</td>
+<td>几乎全是 <span>H<sub>4</sub>Y / H<sub>3</sub>Y<sup>−</sup></span>，不能络合</td>
 </tr>
 <tr>
 <td>4.4</td>
@@ -379,12 +378,10 @@
 <p class="section-kicker">5.4 CONDITIONAL FORMATION CONSTANT</p>
 <h2>条件形成常数：把 pH 打包进常数</h2>
 <p>以 Ca<sup>2+</sup> 为例，络合反应写成：</p>
-<div class="equation large">
-<b>Ca<sup>2+</sup> + Y<sup>4−</sup> ⇌ CaY<sup>2−</sup></b>&nbsp;&nbsp;&nbsp;K<sub>f</sub> = [CaY<sup>2−</sup>] / ([Ca<sup>2+</sup>][Y<sup>4−</sup>])
+<div class="equation large"><b>Ca<sup>2+</sup> + Y<sup>4−</sup> ⇌ CaY<sup>2−</sup></b>   K<sub>f</sub> = <span class="math-frac" role="math"><span>[CaY<sup>2−</sup>]</span><span>([Ca<sup>2+</sup>][Y<sup>4−</sup>])</span></span>
 </div>
 <p>问题在于：实验中我们只知道 EDTA 的总浓度 C<sub>H4Y</sub>，而 K<sub>f</sub> 的表达式里要的是 [Y<sup>4−</sup>]。两者由 α<sub>4</sub> 联系：[Y<sup>4−</sup>] = α<sub>4</sub>C<sub>H4Y</sub>。把它代进 K<sub>f</sub> 并移项，就得到<b>条件形成常数</b>：</p>
-<div class="equation large">
-<b>K<sub>f</sub> α<sub>4</sub> = K′<sub>f</sub> = [CaY<sup>2−</sup>] / ([Ca<sup>2+</sup>]C<sub>H4Y</sub>)</b>
+<div class="equation large"><b>K<sub>f</sub> α<sub>4</sub> = K′<sub>f</sub> = </b><span class="math-frac" role="math"><span><b>[CaY<sup>2−</sup>]</b></span><span><b>([Ca<sup>2+</sup>]C<sub>H4Y</sub>)</b></span></span>
 </div>
 <p>把这个式子取对数，就能一次看懂「log K′<sub>f</sub> 对 pH」那组曲线：log K′<sub>f</sub> = log K<sub>f</sub> + log α<sub>4</sub>。其中 α<sub>4</sub> <b>只与 pH 有关，与是哪种金属无关</b>，所以同一 pH 下所有金属的曲线都被加上同一个 log α<sub>4</sub>——<b>这组曲线彼此近似平行</b>，只是各自被自己的 log K<sub>f</sub> 整体抬高或压低。pH 13 时 α<sub>4</sub> ≈ 1，log α<sub>4</sub> ≈ 0，于是 <b>K′<sub>f</sub> = K<sub>f</sub></b>，曲线在最右端趋于平坦；pH 越低，曲线整体下移越多。</p>
 <figure class="ppt-figure">
@@ -399,7 +396,7 @@ K′<sub>f</sub> 既可以看成「pH 修正后的形成常数」，也可以看
 <div class="worked-example">
 <span>例</span>
 <h3>pH 10 时 α₄ 是多少？0.100 M Ca²⁺ 加入等量 EDTA 后 pCa 是多少？</h3>
-<p>把 [H<sup>+</sup>] = 10<sup>−10</sup> 与四个 K<sub>a</sub> 代入 Q<sub>4</sub>，得 Q<sub>4</sub> = 2.35 × 10<sup>−21</sup>；分子 Ka1Ka2Ka3Ka4 = 8.35 × 10<sup>−22</sup>。</p><p>α<sub>4</sub> = 8.35 × 10<sup>−22</sup> / 2.35 × 10<sup>−21</sup> = <b>0.36</b>。</p><p>再算等当点：10.0 mmol Ca<sup>2+</sup> 与 10.0 mmol EDTA 在 200 mL 中生成 0.0500 mol·L<sup>−1</sup> 的 CaY<sup>2−</sup>。此刻游离的 [Ca<sup>2+</sup>] 全部来自络合物解离，设它为 x；游离的 Y<sup>4−</sup> 也由解离产生，但其中只有 α<sub>4</sub> 那一份以 Y<sup>4−</sup> 形式存在，故 [Y<sup>4−</sup>] = α<sub>4</sub>x = 0.36x。把这两个量代回 K<sub>f</sub> 的定义式：</p><p>5.0 × 10<sup>10</sup> = 0.0500 / (x · 0.36x)，解得 x = 1.7 × 10<sup>−6</sup> mol·L<sup>−1</sup>，即 <b>pCa = 5.77</b>。</p><p>这里有一个常见的坑：<b>不要把条件常数与同一个 x 再乘一次 α<sub>4</sub></b>。K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub> 的分母用的是 EDTA 的分析浓度 C<sub>H4Y</sub>；等当点处若同时用 K′<sub>f</sub> 又用 C<sub>H4Y</sub> = 0.36x，就等于把 α<sub>4</sub> 算了两次，会得到 pCa ≈ 5.05，与教材的 5.77 不符。实用做法是：<b>等当点前、等当点后</b>用 K′<sub>f</sub>（条件常数，处理过量组分最方便），<b>等当点本身</b>回到 K<sub>f</sub> 加 α<sub>4</sub> 的定义式。</p>
+<p>把 [H<sup>+</sup>] = 10<sup>−10</sup> 与四个 K<sub>a</sub> 代入 Q<sub>4</sub>，得 Q<sub>4</sub> = 2.35 × 10<sup>−21</sup>；分子 Ka1Ka2Ka3Ka4 = 8.35 × 10<sup>−22</sup>。</p><p>α<sub>4</sub> = <span class="math-frac" role="math"><span>8.35 × 10<sup>−22</sup></span><span>2.35 × 10<sup>−21</sup></span></span> = <b>0.36</b>。</p><p>再算等当点：10.0 mmol Ca<sup>2+</sup> 与 10.0 mmol EDTA 在 200 mL 中生成 0.0500 mol·L<sup>−1</sup> 的 CaY<sup>2−</sup>。此刻游离的 [Ca<sup>2+</sup>] 全部来自络合物解离，设它为 x；游离的 Y<sup>4−</sup> 也由解离产生，但其中只有 α<sub>4</sub> 那一份以 Y<sup>4−</sup> 形式存在，故 [Y<sup>4−</sup>] = α<sub>4</sub>x = 0.36x。把这两个量代回 K<sub>f</sub> 的定义式：</p><p>5.0 × 10<sup>10</sup> = <span class="math-frac" role="math"><span>0.0500</span><span>(x · 0.36x)</span></span>，解得 x = 1.7 × 10<sup>−6</sup> mol·L<sup>−1</sup>，即 <b>pCa = 5.77</b>。</p><p>这里有一个常见的坑：<b>不要把条件常数与同一个 x 再乘一次 α<sub>4</sub></b>。K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub> 的分母用的是 EDTA 的分析浓度 C<sub>H4Y</sub>；等当点处若同时用 K′<sub>f</sub> 又用 C<sub>H4Y</sub> = 0.36x，就等于把 α<sub>4</sub> 算了两次，会得到 pCa ≈ 5.05，与教材的 5.77 不符。实用做法是：<b>等当点前、等当点后</b>用 K′<sub>f</sub>（条件常数，处理过量组分最方便），<b>等当点本身</b>回到 K<sub>f</sub> 加 α<sub>4</sub> 的定义式。</p>
 </div>
 <p class="source-note">来源：教材 §9.2 Conditional Formation Constant，p328–329；式 9.11–9.14，例 9.3；课件 5 slides 11-17。</p>
 </section>
@@ -431,7 +428,7 @@ K′<sub>f</sub> 既可以看成「pH 修正后的形成常数」，也可以看
 <tr>
 <td>等当点前</td>
 <td>过量 Ca<sup>2+</sup> + 生成的 CaY<sup>2−</sup></td>
-<td>游离金属 ≈ 未反应的毫摩尔数 / 总体积</td>
+<td>游离金属 ≈ <span class="math-frac" role="math"><span>未反应的毫摩尔数</span><span>总体积</span></span></td>
 <td>络合物解离很少，可忽略</td>
 </tr>
 <tr>
@@ -453,7 +450,7 @@ K′<sub>f</sub> 既可以看成「pH 修正后的形成常数」，也可以看
 <div class="worked-example">
 <span>例</span>
 <h3>pH 10 下用 0.100 M EDTA 滴定 100 mL 0.100 M Ca²⁺</h3>
-<p>(a) 滴定前：pCa = −log 0.100 = <b>1.00</b>。</p><p>(b) 加入 50 mL EDTA：Ca<sup>2+</sup> 余 10.0 − 5.0 = 5.0 mmol，总体积 150 mL，[Ca<sup>2+</sup>] = 0.033 mol·L<sup>−1</sup>，<b>pCa = 1.48</b>。</p><p>(c) 等当点（加 100 mL）：CaY<sup>2−</sup> = 10.0/200 = 0.0500 mol·L<sup>−1</sup>，用 K<sub>f</sub> = 5.0 × 10<sup>10</sup> 与 [Y<sup>4−</sup>] = 0.36x：x = √(0.0500/(0.36 × 5.0 × 10<sup>10</sup>)) = 1.7 × 10<sup>−6</sup>，<b>pCa = 5.77</b>。</p><p>(d) 加入 150 mL：过量 EDTA 5.0 mmol，C<sub>H4Y</sub> = 5.0/250 = 0.020 mol·L<sup>−1</sup>，CaY<sup>2−</sup> = 10.0/250 = 0.0400 mol·L<sup>−1</sup>。这一段用过量的条件常数最省事（K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub> = 5.0 × 10<sup>10</sup> × 0.36 = 1.8 × 10<sup>10</sup>）：</p><p>0.0400/(x × 0.020) = 1.8 × 10<sup>10</sup>，x = 1.1 × 10<sup>−10</sup>，<b>pCa = 9.95</b>。</p>
+<p>(a) 滴定前：pCa = −log 0.100 = <b>1.00</b>。</p><p>(b) 加入 50 mL EDTA：Ca<sup>2+</sup> 余 10.0 − 5.0 = 5.0 mmol，总体积 150 mL，[Ca<sup>2+</sup>] = 0.033 mol·L<sup>−1</sup>，<b>pCa = 1.48</b>。</p><p>(c) 等当点（加 100 mL）：CaY<sup>2−</sup> = <span class="math-frac" role="math"><span>10.0</span><span>200</span></span> = 0.0500 mol·L<sup>−1</sup>，用 K<sub>f</sub> = 5.0 × 10<sup>10</sup> 与 [Y<sup>4−</sup>] = 0.36x：x = √(<span class="math-frac" role="math"><span>0.0500</span><span>(0.36 × 5.0 × 10<sup>10</sup>)</span></span>) = 1.7 × 10<sup>−6</sup>，<b>pCa = 5.77</b>。</p><p>(d) 加入 150 mL：过量 EDTA 5.0 mmol，C<sub>H4Y</sub> = <span class="math-frac" role="math"><span>5.0</span><span>250</span></span> = 0.020 mol·L<sup>−1</sup>，CaY<sup>2−</sup> = <span class="math-frac" role="math"><span>10.0</span><span>250</span></span> = 0.0400 mol·L<sup>−1</sup>。这一段用过量的条件常数最省事（K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub> = 5.0 × 10<sup>10</sup> × 0.36 = 1.8 × 10<sup>10</sup>）：</p><p><span class="math-frac" role="math"><span>0.0400</span><span>(x × 0.020)</span></span> = 1.8 × 10<sup>10</sup>，x = 1.1 × 10<sup>−10</sup>，<b>pCa = 9.95</b>。</p>
 </div>
 <p>教材还给出一个经验判据：对 A + B ⇌ C 这样的二元缔合反应，只要<b>有效平衡常数大于约 10<sup>6</sup></b>，就可以认为限量试剂反应定量完成（&gt;99.9%）。pCa 从 1.48 跳到 5.77 再到 9.95，这个跨度就是可用指示剂定位终点的依据。</p>
 <p>如果需要「给定 pM 反求体积」，教材给出显式解（式 9.15），也可由质量平衡导出关于 [ML] 的二次方程：</p>
@@ -654,7 +651,7 @@ Ca–EDTA 与 Mg–EDTA 的形成常数太接近，调 pH 也无法区分，所�
 </tr>
 <tr>
 <td>Al<sup>3+</sup> 对 Ca<sup>2+</sup> 的干扰</td>
-<td>用 OH<sup>−</sup> 把铝络合成 Al(OH)<sub>4</sub><sup>−</sup> / AlO<sub>2</sub><sup>−</sup></td>
+<td>用 OH<sup>−</sup> 把铝络合成 <span>Al(OH)<sub>4</sub><sup>−</sup> / AlO<sub>2</sub><sup>−</sup></span></td>
 <td>把干扰离子变成阴离子，从而与 Ca<sup>2+</sup> 分离</td>
 </tr>
 <tr>
@@ -809,5 +806,3 @@ Ca–EDTA 与 Mg–EDTA 的形成常数太接近，调 pH 也无法区分，所�
 
 </body>
 </html>
-
-

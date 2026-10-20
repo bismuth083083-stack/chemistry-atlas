@@ -1,5 +1,6 @@
-const CACHE='chemistry-atlas-v22-org11';
+const CACHE='chemistry-atlas-v23-org12';
 const SHELL=[
+'lesson-12.html','org12.css','assets/lecture-12/e1-mechanism.webp','assets/lecture-12/e1-energy.webp','assets/lecture-12/hydride-shift.webp','assets/lecture-12/ring-expansion.webp','assets/lecture-12/methyl-shift.webp','assets/lecture-12/e2-mechanism.webp','assets/lecture-12/butene-ratios.webp','assets/lecture-12/cyclic-products.webp','assets/lecture-12/anti-periplanar.webp','assets/lecture-12/syn-elimination.webp','assets/lecture-12/stereo-e.webp','assets/lecture-12/stereo-z.webp','assets/lecture-12/e1-e2-comparison.webp','assets/lecture-12/worked-cyclic.webp','assets/lecture-12/worked-secondary.webp','assets/lecture-12/homework.webp',
 'lesson-11.html','org11.css','assets/lecture-11/leaving-groups.webp','assets/lecture-11/steric-rates.webp','assets/lecture-11/neopentyl.webp','assets/lecture-11/backside-orbital.webp','assets/lecture-11/walden-inversion.webp','assets/lecture-11/fischer-example.webp','assets/lecture-11/sn1-mechanism.webp','assets/lecture-11/sn1-energy.webp','assets/lecture-11/resonance-stabilization.webp','assets/lecture-11/solvent-rates.webp','assets/lecture-11/ion-pair.webp','assets/lecture-11/hydride-shift.webp','assets/lecture-11/hydride-capture.webp','assets/lecture-11/methyl-shift.webp','assets/lecture-11/methyl-capture.webp','assets/lecture-11/comparison.webp','assets/lecture-11/homework.webp',
   './','index.html','lesson-01.html','lesson-02.html','lesson-03.html','lesson-04.html','lesson-05.html','lesson-06.html','lesson-07.html','lesson-08.html','lesson-09.html','lesson-10.html','resonance.html','terms.html','term.html',
   'style.css','content.css','lecture-02.css','term-figures.css','ppt-figures.css','resonance.css','custom.css',
@@ -65,5 +66,6 @@ self.addEventListener('fetch',event=>{
     }
   })());
 });
+
 
 

@@ -2868,5 +2868,277 @@
     ],
     "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第18页；本站第11课",
     "updated": "2026-10-15"
+  },
+  {
+    "slug": "elimination",
+    "zh": "消除反应",
+    "en": "Elimination",
+    "category": "反应类型",
+    "definition": "底物失去两个原子或基团，同时形成新的不饱和键的一类反应。",
+    "expanded": "本课讨论β消除：相邻碳上的β-H与离去基团X移去，Cα–Cβ变为双键。E1先形成中间体，E2在单步协同过程中完成。",
+    "properties": [
+      "先标α与β位置",
+      "取代与消除可由同一底物竞争发生"
+    ],
+    "confusions": "消除描述净结构变化，具体电子转移顺序由机理说明。",
+    "related": [
+      "dehydrohalogenation",
+      "e1",
+      "e2"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "dehydrohalogenation",
+    "zh": "脱卤化氢",
+    "en": "Dehydrohalogenation",
+    "category": "反应类型",
+    "definition": "从卤代物净移去H和卤素，使相邻碳间形成双键的消除过程。",
+    "expanded": "碱取β-H，卤素作为离去基团离去。阴离子碱B⁻形成BH；中性醇作碱可形成ROH₂⁺，电荷随实际物种书写。",
+    "properties": [
+      "典型例子为卤代烷生成烯烃",
+      "E1或E2均可实现这一净变化"
+    ],
+    "confusions": "“脱HX”表述净组成，机理箭头要按实际反应步骤绘制。",
+    "related": [
+      "elimination",
+      "beta-hydrogen",
+      "leaving-group"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "alpha-beta-carbon",
+    "zh": "α碳与β碳",
+    "en": "Alpha and beta carbons",
+    "category": "结构判读",
+    "definition": "以离去基团为参照，直接连X的碳叫α碳，相邻碳叫β碳。",
+    "expanded": "在β消除中，新双键形成于α碳和提供H的β碳之间。先列出不同β位，再用对称性合并等价产物。",
+    "properties": [
+      "位置符号取决于所选参照基团",
+      "一个α碳可相邻多个β碳"
+    ],
+    "confusions": "先明确参照基团，再使用α/β标记；它们与IUPAC母链编号承担不同作用。",
+    "related": [
+      "beta-hydrogen",
+      "dehydrohalogenation"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "beta-hydrogen",
+    "zh": "β氢",
+    "en": "Beta hydrogen",
+    "category": "结构判读",
+    "definition": "与反应α碳相邻的β碳上所连的氢。",
+    "expanded": "普通脱卤化氢形成Cα=Cβ时从相应β碳移去H。E2还要求该C–H键与C–X键具有合适的空间排列。",
+    "properties": [
+      "检查不同β位及其氢数",
+      "构象影响可参与反应的β-H"
+    ],
+    "confusions": "α-H、β-H按连接关系定位；E2的可用性还包括空间条件。",
+    "related": [
+      "alpha-beta-carbon",
+      "antiperiplanar",
+      "e2"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "e1",
+    "zh": "单分子消除",
+    "en": "E1 · Unimolecular elimination",
+    "category": "反应机理",
+    "definition": "先电离形成碳正离子，再去β-H形成双键的消除机理。",
+    "expanded": "简单电离控速模型v=k[RX]；碳正离子可与亲核捕获、氢迁移及烷基迁移竞争。较稳定正离子和支持电离的介质有利于该路径。",
+    "properties": [
+      "常与SN1共享中间体",
+      "可发生正离子重排",
+      "简单速率常数单位s⁻¹"
+    ],
+    "confusions": "产物分支比例由后续捕获、去质子化和重排的竞争决定。",
+    "related": [
+      "sn1",
+      "carbocation",
+      "e2",
+      "carbocation-rearrangement"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "e2",
+    "zh": "双分子消除",
+    "en": "E2 · Bimolecular elimination",
+    "category": "反应机理",
+    "definition": "碱夺β-H、形成π键与离去基团离去在一步中协同完成的消除机理。",
+    "expanded": "典型简单速率式v=k[RX][B]，二级常数单位L·mol⁻¹·s⁻¹。可旋转体系通常经anti几何，刚性体系可出现受限的syn路径。",
+    "properties": [
+      "常需较强碱",
+      "空间排列影响产物与速率",
+      "普通一步路径保持碳骨架"
+    ],
+    "confusions": "判断E2需把二级动力学、产物和几何要求结合。",
+    "related": [
+      "e1",
+      "antiperiplanar",
+      "basicity",
+      "sn2"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "zaitsev-rule",
+    "zh": "Zaitsev规则",
+    "en": "Zaitsev rule",
+    "category": "反应选择性",
+    "definition": "许多β消除条件下，取代程度较高的烯烃优先形成的经验规则。",
+    "expanded": "普通小体积碱和可达构象下，多取代烯烃的稳定化常使其占优势；大体积碱、刚性几何与共轭效应会改变位置选择性。",
+    "properties": [
+      "比较双键上的碳取代基数",
+      "同一连接方式的E/Z继续单独判断"
+    ],
+    "confusions": "使用规则时同时给出碱、底物构象和反应条件。",
+    "related": [
+      "regioselectivity",
+      "hofmann-product",
+      "hyperconjugation"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "hofmann-product",
+    "zh": "Hofmann产物",
+    "en": "Hofmann product",
+    "category": "反应选择性",
+    "definition": "消除形成的较少取代烯烃。",
+    "expanded": "大体积碱较易夺取空间较开放位置的β-H，可提高该产物比例。这里按产物取代程度命名，并结合具体反应条件讨论比例。",
+    "properties": [
+      "常与Zaitsev产物比较",
+      "β-H可达性与碱位阻参与控制"
+    ],
+    "confusions": "该名称描述产物取向；主要产物仍由实际底物和条件决定。",
+    "related": [
+      "zaitsev-rule",
+      "steric-hindrance",
+      "beta-hydrogen"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "antiperiplanar",
+    "zh": "反式共平面",
+    "en": "Antiperiplanar",
+    "category": "立体化学",
+    "definition": "四原子Hβ–Cβ–Cα–X的二面角约180°的排列。",
+    "expanded": "这种排列利于消除所需轨道重叠，在可旋转体系中常结合交叉式构象降低能垒。环己烷椅式上对应相邻反向轴向H与离去基团。",
+    "properties": [
+      "典型E2反应几何",
+      "可用Newman投影检查"
+    ],
+    "confusions": "anti指H与X的反应几何；产物E/Z需按双键两端CIP另行标定。",
+    "related": [
+      "synperiplanar",
+      "newman-projection",
+      "trans-diaxial-elimination"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "synperiplanar",
+    "zh": "顺式共平面",
+    "en": "Synperiplanar",
+    "category": "立体化学",
+    "definition": "Hβ–Cβ–Cα–X二面角约0°的共平面排列。",
+    "expanded": "通常有较高重叠式扭转代价；特定刚性骨架可在几何限制下沿syn路径消除。本课第28页给出这类示例。",
+    "properties": [
+      "与anti几何比较",
+      "刚性结构可改变可用路径"
+    ],
+    "confusions": "syn描述起始反应排列；产物顺反关系须追踪其余基团。",
+    "related": [
+      "antiperiplanar",
+      "dihedral-angle",
+      "e2"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "trans-diaxial-elimination",
+    "zh": "反式二轴消除",
+    "en": "Trans-diaxial elimination",
+    "category": "构象与反应",
+    "definition": "环己烷椅式E2中，相邻反向轴向β-H与轴向离去基团所满足的消除几何。",
+    "expanded": "可由本课anti原则推导：先画保留up/down的椅式，翻环寻找轴向X，再检查两侧轴向H；反应构象占比影响总速率。",
+    "properties": [
+      "连接构象分析与E2",
+      "翻环保留up/down",
+      "可限制Zaitsev产物的可达性"
+    ],
+    "confusions": "正文图展示环状底物产物；反式二轴是由anti几何作出的椅式拓展。",
+    "related": [
+      "antiperiplanar",
+      "cyclohexane-chair",
+      "ring-flip",
+      "axial-equatorial"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "regioselectivity",
+    "zh": "区域选择性",
+    "en": "Regioselectivity",
+    "category": "反应选择性",
+    "definition": "在可能形成不同连接位置产物的反应中，对某一位置的优先选择。",
+    "expanded": "消除题比较在哪一对相邻碳之间成双键，例如1-丁烯与2-丁烯。先汇总同一连接方式的各种立体异构体，再比较位置比例。",
+    "properties": [
+      "位置选择与立体选择分层统计",
+      "受取代、共轭、碱位阻及几何控制"
+    ],
+    "confusions": "2-丁烯的E/Z比例属于立体层次；1-丁烯对2-丁烯属于位置层次。",
+    "related": [
+      "selectivity",
+      "zaitsev-rule",
+      "geometric-isomer"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "ring-expansion",
+    "zh": "环扩张",
+    "en": "Ring expansion",
+    "category": "反应机理",
+    "definition": "通过键迁移使环中原子数增加的骨架重排。",
+    "expanded": "本课环丁基甲基底物可借相邻C–C键迁移形成五元环正离子，后续捕获给醚，去质子化给环戊烯；电离与迁移可能耦合。",
+    "properties": [
+      "改变碳连接关系",
+      "常与正离子稳定性和张力变化相关"
+    ],
+    "confusions": "环扩张改变骨架；椅式翻环只改变构象。",
+    "related": [
+      "carbocation-rearrangement",
+      "alkyl-shift",
+      "ring-strain",
+      "ring-flip"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "e-z-configuration",
+    "zh": "E/Z构型",
+    "en": "E/Z configuration",
+    "category": "立体化学",
+    "definition": "按CIP规则选出双键两端各自高优先级基团：相对侧为E，同侧为Z。",
+    "expanded": "本课Ph–CH=C(Ph)–CH₃中，两端均为Ph优先，因此两Ph相对侧对应E，同侧对应Z。先确认每个双键碳连接两个不同基团。",
+    "properties": [
+      "分别比较双键两端的优先级",
+      "反应几何与产物标定分两步完成"
+    ],
+    "confusions": "cis/trans采用指定参照基团；E/Z采用CIP高优先级基团。",
+    "related": [
+      "cip-priority",
+      "geometric-isomer",
+      "stereospecificity"
+    ],
+    "source": "第12课 · Lecture 11 · Chapter 6-3"
   }
 ]

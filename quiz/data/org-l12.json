@@ -1,0 +1,675 @@
+{
+  "id": "ORG-L12",
+  "title": "E1/E2消除、立体化学与取代竞争",
+  "description": "β-H、重排、Zaitsev取向、anti几何、环己烷构象与四条路径竞争。",
+  "subject": "organic-chemistry",
+  "chapter": "Website Lesson 12 · Lecture 11 · Chapter 6-3",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "第12课笔记",
+      "url": "https://organic.chemistryatlas.xyz/lesson-12.html",
+      "role": "依据本次46页课件与正文标注的模型独立编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "2-溴丁烷中，把连Br的碳定义为α碳，β-H位于哪里？",
+      "points": 1,
+      "explanation": "β碳是与α碳直接相连的碳，β-H连在这些邻碳上。",
+      "difficulty": "easy",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "连Br碳上的H"
+        },
+        {
+          "id": "B",
+          "text": "与α碳相邻碳上的H"
+        },
+        {
+          "id": "C",
+          "text": "Br原子上的H"
+        },
+        {
+          "id": "D",
+          "text": "任意最远端的H"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "普通E1的简单电离控速模型对应哪一个速率式？",
+      "points": 1,
+      "explanation": "电离步骤只含底物，v=k[RX]，一级常数单位s⁻¹。",
+      "difficulty": "easy",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "v=k[B]²"
+        },
+        {
+          "id": "B",
+          "text": "v=k[RX][B]"
+        },
+        {
+          "id": "C",
+          "text": "v=k[RX]"
+        },
+        {
+          "id": "D",
+          "text": "v=k[RX]²"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "典型E2机理中，哪组变化在同一协同步骤完成？",
+      "points": 1,
+      "explanation": "碱夺β-H、C–H电子成π键及C–X断裂共同完成。",
+      "difficulty": "easy",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只断C–X，再停留于正离子"
+        },
+        {
+          "id": "B",
+          "text": "先形成自由基，再链传播"
+        },
+        {
+          "id": "C",
+          "text": "先形成稳定碳负离子，才离去"
+        },
+        {
+          "id": "D",
+          "text": "夺β-H、成C=C与X离去"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "相同溶剂和温度下，对典型v=k[RX][B]的E2，两种浓度均加倍，初速率变为几倍？",
+      "points": 1,
+      "explanation": "两项各带来2倍，合计2×2=4倍。",
+      "difficulty": "easy",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "4倍"
+        },
+        {
+          "id": "B",
+          "text": "2倍"
+        },
+        {
+          "id": "C",
+          "text": "8倍"
+        },
+        {
+          "id": "D",
+          "text": "1倍"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "Hβ–Cβ–Cα–X反式共平面的二面角约为？",
+      "points": 1,
+      "explanation": "anti-periplanar对应180°，syn-periplanar对应0°。",
+      "difficulty": "easy",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "60°"
+        },
+        {
+          "id": "B",
+          "text": "90°"
+        },
+        {
+          "id": "C",
+          "text": "180°"
+        },
+        {
+          "id": "D",
+          "text": "0°"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "在可电离的普通烷基卤体系中，哪些过程可从共同碳正离子发生？",
+      "points": 1,
+      "explanation": "正离子可被亲核捕获，或失β-H消除，也可先重排。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "亲核体捕获，随后视电荷去质子化"
+        },
+        {
+          "id": "B",
+          "text": "β位去质子化形成烯烃"
+        },
+        {
+          "id": "C",
+          "text": "合适的1,2-氢/烷基迁移"
+        },
+        {
+          "id": "D",
+          "text": "维持同一中间体，同时按普通一步SN2背面置换它"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "课件第22页给出2-溴丁烷在所示KOH/H₂O条件下，1-丁烯19%、2-丁烯81%。2-丁烯与1-丁烯的比例为？",
+      "points": 1,
+      "explanation": "直接按对应产物读取，2-丁烯:1-丁烯=81:19；这是课件给出的条件性数据。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "51:19"
+        },
+        {
+          "id": "B",
+          "text": "19:81"
+        },
+        {
+          "id": "C",
+          "text": "1:1"
+        },
+        {
+          "id": "D",
+          "text": "81:19"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "在普通可比条件下，用大体积强碱进行β消除，哪种趋势值得优先检查？",
+      "points": 1,
+      "explanation": "大体积碱可能优先接近较开放的β-H，提高较少取代烯烃的比例。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "较少取代烯烃比例上升"
+        },
+        {
+          "id": "B",
+          "text": "所有底物都只发生SN1"
+        },
+        {
+          "id": "C",
+          "text": "所有β-H的几何差别消失"
+        },
+        {
+          "id": "D",
+          "text": "反应必先形成游离正离子"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "1-溴-1-甲基环己烷在热甲醇中走SN1捕获，得到哪种中性醚？",
+      "points": 1,
+      "explanation": "亲核溶剂是甲醇，氧端捕获后去质子化给甲氧基产物。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1-乙氧基-1-甲基环己烷"
+        },
+        {
+          "id": "B",
+          "text": "1-甲氧基-1-甲基环己烷"
+        },
+        {
+          "id": "C",
+          "text": "1-甲基环己烯"
+        },
+        {
+          "id": "D",
+          "text": "亚甲基环己烷"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "E1中先形成的碳正离子可以先发生1,2-迁移，再从重排后的相邻位置失H生成烯烃。",
+      "points": 1,
+      "explanation": "每步重排后要按新的带正电碳重新寻找相邻β-H。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "对普通环己烷椅式E2，哪一组排列符合典型反式二轴要求？",
+      "points": 1,
+      "explanation": "轴向X与相邻反向轴向β-H满足anti几何。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "赤道向X与任意H"
+        },
+        {
+          "id": "B",
+          "text": "同向轴向H和X"
+        },
+        {
+          "id": "C",
+          "text": "相邻反向轴向H和X"
+        },
+        {
+          "id": "D",
+          "text": "同碳上的H和X"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "课后题6-34将1-溴-1-甲基环己烷在乙醇中加热。SN1醚产物应为？",
+      "points": 1,
+      "explanation": "乙醇参与捕获，把OCH₂CH₃引入原反应中心。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1-乙氧基-1-甲基环己烷"
+        },
+        {
+          "id": "B",
+          "text": "1-甲氧基-1-甲基环己烷"
+        },
+        {
+          "id": "C",
+          "text": "甲氧基环戊烷"
+        },
+        {
+          "id": "D",
+          "text": "乙氧基环丁烷"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "2-溴己烷与NaOMe/甲醇的课件例中，两条普通β消除位置路径给出哪组烯烃？",
+      "points": 1,
+      "explanation": "Br连C2，从C1或C3失H分别形成1-己烯和2-己烯。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2-己烯与3-己烯"
+        },
+        {
+          "id": "B",
+          "text": "环己烯与苯"
+        },
+        {
+          "id": "C",
+          "text": "1-戊烯与2-戊烯"
+        },
+        {
+          "id": "D",
+          "text": "1-己烯与2-己烯"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "要分析可自由旋转底物的E2立体结果，哪些步骤合理？",
+      "points": 1,
+      "explanation": "先画反应构象并追踪基团，产物形成后再按CIP标E/Z。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "沿将形成双键的C–C轴画Newman投影"
+        },
+        {
+          "id": "B",
+          "text": "寻找β-H与X的anti排列"
+        },
+        {
+          "id": "C",
+          "text": "追踪其余基团，形成双键后标E/Z"
+        },
+        {
+          "id": "D",
+          "text": "看到anti就直接把所有产物标成E"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "仅考虑一级电离控速E1，其他条件固定，底物浓度变为原来的3倍，初速率变为____倍。",
+      "points": 1,
+      "explanation": "v=k[RX]，底物浓度同比改变速率。",
+      "difficulty": "medium",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3.0",
+        "三"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "环丁基甲基溴在热甲醇中的课件例，沿环内C–C键迁移扩环的支路可得到哪组产物？",
+      "points": 2,
+      "explanation": "扩环形成五元环正离子，消除给环戊烯，甲醇捕获给甲氧基环戊烷。",
+      "difficulty": "hard",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "亚甲基环丁烷和1-甲氧基-1-甲基环丁烷"
+        },
+        {
+          "id": "B",
+          "text": "环戊烯和甲氧基环戊烷"
+        },
+        {
+          "id": "C",
+          "text": "环己烯和甲氧基环己烷"
+        },
+        {
+          "id": "D",
+          "text": "两种直链己烯"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "3-碘-2,2-二甲基丁烷在课件AgNO₃/乙醇例中，哪些判断正确？",
+      "points": 2,
+      "explanation": "AgI沉淀有助电离；甲基迁移后叔正离子可给B/C。A与重排分支的比例取决于去质子化和迁移竞争。",
+      "difficulty": "hard",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Ag⁺与I⁻形成AgI沉淀有助离去"
+        },
+        {
+          "id": "B",
+          "text": "1,2-甲基迁移可把所示仲正离子转为叔正离子"
+        },
+        {
+          "id": "C",
+          "text": "重排产物B为四取代烯烃、C为二取代烯烃"
+        },
+        {
+          "id": "D",
+          "text": "仅凭B比C稳定即可确定A必定完全消失"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "设Ph–CH(Br)–CH(Ph)–CH₃的特定非对映体经anti-E2后，两Ph位于双键相反侧。已知左端Ph>H、右端Ph>CH₃，其产物构型是？",
+      "points": 2,
+      "explanation": "两端高优先级基团都是Ph，相反侧对应E。",
+      "difficulty": "hard",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Z"
+        },
+        {
+          "id": "B",
+          "text": "两个双键碳都标R"
+        },
+        {
+          "id": "C",
+          "text": "两个双键碳都标S"
+        },
+        {
+          "id": "D",
+          "text": "E"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "在快构象平衡、仅反应构象参与E2、碱浓度恒定的模型中，f=0.20，kE2=0.50 L·mol⁻¹·s⁻¹，[B]=0.10 mol·L⁻¹，表观一级常数为？",
+      "points": 2,
+      "explanation": "kobs=f×kE2×[B]=0.20×0.50×0.10=0.010 s⁻¹。",
+      "difficulty": "hard",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.010 s⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "0.10 s⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "0.25 s⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "0.50 L·mol⁻¹·s⁻¹"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "同一Q同时作碱与亲核体；仅SN2/E2并行，vS=kS[RX][Q]，vE=kE[RX][Q]，kE=0.30、kS=0.10 L·mol⁻¹·s⁻¹。固定温度/介质，[Q]加倍后E2分数为？",
+      "points": 3,
+      "explanation": "公共浓度项约去，fE=0.30/(0.30+0.10)=75%；两条速率均加倍。",
+      "difficulty": "challenging",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "25%"
+        },
+        {
+          "id": "B",
+          "text": "50%"
+        },
+        {
+          "id": "C",
+          "text": "75%"
+        },
+        {
+          "id": "D",
+          "text": "100%"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "在固定温度/介质且速率式成立的模型中，若v消耗=(kion+(kS+kE)[Q])[RX]，测得kobs对[Q]呈线性，则截距可反映一级通道、斜率可反映两条二级通道之和。",
+      "points": 3,
+      "explanation": "由v消耗=kobs[RX]读出kobs=kion+(kS+kE)[Q]；结合产物组成才能继续拆分二级贡献。",
+      "difficulty": "challenging",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "环己烷E2模型：构象交换快、仅X轴向构象反应，初始反应构象分数0.10，其他条件固定。若这一分数提高到0.30，表观一级速率常数变为原来的____倍。",
+      "points": 3,
+      "explanation": "在kobs=f×kE2×[B]模型中，其他因子相同，比值为0.30/0.10=3。",
+      "difficulty": "challenging",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3.0",
+        "三"
+      ]
+    }
+  ]
+}

@@ -1593,6 +1593,41 @@
       ],
       "path": "org-l11.json",
       "mode": "fixed"
+    },
+    {
+      "id": "ORG-L12",
+      "title": "E1/E2消除、立体化学与取代竞争",
+      "description": "β-H、重排、Zaitsev取向、anti几何、环己烷构象与四条路径竞争。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 12,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 12 · Lecture 11 · Chapter 6-3",
+      "lesson": "E1/E2消除、立体化学与取代竞争",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "E1",
+        "E2",
+        "elimination",
+        "stereochemistry"
+      ],
+      "knowledgePoints": [
+        "beta hydrogens",
+        "carbocation rearrangement",
+        "Zaitsev rule",
+        "anti-periplanar geometry",
+        "trans-diaxial elimination",
+        "substitution competition"
+      ],
+      "createdAt": "2026-10-20",
+      "updatedAt": "2026-10-20",
+      "relatedNotes": [
+        "/organic/dist/lesson-12.html"
+      ],
+      "path": "org-l12.json",
+      "mode": "fixed"
     }
   ]
 }

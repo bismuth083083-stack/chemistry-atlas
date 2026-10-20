@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="物理化学第11课：混合物、偏摩尔量、化学势与Gibbs–Duhem方程，含完整推导、例题与22题测验" />
+    <title>第11课 · 混合物、偏摩尔量与化学势 · 物理化学知识库</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="pchem.css" />
+    <link rel="stylesheet" href="math.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#171b1d" />
+  <link rel="stylesheet" href="mixtures.css" /></head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="mark">物</span><span>物理化学知识库</span></a>
+      <label class="search"><span>⌕</span><input id="global-search" placeholder="搜索知识库…" aria-label="搜索知识库" /><kbd>⌘ K</kbd></label>
+      <button id="theme" class="icon-button">◐</button>
+    </header>
+    <aside class="sidebar">
+      <nav>
+        <p class="nav-label">知识库</p>
+        <a href="index.html"><span>◫</span>课程笔记</a>
+        <a href="terms.html"><span>Aa</span>双语词条库</a>
+        <p class="nav-label">物理化学 I</p>
+        <a href="lesson-01.html"><span>01</span>绪论、数学基础与理想气体</a>
+        <a href="lesson-02.html"><span>02</span>真实气体与状态方程</a>
+        <a href="lesson-03.html"><span>03</span>气体动理论与分子速率</a>
+        <a href="lesson-04.html"><span>04</span>热力学第一定律</a>
+        <a href="lesson-05.html"><span>05</span>第一定律的机械</a>
+        <a href="lesson-06.html"><span>06</span>热化学</a>
+        <a href="lesson-07.html"><span>07</span>热力学第二定律</a>
+        <a href="lesson-08.html"><span>08</span>第二定律的机械</a>
+      <a href="lesson-09.html"><span>09</span>相图与相的稳定性</a><a href="lesson-10.html"><span>10</span>相界线与相变类型</a><a class="active" href="lesson-11.html"><span>11</span>混合物、偏摩尔量与化学势</a><div class="mix-outline" aria-label="第11课章节"><a href="#map"><span>01</span>知识体系</a><a href="#composition"><span>02</span>组成的四种写法</a><a href="#definition"><span>03</span>偏摩尔量</a><a href="#volume"><span>04</span>偏摩尔体积</a><a href="#euler"><span>05</span>加和式与Euler定理</a><a href="#measure"><span>06</span>由实验求偏摩尔量</a><a href="#nacl"><span>07</span>NaCl例题</a><a href="#mu"><span>08</span>化学势</a><a href="#fundamentals"><span>09</span>四个基本微分式</a><a href="#held-variables"><span>10</span>化学势与其他偏摩尔量</a><a href="#gibbs-duhem"><span>11</span>Gibbs–Duhem</a><a href="#tangent"><span>12</span>拓展</a><a href="#mixing"><span>13</span>拓展</a><a href="#review"><span>14</span>应试公式表、静态问答与测验</a></div></nav>
+      <div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+    </aside>
+
+    <main class="workspace article mixture"><a class="back" href="index.html">← 返回课程笔记</a><header class="article-head"><p class="eyebrow">LECTURE 11 · CHAPTER 7 · 2026/10/20</p><h1>混合物、偏摩尔量与化学势</h1><p>Simple mixtures · Partial molar quantities · Gibbs–Duhem equation</p><div><span>知识体系</span><span>公式推导</span><span>详实应试笔记</span><span>22题测验</span></div></header><nav class="mix-jump" aria-label="本课目录"><a href="#map">1. 知识体系：从纯物质走向变组成体系</a><a href="#composition">2. 组成的四种写法：先分清分母</a><a href="#definition">3. 偏摩尔量：固定什么，改变什么</a><a href="#volume">4. 偏摩尔体积：测到的是整体的体积响应</a><a href="#euler">5. 加和式与Euler定理：当前组成处的精确关系</a><a href="#measure">6. 由实验求偏摩尔量：求斜率，再用加和式</a><a href="#nacl">7. NaCl例题：质量摩尔浓度中的链式法则</a><a href="#mu">8. 化学势：偏摩尔Gibbs能与物质转移方向</a><a href="#fundamentals">9. 四个基本微分式：从U逐个变换</a><a href="#held-variables">10. 化学势与其他偏摩尔量：下标决定导数</a><a href="#gibbs-duhem">11. Gibbs–Duhem：加和式与基本式共同给出的约束</a><a href="#tangent">12. 拓展：从摩尔性质曲线读切线截距</a><a href="#mixing">13. 拓展：理想气体混合，把化学势和混合熵连起来</a><a href="#review">14. 应试公式表、静态问答与测验</a></nav><section id="map"><h2>1. 知识体系：从纯物质走向变组成体系</h2><p>前两课用纯物质的μ=G<sub>m</sub>研究相稳定性。本课增加组成这个自由度：总体积V、Gibbs能G等既取决于T、p，也取决于各组分物质的量n<sub>i</sub>。由“加一点组分，总性质怎样变”定义偏摩尔量，再由广延性得到加和式，最后导出Gibbs–Duhem约束。</p><div class="mix-table"><table><thead><tr><th>推理环节</th><th>数学主线</th><th>物理含义</th></tr></thead><tbody><tr><td>加入组成变量</td><td>X=X(T,p,n₁,n₂,…)</td><td>混合物的环境随组成改变</td></tr><tr><td>定义局部贡献</td><td>X̄ᵢ=(∂X/∂nᵢ)T,p,nⱼ≠ᵢ</td><td>加一点组分i引起的总量增量</td></tr><tr><td>利用广延性</td><td>X=ΣnᵢX̄ᵢ</td><td>在当前组成处重构总量</td></tr><tr><td>识别化学势</td><td>μᵢ=Ḡᵢ</td><td>组分转移的Gibbs能代价</td></tr><tr><td>比较两种dG</td><td>Σnᵢdμᵢ=−S dT+V dp</td><td>各组分化学势相互约束</td></tr></tbody></table></div><p>本次10页PDF通常每页两张幻灯片，第10页仅上半页。实际内容为浓度表示、偏摩尔体积、偏摩尔Gibbs能、四个基本微分式和Gibbs–Duhem方程。章目录中的理想溶液、Raoult/Henry定律、依数性及活度属于后续主题。本页的切线法与理想气体混合计算作为已标注的推导拓展。</p></section><section id="composition"><h2>2. 组成的四种写法：先分清分母</h2><figure><img src="assets/lecture-11/composition.webp" alt="摩尔分数、质量摩尔浓度、物质的量浓度与质量分数的定义" loading="lazy" decoding="async"><figcaption>课件PDF第2页上半页。摩尔分数、质量摩尔浓度、物质的量浓度与质量分数的定义</figcaption></figure>
+<div class="mix-table"><table><thead><tr><th>量</th><th>定义</th><th>分母与常用单位</th></tr></thead><tbody><tr><td><a class="term-link" href="term.html?slug=mole-fraction">摩尔分数xᵢ</a></td><td><span class="frac"><span>nᵢ</span><span>Σⱼnⱼ</span></span></td><td>总物质的量；无量纲，Σxᵢ=1</td></tr><tr><td><a class="term-link" href="term.html?slug=molality">质量摩尔浓度bᴮ</a></td><td><span class="frac"><span>nᴮ</span><span>mᴬ</span></span></td><td>溶剂质量，取kg；mol·kg⁻¹</td></tr><tr><td><a class="term-link" href="term.html?slug=molar-concentration">物质的量浓度cᴮ</a></td><td><span class="frac"><span>nᴮ</span><span>V</span></span></td><td>溶液总体积；mol·m⁻³或mol·L⁻¹</td></tr><tr><td><a class="term-link" href="term.html?slug=mass-fraction">质量分数wᵢ</a></td><td><span class="frac"><span>mᵢ</span><span>Σⱼmⱼ</span></span></td><td>总质量；无量纲，Σwᵢ=1</td></tr></tbody></table></div>
+<p>下标A代表溶剂，B代表溶质；m为质量，M为摩尔质量，n为物质的量。质量摩尔浓度采用溶剂质量，物质的量浓度采用溶液体积。在组成保持的封闭体系中，热胀冷缩会改变c；b和x的数值保持。</p>
+<h3>x与b的精确换算，再取稀溶液近似</h3>
+<div class="formula">n<sub>A</sub>=<span class="frac"><span>m<sub>A</sub></span><span>M<sub>A</sub></span></span>， n<sub>B</sub>=b<sub>B</sub>m<sub>A</sub><br>x<sub>B</sub>=<span class="frac"><span>b<sub>B</sub>M<sub>A</sub></span><span>1+b<sub>B</sub>M<sub>A</sub></span></span> ≈ b<sub>B</sub>M<sub>A</sub></div>
+<p>M<sub>A</sub>使用kg·mol⁻¹，使b<sub>B</sub>M<sub>A</sub>无量纲。近似条件为b<sub>B</sub>M<sub>A</sub>≪1。例：水M<sub>A</sub>≈0.018 kg·mol⁻¹，b=0.10 mol·kg⁻¹，精确x<sub>B</sub>=0.0018/1.0018≈0.001797，稀溶液近似为0.0018。</p>
+<h3>x与c：密度进入换算</h3>
+<div class="formula">x<sub>B</sub> ≈ <span class="frac"><span>M<sub>A</sub></span><span>ρ<sub>A</sub></span></span>c<sub>B</sub></div>
+<p>这里ρ<sub>A</sub>为纯溶剂密度。条件是n<sub>B</sub>≪n<sub>A</sub>，且稀溶液总体积近似溶剂体积V≈V<sub>A</sub>。若c用mol·m⁻³，则M用kg·mol⁻¹、ρ用kg·m⁻³；采用mol·L⁻¹时也要配套体积单位。1 mol·L⁻¹=1000 mol·m⁻³。</p></section><section id="definition"><h2>3. 偏摩尔量：固定什么，改变什么</h2><p>设X为均匀单相混合物的广延性质，例如V、U、H、S、A或G。<a class="term-link" href="term.html?slug=partial-molar-quantity">偏摩尔量（partial molar quantity）</a>定义为：</p>
+<div class="formula">X̄<sub>i</sub> = (<span class="frac"><span>∂X</span><span>∂n<sub>i</sub></span></span>)<sub>T,p,n<sub>j≠i</sub></sub></div>
+<p>式中X̄<sub>i</sub>是组分i对总性质的局部增量贡献，单位为X的单位除以mol。下标的意思是：固定温度T、压力p和所有其他组分的物质的量，只让n<sub>i</sub>改变。加入i时，摩尔分数随之改变；偏导下标中保持的是其他n<sub>j</sub>。</p>
+<div class="formula">dX = (<span class="frac"><span>∂X</span><span>∂T</span></span>)<sub>p,n</sub>dT + (<span class="frac"><span>∂X</span><span>∂p</span></span>)<sub>T,n</sub>dp + Σ<sub>i</sub>X̄<sub>i</sub>dn<sub>i</sub><br>恒T、p：dX = Σ<sub>i</sub>X̄<sub>i</sub>dn<sub>i</sub></div>
+<p>n表示全体组分的物质的量；dn<sub>i</sub>很小时，总量变化的一阶近似为X̄<sub>i</sub>dn<sub>i</sub>。在大量混合物中加入极少组分，会使组成变化很小，这正是课件用“加到大量溶液中”解释导数的原因。有限量加入可通过沿途变化的偏摩尔量积分计算。</p>
+<p><a class="term-link" href="term.html?slug=extensive-property">广延量X</a>随体系按比例放大而放大；<a class="term-link" href="term.html?slug=intensive-property">强度量X̄ᵢ</a>在保持T、p、组成时与体系总大小无关。偏摩尔量仍可随组成变化。</p><figure><img src="assets/lecture-11/partial-summary.webp" alt="偏摩尔量定义、广延量加和式与恒温恒压约束的课件总结" loading="lazy" decoding="async"><figcaption>课件PDF第9页下半页。偏摩尔量定义、广延量加和式与恒温恒压约束的课件总结</figcaption></figure>
+<p class="source">来源：PDF第9页；以下各式针对可微、均匀的宏观单相体系，采用通常体积功热力学模型，忽略表面等额外贡献。</p></section><section id="volume"><h2>4. 偏摩尔体积：测到的是整体的体积响应</h2><div class="formula">V̄<sub>i</sub> = (<span class="frac"><span>∂V</span><span>∂n<sub>i</sub></span></span>)<sub>T,p,n<sub>j≠i</sub></sub></div>
+<p><a class="term-link" href="term.html?slug=partial-molar-volume">偏摩尔体积</a>V̄<sub>i</sub>的SI单位为m³·mol⁻¹，实验中常用cm³·mol⁻¹。1 cm³=10⁻⁶ m³。它的大小来自加入组分后的全部分子环境与堆积、溶剂化响应。</p><figure><img src="assets/lecture-11/solvation.webp" alt="水加入大量纯水与大量乙醇时，局部体积增量不同" loading="lazy" decoding="async"><figcaption>课件PDF第3页上半页。水加入大量纯水与大量乙醇时，局部体积增量不同</figcaption></figure>
+<p>课件用约18 cm³·mol⁻¹与14 cm³·mol⁻¹对比：加水到水中与加水到大量乙醇中，增量不同。这里的数值描述所示环境和极限附近的行为。对有限组成范围，V̄<sub>水</sub>和V̄<sub>乙醇</sub>随组成的曲线由第3页下图给出。</p><figure><img src="assets/lecture-11/volume-composition.webp" alt="25°C水–乙醇混合物的偏摩尔体积随组成变化" loading="lazy" decoding="async"><figcaption>课件PDF第3页下半页。25°C水–乙醇混合物的偏摩尔体积随组成变化</figcaption></figure>
+<h3>负偏摩尔体积怎样理解？</h3>
+<p>在某些电解质溶液中，加入溶质可引起显著的溶剂化与结构收缩，使总液体体积减小。这时(∂V/∂n<sub>溶质</sub>)为负。负号描述加入操作对应的净斜率；样品的总体积V仍为正。</p><figure><img src="assets/lecture-11/negative-volume.webp" alt="固定另一组分物质的量时，体积曲线在不同组成处可有正或负斜率" loading="lazy" decoding="async"><figcaption>课件PDF第4页上半页。固定另一组分物质的量时，体积曲线在不同组成处可有正或负斜率</figcaption></figure>
+<p>例如V̄<sub>B</sub>=−5 cm³·mol⁻¹，局部加入0.020 mol B，并保持T、p及n<sub>A</sub>固定，则ΔV≈−0.10 cm³。这个局部线性估算假设此小范围内斜率近似恒定。</p></section><section id="euler"><h2>5. 加和式与Euler定理：当前组成处的精确关系</h2><p>同一均匀单相体系按比例放大λ倍，T、p和组成保持，广延性写为X(T,p,λn₁,…)=λX(T,p,n₁,…)。对λ求导，并令λ=1：</p>
+<div class="formula"><span class="frac"><span>dX(T,p,λn₁,…)</span><span>dλ</span></span> = Σ<sub>i</sub>(<span class="frac"><span>∂X</span><span>∂λn<sub>i</sub></span></span>)<sub>T,p,其余量</sub>n<sub>i</sub> = X<br><b>X = Σ<sub>i</sub>n<sub>i</sub>X̄<sub>i</sub></b></div>
+<p>这是<a class="term-link" href="term.html?slug=euler-thermodynamic-relation">Euler齐次关系</a>。体积与Gibbs能的两个重要实例为V=Σn<sub>i</sub>V̄<sub>i</sub>、G=Σn<sub>i</sub>μ<sub>i</sub>。右侧各偏摩尔量都在<b>同一个最终组成</b>处取值。这样既保持精确加和，又允许偏摩尔量随组成改变。</p>
+<p>纯物质摩尔量X<sub>m,i</sub><sup>*</sup>描述纯i；偏摩尔量X̄<sub>i</sub>描述混合物中i的增量贡献。纯物质极限下，二者趋于相应纯相值。混合前后性质差可写：</p>
+<div class="formula">Δ<sub>mix</sub>X = X<sub>混合物</sub>−Σ<sub>i</sub>n<sub>i</sub>X<sub>m,i</sub><sup>*</sup> = Σ<sub>i</sub>n<sub>i</sub>(X̄<sub>i</sub>−X<sub>m,i</sub><sup>*</sup>)</div>
+<p>该定义比较同T、p下混合物与分开的纯组分。理想气体的V、U、H混合变化为零是特定模型的性质；真实液体的混合体积和混合焓可正可负。</p></section><section id="measure"><h2>6. 由实验求偏摩尔量：求斜率，再用加和式</h2><ol><li>固定T、p和另一组分物质的量，测V随加入量的变化。</li><li>用适合该浓度范围的函数拟合实验曲线，保留单位。</li><li>对加入组分物质的量求导，得到它的偏摩尔体积。</li><li>把总量与此结果代入加和式，求另一组分。</li></ol>
+<p>课件第4页下半页给出固定n<sub>B</sub>时的多项式拟合例。把常数项并入截距后，可整理成V=a+b₁n<sub>A</sub>+cn<sub>A</sub>²。若V取cm³、n取mol，则a、b₁、c的单位分别为cm³、cm³·mol⁻¹、cm³·mol⁻²；拟合系数b₁与质量摩尔浓度b分别记号。</p>
+<div class="formula">V̄<sub>A</sub> = b₁+2cn<sub>A</sub>，　V̄<sub>B</sub> = <span class="frac"><span>V−n<sub>A</sub>V̄<sub>A</sub></span><span>n<sub>B</sub></span></span></div>
+<p>拟合后微分可能放大噪声，需要在数据支持的范围内使用。若测量的是摩尔体积V<sub>m</sub>随摩尔分数x的变化，可用本课“切线法拓展”中的变换求偏摩尔体积。</p></section><section id="nacl"><h2>7. NaCl例题：质量摩尔浓度中的链式法则</h2><figure><img src="assets/lecture-11/nacl-example.webp" alt="课件NaCl溶液的经验体积式与偏摩尔体积计算" loading="lazy" decoding="async"><figcaption>课件PDF第5页上半页。课件NaCl溶液的经验体积式与偏摩尔体积计算</figcaption></figure>
+<p>课件固定溶剂水质量m<sub>A</sub>=1.000 kg，体积经验式中的b采用mol·kg⁻¹数值，V采用cm³数值。为把单位显式写清，定义无量纲β=b/(1 mol·kg⁻¹)：</p>
+<div class="formula"><span class="frac"><span>V</span><span>1 <span class="unit">cm³</span></span></span> = 1003 + 16.62β + 1.77β<span class="sup-frac"><span>3</span><span>2</span></span> + 0.12β²</div>
+<p>在b=0.100 mol·kg⁻¹时β=0.100，n<sub>NaCl</sub>=bm<sub>A</sub>=0.100 mol。偏导实际对n求，先用b=n/m<sub>A</sub>换元：</p>
+<div class="formula">V̄<sub>NaCl</sub> = (<span class="frac"><span>∂V</span><span>∂n<sub>NaCl</sub></span></span>)<sub>T,p,n<sub>水</sub></sub> = <span class="frac"><span>dV</span><span>db</span></span><span class="frac"><span>1</span><span>m<sub>A</sub></span></span><br> = (16.62 + 2.655√β + 0.24β) <span class="unit">cm³·mol⁻¹</span>　（m<sub>A</sub>=1.000 <span class="unit">kg</span>）</div>
+<p>dV/db的单位是cm³·kg·mol⁻¹，乘1/m<sub>A</sub>才得到cm³·mol⁻¹。课件把b数值与n数值直接相等，是因为选了1 kg水；换成其他溶剂质量时，需要保留这一换元因子，而且原经验式描述的是1 kg水对应的系列。</p>
+<div class="formula">V̄<sub>NaCl</sub> = 16.62+2.655√0.100+0.024 ≈ 17.4836 <span class="unit">cm³·mol⁻¹</span><br>V = 1003+1.662+1.77(0.100)<span class="sup-frac"><span>3</span><span>2</span></span>+0.0012 ≈ 1004.7192 <span class="unit">cm³</span></div>
+<p>采用课件的M<sub>水</sub>=18.0 g·mol⁻¹，并保留中间精度，n<sub>水</sub>=1000/18.0≈55.5556 mol。由V=n<sub>水</sub>V̄<sub>水</sub>+n<sub>NaCl</sub>V̄<sub>NaCl</sub>：</p>
+<div class="formula">V̄<sub>水</sub> = <span class="frac"><span>1004.7192−0.100×17.4836</span><span>55.5556</span></span> ≈ 18.0535 <span class="unit">cm³·mol⁻¹</span> ≈ 18.05 <span class="unit">cm³·mol⁻¹</span></div>
+<p class="source">课件给出18.04 cm³·mol⁻¹，来自先把n<sub>水</sub>取55.6 mol再代入的中间舍入。本页保留精度后得到18.05；均采用课件的18.0 g·mol⁻¹摩尔质量约定。</p></section><section id="mu"><h2>8. 化学势：偏摩尔Gibbs能与物质转移方向</h2><p><a class="term-link" href="term.html?slug=chemical-potential">化学势（chemical potential）</a>是Gibbs能的偏摩尔量：</p>
+<div class="formula">μ<sub>i</sub> = Ḡ<sub>i</sub> = (<span class="frac"><span>∂G</span><span>∂n<sub>i</sub></span></span>)<sub>T,p,n<sub>j≠i</sub></sub>，　G=Σ<sub>i</sub>n<sub>i</sub>μ<sub>i</sub></div>
+<p>μ<sub>i</sub>的单位为J·mol⁻¹；给定T、p后，它随混合物组成而变。纯物质中G=nG<sub>m</sub>，因此μ=G<sub>m</sub>；混合物则有G<sub>m</sub>=Σx<sub>i</sub>μ<sub>i</sub>。总摩尔Gibbs能和某一组分化学势通过组成加权联系。</p><figure><img src="assets/lecture-11/partial-gibbs.webp" alt="化学势作为G对组分加入量的局部斜率" loading="lazy" decoding="async"><figcaption>课件PDF第5页下半页。化学势作为G对组分加入量的局部斜率</figcaption></figure>
+<h3>从高化学势向低化学势转移</h3>
+<p>设同温同压两相α、β之间转移少量组分i，dn<sub>i</sub><sup>β</sup>=dξ，dn<sub>i</sub><sup>α</sup>=−dξ，总G变化为：</p>
+<div class="formula">dG<sub>总</sub> = (μ<sub>i</sub><sup>β</sup>−μ<sub>i</sub><sup>α</sup>)dξ</div>
+<p>dξ>0代表由α到β。若μ<sup>α</sup>>μ<sup>β</sup>，该转移使G降低；平衡时可交换组分的化学势相等。这把上一课的相平衡判据延伸到混合物。若外场或电荷功参与，需使用包含相应贡献的势；本课采用通常体积功模型。</p></section><section id="fundamentals"><h2>9. 四个基本微分式：从U逐个变换</h2><p>对可变组成的平衡态简单可压缩体系，基本关系为：</p>
+<div class="formula">dU = T dS − p dV + Σ<sub>i</sub>μ<sub>i</sub>dn<sub>i</sub></div>
+<p>U为内能，S为熵，V为体积，μdn为组成变化项。通过H=U+pV、A=U−TS、G=U+pV−TS展开乘积微分，相消相应项：</p>
+<div class="formula">dH=dU+p dV+V dp = T dS+V dp+Σ<sub>i</sub>μ<sub>i</sub>dn<sub>i</sub><br>dA=dU−T dS−S dT = −S dT−p dV+Σ<sub>i</sub>μ<sub>i</sub>dn<sub>i</sub><br>dG=dU+p dV+V dp−T dS−S dT = −S dT+V dp+Σ<sub>i</sub>μ<sub>i</sub>dn<sub>i</sub></div>
+<p>这里dU、dH、dA、dG是状态函数的全微分。用这些式子研究自发过程时，再结合相应外界约束选势与判据。基础假设为通常体积功体系，未额外引入电、表面和弹性功等独立变量。</p><figure><img src="assets/lecture-11/legendre.webp" alt="由G=U+pV−TS比较组成项，识别四个势中的同一个μ" loading="lazy" decoding="async"><figcaption>课件PDF第7页下半页。由G=U+pV−TS比较组成项，识别四个势中的同一个μ</figcaption></figure>
+<div class="mix-table"><table><thead><tr><th>热力学势</th><th>自然变量</th><th>对nᵢ求导的固定条件</th></tr></thead><tbody><tr><td>U</td><td>S,V,{nᵢ}</td><td>S,V,nⱼ≠ᵢ</td></tr><tr><td>H</td><td>S,p,{nᵢ}</td><td>S,p,nⱼ≠ᵢ</td></tr><tr><td>A</td><td>T,V,{nᵢ}</td><td>T,V,nⱼ≠ᵢ</td></tr><tr><td>G</td><td>T,p,{nᵢ}</td><td>T,p,nⱼ≠ᵢ</td></tr></tbody></table></div>
+<p>由各基本微分式，四种自然变量下的物质的量偏导都给同一状态处的μ<sub>i</sub>。记住势的自然变量，就能恢复正确下标。</p></section><section id="held-variables"><h2>10. 化学势与其他偏摩尔量：下标决定导数</h2><figure><img src="assets/lecture-11/potential-summary.webp" alt="课件并列化学势的自然变量定义与其他偏摩尔量的恒T、p定义" loading="lazy" decoding="async"><figcaption>课件PDF第10页上半页。课件并列化学势的自然变量定义与其他偏摩尔量的恒T、p定义</figcaption></figure>
+<div class="formula">μ<sub>i</sub> = (<span class="frac"><span>∂G</span><span>∂n<sub>i</sub></span></span>)<sub>T,p,n′</sub> = (<span class="frac"><span>∂A</span><span>∂n<sub>i</sub></span></span>)<sub>T,V,n′</sub> = (<span class="frac"><span>∂H</span><span>∂n<sub>i</sub></span></span>)<sub>S,p,n′</sub> = (<span class="frac"><span>∂U</span><span>∂n<sub>i</sub></span></span>)<sub>S,V,n′</sub></div>
+<p>n′代表除n<sub>i</sub>以外的全部物质的量。标准偏摩尔量一律在<b>T、p、n′固定</b>下定义，所以偏摩尔焓H̄<sub>i</sub>采用(∂H/∂n<sub>i</sub>)<sub>T,p,n′</sub>；上式给μ的H偏导采用S、p、n′。通过对G=H−TS等关系在T、p固定下求偏导，可得：</p>
+<div class="formula">μ<sub>i</sub>=H̄<sub>i</sub>−T S̄<sub>i</sub><br>Ā<sub>i</sub>=Ū<sub>i</sub>−T S̄<sub>i</sub>，　H̄<sub>i</sub>=Ū<sub>i</sub>+pV̄<sub>i</sub></div>
+<p>进一步交换G的混合二阶偏导：</p>
+<div class="formula">S̄<sub>i</sub>=−(<span class="frac"><span>∂μ<sub>i</sub></span><span>∂T</span></span>)<sub>p,组成</sub>，　V̄<sub>i</sub>=(<span class="frac"><span>∂μ<sub>i</sub></span><span>∂p</span></span>)<sub>T,组成</sub></div>
+<p>第一式来自(∂G/∂T)<sub>p,n</sub>=−S，第二式来自(∂G/∂p)<sub>T,n</sub>=V。固定全体n时组成也固定，而μ、S̄、V̄是强度量，因此可把温压偏导条件写成固定组成。微分单位同样匹配：J·mol⁻¹·Pa⁻¹=m³·mol⁻¹。</p></section><section id="gibbs-duhem"><h2>11. Gibbs–Duhem：加和式与基本式共同给出的约束</h2><p>第一条路线，对广延性得到的G=Σn<sub>i</sub>μ<sub>i</sub>使用乘积微分；第二条路线，使用G的基本微分式：</p>
+<div class="formula">dG=Σ<sub>i</sub>μ<sub>i</sub>dn<sub>i</sub>+Σ<sub>i</sub>n<sub>i</sub>dμ<sub>i</sub><br>dG=−S dT+V dp+Σ<sub>i</sub>μ<sub>i</sub>dn<sub>i</sub><br>∴ Σ<sub>i</sub>n<sub>i</sub>dμ<sub>i</sub>=−S dT+V dp</div>
+<p>这就是<a class="term-link" href="term.html?slug=gibbs-duhem-equation">Gibbs–Duhem方程</a>。恒T、p时温压项为零：</p>
+<div class="formula">Σ<sub>i</sub>n<sub>i</sub>dμ<sub>i</sub>=0，　Σ<sub>i</sub>x<sub>i</sub>dμ<sub>i</sub>=0<br>二元混合物：dμ<sub>B</sub>=−<span class="frac"><span>n<sub>A</sub></span><span>n<sub>B</sub></span></span>dμ<sub>A</sub>=−<span class="frac"><span>x<sub>A</sub></span><span>x<sub>B</sub></span></span>dμ<sub>A</sub></div>
+<p>组成变动时，各组分化学势受这个加权微分关系约束。例：在x<sub>A</sub>=0.80、x<sub>B</sub>=0.20的某一状态，局部dμ<sub>A</sub>=+10 J·mol⁻¹，则dμ<sub>B</sub>=−40 J·mol⁻¹。有限组成区间内x<sub>A</sub>/x<sub>B</sub>随位置改变，求有限变化需要积分。</p><figure><img src="assets/lecture-11/gibbs-duhem.webp" alt="课件将加和式微分与基本微分比较，得到恒T、p的Gibbs–Duhem关系" loading="lazy" decoding="async"><figcaption>课件PDF第8页下半页。课件将加和式微分与基本微分比较，得到恒T、p的Gibbs–Duhem关系</figcaption></figure>
+<h3>推广到任一偏摩尔量</h3>
+<p>固定T、p，对X=Σn<sub>i</sub>X̄<sub>i</sub>微分，再与dX=ΣX̄<sub>i</sub>dn<sub>i</sub>比较：</p>
+<div class="formula">Σ<sub>i</sub>n<sub>i</sub>dX̄<sub>i</sub>=0　（恒T、p）</div>
+<p>因此一个二元体系中，若测得一组分偏摩尔量随组成的关系，可结合积分所需的参考值恢复另一组分的信息。物理意义是同一混合物中两类局部贡献随组成协同变化。</p></section><section id="tangent"><h2>12. 拓展：从摩尔性质曲线读切线截距</h2><p>设二元体系总物质的量n=n<sub>A</sub>+n<sub>B</sub>，x=x<sub>A</sub>，X<sub>m</sub>=X/n，且X=nX<sub>m</sub>(x)。在固定n<sub>B</sub>时增加n<sub>A</sub>，有∂n/∂n<sub>A</sub>=1，∂x/∂n<sub>A</sub>=(1−x)/n。链式法则给：</p>
+<div class="formula">X̄<sub>A</sub>=X<sub>m</sub>+(1−x)<span class="frac"><span>dX<sub>m</sub></span><span>dx</span></span>，　X̄<sub>B</sub>=X<sub>m</sub>−x<span class="frac"><span>dX<sub>m</sub></span><span>dx</span></span></div>
+<p>在X<sub>m</sub>–x图的当前点作切线，其x=1截距给X̄<sub>A</sub>，x=0截距给X̄<sub>B</sub>，称<a class="term-link" href="term.html?slug=tangent-intercept-method">切线截距法</a>。横坐标若改成x<sub>B</sub>，A、B的对应端点也随之交换。总量X–n<sub>A</sub>图直接求斜率；摩尔量X<sub>m</sub>–x图先用上述关系转换。</p>
+<p>例：V<sub>m</sub>=20+10x+4x(1−x)，单位cm³·mol⁻¹。在x=0.25时V<sub>m</sub>=23.25，导数为14−8x=12，故V̄<sub>A</sub>=23.25+0.75×12=32.25，V̄<sub>B</sub>=23.25−0.25×12=20.25。加权复核：0.25×32.25+0.75×20.25=23.25。</p></section><section id="mixing"><h2>13. 拓展：理想气体混合，把化学势和混合熵连起来</h2><p>本节把前课的理想气体化学势与本次PDF第2页的理想气体混合结论连起来。初态为不同理想气体在相同T、p下各自分隔，终态为同T、p的均匀混合物，p<sub>i</sub>=x<sub>i</sub>p。</p>
+<div class="formula">μ<sub>i</sub>=μ<sub>i</sub><sup>°</sup>(T)+RT ln<span class="frac"><span>p<sub>i</sub></span><span>p°</span></span> = μ<sub>i,纯</sub>(T,p)+RT ln x<sub>i</sub><br>Δ<sub>mix</sub>G=RTΣ<sub>i</sub>n<sub>i</sub>ln x<sub>i</sub></div>
+<p>R为气体常数，T为绝对温度，p°为标准压力；对数中的比值无量纲。理想气体相同温度下混合焓为零，由ΔG=ΔH−TΔS得到：</p>
+<div class="formula">Δ<sub>mix</sub>H=Δ<sub>mix</sub>U=Δ<sub>mix</sub>V=0<br>Δ<sub>mix</sub>S=−RΣ<sub>i</sub>n<sub>i</sub>ln x<sub>i</sub></div>
+<p>等物质的量的两种不同理想气体，若各1 mol、T=300 K，则ΔS=2R ln2≈11.53 J·K⁻¹，ΔG≈−3.458 kJ。相同物质去掉人为隔板，按同一组分描述，组成熵按相应物理初终态计算。</p>
+<p>也可检验Gibbs–Duhem：恒T、p时dμ<sub>i</sub>=RT dx<sub>i</sub>/x<sub>i</sub>，所以Σx<sub>i</sub>dμ<sub>i</sub>=RTΣdx<sub>i</sub>=0。理想混合公式与组成约束相互吻合。</p></section><section id="review"><h2>14. 应试公式表、静态问答与测验</h2><div class="mix-table"><table><thead><tr><th>关系</th><th>应用</th><th>条件</th></tr></thead><tbody><tr><td>X̄ᵢ=(∂X/∂nᵢ)T,p,n′</td><td>定义偏摩尔量</td><td>恒T、p及其他组分量</td></tr><tr><td>X=ΣnᵢX̄ᵢ</td><td>由偏摩尔量求总量</td><td>均匀宏观单相，广延性；取同一组成</td></tr><tr><td>dG=−S dT+V dp+Σμᵢdnᵢ</td><td>温压与组成共同变化</td><td>通常体积功基本模型</td></tr><tr><td>μᵢ=Ḡᵢ</td><td>化学势和物质转移</td><td>G的物质的量偏导采用T、p固定</td></tr><tr><td>Σnᵢdμᵢ=0</td><td>二元组分化学势的局部约束</td><td>恒T、p；有限区间按组成积分</td></tr><tr><td>X̄ᴬ=Xm+(1−x)dXm/dx</td><td>切线截距求偏摩尔量</td><td>二元体系，横轴x=xᴬ</td></tr><tr><td>xᴮ=bᴮMᴬ/(1+bᴮMᴬ)</td><td>组成换算</td><td>同一溶剂质量约定；稀释近似另检查bM≪1</td></tr></tbody></table></div>
+<details><summary>加和式中偏摩尔量随组成变，为何还能直接相乘求和？</summary><p>加和式来自保持组成的整体缩放，所有偏摩尔量都取当前同一状态；沿组成变化微分时，另由Gibbs–Duhem关系约束它们的变化。</p></details>
+<details><summary>下标n′是什么意思？</summary><p>它代表除正在求导的组分i以外，其余组分物质的量均固定。组成分数仍可能随nᵢ变化。</p></details>
+<details><summary>偏摩尔焓与化学势怎样联系？</summary><p>恒T、p定义H̄ᵢ，μᵢ=H̄ᵢ−TS̄ᵢ；若用H直接对nᵢ求μ，则固定的是S、p及n′。</p></details>
+<h3>课件记号与数值整理</h3><p>课件部分位置用Xᵢ、Vᵢ表示偏摩尔量，本页统一加横线；NaCl例题的“对n_b求导”按浓度换元展开；18.04与18.05的差异在例题说明中集中解释。所有图源按PDF页码及上/下半页定位。</p>
+<p><a class="mix-quiz" href="https://quiz.chemistryatlas.xyz/index.html?quiz=PCHEM-L11">第11课测验：22题，32分 →</a>　<a href="lesson-10.html">上一课：相界线与相变类型</a></p><p class="source">主要材料：本次2026/10/20课件PDF第1–10页。Euler推导、切线法及理想气体混合计算为基于课内关系的拓展。</p></section></main><script src="script.js"></script></body></html>

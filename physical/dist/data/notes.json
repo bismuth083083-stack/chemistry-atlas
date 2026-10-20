@@ -218,5 +218,173 @@
       "phase",
       "Clapeyron"
     ]
+  },
+  {
+    "title": "第11课：知识体系：从纯物质走向变组成体系",
+    "href": "lesson-11.html#map",
+    "keywords": [
+      "知识体系：从纯物质走向变组成体系",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：组成的四种写法：先分清分母",
+    "href": "lesson-11.html#composition",
+    "keywords": [
+      "组成的四种写法：先分清分母",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：偏摩尔量：固定什么，改变什么",
+    "href": "lesson-11.html#definition",
+    "keywords": [
+      "偏摩尔量：固定什么，改变什么",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：偏摩尔体积：测到的是整体的体积响应",
+    "href": "lesson-11.html#volume",
+    "keywords": [
+      "偏摩尔体积：测到的是整体的体积响应",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：加和式与Euler定理：当前组成处的精确关系",
+    "href": "lesson-11.html#euler",
+    "keywords": [
+      "加和式与Euler定理：当前组成处的精确关系",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：由实验求偏摩尔量：求斜率，再用加和式",
+    "href": "lesson-11.html#measure",
+    "keywords": [
+      "由实验求偏摩尔量：求斜率，再用加和式",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：NaCl例题：质量摩尔浓度中的链式法则",
+    "href": "lesson-11.html#nacl",
+    "keywords": [
+      "NaCl例题：质量摩尔浓度中的链式法则",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：化学势：偏摩尔Gibbs能与物质转移方向",
+    "href": "lesson-11.html#mu",
+    "keywords": [
+      "化学势：偏摩尔Gibbs能与物质转移方向",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：四个基本微分式：从U逐个变换",
+    "href": "lesson-11.html#fundamentals",
+    "keywords": [
+      "四个基本微分式：从U逐个变换",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：化学势与其他偏摩尔量：下标决定导数",
+    "href": "lesson-11.html#held-variables",
+    "keywords": [
+      "化学势与其他偏摩尔量：下标决定导数",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：Gibbs–Duhem：加和式与基本式共同给出的约束",
+    "href": "lesson-11.html#gibbs-duhem",
+    "keywords": [
+      "Gibbs–Duhem：加和式与基本式共同给出的约束",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：拓展：从摩尔性质曲线读切线截距",
+    "href": "lesson-11.html#tangent",
+    "keywords": [
+      "拓展：从摩尔性质曲线读切线截距",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：拓展：理想气体混合，把化学势和混合熵连起来",
+    "href": "lesson-11.html#mixing",
+    "keywords": [
+      "拓展：理想气体混合，把化学势和混合熵连起来",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
+  },
+  {
+    "title": "第11课：应试公式表、静态问答与测验",
+    "href": "lesson-11.html#review",
+    "keywords": [
+      "应试公式表、静态问答与测验",
+      "混合物",
+      "偏摩尔量",
+      "化学势",
+      "Gibbs-Duhem",
+      "partial molar"
+    ]
   }
 ]

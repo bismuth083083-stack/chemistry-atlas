@@ -1628,6 +1628,40 @@
       ],
       "path": "org-l12.json",
       "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L11",
+      "title": "混合物、偏摩尔量与化学势",
+      "description": "组成换算、偏摩尔体积、自然变量、Gibbs–Duhem方程与定量推导。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 11,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lecture 11 · Chapter 7 · Simple Mixtures I",
+      "lesson": "混合物、偏摩尔量与化学势",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "knowledgePoints": [
+        "composition conversion",
+        "partial molar volume",
+        "Euler relation",
+        "natural variables",
+        "Gibbs-Duhem equation",
+        "ideal gas mixing"
+      ],
+      "createdAt": "2026-10-20",
+      "updatedAt": "2026-10-20",
+      "relatedNotes": [
+        "/physical/dist/lesson-11.html"
+      ],
+      "path": "pchem-l11.json",
+      "mode": "fixed"
     }
   ]
 }

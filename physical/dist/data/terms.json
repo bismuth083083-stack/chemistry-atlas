@@ -553,16 +553,20 @@
     "en": "Mole fraction",
     "category": "混合气体",
     "definition": "某组分物质的量占混合物总物质的量的比例。",
-    "expanded": "x_J=n_J/n_total，所有组分摩尔分数之和为1。",
+    "expanded": "x_J=n_J/n_total，所有组分摩尔分数之和为1。 二元溶液中xB=bBMA/(1+bBMA)，MA采用kg·mol⁻¹；bBMA≪1时xB≈bBMA。",
     "properties": [
       "无量纲",
       "组成变量"
     ],
     "confusions": "x_J=p_J/p 只对理想气体混合物直接成立。",
     "related": [
-      "partial-pressure"
+      "partial-pressure",
+      "molality",
+      "molar-concentration",
+      "mass-fraction"
     ],
-    "source": "第二课：真实气体课件"
+    "source": "第二课：真实气体课件",
+    "updatedAt": "2026-10-20"
   },
   {
     "slug": "compression-factor",
@@ -1153,7 +1157,7 @@
     "en": "Chemical potential",
     "category": "第二定律",
     "definition": "恒温恒压下向体系中加入极少量的某组分所引起 Gibbs 能的增量，μ_J=(∂G/∂n_J)_{p,T,n其余}。",
-    "expanded": "含组成变化时 dG=Vdp−SdT+∑μ_J dn_J，且 G=∑n_J μ_J。对纯物质 μ=G_m，故 dμ=V_m dp，恒温积分给出理想气体 μ=μ°+RTln(p/p°)，其中 μ° 是标准压力 1 bar 下的化学势。它是化学平衡、相平衡与电化学的共同核心量。",
+    "expanded": "含组成变化时 dG=Vdp−SdT+∑μ_J dn_J，且 G=∑n_J μ_J。对纯物质 μ=G_m，故 dμ=V_m dp，恒温积分给出理想气体 μ=μ°+RTln(p/p°)，其中 μ° 是标准压力 1 bar 下的化学势。它是化学平衡、相平衡与电化学的共同核心量。 本课推广到混合物：μi=Ḡi=(∂G/∂ni)T,p,n′，G=Σniμi。四个热力学势用其自然变量固定时，对ni的偏导也给μi；标准偏摩尔焓H̄i固定T、p，满足μi=H̄i−TS̄i。",
     "properties": [
       "强度性质",
       "恒 T、p 下物质迁移的推动力",
@@ -1165,9 +1169,12 @@
       "gibbs-energy",
       "fugacity",
       "fundamental-equation",
-      "spontaneous-change"
+      "spontaneous-change",
+      "partial-molar-quantity",
+      "gibbs-duhem-equation"
     ],
-    "source": "第八课：PChem1 lec78 2nd 3rd Laws2 课件"
+    "source": "第八课：PChem1 lec78 2nd 3rd Laws2 课件；第11课PDF第5–10页",
+    "updatedAt": "2026-10-20"
   },
   {
     "slug": "fugacity",
@@ -1649,5 +1656,303 @@
     ],
     "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
     "updated": "2026-10-15"
+  },
+  {
+    "slug": "molality",
+    "zh": "质量摩尔浓度",
+    "en": "Molality",
+    "aliases": [
+      "重量摩尔浓度"
+    ],
+    "category": "混合物组成",
+    "definition": "溶质物质的量除以溶剂质量，bB=nB/mA。",
+    "expanded": "溶剂质量取kg，单位mol·kg⁻¹。与摩尔分数的精确关系为xB=bBMA/(1+bBMA)，MA用kg·mol⁻¹；bBMA很小时近似xB≈bBMA。",
+    "properties": [
+      "分母为溶剂质量",
+      "在组成保持时数值不随热胀冷缩改变"
+    ],
+    "confusions": "与物质的量浓度c的区别在分母：c采用溶液总体积。",
+    "related": [
+      "mole-fraction",
+      "molar-concentration",
+      "mass-fraction"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "2上"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "molar-concentration",
+    "zh": "物质的量浓度",
+    "en": "Amount concentration · Molarity",
+    "aliases": [
+      "摩尔浓度",
+      "molarity"
+    ],
+    "category": "混合物组成",
+    "definition": "组分物质的量除以溶液总体积，cB=nB/V。",
+    "expanded": "SI单位mol·m⁻³，常用mol·L⁻¹。溶液体积受温压影响，单位换算1 mol·L⁻¹=1000 mol·m⁻³。稀溶液中xB≈(MA/ρA)cB，各单位需配套。",
+    "properties": [
+      "采用溶液总体积",
+      "温压变化可通过体积改变数值"
+    ],
+    "confusions": "mol·L⁻¹与mol·m⁻³相差1000倍；计算时先统一单位。",
+    "related": [
+      "molality",
+      "mole-fraction"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "2上"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "mass-fraction",
+    "zh": "质量分数",
+    "en": "Mass fraction",
+    "aliases": [],
+    "category": "混合物组成",
+    "definition": "组分质量与体系总质量之比，wi=mi/Σmj。",
+    "expanded": "质量分数为无量纲量，各组分总和为1；百分质量分数为100wi%。转为摩尔分数需按摩尔质量将质量换成物质的量。",
+    "properties": [
+      "各质量分数相加为1",
+      "与组成物质的量有摩尔质量联系"
+    ],
+    "confusions": "同一混合物的质量分数和摩尔分数通常有不同数值。",
+    "related": [
+      "mole-fraction",
+      "molality"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "2上"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "partial-molar-quantity",
+    "zh": "偏摩尔量",
+    "en": "Partial molar quantity",
+    "aliases": [],
+    "category": "混合物热力学",
+    "definition": "广延性质X对组分ni在恒T、p及其他组分量固定条件下的偏导。",
+    "expanded": "X̄i=(∂X/∂ni)T,p,n′，描述加入微量i引起的总性质一阶增量。X̄i是强度量，依赖T、p、组成；广延性给出X=ΣniX̄i。",
+    "properties": [
+      "单位为X的单位除以mol",
+      "可随组成变化",
+      "各组分取同一当前状态的值"
+    ],
+    "confusions": "加入i时其他nj固定，摩尔分数随之变化。",
+    "related": [
+      "partial-molar-volume",
+      "chemical-potential",
+      "euler-thermodynamic-relation"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "9下"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "partial-molar-volume",
+    "zh": "偏摩尔体积",
+    "en": "Partial molar volume",
+    "aliases": [],
+    "category": "混合物热力学",
+    "definition": "V̄i=(∂V/∂ni)T,p,n′，表示加入微量组分i带来的总体积响应。",
+    "expanded": "单位m³·mol⁻¹或cm³·mol⁻¹。其数值反映全部体系的堆积和溶剂化调整，依赖组分环境；某些电解质溶液中加入导致净收缩，可呈负值。",
+    "properties": [
+      "V=ΣniV̄i",
+      "纯相极限趋于纯物质摩尔体积",
+      "固定另一组分量时由V–ni曲线斜率测量"
+    ],
+    "confusions": "负偏摩尔体积描述局部加入斜率，总样品体积保持正值。",
+    "related": [
+      "partial-molar-quantity",
+      "tangent-intercept-method",
+      "mole-fraction"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "3下"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "gibbs-duhem-equation",
+    "zh": "Gibbs–Duhem方程",
+    "en": "Gibbs–Duhem equation",
+    "aliases": [
+      "吉布斯-杜亥姆方程"
+    ],
+    "category": "混合物热力学",
+    "definition": "由广延性与G的基本微分共同导出的组分化学势微分约束。",
+    "expanded": "一般式Σni dμi=−S dT+V dp；恒T、p时Σni dμi=0，等价Σxi dμi=0。二元体系局部dμB=−(xA/xB)dμA。",
+    "properties": [
+      "温压条件决定右侧项",
+      "组分化学势随组成协同变化",
+      "恒T、p下可推广Σni dX̄i=0"
+    ],
+    "confusions": "有限组成区间内比例随组成变化，求有限变化采用积分与参考条件。",
+    "related": [
+      "chemical-potential",
+      "euler-thermodynamic-relation",
+      "partial-molar-quantity"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "8下"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "extensive-property",
+    "zh": "广延性质",
+    "en": "Extensive property",
+    "aliases": [
+      "广度量",
+      "广延量"
+    ],
+    "category": "热力学基础",
+    "definition": "在保持温度、压力和组成等强度状态时，随体系大小按比例放大的性质。",
+    "expanded": "均匀宏观体系中X(T,p,λn)=λX(T,p,n)。V、U、H、S、A、G是本课例子；对λ求导得到X=ΣniX̄i。",
+    "properties": [
+      "可按体系大小缩放",
+      "相应偏摩尔量为强度量"
+    ],
+    "confusions": "判断时保持组成和强度状态一致，并采用忽略表面等额外贡献的宏观模型。",
+    "related": [
+      "intensive-property",
+      "euler-thermodynamic-relation",
+      "partial-molar-quantity"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "9下"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "intensive-property",
+    "zh": "强度性质",
+    "en": "Intensive property",
+    "aliases": [
+      "强度量"
+    ],
+    "category": "热力学基础",
+    "definition": "保持宏观状态和组成时，与体系总大小无关的性质。",
+    "expanded": "T、p及偏摩尔量属于本课的强度性质。将混合物各组分同比增大，偏摩尔量保持；改变组分比例则可改变偏摩尔量。",
+    "properties": [
+      "与同比缩放无关",
+      "可随温压和组成改变"
+    ],
+    "confusions": "强度性是对体系缩放而言，组成仍然是独立状态信息。",
+    "related": [
+      "extensive-property",
+      "partial-molar-quantity"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "9下"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "euler-thermodynamic-relation",
+    "zh": "Euler热力学齐次关系",
+    "en": "Euler homogeneous relation",
+    "aliases": [
+      "Euler加和式"
+    ],
+    "category": "热力学推导",
+    "definition": "一阶广延函数对各组分物质的量的偏导加权相加，可重构总性质。",
+    "expanded": "对X(T,p,λn)=λX关于λ求导并令λ=1，得到X=ΣniX̄i，特别G=Σniμi。进一步与基本微分式比较得到Gibbs–Duhem关系。",
+    "properties": [
+      "依赖一阶齐次性",
+      "所有局部量在同一状态取值",
+      "用于总性质重构"
+    ],
+    "confusions": "沿组成变化求微分时，偏摩尔量也变化，并受到加权微分约束。",
+    "related": [
+      "extensive-property",
+      "partial-molar-quantity",
+      "gibbs-duhem-equation"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "9下"
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "tangent-intercept-method",
+    "zh": "切线截距法",
+    "en": "Tangent-intercept method",
+    "aliases": [
+      "切线法"
+    ],
+    "category": "偏摩尔量测定",
+    "definition": "利用二元混合物摩尔性质对组成曲线的切线端点截距求偏摩尔量的方法。",
+    "expanded": "若横轴x=xA，纵轴Xm，则X̄A=Xm+(1−x)dXm/dx，X̄B=Xm−x dXm/dx；切线在x=1和x=0的截距分别给A、B。此为本课基于加和式的推导拓展。",
+    "properties": [
+      "适用于二元组成曲线",
+      "通过链式法则从X=nXm得到",
+      "横坐标定义决定端点归属"
+    ],
+    "confusions": "课件图是偏摩尔体积随组成的示意；正文另从摩尔性质Xm曲线推导截距公式。",
+    "related": [
+      "partial-molar-volume",
+      "partial-molar-quantity",
+      "mole-fraction"
+    ],
+    "source": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+    "relatedReactions": [],
+    "sources": [
+      {
+        "title": "第11课 · PChem1_lec11 Mixture1 · 2026/10/20",
+        "page": "3下"
+      }
+    ],
+    "updatedAt": "2026-10-20"
   }
 ]

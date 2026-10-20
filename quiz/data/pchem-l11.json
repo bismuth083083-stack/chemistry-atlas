@@ -1,0 +1,678 @@
+{
+  "id": "PCHEM-L11",
+  "title": "混合物、偏摩尔量与化学势",
+  "description": "组成换算、偏摩尔体积、自然变量、Gibbs–Duhem方程与定量推导。",
+  "subject": "physical-chemistry",
+  "chapter": "Lecture 11 · Chapter 7 · Simple Mixtures I",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "物化第11课笔记",
+      "url": "https://physical.chemistryatlas.xyz/lesson-11.html",
+      "role": "依据2026/10/20课件与笔记中标注的推导拓展独立编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "质量摩尔浓度bB的分母是什么？",
+      "points": 1,
+      "explanation": "bB=nB/mA，mA为溶剂质量，采用kg。",
+      "difficulty": "easy",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "溶液总体积"
+        },
+        {
+          "id": "B",
+          "text": "溶剂质量（kg）"
+        },
+        {
+          "id": "C",
+          "text": "总物质的量"
+        },
+        {
+          "id": "D",
+          "text": "溶质体积"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "偏摩尔量X̄i=(∂X/∂ni)的标准固定条件是哪一组？",
+      "points": 1,
+      "explanation": "固定T、p和所有其他组分物质的量，改变ni。",
+      "difficulty": "easy",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "T、p和所有摩尔分数"
+        },
+        {
+          "id": "B",
+          "text": "T、V和总物质的量"
+        },
+        {
+          "id": "C",
+          "text": "T、p和其他组分物质的量"
+        },
+        {
+          "id": "D",
+          "text": "S、V和所有摩尔分数"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "偏摩尔体积的常用单位是哪一项？",
+      "points": 1,
+      "explanation": "它是总体积对物质的量的导数，单位为体积/mol。",
+      "difficulty": "easy",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "mol·kg⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "J·mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "cm³·kg⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "cm³·mol⁻¹"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "化学势μi是哪一个标准偏摩尔量？",
+      "points": 1,
+      "explanation": "μi=(∂G/∂ni)T,p,n′=Ḡi。",
+      "difficulty": "easy",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "偏摩尔Gibbs能"
+        },
+        {
+          "id": "B",
+          "text": "偏摩尔内能"
+        },
+        {
+          "id": "C",
+          "text": "偏摩尔熵"
+        },
+        {
+          "id": "D",
+          "text": "偏摩尔体积"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "二元体系摩尔分数xA=0.30，则xB为？",
+      "points": 1,
+      "explanation": "xA+xB=1，所以xB=0.70。",
+      "difficulty": "easy",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.30"
+        },
+        {
+          "id": "B",
+          "text": "1.30"
+        },
+        {
+          "id": "C",
+          "text": "0.70"
+        },
+        {
+          "id": "D",
+          "text": "3.33"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "以下哪些关于组成表示的陈述正确？",
+      "points": 1,
+      "explanation": "b按溶剂质量，c按溶液总体积；单位换算有1000倍。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "b的常用单位为mol·kg⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "c的分母为溶液总体积"
+        },
+        {
+          "id": "C",
+          "text": "1 mol·L⁻¹=1000 mol·m⁻³"
+        },
+        {
+          "id": "D",
+          "text": "质量分数总和为100"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "M水=0.018 kg·mol⁻¹，b=0.100 mol·kg⁻¹。二元溶液的精确xB最接近？",
+      "points": 1,
+      "explanation": "xB=bMA/(1+bMA)=0.0018/1.0018≈0.001797。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.18"
+        },
+        {
+          "id": "B",
+          "text": "0.100"
+        },
+        {
+          "id": "C",
+          "text": "0.018"
+        },
+        {
+          "id": "D",
+          "text": "0.001797"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "均匀单相体系T、p、组成保持，各组分量同时扩大2倍。V和V̄i如何变化？",
+      "points": 1,
+      "explanation": "总体积是广延量，扩大2倍；偏摩尔体积是强度量，保持。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "V变2倍，V̄i保持"
+        },
+        {
+          "id": "B",
+          "text": "V与V̄i都变2倍"
+        },
+        {
+          "id": "C",
+          "text": "V保持，V̄i变2倍"
+        },
+        {
+          "id": "D",
+          "text": "二者都保持"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "X=ΣniX̄i中，各X̄i应取在哪个状态？",
+      "points": 1,
+      "explanation": "Euler加和式中的各偏摩尔量均对应同一当前混合物状态。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "各组分各自纯态"
+        },
+        {
+          "id": "B",
+          "text": "同一个当前混合物状态"
+        },
+        {
+          "id": "C",
+          "text": "统一取无限稀释态"
+        },
+        {
+          "id": "D",
+          "text": "任意参考态均可"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "固定T、p与组成，将混合物样品同比放大，某组分偏摩尔体积也一定同比放大。",
+      "points": 1,
+      "explanation": "偏摩尔体积是强度量；同比放大改变总量，保持偏摩尔量。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "某状态下V̄B=−5.0 cm³·mol⁻¹，小量加入0.020 mol B，其他条件满足偏导定义且局部斜率近似恒定，ΔV约为？",
+      "points": 1,
+      "explanation": "ΔV≈V̄BΔnB=−5.0×0.020=−0.10 cm³。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "+0.10 cm³"
+        },
+        {
+          "id": "B",
+          "text": "−5.0 cm³"
+        },
+        {
+          "id": "C",
+          "text": "−0.10 cm³"
+        },
+        {
+          "id": "D",
+          "text": "−250 cm³"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "对U求组分i的化学势，应使用哪一个偏导？",
+      "points": 1,
+      "explanation": "由dU=T dS−p dV+Σμi dni可读出固定S、V和其他组分量。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "(∂U/∂ni)S,V,n′"
+        },
+        {
+          "id": "B",
+          "text": "(∂U/∂ni)T,p,n′"
+        },
+        {
+          "id": "C",
+          "text": "(∂U/∂ni)T,V,n′"
+        },
+        {
+          "id": "D",
+          "text": "(∂U/∂ni)S,p,n′"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "偏摩尔焓H̄i采用恒T、p定义，哪一关系正确？",
+      "points": 1,
+      "explanation": "从G=H−TS在T、p固定时对ni求导，得μi=H̄i−TS̄i。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "μi=H̄i+TS̄i"
+        },
+        {
+          "id": "B",
+          "text": "μi=H̄i/p"
+        },
+        {
+          "id": "C",
+          "text": "μi=T H̄i"
+        },
+        {
+          "id": "D",
+          "text": "μi=H̄i−TS̄i"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "恒T、p的二元混合物中，哪些关系正确？",
+      "points": 1,
+      "explanation": "总G按物质的量加权；总摩尔G按摩尔分数加权；Gibbs–Duhem给局部组成约束。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "G=μA+μB，对任意物质的量都成立"
+        },
+        {
+          "id": "B",
+          "text": "G=nAμA+nBμB"
+        },
+        {
+          "id": "C",
+          "text": "Gm=xAμA+xBμB"
+        },
+        {
+          "id": "D",
+          "text": "xA dμA+xB dμB=0"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "溶质质量摩尔浓度为0.100 mol·kg⁻¹，溶剂水质量为2.00 kg，溶质物质的量为____mol。",
+      "points": 1,
+      "explanation": "nB=bBmA=0.100×2.00=0.200 mol。",
+      "difficulty": "medium",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "answer": "0.200",
+      "acceptableAnswers": [
+        "0.200",
+        "0.20",
+        "0.2",
+        ".2",
+        ".20",
+        ".200"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "固定T、p，在xA=0.80、xB=0.20的局部状态，dμA=+10 J·mol⁻¹，Gibbs–Duhem要求dμB为？",
+      "points": 2,
+      "explanation": "dμB=−(xA/xB)dμA=−4×10=−40 J·mol⁻¹。",
+      "difficulty": "hard",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "+40 J·mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "−40 J·mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "−2.5 J·mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "+2.5 J·mol⁻¹"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于课件NaCl体积例题，哪些判断正确？",
+      "points": 2,
+      "explanation": "先由b=nB/mA换元，保留导数的1/mA；经验式是指定1 kg水的系列。",
+      "difficulty": "hard",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "偏摩尔体积应对nNaCl求导"
+        },
+        {
+          "id": "B",
+          "text": "b=nNaCl/m水，导数换元包含1/m水"
+        },
+        {
+          "id": "C",
+          "text": "dV/db天然就具有cm³·mol⁻¹单位"
+        },
+        {
+          "id": "D",
+          "text": "求水的偏摩尔体积可用V=n盐V̄盐+n水V̄水"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "可变温压的多组分体系，通常体积功模型中Gibbs–Duhem的一般形式是哪项？",
+      "points": 2,
+      "explanation": "由dG基本式与G=Σniμi的乘积微分相比较，得到Σni dμi=−S dT+V dp。",
+      "difficulty": "hard",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Σni dμi=0，适用于任意温压变化"
+        },
+        {
+          "id": "B",
+          "text": "Σni dμi=S dT−V dp"
+        },
+        {
+          "id": "C",
+          "text": "Σni dμi=T dS−p dV"
+        },
+        {
+          "id": "D",
+          "text": "Σni dμi=−S dT+V dp"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "固定T、组成，测得(∂μi/∂p)=2.0×10⁻⁵ J·mol⁻¹·Pa⁻¹，相应偏摩尔体积是多少？",
+      "points": 2,
+      "explanation": "V̄i=(∂μi/∂p)；1 J/Pa=1 m³，2.0×10⁻⁵ m³/mol=20 cm³/mol。",
+      "difficulty": "hard",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "20 cm³·mol⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "0.020 cm³·mol⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "2.0×10⁻⁵ cm³·mol⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "20000 cm³·mol⁻¹"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "不同的两种理想气体各1.00 mol，在300 K、相同初始压力下分隔，混合后T、p相同。R=8.314 J·mol⁻¹·K⁻¹，其混合Gibbs能约为？",
+      "points": 3,
+      "explanation": "xA=xB=1/2，ΔG=RT[ln(1/2)+ln(1/2)]=−2RT ln2≈−3.458 kJ。",
+      "difficulty": "challenging",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "+3.46 kJ"
+        },
+        {
+          "id": "B",
+          "text": "−1.73 kJ"
+        },
+        {
+          "id": "C",
+          "text": "−3.46 kJ"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "二元体系恒T、p，若μA=常数A+RT ln xA，且组成变化满足Gibbs–Duhem，则可积分得μB=常数B+RT ln(1−xA)。",
+      "points": 3,
+      "explanation": "dμA=RT dxA/xA，故dμB=−RT dxA/(1−xA)，积分得到RT ln(1−xA)加参考常数。",
+      "difficulty": "challenging",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "二元体系x=xA，摩尔体积Vm=20+10x+4x(1−x)，单位cm³·mol⁻¹。x=0.25时，组分B的偏摩尔体积为____cm³·mol⁻¹。",
+      "points": 3,
+      "explanation": "Vm=23.25，dVm/dx=14−8x=12。V̄B=Vm−x dVm/dx=23.25−0.25×12=20.25。",
+      "difficulty": "challenging",
+      "tags": [
+        "mixtures",
+        "partial molar quantities",
+        "chemical potential"
+      ],
+      "answer": "20.25",
+      "acceptableAnswers": [
+        "20.25",
+        "20.250",
+        "20.2500"
+      ]
+    }
+  ]
+}

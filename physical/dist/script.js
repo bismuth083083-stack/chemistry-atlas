@@ -13,6 +13,17 @@ async function getTerms(){const r=await fetch('data/terms.json');return r.json()
 function termRow(t){return `<a class="term-table row" href="term.html?slug=${encodeURIComponent(t.slug)}"><strong>${t.zh}</strong><span>${t.en}</span><span>${t.category}</span><span>${t.related.length}</span></a>`}
 async function loadTerms(){const terms=await getTerms();const list=document.querySelector('#term-list');document.querySelector('#term-count').textContent=terms.length;const render=()=>{const q=(termSearch?.value||'').trim().toLowerCase();const shown=terms.filter(t=>[t.zh,t.en,t.category,...(t.properties||[])].join(' ').toLowerCase().includes(q));list.className=shown.length?'':'table-empty';list.innerHTML=shown.length?shown.map(termRow).join(''):'<b>没有匹配词条</b><p>尝试中文名、英文名或分类。</p>'};termSearch?.addEventListener('input',render);render()}
 const TERM_IMAGES={
+"molality":["lecture-11/composition.webp", "质量摩尔浓度的课件图示", "本次PDF第2上页"],
+"molar-concentration":["lecture-11/composition.webp", "物质的量浓度的课件图示", "本次PDF第2上页"],
+"mass-fraction":["lecture-11/composition.webp", "质量分数的课件图示", "本次PDF第2上页"],
+"partial-molar-quantity":["lecture-11/partial-summary.webp", "偏摩尔量的课件图示", "本次PDF第9下页"],
+"partial-molar-volume":["lecture-11/volume-composition.webp", "偏摩尔体积的课件图示", "本次PDF第3下页"],
+"gibbs-duhem-equation":["lecture-11/gibbs-duhem.webp", "Gibbs–Duhem方程的课件图示", "本次PDF第8下页"],
+"extensive-property":["lecture-11/partial-summary.webp", "广延性质的课件图示", "本次PDF第9下页"],
+"intensive-property":["lecture-11/partial-summary.webp", "强度性质的课件图示", "本次PDF第9下页"],
+"euler-thermodynamic-relation":["lecture-11/partial-summary.webp", "Euler热力学齐次关系的课件图示", "本次PDF第9下页"],
+"tangent-intercept-method":["lecture-11/volume-composition.webp", "切线截距法的课件图示", "本次PDF第3下页"],
+
 "phase":["lecture-09-10/water-phase.webp", "相的课件图示", "PDF第8页"],
 "phase-transition":["lecture-09-10/mu-temperature.webp", "相变的课件图示", "PDF第2页"],
 "phase-rule":["lecture-09-10/water-phase.webp", "Gibbs相律的课件图示", "PDF第8页"],
@@ -73,4 +84,5 @@ const TERM_IMAGES={
 };
 async function loadTermDetail(){const slug=new URLSearchParams(location.search).get('slug');if(!slug)return;const terms=await getTerms();const t=terms.find(x=>x.slug===slug);if(!t)return;document.title=t.zh+' · 物理化学知识库';const related=t.related.map(s=>terms.find(x=>x.slug===s)).filter(Boolean);const image=TERM_IMAGES[slug];const figure=image?`<figure class="term-figure"><img src="assets/${image[0]}" alt="${image[1]}" loading="eager" decoding="async"><figcaption>${image[1]}<small>图源：${image[2]}</small></figcaption></figure>`:'';document.querySelector('#term-detail').className='term-detail';document.querySelector('#term-detail').innerHTML=`<header><p class="eyebrow">${t.category}</p><h1>${t.zh}</h1><p class="english">${t.en}</p></header>${figure}<section><h2>定义</h2><p class="lead">${t.definition}</p></section><section><h2>详细说明</h2><p>${t.expanded}</p></section><section><h2>主要性质</h2><ul>${t.properties.map(x=>'<li>'+x+'</li>').join('')}</ul></section><section class="note"><h2>辨析与常见误区</h2><p>${t.confusions}</p></section><section><h2>相关词条</h2><div class="related">${related.map(x=>'<a href="term.html?slug='+x.slug+'">'+x.zh+'<small>'+x.en+'</small></a>').join('')}</div></section><footer class="source">笔记来源：${t.source}</footer>`}
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
+
 

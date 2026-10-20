@@ -177,7 +177,37 @@ class QuizSession {
 }
 
 class QuizUI {
-  constructor(session) { this.session = session; this.app = $('#app'); this.reviewFilter = 'all'; this.render(); }
+  constructor(session) { this.session = session; this.app = $('#app'); this.reviewFilter = 'all'; this.bindKeyboard(); this.render(); }
+  bindKeyboard() {
+    window.__atlasQuizUI = this;
+    if (window.__atlasQuizEnterBound) return;
+    window.__atlasQuizEnterBound = true;
+    document.addEventListener('keydown', (event) => {
+      const ui = window.__atlasQuizUI;
+      if (ui && typeof ui.handleKeydown === 'function') ui.handleKeydown(event);
+    });
+  }
+  handleKeydown(event) {
+    if (event.defaultPrevented || event.key !== 'Enter') return;
+    if (event.isComposing || event.keyCode === 229) return;
+    if (event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
+    if (this.session.state.submitted) return;
+    if (document.querySelector('dialog[open]')) return;
+    const target = event.target instanceof Element ? event.target : null;
+    if (target && target.closest('a, textarea, .action-bar, .number-button, .review-filters, .filter-button')) return;
+    if (this.session.state.currentIndex >= this.session.questions.length - 1) return;
+    const option = target && target.closest('.answer-option');
+    event.preventDefault();
+    if (option) option.click();
+    this.goToNext();
+  }
+  goToNext() {
+    if (this.session.state.currentIndex >= this.session.questions.length - 1) return false;
+    this.session.state.currentIndex += 1;
+    this.session.save();
+    this.render();
+    return true;
+  }
   render() { $('#header-exam-label').textContent = this.session.quiz.title; this.session.state.submitted ? this.renderResults() : this.renderQuiz(); }
   baseShell() {
     const fragment = document.createDocumentFragment();
@@ -210,7 +240,7 @@ class QuizUI {
     else if (question.type === 'true-false') answerArea.append(this.booleanList(question, saved));
     else answerArea.append(this.fillInput(question, saved));
     section.append(answerArea);
-    const hint = text('p', question.type === 'multiple-choice' ? 'Select every option that applies.' : question.type === 'fill-in-the-blank' ? 'Trimmed spaces are ignored. Check the prompt before submitting.' : 'Choose one answer. You can change it before submitting.'); hint.className = 'answer-hint'; section.append(hint);
+    const hint = text('p', question.type === 'multiple-choice' ? 'Select every option that applies.' : question.type === 'fill-in-the-blank' ? 'Trimmed spaces are ignored. Check the prompt before submitting.' : 'Choose one answer. You can change it before submitting.'); hint.className = 'answer-hint'; if (this.session.state.currentIndex < this.session.questions.length - 1) { const key = text('kbd', 'Enter', 'answer-hint-key'); hint.append(text('span', ' · ', 'answer-hint-sep'), key, text('span', ' goes to the next question.')); } section.append(hint);
     return section;
   }
   optionList(question, saved) {

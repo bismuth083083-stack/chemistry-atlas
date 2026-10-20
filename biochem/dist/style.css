@@ -29,3 +29,7 @@ h1,h2,h3,.page-head h1,.hero h1,.chapter-card h2,.section-title h2,.article-head
 .chapter-card:hover{background:var(--accent)!important;border-color:var(--accent-soft)!important;color:#0d1c2d;box-shadow:0 18px 34px rgba(0,0,0,.28)}
 .chapter-card:hover h2,.chapter-card:hover p,.chapter-card:hover small,.chapter-card:hover>b,.chapter-card:hover .chapter-no,.chapter-card:hover .tag-row span{color:#0d1c2d!important}
 .chapter-card:hover .chapter-no{border-color:#0d1c2d!important}
+
+.practice-hint{margin:14px 0 0;color:var(--muted);font-size:13px}
+.practice-hint kbd{display:inline-block;padding:1px 6px 2px;margin:0 1px;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;background:var(--surface2);color:var(--text);font:11px ui-monospace,monospace}
+

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="电化学电池与电极电势，课件笔记、公式推导与配套测验">
+<title>10 电化学电池与电极电势 · 分析化学知识库</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="course-extra.css">
+<link rel="stylesheet" href="ppt-figures.css">
+<link rel="stylesheet" href="redox.css">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fractions.css"><link rel="stylesheet" href="import-lessons.css"></head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<kbd>⌘ K</kbd>
+</label>
+<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+</header>
+<aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<a href="chapter-3.html">
+<span>03</span>酸碱平衡</a>
+<a href="chapter-4.html">
+<span>04</span>酸碱滴定</a>
+<a href="chapter-5.html">
+<span>05</span>络合滴定</a>
+<a href="chapter-6.html">
+<span>06</span>重量分析</a>
+<a href="chapter-7.html">
+<span>07</span>沉淀滴定</a>
+<a href="chapter-8.html"><span>08</span>氧化还原与电位滴定</a>
+<a href="chapter-9.html"><span>09</span>仪器分析基础与QCM</a>
+<a class="active" href="chapter-10.html"><span>10</span>电化学电池与电极电势</a>
+<a href="topic-formulas.html">
+<span>◆</span>平衡与滴定公式</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside>
+<main class="workspace"><article class="article lesson import-lesson"><a class="back" href="index.html">← 返回课程笔记</a><header class="article-head"><p class="eyebrow">10 · ELECTROCHEMICAL CELLS & ELECTRODE POTENTIALS</p><h1>电化学电池与电极电势</h1><p>依课件顺序整理知识体系、公式条件、计算例题和易混概念。</p></header><nav class="import-jump" aria-label="本课目录"><a href="#map">10.1 电化学测量与氧化还原</a><a href="#cells">10.2 原电池、电解池与阴阳极</a><a href="#reference">10.3 标准氢电极与还原电位</a><a href="#notation">10.4 电池符号、电位与强度量</a><a href="#nernst">10.5 Nernst方程与反应商</a><a href="#hydrogen">10.6 含H⁺电对与pH效应</a><a href="#equilibrium">10.7 电池电压、自由能与平衡常数</a><a href="#worked">10.8 Ce⁴⁺–Fe²⁺混合例题与单位校订</a><a href="#review">10.9 应试步骤与配套测验</a></nav><section id="map"><p class="section-kicker">10.1 · COURSE NOTES</p><h2>电化学测量与氧化还原</h2><p>本章依据19页课件，梳理电池、电极电势、Nernst方程与混合溶液电位。电化学分析可测电位、电荷或电流；电位法在近似零电流下响应物种活度，因此能区分游离形态与被络合的总量。氧化失电子、还原得电子；氧化剂自身还原，还原剂自身氧化。</p><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+<section id="cells"><p class="section-kicker">10.2 · COURSE NOTES</p><h2>原电池、电解池与阴阳极</h2><p>原电池以自发反应输出电能；电解池借外加电能推动按指定方向非自发的反应。两类电池中始终是阳极氧化、阴极还原。原电池阳极为负、阴极为正；电解池常相反。判断先看反应，再看装置极性。</p><div class="import-table"><table><thead><tr><th>装置</th><th>阳极</th><th>阴极</th></tr></thead><tbody><tr><td>原电池</td><td>氧化，负极</td><td>还原，正极</td></tr><tr><td>电解池</td><td>氧化，正极</td><td>还原，负极</td></tr></tbody></table></div><figure class="ppt-figure ppt-figure-light"><img src="assets/ch10/cells.webp" alt="原电池与电解池的能量转换" loading="lazy" decoding="async"><figcaption>原电池与电解池的能量转换<small>图源：10_Electrochemistry .pptx, slide 6</small></figcaption></figure><figure class="ppt-figure ppt-figure-light"><img src="assets/ch10/salt-bridge.webp" alt="盐桥与两个半电池" loading="lazy" decoding="async"><figcaption>盐桥与两个半电池<small>图源：10_Electrochemistry .pptx, slide 7</small></figcaption></figure><p>电子经外电路从原电池阳极流向阴极；<a class="term-link" href="term.html?slug=salt-bridge">盐桥</a>通过离子迁移维持电中性，减少两种溶液直接混合。电子不通过盐桥传输。实际测量还要考虑液接电位。</p><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+<section id="reference"><p class="section-kicker">10.3 · COURSE NOTES</p><h2>标准氢电极与还原电位</h2><p>单个电极电位无法独立测量，只能相对参比电极建立标度。<a class="term-link" href="term.html?slug=standard-hydrogen-electrode">标准氢电极</a>（SHE）的标准还原电位按约定为0 V；H⁺活度为1，H₂处于标准气体状态，铂提供导电表面。</p><div class="equation">2H<sup>+</sup> + 2e<sup>−</sup> ⇌ H₂(g)，　E° = 0 V</div><p>课件沿用1 atm的历史表述；现代标准压力取1 bar。Nernst对数中使用无量纲活度或气体逸度相对标准态的比值，稀薄理想气体才近似用<span class="math-frac"><span>p</span><span>p°</span></span>。更正的标准还原电位通常对应更强氧化剂；比较时需匹配温度、介质和物种形态。</p><figure class="ppt-figure ppt-figure-light"><img src="assets/ch10/she.webp" alt="标准氢电极与相对电位标度" loading="lazy" decoding="async"><figcaption>标准氢电极与相对电位标度<small>图源：10_Electrochemistry .pptx, slide 10</small></figcaption></figure><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+<section id="notation"><p class="section-kicker">10.4 · COURSE NOTES</p><h2>电池符号、电位与强度量</h2><p>电池式按左阳极、右阴极书写，单竖线表示相界，双竖线表示液接界面或盐桥。若溶液内没有金属导体，用惰性Pt作电极。所有电位取还原电位再计算差值。</p><div class="equation">Pt | Sn²⁺, Sn⁴⁺ || Fe³⁺, Fe²⁺ | Pt<br>E<sub>cell</sub> = E<sub>右</sub> − E<sub>左</sub></div><p>Fe³⁺+e⁻⇌Fe²⁺的E°=0.771 V，Sn⁴⁺+2e⁻⇌Sn²⁺的E°=0.154 V。配平后2Fe³⁺+Sn²⁺→2Fe²⁺+Sn⁴⁺，n=2，而E°<sub>cell</sub>=0.617 V。把Fe半反应乘2不会把它的电位乘2；电位是强度量。</p><figure class="ppt-figure ppt-figure-light"><img src="assets/ch10/notation.webp" alt="Fe/Sn电池符号与电位差" loading="lazy" decoding="async"><figcaption>Fe/Sn电池符号与电位差<small>图源：10_Electrochemistry .pptx, slide 13</small></figcaption></figure><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+<section id="nernst"><p class="section-kicker">10.5 · COURSE NOTES</p><h2>Nernst方程与反应商</h2><p>对a Ox+n e⁻⇌b Red，活度反应商为Q=<span class="math-frac"><span>a<sub>Red</sub><sup>b</sup></span><span>a<sub>Ox</sub><sup>a</sup></span></span>。纯固体、纯液体标准态活度取1，参与的H⁺和气体需保留在反应商中。</p><div class="equation">E = E° − <span class="math-frac"><span>RT</span><span>nF</span></span> ln <span class="math-frac"><span>a<sub>Red</sub><sup>b</sup></span><span>a<sub>Ox</sub><sup>a</sup></span></span><br>E = E° − <span class="math-frac"><span>0.05916 V</span><span>n</span></span> lg Q　（298.15 K）</div><p>R=8.314 J·mol<sup>−1</sup>·K<sup>−1</sup>，F≈96485 C·mol<sup>−1</sup>，n是所写半反应的电子数。仅在活度系数可近似抵消时用浓度比代替活度比。</p><div class="equation">E<sub>Fe</sub> = 0.771 V + 0.05916 V lg <span class="math-frac"><span>a<sub>Fe³⁺</sub></span><span>a<sub>Fe²⁺</sub></span></span></div><figure class="ppt-figure ppt-figure-light"><img src="assets/ch10/nernst.webp" alt="一般Nernst方程及常数" loading="lazy" decoding="async"><figcaption>一般Nernst方程及常数<small>图源：10_Electrochemistry .pptx, slide 14</small></figcaption></figure><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+<section id="hydrogen"><p class="section-kicker">10.6 · COURSE NOTES</p><h2>含H⁺电对与pH效应</h2><p>把H⁺遗漏会直接改变酸度响应。氢电极使用还原反应2H⁺+2e⁻⇌H₂，在298.15 K有：</p><div class="equation">E = −<span class="math-frac"><span>0.05916 V</span><span>2</span></span> lg <span class="math-frac"><span><span class="math-frac"><span>p<sub>H₂</sub></span><span>p°</span></span></span><span>a<sub>H⁺</sub>²</span></span><br>p<sub>H₂</sub>=p°时，E = −0.05916 V × pH</div><p>标准气压下pH升高1，氢电极电位降低约59.16 mV。对其他电对，pH斜率还取决于H⁺计量系数与转移电子数，不能一律套59 mV。</p><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+<section id="equilibrium"><p class="section-kicker">10.7 · COURSE NOTES</p><h2>电池电压、自由能与平衡常数</h2><div class="equation">ΔG = −nFE<sub>cell</sub>，　ΔG° = −nFE°<sub>cell</sub> = −RT ln K<br>lg K = <span class="math-frac"><span>nE°<sub>cell</sub></span><span>0.05916 V</span></span>　（298.15 K）</div><p>在所写方向上E<sub>cell</sub>&gt;0对应ΔG&lt;0。标准电位差只确定标准态驱动力；任意实际组成要代入Q。化学平衡时两电对电位相等，所以两者之差E<sub>cell</sub>=0；它们对SHE的共同电位通常不为零。平衡也不意味着所有反应物严格耗尽。</p><figure class="ppt-figure ppt-figure-light"><img src="assets/ch10/equilibrium.webp" alt="平衡时两电对电位相等" loading="lazy" decoding="async"><figcaption>平衡时两电对电位相等<small>图源：10_Electrochemistry .pptx, slide 16</small></figcaption></figure><p>Fe/Sn例中lgK=<span class="math-frac"><span>2×0.617</span><span>0.05916</span></span>≈20.86，K≈7.23×10²⁰。电位差很大说明反应强烈偏向产物，但计算残余量时仍不能令对数中的浓度等于零。</p><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+<section id="worked"><p class="section-kicker">10.8 · COURSE NOTES</p><h2>Ce⁴⁺–Fe²⁺混合例题与单位校订</h2><p>5.0 mL、0.10 mol·L<sup>−1</sup> Ce⁴⁺和5.0 mL、0.30 mol·L<sup>−1</sup> Fe²⁺混合，按Ce⁴⁺+Fe²⁺⇌Ce³⁺+Fe³⁺先计量。初始分别0.50和1.50 mmol，反应后Fe²⁺余1.00 mmol，Fe³⁺、Ce³⁺各0.50 mmol，总体积10.0 mL。</p><div class="equation">E ≈ 0.771 + 0.05916 lg <span class="math-frac"><span>0.50</span><span>1.00</span></span> = 0.7532 V</div><p>用课件E°<sub>Ce</sub>=1.61 V和E°<sub>Fe</sub>=0.771 V，K≈1.52×10¹⁴。若设残余Ce⁴⁺的物质的量为x mmol，则：</p><div class="equation">K = <span class="math-frac"><span>(0.50−x)²</span><span>(1.00+x)x</span></span>，　x ≈ 1.64×10<sup>−15</sup> mmol</div><p>相应残余浓度约1.64×10<sup>−16</sup> mol·L<sup>−1</sup>。课件中间量使用mmol，却将残余x标为M，存在单位混淆；0.50、1.00也不能直接当作混合后的摩尔浓度。用Fe电对计算稳定且简便。</p><figure class="ppt-figure ppt-figure-light"><img src="assets/ch10/mixture-balance.webp" alt="混合体系计量与残余量模型" loading="lazy" decoding="async"><figcaption>混合体系计量与残余量模型<small>图源：10_Electrochemistry .pptx, slide 17</small></figcaption></figure><figure class="ppt-figure ppt-figure-light"><img src="assets/ch10/mixture-potential.webp" alt="用过量Fe²⁺一侧电对计算共同电位" loading="lazy" decoding="async"><figcaption>用过量Fe²⁺一侧电对计算共同电位<small>图源：10_Electrochemistry .pptx, slide 18</small></figcaption></figure><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+<section id="review"><p class="section-kicker">10.9 · COURSE NOTES</p><h2>应试步骤与配套测验</h2><p>固定顺序：配平半反应 → 标阳极和阴极 → 统一还原电位 → 写全活度反应商 → 计量反应后再求平衡 → 检查电子数、温度和单位。平衡电位、标准电位、计量点电位分别指不同概念。</p><p>本章与第8章氧化还原滴定衔接：第8章着重滴定曲线与操作，本章集中补齐电化学装置及电位标度。</p><p><a class="import-quiz" href="https://quiz.chemistryatlas.xyz/index.html?quiz=ANA-L10">第10章测验：22题，32分 →</a></p><p class="source">来源：10_Electrochemistry .pptx，第2–18页；例题经独立复算。</p></section>
+</article></main><script src="script.js"></script></body></html>

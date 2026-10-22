@@ -1954,5 +1954,145 @@
       }
     ],
     "updatedAt": "2026-10-20"
+  },
+  {
+    "slug": "gibbs-energy-of-mixing",
+    "zh": "混合Gibbs能",
+    "en": "Gibbs energy of mixing",
+    "aliases": [
+      "混合Gibbs能",
+      "Gibbs energy of mixing"
+    ],
+    "category": "混合物与溶液",
+    "definition": "在明确初终参考态下，混合引起的Gibbs能变化。",
+    "expanded": "同T、p下理想气体或理想溶液ΔmixG=nRTΣxi lnxi。",
+    "properties": [
+      "同T、p下理想气体或理想溶液ΔmixG=nRTΣxi lnxi。"
+    ],
+    "confusions": "初始压力不同需逐组分追踪化学势，不能直接套同压公式。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "PChem1_lec12 Mixture2，第1–12页；局部稳定性为模型拓展；本站lesson-12.html#gas",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "raoults-law",
+    "zh": "Raoult定律",
+    "en": "Raoult’s law",
+    "aliases": [
+      "Raoult定律",
+      "Raoult’s law"
+    ],
+    "category": "混合物与溶液",
+    "definition": "理想溶液组分分压等于液相摩尔分数乘同温纯组分蒸气压。",
+    "expanded": "pi=xi pi*；真实溶剂在纯组分端趋于此极限。",
+    "properties": [
+      "pi=xi pi*；真实溶剂在纯组分端趋于此极限。"
+    ],
+    "confusions": "气相摩尔分数y通常不等于液相摩尔分数x。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "PChem1_lec12 Mixture2，第1–12页；局部稳定性为模型拓展；本站lesson-12.html#raoult",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "henrys-law",
+    "zh": "Henry定律",
+    "en": "Henry’s law",
+    "aliases": [
+      "Henry定律",
+      "Henry’s law"
+    ],
+    "category": "混合物与溶液",
+    "definition": "无限稀释下，溶质分压与其溶液含量成正比。",
+    "expanded": "本课定义pB=KB xB，KB具有压力单位，取无限稀释端切线斜率。",
+    "properties": [
+      "本课定义pB=KB xB，KB具有压力单位，取无限稀释端切线斜率。"
+    ],
+    "confusions": "不同文献常数可能采用相反定义或不同浓度变量。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "PChem1_lec12 Mixture2，第1–12页；局部稳定性为模型拓展；本站lesson-12.html#henry",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "ideal-dilute-solution",
+    "zh": "理想稀溶液",
+    "en": "Ideal-dilute solution",
+    "aliases": [
+      "理想稀溶液",
+      "Ideal-dilute solution"
+    ],
+    "category": "混合物与溶液",
+    "definition": "溶剂遵循Raoult定律、稀溶质遵循Henry定律的溶液模型。",
+    "expanded": "溶剂接近纯相，溶质趋向无限稀释。",
+    "properties": [
+      "溶剂接近纯相，溶质趋向无限稀释。"
+    ],
+    "confusions": "与所有组分在全组成范围服从Raoult的理想溶液不同。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "PChem1_lec12 Mixture2，第1–12页；局部稳定性为模型拓展；本站lesson-12.html#henry",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "excess-function",
+    "zh": "超额函数",
+    "en": "Excess function",
+    "aliases": [
+      "超额函数",
+      "Excess function"
+    ],
+    "category": "混合物与溶液",
+    "definition": "真实溶液相对同T、p、组成理想溶液的热力学量之差。",
+    "expanded": "Xᴱ=Xreal−Xideal，Gᴱ=Hᴱ−TSᴱ。",
+    "properties": [
+      "Xᴱ=Xreal−Xideal，Gᴱ=Hᴱ−TSᴱ。"
+    ],
+    "confusions": "超额量不等于整个混合变化，理想混合熵本身非零。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "PChem1_lec12 Mixture2，第1–12页；局部稳定性为模型拓展；本站lesson-12.html#excess",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "regular-solution",
+    "zh": "规则溶液",
+    "en": "Regular solution",
+    "aliases": [
+      "规则溶液",
+      "Regular solution"
+    ],
+    "category": "混合物与溶液",
+    "definition": "超额熵为零而混合焓可以非零的溶液模型。",
+    "expanded": "本课对称模型Hᴱ=nβRTxAxB，固定温度下按β比较曲线。",
+    "properties": [
+      "本课对称模型Hᴱ=nβRTxAxB，固定温度下按β比较曲线。"
+    ],
+    "confusions": "模型的温度推导必须交代相互作用参数的温度依赖。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "PChem1_lec12 Mixture2，第1–12页；局部稳定性为模型拓展；本站lesson-12.html#excess",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "spinodal-stability",
+    "zh": "旋节线局部稳定性",
+    "en": "Spinodal stability",
+    "aliases": [
+      "旋节线局部稳定性",
+      "Spinodal stability"
+    ],
+    "category": "混合物与溶液",
+    "definition": "以摩尔Gibbs能对组成的曲率判断微小涨落是否降低自由能。",
+    "expanded": "曲率为负的区域局部不稳定；对称规则溶液中心临界β为2。",
+    "properties": [
+      "曲率为负的区域局部不稳定；对称规则溶液中心临界β为2。"
+    ],
+    "confusions": "局部曲率判据不替代整体平衡的公切线判据。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "PChem1_lec12 Mixture2，第1–12页；局部稳定性为模型拓展；本站lesson-12.html#stability",
+    "updated": "2026-10-22"
   }
 ]

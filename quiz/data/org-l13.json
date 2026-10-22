@@ -1,0 +1,349 @@
+{
+  "id": "ORG-L13",
+  "title": "卤代烷反应、有机金属与烯丙位溴化",
+  "description": "取代、还原、消除、Wurtz反应、格氏试剂与NBS烯丙位溴化。",
+  "subject": "organic-chemistry",
+  "chapter": "Website Lesson 13 · Lecture 12 · Chapter 6-4",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": { "mode": "fixed" },
+  "sources": [
+    {
+      "title": "第13课笔记",
+      "url": "https://organic.chemistryatlas.xyz/lesson-13.html",
+      "role": "依据用户上传的33页课件与正文中的条件化校订编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "卤代烷在乙醇溶液中与KOH加热，通常优先考虑哪类净转化？",
+      "points": 1,
+      "explanation": "醇溶强碱和加热通常促进脱卤化氢，生成烯烃；具体还要检查β-H和底物结构。",
+      "difficulty": "easy",
+      "tags": ["elimination", "dehydrohalogenation"],
+      "options": [
+        {"id": "A", "text": "脱卤化氢生成烯烃"},
+        {"id": "B", "text": "一定生成醇"},
+        {"id": "C", "text": "一定生成格氏试剂"},
+        {"id": "D", "text": "把卤素氧化成硝酸根"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "典型E2中，哪组变化在一个协同步骤中完成？",
+      "points": 1,
+      "explanation": "碱夺β-H、C–H电子形成π键以及C–X断裂同步发生。",
+      "difficulty": "easy",
+      "tags": ["E2", "elimination"],
+      "options": [
+        {"id": "A", "text": "只断C–X并停留在碳正离子"},
+        {"id": "B", "text": "夺β-H、成C=C并使X离去"},
+        {"id": "C", "text": "先形成格氏试剂再消除"},
+        {"id": "D", "text": "先形成自由基再链终止"}
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "邻二卤化物在合适强碱条件下连续脱去两分子HX，常可得到什么？",
+      "points": 1,
+      "explanation": "邻二卤化物可以连续消除两次，净生成碳碳三键。",
+      "difficulty": "easy",
+      "tags": ["elimination", "alkyne"],
+      "options": [
+        {"id": "A", "text": "炔烃"},
+        {"id": "B", "text": "醚"},
+        {"id": "C", "text": "格氏试剂"},
+        {"id": "D", "text": "硝酸酯"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "Wurtz反应的核心偶联式是哪一个？",
+      "points": 1,
+      "explanation": "相同的伯卤代烷在钠作用下可形成R–R，并生成NaX。",
+      "difficulty": "easy",
+      "tags": ["Wurtz", "organometallic"],
+      "options": [
+        {"id": "A", "text": "R–X + Mg → R–MgX"},
+        {"id": "B", "text": "2R–X + 2Na → R–R + 2NaX"},
+        {"id": "C", "text": "R–X + NaI → R–F"},
+        {"id": "D", "text": "R–X + AgNO₃ → R–NO₃"}
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "卤代烷与Mg在绝对乙醚中反应，直接生成哪类物质？",
+      "points": 1,
+      "explanation": "R–X插入Mg后形成R–MgX，即格氏试剂。",
+      "difficulty": "easy",
+      "tags": ["Grignard", "organometallic"],
+      "options": [
+        {"id": "A", "text": "R–MgX"},
+        {"id": "B", "text": "R–OH"},
+        {"id": "C", "text": "R–CN"},
+        {"id": "D", "text": "R–NO₂"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "1-溴丁烷与KOH水溶液反应，主要取代产物是？",
+      "points": 1,
+      "explanation": "水溶液中的HO⁻提供亲核取代条件，伯底物可给1-丁醇。",
+      "difficulty": "medium",
+      "tags": ["SN2", "hydrolysis"],
+      "options": [
+        {"id": "A", "text": "1-丁醇"},
+        {"id": "B", "text": "1-丁烯"},
+        {"id": "C", "text": "丁炔"},
+        {"id": "D", "text": "丁基镁溴"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "1-溴丁烷与醇溶KOH加热，课件给出的主要类型产物是？",
+      "points": 1,
+      "explanation": "醇溶强碱和加热提高E2，1-溴丁烷可生成1-丁烯。",
+      "difficulty": "medium",
+      "tags": ["E2", "dehydrohalogenation"],
+      "options": [
+        {"id": "A", "text": "1-丁烯"},
+        {"id": "B", "text": "1-丁醇"},
+        {"id": "C", "text": "丁腈"},
+        {"id": "D", "text": "丁基碘"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "1-溴丁烷与NaI/丙酮反应时，哪种现象推动卤素交换？",
+      "points": 1,
+      "explanation": "NaI溶于丙酮，而生成的NaBr难溶并沉淀，使平衡向生成碘代烷方向移动。",
+      "difficulty": "medium",
+      "tags": ["SN2", "halide-exchange"],
+      "options": [
+        {"id": "A", "text": "NaBr沉淀"},
+        {"id": "B", "text": "AgCl沉淀"},
+        {"id": "C", "text": "放出氧气"},
+        {"id": "D", "text": "生成光气"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "1-溴丁烷用NaCN进行SN2氰基化，产物相对于原卤代烷的碳数怎样变化？",
+      "points": 1,
+      "explanation": "CN⁻通过碳端进攻，产物为戊腈，CN⁻提供一个新的碳。",
+      "difficulty": "medium",
+      "tags": ["SN2", "nitrile", "carbon-chain"],
+      "options": [
+        {"id": "A", "text": "增加一个碳"},
+        {"id": "B", "text": "减少一个碳"},
+        {"id": "C", "text": "碳数不变且生成醇"},
+        {"id": "D", "text": "碳数不变且生成格氏试剂"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "AgNO₃/乙醇可以通过AgX沉淀的生成速度帮助比较卤代烷的电离活性。",
+      "points": 1,
+      "explanation": "Ag⁺结合离去的卤离子形成难溶AgX；沉淀出现快慢反映条件下的离去与电离差异。",
+      "difficulty": "medium",
+      "tags": ["AgNO3", "SN1"],
+      "answer": true
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "课件对NaBH₄在卤代烷还原中的概括是哪一项？",
+      "points": 1,
+      "explanation": "课件强调NaBH₄适用于二级、三级卤代烷，而一级卤代烷不易用该试剂还原。",
+      "difficulty": "medium",
+      "tags": ["reduction", "NaBH4"],
+      "options": [
+        {"id": "A", "text": "二级、三级卤代烷较适用"},
+        {"id": "B", "text": "只能还原芳基卤"},
+        {"id": "C", "text": "必须在水中剧烈反应"},
+        {"id": "D", "text": "一定生成腈"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q012",
+      "type": "multiple-choice",
+      "question": "哪些物质含有会直接消耗格氏试剂的活泼氢？",
+      "points": 1,
+      "explanation": "O–H、N–H、S–H以及末端炔C–H都能质子化R–MgX，生成R–H。",
+      "difficulty": "medium",
+      "tags": ["Grignard", "active-hydrogen"],
+      "options": [
+        {"id": "A", "text": "乙醇"},
+        {"id": "B", "text": "乙酸"},
+        {"id": "C", "text": "末端炔"},
+        {"id": "D", "text": "乙醚"}
+      ],
+      "answers": ["A", "B", "C"]
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "为什么格氏试剂通常在绝对乙醚中制备？",
+      "points": 1,
+      "explanation": "格氏试剂会被水、醇等质子源破坏，绝对乙醚提供无醇无水介质并能配位稳定镁中心。",
+      "difficulty": "medium",
+      "tags": ["Grignard", "solvent"],
+      "options": [
+        {"id": "A", "text": "避免活泼氢质子化R端"},
+        {"id": "B", "text": "让R–MgX变成硝酸酯"},
+        {"id": "C", "text": "提高水解速度"},
+        {"id": "D", "text": "使所有底物变成三级卤代烷"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "true-false",
+      "question": "烯丙基正离子、自由基和负离子都可能因与C=C共振而得到稳定化。",
+      "points": 1,
+      "explanation": "烯丙位的p轨道与双键π体系相邻，电荷或未成对电子可以离域。",
+      "difficulty": "medium",
+      "tags": ["allylic", "resonance"],
+      "answer": true
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "NBS在光照烯丙位溴化中的主要作用是什么？",
+      "points": 1,
+      "explanation": "NBS与HBr反应再生少量Br₂，维持低溴浓度，减少Br₂对双键的加成。",
+      "difficulty": "medium",
+      "tags": ["NBS", "allylic-bromination"],
+      "options": [
+        {"id": "A", "text": "维持低浓度Br₂以偏向烯丙位溴化"},
+        {"id": "B", "text": "把所有双键氢化为单键"},
+        {"id": "C", "text": "提供Mg以生成格氏试剂"},
+        {"id": "D", "text": "使底物一定发生SN2"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "在SN1可比条件下，下列底物通常按哪一顺序活性降低？",
+      "points": 2,
+      "explanation": "正离子稳定性主导典型SN1电离，三级通常高于二级和一级。",
+      "difficulty": "hard",
+      "tags": ["SN1", "carbocation-stability"],
+      "options": [
+        {"id": "A", "text": "一级 > 二级 > 三级"},
+        {"id": "B", "text": "三级 > 二级 > 一级"},
+        {"id": "C", "text": "二级 > 一级 > 三级"},
+        {"id": "D", "text": "三者完全相同"}
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "1-溴-1-甲基环己烷在热甲醇中电离后，哪些产物类型可由共同正离子产生？",
+      "points": 2,
+      "explanation": "甲醇可作为亲核体给醚，也可作为碱从环上或甲基β位夺H给两类烯烃。",
+      "difficulty": "hard",
+      "tags": ["E1", "SN1", "solvolysis"],
+      "options": [
+        {"id": "A", "text": "1-甲氧基-1-甲基环己烷"},
+        {"id": "B", "text": "1-甲基环己烯"},
+        {"id": "C", "text": "亚甲基环己烷"},
+        {"id": "D", "text": "丁基镁溴"}
+      ],
+      "answers": ["A", "B", "C"]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "2,3-二甲基丁-2-烯与NBS、hν出现两个烯丙位溴化产物，最直接的解释是？",
+      "points": 2,
+      "explanation": "夺取烯丙位H后形成的自由基有两个共振式，Br可在两个共振位置形成产物。",
+      "difficulty": "hard",
+      "tags": ["NBS", "allylic-bromination", "resonance"],
+      "options": [
+        {"id": "A", "text": "烯丙基自由基有两个共振位置"},
+        {"id": "B", "text": "NBS必然把双键完全加成"},
+        {"id": "C", "text": "反应先生成格氏试剂"},
+        {"id": "D", "text": "两个产物来自SN2背面进攻"}
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q019",
+      "type": "fill-in-the-blank",
+      "question": "Wurtz反应中，2 n-C₁₆H₃₃I + 2 Na → n-____ + 2 NaI。",
+      "points": 2,
+      "explanation": "两个相同的十六烷基片段偶联，碳链长度加倍，生成n-C₃₂H₆₆。",
+      "difficulty": "hard",
+      "tags": ["Wurtz", "coupling"],
+      "answer": "C32H66",
+      "acceptableAnswers": ["n-C32H66", "C₃₂H₆₆", "n-C₃₂H₆₆"]
+    },
+    {
+      "id": "q020",
+      "type": "multiple-choice",
+      "question": "以1-溴丁烷为底物，哪些“试剂 → 主要产物”配对符合本课课件的典型判断？",
+      "points": 3,
+      "explanation": "KOH/H₂O给醇，醇溶KOH加热给烯烃，Mg/醚给格氏试剂，NaCN给增加一个碳的腈；NaI/丙酮则给碘代烷而不是氟代烷。",
+      "difficulty": "challenging",
+      "tags": ["reaction-map", "SN2", "E2", "Grignard"],
+      "options": [
+        {"id": "A", "text": "KOH/H₂O → 1-丁醇"},
+        {"id": "B", "text": "KOH/ROH，加热 → 1-丁烯"},
+        {"id": "C", "text": "Mg/醚 → 丁基镁溴"},
+        {"id": "D", "text": "NaI/丙酮 → 1-氟丁烷"},
+        {"id": "E", "text": "NaCN → 戊腈"}
+      ],
+      "answers": ["A", "B", "C", "E"]
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "只要隔绝水，格氏试剂就可以用乙醇作溶剂，因为乙醇不是水。",
+      "points": 3,
+      "explanation": "错误。乙醇有O–H活泼氢，会质子化R–MgX生成R–H；格氏试剂需要无醇、无水介质。",
+      "difficulty": "challenging",
+      "tags": ["Grignard", "active-hydrogen", "solvent"],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "single-choice",
+      "question": "若NBS烯丙位溴化题只画出一个主要产物，最先应检查什么？",
+      "points": 3,
+      "explanation": "共振式数量不等于独立产物数量；要检查另一共振位置是否与原结构等价，或另一支路是否不能形成新的独立产物。",
+      "difficulty": "challenging",
+      "tags": ["NBS", "allylic-bromination", "product-count"],
+      "options": [
+        {"id": "A", "text": "另一共振位置是否与原结构等价"},
+        {"id": "B", "text": "是否一定发生SN1"},
+        {"id": "C", "text": "是否生成R–MgX"},
+        {"id": "D", "text": "是否把NBS写成NaI"}
+      ],
+      "answer": "A"
+    }
+  ]
+}

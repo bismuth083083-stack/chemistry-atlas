@@ -1632,6 +1632,41 @@
       "mode": "fixed"
     },
     {
+      "id": "ORG-L13",
+      "title": "卤代烷反应、有机金属与烯丙位溴化",
+      "description": "取代、还原、脱卤化氢、Wurtz反应、格氏试剂、自由基卤化与NBS。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 13,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 13 · Lecture 12 · Chapter 6-4",
+      "lesson": "卤代烷反应、有机金属与烯丙位溴化",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "substitution",
+        "organometallic",
+        "Grignard",
+        "allylic-bromination"
+      ],
+      "knowledgePoints": [
+        "alkyl halide reactions",
+        "dehydrohalogenation",
+        "Wurtz reaction",
+        "Grignard reagents",
+        "allylic radicals",
+        "NBS"
+      ],
+      "createdAt": "2026-10-22",
+      "updatedAt": "2026-10-22",
+      "relatedNotes": [
+        "/organic/dist/lesson-13.html"
+      ],
+      "path": "org-l13.json",
+      "mode": "fixed"
+    },
+    {
       "id": "PCHEM-L11",
       "title": "混合物、偏摩尔量与化学势",
       "description": "组成换算、偏摩尔体积、自然变量、Gibbs–Duhem方程与定量推导。",
@@ -1663,6 +1698,87 @@
         "/physical/dist/lesson-11.html"
       ],
       "path": "pchem-l11.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ANA-L09",
+      "title": "仪器分析基础、校准与QCM",
+      "description": "依据本次课件整理的仪器分析基础、校准与QCM练习，含条件检查、计算与概念辨析。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 9,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 9",
+      "lesson": "仪器分析基础、校准与QCM",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "仪器分析基础、校准与QCM"
+      ],
+      "knowledgePoints": [
+        "仪器分析基础、校准与QCM"
+      ],
+      "createdAt": "2026-10-22",
+      "updatedAt": "2026-10-22",
+      "relatedNotes": [
+        "/analytical/dist/chapter-9.html"
+      ],
+      "path": "ana-l09.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ANA-L10",
+      "title": "电化学电池与电极电势",
+      "description": "依据本次课件整理的电化学电池与电极电势练习，含条件检查、计算与概念辨析。",
+      "subject": "analytical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 10,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Chapter 10",
+      "lesson": "电化学电池与电极电势",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "电化学电池与电极电势"
+      ],
+      "knowledgePoints": [
+        "电化学电池与电极电势"
+      ],
+      "createdAt": "2026-10-22",
+      "updatedAt": "2026-10-22",
+      "relatedNotes": [
+        "/analytical/dist/chapter-10.html"
+      ],
+      "path": "ana-l10.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L12",
+      "title": "混合热力学与真实溶液",
+      "description": "依据本次课件整理的混合热力学与真实溶液练习，含条件检查、计算与概念辨析。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 12,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Lecture 12 · Mixture2",
+      "lesson": "混合热力学与真实溶液",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "混合热力学与真实溶液"
+      ],
+      "knowledgePoints": [
+        "混合热力学与真实溶液"
+      ],
+      "createdAt": "2026-10-22",
+      "updatedAt": "2026-10-22",
+      "relatedNotes": [
+        "/physical/dist/lesson-12.html"
+      ],
+      "path": "pchem-l12.json",
       "mode": "fixed"
     }
   ]

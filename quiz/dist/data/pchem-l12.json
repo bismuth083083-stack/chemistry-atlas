@@ -1,0 +1,651 @@
+{
+  "id": "PCHEM-L12",
+  "title": "混合热力学与真实溶液",
+  "description": "依据本次课件整理的混合热力学与真实溶液练习，含条件检查、计算与概念辨析。",
+  "subject": "physical-chemistry",
+  "chapter": "Lecture 12 · Mixture2",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "混合热力学与真实溶液笔记",
+      "url": "https://physical.chemistryatlas.xyz/lesson-12.html",
+      "role": "以所供课件和正文明确标出的推导编写；计算独立复核。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "理想混合气体中组分i的分压为？",
+      "points": 1,
+      "explanation": "Dalton分压定律pi=xi p。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "pi=xi p"
+        },
+        {
+          "id": "B",
+          "text": "pi只由摩尔质量决定"
+        },
+        {
+          "id": "C",
+          "text": "pi=p对所有组分均成立"
+        },
+        {
+          "id": "D",
+          "text": "pi=p÷xi"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "同T、p下理想气体混合的Gibbs能变化通常为？",
+      "points": 1,
+      "explanation": "0<xi<1时Σxi lnxi<0。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "总为零"
+        },
+        {
+          "id": "B",
+          "text": "等于混合焓"
+        },
+        {
+          "id": "C",
+          "text": "负值"
+        },
+        {
+          "id": "D",
+          "text": "正值"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "理想溶液中Raoult定律写作？",
+      "points": 1,
+      "explanation": "pi*为同温纯组分的饱和蒸气压。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "pi=pi*对所有组成成立"
+        },
+        {
+          "id": "B",
+          "text": "pi=xi pi*"
+        },
+        {
+          "id": "C",
+          "text": "pi=xi p总"
+        },
+        {
+          "id": "D",
+          "text": "pi=Ki÷xi"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "本课Henry常数采用pB=KB xB，KB的单位是？",
+      "points": 1,
+      "explanation": "摩尔分数无量纲，KB与pB同单位。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "能量"
+        },
+        {
+          "id": "B",
+          "text": "无量纲"
+        },
+        {
+          "id": "C",
+          "text": "压力"
+        },
+        {
+          "id": "D",
+          "text": "体积"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "理想稀溶液的溶剂与溶质分别趋向遵循什么？",
+      "points": 1,
+      "explanation": "溶剂接近纯相，溶质接近无限稀释。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两者均无极限规律"
+        },
+        {
+          "id": "B",
+          "text": "两者都必须全组成Henry"
+        },
+        {
+          "id": "C",
+          "text": "溶剂Henry、溶质Raoult"
+        },
+        {
+          "id": "D",
+          "text": "溶剂Raoult、溶质Henry"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "固定T、p理想溶液的混合焓和体积变化为？",
+      "points": 1,
+      "explanation": "理想溶液模型设ΔmixH=0、ΔmixV=0。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两者均为零"
+        },
+        {
+          "id": "B",
+          "text": "两者均为正"
+        },
+        {
+          "id": "C",
+          "text": "由总摩尔数决定必须不为零"
+        },
+        {
+          "id": "D",
+          "text": "焓为正且体积为负"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q007",
+      "type": "multiple-choice",
+      "question": "同温同压理想混合公式使用时，哪些陈述正确？",
+      "points": 1,
+      "explanation": "前3项正确，压力不同时需逐组分追踪初终态。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "化学势对数采用无量纲压力比"
+        },
+        {
+          "id": "B",
+          "text": "总G可用Σni μi计算"
+        },
+        {
+          "id": "C",
+          "text": "初始压力任意不同也能不加检查直接套同压公式"
+        },
+        {
+          "id": "D",
+          "text": "应明确初始纯组分状态"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "固定总量的二元理想混合物在哪个组成混合熵最大？",
+      "points": 1,
+      "explanation": "二元随机混合熵在等摩尔组成达到最大。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "xA=1"
+        },
+        {
+          "id": "B",
+          "text": "任何组成都相同"
+        },
+        {
+          "id": "C",
+          "text": "xB=1"
+        },
+        {
+          "id": "D",
+          "text": "xA=xB=0.5"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "同温下液体与其蒸气中组分i达到相平衡，要求？",
+      "points": 1,
+      "explanation": "物质转移平衡要求同组分两相化学势相等。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两相摩尔数相同"
+        },
+        {
+          "id": "B",
+          "text": "xi=yi必定成立"
+        },
+        {
+          "id": "C",
+          "text": "液相和气相密度相同"
+        },
+        {
+          "id": "D",
+          "text": "μi(l)=μi(g)"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "液相摩尔分数x与蒸气相摩尔分数y通常可以不同。",
+      "points": 1,
+      "explanation": "分压由液相组成和挥发性共同决定，yi=pi÷p。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "pB固定，采用pB=KB xB定义时，KB更大通常意味着什么？",
+      "points": 1,
+      "explanation": "xB=pB÷KB，分压固定时与KB成反比。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "温度必定更高"
+        },
+        {
+          "id": "B",
+          "text": "无限稀释近似下xB更小"
+        },
+        {
+          "id": "C",
+          "text": "xB总为1"
+        },
+        {
+          "id": "D",
+          "text": "xB更大"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "若pA*=100 kPa、pB*=40 kPa、xA=0.25，理想溶液总压为？",
+      "points": 1,
+      "explanation": "p=0.25×100+0.75×40=55 kPa。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "70 kPa"
+        },
+        {
+          "id": "B",
+          "text": "140 kPa"
+        },
+        {
+          "id": "C",
+          "text": "25 kPa"
+        },
+        {
+          "id": "D",
+          "text": "55 kPa"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q013",
+      "type": "multiple-choice",
+      "question": "关于Henry定律，哪些条件需要核对？",
+      "points": 1,
+      "explanation": "前3项必需；常数定义不同不能直接互用。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "是否处于足够稀的极限"
+        },
+        {
+          "id": "B",
+          "text": "常数采用哪种定义和单位"
+        },
+        {
+          "id": "C",
+          "text": "使用溶质气体分压"
+        },
+        {
+          "id": "D",
+          "text": "把所有文献Henry常数数值直接互换"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "1 kg水中n水≈55.5 mol，pO2=160 Torr、K=3.33×10⁷ Torr，溶解O₂约为？",
+      "points": 1,
+      "explanation": "x≈4.80×10⁻⁶，再乘55.5 mol得2.67×10⁻⁴ mol。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.160 mol"
+        },
+        {
+          "id": "B",
+          "text": "2.67×10⁻⁴ mol"
+        },
+        {
+          "id": "C",
+          "text": "4.80 mol"
+        },
+        {
+          "id": "D",
+          "text": "3.33×10⁷ mol"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "两种理想气体各1 mol，同T、p下混合，ΔmixS=____×R ln2。",
+      "points": 1,
+      "explanation": "n=2，等摩尔混合熵nR ln2。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "二",
+        "2.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "课件3 mol H₂和1 mol N₂分别置于等体积V，初压3p和p，撤板后H₂分压为？",
+      "points": 2,
+      "explanation": "H₂由V膨胀到2V，温度不变，所以分压减半。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "3p"
+        },
+        {
+          "id": "B",
+          "text": "2p"
+        },
+        {
+          "id": "C",
+          "text": "1.5p"
+        },
+        {
+          "id": "D",
+          "text": "0.75p"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q017",
+      "type": "single-choice",
+      "question": "上述等体积不同初压混合过程在298.15 K的ΔG约为？",
+      "points": 2,
+      "explanation": "每种气体压力比均为1/2，ΔG=−4RTln2。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0 kJ"
+        },
+        {
+          "id": "B",
+          "text": "+6.87 kJ"
+        },
+        {
+          "id": "C",
+          "text": "−6.87 kJ"
+        },
+        {
+          "id": "D",
+          "text": "−5.58 kJ"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "规则溶液定义中的超额熵为？",
+      "points": 2,
+      "explanation": "本课规则溶液取SE=0但HE可以非零。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "永远负值"
+        },
+        {
+          "id": "B",
+          "text": "零"
+        },
+        {
+          "id": "C",
+          "text": "等于总混合熵"
+        },
+        {
+          "id": "D",
+          "text": "永远正值"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "采用课件Hᴱ=nβRTxAxB，在固定T下β<0意味着什么？",
+      "points": 2,
+      "explanation": "β<0使HE<0；理想模型混合焓为零，所以真实混合焓为负。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "混合放热"
+        },
+        {
+          "id": "B",
+          "text": "混合必定吸热"
+        },
+        {
+          "id": "C",
+          "text": "总混合熵为负"
+        },
+        {
+          "id": "D",
+          "text": "立即证明所有组成分相"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q020",
+      "type": "multiple-choice",
+      "question": "对称规则溶液g=xlnx+(1−x)ln(1−x)+βx(1−x)，哪些判断正确？",
+      "points": 3,
+      "explanation": "前3项符合模型；偏差符号不能单独确定分相。",
+      "difficulty": "challenging",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "整体平衡组成需用公切线比较"
+        },
+        {
+          "id": "B",
+          "text": "中心曲率为4−2β"
+        },
+        {
+          "id": "C",
+          "text": "β>2时中心局部不稳定"
+        },
+        {
+          "id": "D",
+          "text": "任意正偏差都必定分层"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "在等体积不同初压例中，只根据最终xH2=0.75、xN2=0.25套同压混合公式，就能得到实际初终态的完整ΔG。",
+      "points": 3,
+      "explanation": "该公式的初态是同一压力的两种纯气体，而题给初态压力为3p和p。",
+      "difficulty": "challenging",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "对称规则溶液模型在x=0.5的临界条件为β=____。",
+      "points": 3,
+      "explanation": "g″(0.5)=4−2β=0给β=2。",
+      "difficulty": "challenging",
+      "tags": [
+        "PCHEM-L12",
+        "混合热力学与真实溶液"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "二",
+        "2.0"
+      ]
+    }
+  ]
+}

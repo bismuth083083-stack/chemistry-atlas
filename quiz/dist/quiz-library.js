@@ -146,7 +146,7 @@ function cardMarkup(entry, index = 0) {
 class QuizLibrary {
   constructor(entries) {
     this.entries = entries;
-    this.pageSize = 36;
+    this.pageSize = 60;
     this.visibleLimit = this.pageSize;
     this.loadingMore = false;
     this.loadTimer = null;

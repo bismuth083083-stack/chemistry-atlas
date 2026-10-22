@@ -1,0 +1,650 @@
+{
+  "id": "ANA-L10",
+  "title": "电化学电池与电极电势",
+  "description": "依据本次课件整理的电化学电池与电极电势练习，含条件检查、计算与概念辨析。",
+  "subject": "analytical-chemistry",
+  "chapter": "Chapter 10",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "电化学电池与电极电势笔记",
+      "url": "https://analytical.chemistryatlas.xyz/chapter-10.html",
+      "role": "以所供课件和正文明确标出的推导编写；计算独立复核。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "两种电池中阳极都发生什么？",
+      "points": 1,
+      "explanation": "阳极按氧化定义，原电池和电解池都适用。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必须沉积金属"
+        },
+        {
+          "id": "B",
+          "text": "还原"
+        },
+        {
+          "id": "C",
+          "text": "只能析氢"
+        },
+        {
+          "id": "D",
+          "text": "氧化"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "原电池的能量转换是？",
+      "points": 1,
+      "explanation": "原电池利用自发反应的自由能降低输出电功。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "不发生氧化还原"
+        },
+        {
+          "id": "B",
+          "text": "外加电能强制非自发反应"
+        },
+        {
+          "id": "C",
+          "text": "自发化学反应输出电能"
+        },
+        {
+          "id": "D",
+          "text": "把盐桥当作电子导线"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "SHE的标准电极电位按约定为？",
+      "points": 1,
+      "explanation": "SHE是相对还原电位标度的零点。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "等于任意样品pH"
+        },
+        {
+          "id": "B",
+          "text": "1.00 V"
+        },
+        {
+          "id": "C",
+          "text": "0 V"
+        },
+        {
+          "id": "D",
+          "text": "−1.00 V"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "电位表中的半反应通常按哪个方向列出？",
+      "points": 1,
+      "explanation": "统一成还原电位才可取阴极减阳极。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只按质量大小"
+        },
+        {
+          "id": "B",
+          "text": "总是写正极反应但无电子"
+        },
+        {
+          "id": "C",
+          "text": "氧化方向"
+        },
+        {
+          "id": "D",
+          "text": "还原方向"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "盐桥主要传递什么以维持电中性？",
+      "points": 1,
+      "explanation": "外电路传递电子，盐桥通过离子迁移闭合电路。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只能是光子"
+        },
+        {
+          "id": "B",
+          "text": "自由电子"
+        },
+        {
+          "id": "C",
+          "text": "只能是金属原子"
+        },
+        {
+          "id": "D",
+          "text": "离子"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "将一个半反应乘2后，其标准还原电位怎样变化？",
+      "points": 1,
+      "explanation": "电位是强度量；ΔG和电子数同时乘2后电位不变。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "减半"
+        },
+        {
+          "id": "B",
+          "text": "变为2倍"
+        },
+        {
+          "id": "C",
+          "text": "一定变为零"
+        },
+        {
+          "id": "D",
+          "text": "不变"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "multiple-choice",
+      "question": "计算电池电压时哪些操作正确？",
+      "points": 1,
+      "explanation": "前3项正确，电位不随半反应系数倍增。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "配平后将每个半电位乘化学计量系数"
+        },
+        {
+          "id": "B",
+          "text": "把参与反应的H⁺保留在反应商中"
+        },
+        {
+          "id": "C",
+          "text": "用右电极电位减左电极电位"
+        },
+        {
+          "id": "D",
+          "text": "统一按还原电位计算"
+        }
+      ],
+      "answers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "E°Fe=0.771 V、E°Sn=0.154 V，Fe还原、Sn氧化时E°cell为？",
+      "points": 1,
+      "explanation": "0.771−0.154=0.617 V。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−0.925 V"
+        },
+        {
+          "id": "B",
+          "text": "0.925 V"
+        },
+        {
+          "id": "C",
+          "text": "0.617 V"
+        },
+        {
+          "id": "D",
+          "text": "1.388 V"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "298.15 K下Fe³⁺活度与Fe²⁺相等时，EFe等于？",
+      "points": 1,
+      "explanation": "活度比为1，对数项为零。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0 V"
+        },
+        {
+          "id": "B",
+          "text": "无法在任何情况下计算"
+        },
+        {
+          "id": "C",
+          "text": "2E°Fe"
+        },
+        {
+          "id": "D",
+          "text": "E°Fe"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "化学平衡时两个快速电子交换的电对电位相等，但其对SHE的共同电位可以非零。",
+      "points": 1,
+      "explanation": "为零的是二者的电位差，不是各自相对参比的读数。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "在298.15 K、H₂处于标准压力时，pH提高1，氢电极电位约怎样变化？",
+      "points": 1,
+      "explanation": "E=−0.05916pH，斜率为负59.16 mV。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "提高118.32 mV"
+        },
+        {
+          "id": "B",
+          "text": "始终为0 V"
+        },
+        {
+          "id": "C",
+          "text": "提高59.16 mV"
+        },
+        {
+          "id": "D",
+          "text": "降低59.16 mV"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "按所写反应方向，Ecell>0对应什么？",
+      "points": 1,
+      "explanation": "ΔG=−nFEcell，n和F为正。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔG<0"
+        },
+        {
+          "id": "B",
+          "text": "所有物种活度都为1"
+        },
+        {
+          "id": "C",
+          "text": "反应已达平衡"
+        },
+        {
+          "id": "D",
+          "text": "ΔG>0"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q013",
+      "type": "multiple-choice",
+      "question": "一般Nernst计算中，哪些处理合理？",
+      "points": 1,
+      "explanation": "前3项成立，0.05916 V特指约298.15 K。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "纯固体标准态活度取1"
+        },
+        {
+          "id": "B",
+          "text": "浓度替代活度需要近似条件"
+        },
+        {
+          "id": "C",
+          "text": "对数中的活度无量纲"
+        },
+        {
+          "id": "D",
+          "text": "对所有温度固定使用0.05916 V"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "电解池阳极一般是哪一极？",
+      "points": 1,
+      "explanation": "外电源把电子从阳极抽走，所以电解池阳极为正、发生氧化。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "正极，发生还原"
+        },
+        {
+          "id": "B",
+          "text": "一定是盐桥"
+        },
+        {
+          "id": "C",
+          "text": "正极，发生氧化"
+        },
+        {
+          "id": "D",
+          "text": "负极，发生还原"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "2Fe³⁺+Sn²⁺→2Fe²⁺+Sn⁴⁺按此式反应一次转移的电子数n为____。",
+      "points": 1,
+      "explanation": "两个Fe³⁺各得1电子，Sn²⁺失2电子。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "二",
+        "2.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "课件混合5.0 mL 0.10 M Ce⁴⁺与5.0 mL 0.30 M Fe²⁺，定量计量后Fe²⁺余量为？",
+      "points": 2,
+      "explanation": "初始Ce⁴⁺0.50 mmol与Fe²⁺1.50 mmol按1:1反应，余1.00 mmol。",
+      "difficulty": "hard",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1.00 mmol"
+        },
+        {
+          "id": "B",
+          "text": "2.00 mmol"
+        },
+        {
+          "id": "C",
+          "text": "1.50 mmol"
+        },
+        {
+          "id": "D",
+          "text": "0.50 mmol"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q017",
+      "type": "single-choice",
+      "question": "上述混合后用Fe电对计算，E约为？",
+      "points": 2,
+      "explanation": "Fe³⁺与Fe²⁺的比为0.50:1.00，0.771+0.05916lg0.5≈0.7532 V。",
+      "difficulty": "hard",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.753 V"
+        },
+        {
+          "id": "B",
+          "text": "0 V"
+        },
+        {
+          "id": "C",
+          "text": "1.61 V"
+        },
+        {
+          "id": "D",
+          "text": "1.542 V"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "Fe/Sn电池n=2、E°cell=0.617 V时，lgK约为？",
+      "points": 2,
+      "explanation": "lgK=nE°cell÷0.05916≈20.86。",
+      "difficulty": "hard",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "10.43"
+        },
+        {
+          "id": "B",
+          "text": "0.617"
+        },
+        {
+          "id": "C",
+          "text": "20.86"
+        },
+        {
+          "id": "D",
+          "text": "−20.86"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "Ce/Fe混合平衡模型用0.50和1.00 mmol表示物质的量，残余x求得1.64×10⁻¹⁵ mmol。总体积10.0 mL，对应浓度约为？",
+      "points": 2,
+      "explanation": "1 mmol÷1 mL=1 mol·L⁻¹，因此把mmol数值再除以10.0。",
+      "difficulty": "hard",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1.64×10⁻¹⁴ mol·L⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "1.64×10⁻¹² mol·L⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "1.64×10⁻¹⁶ mol·L⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "1.64×10⁻¹⁵ mol·L⁻¹"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q020",
+      "type": "multiple-choice",
+      "question": "关于标准态和实际电位，哪些结论正确？",
+      "points": 3,
+      "explanation": "前3项成立，参比与介质必须一致。",
+      "difficulty": "challenging",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "含络合和活度效应时应匹配介质"
+        },
+        {
+          "id": "B",
+          "text": "标准电位可随意混用不同参比电极的标度"
+        },
+        {
+          "id": "C",
+          "text": "实际反应方向还取决于Q"
+        },
+        {
+          "id": "D",
+          "text": "正的标准电位差不能保证任意组成向右自发"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "平衡常数很大时，可以在Nernst对数中把极少量反应物浓度严格设为零。",
+      "points": 3,
+      "explanation": "严格为零会使对数无定义；可用占优势电对近似计算，残余量仍非零。",
+      "difficulty": "challenging",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "给定R=8.314 J·mol⁻¹·K⁻¹、F=96485 C·mol⁻¹，25 °C即____ K（保留两位小数）。",
+      "points": 3,
+      "explanation": "T(K)=t(°C)+273.15。",
+      "difficulty": "challenging",
+      "tags": [
+        "ANA-L10",
+        "电化学电池与电极电势"
+      ],
+      "answer": "298.15",
+      "acceptableAnswers": [
+        "298.150"
+      ]
+    }
+  ]
+}

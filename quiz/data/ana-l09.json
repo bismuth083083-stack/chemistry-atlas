@@ -1,0 +1,651 @@
+{
+  "id": "ANA-L09",
+  "title": "仪器分析基础、校准与QCM",
+  "description": "依据本次课件整理的仪器分析基础、校准与QCM练习，含条件检查、计算与概念辨析。",
+  "subject": "analytical-chemistry",
+  "chapter": "Chapter 9",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "仪器分析基础、校准与QCM笔记",
+      "url": "https://analytical.chemistryatlas.xyz/chapter-9.html",
+      "role": "以所供课件和正文明确标出的推导编写；计算独立复核。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "精密度最直接反映什么？",
+      "points": 1,
+      "explanation": "精密度描述离散程度；偏倚描述相对参考值的系统差异。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "重复结果彼此接近的程度"
+        },
+        {
+          "id": "B",
+          "text": "校准曲线斜率"
+        },
+        {
+          "id": "C",
+          "text": "线性范围上限"
+        },
+        {
+          "id": "D",
+          "text": "测量均值与参考值的接近程度"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "线性模型y=b+mc中，校准灵敏度是哪一个？",
+      "points": 1,
+      "explanation": "m是单位浓度变化引起的信号变化。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "斜率m"
+        },
+        {
+          "id": "B",
+          "text": "浓度c"
+        },
+        {
+          "id": "C",
+          "text": "空白重复次数"
+        },
+        {
+          "id": "D",
+          "text": "截距b"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "将浓度作为最终报告量时，cDL≈？",
+      "points": 1,
+      "explanation": "先给出信号阈值，再除以校准斜率换算到浓度。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "3sblank除以斜率m"
+        },
+        {
+          "id": "B",
+          "text": "3sblank乘以m"
+        },
+        {
+          "id": "C",
+          "text": "10m"
+        },
+        {
+          "id": "D",
+          "text": "空白均值本身"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "本课Sauerbrey刚性薄膜模型下，增加质量通常使频率怎样变化？",
+      "points": 1,
+      "explanation": "Δf与Δm呈负相关，增重导致负频移。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "提高"
+        },
+        {
+          "id": "B",
+          "text": "降低"
+        },
+        {
+          "id": "C",
+          "text": "始终不变"
+        },
+        {
+          "id": "D",
+          "text": "先精确加倍"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "哪种校准把已知待测物加到样品自身的等份试液中？",
+      "points": 1,
+      "explanation": "标准加入保留样品基体，用已知增量校准。",
+      "difficulty": "easy",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "不加标准的空白试验"
+        },
+        {
+          "id": "B",
+          "text": "外标"
+        },
+        {
+          "id": "C",
+          "text": "标准加入"
+        },
+        {
+          "id": "D",
+          "text": "只测参考波长"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "均值很接近零时，为什么RSD不适合作主要精密度指标？",
+      "points": 1,
+      "explanation": "RSD以均值绝对值为分母，接近零时可能发散。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "仪器一定超出线性范围"
+        },
+        {
+          "id": "B",
+          "text": "此时必然无偏"
+        },
+        {
+          "id": "C",
+          "text": "所有随机误差都变成零"
+        },
+        {
+          "id": "D",
+          "text": "分母接近零使结果不稳定"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "multiple-choice",
+      "question": "哪些改变可能改善低水平分析的信噪比？",
+      "points": 1,
+      "explanation": "A、B、C分别控制化学、环境或独立随机噪声；系统偏倚不会因平均自动消除。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "使用屏蔽和合理接地"
+        },
+        {
+          "id": "B",
+          "text": "对稳定信号作独立重复平均"
+        },
+        {
+          "id": "C",
+          "text": "把任何系统偏倚当作白噪声"
+        },
+        {
+          "id": "D",
+          "text": "控制化学条件的波动"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "两仪器的(m,s)分别为(20,0.40)与(10,0.10)，按γ=m/s比较？",
+      "points": 1,
+      "explanation": "两者γ分别为50和100，第二台分析灵敏度更高。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "第一台γ更大"
+        },
+        {
+          "id": "B",
+          "text": "仅凭斜率就能断言第一台更好"
+        },
+        {
+          "id": "C",
+          "text": "第二台γ更大"
+        },
+        {
+          "id": "D",
+          "text": "两者完全相等"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "已知sblank=0.20、m=10.0，浓度单位mg·L⁻¹，则3s检出限为？",
+      "points": 1,
+      "explanation": "cDL=3×0.20÷10.0=0.060 mg·L⁻¹。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.060 mg·L⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "0.200 mg·L⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "6.0 mg·L⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "30 mg·L⁻¹"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "高重复精密度可以与显著系统偏倚同时存在。",
+      "points": 1,
+      "explanation": "重复结果可以紧密集中在偏离参考值的位置。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "answer": true
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "线性动态范围计算通常使用哪两个端点？",
+      "points": 1,
+      "explanation": "本课以LOQ至LOL描述线性定量范围。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "零浓度和无限浓度"
+        },
+        {
+          "id": "B",
+          "text": "空白均值和最大峰面积"
+        },
+        {
+          "id": "C",
+          "text": "任意两个样品结果"
+        },
+        {
+          "id": "D",
+          "text": "定量低限LOQ和线性响应上限LOL"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "外标法最需要核对哪一前提？",
+      "points": 1,
+      "explanation": "基体改变响应斜率时，独立外标可能造成系统误差。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "样品与标准的响应条件和基体效应匹配"
+        },
+        {
+          "id": "B",
+          "text": "样品信号越过LOL"
+        },
+        {
+          "id": "C",
+          "text": "所有标准必须不含分析物"
+        },
+        {
+          "id": "D",
+          "text": "仪器没有任何噪声"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q013",
+      "type": "multiple-choice",
+      "question": "适合简单Sauerbrey质量换算的吸附层应有哪些特点？",
+      "points": 1,
+      "explanation": "前3项是本课模型条件；软层和液体耦合需另做模型判断。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "薄且负载较小"
+        },
+        {
+          "id": "B",
+          "text": "近似均匀覆盖"
+        },
+        {
+          "id": "C",
+          "text": "强溶胀且耗散很高的软层必定同样适用"
+        },
+        {
+          "id": "D",
+          "text": "刚性并与晶体紧密耦合"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "内标法通常使用哪种量定量？",
+      "points": 1,
+      "explanation": "比值可校正共同的处理或进样波动，前提是内标行为相似且信号可区分。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "待测物信号与内标信号之比"
+        },
+        {
+          "id": "B",
+          "text": "只用空白频率"
+        },
+        {
+          "id": "C",
+          "text": "只用总光强"
+        },
+        {
+          "id": "D",
+          "text": "只用加入的溶剂体积"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "独立零均值噪声、信号稳定时，平均16次的信噪比约为单次的____倍。",
+      "points": 1,
+      "explanation": "理论增益为√16=4。",
+      "difficulty": "medium",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "answer": "4",
+      "acceptableAnswers": [
+        "四",
+        "4.0"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "标准加入法各管5.00 mL样品定容至10.00 mL，最终加入浓度的负横截距为−0.40 mg·L⁻¹，原浓度为？",
+      "points": 2,
+      "explanation": "横截距对应稀释后样品浓度，乘10.00÷5.00得0.80。",
+      "difficulty": "hard",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.40 mg·L⁻¹"
+        },
+        {
+          "id": "B",
+          "text": "4.0 mg·L⁻¹"
+        },
+        {
+          "id": "C",
+          "text": "0.20 mg·L⁻¹"
+        },
+        {
+          "id": "D",
+          "text": "0.80 mg·L⁻¹"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q017",
+      "type": "single-choice",
+      "question": "给定Cf=56.6 Hz·μg⁻¹·cm²、A=0.200 cm²、Δf=−28.3 Hz，Δm为？",
+      "points": 2,
+      "explanation": "Δm=−AΔf÷Cf=0.100 μg，正质量对应负频移。",
+      "difficulty": "hard",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2.50 μg"
+        },
+        {
+          "id": "B",
+          "text": "5.66 μg"
+        },
+        {
+          "id": "C",
+          "text": "−0.100 μg"
+        },
+        {
+          "id": "D",
+          "text": "0.100 μg"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "标准加入可以自动解决以下哪类干扰？",
+      "points": 2,
+      "explanation": "标准加入仍需背景扣除、线性与响应条件稳定；不能自动消除所有干扰。",
+      "difficulty": "hard",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "任意非线性化学反应"
+        },
+        {
+          "id": "B",
+          "text": "在所用线性模型中对响应斜率的乘性基体效应"
+        },
+        {
+          "id": "C",
+          "text": "任何未知加性背景"
+        },
+        {
+          "id": "D",
+          "text": "所有非特异性吸附"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "QCM-D测到显著耗散改变且各泛音不重合时，优先怎样解释？",
+      "points": 2,
+      "explanation": "软层和流体性质会使频移同时受黏弹性与声学耦合影响。",
+      "difficulty": "hard",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "直接保证Sauerbrey绝对精确"
+        },
+        {
+          "id": "B",
+          "text": "证明负频移一定是负质量"
+        },
+        {
+          "id": "C",
+          "text": "证明没有吸附"
+        },
+        {
+          "id": "D",
+          "text": "检查黏弹性和液体耦合，避免直接等同干质量"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "multiple-choice",
+      "question": "关于仪器性能，哪些说法有合理条件？",
+      "points": 3,
+      "explanation": "前3项合理，5%是课件概括而非普适上限。",
+      "difficulty": "challenging",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "选择性与灵敏度应分别评价"
+        },
+        {
+          "id": "B",
+          "text": "所有仪器测定的相对误差固定为5%"
+        },
+        {
+          "id": "C",
+          "text": "降低带宽往往延长响应时间"
+        },
+        {
+          "id": "D",
+          "text": "平均只能按模型减小随机误差"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "标准加入曲线只要线性，就能在不扣除未知加性背景的情况下保证原样品浓度准确。",
+      "points": 3,
+      "explanation": "加性背景会改变截距，进而改变外推的浓度；线性不能证明没有这类干扰。",
+      "difficulty": "challenging",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "若原噪声独立且信号稳定，要使平均后的信噪比达到单次的5倍，需平均____次。",
+      "points": 3,
+      "explanation": "√N=5，所以N=25。",
+      "difficulty": "challenging",
+      "tags": [
+        "ANA-L09",
+        "仪器分析基础、校准与QCM"
+      ],
+      "answer": "25",
+      "acceptableAnswers": [
+        "二十五",
+        "25.0"
+      ]
+    }
+  ]
+}

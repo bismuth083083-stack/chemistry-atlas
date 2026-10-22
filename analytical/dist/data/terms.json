@@ -3276,5 +3276,165 @@
     ],
     "source": "课件8 第2；教材§14.8页；教材第14章",
     "updated": "2026-10-14"
+  },
+  {
+    "slug": "calibration-sensitivity",
+    "zh": "校准灵敏度",
+    "en": "Calibration sensitivity",
+    "aliases": [
+      "校准灵敏度",
+      "Calibration sensitivity"
+    ],
+    "category": "仪器与电化学",
+    "definition": "校准曲线的斜率，表示单位浓度变化引起的信号改变。",
+    "expanded": "线性模型y=b+mc中为m，单位随信号与浓度定义变化。",
+    "properties": [
+      "线性模型y=b+mc中为m，单位随信号与浓度定义变化。"
+    ],
+    "confusions": "斜率较大不保证检出能力更好，还需比较噪声。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-9.html#sensitivity",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "analytical-sensitivity",
+    "zh": "分析灵敏度",
+    "en": "Analytical sensitivity",
+    "aliases": [
+      "分析灵敏度",
+      "Analytical sensitivity"
+    ],
+    "category": "仪器与电化学",
+    "definition": "把响应斜率与测量波动结合评价的小浓度差分辨能力。",
+    "expanded": "本课采用γ=m/sy，比较时应统一变量和噪声定义。",
+    "properties": [
+      "本课采用γ=m/sy，比较时应统一变量和噪声定义。"
+    ],
+    "confusions": "不要只比较校准斜率。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-9.html#sensitivity",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "standard-addition-method",
+    "zh": "标准加入法",
+    "en": "Standard addition method",
+    "aliases": [
+      "标准加入法",
+      "Standard addition method"
+    ],
+    "category": "仪器与电化学",
+    "definition": "向样品的等份试液中加入已知量待测物并外推原浓度的校准法。",
+    "expanded": "等体积定容后，负横截距反映稀释后的样品浓度；应还原稀释倍数。",
+    "properties": [
+      "等体积定容后，负横截距反映稀释后的样品浓度；应还原稀释倍数。"
+    ],
+    "confusions": "不能自动消除未知加性背景或非线性响应。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-9.html#calibration",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "quartz-crystal-microbalance",
+    "zh": "石英晶体微天平",
+    "en": "Quartz crystal microbalance",
+    "aliases": [
+      "石英晶体微天平",
+      "Quartz crystal microbalance"
+    ],
+    "category": "仪器与电化学",
+    "definition": "通过石英谐振频率变化研究表面质量负载与界面过程的传感方法。",
+    "expanded": "频移可以受质量、液体耦合和膜黏弹性共同影响，QCM-D还测耗散。",
+    "properties": [
+      "频移可以受质量、液体耦合和膜黏弹性共同影响，QCM-D还测耗散。"
+    ],
+    "confusions": "声学耦合质量不一定等于吸附层干质量。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-9.html#qcm",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "sauerbrey-equation",
+    "zh": "Sauerbrey方程",
+    "en": "Sauerbrey equation",
+    "aliases": [
+      "Sauerbrey方程",
+      "Sauerbrey equation"
+    ],
+    "category": "仪器与电化学",
+    "definition": "对小量、均匀、刚性耦合层，用谐振频移计算质量改变的关系。",
+    "expanded": "基频模式下Δf=−Cf·Δm·A⁻¹，Cf随基频及单位约定变化。",
+    "properties": [
+      "基频模式下Δf=−Cf·Δm·A⁻¹，Cf随基频及单位约定变化。"
+    ],
+    "confusions": "不能无条件用于软膜、强溶胀层或流体性质改变的情况。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-9.html#qcm-limits",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "standard-hydrogen-electrode",
+    "zh": "标准氢电极",
+    "en": "Standard hydrogen electrode",
+    "aliases": [
+      "标准氢电极",
+      "Standard hydrogen electrode"
+    ],
+    "category": "仪器与电化学",
+    "definition": "标准还原电位按约定为0 V的氢电极。",
+    "expanded": "H⁺活度为1，氢气处于标准状态，铂提供导电表面。现代标准压力为1 bar。",
+    "properties": [
+      "H⁺活度为1，氢气处于标准状态，铂提供导电表面。现代标准压力为1 bar。"
+    ],
+    "confusions": "相对标度零点不表示任何pH的氢电极读数都为零。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-10.html#reference",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "salt-bridge",
+    "zh": "盐桥",
+    "en": "Salt bridge",
+    "aliases": [
+      "盐桥",
+      "Salt bridge"
+    ],
+    "category": "仪器与电化学",
+    "definition": "通过离子迁移连接两半电池并维持溶液电中性的装置。",
+    "expanded": "常用不参与主反应的电解质减小液接影响。",
+    "properties": [
+      "常用不参与主反应的电解质减小液接影响。"
+    ],
+    "confusions": "电子经外电路而非盐桥传输。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-10.html#cells",
+    "updated": "2026-10-22"
+  },
+  {
+    "slug": "cell-potential",
+    "zh": "电池电势",
+    "en": "Cell potential",
+    "aliases": [
+      "电池电势",
+      "Cell potential"
+    ],
+    "category": "仪器与电化学",
+    "definition": "按指定电池方向，右电极相对左电极的电位差。",
+    "expanded": "两者均用还原电位时Ecell=Eright−Eleft，ΔG=−nFEcell。",
+    "properties": [
+      "两者均用还原电位时Ecell=Eright−Eleft，ΔG=−nFEcell。"
+    ],
+    "confusions": "平衡时电池电势为零，不表示两个电极相对参比的电位分别为零。",
+    "related": [],
+    "relatedReactions": [],
+    "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-10.html#equilibrium",
+    "updated": "2026-10-22"
   }
 ]

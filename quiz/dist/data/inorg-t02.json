@@ -1,0 +1,637 @@
+{
+  "id": "INORG-T02",
+  "title": "05.1 配体场理论的分子轨道解释",
+  "description": "从 SALC 与 σ、π 成键到自旋、LFSE 和配位几何的 22 题练习。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Supplement 05.1 · Molecular orbitals for ligand field theory",
+  "version": "1.0.0",
+  "totalPoints": 32,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "05.1 配体场理论的分子轨道解释 · Chemistry Atlas",
+      "url": "https://inorganic.chemistryatlas.xyz/lesson-05-1.html",
+      "role": "依据用户课件整理的阅读版；试题独立编写，含原课件笔误校正与模型适用范围。"
+    },
+    {
+      "title": "Frank Rioux · Symmetry, Spectroscopy, and the Molecular Structure of XeF4",
+      "url": "https://faculty.csbsju.edu/frioux/group/XeF4.pdf",
+      "role": "标准 D4h 特征标表与 dxy、dx²−y²、pz 基函数标签核对。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "理想八面体中，六个 σ 配体轨道的 SALC 分解为？",
+      "points": 1,
+      "explanation": "Oh 的六个 σ 基函数给出 1+3+2=6 维：A₁g、T₁u、Eg。",
+      "difficulty": "easy",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "A₁g + T₁u + Eg"
+        },
+        {
+          "id": "B",
+          "text": "T₂g + T₂u"
+        },
+        {
+          "id": "C",
+          "text": "A₁g + B₁g + Eu"
+        },
+        {
+          "id": "D",
+          "text": "A₁ + T₂"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "在纯 σ 的理想八面体模型中，哪组金属 d 轨道近似非键？",
+      "points": 1,
+      "explanation": "三个轨道属 T₂g，而六个 σ 配体 SALC 中没有 T₂g；加入 π 配体轨道后可发生相互作用。",
+      "difficulty": "easy",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "dz²、dx²−y²"
+        },
+        {
+          "id": "B",
+          "text": "所有五个 d 轨道"
+        },
+        {
+          "id": "C",
+          "text": "dxy、dxz、dyz"
+        },
+        {
+          "id": "D",
+          "text": "只有 dz²"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "八面体 e_g* 能级中的星号主要说明它是？",
+      "points": 1,
+      "explanation": "它来自金属 Eg 与同对称性 σ SALC 的反键组合。",
+      "difficulty": "easy",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "金属–配体 σ 成键"
+        },
+        {
+          "id": "B",
+          "text": "金属–配体 σ 反键"
+        },
+        {
+          "id": "C",
+          "text": "不存在电子的轨道"
+        },
+        {
+          "id": "D",
+          "text": "只属于配体且绝无金属成分"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "在简化的八面体自旋模型中，Δₒ > P 通常更有利于？",
+      "points": 1,
+      "explanation": "分裂能大于有效配对代价时，更有利于在较低 t₂g 中配对。",
+      "difficulty": "easy",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "全部电子都进入 eg*"
+        },
+        {
+          "id": "B",
+          "text": "一律四面体"
+        },
+        {
+          "id": "C",
+          "text": "高自旋 d⁶"
+        },
+        {
+          "id": "D",
+          "text": "低自旋 d⁶"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "Cu²⁺ 的通常 d 电子计数是？",
+      "points": 1,
+      "explanation": "Cu 属第 11 族，Cu(II) 的 d 计数为 11−2=9。",
+      "difficulty": "easy",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "d⁷"
+        },
+        {
+          "id": "B",
+          "text": "d⁸"
+        },
+        {
+          "id": "C",
+          "text": "d⁹"
+        },
+        {
+          "id": "D",
+          "text": "d¹⁰"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q006",
+      "type": "multiple-choice",
+      "question": "关于纯 σ 八面体模型的轨道和电子计数，哪些正确？",
+      "points": 1,
+      "explanation": "基空间维数为 6+9=15；金属 d 计数不包括配体给电子对。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "6 个配体 σ 轨道与 9 个金属价轨道共给出 15 个 MO"
+        },
+        {
+          "id": "B",
+          "text": "金属 t₂g 与 σ SALC 无匹配时可近似非键"
+        },
+        {
+          "id": "C",
+          "text": "6 个配体电子对通常先填入较低的 6 个成键 MO"
+        },
+        {
+          "id": "D",
+          "text": "d⁶ 意味着整个配合物只含 6 个价电子"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "高自旋八面体 d⁶ 的排布与未成对电子数是？",
+      "points": 1,
+      "explanation": "先在五个 d 型轨道单占，再将第六个电子在 t₂g 配对，得到 4 个未成对电子。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "t₂g⁶；0"
+        },
+        {
+          "id": "B",
+          "text": "t₂g⁴eg*²；4"
+        },
+        {
+          "id": "C",
+          "text": "t₂g³eg*³；6"
+        },
+        {
+          "id": "D",
+          "text": "t₂g⁵eg*¹；2"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "低自旋八面体 d⁵ 的未成对电子数是？",
+      "points": 1,
+      "explanation": "t₂g⁵ 占据三个低能轨道，两个轨道成对，余下一个电子不成对。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "0"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "下列哪种常规八面体 d 计数具有通常所说的高、低自旋两套排布？",
+      "points": 1,
+      "explanation": "常规八面体中只有 d⁴ 至 d⁷ 需在 t₂g 配对与占据 eg* 之间竞争。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "d⁷"
+        },
+        {
+          "id": "B",
+          "text": "d³"
+        },
+        {
+          "id": "C",
+          "text": "d⁸"
+        },
+        {
+          "id": "D",
+          "text": "d¹⁰"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "true-false",
+      "question": "计算本专题定义的 LFSE 后，比较总能量时不必再考虑额外配对能。",
+      "points": 1,
+      "explanation": "LFSE 只计相对 d 能级重心的分裂贡献。高低自旋的电子对数不同，需另计配对能。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "在其余条件近似不变的八面体模型中，CO 的 π 受体作用通常怎样改变金属型 t₂g 与 Δₒ？",
+      "points": 1,
+      "explanation": "金属 t₂g 与较高能空配体 π* 混合，较低的金属型组合稳定化，从而增大分裂。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "t₂g 升高，Δₒ 减小"
+        },
+        {
+          "id": "B",
+          "text": "t₂g 不变，Δₒ 必为零"
+        },
+        {
+          "id": "C",
+          "text": "t₂g 降低，Δₒ 增大"
+        },
+        {
+          "id": "D",
+          "text": "所有能级都保持不变"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "已占据的低能配体 π 轨道与金属 t₂g 混合时，金属型能级通常？",
+      "points": 1,
+      "explanation": "π 给体的低能成键组合主要由配体电子占据，较高的金属型 t₂g* 被推高。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "降低，强场效应增强"
+        },
+        {
+          "id": "B",
+          "text": "升高，八面体分裂减小"
+        },
+        {
+          "id": "C",
+          "text": "完全消失"
+        },
+        {
+          "id": "D",
+          "text": "变成金属 s 轨道"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "四个配体沿 ±x、±y 方向时，D₄h 中 dxy 的对称性为？",
+      "points": 1,
+      "explanation": "标准 D₄h 特征标表中 xy 属 B₂g；x²−y² 属 B₁g，二者不能混淆。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "A₂u"
+        },
+        {
+          "id": "B",
+          "text": "B₁g"
+        },
+        {
+          "id": "C",
+          "text": "A₁g"
+        },
+        {
+          "id": "D",
+          "text": "B₂g"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "multiple-choice",
+      "question": "关于配体 σ 与 π 相互作用，哪些说法正确？",
+      "points": 1,
+      "explanation": "σ、π 描述不同相互作用通道。非键结论必须声明相对于哪些相互作用。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "CO 可同时是 σ 给体和 π 受体"
+        },
+        {
+          "id": "B",
+          "text": "相同不可约表示允许混合，但强度还取决于能量与重叠"
+        },
+        {
+          "id": "C",
+          "text": "纯 σ 模型中 t₂g 非键，所以任何配体下都永不参与成键"
+        },
+        {
+          "id": "D",
+          "text": "eg* 对新增 π 作用近似非键，不代表它对 σ 键也非键"
+        }
+      ],
+      "answers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "fill-in-the-blank",
+      "question": "理想四面体中较低的 e 组含____个 d 轨道。",
+      "points": 1,
+      "explanation": "e 是二维表示，包含 dz² 与 dx²−y²；Td 没有反演中心，不加 g 下标。",
+      "difficulty": "medium",
+      "tags": [
+        "配体场理论"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "二",
+        "两个"
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "single-choice",
+      "question": "低自旋八面体 d⁶，忽略配对能，带符号 LFSE 为？",
+      "points": 2,
+      "explanation": "t₂g⁶ 的六个电子各贡献 −0.4Δₒ，总和为 −2.4Δₒ。",
+      "difficulty": "hard",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−0.4Δₒ"
+        },
+        {
+          "id": "B",
+          "text": "+2.4Δₒ"
+        },
+        {
+          "id": "C",
+          "text": "−2.4Δₒ"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q017",
+      "type": "multiple-choice",
+      "question": "关于八面体、四方畸变和平面正方形，哪些正确？",
+      "points": 2,
+      "explanation": "Jahn–Teller 涉及轨道简并基态，不能唯一规定畸变方向。几何还依赖配体场、金属与其他能量因素。",
+      "difficulty": "hard",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Cu(II) d⁹ 的 eg* 不等占据常伴有明显四方畸变"
+        },
+        {
+          "id": "B",
+          "text": "Jahn–Teller 定理唯一规定所有体系必须轴向拉长"
+        },
+        {
+          "id": "C",
+          "text": "标准 D₄h 平面正方形的最高金属 d 型 σ 反键轨道通常以 dx²−y² 为主"
+        },
+        {
+          "id": "D",
+          "text": "d⁸ 常有平面正方形构型，但不是所有 d⁸ 配合物均如此"
+        }
+      ],
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "single-choice",
+      "question": "八面体 d⁷ 从高自旋转为低自旋，LFSE 的变化量（低减高，不计配对能）为？",
+      "points": 2,
+      "explanation": "高自旋 t₂g⁵eg*² 的 LFSE 为 −0.8Δₒ；低自旋 t₂g⁶eg*¹ 为 −1.8Δₒ，差值为 −1.0Δₒ。",
+      "difficulty": "hard",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "−1.0Δₒ"
+        },
+        {
+          "id": "B",
+          "text": "+1.0Δₒ"
+        },
+        {
+          "id": "C",
+          "text": "−1.8Δₒ"
+        },
+        {
+          "id": "D",
+          "text": "−0.8Δₒ"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q019",
+      "type": "single-choice",
+      "question": "常见 [NiCl₄]²⁻ 为四面体，[Ni(CN)₄]²⁻ 为平面正方形；它们的典型未成对电子数分别为？",
+      "points": 2,
+      "explanation": "二者都是 Ni(II) d⁸；四面体 e⁴t₂⁴ 有 2 个未成对电子，平面正方形通常避开最高 dx²−y² 反键能级而全部配对。",
+      "difficulty": "hard",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0 和 2"
+        },
+        {
+          "id": "B",
+          "text": "2 和 2"
+        },
+        {
+          "id": "C",
+          "text": "0 和 0"
+        },
+        {
+          "id": "D",
+          "text": "2 和 0"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q020",
+      "type": "single-choice",
+      "question": "平面正方形 σ 模型中，金属 s、dz² 与一个 A₁g 配体 SALC 同属一个对称性块。三者线性独立时，应得到多少个该对称性 MO？",
+      "points": 3,
+      "explanation": "三个独立基函数产生三个 MO；相同对称性块可以是多轨道共同混合，不能机械拆成不相干的两轨道配对。",
+      "difficulty": "challenging",
+      "tags": [
+        "配体场理论"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q021",
+      "type": "true-false",
+      "question": "只要某张轨道盒图出现简并轨道不等占据，就说明这种填充违反泡利原理而不允许存在。",
+      "points": 3,
+      "explanation": "泡利原理限制同一轨道的电子自旋。Jahn–Teller 描述轨道简并电子态通过结构畸变降能，不是填充禁则。",
+      "difficulty": "challenging",
+      "tags": [
+        "配体场理论"
+      ],
+      "answer": false
+    },
+    {
+      "id": "q022",
+      "type": "fill-in-the-blank",
+      "question": "八面体 d⁷：高自旋 LFSE=−0.8Δₒ、有 2 对电子；低自旋 LFSE=−1.8Δₒ、有 3 对电子。若 Δₒ=180 kJ mol⁻¹、每对代价 P=120 kJ mol⁻¹，E低−E高=____ kJ mol⁻¹（填带符号数值）。",
+      "points": 3,
+      "explanation": "分裂能变化为 −180，额外一对的代价为 +120，合计 −60 kJ mol⁻¹；在该简化模型下低自旋有利。",
+      "difficulty": "challenging",
+      "tags": [
+        "配体场理论"
+      ],
+      "answer": "-60",
+      "acceptableAnswers": [
+        "-60",
+        "−60",
+        "-60.0",
+        "−60.0"
+      ]
+    }
+  ]
+}

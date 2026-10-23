@@ -1,4 +1,4 @@
-const CACHE='inorganic-atlas-v16-quiz-backfill';
+const CACHE='inorganic-atlas-v17-lft';
 const SHELL=[
   './',
   'index.html',
@@ -8,6 +8,20 @@ const SHELL=[
   'lesson-04.html',
   'lesson-04-matrices.html',
   'lesson-05.html',
+  'lesson-05-1.html',
+  'lft.css',
+  'assets/lecture-05-1/oh-sigma-table.webp',
+  'assets/lecture-05-1/oh-salcs.webp',
+  'assets/lecture-05-1/oh-sigma-mo.webp',
+  'assets/lecture-05-1/spin-configurations.webp',
+  'assets/lecture-05-1/oh-pi-symmetry.webp',
+  'assets/lecture-05-1/pi-acceptor-mo.webp',
+  'assets/lecture-05-1/pi-donor-mo.webp',
+  'assets/lecture-05-1/square-salcs.webp',
+  'assets/lecture-05-1/square-sigma-mo.webp',
+  'assets/lecture-05-1/square-pi-salcs.webp',
+  'assets/lecture-05-1/tetrahedral-mo.webp',
+
   'terms.html',
   'term.html',
   'style.css',

@@ -668,6 +668,41 @@
       "mode": "question-bank"
     },
     {
+      "id": "INORG-T02",
+      "title": "05.1 配体场理论的分子轨道解释",
+      "description": "从 SALC 与 σ、π 成键到自旋、LFSE 和配位几何的 22 题练习。",
+      "subject": "inorganic-chemistry",
+      "type": "topic",
+      "lessonNumber": null,
+      "topicNumber": 2,
+      "examNumber": null,
+      "chapter": "Supplement 05.1 · Molecular orbitals for ligand field theory",
+      "lesson": "Supplement 05.1",
+      "topic": "Ligand-field molecular orbitals",
+      "questionCount": 22,
+      "difficulty": "intermediate",
+      "tags": [
+        "SALC",
+        "ligand field",
+        "spin",
+        "LFSE"
+      ],
+      "knowledgePoints": [
+        "octahedral sigma and pi bonding",
+        "spin and pairing energy",
+        "LFSE",
+        "square planar and tetrahedral geometry"
+      ],
+      "createdAt": "2026-10-23",
+      "updatedAt": "2026-10-23",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-05-1.html",
+        "/inorganic/dist/lesson-05.html"
+      ],
+      "path": "inorg-t02.json",
+      "mode": "fixed"
+    },
+    {
       "id": "PCHEM-T01",
       "title": "物理化学专题：热力学第一定律思考题",
       "description": "按用户提供的《热力学第一定律思考题》PDF 原有 8 个大题导入，不按题型或难度人为拆分和配比。",

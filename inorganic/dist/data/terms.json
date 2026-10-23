@@ -1488,5 +1488,215 @@
       "ionic-radius"
     ],
     "source": "第五课：Molecular Orbitals 讲义"
+  },
+  {
+    "slug": "ligand-field-mo",
+    "zh": "配体场分子轨道模型",
+    "en": "Ligand-field molecular orbital model",
+    "aliases": [
+      "配体场分子轨道模型",
+      "Ligand-field molecular orbital model"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "以金属轨道与配体群轨道的混合解释配合物能级、自旋与成键的模型。",
+    "expanded": "同一点群只固定对称性框架；能级间距与混合程度还依赖配体、金属及键长。",
+    "properties": [
+      "同一点群只固定对称性框架；能级间距与混合程度还依赖配体、金属及键长。"
+    ],
+    "confusions": "不能把纯 σ 的 t₂g 非键结论推广到包含 π 作用的情况。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#scope",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "octahedral-splitting",
+    "zh": "八面体分裂能",
+    "en": "Octahedral splitting energy",
+    "aliases": [
+      "八面体分裂能",
+      "Octahedral splitting energy"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "理想八面体金属 d 型 e<sub>g</sub>* 与 t<sub>2g</sub> 能级之间的能量差 Δₒ。",
+    "expanded": "强场对应较大分裂，但应在固定几何与金属条件下比较。",
+    "properties": [
+      "强场对应较大分裂，但应在固定几何与金属条件下比较。"
+    ],
+    "confusions": "Δₒ 不是配对能，也不单独决定完整吸收光谱。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#spin",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "pairing-energy",
+    "zh": "配对能",
+    "en": "Pairing energy",
+    "aliases": [
+      "配对能",
+      "Pairing energy"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "简化电子排布模型中，把电子配对所需的有效能量代价 P。",
+    "expanded": "比较高低自旋时，须将轨道分裂能与额外配对数同时计入。",
+    "properties": [
+      "比较高低自旋时，须将轨道分裂能与额外配对数同时计入。"
+    ],
+    "confusions": "LFSE 默认只包括轨道分裂贡献，不能不加说明就混入配对能。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#lfse",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "ligand-field-stabilization-energy",
+    "zh": "配体场稳定化能",
+    "en": "Ligand field stabilization energy",
+    "aliases": [
+      "配体场稳定化能",
+      "Ligand field stabilization energy"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "d 电子占据分裂能级相对能级重心产生的能量变化，简称 LFSE。",
+    "expanded": "八面体中每个 t₂g 电子贡献 −0.4Δₒ，每个 e<sub>g</sub>* 电子贡献 +0.6Δₒ。",
+    "properties": [
+      "八面体中每个 t₂g 电子贡献 −0.4Δₒ，每个 e<sub>g</sub>* 电子贡献 +0.6Δₒ。"
+    ],
+    "confusions": "本专题负值表示稳定化；有些资料用正数报告稳定化大小。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#lfse",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "high-low-spin",
+    "zh": "高自旋与低自旋",
+    "en": "High spin and low spin",
+    "aliases": [
+      "高自旋与低自旋",
+      "High spin and low spin"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "在常规八面体 d⁴ 至 d⁷ 中，由分裂能与配对能竞争形成的不同电子排布。",
+    "expanded": "Δₒ 大于 P 时倾向低自旋，小于 P 时倾向高自旋。",
+    "properties": [
+      "Δₒ 大于 P 时倾向低自旋，小于 P 时倾向高自旋。"
+    ],
+    "confusions": "不能对八面体 d⁸ 随意建立两套高低自旋排布。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#spin",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "pi-acceptor-ligand",
+    "zh": "π 受体配体",
+    "en": "Pi-acceptor ligand",
+    "aliases": [
+      "π 受体配体",
+      "Pi-acceptor ligand"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "以空 π 型轨道接受金属电子密度的配体。",
+    "expanded": "CO 的空 π* 与金属 t₂g 混合可使金属型能级降低、Δₒ 增大。",
+    "properties": [
+      "CO 的空 π* 与金属 t₂g 混合可使金属型能级降低、Δₒ 增大。"
+    ],
+    "confusions": "σ 给体与 π 受体可以同时成立，并非互斥分类。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#pi-donor-acceptor",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "pi-donor-ligand",
+    "zh": "π 给体配体",
+    "en": "Pi-donor ligand",
+    "aliases": [
+      "π 给体配体",
+      "Pi-donor ligand"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "以已占据 π 型轨道向金属产生给电子相互作用的配体。",
+    "expanded": "F⁻ 等低能已占据 p 轨道与金属 t₂g 混合，通常提高金属型 t₂g、减小八面体分裂。",
+    "properties": [
+      "F⁻ 等低能已占据 p 轨道与金属 t₂g 混合，通常提高金属型 t₂g、减小八面体分裂。"
+    ],
+    "confusions": "不能只凭配体有孤对电子就判断其净效应为弱场 π 给体。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#pi-donor-acceptor",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "jahn-teller-distortion",
+    "zh": "Jahn–Teller 畸变",
+    "en": "Jahn–Teller distortion",
+    "aliases": [
+      "Jahn–Teller 畸变",
+      "Jahn–Teller distortion"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "非线性体系轨道简并电子态通过降低对称性的结构变化解除简并并降低能量的现象。",
+    "expanded": "八面体 Cu(II) d⁹ 常有明显四方畸变，许多实例为轴向拉长。",
+    "properties": [
+      "八面体 Cu(II) d⁹ 常有明显四方畸变，许多实例为轴向拉长。"
+    ],
+    "confusions": "不是电子占据禁则，也不唯一规定拉长或压缩方向。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#jahn-teller",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "square-planar-field",
+    "zh": "平面正方形配体场",
+    "en": "Square-planar ligand field",
+    "aliases": [
+      "平面正方形配体场",
+      "Square-planar ligand field"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "四个配体位于同一平面四角而形成的金属轨道分裂环境。",
+    "expanded": "在标准 D₄h 坐标下，dxy 属 B₂g、dx²−y² 属 B₁g；最高 d 型 σ 反键轨道通常来自后者。",
+    "properties": [
+      "在标准 D₄h 坐标下，dxy 属 B₂g、dx²−y² 属 B₁g；最高 d 型 σ 反键轨道通常来自后者。"
+    ],
+    "confusions": "d⁸ 常有此构型但并非必然；低能 d 轨道间次序随配体 π 作用改变。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#square-planar",
+    "updated": "2026-10-23"
+  },
+  {
+    "slug": "tetrahedral-field",
+    "zh": "四面体配体场",
+    "en": "Tetrahedral ligand field",
+    "aliases": [
+      "四面体配体场",
+      "Tetrahedral ligand field"
+    ],
+    "category": "配体场与配位成键",
+    "definition": "理想 T<sub>d</sub> 配位环境中，金属 d 型轨道分成较低 e 与较高 t₂ 两组。",
+    "expanded": "四面体分裂通常较小，常见 3d 配合物多为高自旋。",
+    "properties": [
+      "四面体分裂通常较小，常见 3d 配合物多为高自旋。"
+    ],
+    "confusions": "没有反演中心，不使用 eg、t₂g 标记；相对八面体分裂的比例只是模型估计。",
+    "related": [
+      "ligand"
+    ],
+    "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#tetrahedral",
+    "updated": "2026-10-23"
   }
 ]

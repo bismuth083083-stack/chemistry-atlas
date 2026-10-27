@@ -1,0 +1,19 @@
+/* Detailed lecture notes; scoped to the three rewritten lessons. */
+.expanded-notes .formula{font-family:Georgia,"Times New Roman","Noto Serif SC",serif;font-style:italic;font-size:18px;line-height:2.3;padding:18px 20px;margin:22px 0;background:var(--surface);border:1px solid var(--line);border-radius:9px;overflow-x:auto;max-width:100%;}
+.expanded-notes .formula .op,.expanded-notes .formula .unit{font-style:normal}
+.expanded-notes .math-frac{display:inline-flex;flex-direction:column;text-align:center;vertical-align:middle;line-height:1.3;margin:0 .16em;white-space:nowrap;font-family:Georgia,"Times New Roman",serif}
+.expanded-notes .math-frac>span{display:block;padding:.08em .22em}
+.expanded-notes .math-frac>span:first-child{border-bottom:1px solid currentColor}
+.expanded-notes p{line-height:1.95}.expanded-notes .reading-meta{font-size:12px;color:var(--muted);margin-top:20px}
+.expanded-notes .section-kicker{font-size:11px;letter-spacing:.06em;color:var(--accent)}
+.expanded-notes .import-jump{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 30px}
+.expanded-notes .import-jump a{font-size:13px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;text-decoration:none;line-height:1.6}
+.expanded-notes section{scroll-margin-top:90px}.expanded-notes h2{line-height:1.55}
+.lesson-outline{padding:5px 0 10px 10px;border-left:1px solid var(--line);margin-left:20px}
+.sidebar .lesson-outline a{display:block;white-space:normal;overflow-wrap:anywhere;font-size:11px;padding:6px;line-height:1.55}
+.sidebar .lesson-outline span{flex:0 0 30px;color:#aaa5dd;font-variant-numeric:tabular-nums}
+.sidebar nav{overflow-y:auto;min-height:0;overscroll-behavior:contain}.sidebar .privacy{flex-shrink:0}
+.expanded-notes details{padding:16px 0;border-bottom:1px solid var(--line)}.expanded-notes summary{cursor:pointer;font-weight:600;line-height:1.7}.expanded-notes details p{max-width:850px;color:var(--muted)}
+.expanded-notes .lesson-footer{display:flex;justify-content:space-between;gap:20px;padding:30px 0;color:var(--accent)}
+.light .lesson-outline span{color:#6d5da1}
+@media(max-width:620px){.expanded-notes .formula{font-size:16px;padding:13px 12px}.expanded-notes h2{font-size:23px}.expanded-notes .article-head h1{font-size:32px}}

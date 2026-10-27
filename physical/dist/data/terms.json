@@ -2094,5 +2094,55 @@
     "relatedReactions": [],
     "source": "PChem1_lec12 Mixture2，第1–12页；局部稳定性为模型拓展；本站lesson-12.html#stability",
     "updated": "2026-10-22"
+  },
+  {
+    "slug": "colligative-properties",
+    "zh": "依数性",
+    "en": "Colligative properties",
+    "category": "溶液热力学",
+    "definition": "稀溶液中主要取决于溶质有效粒子数量的一类性质。",
+    "expanded": "课件列出蒸气压降低、沸点升高、凝固点降低和渗透压。电离、缔合及非理想性会影响实际效应。",
+    "properties": [
+      "四类经典依数性",
+      "常用稀溶液近似"
+    ],
+    "confusions": "不同溶质若发生不同程度的电离或缔合，效应会不同。",
+    "related": [
+      "activity"
+    ],
+    "source": "PChem1_lec13 Mixture3 20261027.pdf"
+  },
+  {
+    "slug": "osmotic-pressure",
+    "zh": "渗透压",
+    "en": "Osmotic pressure",
+    "category": "溶液热力学",
+    "definition": "阻止溶剂通过半透膜净流入溶液所需施加的压力差。",
+    "expanded": "稀溶液中可用van’t Hoff关系Π=cRT近似，其中c为溶质粒子浓度。",
+    "properties": [
+      "与粒子浓度和绝对温度成正比"
+    ],
+    "confusions": "电解质溶液需考虑解离后的有效粒子数。",
+    "related": [
+      "colligative-properties"
+    ],
+    "source": "PChem1_lec13 Mixture3 20261027.pdf"
+  },
+  {
+    "slug": "activity",
+    "zh": "活度",
+    "en": "Activity",
+    "category": "溶液热力学",
+    "definition": "用于热力学表达式中的有效组成量，可修正真实溶液偏离理想行为的影响。",
+    "expanded": "课件对液相组分写作a=γx，其中γ为活度系数，x为摩尔分数。",
+    "properties": [
+      "理想极限下活度系数趋近1",
+      "定义依赖标准态约定"
+    ],
+    "confusions": "活度不总是等于摩尔分数。",
+    "related": [
+      "colligative-properties"
+    ],
+    "source": "PChem1_lec13 Mixture3 20261027.pdf"
   }
 ]

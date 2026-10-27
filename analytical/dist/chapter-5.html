@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="分析化学 I 第5章 络合滴定">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="分析化学 I 第5章 络合滴定" name="description"/>
 <title>05 络合滴定 · 分析化学知识库</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="content.css">
-<link rel="stylesheet" href="lesson.css">
-<link rel="stylesheet" href="course-extra.css">
-<link rel="stylesheet" href="ppt-figures.css">
-
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="fractions.css"></head>
+<link href="style.css" rel="stylesheet"/>
+<link href="content.css" rel="stylesheet"/>
+<link href="lesson.css" rel="stylesheet"/>
+<link href="course-extra.css" rel="stylesheet"/>
+<link href="ppt-figures.css" rel="stylesheet"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="fractions.css" rel="stylesheet"/><link href="electroanalysis.css" rel="stylesheet"/></head>
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">
@@ -22,10 +22,10 @@
 </a>
 <label class="search">
 <span>⌕</span>
-<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<input aria-label="搜索知识库" id="global-search" placeholder="搜索章节、概念或英文术语…"/>
 <kbd>⌘ K</kbd>
 </label>
-<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+<button class="icon-button" id="theme" title="切换明暗主题">◐</button>
 </header>
 <aside class="sidebar">
 <nav>
@@ -51,7 +51,7 @@
 <span>07</span>沉淀滴定</a>
 <a href="chapter-8.html"><span>08</span>氧化还原与电位滴定</a>
 <a href="chapter-9.html"><span>09</span>仪器分析基础与QCM</a>
-<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a>
+<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a><a href="chapter-11.html"><span>11</span>电位法与离子选择性电极</a><a href="chapter-12.html"><span>12</span>伏安法与电流分析</a><a href="chapter-13.html"><span>13</span>库仑法与控制电位电解</a><a href="chapter-14.html"><span>14</span>电化学传感器与微电极</a>
 <a href="topic-formulas.html">
 <span>◆</span>平衡与滴定公式</a>
 </nav>
@@ -85,7 +85,7 @@
 <p>
 本章初稿依教材第 9 章撰写，现已按课件 5（Complexometric reaction and titrations）逐节对齐，补齐了「络合剂分两类」、六个 pK<sub>a</sub> 值，以及课件原图 8 张；原有行文与例题一律保留，只作必要改写。需要说明一处出入：<b>课件第 17 页（log K′<sub>f</sub>–pH 图）竖轴上读出的数值与教材不符</b>，本页涉及常数大小处一律采用教材值，课件该图仅作曲线趋势的参考。</p>
 </div>
-<nav class="chapter-jump" aria-label="本章快速导航">
+<nav aria-label="本章快速导航" class="chapter-jump">
 <a href="#kf">络合物与形成常数</a>
 <a href="#chelate">螯合效应</a>
 <a href="#edta">EDTA 及其解离平衡</a>
@@ -96,7 +96,6 @@
 <a href="#masking">掩蔽与解蔽</a>
 <a href="#beta">累积形成常数与物种分布</a>
 <a href="#applications">络合滴定的应用</a>
-
 <a class="jump-topic" href="topic-formulas.html">本页公式速查：平衡与滴定公式专题 ◆</a>
 </nav>
 <section id="kf">
@@ -107,11 +106,11 @@
 <p><b>无机络合剂</b>（如 NH<sub>3</sub>、F<sup>−</sup>）每个分子上只有一个可配位的原子，与金属离子<b>逐级络合</b>：每结合一个配体写一个常数，溶液中 ML、ML<sub>2</sub>、ML<sub>3</sub>……多种络合物同时并存。这一套平衡与多元弱酸的逐级解离<b>完全类似</b>，正因为物种太杂、各级常数又彼此接近，单靠它很难得到一个尖锐的滴定终点——这是无机络合剂实用价值受限的根本原因（课件第 3 页备注即此意）。</p>
 <p><b>有机络合剂</b>则在一个分子上带有两个或两个以上可键合原子，与金属离子形成<b>络合比低、具有环状结构</b>的螯合物。这类络合物很稳定，而且<b>不存在逐级络合</b>，所以应用价值大得多。其中最广泛使用的是<b>氨羧络合剂</b>：分子中含 –N(CH<sub>2</sub>COOH)<sub>2</sub> 基团，氨基氮与羧基氧一起充当配位原子，乙二胺四乙酸（EDTA）就是它的代表。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/complex-agent-classes.webp" alt="络合剂分类树：无机络合剂（简单络合物）与有机络合剂（螯合物），以及氨羧络合剂与 EDTA 结构" loading="lazy" decoding="async">
+<img alt="络合剂分类树：无机络合剂（简单络合物）与有机络合剂（螯合物），以及氨羧络合剂与 EDTA 结构" decoding="async" loading="lazy" src="assets/lecture-05/complex-agent-classes.webp"/>
 <figcaption>络合剂按「有无环状结构」分成两支：无机络合剂只给出简单络合物（AlF<sub>6</sub><sup>3−</sup>、Cu(NH<sub>3</sub>)<sub>4</sub><sup>2+</sup>），有机络合剂给出螯合物（如 8-羟基喹啉与铝）；氨羧络合剂是后一支中最重要的类别，共同结构单元是 –N(CH<sub>2</sub>COOH)<sub>2</sub>。<small>图源：Complexometric reaction and titrations, slide 3</small></figcaption>
 </figure>
 <p>最直观的例子是铜氨络离子：水合铜离子在溶液中呈浅蓝色，加入氨以后变成深蓝色的四氨合铜离子。银离子也能被氨络合，且是分步进行的——每加一个氨分子写一个常数，这一类常数叫形成常数 K<sub>f</sub>。</p>
-<div class="equation large"><b>Ag<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sup>+</sup></b>   K<sub>f1</sub> = <span class="math-frac" role="math"><span>[Ag(NH<sub>3</sub>)<sup>+</sup>]</span><span>([Ag<sup>+</sup>][NH<sub>3</sub>])</span></span> = 2.5 × 10<sup>3</sup><br><b>Ag(NH<sub>3</sub>)<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup></b>   K<sub>f2</sub> = 1.0 × 10<sup>4</sup>
+<div class="equation large"><b>Ag<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sup>+</sup></b>   K<sub>f1</sub> = <span class="math-frac" role="math"><span>[Ag(NH<sub>3</sub>)<sup>+</sup>]</span><span>([Ag<sup>+</sup>][NH<sub>3</sub>])</span></span> = 2.5 × 10<sup>3</sup><br/><b>Ag(NH<sub>3</sub>)<sup>+</sup> + NH<sub>3</sub> ⇌ Ag(NH<sub>3</sub>)<sub>2</sub><sup>+</sup></b>   K<sub>f2</sub> = 1.0 × 10<sup>4</sup>
 </div>
 <p>K<sub>f</sub> 也叫稳定常数 K<sub>s</sub> 或 K<sub>stab</sub>。如果反过来写解离反应，浓度项取倒数，常数就是形成常数的倒数，叫不稳定常数 K<sub>i</sub> 或解离常数 K<sub>d</sub>，即 K<sub>f</sub> = K<sub>s</sub> = <span class="math-frac" role="math"><span>1</span><span>K<sub>i</sub></span></span> = <span class="math-frac" role="math"><span>1</span><span>K<sub>d</sub></span></span>。两个常数都能用，但要与所写的反应式严格对应。</p>
 <div class="table-scroll wide">
@@ -272,7 +271,7 @@
 <p>最典型的是乙二胺四乙酸（EDTA），记作 H<sub>4</sub>Y。它是四元酸，四个可解离氢来自四个羧基。在足够低的 pH 下两个氮还可再质子化成为六元酸，但那个 pH 极低，实际几乎不用。<b>真正与金属配位的是完全去质子的 Y<sup>4−</sup>。</b></p>
 <p>EDTA 一个分子上有六个配位原子，足以满足大多数金属离子的配位需求，所以它与金属几乎总是形成 <b>1:1</b> 络合物，与金属电荷无关——这正是它能当滴定剂的关键。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/edta-structure.webp" alt="EDTA 结构式两种画法：(a) 游离配体标出两个氮与四个羧基的孤对电子，(b) 与 M²⁺ 配位时六个基团围成螯合环" loading="lazy" decoding="async">
+<img alt="EDTA 结构式两种画法：(a) 游离配体标出两个氮与四个羧基的孤对电子，(b) 与 M²⁺ 配位时六个基团围成螯合环" decoding="async" loading="lazy" src="assets/lecture-05/edta-structure.webp"/>
 <figcaption>(a) 是游离的 EDTA：<b>两个氮和四个羧基各提供一对孤对电子，一共六个配位基团</b>，所以它的代号是 H<sub>4</sub>Y。(b) 是它与 M<sup>2+</sup> 成键后的样子，六个基团把金属围在中间。正因为一个配体分子就能一次满足六个配位位置，无论金属电荷是 +1 还是 +4，<b>都只形成一个 1:1 络合物 MY</b>，不会出现 ML<sub>2</sub>、ML<sub>3</sub> 这类物种——这是 EDTA 滴定曲线能像一元酸碱那样处理的根本原因。<small>图源：Complexometric reaction and titrations, slide 6</small></figcaption>
 </figure>
 <p>H<sub>4</sub>Y 本身在水中溶解度很低，实际使用的是二钠盐 Na<sub>2</sub>H<sub>2</sub>Y·2H<sub>2</sub>O，溶于水后主要物种是 H<sub>2</sub>Y<sup>2−</sup>，溶液 pH 约 4～5（由 [H<sup>+</sup>] = √(K<sub>a2</sub>K<sub>a3</sub>) 算得理论值 4.4）。</p>
@@ -329,7 +328,7 @@
 </div>
 <p class="table-caveat">课件把 EDTA 当作<b>六元酸</b>处理，写出全部六个 pK<sub>a</sub>：0.0、1.5、2.0、2.66、6.16、10.24，对应 H<sub>6</sub>Y<sup>2+</sup> 一路去质子到 Y<sup>4−</sup>；教材则把前两个已超出常规 pH 范围的质子略去，只把 H<sub>4</sub>Y 之后的后四步记为 K<sub>a1</sub>–K<sub>a4</sub>。两套编号相差两步，<b>但曲线和 α<sub>4</sub> 完全一致</b>——真正与金属配位的始终是 Y<sup>4−</sup>。</p>
 <div class="equation large">
-<b>H<sub>4</sub>Y ⇌ H<sup>+</sup> + H<sub>3</sub>Y<sup>−</sup></b>  K<sub>a1</sub> = 1.0 × 10<sup>−2</sup><br><b>H<sub>3</sub>Y<sup>−</sup> ⇌ H<sup>+</sup> + H<sub>2</sub>Y<sup>2−</sup></b>  K<sub>a2</sub> = 2.2 × 10<sup>−3</sup><br><b>H<sub>2</sub>Y<sup>2−</sup> ⇌ H<sup>+</sup> + HY<sup>3−</sup></b>  K<sub>a3</sub> = 6.9 × 10<sup>−7</sup><br><b>HY<sup>3−</sup> ⇌ H<sup>+</sup> + Y<sup>4−</sup></b>  K<sub>a4</sub> = 5.5 × 10<sup>−11</sup>
+<b>H<sub>4</sub>Y ⇌ H<sup>+</sup> + H<sub>3</sub>Y<sup>−</sup></b>  K<sub>a1</sub> = 1.0 × 10<sup>−2</sup><br/><b>H<sub>3</sub>Y<sup>−</sup> ⇌ H<sup>+</sup> + H<sub>2</sub>Y<sup>2−</sup></b>  K<sub>a2</sub> = 2.2 × 10<sup>−3</sup><br/><b>H<sub>2</sub>Y<sup>2−</sup> ⇌ H<sup>+</sup> + HY<sup>3−</sup></b>  K<sub>a3</sub> = 6.9 × 10<sup>−7</sup><br/><b>HY<sup>3−</sup> ⇌ H<sup>+</sup> + Y<sup>4−</sup></b>  K<sub>a4</sub> = 5.5 × 10<sup>−11</sup>
 </div>
 <div class="table-scroll wide">
 <table>
@@ -371,7 +370,7 @@
 </div>
 <p class="table-caveat">α<sub>4</sub> 是本章的核心开关：pH 越低，Y<sup>4−</sup> 占比越小，质子对金属的竞争越强，络合越不完全。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/edta-pka-species.webp" alt="EDTA 各级质子化物种随 pH 的占优区间与六条分布曲线" loading="lazy" decoding="async">
+<img alt="EDTA 各级质子化物种随 pH 的占优区间与六条分布曲线" decoding="async" loading="lazy" src="assets/lecture-05/edta-pka-species.webp"/>
 <figcaption>左栏是「占优物种」阶梯：每越过一个 pK<sub>a</sub>，主角就从 H<sub>6</sub>Y<sup>2+</sup> 换到 H<sub>5</sub>Y<sup>+</sup>、H<sub>4</sub>Y、H<sub>3</sub>Y<sup>−</sup>、H<sub>2</sub>Y<sup>2−</sup>、HY<sup>3−</sup>，直到 pH &gt; 10.24 才是 Y<sup>4−</sup>。右侧分布曲线更直观：<b>Y<sup>4−</sup> 的曲线在 pH 12 之后才抬到接近 1</b>，也就是说只有在 pH ≥ 12 时 α<sub>4</sub> ≈ 1；pH 10 时它只有七成左右的主导度，这正是后面必须引入 K′<sub>f</sub> 的原因。<small>图源：Complexometric reaction and titrations, slide 9</small></figcaption>
 </figure>
 <p class="source-note">来源：教材 §9.2 EDTA Equilibria，p325–328；式 9.5–9.8、图 9.1；课件 5 slides 6-9。</p>
@@ -387,7 +386,7 @@
 </div>
 <p>把这个式子取对数，就能一次看懂「log K′<sub>f</sub> 对 pH」那组曲线：log K′<sub>f</sub> = log K<sub>f</sub> + log α<sub>4</sub>。其中 α<sub>4</sub> <b>只与 pH 有关，与是哪种金属无关</b>，所以同一 pH 下所有金属的曲线都被加上同一个 log α<sub>4</sub>——<b>这组曲线彼此近似平行</b>，只是各自被自己的 log K<sub>f</sub> 整体抬高或压低。pH 13 时 α<sub>4</sub> ≈ 1，log α<sub>4</sub> ≈ 0，于是 <b>K′<sub>f</sub> = K<sub>f</sub></b>，曲线在最右端趋于平坦；pH 越低，曲线整体下移越多。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/kf-vs-ph.webp" alt="log K′f 对 pH 的一组曲线，自下而上为 Ca²⁺、Pb²⁺、Hg²⁺，彼此近似平行" loading="lazy" decoding="async">
+<img alt="log K′f 对 pH 的一组曲线，自下而上为 Ca²⁺、Pb²⁺、Hg²⁺，彼此近似平行" decoding="async" loading="lazy" src="assets/lecture-05/kf-vs-ph.webp"/>
 <figcaption>Hg<sup>2+</sup>、Pb<sup>2+</sup>、Ca<sup>2+</sup> 三条 log K′<sub>f</sub>–pH 曲线：形状相同、纵向错开，正说明大家共享同一个 log α<sub>4</sub> 修正项。曲线在低 pH 端陡峭下坠（α<sub>4</sub> 趋近 0），到 pH 13 附近才走平，此时 K′<sub>f</sub> 就等于 K<sub>f</sub>。注意课件原图竖轴的读数与教材不符，此处只借用它的趋势。<small>图源：Complexometric reaction and titrations, slide 17</small></figcaption>
 </figure>
 <div class="notation-box">
@@ -407,7 +406,7 @@ K′<sub>f</sub> 既可以看成「pH 修正后的形成常数」，也可以看
 <h2>络合滴定曲线：三段式与二次方程</h2>
 <p>有了 K′<sub>f</sub>，络合滴定的曲线可以像酸碱滴定那样分段计算。教材用 pH 10 下 0.1 M Ca<sup>2+</sup> 被 0.1 M EDTA 滴定为例，把曲线分成三段——这三段的算法与酸碱滴定、沉淀滴定完全同构。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/metal-edta-curve.webp" alt="Ca²⁺ 的 EDTA 滴定曲线：pH 10 与 pH 7 两条比较，下方为各阶段存在物种与 [Ca²⁺] 算法表" loading="lazy" decoding="async">
+<img alt="Ca²⁺ 的 EDTA 滴定曲线：pH 10 与 pH 7 两条比较，下方为各阶段存在物种与 [Ca²⁺] 算法表" decoding="async" loading="lazy" src="assets/lecture-05/metal-edta-curve.webp"/>
 <figcaption>两条曲线的横轴都是加入 EDTA 的体积，纵轴是 pCa。等当点（100 mL）之前两线基本重合，差别全在突跃：<b>pH 10 的突跃（pCa 约 4 → 10）明显大于 pH 7 的突跃</b>。原因是 pH 越低 α<sub>4</sub> 越小，K′<sub>f</sub> = K<sub>f</sub>α<sub>4</sub> 被压得越低，等当点后 pCa 抬不上去，突跃自然变短、终点越难判断。图下方的表格把「滴定前 / 等当点前 / 等当点 / 等当点后」四个阶段的物种与 [Ca<sup>2+</sup>] 算法一一列出，与下面表格一致。<small>图源：Complexometric reaction and titrations, slide 22</small></figcaption>
 </figure>
 <div class="table-scroll wide">
@@ -500,7 +499,7 @@ K′<sub>f</sub>(C<sub>M</sub>V<sub>M</sub> − [ML]V<sub>T</sub>)(C<sub>L</sub>
 </div>
 <p class="table-caveat">教材图 9.4 的判据是 log K′<sub>f</sub> = 6；虚线把金属按形成常数分成三组。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/min-ph-metals.webp" alt="各金属可被 EDTA 滴定的最低 pH 图：log Kf 由高到低排列，按 pH 分为三组" loading="lazy" decoding="async">
+<img alt="各金属可被 EDTA 滴定的最低 pH 图：log Kf 由高到低排列，按 pH 分为三组" decoding="async" loading="lazy" src="assets/lecture-05/min-ph-metals.webp"/>
 <figcaption>课件把金属按最低 pH 明确划成三组：<b>第一组 pH &lt; ~3</b>（Fe<sup>3+</sup>、In<sup>3+</sup>、Sc<sup>3+</sup>、Th<sup>4+</sup>、Hg<sup>2+</sup> 等，落在左侧高 log K<sub>f</sub> 区）、<b>第二组 pH ~ 3–7</b>（Lu<sup>3+</sup>、Ga<sup>3+</sup>、Ni<sup>2+</sup>、Cu<sup>2+</sup>、Zn<sup>2+</sup>、Pb<sup>2+</sup>、Al<sup>3+</sup>、Cd<sup>2+</sup>、Co<sup>2+</sup>、Fe<sup>2+</sup>、Mn<sup>2+</sup> 等）、<b>第三组 pH &gt; 7</b>（Ca<sup>2+</sup>、Sr<sup>2+</sup>、Mg<sup>2+</sup>）。最高那一档当然所有金属都能反应，<b>但不是所有金属都能直接滴定</b>——Fe<sup>3+</sup>、Th<sup>4+</sup> 这类在高 pH 下会析出氢氧化物沉淀。<small>图源：Complexometric reaction and titrations, slide 24</small></figcaption>
 </figure>
 <div class="notation-box">
@@ -523,7 +522,7 @@ pH 越高 α<sub>4</sub> 越大，但氢氧根也开始与金属竞争：M<sup>2
 </div>
 <p>铬黑 T 本身是一个弱酸，它的各个去质子物种颜色不同：H<sub>2</sub>In<sup>−</sup> 呈红色（约 pH 2～6.3），HIn<sup>2−</sup> 呈蓝色（约 pH 6.3～11.6），In<sup>3−</sup> 呈橙色（pH &gt; 11.6）。所以<b>它的颜色确实受 pH 影响</b>——这也是它只适合在 pH 10 附近使用的原因。但要特别区分一点：<b>它的作用机理与 pH 变化无关</b>。变色靠的是 EDTA 把 Mg<sup>2+</sup> 从指示剂上夺走，而不是靠滴定过程中 pH 挪动；溶液本身就是缓冲的，pH 自始至终不变。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/eriochrome-black-t.webp" alt="铬黑 T（H₃In）结构式、与 Mg²⁺ 络合显红色与游离显蓝色、变色反应式及三个 pH 区间的颜色" loading="lazy" decoding="async">
+<img alt="铬黑 T（H₃In）结构式、与 Mg²⁺ 络合显红色与游离显蓝色、变色反应式及三个 pH 区间的颜色" decoding="async" loading="lazy" src="assets/lecture-05/eriochrome-black-t.webp"/>
 <figcaption>铬黑 T（Eriochrome Black T）含三个可解离质子，记作 H<sub>3</sub>In；与 Mg<sup>2+</sup> 络合呈<b>红色</b>，游离时呈<b>蓝色</b>。中部的变色反应 <b>MgIn<sup>−</sup>（红）+ H<sub>2</sub>Y<sup>2−</sup> → MgY<sup>2−</sup> + HIn<sup>2−</sup>（蓝）+ H<sup>+</sup></b> 就是终点的全部内容。下方色带标出 pK<sub>a2</sub> = 6.3 与 pK<sub>a3</sub> = 11.6 两个分界，说明为什么必须把溶液缓冲在 pH 10。<small>图源：Complexometric reaction and titrations, slide 26</small></figcaption>
 </figure>
 <div class="table-scroll wide">
@@ -591,7 +590,7 @@ Ca–EDTA 与 Mg–EDTA 的形成常数太接近，调 pH 也无法区分，所�
 <p class="table-caveat">实际工作中还常用「先滴定总量、再掩蔽其中一种后滴定另一种」的办法做差减。</p>
 <p>除铬黑 T 之外，课件还特别点出两个常用指示剂。<b>钙镁指示剂（Calmagite）</b>用于 EDTA 滴定 Ca<sup>2+</sup>、Mg<sup>2+</sup> 时，终点比铬黑 T 更清晰，而且<b>保存寿命更长</b>，是铬黑 T 的直接替代品。<b>二甲酚橙（Xylenol orange）</b>则面向另一类对象：<b>那些与 EDTA 形成极稳定络合物的金属离子，可在 pH 1.5～3.0 的强酸性介质中滴定</b>——这正对应第一组金属（Bi<sup>3+</sup>、Th<sup>4+</sup> 等），此时铬黑 T 已经无法使用了。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/indicators-calmagite.webp" alt="Calmagite 与二甲酚橙的结构式及各自适用范围，下方为二甲酚橙的变色区间与 pKa" loading="lazy" decoding="async">
+<img alt="Calmagite 与二甲酚橙的结构式及各自适用范围，下方为二甲酚橙的变色区间与 pKa" decoding="async" loading="lazy" src="assets/lecture-05/indicators-calmagite.webp"/>
 <figcaption>上图是 Calmagite，用于 Ca<sup>2+</sup>、Mg<sup>2+</sup> 的滴定：<b>终点比铬黑 T 更清晰，且寿命更长</b>。下图是二甲酚橙，适用于<b>形成极稳定 EDTA 络合物、在 pH 1.5～3.0 下滴定</b>的金属离子；它的变色区间由 pK<sub>a5</sub> = 6.3 一带决定，与铬黑 T 一样属于邻,邻′-二羟基偶氮类染料。<small>图源：Complexometric reaction and titrations, slide 27</small></figcaption>
 </figure>
 <p>关于 EDTA 标准溶液：把 Na<sub>2</sub>H<sub>2</sub>Y·2H<sub>2</sub>O 在 80 °C 干燥 2 h，结晶水不会失去，因此高纯试剂可直接作基准物质配制标准溶液。</p>
@@ -805,6 +804,5 @@ Ca–EDTA 与 Mg–EDTA 的形成常数太接近，调 pH 也无法区分，所�
 <section id="chapter-quiz"><h2>章节测验</h2><p><a href="https://quiz.chemistryatlas.xyz/index.html?quiz=ANA-L05">第5章/课测验：22题，32分 →</a></p><p>15道单选、3道多选、2道判断、2道填空。按5道基础、10道中等、4道较难、3道拓展递进；交卷后查看答案与解析。</p></section></main>
 <script src="script.js">
 </script>
-
 </body>
 </html>

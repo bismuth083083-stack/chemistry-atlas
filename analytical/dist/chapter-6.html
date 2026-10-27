@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="分析化学 I 第6章 重量分析">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="分析化学 I 第6章 重量分析" name="description"/>
 <title>06 重量分析 · 分析化学知识库</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="content.css">
-<link rel="stylesheet" href="lesson.css">
-<link rel="stylesheet" href="course-extra.css">
-<link rel="stylesheet" href="ppt-figures.css">
-
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="fractions.css"></head>
+<link href="style.css" rel="stylesheet"/>
+<link href="content.css" rel="stylesheet"/>
+<link href="lesson.css" rel="stylesheet"/>
+<link href="course-extra.css" rel="stylesheet"/>
+<link href="ppt-figures.css" rel="stylesheet"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="fractions.css" rel="stylesheet"/><link href="electroanalysis.css" rel="stylesheet"/></head>
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">
@@ -22,10 +22,10 @@
 </a>
 <label class="search">
 <span>⌕</span>
-<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<input aria-label="搜索知识库" id="global-search" placeholder="搜索章节、概念或英文术语…"/>
 <kbd>⌘ K</kbd>
 </label>
-<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+<button class="icon-button" id="theme" title="切换明暗主题">◐</button>
 </header>
 <aside class="sidebar">
 <nav>
@@ -51,7 +51,7 @@
 <span>07</span>沉淀滴定</a>
 <a href="chapter-8.html"><span>08</span>氧化还原与电位滴定</a>
 <a href="chapter-9.html"><span>09</span>仪器分析基础与QCM</a>
-<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a>
+<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a><a href="chapter-11.html"><span>11</span>电位法与离子选择性电极</a><a href="chapter-12.html"><span>12</span>伏安法与电流分析</a><a href="chapter-13.html"><span>13</span>库仑法与控制电位电解</a><a href="chapter-14.html"><span>14</span>电化学传感器与微电极</a>
 <a href="topic-formulas.html">
 <span>◆</span>平衡与滴定公式</a>
 </nav>
@@ -82,7 +82,7 @@
 <b>本章已按课件 6 重新对齐</b>
 <p>本章原先完全依据教材 Ch.10 撰写，现按教师课件 <i>Gravimetric analysis</i> 逐页核对，正文的节次与十个主题保持不变，只在既有节内补入课件独有、教材没有展开的部分：<b>分析天平的选型与读数精度</b>（slide 3）、<b>成核机制与相对过饱和度的临界值</b>（slides 5、8）、<b>有机沉淀剂一览表</b>（slide 20）以及两道课件例题（slides 17、26）。凡补充内容都在节尾的来源注中标出课件页码。</p>
 </div>
-<nav class="chapter-jump" aria-label="本章快速导航">
+<nav aria-label="本章快速导航" class="chapter-jump">
 <a href="#steps">流程八步</a>
 <a href="#conditions">沉淀条件</a>
 <a href="#digestion">陈化与胶体</a>
@@ -93,30 +93,24 @@
 <a href="#ksp">溶度积</a>
 <a href="#commonion">同离子效应</a>
 <a href="#diverse">盐效应</a>
-
 <a class="jump-topic" href="topic-formulas.html">本页公式速查：平衡与滴定公式专题 ◆</a>
 </nav>
 <section id="steps">
 <p class="section-kicker">6.1 GENERAL STEPS</p>
 <h2>重量分析的流程与两个关键名词</h2>
-
 <p>重量分析（gravimetric analysis）是定量分析中最古老、也最不依赖仪器的一类方法。
 它的思路只有一句话：<b>把待测组分定量地转成一种组成固定的固体，然后称它的质量</b>。
 因为称的是质量而不是信号强度，所以它不需要标准曲线，也不需要响应因子——
 这是它最大的优点，也是它最大的负担：全部准确度都押在天平与操作上。</p>
-
 <p>把这句话说透：重量分析的样品处理可以很复杂，仪器清单却可以短到只有一件——<b>分析天平（analytical balance）是唯一必备的仪器</b>。
 换句话说，方法的全部准确度与精密度，最终都落在一台天平的读数能力和操作者的手上。</p>
-
 <figure class="ppt-figure">
-<img src="assets/lecture-05/balance-readability.webp" alt="五类分析天平的最大量程与读数精度对比：常量天平 160–300 g / 0.1 mg、半微量天平 200 g / 0.01 mg、微量天平 30 g / 1 µg、超微量天平 2 g / 0.1 µg、电化学石英晶体天平 100 µg / 1 ng" loading="lazy" decoding="async">
+<img alt="五类分析天平的最大量程与读数精度对比：常量天平 160–300 g / 0.1 mg、半微量天平 200 g / 0.01 mg、微量天平 30 g / 1 µg、超微量天平 2 g / 0.1 µg、电化学石英晶体天平 100 µg / 1 ng" decoding="async" loading="lazy" src="assets/lecture-05/balance-readability.webp"/>
 <figcaption>课件把「分析天平」拆成五档来看。注意两个参数的方向是相反的：<b>量程越小的天平，读数精度越高</b>——从常量天平的 0.1 mg 一路做到超微量天平的 0.1 µg，相差三个数量级；到电化学石英晶体天平（electrochemical quartz balance）已经进入纳克级。所以选天平其实是选量程与读数精度的搭配：常量分析（沉淀在 0.1 g 量级）用标准分析天平，样品量再小才逐级上移。<small>图源：Gravimetric analysis, slide 3</small></figcaption>
 </figure>
-
 <p>重量法的历史地位正是由天平精度直接决定的。历史上最著名的一次重量法工作是 Theodore W. Richards 在哈佛大学完成的：
 他用高度精密、高度准确的重量分析流程测定了 <b>25 种元素的原子量</b>，结果达到<b>六位有效数字</b>，
 并因此成为<b>第一位获得诺贝尔奖的美国人</b>。这条历史线索说明了一件事：重量分析的准确度上限，历史上就是天平的准确度上限。</p>
-
 <p>先分清两个几乎每份考卷都会问的名词。它们描述的是同一条转化链上的<b>两个不同阶段</b>：</p>
 <div class="table-scroll wide">
 <table>
@@ -201,7 +195,7 @@
 </div>
 <p class="table-caveat">来源：教材 §10.1 重量分析的一般步骤；课件 6 slide 4 给出的步骤编号与之一一对应。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/gravimetric-steps.webp" alt="重量分析八步总览：1 制备溶液、2 沉淀、3 陈化、4 过滤、5 洗涤、6 烘干或灼烧、7 称量、8 计算" loading="lazy" decoding="async">
+<img alt="重量分析八步总览：1 制备溶液、2 沉淀、3 陈化、4 过滤、5 洗涤、6 烘干或灼烧、7 称量、8 计算" decoding="async" loading="lazy" src="assets/lecture-05/gravimetric-steps.webp"/>
 <figcaption>课件的八步提纲：<b>1</b> 制备溶液 → <b>2</b> 沉淀（precipitation）→ <b>3</b> 陈化 → <b>4</b> 过滤 → <b>5</b> 洗涤 → <b>6</b> 烘干或灼烧 → <b>7</b> 称量 → <b>8</b> 计算。其中第 1 步课件特别强调三点：有必要时先做<b>初步分离</b>以除去干扰物；要维持沉淀<b>足够低的溶解度</b>并让它处于<b>适合过滤</b>的形态；<b>pH 尤其重要</b>，因为它同时影响沉淀的溶解度和共存物的干扰程度。这与上面表格里的第 1–3 步是同一件事的两种讲法。<small>图源：Gravimetric analysis, slide 4</small></figcaption>
 </figure>
 <div class="notation-box">
@@ -213,7 +207,6 @@
 <section id="conditions">
 <p class="section-kicker">6.2 PRECIPITATION CONDITIONS</p>
 <h2>相对过饱和度与冯·韦曼比</h2>
-
 <p>沉淀能不能长得粗大、好不好过滤，取决于析出瞬间的<b>相对过饱和度</b>。
 冯·韦曼（von Weimarn）给出的经验关系是：</p>
 <div class="equation">
@@ -264,11 +257,11 @@
 晶核一旦形成，后续的溶质既可以继续成核，也可以沉积到已有晶核上长大——两者是竞争关系。</p>
 <p>由此得到本章最核心的一条因果链：<b>过饱和度越高 → 成核速率越大 → 单位体积内的晶核数目越多 → 最终晶体总数多而粒径小</b>；反之，过饱和度低时成核少，物质主要沉积在少数晶核上，得到<b>少而大</b>的晶体。这就是重量分析里所有沉淀条件规定的物理来源。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/nucleation-supersaturation.webp" alt="过饱和与成核的定义：过饱和是溶液中所含溶解盐超过平衡量，成核是需要最少量粒子聚集形成微观晶核；过饱和度越高成核越快，晶体总数多而粒径小" loading="lazy" decoding="async">
+<img alt="过饱和与成核的定义：过饱和是溶液中所含溶解盐超过平衡量，成核是需要最少量粒子聚集形成微观晶核；过饱和度越高成核越快，晶体总数多而粒径小" decoding="async" loading="lazy" src="assets/lecture-05/nucleation-supersaturation.webp"/>
 <figcaption>课件的定义式讲法，最后一行给出了判据：<b>相对过饱和度高 → 大量小晶体（比表面大）</b>；反过来就是<b>相对过饱和度低 → 少量大晶体</b>。所以「颗粒大不大」不是靠搅拌或温度本身决定的，而是这些操作改变了相对过饱和度之后的结果。<small>图源：Gravimetric analysis, slide 5</small></figcaption>
 </figure>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/von-weimarn-ratio.webp" alt="冯·韦曼比：相对过饱和度 = (Q − S) / S，以及压低 Q、提高 S 的四条操作要点" loading="lazy" decoding="async">
+<img alt="冯·韦曼比：相对过饱和度 = (Q − S) / S，以及压低 Q、提高 S 的四条操作要点" decoding="async" loading="lazy" src="assets/lecture-05/von-weimarn-ratio.webp"/>
 <figcaption>冯·韦曼比与其操作推论。课件把「压低 Q、提高 S」落成四条可执行的规定：<b>①</b> 在稀溶液中沉淀（Q 低）；<b>②</b> 缓慢加入稀的沉淀剂并<b>有效搅拌</b>（Q 低，且搅拌避免局部过量）；<b>③</b> 在热溶液中沉淀（S 变大），但溶解度也不能大过头，否则沉淀不完全——本体沉淀可以在热溶液中进行，再冷却使沉淀定量；<b>④</b> 在能保证定量沉淀的前提下，<b>pH 尽可能低</b>，因为许多沉淀在酸性介质中溶解度更大，沉淀速度因而变慢。<small>图源：Gravimetric analysis, slide 6</small></figcaption>
 </figure>
 <div class="table-scroll wide">
@@ -342,11 +335,10 @@
 </div>
 <p class="table-caveat">读这张表的关键就在比较：<b>临界值越小（如 AgCl 只有 5.5），越容易越过临界值而得到细颗粒，所以沉淀条件必须控制得更严</b>；反过来，BaSO₄ 的 1000 给了很大的操作余地。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/digestion-criteria.webp" alt="相对过饱和度越小晶核形成速度越慢、得到大颗粒沉淀；控制相对过饱和度在临界值以下时沉淀以异相成核为主，超过临界值则以均相成核为主；BaSO₄ 临界值 1000、CaC₂O₄·H₂O 31、AgCl 5.5" loading="lazy" decoding="async">
+<img alt="相对过饱和度越小晶核形成速度越慢、得到大颗粒沉淀；控制相对过饱和度在临界值以下时沉淀以异相成核为主，超过临界值则以均相成核为主；BaSO₄ 临界值 1000、CaC₂O₄·H₂O 31、AgCl 5.5" decoding="async" loading="lazy" src="assets/lecture-05/digestion-criteria.webp"/>
 <figcaption>课件第 8 页原话：相对过饱和度越小，晶核形成速度越慢，能得到大颗粒沉淀；<b>控制相对过饱和度在临界值以下，沉淀以异相成核（heterogeneous nucleation）为主，得到大颗粒沉淀；超过临界值后，沉淀以均相成核（homogeneous nucleation）为主，得到小颗粒沉淀</b>。所谓「异相」是指晶核在已有的固相表面（容器壁、尘埃、已有晶粒）上形成，「均相」是指在溶液本体中自发形成——后者数量巨大，所以颗粒细。<small>图源：Gravimetric analysis, slide 8</small></figcaption>
 </figure>
 <h3>均相沉淀：把 Q 压到极限</h3>
-
 <p>常规加料方式无论多慢，滴入点附近总是局部过浓。均相沉淀（homogeneous precipitation）
 换了个思路：<b>不直接加沉淀剂，而是加入一种能在溶液中缓慢生成沉淀剂的试剂</b>。
 这样沉淀剂一产生就被消耗掉，全溶液任何时刻的过饱和度都极低，得到的晶体特别粗大、特别纯净。</p>
@@ -387,7 +379,6 @@
 <section id="digestion">
 <p class="section-kicker">6.3 DIGESTION &amp; COLLOIDS</p>
 <h2>陈化、胶体与胶溶</h2>
-
 <p>沉淀刚析出时，颗粒大小是参差不齐的：小颗粒溶解度比大颗粒略大（表面能效应），
 于是如果把沉淀和母液一起放置，小晶体会慢慢溶解，而大晶体继续长大。
 这个过程叫<b>陈化</b>（digestion 或 aging）。</p>
@@ -454,7 +445,7 @@
 <p><b>① 吸附层（primary layer，又称一次吸附层）</b>：胶粒表面选择性地吸附溶液中的<b>构晶离子</b>（lattice ions，即组成该沉淀本身的离子），形成一层强烈吸附的带电层。这一层<b>不是外加的污物，而是晶体本身的组成部分</b>——所以它既洗不掉，也不该洗掉。</p>
 <p><b>② 反离子层（counterlayer / secondary layer，又称扩散层）</b>：带电的吸附层再吸引溶液中带<b>相反电荷</b>的离子，围在它外面，使粒子整体呈<b>电中性</b>。这一层是紧是松，直接决定颗粒往哪个方向走。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/coagulation-peptization.webp" alt="胶体双电层：吸附层由构晶离子组成、是晶体的组成部分，反离子层中和电荷；反离子层紧密时凝结成大颗粒，松散时胶溶回到胶体状态" loading="lazy" decoding="async">
+<img alt="胶体双电层：吸附层由构晶离子组成、是晶体的组成部分，反离子层中和电荷；反离子层紧密时凝结成大颗粒，松散时胶溶回到胶体状态" decoding="async" loading="lazy" src="assets/lecture-05/coagulation-peptization.webp"/>
 <figcaption>课件第 11 页给出的双电层机制：当沉淀的相对过饱和度不利、得不到晶形沉淀时，沉淀<b>首先以胶体形式出现</b>；胶粒极小（<b>1–100 nm</b>）、比表面极大，因而强烈发生表面吸附。这个机制直接解释了洗涤规定：<b>用纯水洗会把反离子层稀释掉</b>，吸附层的电荷失去屏蔽，粒子重新分散（胶溶）穿过滤纸；<b>用含少量挥发性电解质的洗液</b>，则既维持了离子强度让反离子层保持紧密（凝结），又能在灼烧时挥发不留残渣。<small>图源：Gravimetric analysis, slide 11</small></figcaption>
 </figure>
 <p><b>一句话结论：洗液不能只用纯水，必须用含少量挥发性电解质的洗液</b>——它的作用不是「冲掉」什么，而是<b>维持离子强度、把反离子层保持在紧密状态，防止胶溶</b>；同时所选的电解质要能在灼烧时完全挥发，不留下新的残渣。</p>
@@ -463,7 +454,6 @@
 <section id="coprecip">
 <p class="section-kicker">6.4 COPRECIPITATION</p>
 <h2>共沉淀的四类与后沉淀</h2>
-
 <p>沉淀不可能绝对纯净。凡是沉淀析出时同时进入沉淀的杂质，统称为<b>共沉淀</b>
 （coprecipitation）。教材按机理分成四类，对策完全不同——这是本章最容易出简答题的地方。</p>
 <div class="table-scroll wide">
@@ -512,13 +502,11 @@
 <p class="table-caveat">来源：教材 §10.1 沉淀中的杂质部分。核心区分：吸附是平衡过程且可洗，吸留/包藏/同晶置换是结构性的且不可洗，后沉淀只与时间有关。</p><div class="notation-box">
 <b>怎么记这四类</b>
 <p>
-按能不能洗掉和跟时间有没有关系两条线记：<br><b>能洗掉的只有表面吸附</b>（因为它发生在表面，是平衡过程）。<br><b>和时间有关的是后沉淀</b>（放久了才出现，所以对策是尽快过滤）。<br><b>既不能洗、又和时间无关</b>的是吸留/包藏和同晶置换（结构性问题，只能重新沉淀，同晶置换甚至无解）。</p>
+按能不能洗掉和跟时间有没有关系两条线记：<br/><b>能洗掉的只有表面吸附</b>（因为它发生在表面，是平衡过程）。<br/><b>和时间有关的是后沉淀</b>（放久了才出现，所以对策是尽快过滤）。<br/><b>既不能洗、又和时间无关</b>的是吸留/包藏和同晶置换（结构性问题，只能重新沉淀，同晶置换甚至无解）。</p>
 </div>
 <h3>后沉淀：唯一与时间直接相关的一类</h3>
-
 <p>后沉淀（postprecipitation）与共沉淀不同：它在沉淀<b>生成的那一刻并不发生</b>，
 而是在沉淀放置的过程中，溶液中本来不该沉淀的组分慢慢沉积到已有沉淀的表面上。</p>
-
 <p>经典例子是草酸钙。若溶液中有 Mg²⁺，草酸镁倾向形成过饱和溶液，
 在草酸钙刚析出时并不会跟着沉淀；但如果把沉淀放置过久，
 草酸镁就会逐渐沉积在草酸钙表面，使测定结果偏高。对策很简单——
@@ -556,7 +544,6 @@
 <section id="washing">
 <p class="section-kicker">6.5 FILTRATION &amp; IGNITION</p>
 <h2>洗涤、灼烧与称量形式</h2>
-
 <p>过滤和洗涤是唯一能补救前几步失误的环节。洗液的选择要同时满足三条：
 <b>能洗掉杂质</b>、<b>不溶解沉淀</b>、<b>不引入新的干扰</b>。</p>
 <div class="table-scroll wide">
@@ -638,7 +625,6 @@
 <section id="calc">
 <p class="section-kicker">6.6 CALCULATIONS</p>
 <h2>换算因数与重量计算</h2>
-
 <p>所有计算最后都归结为一个乘数——换算因数（gravimetric factor），
 通常记作 F。它把称量形式的质量换算成待测组分的质量。</p>
 <div class="equation">
@@ -702,7 +688,7 @@ F′ = <span class="math-frac" role="math"><span>M(P₂O₅)</span><span>(2 × M
 这也是检查系数 a、b 有没有写反的最快办法。</p>
 </div>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/gf-phosphate-example.webp" alt="磷钼酸铵重量法计算：1.1682 g 沉淀乘以换算因数 P/(NH₄)₃PO₄·12MoO₃ 即 30.97/1876.5，除以 0.2711 g 试样，得 %P = 7.111%" loading="lazy" decoding="async">
+<img alt="磷钼酸铵重量法计算：1.1682 g 沉淀乘以换算因数 P/(NH₄)₃PO₄·12MoO₃ 即 30.97/1876.5，除以 0.2711 g 试样，得 %P = 7.111%" decoding="async" loading="lazy" src="assets/lecture-05/gf-phosphate-example.webp"/>
 <figcaption>课件给出的标准写法：<b>%P = <span class="math-frac" role="math"><span>沉淀质量 × [<span class="math-frac" role="math"><span>M(P)</span><span>M(称量形式)</span></span>]</span><span>试样质量</span></span> × 100%</b>，
 代入得 1.1682 × (30.97/1876.5) / 0.2711 × 100% = 7.111%。%P₂O₅ 的分母则取 <b>2 ×</b> 称量形式的式量，答案 16.30%。
 注意换算因数的一步到位特性：它把「称了什么」直接变成「待测组分有多少」，中间不需要先算出磷的绝对质量。课件幻灯片上的化学式印作 (NH₄)PO₄·12MoO₃（漏写下标 3），但它在同一页使用的式量 1876.5 只与 (NH₄)₃PO₄·12MoO₃ 相符，本章统一按后者书写。<small>图源：Gravimetric analysis, slide 17</small></figcaption>
@@ -718,18 +704,17 @@ F′ = <span class="math-frac" role="math"><span>M(P₂O₅)</span><span>(2 × M
 <p>结论出人意料却在情理之中：只要 pH 超过 1.8，Fe³⁺ 就会开始以 Fe(OH)₃ 沉淀析出。</p>
 </div>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/feoh3-ph-example.webp" alt="Fe(OH)₃ 沉淀 pH 计算：Fe(OH)₃ ⇌ Fe³⁺ + 3OH⁻，[Fe³⁺][OH⁻]³ = 4 × 10⁻³⁸，(0.1)[OH⁻]³ = 4 × 10⁻³⁸，[OH⁻] = 7 × 10⁻¹³ M，pOH = 12.2" loading="lazy" decoding="async">
+<img alt="Fe(OH)₃ 沉淀 pH 计算：Fe(OH)₃ ⇌ Fe³⁺ + 3OH⁻，[Fe³⁺][OH⁻]³ = 4 × 10⁻³⁸，(0.1)[OH⁻]³ = 4 × 10⁻³⁸，[OH⁻] = 7 × 10⁻¹³ M，pOH = 12.2" decoding="async" loading="lazy" src="assets/lecture-05/feoh3-ph-example.webp"/>
 <figcaption>课件的逐步演算。它给出的结论有两条实用含义：<b>① 配制 Fe³⁺ 溶液必须酸化</b>（例如加盐酸），否则 Fe³⁺ 会缓慢水解，生成铁锈色的凝胶状沉淀（rust-colored gelatinous precipitate），溶液的浓度就不再可靠；<b>② 实际沉淀开始的 pH 会略高于计算值</b>，因为析出固相需要一定的<b>过饱和</b>——这正是 §6.2 讲的成核前提，计算给出的是热力学下限。<small>图源：Gravimetric analysis, slide 26</small></figcaption>
 </figure><div class="notation-box">
 <b>换算因数的两个常见陷阱</b>
 <p>
-① <b>a 与 b 不能凭化学式直接读</b>——必须从沉淀形式到称量形式的配平反应里数。例如上例中 Bi₂S₃ 灼烧成 Bi₂O₃ 时，硫以 SO₂ 形式失去，铋的个数比保持不变，这一点要靠配平确认。<br>② <b>F 只与化学式和配比有关，与取样量无关</b>，所以同一物质的 F 是一个常数，应当记在笔记上反复使用。</p>
+① <b>a 与 b 不能凭化学式直接读</b>——必须从沉淀形式到称量形式的配平反应里数。例如上例中 Bi₂S₃ 灼烧成 Bi₂O₃ 时，硫以 SO₂ 形式失去，铋的个数比保持不变，这一点要靠配平确认。<br/>② <b>F 只与化学式和配比有关，与取样量无关</b>，所以同一物质的 F 是一个常数，应当记在笔记上反复使用。</p>
 </div><p class="source-note">来源：教材 §10.2、§10.6 重量计算与例题；课件 6 slides 15-17、slide 26。</p>
 </section>
 <section id="organic">
 <p class="section-kicker">6.7 ORGANIC REAGENTS</p>
 <h2>有机沉淀剂</h2>
-
 <p>有机沉淀剂在重量分析里地位特殊，因为它们往往能同时解决三个问题：
 <b>选择性高</b>、<b>沉淀呈晶形</b>、<b>摩尔质量大因而换算因数小</b>。
 教材列出的常用试剂集中在螯合剂和缔合剂两大类。</p>
@@ -810,7 +795,7 @@ F′ = <span class="math-frac" role="math"><span>M(P₂O₅)</span><span>(2 × M
 </div>
 <p class="table-caveat">来源：教材 Table 10.1、Table 10.2；课件 6 slide 20 的试剂表。ox = 8-羟基喹啉单阴离子；dmg = 丁二酮肟单阴离子。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/organic-reagents.webp" alt="常用有机沉淀剂一览表：丁二酮肟（沉淀 Ni(II)、Pd(II)）、α-安息香肟（沉淀 Cu(II)，Mo(VI)、W(VI) 以氧化物称量）、8-羟基喹啉（Al(III)、Mg(II) 等）、二乙基二硫代氨基甲酸钠、四苯硼钠（K⁺、Rb⁺、Cs⁺、NH₄⁺ 等）" loading="lazy" decoding="async">
+<img alt="常用有机沉淀剂一览表：丁二酮肟（沉淀 Ni(II)、Pd(II)）、α-安息香肟（沉淀 Cu(II)，Mo(VI)、W(VI) 以氧化物称量）、8-羟基喹啉（Al(III)、Mg(II) 等）、二乙基二硫代氨基甲酸钠、四苯硼钠（K⁺、Rb⁺、Cs⁺、NH₄⁺ 等）" decoding="async" loading="lazy" src="assets/lecture-05/organic-reagents.webp"/>
 <figcaption>课件第 20 页的有机沉淀剂表，列出了试剂结构、被沉淀的金属与沉淀反应式。课件明确点名的代表试剂有四类：<b>丁二酮肟</b>（dimethylglyoxime，沉淀 Ni²⁺，也可用于 Pd(II)）、<b>α-安息香肟</b>（α-benzoin oxime，用于 Cu(II)，以及 Mo(VI) 与 W(VI)，称量形式为金属氧化物）、<b>8-羟基喹啉</b>（8-hydroxyquinoline，又称 oxine，可沉淀多种金属，对 Al(III) 与 Mg(II) 最有用）、<b>四苯硼钠</b>（sodium tetraphenylboron，用于 K⁺、Rb⁺、Cs⁺、Ag⁺、NH₄⁺ 等大阳离子）。表中还有一条通用规律：凡注明「metal oxide weighed」的试剂，其螯合物组成往往不够稳定，必须灼烧成金属氧化物再称量——这与本节末尾的提醒是一致的。<small>图源：Gravimetric analysis, slide 20</small></figcaption>
 </figure>
 <div class="notation-box">
@@ -826,7 +811,6 @@ F′ = <span class="math-frac" role="math"><span>M(P₂O₅)</span><span>(2 × M
 <section id="ksp">
 <p class="section-kicker">6.8 SOLUBILITY PRODUCT</p>
 <h2>溶度积与摩尔溶解度</h2>
-
 <p>前面都是操作技巧，这里转到支撑一切定量判断的平衡。对难溶电解质
 M<sub>m</sub>X<sub>n</sub>，教材定义的溶度积是：</p>
 <div class="equation">
@@ -845,7 +829,7 @@ K<sub>sp</sub> = [M<sup>n+</sup>]<sup>m</sup> [X<sup>m−</sup>]<sup>n</sup>
 所以在放出同样多离子的前提下，AC₂ 型需要的溶解量更少。于是 Ksp 相同（= 离子浓度的幂积相同）时，
 需要溶得更多的反而是 AC₂ 型——<b>AC₂ 型的摩尔溶解度更大</b>。因此「Ksp 小就更难溶」这个直觉在跨价型比较时不成立。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-05/molar-solubility-stoich.webp" alt="溶解度取决于化学计量：Ksp 相同时 AB 型化合物的摩尔溶解度小于 AC₂ 型；常见难溶盐的 Ksp 与溶解度对照表，包括 PbSO₄ 1.6×10⁻⁸ / 1.3×10⁻⁴、AgCl 1.0×10⁻⁶ / 1.0×10⁻⁵、AgBr 4×10⁻¹³ / 6×10⁻⁷、AgI 1×10⁻¹⁶ / 1×10⁻⁸、Al(OH)₃ 2×10⁻³² / 5×10⁻⁹、Fe(OH)₃ 4×10⁻³⁸ / 2×10⁻¹⁰" loading="lazy" decoding="async">
+<img alt="溶解度取决于化学计量：Ksp 相同时 AB 型化合物的摩尔溶解度小于 AC₂ 型；常见难溶盐的 Ksp 与溶解度对照表，包括 PbSO₄ 1.6×10⁻⁸ / 1.3×10⁻⁴、AgCl 1.0×10⁻⁶ / 1.0×10⁻⁵、AgBr 4×10⁻¹³ / 6×10⁻⁷、AgI 1×10⁻¹⁶ / 1×10⁻⁸、Al(OH)₃ 2×10⁻³² / 5×10⁻⁹、Fe(OH)₃ 4×10⁻³⁸ / 2×10⁻¹⁰" decoding="async" loading="lazy" src="assets/lecture-05/molar-solubility-stoich.webp"/>
 <figcaption>课件的核心论断与数据表。<b>AgI 与 Al(OH)₃ 被框选出来做对照</b>，是本页最值得记的一组数据：AgI 的 Ksp 比 Al(OH)₃ <b>大 10¹⁶ 倍</b>，但两者的摩尔溶解度却落在同一个数量级（1 × 10⁻⁸ 对 5 × 10⁻⁹）——差别全在价型上。
 这也从数据层面印证了 §6.2 的反直觉结论：<b>Ksp 越小并不意味着沉淀越「好用」</b>，Fe(OH)₃ 的 Ksp 只有 4 × 10⁻³⁸，正因为它溶解度太低、S 太小，相对过饱和度压不下来，才总是长成难过滤的胶状沉淀。<small>图源：Gravimetric analysis, slide 25</small></figcaption>
 </figure>
@@ -900,7 +884,6 @@ K<sub>sp</sub> = [M<sup>n+</sup>]<sup>m</sup> [X<sup>m−</sup>]<sup>n</sup>
 <section id="commonion">
 <p class="section-kicker">6.9 COMMON ION EFFECT</p>
 <h2>同离子效应</h2>
-
 <p>如果溶液里已经有和沉淀同种的离子，平衡会向左移动，溶解度下降。
 这就是<b>同离子效应</b>（common ion effect），也是重量分析必须加过量沉淀剂的理论依据。</p>
 <div class="table-scroll wide">
@@ -942,7 +925,6 @@ K<sub>sp</sub> = [M<sup>n+</sup>]<sup>m</sup> [X<sup>m−</sup>]<sup>n</sup>
 <section id="diverse">
 <p class="section-kicker">6.10 DIVERSE ION EFFECT</p>
 <h2>条件溶度积与盐效应</h2>
-
 <p>Ksp 是热力学量，用的是<b>活度</b>。当我们用浓度代替活度时，实际上是在定义一个
 随离子强度变化的<b>条件溶度积</b>：</p>
 <div class="equation">
@@ -950,7 +932,7 @@ cK<sub>sp</sub> = <span class="math-frac" role="math"><span>K<sub>sp</sub></span
 </div><div class="notation-box">
 <b>两条必须记住的区别</b>
 <p>
-<b>① Ksp 的数值在所有离子强度下都成立</b>（它是热力学量）；<b>② cKsp 只在零离子强度下等于 Ksp</b>，在其他离子强度下必须按上式重新计算。<br>上式还给出定性的结论：<b>离子活度下降 → cKsp 增大 → 摩尔溶解度增大</b>。这正是异离子效应的数学表达。</p>
+<b>① Ksp 的数值在所有离子强度下都成立</b>（它是热力学量）；<b>② cKsp 只在零离子强度下等于 Ksp</b>，在其他离子强度下必须按上式重新计算。<br/>上式还给出定性的结论：<b>离子活度下降 → cKsp 增大 → 摩尔溶解度增大</b>。这正是异离子效应的数学表达。</p>
 </div>
 <p>这种<b>因加入不参与沉淀的强电解质而导致溶解度增大</b>的现象叫<b>异离子效应</b>
 （diverse ion effect），也叫盐效应。它和同离子效应是一对反向作用，
@@ -1003,6 +985,5 @@ cK<sub>sp</sub> = <span class="math-frac" role="math"><span>K<sub>sp</sub></span
 <section id="chapter-quiz"><h2>章节测验</h2><p><a href="https://quiz.chemistryatlas.xyz/index.html?quiz=ANA-L06">第6章/课测验：22题，32分 →</a></p><p>15道单选、3道多选、2道判断、2道填空。按5道基础、10道中等、4道较难、3道拓展递进；交卷后查看答案与解析。</p></section></main>
 <script src="script.js">
 </script>
-
 </body>
 </html>

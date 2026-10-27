@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="电化学传感器与微电极：课件详解、公式推导、例题与原图" name="description"/><title>14 电化学传感器与微电极 · 分析化学知识库</title><link href="style.css" rel="stylesheet"/><link href="content.css" rel="stylesheet"/><link href="lesson.css" rel="stylesheet"/><link href="course-extra.css" rel="stylesheet"/><link href="ppt-figures.css" rel="stylesheet"/><link href="fractions.css" rel="stylesheet"/><link href="import-lessons.css" rel="stylesheet"/><link href="electroanalysis.css" rel="stylesheet"/><link href="manifest.webmanifest" rel="manifest"/><link href="icon.svg" rel="icon" type="image/svg+xml"/></head><body><header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input aria-label="搜索知识库" id="global-search" placeholder="搜索章节、概念或英文术语…"/>
+<kbd>⌘ K</kbd>
+</label>
+<button class="icon-button" id="theme" title="切换明暗主题">◐</button>
+</header><aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<a href="chapter-3.html">
+<span>03</span>酸碱平衡</a>
+<a href="chapter-4.html">
+<span>04</span>酸碱滴定</a>
+<a href="chapter-5.html">
+<span>05</span>络合滴定</a>
+<a href="chapter-6.html">
+<span>06</span>重量分析</a>
+<a href="chapter-7.html">
+<span>07</span>沉淀滴定</a>
+<a href="chapter-8.html"><span>08</span>氧化还原与电位滴定</a>
+<a href="chapter-9.html"><span>09</span>仪器分析基础与QCM</a>
+<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a><a href="chapter-11.html"><span>11</span>电位法与离子选择性电极</a><a href="chapter-12.html"><span>12</span>伏安法与电流分析</a><a href="chapter-13.html"><span>13</span>库仑法与控制电位电解</a><a class="active" href="chapter-14.html"><span>14</span>电化学传感器与微电极</a><div aria-label="本章章节" class="chapter-outline electro-outline"><a href="#architecture"><span>14.1</span>识别层、换能器与可测信号</a><a href="#enzyme"><span>14.2</span>酶识别与葡萄糖氧化酶反应</a><a href="#glucose"><span>14.3</span>过氧化氢怎样转化成电流</a><a href="#mediator"><span>14.4</span>氧化还原介体</a><a href="#microelectrode"><span>14.5</span>超微电极</a><a href="#fabrication"><span>14.6</span>微加工传感器</a><a href="#validation"><span>14.7</span>从结构解释性能，再用校准验证</a></div>
+<a href="topic-formulas.html">
+<span>◆</span>平衡与滴定公式</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside><main class="workspace"><article class="article lesson import-lesson electroanalysis"><a class="back" href="index.html">← 返回课程笔记</a><header class="article-head"><p class="eyebrow">CHAPTER 14 · ELECTROCHEMICAL SENSORS &amp; MICROELECTRODES</p><h1>电化学传感器与微电极</h1><p>按课件顺序整理原理、公式条件、复算例题与易混概念。</p><p class="reading-meta">更新于 2026-10-27 · 配图均来自本课件</p></header><nav aria-label="本章目录" class="import-jump"><a href="#architecture">14.1 识别层、换能器与可测信号</a><a href="#enzyme">14.2 酶识别与葡萄糖氧化酶反应</a><a href="#glucose">14.3 过氧化氢怎样转化成电流</a><a href="#mediator">14.4 氧化还原介体</a><a href="#microelectrode">14.5 超微电极</a><a href="#fabrication">14.6 微加工传感器</a><a href="#validation">14.7 从结构解释性能，再用校准验证</a></nav><section id="architecture"><p class="section-kicker">14.1 · SENSOR ARCHITECTURE</p><h2>识别层、换能器与可测信号</h2><p>化学传感器由识别分析物的化学过程与换能器（transducer）连接而成。电化学传感器可把膜电位、电极电流或电荷变成读数；光学或热学传感器则使用其他信号通道。理解器件时，先问识别什么、在哪里反应、如何传递电子或离子、最终测到哪个物理量。</p><p><a class="term-link" href="term.html?slug=chemically-modified-electrode">化学修饰电极</a> CME 在导体表面固定酶、配体、<a class="term-link" href="term.html?slug=redox-mediator">氧化还原介体</a>或<a class="term-link" href="term.html?slug=selectivity">选择性</a>膜，使识别、催化与传质共同影响响应。修饰层可提高某一反应的速率或抑制干扰进入，但层太厚也会增大扩散阻力。导电性好、表面积大与分析选择性是不同性质，不能仅凭材料名称推断性能。</p><div class="import-table"><table><thead><tr><th>测量模式</th><th>控制或观察什么</th><th>本组课件对应例子</th></tr></thead><tbody><tr><td>电位型</td><td>近零电流测膜电位</td><td>pH 玻璃电极、Na⁺ ISE</td></tr><tr><td>电流型</td><td>固定电位测电流</td><td>葡萄糖电极、氧电极</td></tr><tr><td>伏安型</td><td>扫描电位记录电流</td><td>溶出分析、循环伏安</td></tr><tr><td>库仑型</td><td>积分反应电荷</td><td>定量电解、库仑滴定</td></tr></tbody></table></div><p class="source">来源：14_Electrochemical Sensors 1.pptx，slide 2、13。</p></section><section id="enzyme"><p class="section-kicker">14.2 · ENZYME RECOGNITION</p><h2>酶识别与葡萄糖氧化酶反应</h2><p>课件把酶选择性分为绝对、基团、键型和立体化学四类。葡萄糖氧化酶 GOx 对 β-D-葡萄糖具有明显偏好，课件给 α 型相对速率 0.64、β 型为 100。溶液中的两种异头体可以通过变旋相互转化，因此测量时的平衡和反应时间会影响实际响应。</p><p>把酶辅因子展开，可以看出电子从哪里来：葡萄糖还原 GOx 中的 FAD，生成 FADH<sub>2</sub> 与葡萄糖酸内酯；O<sub>2</sub> 再氧化还原型辅因子，形成 H<sub>2</sub>O<sub>2</sub>；内酯随后水解为葡萄糖酸。合并后的净反应为：</p><div class="equation"><span class="chem">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>＋O<sub>2</sub>＋H<sub>2</sub>O → C<sub>6</sub>H<sub>12</sub>O<sub>7</sub>＋H<sub>2</sub>O<sub>2</sub></span></div><p>GOx 提供对底物的化学选择性，电极通常并不直接“认出”葡萄糖，而是读取氧消耗或过氧化氢生成。把酶反应与电极半反应分别写出，能避免把生物识别步骤和电化学检测步骤混成一个反应。</p><p class="source">来源：14_Electrochemical Sensors 1.pptx，slide 3–4。</p></section><section id="glucose"><p class="section-kicker">14.3 · AMPEROMETRIC GLUCOSE ELECTRODE</p><h2>过氧化氢怎样转化成电流</h2><p>课件将 GOx 固定在凝胶层并覆盖 Pt 表面。葡萄糖和氧先从样品扩散进凝胶，酶反应生成的 H<sub>2</sub>O<sub>2</sub> 再到达电极，在约＋0.6 V 相对 Ag／AgCl 的条件下氧化：</p><div class="equation"><span class="chem">H<sub>2</sub>O<sub>2</sub> → O<sub>2</sub>＋2H<sup>+</sup>＋2e<sup>−</sup></span></div><p>每摩尔被收集并氧化的过氧化氢提供两摩尔电子，电流反映其到达电极的速率。固定膜厚、温度、溶液条件和电位后，可在<a class="term-link" href="term.html?slug=calibration">校准</a>线性范围内把稳态电流与葡萄糖浓度联系起来。电流的正负显示由仪器约定，但发生氧化的 Pt 工作电极在反应角色上是阳极；课件第 5–6 页将其称为 cathode，与所列氧化反应不一致。</p><p>氧供给不足会限制酶循环；葡萄糖浓度很高时，酶活性、膜传质或氧浓度也可能先达到限制，导致响应弯曲。较高检测电位还可能氧化其他物质。因此选择性除了来自酶，也需要膜、工作电位和样品基体共同支持。</p><figure class="ppt-figure ppt-figure-light"><img alt="凝胶中生成过氧化氢，再由 Pt 氧化读取电流；原图 cathode 标签按正文校正" decoding="async" height="170" loading="lazy" src="assets/ch14/glucose-electrode.webp" width="638"/><figcaption>凝胶中生成过氧化氢，再由 Pt 氧化读取电流；原图 cathode 标签按正文校正<small>图源：14_Electrochemical Sensors 1.pptx, slide 6</small></figcaption></figure><p class="source">来源：14_Electrochemical Sensors 1.pptx，slide 5–6。</p></section><section id="mediator"><p class="section-kicker">14.4 · REDOX MEDIATORS</p><h2>氧化还原介体：改变电子传递路径</h2><p>若分析物在裸电极上的电子转移很慢，达到可测速率往往需要较大<a class="term-link" href="term.html?slug=overpotential">超电位</a>。介体把直接反应拆成溶液或膜中的快速化学反应，以及电极上较容易发生的氧化还原循环。以一电子过程示意：</p><div class="equation"><span class="chem">M<sub>ox</sub>＋Red → M<sub>red</sub>＋Ox<br/>M<sub>red</sub> → M<sub>ox</sub>＋e<sup>−</sup>（电极）</span></div><p>M 在循环中再生，净效果是 Red 失去电子并转为 Ox。选择介体时，其电位要同时适合电极再生和与分析物的反应，反应速率要足够快，固定后的稳定性与泄漏也要评估。介体改变的是动力学路径和适用的检测电位，不改变氧化还原所需的总电子计量。</p><p>课件以介体辅助检测 H<sub>2</sub>O<sub>2</sub> 为例，将检测电位从约＋0.6 V 降到约＋0.2 V，均相对 Ag／AgCl；这些数值用于说明其设计思路，具体体系还要由伏安图确定。更低的工作电位常可减少其他可氧化物的背景。二茂铁衍生物、钌配合物和其他可逆电对是课件列出的介体类别。</p><figure class="ppt-figure ppt-figure-light"><img alt="分析物与介体反应，电极再生介体并输出电流" decoding="async" height="234" loading="lazy" src="assets/ch14/mediator-cycle.webp" width="844"/><figcaption>分析物与介体反应，电极再生介体并输出电流<small>图源：14_Electrochemical Sensors 1.pptx, slide 7</small></figcaption></figure><p class="source">来源：14_Electrochemical Sensors 1.pptx，slide 7–8。</p></section><section id="microelectrode"><p class="section-kicker">14.5 · ULTRAMICROELECTRODES</p><h2>超微电极：径向扩散与稳态电流</h2><p><a class="term-link" href="term.html?slug=ultramicroelectrode">超微电极</a> UME 的特征不只是几何尺寸小，还在于测量时间尺度上，电极半径 r 与扩散层尺度相比较小。扩散层大致随 √(Dt) 增长；当其超过电极尺度，边缘和径向输送更重要，静止溶液中也可出现近稳态的 S 形波。</p><p>课件列直径约 5–30 μm，并同时给出扩散层约 1–10 μm；两组数值不能自动保证任何时刻都满足上述条件，应检查半径和实际扩散时间。它的电流绝对值通常较小，但相对于面积的传质速率和电流密度可以较大，iR 降与电容充电的影响也更容易减小。</p><div class="equation">|i<sub>ss</sub>|=4nFDc<sub>b</sub>r=2nFDc<sub>b</sub>d，　d=2r</div><p>该式针对嵌入绝缘平面的理想圆盘电极，反应物表面浓度近零、径向扩散占主导；D 是扩散系数，c<sub>b</sub> 为主体浓度，n 是电子数。针状、圆柱或其他几何的表达式另行确定，不能直接套用圆盘系数。它可用于高电阻介质或局部微环境，但仍要注意仪器漏电、噪声和电极真实面积。</p><p>例：圆盘半径 5 μm，n=1、D=1.0×10<sup>−9</sup> m²·s<sup>−1</sup>、c<sub>b</sub>=1.0 mol·m<sup>−3</sup>，稳态电流约 1.9 nA。浓度翻倍电流翻倍，半径翻倍也约翻倍，体现径向扩散下与半径成正比的尺度关系。</p><p class="source">来源：14_Electrochemical Sensors 1.pptx，slide 9–10。</p></section><section id="fabrication"><p class="section-kicker">14.6 · MICROFABRICATED SENSORS</p><h2>微加工传感器：把电极做进芯片</h2><p>课件比较传统管状<a class="term-link" href="term.html?slug=ion-selective-electrode">离子选择性电极</a>与硅基平面器件。传统结构把内参比、电解液和敏感膜封装在电极体内；微加工器件把金属接触、电极、绝缘层和离子选择性膜布置到同一基片，实现多电极并列与小体积测量。尺寸变小后，膜的覆盖范围和暴露窗口也成为电极有效几何的一部分。</p><p>课件的 Na<sup>+</sup> 芯片图包含接触焊盘、Si／SiO<sub>2</sub> 基底、聚合物绝缘层和 Na ISE。导线区域需要绝缘，只有设计的敏感窗口接触样品。芯片化便于集成，但参比稳定性、膜附着、封装渗漏、漂移和不同通道之间的串扰仍需逐项验证。</p><p>若一个芯片放置多个微电极，电极间距和测量时间决定各自扩散场是否重叠；因此阵列的总电流未必始终等于单电极电流乘以个数。应结合几何和时间尺度评估总响应。</p><figure class="ppt-figure ppt-figure-light"><img alt="Na⁺传感器的敏感膜、绝缘层、基底与接触焊盘" decoding="async" height="395" loading="lazy" src="assets/ch14/microfabricated.webp" width="562"/><figcaption>Na⁺传感器的敏感膜、绝缘层、基底与接触焊盘<small>图源：14_Electrochemical Sensors 1.pptx, slide 12</small></figcaption></figure><p class="source">来源：14_Electrochemical Sensors 1.pptx，slide 11–12。</p></section><section id="validation"><p class="section-kicker">14.7 · PERFORMANCE &amp; REVIEW</p><h2>从结构解释性能，再用校准验证</h2><p>评价传感器要分别检查灵敏度、选择性、线性范围、检测限、响应时间、漂移和重复性。灵敏度是校准曲线斜率，检测限还取决于空白噪声；峰更高可能只是有效面积变大，而对干扰的识别能力需要额外实验。单次响应很快，也要观察清洗和下一次测量是否恢复原基线。</p><p>电流型传感器在线性区可写 i=i<sub>0</sub>＋kc，扣除背景后求浓度。若样品先稀释，应按稀释倍数还原。校准至少应覆盖待测浓度附近，并以加入已知量、平行样和干扰挑战检查实际基体影响。</p><p>应试时用一条连续链回答机制题：识别层选择分析物→酶或介体形成电活性物种→物种扩散到电极→在给定电位发生电子转移→电流经校准转换成浓度。说明每一步最可能受什么限制，比单独背“高灵敏、低干扰”更有解释力。</p><details><summary>酶对葡萄糖选择性高，整个传感器就没有干扰了吗？</summary><p>还要看其他物质能否穿过膜、在工作电位发生反应，或影响氧供给与酶活性。识别选择性和电极检测选择性需要分别检验。</p></details><details><summary>超微电极的总电流更小，为什么仍有测量优势？</summary><p>较小总电流减轻欧姆降，较高的相对传质速率和较小充电背景有利于某些测量；优势需和具体几何、时间尺度及仪器噪声一起评估。</p></details><p class="source">来源：14_Electrochemical Sensors 1.pptx，slide 2–13；原理归纳与数值练习。</p></section><footer class="lesson-footer"><a href="chapter-13.html">← 上一章</a><a href="index.html">课程目录 →</a></footer></article></main><script src="script.js"></script></body></html>

@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="分析化学 I 第三章 酸碱平衡">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="分析化学 I 第三章 酸碱平衡" name="description"/>
 <title>03 酸碱平衡 · 分析化学知识库</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="content.css">
-<link rel="stylesheet" href="lesson.css">
-<link rel="stylesheet" href="course-extra.css">
-<link rel="stylesheet" href="ppt-figures.css">
-
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="fractions.css"></head>
+<link href="style.css" rel="stylesheet"/>
+<link href="content.css" rel="stylesheet"/>
+<link href="lesson.css" rel="stylesheet"/>
+<link href="course-extra.css" rel="stylesheet"/>
+<link href="ppt-figures.css" rel="stylesheet"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="fractions.css" rel="stylesheet"/><link href="electroanalysis.css" rel="stylesheet"/></head>
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">
@@ -22,10 +22,10 @@
 </a>
 <label class="search">
 <span>⌕</span>
-<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<input aria-label="搜索知识库" id="global-search" placeholder="搜索章节、概念或英文术语…"/>
 <kbd>⌘ K</kbd>
 </label>
-<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+<button class="icon-button" id="theme" title="切换明暗主题">◐</button>
 </header>
 <aside class="sidebar">
 <nav>
@@ -51,7 +51,7 @@
 <span>07</span>沉淀滴定</a>
 <a href="chapter-8.html"><span>08</span>氧化还原与电位滴定</a>
 <a href="chapter-9.html"><span>09</span>仪器分析基础与QCM</a>
-<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a>
+<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a><a href="chapter-11.html"><span>11</span>电位法与离子选择性电极</a><a href="chapter-12.html"><span>12</span>伏安法与电流分析</a><a href="chapter-13.html"><span>13</span>库仑法与控制电位电解</a><a href="chapter-14.html"><span>14</span>电化学传感器与微电极</a>
 <a href="topic-formulas.html">
 <span>◆</span>平衡与滴定公式</a>
 </nav>
@@ -77,7 +77,7 @@
 <span>课件原图 4 张</span>
 </div>
 </header>
-<nav class="chapter-jump" aria-label="本章快速导航">
+<nav aria-label="本章快速导航" class="chapter-jump">
 <a href="#overview">滴定概述</a>
 <a href="#theories">酸碱理论</a>
 <a href="#water">水的平衡</a>
@@ -87,10 +87,8 @@
 <a href="#polyprotic">多元酸</a>
 <a href="#amphiprotic">两性物质</a>
 <a href="#physiological">生理缓冲</a>
-
 <a class="jump-topic" href="topic-formulas.html">本页公式速查：平衡与滴定公式专题 ◆</a>
 </nav>
-
 <section id="overview">
 <p class="section-kicker">3.1 OVERVIEW OF TITRATION</p>
 <h2>从滴定到酸碱体系</h2>
@@ -108,7 +106,7 @@
 </div>
 <p>按反应类型可以把滴定分为四类，后面几章会依次展开。这也是本课程从第二章转入溶液平衡的分界点：容量器皿解决“量得准”，溶液平衡解决“算得准”。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-03/ph-scale-19.webp" alt="pH 标度尺与常见物质的 pH 范围，从酸性矿井水到碱液" loading="lazy" decoding="async">
+<img alt="pH 标度尺与常见物质的 pH 范围，从酸性矿井水到碱液" decoding="async" loading="lazy" src="assets/lecture-03/ph-scale-19.webp"/>
 <figcaption>pH 标度压缩了跨越十几个数量级的酸度信息；课件用它追问一个常被忽略的问题：pH 可以小于 1 甚至为负吗？<small>图源：Acid-Base Equilibria, slide 19</small>
 </figcaption>
 </figure>
@@ -152,7 +150,6 @@
 </div>
 <p class="source-note">来源：Acid-Base Equilibria slides 2–3；Acid-Base Titration slides 2–3；教材 Chapter 9 概述。</p>
 </section>
-
 <section id="theories">
 <p class="section-kicker">3.2 ACID-BASE THEORIES</p>
 <h2>酸碱理论的四次扩展</h2>
@@ -224,7 +221,6 @@
 </div>
 <p class="source-note">来源：Acid-Base Equilibria slides 4–9；课堂笔记“酸碱理论”段；教材 §9.1–9.2。</p>
 </section>
-
 <section id="water">
 <p class="section-kicker">3.3 AUTOPROTOLYSIS OF WATER</p>
 <h2>水的质子自递与 Kw</h2>
@@ -247,7 +243,6 @@
 <p>Kw 是温度的函数。25 °C 时为 1.008 × 10<sup>−14</sup>，30 °C 时约 1.468 × 10<sup>−14</sup>，50 °C 时约 5.74 × 10<sup>−14</sup>；0 °C 时只有 0.113 × 10<sup>−14</sup>。温度升高使自电离增强，这直接改变了“中性”对应的 pH 值。</p>
 <p class="source-note">来源：Acid-Base Equilibria slides 10–11；课件中水的离子积随温度变化表。</p>
 </section>
-
 <section id="scale">
 <p class="section-kicker">3.4 THE pH SCALE</p>
 <h2>pH、pOH 与 pKw</h2>
@@ -291,7 +286,6 @@ pH = −log[H<sup>+</sup>]    pOH = −log[OH<sup>−</sup>]    p<i>K</i><su
 </div>
 <p class="source-note">来源：Acid-Base Equilibria slides 12–20；教材 §9.6、生理 pH 章节。</p>
 </section>
-
 <section id="strength">
 <p class="section-kicker">3.5 STRENGTH &amp; EQUILIBRIUM CONSTANTS</p>
 <h2>强酸强碱与弱酸弱碱：Ka 与 Kb</h2>
@@ -331,7 +325,6 @@ HOAc + H<sub>2</sub>O ⇌ OAc<sup>−</sup> + H<sup>+</sup>     OAc<sup>−</
 </div>
 <p class="source-note">来源：Acid-Base Equilibria slides 21–27；教材 §9.3–9.5。</p>
 </section>
-
 <section id="buffer">
 <p class="section-kicker">3.6 BUFFERING MECHANISM</p>
 <h2>缓冲溶液、Henderson–Hasselbalch 方程与缓冲容量</h2>
@@ -378,13 +371,12 @@ pOH = p<i>K</i><sub>b</sub> + log(<span class="math-frac" role="math"><span>[BH<
 </div>
 <p>当 [HA] = [A⁻] 时比值等于 1，β 取最大值 <span class="math-frac" role="math"><span>2.303 × <i>C</i></span><span>2</span></span> = 1.15<i>C</i>（<i>C</i> 为缓冲对总浓度），此时 pH = pKa。也就是说，<b>缓冲容量在 pH = pKa 处最大</b>，实用范围为 <b>pKa ± 1</b>：比值 <span class="math-frac" role="math"><span>[A⁻]</span><span>[HA]</span></span> 每变化 10 倍，pH 只变化 1 个单位。碱性缓冲对的最大缓冲容量出现在 pOH = pKb 处。课件给的算例是 0.10 mol·L⁻¹ HOAc + 0.10 mol·L⁻¹ NaOAc：β = 0.115 mol·L⁻¹；加入 0.0050 mol·L⁻¹ NaOH 时 ΔpH = <span class="math-frac" role="math"><span>0.0050</span><span>0.115</span></span> ≈ 0.043，课件给出的结果约为 0.10 pH 单位（按不同近似）。无论取哪个数值，关键结论一致：同样的碱量若加到纯水中，pH 会从 7 直接跳到 11.7 附近，而在缓冲液中只挪动零点几个单位。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-03/buffer-capacity-38.webp" alt="缓冲容量在 pH 等于 pKa 时取最大值，实用范围为 pKa±1" loading="lazy" decoding="async">
+<img alt="缓冲容量在 pH 等于 pKa 时取最大值，实用范围为 pKa±1" decoding="async" loading="lazy" src="assets/lecture-03/buffer-capacity-38.webp"/>
 <figcaption>缓冲容量最大处对应 [HA] = [A⁻]，即 pH = pKa；比值变化 10 倍只换来 1 个 pH 单位的变化，因此 pKa ± 1 是缓冲的可用窗口。<small>图源：Acid-Base Equilibria, slide 38</small>
 </figcaption>
 </figure>
 <p class="source-note">来源：Acid-Base Equilibria slides 28–41；教材 §9.8–9.9。</p>
 </section>
-
 <section id="polyprotic">
 <p class="section-kicker">3.7 POLYPROTIC ACIDS</p>
 <h2>多元酸的逐级解离与分布分数 α</h2>
@@ -473,7 +465,7 @@ HPO<sub>4</sub><sup>2−</sup> ⇌ H<sup>+</sup> + PO<sub>4</sub><sup>3−</sup>
 <p>归一化后 <b>H₂PO₄⁻ 占 92%，H₃PO₄ 占 8.3%，HPO₄²⁻ 约 0.007%</b>，而 PO₄³⁻ 只占 3.3 × 10<sup>−10</sup>% 量级。也就是说，pH 3 的磷酸溶液里几乎找不到游离的磷酸根。</p>
 </div>
 <figure class="ppt-figure">
-<img src="assets/lecture-03/phosphate-alpha-54.webp" alt="磷酸各形态的分布分数随 pH 变化的曲线，三个交点分别位于三个 pKa" loading="lazy" decoding="async">
+<img alt="磷酸各形态的分布分数随 pH 变化的曲线，三个交点分别位于三个 pKa" decoding="async" loading="lazy" src="assets/lecture-03/phosphate-alpha-54.webp"/>
 <figcaption>分布分数图上的三个交点称为体系点（system points）：pH = pKa 时共轭酸与共轭碱浓度相等（此处 α = 0.50）。曲线两侧的“缓冲区”正是各级缓冲对的最佳工作范围。<small>图源：Acid-Base Equilibria, slide 54</small>
 </figcaption>
 </figure>
@@ -489,7 +481,6 @@ HPO<sub>4</sub><sup>2−</sup> ⇌ H<sup>+</sup> + PO<sub>4</sub><sup>3−</sup>
 </div>
 <p class="source-note">来源：Acid-Base Equilibria slides 42–54；教材 §10.1 分布分数部分。</p>
 </section>
-
 <section id="amphiprotic">
 <p class="section-kicker">3.8 AMPHOTERIC SALTS</p>
 <h2>两性物质（酸式盐）的 pH</h2>
@@ -527,7 +518,6 @@ HPO<sub>4</sub><sup>2−</sup> ⇌ H<sup>+</sup> + PO<sub>4</sub><sup>3−</sup>
 </div>
 <p class="source-note">来源：Acid-Base Equilibria slides 55–59；教材 §10.2 两性物质部分。</p>
 </section>
-
 <section id="physiological">
 <p class="section-kicker">3.9 PHYSIOLOGICAL BUFFERS</p>
 <h2>生理缓冲体系</h2>
@@ -605,6 +595,5 @@ HPO<sub>4</sub><sup>2−</sup> ⇌ H<sup>+</sup> + PO<sub>4</sub><sup>3−</sup>
 <section id="chapter-quiz"><h2>章节测验</h2><p><a href="https://quiz.chemistryatlas.xyz/index.html?quiz=ANA-L03">第3章/课测验：22题，32分 →</a></p><p>15道单选、3道多选、2道判断、2道填空。按5道基础、10道中等、4道较难、3道拓展递进；交卷后查看答案与解析。</p></section></main>
 <script src="script.js">
 </script>
-
 </body>
 </html>

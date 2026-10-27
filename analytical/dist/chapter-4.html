@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="分析化学 I 第四章 酸碱滴定">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="分析化学 I 第四章 酸碱滴定" name="description"/>
 <title>04 酸碱滴定 · 分析化学知识库</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="content.css">
-<link rel="stylesheet" href="lesson.css">
-<link rel="stylesheet" href="course-extra.css">
-<link rel="stylesheet" href="ppt-figures.css">
-
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="fractions.css"></head>
+<link href="style.css" rel="stylesheet"/>
+<link href="content.css" rel="stylesheet"/>
+<link href="lesson.css" rel="stylesheet"/>
+<link href="course-extra.css" rel="stylesheet"/>
+<link href="ppt-figures.css" rel="stylesheet"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="fractions.css" rel="stylesheet"/><link href="electroanalysis.css" rel="stylesheet"/></head>
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">
@@ -22,10 +22,10 @@
 </a>
 <label class="search">
 <span>⌕</span>
-<input id="global-search" placeholder="搜索章节、概念或英文术语…" aria-label="搜索知识库">
+<input aria-label="搜索知识库" id="global-search" placeholder="搜索章节、概念或英文术语…"/>
 <kbd>⌘ K</kbd>
 </label>
-<button id="theme" class="icon-button" title="切换明暗主题">◐</button>
+<button class="icon-button" id="theme" title="切换明暗主题">◐</button>
 </header>
 <aside class="sidebar">
 <nav>
@@ -51,7 +51,7 @@
 <span>07</span>沉淀滴定</a>
 <a href="chapter-8.html"><span>08</span>氧化还原与电位滴定</a>
 <a href="chapter-9.html"><span>09</span>仪器分析基础与QCM</a>
-<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a>
+<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a><a href="chapter-11.html"><span>11</span>电位法与离子选择性电极</a><a href="chapter-12.html"><span>12</span>伏安法与电流分析</a><a href="chapter-13.html"><span>13</span>库仑法与控制电位电解</a><a href="chapter-14.html"><span>14</span>电化学传感器与微电极</a>
 <a href="topic-formulas.html">
 <span>◆</span>平衡与滴定公式</a>
 </nav>
@@ -77,7 +77,7 @@
 <span>课件原图 6 张</span>
 </div>
 </header>
-<nav class="chapter-jump" aria-label="本章快速导航">
+<nav aria-label="本章快速导航" class="chapter-jump">
 <a href="#basics">基本概念</a>
 <a href="#methods">滴定方式</a>
 <a href="#curve">滴定曲线</a>
@@ -87,10 +87,8 @@
 <a href="#polyprotic">多元酸碱</a>
 <a href="#amino">氨基酸</a>
 <a href="#kjeldahl">凯氏定氮</a>
-
 <a class="jump-topic" href="topic-formulas.html">本页公式速查：平衡与滴定公式专题 ◆</a>
 </nav>
-
 <section id="basics">
 <p class="section-kicker">4.1 EQUIVALENCE POINT &amp; END POINT</p>
 <h2>计量点、终点与滴定误差</h2>
@@ -142,7 +140,6 @@
 </ol>
 <p class="source-note">来源：Acid-Base Titration slides 4–6、11–15；教材 §9.1–9.2。</p>
 </section>
-
 <section id="methods">
 <p class="section-kicker">4.2 TITRATION MODES</p>
 <h2>当直接滴定走不通：四种替代方式</h2>
@@ -192,7 +189,6 @@
 </div>
 <p class="source-note">来源：Acid-Base Titration slides 7–10；教材 §9.1 滴定方式部分。</p>
 </section>
-
 <section id="curve">
 <p class="section-kicker">4.3 TITRATION CURVES</p>
 <h2>滴定曲线与终点误差</h2>
@@ -200,7 +196,7 @@
 <b><a class="term-link" href="term.html?slug=titration-curve">滴定曲线 Titration curve</a></b> 是把滴定过程中某个性质随滴定剂加入量的变化画成图。酸碱滴定最常画 pH–<i>V</i> 曲线，但在其他类型滴定中也可以画 pAg、pCa 或电位。</p>
 <p>关键认识是：<b>滴定曲线不是酸碱滴定独有的</b>。任何“把某个物种的浓度取对数后对滴定剂体积作图”的曲线都有相同的 S 形（sigmoidal）形状。课件把它概括为“终点恰在突跃的陡峭部分”——这条经验对后面四类滴定同样适用。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-04/strong-acid-curve-20.webp" alt="0.1000 mol/L HCl 用 0.1000 mol/L NaOH 滴定的 pH 曲线与计算表" loading="lazy" decoding="async">
+<img alt="0.1000 mol/L HCl 用 0.1000 mol/L NaOH 滴定的 pH 曲线与计算表" decoding="async" loading="lazy" src="assets/lecture-04/strong-acid-curve-20.webp"/>
 <figcaption>左表逐点计算，右图连成曲线：计量点（<i>V</i> = 100.00 mL）处斜率最大。酚酞变色区间正好落在突跃上，因此此题选酚酞而非甲基红。<small>图源：Acid-Base Titration, slide 20</small>
 </figcaption>
 </figure>
@@ -288,7 +284,6 @@
 <p class="table-caveat">这是课件给出的滴定管规格表。选管时应让预计用量落在滴定管中上段（一般 20–45 mL），既减少读数次数，也让相对允差更小。</p>
 <p class="source-note">来源：Acid-Base Titration slides 11–13；教材 §9.2、Table 9.1。</p>
 </section>
-
 <section id="strongstrong">
 <p class="section-kicker">4.4 STRONG ACID VERSUS STRONG BASE</p>
 <h2><a class="term-link" href="term.html?slug=strong-acid-strong-base-titration">强酸强碱滴定</a>：三段式计算</h2>
@@ -346,7 +341,6 @@
 </div>
 <p class="source-note">来源：Acid-Base Titration slides 14–21；教材 §9.3。</p>
 </section>
-
 <section id="weakstrong">
 <p class="section-kicker">4.5 WEAK ACID VERSUS STRONG BASE</p>
 <h2><a class="term-link" href="term.html?slug=weak-acid-strong-base-titration">弱酸强碱滴定</a>：四个区域与一个捷径</h2>
@@ -416,7 +410,7 @@
 计量点之后溶液中存在大量过量 OH⁻，它会抑制 OAc⁻ 的水解（同离子效应），因此在误差允许范围内可以直接用“过量碱的浓度”作为 [OH⁻]，不必再叠加水解项。</p>
 </div>
 <figure class="ppt-figure">
-<img src="assets/lecture-04/weak-acid-curve-34.webp" alt="弱酸强碱滴定曲线与四个区域的统一计算式对照表" loading="lazy" decoding="async">
+<img alt="弱酸强碱滴定曲线与四个区域的统一计算式对照表" decoding="async" loading="lazy" src="assets/lecture-04/weak-acid-curve-34.webp"/>
 <figcaption>曲线的两个特征点：<i>V</i> = <span class="math-frac" role="math"><span>1</span><span>2</span></span><i>V</i><sub>eq</sub> 处斜率最小（pH = pKa），计量点处斜率最大。下方表格是四区域的统一计算式，弱碱滴定只需把每一行做 H⁺/OH⁻ 的镜像替换。<small>图源：Acid-Base Titration, slide 34</small>
 </figcaption>
 </figure>
@@ -452,13 +446,12 @@
 </div>
 <p>课件给出的例子是 100.00 mL 0.1000 mol·L⁻¹ NH₃ 用 0.1000 mol·L⁻¹ HCl 滴定（HCl + NH₃ → NH₄⁺ + Cl⁻）。曲线是弱酸强碱曲线的倒影：起点在碱性区，中点处 pOH = pKb（pH 曲线最平缓），计量点偏酸。指示剂要从在酸性区变色的那一类里选。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-04/ka-kb-curves-37.webp" alt="不同 Ka 与 Kb 值的弱酸和弱碱滴定曲线对比" loading="lazy" decoding="async">
+<img alt="不同 Ka 与 Kb 值的弱酸和弱碱滴定曲线对比" decoding="async" loading="lazy" src="assets/lecture-04/ka-kb-curves-37.webp"/>
 <figcaption>左图是不同 Ka 的弱酸用 NaOH 滴定，右图是不同 Kb 的弱碱用 HCl 滴定；虚线分别为 HCl 和 NaOH 的强酸强碱曲线。Ka（或 Kb）越小，突跃越短、位置越靠边，可用指示剂的选择余地也越小。<small>图源：Acid-Base Titration, slide 37</small>
 </figcaption>
 </figure>
 <p class="source-note">来源：Acid-Base Titration slides 26–37；教材 §9.4–9.5。</p>
 </section>
-
 <section id="indicators">
 <p class="section-kicker">4.6 pH INDICATORS</p>
 <h2>指示剂：为什么只变 2 个 pH 单位</h2>
@@ -480,7 +473,7 @@ pH = p<i>K</i><sub>In</sub> + log(<span class="math-frac" role="math"><span>[In<
 </div>
 <p>两个边界之间就是变色范围，因此<b>大多数指示剂的变色范围约为 2 个 pH 单位</b>；范围中点处 [In⁻] = [HIn]，pH = pKIn。</p>
 <figure class="ppt-figure">
-<img src="assets/lecture-04/indicators-25.webp" alt="常见酸碱指示剂的变色区间与颜色对照图" loading="lazy" decoding="async">
+<img alt="常见酸碱指示剂的变色区间与颜色对照图" decoding="async" loading="lazy" src="assets/lecture-04/indicators-25.webp"/>
 <figcaption>横轴为 pH，色块标出每种指示剂从酸色过渡到碱色的区间。挑选指示剂的唯一原则是让这段色块压住滴定曲线的突跃段。<small>图源：Acid-Base Titration, slide 25</small>
 </figcaption>
 </figure>
@@ -501,7 +494,6 @@ pH = p<i>K</i><sub>In</sub> + log(<span class="math-frac" role="math"><span>[In<
 </div>
 <p class="source-note">来源：Acid-Base Titration slides 22–25、35–36；教材 §9.6。</p>
 </section>
-
 <section id="polyprotic">
 <p class="section-kicker">4.7 POLYPROTIC ACIDS &amp; BASES</p>
 <h2>多元酸（碱）的分步滴定</h2>
@@ -540,7 +532,7 @@ CO<sub>3</sub><sup>2−</sup> + H<sub>2</sub>O ⇌ HCO<sub>3</sub><sup>−</sup>
 第一计量点之后，溶液中存在 HCO₃⁻/CO₂ 缓冲对，会把第二个突跃拉平。如果每加一次 HCl 就把溶液煮沸以赶走 CO₂，这个缓冲对被移除，溶液中只剩 HCO₃⁻，其 pH（≈ 8.3）与浓度无关，因此 pH 会基本保持恒定直到第二计量点——曲线沿课件图中的虚线走，第二个突跃变得清晰。</p>
 </div>
 <figure class="ppt-figure">
-<img src="assets/lecture-04/triprotic-curve-42.webp" alt="三元酸（磷酸）滴定曲线的理想形状与各特征点的 pH 关系" loading="lazy" decoding="async">
+<img alt="三元酸（磷酸）滴定曲线的理想形状与各特征点的 pH 关系" decoding="async" loading="lazy" src="assets/lecture-04/triprotic-curve-42.webp"/>
 <figcaption>磷酸的理想滴定曲线：两个中点分别落在 pH = pKa₁ 与 pH = pKa₂，两个计量点附近的 pH 依次为 <span class="math-frac" role="math"><span>1</span><span>2</span></span>(pKa₁+pKa₂) 与 <span class="math-frac" role="math"><span>1</span><span>2</span></span>(pKa₂+pKa₃)。Ka₃ 太小，第三个突跃实际不可用。<small>图源：Acid-Base Titration, slide 42</small>
 </figcaption>
 </figure>
@@ -556,7 +548,6 @@ CO<sub>3</sub><sup>2−</sup> + H<sub>2</sub>O ⇌ HCO<sub>3</sub><sup>−</sup>
 </div>
 <p class="source-note">来源：Acid-Base Titration slides 38–45；教材 §10.1–10.3。</p>
 </section>
-
 <section id="amino">
 <p class="section-kicker">4.8 AMINO ACID TITRATION</p>
 <h2><a class="term-link" href="term.html?slug=amino-acid-titration">氨基酸滴定</a>：天然的两性物质</h2>
@@ -579,7 +570,6 @@ pH ≈ <span class="math-frac" role="math"><span>1</span><span>2</span></span>(p
 <p>判断某个氨基酸能出现几个分步终点，只需算相邻 Ka 的比值：≥ 10⁴ 才可以分开。</p>
 <p class="source-note">来源：Acid-Base Titration slides 46–48；教材 §10.4 氨基酸部分。</p>
 </section>
-
 <section id="kjeldahl">
 <p class="section-kicker">4.9 KJELDAHL NITROGEN ANALYSIS</p>
 <h2>凯氏定氮：返滴定的经典应用</h2>
@@ -645,6 +635,5 @@ pH ≈ <span class="math-frac" role="math"><span>1</span><span>2</span></span>(p
 <section id="chapter-quiz"><h2>章节测验</h2><p><a href="https://quiz.chemistryatlas.xyz/index.html?quiz=ANA-L04">第4章/课测验：22题，32分 →</a></p><p>15道单选、3道多选、2道判断、2道填空。按5道基础、10道中等、4道较难、3道拓展递进；交卷后查看答案与解析。</p></section></main>
 <script src="script.js">
 </script>
-
 </body>
 </html>

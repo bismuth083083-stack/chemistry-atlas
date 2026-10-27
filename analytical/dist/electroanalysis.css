@@ -1,0 +1,17 @@
+/* Electroanalysis chapters and their navigation. */
+.sidebar nav{min-height:0;overflow-y:auto;overscroll-behavior:contain}.sidebar .privacy{flex-shrink:0}
+.chapter-outline{padding:4px 0 9px 10px;border-left:1px solid var(--line);margin-left:19px}
+.sidebar .chapter-outline a{display:block;font-size:11px;line-height:1.55;padding:6px;overflow-wrap:anywhere}
+.sidebar .chapter-outline span{display:inline-block;width:auto;min-width:33px;margin-right:5px;color:#b5a3da;font-variant-numeric:tabular-nums}
+.light .chapter-outline span{color:#78619f}
+.electroanalysis .equation{font:italic 19px/2.35 Georgia,"DejaVu Math TeX Gyre","Times New Roman",serif;padding:18px 20px;border:1px solid var(--line);border-radius:10px;overflow-x:auto;max-width:100%}
+.electroanalysis .equation .op,.electroanalysis .equation .chem,.electroanalysis .equation .unit{font-style:normal}
+.electroanalysis .equation .math-frac{font-size:1em}.electroanalysis sup .math-frac{font-size:.8em;line-height:1.15}
+.electroanalysis .radicand{display:inline-block;border-top:1px solid currentColor;padding:0 .16em;vertical-align:middle}
+.electroanalysis section{scroll-margin-top:90px}.electroanalysis p{line-height:1.95}.electroanalysis h2{line-height:1.5}
+.electroanalysis .reading-meta{font-size:12px;color:var(--muted);margin-top:20px}
+.electroanalysis details{padding:15px 0;border-bottom:1px solid var(--line)}.electroanalysis summary{font-weight:600;cursor:pointer;line-height:1.65}.electroanalysis details p{color:var(--muted)}
+.electroanalysis .import-table table{table-layout:fixed}.electroanalysis .import-table th:first-child{width:22%}
+.electroanalysis .ppt-figure{max-width:850px;margin:26px 0}.electroanalysis .ppt-figure img{height:auto;max-height:650px;object-fit:contain;filter:none;background:white}
+.electroanalysis .lesson-footer{display:flex;justify-content:space-between;gap:20px;padding:30px 0;color:var(--accent)}
+@media(max-width:620px){.electroanalysis .equation{font-size:16px;padding:13px 12px}.electroanalysis h2{font-size:23px}.electroanalysis .article-head h1{font-size:32px}.electroanalysis .ppt-figure img{max-height:none}}

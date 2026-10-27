@@ -3436,5 +3436,398 @@
     "relatedReactions": [],
     "source": "仪器分析课件第19–50页；电化学课件第6–18页；本站chapter-10.html#equilibrium",
     "updated": "2026-10-22"
+  },
+  {
+    "slug": "potentiometry",
+    "zh": "电位法",
+    "en": "Potentiometry",
+    "category": "电化学分析",
+    "definition": "近零电流下测量指示电极与参比电极之间电位差，以响应物种活度的方法。",
+    "expanded": "高输入阻抗测量减少取样电流引起的极化；配套校准可在固定基体条件下由活度响应推定浓度。",
+    "properties": [
+      "测量电位差",
+      "对数活度响应",
+      "需校准与温度控制"
+    ],
+    "confusions": "浓度与活度应通过标准态及活度系数关联，不能无条件替换。",
+    "related": [
+      "indicator-electrode",
+      "reference-electrode",
+      "nernst-equation"
+    ],
+    "source": "本次上传课件 11，对应网站第11章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "liquid-junction-potential",
+    "zh": "液接电位",
+    "en": "Liquid-junction potential",
+    "category": "电化学分析",
+    "definition": "不同组成溶液接触时，由离子迁移率不同形成的界面电位差。",
+    "expanded": "高浓度、正负离子迁移率接近的桥液可减小液接电位；其符号取决于接线和界面方向。",
+    "properties": [
+      "来源于离子输送差异",
+      "可随样品基体改变"
+    ],
+    "confusions": "盐桥降低并稳定该贡献，仍需校准和基体匹配。",
+    "related": [
+      "reference-electrode",
+      "salt-bridge",
+      "potentiometry"
+    ],
+    "source": "本次上传课件 11，对应网站第11章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "glass-electrode",
+    "zh": "玻璃电极",
+    "en": "Glass pH electrode",
+    "category": "电化学分析",
+    "definition": "利用水合玻璃膜界面对氢离子活度的选择性响应测量 pH 的电极。",
+    "expanded": "内侧组成固定，外侧接触样品；内外水合层的边界电位差构成主要信号。",
+    "properties": [
+      "需水合",
+      "斜率随温度变化",
+      "用缓冲液校准"
+    ],
+    "confusions": "pH 响应来自膜界面的离子交换，不能用金属电极的电子转移图像直接替代。",
+    "related": [
+      "potentiometry",
+      "ion-selective-electrode"
+    ],
+    "source": "本次上传课件 11，对应网站第11章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "ion-selective-electrode",
+    "zh": "离子选择性电极",
+    "en": "Ion-selective electrode (ISE)",
+    "category": "电化学分析",
+    "definition": "利用选择性膜将目标离子活度变化转化为电位变化的电极。",
+    "expanded": "膜可为玻璃、晶体、液体离子交换剂或含亲脂性离子载体的聚合物。",
+    "properties": [
+      "信号按活度对数变化",
+      "有干扰离子和适用 pH 范围"
+    ],
+    "confusions": "选择性有限，需结合选择性系数与干扰离子活度判断。",
+    "related": [
+      "glass-electrode",
+      "potentiometry",
+      "selectivity"
+    ],
+    "source": "本次上传课件 11，对应网站第11章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "tisab",
+    "zh": "总离子强度调节缓冲液",
+    "en": "Total ionic strength adjustment buffer (TISAB)",
+    "category": "电化学分析",
+    "definition": "用于统一样品与标准液离子强度并控制 pH 等测量条件的缓冲体系。",
+    "expanded": "氟离子电极测量中，适当配方还可减小部分金属络合干扰。标准液和样品需按相同方案加入。",
+    "properties": [
+      "基体匹配",
+      "pH 控制",
+      "离子强度控制"
+    ],
+    "confusions": "应区分校准采用稀释前还是稀释后浓度，避免重复进行稀释换算。",
+    "related": [
+      "ion-selective-electrode",
+      "calibration"
+    ],
+    "source": "本次上传课件 11，对应网站第11章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "voltammetry",
+    "zh": "伏安法",
+    "en": "Voltammetry",
+    "category": "电化学分析",
+    "definition": "施加规定的电位程序并测量相应电流的电化学分析方法。",
+    "expanded": "反应动力学、传质、浓度与电极界面共同决定伏安图。",
+    "properties": [
+      "电位辅助定性",
+      "电流在校准条件下定量"
+    ],
+    "confusions": "一个物种可出现逐级反应的多个波，峰数不直接等同于物种数。",
+    "related": [
+      "cyclic-voltammetry",
+      "half-wave-potential",
+      "amperometry"
+    ],
+    "source": "本次上传课件 12，对应网站第12章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "supporting-electrolyte",
+    "zh": "支持电解质",
+    "en": "Supporting electrolyte",
+    "category": "电化学分析",
+    "definition": "在研究电位范围内基本不参与目标反应、主要用于提高溶液导电和减小迁移贡献的电解质。",
+    "expanded": "足够高的支持电解质浓度使分析物迁移电流减小；组成也可能改变 pH、络合与可用电位窗口。",
+    "properties": [
+      "降低溶液电阻",
+      "抑制分析物迁移贡献"
+    ],
+    "confusions": "惰性必须针对具体电位范围与化学体系判断。",
+    "related": [
+      "voltammetry",
+      "overpotential"
+    ],
+    "source": "本次上传课件 12，对应网站第12章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "diffusion-limiting-current",
+    "zh": "扩散极限电流",
+    "en": "Diffusion-limited current",
+    "category": "电化学分析",
+    "definition": "表面反应足够快时，由扩散供给反应物的速率限制的电流。",
+    "expanded": "固定几何与稳定传质层下，极限电流与主体浓度近似成正比；时变扩散层对应时变电流。",
+    "properties": [
+      "依赖面积、扩散系数、浓度与传质几何"
+    ],
+    "confusions": "增加电位驱动力通常不能突破既定传质速率。",
+    "related": [
+      "voltammetry",
+      "cottrell-equation",
+      "ultramicroelectrode"
+    ],
+    "source": "本次上传课件 12，对应网站第12章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "half-wave-potential",
+    "zh": "半波电位",
+    "en": "Half-wave potential",
+    "category": "电化学分析",
+    "definition": "稳态或相应规范波形中，电流达到扩散极限电流一半时的电位。",
+    "expanded": "可逆模型下，它联系条件电位与氧化态、还原态传质系数之比。",
+    "properties": [
+      "须说明参比",
+      "受介质和动力学影响"
+    ],
+    "confusions": "半波电位与峰电位是不同的读图量。",
+    "related": [
+      "voltammetry",
+      "formal-potential"
+    ],
+    "source": "本次上传课件 12，对应网站第12章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "cyclic-voltammetry",
+    "zh": "循环伏安",
+    "en": "Cyclic voltammetry (CV)",
+    "category": "电化学分析",
+    "definition": "使用往返电位扫描研究电极氧化还原及相关过程的方法。",
+    "expanded": "分析峰位、峰间距、峰电流及扫描速率依赖，可辅助判断电子转移、传质与后续反应。",
+    "properties": [
+      "正反向扫描",
+      "扩散控制峰电流常随扫描速率平方根变化"
+    ],
+    "confusions": "峰间距变化也可能来自未补偿电阻，需结合实验条件判断。",
+    "related": [
+      "voltammetry",
+      "overpotential",
+      "diffusion-limiting-current"
+    ],
+    "source": "本次上传课件 12，对应网站第12章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "stripping-voltammetry",
+    "zh": "溶出伏安",
+    "en": "Stripping voltammetry",
+    "category": "电化学分析",
+    "definition": "先在电极富集分析物，再改变电位使其溶出并测量信号的方法。",
+    "expanded": "富集积累了可测物质；溶出峰位辅助定性，峰高或电荷经校准用于定量。",
+    "properties": [
+      "富集与测量两阶段",
+      "适合痕量分析"
+    ],
+    "confusions": "富集时间、电位、空白污染和传质条件均会影响结果。",
+    "related": [
+      "voltammetry",
+      "calibration"
+    ],
+    "source": "本次上传课件 12，对应网站第12章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "amperometry",
+    "zh": "电流分析法",
+    "en": "Amperometry",
+    "category": "电化学分析",
+    "definition": "在固定电位下测量电流，利用其与浓度或反应速率的关系进行分析的方法。",
+    "expanded": "常见例子包括 Clark 氧电极及酶修饰葡萄糖传感器。",
+    "properties": [
+      "固定工作电位",
+      "记录电流或电流随时间变化"
+    ],
+    "confusions": "没有扫描电位时，不直接生成完整伏安图。",
+    "related": [
+      "voltammetry",
+      "chemically-modified-electrode"
+    ],
+    "source": "本次上传课件 12，对应网站第12章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "coulometry",
+    "zh": "库仑法",
+    "en": "Coulometry",
+    "category": "电化学分析",
+    "definition": "测量目标电解过程总电荷，再由电子计量求分析物含量的方法。",
+    "expanded": "通过积分电流或恒流乘以时间求电荷，结合 Faraday 常数和电子数换算。",
+    "properties": [
+      "电荷计量",
+      "要求反应计量明确",
+      "需控制背景与副反应"
+    ],
+    "confusions": "反应完成度与目标电流效率是两项不同条件。",
+    "related": [
+      "current-efficiency",
+      "coulometric-titration",
+      "cottrell-equation"
+    ],
+    "source": "本次上传课件 13，对应网站第13章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "current-efficiency",
+    "zh": "电流效率",
+    "en": "Current efficiency",
+    "category": "电化学分析",
+    "definition": "总通过电荷中实际用于指定电极反应的比例。",
+    "expanded": "分流到其他反应或过程的电荷会影响根据总电荷进行的物质量换算。",
+    "properties": [
+      "基础库仑法追求约 100%",
+      "与副反应和背景有关"
+    ],
+    "confusions": "电流效率高不等同于样品已完全反应。",
+    "related": [
+      "coulometry",
+      "overpotential"
+    ],
+    "source": "本次上传课件 13，对应网站第13章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "overpotential",
+    "zh": "超电位",
+    "en": "Overpotential",
+    "category": "电化学分析",
+    "definition": "电极在给定电流条件下偏离相应平衡电位的量。",
+    "expanded": "活化动力学与浓差等过程可造成电极电位偏移，通常还应把溶液欧姆降单独考虑。",
+    "properties": [
+      "随材料、表面、介质与电流密度变化"
+    ],
+    "confusions": "过电位与整个电池的分解电压不是同一物理量。",
+    "related": [
+      "voltammetry",
+      "coulometry",
+      "redox-mediator"
+    ],
+    "source": "本次上传课件 13，对应网站第13章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "cottrell-equation",
+    "zh": "Cottrell方程",
+    "en": "Cottrell equation",
+    "category": "电化学分析",
+    "definition": "描述静止溶液中宏观平面电极在电位阶跃后半无限线性扩散电流的关系。",
+    "expanded": "在相应边界条件下，电流随时间的负二分之一次幂衰减。",
+    "properties": [
+      "平面几何",
+      "主体浓度近似不变",
+      "扩散层随时间增长"
+    ],
+    "confusions": "充分搅拌的有限体积耗尽电解可呈指数衰减，边界条件不同。",
+    "related": [
+      "diffusion-limiting-current",
+      "coulometry"
+    ],
+    "source": "本次上传课件 13，对应网站第13章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "coulometric-titration",
+    "zh": "库仑滴定",
+    "en": "Coulometric titration",
+    "category": "电化学分析",
+    "definition": "电极定量生成滴定剂，使其与分析物反应，并以生成试剂所需电荷计量的滴定方法。",
+    "expanded": "常用恒流发生滴定剂，再由电位等方法指示化学终点。",
+    "properties": [
+      "无需配制标准滴定液",
+      "仍需校核电流、时间与终点"
+    ],
+    "confusions": "电生试剂与分析物的化学计量和反应效率必须明确。",
+    "related": [
+      "coulometry",
+      "current-efficiency"
+    ],
+    "source": "本次上传课件 13，对应网站第13章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "chemically-modified-electrode",
+    "zh": "化学修饰电极",
+    "en": "Chemically modified electrode (CME)",
+    "category": "电化学分析",
+    "definition": "在导体表面固定化学或生物功能层，以改变识别、催化或输送性质的电极。",
+    "expanded": "修饰层可以是酶、配体、介体、聚合物或其他功能材料。",
+    "properties": [
+      "影响反应速率与选择性",
+      "同时引入传质和稳定性问题"
+    ],
+    "confusions": "增加面积和提高选择性是不同的性能变化。",
+    "related": [
+      "redox-mediator",
+      "amperometry",
+      "selectivity"
+    ],
+    "source": "本次上传课件 14，对应网站第14章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "redox-mediator",
+    "zh": "氧化还原介体",
+    "en": "Redox mediator",
+    "category": "电化学分析",
+    "definition": "通过自身氧化还原循环在分析物与电极之间传递电子当量的物种。",
+    "expanded": "分析物与介体反应，电极再生介体，合适介体可降低获得足够反应速率所需的电位。",
+    "properties": [
+      "需合适电位和反应速率",
+      "需考虑泄漏与稳定性"
+    ],
+    "confusions": "介体改变电子传递路径，净电子计量仍需按整体反应配平。",
+    "related": [
+      "chemically-modified-electrode",
+      "overpotential"
+    ],
+    "source": "本次上传课件 14，对应网站第14章；按原理校订。",
+    "updated": "2026-10-27"
+  },
+  {
+    "slug": "ultramicroelectrode",
+    "zh": "超微电极",
+    "en": "Ultramicroelectrode (UME)",
+    "category": "电化学分析",
+    "definition": "在相关测量时间尺度上，特征尺寸足够小而显著表现边缘或径向传质的电极。",
+    "expanded": "理想微圆盘在合适条件下可达到径向扩散稳态，静止溶液中也能获得 S 形响应。",
+    "properties": [
+      "总电流小",
+      "相对传质快",
+      "几何和时间尺度重要"
+    ],
+    "confusions": "圆盘、圆柱和针状电极的电流公式需分别选择。",
+    "related": [
+      "diffusion-limiting-current",
+      "amperometry"
+    ],
+    "source": "本次上传课件 14，对应网站第14章；按原理校订。",
+    "updated": "2026-10-27"
   }
 ]

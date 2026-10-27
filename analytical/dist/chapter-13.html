@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="库仑法与控制电位电解：课件详解、公式推导、例题与原图" name="description"/><title>13 库仑法与控制电位电解 · 分析化学知识库</title><link href="style.css" rel="stylesheet"/><link href="content.css" rel="stylesheet"/><link href="lesson.css" rel="stylesheet"/><link href="course-extra.css" rel="stylesheet"/><link href="ppt-figures.css" rel="stylesheet"/><link href="fractions.css" rel="stylesheet"/><link href="import-lessons.css" rel="stylesheet"/><link href="electroanalysis.css" rel="stylesheet"/><link href="manifest.webmanifest" rel="manifest"/><link href="icon.svg" rel="icon" type="image/svg+xml"/></head><body><header class="topbar">
+<a class="brand" href="index.html">
+<span class="mark">分</span>
+<span>分析化学知识库</span>
+</a>
+<label class="search">
+<span>⌕</span>
+<input aria-label="搜索知识库" id="global-search" placeholder="搜索章节、概念或英文术语…"/>
+<kbd>⌘ K</kbd>
+</label>
+<button class="icon-button" id="theme" title="切换明暗主题">◐</button>
+</header><aside class="sidebar">
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html">
+<span>◫</span>课程笔记</a>
+<a href="terms.html">
+<span>Aa</span>双语词条库</a>
+<p class="nav-label">分析化学 I</p>
+<a href="chapter-1.html">
+<span>01</span>绪论</a>
+<a href="chapter-2.html">
+<span>02</span>基本操作与样品制备</a>
+<a href="chapter-3.html">
+<span>03</span>酸碱平衡</a>
+<a href="chapter-4.html">
+<span>04</span>酸碱滴定</a>
+<a href="chapter-5.html">
+<span>05</span>络合滴定</a>
+<a href="chapter-6.html">
+<span>06</span>重量分析</a>
+<a href="chapter-7.html">
+<span>07</span>沉淀滴定</a>
+<a href="chapter-8.html"><span>08</span>氧化还原与电位滴定</a>
+<a href="chapter-9.html"><span>09</span>仪器分析基础与QCM</a>
+<a href="chapter-10.html"><span>10</span>电化学电池与电极电势</a><a href="chapter-11.html"><span>11</span>电位法与离子选择性电极</a><a href="chapter-12.html"><span>12</span>伏安法与电流分析</a><a class="active" href="chapter-13.html"><span>13</span>库仑法与控制电位电解</a><div aria-label="本章章节" class="chapter-outline electro-outline"><a href="#faraday"><span>13.1</span>把电荷换成物质的量</a><a href="#efficiency"><span>13.2</span>电流效率</a><a href="#voltage"><span>13.3</span>分解电压、超电位与极化</a><a href="#controlled-potential"><span>13.4</span>控制电位库仑法</a><a href="#cottrell"><span>13.5</span>Cottrell 关系与选择性沉积</a><a href="#titration"><span>13.6</span>恒流库仑滴定与电生试剂</a><a href="#measurement"><span>13.7</span>积分、终点与复算</a></div><a href="chapter-14.html"><span>14</span>电化学传感器与微电极</a>
+<a href="topic-formulas.html">
+<span>◆</span>平衡与滴定公式</a>
+</nav>
+<div class="privacy">
+<span>●</span>
+<div>
+<b>私人知识库</b>
+<small>仅所有者可访问</small>
+</div>
+</div>
+</aside><main class="workspace"><article class="article lesson import-lesson electroanalysis"><a class="back" href="index.html">← 返回课程笔记</a><header class="article-head"><p class="eyebrow">CHAPTER 13 · COULOMETRY &amp; CONTROLLED ELECTROLYSIS</p><h1>库仑法与控制电位电解</h1><p>按课件顺序整理原理、公式条件、复算例题与易混概念。</p><p class="reading-meta">更新于 2026-10-27 · 配图均来自本课件</p></header><nav aria-label="本章目录" class="import-jump"><a href="#faraday">13.1 把电荷换成物质的量</a><a href="#efficiency">13.2 电流效率</a><a href="#voltage">13.3 分解电压、超电位与极化</a><a href="#controlled-potential">13.4 控制电位库仑法</a><a href="#cottrell">13.5 Cottrell 关系与选择性沉积</a><a href="#titration">13.6 恒流库仑滴定与电生试剂</a><a href="#measurement">13.7 积分、终点与复算</a></nav><section id="faraday"><p class="section-kicker">13.1 · FARADAY LAW</p><h2>把电荷换成物质的量</h2><p><a class="term-link" href="term.html?slug=coulometry">库仑法</a>（coulometry）测量电解所消耗的总电荷，用电子计量关系求待测物的绝对量。它与只消耗很少分析物的<a class="term-link" href="term.html?slug=voltammetry">伏安法</a>相比，通常追求定量转化；与电重量法相比，库仑法读取电荷，电重量法称量电极上增加的沉积物质量。</p><div class="equation">Q=∫<sub>0</sub><sup>t</sup>i(τ)dτ；　恒流时 Q=It<br/>n<sub>X</sub>=<span class="math-frac"><span>Q</span><span>nF</span></span>；　m<sub>X</sub>=<span class="math-frac"><span>MQ</span><span>nF</span></span></div><p>Q 用 C，电流用 A，时间用 s，F≈96485 C·mol<sup>−1</sup>，M 为摩尔质量，n 为每摩尔待测物对应的电子摩尔数，n<sub>X</sub> 才是待测物的物质的量。课件使用 96487，通常只是常数取值与舍入差异。A·s 等于 C；mA 与分钟必须先换算。</p><p>例：Cu<sup>2+</sup>＋2e<sup>−</sup>→Cu，10.00 mA 电解 100.0 s，通过 1.000 C；若定量沉积，m=63.546×1.000 与 2F 的比值，约为 0.3293 mg。先配平半反应，才能确定式中的 n。</p><p class="source">来源：13_Coulometry.pptx，slide 2–4。</p></section><section id="efficiency"><p class="section-kicker">13.2 · CURRENT EFFICIENCY</p><h2>电流效率：计量成立的条件</h2><p>基础 Faraday 换算默认电荷全部用于目标反应。若同时析氢、析氧、还原杂质，或有其他电化学过程分走电荷，电流计读到的总量就不再全部对应分析物。把目标反应所占电荷比例记为 ε：</p><div class="equation">ε=<span class="math-frac"><span>Q<sub>target</sub></span><span>Q<sub>total</sub></span></span>；　n<sub>X</sub>=<span class="math-frac"><span>εQ<sub>total</sub></span><span>nF</span></span></div><p>库仑分析追求约 100% 的目标<a class="term-link" href="term.html?slug=current-efficiency">电流效率</a>，也要保证待测物实际转化完全。二者分别回答“电荷有没有用错地方”和“待测物有没有遗漏”。若效率仅为 98%，却把全部 Q 用来计算并且反应已完成，结果将约高出 2.04%。</p><p>电容充电电流、残余电流和溶液杂质同样可能影响积分。实验设计应包含空白测定、稳定基线与适当终点判据；时间越长，较小的持续背景也可能积累成可观电荷。</p><p>对同一份样品，理想库仑总量只取决于转化的物质的量和电子数，增大电极面积或加强搅拌主要改变完成分析所需的时间。若这些条件改变后总积分明显不同，应检查背景、副反应或未反应完全。这个判断把速率控制与最终计量分开，也可用来检查装置与积分器是否工作稳定。</p><p class="source">来源：13_Coulometry.pptx，slide 3、12。</p></section><section id="voltage"><p class="section-kicker">13.3 · POTENTIAL &amp; POLARIZATION</p><h2>分解电压、超电位与极化</h2><p>电解池的实际外加电压，既要克服按指定方向电解的可逆电位差，还要补偿电极过电位和溶液欧姆降。采用两端所需电压及过电位的正值大小表示：</p><div class="equation">U<sub>app</sub>≈U<sub>rev</sub>＋|η<sub>a</sub>|＋|η<sub>c</sub>|＋IR</div><p>若采用带符号的还原电位和过电位，则应按阳极减阴极统一推导，不能从不同符号体系中拼接。析出电位针对某电极反应，分解电压针对整个电解池；浓度降低还会通过 Nernst 关系改变平衡电位。</p><p>浓差极化源于界面物种输送不足，增加搅拌、增大面积或降低电流密度可减小它；活化极化源于有限的电子转移速率，材料和表面催化性质会影响它。双电层可储存电荷，是界面结构与瞬态充电的一部分，不能把所有电化学极化都直接等同于双电层。</p><p>理想可极化电极在一定范围内主要以充电响应电位变化；理想不可极化电极则可在较小电位变化下交换电流。Ag／AgCl 常用于理解后一极限，实际电极仍有适用范围。</p><p class="source">来源：13_Coulometry.pptx，slide 5–11。</p></section><section id="controlled-potential"><p class="section-kicker">13.4 · CONTROLLED-POTENTIAL COULOMETRY</p><h2>控制电位库仑法：电流随耗尽而下降</h2><p>恒电位仪把工作电极相对参比的电位维持在选定值，对电极提供相反方向的电流。分析物不断被消耗，主体浓度降低，电流逐渐下降；电流随时间的面积给出总电荷。恒定工作电极电位与恒定整个电池电压是两种不同控制方式，溶液电阻或对电极状态变化时，两者尤其不能混用。</p><p>充分搅拌、溶液体积 V 固定、传质层厚度 δ 近似恒定且表面反应物耗尽时，物料衡算为 V<span class="math-frac"><span>dc</span><span>dt</span></span>=−<span class="math-frac"><span>ADc</span><span>δ</span></span>。积分得到主体浓度指数衰减：</p><div class="equation">k=<span class="math-frac"><span>AD</span><span>Vδ</span></span>；　c(t)=c<sub>0</sub>e<sup>−kt</sup>；　i(t)=i<sub>0</sub>e<sup>−kt</sup><br/>Q(t)=nFVc<sub>0</sub>(1−e<sup>−kt</sup>)</div><p>A 是电极面积，D 是扩散系数，k 的单位为 s<sup>−1</sup>。课件写 c=c<sub>0</sub>10<sup>−Kt</sup> 时，K≈0.434k；以秒或分钟表示时间会改变其数值。达到 99% 转化需 kt≈4.605。实际终点要依据净电流接近背景或剩余量阈值判断。</p><figure class="ppt-figure ppt-figure-light"><img alt="充分搅拌的有限体积电解：浓度和电流随消耗下降" decoding="async" height="552" loading="lazy" src="assets/ch13/bulk-decay.webp" width="530"/><figcaption>充分搅拌的有限体积电解：浓度和电流随消耗下降<small>图源：13_Coulometry.pptx, slide 15</small></figcaption></figure><p class="source">来源：13_Coulometry.pptx，slide 12–15。</p></section><section id="cottrell"><p class="section-kicker">13.5 · PLANAR DIFFUSION &amp; SELECTIVITY</p><h2>Cottrell 关系与选择性沉积</h2><p>静止溶液、宏观平面电极在电位阶跃后的早期，可近似半无限线性扩散。此时主体总体浓度尚未明显改变，但扩散层随时间增长：</p><div class="equation">|i(t)|=<span class="math-frac"><span>nFAc<sub>0</sub>√D</span><span>√(πt)</span></span></div><p>这才是 Cottrell 方程的 t<sup>−<span class="math-frac"><span>1</span><span>2</span></span></sup> 衰减。它与上一节充分搅拌、整个样品被逐渐耗尽的指数规律对应不同边界条件。判断题先看是否搅拌、扩散几何和电解时间，不能仅凭“控制电位”选公式。</p><p><a class="term-link" href="term.html?slug=selectivity">选择性</a>电解要求：目标物降至规定残余浓度时仍能沉积，干扰物则尚未显著反应。课件中 Cu<sup>2+</sup> 从 0.1 降至 10<sup>−6</sup> mol·L<sup>−1</sup>，平衡还原电位约由＋0.31 变为＋0.16 V，均按课件的氢电极标度。需把这一终点所需电位与 Pb<sup>2+</sup> 的析出条件比较，并留意过电位、络合和 iR 降。</p><p class="source">来源：13_Coulometry.pptx，slide 16–18。</p></section><section id="titration"><p class="section-kicker">13.6 · COULOMETRIC TITRATION</p><h2>恒流库仑滴定与电生试剂</h2><p>恒流法使 Q=It，直接测量更简单，但分析物逐渐减少时，电极电位可能不断漂移并引发副反应。<a class="term-link" href="term.html?slug=coulometric-titration">库仑滴定</a>可利用大量前体在电极上生成滴定剂，使它立即、快速、定量地与待测物反应；由<a class="term-link" href="term.html?slug=potentiometry">电位法</a>等方法指示终点。它用电荷计量替代标准滴定液的体积计量。</p><p>课件以 Fe<sup>2+</sup> 氧化为例：溶液中加入过量 Ce<sup>3+</sup>，阳极使 Ce<sup>3+</sup>→Ce<sup>4+</sup>＋e<sup>−</sup>，随后 Ce<sup>4+</sup>＋Fe<sup>2+</sup>→Ce<sup>3+</sup>＋Fe<sup>3+</sup>。铈循环传递氧化当量，净计量仍是每摩尔 Fe<sup>2+</sup> 对应一摩尔电子。</p><p>电生试剂还可用于酸碱、沉淀和络合滴定，例如电生 Ag<sup>+</sup> 与卤离子反应。若每摩尔滴定剂需 n<sub>g</sub> 摩尔电子，而每摩尔分析物消耗 r 摩尔滴定剂，则 n<sub>X</sub>=It 与 rn<sub>g</sub>F 的比值。前体浓度、电解效率、化学反应速率、对电极产物隔离和终点延迟都需要控制。</p><figure class="ppt-figure ppt-figure-light"><img alt="Ce³⁺／Ce⁴⁺传递氧化当量，使电荷对应 Fe²⁺含量" decoding="async" height="178" loading="lazy" src="assets/ch13/cerium-cycle.webp" width="614"/><figcaption>Ce³⁺／Ce⁴⁺传递氧化当量，使电荷对应 Fe²⁺含量<small>图源：13_Coulometry.pptx, slide 23</small></figcaption></figure><p class="source">来源：13_Coulometry.pptx，slide 21–24。</p></section><section id="measurement"><p class="section-kicker">13.7 · CHARGE MEASUREMENT &amp; EXAMPLES</p><h2>积分、终点与复算</h2><p>电荷可通过电子积分读取，也可用银沉积称量或气体库仑计间接测定。水电解气体库仑计中，每 4 mol 电子对应 2 mol H<sub>2</sub> 与 1 mol O<sub>2</sub>，所以收集气体总量为 3Q 与 4F 的比值。若近似理想气体：</p><div class="equation">V<sub>gas</sub>=<span class="math-frac"><span>3QRT</span><span>4Fp</span></span></div><p>课件的约 0.1741 mL／C 对应接近 273.15 K、1 atm 的气体体积；室温时数值会变化，湿气体还需考虑水蒸气分压。银库仑计则由 Ag<sup>+</sup>＋e<sup>−</sup>→Ag 使用一电子计量。</p><p>恒流滴定例：20.00 mA、120.0 s 生成的 Ce<sup>4+</sup> 恰好反应完 Fe<sup>2+</sup>，扣空白后 Q=2.400 C，n(Fe<sup>2+</sup>)=2.487×10<sup>−5</sup> mol，对应铁约 1.389 mg。若有空白耗时，应先用 I(t<sub>sample</sub>−t<sub>blank</sub>) 求净电荷。</p><details><summary>控制电位法为什么仍需看电流终点？</summary><p>电位选择反应，电流反映剩余可反应物与背景。固定电位后，还要积分到适当完成度，并扣除不属于分析物的电荷。</p></details><details><summary>不配标准液是否意味着不需要校准？</summary><p>仍需核验电流、时间或积分器，以及反应效率、计量关系和终点。省去标准滴定液并未省去测量验证。</p></details><p class="source">来源：13_Coulometry.pptx，slide 19–24；综合复习。</p></section><footer class="lesson-footer"><a href="chapter-12.html">← 上一章</a><a href="chapter-14.html">下一章 →</a></footer></article></main><script src="script.js"></script></body></html>

@@ -228,5 +228,35 @@
     "title": "复习与第12讲测验",
     "href": "lesson-12.html#review",
     "keywords": "12.11 · COURSE NOTES 复习与第12讲测验 考前检查：混合前后压力是否一致？气相分压是否用pᵢ=xᵢp？x、y、质量摩尔浓度是否区分？Henry常数采用哪种定义？超额量的理想参考态是什么？规则溶液的β是否固定在给定温度？ 第12讲测验：22题，32分 → 来源：PChem1_lec12 Mixture2 20261022.pdf，第1–12页；稳定性一节为模型推导拓展。"
+  },
+  {
+    "title": "第13课：依数性总览",
+    "href": "lesson-13.html#overview",
+    "keywords": "依数性 colligative properties 蒸气压降低 沸点升高 凝固点降低 渗透压"
+  },
+  {
+    "title": "第13课：蒸气压降低",
+    "href": "lesson-13.html#vapour",
+    "keywords": "Raoult定律 蒸气压降低"
+  },
+  {
+    "title": "第13课：沸点升高",
+    "href": "lesson-13.html#boiling",
+    "keywords": "沸点升高 Kb 质量摩尔浓度"
+  },
+  {
+    "title": "第13课：凝固点降低",
+    "href": "lesson-13.html#freezing",
+    "keywords": "凝固点降低 Kf 质量摩尔浓度"
+  },
+  {
+    "title": "第13课：渗透压",
+    "href": "lesson-13.html#osmotic",
+    "keywords": "渗透压 osmotic pressure Π=cRT"
+  },
+  {
+    "title": "第13课：活度与活度系数",
+    "href": "lesson-13.html#activity",
+    "keywords": "活度 activity coefficient 真实溶液"
   }
 ]

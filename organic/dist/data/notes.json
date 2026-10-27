@@ -168,5 +168,60 @@
     "title": "第13课：十、复习与第13课测验",
     "href": "lesson-13.html#review",
     "keywords": "十、复习与第13课测验 卤代烷 取代 还原 脱卤化氢 E1 E2 有机金属 Wurtz 格氏试剂 烯丙位 NBS 自由基"
+  },
+  {
+    "title": "第14课：烯烃命名",
+    "href": "lesson-14.html#naming",
+    "keywords": "烯烃命名 IUPAC alkene vinyl allyl"
+  },
+  {
+    "title": "第14课：sp²杂化与π键",
+    "href": "lesson-14.html#structure",
+    "keywords": "sp2杂化 π键 双键结构"
+  },
+  {
+    "title": "第14课：不饱和度",
+    "href": "lesson-14.html#dbe",
+    "keywords": "DBE 不饱和度 分子式"
+  },
+  {
+    "title": "第14课：E/Z几何异构",
+    "href": "lesson-14.html#stereo",
+    "keywords": "cis trans E Z CIP 几何异构"
+  },
+  {
+    "title": "第14课：烯烃物理性质",
+    "href": "lesson-14.html#properties",
+    "keywords": "极性 溶解性 沸点 偶极矩"
+  },
+  {
+    "title": "第15课：氢化热",
+    "href": "lesson-15.html#stability",
+    "keywords": "氢化热 烯烃稳定性 hydrogenation"
+  },
+  {
+    "title": "第15课：环张力与Bredt规则",
+    "href": "lesson-15.html#ring",
+    "keywords": "环张力 Bredt规则"
+  },
+  {
+    "title": "第15课：E2立体专一性",
+    "href": "lesson-15.html#e2",
+    "keywords": "E2 anti-periplanar 反式共平面"
+  },
+  {
+    "title": "第15课：环己烷反式二轴",
+    "href": "lesson-15.html#chair",
+    "keywords": "trans-diaxial 反式二轴"
+  },
+  {
+    "title": "第15课：E1与醇脱水",
+    "href": "lesson-15.html#e1",
+    "keywords": "E1 醇脱水 Zaitsev 重排"
+  },
+  {
+    "title": "第15课：邻二卤化物还原",
+    "href": "lesson-15.html#methods",
+    "keywords": "邻二溴化物 脱卤 烯烃制备"
   }
 ]

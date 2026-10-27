@@ -3140,5 +3140,57 @@
       "stereospecificity"
     ],
     "source": "第12课 · Lecture 11 · Chapter 6-3"
+  },
+  {
+    "slug": "alkene",
+    "zh": "烯烃",
+    "en": "Alkene",
+    "category": "官能团与烃类",
+    "definition": "含有碳碳双键的烃。",
+    "expanded": "双键由一个σ键和一个π键组成。π键限制双键两端自由旋转，并使烯烃易发生加成反应。",
+    "properties": [
+      "常见开链单烯烃通式为 CnH2n",
+      "双键碳通常采用sp²杂化"
+    ],
+    "confusions": "环烷烃可与烯烃具有相同分子式；仅凭CnH2n不能断定含双键。",
+    "related": [
+      "e-z-configuration"
+    ],
+    "source": "Org. Chem. Lect. 13 (Chapter 7-1)"
+  },
+  {
+    "slug": "alkene-stability",
+    "zh": "烯烃稳定性",
+    "en": "Alkene stability",
+    "category": "反应性与热力学",
+    "definition": "烯烃相对能量的高低，可通过同一产物的氢化热比较。",
+    "expanded": "比较生成同一产物的结构异构烯烃时，氢化放热较少的烯烃通常更稳定。取代度、几何构型和环张力均有影响。",
+    "properties": [
+      "非环烯烃反式异构体通常较稳定",
+      "环张力可降低小环烯烃稳定性"
+    ],
+    "confusions": "不同产物或计量关系的氢化热不能不加处理地直接比较。",
+    "related": [
+      "alkene"
+    ],
+    "source": "Org. Chem. Lect. 14 (Chapter 7-2)"
+  },
+  {
+    "slug": "anti-periplanar",
+    "zh": "反式共平面构象",
+    "en": "Anti-periplanar conformation",
+    "category": "立体化学与机理",
+    "definition": "两个待反应键处于同一平面且方向相反的排列，是典型E2消除的有利构象。",
+    "expanded": "β-H与离去基团通常需要反式共平面排列，以便轨道有效重叠并形成π键。环己烷体系中常对应反式二轴。",
+    "properties": [
+      "影响E2能否发生",
+      "决定某些底物的立体专一性"
+    ],
+    "confusions": "不能只看烯烃稳定性而忽略底物构象。",
+    "related": [
+      "trans-diaxial-elimination",
+      "e2"
+    ],
+    "source": "Org. Chem. Lect. 14 (Chapter 7-2)"
   }
 ]

@@ -15,3 +15,5 @@
 .electroanalysis .ppt-figure{max-width:850px;margin:26px 0}.electroanalysis .ppt-figure img{height:auto;max-height:650px;object-fit:contain;filter:none;background:white}
 .electroanalysis .lesson-footer{display:flex;justify-content:space-between;gap:20px;padding:30px 0;color:var(--accent)}
 @media(max-width:620px){.electroanalysis .equation{font-size:16px;padding:13px 12px}.electroanalysis h2{font-size:23px}.electroanalysis .article-head h1{font-size:32px}.electroanalysis .ppt-figure img{max-height:none}}
+
+.electroanalysis p .math-frac{font-family:Georgia,"Times New Roman",serif;font-style:italic}.electroanalysis .source-notes{padding:22px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.electroanalysis .source-notes h2{font-size:18px}.electroanalysis .source-notes a{overflow-wrap:anywhere}.electroanalysis .equation sub{font-size:.7em}

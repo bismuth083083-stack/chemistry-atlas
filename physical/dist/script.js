@@ -13,6 +13,14 @@ async function getTerms(){const r=await fetch('data/terms.json');return r.json()
 function termRow(t){return `<a class="term-table row" href="term.html?slug=${encodeURIComponent(t.slug)}"><strong>${t.zh}</strong><span>${t.en}</span><span>${t.category}</span><span>${t.related.length}</span></a>`}
 async function loadTerms(){const terms=await getTerms();const list=document.querySelector('#term-list');document.querySelector('#term-count').textContent=terms.length;const render=()=>{const q=(termSearch?.value||'').trim().toLowerCase();const shown=terms.filter(t=>[t.zh,t.en,t.category,...(t.properties||[])].join(' ').toLowerCase().includes(q));list.className=shown.length?'':'table-empty';list.innerHTML=shown.length?shown.map(termRow).join(''):'<b>没有匹配词条</b><p>尝试中文名、英文名或分类。</p>'};termSearch?.addEventListener('input',render);render()}
 const TERM_IMAGES={
+"bubble-point":["lecture-14/pressure-composition.webp", "泡点线与同压气相组成", "PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第9页"],
+"dew-point":["lecture-14/pressure-composition.webp", "露点边界与两相区", "PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第9页"],
+"overall-composition":["lecture-14/lever-rule.webp", "总体组成作为杠杆的支点", "PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第10页"],
+"lever-rule":["lecture-14/lever-rule.webp", "杠杆规则及对侧线段", "PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第10页"],
+"isopleth":["lecture-14/pressure-composition.webp", "封闭体系的等组成减压路径", "PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第9页"],
+"tie-line":["lecture-14/pressure-composition.webp", "水平系线连接两相组成", "PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第9页"],
+"theoretical-plate":["lecture-14/distillation-stages.webp", "理论级与平衡曲线的间距", "PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第12页"],
+"fractional-distillation":["lecture-14/fractionating-column.webp", "分馏柱与气液接触装置", "PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第13页"],
 "molality":["lecture-11/composition.webp", "质量摩尔浓度的课件图示", "本次PDF第2上页"],
 "molar-concentration":["lecture-11/composition.webp", "物质的量浓度的课件图示", "本次PDF第2上页"],
 "mass-fraction":["lecture-11/composition.webp", "质量分数的课件图示", "本次PDF第2上页"],

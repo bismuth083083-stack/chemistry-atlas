@@ -1248,7 +1248,7 @@
     "en": "Phase",
     "category": "纯物质相平衡",
     "definition": "化学组成和物理状态均匀的物质部分。",
-    "expanded": "碎冰的块数不等于相数；相同晶体结构的冰属于同一相。冰和水共存为两相，不同晶型也可形成不同固相。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "expanded": "碎冰的块数不等于相数；相同晶体结构的冰属于同一相。冰和水共存为两相，不同晶型也可形成不同固相。 <a href=\"lesson-09.html\">返回本课笔记</a> 固溶体可为单相；分散组织宏观均匀仍可能含多相。",
     "properties": [
       "相数与容器数不同",
       "同一种物质可有多个固相"
@@ -1256,10 +1256,11 @@
     "confusions": "相不是简单的“固液气类别”；不同固体结构也需区分。",
     "related": [
       "phase-rule",
-      "phase-transition"
+      "phase-transition",
+      "component"
     ],
-    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
-    "updated": "2026-10-15"
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15；PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第2–7页",
+    "updated": "2026-10-29"
   },
   {
     "slug": "phase-transition",
@@ -1287,7 +1288,7 @@
     "en": "Gibbs phase rule",
     "category": "纯物质相平衡",
     "definition": "联系组分数、平衡相数和独立强度变量数的关系F=C−P+2。",
-    "expanded": "在通常温压模型中，纯物质C=1，所以单相区F=2，两相共存线F=1，三相点F=0。相份额和总量不计入此自由度。 <a href=\"lesson-09.html\">返回本课笔记</a>",
+    "expanded": "在通常温压模型中，纯物质C=1，所以单相区F=2，两相共存线F=1，三相点F=0。相份额和总量不计入此自由度。 <a href=\"lesson-09.html\">返回本课笔记</a>  变量计数为 P(C−1)＋2，独立相平衡条件为 C(P−1)。二元体系固定温度或压力后 F′=3−P。",
     "properties": [
       "单组分F=3−P",
       "相平衡约束减少自由度"
@@ -1296,10 +1297,11 @@
     "related": [
       "phase",
       "triple-point",
-      "coexistence-curve"
+      "coexistence-curve",
+      "component"
     ],
-    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15",
-    "updated": "2026-10-15"
+    "source": "PChem1 lec9–10课件；Atkins第11版Topic 4A/4B；2026-10-15；PChem1_lec14 Phase Diagram1 20261029.pdf，PDF第2–7页",
+    "updated": "2026-10-29"
   },
   {
     "slug": "coexistence-curve",
@@ -2144,5 +2146,268 @@
       "colligative-properties"
     ],
     "source": "PChem1_lec13 Mixture3 20261027.pdf"
+  },
+  {
+    "slug": "constituent",
+    "zh": "组成物",
+    "en": "Constituent",
+    "aliases": [
+      "物种"
+    ],
+    "category": "相图与相平衡",
+    "definition": "体系中实际存在的化学种，如分子或离子。",
+    "expanded": "组成物的数量是组分计数的起点；若存在独立反应或组成约束，化学独立组分数可少于组成物数。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "组成物数量不直接等于相数或组分数。",
+    "related": [
+      "component",
+      "phase"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "component",
+    "zh": "组分",
+    "en": "Component",
+    "aliases": [
+      "独立组分"
+    ],
+    "category": "相图与相平衡",
+    "definition": "足以表达体系各相组成的最少独立化学成分。",
+    "expanded": "按独立关系计数可写 C=S−R−R′；R 为独立反应数，R′ 为尚未计入的独立组成限制。CaCO<sub>3</sub>、CaO 和 CO<sub>2</sub> 由一个反应联系，通常为二组分体系。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "反应的倍数不可重复扣除；反应受阻时也不直接套用其平衡关系。",
+    "related": [
+      "constituent",
+      "phase-rule"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "degrees-of-freedom",
+    "zh": "自由度",
+    "en": "Degrees of freedom",
+    "aliases": [
+      "变度"
+    ],
+    "category": "相图与相平衡",
+    "definition": "维持给定平衡相集合时，可独立指定的强度变量数。",
+    "expanded": "通常 F=C−P＋2，固定一个独立温压变量后剩余自由度减少一；相量与相份额另由守恒关系确定。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "固定温压后的两相组成确定，不代表两相相量比例也确定。",
+    "related": [
+      "phase-rule",
+      "component",
+      "lever-rule"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "bubble-point",
+    "zh": "泡点",
+    "en": "Bubble point",
+    "aliases": [
+      "泡点线"
+    ],
+    "category": "相图与相平衡",
+    "definition": "液体刚开始出现无穷小量平衡蒸气的条件。",
+    "expanded": "恒温理想二元体系泡点压力 p=x<sub>A</sub>p<sub>A</sub><sup>*</sup>＋(1−x<sub>A</sub>)p<sub>B</sub><sup>*</sup>；恒压下求满足该关系的泡点温度。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "泡点线的组成变量是液相组成，不是气相组成。",
+    "related": [
+      "dew-point",
+      "raoults-law",
+      "tie-line"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "dew-point",
+    "zh": "露点",
+    "en": "Dew point",
+    "aliases": [
+      "露点线"
+    ],
+    "category": "相图与相平衡",
+    "definition": "蒸气刚开始出现无穷小量平衡液体的条件。",
+    "expanded": "恒温理想二元体系满足 <span class=\"math-frac\"><span>1</span><span>p</span></span>=<span class=\"math-frac\"><span>y<sub>A</sub></span><span>p<sub>A</sub><sup>*</sup></span></span>＋<span class=\"math-frac\"><span>1−y<sub>A</sub></span><span>p<sub>B</sub><sup>*</sup></span></span>。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "露点边界是饱和气体与趋零液相的极限，应与边界之外的单气相区区分。",
+    "related": [
+      "bubble-point",
+      "tie-line"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "tie-line",
+    "zh": "系线",
+    "en": "Tie line",
+    "aliases": [
+      "连结线"
+    ],
+    "category": "相图与相平衡",
+    "definition": "两相区中连接同一温压下共存相组成的线。",
+    "expanded": "在本课恒温 p—组成图和恒压 T—组成图中，气液平衡系线均为水平线；两端读各相组成，内部状态点读总体组成。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "不能将两条曲线上相同横坐标但不同纵坐标的点当成共存相。",
+    "related": [
+      "lever-rule",
+      "overall-composition"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "isopleth",
+    "zh": "等组成线",
+    "en": "Isopleth",
+    "aliases": [
+      "等组成路径"
+    ],
+    "category": "相图与相平衡",
+    "definition": "图中保持总体组成不变的状态路径。",
+    "expanded": "封闭二元体系在恒温下用活塞改变压力时，总体组成不变，可沿 p—组成图的竖直等组成线变化。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "两相组成仍可变化；若物料被抽走，总体组成也未必固定。",
+    "related": [
+      "overall-composition",
+      "tie-line"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "lever-rule",
+    "zh": "杠杆规则",
+    "en": "Lever rule",
+    "aliases": [],
+    "category": "相图与相平衡",
+    "definition": "根据总体组成与共存相组成，由物料守恒求两相数量比例。",
+    "expanded": "以液相组成 x、气相组成 y、总体组成 z 表示，<span class=\"math-frac\"><span>n<sub>g</sub></span><span>n</span></span>=<span class=\"math-frac\"><span>z−x</span><span>y−x</span></span>，<span class=\"math-frac\"><span>n<sub>l</sub></span><span>n</span></span>=<span class=\"math-frac\"><span>y−z</span><span>y−x</span></span>。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "相量对应对侧线段；摩尔分数图得到摩尔数量分配，不能直接当作质量或体积分配。",
+    "related": [
+      "tie-line",
+      "overall-composition"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "relative-volatility",
+    "zh": "相对挥发度",
+    "en": "Relative volatility",
+    "aliases": [],
+    "category": "相图与相平衡",
+    "definition": "比较两种组分在气液平衡中相对进入气相倾向的量。",
+    "expanded": "一般可用两组分气液组成比的比表示；理想液相和理想气相模型下 α=<span class=\"math-frac\"><span>p<sub>A</sub><sup>*</sup></span><span>p<sub>B</sub><sup>*</sup></span></span>，y<sub>A</sub>=<span class=\"math-frac\"><span>αx<sub>A</sub></span><span>1＋(α−1)x<sub>A</sub></span></span>。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "只有约定 α 大于一，才可说 A 在蒸气中富集；纯组分端点仍有 x=y。",
+    "related": [
+      "raoults-law",
+      "fractional-distillation"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "theoretical-plate",
+    "zh": "理论板",
+    "en": "Theoretical plate",
+    "aliases": [
+      "理论级"
+    ],
+    "category": "相图与相平衡",
+    "definition": "相当于一次理想气液平衡接触的分离级。",
+    "expanded": "理论板数用来描述分馏柱的分离能力。两相组成差越小，达到同一分离程度通常需更多理论级。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "一个理论板不等于一颗填料，也不一定等于一块实际塔板。",
+    "related": [
+      "fractional-distillation",
+      "relative-volatility"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "fractional-distillation",
+    "zh": "分馏",
+    "en": "Fractional distillation",
+    "aliases": [
+      "分级蒸馏"
+    ],
+    "category": "相图与相平衡",
+    "definition": "借助多级汽化、冷凝及气液接触，使挥发性不同的组分逐渐分离。",
+    "expanded": "分馏柱使上升蒸气与回流液反复接触；对本课理想体系，塔顶通常富集较易挥发组分。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "理想逐级富集不保证真实共沸体系可用普通恒压分馏分成纯组分。",
+    "related": [
+      "theoretical-plate",
+      "relative-volatility"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
+  },
+  {
+    "slug": "overall-composition",
+    "zh": "总体组成",
+    "en": "Overall composition",
+    "aliases": [
+      "总组成"
+    ],
+    "category": "相图与相平衡",
+    "definition": "把体系各相物质汇总后得到的整体组成。",
+    "expanded": "z<sub>A</sub>=<span class=\"math-frac\"><span>n<sub>l</sub>x<sub>A</sub>＋n<sub>g</sub>y<sub>A</sub></span><span>n<sub>l</sub>＋n<sub>g</sub></span></span>。两相中 z 位于相应 x 与 y 之间；单相时才等于该相组成。",
+    "properties": [
+      "第14课：相律与二元气液相图"
+    ],
+    "confusions": "总体组成与任一相组成不能随意互换。",
+    "related": [
+      "mole-fraction",
+      "lever-rule",
+      "isopleth"
+    ],
+    "relatedReactions": [],
+    "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
+    "updated": "2026-10-29"
   }
 ]

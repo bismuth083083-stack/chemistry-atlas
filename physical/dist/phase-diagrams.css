@@ -1,0 +1,9 @@
+.expanded-notes p .math-frac{font-style:italic}.expanded-notes .formula .chem{font-style:normal}
+.expanded-notes .ppt-figure{max-width:760px;margin:28px auto;padding:18px;background:#fff;border:1px solid var(--line);border-radius:10px}
+.expanded-notes .ppt-figure img{height:auto;max-height:600px;object-fit:contain;filter:none!important;background:#fff}
+.expanded-notes .ppt-figure figcaption{color:#4e585c;font-size:12px;line-height:1.8}
+.expanded-notes .ppt-figure figcaption small{display:block;overflow-wrap:anywhere;color:#71797c;margin-top:5px}
+.expanded-notes .source-notes{margin-top:30px;padding:20px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.expanded-notes .source-notes h2{font-size:19px}.expanded-notes .source{overflow-wrap:anywhere;font-size:12px;color:var(--muted)}
+.sidebar .lesson-outline span{display:inline-block;min-width:37px;margin-right:4px;width:auto}
+@media(max-width:620px){.expanded-notes .ppt-figure{padding:12px}.expanded-notes .ppt-figure img{max-height:none}.expanded-notes .formula{font-size:16px}}

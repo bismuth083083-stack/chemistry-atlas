@@ -2349,8 +2349,8 @@
       "transition-state",
       "reaction-order"
     ],
-    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第17页；结合上课内容修订",
-    "updated": "2026-10-15"
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第17页；结合上课内容修订；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "stereospecific-inversion",
@@ -2394,7 +2394,8 @@
       "protic-solvent",
       "aprotic-solvent"
     ],
-    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "basicity",
@@ -2415,7 +2416,8 @@
       "lewis-base",
       "steric-hindrance"
     ],
-    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5"
+    "source": "Organic Chemistry I Lect. 9 (Chapter 6-1); Wade, Organic Chemistry, 8th ed., §6-1–§6-5；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "polarizability",
@@ -2566,8 +2568,8 @@
     "relatedReactions": [
       "亲核取代"
     ],
-    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第23页；本站第11课",
-    "updated": "2026-10-15"
+    "source": "Organic Chemistry I Lect. 10 (Chapter 6-2)，第23页；本站第11课；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "solvolysis",
@@ -2963,7 +2965,8 @@
       "e2",
       "carbocation-rearrangement"
     ],
-    "source": "第12课 · Lecture 11 · Chapter 6-3"
+    "source": "第12课 · Lecture 11 · Chapter 6-3；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "e2",
@@ -2984,7 +2987,8 @@
       "basicity",
       "sn2"
     ],
-    "source": "第12课 · Lecture 11 · Chapter 6-3"
+    "source": "第12课 · Lecture 11 · Chapter 6-3；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "zaitsev-rule",
@@ -3003,7 +3007,8 @@
       "hofmann-product",
       "hyperconjugation"
     ],
-    "source": "第12课 · Lecture 11 · Chapter 6-3"
+    "source": "第12课 · Lecture 11 · Chapter 6-3；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "hofmann-product",
@@ -3041,7 +3046,8 @@
       "newman-projection",
       "trans-diaxial-elimination"
     ],
-    "source": "第12课 · Lecture 11 · Chapter 6-3"
+    "source": "第12课 · Lecture 11 · Chapter 6-3；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "synperiplanar",
@@ -3081,7 +3087,8 @@
       "ring-flip",
       "axial-equatorial"
     ],
-    "source": "第12课 · Lecture 11 · Chapter 6-3"
+    "source": "第12课 · Lecture 11 · Chapter 6-3；本站 SN1/SN2/E1/E2 总结专题（substitution-elimination.html）",
+    "updated": "2026-10-30"
   },
   {
     "slug": "regioselectivity",
@@ -3192,5 +3199,313 @@
       "e2"
     ],
     "source": "Org. Chem. Lect. 14 (Chapter 7-2)"
+  },
+  {
+    "slug": "electrophilic-addition",
+    "zh": "亲电加成",
+    "en": "Electrophilic addition",
+    "aliases": [
+      "亲电加成反应"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "亲电体首先与多重键的电子作用，继而引入其他基团的加成类型。",
+    "expanded": "烯烃的 π 键可向亲电体提供电子。普通 HX 离子加成可经质子化形成碳正离子，再由卤离子捕获；不同亲电加成也可经过桥式中间体。",
+    "properties": [
+      "π 电子参与亲电进攻",
+      "中间体可以是游离正离子或桥式结构"
+    ],
+    "confusions": "不能把所有烯烃加成都画成游离碳正离子历程。",
+    "related": [
+      "electrophile",
+      "nucleophile",
+      "carbocation"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 6；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "hydrohalogenation",
+    "zh": "氢卤化",
+    "en": "Hydrohalogenation",
+    "aliases": [
+      "HX加成",
+      "HX 加成"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "氢与卤素加到多重键两端的反应。",
+    "expanded": "简单烯烃的普通 HCl、HBr、HI 极性加成常按马氏定位，并需检查正离子重排。HBr 在适当自由基引发条件下可呈反马氏定位。",
+    "properties": [
+      "净引入 H 与卤素",
+      "离子和自由基条件可改变定位"
+    ],
+    "confusions": "试剂相同但条件改变时，首步加入的物种与中间体可能不同。",
+    "related": [
+      "electrophilic-addition",
+      "markovnikov-rule",
+      "peroxide-effect"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 6；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "markovnikov-rule",
+    "zh": "马氏规则",
+    "en": "Markovnikov’s rule",
+    "aliases": [
+      "马尔科夫尼科夫规则",
+      "马尔可夫尼可夫规则"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "描述许多不对称烯烃加成中氢与另一基团连接位置的经验规则。",
+    "expanded": "对简单烷基烯烃的 HX 离子加成，H 通常加到较少取代端，X 加到较多取代端；用两种质子化路径所形成的中间体解释。",
+    "properties": [
+      "描述区域选择性",
+      "简单极性加成中常比较正离子形成路径"
+    ],
+    "confusions": "它描述区域选择性；共振、强吸电子基及重排会使简单口诀不足，且不直接规定立体构型。",
+    "related": [
+      "regioselectivity",
+      "carbocation",
+      "hydrohalogenation"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 6；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "anti-markovnikov-addition",
+    "zh": "反马氏加成",
+    "en": "Anti-Markovnikov addition",
+    "aliases": [
+      "反马氏定位"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "最终连接位置与相应简单马氏模式相反的加成。",
+    "expanded": "HBr 自由基路径中，Br· 先加到较少取代端，使自由基留在较多取代端，随后夺 H 得到反马氏溴代物。",
+    "properties": [
+      "按最终连接位置命名",
+      "本讲 HBr 自由基路径为典型例子"
+    ],
+    "confusions": "反马氏是产物连接关系，不是一个唯一机理名称；强吸电子基也可改变极性反应定位。",
+    "related": [
+      "markovnikov-rule",
+      "radical-addition",
+      "regioselectivity"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 21；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "peroxide-effect",
+    "zh": "过氧化物效应",
+    "en": "Peroxide effect",
+    "aliases": [
+      "Kharasch效应"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "适当过氧化物引发条件下，HBr 对简单不对称烯烃常改按自由基链式路径反马氏加成。",
+    "expanded": "过氧化物均裂后产生链引发物种；Br· 加双键，再由碳自由基从 HBr 夺 H，重新生成 Br·。",
+    "properties": [
+      "过氧化物作为引发剂被消耗",
+      "Br· 是链传播载体"
+    ],
+    "confusions": "过氧化物会被消耗，是引发剂；不能将同样的有效链式效应直接套给 HCl 或 HI。",
+    "related": [
+      "chain-initiation",
+      "chain-propagation",
+      "radical-addition"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 19；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "radical-addition",
+    "zh": "自由基加成",
+    "en": "Radical addition",
+    "aliases": [],
+    "category": "烯烃加成与水合",
+    "definition": "自由基与多重键反应，在形成新 σ 键的同时产生新的自由基中心的加成步骤或相关反应。",
+    "expanded": "本讲中溴自由基先加到烯烃，优先形成较稳定的碳自由基，再从 HBr 夺 H。电子移动用单电子鱼钩箭头表示。",
+    "properties": [
+      "使用单电子鱼钩箭头",
+      "碳自由基的稳定性影响本讲定位"
+    ],
+    "confusions": "最终 Br 所在碳和中间自由基所在碳是相邻的两个碳，不能混淆。",
+    "related": [
+      "radical",
+      "radical-stability",
+      "peroxide-effect"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 21；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "hydration",
+    "zh": "水合",
+    "en": "Hydration",
+    "aliases": [
+      "烯烃水合"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "本课指水的 H 与 OH 净加到双键两端形成醇。",
+    "expanded": "酸催化水合通常经碳正离子，可能重排；羟汞化—脱汞化也能实现马氏水合，通常避免普通正离子重排。",
+    "properties": [
+      "烯烃净加 H 与 OH 形成醇",
+      "存在不同反应路线"
+    ],
+    "confusions": "净加水的计量式不代表只有一个基元步骤。",
+    "related": [
+      "acid-catalyzed-hydration",
+      "oxymercuration-demercuration",
+      "alkene"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 28；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "acid-catalyzed-hydration",
+    "zh": "酸催化水合",
+    "en": "Acid-catalyzed hydration",
+    "aliases": [],
+    "category": "烯烃加成与水合",
+    "definition": "通过酸提供较低能垒的质子化通道，实现烯烃净加水生成醇。",
+    "expanded": "双键质子化、水进攻、氧鎓离子去质子化构成三步模型。酸在末步再生，水既参与捕获又可参与质子转移。",
+    "properties": [
+      "酸在循环末再生",
+      "可逆并可能有骨架重排"
+    ],
+    "confusions": "水合与脱水可逆；催化剂改变达到平衡的速率，不改变同一条件下的平衡常数。",
+    "related": [
+      "hydration",
+      "oxonium-ion",
+      "microscopic-reversibility"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 28；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "microscopic-reversibility",
+    "zh": "微观可逆性",
+    "en": "Microscopic reversibility",
+    "aliases": [
+      "微观可逆性原理"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "在相同条件下，互逆基元路径按相反顺序经过相同中间体和过渡态的原则。",
+    "expanded": "用水合和脱水对照时，应先固定反应条件，再把各个基元步骤逆向排列。不同组成、温度下的实际主路径仍可能改变。",
+    "properties": [
+      "以相同条件为前提",
+      "逆向按相反次序通过基元路径"
+    ],
+    "confusions": "它不表示任何两套实验条件下的宏观逆反应都只能有同一机制。",
+    "related": [
+      "acid-catalyzed-hydration",
+      "transition-state",
+      "equilibrium-constant"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 28；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "oxonium-ion",
+    "zh": "氧鎓离子",
+    "en": "Oxonium ion",
+    "aliases": [],
+    "category": "烯烃加成与水合",
+    "definition": "本课所讨论的氧具有三根键并带正电的离子，如质子化的醇。",
+    "expanded": "中性水进攻碳正离子后，氧保留两个 O–H 键又形成一个 O–C 键，直接生成 ROH<sub>2</sub><sup>+</sup>，再去质子化成为醇。",
+    "properties": [
+      "本讲三键氧带正电",
+      "去质子化可生成中性醇"
+    ],
+    "confusions": "不能省去正电荷并把三键氧直接写成中性醇。",
+    "related": [
+      "acid-catalyzed-hydration",
+      "lewis-base"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 28；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "oxymercuration-demercuration",
+    "zh": "羟汞化—脱汞化",
+    "en": "Oxymercuration–demercuration",
+    "aliases": [
+      "羟汞化-脱汞化"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "先形成有机汞醇，再用氢替换碳上的汞基，实现马氏水合的两阶段方法。",
+    "expanded": "常用 Hg(OAc)<sub>2</sub>/H<sub>2</sub>O 后接 NaBH<sub>4</sub>。桥式汞鎓离子由水开环，不经过通常的游离碳正离子，因此常保留原碳骨架。",
+    "properties": [
+      "通常为马氏水合",
+      "通常避免普通碳正离子重排",
+      "整体水合不必严格异面"
+    ],
+    "confusions": "开环阶段的 OH/Hg anti 关系不能直接当作整个水合严格 anti；脱汞可改变最终氢的面选择。",
+    "related": [
+      "mercurinium-ion",
+      "hydration",
+      "markovnikov-rule"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 37；本站第16课",
+    "updated": "2026-10-30"
+  },
+  {
+    "slug": "mercurinium-ion",
+    "zh": "汞鎓离子",
+    "en": "Mercurinium ion",
+    "aliases": [
+      "桥式汞鎓离子"
+    ],
+    "category": "烯烃加成与水合",
+    "definition": "亲电汞物种与烯烃相互作用形成的带正电桥式中间体。",
+    "expanded": "汞桥连接原双键两端；碳上不均匀的正电性使水通常从较多取代端开环，有利于马氏连接并抑制普通骨架迁移。",
+    "properties": [
+      "含汞的带正电桥式中间体",
+      "水开环可给马氏连接"
+    ],
+    "confusions": "它本身是正离子；应说没有普通游离碳正离子，而不是没有任何正离子。",
+    "related": [
+      "oxymercuration-demercuration",
+      "electrophilic-addition",
+      "carbocation"
+    ],
+    "relatedReactions": [
+      "烯烃加成"
+    ],
+    "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 37；本站第16课",
+    "updated": "2026-10-30"
   }
 ]

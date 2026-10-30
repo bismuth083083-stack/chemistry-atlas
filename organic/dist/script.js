@@ -11,6 +11,23 @@ const query=new URLSearchParams(location.search).get('q');
 if(termSearch&&query)termSearch.value=query;
 async function getTerms(){const r=await fetch('data/terms.json');return r.json()}
 const TERM_IMAGES={
+"alkene":["lecture-14/pi-bond.webp", "烯烃的 σ 与 π 键", "Org. Chem. Lect. 13 (Chapter 7-1), slide 18"],
+"alkene-stability":["lecture-15/hydrogenation.webp", "共同加氢终点下比较烯烃稳定性", "Org. Chem. Lect. 14 (Chapter 7-2), slide 9"],
+"anti-periplanar":["lecture-12/anti-periplanar.webp", "E2 的反式共平面几何", "Organic Chemistry I Lect. 11 (Chapter 6-3), slide 26"],
+
+"electrophilic-addition":["lecture-16/ionic-addition.webp", "亲电加成：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 6"],
+"hydrohalogenation":["lecture-16/ionic-addition.webp", "氢卤化：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 6"],
+"markovnikov-rule":["lecture-16/ionic-addition.webp", "马氏规则：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 6"],
+"anti-markovnikov-addition":["lecture-16/radical-regiochemistry.webp", "反马氏加成：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 21"],
+"peroxide-effect":["lecture-16/radical-chain.webp", "过氧化物效应：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 19"],
+"radical-addition":["lecture-16/radical-regiochemistry.webp", "自由基加成：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 21"],
+"hydration":["lecture-16/hydration-mechanism.webp", "水合：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 28"],
+"acid-catalyzed-hydration":["lecture-16/hydration-mechanism.webp", "酸催化水合：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 28"],
+"microscopic-reversibility":["lecture-16/hydration-mechanism.webp", "微观可逆性：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 28"],
+"oxonium-ion":["lecture-16/hydration-mechanism.webp", "氧鎓离子：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 28"],
+"oxymercuration-demercuration":["lecture-16/oxymercuration.webp", "羟汞化—脱汞化：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 37"],
+"mercurinium-ion":["lecture-16/oxymercuration.webp", "汞鎓离子：课件机理原图", "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 37"],
+
 "elimination":["lecture-12/e2-mechanism.webp", "消除反应：课件原图", "Organic Chemistry I Lect. 11 (Chapter 6-3)，第20页"],
 "dehydrohalogenation":["lecture-12/e2-mechanism.webp", "脱卤化氢：课件原图", "Organic Chemistry I Lect. 11 (Chapter 6-3)，第20页"],
 "alpha-beta-carbon":["lecture-12/e2-mechanism.webp", "α碳与β碳：课件原图", "Organic Chemistry I Lect. 11 (Chapter 6-3)，第20页"],

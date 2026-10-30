@@ -1,0 +1,22 @@
+/* Reading layouts for alkene additions and the substitution/elimination topic. */
+.alkene-additions .formula .chem,.mechanism-summary .formula{font-style:normal}
+.alkene-additions .ppt-figure,.mechanism-summary .ppt-figure{max-width:850px;margin:28px auto}
+.alkene-additions .ppt-figure img,.mechanism-summary .ppt-figure img{display:block;width:100%;height:auto;background:#fff;border:1px solid #dedee5;border-radius:9px;filter:none!important}
+.alkene-additions figcaption,.mechanism-summary figcaption{font-size:13px;line-height:1.8;color:var(--muted);margin-top:10px}
+.alkene-additions figcaption small,.mechanism-summary figcaption small{display:block;font-size:11px;margin-top:5px;overflow-wrap:anywhere}
+.alkene-additions .import-table,.mechanism-summary .import-table{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:10px;overscroll-behavior-x:contain}
+.alkene-additions table,.mechanism-summary table{width:100%;table-layout:fixed;border-collapse:collapse;min-width:650px;margin:0}
+.alkene-additions td,.alkene-additions th,.mechanism-summary td,.mechanism-summary th{vertical-align:top;text-align:left;line-height:1.8;padding:13px 15px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);overflow-wrap:break-word}
+.alkene-additions th,.mechanism-summary th{background:var(--surface);font-weight:600}
+.alkene-additions th:first-child,.mechanism-summary th:first-child{width:22%}
+.mechanism-summary .four-way table{min-width:850px}
+.mechanism-summary .four-way th:first-child{width:14%}
+.alkene-additions tr:last-child td,.mechanism-summary tr:last-child td,.mechanism-summary tbody tr:last-child th{border-bottom:0}
+.alkene-additions td:last-child,.alkene-additions th:last-child,.mechanism-summary td:last-child,.mechanism-summary th:last-child{border-right:0}
+.source-notes{margin-top:35px;padding:22px 25px;border:1px solid var(--line);border-radius:12px}
+.source-notes h2{font-size:21px}.source-notes p{font-size:13px;color:var(--muted)}
+.mechanism-summary .topic-subtitle{font-size:.72em;letter-spacing:0}
+.mechanism-summary .decision-list{padding-left:1.7em;line-height:1.95}.mechanism-summary .decision-list li{padding-left:.25em;margin:12px 0}
+@media(max-width:620px){.alkene-additions td,.alkene-additions th,.mechanism-summary td,.mechanism-summary th{padding:10px 12px}.source-notes{padding:17px}.mechanism-summary .article-head h1{font-size:30px}}
+
+.mechanism-summary .rate-law{font-family:Georgia,"Times New Roman",serif;font-style:normal;white-space:nowrap}

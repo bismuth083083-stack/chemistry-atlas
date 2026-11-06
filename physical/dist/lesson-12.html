@@ -19,22 +19,22 @@
       <button id="theme" class="icon-button">◐</button>
     </header>
     <aside class="sidebar">
-      <nav>
-        <p class="nav-label">知识库</p>
-        <a href="index.html"><span>◫</span>课程笔记</a>
-        <a href="terms.html"><span>Aa</span>双语词条库</a>
-        <p class="nav-label">物理化学 I</p>
-        <a href="lesson-01.html"><span>01</span>绪论、数学基础与理想气体</a>
-        <a href="lesson-02.html"><span>02</span>真实气体与状态方程</a>
-        <a href="lesson-03.html"><span>03</span>气体动理论与分子速率</a>
-        <a href="lesson-04.html"><span>04</span>热力学第一定律</a>
-        <a href="lesson-05.html"><span>05</span>第一定律的机械</a>
-        <a href="lesson-06.html"><span>06</span>热化学</a>
-        <a href="lesson-07.html"><span>07</span>热力学第二定律</a>
-        <a href="lesson-08.html"><span>08</span>第二定律的机械</a>
-      <a href="lesson-09.html"><span>09</span>相图与相的稳定性</a><a href="lesson-10.html"><span>10</span>相界线与相变类型</a><a href="lesson-11.html"><span>11</span>混合物、偏摩尔量与化学势</a><a class="active" href="lesson-12.html"><span>12</span>混合热力学与真实溶液</a><a href="lesson-13.html"><span>13</span>依数性与活度</a><a href="lesson-14.html"><span>14</span>相律、二元气液相图与分馏</a></nav>
-      <div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
-    </aside>
+<nav>
+<p class="nav-label">知识库</p>
+<a href="index.html"><span>◫</span>课程笔记</a>
+<a href="terms.html"><span>Aa</span>双语词条库</a>
+<p class="nav-label">物理化学 I</p>
+<a href="lesson-01.html"><span>01</span>绪论、数学基础与理想气体</a>
+<a href="lesson-02.html"><span>02</span>真实气体与状态方程</a>
+<a href="lesson-03.html"><span>03</span>气体动理论与分子速率</a>
+<a href="lesson-04.html"><span>04</span>热力学第一定律</a>
+<a href="lesson-05.html"><span>05</span>第一定律的机械</a>
+<a href="lesson-06.html"><span>06</span>热化学</a>
+<a href="lesson-07.html"><span>07</span>热力学第二定律</a>
+<a href="lesson-08.html"><span>08</span>第二定律的机械</a>
+<a href="lesson-09.html"><span>09</span>相图与相的稳定性</a><a href="lesson-10.html"><span>10</span>相界线与相变类型</a><a href="lesson-11.html"><span>11</span>混合物、偏摩尔量与化学势</a><a class="active" href="lesson-12.html"><span>12</span>混合热力学与真实溶液</a><a href="lesson-13.html"><span>13</span>依数性与活度</a><a href="lesson-14.html"><span>14</span>相律、二元气液相图与分馏</a><a href="lesson-15.html"><span>15</span>真实溶液、共沸与液液相图</a></nav>
+<div class="privacy"><span>●</span><div><b>私人知识库</b><small>仅所有者可访问</small></div></div>
+</aside>
 
     <main class="workspace"><article class="article lesson import-lesson"><a class="back" href="index.html">← 返回课程笔记</a><header class="article-head"><p class="eyebrow">12 · THERMODYNAMICS OF MIXTURES II</p><h1>混合热力学、Raoult与Henry定律及真实溶液</h1><p>依课件顺序整理知识体系、公式条件、计算例题和易混概念。</p></header><nav class="import-jump" aria-label="本课目录"><a href="#map">12.1 混合过程、参考态与化学势</a><a href="#gas">12.2 理想气体的化学势与混合Gibbs能</a><a href="#functions">12.3 混合熵、焓与体积</a><a href="#pressure-example">12.4 等体积不同初压：先追踪分压</a><a href="#raoult">12.5 液体化学势与Raoult定律</a><a href="#henry">12.6 Henry定律与理想稀溶液</a><a href="#oxygen">12.7 溶解氧例题：分压、摩尔分数和质量摩尔浓度</a><a href="#deviations">12.8 Raoult定律偏差与活度</a><a href="#excess">12.9 超额函数与规则溶液</a><a href="#stability">12.10 拓展：局部稳定性与分相判断</a><a href="#review">12.11 复习与第12讲测验</a></nav><section id="map"><p class="section-kicker">12.1 · COURSE NOTES</p><h2>混合过程、参考态与化学势</h2><p>本讲承接第11讲偏摩尔量和化学势，讨论理想气体混合、理想溶液、<a class="term-link" href="term.html?slug=ideal-dilute-solution">理想稀溶液</a>和真实溶液。文件名为20261022，投影片页眉为2026/10/21，来源采用PDF页码（12页，每页最多两张投影片）。本讲的模型需明确同温、同压比较的初始纯物质状态。</p><p class="source">来源：PChem1_lec12 Mixture2 20261022.pdf，第1–12页；稳定性一节为模型推导拓展。</p></section>
 <section id="gas"><p class="section-kicker">12.2 · COURSE NOTES</p><h2>理想气体的化学势与混合Gibbs能</h2><div class="equation">μᵢ = μᵢ°(T) + RT ln <span class="math-frac"><span>pᵢ</span><span>p°</span></span> = μᵢ<sup>*</sup>(T,p) + RT ln xᵢ</div><p>理想混合气体pᵢ=xᵢp。μᵢ°是标准压力下纯理想气体的化学势，μᵢ<sup>*</sup>是在混合物总压p下纯物质的化学势；二者参考压力通常不同。通过只允许i通过的半透膜，平衡时两侧μᵢ相等，理想气体因而具有相同分压。</p><div class="equation">Δ<sub>mix</sub>G = nRT Σᵢxᵢ ln xᵢ</div><p>该混合公式比较同T、同p下的分开纯组分与最终混合物。0&lt;xᵢ&lt;1时各对数为负，理想气体<a class="term-link" href="term.html?slug=gibbs-energy-of-mixing">混合Gibbs能</a>降低；若初始压力不同，先回到各自初态写μ，再计算实际G变化。</p><figure class="ppt-figure ppt-figure-light"><img src="assets/lecture-12/gas-mu.webp" alt="半透膜平衡与理想气体化学势" loading="lazy" decoding="async"><figcaption>半透膜平衡与理想气体化学势<small>图源：PChem1_lec12 Mixture2 20261022.pdf，PDF第2页（上下两张投影片排版）, slide 2</small></figcaption></figure><figure class="ppt-figure ppt-figure-light"><img src="assets/lecture-12/mixing-gibbs.webp" alt="同温同压混合的Gibbs能" loading="lazy" decoding="async"><figcaption>同温同压混合的Gibbs能<small>图源：PChem1_lec12 Mixture2 20261022.pdf，PDF第1页（上下两张投影片排版）, slide 1</small></figcaption></figure><p class="source">来源：PChem1_lec12 Mixture2 20261022.pdf，第1–12页；稳定性一节为模型推导拓展。</p></section>

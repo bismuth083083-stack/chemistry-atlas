@@ -1,0 +1,471 @@
+{
+  "id": "ORG-L16",
+  "title": "烯烃加成Ⅰ：HX 加成与水合",
+  "description": "按本周上传课件整理的概念、机理与应用练习。",
+  "subject": "organic-chemistry",
+  "chapter": "Website Lesson 16",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "烯烃加成Ⅰ：HX 加成与水合",
+      "url": "https://organic.chemistryatlas.xyz/lesson-16.html",
+      "role": "依据本周课件及校订笔记编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "丙烯在普通离子条件下加 HBr，主要得到什么？",
+      "points": 1,
+      "explanation": "先形成仲碳正离子，随后 Br⁻ 捕获，得到马氏产物。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2-溴丙烷"
+        },
+        {
+          "id": "B",
+          "text": "1-溴丙烷"
+        },
+        {
+          "id": "C",
+          "text": "丙-1-醇"
+        },
+        {
+          "id": "D",
+          "text": "丙酮"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "画离子型 HX 加成第一步时，双电子弯箭头从哪里出发？",
+      "points": 1,
+      "explanation": "箭头追踪电子对；π 电子进攻 H，H–X 键电子转移给 X。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "正电荷符号指向双键"
+        },
+        {
+          "id": "B",
+          "text": "卤素核指向空白"
+        },
+        {
+          "id": "C",
+          "text": "从已经生成的 C–X 键出发"
+        },
+        {
+          "id": "D",
+          "text": "烯烃 π 键指向 HX 的 H"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "1-甲基环己烯普通加 HBr 后，Br 主要连接哪个位置？",
+      "points": 1,
+      "explanation": "质子化以形成更稳定三级碳正离子的方向发生。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "甲基末端"
+        },
+        {
+          "id": "B",
+          "text": "距双键最远的环碳"
+        },
+        {
+          "id": "C",
+          "text": "原来带甲基的双键碳"
+        },
+        {
+          "id": "D",
+          "text": "原来不带甲基的双键碳"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "丁-1-烯离子型加 HBr，若环境无手性，2-溴丁烷通常是什么形式？",
+      "points": 1,
+      "explanation": "平面碳正离子的两面对映进攻路径等价，产物含一个新手性中心。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "内消旋体"
+        },
+        {
+          "id": "B",
+          "text": "外消旋体"
+        },
+        {
+          "id": "C",
+          "text": "只有 R 体"
+        },
+        {
+          "id": "D",
+          "text": "只有 S 体"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "RO–OR 在 HBr 反马氏加成中主要承担什么作用？",
+      "points": 1,
+      "explanation": "O–O 均裂形成自由基并产生链载体 Br·，引发剂会被消耗。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "自由基引发剂"
+        },
+        {
+          "id": "B",
+          "text": "亲核捕获剂"
+        },
+        {
+          "id": "C",
+          "text": "最终羟基来源"
+        },
+        {
+          "id": "D",
+          "text": "保持不变的普通催化剂"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "HBr 自由基加成的第一步链传播是什么？",
+      "points": 1,
+      "explanation": "Br· 先进入双键，较稳定的碳自由基随后从 HBr 夺氢。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "H⁺ 先质子化双键"
+        },
+        {
+          "id": "B",
+          "text": "水进攻汞鎓离子"
+        },
+        {
+          "id": "C",
+          "text": "Br⁻ 先打开环氧化物"
+        },
+        {
+          "id": "D",
+          "text": "Br· 加到双键形成碳自由基"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "2-甲基丁-2-烯在 HBr、ROOR 条件下主要产物是什么？",
+      "points": 1,
+      "explanation": "Br· 加到较少取代端，留下三级自由基，再夺 H。产物按新结构命名。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2-甲基丁-2-醇"
+        },
+        {
+          "id": "B",
+          "text": "1,2-二溴丁烷"
+        },
+        {
+          "id": "C",
+          "text": "2-溴-3-甲基丁烷"
+        },
+        {
+          "id": "D",
+          "text": "2-溴-2-甲基丁烷"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "为什么 HCl 的过氧化物效应不按 HBr 模式有效持续？",
+      "points": 1,
+      "explanation": "H–Cl 键较强，使碳自由基从 HCl 夺氢的传播步骤不利。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "过氧化物不能均裂"
+        },
+        {
+          "id": "B",
+          "text": "链传播夺 H 步骤受强 H–Cl 键限制"
+        },
+        {
+          "id": "C",
+          "text": "Cl· 无法存在"
+        },
+        {
+          "id": "D",
+          "text": "HCl 不含氢"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "酸催化丙烯水合时，水进攻碳正离子后首先形成什么？",
+      "points": 1,
+      "explanation": "水氧成第三根键后带正电，去质子化后才得到中性醇。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "质子化的醇（氧鎓离子）"
+        },
+        {
+          "id": "B",
+          "text": "中性醚"
+        },
+        {
+          "id": "C",
+          "text": "碳自由基"
+        },
+        {
+          "id": "D",
+          "text": "硼酸酯"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "酸水合催化循环末端，再生的主要物种是什么？",
+      "points": 1,
+      "explanation": "去质子化使酸再生；产物 OH 的氧来自水。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Br·"
+        },
+        {
+          "id": "B",
+          "text": "BH₃"
+        },
+        {
+          "id": "C",
+          "text": "金属汞"
+        },
+        {
+          "id": "D",
+          "text": "H₃O⁺"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "3,3-二甲基丁-1-烯酸水合中，邻位季碳可发生哪种关键重排？",
+      "points": 1,
+      "explanation": "先形成仲碳正离子，邻位甲基带键电子对迁移后得到更稳定叔碳正离子。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "总碳数减少一半"
+        },
+        {
+          "id": "B",
+          "text": "双键无步骤跳到环外"
+        },
+        {
+          "id": "C",
+          "text": "1,2-甲基迁移"
+        },
+        {
+          "id": "D",
+          "text": "从季碳迁移不存在的氢"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "上述底物酸水合的重排醇主要是哪一种？",
+      "points": 1,
+      "explanation": "甲基迁移改变骨架，水捕获原季碳位置形成的正电中心。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2-甲基丙-1-醇"
+        },
+        {
+          "id": "B",
+          "text": "2,3-二甲基丁-2-醇"
+        },
+        {
+          "id": "C",
+          "text": "3,3-二甲基丁-2-醇"
+        },
+        {
+          "id": "D",
+          "text": "丁-1-醇"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "希望保留 3,3-二甲基丁-1-烯骨架并获得马氏醇，应选什么？",
+      "points": 1,
+      "explanation": "桥式汞鎓离子路径通常抑制典型碳正离子骨架迁移。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "羟汞化—脱汞化"
+        },
+        {
+          "id": "B",
+          "text": "强酸水合并依赖重排"
+        },
+        {
+          "id": "C",
+          "text": "HBr、ROOR"
+        },
+        {
+          "id": "D",
+          "text": "只加水、不催化"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "羟汞化—脱汞化的立体化学哪项准确？",
+      "points": 1,
+      "explanation": "水与汞的开桥关系和后续脱汞引入 H 的方向是两个步骤。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "整个过程永远严格 syn"
+        },
+        {
+          "id": "B",
+          "text": "整个过程永远严格 anti"
+        },
+        {
+          "id": "C",
+          "text": "必然只得到一个对映体"
+        },
+        {
+          "id": "D",
+          "text": "开桥常为 anti，整体最终 H 的方向需另判"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "同一条件下，催化剂对水合平衡常数的作用是什么？",
+      "points": 1,
+      "explanation": "催化改变能垒和速率，在给定条件下不改变平衡常数。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "把所有平衡常数变成 1"
+        },
+        {
+          "id": "B",
+          "text": "只加快正反应且禁止逆反应"
+        },
+        {
+          "id": "C",
+          "text": "加快接近平衡，平衡常数保持由热力学决定"
+        },
+        {
+          "id": "D",
+          "text": "使平衡常数无限大"
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

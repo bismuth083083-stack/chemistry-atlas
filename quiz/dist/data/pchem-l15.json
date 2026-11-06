@@ -1,0 +1,471 @@
+{
+  "id": "PCHEM-L15",
+  "title": "真实溶液、共沸与液液相图",
+  "description": "按本周上传课件整理的概念、机理与应用练习。",
+  "subject": "physical-chemistry",
+  "chapter": "Website Lesson 15",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "真实溶液、共沸与液液相图",
+      "url": "https://physical.chemistryatlas.xyz/lesson-15.html",
+      "role": "依据本周课件及校订笔记编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "恒温下，显著正偏差并形成蒸气压极大的体系通常对应什么？",
+      "points": 1,
+      "explanation": "较高蒸气压使体系在较低温度达到给定外压。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "恒压下最低沸点共沸"
+        },
+        {
+          "id": "B",
+          "text": "恒压下最高沸点共沸"
+        },
+        {
+          "id": "C",
+          "text": "所有组成均无气相"
+        },
+        {
+          "id": "D",
+          "text": "必须形成纯物质"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "气液共沸组成的直接判据是什么？",
+      "points": 1,
+      "explanation": "共沸时平衡蒸气和液体组成相同，相对挥发度为 1。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两个液相体积相同"
+        },
+        {
+          "id": "B",
+          "text": "两组分摩尔质量相同"
+        },
+        {
+          "id": "C",
+          "text": "全部分压都为零"
+        },
+        {
+          "id": "D",
+          "text": "同一组分 xᵢ=yᵢ"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "低沸共沸体系普通精馏时，塔顶馏出物通常趋向哪里？",
+      "points": 1,
+      "explanation": "共沸组成具有最低沸点，反复气化冷凝趋向该组成。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "始终最高沸点纯组分"
+        },
+        {
+          "id": "B",
+          "text": "固体晶格"
+        },
+        {
+          "id": "C",
+          "text": "低沸共沸组成"
+        },
+        {
+          "id": "D",
+          "text": "始终纯水"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "高沸共沸体系逐步移去蒸气时，釜液通常趋向哪里？",
+      "points": 1,
+      "explanation": "残液中较易挥发成分减少，液体趋向最高沸点组成。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "变为真空"
+        },
+        {
+          "id": "B",
+          "text": "高沸共沸组成"
+        },
+        {
+          "id": "C",
+          "text": "必然越过共沸直达另一侧"
+        },
+        {
+          "id": "D",
+          "text": "始终维持起始液体组成"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "两种近乎互不相溶液体都存在时，平衡总蒸气压近似是什么？",
+      "points": 1,
+      "explanation": "两液相活度近纯态，两个正分压可共同达到外压。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两种纯液体同温饱和蒸气压之和"
+        },
+        {
+          "id": "B",
+          "text": "两分压之差"
+        },
+        {
+          "id": "C",
+          "text": "只取摩尔分数较大的分压"
+        },
+        {
+          "id": "D",
+          "text": "始终等于零"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "水蒸气蒸馏降低温度的直接原因是什么？",
+      "points": 1,
+      "explanation": "关键是共存两相贡献蒸气压，从而提前达到沸腾条件。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "外界大气压自动消失"
+        },
+        {
+          "id": "B",
+          "text": "水使所有有机物都分解"
+        },
+        {
+          "id": "C",
+          "text": "摩尔质量自动降为零"
+        },
+        {
+          "id": "D",
+          "text": "两组分分压相加，较低温度即可达到外压"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "某温度有机物分压 20 kPa、水 80 kPa，摩尔质量分别 150、18，馏出质量比约多少？",
+      "points": 1,
+      "explanation": "分压比给摩尔比，乘各自摩尔质量得 3000:1440≈2.08:1。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "有机物:水=150:18"
+        },
+        {
+          "id": "B",
+          "text": "有机物:水=20:1"
+        },
+        {
+          "id": "C",
+          "text": "有机物:水≈2.08:1"
+        },
+        {
+          "id": "D",
+          "text": "有机物:水=1:4"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "恒压二元两液相平衡，选定温度后再改变总组成，主要改变什么？",
+      "points": 1,
+      "explanation": "两相端点在该温度下由平衡固定，位于两相区的总组成决定相量。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "纯物质化学式"
+        },
+        {
+          "id": "B",
+          "text": "两相数量"
+        },
+        {
+          "id": "C",
+          "text": "同温系线两个端点必然任意移动"
+        },
+        {
+          "id": "D",
+          "text": "组分数"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "z=0.41、两相端点 0.35 和 0.83，左侧相与右侧相摩尔数量比是多少？",
+      "points": 1,
+      "explanation": "对面系线长度之比为 (0.83−0.41):(0.41−0.35)=0.42:0.06。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "7:1"
+        },
+        {
+          "id": "B",
+          "text": "1:7"
+        },
+        {
+          "id": "C",
+          "text": "0.35:0.83"
+        },
+        {
+          "id": "D",
+          "text": "1:1"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "上临界溶解温度 UCST 的含义是什么？",
+      "points": 1,
+      "explanation": "高于 UCST 时该类体系各组成均可成为单相；特定组成的澄清温度可较低。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有样品开始沸腾的温度"
+        },
+        {
+          "id": "B",
+          "text": "任一组成的澄清温度必与它相同"
+        },
+        {
+          "id": "C",
+          "text": "水的凝固点"
+        },
+        {
+          "id": "D",
+          "text": "两相区的最高温度"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "LCST 体系在低于临界温度时通常怎样？",
+      "points": 1,
+      "explanation": "低温有利的缔合或溶剂化可维持混溶，升温后分相。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "温度越低相数必无限增加"
+        },
+        {
+          "id": "B",
+          "text": "只能存在气相"
+        },
+        {
+          "id": "C",
+          "text": "较有利单相混溶"
+        },
+        {
+          "id": "D",
+          "text": "始终分为三个固相"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "二元体系恒压三相共存时，F′ 为多少？",
+      "points": 1,
+      "explanation": "恒压相律 F′=C−P+1=2−3+1=0。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "350 K 时 z=0.66、液相 0.87、气相 0.49，液气数量比约多少？",
+      "points": 1,
+      "explanation": "nL:nV=(0.66−0.49):(0.87−0.66)=0.17:0.21。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1:1.235"
+        },
+        {
+          "id": "B",
+          "text": "1.235:1"
+        },
+        {
+          "id": "C",
+          "text": "0.87:0.49"
+        },
+        {
+          "id": "D",
+          "text": "1:7"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "三相都具有有限数量时，给定总量和二元总组成，能怎样确定相量？",
+      "points": 1,
+      "explanation": "三个未知相量只有总量和一个组分两个独立守恒条件，还差一个条件。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "可直接对两个液相端点使用总组成"
+        },
+        {
+          "id": "B",
+          "text": "全部相量由 F′=0 自动固定"
+        },
+        {
+          "id": "C",
+          "text": "三个相一定等量"
+        },
+        {
+          "id": "D",
+          "text": "还需要额外一项相量信息"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "298 K 时 z=0.66、两个液相端点 0.20 与 0.90，左相:右相约多少？",
+      "points": 1,
+      "explanation": "对面线段比为 (0.90−0.66):(0.66−0.20)=0.24:0.46≈0.52:1。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "7:1"
+        },
+        {
+          "id": "B",
+          "text": "1:1.235"
+        },
+        {
+          "id": "C",
+          "text": "0.52:1"
+        },
+        {
+          "id": "D",
+          "text": "1:0.52"
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

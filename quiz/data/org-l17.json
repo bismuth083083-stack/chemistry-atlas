@@ -1,0 +1,471 @@
+{
+  "id": "ORG-L17",
+  "title": "烯烃加成Ⅱ：硼氢化、卤化与卤代醇",
+  "description": "按本周上传课件整理的概念、机理与应用练习。",
+  "subject": "organic-chemistry",
+  "chapter": "Website Lesson 17",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "烯烃加成Ⅱ：硼氢化、卤化与卤代醇",
+      "url": "https://organic.chemistryatlas.xyz/lesson-17.html",
+      "role": "依据本周课件及校订笔记编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "1-甲基环戊烯在甲醇中烷氧基汞化—脱汞化，主要生成什么？",
+      "points": 1,
+      "explanation": "甲醇进攻较多取代碳，脱汞后得到马氏醚。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1-甲氧基-1-甲基环戊烷"
+        },
+        {
+          "id": "B",
+          "text": "2-甲基环戊醇"
+        },
+        {
+          "id": "C",
+          "text": "环戊酮"
+        },
+        {
+          "id": "D",
+          "text": "1,2-二溴环戊烷"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "BH₃ 是 Lewis 酸的主要结构依据是什么？",
+      "points": 1,
+      "explanation": "空轨道可接受烯烃 π 电子，同时 B–H 对双键协同加成。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "B 带三对孤对电子"
+        },
+        {
+          "id": "B",
+          "text": "H 必为 H⁺"
+        },
+        {
+          "id": "C",
+          "text": "它只有一个原子"
+        },
+        {
+          "id": "D",
+          "text": "B 周围只有六个价电子且有空轨道"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "完整硼氢化—氧化的试剂顺序是什么？",
+      "points": 1,
+      "explanation": "硼氢化先建立 C–B，再经氧化和水解得到 C–OH。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "先 NaBH₄，再 Br₂"
+        },
+        {
+          "id": "B",
+          "text": "只使用 OH⁻"
+        },
+        {
+          "id": "C",
+          "text": "先 BH₃·THF，再 H₂O₂、OH⁻"
+        },
+        {
+          "id": "D",
+          "text": "先 Br₂，再 HCl"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "端烯烃 CH₂=CH–R 完整硼氢化—氧化通常得到什么？",
+      "points": 1,
+      "explanation": "B 优先进较少取代末端，氧化后 OH 保留在该碳上。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "BrCH₂CH₂R"
+        },
+        {
+          "id": "B",
+          "text": "HOCH₂CH₂R"
+        },
+        {
+          "id": "C",
+          "text": "CH₃CH(OH)R"
+        },
+        {
+          "id": "D",
+          "text": "RCOOH"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "BH₃ 在完整理想计量下最多可加成几个烯烃双键？",
+      "points": 1,
+      "explanation": "BH₃ 的三根 B–H 键可逐一加成；B₂H₆ 才对应六个双键的理论计量。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "硼氢化中，新 H 与 B 的相对方向是什么？",
+      "points": 1,
+      "explanation": "四中心协同过渡态使 H、B 从同一面进入。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "anti 异面"
+        },
+        {
+          "id": "B",
+          "text": "任意且完全无规则"
+        },
+        {
+          "id": "C",
+          "text": "互相间隔一个碳"
+        },
+        {
+          "id": "D",
+          "text": "syn 同面"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "氧化将 C–B 转为 C–OH 时，迁移碳的空间构型怎样变化？",
+      "points": 1,
+      "explanation": "烷基带成键电子对向氧迁移，四面体相对构型保持；R/S 需重新排优先次序。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "先完全变为平面自由正离子"
+        },
+        {
+          "id": "B",
+          "text": "碳骨架必然断裂"
+        },
+        {
+          "id": "C",
+          "text": "相对构型保持"
+        },
+        {
+          "id": "D",
+          "text": "必然 Walden 反转"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "1-甲基环戊烯硼氢化—氧化后，OH 与原甲基主要是什么关系？",
+      "points": 1,
+      "explanation": "新增 H 与 OH 同面，原甲基与该 H 相反，因此甲基与 OH 反式。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "二者必然均在桥头"
+        },
+        {
+          "id": "B",
+          "text": "反式"
+        },
+        {
+          "id": "C",
+          "text": "同面且必为顺式"
+        },
+        {
+          "id": "D",
+          "text": "它们在同一碳上"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "普通降冰片烯主要从哪个面进行硼氢化？",
+      "points": 1,
+      "explanation": "桥使 endo 面较拥挤，exo 面通常较可接近。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "较易接近的 exo 面"
+        },
+        {
+          "id": "B",
+          "text": "被桥遮挡的 endo 面"
+        },
+        {
+          "id": "C",
+          "text": "桥内任意原子"
+        },
+        {
+          "id": "D",
+          "text": "只从芳环面"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "用羧酸处理有机硼中间体的净有机变化是什么？",
+      "points": 1,
+      "explanation": "有机硼质子解可生成烷烃；H₂O₂、OH⁻ 后处理才通常给醇。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "C–B 必变成 C–Br"
+        },
+        {
+          "id": "B",
+          "text": "形成环氧化物"
+        },
+        {
+          "id": "C",
+          "text": "总碳数自动加一"
+        },
+        {
+          "id": "D",
+          "text": "C–B 变成 C–H"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "Br₂ 在惰性非亲核介质中对烯烃加成的典型中间体是什么？",
+      "points": 1,
+      "explanation": "π 电子进攻并桥连溴，随后 Br⁻ 背面开环。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "硼鎓离子"
+        },
+        {
+          "id": "B",
+          "text": "硫酸氢酯"
+        },
+        {
+          "id": "C",
+          "text": "三元桥式溴鎓离子"
+        },
+        {
+          "id": "D",
+          "text": "游离甲基负离子"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "trans-丁-2-烯与 Br₂ 异面加成主要得到哪种立体形式？",
+      "points": 1,
+      "explanation": "anti 加成结合 trans 原料几何给 meso-(2R,3S) 产物。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "三个 Br 均加在末端"
+        },
+        {
+          "id": "B",
+          "text": "内消旋 2,3-二溴丁烷"
+        },
+        {
+          "id": "C",
+          "text": "只有 (2R,3R)"
+        },
+        {
+          "id": "D",
+          "text": "外消旋 (2R,3R)/(2S,3S)"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "丙烯与溴水生成卤代醇，OH 主要在哪个碳？",
+      "points": 1,
+      "explanation": "水进攻桥内较多部分正电的较多取代碳，OH 与 Br 为 anti。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "中间较多取代碳"
+        },
+        {
+          "id": "B",
+          "text": "末端较少取代碳"
+        },
+        {
+          "id": "C",
+          "text": "原甲基的末端碳"
+        },
+        {
+          "id": "D",
+          "text": "不含碳的位置"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "环己烯在含 NaCl 的溴水中出现溴氯化物和溴代醇，原因是什么？",
+      "points": 1,
+      "explanation": "两种亲核体竞争捕获，共同背面开环，产生不同官能团组合。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必须先形成两个不同烯烃"
+        },
+        {
+          "id": "B",
+          "text": "氯原子直接替换碳"
+        },
+        {
+          "id": "C",
+          "text": "所有产物都是重排生成"
+        },
+        {
+          "id": "D",
+          "text": "Cl⁻ 与水竞争开同一溴鎓离子"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "3-甲基戊-1-烯制 3-甲基戊-2-醇，较合适的马氏水合方法是什么？",
+      "points": 1,
+      "explanation": "羟汞化通常保留骨架；酸水合初生 C2 仲正离子可重排到 C3 叔正离子。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只加 NaOH"
+        },
+        {
+          "id": "B",
+          "text": "Br₂ 惰性溶剂"
+        },
+        {
+          "id": "C",
+          "text": "羟汞化—脱汞化"
+        },
+        {
+          "id": "D",
+          "text": "酸水合并假定不会氢迁移"
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "id": "INORG-L06",
+  "title": "酸碱与给体—受体化学",
+  "description": "按本周上传课件整理的概念、机理与应用练习。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Website Lesson 6",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "酸碱与给体—受体化学",
+      "url": "https://inorganic.chemistryatlas.xyz/lesson-06.html",
+      "role": "依据本周课件及校订笔记编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Lewis 碱的定义是什么？",
+      "points": 1,
+      "explanation": "Lewis 定义按电子对提供与接受判断，可用于配位和非质子反应。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "电子对给体"
+        },
+        {
+          "id": "B",
+          "text": "电子对受体"
+        },
+        {
+          "id": "C",
+          "text": "只生成 H₃O⁺ 的物种"
+        },
+        {
+          "id": "D",
+          "text": "所有带负电的氧化剂"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "下列哪一对是 Brønsted 共轭酸碱对？",
+      "points": 1,
+      "explanation": "共轭对只差一个质子；NH₄⁺ 与 NH₂⁻ 差两个质子。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "NH₄⁺ 与 NH₂⁻"
+        },
+        {
+          "id": "B",
+          "text": "HCl 与 OH⁻"
+        },
+        {
+          "id": "C",
+          "text": "Na⁺ 与 Cl⁻"
+        },
+        {
+          "id": "D",
+          "text": "NH₄⁺ 与 NH₃"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "同一溶剂中，HA 与 B 的质子转移更有利向右时，常对应哪项？",
+      "points": 1,
+      "explanation": "K=10 的指数为 pKₐ(HB⁺)−pKₐ(HA)，生成较弱酸有利。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只看分子大小即可"
+        },
+        {
+          "id": "B",
+          "text": "两种 pKₐ 必须来自不同溶剂"
+        },
+        {
+          "id": "C",
+          "text": "生成酸 HB⁺ 的 pKₐ 大于 HA"
+        },
+        {
+          "id": "D",
+          "text": "生成酸 HB⁺ 的 pKₐ 更小"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "水把多种强酸转化为同类 H₃O⁺，称为什么？",
+      "points": 1,
+      "explanation": "强酸对溶剂的质子转移几乎完全，观测酸度被溶剂拉平。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "光电效应"
+        },
+        {
+          "id": "B",
+          "text": "拉平效应"
+        },
+        {
+          "id": "C",
+          "text": "内消旋效应"
+        },
+        {
+          "id": "D",
+          "text": "顺磁效应"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "BrF₃ 自电离的特征离子是什么？",
+      "points": 1,
+      "explanation": "2BrF₃⇌BrF₂⁺＋BrF₄⁻，酸碱归属看这对离子。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "BrF₂⁺ 与 BrF₄⁻"
+        },
+        {
+          "id": "B",
+          "text": "H₃O⁺ 与 OH⁻"
+        },
+        {
+          "id": "C",
+          "text": "NH₄⁺ 与 NH₂⁻"
+        },
+        {
+          "id": "D",
+          "text": "Na⁺ 与 Br⁻"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "BrF₂AsF₆ 在 BrF₃ 溶剂体系中通常归为什么？",
+      "points": 1,
+      "explanation": "它提供溶剂特征阳离子 BrF₂⁺，按溶剂体系定义是酸。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "碱"
+        },
+        {
+          "id": "B",
+          "text": "只能算中性"
+        },
+        {
+          "id": "C",
+          "text": "氧化态恒为零"
+        },
+        {
+          "id": "D",
+          "text": "酸"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "NH₃ 与 BF₃ 形成加合物时，主要给受方向是什么？",
+      "points": 1,
+      "explanation": "合适的给体 HOMO 与受体 LUMO 相互作用形成稳定成键组合。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "B 向 N 转移一个完整原子"
+        },
+        {
+          "id": "B",
+          "text": "只有两分子之间的排斥"
+        },
+        {
+          "id": "C",
+          "text": "NH₃ 的占据孤对轨道向 BF₃ 空轨道给电子"
+        },
+        {
+          "id": "D",
+          "text": "BF₃ 必须给出三个质子"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "水与 Mg²⁺ 形成六水合离子时，水是什么角色？",
+      "points": 1,
+      "explanation": "水氧的孤对参与配位，Mg²⁺ 接受电子对。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "电子对受体"
+        },
+        {
+          "id": "B",
+          "text": "Lewis 碱"
+        },
+        {
+          "id": "C",
+          "text": "只作氧化剂"
+        },
+        {
+          "id": "D",
+          "text": "只作还原剂"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "线性 FHF⁻ 的轴向成键可用哪种电子数模式描述？",
+      "points": 1,
+      "explanation": "三个轴向轨道组合为三条 MO，四电子占据成键和近非键轨道。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "三中心四电子"
+        },
+        {
+          "id": "B",
+          "text": "三中心二电子"
+        },
+        {
+          "id": "C",
+          "text": "两个电子各自只在 H 上"
+        },
+        {
+          "id": "D",
+          "text": "八中心两电子"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "Ag⁺ 与 I⁻ 的匹配主要属于哪类？",
+      "points": 1,
+      "explanation": "Ag⁺ 较软、I⁻ 易极化；溶解度还涉及晶体与溶剂化贡献。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "硬酸—硬碱"
+        },
+        {
+          "id": "B",
+          "text": "硬酸—零电子碱"
+        },
+        {
+          "id": "C",
+          "text": "完全不存在相互作用"
+        },
+        {
+          "id": "D",
+          "text": "软酸—软碱"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "按课件约定，若 I=10 eV、A=2 eV，绝对硬度 η 为多少？",
+      "points": 1,
+      "explanation": "η 是 I 与 A 之差的一半，因此为 4 eV。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "8 eV"
+        },
+        {
+          "id": "B",
+          "text": "12 eV"
+        },
+        {
+          "id": "C",
+          "text": "4 eV"
+        },
+        {
+          "id": "D",
+          "text": "6 eV"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "Drago–Wayland 模型中两个乘积主要代表什么？",
+      "points": 1,
+      "explanation": "−ΔH=EAEB＋CACB，分别表示酸碱的两类配对贡献。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "颜色与质量"
+        },
+        {
+          "id": "B",
+          "text": "静电与共价贡献"
+        },
+        {
+          "id": "C",
+          "text": "温度与体积"
+        },
+        {
+          "id": "D",
+          "text": "氧化与燃烧"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "水中甲胺系列出现二甲胺较强碱性，关键需要同时考虑什么？",
+      "points": 1,
+      "explanation": "烷基给电子有利碱性，而水合稳定和位阻会改变实测顺序。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "诱导效应与质子化产物溶剂化"
+        },
+        {
+          "id": "B",
+          "text": "只数碳原子"
+        },
+        {
+          "id": "C",
+          "text": "只看气相轨道而忽略介质"
+        },
+        {
+          "id": "D",
+          "text": "只看分子总质量"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "FLP 协同活化 H₂ 的主要净结果是什么？",
+      "points": 1,
+      "explanation": "酸碱位点协同导致 H–H 异裂，可用于无金属氢化循环。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两个氢都成为同一自由电子"
+        },
+        {
+          "id": "B",
+          "text": "酸碱全部变为惰性晶格"
+        },
+        {
+          "id": "C",
+          "text": "每个 H 都成为 O 原子"
+        },
+        {
+          "id": "D",
+          "text": "酸接受氢化物、碱接受质子"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "碳硼烷酸强而其阴离子较温和的重要原因是什么？",
+      "points": 1,
+      "explanation": "强给质子能力可与共轭阴离子的低后续反应性并存。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L06"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "阴离子会立刻切断所有 C–C 键"
+        },
+        {
+          "id": "B",
+          "text": "酸中完全不存在质子"
+        },
+        {
+          "id": "C",
+          "text": "共轭阴离子稳定、低碱性且弱配位"
+        },
+        {
+          "id": "D",
+          "text": "阴离子有极强亲核性"
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

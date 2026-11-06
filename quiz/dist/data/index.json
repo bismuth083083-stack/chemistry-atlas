@@ -1815,6 +1815,134 @@
       ],
       "path": "pchem-l12.json",
       "mode": "fixed"
+    },
+    {
+      "id": "ORG-L16",
+      "title": "烯烃加成Ⅰ：HX 加成与水合",
+      "description": "按本周上传课件整理的概念、机理与应用练习。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 16,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 16",
+      "lesson": "烯烃加成Ⅰ：HX 加成与水合",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "ORG-L16"
+      ],
+      "knowledgePoints": [
+        "π 键、加成与反应能垒",
+        "HX 离子型加成的电子流",
+        "马氏规则的依据与典型产物",
+        "吸电子与孤对电子效应",
+        "位置选择与立体结果分开判断",
+        "过氧化物效应的链式机理"
+      ],
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "relatedNotes": [
+        "/organic/dist/lesson-16.html"
+      ],
+      "path": "org-l16.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L17",
+      "title": "烯烃加成Ⅱ：硼氢化、卤化与卤代醇",
+      "description": "按本周上传课件整理的概念、机理与应用练习。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 17,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 17",
+      "lesson": "烯烃加成Ⅱ：硼氢化、卤化与卤代醇",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "ORG-L17"
+      ],
+      "knowledgePoints": [
+        "烷氧基汞化：从水合推广到醇加成",
+        "BH₃、二硼烷与硼烷配合物",
+        "四中心协同加成与反马氏定位",
+        "计量关系：一个 BH₃ 可反应三个双键",
+        "同面加成与氧化构型保持",
+        "区域选择性、9-BBN 与桥环的进攻面"
+      ],
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "relatedNotes": [
+        "/organic/dist/lesson-17.html"
+      ],
+      "path": "org-l17.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "INORG-L06",
+      "title": "酸碱与给体—受体化学",
+      "description": "按本周上传课件整理的概念、机理与应用练习。",
+      "subject": "inorganic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 6,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 6",
+      "lesson": "酸碱与给体—受体化学",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "INORG-L06"
+      ],
+      "knowledgePoints": [
+        "从酸碱梯度到四种酸碱定义",
+        "共轭酸碱对与平衡方向",
+        "拉平效应与区分效应",
+        "溶剂自电离与无氢体系中的酸碱",
+        "Lewis 酸碱与前线轨道匹配",
+        "同一个水分子为何有四种反应角色"
+      ],
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-06.html"
+      ],
+      "path": "inorg-l06.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L15",
+      "title": "真实溶液、共沸与液液相图",
+      "description": "按本周上传课件整理的概念、机理与应用练习。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 15,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 15",
+      "lesson": "真实溶液、共沸与液液相图",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "PCHEM-L15"
+      ],
+      "knowledgePoints": [
+        "从 Raoult 定律到正、负偏差",
+        "恒温 p–x 与恒压 T–x 为何反向弯曲",
+        "共沸的条件：两相组成相同",
+        "乙醇—水、高沸共沸与分离路线",
+        "互不相溶液体与水蒸气蒸馏",
+        "馏出物质量比的推导"
+      ],
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "relatedNotes": [
+        "/physical/dist/lesson-15.html"
+      ],
+      "path": "pchem-l15.json",
+      "mode": "fixed"
     }
   ]
 }

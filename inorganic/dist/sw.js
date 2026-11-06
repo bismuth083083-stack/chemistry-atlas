@@ -1,5 +1,5 @@
-const CACHE='inorganic-atlas-v17-lft';
-const SHELL=[
+const CACHE='inorganic-atlas-v18-week-notes-20261106';
+const SHELL=['lesson-06.html','week-notes.css',
   './',
   'index.html',
   'lesson-01.html',

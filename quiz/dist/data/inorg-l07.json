@@ -1,0 +1,471 @@
+{
+  "id": "INORG-L07",
+  "title": "晶态固体：堆积、结构、晶格能与能带",
+  "description": "按本周课件及校订笔记整理，覆盖读图、结构计数、推导和概念辨析。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Website Lesson 7",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "晶态固体：堆积、结构、晶格能与能带",
+      "url": "https://inorganic.chemistryatlas.xyz/lesson-07.html",
+      "role": "依据上传课件、笔记推导与明确标注的课件校订"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "Bravais 点阵与晶体结构的关系，哪项准确？",
+      "points": 1,
+      "explanation": "14 种 Bravais 类型分类平移点阵，基元可含不同种类和数量的原子。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "世界只有 14 种晶体结构"
+        },
+        {
+          "id": "B",
+          "text": "每种点阵只能包含一个原子"
+        },
+        {
+          "id": "C",
+          "text": "晶胞必须是立方体"
+        },
+        {
+          "id": "D",
+          "text": "点阵给平移规律，加入原子基元后才得到具体结构"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "FCC 常规胞有几个原子？",
+      "points": 1,
+      "explanation": "8 个顶点各贡献八分之一，6 个面心各贡献二分之一，合计 4。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "BCC 等大硬球模型的接触关系是什么？",
+      "points": 1,
+      "explanation": "BCC 最近邻沿体对角线接触，体对角线跨过顶点—体心—顶点。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "a=4r"
+        },
+        {
+          "id": "B",
+          "text": "√3a=4r"
+        },
+        {
+          "id": "C",
+          "text": "a=2r"
+        },
+        {
+          "id": "D",
+          "text": "√2a=4r"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "哪一种结构的理想 APF 约为 0.6802？",
+      "points": 1,
+      "explanation": "BCC 由每胞 2 原子和 a=4r/√3 得 APF=√3π/8。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "FCC"
+        },
+        {
+          "id": "B",
+          "text": "HCP"
+        },
+        {
+          "id": "C",
+          "text": "BCC"
+        },
+        {
+          "id": "D",
+          "text": "SC"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "HCP 与 CCP 的正确对应是什么？",
+      "points": 1,
+      "explanation": "二者均为理想密堆积，CN=12、APF≈0.7405，但层序不同。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "HCP 为 ABCABC，CCP 为 ABAB"
+        },
+        {
+          "id": "B",
+          "text": "二者只有 6 个最近邻"
+        },
+        {
+          "id": "C",
+          "text": "HCP 的 APF 必大于 CCP"
+        },
+        {
+          "id": "D",
+          "text": "HCP 为 ABAB，CCP 为 ABCABC"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "含 N 个密堆积球时，四面体与八面体空隙数分别多少？",
+      "points": 1,
+      "explanation": "HCP、CCP 都有每球 2 个四面体空隙、1 个八面体空隙。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2N 与 N"
+        },
+        {
+          "id": "B",
+          "text": "N 与 2N"
+        },
+        {
+          "id": "C",
+          "text": "N 与 N"
+        },
+        {
+          "id": "D",
+          "text": "4N 与 8N"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "若阴离子密堆积且全部四面体位由阳离子占据，计量比通常是什么？",
+      "points": 1,
+      "explanation": "每 N 个阴离子提供 2N 个四面体位，全部填充给 2:1。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必须为 1:4"
+        },
+        {
+          "id": "B",
+          "text": "阳离子:阴离子=2:1"
+        },
+        {
+          "id": "C",
+          "text": "阳离子:阴离子=1:1"
+        },
+        {
+          "id": "D",
+          "text": "阳离子:阴离子=1:2"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "CsCl 的结构为何不归为单原子 BCC 点阵？",
+      "points": 1,
+      "explanation": "几何上有体心位置不等于 Bravais 体心点阵；平移等价需要基元相同。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "CsCl 的配位数一定为 6"
+        },
+        {
+          "id": "B",
+          "text": "CsCl 中只有一个元素"
+        },
+        {
+          "id": "C",
+          "text": "顶点与体心是不同物种，不能由该平移互换"
+        },
+        {
+          "id": "D",
+          "text": "CsCl 没有周期性"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "闪锌矿与纤维锌矿的共同局部特征是什么？",
+      "points": 1,
+      "explanation": "两者均为四面体配位、半数四面体空隙占据，但长程堆垛不同。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "二者都是 BCC 金属"
+        },
+        {
+          "id": "B",
+          "text": "全部八面体位都被填满"
+        },
+        {
+          "id": "C",
+          "text": "阴离子层序完全一样"
+        },
+        {
+          "id": "D",
+          "text": "Zn 和 S 均为四配位"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "理想立方 ABO₃ 钙钛矿中，顶点 A、体心 B、面心 O 的计数是什么？",
+      "points": 1,
+      "explanation": "顶点总贡献 1，体心贡献 1，6 个面心各贡献二分之一，得 3。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "A₁B₁O₃"
+        },
+        {
+          "id": "B",
+          "text": "A₈B₁O₆"
+        },
+        {
+          "id": "C",
+          "text": "A₁B₄O₈"
+        },
+        {
+          "id": "D",
+          "text": "A₂B₂O₂"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "每个 SiO₄ 四面体共享 4 个顶点时，三维网络的 O:Si 比是多少？",
+      "points": 1,
+      "explanation": "每个共享氧由两个 Si 分摊，4 个共享顶点每 Si 贡献 2 个氧。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1:1"
+        },
+        {
+          "id": "B",
+          "text": "2:1"
+        },
+        {
+          "id": "C",
+          "text": "4:1"
+        },
+        {
+          "id": "D",
+          "text": "3:1"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "以下哪一个是高岭石的正确组成？",
+      "points": 1,
+      "explanation": "Al₂Si₄O₁₀(OH)₂ 对应叶蜡石，Mg₃Si₄O₁₀(OH)₂ 为滑石。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Mg₃Si₄O₁₀(OH)₂"
+        },
+        {
+          "id": "B",
+          "text": "CaTiO₃"
+        },
+        {
+          "id": "C",
+          "text": "Al₂Si₂O₅(OH)₄"
+        },
+        {
+          "id": "D",
+          "text": "Al₂Si₄O₁₀(OH)₂"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "气相正、负离子结合成晶体的晶格形成焓通常采用什么符号？",
+      "points": 1,
+      "explanation": "形成晶体通常放热，反向晶格解离过程对应正值。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "正值"
+        },
+        {
+          "id": "B",
+          "text": "一定等于零"
+        },
+        {
+          "id": "C",
+          "text": "与任意数据相加都不需要符号"
+        },
+        {
+          "id": "D",
+          "text": "负值"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "Madelung 常数主要把什么纳入离子晶体能量？",
+      "points": 1,
+      "explanation": "常数反映整个周期点阵几何，包括同号排斥和异号吸引的求和。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "整个点阵中长程静电相互作用的几何求和"
+        },
+        {
+          "id": "B",
+          "text": "只有一个最近邻的共价键"
+        },
+        {
+          "id": "C",
+          "text": "样品总质量"
+        },
+        {
+          "id": "D",
+          "text": "声速的单位换算"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "同材料量子点明显变小时，常见的限域与发光趋势是什么？",
+      "points": 1,
+      "explanation": "尺寸减小时载流子限域增强，相关能级间隔常增大，需在相同材料条件下比较。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L07"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "电子与空穴不再存在"
+        },
+        {
+          "id": "B",
+          "text": "限域增强，跃迁能增大、波长变短"
+        },
+        {
+          "id": "C",
+          "text": "所有能级完全连续"
+        },
+        {
+          "id": "D",
+          "text": "发光波长必然无限变长"
+        }
+      ],
+      "answer": "B"
+    }
+  ]
+}

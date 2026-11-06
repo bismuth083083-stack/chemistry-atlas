@@ -1943,6 +1943,70 @@
       ],
       "path": "pchem-l15.json",
       "mode": "fixed"
+    },
+    {
+      "id": "INORG-L07",
+      "title": "晶态固体：堆积、结构、晶格能与能带",
+      "description": "按本周课件及校订笔记整理，覆盖读图、结构计数、推导和概念辨析。",
+      "subject": "inorganic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 7,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 7",
+      "lesson": "晶态固体：堆积、结构、晶格能与能带",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "INORG-L07"
+      ],
+      "knowledgePoints": [
+        "晶态、非晶态与结构的描述层级",
+        "七晶系与十四种 Bravais 点阵",
+        "共享原子的计数与配位数",
+        "SC、BCC、FCC 的边长、配位数与堆积率",
+        "ABAB 与 ABCABC：HCP、CCP 及晶胞选择",
+        "理论密度与 Cr 的复算"
+      ],
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-07.html"
+      ],
+      "path": "inorg-l07.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L16",
+      "title": "液固相图：共晶、包晶、固溶体与三元组成",
+      "description": "按本周课件及校订笔记整理，覆盖读图、结构计数、推导和概念辨析。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 16,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 16",
+      "lesson": "液固相图：共晶、包晶、固溶体与三元组成",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "knowledgePoints": [
+        "液固相图的坐标、相区和相律",
+        "简单共晶：液相线汇合处发生什么",
+        "从降温曲线读出结晶的三个阶段",
+        "杠杆规则：相比例与组织比例分别计算",
+        "共晶应用与锡铅组成的校订",
+        "反应生成化合物与一致熔融"
+      ],
+      "createdAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "relatedNotes": [
+        "/physical/dist/lesson-16.html"
+      ],
+      "path": "pchem-l16.json",
+      "mode": "fixed"
     }
   ]
 }

@@ -1,0 +1,471 @@
+{
+  "id": "PCHEM-L16",
+  "title": "液固相图：共晶、包晶、固溶体与三元组成",
+  "description": "按本周课件及校订笔记整理，覆盖读图、结构计数、推导和概念辨析。",
+  "subject": "physical-chemistry",
+  "chapter": "Website Lesson 16",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "液固相图：共晶、包晶、固溶体与三元组成",
+      "url": "https://physical.chemistryatlas.xyz/lesson-16.html",
+      "role": "依据上传课件、笔记推导与明确标注的课件校订"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "恒压二元体系 L、A(s)、B(s) 三相共存时 F′ 为多少？",
+      "points": 1,
+      "explanation": "恒压相律 F′=C−P+1，代入 C=2、P=3 得 0。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "简单共晶反应的冷却方向是什么？",
+      "points": 1,
+      "explanation": "共晶 L→A＋B；一个固相分成两个固相称共析。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "一个液相生成两个不同固相"
+        },
+        {
+          "id": "B",
+          "text": "两个气相合成一个液相"
+        },
+        {
+          "id": "C",
+          "text": "一个固相生成两个固相"
+        },
+        {
+          "id": "D",
+          "text": "纯固体完全升华"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "总组成位于简单共晶点左侧，缓慢冷却时通常先析什么？",
+      "points": 1,
+      "explanation": "左侧液相线进入 L＋A 区，残液向共晶组成移动。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必须 A 与 B 同时先析"
+        },
+        {
+          "id": "B",
+          "text": "A 初生相"
+        },
+        {
+          "id": "C",
+          "text": "B 初生相"
+        },
+        {
+          "id": "D",
+          "text": "气相"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "冷却曲线的共晶平台主要对应什么？",
+      "points": 1,
+      "explanation": "三相平衡使温度固定，移除的热量可对应液体持续结晶。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "温度升至沸点"
+        },
+        {
+          "id": "B",
+          "text": "组分数突然变为零"
+        },
+        {
+          "id": "C",
+          "text": "残余液体在 TE 下释放结晶潜热并形成两固相"
+        },
+        {
+          "id": "D",
+          "text": "体系停止交换任何能量"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "为什么单凭一个恒温平台不能确认总组成为共晶组成？",
+      "points": 1,
+      "explanation": "比较不同组成的曲线、初晶折点和平台温度，才能建立相图。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "所有平台都是仪器错误"
+        },
+        {
+          "id": "B",
+          "text": "纯物质完全不会有平台"
+        },
+        {
+          "id": "C",
+          "text": "相律完全无用"
+        },
+        {
+          "id": "D",
+          "text": "非共晶样品的残液也可在 TE 发生共晶转变"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "A:B=6:1，共晶 A:B=2:1，按摩尔组成算 TE 上方残液占比是多少？",
+      "points": 1,
+      "explanation": "zB=七分之一、xE=三分之一，纯 A 初生时残液占比为 zB 与 xE 的比，即 七分之三。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "七分之三"
+        },
+        {
+          "id": "B",
+          "text": "七分之四"
+        },
+        {
+          "id": "C",
+          "text": "七分之一"
+        },
+        {
+          "id": "D",
+          "text": "七分之六"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "同一例题中，初生 A 与全部 A 的占比分别是多少？",
+      "points": 1,
+      "explanation": "初生 A 为 七分之四；残液还生成 七分之二 的 A，故最终全部 A 为 七分之六。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "七分之一 与 七分之三"
+        },
+        {
+          "id": "B",
+          "text": "七分之四 与 七分之六"
+        },
+        {
+          "id": "C",
+          "text": "七分之六 与 七分之四"
+        },
+        {
+          "id": "D",
+          "text": "七分之三 与 七分之一"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "常见锡铅共晶约 183 °C 时，其组成约是什么？",
+      "points": 1,
+      "explanation": "课件比例有误，通常采用约 61.9 wt% Sn 的共晶组成。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "50 at% Sn、50 at% Pb"
+        },
+        {
+          "id": "B",
+          "text": "纯 Sn"
+        },
+        {
+          "id": "C",
+          "text": "61.9 wt% Sn、38.1 wt% Pb"
+        },
+        {
+          "id": "D",
+          "text": "67 wt% Sn、33 wt% Pb"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "化合物 C 一致熔融的关键条件是什么？",
+      "points": 1,
+      "explanation": "一致熔融指熔化后的液相与该固体化合物组成相同。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "加热必分解成两个气相"
+        },
+        {
+          "id": "B",
+          "text": "只能形成其他固相"
+        },
+        {
+          "id": "C",
+          "text": "一定没有液相线"
+        },
+        {
+          "id": "D",
+          "text": "产生与固体同组成的液相"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "包晶反应的典型冷却形式是哪一个？",
+      "points": 1,
+      "explanation": "包晶 A(s)＋L→C(s)，与共晶和共析的物态关系不同。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "已有固相与液体反应生成新固相"
+        },
+        {
+          "id": "B",
+          "text": "一个液相直接生成两个固相"
+        },
+        {
+          "id": "C",
+          "text": "一个固相生成两个固相"
+        },
+        {
+          "id": "D",
+          "text": "两个液相生成气相"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "Cu–Ni 连续固溶体图的两条边界之间主要是什么？",
+      "points": 1,
+      "explanation": "液相线和固相线之间为 L＋α，两端组成由同温系线给出。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "全为空白区"
+        },
+        {
+          "id": "B",
+          "text": "液体与固溶体 α 共存"
+        },
+        {
+          "id": "C",
+          "text": "两个纯金属固相"
+        },
+        {
+          "id": "D",
+          "text": "两个气相"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "α-铁素体和 γ-奥氏体的晶型分别是什么？",
+      "points": 1,
+      "explanation": "课件写反，α 为 BCC，γ 为 FCC。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "HCP 与 SC"
+        },
+        {
+          "id": "B",
+          "text": "二者都是无定形"
+        },
+        {
+          "id": "C",
+          "text": "BCC 与 FCC"
+        },
+        {
+          "id": "D",
+          "text": "FCC 与 BCC"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "珠光体对应哪种描述？",
+      "points": 1,
+      "explanation": "珠光体由奥氏体的固态共析形成，通常是两个固相的层片组织。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "一个新的均匀液相"
+        },
+        {
+          "id": "B",
+          "text": "纯 Fe₃C 的别名"
+        },
+        {
+          "id": "C",
+          "text": "气液共沸混合物"
+        },
+        {
+          "id": "D",
+          "text": "α-铁素体与 Fe₃C 的共析组织"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "区熔分配系数 k 为固相杂质浓度与液相之比，k<1 时杂质怎样分配？",
+      "points": 1,
+      "explanation": "杂质在液体中相对更有利，可随熔区向末端富集。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "优先留在移动熔区"
+        },
+        {
+          "id": "B",
+          "text": "优先进入刚凝固的固体"
+        },
+        {
+          "id": "C",
+          "text": "两边浓度永远相等"
+        },
+        {
+          "id": "D",
+          "text": "所有杂质立即挥发"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "三元组成 P 为 A30%、B50%、C20%，P 在三角坐标哪里？",
+      "points": 1,
+      "explanation": "三种组分均为正且总和 100%，因此位于内部。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L16"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "三角形外且必须归一化"
+        },
+        {
+          "id": "B",
+          "text": "三角形内部"
+        },
+        {
+          "id": "C",
+          "text": "纯 A 顶点"
+        },
+        {
+          "id": "D",
+          "text": "B–C 边上"
+        }
+      ],
+      "answer": "B"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-const CACHE='inorganic-atlas-v19-week-notes-20261106';
+const CACHE='inorganic-atlas-v20-republish-20261110';
 const SHELL=['assets/lecture-07/close-packing-zh.svg','assets/lecture-07/cubic-cells-zh.svg','lesson-07.html','lesson-06.html','week-notes.css',
   './',
   'index.html',

@@ -1,0 +1,471 @@
+{
+  "id": "ORG-L19",
+  "title": "烯烃反应Ⅳ：氧化断裂、聚合与复分解",
+  "description": "按本周上传课件整理的概念、机理与应用练习。",
+  "subject": "organic-chemistry",
+  "chapter": "Website Lesson 19",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "烯烃反应Ⅳ：氧化断裂、聚合与复分解",
+      "url": "https://organic.chemistryatlas.xyz/lesson-19.html",
+      "role": "依据本周课件及校订笔记编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "2-甲基丁-2-烯热浓 KMnO₄ 氧化断裂，酸化后得到什么？",
+      "points": 1,
+      "explanation": "不带 H 的双键碳成为酮，带一个 H 的碳最终成为羧酸。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "丙酮和乙酸"
+        },
+        {
+          "id": "B",
+          "text": "两分子丙醛"
+        },
+        {
+          "id": "C",
+          "text": "丁-2-酮和甲醇"
+        },
+        {
+          "id": "D",
+          "text": "只有环氧化物"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "末端 =CH₂ 在充分强的高锰酸钾氧化断裂中，其碳典型进入什么产物？",
+      "points": 1,
+      "explanation": "末端碳先有甲醛型连接，在强氧化下进一步成为 CO₂。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必为甲醇"
+        },
+        {
+          "id": "B",
+          "text": "乙烷"
+        },
+        {
+          "id": "C",
+          "text": "苯"
+        },
+        {
+          "id": "D",
+          "text": "CO₂"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "己-3-烯经 O₃、二甲基硫醚处理得到什么？",
+      "points": 1,
+      "explanation": "切开中间双键，每侧保留乙基和一个 H，因此各形成丙醛。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "一分子己二醇"
+        },
+        {
+          "id": "B",
+          "text": "一分子丙酮"
+        },
+        {
+          "id": "C",
+          "text": "两分子丙醛"
+        },
+        {
+          "id": "D",
+          "text": "两分子丙酸"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "还原性臭氧分解的常用后处理试剂是哪一个？",
+      "points": 1,
+      "explanation": "温和还原臭氧化物可把产物保留在醛和酮。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只加浓硫酸聚合"
+        },
+        {
+          "id": "B",
+          "text": "Zn、水或二甲基硫醚"
+        },
+        {
+          "id": "C",
+          "text": "热浓 KMnO₄"
+        },
+        {
+          "id": "D",
+          "text": "只加 Br₂"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "初级臭氧化物裂解后，主要由哪两类片段再结合为臭氧化物？",
+      "points": 1,
+      "explanation": "臭氧分解包含加成、初级环裂解及片段重组。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "羰基化合物与羰基氧化物"
+        },
+        {
+          "id": "B",
+          "text": "两个金属烷叉"
+        },
+        {
+          "id": "C",
+          "text": "两个碳正离子"
+        },
+        {
+          "id": "D",
+          "text": "烷烃和水"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "1-甲基环戊烯还原性臭氧分解的产物是什么？",
+      "points": 1,
+      "explanation": "环内双键切开，保留其余环链，生成同一分子的酮端和醛端。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "环戊酮和甲醛"
+        },
+        {
+          "id": "B",
+          "text": "两分子乙酸"
+        },
+        {
+          "id": "C",
+          "text": "己-1-醇"
+        },
+        {
+          "id": "D",
+          "text": "CH₃CO(CH₂)₃CHO"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "亚甲基环戊烷还原性臭氧分解得到什么？",
+      "points": 1,
+      "explanation": "环外 CH₂ 成为甲醛，环上的双键碳成为环戊酮的羰基碳。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "环己酮"
+        },
+        {
+          "id": "B",
+          "text": "己二酸"
+        },
+        {
+          "id": "C",
+          "text": "环戊酮和甲醛"
+        },
+        {
+          "id": "D",
+          "text": "CH₃CO(CH₂)₃CHO"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "环己烷甲醛与丁-2-酮来自同一烯烃的断裂，原结构是哪一个？",
+      "points": 1,
+      "explanation": "去掉两个羰基氧，再将对应的两个碳连成双键；此骨架可有 E/Z 异构体。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "CH₂=CHCH₂CH₃"
+        },
+        {
+          "id": "B",
+          "text": "C₆H₁₁CH=C(CH₃)CH₂CH₃"
+        },
+        {
+          "id": "C",
+          "text": "C₆H₁₁CH₂CH₂CH₃"
+        },
+        {
+          "id": "D",
+          "text": "C₆H₁₁COCH₂CH₃"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "聚苯乙烯的典型重复单元是什么？",
+      "points": 1,
+      "explanation": "单体双键打开进入主链，Ph 苯基作为侧基保留。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "–CH₂–CH(Ph)–"
+        },
+        {
+          "id": "B",
+          "text": "–CH=CH–"
+        },
+        {
+          "id": "C",
+          "text": "–O–CH₂–"
+        },
+        {
+          "id": "D",
+          "text": "–CO–NH–"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "异丁烯阳离子链增长的取向主要由什么解释？",
+      "points": 1,
+      "explanation": "π 键进攻正链端，新电荷落在新加入单体的较多取代碳。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "每次倾向生成甲基负离子"
+        },
+        {
+          "id": "B",
+          "text": "苯环必须开裂"
+        },
+        {
+          "id": "C",
+          "text": "每一步都释放 CO₂"
+        },
+        {
+          "id": "D",
+          "text": "每次倾向生成较稳定的三级链端正离子"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "BF₃ 引发体系中的微量水常起什么作用？",
+      "points": 1,
+      "explanation": "水可作共引发组分，与 BF₃ 配合促进酸性引发。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "把所有单体完全氧化"
+        },
+        {
+          "id": "B",
+          "text": "只在终止后才出现"
+        },
+        {
+          "id": "C",
+          "text": "与 Lewis 酸配合形成可质子化单体的体系"
+        },
+        {
+          "id": "D",
+          "text": "充当聚合主链全部碳的来源"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "苯乙烯自由基链增长倾向保留哪种链端？",
+      "points": 1,
+      "explanation": "苄位自由基受苯环共振稳定，影响链增长取向。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "末端氯正离子"
+        },
+        {
+          "id": "B",
+          "text": "苄位自由基"
+        },
+        {
+          "id": "C",
+          "text": "氧原子上的自由基必为唯一链端"
+        },
+        {
+          "id": "D",
+          "text": "游离钠原子"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "α-氰基丙烯酸酯易阴离子聚合的结构原因是什么？",
+      "points": 1,
+      "explanation": "吸电子基团让双键易受亲核进攻，并稳定加成形成的负离子。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "氰基和酯基稳定增长链端的负电荷"
+        },
+        {
+          "id": "B",
+          "text": "双键不含电子"
+        },
+        {
+          "id": "C",
+          "text": "每个单体都自带金属"
+        },
+        {
+          "id": "D",
+          "text": "它必须先变成芳烃"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "两分子丙烯发生复分解，典型形成哪组烯烃？",
+      "points": 1,
+      "explanation": "烷叉片段交换，碳数保持为六，产物仍有两根碳碳双键。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "乙烷与丙醇"
+        },
+        {
+          "id": "B",
+          "text": "两分子丙酮"
+        },
+        {
+          "id": "C",
+          "text": "环己烷与水"
+        },
+        {
+          "id": "D",
+          "text": "乙烯与丁-2-烯"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "Chauvin 复分解机理的关键环状中间体是什么？",
+      "points": 1,
+      "explanation": "金属烷叉与烯烃形成含金属的四元环，换一组键裂开得到新烯烃与新金属烷叉。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L19"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "三元溴鎓离子"
+        },
+        {
+          "id": "B",
+          "text": "环状锇酸酯"
+        },
+        {
+          "id": "C",
+          "text": "金属杂环丁烷"
+        },
+        {
+          "id": "D",
+          "text": "初级臭氧化物"
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

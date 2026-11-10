@@ -2007,6 +2007,70 @@
       ],
       "path": "pchem-l16.json",
       "mode": "fixed"
+    },
+    {
+      "id": "ORG-L18",
+      "title": "烯烃反应Ⅲ：催化加氢、卡宾与氧化加成",
+      "description": "按本周上传课件整理的概念、机理与应用练习。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 18,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 18",
+      "lesson": "烯烃反应Ⅲ：催化加氢、卡宾与氧化加成",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "ORG-L18"
+      ],
+      "knowledgePoints": [
+        "催化加氢：把双键还原为单键",
+        "为什么两个氢同面进入",
+        "均相催化与手性配体",
+        "卡宾：二价碳与两种自旋状态",
+        "环丙烷化如何保留顺反关系",
+        "卡宾来源与 Simmons–Smith 反应"
+      ],
+      "createdAt": "2026-11-10",
+      "updatedAt": "2026-11-10",
+      "relatedNotes": [
+        "/organic/dist/lesson-18.html"
+      ],
+      "path": "org-l18.json",
+      "mode": "fixed"
+    },
+    {
+      "id": "ORG-L19",
+      "title": "烯烃反应Ⅳ：氧化断裂、聚合与复分解",
+      "description": "按本周上传课件整理的概念、机理与应用练习。",
+      "subject": "organic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 19,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 19",
+      "lesson": "烯烃反应Ⅳ：氧化断裂、聚合与复分解",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "ORG-L19"
+      ],
+      "knowledgePoints": [
+        "从双羟基化走向碳骨架断裂",
+        "热浓高锰酸钾：按烯碳上的氢计产物",
+        "臭氧与初级臭氧化物",
+        "后处理决定醛、酮还是醇",
+        "三个例子：开链、环内与环外双键",
+        "由臭氧分解产物反推烯烃"
+      ],
+      "createdAt": "2026-11-10",
+      "updatedAt": "2026-11-10",
+      "relatedNotes": [
+        "/organic/dist/lesson-19.html"
+      ],
+      "path": "org-l19.json",
+      "mode": "fixed"
     }
   ]
 }

@@ -1,0 +1,471 @@
+{
+  "id": "ORG-L18",
+  "title": "烯烃反应Ⅲ：催化加氢、卡宾与氧化加成",
+  "description": "按本周上传课件整理的概念、机理与应用练习。",
+  "subject": "organic-chemistry",
+  "chapter": "Website Lesson 18",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "烯烃反应Ⅲ：催化加氢、卡宾与氧化加成",
+      "url": "https://organic.chemistryatlas.xyz/lesson-18.html",
+      "role": "依据本周课件及校订笔记编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "金属催化烯烃加氢时，两个新增 H 的典型关系是什么？",
+      "points": 1,
+      "explanation": "烯烃一面接触金属，表面氢从该面转移到两个烯碳。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "同面 syn"
+        },
+        {
+          "id": "B",
+          "text": "异面 anti"
+        },
+        {
+          "id": "C",
+          "text": "必在相同碳上"
+        },
+        {
+          "id": "D",
+          "text": "必在相隔一个碳的位置"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "Pd/C 中 C 的主要作用是什么？",
+      "points": 1,
+      "explanation": "活性炭承载分散的钯，增加有效接触面积。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "提供产物的新增碳"
+        },
+        {
+          "id": "B",
+          "text": "作为羰基氧化剂"
+        },
+        {
+          "id": "C",
+          "text": "将氢变成质子酸"
+        },
+        {
+          "id": "D",
+          "text": "作为活性炭载体分散金属"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "手性膦配体在不对称氢化中的关键作用是什么？",
+      "points": 1,
+      "explanation": "手性环境使一个反应方向更快，从非手性或前手性底物优先形成某种对映体。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "把氢气换成氧气"
+        },
+        {
+          "id": "B",
+          "text": "仅靠分离除掉一个对映体"
+        },
+        {
+          "id": "C",
+          "text": "使两条对映反应路径的过渡态能量不同"
+        },
+        {
+          "id": "D",
+          "text": "把所有产物变成平面"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "单线态卡宾的两个非键电子如何安排？",
+      "points": 1,
+      "explanation": "单线态卡宾具有电子对和空轨道，其电子安排影响协同成环路径。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "均成为碳的内层电子"
+        },
+        {
+          "id": "B",
+          "text": "成对占据同一轨道"
+        },
+        {
+          "id": "C",
+          "text": "自旋平行且分占轨道"
+        },
+        {
+          "id": "D",
+          "text": "均不存在"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "cis-丁-2-烯与单线态 :CH₂ 立体专一加成得到什么？",
+      "points": 1,
+      "explanation": "协同成环保留原双键两端取代基的相对关系。",
+      "difficulty": "easy",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "cis-1,2-二甲基环丙烷"
+        },
+        {
+          "id": "B",
+          "text": "trans-1,2-二甲基环丙烷"
+        },
+        {
+          "id": "C",
+          "text": "环戊烷"
+        },
+        {
+          "id": "D",
+          "text": "丁-2-醇"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "三线态卡宾成环可能产生顺反混合物，关键原因是什么？",
+      "points": 1,
+      "explanation": "分步成键经双自由基型中间体，单键旋转可改变相对关系。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "双键碳原子互相交换"
+        },
+        {
+          "id": "B",
+          "text": "所有氢都脱去"
+        },
+        {
+          "id": "C",
+          "text": "一定先生成芳环"
+        },
+        {
+          "id": "D",
+          "text": "分步中间体可能在闭环前旋转"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "Simmons–Smith 环丙烷化常用哪组试剂？",
+      "points": 1,
+      "explanation": "生成 ICH₂ZnI 类卡宾，向双键转移一个 CH₂ 片段。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "KMnO₄、加热"
+        },
+        {
+          "id": "B",
+          "text": "Br₂、水"
+        },
+        {
+          "id": "C",
+          "text": "CH₂I₂、Zn(Cu)"
+        },
+        {
+          "id": "D",
+          "text": "O₃、二甲基硫醚"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "CHCl₃ 在碱作用下生成 :CCl₂ 的消除属于哪一类？",
+      "points": 1,
+      "explanation": "H 和离去的 Cl 来自同一个碳，故称 α-消除。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "双羟基化"
+        },
+        {
+          "id": "B",
+          "text": "α-消除"
+        },
+        {
+          "id": "C",
+          "text": "β-消除"
+        },
+        {
+          "id": "D",
+          "text": "芳环亲电取代"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "过氧酸对烯烃环氧化时，氧化剂最后成为哪一类物质？",
+      "points": 1,
+      "explanation": "RCO₃H 转移末端氧后成为 RCO₂H。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "相应羧酸"
+        },
+        {
+          "id": "B",
+          "text": "相应烷烃"
+        },
+        {
+          "id": "C",
+          "text": "游离卡宾"
+        },
+        {
+          "id": "D",
+          "text": "相应格氏试剂"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "环己烯先用 mCPBA，再酸性水解，得到哪种邻二醇？",
+      "points": 1,
+      "explanation": "环氧化后水背面开环，整体对原双键进行 anti 双羟基化。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "cis-环己烷-1,2-二醇"
+        },
+        {
+          "id": "B",
+          "text": "只有环己醇"
+        },
+        {
+          "id": "C",
+          "text": "己二酸"
+        },
+        {
+          "id": "D",
+          "text": "trans-环己烷-1,2-二醇"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "普通不对称烷基环氧化物酸性开环的常见定位是什么？",
+      "points": 1,
+      "explanation": "氧先质子化，过渡态的正电性使较多取代碳易受进攻，同时保持背面方向。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "直接在氧上生成 C–C 键"
+        },
+        {
+          "id": "B",
+          "text": "把整个环变成自由甲基正离子"
+        },
+        {
+          "id": "C",
+          "text": "较多取代碳被亲核体背面进攻"
+        },
+        {
+          "id": "D",
+          "text": "较少取代碳必为唯一位置"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "环氧丙烷与甲氧基负离子反应，水处理后主要得到什么？",
+      "points": 1,
+      "explanation": "强亲核体进攻位阻较小的末端 CH₂，环氧氧留在中间碳成为 OH。",
+      "difficulty": "medium",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "乙酸甲酯"
+        },
+        {
+          "id": "B",
+          "text": "CH₃CH(OH)CH₂OCH₃"
+        },
+        {
+          "id": "C",
+          "text": "CH₃CH(OCH₃)CH₂OH"
+        },
+        {
+          "id": "D",
+          "text": "丙酮"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "RMgX 与环氧乙烷反应，再水处理，产物是什么？",
+      "points": 1,
+      "explanation": "碳亲核体开环形成新 C–C 键，原 R 基团净延长两个碳。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "RCH₂CH₂OH"
+        },
+        {
+          "id": "B",
+          "text": "RCH₂OH"
+        },
+        {
+          "id": "C",
+          "text": "RCO₂H"
+        },
+        {
+          "id": "D",
+          "text": "ROCH₃"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "环氧丙烷用 LiAlH₄ 处理再水解，主要得到什么？",
+      "points": 1,
+      "explanation": "氢化物进攻末端碳，氧留在带甲基的环碳上，水解给仲醇。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "丙-1-醇"
+        },
+        {
+          "id": "B",
+          "text": "乙醇和甲醛"
+        },
+        {
+          "id": "C",
+          "text": "丙酸"
+        },
+        {
+          "id": "D",
+          "text": "丙-2-醇"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "哪组条件典型地实现 syn 双羟基化？",
+      "points": 1,
+      "explanation": "环状锇酸酯使两个氧从双键同面进入，处理后给同面邻二醇。",
+      "difficulty": "hard",
+      "tags": [
+        "ORG-L18"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "O₃ 后 Zn、水"
+        },
+        {
+          "id": "B",
+          "text": "H₂、Pd/C"
+        },
+        {
+          "id": "C",
+          "text": "OsO₄ 后处理"
+        },
+        {
+          "id": "D",
+          "text": "过氧酸后酸性水解"
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

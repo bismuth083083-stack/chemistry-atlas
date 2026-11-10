@@ -112,7 +112,7 @@
       "type": "single-choice",
       "question": "理想气体组分j相对于标准压力p°的活度是什么？",
       "points": 1,
-      "explanation": "aⱼ=pⱼ/p°，是无量纲量，才能进入化学势的对数。",
+      "explanation": "理想气体活度等于该组分分压除以标准压力，是无量纲量，可以进入化学势的对数。",
       "difficulty": "easy",
       "tags": [
         "PCHEM-L17"
@@ -172,7 +172,7 @@
       "type": "single-choice",
       "question": "若Q=0.10、K=10，当前反应向哪边进行？",
       "points": 1,
-      "explanation": "ΔᵣG=RT ln(Q/K)，Q/K=0.01，故ΔᵣG<0，正向自发。",
+      "explanation": "Q与K之比为0.01，其自然对数为负，故ΔᵣG<0，正向自发。",
       "difficulty": "medium",
       "tags": [
         "PCHEM-L17"
@@ -202,7 +202,7 @@
       "type": "single-choice",
       "question": "若ΔᵣG°为正，相应K的大小怎样？",
       "points": 1,
-      "explanation": "ln K=−ΔᵣG°/(RT)，指数为负但指数函数仍为正。",
+      "explanation": "ln K等于标准反应Gibbs能除以RT后取负值，因此指数为负，但K仍为正。",
       "difficulty": "medium",
       "tags": [
         "PCHEM-L17"
@@ -230,9 +230,9 @@
     {
       "id": "q008",
       "type": "single-choice",
-      "question": "水解离 H₂O⇌H₂＋½O₂，初始n₀ mol纯水，解离度α时总气体量是多少？",
+      "question": "水解离 H₂O⇌H₂＋0.5O₂，初始n₀ mol纯水，解离度α时总气体量是多少？",
       "points": 1,
-      "explanation": "平衡量相加：(1−α)n₀＋αn₀＋½αn₀=n₀(1＋α/2)。",
+      "explanation": "平衡量相加：(1−α)n₀＋αn₀＋0.5αn₀=n₀(1＋0.5α)。",
       "difficulty": "medium",
       "tags": [
         "PCHEM-L17"
@@ -262,7 +262,7 @@
       "type": "single-choice",
       "question": "2300 K、ΔᵣG°=118.08 kJ mol⁻¹时，水解离反应K约多少？",
       "points": 1,
-      "explanation": "先将118.08 kJ换成118080 J，再求exp[−118080/(8.3145×2300)]。",
+      "explanation": "将118.08 kJ换成118080 J，先除以8.3145与2300的乘积，再取负值并计算指数，得到约0.00208。",
       "difficulty": "medium",
       "tags": [
         "PCHEM-L17"
@@ -292,7 +292,7 @@
       "type": "single-choice",
       "question": "该水解离反应在总压1.00 bar、标准压力1 bar时，完整方程的α约多少？",
       "points": 1,
-      "explanation": "完整式K=α^(3/2)/[(1−α)√(2＋α)]的数值解约0.02033，即约2.03%。",
+      "explanation": "将已知K代入完整表达式：α的二分之三次方除以[(1−α)√(2＋α)]，数值解约0.02033，即约2.03%。",
       "difficulty": "medium",
       "tags": [
         "PCHEM-L17"
@@ -382,7 +382,7 @@
       "type": "single-choice",
       "question": "CaCO₃(s)⇌CaO(s)＋CO₂(g)，固定温度且两种纯固相均存在时，理想气体平衡式是什么？",
       "points": 1,
-      "explanation": "两个纯固相的活度近似为1，气体活度为pCO₂/p°。",
+      "explanation": "两个纯固相的活度近似为1，气体活度为CO₂分压除以标准压力。",
       "difficulty": "hard",
       "tags": [
         "PCHEM-L17"
@@ -412,7 +412,7 @@
       "type": "single-choice",
       "question": "理想气体反应的Δνg=0时，归一化Kₚ与Kₓ的关系是什么？",
       "points": 1,
-      "explanation": "Kₚ=Kₓ(p/p°)^Δνg；指数为零，压力因子等于一。",
+      "explanation": "Kₚ等于Kₓ乘以总压与标准压力之比的Δνg次方；指数为零，压力因子等于一。",
       "difficulty": "hard",
       "tags": [
         "PCHEM-L17"

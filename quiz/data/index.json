@@ -2071,6 +2071,38 @@
       ],
       "path": "org-l19.json",
       "mode": "fixed"
+    },
+    {
+      "id": "PCHEM-L17",
+      "title": "化学平衡Ⅰ：Gibbs 能、反应商与平衡常数",
+      "description": "按本周上传课件整理的概念、机理与应用练习。",
+      "subject": "physical-chemistry",
+      "type": "lesson",
+      "lessonNumber": 17,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 17",
+      "lesson": "化学平衡Ⅰ：Gibbs 能、反应商与平衡常数",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "knowledgePoints": [
+        "为什么反应停在某个组成",
+        "反应进度 ξ：用一个量追踪所有组分",
+        "反应 Gibbs 能：G 对 ξ 的斜率",
+        "从斜率正负读出反应方向",
+        "混合贡献为什么让 G 出现最低点",
+        "活度与反应商 Q：把组成装进一个式子"
+      ],
+      "createdAt": "2026-11-10",
+      "updatedAt": "2026-11-10",
+      "relatedNotes": [
+        "/physical/dist/lesson-17.html"
+      ],
+      "path": "pchem-l17.json",
+      "mode": "fixed"
     }
   ]
 }

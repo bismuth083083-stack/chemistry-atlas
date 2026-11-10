@@ -1,0 +1,471 @@
+{
+  "id": "PCHEM-L17",
+  "title": "化学平衡Ⅰ：Gibbs 能、反应商与平衡常数",
+  "description": "按本周上传课件整理的概念、机理与应用练习。",
+  "subject": "physical-chemistry",
+  "chapter": "Website Lesson 17",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "化学平衡Ⅰ：Gibbs 能、反应商与平衡常数",
+      "url": "https://physical.chemistryatlas.xyz/lesson-17.html",
+      "role": "依据本周课件及校订笔记编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "对 N₂＋3H₂⇌2NH₃，反应进度增加0.20 mol 时，H₂的量怎样改变？",
+      "points": 1,
+      "explanation": "dnⱼ=νⱼdξ；H₂的计量数为−3，因此变化为−3×0.20=−0.60 mol。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "减少0.60 mol"
+        },
+        {
+          "id": "B",
+          "text": "减少0.20 mol"
+        },
+        {
+          "id": "C",
+          "text": "增加0.60 mol"
+        },
+        {
+          "id": "D",
+          "text": "增加0.40 mol"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "恒温恒压且只有体积功时，ΔᵣG代表什么？",
+      "points": 1,
+      "explanation": "ΔᵣG=(∂G/∂ξ)T,p=Σνⱼμⱼ，是当前组成处的摩尔反应Gibbs能。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "整个反应过程的总G变化必为常数"
+        },
+        {
+          "id": "B",
+          "text": "反应速率"
+        },
+        {
+          "id": "C",
+          "text": "所有组分化学势的算术平均"
+        },
+        {
+          "id": "D",
+          "text": "G对反应进度ξ的斜率"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "当前 ΔᵣG>0 时，自发反应方向是什么？",
+      "points": 1,
+      "explanation": "逆向时dξ<0，使dG=ΔᵣGdξ<0，体系G降低。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "必已达平衡"
+        },
+        {
+          "id": "B",
+          "text": "必须先升温才有方向"
+        },
+        {
+          "id": "C",
+          "text": "逆向"
+        },
+        {
+          "id": "D",
+          "text": "正向"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "理想气体组分j相对于标准压力p°的活度是什么？",
+      "points": 1,
+      "explanation": "aⱼ=pⱼ/p°，是无量纲量，才能进入化学势的对数。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "该物种的摩尔质量"
+        },
+        {
+          "id": "B",
+          "text": "pⱼ除以p°"
+        },
+        {
+          "id": "C",
+          "text": "pⱼ乘以p°"
+        },
+        {
+          "id": "D",
+          "text": "总压p而无需归一化"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "反应达到平衡时，哪一个量等于零？",
+      "points": 1,
+      "explanation": "平衡处G对ξ的斜率为零，ΔᵣG°通常由RT ln K抵消。",
+      "difficulty": "easy",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "实际反应Gibbs能ΔᵣG"
+        },
+        {
+          "id": "B",
+          "text": "标准反应Gibbs能ΔᵣG°必为零"
+        },
+        {
+          "id": "C",
+          "text": "所有物种的物质的量"
+        },
+        {
+          "id": "D",
+          "text": "平衡常数K"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "若Q=0.10、K=10，当前反应向哪边进行？",
+      "points": 1,
+      "explanation": "ΔᵣG=RT ln(Q/K)，Q/K=0.01，故ΔᵣG<0，正向自发。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "逆向生成反应物"
+        },
+        {
+          "id": "B",
+          "text": "一定静止"
+        },
+        {
+          "id": "C",
+          "text": "仅凭K无法在已知Q时判断"
+        },
+        {
+          "id": "D",
+          "text": "正向生成产物"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "若ΔᵣG°为正，相应K的大小怎样？",
+      "points": 1,
+      "explanation": "ln K=−ΔᵣG°/(RT)，指数为负但指数函数仍为正。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "K必须为零"
+        },
+        {
+          "id": "B",
+          "text": "K必须为负"
+        },
+        {
+          "id": "C",
+          "text": "0<K<1"
+        },
+        {
+          "id": "D",
+          "text": "K>1"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "水解离 H₂O⇌H₂＋½O₂，初始n₀ mol纯水，解离度α时总气体量是多少？",
+      "points": 1,
+      "explanation": "平衡量相加：(1−α)n₀＋αn₀＋½αn₀=n₀(1＋α/2)。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "n₀(1−α)"
+        },
+        {
+          "id": "B",
+          "text": "n₀(1＋α的一半)"
+        },
+        {
+          "id": "C",
+          "text": "n₀"
+        },
+        {
+          "id": "D",
+          "text": "n₀(1＋α)"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "2300 K、ΔᵣG°=118.08 kJ mol⁻¹时，水解离反应K约多少？",
+      "points": 1,
+      "explanation": "先将118.08 kJ换成118080 J，再求exp[−118080/(8.3145×2300)]。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2.08×10⁻³"
+        },
+        {
+          "id": "B",
+          "text": "2.08×10³"
+        },
+        {
+          "id": "C",
+          "text": "6.175"
+        },
+        {
+          "id": "D",
+          "text": "118.08"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "该水解离反应在总压1.00 bar、标准压力1 bar时，完整方程的α约多少？",
+      "points": 1,
+      "explanation": "完整式K=α^(3/2)/[(1−α)√(2＋α)]的数值解约0.02033，即约2.03%。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "0.2033"
+        },
+        {
+          "id": "B",
+          "text": "0.0020815"
+        },
+        {
+          "id": "C",
+          "text": "0.9800"
+        },
+        {
+          "id": "D",
+          "text": "0.02033"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "将整个反应方程的系数都乘以2，新的平衡常数是什么？",
+      "points": 1,
+      "explanation": "ΔᵣG°乘以2，因此ln K乘以2，新常数为K²。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "K的一半"
+        },
+        {
+          "id": "B",
+          "text": "K保持原数值"
+        },
+        {
+          "id": "C",
+          "text": "K²"
+        },
+        {
+          "id": "D",
+          "text": "2K"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "反应3等于反应1减去反应2，其平衡常数如何得到？",
+      "points": 1,
+      "explanation": "反应相减使标准Gibbs能相减、ln K相减，故常数相除。",
+      "difficulty": "medium",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "K₁乘以K₂"
+        },
+        {
+          "id": "B",
+          "text": "K₁除以K₂"
+        },
+        {
+          "id": "C",
+          "text": "K₁减去K₂"
+        },
+        {
+          "id": "D",
+          "text": "K₁加上K₂"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "CaCO₃(s)⇌CaO(s)＋CO₂(g)，固定温度且两种纯固相均存在时，理想气体平衡式是什么？",
+      "points": 1,
+      "explanation": "两个纯固相的活度近似为1，气体活度为pCO₂/p°。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "K=pCO₂除以p°"
+        },
+        {
+          "id": "B",
+          "text": "K等于两种固体质量的比"
+        },
+        {
+          "id": "C",
+          "text": "K等于总固体摩尔数"
+        },
+        {
+          "id": "D",
+          "text": "K=pCO₂的倒数且无需标准压力"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "理想气体反应的Δνg=0时，归一化Kₚ与Kₓ的关系是什么？",
+      "points": 1,
+      "explanation": "Kₚ=Kₓ(p/p°)^Δνg；指数为零，压力因子等于一。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Kₚ必为Kₓ²"
+        },
+        {
+          "id": "B",
+          "text": "Kₚ必为1"
+        },
+        {
+          "id": "C",
+          "text": "两者永远无法换算"
+        },
+        {
+          "id": "D",
+          "text": "数值相等"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "真实气体的热力学常数K与归一化分压积Kₚ如何联系？",
+      "points": 1,
+      "explanation": "fⱼ=φⱼpⱼ，故活度积可拆为分压积与逸度系数积，Kφ=∏φⱼ^νⱼ。",
+      "difficulty": "hard",
+      "tags": [
+        "PCHEM-L17"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "K只能用分压而不能用逸度"
+        },
+        {
+          "id": "B",
+          "text": "K必随取样体积任意改变"
+        },
+        {
+          "id": "C",
+          "text": "K=KₚKφ"
+        },
+        {
+          "id": "D",
+          "text": "K=Kₚ＋Kφ"
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

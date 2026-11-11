@@ -2103,6 +2103,38 @@
       ],
       "path": "pchem-l17.json",
       "mode": "fixed"
+    },
+    {
+      "id": "INORG-L08",
+      "title": "主族元素化学",
+      "description": "按本周上传课件整理的概念、机理与应用练习。",
+      "subject": "inorganic-chemistry",
+      "type": "lesson",
+      "lessonNumber": 8,
+      "topicNumber": null,
+      "examNumber": null,
+      "chapter": "Website Lesson 8",
+      "lesson": "主族元素化学",
+      "questionCount": 15,
+      "difficulty": "intermediate",
+      "tags": [
+        "INORG-L08"
+      ],
+      "knowledgePoints": [
+        "从价电子读周期趋势",
+        "第二周期的例外与对角线相似",
+        "硬软酸碱与逐级配合常数",
+        "配位数与水合结构",
+        "惰性电子对与重元素的低氧化态",
+        "氢的三种成键角色"
+      ],
+      "createdAt": "2026-11-11",
+      "updatedAt": "2026-11-11",
+      "relatedNotes": [
+        "/inorganic/dist/lesson-08.html"
+      ],
+      "path": "inorg-l08.json",
+      "mode": "fixed"
     }
   ]
 }

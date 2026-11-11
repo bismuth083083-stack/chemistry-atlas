@@ -1,0 +1,471 @@
+{
+  "id": "INORG-L08",
+  "title": "主族元素化学",
+  "description": "按本周上传课件整理的概念、机理与应用练习。",
+  "subject": "inorganic-chemistry",
+  "chapter": "Website Lesson 8",
+  "version": "1.0.0",
+  "totalPoints": 15,
+  "selection": {
+    "mode": "fixed"
+  },
+  "sources": [
+    {
+      "title": "主族元素化学",
+      "url": "https://inorganic.chemistryatlas.xyz/lesson-08.html",
+      "role": "依据本周课件及校订笔记编题"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "single-choice",
+      "question": "B 的第一电离能低于 Be，最直接的电子构型原因是什么？",
+      "points": 1,
+      "explanation": "Be 的价电子是 2s²，B 首先移去 2p¹ 电子。能量较高的 2p 电子更易移去。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "B 首先移走能量较高的 2p 电子"
+        },
+        {
+          "id": "B",
+          "text": "Be 比 B 多一个价电子层"
+        },
+        {
+          "id": "C",
+          "text": "B 的 2p 亚层已满"
+        },
+        {
+          "id": "D",
+          "text": "Be 移走的是 1s 电子"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q002",
+      "type": "single-choice",
+      "question": "Ca²⁺ 与 Hg²⁺ 半径接近，课件中哪一个对 I⁻ 的第一步配合更强？",
+      "points": 1,
+      "explanation": "Hg²⁺ 和 I⁻ 的电子云更易极化，软酸与软碱结合有较强共价作用。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Ca²⁺"
+        },
+        {
+          "id": "B",
+          "text": "二者的常数必须相等"
+        },
+        {
+          "id": "C",
+          "text": "只有半径才能决定"
+        },
+        {
+          "id": "D",
+          "text": "Hg²⁺"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q003",
+      "type": "single-choice",
+      "question": "课件列出的第 2 族水合离子中，Be²⁺ 和 Mg²⁺ 的代表配位数分别是多少？",
+      "points": 1,
+      "explanation": "较小的 Be²⁺ 周围空间有限，课件列出四配位水合物，Mg²⁺ 的代表水合物为六配位。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2 和 2"
+        },
+        {
+          "id": "B",
+          "text": "8 和 9"
+        },
+        {
+          "id": "C",
+          "text": "4 和 6"
+        },
+        {
+          "id": "D",
+          "text": "6 和 4"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q004",
+      "type": "single-choice",
+      "question": "惰性电子对效应有助于解释哪一组较低氧化态？",
+      "points": 1,
+      "explanation": "较重 p 区元素的 ns² 电子较难参与某些成键和氧化过程，使这些较低氧化态得到稳定。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "F(−I)、Cl(−I)、Br(−I)"
+        },
+        {
+          "id": "B",
+          "text": "Tl(I)、Pb(II)、Bi(III)"
+        },
+        {
+          "id": "C",
+          "text": "Tl(III)、Pb(IV)、Bi(V)"
+        },
+        {
+          "id": "D",
+          "text": "Na(I)、Mg(II)、Al(III)"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q005",
+      "type": "single-choice",
+      "question": "盐型氢化物中的 H⁻ 与水发生质子转移，生成什么？",
+      "points": 1,
+      "explanation": "H⁻ 从水接受一个质子生成 H₂，水失去该质子后成为 OH⁻。",
+      "difficulty": "easy",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "H₂ 和 OH⁻"
+        },
+        {
+          "id": "B",
+          "text": "O₂ 和 H⁺"
+        },
+        {
+          "id": "C",
+          "text": "H₂O₂ 和 H⁺"
+        },
+        {
+          "id": "D",
+          "text": "O²⁻ 和 H⁺"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q006",
+      "type": "single-choice",
+      "question": "为什么水溶液中的 18-冠-6 往往优先络合 K⁺？",
+      "points": 1,
+      "explanation": "空腔大小与氧供体的几何排列影响配合。实际常数还体现溶剂化和构象变化。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "K⁺ 在第 1 族的电荷最高"
+        },
+        {
+          "id": "B",
+          "text": "冠醚会把 K⁺ 还原成金属钾"
+        },
+        {
+          "id": "C",
+          "text": "K⁺ 只与一个氧配位"
+        },
+        {
+          "id": "D",
+          "text": "K⁺ 与大环空腔尺寸相配，可同时与多个氧供体接触"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q007",
+      "type": "single-choice",
+      "question": "电子化物与含 Na⁻ 的碱金属阴离子盐，最主要的区别是什么？",
+      "points": 1,
+      "explanation": "电子化物的电子由晶格或局部环境稳定。Na⁻ 是具有额外电子的钠阴离子。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只有碱金属阴离子盐带负电荷组分"
+        },
+        {
+          "id": "B",
+          "text": "电子化物中的电子必须来自溶剂电离"
+        },
+        {
+          "id": "C",
+          "text": "电子化物用电子承担阴离子角色，后者用 Na⁻"
+        },
+        {
+          "id": "D",
+          "text": "二者的负电荷都固定属于 Na 原子"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q008",
+      "type": "single-choice",
+      "question": "若 EDTA 的六个供体和两个水分子都与 Ca²⁺ 直接配位，Ca 的配位数是多少？",
+      "points": 1,
+      "explanation": "配位数按直接连接的供体原子计数。EDTA 提供六个，两个水各提供一个。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "8"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q009",
+      "type": "single-choice",
+      "question": "B₂H₆ 的 12 个价电子中，有多少分配给两个桥键？",
+      "points": 1,
+      "explanation": "四条末端 B–H 键用去八个电子，两个三中心二电子桥合计使用四个。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "4 个"
+        },
+        {
+          "id": "B",
+          "text": "2 个"
+        },
+        {
+          "id": "C",
+          "text": "6 个"
+        },
+        {
+          "id": "D",
+          "text": "8 个"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q010",
+      "type": "single-choice",
+      "question": "[SiF₆]²⁻ 中 Si 的氧化态和配位数分别是多少？",
+      "points": 1,
+      "explanation": "六个 F 按 −1 计，Si 必为 +4 才使总电荷为 −2。结构上六个 F 直接连接 Si。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "+6 和 6"
+        },
+        {
+          "id": "B",
+          "text": "+4 和 4"
+        },
+        {
+          "id": "C",
+          "text": "+2 和 6"
+        },
+        {
+          "id": "D",
+          "text": "+4 和 6"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q011",
+      "type": "single-choice",
+      "question": "常见稳定 N-杂环卡宾的稳定性来自哪些作用？",
+      "points": 1,
+      "explanation": "相邻氮可向缺电子轨道提供电子密度，取代基可阻碍二聚等反应。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "只有碳上形成四条普通单键"
+        },
+        {
+          "id": "B",
+          "text": "中心碳失去全部非键电子"
+        },
+        {
+          "id": "C",
+          "text": "相邻氮的给电子作用与取代基的立体保护"
+        },
+        {
+          "id": "D",
+          "text": "把中心碳氧化为碳酸盐"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "q012",
+      "type": "single-choice",
+      "question": "N₃⁻ 和 N³⁻ 有何区别？",
+      "points": 1,
+      "explanation": "下标给出原子数，上标给出总电荷。N₃⁻ 含三个氮，N³⁻ 只有一个。",
+      "difficulty": "medium",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "二者仅为书写位置不同"
+        },
+        {
+          "id": "B",
+          "text": "前者是叠氮离子，后者是氮化物中的形式单氮阴离子"
+        },
+        {
+          "id": "C",
+          "text": "二者都是三个氮、总电荷为 −1"
+        },
+        {
+          "id": "D",
+          "text": "前者是单氮离子，后者是三个氮"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "q013",
+      "type": "single-choice",
+      "question": "液态硫在约 160 ℃ 附近黏度迅速上升，主要发生了什么？",
+      "points": 1,
+      "explanation": "环状 S₈ 转为较长的硫链后，链间运动受限，熔体黏度增大。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "S₈ 开环并形成长链"
+        },
+        {
+          "id": "B",
+          "text": "硫转变为硫酸"
+        },
+        {
+          "id": "C",
+          "text": "所有 S–S 键同时断成单原子"
+        },
+        {
+          "id": "D",
+          "text": "硫分子全部挥发"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "q014",
+      "type": "single-choice",
+      "question": "R–X···A 卤键中，受体 A 最常从哪个方向接近 X？",
+      "points": 1,
+      "explanation": "亲电的 σ 孔通常位于共价键延长线外侧，R–X···A 夹角常接近 180°。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "垂直于 R–X 键"
+        },
+        {
+          "id": "B",
+          "text": "始终从 R 的背面接近"
+        },
+        {
+          "id": "C",
+          "text": "任意方向吸引完全相同"
+        },
+        {
+          "id": "D",
+          "text": "沿 R–X 键经过 X 向外的延长线"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "q015",
+      "type": "single-choice",
+      "question": "XeF₂ 的分子为何呈线形？",
+      "points": 1,
+      "explanation": "按电子域模型，五个电子域对应三角双锥，三对孤电子占赤道后留下两个相对轴向。",
+      "difficulty": "hard",
+      "tags": [
+        "INORG-L08"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "两个 F 都占据赤道且相隔 90°"
+        },
+        {
+          "id": "B",
+          "text": "Xe 没有孤电子对"
+        },
+        {
+          "id": "C",
+          "text": "三个孤电子对占据赤道，两个 F 位于轴向"
+        },
+        {
+          "id": "D",
+          "text": "五个电子域都由 F 占据"
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

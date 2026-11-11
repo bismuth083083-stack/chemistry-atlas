@@ -1,4 +1,4 @@
-const CACHE='inorganic-atlas-v22-revised-lessons';
+const CACHE='inorganic-atlas-v23-classroom-notes';
 const SHELL=['lesson-08.html','assets/lecture-08/diborane-bridges-zh.webp','assets/lecture-08/hard-acid-binding-zh.webp','assets/lecture-07/close-packing-zh.svg','assets/lecture-07/cubic-cells-zh.svg','lesson-07.html','lesson-06.html','week-notes.css',
   './',
   'index.html',

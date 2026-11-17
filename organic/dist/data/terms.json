@@ -3507,5 +3507,94 @@
     ],
     "source": "Org. Chem. Lect. 15 (Chapter 8-1).ppt，slide 37；本站第16课",
     "updated": "2026-10-30"
+  },
+  {
+    "slug": "alkyne",
+    "zh": "炔烃",
+    "en": "Alkyne",
+    "aliases": [],
+    "category": "有机结构与反应",
+    "definition": "含碳碳三键的烃。",
+    "expanded": "炔碳近似采用 sp 杂化，三键包含一个 σ 键和两套 π 键。端炔的一端直接连氢，内炔的两端直接连碳。",
+    "properties": [
+      "含碳碳三键的烃。"
+    ],
+    "confusions": "炔碳近似采用 sp 杂化，三键包含一个 σ 键和两套 π 键。端炔的一端直接连氢，内炔的两端直接连碳。",
+    "related": [
+      "alkene"
+    ],
+    "source": "Org. Chem. Lect. 20 (chapter 9-1).ppt",
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "acetylide-ion",
+    "zh": "炔基负离子",
+    "en": "Acetylide ion",
+    "aliases": [],
+    "category": "有机结构与反应",
+    "definition": "端炔去质子化后，在三键末端带负电的物种。",
+    "expanded": "可作为碳亲核试剂进攻醛、酮或适合 SN2 的卤代烷，分别形成炔醇或延长碳链。",
+    "properties": [
+      "端炔去质子化后，在三键末端带负电的物种。"
+    ],
+    "confusions": "可作为碳亲核试剂进攻醛、酮或适合 SN2 的卤代烷，分别形成炔醇或延长碳链。",
+    "related": [
+      "alkyne",
+      "nucleophile"
+    ],
+    "source": "Org. Chem. Lect. 20 (chapter 9-1).ppt",
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "alcohol",
+    "zh": "醇",
+    "en": "Alcohol",
+    "aliases": [],
+    "category": "有机结构与反应",
+    "definition": "羟基直接连在饱和碳上的化合物。",
+    "expanded": "羟基碳所连碳的数目用于判定伯、仲、叔醇。可通过羰基还原、烯烃水合或有机金属加成制备。",
+    "properties": [
+      "羟基直接连在饱和碳上的化合物。"
+    ],
+    "confusions": "羟基碳所连碳的数目用于判定伯、仲、叔醇。可通过羰基还原、烯烃水合或有机金属加成制备。",
+    "related": [],
+    "source": "Org. Chem. Lect. 22 (Chapter 10-1).pptx",
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "phenoxide-ion",
+    "zh": "苯氧负离子",
+    "en": "Phenoxide ion",
+    "aliases": [],
+    "category": "有机结构与反应",
+    "definition": "苯酚失去羟基质子后的共轭碱。",
+    "expanded": "负电荷可由氧和芳环的共轭体系分散。苯酚在稀碱水中转化为苯氧盐，酸化后恢复苯酚。",
+    "properties": [
+      "苯酚失去羟基质子后的共轭碱。"
+    ],
+    "confusions": "负电荷可由氧和芳环的共轭体系分散。苯酚在稀碱水中转化为苯氧盐，酸化后恢复苯酚。",
+    "related": [
+      "alcohol"
+    ],
+    "source": "Org. Chem. Lect. 22 (Chapter 10-1).pptx",
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "hydride-reduction",
+    "zh": "氢化物还原",
+    "en": "Hydride reduction",
+    "aliases": [],
+    "category": "有机结构与反应",
+    "definition": "由供氢键向电正性中心转移氢化物的还原反应。",
+    "expanded": "NaBH<sub>4</sub> 常用于醛和酮，LiAlH<sub>4</sub> 也可还原许多酯和羧酸。后处理把还原所得的烷氧基转化为醇。",
+    "properties": [
+      "由供氢键向电正性中心转移氢化物的还原反应。"
+    ],
+    "confusions": "NaBH<sub>4</sub> 常用于醛和酮，LiAlH<sub>4</sub> 也可还原许多酯和羧酸。后处理把还原所得的烷氧基转化为醇。",
+    "related": [
+      "alcohol"
+    ],
+    "source": "Org. Chem. Lect. 23 (chapter 10-2).ppt",
+    "updated": "2026-11-17"
   }
 ]

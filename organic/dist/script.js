@@ -11,6 +11,12 @@ const query=new URLSearchParams(location.search).get('q');
 if(termSearch&&query)termSearch.value=query;
 async function getTerms(){const r=await fetch('data/terms.json');return r.json()}
 const TERM_IMAGES={
+"alkyne":["lecture-20/nomenclature.webp", "含碳碳三键的烃。", "Org. Chem. Lect. 20 (chapter 9-1).ppt, slide 8"],
+"acetylide-ion":["lecture-20/carbonyl.webp", "端炔去质子化后，在三键末端带负电的物种。", "Org. Chem. Lect. 20 (chapter 9-1).ppt, slide 22"],
+"alcohol":["lecture-22/classes.webp", "羟基直接连在饱和碳上的化合物。", "Org. Chem. Lect. 22 (Chapter 10-1).pptx, slide 14"],
+"phenoxide-ion":["lecture-22/phenoxide.webp", "苯酚失去羟基质子后的共轭碱。", "Org. Chem. Lect. 22 (Chapter 10-1).pptx, slide 27"],
+"hydride-reduction":["lecture-23/hydride.webp", "由供氢键向电正性中心转移氢化物的还原反应。", "Org. Chem. Lect. 23 (chapter 10-2).ppt, slide 28"],
+
 "alkene":["lecture-14/pi-bond.webp", "烯烃的 σ 与 π 键", "Org. Chem. Lect. 13 (Chapter 7-1), slide 18"],
 "alkene-stability":["lecture-15/hydrogenation.webp", "共同加氢终点下比较烯烃稳定性", "Org. Chem. Lect. 14 (Chapter 7-2), slide 9"],
 "anti-periplanar":["lecture-12/anti-periplanar.webp", "E2 的反式共平面几何", "Organic Chemistry I Lect. 11 (Chapter 6-3), slide 26"],

@@ -2409,5 +2409,74 @@
     "relatedReactions": [],
     "source": "PChem1_lec14 Phase Diagram1 20261029.pdf；本站 lesson-14.html",
     "updated": "2026-10-29"
+  },
+  {
+    "slug": "van-t-hoff-equation",
+    "zh": "van ’t Hoff 方程",
+    "en": "van ’t Hoff equation",
+    "aliases": [],
+    "category": "平衡与电解质",
+    "definition": "描述标准平衡常数随温度变化速度的方程。",
+    "expanded": "升温时吸热反应的标准平衡常数增大，放热反应的标准平衡常数减小。窄温区内可将标准反应焓视作常数后积分。",
+    "properties": [
+      "描述标准平衡常数随温度变化速度的方程。"
+    ],
+    "confusions": "升温时吸热反应的标准平衡常数增大，放热反应的标准平衡常数减小。窄温区内可将标准反应焓视作常数后积分。",
+    "related": [],
+    "source": "PChem1_lec18 Chemical Eqb2 20261112.pdf",
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "molar-conductivity",
+    "zh": "摩尔电导率",
+    "en": "Molar conductivity",
+    "aliases": [],
+    "category": "平衡与电解质",
+    "definition": "电导率除以电解质的分析浓度。",
+    "expanded": "SI 单位为 S·m<sup>2</sup>·mol<sup>−1</sup>。无限稀释时可按化学式的离子计量数加总极限离子贡献。",
+    "properties": [
+      "电导率除以电解质的分析浓度。"
+    ],
+    "confusions": "SI 单位为 S·m<sup>2</sup>·mol<sup>−1</sup>。无限稀释时可按化学式的离子计量数加总极限离子贡献。",
+    "related": [],
+    "source": "PChem1_lec19 Electrolyte 20261117.pdf",
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "ion-mobility",
+    "zh": "离子迁移率",
+    "en": "Ionic mobility",
+    "aliases": [],
+    "category": "平衡与电解质",
+    "definition": "离子漂移速率与电场强度大小的比。",
+    "expanded": "水合半径、溶剂黏度和电荷大小影响迁移率。",
+    "properties": [
+      "离子漂移速率与电场强度大小的比。"
+    ],
+    "confusions": "水合半径、溶剂黏度和电荷大小影响迁移率。",
+    "related": [
+      "molar-conductivity"
+    ],
+    "source": "PChem1_lec19 Electrolyte 20261117.pdf",
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "transport-number",
+    "zh": "离子迁移数",
+    "en": "Transport number",
+    "aliases": [],
+    "category": "平衡与电解质",
+    "definition": "指定离子承担的电流分数。",
+    "expanded": "各离子的迁移数总和为一。可用 Hittorf 法或移动界面法测定。",
+    "properties": [
+      "指定离子承担的电流分数。"
+    ],
+    "confusions": "各离子的迁移数总和为一。可用 Hittorf 法或移动界面法测定。",
+    "related": [
+      "ion-mobility",
+      "molar-conductivity"
+    ],
+    "source": "PChem1_lec19 Electrolyte 20261117.pdf",
+    "updated": "2026-11-17"
   }
 ]

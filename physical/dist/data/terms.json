@@ -2478,5 +2478,35 @@
     ],
     "source": "PChem1_lec19 Electrolyte 20261117.pdf",
     "updated": "2026-11-17"
+  },
+  {
+    "slug": "ionic-strength",
+    "zh": "离子强度",
+    "en": "Ionic strength",
+    "category": "电化学与氧化还原",
+    "definition": "各离子浓度按电荷数平方加权后求和的一半。",
+    "expanded": "本课采用无量纲质量摩尔浓度约定，将各离子质量摩尔浓度除以标准质量摩尔浓度后求和。",
+    "properties": [
+      "各离子浓度按电荷数平方加权后求和的一半。"
+    ],
+    "confusions": "本课采用无量纲质量摩尔浓度约定，将各离子质量摩尔浓度除以标准质量摩尔浓度后求和。",
+    "related": [],
+    "source": "PChem1_lec20 Electrochemistry1 20261119.pdf",
+    "updated": "2026-11-19"
+  },
+  {
+    "slug": "mean-ionic-activity-coefficient",
+    "zh": "平均离子活度系数",
+    "en": "Mean ionic activity coefficient",
+    "category": "电化学与氧化还原",
+    "definition": "按电解质离子计量数取几何平均的离子活度修正因子。",
+    "expanded": "电中性组合的化学势可通过平均离子活度表示，例如 CaCl₂ 的两个氯离子贡献需要计入权重。",
+    "properties": [
+      "按电解质离子计量数取几何平均的离子活度修正因子。"
+    ],
+    "confusions": "电中性组合的化学势可通过平均离子活度表示，例如 CaCl₂ 的两个氯离子贡献需要计入权重。",
+    "related": [],
+    "source": "PChem1_lec20 Electrochemistry1 20261119.pdf",
+    "updated": "2026-11-19"
   }
 ]

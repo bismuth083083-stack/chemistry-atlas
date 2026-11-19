@@ -1698,5 +1698,35 @@
     ],
     "source": "05.1 MOs for LFT(1).pdf，第 1–16 页；阅读版 lesson-05-1.html#tetrahedral",
     "updated": "2026-10-23"
+  },
+  {
+    "slug": "latimer-diagram",
+    "zh": "Latimer图",
+    "en": "Latimer diagram",
+    "category": "电化学与氧化还原",
+    "definition": "按氧化数递减排列物种，并标注相邻标准还原电势的图。",
+    "expanded": "跨中间态的电势由各段电子数加权，先把电势转为 Gibbs 能相加。",
+    "properties": [
+      "按氧化数递减排列物种，并标注相邻标准还原电势的图。"
+    ],
+    "confusions": "跨中间态的电势由各段电子数加权，先把电势转为 Gibbs 能相加。",
+    "related": [],
+    "source": "08.1 Redox Chemistry of the Main Group Elements(1).pdf",
+    "updated": "2026-11-19"
+  },
+  {
+    "slug": "frost-diagram",
+    "zh": "Frost图",
+    "en": "Frost diagram",
+    "category": "电化学与氧化还原",
+    "definition": "以氧化数和相对单质的 nE° 为坐标表示元素不同价态的图。",
+    "expanded": "两点斜率给对应标准还原电势，中间点相对弦的位置可判断歧化与归中趋势。",
+    "properties": [
+      "以氧化数和相对单质的 nE° 为坐标表示元素不同价态的图。"
+    ],
+    "confusions": "两点斜率给对应标准还原电势，中间点相对弦的位置可判断歧化与归中趋势。",
+    "related": [],
+    "source": "08.1 Redox Chemistry of the Main Group Elements(1).pdf",
+    "updated": "2026-11-19"
   }
 ]

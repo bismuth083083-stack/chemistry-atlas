@@ -1,5 +1,5 @@
-const CACHE='inorganic-atlas-v23-classroom-notes';
-const SHELL=['lesson-08.html','assets/lecture-08/diborane-bridges-zh.webp','assets/lecture-08/hard-acid-binding-zh.webp','assets/lecture-07/close-packing-zh.svg','assets/lecture-07/cubic-cells-zh.svg','lesson-07.html','lesson-06.html','week-notes.css',
+const CACHE='inorganic-atlas-v24-notes-20261119';
+const SHELL=['nov19-notes.css','assets/nov19/frost-n.svg','lesson-08-1.html','lesson-08.html','assets/lecture-08/diborane-bridges-zh.webp','assets/lecture-08/hard-acid-binding-zh.webp','assets/lecture-07/close-packing-zh.svg','assets/lecture-07/cubic-cells-zh.svg','lesson-07.html','lesson-06.html','week-notes.css',
   './',
   'index.html',
   'lesson-01.html',

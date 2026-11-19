@@ -3829,5 +3829,50 @@
     ],
     "source": "本次上传课件 14，对应网站第14章；按原理校订。",
     "updated": "2026-10-27"
+  },
+  {
+    "slug": "beer-lambert-law",
+    "zh": "比尔–朗伯定律",
+    "en": "Beer–Lambert law",
+    "category": "光谱分析",
+    "definition": "均匀稀溶液在适当单色条件下，吸光度与吸收物种浓度及光程成正比。",
+    "expanded": "A=εbc。ε 与波长、吸收物种和环境有关，浓度型或质量型吸光系数需按单位分别使用。",
+    "properties": [
+      "均匀稀溶液在适当单色条件下，吸光度与吸收物种浓度及光程成正比。"
+    ],
+    "confusions": "A=εbc。ε 与波长、吸收物种和环境有关，浓度型或质量型吸光系数需按单位分别使用。",
+    "related": [],
+    "source": "15_Spectrochemical Methods Basic principle.pptx",
+    "updated": "2026-11-19"
+  },
+  {
+    "slug": "spectral-bandwidth",
+    "zh": "光谱带宽",
+    "en": "Spectral bandwidth",
+    "category": "光谱分析",
+    "definition": "选波长装置实际透过的波长区间宽度，常按半峰全宽定义。",
+    "expanded": "缩窄带宽可提高光谱选择性，同时降低通光量。",
+    "properties": [
+      "选波长装置实际透过的波长区间宽度，常按半峰全宽定义。"
+    ],
+    "confusions": "缩窄带宽可提高光谱选择性，同时降低通光量。",
+    "related": [],
+    "source": "15_Spectrochemical Methods Basic principle.pptx",
+    "updated": "2026-11-19"
+  },
+  {
+    "slug": "photomultiplier",
+    "zh": "光电倍增管",
+    "en": "Photomultiplier tube",
+    "category": "光谱分析",
+    "definition": "以光阴极产生电子，再由倍增极逐级放大电流的检测器。",
+    "expanded": "PMT 的工作波段由光阴极等材料决定，高增益测量需要稳定的工作电压。",
+    "properties": [
+      "以光阴极产生电子，再由倍增极逐级放大电流的检测器。"
+    ],
+    "confusions": "PMT 的工作波段由光阴极等材料决定，高增益测量需要稳定的工作电压。",
+    "related": [],
+    "source": "15_Spectrochemical Methods Basic principle.pptx",
+    "updated": "2026-11-19"
   }
 ]
